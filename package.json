@@ -1,0 +1,15 @@
+{
+  "name": "mcp-dock-data",
+  "version": "1.0.0",
+  "description": "MCP Dock 数据镜像仓库 - 从 Smithery.ai 同步 MCP Server 数据",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
