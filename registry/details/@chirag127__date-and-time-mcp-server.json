@@ -1,0 +1,12 @@
+{
+  "id": "@chirag127/date-and-time-mcp-server",
+  "displayName": "date-and-time-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:41.382Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chirag127/date-and-time-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

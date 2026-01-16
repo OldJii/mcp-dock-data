@@ -1,0 +1,12 @@
+{
+  "id": "@tomohiro-owada/devrag",
+  "displayName": "devrag",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:20.068Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tomohiro-owada/devrag"
+  },
+  "connection": null,
+  "capabilities": []
+}

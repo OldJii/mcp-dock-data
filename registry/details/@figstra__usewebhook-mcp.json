@@ -2,7 +2,7 @@
   "id": "@figstra/usewebhook-mcp",
   "displayName": "UseWebhook",
   "description": "Generate webhook endpoints for testing, inspect and diff HTTP request payloads, replay requests from history, and forward requests to your localhost. Enhance your development workflow by easily managing and debugging webhooks in a streamlined manner.",
-  "createdAt": "2026-01-16T07:21:40.494Z",
+  "createdAt": "2026-01-16T12:37:39.034Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@figstra/usewebhook-mcp"

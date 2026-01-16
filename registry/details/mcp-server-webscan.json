@@ -2,7 +2,7 @@
   "id": "mcp-server-webscan",
   "displayName": "Webscan",
   "description": "Scan and analyze web content with features like page fetching, link extraction, and sitemap generation.",
-  "createdAt": "2026-01-16T07:30:16.326Z",
+  "createdAt": "2026-01-16T12:49:44.175Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-server-webscan"

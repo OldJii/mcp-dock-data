@@ -2,7 +2,7 @@
   "id": "@seizedata/trx-categorization-mcp",
   "displayName": "SeizeData DaZoom",
   "description": "Categorize bank and card transactions automatically to streamline expense tracking. Reveal spending patterns and merchants with clear categories and summaries. Accelerate budgeting, reconciliation, and reporting with accurate, structured data.",
-  "createdAt": "2026-01-16T07:23:19.404Z",
+  "createdAt": "2026-01-16T12:40:02.455Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@seizedata/trx-categorization-mcp"

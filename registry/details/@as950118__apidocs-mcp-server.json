@@ -1,0 +1,16 @@
+{
+  "id": "@as950118/apidocs-mcp-server",
+  "displayName": "apidocs-mcp-server",
+  "description": "Provide a server implementation for the Model Context Protocol (MCP) to enable dynamic integration of LLMs with external data and tools. Facilitate standardized access to resources, tools, and prompts for enhanced LLM capabilities. Simplify the development of MCP-compliant servers for various applications.",
+  "createdAt": "2026-01-16T12:51:57.327Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@as950118/apidocs-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

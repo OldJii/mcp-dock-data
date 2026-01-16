@@ -2,7 +2,7 @@
   "id": "@davidf9999/gx-mcp-server",
   "displayName": "Great Expectations Data Quality Server",
   "description": "Expose Great Expectations data-quality checks as callable tools for LLM agents. Load datasets, define validation rules, and run data quality checks programmatically to integrate robust data validation into automated workflows. Support multiple data sources, authentication methods, and transport modes for flexible deployment.",
-  "createdAt": "2026-01-16T07:32:22.377Z",
+  "createdAt": "2026-01-16T12:52:47.510Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@davidf9999/gx-mcp-server"

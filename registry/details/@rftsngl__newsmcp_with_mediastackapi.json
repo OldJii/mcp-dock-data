@@ -2,7 +2,7 @@
   "id": "@rftsngl/newsmcp_with_mediastackapi",
   "displayName": "Mediastack News Server",
   "description": "Provide up-to-date news retrieval and source listing capabilities by integrating the Mediastack News API as MCP tools. Enable agents to fetch the latest news stories with flexible filtering and access comprehensive news source information. Simplify news data access for MCP-compatible platforms with easy deployment and configuration.",
-  "createdAt": "2026-01-16T07:25:55.610Z",
+  "createdAt": "2026-01-16T12:43:32.439Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rftsngl/newsmcp_with_mediastackapi"

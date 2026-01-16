@@ -1,0 +1,65 @@
+{
+  "id": "zoho_bigin",
+  "displayName": "Zoho bigin",
+  "description": "Zoho Bigin is a simplified CRM solution from Zoho tailored for small businesses, focusing on pipeline tracking and relationship management",
+  "createdAt": "2026-01-16T12:35:01.292Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_bigin"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_BIGIN_ADD_RECORDS",
+      "description": "Tool to add new records to a module. Use when you need to programmatically insert one or more records into Bigin after confirming module name and field API names. Provide required fields per module (e.g., Contacts requires Last_Name)."
+    },
+    {
+      "name": "ZOHO_BIGIN_ADD_TAGS_TO_RECORDS",
+      "description": "Tool to add tags to a specific record in a module. Use when you need to categorize or label a record after creation or update."
+    },
+    {
+      "name": "ZOHO_BIGIN_CREATE_TAGS",
+      "description": "Tool to create tags for a module. Use when you need to add new tags to a specific module in Zoho Bigin."
+    },
+    {
+      "name": "ZOHO_BIGIN_DELETE_ATTACHMENT",
+      "description": "Tool to delete an attachment from a record. Use when you need to remove a file after confirming its record_id and attachment_id."
+    },
+    {
+      "name": "ZOHO_BIGIN_DELETE_RECORDS",
+      "description": "Tool to delete records from a module. Use when removing one or multiple records after confirming their IDs."
+    },
+    {
+      "name": "ZOHO_BIGIN_DOWNLOAD_ATTACHMENT",
+      "description": "Tool to download an attachment from a record. Use when you need the binary content of a specific attachment after confirming the record and attachment IDs."
+    },
+    {
+      "name": "ZOHO_BIGIN_GET_ATTACHMENTS",
+      "description": "Tool to retrieve attachments for a record. Use when you need a paginated list of attachments for a given module record."
+    },
+    {
+      "name": "ZOHO_BIGIN_GET_DELETED_RECORDS",
+      "description": "Tool to get a list of deleted records in a module. Use when auditing or restoring recently deleted data (recycle within 60 days, permanent within 120 days)."
+    },
+    {
+      "name": "ZOHO_BIGIN_GET_MODULES",
+      "description": "Tool to retrieve a list of all modules. Use when you need to discover which modules are available in Bigin."
+    },
+    {
+      "name": "ZOHO_BIGIN_GET_RECORDS",
+      "description": "Tool to retrieve records from a Bigin module. Use when listing or querying module data with specific fields, sorting, filtering, and pagination."
+    },
+    {
+      "name": "ZOHO_BIGIN_UPDATE_RECORDS",
+      "description": "Tool to update existing records in a module. Use when you need to modify one or multiple records after confirming their IDs and field API names. Supports up to 100 records per call; specify an optional trigger to control workflow execution."
+    },
+    {
+      "name": "ZOHO_BIGIN_UPLOAD_ATTACHMENT",
+      "description": "Tool to upload an attachment to a record. Use when you need to attach a file or specify a public URL for upload to a Bigin record. Ensure module_api_name and record_id are correct before calling."
+    }
+  ]
+}

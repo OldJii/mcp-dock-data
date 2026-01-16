@@ -1,0 +1,45 @@
+{
+  "id": "hithereiamaliff/mcp-ltadatamallsg",
+  "displayName": "Singapore LTA DataMall MCP Server",
+  "description": "Access real-time public transit information including bus arrivals, train service alerts, and station crowding levels in Singapore. Check live parking availability and monitor expressway travel times or traffic incidents for smoother commutes. Plan journeys more effectively using forecasted crowd levels and up-to-the-minute road updates.\n\nThis MCP is an enhanced fork of arjunkmrm/lta-mcp, rebuilt for self-hosted VPS deployment with zero-friction onboarding.",
+  "createdAt": "2026-01-16T12:49:43.527Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hithereiamaliff/mcp-ltadatamallsg"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "bus_arrival",
+      "description": "Get real-time bus arrival information for a specific bus stop and optionally a specific service number. Returns estimated arrival times, bus locations, and crowding levels."
+    },
+    {
+      "name": "station_crowding",
+      "description": "Get real-time MRT/LRT station crowdedness level for a particular train network line. Updates every 10 minutes."
+    },
+    {
+      "name": "train_alerts",
+      "description": "Get real-time train service alerts including service disruptions and shuttle services. Updates when there are changes."
+    },
+    {
+      "name": "carpark_availability",
+      "description": "Get real-time availability of parking lots for HDB, LTA, and URA carparks. Updates every minute."
+    },
+    {
+      "name": "travel_times",
+      "description": "Get estimated travel times on expressway segments. Updates every 5 minutes."
+    },
+    {
+      "name": "traffic_incidents",
+      "description": "Get current road incidents including accidents, roadworks, and heavy traffic. Updates every 2 minutes."
+    },
+    {
+      "name": "station_crowd_forecast",
+      "description": "Get forecasted MRT/LRT station crowdedness levels in 30-minute intervals."
+    }
+  ]
+}

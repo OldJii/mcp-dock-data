@@ -1,0 +1,12 @@
+{
+  "id": "bitsbound/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:50.512Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/bitsbound/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

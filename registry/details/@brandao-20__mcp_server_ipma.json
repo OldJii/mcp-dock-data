@@ -2,7 +2,7 @@
   "id": "@brandao-20/mcp_server_ipma",
   "displayName": "IPMA Weather Data Server",
   "description": "Provide real-time and historical weather data from the Portuguese Institute for Sea and Atmosphere (IPMA) to your applications. Enable seamless access to meteorological information for forecasting, analysis, and decision-making. Integrate reliable weather data effortlessly through standardized MCP endpoints.",
-  "createdAt": "2026-01-16T07:21:38.673Z",
+  "createdAt": "2026-01-16T12:37:36.373Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brandao-20/mcp_server_ipma"

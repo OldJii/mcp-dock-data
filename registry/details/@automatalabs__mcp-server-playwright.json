@@ -1,0 +1,19 @@
+{
+  "id": "@automatalabs/mcp-server-playwright",
+  "displayName": "Playwright",
+  "description": "A Model Context Protocol server providing browser automation capabilities using Playwright. It allows LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment.",
+  "createdAt": "2026-01-16T12:41:38.490Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@automatalabs/mcp-server-playwright"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": []
+}

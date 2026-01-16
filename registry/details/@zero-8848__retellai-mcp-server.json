@@ -2,7 +2,7 @@
   "id": "@zero-8848/retellai-mcp-server",
   "displayName": "RetellAI Voice Service Integration",
   "description": "Enable AI assistants to manage and interact with RetellAI's voice services including calls, agents, phone numbers, and voice options. Simplify voice-based workflows by providing tools to create, update, and delete calls and agents programmatically. Enhance automation and control over voice communication through seamless integration.",
-  "createdAt": "2026-01-16T07:32:56.422Z",
+  "createdAt": "2026-01-16T12:53:35.756Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zero-8848/retellai-mcp-server"

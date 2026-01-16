@@ -1,0 +1,104 @@
+{
+  "id": "@samuelvinay91/testrail-mcp",
+  "displayName": "TestRail",
+  "description": "Connect to your TestRail instance to view and manage projects, test cases, and test runs. Generate project dashboards with metrics and analytics to track quality and progress. Streamline QA workflows by creating and organizing cases and runs directly from one place.",
+  "createdAt": "2026-01-16T12:46:44.193Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samuelvinay91/testrail-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "baseUrl",
+        "username",
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "TestRail API key"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "TestRail instance URL (e.g., https://yourcompany.testrail.io)"
+        },
+        "timeout": {
+          "type": "number",
+          "description": "Request timeout in milliseconds",
+          "default": 30000
+        },
+        "cacheTtl": {
+          "type": "number",
+          "description": "Cache TTL in seconds",
+          "default": 300
+        },
+        "username": {
+          "type": "string",
+          "description": "TestRail username (email address)"
+        },
+        "defaultSuiteId": {
+          "type": "number",
+          "description": "Default suite ID",
+          "default": 1
+        },
+        "defaultProjectId": {
+          "type": "number",
+          "description": "Default project ID",
+          "default": 1
+        },
+        "rateLimitRequestsPerMinute": {
+          "type": "number",
+          "description": "Rate limit requests per minute",
+          "default": 60
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "connect_testrail",
+      "description": "Connect to TestRail instance with credentials"
+    },
+    {
+      "name": "test_connection",
+      "description": "Test TestRail connection and validate credentials"
+    },
+    {
+      "name": "get_projects",
+      "description": "Get all TestRail projects"
+    },
+    {
+      "name": "get_project",
+      "description": "Get specific TestRail project by ID"
+    },
+    {
+      "name": "create_project",
+      "description": "Create new TestRail project"
+    },
+    {
+      "name": "get_cases",
+      "description": "Get test cases for a project/suite"
+    },
+    {
+      "name": "create_case",
+      "description": "Create new test case"
+    },
+    {
+      "name": "get_runs",
+      "description": "Get test runs for a project"
+    },
+    {
+      "name": "create_run",
+      "description": "Create new test run"
+    },
+    {
+      "name": "generate_project_dashboard",
+      "description": "Generate comprehensive project dashboard with metrics and analytics"
+    }
+  ]
+}

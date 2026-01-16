@@ -2,7 +2,7 @@
   "id": "@hyeongjun-dev/metabase-mcp-server",
   "displayName": "Metabase MCP",
   "description": "Connect AI assistants to your Metabase analytics platform. Access dashboards, execute queries, and retrieve data seamlessly through conversational interfaces. Enhance your analytics experience with structured data access and robust error handling.",
-  "createdAt": "2026-01-16T07:27:43.493Z",
+  "createdAt": "2026-01-16T12:45:55.326Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hyeongjun-dev/metabase-mcp-server"

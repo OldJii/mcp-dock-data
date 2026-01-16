@@ -1,0 +1,12 @@
+{
+  "id": "@janedouat/mcp-test",
+  "displayName": "mcp-test",
+  "description": "",
+  "createdAt": "2026-01-16T13:00:40.281Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@janedouat/mcp-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

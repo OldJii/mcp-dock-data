@@ -2,7 +2,7 @@
   "id": "@code-rabi/littlesis-mcp",
   "displayName": "LittleSis API Server",
   "description": "Provide access to the LittleSis API to track corporate power and accountability. Enable querying and exploring relationships and entities related to corporate influence. Facilitate integration of corporate data into LLM applications for enhanced context and insights.",
-  "createdAt": "2026-01-16T07:21:39.427Z",
+  "createdAt": "2026-01-16T12:37:37.710Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@code-rabi/littlesis-mcp"

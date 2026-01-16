@@ -1,0 +1,73 @@
+{
+  "id": "@cuongpo/aptos-mcp-so",
+  "displayName": "Aptos Blockchain Server",
+  "description": "Enable AI assistants to interact with the Aptos blockchain testnet by managing accounts, performing transactions, querying blockchain data, and handling tokens and NFTs. Facilitate seamless blockchain operations such as generating accounts, transferring tokens, and executing smart contract functions. Empower users to integrate blockchain capabilities into their AI workflows with ease and security.",
+  "createdAt": "2026-01-16T12:41:18.194Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/aptos-mcp-so"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "aptosDebug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "aptosNetwork": {
+          "type": "string",
+          "description": "Aptos network to connect to",
+          "default": "testnet",
+          "enum": [
+            "testnet",
+            "mainnet"
+          ]
+        },
+        "aptosTimeout": {
+          "type": "number",
+          "description": "Request timeout in milliseconds",
+          "default": 30000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check server health and configuration"
+    },
+    {
+      "name": "test_connection",
+      "description": "Test connection to Aptos blockchain"
+    },
+    {
+      "name": "get_account_balance",
+      "description": "Get APT balance for an account"
+    },
+    {
+      "name": "account_exists",
+      "description": "Check if an account exists on the blockchain"
+    },
+    {
+      "name": "fund_account",
+      "description": "Fund an account using the testnet faucet (testnet only)"
+    },
+    {
+      "name": "get_gas_price",
+      "description": "Get the current gas price estimation"
+    },
+    {
+      "name": "transfer_apt",
+      "description": "Transfer APT tokens from one account to another"
+    }
+  ]
+}

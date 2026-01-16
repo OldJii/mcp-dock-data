@@ -2,7 +2,7 @@
   "id": "@barryyip0625/mcp-discord",
   "displayName": "Discord",
   "description": "Enable your AI assistants to seamlessly interact with Discord. Manage channels, send messages, and retrieve server information effortlessly. Enhance your Discord experience with powerful automation capabilities.\n\nPrerequisites:\nA Discord bot with appropriate permissions from https://discord.com/developers/applications\n- Bot token\n- Message Content Intent enabled\n- Server Members Intent enabled\n- Presence Intent enabled\n\nTo add your Discord bot to your server, use one of the following invite links (replace INSERT_CLIENT_ID_HERE with your bot's client ID):\n\nAdministrator (full access): \nhttps://discord.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&scope=bot&permissions=8\n\nCustom permissions (minimum required): \nhttps://discord.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&scope=bot&permissions=52076489808\n",
-  "createdAt": "2026-01-16T07:24:21.879Z",
+  "createdAt": "2026-01-16T12:41:30.906Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@barryyip0625/mcp-discord"

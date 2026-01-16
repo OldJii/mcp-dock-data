@@ -2,7 +2,7 @@
   "id": "@kamath/anirudh-mcp",
   "displayName": "Anirudh MCP Server",
   "description": "Provide a dedicated MCP server focused on delivering capabilities related to Anirudh Kamath. Enable seamless integration with the Model Context Protocol to expose tools, resources, and prompts tailored for enhanced LLM interactions. Facilitate dynamic context and action handling for advanced AI applications.",
-  "createdAt": "2026-01-16T07:30:53.481Z",
+  "createdAt": "2026-01-16T12:50:40.793Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/anirudh-mcp"

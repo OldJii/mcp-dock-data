@@ -2,7 +2,7 @@
   "id": "@f4ww4z/mcp-mysql-server",
   "displayName": "MySQL Server",
   "description": "A Model Context Protocol server for MySQL database operations.",
-  "createdAt": "2026-01-16T07:21:33.977Z",
+  "createdAt": "2026-01-16T12:37:29.806Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@f4ww4z/mcp-mysql-server"

@@ -2,7 +2,7 @@
   "id": "@cuongpo/coti-mcp-1",
   "displayName": "COTI Private Assets",
   "description": "Manage COTI accounts, deploy private ERC20 and ERC721 contracts, and transfer tokens and NFTs with privacy. Monitor balances, allowances, ownership, and transaction status, and decode event logs when needed. Securely sign, verify, and encrypt or decrypt values to build privacy-preserving workflows across testnet or mainnet.",
-  "createdAt": "2026-01-16T07:25:02.496Z",
+  "createdAt": "2026-01-16T12:42:25.551Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/coti-mcp-1"

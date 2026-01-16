@@ -1,0 +1,85 @@
+{
+  "id": "btcpay_server",
+  "displayName": "Btcpay server",
+  "description": "BTCPay Server is a free, open-source, self-hosted Bitcoin payment processor that enables merchants to accept Bitcoin payments without intermediaries.",
+  "createdAt": "2026-01-16T12:35:07.997Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/btcpay_server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "BTCPAY_SERVER_CREATE_PAYMENT_REQUEST",
+      "description": "Tool to create a new payment request for a store. Use after confirming store ID."
+    },
+    {
+      "name": "BTCPAY_SERVER_CREATE_STORE",
+      "description": "Tool to create a new store in BTCPay Server. Use when you need to provision a new store before processing transactions."
+    },
+    {
+      "name": "BTCPAY_SERVER_CREATE_USER",
+      "description": "Tool to create a new BTCPay Server user. Use when you need to register a new user programmatically as an administrator."
+    },
+    {
+      "name": "BTCPAY_SERVER_CREATE_WEBHOOK",
+      "description": "Tool to register a new webhook. Use when you need to receive store event notifications."
+    },
+    {
+      "name": "BTCPAY_SERVER_DELETE_API_KEY",
+      "description": "Tool to revoke a specific API key. Use when you need to remove an API key to immediately prevent its use. Call after identifying the key to revoke."
+    },
+    {
+      "name": "BTCPAY_SERVER_DELETE_PAYMENT_REQUEST",
+      "description": "Tool to delete a specific payment request. Use when you need to archive/remove an existing payment request for a store."
+    },
+    {
+      "name": "BTCPAY_SERVER_DELETE_PAYOUT",
+      "description": "Tool to delete a specific payout from a store. Use when you need to cancel a payout no longer needed."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_API_KEY",
+      "description": "Tool to retrieve the current API key. Use after authentication to get API key details."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_API_KEYS",
+      "description": "Tool to list API keys. Use when you need to retrieve all API keys associated with the authenticated user."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_PAYMENT_REQUESTS",
+      "description": "Tool to list all payment requests for a specific store. Use after confirming you have the store ID."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_SERVER_INFO",
+      "description": "Tool to retrieve information about the BTCPay Server instance. Use when needing server version, tor address, supported payment methods, and synchronization states."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_STORE",
+      "description": "Tool to retrieve information about a specific store. Use when you need full store configuration."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_USER",
+      "description": "Tool to retrieve information about a specific user. Use when you need to fetch profile data for a given user ID or email."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_WEBHOOK",
+      "description": "Tool to retrieve details of a specific webhook. Use when you need to verify the configuration or status of a webhook for a given store after its creation."
+    },
+    {
+      "name": "BTCPAY_SERVER_GET_WEBHOOKS",
+      "description": "Tool to list all webhooks registered for a store. Use when you need to retrieve the configured webhooks for management or auditing."
+    },
+    {
+      "name": "BTCPAY_SERVER_LIST_APPS",
+      "description": "Tool to list all apps associated with a specific store. Use when retrieving basic metadata of every app in that store."
+    },
+    {
+      "name": "BTCPAY_SERVER_UPDATE_USER",
+      "description": "Tool to update current user information. Use when you need to modify your authenticated user profile on BTCPay Server."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "@ebartan/bodrum-mcp-2025",
+  "displayName": "Bodrum MCP Server",
+  "description": "Provide a flexible and extensible server implementation for the Model Context Protocol to enable dynamic integration of LLMs with external data, tools, and prompts. Facilitate seamless interaction between language models and real-world resources through a standardized JSON-RPC interface. Enhance LLM applications by exposing customizable capabilities and resources securely and efficiently.",
+  "createdAt": "2026-01-16T12:49:55.707Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ebartan/bodrum-mcp-2025"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getBodrumInfo",
+      "description": "Get comprehensive information about Bodrum"
+    },
+    {
+      "name": "searchBodrumAttractions",
+      "description": "Search for specific attractions or activities in Bodrum"
+    },
+    {
+      "name": "getTravelTips",
+      "description": "Get practical travel tips for visiting Bodrum"
+    },
+    {
+      "name": "getBodrumWeather",
+      "description": "Get typical weather information for Bodrum by season"
+    },
+    {
+      "name": "getCurrentWeather",
+      "description": "Get current weather information for Bodrum from OpenWeatherMap"
+    },
+    {
+      "name": "getBodrumNeighborhoods",
+      "description": "Get information about Bodrum neighborhoods (mahalleler)"
+    },
+    {
+      "name": "searchBodrumNeighborhood",
+      "description": "Search for a specific Bodrum neighborhood and get detailed information"
+    },
+    {
+      "name": "getPublicServices",
+      "description": "Get information about public services, municipality, and government offices in Bodrum"
+    },
+    {
+      "name": "getEmergencyContacts",
+      "description": "Get emergency contact numbers and services in Bodrum"
+    },
+    {
+      "name": "getBodrumEvents",
+      "description": "Get information about events, festivals, and activities in Bodrum"
+    },
+    {
+      "name": "getBelediyeEvents",
+      "description": "Get municipality events from MongoDB belediye_events collection"
+    },
+    {
+      "name": "getMarketPlaces",
+      "description": "Get information about market places (pazar yerleri) in Bodrum with neighborhood connections"
+    },
+    {
+      "name": "getDailyPharmacies",
+      "description": "Get daily duty pharmacies (nöbetçi eczane) list for Bodrum"
+    },
+    {
+      "name": "getEducationInstitutions",
+      "description": "Get information about education institutions in Bodrum by neighborhood"
+    },
+    {
+      "name": "searchEducationByName",
+      "description": "Search for a specific education institution by name"
+    },
+    {
+      "name": "getMEBSchools",
+      "description": "Get official MEB (Ministry of Education) schools list for Bodrum"
+    },
+    {
+      "name": "searchMEBSchool",
+      "description": "Search for a specific school in MEB official list"
+    }
+  ]
+}

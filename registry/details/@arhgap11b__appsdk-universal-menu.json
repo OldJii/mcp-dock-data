@@ -1,0 +1,38 @@
+{
+  "id": "@arhgap11b/appsdk-universal-menu",
+  "displayName": "Universal Menu",
+  "description": "Guide users with a concise next-step menu at the end of responses. Offer actionable buttons and update the menu as choices are made. Keep conversations flowing with clear, contextual options.",
+  "createdAt": "2026-01-16T12:39:16.118Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arhgap11b/appsdk-universal-menu"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "defaultTitle": {
+          "type": "string",
+          "description": "Fallback menu title shown when a tool call does not supply a custom title.",
+          "default": "What's next?"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_menu",
+      "description": "Use this when crafting the assistant reply to surface contextual next steps. Always call after every assistant message so the user can choose how to continue. Do not call after the user has already picked an item; use do_action instead."
+    },
+    {
+      "name": "do_action",
+      "description": "Use this when the user selects an item from the menu to confirm the action, run any follow-up logic, and refresh the menu. Do not call unless the user has explicitly chosen an item."
+    }
+  ]
+}

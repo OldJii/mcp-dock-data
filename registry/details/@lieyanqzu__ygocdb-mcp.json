@@ -2,7 +2,7 @@
   "id": "@lieyanqzu/ygocdb-mcp",
   "displayName": "YGO Chinese Card Database - 百鸽(ygocdb.com)",
   "description": "Provide fast and easy access to Chinese Yu-Gi-Oh! card information and images through keyword search and ID queries. Integrate seamlessly with your applications to retrieve detailed card data and visuals. Support both stdio and Streamable HTTP modes for flexible deployment.",
-  "createdAt": "2026-01-16T07:21:05.483Z",
+  "createdAt": "2026-01-16T12:36:48.721Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lieyanqzu/ygocdb-mcp"

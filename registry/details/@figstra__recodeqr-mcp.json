@@ -1,0 +1,16 @@
+{
+  "id": "@figstra/recodeqr-mcp",
+  "displayName": "RecodeQR",
+  "description": "Generate and scan QR codes easily",
+  "createdAt": "2026-01-16T12:41:54.624Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@figstra/recodeqr-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

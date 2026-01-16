@@ -1,0 +1,229 @@
+{
+  "id": "@MisterSandFR/supabase-mcp-selfhosted",
+  "displayName": "Supabase Admin Self-Hosted",
+  "description": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Monitor performance with real-time metrics and logs, and strengthen security with audits and RLS policy helpers. Automate backups, schema sync, CRUD generation, and safe SQL execution from one place.",
+  "createdAt": "2026-01-16T12:35:19.001Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MisterSandFR/supabase-mcp-selfhosted"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "execute_sql",
+      "description": ""
+    },
+    {
+      "name": "list_tables",
+      "description": ""
+    },
+    {
+      "name": "check_health",
+      "description": ""
+    },
+    {
+      "name": "list_extensions",
+      "description": ""
+    },
+    {
+      "name": "get_database_stats",
+      "description": ""
+    },
+    {
+      "name": "get_database_connections",
+      "description": ""
+    },
+    {
+      "name": "apply_migration",
+      "description": ""
+    },
+    {
+      "name": "list_migrations",
+      "description": ""
+    },
+    {
+      "name": "create_migration",
+      "description": ""
+    },
+    {
+      "name": "validate_migration",
+      "description": ""
+    },
+    {
+      "name": "push_migrations",
+      "description": ""
+    },
+    {
+      "name": "smart_migration",
+      "description": ""
+    },
+    {
+      "name": "auto_migrate",
+      "description": ""
+    },
+    {
+      "name": "sync_schema",
+      "description": ""
+    },
+    {
+      "name": "inspect_schema",
+      "description": ""
+    },
+    {
+      "name": "import_schema",
+      "description": ""
+    },
+    {
+      "name": "execute_psql",
+      "description": ""
+    },
+    {
+      "name": "auto_create_indexes",
+      "description": ""
+    },
+    {
+      "name": "vacuum_analyze",
+      "description": ""
+    },
+    {
+      "name": "generate_typescript_types",
+      "description": ""
+    },
+    {
+      "name": "generate_crud_api",
+      "description": ""
+    },
+    {
+      "name": "get_logs",
+      "description": ""
+    },
+    {
+      "name": "search_docs",
+      "description": ""
+    },
+    {
+      "name": "metrics_dashboard",
+      "description": ""
+    },
+    {
+      "name": "analyze_performance",
+      "description": ""
+    },
+    {
+      "name": "analyze_rls_coverage",
+      "description": ""
+    },
+    {
+      "name": "audit_security",
+      "description": ""
+    },
+    {
+      "name": "list_auth_users",
+      "description": ""
+    },
+    {
+      "name": "get_auth_user",
+      "description": ""
+    },
+    {
+      "name": "create_auth_user",
+      "description": ""
+    },
+    {
+      "name": "delete_auth_user",
+      "description": ""
+    },
+    {
+      "name": "update_auth_user",
+      "description": ""
+    },
+    {
+      "name": "manage_roles",
+      "description": ""
+    },
+    {
+      "name": "manage_rls_policies",
+      "description": ""
+    },
+    {
+      "name": "verify_jwt_secret",
+      "description": ""
+    },
+    {
+      "name": "list_storage_buckets",
+      "description": ""
+    },
+    {
+      "name": "list_storage_objects",
+      "description": ""
+    },
+    {
+      "name": "manage_storage_policies",
+      "description": ""
+    },
+    {
+      "name": "list_realtime_publications",
+      "description": ""
+    },
+    {
+      "name": "manage_realtime",
+      "description": ""
+    },
+    {
+      "name": "create_subscription",
+      "description": ""
+    },
+    {
+      "name": "delete_subscription",
+      "description": ""
+    },
+    {
+      "name": "manage_extensions",
+      "description": ""
+    },
+    {
+      "name": "manage_functions",
+      "description": ""
+    },
+    {
+      "name": "manage_triggers",
+      "description": ""
+    },
+    {
+      "name": "manage_webhooks",
+      "description": ""
+    },
+    {
+      "name": "rebuild_hooks",
+      "description": ""
+    },
+    {
+      "name": "manage_secrets",
+      "description": ""
+    },
+    {
+      "name": "cache_management",
+      "description": ""
+    },
+    {
+      "name": "environment_management",
+      "description": ""
+    },
+    {
+      "name": "get_project_url",
+      "description": ""
+    },
+    {
+      "name": "get_anon_key",
+      "description": ""
+    },
+    {
+      "name": "get_service_key",
+      "description": ""
+    }
+  ]
+}

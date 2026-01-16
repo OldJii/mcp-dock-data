@@ -1,0 +1,46 @@
+{
+  "id": "@kodey-ai/mapwise-mcp",
+  "displayName": "mapwise-mcp",
+  "description": "Send friendly, personalized greetings on demand. Generate quick salutations with a simple prompt. Explore the origin story of 'Hello, World' for extra context.",
+  "createdAt": "2026-01-16T12:37:11.474Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kodey-ai/mapwise-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "MapWise API key for authenticated requests"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_parcels",
+      "description": "Search Florida parcel data using various criteria. Requires API key for full access."
+    },
+    {
+      "name": "test_parcel_search",
+      "description": "Test parcel searches without API key (Alachua County only, limited data)"
+    },
+    {
+      "name": "find_parcel_by_location",
+      "description": "Find the parcel at specific coordinates in Florida"
+    }
+  ]
+}

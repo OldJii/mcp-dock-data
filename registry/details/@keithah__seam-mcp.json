@@ -2,7 +2,7 @@
   "id": "@keithah/seam-mcp",
   "displayName": "Seam Smart Locks",
   "description": "Manage smart locks and access codes across your Seam-connected devices. Check lock status, lock or unlock doors, and create, update, or delete time-bound access codes for one or many locks. Streamline property operations and guest access with bulk code management.",
-  "createdAt": "2026-01-16T07:27:14.234Z",
+  "createdAt": "2026-01-16T12:45:19.351Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keithah/seam-mcp"

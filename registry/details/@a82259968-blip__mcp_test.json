@@ -1,0 +1,12 @@
+{
+  "id": "@a82259968-blip/mcp_test",
+  "displayName": "mcp_test",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:20.449Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@a82259968-blip/mcp_test"
+  },
+  "connection": null,
+  "capabilities": []
+}

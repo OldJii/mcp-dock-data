@@ -1,0 +1,41 @@
+{
+  "id": "tech-curator/korean-patent-mcp",
+  "displayName": "korean-patent-mcp",
+  "description": "Search Korean patents by applicant, retrieve detailed records by application number, and analyze forward citations. Filter results by status and paginate to quickly surface relevant filings. Accelerate prior art searches, portfolio tracking, and competitive analysis for the Korean market.",
+  "createdAt": "2026-01-16T12:47:06.536Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/tech-curator/korean-patent-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "kiprisApiKey"
+      ],
+      "properties": {
+        "kiprisApiKey": {
+          "type": "string",
+          "description": "KIPRIS Plus Open API Key (https://plus.kipris.or.kr)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "kipris_search_patents",
+      "description": "출원인명으로 한국 특허를 검색합니다.\n    \n    Args:\n        applicant_name: 출원인명 (필수, 예: '삼성전자', '카카오뱅크')\n        page: 페이지 번호 (기본값: 1)\n        page_size: 페이지당 결과 수 (기본값: 20, 최대: 100)\n        status: 상태 필터 ('A': 공개, 'R': 등록, 'J': 거절, None: 전체)\n        response_format: 응답 형식 ('markdown' 또는 'json')\n    "
+    },
+    {
+      "name": "kipris_get_patent_detail",
+      "description": "출원번호로 특허의 상세 정보를 조회합니다.\n    \n    Args:\n        application_number: 출원번호 (필수, 예: '1020200123456')\n        response_format: 응답 형식 ('markdown' 또는 'json')\n    "
+    },
+    {
+      "name": "kipris_get_citing_patents",
+      "description": "특정 특허를 인용한 후행 특허들을 조회합니다.\n    \n    Args:\n        application_number: 기준 특허의 출원번호 (필수)\n        response_format: 응답 형식 ('markdown' 또는 'json')\n    "
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@thirdstrandstudio/mcp-figma",
   "displayName": "Figma MCP Server",
   "description": "Interact seamlessly with the Figma API to manage files, comments, components, and more. Leverage a comprehensive set of tools to enhance your design workflow and automate tasks within Figma. Simplify your design processes and integrate Figma capabilities into your applications effortlessly.",
-  "createdAt": "2026-01-16T07:29:40.506Z",
+  "createdAt": "2026-01-16T12:48:52.177Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@thirdstrandstudio/mcp-figma"

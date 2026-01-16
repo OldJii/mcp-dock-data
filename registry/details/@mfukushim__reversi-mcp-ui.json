@@ -2,7 +2,7 @@
   "id": "@mfukushim/reversi-mcp-ui",
   "displayName": "reversi-mcp-ui",
   "description": "This is a simple Reversi game that uses MCP-UI.\n\n> Note: Currently, there is no MCP client that fully supports MCP-UI UI Actions, Therefore, please specify the coordinates of the stone position in text (e.g. A1 or H6).\n\nHowever, its greatest feature is that **\"the rules of Reversi are decided by the MCP, making it difficult for the AI to cheat the rules of the game.\"**\n\nBecause Reversi is simple, AI rarely cheats the game rules, but it's known that AI often cheats when playing more complex games.\n\nIn this MCP server, the game rules are handled by the MCP, making it difficult for AI to cheat (Note: There are currently some limitations).\n\nThe structure is relatively simple, so we believe it can be used as a reference for creating similar board games.\n",
-  "createdAt": "2026-01-16T07:29:41.036Z",
+  "createdAt": "2026-01-16T12:48:52.837Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mfukushim/reversi-mcp-ui"

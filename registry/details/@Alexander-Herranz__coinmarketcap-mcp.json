@@ -2,7 +2,7 @@
   "id": "@Alexander-Herranz/coinmarketcap-mcp",
   "displayName": "CoinMarketCap API Server",
   "description": "Provide standardized access to comprehensive cryptocurrency market data, exchange information, and blockchain metrics. Fetch the latest crypto trends, market movements, and detailed OHLCV data with type-safe parameter validation. Empower your applications with reliable and up-to-date crypto insights through a unified interface.",
-  "createdAt": "2026-01-16T07:23:47.399Z",
+  "createdAt": "2026-01-16T12:40:41.984Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Alexander-Herranz/coinmarketcap-mcp"

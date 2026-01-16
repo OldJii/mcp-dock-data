@@ -2,7 +2,7 @@
   "id": "@GoodestUsername/searxng-mcp",
   "displayName": "SearXNG Search Server",
   "description": "Provide programmatic access to privacy-respecting meta-search functionality via a standardized protocol. Perform advanced search queries with flexible filtering and output formats. Easily deploy and integrate with existing SearXNG instances using multiple transport modes including HTTP and stdio.",
-  "createdAt": "2026-01-16T07:31:49.014Z",
+  "createdAt": "2026-01-16T12:51:59.934Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GoodestUsername/searxng-mcp"

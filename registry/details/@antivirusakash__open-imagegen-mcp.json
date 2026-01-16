@@ -2,7 +2,7 @@
   "id": "@antivirusakash/open-imagegen-mcp",
   "displayName": "OpenAI Image Generator",
   "description": "Generate images dynamically using the OpenAI gpt-image-1 model. Enhance your applications with AI-powered image creation capabilities. Easily integrate image generation into your workflows via a standardized MCP server.",
-  "createdAt": "2026-01-16T07:30:57.920Z",
+  "createdAt": "2026-01-16T12:50:46.669Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@antivirusakash/open-imagegen-mcp"

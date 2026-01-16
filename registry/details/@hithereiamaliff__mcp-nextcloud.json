@@ -2,7 +2,7 @@
   "id": "@hithereiamaliff/mcp-nextcloud",
   "displayName": "Nextcloud MCP Server",
   "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to interact with your Nextcloud instance. Features 34 tools across Notes, Calendar, Contacts, Tables, and WebDAV operations. Built in TypeScript (rewritten from the original fork's Python codebase from scratch) with full Smithery support for one-click cloud deployment and local testing via Smithery playground.\n\nNote: this is NOT an official MCP server by Nextcloud, and is a direct fork of cbcoutinho's nextcloud-mcp-server.",
-  "createdAt": "2026-01-16T07:24:18.524Z",
+  "createdAt": "2026-01-16T12:41:25.579Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-nextcloud"

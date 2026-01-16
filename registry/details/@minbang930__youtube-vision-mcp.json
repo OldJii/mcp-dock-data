@@ -2,7 +2,7 @@
   "id": "@minbang930/youtube-vision-mcp",
   "displayName": "YouTube Vision",
   "description": "Analyze YouTube videos and extract insights using the Gemini Vision API. Get descriptions, summaries, and key moments effortlessly to enhance your video interactions.",
-  "createdAt": "2026-01-16T07:33:01.082Z",
+  "createdAt": "2026-01-16T12:53:42.280Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@minbang930/youtube-vision-mcp"

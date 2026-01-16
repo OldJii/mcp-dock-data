@@ -2,7 +2,7 @@
   "id": "@xja1023789-collab/hello_servertest",
   "displayName": "打招呼",
   "description": "生成自然的问候语并快速向他人致意。浏览“Hello, World”起源故事获取灵感。使用内置提示轻松定制问候内容。",
-  "createdAt": "2026-01-16T07:27:20.081Z",
+  "createdAt": "2026-01-16T12:45:26.547Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@xja1023789-collab/hello_servertest"

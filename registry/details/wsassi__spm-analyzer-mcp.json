@@ -1,0 +1,12 @@
+{
+  "id": "wsassi/spm-analyzer-mcp",
+  "displayName": "spm-analyzer-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:58:19.864Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/wsassi/spm-analyzer-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

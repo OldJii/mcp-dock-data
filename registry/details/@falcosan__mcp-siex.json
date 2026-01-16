@@ -2,7 +2,7 @@
   "id": "@falcosan/mcp-siex",
   "displayName": "SIEX",
   "description": "Connect to Spain’s SIEX platform to retrieve farm data, register phytosanitary treatments, and export the CUE digital farm record book. Automate regulatory compliance and keep farm records accurate and up to date. Start by configuring your API and SID keys for secure access.",
-  "createdAt": "2026-01-16T07:31:00.994Z",
+  "createdAt": "2026-01-16T12:50:51.224Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@falcosan/mcp-siex"

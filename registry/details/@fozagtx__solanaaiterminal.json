@@ -2,7 +2,7 @@
   "id": "@fozagtx/solanaaiterminal",
   "displayName": "Solana Dev Essentials",
   "description": "Search Solana documentation to quickly find concepts, guides, and examples. Inspect on-chain state by fetching balances, accounts, transactions, blocks, and slots. Create and manage wallets, sign messages, and request testnet airdrops to speed up development.",
-  "createdAt": "2026-01-16T07:26:58.816Z",
+  "createdAt": "2026-01-16T12:45:00.367Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@fozagtx/solanaaiterminal"

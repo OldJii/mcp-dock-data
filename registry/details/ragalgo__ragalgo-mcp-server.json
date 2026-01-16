@@ -2,7 +2,7 @@
   "id": "ragalgo/ragalgo-mcp-server",
   "displayName": "ragalgo-mcp-server",
   "description": "Get daily, noise-free market insights for Korean stocks and crypto with scored news, technical signals, and financials. Build reliable research and briefing workflows using post-market analyses and consolidated snapshots. Reduce hallucinations and speed up decision-making with clear scores and tags across KOSPI/KOSDAQ and Upbit.",
-  "createdAt": "2026-01-16T07:32:58.530Z",
+  "createdAt": "2026-01-16T12:53:38.367Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/ragalgo/ragalgo-mcp-server"

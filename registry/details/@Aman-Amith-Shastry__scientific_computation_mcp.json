@@ -2,7 +2,7 @@
   "id": "@Aman-Amith-Shastry/scientific_computation_mcp",
   "displayName": "Scientific Computation MCP Server",
   "description": "This MCP server enables users to perform scientific computations regarding linear algebra and vector calculus through natural language. The server is designed to bridge the gap between users and powerful computational libraries such as NumPy and SymPy. Its goal is to make scientific computing more accessible.",
-  "createdAt": "2026-01-16T07:20:05.940Z",
+  "createdAt": "2026-01-16T12:35:24.391Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Aman-Amith-Shastry/scientific_computation_mcp"

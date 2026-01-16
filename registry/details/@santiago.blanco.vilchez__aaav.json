@@ -2,7 +2,7 @@
   "id": "@santiago.blanco.vilchez/aaav",
   "displayName": "CPA Tenant Onboarding",
   "description": "Create new tenants and seed or update their document templates. Sign in securely to manage and expand your tenants. Automate onboarding flows and integrate with external APIs as part of your setup.",
-  "createdAt": "2026-01-16T07:27:33.950Z",
+  "createdAt": "2026-01-16T12:45:43.586Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/aaav"

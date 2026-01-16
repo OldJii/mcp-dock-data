@@ -2,7 +2,7 @@
   "id": "@samihalawa/next-js-mcp-server",
   "displayName": "Next.js MCP Server",
   "description": "Enable seamless integration of MCP servers within your Next.js projects using the Vercel MCP Adapter. Easily add tools, prompts, and resources to extend your LLM applications with external context and actions. Deploy efficiently on Vercel with support for SSE transport and Redis integration for scalable real-time communication.",
-  "createdAt": "2026-01-16T07:23:17.549Z",
+  "createdAt": "2026-01-16T12:39:59.775Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/next-js-mcp-server"

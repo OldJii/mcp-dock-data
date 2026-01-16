@@ -2,7 +2,7 @@
   "id": "@metatool-ai/mcp-server-metamcp",
   "displayName": "MetaMCP Server",
   "description": "Manage multiple MCP servers seamlessly. Route requests and configurations dynamically across various MCPs.",
-  "createdAt": "2026-01-16T07:26:36.515Z",
+  "createdAt": "2026-01-16T12:44:31.623Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@metatool-ai/mcp-server-metamcp"

@@ -1,0 +1,16 @@
+{
+  "id": "@xiaok/etherscan-mcp-server",
+  "displayName": "Etherscan API Integration Server",
+  "description": "Enable dynamic interaction with Etherscan's blockchain data and services through a standardized MCP interface. Access supported chains and endpoints to retrieve blockchain information seamlessly. Simplify blockchain data queries and integration for your applications.",
+  "createdAt": "2026-01-16T12:44:18.311Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xiaok/etherscan-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

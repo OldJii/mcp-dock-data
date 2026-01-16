@@ -1,0 +1,12 @@
+{
+  "id": "@aseltyar/odoo",
+  "displayName": "odoo",
+  "description": "",
+  "createdAt": "2026-01-16T13:00:56.569Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aseltyar/odoo"
+  },
+  "connection": null,
+  "capabilities": []
+}

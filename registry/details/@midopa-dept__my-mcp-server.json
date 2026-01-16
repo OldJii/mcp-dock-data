@@ -2,7 +2,7 @@
   "id": "@midopa-dept/my-mcp-server",
   "displayName": "Greetings & Utilities",
   "description": "Send personalized greetings in your chosen language. Perform quick calculations, check the current time by time zone, and generate images from text prompts. Create tailored code review prompts to improve code quality.",
-  "createdAt": "2026-01-16T07:29:49.560Z",
+  "createdAt": "2026-01-16T12:49:05.229Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@midopa-dept/my-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@samihalawa/brevo-mcp",
   "displayName": "Brevo MCP",
   "description": "Brevo MCP is a streamlined control panel for managing all Brevo API capabilities in one place. It allows you to send transactional emails and SMS, manage contacts, run campaigns, handle conversations, configure webhooks, track events, and access CRM, e-commerce, and WhatsApp features—all through an organized, ready-to-run interface.",
-  "createdAt": "2026-01-16T07:30:47.512Z",
+  "createdAt": "2026-01-16T12:50:32.291Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/brevo-mcp"

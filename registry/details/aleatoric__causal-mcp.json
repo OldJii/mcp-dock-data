@@ -1,0 +1,12 @@
+{
+  "id": "aleatoric/causal-mcp",
+  "displayName": "causal-mcp",
+  "description": "Test against millions of unseen market regimes, not just the one historical path that happened to occur. Ensure capital preservation where traditional models collapse.",
+  "createdAt": "2026-01-16T12:58:52.411Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/aleatoric/causal-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

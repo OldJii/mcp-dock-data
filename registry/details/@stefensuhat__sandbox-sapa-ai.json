@@ -1,0 +1,12 @@
+{
+  "id": "@stefensuhat/sandbox-sapa-ai",
+  "displayName": "sandbox-sapa-ai",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:57.254Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@stefensuhat/sandbox-sapa-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

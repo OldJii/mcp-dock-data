@@ -2,7 +2,7 @@
   "id": "@uddin-rajaul/mcp-sql-optimizer",
   "displayName": "mcp-sql-optimizer",
   "description": "A powerful Model Context Protocol (MCP) server that analyzes, optimizes, and suggests indexes for SQL queries across multiple dialects (PostgreSQL, MySQL, Oracle, SQL Server). Built with Python and `sqlglot`.",
-  "createdAt": "2026-01-16T07:39:29.814Z",
+  "createdAt": "2026-01-16T13:02:52.165Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@uddin-rajaul/mcp-sql-optimizer"

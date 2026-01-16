@@ -1,0 +1,12 @@
+{
+  "id": "@gallardo.kevin0/my-project",
+  "displayName": "my-project",
+  "description": "",
+  "createdAt": "2026-01-16T13:00:52.557Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gallardo.kevin0/my-project"
+  },
+  "connection": null,
+  "capabilities": []
+}

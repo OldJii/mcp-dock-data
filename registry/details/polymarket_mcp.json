@@ -1,0 +1,27 @@
+{
+  "id": "polymarket_mcp",
+  "displayName": "PolyMarket Predictions",
+  "description": "Fetch prediction market data from PolyMarket, including market info, prices, and history.",
+  "createdAt": "2026-01-16T12:51:33.712Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/polymarket_mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "polymarketApiKey"
+      ],
+      "properties": {
+        "polymarketApiKey": {
+          "type": "string",
+          "description": "The API key for accessing PolyMarket data."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

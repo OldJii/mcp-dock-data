@@ -1,0 +1,12 @@
+{
+  "id": "@selena0653/sample-project",
+  "displayName": "sample-project",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:18.445Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@selena0653/sample-project"
+  },
+  "connection": null,
+  "capabilities": []
+}

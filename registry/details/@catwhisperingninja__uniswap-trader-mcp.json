@@ -2,7 +2,7 @@
   "id": "@catwhisperingninja/uniswap-trader-mcp",
   "displayName": "Uniswap Trader",
   "description": "Get real-time quotes for Uniswap token swaps. Execute trades with optimal routing to improve price and reduce slippage. Receive swap suggestions for your chosen tokens.",
-  "createdAt": "2026-01-16T07:28:30.403Z",
+  "createdAt": "2026-01-16T12:47:12.382Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@catwhisperingninja/uniswap-trader-mcp"

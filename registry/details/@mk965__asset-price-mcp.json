@@ -2,7 +2,7 @@
   "id": "@mk965/asset-price-mcp",
   "displayName": "Asset Price MCP",
   "description": "Retrieve and display real-time asset price information effortlessly. Access current prices for various assets, including precious metals and cryptocurrencies, to enhance your applications. Simplify data retrieval for large language models with this dedicated service.",
-  "createdAt": "2026-01-16T07:25:45.417Z",
+  "createdAt": "2026-01-16T12:43:19.037Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mk965/asset-price-mcp"

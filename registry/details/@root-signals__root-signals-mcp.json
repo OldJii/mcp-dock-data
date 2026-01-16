@@ -1,0 +1,12 @@
+{
+  "id": "@root-signals/root-signals-mcp",
+  "displayName": "root-signals-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:53.278Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@root-signals/root-signals-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,156 @@
+{
+  "id": "@emmett-deen/linear-mcp-server",
+  "displayName": "Linear MCP Server",
+  "description": "Connect Claude to Linear project management systems. Retrieve, create, and manage issues and projects seamlessly.",
+  "createdAt": "2026-01-16T12:42:00.619Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@emmett-deen/linear-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "token"
+      ],
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "Your Linear API key. Required for Linear API access."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "linear_getViewer",
+      "description": "Get information about the currently authenticated user"
+    },
+    {
+      "name": "linear_getOrganization",
+      "description": "Get information about the current Linear organization"
+    },
+    {
+      "name": "linear_getUsers",
+      "description": "Get a list of users in the Linear organization"
+    },
+    {
+      "name": "linear_getLabels",
+      "description": "Get a list of issue labels from Linear"
+    },
+    {
+      "name": "linear_getTeams",
+      "description": "Get a list of teams from Linear"
+    },
+    {
+      "name": "linear_getWorkflowStates",
+      "description": "Get workflow states for a team"
+    },
+    {
+      "name": "linear_getProjects",
+      "description": "Get a list of projects from Linear"
+    },
+    {
+      "name": "linear_createProject",
+      "description": "Create a new project in Linear"
+    },
+    {
+      "name": "linear_updateProject",
+      "description": "Update an existing project in Linear"
+    },
+    {
+      "name": "linear_addIssueToProject",
+      "description": "Add an existing issue to a project"
+    },
+    {
+      "name": "linear_getProjectIssues",
+      "description": "Get all issues associated with a project"
+    },
+    {
+      "name": "linear_getCycles",
+      "description": "Get a list of all cycles"
+    },
+    {
+      "name": "linear_getActiveCycle",
+      "description": "Get the currently active cycle for a team"
+    },
+    {
+      "name": "linear_addIssueToCycle",
+      "description": "Add an issue to a cycle"
+    },
+    {
+      "name": "linear_getIssues",
+      "description": "Get a list of recent issues from Linear"
+    },
+    {
+      "name": "linear_getIssueById",
+      "description": "Get a specific issue by ID or identifier (e.g., ABC-123)"
+    },
+    {
+      "name": "linear_searchIssues",
+      "description": "Search for issues with various filters"
+    },
+    {
+      "name": "linear_createIssue",
+      "description": "Create a new issue in Linear"
+    },
+    {
+      "name": "linear_updateIssue",
+      "description": "Update an existing issue in Linear"
+    },
+    {
+      "name": "linear_createComment",
+      "description": "Add a comment to an issue in Linear"
+    },
+    {
+      "name": "linear_addIssueLabel",
+      "description": "Add a label to an issue in Linear"
+    },
+    {
+      "name": "linear_removeIssueLabel",
+      "description": "Remove a label from an issue in Linear"
+    },
+    {
+      "name": "linear_assignIssue",
+      "description": "Assign an issue to a user"
+    },
+    {
+      "name": "linear_subscribeToIssue",
+      "description": "Subscribe to issue updates"
+    },
+    {
+      "name": "linear_convertIssueToSubtask",
+      "description": "Convert an issue to a subtask"
+    },
+    {
+      "name": "linear_createIssueRelation",
+      "description": "Create relations between issues (blocks, is blocked by, etc.)"
+    },
+    {
+      "name": "linear_archiveIssue",
+      "description": "Archive an issue"
+    },
+    {
+      "name": "linear_setIssuePriority",
+      "description": "Set the priority of an issue"
+    },
+    {
+      "name": "linear_transferIssue",
+      "description": "Transfer an issue to another team"
+    },
+    {
+      "name": "linear_duplicateIssue",
+      "description": "Duplicate an issue"
+    },
+    {
+      "name": "linear_getIssueHistory",
+      "description": "Get the history of changes made to an issue"
+    },
+    {
+      "name": "linear_getComments",
+      "description": "Get all comments for an issue"
+    }
+  ]
+}

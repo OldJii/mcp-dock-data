@@ -2,7 +2,7 @@
   "id": "@neglect/solana-defi",
   "displayName": "Solana DeFi MCP Server",
   "description": "Billions of Solana DeFi TXNs, Decoded at Scale & accessible via LLM\n\nDirect, structured access to the entire Solana DeFi universe. Every launchpad, every token, every trade, every wallet interaction — all decoded and normalized with detail.\n\nFeatures\n\n- Full coverage of Solana launchpads\n- Billions of decoded on-chain events, available in real time\n- Secure bearer authentication for controlled access\n- High-volume, low-latency performance\n\nAvailable Data (& Growing)\n\n- Market and token data\n- Wallet and portfolio lookups\n- Historical transaction ranges\n- Advanced search across DeFi protocols",
-  "createdAt": "2026-01-16T07:25:27.870Z",
+  "createdAt": "2026-01-16T12:42:57.169Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@neglect/solana-defi"

@@ -2,7 +2,7 @@
   "id": "@Gitmaxd/dubco-mcp-server-npm",
   "displayName": "Dub.co (Unofficial) MCP Server",
   "description": "Create, update, and delete short links effortlessly with this server. Integrate seamlessly with AI assistants to manage your Dub.co links through a standardized interface. Enhance your link management experience with powerful tools at your fingertips.",
-  "createdAt": "2026-01-16T07:31:24.358Z",
+  "createdAt": "2026-01-16T12:51:25.221Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Gitmaxd/dubco-mcp-server-npm"

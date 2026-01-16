@@ -2,7 +2,7 @@
   "id": "@dashayus/aliceblue-mcp-server",
   "displayName": "AliceBlue",
   "description": "Manage your AliceBlue portfolio, orders, and funds from one place. View holdings, positions, margins, and real-time market data, and place, modify, or cancel orders with ease. Track order and trade history, convert or square off positions, and automate entries with GTT orders.",
-  "createdAt": "2026-01-16T07:25:41.039Z",
+  "createdAt": "2026-01-16T12:43:13.660Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dashayus/aliceblue-mcp-server"

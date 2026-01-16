@@ -2,7 +2,7 @@
   "id": "@ramadasmr/networkcalc-mcp",
   "displayName": "NetworkCalc",
   "description": "MCP Server for utilities from networkcalc.com\n\nUtilities Include\n- DNS Lookup\n- WHOIS Lookup\n- SPF Lookup\n- Certificate Lookup\n- Subnet Lookup",
-  "createdAt": "2026-01-16T07:21:27.874Z",
+  "createdAt": "2026-01-16T12:37:21.084Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ramadasmr/networkcalc-mcp"

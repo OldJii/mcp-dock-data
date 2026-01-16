@@ -1,0 +1,12 @@
+{
+  "id": "@suliuer/hello",
+  "displayName": "hello",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:06.817Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@suliuer/hello"
+  },
+  "connection": null,
+  "capabilities": []
+}

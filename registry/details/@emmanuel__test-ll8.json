@@ -1,0 +1,249 @@
+{
+  "id": "@emmanuel/test-ll8",
+  "displayName": "Zuplo",
+  "description": "Manage and secure your APIs with flexible policies, routing, and rate limits. Monitor traffic and performance with analytics to optimize reliability.",
+  "createdAt": "2026-01-16T12:46:15.776Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@emmanuel/test-ll8"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_query",
+      "description": "Returns all alerts"
+    },
+    {
+      "name": "alerts_active",
+      "description": "Returns all currently active alerts"
+    },
+    {
+      "name": "alerts_active_count",
+      "description": "Returns info on the number of active alerts"
+    },
+    {
+      "name": "alerts_active_zone",
+      "description": "Returns active alerts for the given NWS public zone or county"
+    },
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    },
+    {
+      "name": "alerts_active_region",
+      "description": "Returns active alerts for the given marine region"
+    },
+    {
+      "name": "alerts_types",
+      "description": "Returns a list of alert types"
+    },
+    {
+      "name": "alerts_single",
+      "description": "Returns a specific alert"
+    },
+    {
+      "name": "cwsu",
+      "description": "Returns metadata about a Center Weather Service Unit"
+    },
+    {
+      "name": "cwas",
+      "description": "Returns a list of Center Weather Advisories from a CWSU"
+    },
+    {
+      "name": "cwa",
+      "description": "Returns a list of Center Weather Advisories from a CWSU"
+    },
+    {
+      "name": "sigmetQuery",
+      "description": "Returns a list of SIGMET/AIRMETs"
+    },
+    {
+      "name": "sigmetsByATSU",
+      "description": "Returns a list of SIGMET/AIRMETs for the specified ATSU"
+    },
+    {
+      "name": "sigmetsByATSUByDate",
+      "description": "Returns a list of SIGMET/AIRMETs for the specified ATSU for the specified date"
+    },
+    {
+      "name": "sigmet",
+      "description": "Returns a specific SIGMET/AIRMET"
+    },
+    {
+      "name": "glossary",
+      "description": "Returns glossary terms"
+    },
+    {
+      "name": "gridpoint",
+      "description": "Returns raw numerical forecast data for a 2.5km grid area"
+    },
+    {
+      "name": "gridpoint_forecast",
+      "description": "Returns a textual forecast for a 2.5km grid area"
+    },
+    {
+      "name": "gridpoint_forecast_hourly",
+      "description": "Returns a textual hourly forecast for a 2.5km grid area"
+    },
+    {
+      "name": "gridpoint_stations",
+      "description": "Returns a list of observation stations usable for a given 2.5km grid area"
+    },
+    {
+      "name": "icons",
+      "description": "Returns a forecast icon. Icon services in API are deprecated."
+    },
+    {
+      "name": "iconsDualCondition",
+      "description": "Returns a forecast icon. Icon services in API are deprecated."
+    },
+    {
+      "name": "icons_summary",
+      "description": "Returns a list of icon codes and textual descriptions. Icon services in API are deprecated."
+    },
+    {
+      "name": "satellite_thumbnails",
+      "description": "Returns a thumbnail image for a satellite region. Image services in API are deprecated."
+    },
+    {
+      "name": "station_observation_list",
+      "description": "Returns a list of observations for a given station"
+    },
+    {
+      "name": "station_observation_latest",
+      "description": "Returns the latest observation for a station"
+    },
+    {
+      "name": "station_observation_time",
+      "description": "Returns a single observation."
+    },
+    {
+      "name": "tafs",
+      "description": "Returns Terminal Aerodrome Forecasts for the specified airport station."
+    },
+    {
+      "name": "taf",
+      "description": "Returns a single Terminal Aerodrome Forecast."
+    },
+    {
+      "name": "obs_stations",
+      "description": "Returns a list of observation stations."
+    },
+    {
+      "name": "obs_station",
+      "description": "Returns metadata about a given observation station"
+    },
+    {
+      "name": "office",
+      "description": "Returns metadata about a NWS forecast office"
+    },
+    {
+      "name": "office_headline",
+      "description": "Returns a specific news headline for a given NWS office"
+    },
+    {
+      "name": "office_headlines",
+      "description": "Returns a list of news headlines for a given NWS office"
+    },
+    {
+      "name": "point",
+      "description": "Returns metadata about a given latitude/longitude point"
+    },
+    {
+      "name": "point_stations",
+      "description": "Returns a list of observation stations for a given point"
+    },
+    {
+      "name": "radar_servers",
+      "description": "Returns a list of radar servers"
+    },
+    {
+      "name": "radar_server",
+      "description": "Returns metadata about a given radar server"
+    },
+    {
+      "name": "radar_stations",
+      "description": "Returns a list of radar stations"
+    },
+    {
+      "name": "radar_station",
+      "description": "Returns metadata about a given radar station"
+    },
+    {
+      "name": "radar_station_alarms",
+      "description": "Returns metadata about a given radar station alarms"
+    },
+    {
+      "name": "radar_queue",
+      "description": "Returns metadata about a given radar queue"
+    },
+    {
+      "name": "radar_profiler",
+      "description": "Returns metadata about a given radar wind profiler"
+    },
+    {
+      "name": "products_query",
+      "description": "Returns a list of text products"
+    },
+    {
+      "name": "product_locations",
+      "description": "Returns a list of valid text product issuance locations"
+    },
+    {
+      "name": "product_types",
+      "description": "Returns a list of valid text product types and codes"
+    },
+    {
+      "name": "product",
+      "description": "Returns a specific text product"
+    },
+    {
+      "name": "products_type",
+      "description": "Returns a list of text products of a given type"
+    },
+    {
+      "name": "products_type_locations",
+      "description": "Returns a list of valid text product issuance locations for a given product type"
+    },
+    {
+      "name": "location_products",
+      "description": "Returns a list of valid text product types for a given issuance location"
+    },
+    {
+      "name": "products_type_location",
+      "description": "Returns a list of text products of a given type for a given issuance location"
+    },
+    {
+      "name": "latest_product_type_location",
+      "description": "Returns latest text products of a given type for a given issuance location with product text"
+    },
+    {
+      "name": "zone_list",
+      "description": "Returns a list of zones"
+    },
+    {
+      "name": "zone_list_type",
+      "description": "Returns a list of zones of a given type"
+    },
+    {
+      "name": "zone",
+      "description": "Returns metadata about a given zone"
+    },
+    {
+      "name": "zone_forecast",
+      "description": "Returns the current zone forecast for a given zone"
+    },
+    {
+      "name": "zone_obs",
+      "description": "Returns a list of observations for a given zone"
+    },
+    {
+      "name": "zone_stations",
+      "description": "Returns a list of observation stations for a given zone"
+    }
+  ]
+}

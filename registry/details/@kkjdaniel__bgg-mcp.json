@@ -1,0 +1,73 @@
+{
+  "id": "@kkjdaniel/bgg-mcp",
+  "displayName": "BoardGameGeek",
+  "description": "BGG MCP provides access to BoardGameGeek and a variety of board game related data through the Model Context Protocol. Enabling retrieval and filtering of board game data, user collections, and profiles.",
+  "createdAt": "2026-01-16T12:36:09.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kkjdaniel/bgg-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "BGG_COOKIE": {
+          "type": "string",
+          "description": "Cookie string for BGG authentication. Only needed if not using API key"
+        },
+        "BGG_API_KEY": {
+          "type": "string",
+          "description": "API key from BoardGameGeek for authentication. Get one at https://boardgamegeek.com/applications"
+        },
+        "BGG_USERNAME": {
+          "type": "string",
+          "description": "Your BGG username for personalized features"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "bgg-collection",
+      "description": "Find the details about a specific users board game collection on BoardGameGeek (BGG)"
+    },
+    {
+      "name": "bgg-details",
+      "description": "Find the details about a specific board game on BoardGameGeek (BGG)"
+    },
+    {
+      "name": "bgg-hot",
+      "description": "Find the current board game hotness on BoardGameGeek (BGG)"
+    },
+    {
+      "name": "bgg-price",
+      "description": "Get current prices for board games from multiple retailers using BGG IDs"
+    },
+    {
+      "name": "bgg-recommender",
+      "description": "Get game recommendations based on a specific game using either the BoardGameGeek (BGG) ID or name directly. ID is preferred for faster responses."
+    },
+    {
+      "name": "bgg-rules",
+      "description": "Use this tool when users ask rules questions about board games (e.g., 'How does X work?', 'Can I do Y?', 'What happens when Z?'). Searches BoardGameGeek rules forums to find answers and clarifications from the community."
+    },
+    {
+      "name": "bgg-search",
+      "description": "Search for board games on BoardGameGeek (BGG) by name or part of a name using a broad search (e.g., 'Catan', 'Ticket to Ride')"
+    },
+    {
+      "name": "bgg-thread-details",
+      "description": "Get full content of a specific BoardGameGeek forum thread, including all posts and replies. Use this after finding relevant threads with bgg-rules."
+    },
+    {
+      "name": "bgg-trade-finder",
+      "description": "Find what games user1 owns that user2 has on their wishlist. Shows potential trading opportunities."
+    },
+    {
+      "name": "bgg-user",
+      "description": "Find details about a specific user on BoardGameGeek (BGG)"
+    }
+  ]
+}

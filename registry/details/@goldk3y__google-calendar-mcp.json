@@ -2,7 +2,7 @@
   "id": "@goldk3y/google-calendar-mcp",
   "displayName": "Google Calendar Integration Server",
   "description": "Enable seamless interaction with Google Calendar through a secure and comprehensive MCP server. Manage calendars and events with full support for OAuth2 authentication, event details, and search capabilities. Simplify calendar operations and event scheduling within your applications.",
-  "createdAt": "2026-01-16T07:24:21.347Z",
+  "createdAt": "2026-01-16T12:41:30.245Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@goldk3y/google-calendar-mcp"

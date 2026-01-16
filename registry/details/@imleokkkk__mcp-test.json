@@ -1,0 +1,46 @@
+{
+  "id": "@imleokkkk/mcp-test",
+  "displayName": "mcp-test",
+  "description": "Compute products instantly with simple, reliable inputs. Multiply any two numbers with accurate results. Streamline numeric tasks in your workflow without switching contexts.",
+  "createdAt": "2026-01-16T12:49:30.235Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@imleokkkk/mcp-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Smithery API 키를 입력하세요.",
+          "default": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "sum",
+      "description": "Sum two numbers together."
+    },
+    {
+      "name": "multiply",
+      "description": "Multiplies two numbers together."
+    },
+    {
+      "name": "subtract",
+      "description": "Subtract two numbers together."
+    },
+    {
+      "name": "divide",
+      "description": "Divide two numbers together."
+    }
+  ]
+}

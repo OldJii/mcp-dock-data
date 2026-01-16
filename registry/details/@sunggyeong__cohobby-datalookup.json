@@ -2,7 +2,7 @@
   "id": "@sunggyeong/cohobby-datalookup",
   "displayName": "Rental Data Lookup",
   "description": "Aggregate and normalize datasets from your cloud storage for faster discovery and analysis. Summarize rental prices to compare markets, spot trends, and share concise takeaways. Accelerate workflows by fetching core datasets and delivering clean, ready-to-use outputs.",
-  "createdAt": "2026-01-16T07:30:49.109Z",
+  "createdAt": "2026-01-16T12:50:34.264Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sunggyeong/cohobby-datalookup"

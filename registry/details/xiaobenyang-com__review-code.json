@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/review-code",
   "displayName": "review-code",
   "description": "生成统一的代码评审提示，覆盖整体、单文件与差异审查场景。解析审查文本中的总分，输出标准化评分。帮助团队规范评审流程、提升代码质量与一致性。",
-  "createdAt": "2026-01-16T07:29:43.062Z",
+  "createdAt": "2026-01-16T12:48:56.084Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/review-code"

@@ -1,0 +1,97 @@
+{
+  "id": "@NitayRabi/fitbit-mcp",
+  "displayName": "Fitbit Health and Fitness Data Access",
+  "description": "Enable AI assistants to access and analyze your Fitbit health and fitness data seamlessly. Retrieve detailed information such as activities, sleep logs, heart rate, steps, body measurements, and more with simple commands. Enhance your AI interactions by integrating comprehensive Fitbit data insights.",
+  "createdAt": "2026-01-16T12:48:04.175Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NitayRabi/fitbit-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "fitbitToken"
+      ],
+      "properties": {
+        "fitbitToken": {
+          "type": "string",
+          "description": "Fitbit access token obtained from Fitbit Developer portal"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getUserProfile",
+      "description": ""
+    },
+    {
+      "name": "getActivities",
+      "description": ""
+    },
+    {
+      "name": "getSleepLogs",
+      "description": ""
+    },
+    {
+      "name": "getHeartRate",
+      "description": ""
+    },
+    {
+      "name": "getSteps",
+      "description": ""
+    },
+    {
+      "name": "getBodyMeasurements",
+      "description": ""
+    },
+    {
+      "name": "getFoodLogs",
+      "description": ""
+    },
+    {
+      "name": "getWaterLogs",
+      "description": ""
+    },
+    {
+      "name": "getLifetimeStats",
+      "description": ""
+    },
+    {
+      "name": "getUserSettings",
+      "description": ""
+    },
+    {
+      "name": "getFloorsClimbed",
+      "description": ""
+    },
+    {
+      "name": "getDistance",
+      "description": ""
+    },
+    {
+      "name": "getCalories",
+      "description": ""
+    },
+    {
+      "name": "getActiveZoneMinutes",
+      "description": ""
+    },
+    {
+      "name": "getDevices",
+      "description": ""
+    },
+    {
+      "name": "getBadges",
+      "description": ""
+    }
+  ]
+}

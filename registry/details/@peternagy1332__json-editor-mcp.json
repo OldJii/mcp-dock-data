@@ -2,7 +2,7 @@
   "id": "@peternagy1332/json-editor-mcp",
   "displayName": "json-editor-mcp",
   "description": "A Model Context Protocol (MCP) server for editing JSON files with read, write, and deep merge capabilities. Perfect for managing multilingual Next.js projects and other JSON-based configurations.",
-  "createdAt": "2026-01-16T07:33:19.474Z",
+  "createdAt": "2026-01-16T12:54:08.642Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@peternagy1332/json-editor-mcp"

@@ -2,7 +2,7 @@
   "id": "@amalinakurniasari/figmamcp",
   "displayName": "Conduit for Figma",
   "description": "Control Figma to create, edit, and organize designs in real time. Generate components and variants, apply styles and variables, manage text, vectors, images, and auto layout with powerful batch operations. Export assets and code (PNG/SVG/PDF, HTML/CSS) and stay in sync with selections, pages, and document events to streamline your workflow.",
-  "createdAt": "2026-01-16T07:24:59.545Z",
+  "createdAt": "2026-01-16T12:42:22.227Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@amalinakurniasari/figmamcp"

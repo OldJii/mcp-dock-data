@@ -1,0 +1,12 @@
+{
+  "id": "@agkoisine/social-listening",
+  "displayName": "social-listening",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:48.619Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@agkoisine/social-listening"
+  },
+  "connection": null,
+  "capabilities": []
+}

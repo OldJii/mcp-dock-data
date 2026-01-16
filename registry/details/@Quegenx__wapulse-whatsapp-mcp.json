@@ -2,7 +2,7 @@
   "id": "@Quegenx/wapulse-whatsapp-mcp",
   "displayName": "WaPulse Whatsapp MCP Server",
   "description": "Provide an MCP server interface for the WaPulse WhatsApp Web API, enabling integration and interaction with WhatsApp Web through the Model Context Protocol. Facilitate seamless communication and automation for clients using MCP-compatible tools and resources.",
-  "createdAt": "2026-01-16T07:21:58.686Z",
+  "createdAt": "2026-01-16T12:38:04.438Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Quegenx/wapulse-whatsapp-mcp"

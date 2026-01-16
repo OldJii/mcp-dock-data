@@ -2,7 +2,7 @@
   "id": "@Jacobolevy/smartling-mcp-server",
   "displayName": "Smartling",
   "description": "Provide seamless integration with Smartling translation services to manage projects, files, jobs, and translation strings efficiently. Enhance your localization workflows with AI-powered insights, cost optimization, and auto-debugging features. Enable reliable and secure translation management directly from your MCP-compatible applications.",
-  "createdAt": "2026-01-16T07:24:02.666Z",
+  "createdAt": "2026-01-16T12:41:03.285Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Jacobolevy/smartling-mcp-server"

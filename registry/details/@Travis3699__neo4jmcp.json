@@ -1,0 +1,29 @@
+{
+  "id": "@Travis3699/neo4jmcp",
+  "displayName": "neo4jmcp",
+  "description": "Explore and query Neo4j graphs with Cypher. Discover schema, run read operations, and optionally execute writes. Toggle read-only mode for safer experimentation.",
+  "createdAt": "2026-01-16T12:41:09.523Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Travis3699/neo4jmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_neo4j_schema",
+      "description": "Returns nodes, their properties (with types and indexed flags), and relationships\nusing APOC's schema inspection.\n\nYou should only provide a `sample_size` value if requested by the user, or tuning the retrieval performance.\n\nPerformance Notes:\n    - If `sample_size` is not provided, uses the server's default sample setting defined in the server configuration.\n    - If retrieving the schema times out, try lowering the sample size, e.g. `sample_size=100`.\n    - To sample the entire graph use `sample_size=-1`."
+    },
+    {
+      "name": "read_neo4j_cypher",
+      "description": "Execute a read Cypher query on the neo4j database."
+    },
+    {
+      "name": "write_neo4j_cypher",
+      "description": "Execute a write Cypher query on the neo4j database."
+    }
+  ]
+}

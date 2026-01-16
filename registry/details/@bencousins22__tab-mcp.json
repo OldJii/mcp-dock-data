@@ -1,0 +1,171 @@
+{
+  "id": "@bencousins22/tab-mcp",
+  "displayName": "tab-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:44:26.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bencousins22/tab-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "base_url": {
+          "type": "string",
+          "description": "Tabcorp API base URL",
+          "default": "https://api.beta.tab.com.au"
+        },
+        "password": {
+          "type": "string",
+          "description": "TAB account password (for password grant)",
+          "default": null
+        },
+        "username": {
+          "type": "string",
+          "description": "TAB account number (for password grant)",
+          "default": null
+        },
+        "client_id": {
+          "type": "string",
+          "description": "Tabcorp OAuth client_id",
+          "default": null
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "Default jurisdiction (NSW, VIC, QLD, SA, TAS, ACT, NT)",
+          "default": "NSW"
+        },
+        "client_secret": {
+          "type": "string",
+          "description": "Tabcorp OAuth client_secret",
+          "default": null
+        },
+        "refresh_token": {
+          "type": "string",
+          "description": "Cached refresh token",
+          "default": null
+        }
+      },
+      "description": "Session configuration for Tabcorp API credentials and preferences",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "tab_oauth_password_grant",
+      "description": "\n        Obtain access and refresh tokens via password grant (for personal account betting).\n        \n        Args:\n            client_id: Tabcorp OAuth client ID (from config if not provided)\n            client_secret: Tabcorp OAuth client secret (from config if not provided)\n            username: TAB account number (from config if not provided)\n            password: TAB account password (from config if not provided)\n        \n        Returns:\n            Dict containing access_token, refresh_token, expires_in, expires_at, token_type\n        \n        Raises:\n            TabcorpAPIError: If authentication fails or credentials are invalid\n        "
+    },
+    {
+      "name": "tab_oauth_refresh",
+      "description": "\n        Refresh access token using refresh_token grant.\n        \n        Args:\n            refresh_token: The refresh token (from config if not provided)\n            client_id: Tabcorp OAuth client ID (from config if not provided)\n            client_secret: Tabcorp OAuth client secret (from config if not provided)\n        \n        Returns:\n            Dict containing new access_token, refresh_token, expires_in, expires_at, token_type\n        \n        Raises:\n            TabcorpAPIError: If token refresh fails\n        "
+    },
+    {
+      "name": "tab_oauth_client_credentials",
+      "description": "\n        Obtain token via client_credentials grant (for public data, no account needed).\n        \n        Args:\n            client_id: Tabcorp OAuth client ID (from config if not provided)\n            client_secret: Tabcorp OAuth client secret (from config if not provided)\n        \n        Returns:\n            Dict containing access_token, expires_in, expires_at, token_type\n        \n        Raises:\n            TabcorpAPIError: If authentication fails\n        "
+    },
+    {
+      "name": "racing_get_all_meeting_dates",
+      "description": "Get all available racing meeting dates including today, tomorrow, and futures."
+    },
+    {
+      "name": "racing_get_meetings",
+      "description": "\n        Get all meetings for a specific date.\n        \n        Args:\n            access_token: Bearer access token\n            meeting_date: Date in YYYY-MM-DD format (e.g., '2025-10-29')\n            jurisdiction: Jurisdiction code (NSW, VIC, etc.)\n        "
+    },
+    {
+      "name": "racing_get_all_races_in_meeting",
+      "description": "\n        Get all races in a meeting.\n        \n        Args:\n            race_type: R (Racing/Thoroughbred), H (Harness), G (Greyhounds)\n            venue_mnemonic: Three-letter venue code (e.g., 'RAN' for Randwick)\n        "
+    },
+    {
+      "name": "racing_get_race",
+      "description": "Get detailed information for a specific race including runners, odds, and pools."
+    },
+    {
+      "name": "racing_get_next_to_go",
+      "description": "Get next-to-go races ordered by start time."
+    },
+    {
+      "name": "racing_get_race_form",
+      "description": "Get comprehensive form guide for a race including all runners and their recent performance."
+    },
+    {
+      "name": "racing_get_runner_form",
+      "description": "Get detailed form guide for a specific runner including past performances and statistics."
+    },
+    {
+      "name": "racing_get_approximates",
+      "description": "\n        Get pool approximates for a race.\n        \n        Args:\n            wagering_product: WIN, PLACE, QUINELLA, EXACTA, TRIFECTA, FIRST4, etc.\n        "
+    },
+    {
+      "name": "racing_get_open_jackpots",
+      "description": "Get all currently open jackpots across all meetings."
+    },
+    {
+      "name": "racing_get_jackpot_pools",
+      "description": "Get all jackpot pools for a specific date."
+    },
+    {
+      "name": "sports_get_all_open",
+      "description": "Get all sports with at least one open or suspended market."
+    },
+    {
+      "name": "sports_get_open_sport",
+      "description": "\n        Get a specific sport with open markets.\n        \n        Args:\n            sport_name: e.g., 'Basketball', 'Rugby League', 'AFL', 'Tennis', 'Soccer'\n        "
+    },
+    {
+      "name": "sports_get_open_competition",
+      "description": "\n        Get a specific competition with open markets.\n        \n        Args:\n            sport_name: e.g., 'Basketball'\n            competition_name: e.g., 'NBA', 'NBL'\n        "
+    },
+    {
+      "name": "sports_get_open_tournament",
+      "description": "Get a specific tournament with open markets (e.g., ATP tournaments in Tennis)."
+    },
+    {
+      "name": "sports_get_open_match_in_competition",
+      "description": "\n        Get a specific match in a competition with open markets.\n        \n        Args:\n            match_name: e.g., 'Lakers v Warriors'\n        "
+    },
+    {
+      "name": "sports_get_open_match_in_tournament",
+      "description": "Get a specific match in a tournament with open markets."
+    },
+    {
+      "name": "sports_get_next_to_go",
+      "description": "Get next-to-go sports matches sorted by start time with optional filters."
+    },
+    {
+      "name": "sports_get_all_results",
+      "description": "Get all sports with at least one resulted market."
+    },
+    {
+      "name": "sports_get_resulted_sport",
+      "description": "Get a specific sport with resulted markets."
+    },
+    {
+      "name": "sports_get_resulted_competition",
+      "description": "Get a specific competition with resulted markets."
+    },
+    {
+      "name": "sports_get_resulted_match_in_competition",
+      "description": "Get a specific match with results in a competition."
+    },
+    {
+      "name": "footytab_get_all_rounds",
+      "description": "\n        Get all FootyTAB rounds for a sport.\n        \n        Args:\n            sport_name: e.g., 'AFL', 'Rugby League', 'Rugby Union'\n        "
+    },
+    {
+      "name": "footytab_get_round_details",
+      "description": "\n        Get FootyTAB round details for a specific round number.\n        \n        Args:\n            series: Optional series name for sports with multiple series\n        "
+    },
+    {
+      "name": "tab_get",
+      "description": "\n        Generic GET request to any Tabcorp API endpoint with bearer authentication.\n        \n        Args:\n            path: API endpoint path (e.g., '/v1/tab-info-service/racing/dates')\n            params: Optional query parameters\n            jurisdiction: Optional jurisdiction override\n        \n        Use this for endpoints not covered by specialized tools.\n        "
+    },
+    {
+      "name": "tab_post",
+      "description": "\n        Generic POST request to any Tabcorp API endpoint with bearer authentication.\n        \n        Args:\n            path: API endpoint path\n            body: Optional JSON request body\n        \n        Use this for placing bets or other POST operations.\n        "
+    }
+  ]
+}

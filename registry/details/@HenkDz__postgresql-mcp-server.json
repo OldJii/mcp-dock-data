@@ -2,7 +2,7 @@
   "id": "@HenkDz/postgresql-mcp-server",
   "displayName": "PostgreSQL Database Management Server",
   "description": "Analyze, manage, and optimize your PostgreSQL databases effortlessly. Streamline your database operations with powerful tools for debugging, schema management, and data migration. Enhance performance monitoring and ensure your database runs smoothly with real-time insights and recommendations.",
-  "createdAt": "2026-01-16T07:23:03.023Z",
+  "createdAt": "2026-01-16T12:39:38.839Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@HenkDz/postgresql-mcp-server"

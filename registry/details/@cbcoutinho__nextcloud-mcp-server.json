@@ -2,7 +2,7 @@
   "id": "@cbcoutinho/nextcloud-mcp-server",
   "displayName": "Nextcloud MCP Server",
   "description": "Enable Large Language Models like Claude, GPT, and Gemini to interact with your Nextcloud data through a secure API. Create notes, manage calendars, organize contacts, work with files, and more - all through natural language conversations.",
-  "createdAt": "2026-01-16T07:24:34.603Z",
+  "createdAt": "2026-01-16T12:41:49.255Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cbcoutinho/nextcloud-mcp-server"

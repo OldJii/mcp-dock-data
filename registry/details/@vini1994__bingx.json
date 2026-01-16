@@ -1,0 +1,16 @@
+{
+  "id": "@vini1994/bingx",
+  "displayName": "BingX Trading Data Analysis Agent",
+  "description": "Provide secure and detailed analysis of your BingX trading data through a specialized AI agent. Fetch historical trades, analyze trading performance with key metrics like win rate and P&L, and test API connectivity seamlessly. Enhance your trading insights with easy integration and secure credential management.",
+  "createdAt": "2026-01-16T12:44:14.309Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vini1994/bingx"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

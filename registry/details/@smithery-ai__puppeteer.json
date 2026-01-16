@@ -2,7 +2,7 @@
   "id": "@smithery-ai/puppeteer",
   "displayName": "Puppeteer Browser",
   "description": "Browser automation server that enables interaction with web pages, taking screenshots, and executing JavaScript in a real browser environment",
-  "createdAt": "2026-01-16T07:23:00.648Z",
+  "createdAt": "2026-01-16T12:39:35.503Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@smithery-ai/puppeteer"

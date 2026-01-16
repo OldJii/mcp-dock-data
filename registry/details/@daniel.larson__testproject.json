@@ -1,0 +1,12 @@
+{
+  "id": "@daniel.larson/testproject",
+  "displayName": "testproject",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:58.961Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@daniel.larson/testproject"
+  },
+  "connection": null,
+  "capabilities": []
+}

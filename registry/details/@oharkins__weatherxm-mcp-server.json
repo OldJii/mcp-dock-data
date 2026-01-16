@@ -2,7 +2,7 @@
   "id": "@oharkins/weatherxm-mcp-server",
   "displayName": "WeatherXM Pro Weather Data Server",
   "description": "Provide real-time and historical weather data, forecasts, alerts, and station information from the WeatherXM decentralized weather network worldwide. Enable detailed weather insights including temperature, wind, precipitation, UV index, and data quality assessments. Discover nearby weather stations and explore network coverage for comprehensive weather analysis.",
-  "createdAt": "2026-01-16T07:26:30.452Z",
+  "createdAt": "2026-01-16T12:44:22.958Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@oharkins/weatherxm-mcp-server"

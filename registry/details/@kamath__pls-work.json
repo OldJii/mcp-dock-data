@@ -2,7 +2,7 @@
   "id": "@kamath/pls-work",
   "displayName": "Hello from Sentry",
   "description": "Provide a simple MCP server implementation to demonstrate integration with Sentry. Enable developers to quickly start with MCP by offering a minimal example that can be extended for custom use cases.",
-  "createdAt": "2026-01-16T07:28:56.839Z",
+  "createdAt": "2026-01-16T12:47:49.150Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/pls-work"

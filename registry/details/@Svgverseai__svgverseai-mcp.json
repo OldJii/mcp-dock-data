@@ -2,7 +2,7 @@
   "id": "@Svgverseai/svgverseai-mcp",
   "displayName": "SvgverseAI — The AI Vector Generator",
   "description": "The SVGverseAI MCP Server lets you connect your AI agents, automation workflows, or creative tools directly to SVGverseAI’s image generation engine — without ever opening the app.\n\nWith just a few API calls, you can:\n\n1. Generate SVG, PNG, or WebP images from text prompts\n2. Convert raster images into vector graphics\n3. Organize results inside your collections\n4. Power your own design tools with SVGverseAI’s creative engine\n5. Image → Video animation — turn static images into animated clips (MP4) with motion, transitions and export-ready settings\n\nMCP (Model Context Protocol) integration makes it easy for developers and AI platforms to access these capabilities through a single standardised interface.\n\n🔗 Learn more: https://docs.svgverseai.com/mcp-reference/setup\n",
-  "createdAt": "2026-01-16T07:21:15.526Z",
+  "createdAt": "2026-01-16T12:37:02.776Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Svgverseai/svgverseai-mcp"

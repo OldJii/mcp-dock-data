@@ -1,0 +1,12 @@
+{
+  "id": "@seefor/sif-pw",
+  "displayName": "sif-pw",
+  "description": "",
+  "createdAt": "2026-01-16T12:54:51.186Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@seefor/sif-pw"
+  },
+  "connection": null,
+  "capabilities": []
+}

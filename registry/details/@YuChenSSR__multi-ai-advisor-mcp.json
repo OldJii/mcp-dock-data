@@ -1,0 +1,29 @@
+{
+  "id": "@YuChenSSR/multi-ai-advisor-mcp",
+  "displayName": "Multi-Model Advisor",
+  "description": "Query multiple AI models simultaneously to gain diverse perspectives on your questions. Synthesize insights from various AI personas to enhance your decision-making process. Integrate seamlessly with Claude for a comprehensive advisory experience.",
+  "createdAt": "2026-01-16T12:42:51.162Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@YuChenSSR/multi-ai-advisor-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-available-models",
+      "description": "List all available models in Ollama that can be used with query-models"
+    },
+    {
+      "name": "query-models",
+      "description": "Query multiple AI models via Ollama and get their responses to compare perspectives"
+    }
+  ]
+}

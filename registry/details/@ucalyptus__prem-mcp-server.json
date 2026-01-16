@@ -2,7 +2,7 @@
   "id": "@ucalyptus/prem-mcp-server",
   "displayName": "Prem AI MCP Server",
   "description": "Integrate seamlessly with Prem AI's powerful features for chat completions and document management. Enhance your AI assistants with Retrieval-Augmented Generation capabilities and real-time streaming responses. Upload and manage documents effortlessly to enrich your interactions.",
-  "createdAt": "2026-01-16T07:32:06.040Z",
+  "createdAt": "2026-01-16T12:52:24.727Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ucalyptus/prem-mcp-server"

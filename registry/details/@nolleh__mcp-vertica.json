@@ -2,7 +2,7 @@
   "id": "@nolleh/mcp-vertica",
   "displayName": "Vertica Database Connector",
   "description": "Enable seamless interaction with Vertica databases by executing SQL queries, managing schema details, and handling large data streams efficiently. Manage database connections securely with support for SSL/TLS and fine-grained operation permissions. Streamline database operations and schema inspections directly from your MCP client.",
-  "createdAt": "2026-01-16T07:27:20.611Z",
+  "createdAt": "2026-01-16T12:45:27.196Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nolleh/mcp-vertica"

@@ -2,7 +2,7 @@
   "id": "thib/mcp-wayback-machine",
   "displayName": "mcp-wayback-machine",
   "description": "Save any URL to the Internet Archive and retrieve archived snapshots on demand. Search captures by date and get capture counts and history for any site. Preserve and audit web content without managing API keys.",
-  "createdAt": "2026-01-16T07:23:22.560Z",
+  "createdAt": "2026-01-16T12:40:07.111Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/thib/mcp-wayback-machine"

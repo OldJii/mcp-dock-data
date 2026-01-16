@@ -1,0 +1,89 @@
+{
+  "id": "@rashforddamion/rivalsearch",
+  "displayName": "rivalsearch",
+  "description": "",
+  "createdAt": "2026-01-16T12:52:49.469Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rashforddamion/rivalsearch"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "retrieve_content",
+      "description": "Enhanced content retrieval with support for single/multiple resources and image extraction.\n\nArgs:\n    resource: Single URL, list of URLs, or search query (e.g., \"search:python\")\n    limit: Maximum number of results for batch operations\n    extract_images: Whether to extract and process images with OCR"
+    },
+    {
+      "name": "stream_content",
+      "description": "Retrieve streaming content from WebSocket URLs."
+    },
+    {
+      "name": "google_search",
+      "description": "Advanced Google Search with Cloudflare bypass, rich snippets detection, and multi-engine fallback"
+    },
+    {
+      "name": "traverse_website",
+      "description": "Comprehensive website traversal with different modes for different use cases.\n\nArgs:\n    url: Website URL to traverse\n    mode: Traversal mode - \"research\" (general), \"docs\" (documentation), \"map\" (structure)\n    max_pages: Maximum number of pages to traverse\n    max_depth: Maximum depth for mapping mode"
+    },
+    {
+      "name": "analyze_content",
+      "description": "Analyze content and extract insights.\n\nArgs:\n    content: Content to analyze\n    analysis_type: Type of analysis - \"general\", \"sentiment\", \"technical\", \"business\"\n    extract_key_points: Whether to extract key points\n    summarize: Whether to create a summary"
+    },
+    {
+      "name": "research_topic",
+      "description": "End-to-end research workflow for a topic.\n\nArgs:\n    topic: Research topic\n    sources: Optional list of specific sources to use\n    max_sources: Maximum number of sources to research\n    include_analysis: Whether to include content analysis"
+    },
+    {
+      "name": "search_trends",
+      "description": "Search for Google Trends data for given keywords.\n\nArgs:\n    keywords: List of search terms to analyze\n    timeframe: Time range (e.g., 'today 12-m', 'today 5-y', 'now 1-d')\n    geo: Geographic location (e.g., 'US', 'GB', 'CA')\n\nReturns:\n    List of trend data for each keyword"
+    },
+    {
+      "name": "get_related_queries",
+      "description": "Get related queries for a keyword.\n\nArgs:\n    keyword: Search term to analyze\n    timeframe: Time range for analysis\n    geo: Geographic location\n\nReturns:\n    List of related queries with interest values"
+    },
+    {
+      "name": "get_interest_by_region",
+      "description": "Get interest by geographic region for a keyword.\n\nArgs:\n    keyword: Search term to analyze\n    resolution: Geographic resolution ('COUNTRY', 'REGION', 'CITY', 'DMA')\n    timeframe: Time range for analysis\n    geo: Geographic location filter\n\nReturns:\n    List of regions with interest values"
+    },
+    {
+      "name": "get_trending_searches",
+      "description": "Get trending searches for a location.\n\nArgs:\n    geo: Geographic location (e.g., 'US', 'GB', 'CA')\n\nReturns:\n    List of trending search terms"
+    },
+    {
+      "name": "export_trends_to_csv",
+      "description": "Export Google Trends data to CSV format (returns data instead of writing to file).\n\nArgs:\n    keywords: List of search terms\n    timeframe: Time range for data\n    geo: Geographic location\n    filename: Optional custom filename (for reference only)\n\nReturns:\n    Export result with data content"
+    },
+    {
+      "name": "export_trends_to_json",
+      "description": "Export Google Trends data to JSON format (returns data instead of writing to file).\n\nArgs:\n    keywords: List of search terms\n    timeframe: Time range for data\n    geo: Geographic location\n    filename: Optional custom filename (for reference only)\n\nReturns:\n    Export result with data content"
+    },
+    {
+      "name": "create_sql_table",
+      "description": "Create SQLite table structure with Google Trends data (returns schema instead of creating files).\n\nArgs:\n    keywords: List of search terms\n    timeframe: Time range for data\n    geo: Geographic location\n    table_name: Optional custom table name\n\nReturns:\n    SQL table creation result with schema and sample data"
+    },
+    {
+      "name": "get_available_timeframes",
+      "description": "Get list of available timeframes for Google Trends queries.\n\nReturns:\n    List of available timeframe options"
+    },
+    {
+      "name": "get_available_regions",
+      "description": "Get list of available geographic regions.\n\nReturns:\n    List of available region codes"
+    },
+    {
+      "name": "compare_keywords_comprehensive",
+      "description": "Comprehensive comparison of multiple keywords including trends, related queries, and regional interest.\n\nArgs:\n    keywords: List of keywords to compare\n    timeframe: Time range for analysis\n    geo: Geographic location\n\nReturns:\n    Comprehensive comparison data"
+    },
+    {
+      "name": "generate_llms_txt",
+      "description": "Generate LLMs.txt files for a website following the llmstxt.org specification.\n\nArgs:\n    url: Website URL to generate LLMs.txt for (supports various formats: https://example.com, example.com, @https://example.com, local file paths)\n\nReturns:\n    Generation result with file content and details"
+    },
+    {
+      "name": "comprehensive_research",
+      "description": "Perform comprehensive research using multiple tools and workflows"
+    }
+  ]
+}

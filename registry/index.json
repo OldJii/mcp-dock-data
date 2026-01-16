@@ -3474,15 +3474,6 @@
     "downloads": 647
   },
   {
-    "id": "smithery/test-server",
-    "displayName": "Unicorn or Bust",
-    "description": "Embark on a startup journey as a founder in this interactive simulation game. Navigate strategic challenges and make critical business decisions to grow your company. Enjoy a streamlined narrative experience focused on building the next big success.",
-    "author": "e99a8a47-0746-4982-aa0a-724bfcb87f88",
-    "iconUrl": null,
-    "verified": false,
-    "downloads": 647
-  },
-  {
     "id": "@kamath/cli-mcp",
     "displayName": "Local Terminal",
     "description": "Run terminal commands on your machine and get immediate output. Automate system tasks, inspect files, and manage processes from one place. Streamline command-line workflows without leaving your current context.",

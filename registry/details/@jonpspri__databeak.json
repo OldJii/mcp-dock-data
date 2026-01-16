@@ -1,0 +1,183 @@
+{
+  "id": "@jonpspri/databeak",
+  "displayName": "DataBeak",
+  "description": "Load and profile tabular data to quickly understand structure, quality, and trends. Explore columns with statistics, correlations, value distributions, and outlier detection to surface insights. Clean, transform, and export datasets with flexible filtering, grouping, and column operations.",
+  "createdAt": "2026-01-16T12:52:54.824Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jonpspri/databeak"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check DataBeak server health and availability with memory monitoring.\n\nReturns server status, session capacity, memory usage, and version information. Use before large\noperations to verify system readiness and resource availability."
+    },
+    {
+      "name": "get_server_info",
+      "description": "Get DataBeak server capabilities and supported operations.\n\nReturns server version, available tools, supported file formats, and resource limits. Use to\ndiscover what operations are available before planning workflows."
+    },
+    {
+      "name": "load_csv_from_url",
+      "description": "Load CSV file from URL into DataBeak session.\n\nDownloads and parses CSV data with security validation. Returns session ID and data preview for\nfurther operations."
+    },
+    {
+      "name": "load_csv_from_content",
+      "description": "Load CSV data from string content into DataBeak session.\n\nParses CSV data directly from string with validation. Returns session ID and data preview for\nfurther operations."
+    },
+    {
+      "name": "get_session_info",
+      "description": "Get comprehensive information about a specific session.\n\nReturns session metadata, data status, and configuration. Essential for session management and\nworkflow coordination."
+    },
+    {
+      "name": "get_cell_value",
+      "description": "Get value of specific cell with coordinate targeting.\n\nSupports column name or index targeting. Returns value with coordinates and data type\ninformation."
+    },
+    {
+      "name": "set_cell_value",
+      "description": "Set value of specific cell with coordinate targeting.\n\nSupports column name or index, tracks old and new values. Returns operation result with\ncoordinates and data type."
+    },
+    {
+      "name": "get_row_data",
+      "description": "Get data from specific row with optional column filtering.\n\nReturns complete row data or filtered by column list. Converts pandas types for JSON\nserialization."
+    },
+    {
+      "name": "get_column_data",
+      "description": "Get data from specific column with optional row range slicing.\n\nSupports row range filtering for focused analysis. Returns column values with range metadata."
+    },
+    {
+      "name": "insert_row",
+      "description": "Insert new row at specified index with multiple data formats.\n\nSupports dict, list, and JSON string input with null value handling. Returns insertion result\nwith before/after statistics."
+    },
+    {
+      "name": "delete_row",
+      "description": "Delete row at specified index with comprehensive tracking.\n\nCaptures deleted data for undo operations. Returns operation result with before/after\nstatistics."
+    },
+    {
+      "name": "update_row",
+      "description": "Update specific columns in row with selective updates.\n\nSupports partial column updates with change tracking. Returns old/new values for updated\ncolumns."
+    },
+    {
+      "name": "get_statistics",
+      "description": "Get comprehensive statistical summary of numerical columns.\n\nComputes descriptive statistics for all or specified numerical columns including\ncount, mean, standard deviation, min/max values, and percentiles. Optimized for\nAI workflows with clear statistical insights and data understanding.\n\nReturns:\n    Comprehensive statistical analysis with per-column summaries\n\nStatistical Metrics:\n    📊 Count: Number of non-null values\n    📈 Mean: Average value\n    📉 Std: Standard deviation (measure of spread)\n    🔢 Min/Max: Minimum and maximum values\n    📊 Percentiles: 25th, 50th (median), 75th quartiles\n\nExamples:\n    # Get statistics for all numeric columns\n    stats = await get_statistics(\"session_123\")\n\n    # Analyze specific columns only\n    stats = await get_statistics(\"session_123\", columns=[\"price\", \"quantity\"])\n\n    # Analyze all numeric columns (percentiles always included)\n    stats = await get_statistics(\"session_123\")\n\nAI Workflow Integration:\n    1. Essential for data understanding and quality assessment\n    2. Identifies data distribution and potential issues\n    3. Guides feature engineering and analysis decisions\n    4. Provides context for outlier detection thresholds"
+    },
+    {
+      "name": "get_column_statistics",
+      "description": "Get detailed statistical analysis for a single column.\n\nProvides focused statistical analysis for a specific column including\ndata type information, null value handling, and comprehensive numerical\nstatistics when applicable.\n\nReturns:\n    Detailed statistical analysis for the specified column\n\nColumn Analysis:\n    🔍 Data Type: Detected pandas data type\n    📊 Statistics: Complete statistical summary for numeric columns\n    🔢 Non-null Count: Number of valid (non-null) values\n    📈 Distribution: Statistical distribution characteristics\n\nExamples:\n    # Analyze a price column\n    stats = await get_column_statistics(ctx, \"price\")\n\n    # Analyze a categorical column\n    stats = await get_column_statistics(ctx, \"category\")\n\nAI Workflow Integration:\n    1. Deep dive analysis for specific columns of interest\n    2. Data quality assessment for individual features\n    3. Understanding column characteristics for modeling\n    4. Validation of data transformations"
+    },
+    {
+      "name": "get_correlation_matrix",
+      "description": "Calculate correlation matrix for numerical columns.\n\nComputes pairwise correlations between numerical columns using various\ncorrelation methods. Essential for understanding relationships between\nvariables and feature selection in analytical workflows.\n\nReturns:\n    Correlation matrix with pairwise correlation coefficients\n\nCorrelation Methods:\n    📊 Pearson: Linear relationships (default, assumes normality)\n    📈 Spearman: Monotonic relationships (rank-based, non-parametric)\n    🔄 Kendall: Concordant/discordant pairs (robust, small samples)\n\nExamples:\n    # Basic correlation analysis\n    corr = await get_correlation_matrix(ctx)\n\n    # Analyze specific columns with Spearman correlation\n    corr = await get_correlation_matrix(ctx,\n                                      columns=[\"price\", \"rating\", \"sales\"],\n                                      method=\"spearman\")\n\n    # Filter correlations above threshold\n    corr = await get_correlation_matrix(ctx, min_correlation=0.5)\n\nAI Workflow Integration:\n    1. Feature selection and dimensionality reduction\n    2. Multicollinearity detection before modeling\n    3. Understanding variable relationships\n    4. Data validation and quality assessment"
+    },
+    {
+      "name": "get_value_counts",
+      "description": "Get frequency distribution of values in a column.\n\nAnalyzes the distribution of values in a specified column, providing\ncounts and optionally percentages for each unique value. Essential for\nunderstanding categorical data and identifying common patterns.\n\nReturns:\n    Frequency distribution with counts/percentages for each unique value\n\nAnalysis Features:\n    🔢 Frequency Counts: Raw counts for each unique value\n    📊 Percentage Mode: Normalized frequencies as percentages\n    🎯 Top Values: Configurable limit for most frequent values\n    📈 Summary Stats: Total values, unique count, distribution insights\n\nExamples:\n    # Basic value counts\n    counts = await get_value_counts(ctx, \"category\")\n\n    # Get percentages for top 10 values\n    counts = await get_value_counts(ctx, \"status\",\n                                  normalize=True, top_n=10)\n\n    # Sort in ascending order\n    counts = await get_value_counts(ctx, \"grade\", ascending=True)\n\nAI Workflow Integration:\n    1. Categorical data analysis and encoding decisions\n    2. Data quality assessment (identifying rare values)\n    3. Understanding distribution for sampling strategies\n    4. Feature engineering insights for categorical variables"
+    },
+    {
+      "name": "detect_outliers",
+      "description": "Detect outliers in numerical columns using various algorithms.\n\nIdentifies data points that deviate significantly from the normal pattern\nusing statistical and machine learning methods. Essential for data quality\nassessment and anomaly detection in analytical workflows.\n\nReturns:\n    Detailed outlier analysis with locations and severity scores\n\nDetection Methods:\n    📊 Z-Score: Statistical method based on standard deviations\n    📈 IQR: Interquartile range method (robust to distribution)\n    🤖 Isolation Forest: ML-based method for high-dimensional data\n\nExamples:\n    # Basic outlier detection\n    outliers = await detect_outliers(ctx, [\"price\", \"quantity\"])\n\n    # Use IQR method with custom threshold\n    outliers = await detect_outliers(ctx, [\"sales\"],\n                                    method=\"iqr\", threshold=2.5)\n\nAI Workflow Integration:\n    1. Data quality assessment and cleaning\n    2. Anomaly detection for fraud/error identification\n    3. Data preprocessing for machine learning\n    4. Understanding data distribution characteristics"
+    },
+    {
+      "name": "profile_data",
+      "description": "Generate comprehensive data profile with statistical insights.\n\nCreates a complete analytical profile of the dataset including column\ncharacteristics, data types, null patterns, and statistical summaries.\nProvides holistic data understanding for analytical workflows.\n\nReturns:\n    Comprehensive data profile with multi-dimensional analysis\n\nProfile Components:\n    📊 Column Profiles: Data types, null patterns, uniqueness\n    📈 Statistical Summaries: Numerical column characteristics\n    🔗 Correlations: Inter-variable relationships (optional)\n    🎯 Outliers: Anomaly detection across columns (optional)\n    💾 Memory Usage: Resource consumption analysis\n\nExamples:\n    # Full data profile\n    profile = await profile_data(ctx)\n\n    # Quick profile without expensive computations\n    profile = await profile_data(ctx,\n                               include_correlations=False,\n                               include_outliers=False)\n\nAI Workflow Integration:\n    1. Initial data exploration and understanding\n    2. Automated data quality reporting\n    3. Feature engineering guidance\n    4. Data preprocessing strategy development"
+    },
+    {
+      "name": "group_by_aggregate",
+      "description": "Group data and compute aggregations for analytical insights.\n\nPerforms GROUP BY operations with multiple aggregation functions\nper column. Essential for segmentation analysis and understanding patterns\nacross different data groups.\n\nReturns:\n    Grouped aggregation results with statistics per group\n\nAggregation Functions:\n    📊 count, mean, median, sum, min, max\n    📈 std, var (statistical measures)\n    🎯 first, last (positional)\n    📋 nunique (unique count)\n\nExamples:\n    # Sales analysis by region\n    result = await group_by_aggregate(ctx,\n                                    group_by=[\"region\"],\n                                    aggregations={\"sales\": [\"sum\", \"mean\", \"count\"]})\n\n    # Multi-dimensional grouping\n    result = await group_by_aggregate(ctx,\n                                    group_by=[\"category\", \"region\"],\n                                    aggregations={\n                                        \"price\": [\"mean\", \"std\"],\n                                        \"quantity\": [\"sum\", \"count\"]\n                                    })\n\nAI Workflow Integration:\n    1. Segmentation analysis and market research\n    2. Feature engineering for categorical interactions\n    3. Data summarization for reporting and insights\n    4. Understanding group-based patterns and trends"
+    },
+    {
+      "name": "find_cells_with_value",
+      "description": "Find all cells containing a specific value for data discovery.\n\nSearches through the dataset to locate all occurrences of a specific value,\nproviding coordinates and context. Essential for data validation, quality\nchecking, and understanding data patterns.\n\nReturns:\n    Locations of all matching cells with coordinates and context\n\nSearch Features:\n    🎯 Exact Match: Precise value matching with type consideration\n    🔍 Substring Search: Flexible text-based search for string columns\n    📍 Coordinates: Row and column positions for each match\n    📊 Summary Stats: Total matches, columns searched, search parameters\n\nExamples:\n    # Find all cells with value \"ERROR\"\n    results = await find_cells_with_value(ctx, \"ERROR\")\n\n    # Substring search in specific columns\n    results = await find_cells_with_value(ctx, \"john\",\n                                        columns=[\"name\", \"email\"],\n                                        exact_match=False)\n\nAI Workflow Integration:\n    1. Data quality assessment and error detection\n    2. Pattern identification and data validation\n    3. Reference data location and verification\n    4. Data cleaning and preprocessing guidance"
+    },
+    {
+      "name": "get_data_summary",
+      "description": "Get comprehensive data overview and structural summary.\n\nProvides high-level overview of dataset structure, dimensions, data types,\nand memory usage. Essential first step in data exploration and analysis\nplanning workflows.\n\nReturns:\n    Comprehensive data overview with structural information\n\nSummary Components:\n    📏 Dimensions: Rows, columns, shape information\n    🔢 Data Types: Column type distribution and analysis\n    💾 Memory Usage: Resource consumption breakdown\n    👀 Preview: Sample rows for quick data understanding (optional)\n    📊 Overview: High-level dataset characteristics\n\nExamples:\n    # Full data summary with preview\n    summary = await get_data_summary(ctx)\n\n    # Structure summary without preview data\n    summary = await get_data_summary(ctx, include_preview=False)\n\nAI Workflow Integration:\n    1. Initial data exploration and understanding\n    2. Planning analytical approaches based on data structure\n    3. Resource planning for large dataset processing\n    4. Data quality initial assessment"
+    },
+    {
+      "name": "inspect_data_around",
+      "description": "Inspect data around a specific coordinate for contextual analysis.\n\nExamines the data surrounding a specific cell to understand context,\npatterns, and relationships. Useful for data validation, error investigation,\nand understanding local data patterns.\n\nReturns:\n    Contextual view of data around the specified coordinates\n\nInspection Features:\n    📍 Center Point: Specified cell as reference point\n    🔍 Radius View: Configurable area around center cell\n    📊 Data Context: Surrounding values for pattern analysis\n    🎯 Coordinates: Clear row/column reference system\n\nExamples:\n    # Inspect around a specific data point\n    context = await inspect_data_around(ctx, row=50,\n                                      column_name=\"price\", radius=3)\n\n    # Minimal context view\n    context = await inspect_data_around(ctx, row=10,\n                                      column_name=\"status\", radius=1)\n\nAI Workflow Integration:\n    1. Error investigation and data quality assessment\n    2. Pattern recognition in local data areas\n    3. Understanding data relationships and context\n    4. Validation of data transformations and corrections"
+    },
+    {
+      "name": "validate_schema",
+      "description": "Validate data against a schema definition using Pandera validation framework.\n\nThis function leverages Pandera's comprehensive validation capabilities to provide\nrobust data validation. The schema is dynamically converted to Pandera format\nand applied to the DataFrame for maximum validation coverage and reliability.\n\nFor more information on Pandera validation capabilities, see:\n- Pandera Documentation: https://pandera.readthedocs.io/\n- Check API: https://pandera.readthedocs.io/en/stable/reference/generated/pandera.api.checks.Check.html\n\nReturns:\n    ValidateSchemaResult with validation status and detailed error information"
+    },
+    {
+      "name": "check_data_quality",
+      "description": "Check data quality based on predefined or custom rules.\n\nReturns:\n    DataQualityResult with comprehensive quality assessment results"
+    },
+    {
+      "name": "find_anomalies",
+      "description": "Find anomalies in the data using multiple detection methods.\n\nReturns:\n    FindAnomaliesResult with comprehensive anomaly detection results"
+    },
+    {
+      "name": "filter_rows",
+      "description": "Filter rows using flexible conditions: comprehensive null value and text matching support.\n\nProvides powerful filtering capabilities optimized for AI-driven data analysis. Supports\nmultiple operators, logical combinations, and comprehensive null value handling.\n\nExamples:\n    # Numeric filtering\n    filter_rows(ctx, [{\"column\": \"age\", \"operator\": \">\", \"value\": 25}])\n\n    # Text filtering with null handling\n    filter_rows(ctx, [\n        {\"column\": \"name\", \"operator\": \"contains\", \"value\": \"Smith\"},\n        {\"column\": \"email\", \"operator\": \"is_not_null\"}\n    ], mode=\"and\")\n\n    # Multiple conditions with OR logic\n    filter_rows(ctx, [\n        {\"column\": \"status\", \"operator\": \"==\", \"value\": \"active\"},\n        {\"column\": \"priority\", \"operator\": \"==\", \"value\": \"high\"}\n    ], mode=\"or\")"
+    },
+    {
+      "name": "sort_data",
+      "description": "Sort data by one or more columns with comprehensive error handling.\n\nProvides flexible sorting capabilities with support for multiple columns\nand sort directions. Handles mixed data types appropriately and maintains\ndata integrity throughout the sorting process.\n\nExamples:\n    # Simple single column sort\n    sort_data(ctx, [\"age\"])\n\n    # Multi-column sort with different directions\n    sort_data(ctx, [\n        {\"column\": \"department\", \"ascending\": True},\n        {\"column\": \"salary\", \"ascending\": False}\n    ])\n\n    # Using SortColumn objects for type safety\n    sort_data(ctx, [\n        SortColumn(column=\"name\", ascending=True),\n        SortColumn(column=\"age\", ascending=False)\n    ])"
+    },
+    {
+      "name": "remove_duplicates",
+      "description": "Remove duplicate rows from the dataframe with comprehensive validation.\n\nProvides flexible duplicate removal with options for column subset selection\nand different keep strategies. Handles edge cases and provides detailed\nstatistics about the deduplication process.\n\nExamples:\n    # Remove exact duplicate rows\n    remove_duplicates(ctx)\n\n    # Remove duplicates based on specific columns\n    remove_duplicates(ctx, subset=[\"email\", \"name\"])\n\n    # Keep last occurrence instead of first\n    remove_duplicates(ctx, subset=[\"id\"], keep=\"last\")\n\n    # Remove all duplicates (keep none)\n    remove_duplicates(ctx, subset=[\"email\"], keep=\"none\")"
+    },
+    {
+      "name": "fill_missing_values",
+      "description": "Fill or remove missing values with comprehensive strategy support.\n\nProvides multiple strategies for handling missing data, including statistical\nimputation methods. Handles different data types appropriately and validates\nstrategy compatibility with column types.\n\nExamples:\n    # Drop rows with any missing values\n    fill_missing_values(ctx, strategy=\"drop\")\n\n    # Fill missing values with 0\n    fill_missing_values(ctx, strategy=\"fill\", value=0)\n\n    # Forward fill specific columns\n    fill_missing_values(ctx, strategy=\"forward\", columns=[\"price\", \"quantity\"])\n\n    # Fill with column mean for numeric columns\n    fill_missing_values(ctx, strategy=\"mean\", columns=[\"age\", \"salary\"])"
+    },
+    {
+      "name": "select_columns",
+      "description": "Select specific columns from dataframe, removing all others.\n\nValidates column existence and reorders by selection order. Returns selection details with\nbefore/after column counts."
+    },
+    {
+      "name": "rename_columns",
+      "description": "Rename columns in the dataframe.\n\nReturns:\n    Dict with rename details\n\nExamples:\n    # Using dictionary mapping\n    rename_columns(ctx, {\"old_col1\": \"new_col1\", \"old_col2\": \"new_col2\"})\n\n    # Rename multiple columns\n    rename_columns(ctx, {\n        \"FirstName\": \"first_name\",\n        \"LastName\": \"last_name\",\n        \"EmailAddress\": \"email\"\n    })"
+    },
+    {
+      "name": "add_column",
+      "description": "Add a new column to the dataframe.\n\nReturns:\n    ColumnOperationResult with operation details\n\nExamples:\n    # Add column with constant value\n    add_column(ctx, \"status\", \"active\")\n\n    # Add column with list of values\n    add_column(ctx, \"scores\", [85, 90, 78, 92, 88])\n\n    # Add computed column\n    add_column(ctx, \"total\", formula=\"price * quantity\")\n\n    # Add column with complex formula\n    add_column(ctx, \"full_name\", formula=\"first_name + ' ' + last_name\")"
+    },
+    {
+      "name": "remove_columns",
+      "description": "Remove columns from the dataframe.\n\nReturns:\n    ColumnOperationResult with removal details\n\nExamples:\n    # Remove single column\n    remove_columns(ctx, [\"temp_column\"])\n\n    # Remove multiple columns\n    remove_columns(ctx, [\"col1\", \"col2\", \"col3\"])\n\n    # Clean up after analysis\n    remove_columns(ctx, [\"_temp\", \"_backup\", \"old_value\"])"
+    },
+    {
+      "name": "change_column_type",
+      "description": "Change the data type of a column.\n\nReturns:\n    ColumnOperationResult with conversion details\n\nExamples:\n    # Convert string numbers to integers\n    change_column_type(ctx, \"age\", \"int\")\n\n    # Convert to float, replacing errors with NaN\n    change_column_type(ctx, \"price\", \"float\", errors=\"coerce\")\n\n    # Convert to datetime\n    change_column_type(ctx, \"date\", \"datetime\")\n\n    # Convert to boolean\n    change_column_type(ctx, \"is_active\", \"bool\")"
+    },
+    {
+      "name": "update_column",
+      "description": "Update values in a column using various operations with discriminated unions.\n\nReturns:\n    ColumnOperationResult with update details\n\nExamples:\n    # Using discriminated union - Replace operation\n    update_column(ctx, \"status\", {\n        \"type\": \"replace\",\n        \"pattern\": \"N/A\",\n        \"replacement\": \"Unknown\"\n    })\n\n    # Using discriminated union - Map operation\n    update_column(ctx, \"code\", {\n        \"type\": \"map\",\n        \"mapping\": {\"A\": \"Alpha\", \"B\": \"Beta\"}\n    })\n\n    # Using discriminated union - Fill operation\n    update_column(ctx, \"score\", {\n        \"type\": \"fillna\",\n        \"value\": 0\n    })\n\n    # Legacy format still supported\n    update_column(ctx, \"score\", {\n        \"operation\": \"fillna\",\n        \"value\": 0\n    })"
+    },
+    {
+      "name": "replace_in_column",
+      "description": "Replace patterns in a column with replacement text.\n\nReturns:\n    ColumnOperationResult with replacement details\n\nExamples:\n    # Replace with regex\n    replace_in_column(ctx, \"name\", r\"Mr\\.\", \"Mister\")\n\n    # Remove non-digits from phone numbers\n    replace_in_column(ctx, \"phone\", r\"\\D\", \"\", regex=True)\n\n    # Simple string replacement\n    replace_in_column(ctx, \"status\", \"N/A\", \"Unknown\", regex=False)\n\n    # Replace multiple spaces with single space\n    replace_in_column(ctx, \"description\", r\"\\s+\", \" \")"
+    },
+    {
+      "name": "extract_from_column",
+      "description": "Extract patterns from a column using regex with capturing groups.\n\nReturns:\n    ColumnOperationResult with extraction details\n\nExamples:\n    # Extract email parts\n    extract_from_column(ctx, \"email\", r\"(.+)@(.+)\")\n\n    # Extract code components\n    extract_from_column(ctx, \"product_code\", r\"([A-Z]{2})-(\\d+)\")\n\n    # Extract and expand into multiple columns\n    extract_from_column(ctx, \"full_name\", r\"(\\w+)\\s+(\\w+)\", expand=True)\n\n    # Extract year from date string\n    extract_from_column(ctx, \"date\", r\"\\d{4}\")"
+    },
+    {
+      "name": "split_column",
+      "description": "Split column values by delimiter.\n\nReturns:\n    ColumnOperationResult with split details\n\nExamples:\n    # Keep first part of split\n    split_column(ctx, \"full_name\", \" \", part_index=0)\n\n    # Keep last part\n    split_column(ctx, \"email\", \"@\", part_index=1)\n\n    # Expand into multiple columns\n    split_column(ctx, \"address\", \",\", expand_to_columns=True)\n\n    # Expand with custom column names\n    split_column(ctx, \"name\", \" \", expand_to_columns=True,\n                new_columns=[\"first_name\", \"last_name\"])"
+    },
+    {
+      "name": "transform_column_case",
+      "description": "Transform the case of text in a column.\n\nReturns:\n    ColumnOperationResult with transformation details\n\nExamples:\n    # Convert to uppercase\n    transform_column_case(ctx, \"code\", \"upper\")\n\n    # Convert names to title case\n    transform_column_case(ctx, \"name\", \"title\")\n\n    # Convert to lowercase for comparison\n    transform_column_case(ctx, \"email\", \"lower\")\n\n    # Capitalize sentences\n    transform_column_case(ctx, \"description\", \"capitalize\")"
+    },
+    {
+      "name": "strip_column",
+      "description": "Strip whitespace or specified characters from column values.\n\nReturns:\n    ColumnOperationResult with strip details\n\nExamples:\n    # Remove leading/trailing whitespace\n    strip_column(ctx, \"name\")\n\n    # Remove specific characters\n    strip_column(ctx, \"phone\", \"()\")\n\n    # Clean currency values\n    strip_column(ctx, \"price\", \"$,\")\n\n    # Remove quotes\n    strip_column(ctx, \"quoted_text\", \"'\\\"\")"
+    },
+    {
+      "name": "fill_column_nulls",
+      "description": "Fill null/NaN values in a specific column with a specified value.\n\nReturns:\n    ColumnOperationResult with fill details\n\nExamples:\n    # Fill missing names with \"Unknown\"\n    fill_column_nulls(ctx, \"name\", \"Unknown\")\n\n    # Fill missing ages with 0\n    fill_column_nulls(ctx, \"age\", 0)\n\n    # Fill missing status with default\n    fill_column_nulls(ctx, \"status\", \"pending\")\n\n    # Fill missing scores with -1\n    fill_column_nulls(ctx, \"score\", -1)"
+    }
+  ]
+}

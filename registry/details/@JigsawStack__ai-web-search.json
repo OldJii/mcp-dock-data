@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/ai-web-search",
+  "displayName": "JigsawStack AI Web Search",
+  "description": "Effortlessly search the Web and get access to high-quality results powered with AI. Learn more about this API here: https://jigsawstack.com/docs/api-reference/web/ai-search Get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "createdAt": "2026-01-16T12:51:42.304Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/ai-web-search"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "web-search",
+      "description": "Search the web"
+    }
+  ]
+}

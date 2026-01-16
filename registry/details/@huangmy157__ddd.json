@@ -1,0 +1,41 @@
+{
+  "id": "@huangmy157/ddd",
+  "displayName": "SFR Store",
+  "description": "Search SFR’s catalog using natural language and refine results with filters. View product and variant details, then build and update carts with shipping, discounts, and checkout. Get quick answers to store policies and verify the store domain for peace of mind.",
+  "createdAt": "2026-01-16T12:47:56.297Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@huangmy157/ddd"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_shop_catalog",
+      "description": "Search for products from the online store, hosted on Shopify.\n\nThis tool can be used to search for products using natural language queries, specific filter criteria, or both.\n\nBest practices:\n- Searches return available_filters which can be used for refined follow-up searches\n- When filtering, use ONLY the filters from available_filters in follow-up searches\n- For specific filter searches (category, variant option, product type, etc.), use simple terms without the filter name (e.g., \"red\" not \"red color\")\n- For filter-specific searches (e.g., \"find burton in snowboards\" or \"show me all available products in gray / green color\"), use a two-step approach:\n  1. Perform a normal search to discover available filters\n  2. If relevant filters are returned, do a second search using the proper filter (productType, category, variantOption, etc.) with just the specific search term\n- Results are paginated, with initial results limited to improve experience\n- Use the after parameter with endCursor to fetch additional pages when users request more results\n\nThe response includes product details, available variants, filter options, and pagination info.\n"
+    },
+    {
+      "name": "get_cart",
+      "description": "Get the cart including items, shipping options, discount info, and checkout url for a given cart id"
+    },
+    {
+      "name": "update_cart",
+      "description": "Perform updates to a cart, including adding/removing/updating line items, buyer information, shipping details, discount codes, gift cards and notes in one consolidated call. Shipping options become available after adding items and delivery address. When creating a new cart, only addItems is required."
+    },
+    {
+      "name": "search_shop_policies_and_faqs",
+      "description": "Used to get facts about the stores policies, products, or services.\nSome examples of questions you can ask are:\n  - What is your return policy?\n  - What is your shipping policy?\n  - What is your phone number?\n  - What are your hours of operation?\"\n"
+    },
+    {
+      "name": "get_product_details",
+      "description": "Look up a product by ID and optionally specify variant options to select a specific variant."
+    },
+    {
+      "name": "verify_store_domain",
+      "description": "Verify the store domain. You can call this tool to verify that a store domain is valid."
+    }
+  ]
+}

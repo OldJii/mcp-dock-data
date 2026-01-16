@@ -1,0 +1,89 @@
+{
+  "id": "@alexcz-a11y/jina-httpstreamable",
+  "displayName": "jina-httpstreamable",
+  "description": "Discover current information across the web and arXiv with powerful search, query expansion, and parallel exploration. Extract clean page content, capture screenshots, and find images to enrich your analysis. Rerank and deduplicate results and estimate page update times to keep insights relevant.",
+  "createdAt": "2026-01-16T12:37:10.797Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alexcz-a11y/jina-httpstreamable"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "bearerToken": {
+          "type": "string",
+          "description": "Jina API Key (optional, for higher rate limits)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "show_api_key",
+      "description": "Return the bearer token from the Authorization header of the MCP settings, which is used to debug."
+    },
+    {
+      "name": "primer",
+      "description": "Get up-to-date contextual information of the current session to provide localized, time-aware responses. Use this when you need to know the current time, user's location, or network environment to give more relevant and personalized information."
+    },
+    {
+      "name": "guess_datetime_url",
+      "description": "Guess the last updated or published datetime of a web page. This tool examines HTTP headers, HTML metadata, Schema.org data, visible dates, JavaScript timestamps, HTML comments, Git information, RSS/Atom feeds, sitemaps, and international date formats to provide the most accurate update time with confidence scores. Returns the best guess timestamp and confidence level."
+    },
+    {
+      "name": "capture_screenshot_url",
+      "description": "Capture high-quality screenshots of web pages in base64 encoded JPEG format. Use this tool when you need to visually inspect a website, take a snapshot for analysis, or show users what a webpage looks like."
+    },
+    {
+      "name": "read_url",
+      "description": "Extract and convert web page content to clean, readable markdown format. Perfect for reading articles, documentation, blog posts, or any web content. Use this when you need to analyze text content from websites, bypass paywalls, or get structured data."
+    },
+    {
+      "name": "search_web",
+      "description": "Search the entire web for current information, news, articles, and websites. Use this when you need up-to-date information, want to find specific websites, research topics, or get the latest news. Ideal for answering questions about recent events, finding resources, or discovering relevant content."
+    },
+    {
+      "name": "expand_query",
+      "description": "Expand and rewrite search queries based on an up-to-date query expansion model. This tool takes an initial query and returns multiple expanded queries that can be used for more diversed and deeper searches. Useful for improving deep research results by searching broader and deeper."
+    },
+    {
+      "name": "search_arxiv",
+      "description": "Search academic papers and preprints on arXiv repository. Perfect for finding research papers, scientific studies, technical papers, and academic literature. Use this when researching scientific topics, looking for papers by specific authors, or finding the latest research in fields like AI, physics, mathematics, computer science, etc."
+    },
+    {
+      "name": "search_images",
+      "description": "Search for images across the web, similar to Google Images. Use this when you need to find photos, illustrations, diagrams, charts, logos, or any visual content. Perfect for finding images to illustrate concepts, locating specific pictures, or discovering visual resources. Images are returned by default as small base64-encoded JPEG images."
+    },
+    {
+      "name": "parallel_search_web",
+      "description": "Run multiple web searches in parallel for comprehensive topic coverage and diverse perspectives. For best results, provide multiple search queries that explore different aspects of your topic. You can use expand_query to help generate diverse queries, or create them yourself."
+    },
+    {
+      "name": "parallel_search_arxiv",
+      "description": "Run multiple arXiv searches in parallel for comprehensive research coverage and diverse academic angles. For best results, provide multiple search queries that explore different research angles and methodologies. You can use expand_query to help generate diverse queries, or create them yourself."
+    },
+    {
+      "name": "parallel_read_url",
+      "description": "Read multiple web pages in parallel to extract clean content efficiently. For best results, provide multiple URLs that you need to extract simultaneously. This is useful for comparing content across multiple sources or gathering information from multiple pages at once."
+    },
+    {
+      "name": "sort_by_relevance",
+      "description": "Rerank a list of documents by relevance to a query using Jina Reranker API. Use this when you have multiple documents and want to sort them by how well they match a specific query or topic. Perfect for document retrieval, content filtering, or finding the most relevant information from a collection."
+    },
+    {
+      "name": "deduplicate_strings",
+      "description": "Get top-k semantically unique strings from a list using Jina embeddings and submodular optimization. Use this when you have many similar strings and want to select the most diverse subset that covers the semantic space. Perfect for removing duplicates, selecting representative samples, or finding diverse content."
+    },
+    {
+      "name": "deduplicate_images",
+      "description": "Get top-k semantically unique images (URLs or base64-encoded) using Jina CLIP v2 embeddings and submodular optimization. Use this when you have many visually similar images and want the most diverse subset."
+    }
+  ]
+}

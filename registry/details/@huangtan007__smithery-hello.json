@@ -2,7 +2,7 @@
   "id": "@huangtan007/smithery-hello",
   "displayName": "smithery-hello",
   "description": "Provide a demo implementation of an MCP server showcasing basic MCP features. Enable integration with LLMs by exposing simple tools and resources for testing and development purposes. Facilitate understanding and experimentation with the Model Context Protocol.",
-  "createdAt": "2026-01-16T07:23:13.866Z",
+  "createdAt": "2026-01-16T12:39:54.206Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@huangtan007/smithery-hello"

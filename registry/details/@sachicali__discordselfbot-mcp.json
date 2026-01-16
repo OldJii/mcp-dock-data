@@ -2,7 +2,7 @@
   "id": "@sachicali/discordselfbot-mcp",
   "displayName": "Discord Selfbot MCP Server",
   "description": "Enable interaction with Discord through a selfbot interface using the Model Context Protocol. Automate and extend Discord functionalities by integrating with MCP-compatible clients. Leverage discord.js-selfbot-v13 to provide seamless Discord operations within the MCP framework.",
-  "createdAt": "2026-01-16T07:24:29.089Z",
+  "createdAt": "2026-01-16T12:41:41.152Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sachicali/discordselfbot-mcp"

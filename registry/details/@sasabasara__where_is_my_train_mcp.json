@@ -2,7 +2,7 @@
   "id": "@sasabasara/where_is_my_train_mcp",
   "displayName": "Where's my train? MTA Guide",
   "description": "Real-time NYC subway intel at your fingertips: stations, arrivals, service alerts, and route planning. \n\nWhy Use It\n\nYou’re in your AI-powered IDE, mid-flow, when that little voice in your head goes: “Wait… is my train even running?” Instead of doom-scrolling Twitter or refreshing three different apps, just ask this MCP. Live trains and service alerts, right when you need them.",
-  "createdAt": "2026-01-16T07:20:28.127Z",
+  "createdAt": "2026-01-16T12:35:55.436Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sasabasara/where_is_my_train_mcp"

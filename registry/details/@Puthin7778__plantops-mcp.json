@@ -2,7 +2,7 @@
   "id": "@Puthin7778/plantops-mcp",
   "displayName": "Plantops GraphQL Explorer",
   "description": "Explore and query the Plantops GraphQL API with schema introspection, field discovery, and mutation browsing. Inspect complex types and arguments to craft accurate requests. Run queries directly to validate responses and speed up integration.",
-  "createdAt": "2026-01-16T07:22:15.495Z",
+  "createdAt": "2026-01-16T12:38:26.616Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Puthin7778/plantops-mcp"

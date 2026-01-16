@@ -1,0 +1,12 @@
+{
+  "id": "@askAITHENA/gyana-universal-vectorkb",
+  "displayName": "gyana-universal-vectorkb",
+  "description": "# Gyana Universal VectorKB MCP Server\n\nA unified WebSocket-based MCP (Model Context Protocol) server for building and searching vector knowledge bases from URLs through a single endpoint with secure access, usage tracking, and automatic vector database export.",
+  "createdAt": "2026-01-16T12:58:31.811Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@askAITHENA/gyana-universal-vectorkb"
+  },
+  "connection": null,
+  "capabilities": []
+}

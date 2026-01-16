@@ -1,0 +1,12 @@
+{
+  "id": "@aynul-abedin/sticky-note-mcp-server",
+  "displayName": "sticky-note-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:04:50.304Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aynul-abedin/sticky-note-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

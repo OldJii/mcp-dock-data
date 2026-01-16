@@ -2,7 +2,7 @@
   "id": "kernel",
   "displayName": "Kernel",
   "description": "Deploy and manage Kernel apps, automate browsers, and search documentation with Kernel. Securely run workflows, monitor deployments, and spin up sandboxed browser sessions, all instantly accessible through a hosted service built for AI-native automation.",
-  "createdAt": "2026-01-16T07:27:47.727Z",
+  "createdAt": "2026-01-16T12:46:00.545Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/kernel"

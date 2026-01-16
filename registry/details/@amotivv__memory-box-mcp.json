@@ -1,0 +1,91 @@
+{
+  "id": "@amotivv/memory-box-mcp",
+  "displayName": "Memory Box MCP Server",
+  "description": "Save, search, and format memories with semantic understanding. Enhance your memory management by leveraging advanced semantic search capabilities directly from Cline. Organize and retrieve your memories efficiently with structured formatting and detailed context.",
+  "createdAt": "2026-01-16T12:50:12.211Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@amotivv/memory-box-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "memoryBoxToken"
+      ],
+      "properties": {
+        "systemPrompt": {
+          "type": "string",
+          "description": "Optional custom system prompt.",
+          "default": ""
+        },
+        "defaultBucket": {
+          "type": "string",
+          "description": "Default bucket to store or query memories.",
+          "default": "General"
+        },
+        "memoryBoxToken": {
+          "type": "string",
+          "description": "Token for authenticating with the Memory Box instance."
+        },
+        "memoryBoxApiUrl": {
+          "type": "string",
+          "description": "URL for the Memory Box instance.",
+          "default": "https://memorybox.amotivv.ai"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "save_memory",
+      "description": "Save a memory to Memory Box"
+    },
+    {
+      "name": "search_memories",
+      "description": "Search for memories using semantic search"
+    },
+    {
+      "name": "get_all_memories",
+      "description": "Retrieve all memories with pagination support"
+    },
+    {
+      "name": "get_bucket_memories",
+      "description": "Get memories from a specific bucket"
+    },
+    {
+      "name": "get_related_memories",
+      "description": "Find semantically similar memories to a specific memory"
+    },
+    {
+      "name": "check_memory_status",
+      "description": "Check the processing status of a memory"
+    },
+    {
+      "name": "get_usage_stats",
+      "description": "Retrieve user usage statistics and plan information"
+    },
+    {
+      "name": "get_buckets",
+      "description": "Retrieve a list of all available buckets"
+    },
+    {
+      "name": "create_bucket",
+      "description": "Create a new bucket for organizing memories"
+    },
+    {
+      "name": "delete_bucket",
+      "description": "Delete a bucket (empty by default, use force to delete with content)"
+    },
+    {
+      "name": "update_memory",
+      "description": "Update an existing memory including text, bucket, and relationships"
+    },
+    {
+      "name": "delete_memory",
+      "description": "Delete a specific memory"
+    }
+  ]
+}

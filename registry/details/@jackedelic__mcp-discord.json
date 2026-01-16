@@ -2,7 +2,7 @@
   "id": "@jackedelic/mcp-discord",
   "displayName": "Discord Integration Server",
   "description": "Enable AI assistants to interact seamlessly with Discord by managing servers, channels, messages, reactions, and webhooks. Send and read messages, create and delete channels or forum posts, and handle webhooks to automate Discord workflows. Simplify Discord bot operations through a standardized MCP interface.",
-  "createdAt": "2026-01-16T07:20:50.650Z",
+  "createdAt": "2026-01-16T12:36:26.788Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jackedelic/mcp-discord"

@@ -2,7 +2,7 @@
   "id": "@zwldarren/akshare-one-mcp",
   "displayName": "AKShare One MCP Server",
   "description": "Provide access to Chinese stock market data including historical prices, real-time data, news, and financial statements. Retrieve comprehensive financial information for stocks with flexible parameters. Enhance your financial analysis and decision-making with up-to-date market insights.",
-  "createdAt": "2026-01-16T07:20:48.501Z",
+  "createdAt": "2026-01-16T12:36:24.135Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zwldarren/akshare-one-mcp"

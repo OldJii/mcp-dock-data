@@ -2,7 +2,7 @@
   "id": "@WebpageFX/ltc-mcp-server",
   "displayName": "LTC Catalog",
   "description": "Fetch detailed product data from the LTC catalog by ProductNo. Discover all items currently on sale to power merchandising and pricing workflows. Use rich attributes like pricing, categories, and availability to filter and recommend products.",
-  "createdAt": "2026-01-16T07:27:13.703Z",
+  "createdAt": "2026-01-16T12:45:18.704Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@WebpageFX/ltc-mcp-server"

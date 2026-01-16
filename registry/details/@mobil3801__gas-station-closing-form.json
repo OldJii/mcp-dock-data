@@ -1,0 +1,54 @@
+{
+  "id": "@mobil3801/gas-station-closing-form",
+  "displayName": "gas-station-closing-form",
+  "description": "Connect to your Supabase project to explore and query your database. List tables, inspect schemas, and execute queries to get answers fast. Check connection status and streamline everyday data tasks from one place.",
+  "createdAt": "2026-01-16T12:52:01.890Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mobil3801/gas-station-closing-form"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "supabaseUrl",
+        "supabaseServiceRoleKey"
+      ],
+      "properties": {
+        "supabaseUrl": {
+          "type": "string",
+          "description": "Supabase project URL"
+        },
+        "supabaseAnonKey": {
+          "type": "string",
+          "description": "Supabase anonymous key"
+        },
+        "supabaseServiceRoleKey": {
+          "type": "string",
+          "description": "Supabase service role key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_connection",
+      "description": "Check the connection status to Supabase"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the database"
+    },
+    {
+      "name": "query_database",
+      "description": "Execute a database query on Supabase tables"
+    },
+    {
+      "name": "get_table_schema",
+      "description": "Get the schema information for a specific table"
+    }
+  ]
+}

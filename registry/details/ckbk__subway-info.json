@@ -2,7 +2,7 @@
   "id": "ckbk/subway-info",
   "displayName": "Subway Info NYC",
   "description": "A comprehensive New York City subway information portal providing riders with real-time service status, line maps, station guides, and transit tips across all MTA subway routes. Designed for both commuters and visitors, it offers up-to-date train arrival times, planned service changes, route details, and practical guidance on navigating the subway system. The NYC subway operates 24/7 across 472 stations on lines identified by letters and numbers, making this resource useful for trip planning and daily travel in the city. ",
-  "createdAt": "2026-01-16T07:36:18.468Z",
+  "createdAt": "2026-01-16T12:58:21.846Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/ckbk/subway-info"

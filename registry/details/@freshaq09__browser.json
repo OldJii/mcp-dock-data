@@ -1,0 +1,12 @@
+{
+  "id": "@freshaq09/browser",
+  "displayName": "browser",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:55.073Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@freshaq09/browser"
+  },
+  "connection": null,
+  "capabilities": []
+}

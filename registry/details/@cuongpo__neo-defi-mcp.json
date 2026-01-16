@@ -1,0 +1,74 @@
+{
+  "id": "@cuongpo/neo-defi-mcp",
+  "displayName": "neo-defi-mcp",
+  "description": "Swap tokens on the NEO blockchain with slippage and deadline controls. View balances and account details for your wallet. Use your own wallet and RPC endpoint for secure, direct execution.",
+  "createdAt": "2026-01-16T12:51:37.745Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/neo-defi-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "privateKey"
+      ],
+      "properties": {
+        "rpcUrl": {
+          "type": "string",
+          "description": "NEO RPC endpoint URL",
+          "default": "https://mainnet1.neo.coz.io:443"
+        },
+        "privateKey": {
+          "type": "string",
+          "description": "NEO wallet private key (WIF format)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "swap",
+      "description": "Execute a token swap on the NEO blockchain using the specified DEX contract"
+    },
+    {
+      "name": "addLiquidity",
+      "description": "Add liquidity to a token pair on the NEO blockchain DEX"
+    },
+    {
+      "name": "stake",
+      "description": "Stake liquidity pool token (bNEO-TTM-1940) to the staking contract"
+    },
+    {
+      "name": "getPair",
+      "description": "Get detailed information about a token pair from the DEX"
+    },
+    {
+      "name": "getTokens",
+      "description": "Get a list of all available tokens on the DEX"
+    },
+    {
+      "name": "getAllTokenPrices",
+      "description": "Get current prices for all tokens on the DEX"
+    },
+    {
+      "name": "getTokenPrice",
+      "description": "Get the current price for a specific token"
+    },
+    {
+      "name": "getTokenPriceHistory",
+      "description": "Get historical price data for a specific token"
+    },
+    {
+      "name": "getAllPairs",
+      "description": "Get a list of all available trading pairs on the DEX"
+    },
+    {
+      "name": "get-account-info",
+      "description": "Get information about the configured NEO account"
+    }
+  ]
+}

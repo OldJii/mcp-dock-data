@@ -2,7 +2,7 @@
   "id": "@recraft-ai/mcp-recraft-server",
   "displayName": "Recraft",
   "description": "Generate and edit high-quality raster and vector images using Recraft's advanced tools. Create custom styles, vectorize images, remove or replace backgrounds, and upscale images seamlessly. Enhance your creative workflows by integrating these powerful image operations into your MCP Client.",
-  "createdAt": "2026-01-16T07:29:58.723Z",
+  "createdAt": "2026-01-16T12:49:18.419Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@recraft-ai/mcp-recraft-server"

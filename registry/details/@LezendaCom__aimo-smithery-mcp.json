@@ -1,0 +1,12 @@
+{
+  "id": "@LezendaCom/aimo-smithery-mcp",
+  "displayName": "aimo-smithery-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:07:17.488Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LezendaCom/aimo-smithery-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

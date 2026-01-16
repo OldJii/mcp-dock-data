@@ -1,0 +1,70 @@
+{
+  "id": "@SerPepe/bera-mcp",
+  "displayName": "Ask Bera",
+  "description": "Ask Bera MCP is a powerful Model Context Protocol (MCP) server that gives AI agents instant access to the entire Berachain ecosystem. Built with RAG (Retrieval Augmented Generation), it's like having a knowledgeable bear by your side that never forgets where the honey is—or in this case, where all the documentation lives!\n\nWhether you're building DeFi protocols, integrating oracles, or deploying smart contracts, Bera MCP helps you find answers faster than you can say \"Honey!\" 🍯",
+  "createdAt": "2026-01-16T12:46:35.615Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SerPepe/bera-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "openrouterApiKey",
+        "upstashUrl",
+        "upstashToken"
+      ],
+      "properties": {
+        "topK": {
+          "type": "integer",
+          "description": "Number of top results to retrieve for RAG queries. Optional, defaults to 5. Can also be set via TOP_K environment variable."
+        },
+        "llmModel": {
+          "type": "string",
+          "description": "LLM model to use for generating answers. Optional, defaults to \"google/gemini-2.5-flash-preview-09-2025\". Can also be set via LLM_MODEL environment variable."
+        },
+        "chunkSize": {
+          "type": "integer",
+          "description": "Document chunk size for indexing. Optional, defaults to 1000. Can also be set via CHUNK_SIZE environment variable."
+        },
+        "upstashUrl": {
+          "type": "string",
+          "description": "Your Upstash Vector REST URL. Required if UPSTASH_VECTOR_REST_URL environment variable is not set. Get your URL from your Upstash dashboard."
+        },
+        "chunkOverlap": {
+          "type": "integer",
+          "description": "Document chunk overlap for indexing. Optional, defaults to 200. Can also be set via CHUNK_OVERLAP environment variable."
+        },
+        "upstashToken": {
+          "type": "string",
+          "description": "Your Upstash Vector REST token. Required if UPSTASH_VECTOR_REST_TOKEN environment variable is not set. Get your token from your Upstash dashboard."
+        },
+        "openrouterApiKey": {
+          "type": "string",
+          "description": "Your OpenRouter API key. Required if OPENROUTER_API_KEY environment variable is not set. Get your key from https://openrouter.ai/keys"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_docs",
+      "description": "Search Berachain documentation and guides using semantic search. Returns the most relevant document chunks with their metadata including file paths and section titles."
+    },
+    {
+      "name": "get_doc_section",
+      "description": "Retrieve a specific documentation section by file path. Useful when you know the exact location of the documentation you need."
+    },
+    {
+      "name": "ask_berachain",
+      "description": "Ask any question about Berachain development and get an AI-powered answer. This wizard tool uses RAG to search documentation and generates comprehensive, contextual answers using an LLM. Perfect for getting help with Berachain concepts, code examples, integration guides, and more."
+    }
+  ]
+}

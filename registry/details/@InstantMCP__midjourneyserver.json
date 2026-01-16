@@ -1,0 +1,65 @@
+{
+  "id": "@InstantMCP/midjourneyserver",
+  "displayName": "Midjourney  MCP Server",
+  "description": "Enable your AI assistant to generate stunning images and perform various actions using Midjourney's capabilities. Interact seamlessly with the MCP to create, modify, and check prompts for your creative projects.",
+  "createdAt": "2026-01-16T12:48:37.183Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@InstantMCP/midjourneyserver"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Go to InstantMcp.com and create an account. Then go to the API Keys page and create an API Key."
+        },
+        "logLevel": {
+          "type": "string",
+          "description": "Log level for the server (e.g., debug, info, warn, error).",
+          "default": "info"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "midjourney_imagine",
+      "description": "Generate up to 4 images from a text prompt using Midjourney's image generation capabilities."
+    },
+    {
+      "name": "midjourney_action",
+      "description": "Perform operations like upsampling, variations, zoom out, etc. on Midjourney-generated images."
+    },
+    {
+      "name": "midjourney_seed",
+      "description": "Get the seed value from a Midjourney-generated image, which can be used for reproducibility."
+    },
+    {
+      "name": "midjourney_blend",
+      "description": "Upload 2-5 images and combine them into a new image based on the concept and aesthetic of each image."
+    },
+    {
+      "name": "midjourney_describe",
+      "description": "Upload an image and generate four prompts based on the image."
+    },
+    {
+      "name": "midjourney_inpaint",
+      "description": "Modify specific regions of an image using a mask and optional prompt."
+    },
+    {
+      "name": "midjourney_fetch_job",
+      "description": "Fetches the result status and details of a previously submitted Midjourney job using its Job ID."
+    },
+    {
+      "name": "midjourney_prompt_check",
+      "description": "Checks if a given text prompt is compliant with Midjourney rules before potentially using it for generation. This is a free check."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@kodey-ai/salesforce-mcp-server",
   "displayName": "Salesforce SOQL",
   "description": "Run SOQL queries against your Salesforce org to retrieve records and insights. Explore objects, filter data, and troubleshoot CRM issues without leaving your workflow. Save time by querying accounts, opportunities, and custom objects on demand.",
-  "createdAt": "2026-01-16T07:29:18.599Z",
+  "createdAt": "2026-01-16T12:48:20.477Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp-server"

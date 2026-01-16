@@ -1,0 +1,69 @@
+{
+  "id": "@powerdrillai/powerdrill-mcp",
+  "displayName": "Powerdrill MCP Server",
+  "description": "Authenticate and interact with your Powerdrill datasets effortlessly. List datasets, get detailed information, and create jobs using natural language questions. Enhance your data analysis capabilities with seamless integration into your existing tools.",
+  "createdAt": "2026-01-16T12:46:19.687Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@powerdrillai/powerdrill-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "powerdrillUserId",
+        "powerdrillProjectApiKey"
+      ],
+      "properties": {
+        "powerdrillUserId": {
+          "type": "string",
+          "description": "Your Powerdrill User ID to authenticate with Powerdrill."
+        },
+        "powerdrillProjectApiKey": {
+          "type": "string",
+          "description": "Your Powerdrill Project API Key for secure access."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mcp_powerdrill_list_datasets",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_get_dataset_overview",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_create_job",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_create_session",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_list_data_sources",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_list_sessions",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_create_dataset",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_create_data_source_from_local_file",
+      "description": ""
+    },
+    {
+      "name": "mcp_powerdrill_delete_dataset",
+      "description": ""
+    }
+  ]
+}

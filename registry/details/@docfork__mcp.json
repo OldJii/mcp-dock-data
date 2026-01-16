@@ -2,7 +2,7 @@
   "id": "@docfork/mcp",
   "displayName": "Docfork",
   "description": "Up-to-date documentation for AI Agents. Just add `use docfork` to your prompt for accurate and relevant answers.",
-  "createdAt": "2026-01-16T07:20:30.058Z",
+  "createdAt": "2026-01-16T12:35:58.121Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@docfork/mcp"

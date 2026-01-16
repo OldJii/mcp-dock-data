@@ -1,0 +1,12 @@
+{
+  "id": "@ahump20/mlb-gameday-bot",
+  "displayName": "mlb-gameday-bot",
+  "description": "",
+  "createdAt": "2026-01-16T13:00:31.644Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ahump20/mlb-gameday-bot"
+  },
+  "connection": null,
+  "capabilities": []
+}

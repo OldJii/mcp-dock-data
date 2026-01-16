@@ -1,0 +1,25 @@
+{
+  "id": "@kongyo2/zod",
+  "displayName": "Inkeep Zod v4",
+  "description": "Search Zod v4 documentation and public references. Ask targeted questions about features, concepts, and troubleshooting to get concise answers. Accelerate schema design and validation workflows in your project.",
+  "createdAt": "2026-01-16T12:39:09.472Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kongyo2/zod"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search-zod-v4-docs",
+      "description": "Use this tool to do a semantic search for reference content related to Zod (v4). The results provided will be extracts from documentation sites and other public sources like GitHub. The content may not fully answer your question -- be circumspect when reviewing and interpreting these extracts before using them in your response."
+    },
+    {
+      "name": "ask-question-about-zod-v4",
+      "description": "Use this tool to ask a question about Zod (v4) to an AI Support Agent that is knowledgeable about Zod (v4). Use this tool to ask specific troubleshooting, feature capability, or conceptual questions. Be specific and provide the minimum context needed to address your question in full"
+    }
+  ]
+}

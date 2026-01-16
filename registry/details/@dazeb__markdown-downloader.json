@@ -2,7 +2,7 @@
   "id": "@dazeb/markdown-downloader",
   "displayName": "Markdown Downloader",
   "description": "Download webpages as markdown files effortlessly. Convert web content into markdown format with a simple command, and manage your downloads with ease. Enjoy a configurable download directory and automatic date-stamped filenames for organized storage.",
-  "createdAt": "2026-01-16T07:21:12.069Z",
+  "createdAt": "2026-01-16T12:36:58.085Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dazeb/markdown-downloader"

@@ -1,0 +1,16 @@
+{
+  "id": "@chirag127/mcp-hierarchical-scraper",
+  "displayName": "mcp-hierarchical-scraper",
+  "description": "Crawl websites recursively to build a hierarchical map of pages. Convert HTML into clean, LLM-ready Markdown while stripping boilerplate. Accelerate research, grounding, and retrieval workflows with high-quality web context.",
+  "createdAt": "2026-01-16T12:46:29.084Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chirag127/mcp-hierarchical-scraper"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

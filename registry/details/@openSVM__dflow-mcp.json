@@ -1,0 +1,124 @@
+{
+  "id": "@openSVM/dflow-mcp",
+  "displayName": "dflow-mcp",
+  "description": "Access real-time and historical https://kalshi.com prediction market data across events, markets, and trades. Analyze forecasts and candlestick time series to track sentiment and price action. Search and filter by tickers, mints, categories, and sports to quickly find the data you need. ",
+  "createdAt": "2026-01-16T12:51:16.764Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@openSVM/dflow-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "apiUrl": {
+          "type": "string",
+          "description": "Base URL for the Prediction Market Metadata API",
+          "default": "https://prediction-markets-api.dflow.net"
+        },
+        "requestTimeout": {
+          "type": "number",
+          "description": "Timeout for API requests in milliseconds",
+          "default": 30000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_event",
+      "description": "Get a single event by ticker. Returns event metadata including series ticker, subtitle, markets, strike information and volume."
+    },
+    {
+      "name": "get_events",
+      "description": "Get a paginated list of all events with optional filtering and sorting."
+    },
+    {
+      "name": "get_market",
+      "description": "Get details of a market by ticker."
+    },
+    {
+      "name": "get_market_by_mint",
+      "description": "Get a market by looking up its mint address."
+    },
+    {
+      "name": "get_markets",
+      "description": "Get a paginated list of markets with optional filtering."
+    },
+    {
+      "name": "get_markets_batch",
+      "description": "Get multiple markets by tickers and/or mint addresses (up to 100 results)."
+    },
+    {
+      "name": "get_trades",
+      "description": "Get a paginated list of trades across markets with optional filtering."
+    },
+    {
+      "name": "get_trades_by_mint",
+      "description": "Get trades for a market identified by a mint address."
+    },
+    {
+      "name": "get_forecast_percentile_history",
+      "description": "Get historical raw and formatted forecast numbers for an event at specified percentiles."
+    },
+    {
+      "name": "get_forecast_percentile_history_by_mint",
+      "description": "Get forecast history by looking up an event using a market mint address."
+    },
+    {
+      "name": "get_event_candlesticks",
+      "description": "Get event candlesticks from the Kalshi API. Resolves series ticker automatically."
+    },
+    {
+      "name": "get_market_candlesticks",
+      "description": "Get market candlesticks. Resolves series ticker automatically."
+    },
+    {
+      "name": "get_market_candlesticks_by_mint",
+      "description": "Get candlesticks by looking up a market by mint address."
+    },
+    {
+      "name": "get_live_data",
+      "description": "Get live data from the Kalshi API for specific milestones."
+    },
+    {
+      "name": "get_live_data_by_event",
+      "description": "Get live data for all milestones of an event."
+    },
+    {
+      "name": "get_live_data_by_mint",
+      "description": "Get live data by looking up an event from a market mint address."
+    },
+    {
+      "name": "get_series",
+      "description": "Get all series templates with optional filtering."
+    },
+    {
+      "name": "get_series_by_ticker",
+      "description": "Get a single series by its ticker."
+    },
+    {
+      "name": "get_outcome_mints",
+      "description": "Get a flat list of yes and no outcome mint pubkeys."
+    },
+    {
+      "name": "filter_outcome_mints",
+      "description": "Filter a list of addresses and return only outcome mints."
+    },
+    {
+      "name": "get_tags_by_categories",
+      "description": "Get a mapping of series categories to tags."
+    },
+    {
+      "name": "get_filters_by_sports",
+      "description": "Get filtering options for each sport including scopes and competitions."
+    },
+    {
+      "name": "search_events",
+      "description": "Search events with nested markets by title or ticker."
+    }
+  ]
+}

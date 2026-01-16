@@ -1,0 +1,12 @@
+{
+  "id": "wutong/presidio",
+  "displayName": "presidio",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:44.829Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/wutong/presidio"
+  },
+  "connection": null,
+  "capabilities": []
+}

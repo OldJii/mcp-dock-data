@@ -1,0 +1,80 @@
+{
+  "id": "@AI-Zebra/computer-use-mcp",
+  "displayName": "Computer Use Virtual Desktop Server",
+  "description": "Control virtual computers through a cloud-based desktop environment. Enable agents to perform mouse, keyboard, and terminal actions programmatically. Facilitate seamless interaction with virtual machines for automation and testing purposes.",
+  "createdAt": "2026-01-16T12:50:55.821Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AI-Zebra/computer-use-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "initialize_computer",
+      "description": "Initialize a virtual computer with the provided API key."
+    },
+    {
+      "name": "get_screenshot",
+      "description": "Take a screenshot of the virtual computer's display."
+    },
+    {
+      "name": "left_click",
+      "description": "Perform a left mouse click at the specified coordinates."
+    },
+    {
+      "name": "right_click",
+      "description": "Perform a right mouse click at the specified coordinates."
+    },
+    {
+      "name": "double_click",
+      "description": "Perform a double click at the specified coordinates."
+    },
+    {
+      "name": "scroll",
+      "description": "Scroll in the specified direction and amount."
+    },
+    {
+      "name": "type_text",
+      "description": "Type the specified text into the virtual computer."
+    },
+    {
+      "name": "press_key",
+      "description": "Press a key or key combination (e.g., 'Enter', 'ctrl+c')."
+    },
+    {
+      "name": "wait",
+      "description": "Wait for the specified number of seconds."
+    },
+    {
+      "name": "execute_bash",
+      "description": "Execute a bash command on the virtual computer."
+    },
+    {
+      "name": "restart_computer",
+      "description": "Restart the virtual computer."
+    },
+    {
+      "name": "shutdown_computer",
+      "description": "Shutdown and terminate the virtual computer instance."
+    },
+    {
+      "name": "get_status",
+      "description": "Get the current status of the virtual computer."
+    },
+    {
+      "name": "list_sessions",
+      "description": "List all active computer sessions."
+    },
+    {
+      "name": "prompt",
+      "description": "Control the computer with natural language using an AI agent."
+    }
+  ]
+}

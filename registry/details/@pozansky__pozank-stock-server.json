@@ -1,0 +1,12 @@
+{
+  "id": "@pozansky/pozank-stock-server",
+  "displayName": "pozank-stock-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:37.410Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pozansky/pozank-stock-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

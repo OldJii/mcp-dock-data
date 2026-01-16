@@ -2,7 +2,7 @@
   "id": "chris/sdk",
   "displayName": "sdk",
   "description": "Analyze your project to detect its language and deployment needs. Generate and validate Smithery-ready configuration, with the option to initialize files when you approve. Follow a guided workflow to convert existing setups and deploy with confidence.",
-  "createdAt": "2026-01-16T07:24:05.574Z",
+  "createdAt": "2026-01-16T12:41:07.531Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/chris/sdk"

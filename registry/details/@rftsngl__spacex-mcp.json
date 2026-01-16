@@ -2,7 +2,7 @@
   "id": "@rftsngl/spacex-mcp",
   "displayName": "SpaceX Launch Tracker",
   "description": "Track SpaceX’s latest and upcoming launches. Fetch company information to add context. Keep dashboards, reports, and briefings current with up-to-date launch data.",
-  "createdAt": "2026-01-16T07:25:05.963Z",
+  "createdAt": "2026-01-16T12:42:30.465Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rftsngl/spacex-mcp"

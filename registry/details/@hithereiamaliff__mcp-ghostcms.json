@@ -1,0 +1,193 @@
+{
+  "id": "@hithereiamaliff/mcp-ghostcms",
+  "displayName": "Ghost CMS MCP Server",
+  "description": "This MCP server provides seamless access to your Ghost instance, featuring a rich set of MCP tools for managing posts, users, members, tiers, offers, and newsletters.\n\nNote: this is NOT an official MCP server by Ghost.org, and is a direct fork of MFYDev's ghost-mcp.",
+  "createdAt": "2026-01-16T12:52:38.413Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-ghostcms"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "posts_browse",
+      "description": "Browse and list posts with filtering and pagination"
+    },
+    {
+      "name": "posts_read",
+      "description": "Read a specific post by ID or slug"
+    },
+    {
+      "name": "posts_add",
+      "description": "Create a new post with title, content, tags, and publishing options"
+    },
+    {
+      "name": "posts_edit",
+      "description": "Edit an existing post"
+    },
+    {
+      "name": "posts_delete",
+      "description": "Delete a post by ID"
+    },
+    {
+      "name": "members_browse",
+      "description": "Browse and list members with filtering and pagination"
+    },
+    {
+      "name": "members_read",
+      "description": "Read a specific member by ID or email"
+    },
+    {
+      "name": "members_add",
+      "description": "Add a new member with email and subscription details"
+    },
+    {
+      "name": "members_edit",
+      "description": "Edit an existing member"
+    },
+    {
+      "name": "members_delete",
+      "description": "Delete a member by ID"
+    },
+    {
+      "name": "users_browse",
+      "description": "Browse and list staff users"
+    },
+    {
+      "name": "users_read",
+      "description": "Read a specific user by ID or slug"
+    },
+    {
+      "name": "users_edit",
+      "description": "Edit a staff user"
+    },
+    {
+      "name": "users_delete",
+      "description": "Delete a staff user"
+    },
+    {
+      "name": "tags_browse",
+      "description": "Browse and list tags"
+    },
+    {
+      "name": "tags_read",
+      "description": "Read a specific tag by ID or slug"
+    },
+    {
+      "name": "tags_add",
+      "description": "Create a new tag"
+    },
+    {
+      "name": "tags_edit",
+      "description": "Edit an existing tag"
+    },
+    {
+      "name": "tags_delete",
+      "description": "Delete a tag by ID"
+    },
+    {
+      "name": "tiers_browse",
+      "description": "Browse and list membership tiers"
+    },
+    {
+      "name": "tiers_read",
+      "description": "Read a specific tier by ID"
+    },
+    {
+      "name": "tiers_add",
+      "description": "Create a new membership tier"
+    },
+    {
+      "name": "tiers_edit",
+      "description": "Edit an existing tier"
+    },
+    {
+      "name": "tiers_delete",
+      "description": "Delete a tier by ID"
+    },
+    {
+      "name": "offers_browse",
+      "description": "Browse and list promotional offers"
+    },
+    {
+      "name": "offers_read",
+      "description": "Read a specific offer by ID"
+    },
+    {
+      "name": "offers_add",
+      "description": "Create a new promotional offer"
+    },
+    {
+      "name": "offers_edit",
+      "description": "Edit an existing offer"
+    },
+    {
+      "name": "offers_delete",
+      "description": "Delete an offer by ID"
+    },
+    {
+      "name": "newsletters_browse",
+      "description": "Browse and list newsletters"
+    },
+    {
+      "name": "newsletters_read",
+      "description": "Read a specific newsletter by ID"
+    },
+    {
+      "name": "newsletters_add",
+      "description": "Create a new newsletter"
+    },
+    {
+      "name": "newsletters_edit",
+      "description": "Edit an existing newsletter"
+    },
+    {
+      "name": "newsletters_delete",
+      "description": "Delete a newsletter by ID"
+    },
+    {
+      "name": "invites_browse",
+      "description": "Browse and list staff invites"
+    },
+    {
+      "name": "invites_add",
+      "description": "Send a new staff invite"
+    },
+    {
+      "name": "invites_delete",
+      "description": "Delete/revoke an invite"
+    },
+    {
+      "name": "roles_browse",
+      "description": "Browse and list available roles"
+    },
+    {
+      "name": "roles_read",
+      "description": "Read a specific role by ID"
+    },
+    {
+      "name": "webhooks_add",
+      "description": "Create a new webhook"
+    },
+    {
+      "name": "webhooks_edit",
+      "description": "Edit an existing webhook"
+    },
+    {
+      "name": "webhooks_delete",
+      "description": "Delete a webhook by ID"
+    },
+    {
+      "name": "admin_site_ping",
+      "description": "Ping the Ghost Admin API to check connectivity"
+    },
+    {
+      "name": "config_echo",
+      "description": "Echo the current Ghost configuration (masked)"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@KaranThink41/workday_mcp_server",
   "displayName": "Workday MCP Server",
   "description": "Enable seamless integration of Workday data and services with language models through a standardized protocol. Facilitate dynamic access to Workday resources, tools, and prompts to enhance automation and contextual understanding. Streamline workflows by bridging Workday's enterprise capabilities with AI-driven applications.",
-  "createdAt": "2026-01-16T07:25:48.659Z",
+  "createdAt": "2026-01-16T12:43:23.048Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@KaranThink41/workday_mcp_server"

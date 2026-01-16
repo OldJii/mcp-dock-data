@@ -2,7 +2,7 @@
   "id": "@HelloGGX/shadcn-vue-mcp",
   "displayName": "Shadcn Vue MCP Server",
   "description": "Shadcn-vue MCP Server is a powerful AI-driven tool that helps developers instantly create beautiful, modern UI components through natural language descriptions. It integrates the shadcn-vue component library and tailwindcss, seamlessly connects with mainstream IDEs, and provides a streamlined UI development workflow.",
-  "createdAt": "2026-01-16T07:21:02.881Z",
+  "createdAt": "2026-01-16T12:36:44.683Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@HelloGGX/shadcn-vue-mcp"

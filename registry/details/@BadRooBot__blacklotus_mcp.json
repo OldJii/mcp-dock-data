@@ -1,0 +1,33 @@
+{
+  "id": "@BadRooBot/blacklotus_mcp",
+  "displayName": "Black Lotus",
+  "description": "Create structured plans, break them into actionable tasks, and define roles for execution. Turn goals into clear deliverables and responsibilities. Accelerate project planning and coordination.",
+  "createdAt": "2026-01-16T12:40:58.630Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BadRooBot/blacklotus_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_plan",
+      "description": "Generate a complete, production-ready technical design document from a user idea or requirements. Input: 'text' (the user's idea/brief). Output: a system directive that instructs an AI to produce plan.md or, if it cannot write files, to call 'save_plan'. Use this when you need a full architecture/stack/API/data model plan with diagrams. This tool returns text only and does not write files."
+    },
+    {
+      "name": "create_tasks",
+      "description": "Generate a structured, phase-based task checklist from a high-level idea or plan. Input: 'text' (the user's plan/brief). Output: a ready-to-send system directive that instructs an AI to produce tasks.md or, if it cannot write files, to call 'save_tasks'. Use this when you need an actionable work breakdown with phases, numbered tasks, and validation/confirmation steps. This tool does not write files; it only returns the directive."
+    },
+    {
+      "name": "create_role",
+      "description": "Generate a comprehensive AI assistant role/instruction set from project context. Input: 'text' (project requirements or context). Output: a system directive that instructs an AI to produce role.md or, if it cannot write files, to call 'save_role'. Use this to define identity, capabilities, workflows, constraints, and QA criteria. This tool returns text only and does not write files."
+    }
+  ]
+}

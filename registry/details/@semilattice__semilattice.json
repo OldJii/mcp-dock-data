@@ -2,7 +2,7 @@
   "id": "@semilattice/semilattice",
   "displayName": "Semilattice - audience prediction",
   "description": "Test content, personalise features, and A/B test decisions with accurate audience prediction. Semilattice MCP lets agents predict things about your audience. Your agent could predict which email subject line or website copy your audience would prefer. Or it could predict which use cases your audience wants to see in a new product experience. Audience predictions are >87% accurate on average and take <20 seconds to complete.",
-  "createdAt": "2026-01-16T07:28:33.147Z",
+  "createdAt": "2026-01-16T12:47:16.379Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@semilattice/semilattice"

@@ -2,7 +2,7 @@
   "id": "huntress-mcp-server",
   "displayName": "Huntress API MCP Server",
   "description": "A Model Context Protocol server for interacting with the Huntress API.",
-  "createdAt": "2026-01-16T07:30:40.057Z",
+  "createdAt": "2026-01-16T12:50:18.993Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/huntress-mcp-server"

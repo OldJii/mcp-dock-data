@@ -1,0 +1,70 @@
+{
+  "id": "@jjikky/dynamo-readonly-mcp",
+  "displayName": "DynamoDB Read-Only Server",
+  "description": "Query AWS DynamoDB databases using natural language requests. Access and manage your DynamoDB data effortlessly through a user-friendly interface. Simplify your data interactions and enhance your LLM capabilities with seamless integration.",
+  "createdAt": "2026-01-16T12:48:57.405Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jjikky/dynamo-readonly-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "awsAccessKeyId",
+        "awsSecretAccessKey",
+        "awsRegion"
+      ],
+      "properties": {
+        "awsRegion": {
+          "type": "string",
+          "description": "AWS region"
+        },
+        "awsAccessKeyId": {
+          "type": "string",
+          "description": "AWS access key ID"
+        },
+        "awsSessionToken": {
+          "type": "string",
+          "description": "AWS session token (optional)"
+        },
+        "awsSecretAccessKey": {
+          "type": "string",
+          "description": "AWS secret access key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-tables",
+      "description": "Get a list of all DynamoDB tables"
+    },
+    {
+      "name": "describe-table",
+      "description": "Get detailed information about a DynamoDB table"
+    },
+    {
+      "name": "scan-table",
+      "description": "Scan items from a DynamoDB table"
+    },
+    {
+      "name": "query-table",
+      "description": "Query items from a DynamoDB table based on conditions"
+    },
+    {
+      "name": "paginate-query-table",
+      "description": "Paginate query results"
+    },
+    {
+      "name": "get-item",
+      "description": "Get an item from a DynamoDB table based on a specific key"
+    },
+    {
+      "name": "count-items",
+      "description": "Count items in a DynamoDB table"
+    }
+  ]
+}

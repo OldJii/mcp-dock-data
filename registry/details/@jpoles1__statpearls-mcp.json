@@ -2,7 +2,7 @@
   "id": "@jpoles1/statpearls-mcp",
   "displayName": "StatPearls Medical Knowledge Server",
   "description": "Provide your AI system with reliable, peer-reviewed medical information about diseases and conditions. Search and retrieve comprehensive medical content from StatPearls, formatted in AI-friendly Markdown. Enhance your AI conversations with trusted medical knowledge seamlessly integrated via the Model Context Protocol.",
-  "createdAt": "2026-01-16T07:25:04.878Z",
+  "createdAt": "2026-01-16T12:42:28.918Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jpoles1/statpearls-mcp"

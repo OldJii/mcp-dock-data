@@ -2,7 +2,7 @@
   "id": "@keithah/gumroad-mcp",
   "displayName": "Gumroad",
   "description": "Connect to your Gumroad account to query sales, subscribers, and products. Filter by date range or email and page through results to answer revenue and customer questions fast. Retrieve individual records to power support, analytics, and automation.",
-  "createdAt": "2026-01-16T07:31:24.880Z",
+  "createdAt": "2026-01-16T12:51:25.874Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keithah/gumroad-mcp"

@@ -1,0 +1,12 @@
+{
+  "id": "@mirazer0naver/mk-today-news",
+  "displayName": "mk-today-news",
+  "description": "",
+  "createdAt": "2026-01-16T13:06:03.132Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mirazer0naver/mk-today-news"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@WebpageFX/miracle-rec-mcp-server",
   "displayName": "Miracle Catalog",
   "description": "Retrieve product details by product number and list all items currently on sale from the Miracle catalog. Speed up merchandising, pricing, and content tasks with quick, structured product lookups.",
-  "createdAt": "2026-01-16T07:29:57.010Z",
+  "createdAt": "2026-01-16T12:49:16.442Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@WebpageFX/miracle-rec-mcp-server"

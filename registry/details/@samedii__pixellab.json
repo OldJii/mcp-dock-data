@@ -1,0 +1,93 @@
+{
+  "id": "@samedii/pixellab",
+  "displayName": "PixelLab",
+  "description": "Generate animated pixel art characters, tilesets, and object directly from your AI coding assistant!",
+  "createdAt": "2026-01-16T12:36:17.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samedii/pixellab"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "create_character",
+      "description": "Queue a character creation job with 4 or 8 directional views.\n\n4 directions: south, west, east, north\n8 directions: south, south-west, west, north-west, north, north-east, east, south-east\n\nReturns immediately with job and character IDs.\nProcessing takes 2-3 minutes for 4 directions, 3-5 minutes for 8 directions.\nUse get_character to check on your character and animations."
+    },
+    {
+      "name": "animate_character",
+      "description": "Queue animation jobs for an existing character.\n\nAutomatically generates the animation for all stored directions (4 or 8).\nThe animation inherits the character's style settings.\nFrame count is determined by the template animation.\nReturns immediately with job IDs.\n\nProcessing takes 2-4 minutes depending on number of directions.\nUse get_character to check on your character and animations."
+    },
+    {
+      "name": "get_character",
+      "description": "Get complete character information including rotations, animations, and download link.\n\nReturns:\n- Character details and metadata\n- All rotation image URLs\n- List of animations with their status\n- Pending jobs for this character\n- ZIP download URL\n- Optional preview image"
+    },
+    {
+      "name": "list_characters",
+      "description": "List all your created characters.\n\nReturns a paginated list of characters with basic information.\nUse get_character for detailed information about a specific character.\n\n**Tag Filtering:**\nUse the `tags` parameter to filter characters by tags. Characters matching any of the provided tags will be returned.\nExample: tags=\"wizard,fire\" returns characters tagged with either \"wizard\" OR \"fire\""
+    },
+    {
+      "name": "delete_character",
+      "description": "Delete a character and all its associated data."
+    },
+    {
+      "name": "create_isometric_tile",
+      "description": "Create an isometric tile with pixel art style.\n\nThis tool starts an asynchronous tile generation that returns immediately with a tile ID.\nUse the get_isometric_tile tool to check status and retrieve the completed tile.\n\nGenerates a single isometric tile based on the description and parameters.\nSuitable for creating individual game assets like blocks, items, or terrain pieces.\n\nNote: Sizes above 24px often produce better quality results. Default is 32px.\n\nExamples:\n- Basic: \"grass on top of dirt\"\n- Detailed: \"stone brick wall with moss\"\n- Complex: \"wooden treasure chest with gold trim\"\n\nGeneration time: ~10-20 seconds (async processing)"
+    },
+    {
+      "name": "get_isometric_tile",
+      "description": "Retrieve an isometric tile by ID. Returns tile data if completed, or status information if still processing.\n\nThe tile will include:\n- Base64 PNG image data\n- Metadata about generation parameters\n- Download URL for the tile image\n\nCheck the 'status' field:\n- 'completed': Tile is ready with full data\n- 'processing': Still generating (check 'eta_seconds')\n- 'failed': Generation failed (see 'error' message)\n- 'not_found': Invalid tile ID"
+    },
+    {
+      "name": "list_isometric_tiles",
+      "description": "List all your created isometric tiles.\n\nReturns a paginated list of tiles with basic information.\nUse get_isometric_tile for detailed information about a specific tile.\n\nTiles are sorted by creation date (newest first)."
+    },
+    {
+      "name": "delete_isometric_tile",
+      "description": "Delete an isometric tile by ID. Only the owner can delete their own tiles.\n\nThis action is permanent and cannot be undone."
+    },
+    {
+      "name": "create_map_object",
+      "description": "Create a pixel art object with transparent background for use in game maps.\n\n**Canvas Size:**\n- MCP uses `width` and `height` parameters (supports non-square images)\n- Range: 32px minimum, 400px maximum for both dimensions\n- Basic mode: max 400×400 total area (160,000 pixels)\n- Inpainting mode: max 192×192 total area (36,864 pixels)\n- Optional when background_image provided (auto-detects from image)\n\n**Two Modes:**\n\n1. **Basic Mode** (no background_image):\n   - Generates standalone object from description\n   - Fast and simple\n   - Good for generic assets\n   - Requires width and height parameters\n\n2. **Style Matching Mode** (with background_image):\n   - AI sees frozen areas for style context\n   - Generates only in specified shape/mask\n   - Matches your map's art style automatically\n   - Perfect for creating objects that blend with existing map\n   - Width/height optional (auto-detects from background_image)\n   - **DEFAULT**: If you provide background_image without inpainting, automatically uses oval 60%\n\n**Background Image Options:**\n\n- **Path** (recommended - saves tokens):\n  ```json\n  {\"type\": \"path\", \"path\": \"assets/my-game-map.png\"}\n  ```\n  Returns a curl command you can run. Saves 5,000-20,000 tokens per image!\n  Note: Large images (>192×192) may cause \"argument list too long\" error with curl.\n\n- **Base64** (uses many tokens):\n  ```json\n  {\"type\": \"base64\", \"base64\": \"iVBORw0KGgo...\"}\n  ```\n  Sends image inline. Use only for small images or when curl isn't available.\n\n**Inpainting Options:**\n\n- **Default** (when background_image provided without inpainting):\n  - Automatically uses: `{\"type\": \"oval\", \"percentage\": 0.6}`\n  - Covers 60% of image with centered oval\n  - Good starting point for most objects\n\n- **Oval** (explicit): `{\"type\": \"oval\", \"percentage\": 0.3}`\n  - Auto-generates centered oval mask\n  - Percentage controls size (0.3 = 30% of background)\n  - Good for round objects (trees, pots, rocks)\n\n- **Rectangle**: `{\"type\": \"rectangle\", \"percentage\": 0.5}`\n  - Auto-generates centered rectangle mask\n  - Percentage controls size (0.5 = 50% of background)\n  - Good for buildings, chests, signs\n\n- **Custom Mask**: `{\"type\": \"mask\", \"mask_image\": \"base64...\"}`\n  - Provide your own mask for precise control\n  - Black (0,0,0) = frozen context for AI to see\n  - White (255,255,255) = area to generate object\n\n**How Style Matching Works:**\n- AI analyzes frozen (black) pixels around the generation area\n- Automatically matches colors, shading, detail level, and art style\n- Only generates in white mask area (oval/rectangle/custom)\n\nReturns immediately with job ID. Generation takes ~15-30 seconds.\nUse get_map_object to check status and retrieve results."
+    },
+    {
+      "name": "get_map_object",
+      "description": "Get map object information and status.\n\nReturns:\n- Object details and metadata\n- Generation status and progress\n- Image data if completed\n- Download information"
+    },
+    {
+      "name": "create_topdown_tileset",
+      "description": "Generate a Wang tileset for top-down game maps with corner-based autotiling.\n\nThis tool starts an asynchronous tileset generation that returns immediately with a tileset ID.\nUse the get_tileset tool to check status and retrieve the completed tileset.\n\nReturns 16 tiles (transition_size < 1.0) or 23 tiles (transition_size = 1.0).\nVertices define terrain, tiles render based on their 4 corner values.\n\nUse case: Building top-down game maps with seamless terrain transitions.\n\nAlgorithm: For each grid cell, sample terrain at 4 vertices, select matching tile.\n\n## Creating Connected Tilesets\n\nUse base tile IDs to create multiple tilesets that seamlessly connect:\n\n1. Create first tileset (e.g., ocean→beach) and wait for completion\n2. Use get_tileset to retrieve the base tile IDs\n3. Use the beach base tile ID as lower_base_tile_id for next tileset (beach→grass)\n\nExample workflow:\n- Tileset 1: ocean (lower) → beach (upper) → get beach base tile ID\n- Tileset 2: beach (lower, using base tile ID) → grass (upper) → get grass base tile ID\n- Tileset 3: grass (lower, using base tile ID) → stone (upper)\n\nThis ensures visual consistency across terrain transitions.\n\nGeneration time: ~100 seconds (async processing)"
+    },
+    {
+      "name": "get_topdown_tileset",
+      "description": "Retrieve a topdown tileset by ID. Returns tileset data with PNG and metadata download links if completed, or status information if still processing."
+    },
+    {
+      "name": "list_topdown_tilesets",
+      "description": "List all tilesets created by the authenticated user.\n\nReturns:\n    Array of tileset summaries with IDs, names, and creation dates"
+    },
+    {
+      "name": "delete_topdown_tileset",
+      "description": "Delete a topdown tileset by ID. Only the owner can delete their own tilesets."
+    },
+    {
+      "name": "create_sidescroller_tileset",
+      "description": "Generate a sidescroller tileset for 2D platformer games with side-view perspective.\n\nThis tool starts an asynchronous tileset generation that returns immediately with a tileset ID.\nUse the get_tileset tool to check status and retrieve the completed tileset.\n\nCreates tilesets optimized for 2D platformer games:\n- Side-view perspective (not top-down)\n- Transparent background (no background terrain)\n- Platform/ground tiles with flat surfaces (no slopes)\n- Optional decorative transition layer on top of base terrain\n\nUse case: Building 2D platformer games with seamless terrain tiles.\n\n## Creating Connected Tilesets\n\nUse base tile IDs to create multiple tilesets that seamlessly connect:\n\n1. Create first tileset (e.g., stone platform) and wait for completion\n2. Use get_tileset to retrieve the base tile ID\n3. Use that base tile ID when creating the next tileset for visual consistency\n\nExample workflow:\n- Tileset 1: stone brick platform → get base tile ID\n- Tileset 2: wood platform (using stone base tile ID for edge matching)\n- Tileset 3: metal grating platform (using wood base tile ID)\n\nThis ensures visual consistency across platform transitions.\n\nGeneration time: ~100 seconds (async processing)"
+    },
+    {
+      "name": "get_sidescroller_tileset",
+      "description": "Retrieve a sidescroller tileset by ID. Returns tileset data with PNG and metadata download links if completed, or status information if still processing."
+    },
+    {
+      "name": "list_sidescroller_tilesets",
+      "description": "List all sidescroller tilesets created by the authenticated user.\n\nReturns both completed and in-progress sidescroller tilesets, sorted by creation date.\nSidescroller tilesets are optimized for 2D platformer games with side-view perspective.\n\nExample usage:\n- list_sidescroller_tilesets() - Get first 20 tilesets\n- list_sidescroller_tilesets(limit=10) - Get first 10 tilesets\n- list_sidescroller_tilesets(limit=10, offset=10) - Get tilesets 11-20"
+    },
+    {
+      "name": "delete_sidescroller_tileset",
+      "description": "Delete a sidescroller tileset by ID. Only the owner can delete their own sidescroller tilesets."
+    }
+  ]
+}

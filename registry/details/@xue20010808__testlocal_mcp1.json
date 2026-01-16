@@ -1,0 +1,12 @@
+{
+  "id": "@xue20010808/testlocal_mcp1",
+  "displayName": "testlocal_mcp1",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:16.189Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xue20010808/testlocal_mcp1"
+  },
+  "connection": null,
+  "capabilities": []
+}

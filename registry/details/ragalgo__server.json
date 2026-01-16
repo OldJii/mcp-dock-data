@@ -2,7 +2,7 @@
   "id": "ragalgo/server",
   "displayName": "server",
   "description": "Get daily-close, noise-filtered market context for Korean stocks and crypto, scored for significance. Surface impactful news, technical signals, and fundamentals in concise snapshots to cut through noise. Build reliable briefings and strategy checks without wrestling with raw tick data.",
-  "createdAt": "2026-01-16T07:25:43.739Z",
+  "createdAt": "2026-01-16T12:43:17.031Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/ragalgo/server"

@@ -1,0 +1,111 @@
+{
+  "id": "@amankale376/profile-researcher",
+  "displayName": "LinkedIn Profile Data Mining Server",
+  "description": "Enable advanced LinkedIn profile search, extraction, and contact information enrichment through a powerful MCP server. Leverage AI-powered query expansion, smart filtering, and multiple data sources to obtain comprehensive and validated professional profiles. Export and manage data efficiently with built-in CSV support and persistent storage.",
+  "createdAt": "2026-01-16T12:50:44.053Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@amankale376/profile-researcher"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "debug",
+        "apolloApiKey",
+        "nubelaApiKey",
+        "openaiApiKey",
+        "geminiApiKey",
+        "openrouterApiKey",
+        "ollamaBaseUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging"
+        },
+        "apolloApiKey": {
+          "type": "string",
+          "description": "Apollo.io API key"
+        },
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Google Gemini API key"
+        },
+        "nubelaApiKey": {
+          "type": "string",
+          "description": "Nubela Proxycurl API key"
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key"
+        },
+        "ollamaBaseUrl": {
+          "type": "string",
+          "description": "Ollama base URL"
+        },
+        "openrouterApiKey": {
+          "type": "string",
+          "description": "OpenRouter API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_linkedin_profiles",
+      "description": "Search for LinkedIn profiles based on keywords"
+    },
+    {
+      "name": "extract_profile_data",
+      "description": "Extract detailed profile data from LinkedIn URLs"
+    },
+    {
+      "name": "mine_linkedin_data",
+      "description": "Comprehensive LinkedIn data mining: search, extract, and enrich profile data"
+    },
+    {
+      "name": "get_contact_info",
+      "description": "Get contact information for a person using Apollo API"
+    },
+    {
+      "name": "export_to_csv",
+      "description": "Export all stored profile data to CSV file"
+    },
+    {
+      "name": "get_stored_profiles",
+      "description": "Retrieve all profiles stored in the database"
+    },
+    {
+      "name": "generate_search_queries",
+      "description": "Generate additional search queries for LinkedIn profile mining using AI"
+    },
+    {
+      "name": "enrich_contact_info",
+      "description": "Enrich existing profiles with contact information using Apollo API"
+    },
+    {
+      "name": "get_profile_details",
+      "description": "Get detailed information for specific LinkedIn profiles"
+    },
+    {
+      "name": "search_profiles_by_criteria",
+      "description": "Search stored profiles by specific criteria (company, job title, etc.)"
+    },
+    {
+      "name": "get_search_statistics",
+      "description": "Get statistics about stored profiles and search performance"
+    },
+    {
+      "name": "clear_database",
+      "description": "Clear all stored profile data from the database"
+    }
+  ]
+}

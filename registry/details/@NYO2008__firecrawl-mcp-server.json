@@ -2,7 +2,7 @@
   "id": "@NYO2008/firecrawl-mcp-server",
   "displayName": "Firecrawl Web Scraping Server",
   "description": "Enable advanced web scraping, crawling, and content extraction capabilities for your agents. Perform deep research, batch scraping, and structured data extraction with automatic retries and rate limiting. Support both cloud and self-hosted deployments with seamless integration into popular MCP clients.",
-  "createdAt": "2026-01-16T07:26:18.596Z",
+  "createdAt": "2026-01-16T12:44:05.622Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@NYO2008/firecrawl-mcp-server"

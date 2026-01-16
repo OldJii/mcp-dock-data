@@ -2,7 +2,7 @@
   "id": "@arturwyroslak/ai-agent-generator-mcp",
   "displayName": "Automation Generator",
   "description": "Create domain-ready automations with intelligent defaults and hidden-requirement detection. Assemble 500+ components with smart filtering, auto-configuration, and compatibility validation to build powerful workflows fast. Test, iterate, and deploy with performance insights and an optional responsive chat interface.",
-  "createdAt": "2026-01-16T07:24:57.469Z",
+  "createdAt": "2026-01-16T12:42:18.864Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@arturwyroslak/ai-agent-generator-mcp"

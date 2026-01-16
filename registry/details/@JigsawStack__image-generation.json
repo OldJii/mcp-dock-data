@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/image-generation",
+  "displayName": "JigsawStack Image Generation",
+  "description": "Generate images from text using advanced AI models. Learn more about jigsawstack's image generation API here: https://jigsawstack.com/docs/api-reference/ai/image-generation\n\nYou can get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "createdAt": "2026-01-16T12:47:31.595Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/image-generation"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "image-generation",
+      "description": "Generate an image from a given text"
+    }
+  ]
+}

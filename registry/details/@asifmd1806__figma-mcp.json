@@ -1,0 +1,16 @@
+{
+  "id": "@asifmd1806/figma-mcp",
+  "displayName": "Figma Design Integration Server",
+  "description": "Enable seamless interaction with your Figma designs by connecting MCP clients to your Figma projects. Manage, create, style, and export design elements programmatically to enhance your design workflow. Easily explore and modify your Figma documents through a unified MCP interface.",
+  "createdAt": "2026-01-16T12:46:20.336Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@asifmd1806/figma-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

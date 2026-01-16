@@ -2,7 +2,7 @@
   "id": "@velt-js/velt-api-mcp",
   "displayName": "Velt API Server",
   "description": "Enable seamless interaction with the Velt API through a dedicated MCP server. Integrate Velt's capabilities directly into your tools to enhance productivity and automation. Simplify API access and management within your development environment.",
-  "createdAt": "2026-01-16T07:27:38.204Z",
+  "createdAt": "2026-01-16T12:45:48.787Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@velt-js/velt-api-mcp"

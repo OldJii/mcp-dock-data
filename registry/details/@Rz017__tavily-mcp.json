@@ -2,7 +2,7 @@
   "id": "@Rz017/tavily-mcp",
   "displayName": "Tavily MCP Server",
   "description": "Enable real-time web search and intelligent data extraction within your AI assistant by integrating Tavily's advanced search and extraction tools. Seamlessly access up-to-date web information with sophisticated filtering and domain-specific capabilities. Enhance your AI workflows with powerful web data retrieval and processing features.",
-  "createdAt": "2026-01-16T07:29:12.587Z",
+  "createdAt": "2026-01-16T12:48:11.975Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Rz017/tavily-mcp"

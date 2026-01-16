@@ -2,7 +2,7 @@
   "id": "@Parc-Dev/todo-mcp-server",
   "displayName": "todo-mcp",
   "description": "Organize tasks and subtasks with fast create, update, complete, and reopen actions. Filter views by today, upcoming, overdue, or all to stay focused. Recover mistakes with soft delete and restore.",
-  "createdAt": "2026-01-16T07:24:09.555Z",
+  "createdAt": "2026-01-16T12:41:12.843Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Parc-Dev/todo-mcp-server"

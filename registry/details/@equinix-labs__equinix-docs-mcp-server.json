@@ -2,7 +2,7 @@
   "id": "@equinix-labs/equinix-docs-mcp-server",
   "displayName": "Equinix Docs MCP Server",
   "description": "Equinix Docs MCP Server returns relevant documentation from docs.equinix.com.",
-  "createdAt": "2026-01-16T07:36:22.577Z",
+  "createdAt": "2026-01-16T12:58:27.167Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@equinix-labs/equinix-docs-mcp-server"

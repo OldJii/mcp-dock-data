@@ -2,7 +2,7 @@
   "id": "@Calel33/ordiscan-mcp-v1",
   "displayName": "Ordiscan MCP Server",
   "description": "Access real-time blockchain data with a set of 29 tools integrated with the Ordiscan API. Perform authenticated queries on Bitcoin addresses, inscriptions, transactions, collections, runes, BRC-20 tokens, and sats.",
-  "createdAt": "2026-01-16T07:23:46.086Z",
+  "createdAt": "2026-01-16T12:40:39.999Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Calel33/ordiscan-mcp-v1"

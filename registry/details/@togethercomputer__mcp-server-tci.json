@@ -1,0 +1,32 @@
+{
+  "id": "@togethercomputer/mcp-server-tci",
+  "displayName": "Together Code Interpreter MCP Server",
+  "description": "Add the ability to execute/interpret code to your AI apps.",
+  "createdAt": "2026-01-16T12:42:12.842Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@togethercomputer/mcp-server-tci"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "togetherApiKey"
+      ],
+      "properties": {
+        "togetherApiKey": {
+          "type": "string",
+          "description": "API key for Together AI"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "run-code",
+      "description": "Run Python code in a secure environment"
+    }
+  ]
+}

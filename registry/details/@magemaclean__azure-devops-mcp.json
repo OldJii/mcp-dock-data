@@ -1,0 +1,336 @@
+{
+  "id": "@magemaclean/azure-devops-mcp",
+  "displayName": "azure-devops-mcp",
+  "description": "Manage Azure DevOps projects, work items, repos, pipelines, wikis, search, and test plans from your coding workflow. Create and update work items, branches, pull requests, and wiki pages; run pipelines; and fetch build statuses, logs, and results on demand. Select only the capabilities you need to keep your workspace focused and fast.",
+  "createdAt": "2026-01-16T12:40:29.249Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@magemaclean/azure-devops-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "organization",
+        "pat"
+      ],
+      "properties": {
+        "pat": {
+          "type": "string",
+          "description": "Azure DevOps Personal Access Token (required for authentication)"
+        },
+        "domains": {
+          "type": "array",
+          "description": "Domains to enable (default: all)",
+          "default": [
+            "all"
+          ]
+        },
+        "organization": {
+          "type": "string",
+          "description": "Azure DevOps organization name"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "core_list_project_teams",
+      "description": "Retrieve a list of teams for the specified Azure DevOps project."
+    },
+    {
+      "name": "core_list_projects",
+      "description": "Retrieve a list of projects in your Azure DevOps organization."
+    },
+    {
+      "name": "core_get_identity_ids",
+      "description": "Retrieve Azure DevOps identity IDs for a provided search filter."
+    },
+    {
+      "name": "work_list_team_iterations",
+      "description": "Retrieve a list of iterations for a specific team in a project."
+    },
+    {
+      "name": "work_create_iterations",
+      "description": "Create new iterations in a specified Azure DevOps project."
+    },
+    {
+      "name": "work_assign_iterations",
+      "description": "Assign existing iterations to a specific team in a project."
+    },
+    {
+      "name": "pipelines_get_build_definitions",
+      "description": "Retrieves a list of build definitions for a given project."
+    },
+    {
+      "name": "pipelines_get_build_definition_revisions",
+      "description": "Retrieves a list of revisions for a specific build definition."
+    },
+    {
+      "name": "pipelines_get_builds",
+      "description": "Retrieves a list of builds for a given project."
+    },
+    {
+      "name": "pipelines_get_build_log",
+      "description": "Retrieves the logs for a specific build."
+    },
+    {
+      "name": "pipelines_get_build_log_by_id",
+      "description": "Get a specific build log by log ID."
+    },
+    {
+      "name": "pipelines_get_build_changes",
+      "description": "Get the changes associated with a specific build."
+    },
+    {
+      "name": "pipelines_get_run",
+      "description": "Gets a run for a particular pipeline."
+    },
+    {
+      "name": "pipelines_list_runs",
+      "description": "Gets top 10000 runs for a particular pipeline."
+    },
+    {
+      "name": "pipelines_run_pipeline",
+      "description": "Starts a new run of a pipeline."
+    },
+    {
+      "name": "pipelines_get_build_status",
+      "description": "Fetches the status of a specific build."
+    },
+    {
+      "name": "pipelines_update_build_stage",
+      "description": "Updates the stage of a specific build."
+    },
+    {
+      "name": "repo_create_pull_request",
+      "description": "Create a new pull request."
+    },
+    {
+      "name": "repo_create_branch",
+      "description": "Create a new branch in the repository."
+    },
+    {
+      "name": "repo_update_pull_request",
+      "description": "Update a Pull Request by ID with specified fields, including setting autocomplete with various completion options."
+    },
+    {
+      "name": "repo_update_pull_request_reviewers",
+      "description": "Add or remove reviewers for an existing pull request."
+    },
+    {
+      "name": "repo_list_repos_by_project",
+      "description": "Retrieve a list of repositories for a given project"
+    },
+    {
+      "name": "repo_list_pull_requests_by_repo_or_project",
+      "description": "Retrieve a list of pull requests for a given repository. Either repositoryId or project must be provided."
+    },
+    {
+      "name": "repo_list_pull_request_threads",
+      "description": "Retrieve a list of comment threads for a pull request."
+    },
+    {
+      "name": "repo_list_pull_request_thread_comments",
+      "description": "Retrieve a list of comments in a pull request thread."
+    },
+    {
+      "name": "repo_list_branches_by_repo",
+      "description": "Retrieve a list of branches for a given repository."
+    },
+    {
+      "name": "repo_list_my_branches_by_repo",
+      "description": "Retrieve a list of my branches for a given repository Id."
+    },
+    {
+      "name": "repo_get_repo_by_name_or_id",
+      "description": "Get the repository by project and repository name or ID."
+    },
+    {
+      "name": "repo_get_branch_by_name",
+      "description": "Get a branch by its name."
+    },
+    {
+      "name": "repo_get_pull_request_by_id",
+      "description": "Get a pull request by its ID."
+    },
+    {
+      "name": "repo_reply_to_comment",
+      "description": "Replies to a specific comment on a pull request."
+    },
+    {
+      "name": "repo_create_pull_request_thread",
+      "description": "Creates a new comment thread on a pull request."
+    },
+    {
+      "name": "repo_resolve_comment",
+      "description": "Resolves a specific comment thread on a pull request."
+    },
+    {
+      "name": "repo_search_commits",
+      "description": "Searches for commits in a repository"
+    },
+    {
+      "name": "repo_list_pull_requests_by_commits",
+      "description": "Lists pull requests by commit IDs to find which pull requests contain specific commits"
+    },
+    {
+      "name": "wit_list_backlogs",
+      "description": "Revieve a list of backlogs for a given project and team."
+    },
+    {
+      "name": "wit_list_backlog_work_items",
+      "description": "Retrieve a list of backlogs of for a given project, team, and backlog category"
+    },
+    {
+      "name": "wit_my_work_items",
+      "description": "Retrieve a list of work items relevent to the authenticated user."
+    },
+    {
+      "name": "wit_get_work_items_batch_by_ids",
+      "description": "Retrieve list of work items by IDs in batch."
+    },
+    {
+      "name": "wit_get_work_item",
+      "description": "Get a single work item by ID."
+    },
+    {
+      "name": "wit_list_work_item_comments",
+      "description": "Retrieve list of comments for a work item by ID."
+    },
+    {
+      "name": "wit_add_work_item_comment",
+      "description": "Add comment to a work item by ID."
+    },
+    {
+      "name": "wit_add_child_work_items",
+      "description": "Create one or many child work items from a parent by work item type and parent id."
+    },
+    {
+      "name": "wit_link_work_item_to_pull_request",
+      "description": "Link a single work item to an existing pull request."
+    },
+    {
+      "name": "wit_get_work_items_for_iteration",
+      "description": "Retrieve a list of work items for a specified iteration."
+    },
+    {
+      "name": "wit_update_work_item",
+      "description": "Update a work item by ID with specified fields."
+    },
+    {
+      "name": "wit_get_work_item_type",
+      "description": "Get a specific work item type."
+    },
+    {
+      "name": "wit_create_work_item",
+      "description": "Create a new work item in a specified project and work item type."
+    },
+    {
+      "name": "wit_get_query",
+      "description": "Get a query by its ID or path."
+    },
+    {
+      "name": "wit_get_query_results_by_id",
+      "description": "Retrieve the results of a work item query given the query ID."
+    },
+    {
+      "name": "wit_update_work_items_batch",
+      "description": "Update work items in batch"
+    },
+    {
+      "name": "wit_work_items_link",
+      "description": "Link work items together in batch."
+    },
+    {
+      "name": "wit_work_item_unlink",
+      "description": "Remove one or many links from a single work item"
+    },
+    {
+      "name": "wit_add_artifact_link",
+      "description": "Add artifact links (repository, branch, commit, builds) to work items. You can either provide the full vstfs URI or the individual components to build it automatically."
+    },
+    {
+      "name": "wiki_get_wiki",
+      "description": "Get the wiki by wikiIdentifier"
+    },
+    {
+      "name": "wiki_list_wikis",
+      "description": "Retrieve a list of wikis for an organization or project."
+    },
+    {
+      "name": "wiki_list_pages",
+      "description": "Retrieve a list of wiki pages for a specific wiki and project."
+    },
+    {
+      "name": "wiki_get_page",
+      "description": "Retrieve wiki page metadata by path. This tool does not return page content."
+    },
+    {
+      "name": "wiki_get_page_content",
+      "description": "Retrieve wiki page content. Provide either a 'url' parameter OR the combination of 'wikiIdentifier' and 'project' parameters."
+    },
+    {
+      "name": "wiki_create_or_update_page",
+      "description": "Create or update a wiki page with content."
+    },
+    {
+      "name": "testplan_list_test_plans",
+      "description": "Retrieve a paginated list of test plans from an Azure DevOps project. Allows filtering for active plans and toggling detailed information."
+    },
+    {
+      "name": "testplan_create_test_plan",
+      "description": "Creates a new test plan in the project."
+    },
+    {
+      "name": "testplan_create_test_suite",
+      "description": "Creates a new test suite in a test plan."
+    },
+    {
+      "name": "testplan_add_test_cases_to_suite",
+      "description": "Adds existing test cases to a test suite."
+    },
+    {
+      "name": "testplan_create_test_case",
+      "description": "Creates a new test case work item."
+    },
+    {
+      "name": "testplan_update_test_case_steps",
+      "description": "Update an existing test case work item."
+    },
+    {
+      "name": "testplan_list_test_cases",
+      "description": "Gets a list of test cases in the test plan."
+    },
+    {
+      "name": "testplan_show_test_results_from_build_id",
+      "description": "Gets a list of test results for a given project and build ID."
+    },
+    {
+      "name": "search_code",
+      "description": "Search Azure DevOps Repositories for a given search text"
+    },
+    {
+      "name": "search_wiki",
+      "description": "Search Azure DevOps Wiki for a given search text"
+    },
+    {
+      "name": "search_workitem",
+      "description": "Get Azure DevOps Work Item search results for a given search text"
+    },
+    {
+      "name": "advsec_get_alerts",
+      "description": "Retrieve Advanced Security alerts for a repository."
+    },
+    {
+      "name": "advsec_get_alert_details",
+      "description": "Get detailed information about a specific Advanced Security alert."
+    }
+  ]
+}

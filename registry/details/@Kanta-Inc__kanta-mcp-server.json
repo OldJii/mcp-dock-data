@@ -1,0 +1,95 @@
+{
+  "id": "@Kanta-Inc/kanta-mcp-server",
+  "displayName": "Kanta MCP Server",
+  "description": "Enable AI assistants to interact seamlessly with Kanta data by managing clients, users, persons, and organizational structures. Facilitate operations such as creating, updating, searching, and downloading reports or files through a standardized protocol. Streamline access to Kanta's comprehensive data for enhanced automation and insights.",
+  "createdAt": "2026-01-16T12:50:08.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kanta-Inc/kanta-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "The Kanta API key (X-API-Key header)"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "Optional base URL for the Kanta API (defaults to https://app.kanta.fr/api/v1)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_customers",
+      "description": "Récupère la liste des clients avec pagination optionnelle"
+    },
+    {
+      "name": "get_customer",
+      "description": "Récupère les détails d'un client spécifique par son ID"
+    },
+    {
+      "name": "create_customer",
+      "description": "Crée un nouveau client avec son numéro d'entreprise (SIREN/SIRET)"
+    },
+    {
+      "name": "update_customer",
+      "description": "Met à jour les informations d'un client existant"
+    },
+    {
+      "name": "search_customers",
+      "description": "Recherche des clients par numéro d'entreprise, nom d'entreprise ou code"
+    },
+    {
+      "name": "assign_customers",
+      "description": "Assigne des superviseurs, contributeurs et cabinet à des clients"
+    },
+    {
+      "name": "get_customer_risk_summary",
+      "description": "Récupère le résumé des risques d'un client"
+    },
+    {
+      "name": "get_users",
+      "description": "Récupère la liste des utilisateurs avec pagination optionnelle"
+    },
+    {
+      "name": "get_user",
+      "description": "Récupère les détails d'un utilisateur spécifique par son ID"
+    },
+    {
+      "name": "create_user",
+      "description": "Crée un nouvel utilisateur"
+    },
+    {
+      "name": "delete_user",
+      "description": "Supprime un utilisateur"
+    },
+    {
+      "name": "get_persons",
+      "description": "Récupère la liste des personnes avec pagination optionnelle"
+    },
+    {
+      "name": "get_person",
+      "description": "Récupère les détails d'une personne spécifique par son ID"
+    },
+    {
+      "name": "get_firms",
+      "description": "Récupère la liste des cabinets"
+    },
+    {
+      "name": "get_structure",
+      "description": "Récupère les informations de la structure (cabinet)"
+    }
+  ]
+}

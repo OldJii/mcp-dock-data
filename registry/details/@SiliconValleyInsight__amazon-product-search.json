@@ -2,7 +2,7 @@
   "id": "@SiliconValleyInsight/amazon-product-search",
   "displayName": "Amazon Product Search",
   "description": "Enable seamless Amazon product searches with detailed information, including descriptions, pictures, and links.\n\nQuickly retrieve detailed product information to enhance your applications.\n\nSimplify access to Amazon's product data through a standardized MCP server interface.",
-  "createdAt": "2026-01-16T07:23:26.008Z",
+  "createdAt": "2026-01-16T12:40:11.816Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SiliconValleyInsight/amazon-product-search"

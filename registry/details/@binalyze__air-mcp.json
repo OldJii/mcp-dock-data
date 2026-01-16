@@ -1,0 +1,501 @@
+{
+  "id": "@binalyze/air-mcp",
+  "displayName": "Binalyze AIR MCP Server",
+  "description": "Enable natural language interaction with your Binalyze AIR system to manage assets, acquisition profiles, and organizations seamlessly. Use this server to list and query your AIR data through any MCP client, enhancing your workflow with AI-driven context access. Requires an API token for secure access to your AIR environment.",
+  "createdAt": "2026-01-16T12:44:06.307Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@binalyze/air-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "airHost",
+        "airApiToken"
+      ],
+      "properties": {
+        "airHost": {
+          "type": "string",
+          "description": "The host URL for the Binalyze AIR API (e.g., https://air-xyz.binalyze.com)"
+        },
+        "airApiToken": {
+          "type": "string",
+          "description": "The API token for accessing the Binalyze AIR API. You can generate one through the AIR console."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_assets",
+      "description": "List all assets in the system"
+    },
+    {
+      "name": "get_asset_by_id",
+      "description": "Get detailed information about a specific asset by its ID"
+    },
+    {
+      "name": "get_asset_tasks_by_id",
+      "description": "Get all tasks associated with a specific asset by its ID"
+    },
+    {
+      "name": "list_acquisition_profiles",
+      "description": "List all acquisition profiles in the system"
+    },
+    {
+      "name": "assign_acquisition_task",
+      "description": "Assign an evidence acquisition task to specific endpoints"
+    },
+    {
+      "name": "get_acquisition_profile_by_id",
+      "description": "Get details of a specific acquisition profile by its ID"
+    },
+    {
+      "name": "assign_image_acquisition_task",
+      "description": "Assign a disk image acquisition task to specific endpoints and volumes"
+    },
+    {
+      "name": "create_acquisition_profile",
+      "description": "Create a new acquisition profile"
+    },
+    {
+      "name": "assign_reboot_task",
+      "description": "Assign a reboot task to specific endpoints"
+    },
+    {
+      "name": "assign_shutdown_task",
+      "description": "Assign a shutdown task to specific endpoints"
+    },
+    {
+      "name": "assign_isolation_task",
+      "description": "Assign an isolation task to specific endpoints"
+    },
+    {
+      "name": "assign_log_retrieval_task",
+      "description": "Assign a log retrieval task to specific endpoints"
+    },
+    {
+      "name": "assign_version_update_task",
+      "description": "Assign a version update task to specific endpoints"
+    },
+    {
+      "name": "list_organizations",
+      "description": "List all organizations in the system"
+    },
+    {
+      "name": "list_cases",
+      "description": "List all cases in the system"
+    },
+    {
+      "name": "list_policies",
+      "description": "List all policies in the system"
+    },
+    {
+      "name": "list_tasks",
+      "description": "List all tasks in the system"
+    },
+    {
+      "name": "list_triage_rules",
+      "description": "List all triage rules in the system"
+    },
+    {
+      "name": "list_users",
+      "description": "List all users in the system"
+    },
+    {
+      "name": "list_drone_analyzers",
+      "description": "List all drone analyzers in the system"
+    },
+    {
+      "name": "export_audit_logs",
+      "description": "Initiate an export of audit logs from the AIR system"
+    },
+    {
+      "name": "list_audit_logs",
+      "description": "List audit logs from the AIR system"
+    },
+    {
+      "name": "uninstall_assets",
+      "description": "Uninstall specific assets based on filters without purging data. Requires specifying `filter.includedEndpointIds`."
+    },
+    {
+      "name": "purge_and_uninstall_assets",
+      "description": "Purge data and uninstall specific assets based on filters. Requires specifying `filter.includedEndpointIds`."
+    },
+    {
+      "name": "add_tags_to_assets",
+      "description": "Add tags to specific assets based on filters. Requires specifying `filter.includedEndpointIds` and `tags`."
+    },
+    {
+      "name": "remove_tags_from_assets",
+      "description": "Remove tags from specific assets based on filters. Requires specifying `filter.includedEndpointIds` and `tags`."
+    },
+    {
+      "name": "create_auto_asset_tag",
+      "description": "Create a new rule to automatically tag assets based on specified conditions for Linux, Windows, and macOS."
+    },
+    {
+      "name": "update_auto_asset_tag",
+      "description": "Update an existing auto asset tag rule."
+    },
+    {
+      "name": "get_auto_asset_tag_by_id",
+      "description": "Get details of a specific auto asset tag rule by its ID"
+    },
+    {
+      "name": "delete_auto_asset_tag_by_id",
+      "description": "Delete a specific auto asset tag rule by its ID"
+    },
+    {
+      "name": "list_auto_asset_tags",
+      "description": "List all auto asset tag rules in the system."
+    },
+    {
+      "name": "start_tagging",
+      "description": "Start the auto asset tagging process for assets matching filter criteria."
+    },
+    {
+      "name": "acquire_baseline",
+      "description": "Assign a baseline acquisition task to specific endpoints"
+    },
+    {
+      "name": "compare_baseline",
+      "description": "Compare baseline acquisition tasks for a specific endpoint"
+    },
+    {
+      "name": "get_comparison_report",
+      "description": "Get comparison result report for a specific endpoint and task"
+    },
+    {
+      "name": "list_acquisition_artifacts",
+      "description": "List all acquisition artifacts available for evidence collection"
+    },
+    {
+      "name": "list_e_discovery_patterns",
+      "description": "List all e-discovery patterns for file type detection"
+    },
+    {
+      "name": "create_policy",
+      "description": "Create a new policy with specific storage and compression settings"
+    },
+    {
+      "name": "update_policy",
+      "description": "Update an existing policy with specific storage and filter settings"
+    },
+    {
+      "name": "get_policy_by_id",
+      "description": "Get detailed information about a specific policy by its ID"
+    },
+    {
+      "name": "update_policy_priorities",
+      "description": "Update the priority order of policies"
+    },
+    {
+      "name": "get_policy_match_stats",
+      "description": "Get statistics on how many endpoints match each policy based on filter criteria"
+    },
+    {
+      "name": "delete_policy_by_id",
+      "description": "Delete a specific policy by its ID"
+    },
+    {
+      "name": "get_task_assignments_by_id",
+      "description": "Get all assignments associated with a specific task by its ID"
+    },
+    {
+      "name": "cancel_task_assignment",
+      "description": "Cancel a task assignment by its ID"
+    },
+    {
+      "name": "delete_task_assignment",
+      "description": "Delete a specific task assignment by its ID"
+    },
+    {
+      "name": "get_task_by_id",
+      "description": "Get detailed information about a specific task by its ID"
+    },
+    {
+      "name": "cancel_task_by_id",
+      "description": "Cancel a specific task by its ID"
+    },
+    {
+      "name": "delete_task_by_id",
+      "description": "Delete a specific task by its ID"
+    },
+    {
+      "name": "list_triage_tags",
+      "description": "List all triage rule tags in the system"
+    },
+    {
+      "name": "create_triage_tag",
+      "description": "Create a new triage rule tag"
+    },
+    {
+      "name": "create_triage_rule",
+      "description": "Create a new triage rule"
+    },
+    {
+      "name": "update_triage_rule",
+      "description": "Update an existing triage rule by ID"
+    },
+    {
+      "name": "delete_triage_rule",
+      "description": "Delete an existing triage rule by ID"
+    },
+    {
+      "name": "get_triage_rule_by_id",
+      "description": "Get a specific triage rule by its ID"
+    },
+    {
+      "name": "validate_triage_rule",
+      "description": "Validate a triage rule syntax without creating it"
+    },
+    {
+      "name": "assign_triage_task",
+      "description": "Assign a triage task to endpoints based on filter criteria"
+    },
+    {
+      "name": "add_note_to_case",
+      "description": "Add a note to a specific case by its ID"
+    },
+    {
+      "name": "update_note_in_case",
+      "description": "Update an existing note in a specific case"
+    },
+    {
+      "name": "delete_note_from_case",
+      "description": "Delete a note from a case by its ID"
+    },
+    {
+      "name": "export_cases",
+      "description": "Export cases data from the system"
+    },
+    {
+      "name": "export_case_notes",
+      "description": "Export notes for a specific case by its ID"
+    },
+    {
+      "name": "export_case_endpoints",
+      "description": "Export endpoints for a specific case by its ID"
+    },
+    {
+      "name": "export_case_activities",
+      "description": "Export activities for a specific case by its ID"
+    },
+    {
+      "name": "create_case",
+      "description": "Create a new case in the system"
+    },
+    {
+      "name": "update_case",
+      "description": "Update an existing case by ID"
+    },
+    {
+      "name": "get_case_by_id",
+      "description": "Get detailed information about a specific case by its ID"
+    },
+    {
+      "name": "close_case_by_id",
+      "description": "Close a case by its ID"
+    },
+    {
+      "name": "open_case_by_id",
+      "description": "Open a previously closed case by its ID"
+    },
+    {
+      "name": "archive_case_by_id",
+      "description": "Archive a case by its ID"
+    },
+    {
+      "name": "change_case_owner",
+      "description": "Change the owner of a case"
+    },
+    {
+      "name": "check_case_name",
+      "description": "Check if a case name is already in use"
+    },
+    {
+      "name": "get_case_activities",
+      "description": "Get activity history for a specific case by its ID"
+    },
+    {
+      "name": "get_case_endpoints",
+      "description": "Get all endpoints associated with a specific case by its ID"
+    },
+    {
+      "name": "get_case_tasks_by_id",
+      "description": "Get all tasks associated with a specific case by its ID"
+    },
+    {
+      "name": "get_case_users",
+      "description": "Get all users associated with a specific case by its ID"
+    },
+    {
+      "name": "remove_endpoints_from_case",
+      "description": "Remove endpoints from a case based on specified filters"
+    },
+    {
+      "name": "remove_task_assignment_from_case",
+      "description": "Remove a specific task assignment from a case"
+    },
+    {
+      "name": "import_task_assignments_to_case",
+      "description": "Import task assignments to a specific case"
+    },
+    {
+      "name": "list_repositories",
+      "description": "List all evidence repositories in the system"
+    },
+    {
+      "name": "get_repository_by_id",
+      "description": "Get detailed information about a specific evidence repository by its ID"
+    },
+    {
+      "name": "create_smb_repository",
+      "description": "Create a new SMB evidence repository"
+    },
+    {
+      "name": "update_smb_repository",
+      "description": "Update an existing SMB repository by ID"
+    },
+    {
+      "name": "create_sftp_repository",
+      "description": "Create a new SFTP evidence repository"
+    },
+    {
+      "name": "update_sftp_repository",
+      "description": "Update an existing SFTP repository"
+    },
+    {
+      "name": "create_ftps_repository",
+      "description": "Create a new FTPS evidence repository"
+    },
+    {
+      "name": "update_ftps_repository",
+      "description": "Update an existing FTPS evidence repository"
+    },
+    {
+      "name": "validate_ftps_repository",
+      "description": "Validate FTPS repository configuration without creating it"
+    },
+    {
+      "name": "create_azure_storage_repository",
+      "description": "Create a new Azure Storage repository"
+    },
+    {
+      "name": "update_azure_storage_repository",
+      "description": "Update an existing Azure Storage repository"
+    },
+    {
+      "name": "validate_azure_storage_repository",
+      "description": "Validate an Azure Storage repository configuration"
+    },
+    {
+      "name": "create_amazon_s3_repository",
+      "description": "Create a new Amazon S3 repository for evidence storage"
+    },
+    {
+      "name": "update_amazon_s3_repository",
+      "description": "Update an existing Amazon S3 repository"
+    },
+    {
+      "name": "validate_amazon_s3_repository",
+      "description": "Validate Amazon S3 repository configuration"
+    },
+    {
+      "name": "get_repository_by_id",
+      "description": "Get detailed information about a specific evidence repository by its ID"
+    },
+    {
+      "name": "delete_repository",
+      "description": "Delete an evidence repository by its ID"
+    },
+    {
+      "name": "download_case_ppc",
+      "description": "Download a PPC file for a specific endpoint and task"
+    },
+    {
+      "name": "download_task_report",
+      "description": "Download a task report for a specific endpoint and task"
+    },
+    {
+      "name": "get_report_file_info",
+      "description": "Get information about a PPC file for a specific endpoint and task"
+    },
+    {
+      "name": "get_organization_users",
+      "description": "Get users for a specific organization by its ID"
+    },
+    {
+      "name": "assign_users_to_organization",
+      "description": "Assign users to a specific organization"
+    },
+    {
+      "name": "remove_user_from_organization",
+      "description": "Remove a user from an organization"
+    },
+    {
+      "name": "create_organization",
+      "description": "Create a new organization"
+    },
+    {
+      "name": "update_organization_by_id",
+      "description": "Update an existing organization by ID"
+    },
+    {
+      "name": "get_organization_by_id",
+      "description": "Get detailed information about a specific organization by its ID"
+    },
+    {
+      "name": "check_organization_name_exists",
+      "description": "Check if an organization name already exists in the system"
+    },
+    {
+      "name": "get_shareable_deployment_info",
+      "description": "Get shareable deployment information using a deployment token"
+    },
+    {
+      "name": "update_organization_shareable_deployment",
+      "description": "Update an organization's shareable deployment settings"
+    },
+    {
+      "name": "update_organization_deployment_token",
+      "description": "Update the deployment token for a specific organization"
+    },
+    {
+      "name": "delete_organization",
+      "description": "Delete an organization by its ID"
+    },
+    {
+      "name": "add_tags_to_organization",
+      "description": "Add tags to an organization"
+    },
+    {
+      "name": "delete_tags_from_organization",
+      "description": "Delete specific tags from an organization"
+    },
+    {
+      "name": "get_user_by_id",
+      "description": "Get detailed information about a specific user by their ID"
+    },
+    {
+      "name": "call_webhook",
+      "description": "Call a webhook with the specified parameters"
+    },
+    {
+      "name": "post_webhook",
+      "description": "Post data to a webhook"
+    },
+    {
+      "name": "get_task_assignments",
+      "description": "Get all assignments for a specific task by its ID"
+    },
+    {
+      "name": "update_banner_message",
+      "description": "Update the system banner message settings"
+    }
+  ]
+}

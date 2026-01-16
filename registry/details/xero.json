@@ -1,0 +1,177 @@
+{
+  "id": "xero",
+  "displayName": "Xero",
+  "description": "Xero is a cloud-based accounting software for small businesses, providing invoicing, bank reconciliation, bookkeeping, and financial reporting in real time",
+  "createdAt": "2026-01-16T12:34:59.956Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xero"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "XERO_CREATE_BANK_TRANSACTION",
+      "description": "Create a bank transaction in Xero. Use SPEND for payments out or RECEIVE for money received."
+    },
+    {
+      "name": "XERO_CREATE_CONTACT",
+      "description": "Create a new contact in Xero. Contacts can be customers, suppliers, or both."
+    },
+    {
+      "name": "XERO_CREATE_INVOICE",
+      "description": "Create a new invoice in Xero. Supports both sales invoices (ACCREC) and bills (ACCPAY)."
+    },
+    {
+      "name": "XERO_CREATE_ITEM",
+      "description": "Create an inventory item in Xero. Items can be tracked for sales and/or purchases."
+    },
+    {
+      "name": "XERO_CREATE_PAYMENT",
+      "description": "Create a payment in Xero to link an invoice with a bank account transaction."
+    },
+    {
+      "name": "XERO_CREATE_PURCHASE_ORDER",
+      "description": "Create a purchase order in Xero to order goods/services from suppliers."
+    },
+    {
+      "name": "XERO_GET_ACCOUNT",
+      "description": "Retrieve a specific account from the chart of accounts by ID. Returns account code, name, type, and settings."
+    },
+    {
+      "name": "XERO_GET_ASSET",
+      "description": "Retrieve a specific asset by ID from Xero. Returns depreciation details and book value."
+    },
+    {
+      "name": "XERO_GET_BALANCE_SHEET_REPORT",
+      "description": "Retrieve Balance Sheet report from Xero. Shows assets, liabilities, and equity at a specific date."
+    },
+    {
+      "name": "XERO_GET_BUDGET",
+      "description": "Retrieve a budget from Xero. Budgets track planned vs actual spending by account."
+    },
+    {
+      "name": "XERO_GET_CONNECTIONS",
+      "description": "Tool to list active Xero connections. Use when you need to retrieve all current tenant connections for the authenticated user."
+    },
+    {
+      "name": "XERO_GET_CONTACT",
+      "description": "Retrieve a specific contact by ID from Xero. Returns full contact details including addresses and phone numbers."
+    },
+    {
+      "name": "XERO_GET_CONTACTS",
+      "description": "Tool to retrieve a list of contacts. Use when you need up-to-date contact information with filtering, paging, or incremental updates."
+    },
+    {
+      "name": "XERO_GET_INVOICE",
+      "description": "Retrieve a specific invoice by ID from Xero. Returns full invoice details including line items and status."
+    },
+    {
+      "name": "XERO_GET_ITEM",
+      "description": "Retrieve a specific item by ID from Xero. Returns item code, name, pricing, and tax details."
+    },
+    {
+      "name": "XERO_GET_MANUAL_JOURNAL",
+      "description": "Retrieve a specific manual journal by ID from Xero. Returns full details including journal lines."
+    },
+    {
+      "name": "XERO_GET_ORGANISATION",
+      "description": "Retrieve organisation details from Xero. Returns company info, base currency, timezone, financial year settings, etc."
+    },
+    {
+      "name": "XERO_GET_PROFIT_LOSS_REPORT",
+      "description": "Retrieve Profit & Loss report from Xero. Shows income, expenses, and net profit for a specified period."
+    },
+    {
+      "name": "XERO_GET_PROJECT",
+      "description": "Retrieve a specific project by ID from Xero. Returns project details, deadlines, and status."
+    },
+    {
+      "name": "XERO_GET_PURCHASE_ORDER",
+      "description": "Retrieve a specific purchase order by ID from Xero. Returns full details including line items and status."
+    },
+    {
+      "name": "XERO_GET_QUOTES",
+      "description": "Tool to retrieve a list of quotes. Use when you need to list, filter, or page through sales quotes. Use after obtaining the tenant ID via connections."
+    },
+    {
+      "name": "XERO_LIST_ACCOUNTS",
+      "description": "Retrieve chart of accounts from Xero. Returns all accounting codes used for categorizing transactions."
+    },
+    {
+      "name": "XERO_LIST_ASSETS",
+      "description": "Retrieve fixed assets from Xero. Assets track depreciation and book value of capital equipment."
+    },
+    {
+      "name": "XERO_LIST_ATTACHMENTS",
+      "description": "List all attachments for a specific entity in Xero (invoice, contact, etc.)."
+    },
+    {
+      "name": "XERO_LIST_BANK_TRANSACTIONS",
+      "description": "Retrieve bank transactions from Xero. Includes spend (payments) and receive (receipts) transactions."
+    },
+    {
+      "name": "XERO_LIST_CREDIT_NOTES",
+      "description": "Retrieve list of credit notes from Xero. Credit notes are issued to reduce amounts owed by customers."
+    },
+    {
+      "name": "XERO_LIST_FILES",
+      "description": "Retrieve files from Xero Files. Lists documents stored in Xero's file management system."
+    },
+    {
+      "name": "XERO_LIST_FOLDERS",
+      "description": "Retrieve folders from Xero Files. Lists document folders in Xero's file management system."
+    },
+    {
+      "name": "XERO_LIST_INVOICES",
+      "description": "Retrieve a list of invoices from Xero. Supports filtering by status, contact, date range, and pagination."
+    },
+    {
+      "name": "XERO_LIST_ITEMS",
+      "description": "Retrieve items (inventory/products) from Xero. Items can be tracked for sales and/or purchases."
+    },
+    {
+      "name": "XERO_LIST_JOURNALS",
+      "description": "Retrieve journals from Xero. Journals show the accounting entries for all transactions."
+    },
+    {
+      "name": "XERO_LIST_MANUAL_JOURNALS",
+      "description": "Retrieve manual journals from Xero. Manual journals are used for period-end adjustments and corrections."
+    },
+    {
+      "name": "XERO_LIST_PAYMENTS",
+      "description": "Retrieve list of payments from Xero. Payments link invoices to bank transactions."
+    },
+    {
+      "name": "XERO_LIST_PROJECTS",
+      "description": "Retrieve projects from Xero. Projects track time and costs for client work."
+    },
+    {
+      "name": "XERO_LIST_PURCHASE_ORDERS",
+      "description": "Retrieve list of purchase orders from Xero. Purchase orders track goods/services ordered from suppliers."
+    },
+    {
+      "name": "XERO_LIST_TAX_RATES",
+      "description": "Retrieve tax rates from Xero. Shows available tax codes and rates for the organization."
+    },
+    {
+      "name": "XERO_LIST_TRACKING_CATEGORIES",
+      "description": "Retrieve tracking categories from Xero. Tracking categories are used to segment data for reporting (e.g., departments, regions)."
+    },
+    {
+      "name": "XERO_POST_INVOICE_UPDATE",
+      "description": "Tool to update an existing invoice. Use when you need to modify the details of an invoice after it's been created."
+    },
+    {
+      "name": "XERO_UPDATE_CONTACT",
+      "description": "Update an existing contact in Xero. Only provided fields will be updated."
+    },
+    {
+      "name": "XERO_UPLOAD_ATTACHMENT",
+      "description": "Upload a file attachment to a Xero entity (invoice, contact, etc.). Supports PDF, images, and documents."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "well/app",
   "displayName": "Well",
   "description": "Manage business data including invoices, companies, and contacts through a structured database interface. Discover available data schemas to efficiently query specific records for reporting and dashboarding. Streamline administrative tasks by creating new company profiles and personnel entries directly.",
-  "createdAt": "2026-01-16T07:28:06.524Z",
+  "createdAt": "2026-01-16T12:46:38.336Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/well/app"

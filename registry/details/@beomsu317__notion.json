@@ -1,0 +1,12 @@
+{
+  "id": "@beomsu317/notion",
+  "displayName": "notion",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:28.599Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@beomsu317/notion"
+  },
+  "connection": null,
+  "capabilities": []
+}

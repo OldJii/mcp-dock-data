@@ -1,0 +1,45 @@
+{
+  "id": "@brandonbosco/sigao-suitefiles-mcp",
+  "displayName": "MCP Server Boilerplate",
+  "description": "Build custom API integrations quickly with this ready-to-use MCP server template. Extend and configure tools, authentication, and API endpoints to suit your needs. Benefit from TypeScript support, unit tests, and built-in pagination and filtering capabilities.",
+  "createdAt": "2026-01-16T12:46:57.864Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brandonbosco/sigao-suitefiles-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for authenticating with the external service"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "Base URL for the API (optional, defaults to configured URL)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getItem",
+      "description": "Get a single item by its ID from the API"
+    },
+    {
+      "name": "getItems",
+      "description": "Get a list of items from the API with optional filtering"
+    }
+  ]
+}

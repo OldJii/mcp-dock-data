@@ -1,0 +1,46 @@
+{
+  "id": "@hckhanh/gitlab",
+  "displayName": "Gitlab Utils",
+  "description": "Extend your GitLab workflows with additional utilities to enhance productivity and automation. Seamlessly integrate GitLab data and operations into your applications using this server. Simplify complex GitLab tasks with ready-to-use tools and resources.",
+  "createdAt": "2026-01-16T12:50:35.573Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hckhanh/gitlab"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "gitlabPersonalAccessToken"
+      ],
+      "properties": {
+        "gitlabApiUrl": {
+          "type": "string",
+          "description": "GitLab API base URL",
+          "default": "https://gitlab.com/api/v4"
+        },
+        "gitlabPersonalAccessToken": {
+          "type": "string",
+          "description": "GitLab personal access token for authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_upload_file",
+      "description": "Get the uploads which are uploaded files in a project that can be referenced as links in Markdown text in an issue, merge request, snippet, or wiki page (https://docs.gitlab.com/security/user_file_uploads/)"
+    },
+    {
+      "name": "upload_markdown_file",
+      "description": "Upload a file to GitLab project for use in Markdown content. Accepts file content as base64 data URL or plain text. Returns upload details including markdown link format."
+    }
+  ]
+}

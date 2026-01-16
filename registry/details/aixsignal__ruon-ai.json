@@ -1,0 +1,12 @@
+{
+  "id": "aixsignal/ruon-ai",
+  "displayName": "ruon-ai",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:23.925Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/aixsignal/ruon-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

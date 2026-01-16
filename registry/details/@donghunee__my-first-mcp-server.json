@@ -2,7 +2,7 @@
   "id": "@donghunee/my-first-mcp-server",
   "displayName": "Weather",
   "description": "Check current weather by city. Browse available cities and quickly retrieve temperature and conditions. Plan your day with up-to-date local conditions.",
-  "createdAt": "2026-01-16T07:23:24.939Z",
+  "createdAt": "2026-01-16T12:40:10.489Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@donghunee/my-first-mcp-server"

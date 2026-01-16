@@ -2,7 +2,7 @@
   "id": "@supadata-ai/mcp",
   "displayName": "Supadata: Web & Video data API for makers",
   "description": "Turn YouTube, TikTok, Instagram, X videos and websites into structured data.\nSkip the hassle of video transcription and data scraping. Our APIs help you build better software and AI products faster.",
-  "createdAt": "2026-01-16T07:23:28.195Z",
+  "createdAt": "2026-01-16T12:40:14.473Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@supadata-ai/mcp"

@@ -2,7 +2,7 @@
   "id": "@akaramanapp/weather-mcp-server",
   "displayName": "Weather MCP Server",
   "description": "Provide real-time weather information and alerts for any US location. Get detailed forecasts and alerts through a simple API, enhancing your AI agents with up-to-date weather data. Leverage the National Weather Service API for accurate and timely weather insights.",
-  "createdAt": "2026-01-16T07:31:25.958Z",
+  "createdAt": "2026-01-16T12:51:27.177Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@akaramanapp/weather-mcp-server"

@@ -1,0 +1,105 @@
+{
+  "id": "@cuongpo/aptos-mcp",
+  "displayName": "Aptos Blockchain Server",
+  "description": "Enable AI applications to seamlessly interact with the Aptos blockchain for account management, token transfers, custom coin operations, and transaction queries on testnet and mainnet. Simplify blockchain integration by providing a comprehensive set of tools for native APT and custom coin handling. Facilitate secure and efficient blockchain operations directly from your AI workflows.",
+  "createdAt": "2026-01-16T12:49:26.228Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/aptos-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "aptosMcpPrivateKey"
+      ],
+      "properties": {
+        "aptosMcpNetwork": {
+          "type": "string",
+          "description": "Aptos network to connect to (testnet or mainnet).",
+          "default": "testnet"
+        },
+        "aptosMcpNodeUrl": {
+          "type": "string",
+          "description": "Custom Aptos node URL (optional, uses default network nodes if not specified)."
+        },
+        "aptosMcpFaucetUrl": {
+          "type": "string",
+          "description": "Custom faucet URL for testnet (optional, uses default faucet if not specified)."
+        },
+        "aptosMcpPrivateKey": {
+          "type": "string",
+          "description": "Aptos MCP private key for signing transactions (hex format starting with 0x)."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_account",
+      "description": "Create a new Aptos account with a random private key. This generates a new account that can be used for transactions on the Aptos blockchain. Returns the account address, private key, and public key."
+    },
+    {
+      "name": "get_account_info",
+      "description": "Get detailed information about an Aptos account including sequence number and authentication key. This is used for checking account status and transaction readiness. Returns comprehensive account information."
+    },
+    {
+      "name": "fund_account",
+      "description": "Fund an Aptos account using the testnet faucet. This is only available on testnet and is used to add APT tokens to an account for testing purposes. Returns the funding transaction details."
+    },
+    {
+      "name": "get_apt_balance",
+      "description": "Get the native APT token balance of an Aptos account. This is used for checking the current balance of APT tokens in an account. Returns the account balance in both Octas and APT."
+    },
+    {
+      "name": "transfer_apt",
+      "description": "Transfer native APT tokens to another Aptos account. This is used for sending APT tokens from your account to another address. Returns the transaction hash upon successful transfer."
+    },
+    {
+      "name": "get_coin_balance",
+      "description": "Get the balance of a specific coin type for an Aptos account. This is used for checking the balance of custom coins or tokens. Returns the coin balance and metadata."
+    },
+    {
+      "name": "transfer_coin",
+      "description": "Transfer a specific coin type to another Aptos account. This is used for sending custom coins or tokens from your account to another address. Returns the transaction hash upon successful transfer."
+    },
+    {
+      "name": "deploy_coin",
+      "description": "Deploy a real custom coin/token on Aptos blockchain using the Aptos CLI and Move modules. This creates a new coin type that can be minted, transferred, and managed. Returns the actual coin type identifier and deployment transaction details."
+    },
+    {
+      "name": "quick_deploy_coin",
+      "description": "Quickly deploy a coin using Aptos managed coin framework (faster than full Move deployment). Creates a coin that can be minted and transferred immediately."
+    },
+    {
+      "name": "deploy_fungible_asset",
+      "description": "Deploy a fungible asset (FA) using the Aptos Fungible Asset Standard. Fast deployment without Move compilation - uses existing framework functions."
+    },
+    {
+      "name": "create_managed_coin",
+      "description": "Initialize a managed coin using existing Aptos framework. This works with pre-deployed managed coin modules and doesn't require Move compilation. Suitable for testing and development."
+    },
+    {
+      "name": "mint_coin",
+      "description": "Mint new tokens of a previously deployed custom coin using the token factory. Only the coin deployer can mint new tokens. This increases the total supply of the coin and sends the minted tokens to a specified recipient."
+    },
+    {
+      "name": "register_coin",
+      "description": "Register your account to receive a specific coin type using the token factory. This is required before you can receive transfers of custom coins on Aptos. Returns the registration transaction details."
+    },
+    {
+      "name": "deploy_token_factory",
+      "description": "Deploy the token factory contract to Aptos blockchain. This creates a factory contract that can be used to deploy and manage custom tokens. Returns the deployment transaction details and factory address."
+    },
+    {
+      "name": "get_transaction_status",
+      "description": "Get the status and details of a transaction by its hash. This is used for checking if a transaction was successful and getting detailed information about it. Returns comprehensive transaction information."
+    },
+    {
+      "name": "get_account_transactions",
+      "description": "Get recent transactions for an Aptos account. This is used for viewing transaction history and activity for an account. Returns a list of recent transactions with details."
+    }
+  ]
+}

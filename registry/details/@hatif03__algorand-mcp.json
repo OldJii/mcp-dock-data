@@ -2,7 +2,7 @@
   "id": "@hatif03/algorand-mcp",
   "displayName": "algorand-mcp",
   "description": "Build and manage Algorand accounts, assets, transactions, and smart contracts in one place. Search documentation, retrieve on-chain data, and automate advanced flows including atomic groups and swaps. Secure wallets, develop safely on testnet, and switch to mainnet when ready.",
-  "createdAt": "2026-01-16T07:30:36.428Z",
+  "createdAt": "2026-01-16T12:50:13.520Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hatif03/algorand-mcp"

@@ -1,0 +1,43 @@
+{
+  "id": "@anirbanbasu/pymcp",
+  "displayName": "PyMCP",
+  "description": "Primarily to be used as a template repository for developing MCP servers with FastMCP in Python, PyMCP is somewhat inspired by the official everything MCP server in Typescript.",
+  "createdAt": "2026-01-16T12:36:50.724Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anirbanbasu/pymcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greet",
+      "description": "Greet the caller with a quintessential Hello World message."
+    },
+    {
+      "name": "generate_password",
+      "description": "Generate a random password with specified length, optionally including special characters."
+    },
+    {
+      "name": "text_web_search",
+      "description": "Perform a text web search using the provided query using DDGS."
+    },
+    {
+      "name": "permutations",
+      "description": "Calculate the number of ways to choose k items from n items without repetition and with order."
+    },
+    {
+      "name": "pirate_summary",
+      "description": "Summarise the given text in a pirate style. This is an example of a tool that can use LLM sampling to generate a summary."
+    },
+    {
+      "name": "vonmises_random",
+      "description": "Generate a random number from the von Mises distribution. This is an example of a tool that uses elicitation to obtain the required parameter kappa (κ)."
+    }
+  ]
+}

@@ -1,0 +1,817 @@
+{
+  "id": "mailchimp",
+  "displayName": "Mailchimp",
+  "description": "Mailchimp is an email marketing and automation platform providing campaign templates, audience segmentation, and performance analytics to drive engagement and conversions",
+  "createdAt": "2026-01-16T12:34:59.285Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mailchimp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MAILCHIMP_ADD_AUTOMATION",
+      "description": "Create a new classic automation in your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_ADD_BATCH_WEBHOOK",
+      "description": "Configure a webhook that will fire whenever any batch request completes processing. You may only have a maximum of 20 batch webhooks."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CAMPAIGN",
+      "description": "Create a new Mailchimp campaign."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CAMPAIGN_FEEDBACK",
+      "description": "Add feedback on a specific campaign."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CAMPAIGN_FOLDER",
+      "description": "Create a new campaign folder."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CART",
+      "description": "Add a new cart to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CART_LINE_ITEM",
+      "description": "Add a new line item to an existing cart."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CONNECTED_SITE",
+      "description": "Create a new Mailchimp connected site."
+    },
+    {
+      "name": "MAILCHIMP_ADD_CUSTOMER",
+      "description": "Add a new customer to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_DOMAIN_TO_ACCOUNT",
+      "description": "Add a domain to the account."
+    },
+    {
+      "name": "MAILCHIMP_ADD_EVENT",
+      "description": "Add an event for a list member."
+    },
+    {
+      "name": "MAILCHIMP_ADD_EXPORT",
+      "description": "Create a new account export in your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_ADD_FILE",
+      "description": "Upload a new image or file to the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_ADD_FOLDER",
+      "description": "Create a new folder in the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_ADD_INTEREST_CATEGORY",
+      "description": "Create a new interest category."
+    },
+    {
+      "name": "MAILCHIMP_ADD_INTEREST_IN_CATEGORY",
+      "description": "Create a new interest or 'group name' for a specific category."
+    },
+    {
+      "name": "MAILCHIMP_ADD_LANDING_PAGE",
+      "description": "Create a new Mailchimp landing page."
+    },
+    {
+      "name": "MAILCHIMP_ADD_LIST",
+      "description": "Create a new list in your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_ADD_MEMBER_NOTE",
+      "description": "Add a new note for a specific subscriber."
+    },
+    {
+      "name": "MAILCHIMP_ADD_MEMBER_TO_LIST",
+      "description": "Add a new member to the list."
+    },
+    {
+      "name": "MAILCHIMP_ADD_MEMBER_TO_SEGMENT",
+      "description": "Add a member to a static segment."
+    },
+    {
+      "name": "MAILCHIMP_ADD_MERGE_FIELD",
+      "description": "Add a new merge field for a specific audience."
+    },
+    {
+      "name": "MAILCHIMP_ADD_ORDER",
+      "description": "Add a new order to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_ORDER_LINE_ITEM",
+      "description": "Add a new line item to an existing order."
+    },
+    {
+      "name": "MAILCHIMP_ADD_OR_REMOVE_MEMBER_TAGS",
+      "description": "Add or remove tags from a list member. If a tag that does not exist is passed in and set as 'active', a new tag will be created."
+    },
+    {
+      "name": "MAILCHIMP_ADD_OR_UPDATE_CUSTOMER",
+      "description": "Add or update a customer."
+    },
+    {
+      "name": "MAILCHIMP_ADD_OR_UPDATE_LIST_MEMBER",
+      "description": "Add or update a list member."
+    },
+    {
+      "name": "MAILCHIMP_ADD_OR_UPDATE_PRODUCT_VARIANT",
+      "description": "Add or update a product variant."
+    },
+    {
+      "name": "MAILCHIMP_ADD_PRODUCT",
+      "description": "Add a new product to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_PRODUCT_IMAGE",
+      "description": "Add a new image to the product."
+    },
+    {
+      "name": "MAILCHIMP_ADD_PRODUCT_VARIANT",
+      "description": "Add a new variant to the product."
+    },
+    {
+      "name": "MAILCHIMP_ADD_PROMO_CODE",
+      "description": "Add a new promo code to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_PROMO_RULE",
+      "description": "Add a new promo rule to a store."
+    },
+    {
+      "name": "MAILCHIMP_ADD_SEGMENT",
+      "description": "Create a new segment in a specific list."
+    },
+    {
+      "name": "MAILCHIMP_ADD_STORE",
+      "description": "Add a new store to your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_ADD_SUBSCRIBER_TO_WORKFLOW_EMAIL",
+      "description": "Manually add a subscriber to a workflow, bypassing the default trigger settings. You can also use this endpoint to trigger a series of automated emails in an API 3.0 workflow type."
+    },
+    {
+      "name": "MAILCHIMP_ADD_TEMPLATE",
+      "description": "Create a new template for the account. Only Classic templates are supported."
+    },
+    {
+      "name": "MAILCHIMP_ADD_TEMPLATE_FOLDER",
+      "description": "Create a new template folder."
+    },
+    {
+      "name": "MAILCHIMP_ADD_WEBHOOK",
+      "description": "Create a new webhook for a specific list."
+    },
+    {
+      "name": "MAILCHIMP_ARCHIVE_AUTOMATION",
+      "description": "Archiving will permanently end your automation and keep the report data. You’ll be able to replicate your archived automation, but you can’t restart it."
+    },
+    {
+      "name": "MAILCHIMP_ARCHIVE_LIST_MEMBER",
+      "description": "Archive a list member. To permanently delete, use the delete-permanent action."
+    },
+    {
+      "name": "MAILCHIMP_BATCH_ADD_OR_REMOVE_MEMBERS",
+      "description": "Batch add/remove list members to static segment"
+    },
+    {
+      "name": "MAILCHIMP_BATCH_SUBSCRIBE_OR_UNSUBSCRIBE",
+      "description": "Batch subscribe or unsubscribe list members."
+    },
+    {
+      "name": "MAILCHIMP_CAMPAIGN_ABUSE_REPORT_DETAILS",
+      "description": "Get information about a specific abuse report for a campaign."
+    },
+    {
+      "name": "MAILCHIMP_CAMPAIGN_STATISTICS_FEEDBACK",
+      "description": "Get feedback based on a campaign's statistics. Advice feedback is based on campaign stats like opens, clicks, unsubscribes, bounces, and more."
+    },
+    {
+      "name": "MAILCHIMP_CANCEL_CAMPAIGN",
+      "description": "Cancel a Regular or Plain-Text Campaign after you send, before all of your recipients receive it. This feature is included with Mailchimp Pro."
+    },
+    {
+      "name": "MAILCHIMP_CREATE_A_SURVEY_CAMPAIGN",
+      "description": "Utilize the List ID and Survey ID to generate a Campaign that links to your survey."
+    },
+    {
+      "name": "MAILCHIMP_CUSTOMER_JOURNEYS_API_TRIGGER_FOR_A_CONTACT",
+      "description": "Create a trigger step in the Customer Journey builder via the API. Use the provided URL with {journey_id} and {step_id} to activate conditions for a contact."
+    },
+    {
+      "name": "MAILCHIMP_CUSTOMIZE_SIGNUP_FORM",
+      "description": "Customize a list's default signup form."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_BATCH_REQUEST",
+      "description": "Stops a batch request from running. Since only one batch request is run at a time, this can be used to cancel a long running request. The results of any completed operations will not be available after this call."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_BATCH_WEBHOOK",
+      "description": "Remove a batch webhook. Webhooks will no longer be sent to the given URL."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CAMPAIGN",
+      "description": "Remove a campaign from your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CAMPAIGN_FEEDBACK_MESSAGE",
+      "description": "Remove a specific feedback message for a campaign."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CAMPAIGN_FOLDER",
+      "description": "Delete a specific campaign folder, and mark all the campaigns in the folder as 'unfiled'."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CART",
+      "description": "Delete a cart."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CART_LINE_ITEM",
+      "description": "Delete a specific cart line item."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CONNECTED_SITE",
+      "description": "Remove a connected site from your Mailchimp account."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_CUSTOMER",
+      "description": "Delete a customer from a store."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_DOMAIN",
+      "description": "Delete a verified domain from the account."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_FILE",
+      "description": "Remove a specific file from the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_FOLDER",
+      "description": "Delete a specific folder in the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_INTEREST_CATEGORY",
+      "description": "Delete a specific interest category."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_INTEREST_IN_CATEGORY",
+      "description": "Delete interests or group names in a specific category."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_LANDING_PAGE",
+      "description": "Delete a landing page."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_LIST",
+      "description": "Delete a list from your Mailchimp account. If you delete a list, you'll lose the list history—including subscriber activity, unsubscribes, complaints, and bounces. You’ll also lose subscribers’ email addresses, unless you exported and backed up your list."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_LIST_MEMBER",
+      "description": "Delete all personally identifiable information related to a list member, and remove them from a list. This will make it impossible to re-import the list member."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_MERGE_FIELD",
+      "description": "Delete a specific merge field."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_NOTE",
+      "description": "Delete a specific note for a specific list member."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_ORDER",
+      "description": "Delete an order."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_ORDER_LINE_ITEM",
+      "description": "Delete a specific order line item."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_PRODUCT",
+      "description": "Delete a product."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_PRODUCT_IMAGE",
+      "description": "Delete a product image."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_PRODUCT_VARIANT",
+      "description": "Delete a product variant."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_PROMO_CODE",
+      "description": "Delete a promo code from a store."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_PROMO_RULE",
+      "description": "Delete a promo rule from a store."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_SEGMENT",
+      "description": "Delete a specific segment in a list."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_STORE",
+      "description": "Delete a store. Deleting a store will also delete any associated subresources, including Customers, Orders, Products, and Carts."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_TEMPLATE",
+      "description": "Delete a specific template."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_TEMPLATE_FOLDER",
+      "description": "Delete a specific template folder, and mark all the templates in the folder as 'unfiled'."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_WEBHOOK",
+      "description": "Delete a specific webhook in a list."
+    },
+    {
+      "name": "MAILCHIMP_DELETE_WORKFLOW_EMAIL",
+      "description": "Removes an individual classic automation workflow email. Emails from certain workflow types, including the Abandoned Cart Email (abandonedCart) and Product Retargeting Email (abandonedBrowse) Workflows, cannot be deleted."
+    },
+    {
+      "name": "MAILCHIMP_GET_ABUSE_REPORT",
+      "description": "Get details about a specific abuse report."
+    },
+    {
+      "name": "MAILCHIMP_GET_ACCOUNT_EXPORT_INFO",
+      "description": "Get information about a specific account export."
+    },
+    {
+      "name": "MAILCHIMP_GET_AUTHORIZED_APP_INFO",
+      "description": "Get information about a specific authorized application."
+    },
+    {
+      "name": "MAILCHIMP_GET_AUTOMATED_EMAIL_SUBSCRIBER",
+      "description": "Get information about a specific subscriber in a classic automation email queue."
+    },
+    {
+      "name": "MAILCHIMP_GET_AUTOMATION_INFO",
+      "description": "Get a summary of an individual classic automation workflow's settings and content. The `trigger_settings` object returns information for the first email in the workflow."
+    },
+    {
+      "name": "MAILCHIMP_GET_BATCH_OPERATION_STATUS",
+      "description": "Get the status of a batch request."
+    },
+    {
+      "name": "MAILCHIMP_GET_BATCH_WEBHOOK_INFO",
+      "description": "Get information about a specific batch webhook."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_CONTENT",
+      "description": "Get the the HTML and plain-text content for a campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_FEEDBACK_MESSAGE",
+      "description": "Get a specific feedback message from a campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_FOLDER",
+      "description": "Get information about a specific folder used to organize campaigns."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_INFO",
+      "description": "Get information about a specific campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_LINK_DETAILS",
+      "description": "Get click details for a specific link in a campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_RECIPIENT_INFO",
+      "description": "Get information about a specific campaign recipient."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_REPORT",
+      "description": "Get report details for a specific sent campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CAMPAIGN_SEND_CHECKLIST",
+      "description": "Review the send checklist for a campaign, and resolve any issues before sending."
+    },
+    {
+      "name": "MAILCHIMP_GET_CART_INFO",
+      "description": "Get information about a specific cart."
+    },
+    {
+      "name": "MAILCHIMP_GET_CART_LINE_ITEM",
+      "description": "Get information about a specific cart line item."
+    },
+    {
+      "name": "MAILCHIMP_GET_CLICKED_LINK_SUBSCRIBER",
+      "description": "Get information about a specific subscriber who clicked a link in a specific campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_CONNECTED_SITE",
+      "description": "Get information about a specific connected site."
+    },
+    {
+      "name": "MAILCHIMP_GET_CONVERSATION",
+      "description": "API endpoint for Conversations is deprecated, replaced by Inbox. Although historical data is accessible, new campaign replies and messages are not retrievable through this endpoint."
+    },
+    {
+      "name": "MAILCHIMP_GET_CUSTOMER_INFO",
+      "description": "Get information about a specific customer."
+    },
+    {
+      "name": "MAILCHIMP_GET_DOMAIN_INFO",
+      "description": "Get the details for a single domain on the account."
+    },
+    {
+      "name": "MAILCHIMP_GET_FACEBOOK_AD_INFO",
+      "description": "Get details of a Facebook ad."
+    },
+    {
+      "name": "MAILCHIMP_GET_FACEBOOK_AD_REPORT",
+      "description": "Get report of a Facebook ad."
+    },
+    {
+      "name": "MAILCHIMP_GET_FILE",
+      "description": "Get information about a specific file in the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_GET_FOLDER",
+      "description": "Get information about a specific folder in the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_GET_GROWTH_HISTORY_BY_MONTH",
+      "description": "Get a summary of a specific list's growth activity for a specific month and year."
+    },
+    {
+      "name": "MAILCHIMP_GET_INFORMATION_ABOUT_ALL_SURVEYS_FOR_A_LIST",
+      "description": "Get information about all available surveys for a specific list."
+    },
+    {
+      "name": "MAILCHIMP_GET_INTEREST_CATEGORY_INFO",
+      "description": "Get information about a specific interest category."
+    },
+    {
+      "name": "MAILCHIMP_GET_INTEREST_IN_CATEGORY",
+      "description": "Get interests or 'group names' for a specific category."
+    },
+    {
+      "name": "MAILCHIMP_GET_LANDING_PAGE_CONTENT",
+      "description": "Get the the HTML for your landing page."
+    },
+    {
+      "name": "MAILCHIMP_GET_LANDING_PAGE_INFO",
+      "description": "Get information about a specific page."
+    },
+    {
+      "name": "MAILCHIMP_GET_LANDING_PAGE_REPORT",
+      "description": "Get report of a landing page."
+    },
+    {
+      "name": "MAILCHIMP_GET_LATEST_CHIMP_CHATTER",
+      "description": "Return the Chimp Chatter for this account ordered by most recent."
+    },
+    {
+      "name": "MAILCHIMP_GET_LIST_INFO",
+      "description": "Get information about a specific list in your Mailchimp account. Results include list members who have signed up but haven't confirmed their subscription yet and unsubscribed or cleaned."
+    },
+    {
+      "name": "MAILCHIMP_GET_LISTS_INFO",
+      "description": "Get information about all lists in the account."
+    },
+    {
+      "name": "MAILCHIMP_GET_MEMBER_INFO",
+      "description": "Get information about a specific list member, including a currently subscribed, unsubscribed, or bounced member."
+    },
+    {
+      "name": "MAILCHIMP_GET_MEMBER_NOTE",
+      "description": "Get a specific note for a specific list member."
+    },
+    {
+      "name": "MAILCHIMP_GET_MERGE_FIELD",
+      "description": "Get information about a specific merge field."
+    },
+    {
+      "name": "MAILCHIMP_GET_MESSAGE",
+      "description": "The conversation endpoint is outdated and replaced by Inbox, which isn't supported by it. Historical conversation data is accessible, but new replies and Inbox messages are not."
+    },
+    {
+      "name": "MAILCHIMP_GET_OPENED_CAMPAIGN_SUBSCRIBER",
+      "description": "Get information about a specific subscriber who opened a campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_ORDER_INFO",
+      "description": "Get information about a specific order."
+    },
+    {
+      "name": "MAILCHIMP_GET_ORDER_LINE_ITEM",
+      "description": "Get information about a specific order line item."
+    },
+    {
+      "name": "MAILCHIMP_GET_PRODUCT_IMAGE_INFO",
+      "description": "Get information about a specific product image."
+    },
+    {
+      "name": "MAILCHIMP_GET_PRODUCT_INFO",
+      "description": "Get information about a specific product."
+    },
+    {
+      "name": "MAILCHIMP_GET_PRODUCT_VARIANT_INFO",
+      "description": "Get information about a specific product variant."
+    },
+    {
+      "name": "MAILCHIMP_GET_PROMO_CODE",
+      "description": "Get information about a specific promo code."
+    },
+    {
+      "name": "MAILCHIMP_GET_PROMO_RULE",
+      "description": "Get information about a specific promo rule."
+    },
+    {
+      "name": "MAILCHIMP_GET_SEGMENT_INFO",
+      "description": "Get information about a specific segment."
+    },
+    {
+      "name": "MAILCHIMP_GET_STORE_INFO",
+      "description": "Get information about a specific store."
+    },
+    {
+      "name": "MAILCHIMP_GET_SUBSCRIBER_EMAIL_ACTIVITY",
+      "description": "Get a specific list member's activity in a campaign including opens, clicks, and bounces."
+    },
+    {
+      "name": "MAILCHIMP_GET_SUBSCRIBER_REMOVED_FROM_WORKFLOW",
+      "description": "Get information about a specific subscriber who was removed from a classic automation workflow."
+    },
+    {
+      "name": "MAILCHIMP_GET_SURVEY",
+      "description": "Get details about a specific survey."
+    },
+    {
+      "name": "MAILCHIMP_GET_SURVEY_QUESTION_REPORT",
+      "description": "Get report for a survey question."
+    },
+    {
+      "name": "MAILCHIMP_GET_SURVEY_REPORT",
+      "description": "Get report for a survey."
+    },
+    {
+      "name": "MAILCHIMP_GET_SURVEY_RESPONSE",
+      "description": "Get a single survey response."
+    },
+    {
+      "name": "MAILCHIMP_GET_TEMPLATE_FOLDER",
+      "description": "Get information about a specific folder used to organize templates."
+    },
+    {
+      "name": "MAILCHIMP_GET_TEMPLATE_INFO",
+      "description": "Get information about a specific template."
+    },
+    {
+      "name": "MAILCHIMP_GET_UNSUBSCRIBED_MEMBER",
+      "description": "Get information about a specific list member who unsubscribed from a campaign."
+    },
+    {
+      "name": "MAILCHIMP_GET_WEBHOOK_INFO",
+      "description": "Get information about a specific webhook."
+    },
+    {
+      "name": "MAILCHIMP_GET_WORKFLOW_EMAIL_INFO",
+      "description": "Get information about an individual classic automation workflow email."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ABUSE_REPORTS",
+      "description": "Get all abuse reports for a specific list."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ACCOUNT_EXPORTS",
+      "description": "Get a list of account exports for a given account."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ACCOUNT_ORDERS",
+      "description": "Get information about an account's orders."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ANSWERS_FOR_QUESTION",
+      "description": "Get answers for a survey question."
+    },
+    {
+      "name": "MAILCHIMP_LIST_API_ROOT_RESOURCES",
+      "description": "Get links to all other resources available in the API."
+    },
+    {
+      "name": "MAILCHIMP_LIST_AUTHORIZED_APPS",
+      "description": "Get a list of an account's registered, connected applications."
+    },
+    {
+      "name": "MAILCHIMP_LIST_AUTOMATED_EMAILS",
+      "description": "Get a summary of the emails in a classic automation workflow."
+    },
+    {
+      "name": "MAILCHIMP_LIST_AUTOMATED_EMAIL_SUBSCRIBERS",
+      "description": "Get information about a classic automation email queue."
+    },
+    {
+      "name": "MAILCHIMP_LIST_AUTOMATIONS",
+      "description": "Get a summary of an account's classic automations."
+    },
+    {
+      "name": "MAILCHIMP_LIST_BATCH_REQUESTS",
+      "description": "Get a summary of batch requests that have been made."
+    },
+    {
+      "name": "MAILCHIMP_LIST_BATCH_WEBHOOKS",
+      "description": "Get all webhooks that have been configured for batches."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_DETAILS",
+      "description": "Get information about clicks on specific links in your Mailchimp campaigns."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_FEEDBACK",
+      "description": "Get team feedback while you're working together on a Mailchimp campaign."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_FOLDERS",
+      "description": "Get all folders used to organize campaigns."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_OPEN_DETAILS",
+      "description": "Get detailed information about any campaign emails that were opened by a list member."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_PRODUCT_ACTIVITY",
+      "description": "Get breakdown of product activity for a campaign"
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_RECIPIENTS",
+      "description": "Get information about campaign recipients."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGN_REPORTS",
+      "description": "Get campaign reports."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CAMPAIGNS",
+      "description": "Get all campaigns in an account."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CART_LINE_ITEMS",
+      "description": "Get information about a cart's line items."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CARTS",
+      "description": "Get information about a store's carts."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CHILD_CAMPAIGN_REPORTS",
+      "description": "Get a list of reports with child campaigns for a specific parent campaign."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CLICKED_LINK_SUBSCRIBERS",
+      "description": "Get information about list members who clicked on a specific link in a campaign."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CONNECTED_SITES",
+      "description": "Get all connected sites in an account."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CONVERSATIONS",
+      "description": "List of conversations for an account is available via an endpoint, but it's deprecated in favor of Inbox. The endpoint excludes new Inbox data including campaign replies and messages. Past conversations remain accessible."
+    },
+    {
+      "name": "MAILCHIMP_LIST_CUSTOMERS",
+      "description": "Get information about a store's customers."
+    },
+    {
+      "name": "MAILCHIMP_LIST_DOMAIN_PERFORMANCE_STATS",
+      "description": "Get statistics for the top-performing email domains in a campaign."
+    },
+    {
+      "name": "MAILCHIMP_LIST_EEP_URL_ACTIVITY",
+      "description": "Get a summary of social activity for the campaign, tracked by EepURL."
+    },
+    {
+      "name": "MAILCHIMP_LIST_EMAIL_ACTIVITY",
+      "description": "Get a list of member's subscriber activity in a specific campaign."
+    },
+    {
+      "name": "MAILCHIMP_LIST_FACEBOOK_ADS",
+      "description": "Get list of Facebook ads."
+    },
+    {
+      "name": "MAILCHIMP_LIST_FACEBOOK_ADS_REPORTS",
+      "description": "Get reports of Facebook ads."
+    },
+    {
+      "name": "MAILCHIMP_LIST_FACEBOOK_ECOMMERCE_REPORT",
+      "description": "Get breakdown of product activity for an outreach."
+    },
+    {
+      "name": "MAILCHIMP_LIST_FOLDERS",
+      "description": "Get a list of all folders in the File Manager."
+    },
+    {
+      "name": "MAILCHIMP_LIST_GROWTH_HISTORY_DATA",
+      "description": "Get a month-by-month summary of a specific list's growth activity."
+    },
+    {
+      "name": "MAILCHIMP_LIST_INTEREST_CATEGORIES",
+      "description": "Get information about a list's interest categories."
+    },
+    {
+      "name": "MAILCHIMP_LIST_INTERESTS_IN_CATEGORY",
+      "description": "Get a list of this category's interests."
+    },
+    {
+      "name": "MAILCHIMP_LIST_LANDING_PAGES",
+      "description": "Get all landing pages."
+    },
+    {
+      "name": "MAILCHIMP_LIST_LANDING_PAGES_REPORTS",
+      "description": "Get reports of landing pages."
+    },
+    {
+      "name": "MAILCHIMP_LIST_LOCATIONS",
+      "description": "Get the locations (countries) that the list's subscribers have been tagged to based on geocoding their IP address."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MEMBER_EVENTS",
+      "description": "Get events for a contact."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MEMBER_GOAL_EVENTS",
+      "description": "Get the last 50 Goal events for a member on a specific list."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MEMBERS_INFO",
+      "description": "Get information about members in a specific Mailchimp list."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MEMBERS_IN_SEGMENT",
+      "description": "Get information about members in a saved segment."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MEMBER_TAGS",
+      "description": "Get the tags on a list member."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MERGE_FIELDS",
+      "description": "Get a list of all merge fields for an audience."
+    },
+    {
+      "name": "MAILCHIMP_LIST_MESSAGES",
+      "description": "Legacy \"Conversations\" endpoint is deprecated; use \"Inbox\" for new messages. Old conversations are accessible, but new campaign replies and Inbox messages are not."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ORDER_LINE_ITEMS",
+      "description": "Get information about an order's line items."
+    },
+    {
+      "name": "MAILCHIMP_LIST_ORDERS",
+      "description": "Get information about a store's orders."
+    },
+    {
+      "name": "MAILCHIMP_LIST_PRODUCT",
+      "description": "Get information about a store's products."
+    },
+    {
+      "name": "MAILCHIMP_LIST_PRODUCT_IMAGES",
+      "description": "Get information about a product's images."
+    },
+    {
+      "name": "MAILCHIMP_LIST_PRODUCT_VARIANTS",
+      "description": "Get information about a product's variants."
+    },
+    {
+      "name": "MAILCHIMP_LIST_PROMO_CODES",
+      "description": "Get information about a store's promo codes."
+    },
+    {
+      "name": "MAILCHIMP_LIST_PROMO_RULES",
+      "description": "Get information about a store's promo rules."
+    },
+    {
+      "name": "MAILCHIMP_LIST_RECENT_ACTIVITY",
+      "description": "Get up to the previous 180 days of daily detailed aggregated activity stats for a list, not including Automation activity."
+    },
+    {
+      "name": "MAILCHIMP_LIST_RECENT_MEMBER_NOTES",
+      "description": "Get recent notes for a specific list member."
+    },
+    {
+      "name": "MAILCHIMP_LIST_SEGMENTS",
+      "description": "Get information about all available segments for a specific list."
+    },
+    {
+      "name": "MAILCHIMP_LIST_SENDING_DOMAINS",
+      "description": "Get all of the sending domains on the account."
+    },
+    {
+      "name": "MAILCHIMP_LIST_SIGNUP_FORMS",
+      "description": "Get signup forms for a specific list."
+    }
+  ]
+}

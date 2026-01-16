@@ -2,7 +2,7 @@
   "id": "@OEvortex/ddg_search",
   "displayName": "DuckDuckGo & Felo AI Search",
   "description": "Provide fast, privacy-friendly web and AI-powered search capabilities with integrated content and metadata extraction. Enhance your AI assistants by enabling comprehensive web scraping without requiring API keys. Optimize performance with caching and secure usage through rate limiting and user agent rotation.",
-  "createdAt": "2026-01-16T07:20:16.691Z",
+  "createdAt": "2026-01-16T12:35:39.365Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@OEvortex/ddg_search"

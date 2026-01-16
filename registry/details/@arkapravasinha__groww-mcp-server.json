@@ -1,0 +1,166 @@
+{
+  "id": "@arkapravasinha/groww-mcp-server",
+  "displayName": "Groww MCP Server",
+  "description": "Enable seamless integration of Groww platform data and tools with language models to enhance financial decision-making and automation. Provide access to Groww-specific resources, execute financial operations, and utilize predefined prompts for investment workflows. Simplify interaction with Groww services through a standardized protocol for LLM applications.",
+  "createdAt": "2026-01-16T12:41:42.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arkapravasinha/groww-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "API key for the Groww API"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "download_instruments_csv",
+      "description": "Download/refresh the complete instruments CSV file from Groww containing all tradeable instruments"
+    },
+    {
+      "name": "search_instruments",
+      "description": "Search for instruments by name, trading symbol, groww symbol, or other criteria from the loaded instruments data"
+    },
+    {
+      "name": "get_instrument_details",
+      "description": "Get detailed information about a specific instrument by trading symbol"
+    },
+    {
+      "name": "place_order",
+      "description": "Place a new order in the market (stocks, F&O, etc.) - Official Groww API: POST /v1/order/create"
+    },
+    {
+      "name": "modify_order",
+      "description": "Modify an existing pending or open order"
+    },
+    {
+      "name": "cancel_order",
+      "description": "Cancel an existing pending or open order"
+    },
+    {
+      "name": "get_order_status",
+      "description": "Get the status of an order by Groww order ID"
+    },
+    {
+      "name": "get_order_status_by_reference",
+      "description": "Get the status of an order by user reference ID"
+    },
+    {
+      "name": "get_order_list",
+      "description": "Get list of all orders for the day"
+    },
+    {
+      "name": "get_order_details",
+      "description": "Get detailed information about a specific order"
+    },
+    {
+      "name": "get_order_trades",
+      "description": "Get all trades/executions for a specific order"
+    },
+    {
+      "name": "get_holdings",
+      "description": "Get current stock holdings in DEMAT account"
+    },
+    {
+      "name": "get_positions",
+      "description": "Get all trading positions for the user"
+    },
+    {
+      "name": "get_position_by_symbol",
+      "description": "Get position for a specific trading symbol"
+    },
+    {
+      "name": "get_user_margin",
+      "description": "Get available margin details for the user"
+    },
+    {
+      "name": "calculate_margin_requirement",
+      "description": "Calculate required margin for orders (single or basket)"
+    },
+    {
+      "name": "get_live_quote",
+      "description": "Get complete live market data for an instrument"
+    },
+    {
+      "name": "get_ltp",
+      "description": "Get Last Traded Price for multiple instruments (up to 50)"
+    },
+    {
+      "name": "get_ohlc",
+      "description": "Get OHLC data for multiple instruments (up to 50)"
+    },
+    {
+      "name": "get_current_date",
+      "description": "Get current date and time information for reference in historical data requests"
+    },
+    {
+      "name": "get_historical_data",
+      "description": "Get historical candle data for an instrument. CONSTRAINTS: 1min(3days,3mo), 5min(15days,3mo), 10min(30days,3mo), 1hr(150days,3mo), 4hr(365days,3mo), daily(1080days,unlimited), weekly(unlimited,unlimited)"
+    },
+    {
+      "name": "calculate_moving_averages",
+      "description": "Calculate Simple Moving Average (SMA) and Exponential Moving Average (EMA) for historical data"
+    },
+    {
+      "name": "calculate_rsi",
+      "description": "Calculate Relative Strength Index (RSI) for technical analysis"
+    },
+    {
+      "name": "calculate_bollinger_bands",
+      "description": "Calculate Bollinger Bands for volatility analysis"
+    },
+    {
+      "name": "calculate_support_resistance",
+      "description": "Identify support and resistance levels from historical price data"
+    },
+    {
+      "name": "calculate_volatility_metrics",
+      "description": "Calculate various volatility metrics for risk assessment"
+    },
+    {
+      "name": "calculate_macd",
+      "description": "Calculate MACD (Moving Average Convergence Divergence) for trend and momentum analysis"
+    },
+    {
+      "name": "calculate_stochastic",
+      "description": "Calculate Stochastic Oscillator for momentum analysis"
+    },
+    {
+      "name": "calculate_williams_r",
+      "description": "Calculate Williams %R for momentum analysis"
+    },
+    {
+      "name": "calculate_adx",
+      "description": "Calculate ADX (Average Directional Index) for trend strength analysis"
+    },
+    {
+      "name": "calculate_fibonacci_levels",
+      "description": "Calculate Fibonacci retracement and extension levels for support/resistance analysis"
+    },
+    {
+      "name": "analyze_candlestick_patterns",
+      "description": "Identify common candlestick patterns for reversal and continuation signals"
+    }
+  ]
+}

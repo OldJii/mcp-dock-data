@@ -1,0 +1,67 @@
+{
+  "id": "@keithah/stripe-mcp",
+  "displayName": "Stripe Fraud Control",
+  "description": "Investigate suspicious payments with Radar risk signals, early fraud warnings, disputes, and refund history. Mitigate losses by issuing full or partial refunds fast. Go beyond the basics by tapping any Stripe API resource when you need custom actions.",
+  "createdAt": "2026-01-16T12:49:19.080Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/stripe-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "stripe_api_key"
+      ],
+      "properties": {
+        "log_level": {
+          "type": "string",
+          "description": "Minimum log level emitted by the server (default: info).",
+          "default": "info",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        },
+        "stripe_api_key": {
+          "type": "string",
+          "description": "Stripe secret API key (sk_live_... or sk_test_...)."
+        },
+        "stripe_api_version": {
+          "type": "string",
+          "description": "Optional Stripe API version override (e.g., 2024-06-20). Leave undefined to use your account default."
+        },
+        "default_stripe_account": {
+          "type": "string",
+          "description": "Optional default connected account ID. Used when stripe_raw_request omits stripe_account."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "stripe_status",
+      "description": "Returns server health information and validates Stripe API connectivity."
+    },
+    {
+      "name": "stripe_fraud_insight",
+      "description": "Fetches Radar risk data, early fraud warnings, disputes, and refunds for a payment."
+    },
+    {
+      "name": "stripe_create_refund",
+      "description": "Creates a refund for a charge or payment intent, supporting partial refunds and metadata."
+    },
+    {
+      "name": "stripe_raw_request",
+      "description": "Direct access to any Stripe REST endpoint using the authenticated SDK client."
+    }
+  ]
+}

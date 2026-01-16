@@ -1,0 +1,12 @@
+{
+  "id": "@pma1999/research_hub_mcp",
+  "displayName": "research_hub_mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:59.249Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pma1999/research_hub_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@sbs1003/sbs_mcp_1010",
+  "displayName": "sbs_mcp_1010",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:33.973Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sbs1003/sbs_mcp_1010"
+  },
+  "connection": null,
+  "capabilities": []
+}

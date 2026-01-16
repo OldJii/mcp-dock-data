@@ -2,7 +2,7 @@
   "id": "@Aman-Amith-Shastry/scientific_computation",
   "displayName": "Scientific Computing",
   "description": "Create and manage tensors to perform linear algebra, matrix decompositions, and vector operations. Analyze systems with determinants, eigenvalues, QR/SVD, projections, and basis changes, and compute gradients, divergence, curl, and Laplacians symbolically. Visualize functions and vector fields to explore behavior and validate results quickly.",
-  "createdAt": "2026-01-16T07:20:09.094Z",
+  "createdAt": "2026-01-16T12:35:29.091Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Aman-Amith-Shastry/scientific_computation"

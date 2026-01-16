@@ -2,7 +2,7 @@
   "id": "@mikechao/balldontlie-mcp",
   "displayName": "Balldontlie Sports Data Server",
   "description": "Provide up-to-date information about players, teams, and games for the NBA, NFL, and MLB. Query detailed sports data dynamically to enhance your applications or agents with real-time sports insights. Easily integrate with popular clients like Claude Desktop and LibreChat using your Balldontlie API key.",
-  "createdAt": "2026-01-16T07:28:01.413Z",
+  "createdAt": "2026-01-16T12:46:30.390Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mikechao/balldontlie-mcp"

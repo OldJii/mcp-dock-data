@@ -2,7 +2,7 @@
   "id": "@iamadk/github",
   "displayName": "GitHub API MCP Server",
   "description": "Manage your GitHub repositories effortlessly. Create, update, and search for files, issues, and pull requests with ease, all while preserving your Git history. Streamline your development workflow by automating repository management tasks.",
-  "createdAt": "2026-01-16T07:32:57.478Z",
+  "createdAt": "2026-01-16T12:53:37.056Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@iamadk/github"

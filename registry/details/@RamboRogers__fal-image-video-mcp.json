@@ -2,7 +2,7 @@
   "id": "@RamboRogers/fal-image-video-mcp",
   "displayName": "FAL Image/Video Server",
   "description": "Generate high-quality images and videos using FAL AI models with seamless automatic downloads to your local machine. Access generated content via public URLs, data URLs, or local file paths for maximum compatibility and ease of use. Enhance your MCP-compatible clients with powerful, curated AI-driven creative media generation capabilities. Auto opens the images in your local viewer.\n\nUses our API key locally, never shares or sends data, just uses FAL API.",
-  "createdAt": "2026-01-16T07:20:13.167Z",
+  "createdAt": "2026-01-16T12:35:34.690Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@RamboRogers/fal-image-video-mcp"

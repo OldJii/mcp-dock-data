@@ -1,0 +1,12 @@
+{
+  "id": "@jamilu-as/my-mastra-app",
+  "displayName": "my-mastra-app",
+  "description": "",
+  "createdAt": "2026-01-16T13:02:40.876Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jamilu-as/my-mastra-app"
+  },
+  "connection": null,
+  "capabilities": []
+}

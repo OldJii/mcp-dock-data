@@ -2,7 +2,7 @@
   "id": "@xray918/douyin-mcp-server",
   "displayName": "Douyin Video Text Extractor",
   "description": "Download Douyin videos without watermarks and extract audio text automatically. Convert video audio to text using AI speech recognition with customizable API support. Clean up temporary files automatically to save disk space.",
-  "createdAt": "2026-01-16T07:29:04.498Z",
+  "createdAt": "2026-01-16T12:48:00.900Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@xray918/douyin-mcp-server"

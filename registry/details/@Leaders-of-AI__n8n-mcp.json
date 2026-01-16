@@ -1,0 +1,12 @@
+{
+  "id": "@Leaders-of-AI/n8n-mcp",
+  "displayName": "n8n-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:09.148Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Leaders-of-AI/n8n-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

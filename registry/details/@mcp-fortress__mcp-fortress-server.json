@@ -2,7 +2,7 @@
   "id": "@mcp-fortress/mcp-fortress-server",
   "displayName": "mcp-fortress-server",
   "description": "Scan your connected services for vulnerabilities and malicious code. Monitor runtime behavior with real-time alerts to stop threats before they spread. Get clear remediation guidance and an auditable trail to harden your setup.",
-  "createdAt": "2026-01-16T07:27:44.544Z",
+  "createdAt": "2026-01-16T12:45:56.625Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mcp-fortress/mcp-fortress-server"

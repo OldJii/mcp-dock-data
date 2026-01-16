@@ -2,7 +2,7 @@
   "id": "@Deploya-labs/mcp-resend",
   "displayName": "Email sending (used by Deploya.dev)",
   "description": "Compose and send emails directly from your LLM applications without the hassle of copying and pasting. Integrate seamlessly with Resend's API to streamline your email communication. Enhance your productivity by letting your agents handle email tasks effortlessly.",
-  "createdAt": "2026-01-16T07:26:05.569Z",
+  "createdAt": "2026-01-16T12:43:47.019Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Deploya-labs/mcp-resend"

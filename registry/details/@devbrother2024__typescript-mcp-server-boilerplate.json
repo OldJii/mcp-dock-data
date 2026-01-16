@@ -2,7 +2,7 @@
   "id": "@devbrother2024/typescript-mcp-server-boilerplate",
   "displayName": "TypeScript Starter",
   "description": "Kickstart development with a customizable TypeScript template featuring sample tools for greeting, calculation, time, and image generation, plus an info resource. Adapt it to your needs by adding or modifying tools and resources. Get up and running fast with a clean project structure.",
-  "createdAt": "2026-01-16T07:29:30.349Z",
+  "createdAt": "2026-01-16T12:48:37.834Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@devbrother2024/typescript-mcp-server-boilerplate"

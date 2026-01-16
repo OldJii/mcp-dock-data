@@ -1,0 +1,16 @@
+{
+  "id": "@RonsDad/browserbasemcp",
+  "displayName": "browserbasemcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:43:44.375Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RonsDad/browserbasemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@harish-anandaramanujam/national-park-service-mcp-server",
   "displayName": "National Park Service Data Server",
   "description": "Python-based server with 29 tools that provides real-time access to National Park Service data and resources through a standardized protocol. Enable seamless integration of park information into applications and agents for enhanced user experiences. Facilitate dynamic querying and retrieval of park-related content and tools.\n\nTo use the MCP server in the playground, please create a NPS API key and add it to npsApiKey via the Smithery configuration. \n\nWhile calling the remote server via python code from your local laptop, please add the key to the environment variable as NPS_API_KEY = \"***\"",
-  "createdAt": "2026-01-16T07:32:33.417Z",
+  "createdAt": "2026-01-16T12:53:04.026Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@harish-anandaramanujam/national-park-service-mcp-server"

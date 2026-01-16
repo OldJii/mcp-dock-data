@@ -2,7 +2,7 @@
   "id": "@xinkuang/china-stock-mcp",
   "displayName": "China Stock Insights",
   "description": "Access real-time and historical market data for China A-shares and Hong Kong stocks, along with news and macro indicators. Retrieve financial statements, key ratios, shareholder and insider activity, sentiment analysis, and company profiles to power investment research and strategies.",
-  "createdAt": "2026-01-16T07:20:31.147Z",
+  "createdAt": "2026-01-16T12:35:59.449Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@xinkuang/china-stock-mcp"

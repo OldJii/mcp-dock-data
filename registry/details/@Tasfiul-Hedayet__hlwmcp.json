@@ -1,0 +1,33 @@
+{
+  "id": "@Tasfiul-Hedayet/hlwmcp",
+  "displayName": "hlwmcp",
+  "description": "Fetch and explore your dataset to get instant answers and summaries. Ask questions in natural language and receive concise, data-grounded responses. Analyze the JSON structure to reveal key fields, patterns, and insights.",
+  "createdAt": "2026-01-16T12:50:59.784Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Tasfiul-Hedayet/hlwmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_my_data",
+      "description": "Fetch data from my fixed URL\n\nReturns:\n    Dictionary containing data from my URL"
+    },
+    {
+      "name": "ask_about_my_data",
+      "description": "Ask questions about data from my fixed URL\n\nArgs:\n    question: Your question about the data\n    \nReturns:\n    Answer based on my data"
+    },
+    {
+      "name": "analyze_my_json_data",
+      "description": "Analyze JSON data from my fixed URL\n\nArgs:\n    query: Optional specific query about the JSON structure\n    \nReturns:\n    Analysis of my JSON data"
+    },
+    {
+      "name": "get_my_data_summary",
+      "description": "Get a quick summary of data from my fixed URL\n\nReturns:\n    Summary of my data"
+    }
+  ]
+}

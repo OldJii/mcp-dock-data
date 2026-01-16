@@ -2,7 +2,7 @@
   "id": "ReportDash/DataStore",
   "displayName": "ReportDash DataStore",
   "description": "The ReportDash Datastore MCP (Model Context Protocol) server provides a standardized interface for AI assistants to query your connected advertising and analytics platforms including Facebook Ads, Google Ads, Instagram, LinkedIn, TikTok, and more.",
-  "createdAt": "2026-01-16T07:23:58.553Z",
+  "createdAt": "2026-01-16T12:40:57.306Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/ReportDash/DataStore"

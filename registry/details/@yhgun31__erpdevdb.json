@@ -1,0 +1,12 @@
+{
+  "id": "@yhgun31/erpdevdb",
+  "displayName": "erpdevdb",
+  "description": "",
+  "createdAt": "2026-01-16T13:06:44.527Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yhgun31/erpdevdb"
+  },
+  "connection": null,
+  "capabilities": []
+}

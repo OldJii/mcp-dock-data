@@ -1,0 +1,89 @@
+{
+  "id": "browser_tool",
+  "displayName": "Browser tool",
+  "description": "Composio enables AI Agents and LLMs to authenticate and integrate with various tools via function calling.",
+  "createdAt": "2026-01-16T12:35:09.999Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/browser_tool"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "BROWSER_TOOL_COPY_SELECTED_TEXT",
+      "description": "Copy currently selected text on the page to clipboard - ideal for extracting highlighted content, copying form data, or harvesting visible text selections."
+    },
+    {
+      "name": "BROWSER_TOOL_DRAG_AND_DROP",
+      "description": "Execute precise drag and drop operations - essential for file uploads, list reordering, element moving, and complex UI interactions that require drag-based manipulation."
+    },
+    {
+      "name": "BROWSER_TOOL_FETCH_WEBPAGE",
+      "description": "DECISION BRAIN: Essential for analysis, planning, and information gathering. PRIMARY USES: Understand page state, locate elements, verify changes, plan next actions FALLBACK ROLE: When screenshot blocked/fails, use this diligently for information FORMAT: html=element discovery & coordinates | markdown=content analysis HYBRID WORKFLOW: Use for decisions → AI agent for precision clicking"
+    },
+    {
+      "name": "BROWSER_TOOL_GET_CLIPBOARD",
+      "description": "Read current content from the system clipboard - essential for data transfer workflows, extracting copied text, and reading user-copied data for processing."
+    },
+    {
+      "name": "BROWSER_TOOL_KEYBOARD_SHORTCUT",
+      "description": "Execute keyboard shortcuts and key combinations - essential for copy/paste, navigation, and application commands that agents need for efficient browser automation."
+    },
+    {
+      "name": "BROWSER_TOOL_MOUSE_CLICK",
+      "description": "MANUAL PRECISION: Coordinate-based clicking - less efficient than AI agent for complex clicks. WHEN TO USE: Simple single clicks when you have exact coordinates BETTER ALTERNATIVE: Use PerformWebTask AI agent for complex/precise clicking PATTERN: FetchWebpage(html) → estimate coordinates → click → verify HINTS: Center ~(640,350) | Header ~y=150 | Content ~y=300-500 | SUCCESS RATE: 85%"
+    },
+    {
+      "name": "BROWSER_TOOL_MOUSE_DOUBLE_CLICK",
+      "description": "Execute a precise double click at specified screen coordinates - ideal for opening files, selecting text, or activating UI elements that require double click gestures."
+    },
+    {
+      "name": "BROWSER_TOOL_MOUSE_DOWN",
+      "description": "Press and hold mouse button at coordinates - use for starting custom drag operations, text selections, or long-press interactions. Must be followed by MouseUp action to complete."
+    },
+    {
+      "name": "BROWSER_TOOL_MOUSE_MOVE",
+      "description": "Move mouse cursor to precise coordinates without clicking - perfect for triggering hover effects, revealing tooltips, and positioning for subsequent interactions."
+    },
+    {
+      "name": "BROWSER_TOOL_MOUSE_UP",
+      "description": "Release mouse button at coordinates - completes drag operations, text selections, and long-press interactions. Should be used after MouseDown to finish mouse button sequences."
+    },
+    {
+      "name": "BROWSER_TOOL_NAVIGATE",
+      "description": "SESSION FOUNDATION: Always start here - creates browser session and navigates to URL. WORKFLOW: Navigate() → FetchWebpage() → Analysis/Planning → AI Agent or Manual interactions → Verify PROVIDES: Live debugUrl for user, initial page snapshot, persistent session TIP: Always show debugUrl to user before proceeding"
+    },
+    {
+      "name": "BROWSER_TOOL_PASTE_TEXT",
+      "description": "Paste text content at the current cursor position - perfect for filling forms, inserting data into text fields, or quick content insertion at focused elements."
+    },
+    {
+      "name": "BROWSER_TOOL_PERFORM_WEB_TASK",
+      "description": "AI AGENT: BEST for precise clicking and complex interactions. PREFERRED FOR: Button clicks, form interactions, precise targeting (coordinates handled well) HYBRID WORKFLOW: Use after FetchWebpage analysis for informed AI interactions WHEN TO USE: Any clicking task, multi-step workflows, dynamic content STRATEGY: AI handles precision → regular tools for verification"
+    },
+    {
+      "name": "BROWSER_TOOL_SCREENSHOT_WEBPAGE",
+      "description": "Capture high-quality screenshot of any webpage with extensive customization options - perfect for archiving, visual documentation, full-page captures, and cross-device viewport testing."
+    },
+    {
+      "name": "BROWSER_TOOL_SCROLL",
+      "description": "PAGE NAVIGATION: Smooth scrolling. USE: When target element not visible after FetchWebpage() DISTANCE: 200px=fine | 400px=sections | 800px=quick traverse ALWAYS: Scroll → FetchWebpage() → verify | SUCCESS RATE: 99%"
+    },
+    {
+      "name": "BROWSER_TOOL_SET_CLIPBOARD",
+      "description": "Store text content in the system clipboard for later paste operations - perfect for preparing data transfers, staging content for forms, or cross-application data sharing."
+    },
+    {
+      "name": "BROWSER_TOOL_TAKE_SCREENSHOT",
+      "description": "VISUAL VERIFICATION: Capture screenshot - MUST BE CALLED ALONE in multi_execute. 🚨 CRITICAL: Screenshot cannot be combined with other tools in same multi_execute call FALLBACK: If screenshot blocked/fails, use FetchWebpage diligently for information USE: Debug UI, verify states, document results after page changes RENDERS: Inline visual feedback | SUCCESS RATE: 99%"
+    },
+    {
+      "name": "BROWSER_TOOL_TYPE_TEXT",
+      "description": "CONTROLLED INPUT: Human-like typing. PATTERN: Click to focus → TypeText() → verify SPEED: delay=0 (fast) | delay=50 (human-like) | delay=100+ (careful) Must focus input field first | SUCCESS RATE: 95%"
+    }
+  ]
+}

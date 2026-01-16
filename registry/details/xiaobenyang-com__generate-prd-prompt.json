@@ -1,0 +1,48 @@
+{
+  "id": "xiaobenyang-com/generate-prd-prompt",
+  "displayName": "generate-prd-prompt",
+  "description": "Create comprehensive PRD, codebase, and bug analysis templates to streamline planning, review, and triage. Tailor outputs to your tech stack and severity for precise, actionable guidance. Standardize team workflows with complete, best-practice structures ready to fill and share.",
+  "createdAt": "2026-01-16T12:52:09.714Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/generate-prd-prompt"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_prd_prompt",
+      "description": "Generate an assembled Product Requirements Document prompt with specified technology stacks and analysis focus areas"
+    },
+    {
+      "name": "generate_codebase_analysis_prompt",
+      "description": "Generate an assembled codebase analysis prompt with specified technology stacks and analysis focus areas"
+    },
+    {
+      "name": "generate_bug_analysis_prompt",
+      "description": "Generate an assembled bug analysis prompt with specified technology stacks and severity level"
+    },
+    {
+      "name": "get_prd_template",
+      "description": "Fetch a comprehensive Product Requirements Document markdown template with all standard sections (14 sections total)"
+    },
+    {
+      "name": "get_codebase_analysis_template",
+      "description": "Fetch a comprehensive codebase analysis markdown template with all standard sections (12 sections total)"
+    },
+    {
+      "name": "get_bug_analysis_template",
+      "description": "Fetch a comprehensive bug analysis markdown template with all standard sections (8 sections total)"
+    }
+  ]
+}

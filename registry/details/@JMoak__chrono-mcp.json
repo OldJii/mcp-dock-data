@@ -2,7 +2,7 @@
   "id": "@JMoak/chrono-mcp",
   "displayName": "Chrono",
   "description": "Convert and compare dates and times across any timezone with flexible, locale-aware formatting. Add or subtract durations, compute differences, and break down intervals for precise scheduling and analysis. Sort timestamps, analyze time series, and get multi-format outputs in one step.",
-  "createdAt": "2026-01-16T07:21:59.445Z",
+  "createdAt": "2026-01-16T12:38:05.766Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@JMoak/chrono-mcp"

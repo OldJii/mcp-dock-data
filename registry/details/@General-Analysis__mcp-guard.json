@@ -2,7 +2,7 @@
   "id": "@General-Analysis/mcp-guard",
   "displayName": "MCP Guardrail",
   "description": "Add AI-powered security and moderation to your MCP setup by aggregating multiple MCP servers into a single secure interface. Prevent prompt injection attacks with intelligent moderation and easily configure your MCP environment with automatic detection and updates. Support both local and remote MCP servers transparently for enhanced safety and convenience.\n\nInstall the MCP Guard with 3 commands. Check out set up instructions: https://github.com/General-Analysis/mcp-guard",
-  "createdAt": "2026-01-16T07:31:51.050Z",
+  "createdAt": "2026-01-16T12:52:03.198Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@General-Analysis/mcp-guard"

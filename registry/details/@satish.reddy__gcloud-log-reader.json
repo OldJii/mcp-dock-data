@@ -1,0 +1,12 @@
+{
+  "id": "@satish.reddy/gcloud-log-reader",
+  "displayName": "gcloud-log-reader",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:06.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@satish.reddy/gcloud-log-reader"
+  },
+  "connection": null,
+  "capabilities": []
+}

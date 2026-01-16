@@ -2,7 +2,7 @@
   "id": "@alxspiker/Windows-Command-Line-MCP-Server",
   "displayName": "Windows Command Line MCP Server",
   "description": "Enable AI models to interact with Windows command-line functionality securely and efficiently. Execute commands, create projects, and retrieve system information while maintaining strict security protocols. Enhance your development workflows with safe command execution and project management tools.",
-  "createdAt": "2026-01-16T07:21:10.454Z",
+  "createdAt": "2026-01-16T12:36:56.093Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alxspiker/Windows-Command-Line-MCP-Server"

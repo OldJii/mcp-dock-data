@@ -2,7 +2,7 @@
   "id": "exa",
   "displayName": "Exa Search",
   "description": "Fast, intelligent web search and web crawling.\n\nNew mcp tool: Exa-code is a context tool for coding agents. It provides agents with fresh information about libraries, APIs, and SDKs with the purpose of reducing hallucinations.",
-  "createdAt": "2026-01-16T07:20:00.464Z",
+  "createdAt": "2026-01-16T12:35:15.664Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/exa"
@@ -12,26 +12,25 @@
     "runtime": "node",
     "configSchema": {
       "type": "object",
+      "title": "Exa MCP Server Configuration",
       "properties": {
         "debug": {
           "type": "boolean",
-          "description": "Enable debug logging",
+          "description": "Enable debug logging for troubleshooting",
           "default": false
         },
         "tools": {
           "type": "string",
-          "description": "List of tools to enable (comma-separated string or array) - alias for enabledTools"
+          "description": "Comma-separated list of tools to enable. Leave empty for defaults (web_search_exa, get_code_context_exa)."
         },
         "exaApiKey": {
           "type": "string",
-          "description": "Exa AI API key for search operations"
-        },
-        "enabledTools": {
-          "type": "string",
-          "description": "List of tools to enable (comma-separated string or array)"
+          "description": "Your Exa AI API key for search operations (optional - server has a fallback key). Get one at https://exa.ai"
         }
       },
-      "description": "Schema for the /mcp endpoint configuration"
+      "description": "Configuration for connecting to the Exa MCP server",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
     }
   },
   "capabilities": [

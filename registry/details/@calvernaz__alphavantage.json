@@ -1,0 +1,476 @@
+{
+  "id": "@calvernaz/alphavantage",
+  "displayName": "Alphavantage MCP Server",
+  "description": "Access real-time and historical stock market data effortlessly. Integrate stock market insights into your applications using the Alphavantage API with this MCP server. Get started quickly by configuring your API key and running the server to fetch market data.",
+  "createdAt": "2026-01-16T12:35:23.038Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@calvernaz/alphavantage"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "alphavantageApiKey"
+      ],
+      "properties": {
+        "alphavantageApiKey": {
+          "type": "string",
+          "description": "The API key for the Alphavantage server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "stock_quote",
+      "description": "Fetch a stock quote"
+    },
+    {
+      "name": "time_series_intraday",
+      "description": "Fetch a time series intraday"
+    },
+    {
+      "name": "time_series_daily",
+      "description": "Fetch a time series daily"
+    },
+    {
+      "name": "time_series_daily_adjusted",
+      "description": "Fetch a time series daily adjusted"
+    },
+    {
+      "name": "time_series_weekly",
+      "description": "Fetch a time series weekly"
+    },
+    {
+      "name": "time_series_weekly_adjusted",
+      "description": "Fetch a time series weekly adjusted"
+    },
+    {
+      "name": "time_series_monthly",
+      "description": "Fetch a time series monthly"
+    },
+    {
+      "name": "time_series_monthly_adjusted",
+      "description": "Fetch a time series monthly adjusted"
+    },
+    {
+      "name": "realtime_bulk_quotes",
+      "description": "Fetch real time bulk quotes"
+    },
+    {
+      "name": "symbol_search",
+      "description": "Search endpoint"
+    },
+    {
+      "name": "market_status",
+      "description": "Fetch market status"
+    },
+    {
+      "name": "realtime_options",
+      "description": "Fetch realtime options"
+    },
+    {
+      "name": "historical_options",
+      "description": "Fetch historical options"
+    },
+    {
+      "name": "news_sentiment",
+      "description": "Fetch news sentiment"
+    },
+    {
+      "name": "top_gainers_losers",
+      "description": "Fetch top gainers and losers"
+    },
+    {
+      "name": "insider_transactions",
+      "description": "Fetch insider transactions"
+    },
+    {
+      "name": "analytics_fixed_window",
+      "description": "Fetch analytics fixed window"
+    },
+    {
+      "name": "analytics_sliding_window",
+      "description": "Fetch analytics sliding window"
+    },
+    {
+      "name": "company_overview",
+      "description": "Fetch company overview"
+    },
+    {
+      "name": "etf_profile",
+      "description": "Fetch ETF profile"
+    },
+    {
+      "name": "company_dividends",
+      "description": "Fetch company dividends"
+    },
+    {
+      "name": "company_dividends",
+      "description": "Fetch company splits"
+    },
+    {
+      "name": "income_statement",
+      "description": "Fetch company income statement"
+    },
+    {
+      "name": "balance_sheet",
+      "description": "Fetch company balance sheet"
+    },
+    {
+      "name": "cash_flow",
+      "description": "Fetch company cash flow"
+    },
+    {
+      "name": "company_earnings",
+      "description": "Fetch company earnings"
+    },
+    {
+      "name": "earnings_call_transcript",
+      "description": "Fetch the earnings call transcript for a given company in a specific quarter"
+    },
+    {
+      "name": "listing_status",
+      "description": "Fetch listing status"
+    },
+    {
+      "name": "earnings_calendar",
+      "description": "Fetch company earnings calendar"
+    },
+    {
+      "name": "ipo_calendar",
+      "description": "Fetch IPO calendar"
+    },
+    {
+      "name": "exchange_rate",
+      "description": "Fetch exchange rate"
+    },
+    {
+      "name": "fx_intraday",
+      "description": "Fetch FX intraday"
+    },
+    {
+      "name": "fx_daily",
+      "description": "Fetch FX daily"
+    },
+    {
+      "name": "fx_weekly",
+      "description": "Fetch FX weekly"
+    },
+    {
+      "name": "fx_monthly",
+      "description": "Fetch FX monthly"
+    },
+    {
+      "name": "crypto_intraday",
+      "description": "Fetch crypto intraday"
+    },
+    {
+      "name": "digital_currency_daily",
+      "description": "Fetch digital currency daily"
+    },
+    {
+      "name": "digital_currency_weekly",
+      "description": "Fetch digital currency weekly"
+    },
+    {
+      "name": "digital_currency_monthly",
+      "description": "Fetch digital currency monthly"
+    },
+    {
+      "name": "wti_crude_oil",
+      "description": "Fetch WTI crude oil"
+    },
+    {
+      "name": "brent_crude_oil",
+      "description": "Fetch Brent crude oil"
+    },
+    {
+      "name": "natural_gas",
+      "description": "Fetch natural gas"
+    },
+    {
+      "name": "copper",
+      "description": "Fetch copper"
+    },
+    {
+      "name": "aluminum",
+      "description": "Fetch aluminum"
+    },
+    {
+      "name": "wheat",
+      "description": "Fetch wheat"
+    },
+    {
+      "name": "corn",
+      "description": "Fetch corn"
+    },
+    {
+      "name": "cotton",
+      "description": "Fetch cotton"
+    },
+    {
+      "name": "sugar",
+      "description": "Fetch sugar"
+    },
+    {
+      "name": "coffee",
+      "description": "Fetch coffee"
+    },
+    {
+      "name": "all_commodities",
+      "description": "Fetch all commodities"
+    },
+    {
+      "name": "real_gdp",
+      "description": "Fetch real GDP"
+    },
+    {
+      "name": "real_gdp_per_capita",
+      "description": "Fetch real GDP per capita"
+    },
+    {
+      "name": "treasury_yield",
+      "description": "Fetch treasury yield"
+    },
+    {
+      "name": "federal_funds_rate",
+      "description": "Fetch federal funds rate"
+    },
+    {
+      "name": "cpi",
+      "description": "Fetch consumer price index"
+    },
+    {
+      "name": "inflation",
+      "description": "Fetch inflation"
+    },
+    {
+      "name": "retail_sales",
+      "description": "Fetch retail sales"
+    },
+    {
+      "name": "durables",
+      "description": "Fetch durables"
+    },
+    {
+      "name": "unemployment",
+      "description": "Fetch unemployment"
+    },
+    {
+      "name": "nonfarm_payroll",
+      "description": "Fetch nonfarm payroll"
+    },
+    {
+      "name": "sma",
+      "description": "Fetch simple moving average"
+    },
+    {
+      "name": "ema",
+      "description": "Fetch exponential moving average"
+    },
+    {
+      "name": "wma",
+      "description": "Fetch weighted moving average"
+    },
+    {
+      "name": "dema",
+      "description": "Fetch double exponential moving average"
+    },
+    {
+      "name": "trima",
+      "description": "Fetch triangular moving average"
+    },
+    {
+      "name": "kama",
+      "description": "Fetch Kaufman adaptive moving average"
+    },
+    {
+      "name": "mama",
+      "description": "Fetch MESA adaptive moving average"
+    },
+    {
+      "name": "vwap",
+      "description": "Fetch volume weighted average price"
+    },
+    {
+      "name": "t3",
+      "description": "Fetch triple exponential moving average"
+    },
+    {
+      "name": "macd",
+      "description": "Fetch moving average convergence divergence"
+    },
+    {
+      "name": "macdext",
+      "description": "Fetch moving average convergence divergence next"
+    },
+    {
+      "name": "stoch",
+      "description": "Fetch stochastic oscillator"
+    },
+    {
+      "name": "stochf",
+      "description": "Fetch stochastic oscillator fast"
+    },
+    {
+      "name": "rsi",
+      "description": "Fetch relative strength index"
+    },
+    {
+      "name": "stochrsi",
+      "description": "Fetch stochastic relative strength index"
+    },
+    {
+      "name": "willr",
+      "description": "Fetch williams percent range"
+    },
+    {
+      "name": "adx",
+      "description": "Fetch average directional movement index"
+    },
+    {
+      "name": "adxr",
+      "description": "Fetch average directional movement index rating"
+    },
+    {
+      "name": "apo",
+      "description": "Fetch absolute price oscillator"
+    },
+    {
+      "name": "ppo",
+      "description": "Fetch percentage price oscillator"
+    },
+    {
+      "name": "mom",
+      "description": "Fetch momentum"
+    },
+    {
+      "name": "bop",
+      "description": "Fetch balance of power"
+    },
+    {
+      "name": "cci",
+      "description": "Fetch commodity channel index"
+    },
+    {
+      "name": "cmo",
+      "description": "Fetch chande momentum oscillator"
+    },
+    {
+      "name": "roc",
+      "description": "Fetch rate of change"
+    },
+    {
+      "name": "rocr",
+      "description": "Fetch rate of change ratio"
+    },
+    {
+      "name": "aroon",
+      "description": "Fetch aroon"
+    },
+    {
+      "name": "aroonosc",
+      "description": "Fetch aroon oscillator"
+    },
+    {
+      "name": "mfi",
+      "description": "Fetch money flow index"
+    },
+    {
+      "name": "trix",
+      "description": "Fetch triple exponential average"
+    },
+    {
+      "name": "ultosc",
+      "description": "Fetch ultimate oscillator"
+    },
+    {
+      "name": "dx",
+      "description": "Fetch directional movement index"
+    },
+    {
+      "name": "minus_di",
+      "description": "Fetch minus directional indicator"
+    },
+    {
+      "name": "plus_di",
+      "description": "Fetch plus directional indicator"
+    },
+    {
+      "name": "minus_dm",
+      "description": "Fetch minus directional movement"
+    },
+    {
+      "name": "plus_dm",
+      "description": "Fetch plus directional movement"
+    },
+    {
+      "name": "bbands",
+      "description": "Fetch bollinger bands"
+    },
+    {
+      "name": "midpoint",
+      "description": "Fetch midpoint"
+    },
+    {
+      "name": "midprice",
+      "description": "Fetch midprice"
+    },
+    {
+      "name": "sar",
+      "description": "Fetch parabolic sar"
+    },
+    {
+      "name": "trange",
+      "description": "Fetch true range"
+    },
+    {
+      "name": "atr",
+      "description": "Fetch average true range"
+    },
+    {
+      "name": "natr",
+      "description": "Fetch normalized average true range"
+    },
+    {
+      "name": "ad",
+      "description": "Fetch accumulation/distribution line"
+    },
+    {
+      "name": "adosc",
+      "description": "Fetch accumulation/distribution oscillator"
+    },
+    {
+      "name": "obv",
+      "description": "Fetch on balance volume"
+    },
+    {
+      "name": "ht_trendline",
+      "description": "Fetch hilbert transform - trendline"
+    },
+    {
+      "name": "ht_sine",
+      "description": "Fetch hilbert transform - sine wave"
+    },
+    {
+      "name": "ht_trendmode",
+      "description": "Fetch hilbert transform - trend mode"
+    },
+    {
+      "name": "ht_dcperiod",
+      "description": "Fetch hilbert transform - dominant cycle period"
+    },
+    {
+      "name": "ht_dcphase",
+      "description": "Fetch hilbert transform - dominant cycle phase"
+    },
+    {
+      "name": "ht_phasor",
+      "description": "Fetch hilbert transform - phasor components"
+    }
+  ]
+}

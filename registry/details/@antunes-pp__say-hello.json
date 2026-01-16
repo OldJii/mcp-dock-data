@@ -1,0 +1,12 @@
+{
+  "id": "@antunes-pp/say-hello",
+  "displayName": "say-hello",
+  "description": "",
+  "createdAt": "2026-01-16T13:03:37.815Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antunes-pp/say-hello"
+  },
+  "connection": null,
+  "capabilities": []
+}

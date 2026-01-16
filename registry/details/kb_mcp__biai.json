@@ -1,0 +1,12 @@
+{
+  "id": "kb_mcp/biai",
+  "displayName": "biai",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:34.915Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kb_mcp/biai"
+  },
+  "connection": null,
+  "capabilities": []
+}

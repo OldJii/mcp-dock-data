@@ -2,7 +2,7 @@
   "id": "@shinzo-labs/coinmarketcap-mcp",
   "displayName": "CoinMarketCap MCP",
   "description": "Access the complete CoinMarketCap API with 20+ basic endpoints and 50+ total, including cryptocurrency market data, exchange information, and other blockchain-related metrics.\n\nSign up here for a free API key: https://pro.coinmarketcap.com/signup/?plan=0",
-  "createdAt": "2026-01-16T07:21:24.982Z",
+  "createdAt": "2026-01-16T12:37:17.077Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@shinzo-labs/coinmarketcap-mcp"

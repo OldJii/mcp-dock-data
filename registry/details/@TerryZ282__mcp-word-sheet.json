@@ -2,7 +2,7 @@
   "id": "@TerryZ282/mcp-word-sheet",
   "displayName": "Word Memory Tool",
   "description": "Manage and review vocabulary efficiently using spaced repetition and AI-powered translation. Store your data securely in Google Sheets and enjoy seamless synchronization between a React frontend and AI chat integration. Enhance your language learning with automated reminders and detailed word management features.",
-  "createdAt": "2026-01-16T07:29:42.529Z",
+  "createdAt": "2026-01-16T12:48:55.432Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@TerryZ282/mcp-word-sheet"

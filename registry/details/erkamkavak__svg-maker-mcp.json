@@ -2,7 +2,7 @@
   "id": "erkamkavak/svg-maker-mcp",
   "displayName": "svg-maker-mcp",
   "description": "Create, render, and optimize SVGs with instant PNG previews to verify visual intent. Convert SVGs into React, React Native, PDF, or Data URI formats for easy integration. Validate, format, and extract metadata like dimensions and titles to ensure clean, reliable graphics.",
-  "createdAt": "2026-01-16T07:23:40.604Z",
+  "createdAt": "2026-01-16T12:40:32.010Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/erkamkavak/svg-maker-mcp"

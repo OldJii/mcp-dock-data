@@ -2,7 +2,7 @@
   "id": "@petrsovadina/mcp-atlassian",
   "displayName": "Atlassian Integration Server",
   "description": "Integrate your Atlassian products with ease. Access Confluence content and Jira tickets directly through the MCP interface, streamlining your workflow and enhancing productivity.",
-  "createdAt": "2026-01-16T07:29:43.590Z",
+  "createdAt": "2026-01-16T12:48:56.740Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@petrsovadina/mcp-atlassian"

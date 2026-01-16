@@ -2,7 +2,7 @@
   "id": "@jdubois/azure-cli-mcp",
   "displayName": "Azure CLI MCP Server",
   "description": "An MCP Server that wraps the Azure CLI.\nYou can use it to list your resources, create/update/delete them, secure them, in fact everything you can do with the Azure CLI, but powered by an LLM!",
-  "createdAt": "2026-01-16T07:32:48.413Z",
+  "createdAt": "2026-01-16T12:53:24.013Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jdubois/azure-cli-mcp"

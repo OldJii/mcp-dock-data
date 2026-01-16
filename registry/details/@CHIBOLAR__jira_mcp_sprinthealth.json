@@ -1,0 +1,78 @@
+{
+  "id": "@CHIBOLAR/jira_mcp_sprinthealth",
+  "displayName": "Jira Sprint Dashboard",
+  "description": "Transform your Jira sprint data into actionable insights with interactive dashboards that track burndown charts, team velocity, sprint goal progress, and blocked issues. Generate executive-ready health dashboards to improve sprint management and team performance. Enhance decision-making with predictive analytics and comprehensive sprint health scoring.",
+  "createdAt": "2026-01-16T12:46:23.590Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@CHIBOLAR/jira_mcp_sprinthealth"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "companyUrl",
+        "userEmail"
+      ],
+      "properties": {
+        "userEmail": {
+          "type": "string",
+          "description": "Your work email address"
+        },
+        "authMethod": {
+          "type": "string",
+          "description": "Browser OAuth authentication",
+          "default": "oauth",
+          "enum": [
+            "oauth"
+          ]
+        },
+        "companyUrl": {
+          "type": "string",
+          "description": "Your company's Jira URL (e.g., https://company.atlassian.net)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "oauth_status",
+      "description": "Check OAuth authentication status"
+    },
+    {
+      "name": "oauth_callback",
+      "description": "Handle OAuth callback (internal use)"
+    },
+    {
+      "name": "start_oauth",
+      "description": "Start browser OAuth authentication flow"
+    },
+    {
+      "name": "test_jira_connection",
+      "description": "Test connection to Jira"
+    },
+    {
+      "name": "jira_get_issue",
+      "description": "Get details for a specific Jira issue"
+    },
+    {
+      "name": "jira_search",
+      "description": "Search Jira issues with JQL"
+    },
+    {
+      "name": "list_projects",
+      "description": "List accessible Jira projects"
+    },
+    {
+      "name": "help",
+      "description": "Get help with Jira MCP server"
+    }
+  ]
+}

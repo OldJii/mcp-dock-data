@@ -1,0 +1,42 @@
+{
+  "id": "@dineshrapid/enformion_mcp",
+  "displayName": "Enformion Contact Enrichment",
+  "description": "Enrich contact records with phone, email, and address details from Enformion. Validate and complete missing fields to improve data quality and match rates. Accelerate lead scoring, outreach, and onboarding with cleaner, more reliable profiles.",
+  "createdAt": "2026-01-16T12:38:34.884Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dineshrapid/enformion_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {
+        "serverToken": {
+          "type": "string",
+          "description": "Server token for accessing the Character Counter server (optional for demo)"
+        },
+        "caseSensitive": {
+          "type": "boolean",
+          "description": "Whether character matching should be case sensitive",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "enformion_contact_enrich",
+      "description": "Call Enformion's Contact Enrich API to enrich contact details."
+    },
+    {
+      "name": "hello",
+      "description": "Simple test tool."
+    }
+  ]
+}

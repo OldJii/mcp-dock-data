@@ -2,7 +2,7 @@
   "id": "@lex-tools/codebase-context-dumper",
   "displayName": "Codebase Context Dumper",
   "description": "Automate the extraction of your codebase context for Large Language Models. This tool scans your project directory, respects .gitignore rules, and formats the output for seamless integration with MCP-compatible clients. Save time and enhance your LLM's context with structured codebase information.",
-  "createdAt": "2026-01-16T07:24:20.040Z",
+  "createdAt": "2026-01-16T12:41:28.256Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lex-tools/codebase-context-dumper"

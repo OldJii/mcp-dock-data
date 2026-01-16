@@ -1,0 +1,12 @@
+{
+  "id": "@anuj-delta/swagger-mcp",
+  "displayName": "swagger-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:41.969Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anuj-delta/swagger-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "@emmanuel/projects-emmanuel",
+  "displayName": "projects-emmanuel",
+  "description": "",
+  "createdAt": "2026-01-16T12:52:22.101Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@emmanuel/projects-emmanuel"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "listProjects",
+      "description": "Retrieves a paginated list of all projects."
+    },
+    {
+      "name": "createProject",
+      "description": "Creates a new project resource."
+    },
+    {
+      "name": "getProjectById",
+      "description": "Retrieves a single project by its unique identifier."
+    },
+    {
+      "name": "updateProject",
+      "description": "Updates an existing project by its unique identifier."
+    },
+    {
+      "name": "deleteProject",
+      "description": "Deletes a project by its unique identifier. This action is irreversible."
+    },
+    {
+      "name": "listTasksForProject",
+      "description": "Retrieves a paginated list of tasks for a specific project."
+    },
+    {
+      "name": "createTask",
+      "description": "Creates a new task within a specified project."
+    },
+    {
+      "name": "getTaskById",
+      "description": "Retrieves a single task by its unique identifier within a project."
+    },
+    {
+      "name": "updateTask",
+      "description": "Updates an existing task by its unique identifier."
+    },
+    {
+      "name": "deleteTask",
+      "description": "Deletes a task by its unique identifier. This action is irreversible."
+    }
+  ]
+}

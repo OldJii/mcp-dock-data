@@ -1,0 +1,57 @@
+{
+  "id": "@ronantakizawa/gis-dataconvertersion-mcp",
+  "displayName": "GIS Data Conversion Server",
+  "description": "The GIS Data Conversion MCP allows reverse geocoding, WKT/GeoJSON conversion, TopoJSON/ GeoJSON conversion, KML / GeoJSON conversion, and CSV conversion. The MCP allows LLMs to accurately convert GIS data using Geo Conversion APIs instead of relying on itself.",
+  "createdAt": "2026-01-16T12:52:26.029Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ronantakizawa/gis-dataconvertersion-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "wkt_to_geojson",
+      "description": "Convert Well-Known Text (WKT) to GeoJSON format"
+    },
+    {
+      "name": "geojson_to_wkt",
+      "description": "Convert GeoJSON to Well-Known Text (WKT) format"
+    },
+    {
+      "name": "csv_to_geojson",
+      "description": "Convert CSV with geographic data to GeoJSON"
+    },
+    {
+      "name": "geojson_to_csv",
+      "description": "Convert GeoJSON to CSV format"
+    },
+    {
+      "name": "geojson_to_topojson",
+      "description": "Convert GeoJSON to TopoJSON format (more compact with shared boundaries)"
+    },
+    {
+      "name": "topojson_to_geojson",
+      "description": "Convert TopoJSON to GeoJSON format"
+    },
+    {
+      "name": "kml_to_geojson",
+      "description": "Convert KML to GeoJSON format"
+    },
+    {
+      "name": "geojson_to_kml",
+      "description": "Convert GeoJSON to KML format"
+    },
+    {
+      "name": "coordinates_to_location",
+      "description": "Convert latitude/longitude coordinates to location name using reverse geocoding"
+    }
+  ]
+}

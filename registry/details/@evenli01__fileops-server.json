@@ -2,7 +2,7 @@
   "id": "@evenli01/fileops-server",
   "displayName": "File Operations",
   "description": "Manage files with fast reading, searching, listing, and line counting. Retrieve detailed file information and filter results with glob patterns. Stay safe with path traversal protection, file size limits, and binary detection.",
-  "createdAt": "2026-01-16T07:20:24.449Z",
+  "createdAt": "2026-01-16T12:35:50.096Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@evenli01/fileops-server"

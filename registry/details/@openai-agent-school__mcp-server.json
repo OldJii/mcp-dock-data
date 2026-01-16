@@ -2,7 +2,7 @@
   "id": "@openai-agent-school/mcp-server",
   "displayName": "Calculator",
   "description": "Perform quick arithmetic—add, subtract, multiply, and divide. Get instant results for everyday calculations in your workflow. Reduce context switching when handling numbers.",
-  "createdAt": "2026-01-16T07:22:02.984Z",
+  "createdAt": "2026-01-16T12:38:10.680Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@openai-agent-school/mcp-server"

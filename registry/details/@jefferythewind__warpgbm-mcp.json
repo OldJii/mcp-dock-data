@@ -2,7 +2,7 @@
   "id": "@jefferythewind/warpgbm-mcp",
   "displayName": "WarpGBM",
   "description": "Train gradient boosting models quickly and export portable artifacts for smooth deployment. Run fast predictions from newly trained models or existing artifacts. Upload datasets, browse available backends, and access a practical guide with best practices and troubleshooting. ",
-  "createdAt": "2026-01-16T07:27:29.108Z",
+  "createdAt": "2026-01-16T12:45:37.681Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jefferythewind/warpgbm-mcp"

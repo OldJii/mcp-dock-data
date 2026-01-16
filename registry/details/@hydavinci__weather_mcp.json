@@ -2,7 +2,7 @@
   "id": "@hydavinci/weather_mcp",
   "displayName": "Region Weather",
   "description": "Provide accurate and up-to-date weather information for any city or region worldwide through a simple and standardized interface. Enable AI models and clients to easily fetch weather data without requiring API keys. Deploy quickly with Docker support for seamless integration.",
-  "createdAt": "2026-01-16T07:21:12.604Z",
+  "createdAt": "2026-01-16T12:36:58.746Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hydavinci/weather_mcp"

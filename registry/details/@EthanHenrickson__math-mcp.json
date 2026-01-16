@@ -1,0 +1,112 @@
+{
+  "id": "@EthanHenrickson/math-mcp",
+  "displayName": "Math-MCP",
+  "description": "Enable your LLMs to perform accurate numerical calculations with a simple API. Leverage basic arithmetic and statistical functions to enhance your applications. Simplify complex mathematical tasks effortlessly and improve your model's capabilities.",
+  "createdAt": "2026-01-16T12:35:16.995Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@EthanHenrickson/math-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add",
+      "description": "Adds two numbers together"
+    },
+    {
+      "name": "subtract",
+      "description": "Subtracts the second number from the first number"
+    },
+    {
+      "name": "multiply",
+      "description": "Multiplies two numbers together"
+    },
+    {
+      "name": "division",
+      "description": "Divides the first number by the second number"
+    },
+    {
+      "name": "sum",
+      "description": "Adds any number of numbers together"
+    },
+    {
+      "name": "modulo",
+      "description": "Divides two numbers and returns the remainder"
+    },
+    {
+      "name": "mean",
+      "description": "Calculates the arithmetic mean of a list of numbers"
+    },
+    {
+      "name": "median",
+      "description": "Calculates the median of a list of numbers"
+    },
+    {
+      "name": "mode",
+      "description": "Finds the most common number in a list of numbers"
+    },
+    {
+      "name": "min",
+      "description": "Finds the minimum value from a list of numbers"
+    },
+    {
+      "name": "max",
+      "description": "Finds the maximum value from a list of numbers"
+    },
+    {
+      "name": "floor",
+      "description": "Rounds a number down to the nearest integer"
+    },
+    {
+      "name": "ceiling",
+      "description": "Rounds a number up to the nearest integer"
+    },
+    {
+      "name": "round",
+      "description": "Rounds a number to the nearest integer"
+    },
+    {
+      "name": "sin",
+      "description": "Calculates the sine of a number in radians"
+    },
+    {
+      "name": "arcsin",
+      "description": "Calculates the arcsine of a number in radians"
+    },
+    {
+      "name": "cos",
+      "description": "Calculates the cosine of a number in radians"
+    },
+    {
+      "name": "arccos",
+      "description": "Calculates the arccosine of a number in radians"
+    },
+    {
+      "name": "tan",
+      "description": "Calculates the tangent of a number in radians"
+    },
+    {
+      "name": "arctan",
+      "description": "Calculates the arctangent of a number in radians"
+    },
+    {
+      "name": "radiansToDegrees",
+      "description": "Converts a radian value to its equivalent in degrees"
+    },
+    {
+      "name": "degreesToRadians",
+      "description": "Converts a degree value to its equivalent in radians"
+    }
+  ]
+}

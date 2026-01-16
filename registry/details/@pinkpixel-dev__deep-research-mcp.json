@@ -2,7 +2,7 @@
   "id": "@pinkpixel-dev/deep-research-mcp",
   "displayName": "Deep Research Server",
   "description": "Perform comprehensive web research by combining AI-powered search and deep content crawling to gather extensive, up-to-date information on any topic. Aggregate and structure research data into detailed JSON outputs optimized for generating high-quality markdown documentation with LLMs. Customize documentation prompts and output paths to fit your workflow and save research results securely.",
-  "createdAt": "2026-01-16T07:25:36.527Z",
+  "createdAt": "2026-01-16T12:43:07.852Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pinkpixel-dev/deep-research-mcp"

@@ -2,7 +2,7 @@
   "id": "bitbucket",
   "displayName": "Bitbucket",
   "description": "Bitbucket is a Git-based code hosting and collaboration platform supporting private and public repositories, enabling teams to manage and review code through pull requests and integrations",
-  "createdAt": "2026-01-16T07:19:18.502Z",
+  "createdAt": "2026-01-16T12:34:15.111Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/bitbucket"

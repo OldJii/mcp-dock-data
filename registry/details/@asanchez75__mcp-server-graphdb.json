@@ -1,0 +1,12 @@
+{
+  "id": "@asanchez75/mcp-server-graphdb",
+  "displayName": "mcp-server-graphdb",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:00.609Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@asanchez75/mcp-server-graphdb"
+  },
+  "connection": null,
+  "capabilities": []
+}

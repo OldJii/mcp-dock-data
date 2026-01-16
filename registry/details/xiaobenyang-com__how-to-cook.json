@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/how-to-cook",
   "displayName": "how-to-cook",
   "description": "An AI recipe recommendation server based on the MCP protocol, providing functions such as recipe query, classification filtering, intelligent dietary planning, and daily menu recommendation.",
-  "createdAt": "2026-01-16T07:31:54.970Z",
+  "createdAt": "2026-01-16T12:52:08.413Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/how-to-cook"

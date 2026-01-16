@@ -2,7 +2,7 @@
   "id": "@exa-labs/websets-mcp-server",
   "displayName": "Exa Websets",
   "description": "Create and manage collections of companies, people, and papers, automatically discovering and verifying relevant entities. Enrich items with custom fields like CEO name, funding amount, or company stage, and inspect detailed results. Schedule recurring searches to keep collections fresh and catch new additions.",
-  "createdAt": "2026-01-16T07:21:04.942Z",
+  "createdAt": "2026-01-16T12:36:48.057Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@exa-labs/websets-mcp-server"

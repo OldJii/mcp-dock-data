@@ -2,7 +2,7 @@
   "id": "@lumile/mercadolibre-mcp",
   "displayName": "MercadoLibre MCP Server",
   "description": "Access MercadoLibre's API to search products, retrieve reviews, and check seller reputations.",
-  "createdAt": "2026-01-16T07:27:31.315Z",
+  "createdAt": "2026-01-16T12:45:40.330Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lumile/mercadolibre-mcp"

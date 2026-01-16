@@ -1,0 +1,25 @@
+{
+  "id": "@1Levick3/postgresql-mcp-server",
+  "displayName": "PostgreSQL Database Query Server",
+  "description": "Enable direct execution of custom SQL queries against PostgreSQL databases with support for parameterized queries and configurable timeouts. Securely manage database connections with SSL/TLS and connection pooling. Simplify database management and monitoring through an MCP-compliant interface.",
+  "createdAt": "2026-01-16T12:42:48.257Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@1Levick3/postgresql-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute_custom_query",
+      "description": "Execute a custom SQL query against the database. WARNING: Use with care. Do not expose to untrusted input."
+    }
+  ]
+}

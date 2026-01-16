@@ -2,7 +2,7 @@
   "id": "@Ami3466/mcp-flowengine-n8n-workflow-builder",
   "displayName": "mcp-flowengine-n8n-workflow-builder",
   "description": "Generate production-ready n8n workflows from plain language. \nValidate, test, and auto-fix workflows to catch errors and improve reliability. Explore templates and a rich node library to design, optimize, and secure your automations.\nFor free n8n hosting and to enjoy the full capabilities of n8n workflow builder, go to flowengine.cloud",
-  "createdAt": "2026-01-16T07:23:29.270Z",
+  "createdAt": "2026-01-16T12:40:15.801Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Ami3466/mcp-flowengine-n8n-workflow-builder"

@@ -1,0 +1,88 @@
+{
+  "id": "@jango-blockchained/advanced-homeassistant-mcp",
+  "displayName": "advanced-homeassistant-mcp",
+  "description": "Control Home Assistant lights, climate, media, locks, and scenes using natural language. Discover devices, trigger automations, send notifications, and check home status from one place. Sync lights to music with Aurora effects and get smart maintenance insights for energy and device health.",
+  "createdAt": "2026-01-16T12:41:13.514Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jango-blockchained/advanced-homeassistant-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "hassHost": {
+          "type": "string",
+          "description": "Home Assistant server URL",
+          "default": "http://homeassistant.local:8123"
+        },
+        "hassToken": {
+          "type": "string",
+          "description": "Long-lived access token for Home Assistant"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "lights_control",
+      "description": "Control lights in Home Assistant. List all lights, get state of a specific light, turn lights on with brightness/color settings, or turn lights off."
+    },
+    {
+      "name": "climate_control",
+      "description": "Control climate devices (thermostats, AC) in Home Assistant. List devices, get state, set HVAC mode, temperature, or fan mode."
+    },
+    {
+      "name": "list_devices",
+      "description": "List all available Home Assistant devices with optional filtering by domain, area, or floor."
+    },
+    {
+      "name": "cover_control",
+      "description": "Control covers (blinds, curtains, garage doors). Open, close, stop, or set position."
+    },
+    {
+      "name": "media_player_control",
+      "description": "Control media players. Play, pause, stop, volume control, and source selection."
+    },
+    {
+      "name": "fan_control",
+      "description": "Control fans. Turn on/off, set speed percentage, preset modes, oscillation."
+    },
+    {
+      "name": "lock_control",
+      "description": "Control locks. Lock, unlock, or open (for locks that support unlatching)."
+    },
+    {
+      "name": "vacuum_control",
+      "description": "Control robot vacuums. Start, pause, stop, return to dock, clean spot, locate."
+    },
+    {
+      "name": "alarm_control",
+      "description": "Control alarm systems. Arm (home, away, night), disarm, or trigger alarms."
+    },
+    {
+      "name": "automation",
+      "description": "Manage Home Assistant automations. List all automations, toggle on/off, or trigger manually."
+    },
+    {
+      "name": "scene",
+      "description": "Manage and activate Home Assistant scenes."
+    },
+    {
+      "name": "notify",
+      "description": "Send notifications through Home Assistant notification services."
+    },
+    {
+      "name": "system_info",
+      "description": "Get information about the MCP server including version and Home Assistant connection status."
+    }
+  ]
+}

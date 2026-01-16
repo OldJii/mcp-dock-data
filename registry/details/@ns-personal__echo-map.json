@@ -2,7 +2,7 @@
   "id": "@ns-personal/echo-map",
   "displayName": "Echo Map",
   "description": "Build and customize your own Model Context Protocol server with ease. Start with a basic setup and extend it with new functions to create powerful MCP-compatible applications. Enjoy features like graceful shutdown handling and development configurations for a smooth development experience.",
-  "createdAt": "2026-01-16T07:27:16.340Z",
+  "createdAt": "2026-01-16T12:45:21.982Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ns-personal/echo-map"

@@ -2,7 +2,7 @@
   "id": "@AIM-Intelligence/aim-mcp",
   "displayName": "AIM Guard",
   "description": "Provide AI-powered security analysis and safety instruction tools to protect AI agents during MCP interactions. Analyze text content for harmful or inappropriate material and enhance user prompts with security instructions. Ensure safer AI interactions with contextual security guidelines and real-time threat detection.",
-  "createdAt": "2026-01-16T07:21:49.119Z",
+  "createdAt": "2026-01-16T12:37:51.763Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AIM-Intelligence/aim-mcp"

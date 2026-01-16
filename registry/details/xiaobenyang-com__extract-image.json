@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/extract-image",
+  "displayName": "extract-image",
+  "description": "Extract and analyze images from files, links, and embedded images to understand text, objects, and visual content. Turn screenshots, photos, diagrams, and documents into searchable insights. Streamline workflows by quickly capturing information wherever your images live.",
+  "createdAt": "2026-01-16T12:47:59.566Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/extract-image"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_image_from_file",
+      "description": "Extract and analyze images from local file paths. Supports visual content understanding, OCR text extraction, and object recognition for screenshots, photos, diagrams, and documents."
+    },
+    {
+      "name": "extract_image_from_url",
+      "description": "Extract and analyze images from web URLs. Perfect for analyzing web screenshots, online photos, diagrams, or any image accessible via HTTP/HTTPS for visual content analysis and text extraction."
+    },
+    {
+      "name": "extract_image_from_base64",
+      "description": "Extract and analyze images from base64-encoded data. Ideal for processing screenshots from clipboard, dynamically generated images, or images embedded in applications without requiring file system access."
+    }
+  ]
+}

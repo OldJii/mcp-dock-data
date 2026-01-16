@@ -2,7 +2,7 @@
   "id": "agentmail",
   "displayName": "AgentMail",
   "description": "AgentMail is the email inbox API for AI agents. It gives agents their own email inboxes, like Gmail does for humans.",
-  "createdAt": "2026-01-16T07:19:22.914Z",
+  "createdAt": "2026-01-16T12:34:20.559Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/agentmail"

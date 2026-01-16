@@ -2,7 +2,7 @@
   "id": "@sylweriusz/mcp-neo4j-memory-server",
   "displayName": "Neo4j Knowledge Graph Memory",
   "description": "Store and retrieve user-specific memories across sessions using Neo4j graph database. This MCP memory infrastructure enables AI assistants to maintain context, recall past interactions, and manage memories with semantic search capabilities. Transform your agent's conversations into a searchable memory bank with entities and relationships.\n\n### Key capabilities:\n- **Store memories** persistently across multiple sessions\n- **Retrieve context** with hybrid semantic and exact search  \n- **Manage memory banks** with multi-database project isolation\n- **Recall information** through vector embeddings and graph traversal\n- **Memory extension** for AI agents with temporal tracking\n- **Knowledge graph** format with intelligent relationships\n\nPerfect for building AI assistants with long-term memory, maintaining user context, and creating memory systems that remember preferences and past interactions. Self-hosted memory infrastructure built on Neo4j for reliability and performance.",
-  "createdAt": "2026-01-16T07:24:04.499Z",
+  "createdAt": "2026-01-16T12:41:06.206Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sylweriusz/mcp-neo4j-memory-server"

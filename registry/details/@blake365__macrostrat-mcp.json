@@ -2,7 +2,7 @@
   "id": "@blake365/macrostrat-mcp",
   "displayName": "macrostrat-mcp",
   "description": "Explore global geologic data to answer questions about bedrock, formations, ages, and stratigraphy. Retrieve units, columns, minerals, timescales, and definitions for any location to build accurate geological context. Generate geology map tiles for quick visualization of areas of interest.",
-  "createdAt": "2026-01-16T07:21:24.439Z",
+  "createdAt": "2026-01-16T12:37:16.413Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@blake365/macrostrat-mcp"

@@ -2,7 +2,7 @@
   "id": "@ejfox/vulpes-spotify-mcp",
   "displayName": "Vulpes Spotify Server",
   "description": "Enable AI assistants to search, play, and control Spotify tracks and playlists seamlessly. Access your Spotify playback devices, currently playing track info, and manage playlists directly through AI interactions. Enhance your music experience by integrating Spotify controls into your AI workflows.",
-  "createdAt": "2026-01-16T07:32:45.235Z",
+  "createdAt": "2026-01-16T12:53:20.098Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ejfox/vulpes-spotify-mcp"

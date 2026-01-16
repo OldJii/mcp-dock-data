@@ -2,7 +2,7 @@
   "id": "@jweingardt12/mlb_mcp",
   "displayName": "MLB MCP",
   "description": "Provides easy access to MLB, Baseball Savant, Statcast, and Fangraphs baseball data. Query detailed baseball statistics by player name, team, year, and stat type to enhance your baseball analytics and applications. Integrate comprehensive baseball data seamlessly into your workflows with this FastAPI-based server.",
-  "createdAt": "2026-01-16T07:24:53.470Z",
+  "createdAt": "2026-01-16T12:42:13.508Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jweingardt12/mlb_mcp"

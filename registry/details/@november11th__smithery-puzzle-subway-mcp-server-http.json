@@ -2,7 +2,7 @@
   "id": "@november11th/smithery-puzzle-subway-mcp-server-http",
   "displayName": "Puzzle Subway Server",
   "description": "Provide real-time subway congestion information for Seoul with station and line-based search capabilities. Enable users to query current subway crowding data easily. Enhance transit planning with up-to-date congestion insights.",
-  "createdAt": "2026-01-16T07:33:00.024Z",
+  "createdAt": "2026-01-16T12:53:40.982Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@november11th/smithery-puzzle-subway-mcp-server-http"

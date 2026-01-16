@@ -1,0 +1,58 @@
+{
+  "id": "@LeGenAI/mcp-magma-handbook",
+  "displayName": "MAGMA Handbook AI Assistant",
+  "description": "Provide AI assistants with comprehensive, semantic search and contextual understanding of the MAGMA computational algebra system handbook. Enable users to retrieve categorized code examples, detailed code explanations, and filtered documentation efficiently. Enhance research, learning, and development workflows with fast, vector-powered similarity search tailored for MAGMA syntax and concepts.",
+  "createdAt": "2026-01-16T12:46:20.982Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LeGenAI/mcp-magma-handbook"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "openaiApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "Your OpenAI API key for embeddings generation (required)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_magma_advanced",
+      "description": "Advanced search with hybrid BM25+vector similarity, query expansion, and re-ranking for MAGMA handbook content"
+    },
+    {
+      "name": "search_functions",
+      "description": "Search for specific MAGMA functions with fuzzy matching and signature lookup"
+    },
+    {
+      "name": "validate_api_key",
+      "description": "Validate your OpenAI API key configuration and test connectivity"
+    },
+    {
+      "name": "magma_info",
+      "description": "Get information about MAGMA computational algebra system and this server"
+    },
+    {
+      "name": "benchmark_quality",
+      "description": "Run quality benchmarks to evaluate search performance across different query types"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@chohi22/mcp",
+  "displayName": "chohi22TEST",
+  "description": "MCP 서버 테스트",
+  "createdAt": "2026-01-16T12:43:49.017Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chohi22/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

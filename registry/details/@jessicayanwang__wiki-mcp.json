@@ -1,0 +1,12 @@
+{
+  "id": "@jessicayanwang/wiki-mcp",
+  "displayName": "wiki-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:01.272Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jessicayanwang/wiki-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@StealthMole/stealthmole-mcp",
   "displayName": "StealthMole",
   "description": "Investigate cyber threats across the dark web, Telegram, and leak repositories with unified search. Monitor ransomware activity and exposed credentials to quickly assess risk. Drill into detailed findings to streamline incident response and threat hunting.",
-  "createdAt": "2026-01-16T07:23:57.478Z",
+  "createdAt": "2026-01-16T12:40:55.975Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@StealthMole/stealthmole-mcp"

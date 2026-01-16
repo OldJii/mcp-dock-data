@@ -2,7 +2,7 @@
   "id": "@gilberth/mcp-cloudflare",
   "displayName": "Cloudflare DNS Manager",
   "description": "Manage your Cloudflare DNS records seamlessly through AI agents. List, create, update, and delete DNS records with full support for various record types and Cloudflare API features. Securely control your domain's DNS settings with scoped API tokens and easy integration.",
-  "createdAt": "2026-01-16T07:25:01.964Z",
+  "createdAt": "2026-01-16T12:42:24.888Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gilberth/mcp-cloudflare"

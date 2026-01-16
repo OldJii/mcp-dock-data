@@ -2,7 +2,7 @@
   "id": "@thirdstrandstudio/mcp-xpath",
   "displayName": "XPath Server",
   "description": "Execute XPath queries on XML and HTML content effortlessly. Fetch and query data from URLs or local XML, returning results in a structured format. Enhance your applications with powerful XML data manipulation capabilities.",
-  "createdAt": "2026-01-16T07:22:09.090Z",
+  "createdAt": "2026-01-16T12:38:18.937Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@thirdstrandstudio/mcp-xpath"

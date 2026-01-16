@@ -1,0 +1,61 @@
+{
+  "id": "@weiyueli7/profile_mcp",
+  "displayName": "Profile Explorer",
+  "description": "Extract structured insights from personal and organizational profile pages. Search for people to surface credible sources and get clean summaries, sections, and text excerpts. Accelerate research with guidance for accessing protected content.",
+  "createdAt": "2026-01-16T12:36:00.766Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@weiyueli7/profile_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "cookie": {
+          "type": "string",
+          "description": "Optional Cookie header value to access content if required.",
+          "default": null
+        },
+        "user_agent": {
+          "type": "string",
+          "description": "User-Agent header to use for fetching pages.",
+          "default": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+        },
+        "accept_language": {
+          "type": "string",
+          "description": "Accept-Language header to prefer when fetching pages.",
+          "default": "en-US,en;q=0.9"
+        },
+        "timeout_seconds": {
+          "type": "integer",
+          "description": "HTTP request timeout in seconds.",
+          "default": 20
+        },
+        "follow_redirects": {
+          "type": "boolean",
+          "description": "Whether to follow HTTP redirects when fetching pages.",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_profile",
+      "description": "\n        Fetch a profile-like page and return structured context and extracted text.\n\n        Args:\n            url: The profile URL (e.g., https://weiyueli7.github.io/)\n\n        Returns:\n            dict with keys:\n              - url, final_url, status_code, fetched_at\n              - extracted: structured fields (person/organization/meta/sections/text_excerpt/full_text)\n              - error: present only if an error occurred\n              - tips: guidance to access protected content if needed\n        "
+    },
+    {
+      "name": "get_default_profile",
+      "description": "\n        Convenience wrapper to fetch the requested person's profile page by default:\n        https://weiyueli7.github.io/\n        "
+    },
+    {
+      "name": "google_search_person",
+      "description": "\n        Perform a Google search for a person by name.\n        If the user asks about someone other than Weiyue Li, call this first to find sources.\n\n        Args:\n            name: Person's name to search (e.g., 'Ada Lovelace')\n\n        Returns:\n            dict with keys:\n              - query, fetched_at\n              - top_results: list[{title, url, snippet}]\n              - tips: notes about search and potential fallbacks\n        "
+    }
+  ]
+}

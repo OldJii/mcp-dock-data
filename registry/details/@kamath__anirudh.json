@@ -1,0 +1,51 @@
+{
+  "id": "@kamath/anirudh",
+  "displayName": "Anirudh Kamath Server",
+  "description": "Provide a dedicated MCP server focused on functionalities related to Anirudh Kamath. Enable seamless integration and interaction with tools and resources specific to this context. Enhance your LLM applications by leveraging this specialized server.",
+  "createdAt": "2026-01-16T12:53:46.186Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/anirudh"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "anirudh-work-experience",
+      "description": "Learn about Anirudh's work experience"
+    },
+    {
+      "name": "anirudh-education",
+      "description": "Learn about Anirudh's education"
+    },
+    {
+      "name": "anirudh-side-interests",
+      "description": "Learn about Anirudh's side interests"
+    },
+    {
+      "name": "anirudh-favorite-travel-destinations",
+      "description": "Learn about Anirudh's favorite travel destinations"
+    },
+    {
+      "name": "anirudh-favorite-movies",
+      "description": "Learn about Anirudh's favorite movies"
+    }
+  ]
+}

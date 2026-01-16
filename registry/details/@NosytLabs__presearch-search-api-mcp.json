@@ -2,7 +2,7 @@
   "id": "@NosytLabs/presearch-search-api-mcp",
   "displayName": "Presearch MCP",
   "description": "Search the web with Presearch API using country, freshness, and safety filters. Export results to JSON, CSV, or Markdown for easy reuse. Scrape content from result links and speed up workflows with caching.\n\nGet Presearch API key here - https://presearch.io/searchapi",
-  "createdAt": "2026-01-16T07:32:07.436Z",
+  "createdAt": "2026-01-16T12:52:26.678Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@NosytLabs/presearch-search-api-mcp"

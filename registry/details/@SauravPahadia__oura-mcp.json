@@ -2,7 +2,7 @@
   "id": "@SauravPahadia/oura-mcp",
   "displayName": "oura-mcp",
   "description": "Connect to your Oura Ring data to retrieve sleep, activity, readiness, heart rate, stress, and workout metrics. Analyze recent sleep patterns, summarize activity, and check recovery status with clear, actionable insights. Track trends over time and bring your wellness metrics into your workflows.",
-  "createdAt": "2026-01-16T07:22:18.643Z",
+  "createdAt": "2026-01-16T12:38:31.273Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SauravPahadia/oura-mcp"

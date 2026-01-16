@@ -2,7 +2,7 @@
   "id": "mcp-server-duckdb",
   "displayName": "DuckDB Server",
   "description": "A DuckDB MCP server allowing interaction with DuckDB databases through MCP.",
-  "createdAt": "2026-01-16T07:26:37.592Z",
+  "createdAt": "2026-01-16T12:44:32.949Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-server-duckdb"

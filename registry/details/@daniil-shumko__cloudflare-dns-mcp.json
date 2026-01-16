@@ -1,0 +1,12 @@
+{
+  "id": "@daniil-shumko/cloudflare-dns-mcp",
+  "displayName": "cloudflare-dns-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:36.639Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@daniil-shumko/cloudflare-dns-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

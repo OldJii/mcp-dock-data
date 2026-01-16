@@ -1,0 +1,31 @@
+{
+  "id": "@YounggheeJang/lmtd",
+  "displayName": "lmtd",
+  "description": "Compute log mean temperature difference for heat exchanger analysis. Choose Celsius or Fahrenheit to match your standards. Accelerate design, sizing, and troubleshooting with fast, reliable results.",
+  "createdAt": "2026-01-16T12:39:44.858Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@YounggheeJang/lmtd"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "string",
+          "description": "Temperature unit (celsius or fahrenheit)",
+          "default": "celsius"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "compute_lmtd",
+      "description": "\n        LMTD 계산기 (Tool)\n        파라미터:\n          - thi: hot stream inlet temperature\n          - tho: hot stream outlet temperature\n          - tci: cold stream inlet temperature\n          - tco: cold stream outlet temperature\n          - flow_type: \"counter\" 또는 \"parallel\" (기본: counter)\n        반환:\n          { \"lmtd\": float, \"units\": str, \"flow_type\": str }\n        "
+    }
+  ]
+}

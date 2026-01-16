@@ -1,0 +1,69 @@
+{
+  "id": "@Glitchcraft-Inc/singular-mcp-server",
+  "displayName": "GameRamp Singular API Server",
+  "description": "Provide comprehensive marketing analytics and AI-powered insights by integrating Singular data with your tools. Generate detailed campaign reports, perform cohort and LTV analysis, and build natural language reports to optimize marketing performance. Access real-time data and advanced metrics seamlessly through an intuitive interface.",
+  "createdAt": "2026-01-16T12:43:45.035Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Glitchcraft-Inc/singular-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "singularApiKey"
+      ],
+      "properties": {
+        "singularApiKey": {
+          "type": "string",
+          "description": "Your Singular API key from https://app.singular.net/"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_connection",
+      "description": "Test the connection to Singular API with detailed diagnostics including metric hash discovery"
+    },
+    {
+      "name": "diagnose_account",
+      "description": "Get comprehensive account information including available data ranges, apps, and permissions"
+    },
+    {
+      "name": "create_campaign_report",
+      "description": "Create a comprehensive campaign performance report. Responds quickly and may require a follow-up."
+    },
+    {
+      "name": "get_report_data",
+      "description": "Retrieves the data for a report that was already started and is taking a long time to generate."
+    },
+    {
+      "name": "analyze_campaign_performance",
+      "description": "AI-powered campaign performance analysis with actionable insights. Uses MCP sampling for intelligent analysis when available, with structured fallback for compatibility."
+    },
+    {
+      "name": "smart_report_builder",
+      "description": "AI-powered report builder that intelligently selects dimensions and metrics based on natural language descriptions. Automatically discovers and uses cohort metric hashes for advanced analysis when available."
+    },
+    {
+      "name": "create_cohort_report",
+      "description": "Create advanced cohort analysis report with LTV metrics, using hashed cohort metrics and specific periods like 'actual'. Responds quickly and may require a follow-up."
+    },
+    {
+      "name": "analyze_campaign_ltv",
+      "description": "AI-powered campaign LTV and ROI analysis with optimization recommendations. Uses MCP sampling for advanced insights when available, with structured analysis fallback."
+    },
+    {
+      "name": "get_metric_data",
+      "description": "Natural language metric data retrieval. Handles requests like 'give me revenue details', 'show user retention', 'get session data', etc. Automatically discovers and uses the correct metric hashes."
+    }
+  ]
+}

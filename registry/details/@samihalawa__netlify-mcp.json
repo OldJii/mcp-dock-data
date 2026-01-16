@@ -1,0 +1,12 @@
+{
+  "id": "@samihalawa/netlify-mcp",
+  "displayName": "netlify-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:58:48.433Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/netlify-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

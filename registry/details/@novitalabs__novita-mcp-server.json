@@ -1,0 +1,108 @@
+{
+  "id": "@novitalabs/novita-mcp-server",
+  "displayName": "Novita AI",
+  "description": "Manage your GPU instance resources effortlessly with Novita Server. Perform operations like listing clusters, creating and controlling GPU instances, and managing templates and network storage through a seamless interface. Enhance your AI workflows by integrating with Novita's GPU platform via compatible MCP clients.",
+  "createdAt": "2026-01-16T12:47:51.744Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@novitalabs/novita-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "novitaApiKey"
+      ],
+      "properties": {
+        "novitaApiKey": {
+          "type": "string",
+          "description": "Novita API key for authentication"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-clusters",
+      "description": ""
+    },
+    {
+      "name": "list-products",
+      "description": ""
+    },
+    {
+      "name": "list-gpu-instances",
+      "description": ""
+    },
+    {
+      "name": "get-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "create-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "start-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "stop-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "delete-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "restart-gpu-instance",
+      "description": ""
+    },
+    {
+      "name": "create-network-storage",
+      "description": ""
+    },
+    {
+      "name": "list-network-storage",
+      "description": ""
+    },
+    {
+      "name": "update-network-storage",
+      "description": ""
+    },
+    {
+      "name": "delete-network-storage",
+      "description": ""
+    },
+    {
+      "name": "list-container-registry-auths",
+      "description": ""
+    },
+    {
+      "name": "create-container-registry-auth",
+      "description": ""
+    },
+    {
+      "name": "delete-container-registry-auth",
+      "description": ""
+    },
+    {
+      "name": "list-templates",
+      "description": ""
+    },
+    {
+      "name": "get-template",
+      "description": ""
+    },
+    {
+      "name": "create-template",
+      "description": ""
+    },
+    {
+      "name": "delete-template",
+      "description": ""
+    }
+  ]
+}

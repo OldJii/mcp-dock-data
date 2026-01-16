@@ -1,0 +1,106 @@
+{
+  "id": "@samihalawa/manus-mcp",
+  "displayName": "Manus",
+  "description": "Work inside the Manus sandbox to build, test, and debug faster. Automate the browser, manage files, edit code, and control terminals from one place. Initialize environments with secrets and package projects for deployment.",
+  "createdAt": "2026-01-16T12:49:01.961Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/manus-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Manus API key for authentication"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Base URL for Manus API",
+          "default": "https://api.manus.im"
+        },
+        "sandboxToken": {
+          "type": "string",
+          "description": "Sandbox token for direct sandbox access"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "upload_file_to_s3",
+      "description": "Upload a file to S3 storage. For large files, returns multipart upload information."
+    },
+    {
+      "name": "multipart_upload_to_s3",
+      "description": "Upload large files to S3 using multipart upload with pre-signed URLs."
+    },
+    {
+      "name": "download_file",
+      "description": "Download a file from the sandbox at the specified path."
+    },
+    {
+      "name": "batch_download_attachments",
+      "description": "Download multiple files from URLs and optionally save them to a subfolder."
+    },
+    {
+      "name": "get_browser_status",
+      "description": "Get the current status of the browser manager in the sandbox."
+    },
+    {
+      "name": "execute_browser_action",
+      "description": "Execute a browser action such as navigation or interaction with page elements."
+    },
+    {
+      "name": "text_editor_action",
+      "description": "Perform text editor actions such as opening, reading, or updating files."
+    },
+    {
+      "name": "reset_terminal",
+      "description": "Reset a specific terminal session identified by terminal ID."
+    },
+    {
+      "name": "reset_all_terminals",
+      "description": "Reset all active terminal sessions in the sandbox."
+    },
+    {
+      "name": "view_terminal_history",
+      "description": "View the terminal history. Can return full history or only the latest output."
+    },
+    {
+      "name": "kill_terminal_process",
+      "description": "Kill the current process running in the specified terminal."
+    },
+    {
+      "name": "write_to_terminal",
+      "description": "Write input to a terminal process, optionally simulating an Enter key press."
+    },
+    {
+      "name": "initialize_sandbox",
+      "description": "Initialize the sandbox environment by writing secrets to the .secrets directory."
+    },
+    {
+      "name": "health_check",
+      "description": "Check the health status of the Manus sandbox service."
+    },
+    {
+      "name": "zip_and_upload_project",
+      "description": "Zip a directory (excluding specified folders) and upload the archive to S3."
+    }
+  ]
+}

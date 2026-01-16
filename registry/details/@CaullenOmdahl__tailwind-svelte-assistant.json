@@ -2,7 +2,7 @@
   "id": "@CaullenOmdahl/tailwind-svelte-assistant",
   "displayName": "Tailwind Svelte Assistant",
   "description": "Provide instant access to SvelteKit and Tailwind CSS documentation along with ready-to-use Svelte component snippets styled with Tailwind. Enable efficient UI development by retrieving relevant docs, utility class info, and component code snippets on demand. Streamline your frontend workflow with organized content discovery and configurable documentation scraping.",
-  "createdAt": "2026-01-16T07:25:15.829Z",
+  "createdAt": "2026-01-16T12:42:43.609Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@CaullenOmdahl/tailwind-svelte-assistant"

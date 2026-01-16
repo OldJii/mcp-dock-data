@@ -1,0 +1,20 @@
+{
+  "id": "@akilat-spec/mcp-host-tt-leave-manager-mcp",
+  "displayName": "Leave Manager Plus",
+  "description": "Manage employee leave with quick lookups for balances, histories, and recent activity. Generate work reports over custom timeframes. Find employees fast by name, designation, email, or ID.",
+  "createdAt": "2026-01-16T12:46:24.893Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@akilat-spec/mcp-host-tt-leave-manager-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": []
+}

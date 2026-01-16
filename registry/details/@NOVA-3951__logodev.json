@@ -1,0 +1,37 @@
+{
+  "id": "@NOVA-3951/logodev",
+  "displayName": "Logo.dev",
+  "description": "Search and retrieve company logos by brand or domain. Customize size, format, and theme to match your design needs. Accelerate design, prototyping, and content workflows with reliable direct logo URLs.",
+  "createdAt": "2026-01-16T12:44:49.862Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/logodev"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Logo.dev API key. Get one at https://logo.dev"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_logos",
+      "description": "Search for company logos by brand name or company name. Returns a list of matching companies with their domains and logo URLs."
+    },
+    {
+      "name": "get_logo_url",
+      "description": "Get a direct logo image URL for a specific domain. Supports customization options like size, format, theme, and more."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@ivo-toby/contentful-mcp-graphql",
   "displayName": "Contentful GraphQL Server",
   "description": "Enable efficient and flexible content retrieval from Contentful using GraphQL queries. Explore your content model schema, generate example queries, and execute custom queries with smart pagination and secure read-only access. Simplify content delivery and schema exploration for your applications.",
-  "createdAt": "2026-01-16T07:29:44.872Z",
+  "createdAt": "2026-01-16T12:48:58.707Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ivo-toby/contentful-mcp-graphql"

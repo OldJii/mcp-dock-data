@@ -2,7 +2,7 @@
   "id": "@call518/mcp-airflow-api",
   "displayName": "MCP-Airflow-API",
   "description": "Manage Apache Airflow clusters in plain language—monitor DAGs, trigger or pause runs, and browse code, logs, variables, pools, and connections. Accelerate troubleshooting with quick views of failed tasks, event logs, run durations, and cluster health. Work seamlessly across Airflow 2.x and 3.x, including asset insights for data-aware scheduling.",
-  "createdAt": "2026-01-16T07:32:56.955Z",
+  "createdAt": "2026-01-16T12:53:36.407Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@call518/mcp-airflow-api"

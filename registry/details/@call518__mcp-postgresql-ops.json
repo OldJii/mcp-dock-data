@@ -2,7 +2,7 @@
   "id": "@call518/mcp-postgresql-ops",
   "displayName": "MCP-PostgreSQL-Ops",
   "description": "Monitor and analyze PostgreSQL databases with natural-language queries. Diagnose slow queries, locks, bloat, replication lag, and WAL health across single or multiple databases. Get safe, read-only insights with schema discovery and clear maintenance recommendations.",
-  "createdAt": "2026-01-16T07:24:35.447Z",
+  "createdAt": "2026-01-16T12:41:49.929Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@call518/mcp-postgresql-ops"

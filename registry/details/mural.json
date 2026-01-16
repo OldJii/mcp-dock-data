@@ -1,0 +1,37 @@
+{
+  "id": "mural",
+  "displayName": "Mural",
+  "description": "Mural is a digital whiteboard platform enabling distributed teams to visually brainstorm, map ideas, and collaborate in real time with sticky notes and diagrams",
+  "createdAt": "2026-01-16T12:35:03.329Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mural"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MURAL_AUTHORIZATION_REQUEST",
+      "description": "Tool to initiate the OAuth 2.0 authorization process. Use when you need to redirect a user to Mural to obtain an authorization code."
+    },
+    {
+      "name": "MURAL_CREATE_STICKY_NOTE",
+      "description": "Tool to create one or more sticky note widgets on a mural. Use when you need to add notes to a mural layout."
+    },
+    {
+      "name": "MURAL_GET_CURRENT_USER",
+      "description": "Tool to retrieve information about the currently authenticated user. Use when you need current user details after authentication."
+    },
+    {
+      "name": "MURAL_GET_FILES_FOR_MURAL",
+      "description": "Tool to retrieve a list of file widgets in a mural. Use after confirming the mural ID when listing file attachments."
+    },
+    {
+      "name": "MURAL_GET_MURAL_WIDGETS",
+      "description": "Tool to retrieve all widgets within a specified mural. Use after confirming the mural ID is correct."
+    }
+  ]
+}

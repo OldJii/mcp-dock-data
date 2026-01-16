@@ -2,7 +2,7 @@
   "id": "@sourabh/timeslope",
   "displayName": "timeslope",
   "description": "### TimeSlope MCP Server\n**Automated Economic analysis via MCP over FRED data**\n\nPlug your agent into FRED and get quick, decision-ready insights. TimeSlope finds the right series and summarizes what matters—no setup details here.\n\n### Tools\n- **Plan Research**: Give it a question; get a tight plan with smart follow-ups.\n- **Quick Analyze**: Ask about a topic (optionally add dates); get a brief series-backed summary.\n\n### Examples\n- “How did unemployment and CPI move from 2018–2024?”\n- “Show mortgage rates and home prices during 2008–2012.”\n- “Compare US GDP growth and CPI from 2000–2010.”\n\n### Notes\n- No forecasting. Not investment advice.",
-  "createdAt": "2026-01-16T07:25:53.999Z",
+  "createdAt": "2026-01-16T12:43:30.420Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sourabh/timeslope"

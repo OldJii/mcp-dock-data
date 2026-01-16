@@ -1,0 +1,33 @@
+{
+  "id": "@yushuqiu1/attempt_1",
+  "displayName": "Song Rec, Greeting, and Number Adding Tool",
+  "description": "Recommend a song, generate a greeting message, or help you add some numbers",
+  "createdAt": "2026-01-16T12:36:13.504Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yushuqiu1/attempt_1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_greeting",
+      "description": ""
+    },
+    {
+      "name": "add_numbers",
+      "description": ""
+    },
+    {
+      "name": "recommend_song",
+      "description": ""
+    }
+  ]
+}

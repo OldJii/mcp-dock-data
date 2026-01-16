@@ -2,7 +2,7 @@
   "id": "@simonfraserduncan/echo-mcp",
   "displayName": "Echo Server",
   "description": "Provide a minimal MCP server that supports basic tools like echoing messages, pinging, and returning version information. Enable easy testing and integration with MCP Inspector and cURL clients. Facilitate quick setup with no external dependencies or authentication required.",
-  "createdAt": "2026-01-16T07:22:17.022Z",
+  "createdAt": "2026-01-16T12:38:29.287Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@simonfraserduncan/echo-mcp"

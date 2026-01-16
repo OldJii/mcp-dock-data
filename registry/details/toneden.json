@@ -1,0 +1,101 @@
+{
+  "id": "toneden",
+  "displayName": "Toneden",
+  "description": "ToneDen automates social media campaigns, advertising, and landing pages, particularly for music promoters and event organizers looking to boost audience reach",
+  "createdAt": "2026-01-16T12:35:12.825Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/toneden"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TONEDEN_CREATE_ATTACHMENT",
+      "description": "Tool to create an attachment. Use when you need to programmatically create a social unlock or contest attachment after gathering all required parameters."
+    },
+    {
+      "name": "TONEDEN_CREATE_LINK",
+      "description": "Tool to create a ToneDen link. Use when you have the target_type and, if needed, the services array. Supports creation of links for music, podcast, livestream, event, tour, biglink, fundraiser, smartlink, and custom types."
+    },
+    {
+      "name": "TONEDEN_DELETE_ADVERTISING_CAMPAIGN",
+      "description": "Deletes a ToneDen advertising campaign by ID using DELETE /advertising/campaigns/{campaignID}."
+    },
+    {
+      "name": "TONEDEN_DELETE_LINK",
+      "description": "Deletes a ToneDen link by ID using DELETE /links/{linkID}."
+    },
+    {
+      "name": "TONEDEN_DELETE_PLAYBOOK_CAMPAIGN",
+      "description": "Deletes a ToneDen playbook campaign by ID using DELETE /playbooks/campaigns/{campaignID}."
+    },
+    {
+      "name": "TONEDEN_EXPAND_LINK_TEMPLATE",
+      "description": "Tool to expand a ToneDen link template. Use when you need to retrieve the full template link with your tracking pixels and optional service links. Provide a URL to generate platform services for music or podcast content."
+    },
+    {
+      "name": "TONEDEN_GET_ADVERTISING_CAMPAIGN",
+      "description": "Retrieve a specific advertising campaign by its ID using ToneDen's API. Endpoint: GET /advertising/campaigns/{campaignID} Notes: - This endpoint does not require a userID in the path per official docs. - Some accounts may not have advertising access; in such cases, non-2xx responses are still returned here for observability instead of raising, so the caller can inspect the error object."
+    },
+    {
+      "name": "TONEDEN_GET_ADVERTISING_CAMPAIGN_CREATIVE_INSIGHTS",
+      "description": "Retrieve creative performance insights for a specific advertising campaign using ToneDen's API. Endpoint: GET /advertising/campaigns/{campaignID}/creativeInsights. Note: Endpoint uses camelCase `creativeInsights` per official docs."
+    },
+    {
+      "name": "TONEDEN_GET_ADVERTISING_CAMPAIGN_INSIGHTS",
+      "description": "Retrieve performance insights for a specific advertising campaign using ToneDen's API. Endpoint: GET /advertising/campaigns/{campaignID}/insights."
+    },
+    {
+      "name": "TONEDEN_GET_ATTACHMENT",
+      "description": "Tool to retrieve an attachment by ID. Use when you need to fetch details of an existing attachment by its ID."
+    },
+    {
+      "name": "TONEDEN_GET_ATTACHMENT_ENTRIES_TIME_SERIES",
+      "description": "Tool to fetch time-series entry statistics for a specific attachment. Use when you need chronological entry data points for an attachment."
+    },
+    {
+      "name": "TONEDEN_GET_ATTACHMENT_ENTRIES_TOTALS",
+      "description": "Tool to fetch summary counts of entries for an attachment. Use when you need aggregate entry counts over day, week, month, and lifetime."
+    },
+    {
+      "name": "TONEDEN_GET_ATTACHMENT_UNLOCKS_BY_PLATFORM",
+      "description": "Tool to fetch counts of unlocks by platform for a specific attachment. Use when you need a breakdown of unlocks across platforms like Spotify, Twitter, etc."
+    },
+    {
+      "name": "TONEDEN_GET_ATTACHMENT_UNLOCKS_TIME_SERIES",
+      "description": "Tool to fetch time-series unlock statistics for a specific attachment. Use when you need chronological unlock data points for an attachment."
+    },
+    {
+      "name": "TONEDEN_GET_LINK_INSIGHTS",
+      "description": "Tool to retrieve detailed insights for a ToneDen link. Use when you have a link ID and need metrics such as clicks, clickthroughs, email clicks, etc."
+    },
+    {
+      "name": "TONEDEN_GET_LINK_INSIGHTS_OVERVIEW",
+      "description": "Tool to retrieve a summary overview of a link's performance insights. Use when you have a link ID and need aggregated metrics across platforms."
+    },
+    {
+      "name": "TONEDEN_LIST_PLAYBOOK_CAMPAIGNS",
+      "description": "Tool to list playbook campaigns. Use when you need to retrieve a paginated list of all playbook campaigns."
+    },
+    {
+      "name": "TONEDEN_LIST_USER_ATTACHMENTS",
+      "description": "List User Attachments"
+    },
+    {
+      "name": "TONEDEN_UPDATE_ATTACHMENT",
+      "description": "Tool to update an existing attachment. Use when you need to flexibly modify any attachment field (or add custom fields) after its creation."
+    },
+    {
+      "name": "TONEDEN_UPDATE_PLAYBOOK_CAMPAIGN",
+      "description": "Updates a ToneDen playbook campaign by ID using PUT /playbooks/campaigns/{campaignID}. Note: ToneDen's public docs do not expose the full request body schema for updates. This action sends a flexible JSON payload composed from provided fields and returns diagnostic information without raising on non-2xx responses, to aid real-world testing."
+    },
+    {
+      "name": "TONEDEN_UPDATE_USER",
+      "description": "Tool to update a ToneDen user's profile. Use when you need to modify user details (e.g., name, location, or settings) after fetching them."
+    }
+  ]
+}

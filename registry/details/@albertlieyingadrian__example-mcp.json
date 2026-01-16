@@ -2,7 +2,7 @@
   "id": "@albertlieyingadrian/example-mcp",
   "displayName": "Example MCP Server",
   "description": "Provide a fast and easy-to-build MCP server implementation to integrate LLMs with external tools and resources. Enable dynamic interaction with data and actions through a standardized protocol. Facilitate rapid development of MCP servers following best practices.",
-  "createdAt": "2026-01-16T07:23:36.942Z",
+  "createdAt": "2026-01-16T12:40:26.543Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@albertlieyingadrian/example-mcp"

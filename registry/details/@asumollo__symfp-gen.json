@@ -2,7 +2,7 @@
   "id": "@asumollo/symfp-gen",
   "displayName": "CAD Model Automation Bridge Server",
   "description": "Enable AI-driven creation and validation of Eagle CAD components by bridging Claude Desktop with the CAD Model Automation web API. Facilitate seamless interaction with CAD design tools through a clean and efficient MCP interface. Simplify CAD model workflows by providing tools for validation, generation, and previewing of components.",
-  "createdAt": "2026-01-16T07:25:00.111Z",
+  "createdAt": "2026-01-16T12:42:22.903Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@asumollo/symfp-gen"

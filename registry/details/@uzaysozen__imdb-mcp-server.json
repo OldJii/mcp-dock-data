@@ -2,7 +2,7 @@
   "id": "@uzaysozen/imdb-mcp-server",
   "displayName": "IMDb Explorer",
   "description": "Discover movies, TV shows, cast, crew, ratings, and box office from IMDb. Browse top charts, upcoming releases, and country-specific lists, with special coverage of Indian cinema. Filter by title, genre, year, language, and more to find exactly what you need.",
-  "createdAt": "2026-01-16T07:23:56.924Z",
+  "createdAt": "2026-01-16T12:40:55.307Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@uzaysozen/imdb-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@Myangsun/loc-memory-server",
   "displayName": "Memory Graph",
   "description": "Remember user details and preferences across conversations. Organize facts into connected profiles for richer, long-term context. Search, update, and automatically extract locations to keep memories accurate and actionable.",
-  "createdAt": "2026-01-16T07:24:16.369Z",
+  "createdAt": "2026-01-16T12:41:22.849Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Myangsun/loc-memory-server"

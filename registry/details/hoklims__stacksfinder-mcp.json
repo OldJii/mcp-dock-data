@@ -1,0 +1,121 @@
+{
+  "id": "hoklims/stacksfinder-mcp",
+  "displayName": "StacksFinder",
+  "description": "Discover and analyze technologies across key dimensions, then compare options side-by-side to spot the best fit. Get tailored stack recommendations for your project’s type, scale, and priorities. Create and manage reusable blueprints to align teams and accelerate delivery.",
+  "createdAt": "2026-01-16T12:48:32.883Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hoklims/stacksfinder-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "list_technologies",
+      "description": "Browse the complete catalog of 32 technologies across 8 categories (frontend, backend, meta-framework, database, orm, auth, hosting, payments). Each technology has deterministic scores across 6 dimensions. Use this to discover valid technology IDs before using analyze_tech or compare_techs. Data version: 2.4.0"
+    },
+    {
+      "name": "analyze_tech",
+      "description": "Get a comprehensive analysis of any technology with scores across 6 dimensions: performance (perf), developer experience (dx), ecosystem maturity, maintainability (maintain), cost efficiency, and compliance/security. Returns overall grade (A+ to C-), identified strengths and weaknesses. All scores are deterministic - no LLM hallucinations."
+    },
+    {
+      "name": "compare_techs",
+      "description": "Compare 2-4 technologies side-by-side with per-dimension score breakdown, overall rankings with grades, and a compatibility matrix showing how well technologies work together. Perfect for making informed technology decisions. Example: compare [\"nextjs\", \"sveltekit\", \"remix\"] to find the best meta-framework for your project."
+    },
+    {
+      "name": "recommend_stack_demo",
+      "description": "Get a complete tech stack recommendation for your project type. Returns the highest-scored technology for each category (frontend, backend, meta-framework, database, ORM, auth, hosting, payments) based on deterministic scoring algorithms. FREE demo with 1 request per day limit. For unlimited access with custom priorities and constraints, upgrade to Pro at stacksfinder.com."
+    },
+    {
+      "name": "check_mcp_compatibility",
+      "description": "Check compatibility between MCP servers. Detects conflicts (e.g., two database providers), redundancies (e.g., two ORMs), and synergies (e.g., GitHub + Vercel). Returns a health score (0-100) with grade (A/B/C/D) and detailed breakdown."
+    },
+    {
+      "name": "get_workflow_guide",
+      "description": "Intelligent workflow guide that recommends the next tool to use based on your goal and context.\n\n**Tier**: Free (no API key required)\n\n**When to use**:\n- You're unsure which StacksFinder tool to call next\n- You want to understand the recommended workflow for your goal\n- You need help navigating Pro vs Free features\n\n**Supported Goals**:\n- discover: Explore available technologies\n- setup_api_key: Get Pro features access\n- get_recommendation: Get a stack recommendation\n- audit_project: Audit technical debt\n- migrate_stack: Get migration recommendations\n- install_mcp: Set up MCP in your IDE\n- compare_techs: Compare technologies side-by-side\n- create_blueprint: Create and save a blueprint\n\n**Example**: get_workflow_guide({ current_goal: \"audit_project\", user_tier: \"free\" })"
+    },
+    {
+      "name": "recommend_stack",
+      "description": "Get a full tech stack recommendation with custom priorities and constraints. Unlike the demo version, this uses the complete scoring engine with weight adjustments. Requires Pro account."
+    },
+    {
+      "name": "get_blueprint",
+      "description": "Fetch an existing blueprint by ID. Blueprints are generated via the StacksFinder web UI or create_blueprint tool. Returns the full tech stack recommendation with narratives."
+    },
+    {
+      "name": "list_blueprints",
+      "description": "List your saved blueprints. Returns up to 50 most recent blueprints with their IDs, project names, and creation dates."
+    },
+    {
+      "name": "get_audit",
+      "description": "Fetch an existing tech debt audit report by ID. Returns findings with severity (critical/high/medium/low/info) and actionable suggestions."
+    },
+    {
+      "name": "list_audits",
+      "description": "List your tech debt audit reports. Shows name, status, health score, and creation date."
+    },
+    {
+      "name": "get_audit_quota",
+      "description": "Check your remaining audit quota for this month. Shows used/limit and reset date."
+    },
+    {
+      "name": "create_blueprint",
+      "description": "Create a new tech stack blueprint for a project. The blueprint generation is asynchronous. Returns job ID to poll for completion."
+    },
+    {
+      "name": "create_audit",
+      "description": "Create a technical debt audit for a list of technologies. Analyzes for deprecated packages, security vulnerabilities, EOL versions."
+    },
+    {
+      "name": "compare_audits",
+      "description": "Compare two audit reports to track technical debt trends over time. Shows new issues, resolved issues, and health score change."
+    },
+    {
+      "name": "get_migration_recommendation",
+      "description": "Analyze an audit report for migration opportunities. Returns recommended replacements, migration roadmap, and risk assessment."
+    },
+    {
+      "name": "generate_mcp_kit",
+      "description": "Generate a complete project kit with optimal tech stack and MCP recommendations based on project description."
+    },
+    {
+      "name": "analyze_repo_mcps",
+      "description": "Analyze repository to detect tech stack and recommend relevant MCP servers. Note: This tool works best with local CLI, not via ChatGPT."
+    },
+    {
+      "name": "prepare_mcp_installation",
+      "description": "Generate a .env-mcp configuration file for MCP server installation. Note: This tool works best with local CLI."
+    },
+    {
+      "name": "execute_mcp_installation",
+      "description": "Read .env-mcp and generate installation commands for MCPs. Note: This tool works best with local CLI."
+    },
+    {
+      "name": "estimate_project",
+      "description": "Estimate scope, pricing, and analyze market for a software project. Returns hour breakdown, price ranges, and risk assessment."
+    },
+    {
+      "name": "get_estimate_quota",
+      "description": "Check your remaining estimate quota for this week and month."
+    },
+    {
+      "name": "setup_api_key",
+      "description": "Create an API key for your StacksFinder account. For ChatGPT OAuth users: pass any value for email/password (e.g., \"oauth@stacksfinder.com\" / \"oauth\") - they are ignored when OAuth is active. Requires Pro or Team tier."
+    },
+    {
+      "name": "list_api_keys",
+      "description": "List your StacksFinder API keys."
+    },
+    {
+      "name": "revoke_api_key",
+      "description": "Revoke an API key. This action cannot be undone."
+    },
+    {
+      "name": "create_api_key",
+      "description": "Create a new API key for your StacksFinder account. Uses OAuth authentication automatically - no email/password required. Requires Pro or Team tier."
+    }
+  ]
+}

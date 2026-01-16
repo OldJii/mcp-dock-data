@@ -1,0 +1,28 @@
+{
+  "id": "@STUzhy/py_execute_mcp",
+  "displayName": "Python execute",
+  "description": "Run Python code in a secure sandbox without local setup. Declare inline dependencies and execute snippets instantly. Prototype, test, and share reproducible results with ease.",
+  "createdAt": "2026-01-16T12:36:46.020Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@STUzhy/py_execute_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "python_execute",
+      "description": "Run Python in a Pyodide sandbox with optional PEP 723 requirements."
+    }
+  ]
+}

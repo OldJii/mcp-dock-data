@@ -1,0 +1,12 @@
+{
+  "id": "@zjl13031/prection",
+  "displayName": "prection",
+  "description": "预测运势能力mcp",
+  "createdAt": "2026-01-16T13:02:17.127Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zjl13031/prection"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@cloud/brickdocs",
+  "displayName": "brickdocs",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:59.093Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cloud/brickdocs"
+  },
+  "connection": null,
+  "capabilities": []
+}

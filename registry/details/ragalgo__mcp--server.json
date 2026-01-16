@@ -1,0 +1,12 @@
+{
+  "id": "ragalgo/mcp--server",
+  "displayName": "mcp--server",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:54.146Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ragalgo/mcp--server"
+  },
+  "connection": null,
+  "capabilities": []
+}

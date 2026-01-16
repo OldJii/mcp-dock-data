@@ -1,0 +1,33 @@
+{
+  "id": "@santiago.blanco.vilchez/santiago-cpa",
+  "displayName": "Tenant Builder",
+  "description": "Create and manage tenants with streamlined setup. Seed and update document templates for new or existing tenants. Authenticate and call external APIs to power end-to-end workflows.",
+  "createdAt": "2026-01-16T12:39:20.752Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/santiago-cpa"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "add-template",
+      "description": "Add a new template with sections to an existing tenant via the seed-template endpoint"
+    },
+    {
+      "name": "auth-login",
+      "description": "Authenticate user via the login endpoint and get JWT access token"
+    },
+    {
+      "name": "create-tenant",
+      "description": "Create a new tenant via the bootstrap endpoint with tenant, service type, admin user, and document sections"
+    },
+    {
+      "name": "http-request",
+      "description": "Make HTTP requests to external APIs"
+    }
+  ]
+}

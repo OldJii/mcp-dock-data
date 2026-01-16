@@ -1,0 +1,48 @@
+{
+  "id": "xiaobenyang-com/gsap_animation_generate",
+  "displayName": "gsap_animation_generate",
+  "description": "Create precise, production-ready GSAP animations from any request. Debug issues, explore APIs and plugins with expert guidance, and optimize for buttery 60fps. Set up complete projects and reuse battle-tested patterns in seconds.",
+  "createdAt": "2026-01-16T12:48:00.245Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/gsap_animation_generate"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "understand_and_create_animation",
+      "description": "The main AI engine - understands any animation request and generates perfect GSAP code with surgical precision"
+    },
+    {
+      "name": "get_gsap_api_expert",
+      "description": "Deep dive into any GSAP method, plugin, or property with expert-level knowledge"
+    },
+    {
+      "name": "generate_complete_setup",
+      "description": "Generate complete GSAP environment setup with all plugins and optimizations"
+    },
+    {
+      "name": "debug_animation_issue",
+      "description": "Expert debugging for GSAP animation problems with solutions"
+    },
+    {
+      "name": "optimize_for_performance",
+      "description": "Transform any animation into 60fps smoothness with expert optimizations"
+    },
+    {
+      "name": "create_production_pattern",
+      "description": "Generate battle-tested, production-ready animation patterns"
+    }
+  ]
+}

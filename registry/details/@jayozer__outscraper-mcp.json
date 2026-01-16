@@ -2,7 +2,7 @@
   "id": "@jayozer/outscraper-mcp",
   "displayName": "Outscraper Google Maps Data Extractor",
   "description": "Provide reliable access to Google Maps business and place data extraction services, including detailed search and customer reviews. Enhance your data with enrichment options, multi-language support, and regional filtering to tailor results. Enable high-volume asynchronous processing for scalable data extraction workflows.",
-  "createdAt": "2026-01-16T07:22:39.356Z",
+  "createdAt": "2026-01-16T12:39:05.467Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jayozer/outscraper-mcp"

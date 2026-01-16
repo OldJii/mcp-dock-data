@@ -1,0 +1,12 @@
+{
+  "id": "@Shentia/mcp-generate-unit-testing",
+  "displayName": "mcp generate unit testing",
+  "description": "MCP Generate Unit Testing Server\n\nAn intelligent Model Context Protocol (MCP) server that automatically generates comprehensive unit tests for Angular, React, and Next.js projects using Jest, Karma/Jasmine, or other testing frameworks.\n\nFeatures\n\n🔍 Automatic Project Detection - Detects Angular, React, or Next.js projects and their versions\n\n📦 Framework Management - Checks for testing frameworks and offers automated installation\n\n📚 Live Documentation Fetching - Retrieves latest Jest and Jasmine documentation before generating tests\n\n🤖 LLM-Powered Generation - Uses Claude Sonnet 4.5+ for intelligent test generation\n\n🎯 High Coverage Target - Generates tests targeting >85% code coverage\n\n✅ All Public Methods - Creates tests for all exported functions and public class methods\n\n🔄 Side-by-Side Validation - Displays source and test code for easy review\n\n🛠️ Multiple Frameworks - Supports Jest, Karma/Jasmine, and Vitest\n",
+  "createdAt": "2026-01-16T13:11:52.522Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Shentia/mcp-generate-unit-testing"
+  },
+  "connection": null,
+  "capabilities": []
+}

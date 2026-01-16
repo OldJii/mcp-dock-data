@@ -1,0 +1,39 @@
+{
+  "id": "@AtilioA/tesouro-direto-mcp",
+  "displayName": "Tesouro Direto MCP Server",
+  "description": "Enable natural language access to Brazilian treasury bond data through MCP-compatible clients. Query market data, bond details, and search/filter bonds using everyday language. Benefit from smart caching to reduce API calls while ensuring data freshness.",
+  "createdAt": "2026-01-16T12:40:13.148Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AtilioA/tesouro-direto-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "useMcpCache": {
+          "type": "boolean",
+          "description": "Enable in-memory cache for API responses",
+          "default": true
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "market_data",
+      "description": "Retrieves general market data from Tesouro Direto, including opening/closing times and status"
+    },
+    {
+      "name": "bond_data",
+      "description": "Retrieves detailed data for a specific bond from Tesouro Direto"
+    },
+    {
+      "name": "search_bonds",
+      "description": "Search for bonds by type (ANY,SELIC, IPCA, PREFIXADO) or maturity date range"
+    }
+  ]
+}

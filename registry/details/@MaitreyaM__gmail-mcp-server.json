@@ -1,0 +1,12 @@
+{
+  "id": "@MaitreyaM/gmail-mcp-server",
+  "displayName": "gmail-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T12:54:23.025Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MaitreyaM/gmail-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

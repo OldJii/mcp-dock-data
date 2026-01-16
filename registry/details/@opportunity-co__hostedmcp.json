@@ -1,0 +1,47 @@
+{
+  "id": "@opportunity-co/hostedmcp",
+  "displayName": "Hosted MCP",
+  "description": "Integrate and extend LLM capabilities with external data and tools.",
+  "createdAt": "2026-01-16T12:53:25.965Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@opportunity-co/hostedmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "token"
+      ],
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "Authentication token for the MCP service"
+        },
+        "serverUrl": {
+          "type": "string",
+          "description": "URL of the hosted MCP server",
+          "default": "wss://hostedmcp.com/mcp/socket"
+        },
+        "reconnectDelay": {
+          "type": "number",
+          "description": "Base delay between reconnection attempts in milliseconds",
+          "default": 1000
+        },
+        "connectionTimeout": {
+          "type": "number",
+          "description": "Connection timeout in milliseconds",
+          "default": 30000
+        },
+        "reconnectAttempts": {
+          "type": "number",
+          "description": "Maximum number of reconnection attempts",
+          "default": 5
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

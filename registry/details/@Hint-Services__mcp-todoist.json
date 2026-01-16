@@ -2,7 +2,7 @@
   "id": "@Hint-Services/mcp-todoist",
   "displayName": "Todoist ",
   "description": "Manage tasks, projects, sections, and labels in Todoist from your workflow. Create, update, complete, and batch-edit items using natural language and flexible filters. Streamline daily planning, project organization, and team coordination without switching contexts.",
-  "createdAt": "2026-01-16T07:22:46.120Z",
+  "createdAt": "2026-01-16T12:39:14.795Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Hint-Services/mcp-todoist"

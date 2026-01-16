@@ -2,7 +2,7 @@
   "id": "pagerduty",
   "displayName": "Pagerduty",
   "description": "Integrate PagerDuty to manage incidents, schedules, and alerts directly from your application.",
-  "createdAt": "2026-01-16T07:19:38.408Z",
+  "createdAt": "2026-01-16T12:34:39.092Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/pagerduty"

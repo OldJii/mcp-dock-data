@@ -1,0 +1,12 @@
+{
+  "id": "@dot-Justin/nextcloud-mcp-server",
+  "displayName": "nextcloud-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:36.747Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dot-Justin/nextcloud-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

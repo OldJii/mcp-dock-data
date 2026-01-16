@@ -2,7 +2,7 @@
   "id": "@linxule/mineru-mcp",
   "displayName": "mineru-mcp",
   "description": "MCP server for [MinerU](https://mineru.net) document parsing API - extract text, tables, and formulas from PDFs, DOCs, and images.\n\n  ## Features\n\n  - **VLM model** - 90%+ accuracy for complex documents\n  - **Pipeline model** - Fast processing for simple documents\n  - **Batch processing** - Parse up to 200 documents at once\n  - **Page ranges** - Extract specific pages only\n  - **109 language OCR** support\n  - **Optimized for Claude Code** - 73% token reduction vs alternatives\n\n  ## Tools\n\n  | Tool | Description |\n  |------|-------------|\n  | `mineru_parse` | Parse a document URL |\n  | `mineru_status` | Check task progress, get download URL |\n  | `mineru_batch` | Parse multiple URLs (max 200) |\n  | `mineru_batch_status` | Get batch results with pagination |\n\n  ## Supported Formats\n\n  PDF, DOC, DOCX, PPT, PPTX, PNG, JPG, JPEG\n\n  ## Requirements\n\n  Get your API key at [mineru.net](https://mineru.net)",
-  "createdAt": "2026-01-16T07:25:17.444Z",
+  "createdAt": "2026-01-16T12:42:45.598Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@linxule/mineru-mcp"

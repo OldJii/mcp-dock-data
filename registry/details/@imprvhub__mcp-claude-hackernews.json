@@ -1,0 +1,41 @@
+{
+  "id": "@imprvhub/mcp-claude-hackernews",
+  "displayName": "Hacker News MCP",
+  "description": "Enable seamless interaction with Hacker News directly from Claude Desktop. Browse latest, top, and best stories, view detailed story information, and read comments with clean formatting for enhanced readability. Access Hacker News content effortlessly using natural language or commands.",
+  "createdAt": "2026-01-16T12:46:52.653Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@imprvhub/mcp-claude-hackernews"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hn_latest",
+      "description": "Get the latest/newest stories from Hacker News"
+    },
+    {
+      "name": "hn_top",
+      "description": "Get the top-ranked stories from Hacker News"
+    },
+    {
+      "name": "hn_best",
+      "description": "Get the best stories from Hacker News"
+    },
+    {
+      "name": "hn_story",
+      "description": "Get details for a specific story by ID"
+    },
+    {
+      "name": "hn_comments",
+      "description": "Get comments for a story (by story ID or index from last story list)"
+    }
+  ]
+}

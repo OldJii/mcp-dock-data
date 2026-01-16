@@ -2,7 +2,7 @@
   "id": "@linxule/lotus-wisdom-mcp",
   "displayName": "Lotus Wisdom",
   "description": "Lotus Wisdom is a contemplative reasoning tool inspired by the Lotus Sutra. It guides AI through structured wisdom journeys for complex problems where logic alone isn't enough. Flow through wisdom domains (skillful means, non-dual recognition, meta-cognitive), take meditative pauses, and track your path across perspectives. Start with tag='begin' to receive the full framework, then continue with tags like open, examine, integrate, and express. The tool signals when insight is ready to be spoken in your own voice. Best for multi-perspective problems, contradictions needing integration, and questions holding their own wisdom.",
-  "createdAt": "2026-01-16T07:20:31.682Z",
+  "createdAt": "2026-01-16T12:36:00.105Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@linxule/lotus-wisdom-mcp"

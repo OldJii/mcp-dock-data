@@ -1,0 +1,12 @@
+{
+  "id": "@yescay/emailmcp",
+  "displayName": "emailmcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:42.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yescay/emailmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@SmartManoj/smithery-fastmcp-quickstart",
+  "displayName": "FastMCP Quickstart for Smithery",
+  "description": "Provide a simple MCP server with a greeting tool to enable interactive development and testing of MCP tools. Facilitate rapid iteration and debugging through integration with the Smithery Playground. Deploy easily to Smithery for HTTP access and MCP client compatibility.",
+  "createdAt": "2026-01-16T12:39:37.507Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SmartManoj/smithery-fastmcp-quickstart"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "greet",
+      "description": "Greet a user by name."
+    }
+  ]
+}

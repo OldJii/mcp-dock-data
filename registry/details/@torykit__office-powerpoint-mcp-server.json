@@ -1,0 +1,12 @@
+{
+  "id": "@torykit/office-powerpoint-mcp-server",
+  "displayName": "office-powerpoint-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:05.411Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@torykit/office-powerpoint-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

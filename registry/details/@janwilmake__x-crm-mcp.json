@@ -1,0 +1,12 @@
+{
+  "id": "@janwilmake/x-crm-mcp",
+  "displayName": "x-crm-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:08:50.235Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@janwilmake/x-crm-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "@YassineTk/mcp-docs-provider",
+  "displayName": "Documentation Context Provider",
+  "description": "Enable AI models to seamlessly access and query your local markdown technical documentation. This server allows for dynamic integration of documentation into LLM workflows, enhancing the model's ability to provide accurate and context-aware responses. Update your documentation without needing to rebuild the server, ensuring your AI always has the latest information.",
+  "createdAt": "2026-01-16T12:50:17.023Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@YassineTk/mcp-docs-provider"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "docPath"
+      ],
+      "properties": {
+        "docPath": {
+          "type": "string",
+          "description": "Path to the documentation markdown file to serve."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "query-docs",
+      "description": ""
+    }
+  ]
+}

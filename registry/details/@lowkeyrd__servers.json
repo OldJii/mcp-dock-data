@@ -2,7 +2,7 @@
   "id": "@lowkeyrd/servers",
   "displayName": "GitHub API MCP Server",
   "description": "Enable seamless file operations, repository management, and advanced search functionalities on GitHub. Automate your workflows with automatic branch creation and comprehensive error handling, all while preserving Git history. Enhance your development experience by integrating GitHub capabilities directly into your applications.",
-  "createdAt": "2026-01-16T07:28:51.817Z",
+  "createdAt": "2026-01-16T12:47:42.844Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lowkeyrd/servers"

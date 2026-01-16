@@ -2,7 +2,7 @@
   "id": "@liveblocks/liveblocks-mcp-server",
   "displayName": "Liveblocks",
   "description": "Enable AI agents to interact with Liveblocks by creating, modifying, and deleting rooms, threads, comments, notifications, and more. Provide AI with read access to Liveblocks Storage and Yjs for enhanced collaborative capabilities. Simplify integration of Liveblocks features into AI workflows for real-time collaboration and data management.",
-  "createdAt": "2026-01-16T07:25:25.671Z",
+  "createdAt": "2026-01-16T12:42:54.509Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@liveblocks/liveblocks-mcp-server"

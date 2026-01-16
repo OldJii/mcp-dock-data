@@ -2,7 +2,7 @@
   "id": "@stonesteel84/typescript-mcp-server-boilerplate",
   "displayName": "typescript-mcp-server-boilerplate",
   "description": "프로젝트를 빠르게 시작하세요—TypeScript 보일러플레이트가 예제 도구와 리소스를 기본 제공합니다. 계산, 인사, 시간 조회, 이미지 생성 등 기본 기능을 필요에 맞게 커스터마이즈하고 확장하세요. Hugging Face API 토큰을 추가해 이미지 생성을 활성화하세요.",
-  "createdAt": "2026-01-16T07:30:56.342Z",
+  "createdAt": "2026-01-16T12:50:44.706Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@stonesteel84/typescript-mcp-server-boilerplate"

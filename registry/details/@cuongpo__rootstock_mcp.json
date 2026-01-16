@@ -1,0 +1,41 @@
+{
+  "id": "@cuongpo/rootstock_mcp",
+  "displayName": "Rootstock Blockchain Interaction Server",
+  "description": "Enable AI agents to interact seamlessly with the Rootstock blockchain by managing wallets, querying balances, sending transactions, and executing smart contract methods. Facilitate multi-network support including mainnet and testnet with gas estimation and network status features. Simplify blockchain operations for AI-driven applications with secure private key handling and modular design.",
+  "createdAt": "2026-01-16T12:53:39.016Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/rootstock_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_balance",
+      "description": "Get RBTC balance for a wallet address"
+    },
+    {
+      "name": "deploy_token",
+      "description": "Deploy an ERC20 token contract on Rootstock blockchain"
+    },
+    {
+      "name": "get_network_info",
+      "description": "Get current network information and status"
+    },
+    {
+      "name": "create_wallet",
+      "description": "Create a new Rootstock wallet with a generated private key"
+    }
+  ]
+}

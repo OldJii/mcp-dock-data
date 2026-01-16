@@ -2,7 +2,7 @@
   "id": "@nicktrujillo/copado-mcp-server",
   "displayName": "Copado MCP Server",
   "description": "Provide a flexible MCP server implementation that enables integration of LLMs with external tools and resources. Facilitate dynamic interaction with data and actions through a standardized JSON-RPC interface. Enhance LLM applications by exposing customizable tools, resources, and prompts for richer context and capabilities.",
-  "createdAt": "2026-01-16T07:32:53.335Z",
+  "createdAt": "2026-01-16T12:53:31.192Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nicktrujillo/copado-mcp-server"

@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/jigsawstack-object-detection",
+  "displayName": "JigsawStack Object Detection",
+  "description": "Detect Objects using JigsawStack's AI Models.",
+  "createdAt": "2026-01-16T12:52:34.508Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/jigsawstack-object-detection"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "object-detection",
+      "description": "Detect objects in an image"
+    }
+  ]
+}

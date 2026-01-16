@@ -2,7 +2,7 @@
   "id": "@Ymuberra/geo-news-mcp",
   "displayName": "Geo News MCP Server",
   "description": "Provide localized news content dynamically based on geographic data. Enable agents to access and retrieve news resources tailored to specific locations. Enhance context-aware information retrieval for applications requiring up-to-date regional news.",
-  "createdAt": "2026-01-16T07:21:53.540Z",
+  "createdAt": "2026-01-16T12:37:58.404Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Ymuberra/geo-news-mcp"

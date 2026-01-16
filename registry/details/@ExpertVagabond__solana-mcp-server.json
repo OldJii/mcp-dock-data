@@ -2,7 +2,7 @@
   "id": "@ExpertVagabond/solana-mcp-server",
   "displayName": "Solana MCP Server",
   "description": "Create and import Solana wallets, manage balances, and view account information. Transfer SOL and SPL tokens, request airdrops on devnet/testnet, and set up token accounts. Switch networks and inspect transactions to streamline development and testing.",
-  "createdAt": "2026-01-16T07:24:37.604Z",
+  "createdAt": "2026-01-16T12:41:52.612Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ExpertVagabond/solana-mcp-server"

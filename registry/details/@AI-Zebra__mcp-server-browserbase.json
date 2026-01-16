@@ -2,7 +2,7 @@
   "id": "@AI-Zebra/mcp-server-browserbase",
   "displayName": "Browserbase Web Automation Server",
   "description": "Enable AI-powered web browser automation with natural language commands. Control cloud browsers to navigate, interact, extract data, and capture screenshots seamlessly. Manage multiple sessions with advanced stealth and proxy support for robust automation workflows.",
-  "createdAt": "2026-01-16T07:30:13.469Z",
+  "createdAt": "2026-01-16T12:49:40.284Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AI-Zebra/mcp-server-browserbase"

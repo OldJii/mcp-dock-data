@@ -2,7 +2,7 @@
   "id": "@just-record/mcpserver-test",
   "displayName": "MCP Server Test",
   "description": "Provide a test implementation of an MCP server to validate and demonstrate MCP protocol features. Enable developers to experiment with MCP interactions and verify tool, resource, and prompt handling. Facilitate integration testing for MCP clients and servers.",
-  "createdAt": "2026-01-16T07:21:37.596Z",
+  "createdAt": "2026-01-16T12:37:35.052Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@just-record/mcpserver-test"

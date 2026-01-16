@@ -2,7 +2,7 @@
   "id": "@yurthankiyak/mcp-advice3",
   "displayName": "Advice Server",
   "description": "Provide tailored advice and recommendations through a simple API interface. Enable applications to fetch context-aware guidance dynamically. Enhance user interactions with intelligent, actionable insights.",
-  "createdAt": "2026-01-16T07:27:25.939Z",
+  "createdAt": "2026-01-16T12:45:33.779Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yurthankiyak/mcp-advice3"

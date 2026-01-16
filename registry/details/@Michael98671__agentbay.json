@@ -2,7 +2,7 @@
   "id": "@Michael98671/agentbay",
   "displayName": "Wuying AgentBay Server",
   "description": "Enable rapid integration and execution of AI Agent tasks in a secure, serverless cloud environment. Provide enterprises and developers with one-click configuration and real-time edge-cloud interaction for AI workflows. Facilitate seamless use of standard tools like browser, file, and terminal within a scalable infrastructure.\n\nAfter logging in and registering on the Alibaba Cloud AgentBay official website, apply for an API Key.\n\nAgentBay International Official Website: https://www.alibabacloud.com/en/product/agentbay?_p_lc=1, select \"Try for FREE\"\n\nAgentBay China Official Website: https://www.aliyun.com/activity/wuying/aiagent, select \"Experience Now\"",
-  "createdAt": "2026-01-16T07:31:45.410Z",
+  "createdAt": "2026-01-16T12:51:54.720Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Michael98671/agentbay"

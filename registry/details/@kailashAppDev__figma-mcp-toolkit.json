@@ -1,0 +1,50 @@
+{
+  "id": "@kailashAppDev/figma-mcp-toolkit",
+  "displayName": "Figma API Integration Server",
+  "description": "Integrate Figma's powerful design capabilities into your applications. Leverage the MCP server to interact with Figma's API seamlessly and enhance your workflows. Simplify your design processes by connecting Figma with other tools and services effortlessly.",
+  "createdAt": "2026-01-16T12:46:53.301Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kailashAppDev/figma-mcp-toolkit"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "figmaToken",
+        "figmaFile",
+        "projectDir"
+      ],
+      "properties": {
+        "figmaFile": {
+          "type": "string",
+          "description": "ID of the Figma file to be analyzed"
+        },
+        "figmaToken": {
+          "type": "string",
+          "description": "Figma API token required to fetch Figma file data"
+        },
+        "projectDir": {
+          "type": "string",
+          "description": "Directory path for project files where output or assets will be stored"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract-components",
+      "description": "Extract all components from Figma file and get all graphql queries and mutations"
+    },
+    {
+      "name": "extract-latest-components",
+      "description": "Extract newly added components from Figma file"
+    },
+    {
+      "name": "extract-one-component",
+      "description": "Extract a single component from Figma file"
+    }
+  ]
+}

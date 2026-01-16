@@ -2,7 +2,7 @@
   "id": "@yuhuison/mediawiki-mcp-server-auth",
   "displayName": "MediaWiki Auth",
   "description": "Connect to your MediaWiki using simple credentials and manage content without OAuth. Search, read, create, and update pages, review histories, and retrieve files across one or more wikis. Automate routine wiki maintenance with minimal setup.",
-  "createdAt": "2026-01-16T07:24:41.926Z",
+  "createdAt": "2026-01-16T12:41:57.955Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yuhuison/mediawiki-mcp-server-auth"

@@ -2,7 +2,7 @@
   "id": "@earnlayerai/earnlayer",
   "displayName": "earnlayer",
   "description": "We help AI startups offset inference costs by monetizing user intent with context-aware ads via MCP.\n\nGetting Started: Sign up at app.earnlayerai.com to receive your API key, then connect to our MCP server and SDK—see docs.earnlayeraiai.com for the 20-minute integration guide.",
-  "createdAt": "2026-01-16T07:45:36.878Z",
+  "createdAt": "2026-01-16T13:11:32.757Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@earnlayerai/earnlayer"

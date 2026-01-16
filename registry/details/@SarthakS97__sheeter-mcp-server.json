@@ -2,7 +2,7 @@
   "id": "@SarthakS97/sheeter-mcp-server",
   "displayName": "Sheeter",
   "description": "Create new Google Sheets and read data from existing ones. Automate reporting, dashboards, and data pipelines by generating and retrieving sheet content on demand. Streamline workflows by integrating sheet operations into your apps.",
-  "createdAt": "2026-01-16T07:32:52.586Z",
+  "createdAt": "2026-01-16T12:53:29.887Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SarthakS97/sheeter-mcp-server"

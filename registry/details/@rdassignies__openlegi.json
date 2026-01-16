@@ -2,7 +2,7 @@
   "id": "@rdassignies/openlegi",
   "displayName": "openlegi",
   "description": "Serveur MCP pour les sources juridiques suivantes : \n- Legifrance\n- Judilibre\n- Registre National des Entreprises (RNE)\n- BODACC\n- BOAMP\n...",
-  "createdAt": "2026-01-16T07:21:38.128Z",
+  "createdAt": "2026-01-16T12:37:35.712Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rdassignies/openlegi"

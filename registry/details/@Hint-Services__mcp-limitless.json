@@ -2,7 +2,7 @@
   "id": "@Hint-Services/mcp-limitless",
   "displayName": "Limitless AI Lifelog Access",
   "description": "Enable AI assistants to seamlessly access and analyze your personal lifelog data recorded by Limitless AI. Retrieve, search, and understand your daily conversations and activities to enhance productivity, decision-making, and content creation. Integrate your lifelog with AI for context-aware assistance and intelligent insights.",
-  "createdAt": "2026-01-16T07:27:11.038Z",
+  "createdAt": "2026-01-16T12:45:15.436Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Hint-Services/mcp-limitless"

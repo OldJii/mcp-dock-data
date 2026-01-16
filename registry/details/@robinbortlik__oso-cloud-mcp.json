@@ -2,7 +2,7 @@
   "id": "@robinbortlik/oso-cloud-mcp",
   "displayName": "Oso Cloud MCP Server",
   "description": "Easily understand your authorization by querying the OSO Cloud API using natural language.   ",
-  "createdAt": "2026-01-16T07:27:24.875Z",
+  "createdAt": "2026-01-16T12:45:32.481Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@robinbortlik/oso-cloud-mcp"

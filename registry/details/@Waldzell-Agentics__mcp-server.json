@@ -2,7 +2,7 @@
   "id": "@Waldzell-Agentics/mcp-server",
   "displayName": "Mapbox",
   "description": "Find places and addresses with precise geocoding, or search by category or brand. Plan routes and compare travel times using directions, isochrones, and distance matrices. Generate static map images to visualize locations and share context.",
-  "createdAt": "2026-01-16T07:21:17.072Z",
+  "createdAt": "2026-01-16T12:37:05.468Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Waldzell-Agentics/mcp-server"

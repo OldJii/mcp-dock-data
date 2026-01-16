@@ -1,0 +1,127 @@
+{
+  "id": "@infranodus/mcp-server-infranodus",
+  "displayName": "InfraNodus Knowledge Graphs & Text Analysis",
+  "description": "Map text into knowledge graphs to create a structured representation of conceptual relations and topical clusters in your documents. Detect content gaps between the topical clusters and generate research questions to drive research and content creation using the powerful Graph RAG technology underpinning InfraNodus. Get additional insights about texts: main topics, keywords, and underlying themes. Connect to your existing InfraNodus graphs or create new ones to enrich analysis and outputs.",
+  "createdAt": "2026-01-16T12:39:01.463Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@infranodus/mcp-server-infranodus"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your InfraNodus API key"
+        },
+        "apiBase": {
+          "type": "string",
+          "description": "InfraNodus API base URL",
+          "default": "https://infranodus.com/api/v1"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_knowledge_graph",
+      "description": "Analyze text and generate a knowledge graph with main topics, topical clusters, concepts, concepts relations and structural gaps. Only use when explicitly asked to analyze a text or generate a knowledge graph. Do not use for short clarifying questions that you already have an answer to from the context of the conversation."
+    },
+    {
+      "name": "create_knowledge_graph",
+      "description": "Create a knowledge graph in InfraNodus from text, save it, and provide its name and a link to it for future use. "
+    },
+    {
+      "name": "memory_add_relations",
+      "description": "Add relations to the InfraNodus memory from text, save it, and provide its name and a link to it for future use. "
+    },
+    {
+      "name": "memory_get_relations",
+      "description": "Provide a list of relations from the InfraNodus memory for a given concept or entity"
+    },
+    {
+      "name": "analyze_existing_graph_by_name",
+      "description": "Extract and analyze an existing graph from your InfraNodus account"
+    },
+    {
+      "name": "generate_content_gaps",
+      "description": "Generate content gaps from text using knowledge graph analysis"
+    },
+    {
+      "name": "generate_topical_clusters",
+      "description": "Generate topics and clusters of keywords from text using knowledge graph analysis"
+    },
+    {
+      "name": "generate_research_questions",
+      "description": "Analyze text and generate innovative research questions based on the content gaps identified between the topical clusters inside the text that can be used to improve the text and the discourse it relates to"
+    },
+    {
+      "name": "generate_research_ideas",
+      "description": "Analyze text and generate innovative research ideas based on the content gaps identified between the topical clusters inside the text that can be used to improve the text and the discourse it relates to"
+    },
+    {
+      "name": "research_questions_from_graph",
+      "description": "Retrieve an existing InfraNodus knowledge graph and generate research questions based on the content gaps identified between the topical clusters inside the graph that can be used to improve the text and the discourse it relates to"
+    },
+    {
+      "name": "generate_responses_from_graph",
+      "description": "Retrieve an existing InfraNodus knowledge graph and use the relations extracted to generate responses and expert advice based on a prompt provided"
+    },
+    {
+      "name": "develop_conceptual_bridges",
+      "description": "Analyze text and get ideas on how to develop conceptual bridges in this text to link it to a broader discourse"
+    },
+    {
+      "name": "develop_latent_topics",
+      "description": "Analyze text, extract underdeveloped topics and get an idea on how to develop them"
+    },
+    {
+      "name": "develop_text_tool",
+      "description": "Analyze text to extract research questions, develop latent topics, and identify content gaps in a single workflow with progress tracking"
+    },
+    {
+      "name": "generate_contextual_hint",
+      "description": "Generate information about the main topics and concepts in a text to augment RAG retrieval and text analysis"
+    },
+    {
+      "name": "overlap_between_texts",
+      "description": "Extract the common relationships and similarities between texts and generate an overlap graph"
+    },
+    {
+      "name": "difference_between_texts",
+      "description": "Extract the conceptial relations that are not present in the first text but are in the other texts"
+    },
+    {
+      "name": "analyze_google_search_results",
+      "description": "Generate a knowledge graph and topical clusters from Google search results for provided search queries"
+    },
+    {
+      "name": "analyze_related_search_queries",
+      "description": "Generate a knowledge graph and identifymain topical clusters in the search requests related to the search queries provided"
+    },
+    {
+      "name": "search_queries_vs_search_results",
+      "description": "Find the combinations of keywords and topics people search for that don't appear in the search results for the same queries"
+    },
+    {
+      "name": "generate_seo_report",
+      "description": "Analyze content for SEO optimization by comparing its knowledge graph with the graphs of Google search results and search queries to identify content gaps and opportunities based on the differences"
+    },
+    {
+      "name": "retrieve_from_knowledge_base",
+      "description": "Retrieve the statements and general overview of an existing InfraNodus knowledge graph based on the user's prompt for GraphRAG based retrieval."
+    },
+    {
+      "name": "search",
+      "description": "Find the concepts and terms in existing InfraNodus graphs"
+    },
+    {
+      "name": "fetch",
+      "description": "Fetch a specific search result for an InfraNodus knowledge graph"
+    }
+  ]
+}

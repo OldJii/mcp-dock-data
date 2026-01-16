@@ -2,7 +2,7 @@
   "id": "@GDanksAnchor/mcp",
   "displayName": "Browser MCP",
   "description": "Leverage Anchor Browser's infrastructure for scalable, geo-targeted, and anti-detection browser automation without local dependencies. Simplify browser automation with fast, structured data access and deterministic tool execution.\n\nFor more information visit [BrowserMCP](http://browsermcp.com?utm_source=smithery)",
-  "createdAt": "2026-01-16T07:23:50.553Z",
+  "createdAt": "2026-01-16T12:40:46.646Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GDanksAnchor/mcp"

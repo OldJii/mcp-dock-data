@@ -1,0 +1,12 @@
+{
+  "id": "yunjia/us-weather-mcp",
+  "displayName": "us-weather-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:26.896Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/yunjia/us-weather-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

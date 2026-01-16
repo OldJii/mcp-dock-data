@@ -2,7 +2,7 @@
   "id": "@AkekaratP/flights-mcp-ts",
   "displayName": "Flight and Stay Search Server",
   "description": "Provide comprehensive flight and accommodation search capabilities using the Duffel API. Search for one-way, round-trip, and multi-city flights, get detailed flight offer information, and find travel stays with guest reviews. Enable users to specify preferences such as cabin class, passenger count, and connection options for tailored travel planning.",
-  "createdAt": "2026-01-16T07:26:02.410Z",
+  "createdAt": "2026-01-16T12:43:42.383Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AkekaratP/flights-mcp-ts"

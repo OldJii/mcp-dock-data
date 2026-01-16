@@ -2,7 +2,7 @@
   "id": "@Gene-Fong/autotask-mcp-main",
   "displayName": "Autotask PSA",
   "description": "Access Kaseya Autotask PSA to search, create, and update companies, contacts, tickets, projects, and more. Run powerful filtered searches, get full ticket details, log time, and manage notes, attachments, quotes, invoices, contracts, and tasks. Work faster with automatic ID-to-name mapping and complete results for reliable reporting.",
-  "createdAt": "2026-01-16T07:30:16.859Z",
+  "createdAt": "2026-01-16T12:49:45.256Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Gene-Fong/autotask-mcp-main"

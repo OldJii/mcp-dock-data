@@ -1,0 +1,144 @@
+{
+  "id": "@GoPlausible/vestige-mcp",
+  "displayName": "Vestige MCP",
+  "description": "Provide comprehensive access to Vestige API data and analytics through a standardized protocol interface. Query networks, protocols, assets, pools, trades, balances, notes, and vaults with flexible filtering and pagination. Enable seamless integration of Vestige's DeFi insights into LLM applications and workflows.",
+  "createdAt": "2026-01-16T12:52:18.199Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GoPlausible/vestige-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "ALGORAND_ALGOD": {
+          "type": "string",
+          "description": "Algod node base URL",
+          "default": "https://mainnet-api.algonode.cloud"
+        },
+        "ALGORAND_TOKEN": {
+          "type": "string",
+          "description": "Algorand API token (optional)",
+          "default": ""
+        },
+        "ITEMS_PER_PAGE": {
+          "type": "string",
+          "description": "Number of items per page for paginated responses",
+          "default": 10
+        },
+        "ALGORAND_NETWORK": {
+          "type": "string",
+          "description": "Algorand network to connect to, e.g., testnet or mainnet",
+          "default": "mainnet"
+        },
+        "ALGORAND_ALGOD_PORT": {
+          "type": "string",
+          "description": "Algod node port (optional)",
+          "default": ""
+        },
+        "ALGORAND_AGENT_WALLET": {
+          "type": "string",
+          "description": "Algorand agent active wallet",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "vestige_view_networks",
+      "description": "Get all networks"
+    },
+    {
+      "name": "vestige_view_network_by_id",
+      "description": "Get network by id"
+    },
+    {
+      "name": "vestige_view_protocols",
+      "description": "Get all protocols"
+    },
+    {
+      "name": "vestige_view_protocol_by_id",
+      "description": "Get protocol by id"
+    },
+    {
+      "name": "vestige_view_protocol_volumes",
+      "description": "Get protocol volumes at specific day. Defaults to current day."
+    },
+    {
+      "name": "vestige_view_assets",
+      "description": "Get data about assets"
+    },
+    {
+      "name": "vestige_view_assets_list",
+      "description": "Get asset list"
+    },
+    {
+      "name": "vestige_view_assets_search",
+      "description": "Search assets by query"
+    },
+    {
+      "name": "vestige_view_asset_price",
+      "description": "Get asset prices"
+    },
+    {
+      "name": "vestige_view_asset_candles",
+      "description": "Get asset candles"
+    },
+    {
+      "name": "vestige_view_asset_history",
+      "description": "Get asset volume, swaps, total lockup, vwap and confidence history"
+    },
+    {
+      "name": "vestige_view_asset_composition",
+      "description": "Get asset lockups based on protocol and pair"
+    },
+    {
+      "name": "vestige_view_pools",
+      "description": "Get pools"
+    },
+    {
+      "name": "vestige_view_vaults",
+      "description": "Get all vaults"
+    },
+    {
+      "name": "vestige_view_balances",
+      "description": "Get balances by network id, protocol id and asset id"
+    },
+    {
+      "name": "vestige_view_notes",
+      "description": "Get notes by network id and optionally asset id"
+    },
+    {
+      "name": "vestige_view_first_asset_notes",
+      "description": "Get first note for assets"
+    },
+    {
+      "name": "vestige_view_asset_notes_count",
+      "description": "Get notes count for assets"
+    },
+    {
+      "name": "vestige_view_swaps",
+      "description": "Get swaps"
+    },
+    {
+      "name": "vestige_get_best_v4_swap_data",
+      "description": "Get best V4 swap data"
+    },
+    {
+      "name": "vestige_get_v4_swap_discount",
+      "description": "Get V4 swap discount"
+    },
+    {
+      "name": "vestige_get_v4_swap_data_transactions",
+      "description": "Get V4 swap data transactions"
+    },
+    {
+      "name": "vestige_get_aggregator_stats",
+      "description": "Get aggregator stats"
+    }
+  ]
+}

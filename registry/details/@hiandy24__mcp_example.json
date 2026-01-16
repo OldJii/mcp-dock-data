@@ -1,0 +1,25 @@
+{
+  "id": "@hiandy24/mcp_example",
+  "displayName": "mcp_example",
+  "description": "Greet users by name and compute sums in a snap. Streamline demos, onboarding, and quick tests with straightforward responses. Start instantly and keep your workflow fast.",
+  "createdAt": "2026-01-16T12:38:56.820Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hiandy24/mcp_example"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "greet2",
+      "description": "返回问候语: hello, {name}!"
+    },
+    {
+      "name": "add",
+      "description": "返回两个整数的和"
+    }
+  ]
+}

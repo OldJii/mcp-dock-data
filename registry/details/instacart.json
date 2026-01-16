@@ -1,0 +1,29 @@
+{
+  "id": "instacart",
+  "displayName": "Instacart",
+  "description": "Instacart Developer Platform APIs to create shoppable lists/recipes and discover nearby retailers",
+  "createdAt": "2026-01-16T12:35:06.659Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/instacart"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "INSTACART_CREATE_RECIPE_PAGE",
+      "description": "Create a Recipe Page on Instacart + return shareable URL. Attempts prod first then falls back to dev; errors from prod bubble up if both fail."
+    },
+    {
+      "name": "INSTACART_CREATE_SHOPPING_LIST_PAGE",
+      "description": "Create a Shopping List Page on Instacart + return shareable URL. Attempts prod first then falls back to dev; errors from prod bubble up if both fail."
+    },
+    {
+      "name": "INSTACART_GET_NEARBY_RETAILERS",
+      "description": "Get nearby retailers by postal_code + country_code. Attempts prod first then falls back to dev; errors from prod bubble up if both fail."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/oecd-search",
   "displayName": "oecd-search",
   "description": "Discover OECD datasets and indicators, and browse categories across economy, health, education, environment, and more. Inspect dataset structures to identify dimensions, attributes, and valid values for precise queries. Query time series with filters and generate shareable links to explore results in your browser.",
-  "createdAt": "2026-01-16T07:29:36.860Z",
+  "createdAt": "2026-01-16T12:48:46.961Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/oecd-search"

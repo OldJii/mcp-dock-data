@@ -2,7 +2,7 @@
   "id": "@plainyogurt21/clintrials-mcp",
   "displayName": "Clinical Trials Data Server",
   "description": "Provide structured access to ClinicalTrials.gov data for searching, retrieving, and analyzing clinical trial information. Enable multi-parameter searches, detailed trial retrievals, and statistical analyses to support medical research and healthcare decision-making. Deliver robust error handling and flexible field selection to optimize data responses.",
-  "createdAt": "2026-01-16T07:22:06.163Z",
+  "createdAt": "2026-01-16T12:38:15.323Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@plainyogurt21/clintrials-mcp"

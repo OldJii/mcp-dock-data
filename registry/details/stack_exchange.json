@@ -1,0 +1,49 @@
+{
+  "id": "stack_exchange",
+  "displayName": "Stack exchange",
+  "description": "Stack Exchange is a network of Q&A communities where users ask questions, share knowledge, and collaborate on topics like coding, math, and more",
+  "createdAt": "2026-01-16T12:35:01.962Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/stack_exchange"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "STACK_EXCHANGE_GET_COLLECTIVE_QUESTIONS",
+      "description": "Tool to retrieve questions associated with the specified collective. Use when you have a collective ID and need its questions for a site."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_COLLECTIVES",
+      "description": "Tool to retrieve all collectives on a Stack Exchange site in alphabetical order. Use when you need to list collectives for display or filtering."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_COLLECTIVE_TAGS",
+      "description": "Tool to retrieve tags associated with specified collectives. Use when you need collective tags for display or analysis after confirming which collectives to query."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_COMMENT_FLAG_OPTIONS",
+      "description": "Tool to fetch valid flag options for a given comment. Use when you need to know which flags a user can raise before submitting. Requires authenticated access."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_COMMENTS",
+      "description": "Tool to retrieve comments from a specified Stack Exchange site. Use when you need to list comments with optional filters and sorting."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_REVISIONS_BY_IDS",
+      "description": "Tool to retrieve revisions for specific posts by their IDs. Use when you need to examine the edit history of posts by providing semicolon-delimited IDs."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_SEARCH_RESULTS",
+      "description": "Tool to search the site for questions meeting certain criteria. Use after defining tags or keywords to locate relevant questions. At least one of 'tagged' or 'intitle' must be set."
+    },
+    {
+      "name": "STACK_EXCHANGE_GET_SITES",
+      "description": "Tool to retrieve all Stack Exchange sites and their api_site_parameter values. Use when you need to discover available sites for API calls."
+    }
+  ]
+}

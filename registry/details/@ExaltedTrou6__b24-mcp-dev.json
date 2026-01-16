@@ -2,7 +2,7 @@
   "id": "@ExaltedTrou6/b24-mcp-dev",
   "displayName": "Bitrix24 MCP-DEV",
   "description": "The MCP server for Bitrix24 provides AI assistants with structured access to the Bitrix24 API. It delivers up-to-date method descriptions, parameters, and valid values, allowing assistants to work with precise data instead of guesswork. This reduces code errors and accelerates Bitrix24 integration development.",
-  "createdAt": "2026-01-16T07:21:44.902Z",
+  "createdAt": "2026-01-16T12:37:45.770Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ExaltedTrou6/b24-mcp-dev"

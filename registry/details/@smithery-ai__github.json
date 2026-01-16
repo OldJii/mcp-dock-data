@@ -2,7 +2,7 @@
   "id": "@smithery-ai/github",
   "displayName": "Github",
   "description": "Access the GitHub API, enabling file operations, repository management, search functionality, and more.",
-  "createdAt": "2026-01-16T07:20:19.078Z",
+  "createdAt": "2026-01-16T12:35:42.677Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@smithery-ai/github"

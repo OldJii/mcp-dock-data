@@ -2,7 +2,7 @@
   "id": "@plainyogurt21/fda-drugs-mcp",
   "displayName": "FDA Drugs Data Access Server",
   "description": "Provide seamless access to comprehensive FDA drug data through intuitive search and detailed information retrieval. Enable discovery of drugs by name, indication, similarity, and application history to support informed decision-making. Facilitate exploration of approved drugs with a focus on clinical and regulatory insights.",
-  "createdAt": "2026-01-16T07:27:19.025Z",
+  "createdAt": "2026-01-16T12:45:25.235Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@plainyogurt21/fda-drugs-mcp"

@@ -1,0 +1,12 @@
+{
+  "id": "@jtan/stackoverflow",
+  "displayName": "stackoverflow",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:37.887Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jtan/stackoverflow"
+  },
+  "connection": null,
+  "capabilities": []
+}

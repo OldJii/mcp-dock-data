@@ -2,7 +2,7 @@
   "id": "@Vic563/mindsweeper-mcp",
   "displayName": "Minesweeper Game MCP",
   "description": "Enable users to create and play customizable Minesweeper games through AI assistants. Manage multiple game boards with flexible sizes and mine counts, and interact with the game via revealing and flagging cells. Visualize game state with ASCII art and track win/loss conditions seamlessly.",
-  "createdAt": "2026-01-16T07:26:16.433Z",
+  "createdAt": "2026-01-16T12:44:02.954Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Vic563/mindsweeper-mcp"

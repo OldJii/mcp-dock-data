@@ -2,7 +2,7 @@
   "id": "@ThierryThevenet/talao",
   "displayName": "Data Wallet Verification",
   "description": "Discover supported verification scopes and the claims they provide. Initiate and monitor data wallet verification flows to securely receive redacted wallet data. Clean up completed sessions to keep workflows organized.",
-  "createdAt": "2026-01-16T07:27:39.788Z",
+  "createdAt": "2026-01-16T12:45:50.748Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ThierryThevenet/talao"

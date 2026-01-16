@@ -1,0 +1,12 @@
+{
+  "id": "@FedericoSRT/clickup",
+  "displayName": "clickup",
+  "description": "",
+  "createdAt": "2026-01-16T13:08:48.276Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FedericoSRT/clickup"
+  },
+  "connection": null,
+  "capabilities": []
+}

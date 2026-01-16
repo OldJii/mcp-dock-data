@@ -2,7 +2,7 @@
   "id": "@devlimelabs/meilisearch-ts-mcp",
   "displayName": "Meilisearch MCP Server",
   "description": "Enable AI assistants to interact with Meilisearch through a standardized interface.",
-  "createdAt": "2026-01-16T07:24:52.715Z",
+  "createdAt": "2026-01-16T12:42:12.180Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@devlimelabs/meilisearch-ts-mcp"

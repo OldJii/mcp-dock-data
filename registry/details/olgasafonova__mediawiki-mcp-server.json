@@ -1,0 +1,12 @@
+{
+  "id": "olgasafonova/mediawiki-mcp-server",
+  "displayName": "mediawiki-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T12:59:19.171Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/olgasafonova/mediawiki-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

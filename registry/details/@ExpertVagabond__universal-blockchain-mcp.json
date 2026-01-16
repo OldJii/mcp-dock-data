@@ -2,7 +2,7 @@
   "id": "@ExpertVagabond/universal-blockchain-mcp",
   "displayName": "Universal Blockchain",
   "description": "Build cross-chain apps on ZetaChain, manage accounts and balances, list tokens, and request testnet ZETA. Create projects, call contracts, and transfer tokens across connected chains from one place. Track cross-chain transactions and fees with real-time queries and network status.",
-  "createdAt": "2026-01-16T07:33:07.479Z",
+  "createdAt": "2026-01-16T12:53:51.434Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ExpertVagabond/universal-blockchain-mcp"

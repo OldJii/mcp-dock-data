@@ -1,0 +1,40 @@
+{
+  "id": "@apetta/diagrams-mcp",
+  "displayName": "Diagrams",
+  "description": "A local/remote MCP server for generating infrastructure and architecture diagrams as code using the Python [diagrams](https://diagrams.mingrammer.com/) library\n\n## Features\n\n**5 Diagram Tools** for infrastructure, architecture, and flowcharts:\n\n- **Infrastructure Diagrams** - 15+ providers (AWS, Azure, GCP, K8s, On-Prem, SaaS)\n- **500+ Node Types** - Compute, database, network, storage, security\n- **Custom Icons** - Web URLs (HTTPS) and local files\n- **Flowcharts** - 24 shapes for process diagrams\n- **Validation** - Dry-run before generation\n\n**Advanced Capabilities:**\n\n- Multiple output formats (PNG, PDF, JPG, DOT)\n- Cluster grouping with unlimited nesting\n- Edge styling (colours, labels, line styles)\n- Graphviz attribute customisation\n\n## Installation\n\n**System Requirements:**\n\n- Graphviz must be installed:\n  - macOS: `brew install graphviz`\n  - Ubuntu/Debian: `sudo apt-get install graphviz`\n  - Windows: Download from https://graphviz.org/download/\n\n### IDEs\n\n[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_diagrams-0098FF?style=flat-square&logo=visualstudiocode&logoColor=ffffff)](vscode:mcp/install?%7B%22name%22%3A%22diagrams%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22diagrams-mcp%22%5D%7D)\n\n[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=diagrams&config=eyJjb21tYW5kIjoidXZ4IGRpYWdyYW1zLW1jcCJ9)\n\n### Claude Desktop\n\nAdd to your `claude_desktop_config.json`:\n\n**For published package:**\n\n```json\n{\n  \"mcpServers\": {\n    \"diagrams\": {\n      \"command\": \"uvx\",\n      \"args\": [\"diagrams-mcp\"]\n    }\n  }\n}\n```\n\n**For local development:**\n\n```json\n{\n  \"mcpServers\": {\n    \"diagrams:local\": {\n      \"command\": \"uv\",\n      \"args\": [\n        \"--directory\",\n        \"/ABSOLUTE/PATH/TO/diagrams-mcp\",\n        \"run\",\n        \"diagrams-mcp\"\n      ]\n    }\n  }\n}\n```\n\n### Claude Code\n\n**Quick setup (CLI):**\n\nPublished package:\n\n```bash\nclaude mcp add --transport stdio math -- uvx diagrams-mcp\n```\n\n**Team setup (project-level):**\n\nAdd `.mcp.json` to your project root:\n\n```json\n{\n  \"mcpServers\": {\n    \"diagrams\": {\n      \"command\": \"uvx\",\n      \"args\": [\"diagrams-mcp\"]\n    }\n  }\n}\n```\n\n**Verify installation:**\n\n```bash\nclaude mcp list\n```\n\nOr check in IDE: View → MCP Servers, or use `/mcp` command.\n\n## Try It\n\nOnce installed, try these prompts:\n\n- \"Create an AWS 3-tier web application diagram with Route53, ELB, EC2 instances, and RDS\"\n- \"Generate a Kubernetes microservices architecture with ingress, services, and pods\"\n- \"Build a flowchart for a CI/CD pipeline with decision points\"\n- \"Create a diagram using a custom icon from my company logo URL\"\n- \"Show me all available AWS compute nodes\"\n\nMap to tools: `create_diagram`, `create_diagram_with_custom_icons`, `create_flowchart`, `list_available_nodes`, `validate_diagram_spec`\n\n## Tool Reference\n\nAll tool parameters and descriptions are available in your IDE's autocomplete.\n\n### Diagram Generation (3 tools)\n\n| Tool                               | Description                                                  |\n| ---------------------------------- | ------------------------------------------------------------ |\n| `create_diagram`                   | Full infrastructure/architecture diagrams with all providers |\n| `create_diagram_with_custom_icons` | Diagrams with custom node icons from URLs or local files     |\n| `create_flowchart`                 | Simplified flowchart creation with 24 process shapes         |\n\n### Discovery & Validation (2 tools)\n\n| Tool                    | Description                                                   |\n| ----------------------- | ------------------------------------------------------------- |\n| `list_available_nodes`  | Search 500+ available nodes by provider, category, or keyword |\n| `validate_diagram_spec` | Dry-run validation before generation                          |\n\n## Custom Icons\n\n### Web URL Icons\n\n- HTTPS-only (HTTP rejected)\n- 5MB file size limit\n- 5-second download timeout\n- Image format validation (PNG, JPG)\n- Automatic caching (~/.diagrams_mcp/icon_cache)\n\n### Local File Icons\n\n- Path validation (file must exist)\n- Format validation\n- Sandboxed execution",
+  "createdAt": "2026-01-16T12:40:09.164Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@apetta/diagrams-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_diagram",
+      "description": "Generate infrastructure diagrams with 15+ providers (AWS, Azure, GCP, K8s, etc.).\n\nExamples:\nAWS: nodes=[{\"id\":\"r53\",\"provider\":\"aws\",\"category\":\"network\",\"type\":\"Route53\",...}]\nK8s: nodes=[{\"id\":\"ing\",\"provider\":\"k8s\",\"category\":\"network\",\"type\":\"Ingress\",...}]\nClusters: clusters=[{\"name\":\"VPC\",\"node_ids\":[\"elb\",\"ec2\"],\"graph_attr\":{\"bgcolor\":\"#E5F5FD\"}}]\n\n⚠️ CRITICAL: Node types must exist in diagrams library or diagram fails silently (no arrows).\nALWAYS verify first: list_available_nodes(provider=\"aws\", category=\"compute\")\nFor brands (Stripe, Vercel), use create_diagram_with_custom_icons instead."
+    },
+    {
+      "name": "create_diagram_with_custom_icons",
+      "description": "Create diagrams with custom icons from web URLs or local files.\n\nUSE WHEN: Brand logos (Stripe, Vercel, Supabase, Fly.io) not in diagrams library.\nGitHub avatars work well: https://avatars.githubusercontent.com/u/{org_id}\n\nExamples:\nURL: custom_nodes=[{\"id\":\"stripe\",\"icon_source\":\"url\",\"icon_path\":\"https://avatars.githubusercontent.com/u/856813\"}]\nMixed: nodes=[{...AWS nodes...}], custom_nodes=[{...}], connections=[...]\n\nHTTPS-only for URLs, 5MB limit, PNG/JPG supported. Automatic caching."
+    },
+    {
+      "name": "list_available_nodes",
+      "description": "Discover 500+ node types across providers.\n\n⚠️ USE THIS FIRST before create_diagram to avoid invalid node errors.\n\nFilters: provider, category, search_term\n\nExamples:\nAWS compute: provider=\"aws\", category=\"compute\" → EC2, Lambda, ECS, EKS...\nSearch DBs: search_term=\"db\" → RDS, DynamoDB, SQL across providers"
+    },
+    {
+      "name": "create_flowchart",
+      "description": "Create process flowcharts with 24 shapes (StartEnd, Process, Decision, etc.).\n\nExample:\nsteps=[{\"id\":\"start\",\"shape\":\"StartEnd\",\"label\":\"Start\"},...]\nflows=[{\"from_step\":\"start\",\"to_step\":\"check\"},...]"
+    },
+    {
+      "name": "validate_diagram_spec",
+      "description": "Validate diagram before generation (dry-run).\n\nChecks: node validity, connection references, cluster memberships.\nReturns: {\"valid\": true/false, \"errors\": [...], \"warnings\": [...]}"
+    }
+  ]
+}

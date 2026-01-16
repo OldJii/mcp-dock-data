@@ -1,0 +1,12 @@
+{
+  "id": "@omega-suite-finance/onepagecrm-mcp-server",
+  "displayName": "onepagecrm-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:08:55.589Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@omega-suite-finance/onepagecrm-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

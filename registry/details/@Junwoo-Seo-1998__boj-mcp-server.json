@@ -2,7 +2,7 @@
   "id": "@Junwoo-Seo-1998/boj-mcp-server",
   "displayName": "Baekjoon(BOJ) MCP Server",
   "description": "Search solved.ac problems by difficulty, tags, and keywords to find the right challenges. Check user ratings, tiers, and solved counts to track progress. Convert natural language into precise filters for faster discovery.",
-  "createdAt": "2026-01-16T07:21:11.532Z",
+  "createdAt": "2026-01-16T12:36:57.422Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Junwoo-Seo-1998/boj-mcp-server"

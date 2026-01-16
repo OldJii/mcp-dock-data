@@ -2,7 +2,7 @@
   "id": "@cuongpo/hyperion-mcp-server",
   "displayName": "Hyperion Blockchain Server",
   "description": "Enable seamless interaction with the Hyperion blockchain through a standardized MCP interface. Manage wallets, send transactions, query blockchain data, and interact with smart contracts effortlessly. Simplify building and integrating Hyperion-based applications with comprehensive developer tools and robust error handling.",
-  "createdAt": "2026-01-16T07:20:02.424Z",
+  "createdAt": "2026-01-16T12:35:19.666Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/hyperion-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@ssdavidai/mem0-mcp",
   "displayName": "Mem0 Memories",
   "description": "Store and retrieve user-specific memories to maintain reliable long-term context. Search past memories to surface the most relevant details instantly. Organize preferences and facts per user for consistent, personalized interactions across sessions.",
-  "createdAt": "2026-01-16T07:24:26.678Z",
+  "createdAt": "2026-01-16T12:41:37.662Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ssdavidai/mem0-mcp"

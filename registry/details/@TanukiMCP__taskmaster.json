@@ -1,0 +1,30 @@
+{
+  "id": "@TanukiMCP/taskmaster",
+  "displayName": "Taskmaster",
+  "description": "Manage and validate tasks intelligently with a single gateway tool that ensures strict validation, environment awareness, and anti-hallucination. Track progress, evidence, and environment capabilities seamlessly within sessions. Enhance task management with dynamic validation rules and comprehensive session lifecycle handling.",
+  "createdAt": "2026-01-16T12:38:40.156Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@TanukiMCP/taskmaster"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for authentication (optional)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "taskmaster",
+      "description": "🚀 TASKMASTER - LLM TASK EXECUTION FRAMEWORK 🚀\n\nSimple workflow:\n1. create_session - Create a new session\n2. declare_capabilities - Tell me what tools you have available\n3. six_hat_thinking - Brainstorm from six perspectives\n4. denoise - Synthesize your analysis into a plan\n5. create_tasklist - Define your tasks\n6. map_capabilities - Assign tools to tasks  \n7. execute_next - Execute tasks\n8. mark_complete - Complete tasks\n9. end_session - End session"
+    }
+  ]
+}

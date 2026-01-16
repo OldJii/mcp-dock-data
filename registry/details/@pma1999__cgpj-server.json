@@ -2,7 +2,7 @@
   "id": "@pma1999/cgpj-server",
   "displayName": "cgpj-server",
   "description": "Busca jurisprudencia del CGPJ con filtros avanzados como en el portal oficial. Obtén enlaces oficiales y referencias completas de cada resolución. Consigue la URL del PDF oficial para agilizar la revisión y el archivo cumpliendo el aviso legal.",
-  "createdAt": "2026-01-16T07:27:28.578Z",
+  "createdAt": "2026-01-16T12:45:37.034Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pma1999/cgpj-server"

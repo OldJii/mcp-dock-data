@@ -2,7 +2,7 @@
   "id": "@yongkangc/scry-mcp-raw-js",
   "displayName": "Scry MCP Server",
   "description": "Provide real-time and comprehensive cryptocurrency and DeFi data from multiple trusted Sources. \n\nEnable AI assistants to access market data, trending coins, protocol analytics, and more with intelligent rate limiting and caching for optimal performance. \n\nIntegrate seamlessly with MCP clients to enhance your crypto-related applications and workflows.",
-  "createdAt": "2026-01-16T07:26:40.826Z",
+  "createdAt": "2026-01-16T12:44:36.932Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yongkangc/scry-mcp-raw-js"

@@ -1,0 +1,12 @@
+{
+  "id": "@muyuanlove/cli",
+  "displayName": "cli",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:36.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@muyuanlove/cli"
+  },
+  "connection": null,
+  "capabilities": []
+}

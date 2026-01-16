@@ -1,0 +1,47 @@
+{
+  "id": "@ivoryttang/chemistry_mcp",
+  "displayName": "Chemistry VC",
+  "description": "Discover Chemistry VC’s mission, team, investment criteria, and portfolio. Quickly assess whether your startup aligns with their stage and focus. Break the ice with a built-in greeting or reference the history of 'Hello, World.'",
+  "createdAt": "2026-01-16T12:49:10.451Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ivoryttang/chemistry_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "about_chemistry",
+      "description": "Get information about Chemistry VC's mission, focus, and approach"
+    },
+    {
+      "name": "team",
+      "description": "Get information about Chemistry VC's team members"
+    },
+    {
+      "name": "investing_stage",
+      "description": "Get information about Chemistry VC's investment stage and criteria"
+    },
+    {
+      "name": "past_investments",
+      "description": "Get information about Chemistry VC's portfolio and past investments"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "mcp-minecraft",
   "displayName": "Minecraft",
   "description": "A Model Context Protocol (MCP) integration for Minecraft enabling AI assistants to interact with a Minecraft server.",
-  "createdAt": "2026-01-16T07:29:36.326Z",
+  "createdAt": "2026-01-16T12:48:46.306Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-minecraft"

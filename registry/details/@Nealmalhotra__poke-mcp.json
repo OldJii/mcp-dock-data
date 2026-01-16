@@ -2,7 +2,7 @@
   "id": "@Nealmalhotra/poke-mcp",
   "displayName": "Poke People & Interactions",
   "description": "Query people and interaction transcripts from your PostgreSQL database. Quickly list unique people and retrieve all interactions for any selected person. Stay organized and speed up analysis with fast lookups and flexible result limits.",
-  "createdAt": "2026-01-16T07:30:32.586Z",
+  "createdAt": "2026-01-16T12:50:07.648Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Nealmalhotra/poke-mcp"

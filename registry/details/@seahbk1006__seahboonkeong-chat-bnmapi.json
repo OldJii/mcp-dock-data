@@ -2,7 +2,7 @@
   "id": "@seahbk1006/seahboonkeong-chat-bnmapi",
   "displayName": "Seah Boon Keong - Chat with BNM API Datasets",
   "description": "\nMCP for public datasets on BNM Open Data API (Developed by Seah Boon Keong)\nAllows users to access a wide range of financial and economic data published by Bank Negara Malaysia. Users can retrieve data on various economic indicators such as current exchange rates, OPR, interbank activity, government bond yields, monetary aggregates, reserves, gold prices, consumer alerts, etc.",
-  "createdAt": "2026-01-16T07:20:10.733Z",
+  "createdAt": "2026-01-16T12:35:31.362Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@seahbk1006/seahboonkeong-chat-bnmapi"

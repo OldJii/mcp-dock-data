@@ -2,7 +2,7 @@
   "id": "@burtthecoder/mcp-shodan",
   "displayName": "Shodan Server",
   "description": "A Model Context Protocol server for querying the Shodan API and Shodan CVEDB, providing access to network intelligence and security services.",
-  "createdAt": "2026-01-16T07:24:56.918Z",
+  "createdAt": "2026-01-16T12:42:18.200Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@burtthecoder/mcp-shodan"

@@ -2,7 +2,7 @@
   "id": "@tfscharff/doi-mcp",
   "displayName": "DOI Citation Verifier",
   "description": "A Model Context Protocol (MCP) server that prevents citation hallucination by verifying academic citations against multiple authoritative databases. This server enables AI assistants to verify every citation against real publications in CrossRef, OpenAlex, and PubMed before citing them.",
-  "createdAt": "2026-01-16T07:20:39.014Z",
+  "createdAt": "2026-01-16T12:36:10.828Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tfscharff/doi-mcp"

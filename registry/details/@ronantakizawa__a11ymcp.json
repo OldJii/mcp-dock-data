@@ -2,7 +2,7 @@
   "id": "@ronantakizawa/a11ymcp",
   "displayName": "A11y MCP",
   "description": "Run WCAG compliance tests, ARIA attribute tests, and accessible color contrast tests via the axe-core API. Users can upload raw HTML or URLs to run tests.\n\n",
-  "createdAt": "2026-01-16T07:30:35.461Z",
+  "createdAt": "2026-01-16T12:50:11.559Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ronantakizawa/a11ymcp"

@@ -2,7 +2,7 @@
   "id": "luancamara/mcpfirebird",
   "displayName": "mcpfirebird",
   "description": "Run queries, explore schemas, and retrieve table data with ease. Diagnose performance with execution plans, index recommendations, and table statistics to speed up workloads. Safeguard your database with backup, restore, validation, and health checks.",
-  "createdAt": "2026-01-16T07:24:12.141Z",
+  "createdAt": "2026-01-16T12:41:16.855Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/luancamara/mcpfirebird"

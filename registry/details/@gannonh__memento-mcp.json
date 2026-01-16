@@ -1,0 +1,121 @@
+{
+  "id": "@gannonh/memento-mcp",
+  "displayName": "Memento",
+  "description": "Enhance your LLM applications with a scalable knowledge graph memory system. Utilize semantic search and temporal awareness to manage and retrieve information effectively, ensuring your agents have persistent and contextual memory capabilities.",
+  "createdAt": "2026-01-16T12:52:10.362Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gannonh/memento-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "neo4jUri",
+        "neo4jUsername",
+        "neo4jPassword",
+        "neo4jDatabase",
+        "openAiApiKey"
+      ],
+      "properties": {
+        "neo4jUri": {
+          "type": "string",
+          "description": "Neo4j connection URI",
+          "default": "bolt://127.0.0.1:7687"
+        },
+        "openAiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key for embeddings",
+          "default": "your-openai-api-key"
+        },
+        "neo4jDatabase": {
+          "type": "string",
+          "description": "Neo4j database name",
+          "default": "neo4j"
+        },
+        "neo4jPassword": {
+          "type": "string",
+          "description": "Neo4j password",
+          "default": "memento_password"
+        },
+        "neo4jUsername": {
+          "type": "string",
+          "description": "Neo4j username",
+          "default": "neo4j"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_entities",
+      "description": "Create multiple new entities in your Memento MCP knowledge graph memory system"
+    },
+    {
+      "name": "create_relations",
+      "description": "Create multiple new relations between entities in your Memento MCP knowledge graph memory. Relations should be in active voice"
+    },
+    {
+      "name": "add_observations",
+      "description": "Add new observations to existing entities in your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "delete_entities",
+      "description": "Delete multiple entities and their associated relations from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "delete_observations",
+      "description": "Delete specific observations from entities in your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "delete_relations",
+      "description": "Delete multiple relations from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "get_relation",
+      "description": "Get a specific relation with its enhanced properties from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "update_relation",
+      "description": "Update an existing relation with enhanced properties in your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "read_graph",
+      "description": "Read the entire Memento MCP knowledge graph memory system"
+    },
+    {
+      "name": "search_nodes",
+      "description": "Search for nodes in your Memento MCP knowledge graph memory based on a query"
+    },
+    {
+      "name": "open_nodes",
+      "description": "Open specific nodes in your Memento MCP knowledge graph memory by their names"
+    },
+    {
+      "name": "semantic_search",
+      "description": "Search for entities semantically using vector embeddings and similarity in your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "get_entity_embedding",
+      "description": "Get the vector embedding for a specific entity from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "get_entity_history",
+      "description": "Get the version history of an entity from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "get_relation_history",
+      "description": "Get the version history of a relation from your Memento MCP knowledge graph memory"
+    },
+    {
+      "name": "get_graph_at_time",
+      "description": "Get your Memento MCP knowledge graph memory as it existed at a specific point in time"
+    },
+    {
+      "name": "get_decayed_graph",
+      "description": "Get your Memento MCP knowledge graph memory with confidence values decayed based on time"
+    }
+  ]
+}

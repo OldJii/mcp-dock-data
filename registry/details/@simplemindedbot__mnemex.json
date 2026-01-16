@@ -1,0 +1,12 @@
+{
+  "id": "@simplemindedbot/mnemex",
+  "displayName": "mnemex",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:20.793Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@simplemindedbot/mnemex"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "@keithah/hostex-mcp",
+  "displayName": "Hostex Property Management",
+  "description": "Manage your Hostex vacation rentals—properties, reservations, availability, listings, and guest messaging—from one place. Automate tasks like blocking dates, updating prices, sending guest messages, and handling reviews and lock codes. Search and filter data fast, create direct bookings, and keep calendars and custom fields in sync.",
+  "createdAt": "2026-01-16T12:38:44.753Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/hostex-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "accessToken"
+      ],
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "Hostex account email (optional, required for review posting)"
+        },
+        "password": {
+          "type": "string",
+          "description": "Hostex account password (optional, required for review posting)"
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Your Hostex API access token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": []
+}

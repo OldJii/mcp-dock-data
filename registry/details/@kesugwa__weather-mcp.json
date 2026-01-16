@@ -1,0 +1,12 @@
+{
+  "id": "@kesugwa/weather-mcp",
+  "displayName": "weather-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:24.703Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kesugwa/weather-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

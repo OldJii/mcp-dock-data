@@ -2,7 +2,7 @@
   "id": "@GoPlausible/tinyman-mcp",
   "displayName": "Tinyman MCP Server",
   "description": "Provide seamless interaction with the Tinyman AMM protocol on Algorand blockchain through a set of MCP tools. Manage pools, perform asset swaps, and handle liquidity operations efficiently. Enable advanced analytics and asset management to optimize decentralized trading workflows.",
-  "createdAt": "2026-01-16T07:26:44.501Z",
+  "createdAt": "2026-01-16T12:44:42.524Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GoPlausible/tinyman-mcp"

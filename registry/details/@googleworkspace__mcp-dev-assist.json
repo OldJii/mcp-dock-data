@@ -2,7 +2,7 @@
   "id": "@googleworkspace/mcp-dev-assist",
   "displayName": "Google Workspace Developer Assist",
   "description": "Provide AI assistants with up-to-date access to Google Workspace APIs and services documentation. Enable previewing of Google Workspace Cards to facilitate development and testing. Enhance productivity by integrating Google Workspace context into AI workflows.",
-  "createdAt": "2026-01-16T07:25:47.588Z",
+  "createdAt": "2026-01-16T12:43:21.716Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@googleworkspace/mcp-dev-assist"

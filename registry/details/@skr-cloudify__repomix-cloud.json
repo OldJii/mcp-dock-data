@@ -2,7 +2,7 @@
   "id": "@skr-cloudify/repomix-cloud",
   "displayName": "Repomix",
   "description": "Package remote and local repositories into a compact bundle for rapid code comprehension and review. Work with private repos and reopen previously generated outputs with ease. Browse directories and read files directly from your workspace.",
-  "createdAt": "2026-01-16T07:32:47.362Z",
+  "createdAt": "2026-01-16T12:53:22.714Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@skr-cloudify/repomix-cloud"

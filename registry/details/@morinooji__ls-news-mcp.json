@@ -1,0 +1,12 @@
+{
+  "id": "@morinooji/ls-news-mcp",
+  "displayName": "ls-news-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:16.534Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@morinooji/ls-news-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

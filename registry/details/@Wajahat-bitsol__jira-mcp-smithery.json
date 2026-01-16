@@ -2,7 +2,7 @@
   "id": "@Wajahat-bitsol/jira-mcp-smithery",
   "displayName": "Jira Integration Server",
   "description": "Enable seamless integration of Jira issue tracking within your LLM applications. Fetch, create, and manage Jira issues and projects dynamically to enhance your workflow automation. Streamline your project management by connecting your agents directly to Jira data and actions.",
-  "createdAt": "2026-01-16T07:22:55.128Z",
+  "createdAt": "2026-01-16T12:39:27.434Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Wajahat-bitsol/jira-mcp-smithery"

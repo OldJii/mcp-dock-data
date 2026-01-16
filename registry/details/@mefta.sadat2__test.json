@@ -1,0 +1,12 @@
+{
+  "id": "@mefta.sadat2/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:01.475Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mefta.sadat2/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

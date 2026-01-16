@@ -1,0 +1,12 @@
+{
+  "id": "@ssdavidai/fastdomaincheck-mcp-server",
+  "displayName": "fastdomaincheck-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:27.896Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ssdavidai/fastdomaincheck-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@Liam-Deacon/zettelkasten-mcp",
   "displayName": "Zettelkasten Knowledge Management Server",
   "description": "Manage and explore atomic notes using the Zettelkasten methodology through an MCP-compatible interface. Create, link, search, and synthesize notes with AI assistance to build a rich, interconnected knowledge graph. Enhance your knowledge workflow with bidirectional linking, tagging, and markdown-based note storage.",
-  "createdAt": "2026-01-16T07:25:44.886Z",
+  "createdAt": "2026-01-16T12:43:18.373Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Liam-Deacon/zettelkasten-mcp"

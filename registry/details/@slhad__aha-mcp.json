@@ -2,7 +2,7 @@
   "id": "@slhad/aha-mcp",
   "displayName": "Home Assistant Automations & Dashboards",
   "description": "A TypeScript MCP server for Home Assistant, enabling programmatic management of entities, automations, services, and dashboards. Designed for extensibility. Includes Docker support and Vitest-based tests for easy deployment and reliability.",
-  "createdAt": "2026-01-16T07:25:28.960Z",
+  "createdAt": "2026-01-16T12:42:58.520Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@slhad/aha-mcp"

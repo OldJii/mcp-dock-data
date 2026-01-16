@@ -2,7 +2,7 @@
   "id": "@Fabien-desablens/mcp-webpage-timestamps",
   "displayName": "Webpage Timestamps Extractor",
   "description": "Extract creation, modification, and publication timestamps from webpages to evaluate content freshness and support temporal analysis. Utilize multiple data sources including HTML meta tags, HTTP headers, JSON-LD, and heuristic methods for comprehensive timestamp detection. Process single or batch URLs with configurable options and confidence scoring for reliable results.",
-  "createdAt": "2026-01-16T07:28:49.005Z",
+  "createdAt": "2026-01-16T12:47:38.762Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Fabien-desablens/mcp-webpage-timestamps"

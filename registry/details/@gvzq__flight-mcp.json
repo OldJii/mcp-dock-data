@@ -2,7 +2,7 @@
   "id": "@gvzq/flight-mcp",
   "displayName": "Flight Search MCP Server",
   "description": "\nReal-Time Flight Data Access\nConnect to liveflight pricing and availability. Access comprehensive flight data from multiple sources with live pricing updates. \n\nMultiple Search Types\nFind the most affordable flights between any airports. View flight prices across entire months for flexible travel planning. Search for direct flights only, eliminating layovers. Discover trending flight routes from specific airports. Filter flights within specific budget ranges. Get detailed pricing for specific weeks. Compare costs across different months. Find flights to nearby destinations for better deals.",
-  "createdAt": "2026-01-16T07:21:52.027Z",
+  "createdAt": "2026-01-16T12:37:55.747Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gvzq/flight-mcp"

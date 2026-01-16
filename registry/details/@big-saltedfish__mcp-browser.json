@@ -2,7 +2,7 @@
   "id": "@big-saltedfish/mcp-browser",
   "displayName": "MCP Browser",
   "description": "Provide a browser-based interface to interact with Model Context Protocol servers, enabling seamless integration and testing of MCP tools, resources, and prompts. Facilitate development and debugging of MCP implementations in a user-friendly environment. Enhance productivity by offering an accessible platform for MCP exploration and experimentation.",
-  "createdAt": "2026-01-16T07:30:54.008Z",
+  "createdAt": "2026-01-16T12:50:41.450Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@big-saltedfish/mcp-browser"

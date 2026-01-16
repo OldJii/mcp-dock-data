@@ -1,0 +1,12 @@
+{
+  "id": "@lumberjack-so/alfred-mcp",
+  "displayName": "alfred-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:58:40.480Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lumberjack-so/alfred-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

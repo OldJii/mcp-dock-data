@@ -1,0 +1,12 @@
+{
+  "id": "adzuna/adzuna-mcp",
+  "displayName": "adzuna-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:34.261Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/adzuna/adzuna-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

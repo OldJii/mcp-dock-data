@@ -1,0 +1,12 @@
+{
+  "id": "@raffaele-filiberti/intervals-mcp-server",
+  "displayName": "intervals-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:08:53.638Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@raffaele-filiberti/intervals-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

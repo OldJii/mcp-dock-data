@@ -2,7 +2,7 @@
   "id": "@adamamer20/paper-search-mcp-openai",
   "displayName": "Paper Search",
   "description": "Search and download academic papers from arXiv, PubMed, bioRxiv, medRxiv, Google Scholar, Semantic Scholar, and IACR. Fetch PDFs and extract full text to accelerate literature reviews. Get consistent metadata for easier filtering, citation, and analysis.",
-  "createdAt": "2026-01-16T07:20:40.647Z",
+  "createdAt": "2026-01-16T12:36:12.841Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@adamamer20/paper-search-mcp-openai"

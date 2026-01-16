@@ -2,7 +2,7 @@
   "id": "@darekrossman/contentstack-mcp",
   "displayName": "Contentstack CMS Integration Server",
   "description": "Enable AI assistants to interact seamlessly with your Contentstack CMS by accessing and managing content types, entries, assets, and global fields through a standardized protocol. Perform CRUD operations and content publishing directly via AI-driven commands to streamline content management workflows. Enhance your content operations with AI-powered automation and real-time content manipulation capabilities.",
-  "createdAt": "2026-01-16T07:31:22.568Z",
+  "createdAt": "2026-01-16T12:51:22.608Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@darekrossman/contentstack-mcp"

@@ -1,0 +1,49 @@
+{
+  "id": "@jgordini/rcmcp",
+  "displayName": "rcmcp",
+  "description": "Search and retrieve UAB Research Computing documentation on Cheaha, SLURM, software, storage, and support. Get quick-start guidance for Cheaha, find office hours and contacts, and open full pages for deeper details. Speed up onboarding and troubleshooting with targeted results and structured section overviews.",
+  "createdAt": "2026-01-16T12:37:03.442Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jgordini/rcmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "githubToken": {
+          "type": "string",
+          "description": "Optional GitHub Personal Access Token for higher API rate limits (5000/hour vs 60/hour without token)",
+          "default": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_documentation",
+      "description": "\n    Search the UAB Research Computing documentation for relevant content.\n\n    This tool searches through the documentation repository to find pages\n    that match the search query. Useful for finding information about:\n    - How to use Cheaha HPC cluster\n    - Research computing policies and procedures\n    - Getting support and office hours\n    - Software and tools available\n    - Storage and data management\n\n    Args:\n        query: The search term or phrase to look for in the documentation\n        max_results: Maximum number of results to return (default: 5, max: 10)\n\n    Returns:\n        Formatted search results with titles, URLs, and excerpts\n    "
+    },
+    {
+      "name": "get_documentation_page",
+      "description": "\n    Retrieve the full content of a specific documentation page.\n\n    This tool fetches the complete markdown content of a documentation page from the\n    UAB Research Computing GitHub repository. Use this after finding a relevant\n    page with the search tool.\n\n    Args:\n        page_path: The path to the documentation page (e.g., \"docs/cheaha/slurm/slurm_tutorial.md\" or \"cheaha/slurm/slurm_tutorial\")\n                  Can be a relative path from the repository root or a GitHub URL\n\n    Returns:\n        The full markdown content of the documentation page\n    "
+    },
+    {
+      "name": "get_support_info",
+      "description": "\n    Get information about how to get support from UAB Research Computing.\n\n    This tool provides contact information, office hours, and support channels\n    for UAB Research Computing services. No parameters required.\n\n    Returns:\n        Comprehensive support information including office hours, contact methods,\n        and links to support resources\n    "
+    },
+    {
+      "name": "list_documentation_sections",
+      "description": "\n    List the main sections and categories available in the UAB Research Computing documentation.\n\n    This tool provides an overview of the documentation structure to help users\n    understand what information is available. No parameters required.\n\n    Returns:\n        A structured list of main documentation sections and their purposes\n    "
+    },
+    {
+      "name": "get_cheaha_quick_start",
+      "description": "\n    Get quick start information for accessing and using the Cheaha HPC cluster.\n\n    This tool provides essential information for new users getting started with\n    the Cheaha high-performance computing cluster at UAB. No parameters required.\n\n    Returns:\n        Quick start guide with essential information for Cheaha access and basic usage\n    "
+    }
+  ]
+}

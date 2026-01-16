@@ -1,0 +1,37 @@
+{
+  "id": "@francis-ros/rostro-mcp",
+  "displayName": "Rostro Image, Video, 3D, Voice, SFX, Music",
+  "description": "Turn any language model into a multimodal powerhouse that can generate images, music, videos and more on the fly. Rostro's tools are designed to be used by language models from the ground up, expanding capabilities with minimal context bloat.\n\n## Quick Setup\n\nYou will need a [Rostro account](https://rostro.dev/login/sign_up) for OAuth discovery and authentication in your client of choice.\n\n**MCP Server URL:** `https://proto.rostro.dev/mcp`\n\n## Quick Install Links\n\n- **Cursor**: [Install in Cursor](https://cursor.com/en/install-mcp?name=Rostro&config=eyJ1cmwiOiJodHRwczovL3Byb3RvLnJvc3Ryby5kZXYvbWNwIiwiaGVhZGVycyI6e319)\n- **LM Studio**: [Install in LM Studio](https://lmstudio.ai/install-mcp?name=rostro&config=eyJ1cmwiOiJodHRwczovL3Byb3RvLnJvc3Ryby5kZXYvbWNwIn0%3D)\n\n## API Key Setup (Optional)\n\nFor fixed API authentication instead of OAuth, add this to your settings:\n\n```json\n\"rostro\": {\n    \"url\": \"https://proto.rostro.dev/mcp\",\n    \"headers\": {\n        \"Authorization\": \"Bearer <YOUR_API_KEY>\"\n    }\n}\n```\n\nGet an API key from your [account page](https://rostro.dev/account).\n\n## Client-Specific Setup\n\n### Claude Desktop and Claude.ai\n\n1. Go to [Claude Connectors](https://claude.ai/settings/connectors)\n2. Click \"Add Custom Connector\"\n3. Fill out the form:\n   - Name: \"Rostro\"\n   - URL: \"https://proto.rostro.dev/mcp\"\n4. Click \"Add\"\n5. Hit \"Connect\" and follow the OAuth flow\n6. Optionally, click \"Configure\" to give Claude preapproval for individual tools\n\n### Claude Code\n\nInstall using the command line:\n\n```bash\nclaude mcp add rostro -t http https://proto.rostro.dev/mcp\n```\n\nThen start Claude and follow the instructions to complete authentication.\n\n## What is MCP?\n\nModel Context Protocol (MCP) is an open standard that allows language models to securely connect to third-party data sources and tools.\n\n[Learn more about MCP](https://modelcontextprotocol.io/docs/getting-started/intro)\n",
+  "createdAt": "2026-01-16T12:40:45.320Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@francis-ros/rostro-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "account",
+      "description": "Response includes their identity, current scopes/access, subscription, and credit balance."
+    },
+    {
+      "name": "imagine",
+      "description": "A unified endpoint for multimedia asset generation. For example, if the user asks for you to 'make', 'create', 'generate', or 'imagine' an image, song, video, speech, sound effect, or 3D model, use this tool."
+    },
+    {
+      "name": "history",
+      "description": "A unified endpoint for fetching multimedia asset generation history."
+    },
+    {
+      "name": "check",
+      "description": "Continue to wait for a currently running generation. Usually only videos and 3D models take long enough to require this."
+    },
+    {
+      "name": "delete",
+      "description": "Delete the media with these uuids. Don't use this unless the user explicitly asks you to."
+    }
+  ]
+}

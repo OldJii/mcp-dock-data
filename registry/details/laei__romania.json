@@ -1,0 +1,41 @@
+{
+  "id": "laei/romania",
+  "displayName": "romania",
+  "description": "Caută și filtrează anunțuri clasificate din România după categorie, preț și locație. Accesează detalii complete, tendințe și prețuri medii pentru decizii informate. Explorează ierarhia geografică (țări, județe, orașe) și descoperă structura orașelor.",
+  "createdAt": "2026-01-16T12:51:08.927Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/laei/romania"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "cauta-anunturi",
+      "description": "Căută anunțuri clasificate cu filtre avansate. Returnează o listă de anunțuri care corespund criteriilor de căutare, incluzând titlul, prețul, locația, categoria și detaliile fiecărui anunț."
+    },
+    {
+      "name": "detalii-anunt",
+      "description": "Obține detaliile complete ale unui anunț specificat prin ID, incluzând descrierea completă, informații contact, imagini și metadata."
+    },
+    {
+      "name": "obtine-categorii",
+      "description": "Obține structura ierarhică a categoriilor de anunțuri disponibile, incluzând subcategorii și numărul de anunțuri pentru fiecare categorie."
+    },
+    {
+      "name": "obtine-locatii",
+      "description": "Obține informații despre țări, județe și orașe pentru filtrarea geografică a anunțurilor. Suportă căutare ierarhică de la țări la județe și orașe."
+    },
+    {
+      "name": "statistici-anunturi",
+      "description": "Obține statistici și tendințe pentru anunțuri, incluzând numărul de anunțuri per perioadă, categorii populare, prețuri medii și distribuția geografică."
+    },
+    {
+      "name": "explorare-orase",
+      "description": "Explorează și înțelege structura orașelor din România, incluzând județe, orașe, populație, coordonate geografice și relațiile dintre acestea."
+    }
+  ]
+}

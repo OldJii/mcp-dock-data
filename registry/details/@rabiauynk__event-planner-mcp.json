@@ -2,7 +2,7 @@
   "id": "@rabiauynk/event-planner-mcp",
   "displayName": "Event Planner",
   "description": "Provide event recommendations based on city and date using the Ticketmaster API. Search for events with detailed information including price, location, and category. Easily integrate event discovery into your applications with simple API calls.",
-  "createdAt": "2026-01-16T07:26:56.162Z",
+  "createdAt": "2026-01-16T12:44:56.821Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rabiauynk/event-planner-mcp"

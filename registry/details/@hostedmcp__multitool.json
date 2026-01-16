@@ -1,0 +1,41 @@
+{
+  "id": "@hostedmcp/multitool",
+  "displayName": "Hosted MCP",
+  "description": "Provide a hosted environment for Model Context Protocol applications.",
+  "createdAt": "2026-01-16T12:46:07.744Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hostedmcp/multitool"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "API_KEY",
+        "URL"
+      ],
+      "properties": {
+        "URL": {
+          "type": "string",
+          "description": "URL of the HostedMCP server"
+        },
+        "API_KEY": {
+          "type": "string",
+          "description": "API key for authentication with the HostedMCP server"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "deep-research",
+      "description": "Performs deep research about a topic using Perplexity AI"
+    },
+    {
+      "name": "simple-search",
+      "description": "Runs 1 search query using Exa search engine"
+    }
+  ]
+}

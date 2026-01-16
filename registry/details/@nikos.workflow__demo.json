@@ -1,0 +1,12 @@
+{
+  "id": "@nikos.workflow/demo",
+  "displayName": "demo",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:20.143Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nikos.workflow/demo"
+  },
+  "connection": null,
+  "capabilities": []
+}

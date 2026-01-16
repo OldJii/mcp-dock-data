@@ -1,0 +1,29 @@
+{
+  "id": "@Ejb503/systemprompt-mcp-taskchecker",
+  "displayName": "SystemPrompt TaskChecker",
+  "description": "Manage and evaluate tasks efficiently with session-based task lists and real-time progress tracking. Update task properties, retrieve statuses, and score completed tasks to streamline your workflow. Enhance AI assistant integrations with structured task orchestration and comprehensive evaluation metrics.",
+  "createdAt": "2026-01-16T12:36:39.997Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Ejb503/systemprompt-mcp-taskchecker"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "create_tasklist",
+      "description": "Create a new task list for the current session. Can optionally include initial tasks."
+    },
+    {
+      "name": "update_task",
+      "description": "Update a specific task's properties including title, status, acceptance criteria, or evaluation score."
+    },
+    {
+      "name": "get_status",
+      "description": "Get the current status of all tasks in a task list, or a specific task by ID."
+    }
+  ]
+}

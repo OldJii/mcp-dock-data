@@ -2,7 +2,7 @@
   "id": "@Auxin-io/identity-system",
   "displayName": "Identity Provisioner",
   "description": "Provision demo user identities to test and prototype workflows securely. Explore security trade-offs with contrasting examples. Generate and stream simple Python scripts for quick validation.",
-  "createdAt": "2026-01-16T07:29:59.998Z",
+  "createdAt": "2026-01-16T12:49:20.380Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Auxin-io/identity-system"

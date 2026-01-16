@@ -2,7 +2,7 @@
   "id": "@mrodasensio/aicol",
   "displayName": "Zuplo Weather",
   "description": "Access U.S. National Weather Service alerts, forecasts, radar, observations, and text products. Query aviation data including TAFs and SIGMET/AIRMETs, plus zone, station, and point metadata to power location-aware features. Build timely notifications and dashboards with reliable nationwide coverage.",
-  "createdAt": "2026-01-16T07:30:17.403Z",
+  "createdAt": "2026-01-16T12:49:45.920Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mrodasensio/aicol"

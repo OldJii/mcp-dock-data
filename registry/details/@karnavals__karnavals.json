@@ -1,0 +1,12 @@
+{
+  "id": "@karnavals/karnavals",
+  "displayName": "karnavals",
+  "description": "",
+  "createdAt": "2026-01-16T13:06:20.434Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@karnavals/karnavals"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "@MrunmayS/exa-mcp-server",
+  "displayName": "Exa MCP ",
+  "description": "Enable AI assistants to perform web searches using Exa's powerful search API.",
+  "createdAt": "2026-01-16T12:42:16.869Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MrunmayS/exa-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "exaApiKey"
+      ],
+      "properties": {
+        "exaApiKey": {
+          "type": "string",
+          "description": "The API key for accessing the Exa Search API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Search the web using Exa AI"
+    }
+  ]
+}

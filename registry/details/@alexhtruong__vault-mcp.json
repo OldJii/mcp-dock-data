@@ -2,7 +2,7 @@
   "id": "@alexhtruong/vault-mcp",
   "displayName": "Vault MCP Server",
   "description": "Enable secure and efficient management of encrypted data vaults through a standardized protocol interface. Facilitate seamless integration of encrypted storage and retrieval operations within your applications. Enhance data security and accessibility by leveraging this server's capabilities.",
-  "createdAt": "2026-01-16T07:32:37.584Z",
+  "createdAt": "2026-01-16T12:53:10.138Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alexhtruong/vault-mcp"

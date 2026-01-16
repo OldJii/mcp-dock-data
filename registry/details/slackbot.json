@@ -2,7 +2,7 @@
   "id": "slackbot",
   "displayName": "Slackbot",
   "description": "Slackbot automates responses and reminders within Slack, assisting with tasks like onboarding, FAQs, and notifications to streamline team productivity",
-  "createdAt": "2026-01-16T07:19:16.873Z",
+  "createdAt": "2026-01-16T12:34:13.103Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/slackbot"

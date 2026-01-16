@@ -2,7 +2,7 @@
   "id": "@call518/mcp-mysql-ops",
   "displayName": "MCP-MySQL-Ops",
   "description": "Monitor MySQL instances, inspect schemas, and track performance. Diagnose slow queries, locks, and connection issues to keep databases healthy. Explore databases, tables, users, and configuration to optimize storage and plan capacity.",
-  "createdAt": "2026-01-16T07:27:49.339Z",
+  "createdAt": "2026-01-16T12:46:02.503Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@call518/mcp-mysql-ops"

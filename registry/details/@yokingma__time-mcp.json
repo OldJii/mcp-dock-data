@@ -1,0 +1,45 @@
+{
+  "id": "@yokingma/time-mcp",
+  "displayName": "Time MCP Server",
+  "description": "Empower your LLMs with time awareness capabilities. Access current time, convert between timezones, and get timestamps effortlessly. Enhance your applications with precise time-related functionalities.\nusage: `npx time-mcp`",
+  "createdAt": "2026-01-16T12:37:53.099Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yokingma/time-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "current_time",
+      "description": "Get the current date and time."
+    },
+    {
+      "name": "relative_time",
+      "description": "Get the relative time from now."
+    },
+    {
+      "name": "days_in_month",
+      "description": "Get the number of days in a month. If no date is provided, get the number of days in the current month."
+    },
+    {
+      "name": "get_timestamp",
+      "description": "Get the timestamp for the time."
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time between timezones."
+    },
+    {
+      "name": "get_week_year",
+      "description": "Get the week and isoWeek of the year."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "text_to_pdf",
+  "displayName": "Text to pdf",
+  "description": "Convert text to PDF",
+  "createdAt": "2026-01-16T12:35:05.994Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/text_to_pdf"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TEXT_TO_PDF_CONVERT_TEXT_TO_PDF",
+      "description": "Convert text to pdf"
+    }
+  ]
+}

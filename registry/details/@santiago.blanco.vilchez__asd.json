@@ -2,7 +2,7 @@
   "id": "@santiago.blanco.vilchez/asd",
   "displayName": "Tenant Template Manager",
   "description": "Authenticate and provision new tenants with initial document templates. Add and manage templates for existing tenants to standardize workflows. Connect to external services via HTTP as part of your setup or operations.",
-  "createdAt": "2026-01-16T07:28:05.988Z",
+  "createdAt": "2026-01-16T12:46:37.686Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/asd"

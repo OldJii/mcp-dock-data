@@ -2,7 +2,7 @@
   "id": "@browserbasehq/mcp-browserbase",
   "displayName": "Browserbase",
   "description": "Provides cloud browser automation capabilities using Stagehand and Browserbase, enabling LLMs to interact with web pages, take screenshots, and run parallel sessions in a cloud browser environment.",
-  "createdAt": "2026-01-16T07:20:26.513Z",
+  "createdAt": "2026-01-16T12:35:53.427Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@browserbasehq/mcp-browserbase"

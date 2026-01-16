@@ -1,0 +1,12 @@
+{
+  "id": "@mr.slametrivai/slametrivai",
+  "displayName": "slametrivai",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:02.124Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mr.slametrivai/slametrivai"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@pinkpixel-dev/datetime-mcp",
   "displayName": "DateTime Context Provider",
   "description": "Provide LLMs with the current date and time context based on the server's system clock. Enable your agents to access accurate and up-to-date temporal information seamlessly. Simplify time-related queries and operations within your LLM workflows.",
-  "createdAt": "2026-01-16T07:21:19.992Z",
+  "createdAt": "2026-01-16T12:37:09.466Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pinkpixel-dev/datetime-mcp"

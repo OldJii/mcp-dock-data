@@ -1,0 +1,27 @@
+{
+  "id": "@sirmews/mcp-remote-server",
+  "displayName": "Remote Server",
+  "description": "Bridge between MCP clients and remote APIs.",
+  "createdAt": "2026-01-16T12:49:15.147Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sirmews/mcp-remote-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "controlPlaneUrl"
+      ],
+      "properties": {
+        "controlPlaneUrl": {
+          "type": "string",
+          "description": "URL to the remote configuration endpoint"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

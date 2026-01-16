@@ -2,7 +2,7 @@
   "id": "@Domoteek/mcp-server-airbnb",
   "displayName": "Airbnb Search Server",
   "description": "Search for Airbnb listings and get detailed information about accommodations. Access direct links to Airbnb listings in your search results, making it easy to plan your next trip.",
-  "createdAt": "2026-01-16T07:26:33.909Z",
+  "createdAt": "2026-01-16T12:44:27.633Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Domoteek/mcp-server-airbnb"

@@ -2,7 +2,7 @@
   "id": "@dev/justcall-mcp",
   "displayName": "JustCall",
   "description": "Manage calls, SMS, contacts, numbers, and campaigns from your JustCall workspace. Track agent, account, and dialer performance with robust analytics. Automate workflows with webhooks and streamline outreach with quick updates and real-time insights.",
-  "createdAt": "2026-01-16T07:28:52.878Z",
+  "createdAt": "2026-01-16T12:47:44.146Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dev/justcall-mcp"

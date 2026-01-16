@@ -2,7 +2,7 @@
   "id": "@mikechao/metmuseum-mcp",
   "displayName": "Met Museum Server",
   "description": "Access the Metropolitan Museum of Art's collection through natural language queries. Search for artworks, retrieve detailed information, and explore various departments effortlessly. Enhance your AI's capabilities with rich art resources and data.",
-  "createdAt": "2026-01-16T07:20:47.967Z",
+  "createdAt": "2026-01-16T12:36:23.473Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mikechao/metmuseum-mcp"

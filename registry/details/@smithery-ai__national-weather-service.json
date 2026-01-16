@@ -2,7 +2,7 @@
   "id": "@smithery-ai/national-weather-service",
   "displayName": "United States Weather",
   "description": "Provide real-time and forecast weather information for locations in the United States using natural language queries. Access current conditions, multi-day and hourly forecasts, weather alerts, and nearby weather stations without requiring an API key. Enable users to get official, government-sourced weather data easily through intuitive tools.",
-  "createdAt": "2026-01-16T07:20:04.589Z",
+  "createdAt": "2026-01-16T12:35:22.361Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@smithery-ai/national-weather-service"

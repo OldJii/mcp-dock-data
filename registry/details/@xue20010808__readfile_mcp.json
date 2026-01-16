@@ -2,7 +2,7 @@
   "id": "@xue20010808/readfile_mcp",
   "displayName": "readfile_mcp",
   "description": "Explore your local files with fast glob matching and text search. Find files across directories and pinpoint patterns in code, logs, or docs. Focus searches on any folder to keep results relevant.",
-  "createdAt": "2026-01-16T07:28:05.464Z",
+  "createdAt": "2026-01-16T12:46:37.038Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@xue20010808/readfile_mcp"

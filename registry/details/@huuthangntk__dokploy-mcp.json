@@ -2,7 +2,7 @@
   "id": "@huuthangntk/dokploy-mcp",
   "displayName": "Dokploy Deployments",
   "description": "Manage Dokploy projects, applications, databases, domains, and backups from one place. Deploy from Git repositories, monitor status and logs, and control start/stop/restart actions effortlessly. Streamline workflows with guided prompts for app deployment, database setup, and troubleshooting.",
-  "createdAt": "2026-01-16T07:31:27.460Z",
+  "createdAt": "2026-01-16T12:51:29.787Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@huuthangntk/dokploy-mcp"

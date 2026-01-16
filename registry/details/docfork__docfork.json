@@ -2,7 +2,7 @@
   "id": "docfork/docfork",
   "displayName": "Docfork",
   "description": "Search and retrieve documentation from GitHub repositories and the web to find technical answers quickly. Transform complex web pages into clean markdown for efficient reading and analysis. Simplify library research by using specific repository identifiers for targeted documentation access.",
-  "createdAt": "2026-01-16T07:32:45.766Z",
+  "createdAt": "2026-01-16T12:53:20.746Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/docfork/docfork"

@@ -1,0 +1,121 @@
+{
+  "id": "@mabeldata/pocketbase-mcp",
+  "displayName": "PocketBase MCP Server",
+  "description": "Manage your PocketBase collections effortlessly. Fetch, create, update, and delete records with ease, while also handling file uploads and downloads. Streamline your database operations and enhance your application's capabilities with this powerful server.",
+  "createdAt": "2026-01-16T12:42:05.498Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mabeldata/pocketbase-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "POCKETBASE_ADMIN_TOKEN"
+      ],
+      "properties": {
+        "POCKETBASE_API_URL": {
+          "type": "string",
+          "description": "The URL of your PocketBase instance.",
+          "default": "http://127.0.0.1:8090"
+        },
+        "POCKETBASE_ADMIN_TOKEN": {
+          "type": "string",
+          "description": "Your PocketBase admin token."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch_record",
+      "description": "Fetch a single record from a PocketBase collection by ID."
+    },
+    {
+      "name": "list_records",
+      "description": "List records from a PocketBase collection. Supports filtering, sorting, pagination, and expansion."
+    },
+    {
+      "name": "create_record",
+      "description": "Create a new record in a PocketBase collection."
+    },
+    {
+      "name": "update_record",
+      "description": "Update an existing record in a PocketBase collection by ID."
+    },
+    {
+      "name": "get_collection_schema",
+      "description": "Get the schema (fields, rules, etc.) of a PocketBase collection."
+    },
+    {
+      "name": "list_collections",
+      "description": "List all collections in the PocketBase instance."
+    },
+    {
+      "name": "upload_file",
+      "description": "Upload a file (provided as content string) to a PocketBase collection record field."
+    },
+    {
+      "name": "download_file",
+      "description": "Get the URL to download a file from a PocketBase collection record field."
+    },
+    {
+      "name": "set_migrations_directory",
+      "description": "Set the directory where migration files will be created and read from."
+    },
+    {
+      "name": "create_migration",
+      "description": "Create a new, empty PocketBase migration file with a timestamped name."
+    },
+    {
+      "name": "create_collection_migration",
+      "description": "Create a migration file specifically for creating a new PocketBase collection."
+    },
+    {
+      "name": "add_field_migration",
+      "description": "Create a migration file for adding a field to an existing collection."
+    },
+    {
+      "name": "list_migrations",
+      "description": "List all migration files found in the PocketBase migrations directory."
+    },
+    {
+      "name": "apply_migration",
+      "description": "Apply a specific migration file."
+    },
+    {
+      "name": "revert_migration",
+      "description": "Revert a specific migration file."
+    },
+    {
+      "name": "apply_all_migrations",
+      "description": "Apply all pending migrations."
+    },
+    {
+      "name": "revert_to_migration",
+      "description": "Revert migrations up to a specific target."
+    },
+    {
+      "name": "list_logs",
+      "description": "List API request logs from PocketBase with filtering, sorting, and pagination."
+    },
+    {
+      "name": "get_log",
+      "description": "Get a single API request log by ID."
+    },
+    {
+      "name": "get_logs_stats",
+      "description": "Get API request logs statistics with optional filtering."
+    },
+    {
+      "name": "list_cron_jobs",
+      "description": "Returns list with all registered app level cron jobs."
+    },
+    {
+      "name": "run_cron_job",
+      "description": "Triggers a single cron job by its id."
+    }
+  ]
+}

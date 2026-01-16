@@ -1,0 +1,57 @@
+{
+  "id": "@maxbeech/instagram-mcp",
+  "displayName": "instagram-mcp",
+  "description": "Connect Instagram to your workflows. Access account and media data, and streamline content tasks from one place.",
+  "createdAt": "2026-01-16T12:39:33.400Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maxbeech/instagram-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_profile_info",
+      "description": "Get Instagram business profile information including followers, bio, and account details"
+    },
+    {
+      "name": "get_media_posts",
+      "description": "Get recent media posts from Instagram account with engagement metrics and pagination support"
+    },
+    {
+      "name": "get_media_insights",
+      "description": "Get detailed analytics and performance metrics for a specific Instagram post"
+    },
+    {
+      "name": "publish_media",
+      "description": "Upload and publish an image or video to Instagram with caption, location, and automatic aspect ratio validation"
+    },
+    {
+      "name": "get_account_insights",
+      "description": "Get account-level analytics including reach, profile views, and website clicks over a time period"
+    },
+    {
+      "name": "validate_access_token",
+      "description": "Validate your Instagram access token and check permissions"
+    },
+    {
+      "name": "get_account_pages",
+      "description": "Get Facebook pages connected to your account (needed for some Instagram operations)"
+    },
+    {
+      "name": "get_conversations",
+      "description": "Get Instagram DM conversations (requires instagram_manage_messages permission and Advanced Access)"
+    },
+    {
+      "name": "get_conversation_messages",
+      "description": "Get messages from a specific Instagram DM conversation (requires Advanced Access)"
+    },
+    {
+      "name": "send_dm",
+      "description": "Send a direct message on Instagram (requires Advanced Access and 24-hour response window)"
+    }
+  ]
+}

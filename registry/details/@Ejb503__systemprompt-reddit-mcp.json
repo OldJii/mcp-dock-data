@@ -2,7 +2,7 @@
   "id": "@Ejb503/systemprompt-reddit-mcp",
   "displayName": "Systemprompt Reddit Server",
   "description": "Enable AI agents to interact with Reddit by reading posts, creating content, and managing subreddit configurations. Customize writing style, ensure rule compliance, and generate context-aware replies. Seamlessly integrate Reddit capabilities into your AI workflows with real-time processing and advanced error handling.",
-  "createdAt": "2026-01-16T07:30:41.663Z",
+  "createdAt": "2026-01-16T12:50:20.954Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Ejb503/systemprompt-reddit-mcp"

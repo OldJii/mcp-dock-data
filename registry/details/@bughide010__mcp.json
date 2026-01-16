@@ -1,0 +1,12 @@
+{
+  "id": "@bughide010/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:02.305Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bughide010/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@togethercomputer/together-flux-mcp",
   "displayName": "Together Flux Image Generator",
   "description": "Generate images seamlessly using the Together AI Flux Schnell image API. Enhance your applications with high-quality image creation capabilities powered by Together AI. Easily integrate image generation into your workflows with this MCP server.",
-  "createdAt": "2026-01-16T07:32:16.436Z",
+  "createdAt": "2026-01-16T12:52:39.064Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@togethercomputer/together-flux-mcp"

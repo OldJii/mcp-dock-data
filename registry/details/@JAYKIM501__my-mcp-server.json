@@ -1,0 +1,42 @@
+{
+  "id": "@JAYKIM501/my-mcp-server",
+  "displayName": "my-mcp-server",
+  "description": "Access greetings in multiple languages, quick calculations, current time and timezone info, and code review. Generate images from text prompts with optional token configuration. Kickstart projects with a ready-to-use set of utilities.",
+  "createdAt": "2026-01-16T12:49:48.536Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JAYKIM501/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "huggingFaceToken": {
+          "type": "string",
+          "description": "Hugging Face API 토큰 (이미지 생성 기능에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자의 이름과 언어를 입력받아 해당 언어로 인사말을 반환합니다."
+    },
+    {
+      "name": "calc",
+      "description": "두 개의 숫자와 연산자를 입력받아 계산 결과를 반환합니다."
+    },
+    {
+      "name": "real_time",
+      "description": "현재 시간과 타임존 정보를 반환합니다."
+    },
+    {
+      "name": "generate_image",
+      "description": "텍스트 프롬프트를 입력받아 AI 이미지를 생성합니다. (FLUX.1-schnell 모델 사용)"
+    }
+  ]
+}

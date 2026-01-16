@@ -2,7 +2,7 @@
   "id": "@2511319/context7",
   "displayName": "Context7",
   "description": "Provide up-to-date, version-specific code documentation and examples directly within your prompts to improve coding accuracy and reduce hallucinated APIs. Seamlessly integrate with your preferred MCP client to fetch the latest library docs and code snippets from the source. Enhance your coding workflow with instant, reliable, and context-aware documentation support.",
-  "createdAt": "2026-01-16T07:21:56.533Z",
+  "createdAt": "2026-01-16T12:38:01.725Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@2511319/context7"

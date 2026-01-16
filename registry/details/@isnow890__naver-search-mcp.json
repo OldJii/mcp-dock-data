@@ -2,7 +2,7 @@
   "id": "@isnow890/naver-search-mcp",
   "displayName": "Naver Search",
   "description": "\nA MCP server based on Naver Search API. Enables searching various content types (news, cafe, blogs, shopping, web search, etc.) and analyzing search/shopping trends via DataLab API. Shopping analytics provide consumer behavior patterns by category, device, gender, and age group.\n\n\n네이버 검색 API 기반 MCP 서버입니다. 뉴스, 카페, 블로그, 쇼핑, 웹 검색 등 다양한 콘텐츠 검색과 함께 데이터랩 API로 검색어/쇼핑 트렌드 분석이 가능합니다. 쇼핑 분석은 카테고리, 기기, 성별, 연령대별 소비자 행동 패턴을 제공합니다.\n\n\n\n  • 스마트 카테고리 검색 - 검색 트렌드/쇼핑인사이트 검색시 카테고리 코드를 ai가 자동으로 찾아서 트렌드 검색해줘요.\n  • 한국 시간 컨텍스트 - 오늘 기반으로 정확히 검색할수 있게 합니다,\n\n\n\n",
-  "createdAt": "2026-01-16T07:22:10.997Z",
+  "createdAt": "2026-01-16T12:38:20.938Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@isnow890/naver-search-mcp"

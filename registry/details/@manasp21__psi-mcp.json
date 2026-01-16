@@ -2,7 +2,7 @@
   "id": "@manasp21/psi-mcp",
   "displayName": "Psi MCP Server",
   "description": "Enable seamless integration of language models with external data sources and tools through a standardized protocol. Facilitate dynamic access to files, APIs, and custom operations to enhance AI capabilities. Simplify the development of intelligent applications by providing a robust bridge between LLMs and real-world resources.",
-  "createdAt": "2026-01-16T07:27:03.617Z",
+  "createdAt": "2026-01-16T12:45:06.277Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@manasp21/psi-mcp"

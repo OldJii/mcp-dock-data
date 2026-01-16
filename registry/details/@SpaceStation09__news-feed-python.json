@@ -2,7 +2,7 @@
   "id": "@SpaceStation09/news-feed-python",
   "displayName": "News Feed Python Server",
   "description": "Provide a data feed of Blockbeats RSS to large language models, enabling them to answer user queries about news and information. Serve as an MCP server exposing news content via HTTP for seamless integration with LLM applications. Facilitate easy testing and interaction through a web-based MCP inspector UI.",
-  "createdAt": "2026-01-16T07:22:58.026Z",
+  "createdAt": "2026-01-16T12:39:31.412Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SpaceStation09/news-feed-python"

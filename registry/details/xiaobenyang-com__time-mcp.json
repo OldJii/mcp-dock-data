@@ -1,0 +1,48 @@
+{
+  "id": "xiaobenyang-com/time-mcp",
+  "displayName": "time-mcp",
+  "description": "Get the current time, timestamps, and days in any month. Convert times across time zones and calculate relative times. Find ISO week and week-of-year instantly.",
+  "createdAt": "2026-01-16T12:47:56.946Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/time-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "current_time",
+      "description": "Get the current date and time."
+    },
+    {
+      "name": "relative_time",
+      "description": "Get the relative time from now."
+    },
+    {
+      "name": "days_in_month",
+      "description": "Get the number of days in a month. If no date is provided, get the number of days in the current month."
+    },
+    {
+      "name": "get_timestamp",
+      "description": "Get the timestamp for the time."
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time between timezones."
+    },
+    {
+      "name": "get_week_year",
+      "description": "Get the week and isoWeek of the year."
+    }
+  ]
+}

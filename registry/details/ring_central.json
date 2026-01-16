@@ -1,0 +1,12 @@
+{
+  "id": "ring_central",
+  "displayName": "Ring central",
+  "description": "RingCentral offers cloud-based communication services including voice, video meetings, team messaging, and contact center solutions for businesses of all sizes",
+  "createdAt": "2026-01-16T12:53:54.683Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ring_central"
+  },
+  "connection": null,
+  "capabilities": []
+}

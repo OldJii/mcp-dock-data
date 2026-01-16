@@ -1,0 +1,12 @@
+{
+  "id": "@mulerrr/claude-talk-to-figma-mini",
+  "displayName": "claude-talk-to-figma-mini",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:39.936Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mulerrr/claude-talk-to-figma-mini"
+  },
+  "connection": null,
+  "capabilities": []
+}

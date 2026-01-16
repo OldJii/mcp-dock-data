@@ -2,7 +2,7 @@
   "id": "@multiversx/mx-mcp",
   "displayName": "MultiversX MCP Server",
   "description": "Create and manage PEM wallets for the MultiversX blockchain. Effortlessly retrieve wallet addresses, check balances, and send various token types including EGLD and NFTs. Enhance your blockchain interactions with secure and efficient wallet management capabilities.",
-  "createdAt": "2026-01-16T07:25:57.960Z",
+  "createdAt": "2026-01-16T12:43:35.733Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@multiversx/mx-mcp"

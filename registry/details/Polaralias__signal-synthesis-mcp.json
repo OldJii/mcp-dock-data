@@ -2,7 +2,7 @@
   "id": "Polaralias/signal-synthesis-mcp",
   "displayName": "Signal Synthesis",
   "description": "Access real-time market data and historical financial records from multiple financial data providers. Synthesize market signals to gain deeper insights into stock performance and trends. Streamline financial research with unified access to quotes, intraday bars, and symbol searches.",
-  "createdAt": "2026-01-16T07:29:10.996Z",
+  "createdAt": "2026-01-16T12:48:10.022Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/Polaralias/signal-synthesis-mcp"

@@ -2,7 +2,7 @@
   "id": "@cuongpo/rootstock-mcp-test",
   "displayName": "Rootstock Blockchain Interaction Server",
   "description": "Enable seamless interaction with the Rootstock blockchain through a standardized MCP interface. Manage wallets, perform transactions, deploy and manage ERC20 tokens, and query blockchain data easily. Simplify building and integrating Rootstock-based applications with comprehensive developer tools and APIs.",
-  "createdAt": "2026-01-16T07:25:12.608Z",
+  "createdAt": "2026-01-16T12:42:39.164Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/rootstock-mcp-test"

@@ -2,7 +2,7 @@
   "id": "@gamzadongza/danbooru-tags-mcp",
   "displayName": "Danbooru Tags",
   "description": "Extract tags from any Danbooru post and explore categories at a glance. Analyze character-specific tag frequencies to surface top traits and clothing patterns. Look up tag and character details from the Danbooru Wiki to add context.",
-  "createdAt": "2026-01-16T07:22:24.383Z",
+  "createdAt": "2026-01-16T12:38:40.826Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gamzadongza/danbooru-tags-mcp"

@@ -1,0 +1,667 @@
+{
+  "id": "@EduBase/MCP",
+  "displayName": "EduBase",
+  "description": "Interact with EduBase through our MCP server. Create dynamic quizzes, manage secure exams, and automate comprehensive assessment workflows. This seamless integration empowers educators to create personalized learning experiences, conduct secure online examinations, and scale assessment solutions with enterprise-grade security and compliance. Ideal for educational institutions, corporate training departments, and certification providers seeking to transform their digital learning infrastructure with AI-powered capabilities. Integrate with your existing systems through our secure API.\n\nCheck out our GitHub page for more details and setup instructions!",
+  "createdAt": "2026-01-16T12:39:24.772Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@EduBase/MCP"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "edubaseApiUrl",
+        "edubaseApiApp",
+        "edubaseApiKey"
+      ],
+      "properties": {
+        "edubaseApiApp": {
+          "type": "string",
+          "description": "The integration app ID for EduBase"
+        },
+        "edubaseApiKey": {
+          "type": "string",
+          "description": "The secret key for the EduBase API"
+        },
+        "edubaseApiUrl": {
+          "type": "string",
+          "description": "The API URL for EduBase"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "edubase_get_questions",
+      "description": "List owned and managed Quiz questions."
+    },
+    {
+      "name": "edubase_get_question",
+      "description": "Check existing question. Questions are the lowest level in the EduBase hierarchy, serving as the building blocks for Quiz sets. To get question details, use the question export function!"
+    },
+    {
+      "name": "edubase_post_question",
+      "description": "Publish or update a question. Questions are the atomic building blocks of the EduBase Quiz system and represent the lowest level in the hierarchy (Questions -> Quiz sets -> Exams)."
+    },
+    {
+      "name": "edubase_delete_question",
+      "description": "Permanently delete a Quiz question."
+    },
+    {
+      "name": "edubase_post_question_export",
+      "description": "Generate download link for exporting the question (in JSON format). If a previous valid link exists, it will be returned instead."
+    },
+    {
+      "name": "edubase_get_question_id",
+      "description": "Get external unique question identifier by question identification string."
+    },
+    {
+      "name": "edubase_post_question_id",
+      "description": "Set external unique question identifier for question identified by a question identification string."
+    },
+    {
+      "name": "edubase_get_exams",
+      "description": "List owned and managed exams. Exams are the highest level in the EduBase Quiz hierarchy, built from Quiz sets."
+    },
+    {
+      "name": "edubase_get_exam",
+      "description": "Get/check exam."
+    },
+    {
+      "name": "edubase_post_exam",
+      "description": "Create a new exam from an existing Quiz set. Exams are at the top level of the EduBase Quiz hierarchy and MUST be created from existing Quiz sets. They are time-constrained, secured assessment instances of Quiz sets."
+    },
+    {
+      "name": "edubase_delete_exam",
+      "description": "Remove/archive exam."
+    },
+    {
+      "name": "edubase_get_exam_users",
+      "description": "List all users on an exam."
+    },
+    {
+      "name": "edubase_post_exam_users",
+      "description": "Assign user(s) to an exam."
+    },
+    {
+      "name": "edubase_delete_exam_users",
+      "description": "Remove user(s) from an exam."
+    },
+    {
+      "name": "edubase_post_exam_summary",
+      "description": "Submit a new AI exam summary."
+    },
+    {
+      "name": "edubase_get_quiz_play_results",
+      "description": "Get detailed results for a specific Quiz play."
+    },
+    {
+      "name": "edubase_get_quiz_results_user",
+      "description": "Get user results for a specific Quiz set."
+    },
+    {
+      "name": "edubase_get_exam_results_user",
+      "description": "Get user results for a specific exam."
+    },
+    {
+      "name": "edubase_get_exam_results_raw",
+      "description": "Get raw results for a specific exam.\n- This endpoint returns raw results, including all answers given by the user. It is not meant to be displayed to the user.\n- This might require additional permissions."
+    },
+    {
+      "name": "edubase_get_exam_certificates_user",
+      "description": "Get (the latest) certificate details for a specific exam and user."
+    },
+    {
+      "name": "edubase_post_exam_certificates_user_download",
+      "description": "Generate download link for the latest user exam certificate. If a previous valid link exists, it will be returned instead."
+    },
+    {
+      "name": "edubase_get_quizes",
+      "description": "List owned and managed Quiz sets. Quiz sets are named collections of questions that sit at the middle level of the EduBase Quiz hierarchy."
+    },
+    {
+      "name": "edubase_get_quiz",
+      "description": "Get/check Quiz set. Containing questions and powering Exams."
+    },
+    {
+      "name": "edubase_post_quiz",
+      "description": "Create a new Quiz set. Quiz sets are collections of questions that can be used for practice or to power multiple Exams."
+    },
+    {
+      "name": "edubase_delete_quiz",
+      "description": "Remove/archive Quiz set."
+    },
+    {
+      "name": "edubase_get_quiz_questions",
+      "description": "List all questions and question groups in a Quiz set. Quiz sets contain questions (lowest level) and can be used by exams (highest level)."
+    },
+    {
+      "name": "edubase_post_quiz_questions",
+      "description": "Assign question(s) to a Quiz set, or one of its question group. Questions can exist independently from Quiz sets."
+    },
+    {
+      "name": "edubase_delete_quiz_questions",
+      "description": "Remove question(s) from a Quiz set, or one of its question group."
+    },
+    {
+      "name": "edubase_get_users",
+      "description": "List managed, non-generated users."
+    },
+    {
+      "name": "edubase_get_user_me",
+      "description": "Get/check current user."
+    },
+    {
+      "name": "edubase_get_user",
+      "description": "Get/check user."
+    },
+    {
+      "name": "edubase_post_user",
+      "description": "Create new EduBase user account."
+    },
+    {
+      "name": "edubase_patch_user",
+      "description": "Update user."
+    },
+    {
+      "name": "edubase_delete_user",
+      "description": "Delete user."
+    },
+    {
+      "name": "edubase_get_user_name",
+      "description": "Get user's name."
+    },
+    {
+      "name": "edubase_post_user_name",
+      "description": "Update a user's name."
+    },
+    {
+      "name": "edubase_get_user_group",
+      "description": "Get user's group."
+    },
+    {
+      "name": "edubase_post_user_group",
+      "description": "Update a user's group."
+    },
+    {
+      "name": "edubase_get_user_login",
+      "description": "Get latest valid login link for user."
+    },
+    {
+      "name": "edubase_post_user_login",
+      "description": "Generate login link. If a valid link with the same settings exists, it will be returned instead of creating a new one."
+    },
+    {
+      "name": "edubase_delete_user_login",
+      "description": "Delete a previously generated login link."
+    },
+    {
+      "name": "edubase_get_user_search",
+      "description": "Lookup user by email, username or code."
+    },
+    {
+      "name": "edubase_post_user_assume",
+      "description": "Assume user for next requests with assume token."
+    },
+    {
+      "name": "edubase_delete_user_assume",
+      "description": "Revoke assume token."
+    },
+    {
+      "name": "edubase_get_classes",
+      "description": "List owned and managed classes."
+    },
+    {
+      "name": "edubase_get_class",
+      "description": "Get/check class."
+    },
+    {
+      "name": "edubase_get_class_assignments",
+      "description": "List all assignments in a class."
+    },
+    {
+      "name": "edubase_get_class_members",
+      "description": "List all members in a class."
+    },
+    {
+      "name": "edubase_post_class_members",
+      "description": "Assign user(s) to a class. Updates memberships if already member of the class."
+    },
+    {
+      "name": "edubase_delete_class_members",
+      "description": "Remove user(s) from a class."
+    },
+    {
+      "name": "edubase_post_classes_members",
+      "description": "Assign user(s) to class(es). Updates memberships if already member of a class."
+    },
+    {
+      "name": "edubase_get_user_classes",
+      "description": "List all classes a user is member of."
+    },
+    {
+      "name": "edubase_post_user_classes",
+      "description": "Assign user to class(es). Updates membership if already member of a class."
+    },
+    {
+      "name": "edubase_delete_user_classes",
+      "description": "Remove user from class(es)."
+    },
+    {
+      "name": "edubase_get_organizations",
+      "description": "List owned and managed organizations."
+    },
+    {
+      "name": "edubase_get_organization",
+      "description": "Get/check organization."
+    },
+    {
+      "name": "edubase_post_organization",
+      "description": "Create an organization."
+    },
+    {
+      "name": "edubase_patch_organization",
+      "description": "Update organization."
+    },
+    {
+      "name": "edubase_delete_organization",
+      "description": "Remove organization."
+    },
+    {
+      "name": "edubase_get_organization_members",
+      "description": "List all members in an organization."
+    },
+    {
+      "name": "edubase_post_organization_members",
+      "description": "Assign user(s) to an organization. Updates memberships if already member of the organization."
+    },
+    {
+      "name": "edubase_delete_organization_members",
+      "description": "Remove user(s) from an organization."
+    },
+    {
+      "name": "edubase_post_organizations_members",
+      "description": "Assign user(s) to organization(s). Updates memberships if already member of an organization."
+    },
+    {
+      "name": "edubase_get_user_organizations",
+      "description": "List all organizations a user is member of."
+    },
+    {
+      "name": "edubase_post_user_organizations",
+      "description": "Assign user to organization(s). Updates membership if already member of an organization."
+    },
+    {
+      "name": "edubase_delete_user_organizations",
+      "description": "Remove user from organization(s)."
+    },
+    {
+      "name": "edubase_get_organization_webhook",
+      "description": "Get/check webhook configured in organization."
+    },
+    {
+      "name": "edubase_post_organization_webhook",
+      "description": "Create a webhook for an organization."
+    },
+    {
+      "name": "edubase_patch_organization_webhook",
+      "description": "Update organizational webhook."
+    },
+    {
+      "name": "edubase_delete_organization_webhook",
+      "description": "Remove organizational webhook."
+    },
+    {
+      "name": "edubase_post_organization_webhook_trigger",
+      "description": "Trigger an organizational webhook call with optional custom payload. Only triggers webhooks with **trigger_event** set to `api`!."
+    },
+    {
+      "name": "edubase_get_integrations",
+      "description": "List owned and managed integrations."
+    },
+    {
+      "name": "edubase_get_integration",
+      "description": "Get/check integration."
+    },
+    {
+      "name": "edubase_post_integration",
+      "description": "Create a new API or LMS integration."
+    },
+    {
+      "name": "edubase_patch_integration",
+      "description": "Update integration."
+    },
+    {
+      "name": "edubase_delete_integration",
+      "description": "Remove integration."
+    },
+    {
+      "name": "edubase_get_integration_keys",
+      "description": "Get integration keys/secrets."
+    },
+    {
+      "name": "edubase_post_integration_keys",
+      "description": "Rotate integration keys/secrets."
+    },
+    {
+      "name": "edubase_get_tags",
+      "description": "List owned and managed tags."
+    },
+    {
+      "name": "edubase_get_tag",
+      "description": "Get/check tag."
+    },
+    {
+      "name": "edubase_get_class_tags",
+      "description": "List all attached tags of a class."
+    },
+    {
+      "name": "edubase_get_class_tag",
+      "description": "Check if tag is attached to a class."
+    },
+    {
+      "name": "edubase_post_class_tag",
+      "description": "Attach tag to a class."
+    },
+    {
+      "name": "edubase_delete_class_tag",
+      "description": "Remove a tag attachment from a class."
+    },
+    {
+      "name": "edubase_get_course_tags",
+      "description": "List all attached tags of a course."
+    },
+    {
+      "name": "edubase_get_course_tag",
+      "description": "Check if tag is attached to a course."
+    },
+    {
+      "name": "edubase_post_course_tag",
+      "description": "Attach tag to a course."
+    },
+    {
+      "name": "edubase_delete_course_tag",
+      "description": "Remove a tag attachment from a course."
+    },
+    {
+      "name": "edubase_get_event_tags",
+      "description": "List all attached tags of an event."
+    },
+    {
+      "name": "edubase_get_event_tag",
+      "description": "Check if tag is attached to an event."
+    },
+    {
+      "name": "edubase_post_event_tag",
+      "description": "Attach tag to an event."
+    },
+    {
+      "name": "edubase_delete_event_tag",
+      "description": "Remove a tag attachment from an event."
+    },
+    {
+      "name": "edubase_get_exam_tags",
+      "description": "List all attached tags of an exam."
+    },
+    {
+      "name": "edubase_get_exam_tag",
+      "description": "Check if tag is attached to an exam."
+    },
+    {
+      "name": "edubase_post_exam_tag",
+      "description": "Attach tag to an exam."
+    },
+    {
+      "name": "edubase_delete_exam_tag",
+      "description": "Remove a tag attachment from an exam."
+    },
+    {
+      "name": "edubase_get_integration_tags",
+      "description": "List all attached tags of an integration."
+    },
+    {
+      "name": "edubase_get_integration_tag",
+      "description": "Check if tag is attached to an integration."
+    },
+    {
+      "name": "edubase_post_integration_tag",
+      "description": "Attach tag to an integration."
+    },
+    {
+      "name": "edubase_delete_integration_tag",
+      "description": "Remove a tag attachment from an integration."
+    },
+    {
+      "name": "edubase_get_organization_tags",
+      "description": "List all attached tags of an organization."
+    },
+    {
+      "name": "edubase_get_organization_tag",
+      "description": "Check if tag is attached to an organization."
+    },
+    {
+      "name": "edubase_post_organization_tag",
+      "description": "Attach tag to an organization."
+    },
+    {
+      "name": "edubase_delete_organization_tag",
+      "description": "Remove a tag attachment from an organization."
+    },
+    {
+      "name": "edubase_get_quiz_tags",
+      "description": "List all attached tags of a Quiz."
+    },
+    {
+      "name": "edubase_get_quiz_tag",
+      "description": "Check if tag is attached to a Quiz."
+    },
+    {
+      "name": "edubase_post_quiz_tag",
+      "description": "Attach tag to a Quiz."
+    },
+    {
+      "name": "edubase_delete_quiz_tag",
+      "description": "Remove a tag attachment from a Quiz."
+    },
+    {
+      "name": "edubase_get_scorm_tags",
+      "description": "List all attached tags of a SCORM learning material."
+    },
+    {
+      "name": "edubase_get_scorm_tag",
+      "description": "Check if tag is attached to a SCORM learning material."
+    },
+    {
+      "name": "edubase_post_scorm_tag",
+      "description": "Attach tag to a SCORM learning material."
+    },
+    {
+      "name": "edubase_delete_scorm_tag",
+      "description": "Remove a tag attachment from a SCORM learning material."
+    },
+    {
+      "name": "edubase_get_video_tags",
+      "description": "List all attached tags of a video."
+    },
+    {
+      "name": "edubase_get_video_tag",
+      "description": "Check if tag is attached to a video."
+    },
+    {
+      "name": "edubase_post_video_tag",
+      "description": "Attach tag to a video."
+    },
+    {
+      "name": "edubase_delete_video_tag",
+      "description": "Remove a tag attachment from a video."
+    },
+    {
+      "name": "edubase_get_class_permission",
+      "description": "Check if a user has permission on a class."
+    },
+    {
+      "name": "edubase_post_class_permission",
+      "description": "Create new permission for a user on a class."
+    },
+    {
+      "name": "edubase_delete_class_permission",
+      "description": "Remove a user permission from a class."
+    },
+    {
+      "name": "edubase_post_class_transfer",
+      "description": "Transfer class to user."
+    },
+    {
+      "name": "edubase_get_course_permission",
+      "description": "Check if a user has permission on a course."
+    },
+    {
+      "name": "edubase_post_course_permission",
+      "description": "Create new permission for a user on a course."
+    },
+    {
+      "name": "edubase_delete_course_permission",
+      "description": "Remove a user permission from a course."
+    },
+    {
+      "name": "edubase_delete_course_transfer",
+      "description": "Transfer course to user."
+    },
+    {
+      "name": "edubase_get_event_permission",
+      "description": "Check if a user has permission on an event."
+    },
+    {
+      "name": "edubase_post_event_permission",
+      "description": "Create new permission for a user on an event."
+    },
+    {
+      "name": "edubase_delete_event_permission",
+      "description": "Remove a user permission from an event."
+    },
+    {
+      "name": "edubase_post_event_transfer",
+      "description": "Transfer event to user."
+    },
+    {
+      "name": "edubase_get_exam_permission",
+      "description": "Check if a user has permission on an exam."
+    },
+    {
+      "name": "edubase_post_exam_permission",
+      "description": "Create new permission for a user on an exam."
+    },
+    {
+      "name": "edubase_delete_exam_permission",
+      "description": "Remove a user permission from an exam."
+    },
+    {
+      "name": "edubase_post_exam_transfer",
+      "description": "Transfer exam to user."
+    },
+    {
+      "name": "edubase_get_integration_permission",
+      "description": "Check if a user has permission on an integration."
+    },
+    {
+      "name": "edubase_post_integration_permission",
+      "description": "Create new permission for a user on an integration."
+    },
+    {
+      "name": "edubase_delete_integration_permission",
+      "description": "Remove a user permission from an integration."
+    },
+    {
+      "name": "edubase_post_integration_transfer",
+      "description": "Transfer integration to user."
+    },
+    {
+      "name": "edubase_get_organization_permission",
+      "description": "Check if a user has permission on an organization."
+    },
+    {
+      "name": "edubase_post_organization_permission",
+      "description": "Create new permission for a user on an organization."
+    },
+    {
+      "name": "edubase_delete_organization_permission",
+      "description": "Remove a user permission from an organization."
+    },
+    {
+      "name": "edubase_post_organization_transfer",
+      "description": "Transfer organization to user."
+    },
+    {
+      "name": "edubase_get_quiz_permission",
+      "description": "Check if a user has permission on a quiz."
+    },
+    {
+      "name": "edubase_post_quiz_permission",
+      "description": "Create new permission for a user on a quiz."
+    },
+    {
+      "name": "edubase_delete_quiz_permission",
+      "description": "Remove a user permission from a quiz."
+    },
+    {
+      "name": "edubase_post_quiz_transfer",
+      "description": "Transfer Quiz to user."
+    },
+    {
+      "name": "edubase_get_scorm_permission",
+      "description": "Check if a user has permission on a SCORM learning material."
+    },
+    {
+      "name": "edubase_post_scorm_permission",
+      "description": "Create new permission for a user on a SCORM learning material."
+    },
+    {
+      "name": "edubase_delete_scorm_permission",
+      "description": "Remove a user permission from a SCORM learning material."
+    },
+    {
+      "name": "edubase_post_scorm_transfer",
+      "description": "Transfer SCORM to user."
+    },
+    {
+      "name": "edubase_get_tag_permission",
+      "description": "Check if a user has permission on a tag."
+    },
+    {
+      "name": "edubase_post_tag_permission",
+      "description": "Create new permission for a user on a tag."
+    },
+    {
+      "name": "edubase_delete_tag_permission",
+      "description": "Remove a user permission from a tag."
+    },
+    {
+      "name": "edubase_post_tag_transfer",
+      "description": "Transfer tag to user."
+    },
+    {
+      "name": "edubase_get_video_permission",
+      "description": "Check if a user has permission on a video."
+    },
+    {
+      "name": "edubase_post_video_permission",
+      "description": "Create new permission for a user on a video."
+    },
+    {
+      "name": "edubase_delete_video_permission",
+      "description": "Remove a user permission from a video."
+    },
+    {
+      "name": "edubase_post_video_transfer",
+      "description": "Transfer video to user."
+    },
+    {
+      "name": "edubase_post_custom_metric",
+      "description": "Update a custom metric."
+    }
+  ]
+}

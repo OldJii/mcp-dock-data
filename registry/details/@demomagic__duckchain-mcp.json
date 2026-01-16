@@ -1,0 +1,221 @@
+{
+  "id": "@demomagic/duckchain-mcp",
+  "displayName": "DuckChain",
+  "description": "Explore blockchain data across addresses, tokens, blocks, and transactions. Investigate any transaction end-to-end with transfers, internal calls, logs, traces, and summaries to audit activity and trace fund flows. Monitor wallets, balances, holders, NFTs, and market trends with charts and stats to research projects and stay informed.",
+  "createdAt": "2026-01-16T12:35:27.755Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@demomagic/duckchain-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_blockchain",
+      "description": "Search for addresses, tokens, blocks, or transactions on the blockchain."
+    },
+    {
+      "name": "check_search_redirect",
+      "description": "Check if a search query should redirect to a specific page."
+    },
+    {
+      "name": "get_transactions",
+      "description": "Get transactions with optional filtering by status, type, or method."
+    },
+    {
+      "name": "get_transaction_details",
+      "description": "Get detailed information about a specific transaction by its hash."
+    },
+    {
+      "name": "get_transaction_token_transfers",
+      "description": "Get token transfers for a specific transaction."
+    },
+    {
+      "name": "get_transaction_internal_transactions",
+      "description": "Get internal transactions for a specific transaction."
+    },
+    {
+      "name": "get_transaction_logs",
+      "description": "Get logs for a specific transaction."
+    },
+    {
+      "name": "get_transaction_raw_trace",
+      "description": "Get raw trace for a specific transaction."
+    },
+    {
+      "name": "get_transaction_state_changes",
+      "description": "Get state changes for a specific transaction."
+    },
+    {
+      "name": "get_transaction_summary",
+      "description": "Get summary for a specific transaction."
+    },
+    {
+      "name": "get_blocks",
+      "description": "Get blocks with optional type filtering (block, uncle, reorg)."
+    },
+    {
+      "name": "get_block_details",
+      "description": "Get specific block details by number or hash."
+    },
+    {
+      "name": "get_block_transactions",
+      "description": "Get transactions for a specific block."
+    },
+    {
+      "name": "get_block_withdrawals",
+      "description": "Get withdrawals for a specific block."
+    },
+    {
+      "name": "get_token_transfers",
+      "description": "Get all token transfers."
+    },
+    {
+      "name": "get_internal_transactions",
+      "description": "Get internal transactions."
+    },
+    {
+      "name": "get_main_page_transactions",
+      "description": "Get transactions for the main page display."
+    },
+    {
+      "name": "get_main_page_blocks",
+      "description": "Get blocks for the main page display."
+    },
+    {
+      "name": "get_indexing_status",
+      "description": "Get the current indexing status of the blockchain."
+    },
+    {
+      "name": "get_blockchain_stats",
+      "description": "Get blockchain statistics and counters."
+    },
+    {
+      "name": "get_transactions_chart",
+      "description": "Get transaction chart data for visualization."
+    },
+    {
+      "name": "get_market_chart",
+      "description": "Get market chart data for price and volume visualization."
+    },
+    {
+      "name": "get_addresses_list",
+      "description": "Get addresses list."
+    },
+    {
+      "name": "get_address_details",
+      "description": "Get address details by hash."
+    },
+    {
+      "name": "get_address_counters",
+      "description": "Get address counters."
+    },
+    {
+      "name": "get_address_transactions",
+      "description": "Get transactions for a specific address."
+    },
+    {
+      "name": "get_address_token_transfers",
+      "description": "Get token transfers for a specific address."
+    },
+    {
+      "name": "get_address_internal_transactions",
+      "description": "Get internal transactions for a specific address."
+    },
+    {
+      "name": "get_address_logs",
+      "description": "Get logs for a specific address."
+    },
+    {
+      "name": "get_address_blocks_validated",
+      "description": "Get blocks validated by a specific address."
+    },
+    {
+      "name": "get_address_token_balances",
+      "description": "Get token balances for a specific address."
+    },
+    {
+      "name": "get_address_tokens",
+      "description": "Get tokens for a specific address."
+    },
+    {
+      "name": "get_address_coin_balance_history",
+      "description": "Get coin balance history for a specific address."
+    },
+    {
+      "name": "get_address_coin_balance_history_by_day",
+      "description": "Get coin balance history by day for a specific address."
+    },
+    {
+      "name": "get_address_withdrawals",
+      "description": "Get withdrawals for a specific address."
+    },
+    {
+      "name": "get_address_nft",
+      "description": "Get NFT for a specific address."
+    },
+    {
+      "name": "get_address_nft_collections",
+      "description": "Get NFT collections for a specific address."
+    },
+    {
+      "name": "get_tokens_list",
+      "description": "Get tokens list."
+    },
+    {
+      "name": "get_token_details",
+      "description": "Get token details by address hash."
+    },
+    {
+      "name": "get_token_transfers_by_token",
+      "description": "Get transfers for a specific token."
+    },
+    {
+      "name": "get_token_holders",
+      "description": "Get holders for a specific token."
+    },
+    {
+      "name": "get_token_counters",
+      "description": "Get counters for a specific token."
+    },
+    {
+      "name": "get_token_instances",
+      "description": "Get instances for a specific token."
+    },
+    {
+      "name": "get_token_instance_details",
+      "description": "Get specific token instance details."
+    },
+    {
+      "name": "get_token_instance_transfers",
+      "description": "Get transfers for a specific token instance."
+    },
+    {
+      "name": "get_token_instance_holders",
+      "description": "Get holders for a specific token instance."
+    },
+    {
+      "name": "get_token_instance_transfers_count",
+      "description": "Get transfers count for a specific token instance."
+    },
+    {
+      "name": "refetch_token_instance_metadata_tool",
+      "description": "Refetch metadata for a specific token instance."
+    },
+    {
+      "name": "get_smart_contracts_list",
+      "description": "Get smart contracts list."
+    },
+    {
+      "name": "get_smart_contracts_counters",
+      "description": "Get smart contracts counters."
+    },
+    {
+      "name": "get_smart_contract_details",
+      "description": "Get smart contract details by address hash."
+    }
+  ]
+}

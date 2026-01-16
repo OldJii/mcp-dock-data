@@ -2,7 +2,7 @@
   "id": "@GigaChatTester/lichess-mcp",
   "displayName": "Lichess Integration",
   "description": "Interact with the Lichess chess platform using natural language to manage your account, play games, analyze positions, and participate in tournaments. Seamlessly control your chess activities and engage with other players through an intuitive conversational interface. Enhance your chess experience by leveraging powerful tools for gameplay and analysis.",
-  "createdAt": "2026-01-16T07:25:45.959Z",
+  "createdAt": "2026-01-16T12:43:19.707Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GigaChatTester/lichess-mcp"

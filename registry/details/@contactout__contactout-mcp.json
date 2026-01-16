@@ -1,0 +1,45 @@
+{
+  "id": "@contactout/contactout-mcp",
+  "displayName": "ContactOut MCP",
+  "description": "ContactOut MCP unlocks instant access to verified professional emails and phone numbers, helping you reach prospects, candidates, and partners with ease. All you need is your ContactOut API key to get started.",
+  "createdAt": "2026-01-16T12:46:22.940Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@contactout/contactout-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your ContactOut API key"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "stats",
+      "description": "Retrieves the user's remaining email and phone credits on ContactOut."
+    },
+    {
+      "name": "peopleSearch",
+      "description": "Search for people based on various criteria like job title, company, skills, location, etc. Contact information such as email and phone numbers may be included in the response if specified. Contact information consumes email and/or phone credits if available."
+    },
+    {
+      "name": "emailEnrich",
+      "description": "Given an email address, returns the enriched profile information of the person, including full name, job title, experience, contact information and more. This will consume an email credit."
+    },
+    {
+      "name": "contactInfoFromLinkedinProfile",
+      "description": "Get contact information (email and phone) for the given LinkedIn profile URL. This will consume an email credit, and optionally a phone credit if required."
+    }
+  ]
+}

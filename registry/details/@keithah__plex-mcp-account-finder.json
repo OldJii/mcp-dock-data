@@ -1,0 +1,62 @@
+{
+  "id": "@keithah/plex-mcp-account-finder",
+  "displayName": "Plex Account Finder",
+  "description": "Verify your Plex accounts and see which servers are available. Search user access across all linked servers with fuzzy matching. Authorize new accounts with a simple flow and complete setup automatically.",
+  "createdAt": "2026-01-16T12:53:30.539Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/plex-mcp-account-finder"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "accounts": {
+          "type": "array",
+          "description": "",
+          "default": []
+        },
+        "log_level": {
+          "type": "string",
+          "description": "",
+          "default": "info",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        },
+        "cache_ttl_seconds": {
+          "type": "integer",
+          "description": "",
+          "default": 300
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "plex_status",
+      "description": "Validates configured Plex accounts and summarizes server availability."
+    },
+    {
+      "name": "plex_lookup_user",
+      "description": "Search for Plex user access across all configured servers using fuzzy matching."
+    },
+    {
+      "name": "plex_generate_auth_url",
+      "description": "Creates a Plex authentication URL and PIN so you can authorize a new account."
+    },
+    {
+      "name": "plex_check_auth_pin",
+      "description": "Polls Plex for the status of an authorization PIN and returns the token when ready."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@comet-ml/opik-mcp-server",
   "displayName": "Opik MCP Server",
   "description": "Integrate seamlessly with your IDE and access all Opik features through a standardized protocol. Manage prompts, projects, and metrics efficiently with a unified interface. Leverage multiple transport options for flexible integration into various environments.",
-  "createdAt": "2026-01-16T07:23:20.486Z",
+  "createdAt": "2026-01-16T12:40:03.786Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@comet-ml/opik-mcp-server"

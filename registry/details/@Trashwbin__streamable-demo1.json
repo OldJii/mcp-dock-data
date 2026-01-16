@@ -2,7 +2,7 @@
   "id": "@Trashwbin/streamable-demo1",
   "displayName": "Streamable Demo",
   "description": "Provide a simple notes system with capabilities to create, list, and summarize text notes. Enable easy management of notes as resources and generate summaries using prompts. Facilitate integration with LLMs for note summarization workflows.",
-  "createdAt": "2026-01-16T07:22:29.657Z",
+  "createdAt": "2026-01-16T12:38:52.161Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Trashwbin/streamable-demo1"

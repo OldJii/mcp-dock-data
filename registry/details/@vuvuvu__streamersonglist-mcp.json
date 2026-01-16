@@ -1,0 +1,58 @@
+{
+  "id": "@vuvuvu/streamersonglist-mcp",
+  "displayName": "StreamerSongList Server",
+  "description": "Enable AI assistants to manage and monitor song requests and queues for streamers seamlessly. Interact with StreamerSongList APIs to fetch streamer info, queue stats, and control song requests. Simplify music request management for streaming platforms without requiring authentication.",
+  "createdAt": "2026-01-16T12:36:39.340Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vuvuvu/streamersonglist-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiBase": {
+          "type": "string",
+          "description": "StreamerSongList API base URL",
+          "default": "https://api.streamersonglist.com/v1"
+        },
+        "defaultStreamer": {
+          "type": "string",
+          "description": "Default streamer name to use when not specified"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getStreamerByName",
+      "description": "Fetch detailed information about a specific streamer"
+    },
+    {
+      "name": "getQueue",
+      "description": "View current song queues with pagination support"
+    },
+    {
+      "name": "monitorQueue",
+      "description": "Monitor queue changes with configurable polling intervals"
+    },
+    {
+      "name": "getSongs",
+      "description": "Fetch the complete song list for a streamer with pagination support"
+    },
+    {
+      "name": "searchSongs",
+      "description": "Search within a streamer's song list by title or artist"
+    },
+    {
+      "name": "getSongDetails",
+      "description": "Get detailed information about a specific song by ID"
+    }
+  ]
+}

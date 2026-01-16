@@ -2,7 +2,7 @@
   "id": "@webimpianteam/bayarcash-mcp-server",
   "displayName": "bayarcash-mcp-server",
   "description": "Model Context Protocol (MCP) server for Bayarcash payment gateway integration API",
-  "createdAt": "2026-01-16T07:24:00.615Z",
+  "createdAt": "2026-01-16T12:41:00.618Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@webimpianteam/bayarcash-mcp-server"

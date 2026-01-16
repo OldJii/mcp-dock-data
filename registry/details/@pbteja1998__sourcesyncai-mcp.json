@@ -2,7 +2,7 @@
   "id": "@pbteja1998/sourcesyncai-mcp",
   "displayName": "SourceSync.ai MCP Server",
   "description": "Integrate your AI models with SourceSync.ai's knowledge management platform. Seamlessly manage, ingest, and search your documents while leveraging external services for enhanced data retrieval. Empower your AI with organized knowledge and efficient document management.",
-  "createdAt": "2026-01-16T07:29:17.535Z",
+  "createdAt": "2026-01-16T12:48:19.170Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pbteja1998/sourcesyncai-mcp"

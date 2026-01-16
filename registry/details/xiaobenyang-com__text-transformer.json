@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/text-transformer",
   "displayName": "text-transformer",
   "description": "Transform and analyze text in one place. Convert case, trim whitespace, reverse text, check palindromes, capitalize words, and instantly get word and character counts.",
-  "createdAt": "2026-01-16T07:28:42.515Z",
+  "createdAt": "2026-01-16T12:47:29.649Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/text-transformer"

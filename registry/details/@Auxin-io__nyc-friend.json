@@ -1,0 +1,12 @@
+{
+  "id": "@Auxin-io/nyc-friend",
+  "displayName": "nyc-friend",
+  "description": "",
+  "createdAt": "2026-01-16T13:02:37.542Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/nyc-friend"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@SerPepe/ask-mcp",
   "displayName": "Ask MCP Server",
   "description": "Provide seamless access to multiple premium AI models through OpenRouter with secure OAuth authentication and easy setup. Integrate effortlessly with MCP-compatible clients like Cursor and Claude Desktop to leverage advanced AI capabilities for reasoning, coding, translation, and more. Benefit from automatic fallback to free model variants for cost-effective usage and robust error handling.",
-  "createdAt": "2026-01-16T07:25:38.358Z",
+  "createdAt": "2026-01-16T12:43:10.357Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SerPepe/ask-mcp"

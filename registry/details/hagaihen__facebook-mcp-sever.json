@@ -1,0 +1,12 @@
+{
+  "id": "hagaihen/facebook-mcp-sever",
+  "displayName": "facebook-mcp-sever",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:42.045Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hagaihen/facebook-mcp-sever"
+  },
+  "connection": null,
+  "capabilities": []
+}

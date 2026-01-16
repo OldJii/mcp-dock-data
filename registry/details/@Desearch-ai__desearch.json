@@ -2,7 +2,7 @@
   "id": "@Desearch-ai/desearch",
   "displayName": "Desearch AI",
   "description": "Enable real-time AI-powered search capabilities including Twitter (X) and web search directly within your LLM applications. Access relevant links and summaries instantly to enhance your AI workflows. Integrate seamlessly with Claude Desktop and Cursor IDE for enriched search experiences.",
-  "createdAt": "2026-01-16T07:27:32.369Z",
+  "createdAt": "2026-01-16T12:45:41.636Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Desearch-ai/desearch"

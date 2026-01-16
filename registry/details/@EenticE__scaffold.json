@@ -2,7 +2,7 @@
   "id": "@EenticE/scaffold",
   "displayName": "Smithery Scaffold",
   "description": "Provide a flexible scaffold for building MCP servers with ease. Accelerate development by leveraging a ready-to-use framework that integrates MCP SDK and schema validation. Simplify creating and managing MCP tools, resources, and prompts in your applications.",
-  "createdAt": "2026-01-16T07:23:06.691Z",
+  "createdAt": "2026-01-16T12:39:44.197Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@EenticE/scaffold"

@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/random-generator",
   "displayName": "random-generator",
   "description": "Generate cryptographically secure integers, floats, bytes, UUIDs, strings, booleans, and list selections. Ensure unpredictable, unbiased results for security-sensitive workflows, simulations, testing, and fair draws. Save time by accessing high-quality randomness without custom implementations.",
-  "createdAt": "2026-01-16T07:25:47.055Z",
+  "createdAt": "2026-01-16T12:43:21.054Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/random-generator"

@@ -2,7 +2,7 @@
   "id": "@brightdataa/hide-mcp",
   "displayName": "hide-mcp",
   "description": "Store and recall user-specific facts across conversations with a structured knowledge graph. Add, relate, and search information about people, organizations, events, and preferences to maintain consistent context. Automatically extract locations and build place hierarchies for richer, more accurate recall.",
-  "createdAt": "2026-01-16T07:30:13.997Z",
+  "createdAt": "2026-01-16T12:49:40.934Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brightdataa/hide-mcp"

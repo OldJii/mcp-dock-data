@@ -2,7 +2,7 @@
   "id": "google_maps",
   "displayName": "Google Maps",
   "description": "Integrate Google Maps to access location data, geocoding, directions, and mapping services in your application.",
-  "createdAt": "2026-01-16T07:19:08.030Z",
+  "createdAt": "2026-01-16T12:34:02.321Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/google_maps"

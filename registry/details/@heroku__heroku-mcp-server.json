@@ -1,0 +1,12 @@
+{
+  "id": "@heroku/heroku-mcp-server",
+  "displayName": "heroku-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:12.627Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@heroku/heroku-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

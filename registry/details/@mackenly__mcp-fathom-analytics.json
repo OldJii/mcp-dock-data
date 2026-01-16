@@ -1,0 +1,48 @@
+{
+  "id": "@mackenly/mcp-fathom-analytics",
+  "displayName": "Fathom Analytics",
+  "description": "Access your Fathom Analytics data effortlessly through an AI assistant. Retrieve account details, manage sites, and generate insightful reports with real-time visitor tracking. Enhance your analytics experience with flexible tools designed for seamless integration.",
+  "createdAt": "2026-01-16T12:46:31.693Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mackenly/mcp-fathom-analytics"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fathomApiKey"
+      ],
+      "properties": {
+        "fathomApiKey": {
+          "type": "string",
+          "description": "Your Fathom Analytics API key to authenticate requests"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-account",
+      "description": "Get Fathom Analytics account information"
+    },
+    {
+      "name": "list-sites",
+      "description": "List all Fathom Analytics sites on the account"
+    },
+    {
+      "name": "list-events",
+      "description": "List all events for a Fathom Analytics site (automatically handles pagination)"
+    },
+    {
+      "name": "get-aggregation",
+      "description": "Get aggregated analytics data from Fathom"
+    },
+    {
+      "name": "get-current-visitors",
+      "description": "Get current visitors for a Fathom Analytics site"
+    }
+  ]
+}

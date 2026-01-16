@@ -1,0 +1,92 @@
+{
+  "id": "@Stoops0311/legalmcp",
+  "displayName": "Indian Legal Research Assistant",
+  "description": "Automate and accelerate Indian legal research with intelligent tools that search precedents, extract legal principles, build research memos, format citations, and verify citation accuracy. Reduce research time from hours to minutes while ensuring professional and error-free legal outputs. Enhance productivity for legal practitioners with comprehensive and accurate legal data access.",
+  "createdAt": "2026-01-16T12:53:17.986Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Stoops0311/legalmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "indianKanoonApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "cacheTimeout": {
+          "type": "number",
+          "description": "How long to cache results in minutes",
+          "default": 60
+        },
+        "defaultCourt": {
+          "type": "string",
+          "description": "Preferred court for searches",
+          "default": "supremecourt",
+          "enum": [
+            "supremecourt",
+            "delhi",
+            "bombay",
+            "madras",
+            "calcutta"
+          ]
+        },
+        "citationStyle": {
+          "type": "string",
+          "description": "Default citation format",
+          "default": "SCC OnLine",
+          "enum": [
+            "AIR",
+            "SCC",
+            "Neutral",
+            "SCC OnLine"
+          ]
+        },
+        "enableCaching": {
+          "type": "boolean",
+          "description": "Cache search results and documents",
+          "default": true
+        },
+        "maxSearchResults": {
+          "type": "number",
+          "description": "Maximum number of search results to return",
+          "default": 20
+        },
+        "indianKanoonApiKey": {
+          "type": "string",
+          "description": "Your API key from IndianKanoon"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_legal_precedents",
+      "description": "Intelligently search IndianKanoon for relevant cases with smart ranking and filtering"
+    },
+    {
+      "name": "extract_legal_principles",
+      "description": "Extract specific legal principles and relevant paragraphs from cases with pinpoint citations"
+    },
+    {
+      "name": "build_case_compilation",
+      "description": "Automatically compile comprehensive legal research memos with organized cases and citations"
+    },
+    {
+      "name": "format_citations",
+      "description": "Generate properly formatted legal citations in various Indian citation styles"
+    },
+    {
+      "name": "verify_citations",
+      "description": "Validate citation accuracy and find missing information"
+    }
+  ]
+}

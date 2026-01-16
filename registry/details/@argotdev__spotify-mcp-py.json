@@ -1,0 +1,12 @@
+{
+  "id": "@argotdev/spotify-mcp-py",
+  "displayName": "spotify-mcp-py",
+  "description": "",
+  "createdAt": "2026-01-16T13:06:48.507Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@argotdev/spotify-mcp-py"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@jacobcwright/runpod-mcp",
+  "displayName": "runpod-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:58.587Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jacobcwright/runpod-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

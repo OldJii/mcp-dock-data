@@ -2,7 +2,7 @@
   "id": "@dabhivijay2478/auth",
   "displayName": "Better Auth Server",
   "description": "# Better Auth MCP Server\n\n[![smithery badge](https://smithery.ai/badge/@dabhivijay2478/auth)](https://smithery.ai/server/@dabhivijay2478/auth)\n\n**Comprehensive Better Auth integration tools for TypeScript applications.**  \nAccess complete documentation, configure **6+ authentication providers** (Google, GitHub, Apple, Facebook, Microsoft, Email/Password), **6 database adapters** (PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle), and **14+ security plugins**.  \n\nWith this MCP server you can:  \n- Generate **production-ready configurations**  \n- Validate setups with best-practice recommendations  \n- Explore detailed **framework-specific guides** for Next.js, Nuxt, SvelteKit, Remix, and more  \n",
-  "createdAt": "2026-01-16T07:32:50.446Z",
+  "createdAt": "2026-01-16T12:53:27.269Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dabhivijay2478/auth"

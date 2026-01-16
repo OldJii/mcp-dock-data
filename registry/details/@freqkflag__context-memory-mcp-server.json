@@ -1,0 +1,12 @@
+{
+  "id": "@freqkflag/context-memory-mcp-server",
+  "displayName": "context-memory-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T12:59:59.339Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@freqkflag/context-memory-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@dravidsajinraj-iex/ai-image-generator-mcp",
   "displayName": "Leonardo AI Image Generator",
   "description": "Generate high-quality images from text prompts using Leonardo AI's advanced models. Transform your ideas into visuals seamlessly with a simple MCP interface. Benefit from robust error handling and reliable image generation capabilities.",
-  "createdAt": "2026-01-16T07:30:59.414Z",
+  "createdAt": "2026-01-16T12:50:49.272Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dravidsajinraj-iex/ai-image-generator-mcp"

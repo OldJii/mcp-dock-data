@@ -1,0 +1,12 @@
+{
+  "id": "chris/markitdown_mcp_server",
+  "displayName": "markitdown_mcp_server",
+  "description": "",
+  "createdAt": "2026-01-16T12:59:42.678Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/markitdown_mcp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

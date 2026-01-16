@@ -2,7 +2,7 @@
   "id": "@Cyreslab-AI/flightradar-mcp-server",
   "displayName": "FlightRadar",
   "description": "Access real-time flight tracking and status information effortlessly. Get detailed flight data, search for flights by various criteria, and receive human-readable status summaries with ease.",
-  "createdAt": "2026-01-16T07:32:37.045Z",
+  "createdAt": "2026-01-16T12:53:09.489Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Cyreslab-AI/flightradar-mcp-server"

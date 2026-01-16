@@ -2,7 +2,7 @@
   "id": "@PaulGG-Code/kali_mcp-mcp-server",
   "displayName": "kali_mcp-mcp-server",
   "description": "Streamline ethical security testing with a curated set of Kali-based reconnaissance, web, crypto, reversing, and forensics workflows. Run reproducible assessments with managed workspaces and shareable results. Use only on systems you own or have explicit permission to test..",
-  "createdAt": "2026-01-16T07:24:13.473Z",
+  "createdAt": "2026-01-16T12:41:18.871Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@PaulGG-Code/kali_mcp-mcp-server"

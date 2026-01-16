@@ -2,7 +2,7 @@
   "id": "@pma1999/simpson-mcp",
   "displayName": "simpson-mcp",
   "description": "Search characters, episodes, and locations from The Simpsons by name and get detailed results. Browse paginated lists or fetch specific items by ID. Construct shareable image URLs for Simpsons assets.",
-  "createdAt": "2026-01-16T07:32:08.491Z",
+  "createdAt": "2026-01-16T12:52:27.975Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pma1999/simpson-mcp"

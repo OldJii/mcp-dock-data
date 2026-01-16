@@ -2,7 +2,7 @@
   "id": "@Hint-Services/mcp-trello",
   "displayName": "Trello",
   "description": "Covers main interactions with Trello boards. Managing and moving cards, list interactions, and board activities.",
-  "createdAt": "2026-01-16T07:23:56.391Z",
+  "createdAt": "2026-01-16T12:40:54.643Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Hint-Services/mcp-trello"

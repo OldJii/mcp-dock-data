@@ -2,7 +2,7 @@
   "id": "@hydavinci/uml_diagram",
   "displayName": "C++ UML Class Diagram Generator",
   "description": "Generate UML class diagrams from C++ source code by analyzing class structures, inheritance, and members. Produce PlantUML-compatible diagrams to visualize your C++ project architecture easily. Integrate seamlessly as a script or module for automated UML generation.",
-  "createdAt": "2026-01-16T07:23:42.969Z",
+  "createdAt": "2026-01-16T12:40:35.327Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hydavinci/uml_diagram"

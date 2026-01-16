@@ -1,0 +1,192 @@
+{
+  "id": "@cdmarshall14/hubspot-mcp-2",
+  "displayName": "HubSpot CRM API Server",
+  "description": "Provide standardized access and management of HubSpot CRM data through a comprehensive MCP server. Enable efficient CRM operations including object management, advanced search, batch processing, and association handling. Simplify integration with HubSpot's API using type-safe validation and extensive endpoint coverage.",
+  "createdAt": "2026-01-16T12:51:33.053Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cdmarshall14/hubspot-mcp-2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "HUBSPOT_ACCESS_TOKEN"
+      ],
+      "properties": {
+        "HUBSPOT_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "HUBSPOT_ACCESS_TOKEN - Your HubSpot API access token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "crm_create_company",
+      "description": ""
+    },
+    {
+      "name": "crm_update_company",
+      "description": ""
+    },
+    {
+      "name": "crm_get_company",
+      "description": ""
+    },
+    {
+      "name": "crm_search_companies",
+      "description": ""
+    },
+    {
+      "name": "crm_create_contact",
+      "description": ""
+    },
+    {
+      "name": "crm_update_contact",
+      "description": ""
+    },
+    {
+      "name": "crm_get_contact",
+      "description": ""
+    },
+    {
+      "name": "crm_search_contacts",
+      "description": ""
+    },
+    {
+      "name": "crm_create_deal",
+      "description": ""
+    },
+    {
+      "name": "crm_get_deal",
+      "description": ""
+    },
+    {
+      "name": "crm_create_note",
+      "description": ""
+    },
+    {
+      "name": "crm_create_task",
+      "description": ""
+    },
+    {
+      "name": "crm_create_meeting",
+      "description": ""
+    },
+    {
+      "name": "crm_get_meeting",
+      "description": ""
+    },
+    {
+      "name": "crm_list_meetings",
+      "description": ""
+    },
+    {
+      "name": "crm_create_call",
+      "description": ""
+    },
+    {
+      "name": "crm_get_call",
+      "description": ""
+    },
+    {
+      "name": "crm_create_email",
+      "description": ""
+    },
+    {
+      "name": "crm_get_email",
+      "description": ""
+    },
+    {
+      "name": "crm_create_product",
+      "description": ""
+    },
+    {
+      "name": "crm_get_product",
+      "description": ""
+    },
+    {
+      "name": "crm_list_products",
+      "description": ""
+    },
+    {
+      "name": "crm_create_ticket",
+      "description": ""
+    },
+    {
+      "name": "crm_get_ticket",
+      "description": ""
+    },
+    {
+      "name": "crm_list_tickets",
+      "description": ""
+    },
+    {
+      "name": "crm_search_objects",
+      "description": ""
+    },
+    {
+      "name": "crm_update_deal",
+      "description": ""
+    },
+    {
+      "name": "crm_update_product",
+      "description": ""
+    },
+    {
+      "name": "crm_delete_company",
+      "description": ""
+    },
+    {
+      "name": "crm_delete_contact",
+      "description": ""
+    },
+    {
+      "name": "crm_delete_deal",
+      "description": ""
+    },
+    {
+      "name": "crm_associate_objects",
+      "description": ""
+    },
+    {
+      "name": "crm_get_associations",
+      "description": ""
+    },
+    {
+      "name": "crm_batch_get_companies",
+      "description": ""
+    },
+    {
+      "name": "crm_batch_get_contacts",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_get",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_list",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_get_associated",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_create",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_update",
+      "description": ""
+    },
+    {
+      "name": "engagement_details_delete",
+      "description": ""
+    }
+  ]
+}

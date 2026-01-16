@@ -1,0 +1,12 @@
+{
+  "id": "@billlzzz10/notion-mcp-server",
+  "displayName": "notion-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:53.926Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@billlzzz10/notion-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

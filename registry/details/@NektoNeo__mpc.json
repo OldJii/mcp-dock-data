@@ -1,0 +1,12 @@
+{
+  "id": "@NektoNeo/mpc",
+  "displayName": "mpc",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:58.050Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NektoNeo/mpc"
+  },
+  "connection": null,
+  "capabilities": []
+}

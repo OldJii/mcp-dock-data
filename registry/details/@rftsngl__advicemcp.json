@@ -2,7 +2,7 @@
   "id": "@rftsngl/advicemcp",
   "displayName": "Random Advice Server",
   "description": "Provide users with random advice through a simple and accessible API. Integrate effortlessly with the Model Context Protocol to deliver dynamic, context-aware recommendations. Enhance your applications with real-time, varied advice to engage and assist users effectively.",
-  "createdAt": "2026-01-16T07:22:30.954Z",
+  "createdAt": "2026-01-16T12:38:54.154Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rftsngl/advicemcp"

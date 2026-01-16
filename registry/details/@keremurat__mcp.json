@@ -2,7 +2,7 @@
   "id": "@keremurat/mcp",
   "displayName": "JSON Compare",
   "description": "Compare two JSON files deeply, regardless of order. Get a detailed difference report highlighting missing or extra keys, type/value mismatches, and nested structure changes. Validate configurations, debug API payloads, and ensure consistency across environments.",
-  "createdAt": "2026-01-16T07:20:27.043Z",
+  "createdAt": "2026-01-16T12:35:54.092Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keremurat/mcp"

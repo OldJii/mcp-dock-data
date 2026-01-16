@@ -2,7 +2,7 @@
   "id": "@meicanhong/exa-mcp-server",
   "displayName": "Exa MCP Server",
   "description": "Enable AI assistants to perform real-time web searches using Exa's powerful search API. Get structured search results, cache recent searches, and handle rate limits gracefully for a seamless experience. Empower your AI with fresh content and optimized search capabilities.",
-  "createdAt": "2026-01-16T07:28:16.457Z",
+  "createdAt": "2026-01-16T12:46:52.006Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@meicanhong/exa-mcp-server"

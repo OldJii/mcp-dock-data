@@ -2,7 +2,7 @@
   "id": "@ilil1/mcp_server_stdio",
   "displayName": "MCP Server Stdio",
   "description": "Provide a local MCP server that enables integration of LLMs with external tools and resources via standard input/output. Facilitate dynamic access to files, actions, and prompt templates to enhance LLM capabilities. Simplify development of LLM applications by offering a ready-to-use MCP server implementation.",
-  "createdAt": "2026-01-16T07:32:59.498Z",
+  "createdAt": "2026-01-16T12:53:40.330Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ilil1/mcp_server_stdio"

@@ -2,7 +2,7 @@
   "id": "auth0",
   "displayName": "Auth0",
   "description": "Auth0 delivers a flexible identity and access management solution, offering authentication, authorization, and secure login flows to help developers protect applications across various platforms effectively",
-  "createdAt": "2026-01-16T07:33:10.324Z",
+  "createdAt": "2026-01-16T12:53:55.331Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/auth0"

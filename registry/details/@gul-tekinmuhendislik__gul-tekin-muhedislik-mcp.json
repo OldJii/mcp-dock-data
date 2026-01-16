@@ -1,0 +1,63 @@
+{
+  "id": "@gul-tekinmuhendislik/gul-tekin-muhedislik-mcp",
+  "displayName": "Gül-tekin Mühendislik",
+  "description": "Ürünler, projeler, blog yazıları, markalar, hizmetler ve kategoriler için okuma, yazma, güncelleme ve silme işlemleri. Gelişmiş filtreleme ve SEO desteği ile mühendislik iş akışlarını otomatikleştirin.",
+  "createdAt": "2026-01-16T12:37:23.756Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gul-tekinmuhendislik/gul-tekin-muhedislik-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_airtable_products",
+      "description": "Yerel JSON dosyasından ürün verilerini okur"
+    },
+    {
+      "name": "read_airtable_brands",
+      "description": "Yerel JSON dosyasından marka verilerini okur"
+    },
+    {
+      "name": "read_airtable_services",
+      "description": "Yerel JSON dosyasından hizmet verilerini okur"
+    },
+    {
+      "name": "read_airtable_categories",
+      "description": "Yerel JSON dosyasından ana faaliyet verilerini okur"
+    },
+    {
+      "name": "read_airtable_projects",
+      "description": "Yerel JSON dosyasından proje verilerini okur"
+    },
+    {
+      "name": "read_airtable_blog",
+      "description": "Yerel JSON dosyasından blog verilerini okur (blog.json gelecek)"
+    },
+    {
+      "name": "test_airtable_connection",
+      "description": "JSON veri bağlantısını test eder"
+    },
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "mcp-nmap-server",
   "displayName": "NMAP Server",
   "description": "Perform network scanning operations using NMAP.",
-  "createdAt": "2026-01-16T07:31:36.481Z",
+  "createdAt": "2026-01-16T12:51:42.955Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-nmap-server"

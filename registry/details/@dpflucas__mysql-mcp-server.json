@@ -1,0 +1,85 @@
+{
+  "id": "@dpflucas/mysql-mcp-server",
+  "displayName": "MySQL Database Access",
+  "description": "Access your MySQL databases securely and efficiently. List databases, tables, and execute read-only SQL queries without the risk of data modification. Simplify your database interactions with a robust, read-only interface.",
+  "createdAt": "2026-01-16T12:41:22.180Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dpflucas/mysql-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mysqlHost",
+        "mysqlUser"
+      ],
+      "properties": {
+        "mysqlHost": {
+          "type": "string",
+          "description": "MySQL server hostname"
+        },
+        "mysqlPort": {
+          "type": "number",
+          "description": "MySQL server port",
+          "default": 3306
+        },
+        "mysqlUser": {
+          "type": "string",
+          "description": "MySQL username"
+        },
+        "mysqlMaxIdle": {
+          "type": "number",
+          "description": "Maximum number of idle connections to keep in the pool (optional)"
+        },
+        "mysqlDatabase": {
+          "type": "string",
+          "description": "Default database (optional)"
+        },
+        "mysqlPassword": {
+          "type": "string",
+          "description": "MySQL password (optional)"
+        },
+        "mysqlQueueLimit": {
+          "type": "number",
+          "description": "Maximum number of connection requests to queue (optional)",
+          "default": 0
+        },
+        "mysqlIdleTimeout": {
+          "type": "number",
+          "description": "How long a connection can be idle before being released in milliseconds (optional)"
+        },
+        "mysqlConnectTimeout": {
+          "type": "number",
+          "description": "Connection timeout in milliseconds (optional)",
+          "default": 10000
+        },
+        "mysqlConnectionLimit": {
+          "type": "number",
+          "description": "Maximum number of connections in the pool (optional)",
+          "default": 10
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_databases",
+      "description": "List all accessible databases on the MySQL server"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in a specified database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Show the schema for a specific table"
+    },
+    {
+      "name": "execute_query",
+      "description": "Execute a read-only SQL query"
+    }
+  ]
+}

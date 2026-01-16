@@ -1,0 +1,12 @@
+{
+  "id": "@cecvic-wigoh/llamacloud-mcp",
+  "displayName": "llamacloud-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:04:39.173Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cecvic-wigoh/llamacloud-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

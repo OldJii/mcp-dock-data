@@ -1,0 +1,12 @@
+{
+  "id": "@SmartManoj/test",
+  "displayName": "server_with_session_config",
+  "description": "-",
+  "createdAt": "2026-01-16T12:59:47.365Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SmartManoj/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

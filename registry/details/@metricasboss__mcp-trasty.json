@@ -2,7 +2,7 @@
   "id": "@metricasboss/mcp-trasty",
   "displayName": "Trasty API Integration Server",
   "description": "Integrate the Trasty API with your agents to access monthly usage data seamlessly. Enable your LLM applications to call the Trasty API via MCP for enhanced data-driven interactions. Quickly set up and run the server to extend your assistant's capabilities with Trasty insights.",
-  "createdAt": "2026-01-16T07:29:21.383Z",
+  "createdAt": "2026-01-16T12:48:25.041Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@metricasboss/mcp-trasty"

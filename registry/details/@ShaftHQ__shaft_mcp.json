@@ -1,0 +1,18 @@
+{
+  "id": "@ShaftHQ/shaft_mcp",
+  "displayName": "shaft-mcp",
+  "description": "Automate browsers to click, type, navigate, and extract data from websites. Target elements using natural language to handle dynamic pages and complex flows. Generate detailed reports and accelerate testing, scraping, and repetitive web tasks.",
+  "createdAt": "2026-01-16T12:48:08.075Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ShaftHQ/shaft_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

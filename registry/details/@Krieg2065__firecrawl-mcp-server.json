@@ -1,0 +1,72 @@
+{
+  "id": "@Krieg2065/firecrawl-mcp-server",
+  "displayName": "Firecrawl Web Scraping Server",
+  "description": "Enable advanced web scraping, crawling, and content extraction with support for JavaScript rendering, batch processing, and smart filtering. Perform deep research and structured data extraction using LLM-powered tools. Monitor credit usage and handle rate limits automatically for efficient and reliable web data integration.",
+  "createdAt": "2026-01-16T12:40:04.452Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Krieg2065/firecrawl-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fireCrawlApiKey"
+      ],
+      "properties": {
+        "fireCrawlApiKey": {
+          "type": "string",
+          "description": "Your Firecrawl API key. Required for cloud API usage."
+        },
+        "fireCrawlApiUrl": {
+          "type": "string",
+          "description": "Custom API endpoint for self-hosted instances. If provided, API key becomes optional."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "firecrawl_scrape",
+      "description": "Scrape a single webpage with advanced options for content extraction. Supports various formats including markdown, HTML, and screenshots. Can execute custom actions like clicking or scrolling before scraping."
+    },
+    {
+      "name": "firecrawl_map",
+      "description": "Discover URLs from a starting point. Can use both sitemap.xml and HTML link discovery."
+    },
+    {
+      "name": "firecrawl_crawl",
+      "description": "Start an asynchronous crawl of multiple pages from a starting URL. Supports depth control, path filtering, and webhook notifications."
+    },
+    {
+      "name": "firecrawl_batch_scrape",
+      "description": "Scrape multiple URLs in batch mode. Returns a job ID that can be used to check status."
+    },
+    {
+      "name": "firecrawl_check_batch_status",
+      "description": "Check the status of a batch scraping job."
+    },
+    {
+      "name": "firecrawl_check_crawl_status",
+      "description": "Check the status of a crawl job."
+    },
+    {
+      "name": "firecrawl_search",
+      "description": "Search and retrieve content from web pages with optional scraping. Returns SERP results by default (url, title, description) or full page content when scrapeOptions are provided."
+    },
+    {
+      "name": "firecrawl_extract",
+      "description": "Extract structured information from web pages using LLM. Supports both cloud AI and self-hosted LLM extraction."
+    },
+    {
+      "name": "firecrawl_deep_research",
+      "description": "Conduct deep research on a query using web crawling, search, and AI analysis."
+    },
+    {
+      "name": "firecrawl_generate_llmstxt",
+      "description": "Generate standardized LLMs.txt file for a given URL, which provides context about how LLMs should interact with the website."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@abhiphile/fermat-mcp",
   "displayName": "Fermat",
   "description": "Perform advanced mathematical computations including numerical and symbolic calculations, and generate various types of plots. Leverage integrations with NumPy, SymPy, and Matplotlib to handle algebra, calculus, linear algebra, statistics, and data visualization tasks efficiently. Enhance your workflows with a powerful MCP server tailored for mathematical and plotting operations.",
-  "createdAt": "2026-01-16T07:27:30.262Z",
+  "createdAt": "2026-01-16T12:45:39.021Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@abhiphile/fermat-mcp"

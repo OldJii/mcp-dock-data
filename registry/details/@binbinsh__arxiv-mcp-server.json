@@ -1,0 +1,12 @@
+{
+  "id": "@binbinsh/arxiv-mcp-server",
+  "displayName": "arxiv-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T12:59:38.493Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@binbinsh/arxiv-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "@dongri/mcp-server-lgtm",
   "displayName": "LGTM",
   "description": "Fetch random LGTM (Looks Good To Me) images for use in code reviews and developer communications. Enhance your team's collaboration by easily embedding fun and relevant images in your discussions.",
-  "createdAt": "2026-01-16T07:23:51.638Z",
+  "createdAt": "2026-01-16T12:40:47.977Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dongri/mcp-server-lgtm"

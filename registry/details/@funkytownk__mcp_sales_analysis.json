@@ -2,7 +2,7 @@
   "id": "@funkytownk/mcp_sales_analysis",
   "displayName": "Gold IRA Transcript Analyzer",
   "description": "Analyze Gold IRA sales call transcripts to surface key insights, objections, and compliance risks. Receive structured summaries, red flags, and recommended next steps for reviewers and coaches. Accelerate QA, training, and sales optimization with consistent, repeatable evaluations.",
-  "createdAt": "2026-01-16T07:23:25.469Z",
+  "createdAt": "2026-01-16T12:40:11.153Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@funkytownk/mcp_sales_analysis"

@@ -2,7 +2,7 @@
   "id": "emmanuel/weatherdemo",
   "displayName": "weatherdemo",
   "description": "Access authoritative U.S. weather alerts, forecasts, radar, and observations from the National Weather Service. Track aviation advisories including TAFs and SIGMETs, and explore stations, zones, and headlines. Build timely notifications and dashboards with precise data by location or region.",
-  "createdAt": "2026-01-16T07:29:39.451Z",
+  "createdAt": "2026-01-16T12:48:50.876Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/emmanuel/weatherdemo"

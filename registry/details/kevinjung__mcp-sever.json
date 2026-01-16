@@ -1,0 +1,12 @@
+{
+  "id": "kevinjung/mcp-sever",
+  "displayName": "mcp-sever",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:49.595Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kevinjung/mcp-sever"
+  },
+  "connection": null,
+  "capabilities": []
+}

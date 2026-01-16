@@ -2,7 +2,7 @@
   "id": "@JigsawStack/vocr",
   "displayName": "JigsawStack vOCR",
   "description": "OCR + AI = Magic: \nExtract data from any image in a consistent structure with fine-tuned vLLMs for the highest accuracy. Learn more about AI backed OCR here: https://jigsawstack.com/docs/api-reference/ai/vocr Get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
-  "createdAt": "2026-01-16T07:26:09.012Z",
+  "createdAt": "2026-01-16T12:43:51.692Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@JigsawStack/vocr"

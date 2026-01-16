@@ -2,7 +2,7 @@
   "id": "@coinranking/coinranking-mcp",
   "displayName": "Coinranking",
   "description": "Provide real-time and historical cryptocurrency data, market statistics, and exchange information to enhance your applications with up-to-date crypto insights. Enable advanced search and detailed coin comparisons to support informed decision-making. Simplify integration with easy API key configuration and ready-to-use prompts for market analysis.",
-  "createdAt": "2026-01-16T07:21:09.693Z",
+  "createdAt": "2026-01-16T12:36:54.761Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@coinranking/coinranking-mcp"

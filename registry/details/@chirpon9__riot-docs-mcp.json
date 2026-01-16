@@ -1,0 +1,27 @@
+{
+  "id": "@chirpon9/riot-docs-mcp",
+  "displayName": "riot-docs-mcp",
+  "description": "Browse and retrieve Riot API endpoint documentation without leaving your workflow. List available docs and fetch full details for specific endpoints like match-v5 or summoner-v4. Accelerate development by keeping trusted references at your fingertips.",
+  "createdAt": "2026-01-16T12:39:56.880Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chirpon9/riot-docs-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_available_docs",
+      "description": "List all available Riot API endpoint documentation files"
+    },
+    {
+      "name": "get_endpoint_docs",
+      "description": "\n        Get the full documentation for a specific Riot API endpoint.\n        \n        Args:\n            filename: The name of the documentation file (e.g., 'match-v5.md', 'summoner-v4.md')\n        "
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@MartinLoeper/nesto-staging",
+  "displayName": "nesto-staging",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:45.477Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MartinLoeper/nesto-staging"
+  },
+  "connection": null,
+  "capabilities": []
+}

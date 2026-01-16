@@ -1,0 +1,33 @@
+{
+  "id": "@santiago.blanco.vilchez/cpa-esteban",
+  "displayName": "Tenant Launchpad",
+  "description": "Create and launch new tenants with admin setup and starter templates. Authenticate to securely access APIs and orchestrate external requests. Add document templates to existing tenants to standardize and scale your workflows.",
+  "createdAt": "2026-01-16T12:46:12.507Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/cpa-esteban"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "add-template",
+      "description": "Add a new template with sections to an existing tenant via the seed-template endpoint"
+    },
+    {
+      "name": "auth-login",
+      "description": "Authenticate user via the login endpoint and get JWT access token"
+    },
+    {
+      "name": "create-tenant",
+      "description": "Create a new tenant via the bootstrap endpoint with tenant, service type, admin user, and document sections"
+    },
+    {
+      "name": "http-request",
+      "description": "Make HTTP requests to external APIs"
+    }
+  ]
+}

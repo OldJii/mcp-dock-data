@@ -1,0 +1,12 @@
+{
+  "id": "@Auxin-io/java-code-gen",
+  "displayName": "java-code-gen",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:05.879Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/java-code-gen"
+  },
+  "connection": null,
+  "capabilities": []
+}

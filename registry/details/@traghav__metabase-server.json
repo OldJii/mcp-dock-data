@@ -2,7 +2,7 @@
   "id": "@traghav/metabase-server",
   "displayName": "Metabase Integration Server",
   "description": "Enable AI assistants to interact seamlessly with Metabase by accessing dashboards, questions, and databases as resources. Execute Metabase queries and retrieve structured data to enhance data-driven conversations. Simplify data exploration and querying within your AI workflows.",
-  "createdAt": "2026-01-16T07:28:27.004Z",
+  "createdAt": "2026-01-16T12:47:07.841Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@traghav/metabase-server"

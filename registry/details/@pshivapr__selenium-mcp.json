@@ -2,7 +2,7 @@
   "id": "@pshivapr/selenium-mcp",
   "displayName": "Selenium MCP Server",
   "description": "Enable AI assistants and applications to perform automated web browser interactions, testing, and scraping through a standardized interface. Control multiple browsers with comprehensive element interaction and advanced navigation tools. Benefit from type-safe, robust browser automation powered by Selenium WebDriver.",
-  "createdAt": "2026-01-16T07:33:06.729Z",
+  "createdAt": "2026-01-16T12:53:50.123Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pshivapr/selenium-mcp"

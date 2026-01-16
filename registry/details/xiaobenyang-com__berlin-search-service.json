@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/berlin-search-service",
+  "displayName": "berlin-search-service",
+  "description": "Search Berlin administrative services by name or topic. Get detailed requirements, forms, fees, and appointment information for each service. Browse the full catalog and see how complete and up to date it is.",
+  "createdAt": "2026-01-16T12:49:30.894Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/berlin-search-service"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_services",
+      "description": "Search for Berlin administrative services by name or description. Returns a list of matching services with basic information."
+    },
+    {
+      "name": "get_service_details",
+      "description": "Get detailed information about a specific Berlin service by its ID. Returns comprehensive information including requirements, forms, fees, appointments, and more."
+    },
+    {
+      "name": "list_services",
+      "description": "List all available Berlin administrative services. Returns a paginated list of services with their names and IDs."
+    },
+    {
+      "name": "get_services_stats",
+      "description": "Get statistics about the Berlin services dataset (total count, last update, etc.)"
+    }
+  ]
+}

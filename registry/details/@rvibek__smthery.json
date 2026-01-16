@@ -1,0 +1,28 @@
+{
+  "id": "@rvibek/smthery",
+  "displayName": "Weather",
+  "description": "Get current weather for any city. Choose Celsius or Fahrenheit to match your preference. Plan your day with clear, concise conditions.",
+  "createdAt": "2026-01-16T12:46:25.548Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rvibek/smthery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "unit": {
+          "type": "string",
+          "description": "Temperature unit (celsius or fahrenheit)",
+          "default": "celsius"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": []
+}

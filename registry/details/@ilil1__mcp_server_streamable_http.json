@@ -1,0 +1,25 @@
+{
+  "id": "@ilil1/mcp_server_streamable_http",
+  "displayName": "Streamable HTTP MCP Server",
+  "description": "Serve MCP resources and tools over a streamable HTTP interface to enable dynamic integration with LLM applications. Provide efficient, real-time access to external data and actions through a standardized protocol. Enhance LLM capabilities by exposing custom tools and resources via HTTP streaming.",
+  "createdAt": "2026-01-16T12:39:28.766Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ilil1/mcp_server_streamable_http"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "add_tool_test",
+      "description": "Add two numbers"
+    },
+    {
+      "name": "validate_test_sc",
+      "description": ""
+    }
+  ]
+}

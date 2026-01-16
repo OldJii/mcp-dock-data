@@ -2,7 +2,7 @@
   "id": "contentful",
   "displayName": "Contentful",
   "description": "Contentful is a headless CMS allowing developers to create, manage, and distribute content across multiple channels and devices with an API-first approach",
-  "createdAt": "2026-01-16T07:19:31.890Z",
+  "createdAt": "2026-01-16T12:34:31.461Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/contentful"

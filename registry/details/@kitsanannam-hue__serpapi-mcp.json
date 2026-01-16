@@ -1,0 +1,12 @@
+{
+  "id": "@kitsanannam-hue/serpapi-mcp",
+  "displayName": "serpapi-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:02:29.216Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kitsanannam-hue/serpapi-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

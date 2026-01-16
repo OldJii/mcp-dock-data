@@ -2,7 +2,7 @@
   "id": "@hithereiamaliff/mcp-grabmaps",
   "displayName": "GrabMaps MCP Server",
   "description": "Provide seamless access to GrabMaps geocoding and routing services across 8 countries in Southeast Asia through a standardized MCP interface. Enable AI models and applications to perform place searches, reverse geocoding, route calculations, and place detail retrieval efficiently. Simplify integration with GrabMaps data via AWS Location Service without requiring direct map rendering capabilities.\n\nAvailable coverage countries for GrabMaps usage:\n\n- 🇲🇾 Malaysia\n- 🇸🇬 Singapore\n- 🇹🇭 Thailand\n- 🇲🇲 Myanmar\n- 🇰🇭 Cambodia\n- 🇻🇳 Vietnam\n- 🇵🇭 Philippines\n- 🇮🇩 Indonesia\n\nNote: this MCP server is NOT officially affiliated with Grab, GrabMaps, or AWS Location Service.",
-  "createdAt": "2026-01-16T07:26:14.033Z",
+  "createdAt": "2026-01-16T12:43:59.235Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-grabmaps"

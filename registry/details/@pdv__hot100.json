@@ -1,0 +1,42 @@
+{
+  "id": "@pdv/hot100",
+  "displayName": "Billboard Hot 100",
+  "description": "Explore the Billboard Hot 100 by week, artist, or track to see who’s charting. Look up a song’s chart history and weekly peak positions.",
+  "createdAt": "2026-01-16T12:40:29.906Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pdv/hot100"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_chart",
+      "description": "Get the Hot 100 chart for a given week"
+    },
+    {
+      "name": "get_track",
+      "description": "Get chart positions for track"
+    },
+    {
+      "name": "search_charts",
+      "description": "Search all tracks by artist or title"
+    }
+  ]
+}

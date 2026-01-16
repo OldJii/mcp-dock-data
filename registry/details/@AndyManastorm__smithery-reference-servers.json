@@ -2,7 +2,7 @@
   "id": "@AndyManastorm/smithery-reference-servers",
   "displayName": "Andy's Test API MCP Server",
   "description": "Enable seamless file operations, repository management, and advanced search functionalities on GitHub. Automate your workflow with automatic branch creation and comprehensive error handling, ensuring your Git history is preserved. Enhance your development experience by integrating GitHub capabilities directly into your applications.",
-  "createdAt": "2026-01-16T07:27:53.478Z",
+  "createdAt": "2026-01-16T12:46:08.393Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AndyManastorm/smithery-reference-servers"

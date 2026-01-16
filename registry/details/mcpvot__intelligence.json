@@ -1,0 +1,12 @@
+{
+  "id": "mcpvot/intelligence",
+  "displayName": "intelligence",
+  "description": "",
+  "createdAt": "2026-01-16T13:01:48.029Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcpvot/intelligence"
+  },
+  "connection": null,
+  "capabilities": []
+}

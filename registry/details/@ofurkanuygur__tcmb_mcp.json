@@ -2,7 +2,7 @@
   "id": "@ofurkanuygur/tcmb_mcp",
   "displayName": "tcmb_mcp",
   "description": "Fetch today's and historical exchange rates from the Turkish Central Bank dating back to 1996. Convert between currencies and compare trends with summary statistics. Rely on holiday-aware lookups to always return the latest available data.",
-  "createdAt": "2026-01-16T07:20:55.627Z",
+  "createdAt": "2026-01-16T12:36:34.658Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ofurkanuygur/tcmb_mcp"

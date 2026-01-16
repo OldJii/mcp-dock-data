@@ -2,7 +2,7 @@
   "id": "@clarenous/veyrax-mcp",
   "displayName": "VeyraX MCP",
   "description": "Provide seamless access to all your integrated tools across multiple MCP-compatible environments with a single authentication. Connect once to the VeyraX platform and instantly use your tools in editors and AI assistants like Claude, Cursor, VS Code, and Windsurf. Simplify your workflow with a quick setup and unified tool management.",
-  "createdAt": "2026-01-16T07:26:59.884Z",
+  "createdAt": "2026-01-16T12:45:01.684Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@clarenous/veyrax-mcp"

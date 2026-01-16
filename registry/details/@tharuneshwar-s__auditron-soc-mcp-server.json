@@ -2,7 +2,7 @@
   "id": "@tharuneshwar-s/auditron-soc-mcp-server",
   "displayName": "Auditron",
   "description": "Run cloud compliance audits across AWS, Azure, and GCP. Discover provider-specific audit controls and execute targeted checks to surface misconfigurations and risks. Streamline multi-cloud security assessments with fast, repeatable evaluations.",
-  "createdAt": "2026-01-16T07:27:05.194Z",
+  "createdAt": "2026-01-16T12:45:08.235Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tharuneshwar-s/auditron-soc-mcp-server"

@@ -1,0 +1,12 @@
+{
+  "id": "@facundo/fordcor",
+  "displayName": "fordcor",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:43.950Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@facundo/fordcor"
+  },
+  "connection": null,
+  "capabilities": []
+}

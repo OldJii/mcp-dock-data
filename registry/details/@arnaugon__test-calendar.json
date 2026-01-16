@@ -1,0 +1,12 @@
+{
+  "id": "@arnaugon/test-calendar",
+  "displayName": "test-calendar",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:45.283Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arnaugon/test-calendar"
+  },
+  "connection": null,
+  "capabilities": []
+}

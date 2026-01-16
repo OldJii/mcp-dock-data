@@ -1,0 +1,37 @@
+{
+  "id": "confluence-cloud",
+  "displayName": "Confluence Cloud",
+  "description": "Interact with Confluence Cloud to manage spaces, pages, and content.",
+  "createdAt": "2026-01-16T12:50:26.405Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/confluence-cloud"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "confluenceHost",
+        "confluenceUsername",
+        "confluenceApiToken"
+      ],
+      "properties": {
+        "confluenceHost": {
+          "type": "string",
+          "description": "The host domain for your Confluence instance."
+        },
+        "confluenceApiToken": {
+          "type": "string",
+          "description": "The API token for Confluence authentication."
+        },
+        "confluenceUsername": {
+          "type": "string",
+          "description": "The email used for Confluence authentication."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

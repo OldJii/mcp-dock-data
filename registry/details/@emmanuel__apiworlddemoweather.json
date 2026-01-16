@@ -2,7 +2,7 @@
   "id": "@emmanuel/apiworlddemoweather",
   "displayName": "US Weather",
   "description": "Get U.S. weather alerts, forecasts, and observations, including aviation products like TAFs and SIGMETs. Explore radar, station, and zone data to power location-aware features. Stay ahead of hazards with filters by state, region, or public zone.",
-  "createdAt": "2026-01-16T07:27:24.346Z",
+  "createdAt": "2026-01-16T12:45:31.831Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmanuel/apiworlddemoweather"

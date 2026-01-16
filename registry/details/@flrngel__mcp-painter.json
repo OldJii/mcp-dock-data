@@ -2,7 +2,7 @@
   "id": "@flrngel/mcp-painter",
   "displayName": "Drawing Tool for AI Assistants",
   "description": "Create and manipulate drawings with a simple canvas interface. Enhance your AI assistants by enabling them to draw filled shapes and export images effortlessly. Utilize this tool to bring visual creativity to your applications.",
-  "createdAt": "2026-01-16T07:20:02.963Z",
+  "createdAt": "2026-01-16T12:35:20.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@flrngel/mcp-painter"

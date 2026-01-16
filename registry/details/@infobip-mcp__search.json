@@ -2,7 +2,7 @@
   "id": "@infobip-mcp/search",
   "displayName": "Infobip Search MCP",
   "description": "Search Infobip documentation to quickly find guides, use cases, and best practices. Unblock integration and messaging workflows with precise, context-aware answers. Accelerate development with ready-to-use examples and clear guidance for building and troubleshooting requests.",
-  "createdAt": "2026-01-16T07:23:30.872Z",
+  "createdAt": "2026-01-16T12:40:17.856Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@infobip-mcp/search"

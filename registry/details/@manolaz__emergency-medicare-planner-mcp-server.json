@@ -2,7 +2,7 @@
   "id": "@manolaz/emergency-medicare-planner-mcp-server",
   "displayName": "Emergency Medicare Management",
   "description": "Find nearby hospitals and clinics that match specific patient needs. Access real-time information about medical facilities and calculate the fastest routes to them. Ensure timely medical assistance with this efficient planning tool.",
-  "createdAt": "2026-01-16T07:29:52.647Z",
+  "createdAt": "2026-01-16T12:49:09.798Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@manolaz/emergency-medicare-planner-mcp-server"

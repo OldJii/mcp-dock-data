@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/espn-mcp",
   "displayName": "ESPN Server",
   "description": "Access real-time sports data from ESPN through a standardized interface. Get live scores, player statistics, and league standings for major sports leagues including NFL, NBA, MLB, and more. Export data easily to markdown files for reporting and analysis.",
-  "createdAt": "2026-01-16T07:32:32.445Z",
+  "createdAt": "2026-01-16T12:53:02.073Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/espn-mcp"

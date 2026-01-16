@@ -1,0 +1,29 @@
+{
+  "id": "@webforj.io/webfor-mcp",
+  "displayName": "webforj-mcp",
+  "description": "The official Model Context Protocol server for webforJ - providing AI assistants with Java web development tools, project generation, and comprehensive documentation access. Works with Claude, VS Code, Cursor, and all MCP-enabled environments.",
+  "createdAt": "2026-01-16T12:47:05.887Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@webforj.io/webfor-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "webforj-create-project",
+      "description": "\nGenerate webforJ application setup using official Maven archetypes. Supports multiple\nproject templates including hello-world, blank, tabs, and sidemenu layouts.\n\nCreates Maven project structure with proper dependencies, configuration files, and\nstarter code. Returns setup instructions for both startforJ UI tool and Maven\ncommand-line approaches.\n\nAvailable archetypes:\n- hello-world: Basic application with sample components\n- blank: Minimal project structure\n- tabs: Tabbed interface layout\n- sidemenu: Side navigation menu layout\n\nAvailable flavors:\n- webforj: Standard webforJ application\n- webforj-spring: webforJ with Spring Boot (default, requires webforJ 25.02+)\n"
+    },
+    {
+      "name": "webforj-knowledge-base",
+      "description": "\nSearch the webforJ knowledge base using semantic vector similarity to find relevant documentation,\ncode examples, and API information. Returns structured JSON data with search results, relevance\nscores, and confidence metrics for result quality assessment.\n\nSupports natural language queries across webforJ documentation, JavaDoc API references, and\nreal-world code samples. Results include metadata for filtering and confidence indicators\nfor quality evaluation.\n\nQuery examples:\n- \"Button component creation and styling\"\n- \"Form validation with data binding patterns\"\n- \"@Route annotation and navigation setup\"\n- \"FlexLayout container and responsive design\"\n- \"ElementComposite web component integration\"\n"
+    },
+    {
+      "name": "webforj-create-theme",
+      "description": "\nGenerate comprehensive webforJ application themes using color theory algorithms. Creates\ncomplete color palettes with proper contrast ratios and accessibility compliance.\n\nProduces CSS custom properties for primary, secondary, success, warning, danger, and\nneutral color variants. Each color includes light, base, dark, and alternative shades\noptimized for UI components and readability.\n\nOutput includes @AppTheme annotation code and App.setTheme() integration examples.\nSupports named themes for multi-theme applications or global CSS overrides for\nsingle-theme setups.\n\nInput format: HSL color values [hue (0-360), saturation (0-100), lightness (0-100)]\n"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "@hiromitsusasaki/raindrop-io-mcp-server",
   "displayName": "Raindrop.io Integration",
   "description": "Interact with your Raindrop.io bookmarks seamlessly. Create, search, and filter bookmarks using a simple interface that enhances your productivity. Leverage the power of LLMs to manage your bookmarks effortlessly.",
-  "createdAt": "2026-01-16T07:28:54.710Z",
+  "createdAt": "2026-01-16T12:47:46.386Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hiromitsusasaki/raindrop-io-mcp-server"

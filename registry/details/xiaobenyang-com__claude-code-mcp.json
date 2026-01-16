@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/claude-code-mcp",
   "displayName": "claude-code-mcp",
   "description": "Streamline development by automating code generation and fixes, file operations, Git workflows, and terminal commands. Search the web, summarize content, and orchestrate multi-step tasks like version bumps, changelog updates, and release tagging. Integrate with GitHub for PRs and CI checks, and get second-opinion analyses without modifying files.",
-  "createdAt": "2026-01-16T07:25:19.485Z",
+  "createdAt": "2026-01-16T12:42:48.919Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/claude-code-mcp"

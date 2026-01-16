@@ -2,7 +2,7 @@
   "id": "@access/blooio",
   "displayName": "Blooio Messaging",
   "description": "Send and manage SMS, iMessage, and RCS messages from your workflows. Track delivery, retrieve message details, cancel pending sends, and check contact capabilities. Verify account status and configure webhooks to receive message events. Get an API key from Blooio.com",
-  "createdAt": "2026-01-16T07:27:36.606Z",
+  "createdAt": "2026-01-16T12:45:46.836Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@access/blooio"

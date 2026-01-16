@@ -1,0 +1,104 @@
+{
+  "id": "@maxbeech/athenic",
+  "displayName": "Athenic",
+  "description": "Transform Your AI Assistant into a True Business Automation Platform\n\nAthenic is the only MCP server that lets ChatGPT, Claude, and other AI assistants actually do the work — autonomously running complex, multi-step business workflows on your behalf.\n\n⸻\n\nWhy Athenic?\n\nYour Assistant Can Finally Take Action\n\nMost MCP servers only handle basic data lookups. Athenic adds an AI workforce to your assistant — so instead of just telling you what to do, it gets it done.\n\nWhat Sets Athenic Apart\n\n🚀 Long-Running Autonomous Tasks\nAthenic runs for hours, not minutes. Ask your assistant to “research my top 10 competitors and prepare a report” — and return to find a full, sourced analysis waiting for you.\n\n🤖 Multi-Agent Coordination\nAthenic orchestrates multiple AI agents — research, marketing, analytics — working together to complete full workflows end-to-end.\n\n🎯 Organization-Specific Intelligence\nIt learns your business. Connect your CRM, social accounts, and internal docs so when you ask “create a social campaign,” it already knows your voice, audience, and channels.\n\n⚡ Execution, Not Just Advice\nPost content, schedule tasks, publish blogs, analyze results — all automatically, with optional approval steps for sensitive actions.\n\n⸻\n\nUse Cases\n\nFor Startup Founders\n\t•\t“Build our social presence” → Athenic creates, schedules, and optimizes posts across Twitter, LinkedIn, and Bluesky.\n\t•\t“Research our market” → It identifies competitors, finds potential partners, drafts outreach, and tracks responses.\n\nFor Growth Marketers\n\t•\t“Optimize our SEO” → Athenic researches trends, writes optimized content, builds links, and monitors rankings.\n\t•\t“Run a competitive analysis” → It tracks competitors’ pricing, launches, and campaigns — and alerts you to opportunities.\n\nFor Operations Teams\n\t•\t“Every Monday, send me a CRM performance report” → Automated data pulls, analysis, and summaries.\n\t•\t“Analyze support tickets for patterns” → Finds recurring issues and suggests improvements automatically.\n\n⸻\n\nKey Features\n\n🔗 Universal Assistant Integration\nWorks seamlessly with:\n\t•\tChatGPT (Apps SDK)\n\t•\tClaude Desktop (native MCP)\n\t•\tCursor (development workflows)\n\t•\tAny MCP-compatible client\n\n🛠️ Dynamic Tool Ecosystem\nAthenic automatically generates tools from your connected services:\n\t•\tResearch (PubMed, arXiv, web search)\n\t•\tSocial Media (LinkedIn, Twitter, Bluesky)\n\t•\tBusiness Tools (CRM, analytics, email)\n\t•\tKnowledge Base (RAG-powered queries)\n\n📊 Live Progress Tracking\nSee every workflow unfold in real time — progress bars, execution steps, results, and error logs — all within your AI interface.\n\n🔐 Enterprise-Grade Security\nAPI Key, OAuth 2.1, or Anonymous access.\nEncrypted data, SOC 2–compliant infrastructure, and organization-level isolation.\n\n⸻\n\nReal-World Scenarios\n\nContent Marketing:\n“Write a blog post about AI in healthcare, optimize it, and promote it.”\nAthenic researches, drafts, schedules posts, and tracks engagement — entirely autonomously.\n\nCompetitive Intelligence:\n“Monitor our top competitors and alert me to major changes.”\nAthenic scrapes, analyzes, and summarizes — only pinging you when it matters.\n\nPartnership Outreach:\n“Find 20 YouTube creators for collaboration.”\nAthenic discovers, qualifies, contacts, and tracks creators — from start to signed deal.\n\n⸻\n\nFor Developers\n\t•\tProtocol: MCP 2024-11-05\n\t•\tTransport: Streamable HTTP (long-running ops)\n\t•\tAuth: OAuth 2.1, API Keys, Anonymous\n\t•\tUI: ChatGPT Apps SDK + Skybridge\n\t•\tRealtime: Supabase Realtime\n\nExample Config:\n\n{\n  \"mcpServers\": {\n    \"athenic\": {\n      \"url\": \"https://getathenic.com/api/mcp\",\n      \"transport\": \"streamable-http\",\n      \"headers\": {\n        \"X-API-Key\": \"ath_live_your_key_here\"\n      }\n    }\n  }\n}\n\nOne config gives your assistant the ability to orchestrate workflows, access tools, run multi-agent systems, and query your org’s private data.\n\n⸻\n\nPricing\n\nFree Tier: 20 credits, all integrations, community support.\nPro: 1,000+ credits, advanced workflows, priority support.\nEnterprise: Dedicated infrastructure, SLAs, custom agents, white-label options.\n\n⸻\n\nGet Started\n\t1.\tVisit getathenic.com\n\t2.\tCreate an API key\n\t3.\tAdd it to your MCP client\n\t4.\tStart delegating complex tasks\n\nOr test instantly with anonymous access:\n\n{\n  \"mcpServers\": {\n    \"athenic\": {\n      \"url\": \"https://getathenic.com/api/mcp\",\n      \"transport\": \"streamable-http\"\n    }\n  }\n}\n\n\n⸻\n\nWhy Teams Choose Athenic\n\n“We cut social media time by 90% while increasing engagement.” — Sarah K., TechStart\n\n“Athenic’s research agent replaced a whole analyst team.” — Michael R., DataCorp\n\n“I approve final posts, but everything else runs itself.” — Lisa T., GrowthCo\n\n⸻\n\nThe Future of AI Assistants\n\nMost assistants advise. Athenic acts.\nStop prompting — start delegating.\n\n👉 getathenic.com",
+  "createdAt": "2026-01-16T12:48:41.745Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maxbeech/athenic"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "Athenic MCP Server Configuration",
+      "examples": [
+        {
+          "apiKey": "ath_live_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+          "authMethod": "apiKey"
+        },
+        {
+          "apiKey": "ath_live_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+          "authMethod": "apiKey",
+          "preferences": {
+            "locale": "en",
+            "requireApproval": true
+          }
+        },
+        {
+          "oauth": {
+            "accessToken": "eyJhbGciOiJIUzI1NiIs...",
+            "refreshToken": "refresh_token_abc123..."
+          },
+          "authMethod": "oauth"
+        },
+        {
+          "authMethod": "anonymous"
+        },
+        {
+          "oauth": {
+            "accessToken": "eyJhbGciOiJIUzI1NiIs...",
+            "refreshToken": "refresh_token_abc123..."
+          },
+          "authMethod": "oauth",
+          "preferences": {
+            "locale": "es",
+            "defaultPriority": 8,
+            "requireApproval": true
+          }
+        }
+      ],
+      "required": [],
+      "properties": {
+        "oauth": {
+          "type": "object",
+          "description": "OAuth credentials for advanced authentication scenarios. Most users should use API Key instead. OAuth is only needed for user-specific permissions or when integrating with platforms that require OAuth flows."
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Your Athenic API key for authentication. Get your API key from: 1) Sign in at https://getathenic.com 2) Go to Settings → Developer Settings 3) Click \"Create API Key\" and copy it (shown only once!). Format: ath_live_[32 characters]"
+        },
+        "authMethod": {
+          "type": "string",
+          "description": "How to authenticate with Athenic. API Key is recommended for most users (full access to your organization's resources and integrations). OAuth is for advanced scenarios requiring user-specific permissions. Anonymous provides limited read-only access for testing.",
+          "default": "apiKey",
+          "enum": [
+            "apiKey",
+            "oauth",
+            "anonymous"
+          ]
+        },
+        "preferences": {
+          "type": "object",
+          "description": "Optional preferences for how Athenic executes tasks"
+        }
+      },
+      "description": "Configuration options for connecting to the Athenic AI Business Assistant. Choose from three authentication methods: API Key (recommended for full access), OAuth 2.1 (for advanced user-specific permissions), or Anonymous (for testing with limited read-only access).",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "delegate_to_orchestrator",
+      "description": "Use this when the user wants to delegate a complex, multi-step business task to Athenic AI. The orchestrator autonomously analyzes the task, breaks it down into steps, coordinates specialized agents, and executes it end-to-end. Perfect for research, content creation, data analysis, automation workflows, and multi-platform campaigns. Tracks progress in real-time with live updates."
+    },
+    {
+      "name": "check_job_status",
+      "description": "Use this when the user asks about the progress or status of a previously started task. Returns comprehensive information including current status (pending/running/completed/failed), completion percentage, execution steps with timestamps, intermediate results, and any errors encountered. Perfect for monitoring long-running research, content creation, or automation tasks."
+    },
+    {
+      "name": "query_knowledge_base",
+      "description": "Use this when the user needs to find information from their organization's private knowledge repository. Performs semantic search across company documents, wikis, policies, meeting notes, and uploaded files. Returns the most relevant matches with similarity scores. Perfect for questions like \"What's our remote work policy?\", \"Find product specifications for X\", or \"Search meeting notes about the Q4 strategy\"."
+    },
+    {
+      "name": "request_approval",
+      "description": "Use this when an action requires human approval before proceeding. Creates an approval request, notifies designated team members, and pauses task execution until approved or rejected. Essential for sensitive operations like publishing content, making purchases, sending mass emails, modifying production systems, or accessing confidential data. Supports urgency levels for prioritization."
+    },
+    {
+      "name": "schedule_recurring_task",
+      "description": "Use this when the user wants to automate a task to run repeatedly on a schedule. Perfect for weekly reports, daily social media posts, monthly analytics summaries, regular backups, or scheduled content campaigns. Supports flexible schedules like \"every Monday at 9am\", \"daily at noon\", or \"first day of each month\". Tasks run automatically without user intervention."
+    }
+  ]
+}

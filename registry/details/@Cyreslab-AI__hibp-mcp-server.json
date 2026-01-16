@@ -1,0 +1,44 @@
+{
+  "id": "@Cyreslab-AI/hibp-mcp-server",
+  "displayName": "Have I Been Pwned Integration Server",
+  "description": "Check if your accounts or passwords have been compromised in data breaches. Utilize powerful tools to verify email addresses, passwords, and get detailed breach information seamlessly.",
+  "createdAt": "2026-01-16T12:52:05.808Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Cyreslab-AI/hibp-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "hibpApiKey"
+      ],
+      "properties": {
+        "hibpApiKey": {
+          "type": "string",
+          "description": "Your Have I Been Pwned API key."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_email",
+      "description": "Check if an email address has been found in data breaches"
+    },
+    {
+      "name": "check_password",
+      "description": "Check if a password has been exposed in data breaches (using k-anonymity)"
+    },
+    {
+      "name": "get_breach_details",
+      "description": "Get details about a specific data breach"
+    },
+    {
+      "name": "list_all_breaches",
+      "description": "List all breaches in the system"
+    }
+  ]
+}

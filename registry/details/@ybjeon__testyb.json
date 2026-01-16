@@ -1,0 +1,12 @@
+{
+  "id": "@ybjeon/testyb",
+  "displayName": "testyb",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:22.345Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ybjeon/testyb"
+  },
+  "connection": null,
+  "capabilities": []
+}

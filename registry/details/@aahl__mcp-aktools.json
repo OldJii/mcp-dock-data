@@ -1,0 +1,91 @@
+{
+  "id": "@aahl/mcp-aktools",
+  "displayName": "AkTools MCP Server for stock and crypto",
+  "description": "MCP Server for stock and crypto.\n\n提供股票、加密货币的数据查询和分析功能MCP服务器\n\n\n## 功能\n- **股票搜索**: 根据公司名称、股票名称等关键词查找股票代码\n- **股票信息**: 获取股票的详细信息，包括价格、市值等\n- **历史价格**: 获取股票、加密货币历史价格数据，包含技术分析指标\n- **相关新闻**: 获取股票、加密货币相关的最新新闻资讯\n- **财务指标**: 支持A股和港股的财务报告关键指标查询\n",
+  "createdAt": "2026-01-16T12:36:51.387Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aahl/mcp-aktools"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "根据股票名称、公司名称等关键词查找股票代码, 不支持加密货币。该工具比较耗时，当你知道股票代码或用户已指定股票代码时，建议直接通过股票代码使用其他工具"
+    },
+    {
+      "name": "stock_info",
+      "description": "根据股票代码和市场获取股票基本信息, 不支持加密货币"
+    },
+    {
+      "name": "stock_prices",
+      "description": "根据股票代码和市场获取股票历史价格及技术指标, 不支持加密货币"
+    },
+    {
+      "name": "stock_news",
+      "description": "根据股票代码或加密货币符号获取近期相关新闻"
+    },
+    {
+      "name": "stock_indicators_a",
+      "description": "获取中国A股市场(上证、深证)的股票财务报告关键指标"
+    },
+    {
+      "name": "stock_indicators_hk",
+      "description": "获取港股市场的股票财务报告关键指标"
+    },
+    {
+      "name": "stock_indicators_us",
+      "description": "获取美股市场的股票财务报告关键指标"
+    },
+    {
+      "name": "get_current_time",
+      "description": "获取当前系统时间及A股交易日信息，建议在调用其他需要日期参数的工具前使用该工具"
+    },
+    {
+      "name": "stock_zt_pool_em",
+      "description": "获取中国A股市场(上证、深证)的所有涨停股票"
+    },
+    {
+      "name": "stock_zt_pool_strong_em",
+      "description": "获取中国A股市场(上证、深证)的强势股池数据"
+    },
+    {
+      "name": "stock_lhb_ggtj_sina",
+      "description": "获取中国A股市场(上证、深证)的龙虎榜个股上榜统计数据"
+    },
+    {
+      "name": "stock_sector_fund_flow_rank",
+      "description": "获取中国A股市场(上证、深证)的行业资金流向数据"
+    },
+    {
+      "name": "stock_news_global",
+      "description": "获取最新的全球财经快讯"
+    },
+    {
+      "name": "okx_prices",
+      "description": "获取OKX加密货币的历史K线数据，包括价格、交易量和技术指标"
+    },
+    {
+      "name": "okx_loan_ratios",
+      "description": "获取OKX加密货币借入计价货币与借入交易货币的累计数额比值"
+    },
+    {
+      "name": "okx_taker_volume",
+      "description": "获取OKX加密货币主动买入和卖出的交易量"
+    },
+    {
+      "name": "binance_ai_report",
+      "description": "获取币安对加密货币的AI分析报告，此工具对分析加密货币非常有用，推荐使用"
+    },
+    {
+      "name": "trading_suggest",
+      "description": "基于AI对其他工具提供的数据分析结果给出具体投资建议"
+    }
+  ]
+}

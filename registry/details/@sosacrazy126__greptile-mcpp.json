@@ -1,0 +1,16 @@
+{
+  "id": "@sosacrazy126/greptile-mcpp",
+  "displayName": "Greptile Code Search Server",
+  "description": "Enable AI agents to perform advanced code search and querying across repositories using natural language. Index repositories, query codebases with detailed references, and retrieve relevant files efficiently. Maintain conversation context with session management for enhanced interactions.",
+  "createdAt": "2026-01-16T12:48:08.724Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sosacrazy126/greptile-mcpp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

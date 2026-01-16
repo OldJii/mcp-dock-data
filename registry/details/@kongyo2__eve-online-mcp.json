@@ -2,7 +2,7 @@
   "id": "@kongyo2/eve-online-mcp",
   "displayName": "EVE Online Market Data Server",
   "description": "Provide real-time access to EVE Online market data including prices, orders, history, and statistics. Enable detailed market analysis and structure-specific order retrieval with support for authentication and pagination. Simplify integration with EVE Online's ESI API for dynamic market insights.",
-  "createdAt": "2026-01-16T07:22:42.468Z",
+  "createdAt": "2026-01-16T12:39:10.132Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kongyo2/eve-online-mcp"

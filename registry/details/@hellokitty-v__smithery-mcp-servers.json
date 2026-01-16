@@ -2,7 +2,7 @@
   "id": "@hellokitty-v/smithery-mcp-servers",
   "displayName": "United States Weather Data Access",
   "description": "Provide real-time access to United States weather data through the National Weather Service. Enable applications to retrieve accurate and up-to-date weather information seamlessly. Enhance your projects with reliable meteorological data integration.",
-  "createdAt": "2026-01-16T07:21:08.079Z",
+  "createdAt": "2026-01-16T12:36:52.733Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hellokitty-v/smithery-mcp-servers"

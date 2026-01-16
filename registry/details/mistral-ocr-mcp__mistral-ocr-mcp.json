@@ -1,0 +1,12 @@
+{
+  "id": "mistral-ocr-mcp/mistral-ocr-mcp",
+  "displayName": "mistral-ocr-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:58:11.896Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mistral-ocr-mcp/mistral-ocr-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

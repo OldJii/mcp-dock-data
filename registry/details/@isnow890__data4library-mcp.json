@@ -1,0 +1,140 @@
+{
+  "id": "@isnow890/data4library-mcp",
+  "displayName": "정보나루 도서 책(Data4Library)",
+  "description": "책 싫어하는 제가 책에 대해 아는척하고 싶어서 만들었습니다..\n\n내 주변 도서관 실시간 대출 확인\n읽고 싶은 책을 검색하면 주변 도서관 대출 가능 여부를 즉시 확인\n굳이 도서관 홈페이지 여러 곳을 돌아다닐 필요 없이 한 번에 해결\n\n취향 맞춤 도서 발견\n마니아와 다독자들이 추천하는 숨은 명작들을 AI가 골라서 추천\n평소 내가 좋아하는 장르와 비슷한 새로운 책들을 자동으로 찾아줌\n\n지금 뜨는 책이 뭔지 한눈에\n우리 동네에서 지금 가장 많이 빌려가는 인기도서 실시간 확인\n트렌드에 민감한 사람들이 지금 무슨 책을 읽는지 바로 파악\n\nai와 바로 연결\n\"오늘 비 오는데 읽을 만한 책 추천해줘\" 하면 실제 빌릴 수 있는 책까지 알려줌",
+  "createdAt": "2026-01-16T12:40:37.335Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@isnow890/data4library-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "LIBRARY_API_KEY"
+      ],
+      "properties": {
+        "LIBRARY_API_KEY": {
+          "type": "string",
+          "description": "도서관정보나루 API Key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_libraries",
+      "description": "전국의 공공도서관 정보를 검색합니다."
+    },
+    {
+      "name": "search_books",
+      "description": "도서관 소장 도서를 검색합니다."
+    },
+    {
+      "name": "search_popular_books",
+      "description": "인기대출도서를 조회합니다."
+    },
+    {
+      "name": "search_library_codes",
+      "description": "도서관명이나 지역명으로 도서관 코드를 검색합니다."
+    },
+    {
+      "name": "search_nearby_libraries",
+      "description": "사용자의 위치를 기반으로 가까운 도서관들을 거리순으로 검색합니다."
+    },
+    {
+      "name": "get_book_detail",
+      "description": "ISBN으로 도서의 상세 정보를 조회합니다."
+    },
+    {
+      "name": "check_book_availability",
+      "description": "특정 도서관에서 도서의 소장여부 및 대출 가능여부를 조회합니다."
+    },
+    {
+      "name": "get_hot_trend",
+      "description": "대출 급상승 도서를 조회합니다."
+    },
+    {
+      "name": "search_libraries_by_book",
+      "description": "특정 도서를 소장한 도서관을 검색합니다."
+    },
+    {
+      "name": "get_usage_trend",
+      "description": "도서관별 대출반납 추이를 조회합니다."
+    },
+    {
+      "name": "get_new_arrival_books",
+      "description": "도서관별 신착도서를 조회합니다."
+    },
+    {
+      "name": "get_reading_quantity",
+      "description": "지역별 독서량/독서율을 조회합니다."
+    },
+    {
+      "name": "get_monthly_keywords",
+      "description": "이달의 키워드를 조회합니다."
+    },
+    {
+      "name": "get_detailed_region_codes",
+      "description": "세부지역 코드를 조회합니다."
+    },
+    {
+      "name": "get_region_codes",
+      "description": "지역 코드 목록을 조회합니다."
+    },
+    {
+      "name": "get_detailed_subject_codes",
+      "description": "세부주제 코드를 조회합니다."
+    },
+    {
+      "name": "get_subject_codes",
+      "description": "KDC 대주제분류 코드 목록을 조회합니다."
+    },
+    {
+      "name": "search_detailed_kdc_codes",
+      "description": "세부주제코드를 검색합니다."
+    },
+    {
+      "name": "search_detailed_region_codes",
+      "description": "세부지역코드를 검색합니다."
+    },
+    {
+      "name": "search_items",
+      "description": "도서관별 장서/대출 데이터를 조회합니다."
+    },
+    {
+      "name": "get_mania_recommendations",
+      "description": "마니아 추천도서를 조회합니다."
+    },
+    {
+      "name": "get_reader_recommendations",
+      "description": "다독자 추천도서를 조회합니다."
+    },
+    {
+      "name": "get_book_keywords",
+      "description": "도서 키워드 목록을 조회합니다."
+    },
+    {
+      "name": "get_book_usage_analysis",
+      "description": "도서별 이용 분석을 조회합니다."
+    },
+    {
+      "name": "search_popular_books_by_library",
+      "description": "도서관/지역별 인기대출 도서를 조회합니다."
+    },
+    {
+      "name": "get_library_info",
+      "description": "도서관별 통합정보를 조회합니다."
+    },
+    {
+      "name": "get_popular_books_by_library",
+      "description": "도서관별 인기대출도서를 조회합니다."
+    }
+  ]
+}

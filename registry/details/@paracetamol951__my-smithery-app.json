@@ -2,7 +2,7 @@
   "id": "@paracetamol951/my-smithery-app",
   "displayName": "my-smithery-app",
   "description": "Search and navigate local files with flexible glob patterns and precise text queries. Find matching files across codebases and surface relevant lines instantly. Focus on the folders that matter by choosing your working directory.",
-  "createdAt": "2026-01-16T07:27:48.260Z",
+  "createdAt": "2026-01-16T12:46:01.191Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@paracetamol951/my-smithery-app"

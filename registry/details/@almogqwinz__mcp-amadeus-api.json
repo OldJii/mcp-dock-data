@@ -2,7 +2,7 @@
   "id": "@almogqwinz/mcp-amadeus-api",
   "displayName": "Amadeus Flight Search Server",
   "description": "Enable natural language flight search capabilities by integrating with the Amadeus Flight Offers Search API. Retrieve detailed flight options including times, airlines, and pricing by specifying origin, destination, dates, and passenger details. Empower your AI assistant to provide real-time flight data seamlessly.",
-  "createdAt": "2026-01-16T07:21:10.989Z",
+  "createdAt": "2026-01-16T12:36:56.756Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@almogqwinz/mcp-amadeus-api"

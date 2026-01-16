@@ -1,0 +1,41 @@
+{
+  "id": "yelp",
+  "displayName": "Yelp",
+  "description": "Yelp Fusion API provides access to business search, reviews, ratings, and local business information with rich data for location-based services",
+  "createdAt": "2026-01-16T12:35:09.331Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/yelp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "YELP_GET_BUSINESS_DETAILS",
+      "description": "Get detailed information about a specific business on Yelp using its business ID or alias. Returns comprehensive business information including hours, photos, reviews, and location details."
+    },
+    {
+      "name": "YELP_GET_BUSINESS_REVIEWS",
+      "description": "Get reviews for a specific business on Yelp using its business ID or alias. Returns up to 3 review excerpts for the business."
+    },
+    {
+      "name": "YELP_GET_REVIEW_HIGHLIGHTS",
+      "description": "Get review highlights for a specific business on Yelp using its business ID or alias. Returns summarized key points and themes from customer reviews."
+    },
+    {
+      "name": "YELP_SEARCH_AND_CHAT",
+      "description": "Chat with Yelp's AI assistant to search restaurants, check for availability, and make reservations."
+    },
+    {
+      "name": "YELP_SEARCH_BUSINESSES",
+      "description": "Search for businesses on Yelp by location, term, categories, and other filters. This is the main search endpoint for finding businesses."
+    },
+    {
+      "name": "YELP_SEARCH_BY_PHONE",
+      "description": "Search for a business by phone number on Yelp. This endpoint allows you to find businesses using their phone number."
+    }
+  ]
+}

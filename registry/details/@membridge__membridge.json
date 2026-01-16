@@ -1,0 +1,37 @@
+{
+  "id": "@membridge/membridge",
+  "displayName": "Memory MCP Server",
+  "description": "MemBridge Memory MCP Server allows you to share your memory across multiple AI tools like Claude, ChatGPT, Cursor, and more. You save information once, and it becomes accessible from any AI tool you use. This eliminates the need to repeat the same context every time you switch tools.",
+  "createdAt": "2026-01-16T12:52:18.856Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@membridge/membridge"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MemBridge_list_records",
+      "description": "Retrieve a comprehensive list of all MemBridge Memory Records stored for the authenticated user. MemBridge Memory Records contain information that users have explicitly saved for future reference, such as personal preferences, project details, important facts, decisions, ongoing work, and cross-session context. Returns each memory record's ID, title, content preview, creation timestamp, and size. Memory records are sorted by creation date (newest first). This is the primary tool for discovering what memory records exist and obtaining their IDs for further operations like retrieve_record or delete_record.\n\nContext optimization: Set titleOnly to true to retrieve only titles and metadata without content, reducing context usage while searching for relevant records."
+    },
+    {
+      "name": "MemBridge_create_record",
+      "description": "Create and save a new MemBridge Memory Record when the user explicitly requests to save information for future reference. Records persist across chat sessions and AI tools.\n\nTypes of information users may want to save:\n• User preferences and personal details (favorite languages, frameworks, coding style, work hours, timezone)\n• Project-specific information (architecture decisions, naming conventions, tech stack, API endpoints, database schemas)\n• Important facts and context (business rules, domain knowledge, recurring tasks, team structure)\n• Decisions and rationale (why certain approaches were chosen, what alternatives were considered)\n• Ongoing work and progress (current tasks, blockers, next steps, incomplete features)\n• User instructions and guidelines (how they prefer code to be written, what to avoid, communication preferences)\n• Repeated information (if a user mentions something important multiple times)\n• Cross-session context (information that should be remembered for future conversations)\n\nBest practices for record organization:\n• Keep each record focused on a single topic or category (e.g., separate records for 'Work schedule' and 'Coffee preferences' rather than one 'Personal info' record)\n• You can call this tool multiple times to create separate records for different topics - this is encouraged for better organization\n• Splitting information into multiple records makes it easier to find, update, and delete specific information later\n• Well-organized records improve searchability and reduce the need to read through irrelevant information\n• Aim for records that are detailed enough to be useful but focused enough to have a clear purpose\n\nEach record is assigned a unique UUID and can be updated, retrieved, or deleted later. Subject to storage limits based on the user's plan. Use this tool only when the user asks to save, remember, or store information."
+    },
+    {
+      "name": "MemBridge_update_record",
+      "description": "Update an existing MemBridge Memory Record's content and title while preserving the original creation timestamp. The updated timestamp will be refreshed. Useful for consolidating related information, refining outdated details, or correcting inaccurate memory records. Use this when you need to modify existing information rather than creating a duplicate entry.\n\nBest practices for updating records:\n• Keep each record focused on a single topic or category for easier management\n• If the update introduces significantly different information, consider creating a separate record instead\n• Well-organized, topic-focused records are easier to find, update, and delete later"
+    },
+    {
+      "name": "MemBridge_retrieve_record",
+      "description": "Retrieve the full content and metadata of a specific MemBridge Memory Record by its ID. MemBridge Memory Records contain information that users have explicitly saved for future reference, such as personal preferences, project details, important facts, decisions, ongoing work, and cross-session context. Returns the complete memory record including title, content, creation timestamp, and last update timestamp. Use this when you need to access the detailed information of a particular MemBridge Memory Record that you've identified through list_record or that the user has referenced."
+    },
+    {
+      "name": "MemBridge_delete_record",
+      "description": "Permanently delete a specific MemBridge Memory Record by its ID. This action is irreversible and will completely remove the memory record from storage. Use this when information becomes outdated, incorrect, or is no longer needed. Always confirm with the user before deleting important memory records."
+    }
+  ]
+}

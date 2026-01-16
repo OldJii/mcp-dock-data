@@ -1,0 +1,209 @@
+{
+  "id": "zoho_books",
+  "displayName": "Zoho books",
+  "description": "Zoho Books handles accounting, invoicing, and expense tracking, offering real-time collaboration and integrations within the Zoho ecosystem",
+  "createdAt": "2026-01-16T12:35:15.000Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_books"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_BOOKS_ACCEPT_ESTIMATE",
+      "description": "Tool to mark an estimate as accepted. Use after reviewing and confirming the estimate."
+    },
+    {
+      "name": "ZOHO_BOOKS_BULK_EXPORT_INVOICES_PDF",
+      "description": "Tool to export multiple invoices to a single PDF. Use when you have up to 25 invoice IDs ready to merge."
+    },
+    {
+      "name": "ZOHO_BOOKS_BULK_PRINT_INVOICES",
+      "description": "Tool to bulk print up to 25 invoices as a single PDF. Use when you have multiple invoice IDs and need a combined PDF for printing."
+    },
+    {
+      "name": "ZOHO_BOOKS_CATEGORIZE_UNCATEGORIZED_TRANSACTION",
+      "description": "Tool to categorize an uncategorized bank transaction. Use after fetching an uncategorized entry to assign proper type and details."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_BANK_ACCOUNT",
+      "description": "Tool to create a bank or credit card account. Use when you need to add a new bank or credit card account to your Zoho Books organization."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_BANK_TRANSACTION",
+      "description": "Tool to create a manual bank transaction. Use when you need to record a non-invoice bank movement in Zoho Books after obtaining valid account IDs."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_CONTACT",
+      "description": "Tool to create a new contact in Zoho Books. Use when adding a customer or vendor after gathering details."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_ESTIMATE",
+      "description": "Tool to create an estimate (quote). Use when you need to raise a new customer quote in Zoho Books."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_EXCHANGE_RATE",
+      "description": "Tool to create a new exchange rate for a currency. Use after confirming currency_id and organization_id."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_INVOICE",
+      "description": "Tool to create a new invoice. Use when you need to bill a customer with line items."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_ITEM",
+      "description": "Tool to create a new item (product or service). Use when you need to add new items with pricing and inventory details."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_SALES_ORDER",
+      "description": "Tool to create a sales order. Use when you need to record a new sales order in Zoho Books."
+    },
+    {
+      "name": "ZOHO_BOOKS_CREATE_USER",
+      "description": "Tool to create a new user in Zoho Books. Use when inviting a team member to your organization."
+    },
+    {
+      "name": "ZOHO_BOOKS_DELETE_BANK_TRANSACTION",
+      "description": "Tool to delete a specific bank transaction. Use when you need to remove an existing transaction after confirming its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_DELETE_CONTACT",
+      "description": "Tool to delete a specific contact. Use when you need to remove an existing contact after confirming its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_DELETE_INVOICE",
+      "description": "Tool to delete a specific invoice. Use when you need to remove an existing invoice after confirming its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_DELETE_ITEM",
+      "description": "Tool to delete a specific item. Use when you need to remove an unused item after confirming it has no linked transactions."
+    },
+    {
+      "name": "ZOHO_BOOKS_EMAIL_INVOICE",
+      "description": "Tool to send an invoice email. Use after invoice creation to share it with the customer."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_BANK_ACCOUNT",
+      "description": "Tool to fetch details of a specific bank account. Use when you need full metadata of one account by ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_BILL",
+      "description": "Tool to fetch details of a specific bill. Use after confirming the organization context."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_CONTACT",
+      "description": "Tool to fetch details of a specific contact. Use when you need to retrieve comprehensive contact information after obtaining the contact_id."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_ESTIMATE",
+      "description": "Tool to fetch details of a specific estimate. Use when you need to retrieve all attributes of an existing estimate by its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_INVOICE",
+      "description": "Tool to fetch details of a specific invoice. Use when you need the full invoice record by its ID after creation or listing."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_ITEM",
+      "description": "Tool to fetch details of a specific item. Use when you need to retrieve all attributes of an existing item by its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_SALES_ORDER",
+      "description": "Tool to fetch details of a specific sales order. Use when you need the full record of a sales order by its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_GET_USER",
+      "description": "Tool to fetch details of a specific user. Use after obtaining the user_id to retrieve comprehensive user information."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_BANK_ACCOUNTS",
+      "description": "Tool to list bank and credit card accounts. Use when retrieving all accounts for reconciliation or overview."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_BANK_TRANSACTIONS",
+      "description": "Tool to list bank transactions with optional filters. Use when you need to retrieve transactions for reconciliation and reporting."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_BILLS",
+      "description": "Tool to retrieve a paginated list of bills. Use when listing bills with filters and pagination."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_CHART_OF_ACCOUNTS",
+      "description": "Tool to list chart of accounts. Use when you need to fetch all chart of accounts with optional filtering, sorting, and pagination."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_CONTACTS",
+      "description": "Tool to retrieve a paginated list of contacts with optional filters. Use when you need to fetch and filter contacts from Zoho Books before processing them."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_CURRENCIES",
+      "description": "Tool to list currencies configured for the organization. Use after authentication to retrieve all currency settings."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_INVOICE_PAYMENTS",
+      "description": "Tool to list payments recorded against an invoice. Use when retrieving all payment transactions applied to a specific invoice."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_INVOICES",
+      "description": "Tool to retrieve a paginated list of invoices with filters and search. Use when you need to fetch and filter invoices before processing."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_ITEMS",
+      "description": "Tool to retrieve a paginated list of items from Zoho Books. Use when you need to list items with optional filters, search, and sorting."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_ORGANIZATIONS",
+      "description": "Tool to list all organizations for the authenticated user. Use when you need to obtain the organization_id for subsequent API calls."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_SALES_ORDERS",
+      "description": "Tool to retrieve a paginated list of sales orders. Use when browsing sales orders by organization with optional sorting and filtering."
+    },
+    {
+      "name": "ZOHO_BOOKS_LIST_USERS",
+      "description": "Tool to retrieve a paginated list of users. Use when you need to fetch and browse users of an organization in Zoho Books."
+    },
+    {
+      "name": "ZOHO_BOOKS_MARK_CONTACT_AS_ACTIVE",
+      "description": "Tool to mark a contact as active. Use when you need to reactivate a previously deactivated contact after confirming its ID."
+    },
+    {
+      "name": "ZOHO_BOOKS_MARK_INVOICE_AS_SENT",
+      "description": "Tool to mark an invoice as Sent. Use after the invoice is finalized and ready for delivery to the customer."
+    },
+    {
+      "name": "ZOHO_BOOKS_OPEN_SALES_ORDER",
+      "description": "Tool to mark a sales order as Open. Use when a sales order in Draft status needs to be opened for processing."
+    },
+    {
+      "name": "ZOHO_BOOKS_REMIND_CUSTOMER_INVOICE",
+      "description": "Tool to send a payment reminder for an invoice. Use when invoice is in Open or Overdue status."
+    },
+    {
+      "name": "ZOHO_BOOKS_UPDATE_BILL",
+      "description": "Tool to update a vendor bill. Use when you need to modify an existing bill in Zoho Books. Use after fetching the current bill details."
+    },
+    {
+      "name": "ZOHO_BOOKS_UPDATE_CONTACT",
+      "description": "Tool to update details of a contact. Use when you need to modify any contact attribute after verifying contact_id."
+    },
+    {
+      "name": "ZOHO_BOOKS_UPDATE_INVOICE",
+      "description": "Tool to update details of a specific invoice. Use when you need to modify an existing invoice in Zoho Books—change line items, dates, or other invoice fields. Requires invoice ID and organization ID before calling."
+    },
+    {
+      "name": "ZOHO_BOOKS_UPDATE_ITEM",
+      "description": "Tool to update details of a specific item. Use when you need to modify an existing item's attributes after fetching its current state."
+    },
+    {
+      "name": "ZOHO_BOOKS_UPDATE_SALES_ORDER",
+      "description": "Tool to update a specific sales order. Use when you need to modify an existing sales order (e.g., change dates, line items, or custom fields) after creation."
+    },
+    {
+      "name": "ZOHO_BOOKS_VOID_INVOICE",
+      "description": "Tool to mark an invoice as Void. Use when you need to void an existing invoice after reviewing any outstanding payments."
+    }
+  ]
+}

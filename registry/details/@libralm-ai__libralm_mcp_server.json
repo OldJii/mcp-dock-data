@@ -2,7 +2,7 @@
   "id": "@libralm-ai/libralm_mcp_server",
   "displayName": "LibraLM Book Summaries",
   "description": "Search a growing library of professionally summarized books. Read comprehensive summaries, chapter-by-chapter breakdowns, tables of contents, and distilled key insights. Find titles by author, title, or ISBN and fetch specific chapter summaries when you need them.",
-  "createdAt": "2026-01-16T07:23:58.012Z",
+  "createdAt": "2026-01-16T12:40:56.638Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@libralm-ai/libralm_mcp_server"

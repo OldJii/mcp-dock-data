@@ -1,0 +1,12 @@
+{
+  "id": "@s.piree/hotelai",
+  "displayName": "hotelai",
+  "description": "",
+  "createdAt": "2026-01-16T12:55:16.140Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@s.piree/hotelai"
+  },
+  "connection": null,
+  "capabilities": []
+}

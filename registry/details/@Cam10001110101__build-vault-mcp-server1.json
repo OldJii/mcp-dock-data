@@ -1,0 +1,12 @@
+{
+  "id": "@Cam10001110101/build-vault-mcp-server1",
+  "displayName": "build-vault-mcp-server1",
+  "description": "",
+  "createdAt": "2026-01-16T12:59:50.044Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Cam10001110101/build-vault-mcp-server1"
+  },
+  "connection": null,
+  "capabilities": []
+}

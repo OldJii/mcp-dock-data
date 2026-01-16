@@ -2,7 +2,7 @@
   "id": "@imatrixme/pocketbase-mcp-server",
   "displayName": "PocketBase MCP Server",
   "description": "Manage your PocketBase databases effortlessly. Perform advanced database operations, schema management, and data manipulation with ease using our comprehensive tools.",
-  "createdAt": "2026-01-16T07:32:48.939Z",
+  "createdAt": "2026-01-16T12:53:24.663Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@imatrixme/pocketbase-mcp-server"

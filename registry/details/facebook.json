@@ -2,7 +2,7 @@
   "id": "facebook",
   "displayName": "Facebook",
   "description": "Facebook is a social media and advertising platform used by individuals and businesses to connect, share content, and promote products or services. Only supports Facebook Pages, not Facebook Personal accounts.",
-  "createdAt": "2026-01-16T07:19:29.734Z",
+  "createdAt": "2026-01-16T12:34:28.768Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/facebook"

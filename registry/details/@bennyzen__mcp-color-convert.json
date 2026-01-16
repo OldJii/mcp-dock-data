@@ -2,7 +2,7 @@
   "id": "@bennyzen/mcp-color-convert",
   "displayName": "Color Convert",
   "description": "Convert colors across formats for seamless design-to-code workflows. Create lighter or darker variants, adjust saturation and hue, and generate palettes, schemes, and full swatch scales. Check contrast for WCAG compliance, pick readable text colors automatically, and validate color inputs with confidence.",
-  "createdAt": "2026-01-16T07:26:41.909Z",
+  "createdAt": "2026-01-16T12:44:38.257Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@bennyzen/mcp-color-convert"

@@ -1,0 +1,12 @@
+{
+  "id": "@vezlo/src-to-kb",
+  "displayName": "vezlo/src-to-kb",
+  "description": "Convert any source code repository into a searchable knowledge base with automatic chunking, embedding generation, and intelligent search capabilities. Now with MCP (Model Context Protocol) support for Claude Code and Cursor integration!",
+  "createdAt": "2026-01-16T13:10:45.695Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vezlo/src-to-kb"
+  },
+  "connection": null,
+  "capabilities": []
+}

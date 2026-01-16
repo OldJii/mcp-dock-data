@@ -2,7 +2,7 @@
   "id": "@Rapiernik/mcp-server",
   "displayName": "MCP Server",
   "description": "Integrate your applications with external data and tools seamlessly. Enhance your LLM capabilities by allowing them to interact with real-world resources and perform actions dynamically. Simplify the process of building intelligent applications with standardized protocols.",
-  "createdAt": "2026-01-16T07:25:26.216Z",
+  "createdAt": "2026-01-16T12:42:55.174Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Rapiernik/mcp-server"

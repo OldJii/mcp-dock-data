@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/markdown-to-notion",
+  "displayName": "markdown-to-notion",
+  "description": "Convert markdown into polished Notion pages while preserving structure and formatting. Streamline migrations and publishing workflows by turning existing docs into ready-to-use Notion content. Save time and avoid manual copy-paste by automating the transformation from files to pages.",
+  "createdAt": "2026-01-16T12:48:21.129Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/markdown-to-notion"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "markdown-to-notion",
+      "description": "Convert markdown content to notion json page content"
+    }
+  ]
+}

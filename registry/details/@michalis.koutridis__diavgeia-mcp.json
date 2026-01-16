@@ -2,7 +2,7 @@
   "id": "@michalis.koutridis/diavgeia-mcp",
   "displayName": "diavgeia-mcp",
   "description": "Browse and search decisions published on Greece’s Diavgeia transparency portal. Filter results by multiple criteria to find relevant acts fast. Retrieve full details for a specific decision using its ADA identifier.",
-  "createdAt": "2026-01-16T07:22:16.489Z",
+  "createdAt": "2026-01-16T12:38:28.611Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@michalis.koutridis/diavgeia-mcp"

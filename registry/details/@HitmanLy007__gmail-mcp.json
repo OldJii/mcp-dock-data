@@ -2,7 +2,7 @@
   "id": "@HitmanLy007/gmail-mcp",
   "displayName": "Gmail API Integration Server",
   "description": "Provide seamless access to Gmail functionalities including email sending, retrieval, label and thread management, and mailbox settings through a standardized interface. Enable secure OAuth2 authentication for personalized user access and support comprehensive Gmail API features. Simplify email management workflows by integrating Gmail capabilities into your applications or agents.",
-  "createdAt": "2026-01-16T07:31:18.533Z",
+  "createdAt": "2026-01-16T12:51:16.117Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@HitmanLy007/gmail-mcp"

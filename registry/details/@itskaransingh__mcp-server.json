@@ -1,0 +1,21 @@
+{
+  "id": "@itskaransingh/mcp-server",
+  "displayName": "Say Hello",
+  "description": "Greet people by name with a friendly message. Personalize interactions in chats, demos, or onboarding while saving time on simple salutations.",
+  "createdAt": "2026-01-16T12:51:03.697Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itskaransingh/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "say_hello",
+      "description": "A simple tool that says hello to the given name."
+    }
+  ]
+}

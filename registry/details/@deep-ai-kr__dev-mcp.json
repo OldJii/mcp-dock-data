@@ -1,0 +1,72 @@
+{
+  "id": "@deep-ai-kr/dev-mcp",
+  "displayName": "dev-mcp",
+  "description": "Browse directories and read files within a safe, configurable root. Pull accurate context from local projects and docs without leaving your workflow. Limit access to a chosen root to keep your environment secure.",
+  "createdAt": "2026-01-16T12:35:32.024Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deep-ai-kr/dev-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "FS_ROOT": {
+          "type": "string",
+          "description": "파일시스템 루트 경로 (MCP 클라이언트가 접근할 수 있는 최상위 디렉토리)"
+        },
+        "VERBOSE": {
+          "type": "boolean",
+          "description": "상세 로그 출력",
+          "default": false
+        },
+        "LOG_LEVEL": {
+          "type": "string",
+          "description": "로그 레벨",
+          "default": "info"
+        },
+        "GITHUB_ROOT": {
+          "type": "string",
+          "description": "GitHub 루트 경로 (FS_ROOT 대신 사용 가능)"
+        },
+        "OBSIDIAN_PATH": {
+          "type": "string",
+          "description": "Obsidian Vault 경로"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_text_file",
+      "description": "Read a text file from the filesystem. Returns the file content as text."
+    },
+    {
+      "name": "write_file",
+      "description": "Write content to a file. Creates the file if it doesn't exist, overwrites if it does."
+    },
+    {
+      "name": "list_directory",
+      "description": "List files and directories in a specified path"
+    },
+    {
+      "name": "create_directory",
+      "description": "Create a directory. Creates parent directories if they don't exist."
+    },
+    {
+      "name": "get_file_info",
+      "description": "Get detailed information about a file or directory (size, permissions, timestamps, etc.)"
+    },
+    {
+      "name": "move_file",
+      "description": "Move or rename a file or directory"
+    },
+    {
+      "name": "search_files",
+      "description": "Recursively search for files and directories matching a pattern"
+    }
+  ]
+}

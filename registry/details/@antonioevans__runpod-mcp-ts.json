@@ -2,7 +2,7 @@
   "id": "@antonioevans/runpod-mcp-ts",
   "displayName": "RunPod Server Manager",
   "description": "Manage your RunPod resources seamlessly through an MCP-compatible client. Create, list, update, and delete pods, serverless endpoints, templates, network volumes, and container registry authentications with ease. Streamline your RunPod operations directly from your preferred LLM interface.",
-  "createdAt": "2026-01-16T07:32:50.971Z",
+  "createdAt": "2026-01-16T12:53:27.920Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@antonioevans/runpod-mcp-ts"

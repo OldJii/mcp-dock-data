@@ -2,7 +2,7 @@
   "id": "@hollaugo/financial-research-mcp-server",
   "displayName": "Financial Research",
   "description": "Analyze stocks with summaries, SEC filings, analyst targets and recommendations, dividends, splits, holders, and financial statements. Track insider activity and sector and industry context to inform investment decisions. Summarize lengthy SEC filings into clear, actionable takeaways.",
-  "createdAt": "2026-01-16T07:20:45.590Z",
+  "createdAt": "2026-01-16T12:36:20.148Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hollaugo/financial-research-mcp-server"

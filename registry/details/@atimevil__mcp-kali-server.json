@@ -1,0 +1,213 @@
+{
+  "id": "@atimevil/mcp-kali-server",
+  "displayName": "CTF Solver MCP: 50+ Security Tools via AI Interface",
+  "description": "Bridge AI assistants to 50+ Kali Linux security tools. Solve CTF challenges, perform penetration testing, and automate offensive security workflows across Pwnable, Crypto, Forensics, Cloud, and Web3.",
+  "createdAt": "2026-01-16T12:39:40.170Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@atimevil/mcp-kali-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "nmap_scan",
+      "description": "\n        Execute an Nmap network scan to discover hosts, open ports, services, and versions.\n\n        Args:\n            target: Target IP address or hostname to scan (e.g., '192.168.1.1' or 'example.com')\n            scan_type: Nmap scan type - use '-sV' for version detection, '-sS' for SYN scan, '-sT' for TCP connect, '-sU' for UDP scan, or '-A' for aggressive scan (default: '-sV')\n            ports: Ports to scan - can be single port '80', range '1-1000', comma-separated list '22,80,443', or empty for default ports (default: '')\n            additional_args: Additional Nmap arguments like '-O' for OS detection or '--script vuln' for vulnerability scripts (default: '')\n\n        Returns:\n            Scan results including discovered ports, services, and version information\n        "
+    },
+    {
+      "name": "gobuster_scan",
+      "description": "\n        Execute Gobuster directory/DNS/vhost enumeration to discover hidden paths, subdomains, or virtual hosts.\n\n        Args:\n            url: Target URL (http://example.com) or domain for DNS mode\n            mode: Scan mode - 'dir' for directory bruteforce, 'dns' for subdomain enumeration, 'vhost' for virtual host discovery, or 'fuzz' for fuzzing (default: 'dir')\n            wordlist: Path to wordlist file on Kali server (default: '/usr/share/wordlists/dirb/common.txt')\n            additional_args: Additional Gobuster arguments like '-x php,html' for file extensions or '-t 50' for thread count (default: '')\n\n        Returns:\n            Discovered directories, subdomains, or virtual hosts with response codes\n        "
+    },
+    {
+      "name": "dirb_scan",
+      "description": "\n        Execute Dirb web content scanner to discover hidden directories and files through dictionary-based attacks.\n\n        Args:\n            url: Target URL to scan (e.g., http://example.com)\n            wordlist: Path to wordlist file on Kali server (default: '/usr/share/wordlists/dirb/common.txt')\n            additional_args: Additional Dirb arguments like '-r' for non-recursive or '-z 10' for millisecond delay (default: '')\n\n        Returns:\n            Discovered directories and files with HTTP response codes\n        "
+    },
+    {
+      "name": "nikto_scan",
+      "description": "\n        Execute Nikto web server vulnerability scanner to identify server misconfigurations, outdated software, and security issues.\n\n        Args:\n            target: Target URL or IP address to scan (e.g., 'http://example.com' or '192.168.1.1')\n            additional_args: Additional Nikto arguments like '-Tuning x' for specific test types or '-port 8080' for custom port (default: '')\n\n        Returns:\n            Vulnerability findings, server information, and security recommendations\n        "
+    },
+    {
+      "name": "sqlmap_scan",
+      "description": "\n        Execute SQLmap automated SQL injection detection and exploitation tool. WARNING: Can modify database contents.\n\n        Args:\n            url: Target URL to test for SQL injection vulnerabilities (e.g., 'http://example.com/page.php?id=1')\n            data: POST data string for testing POST parameters (e.g., 'username=admin&password=test') (default: '')\n            additional_args: Additional SQLmap arguments like '--batch' for non-interactive mode, '--dbs' to enumerate databases, or '--risk 3' for aggressive testing (default: '')\n\n        Returns:\n            SQL injection vulnerabilities found, database information, and exploitation results\n        "
+    },
+    {
+      "name": "metasploit_run",
+      "description": "\n        Execute a Metasploit Framework module for exploitation, scanning, or auxiliary functions. WARNING: Can compromise systems.\n\n        Args:\n            module: Metasploit module path (e.g., 'exploit/windows/smb/ms17_010_eternalblue' or 'auxiliary/scanner/portscan/tcp')\n            options: Module options as key-value pairs (e.g., {'RHOSTS': '192.168.1.1', 'RPORT': 445}) (default: {})\n\n        Returns:\n            Module execution results, including any exploited sessions or scan findings\n        "
+    },
+    {
+      "name": "hydra_attack",
+      "description": "\n        Execute Hydra online password cracking tool for authentication brute-forcing. WARNING: May lock accounts or trigger security alerts.\n\n        Args:\n            target: Target IP address or hostname to attack (e.g., '192.168.1.1' or 'example.com')\n            service: Service to attack - supports 'ssh', 'ftp', 'http-post-form', 'rdp', 'smb', 'telnet', etc.\n            username: Single username to test (leave empty if using username_file) (default: '')\n            username_file: Path to username wordlist file on Kali server (e.g., '/usr/share/wordlists/usernames.txt') (default: '')\n            password: Single password to test (leave empty if using password_file) (default: '')\n            password_file: Path to password wordlist file on Kali server (e.g., '/usr/share/wordlists/rockyou.txt') (default: '')\n            additional_args: Additional Hydra arguments like '-t 4' for thread count or '-V' for verbose output (default: '')\n\n        Returns:\n            Successfully cracked credentials and attack statistics\n        "
+    },
+    {
+      "name": "john_crack",
+      "description": "\n        Execute John the Ripper offline password hash cracker using wordlist and rules-based attacks.\n\n        Args:\n            hash_file: Path to file containing password hashes on Kali server (e.g., '/tmp/hashes.txt')\n            wordlist: Path to wordlist file on Kali server (default: '/usr/share/wordlists/rockyou.txt')\n            format_type: Hash format type like 'md5', 'sha256', 'NT', 'des', 'raw-md5' - leave empty for auto-detection (default: '')\n            additional_args: Additional John arguments like '--rules' for mangling rules or '--show' to display previously cracked passwords (default: '')\n\n        Returns:\n            Cracked passwords, hash format information, and cracking statistics\n        "
+    },
+    {
+      "name": "wpscan_analyze",
+      "description": "\n        Execute WPScan WordPress security scanner to identify vulnerabilities, plugins, themes, and users.\n\n        Args:\n            url: Target WordPress site URL (e.g., 'http://example.com')\n            additional_args: Additional WPScan arguments like '--enumerate u,p,t' for enumerating users/plugins/themes or '--api-token TOKEN' for vulnerability data (default: '')\n\n        Returns:\n            WordPress version, installed plugins/themes, known vulnerabilities, and enumerated users\n        "
+    },
+    {
+      "name": "enum4linux_scan",
+      "description": "\n        Execute Enum4linux tool to enumerate Windows/Samba systems for users, shares, groups, and OS information.\n\n        Args:\n            target: Target Windows/Samba host IP address or hostname (e.g., '192.168.1.10')\n            additional_args: Additional enum4linux arguments - use '-a' for all enumeration, '-U' for users only, or '-S' for shares only (default: '-a')\n\n        Returns:\n            Enumerated users, shares, groups, password policies, and system information\n        "
+    },
+    {
+      "name": "server_health",
+      "description": "\n        Check the health status and tool availability of the Kali API server.\n\n        Returns:\n            Server status, available security tools, and system health information\n        "
+    },
+    {
+      "name": "execute_command",
+      "description": "\n        Execute an arbitrary shell command on the Kali Linux server. WARNING: Unrestricted command execution - use with extreme caution.\n\n        Args:\n            command: Shell command to execute on Kali server (e.g., 'whoami' or 'ls -la /tmp'). WARNING: Can execute any command with server permissions.\n\n        Returns:\n            Command output (stdout/stderr), exit code, and execution status\n        "
+    },
+    {
+      "name": "create_analysis_session",
+      "description": "\n        Create a new analysis session for multi-step binary analysis or exploitation. Sessions maintain workspace, context, and history.\n\n        Args:\n            user_id: Identifier for the session owner (default: 'mcp_client')\n\n        Returns:\n            Session ID and workspace path for file operations\n        "
+    },
+    {
+      "name": "save_analysis_result",
+      "description": "\n        Save analysis results to session context for later retrieval. Use this to persist findings across multiple analysis steps.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            key: Context key (e.g., 'protections', 'gadgets', 'exploit_script')\n            value: Value to store (can be string, JSON, or any serializable data)\n\n        Returns:\n            Success status\n        "
+    },
+    {
+      "name": "load_analysis_results",
+      "description": "\n        Load all analysis results saved in the session context.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n\n        Returns:\n            All saved context data including workspace path and creation time\n        "
+    },
+    {
+      "name": "upload_binary",
+      "description": "\n        Upload a binary file to the session workspace for analysis. File content must be base64 encoded.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            filename: Name of the file to create (e.g., 'challenge.bin')\n            content_base64: Base64 encoded file content\n            executable: Set executable permission on the file (default: True)\n\n        Returns:\n            File path, size, and upload status\n        "
+    },
+    {
+      "name": "list_session_files",
+      "description": "\n        List all files in the session workspace.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n\n        Returns:\n            List of files with name, size, permissions, and modification time\n        "
+    },
+    {
+      "name": "start_interactive_shell",
+      "description": "\n        Start an interactive shell session for bidirectional communication (e.g., nc, ssh, or running exploits). WARNING: Creates persistent connection.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            command: Command to execute interactively (e.g., 'nc 127.0.0.1 9000' or 'python3 exploit.py')\n\n        Returns:\n            Interactive session ID for sending input and reading output\n        "
+    },
+    {
+      "name": "send_to_shell",
+      "description": "\n        Send input to an interactive shell session. Use this to interact with running programs.\n\n        Args:\n            interactive_id: Interactive session ID from start_interactive_shell()\n            text: Text to send (include '\n' for newline if needed)\n\n        Returns:\n            Success status\n        "
+    },
+    {
+      "name": "read_shell_output",
+      "description": "\n        Read accumulated output from an interactive shell session. Output buffer is cleared after reading.\n\n        Args:\n            interactive_id: Interactive session ID from start_interactive_shell()\n\n        Returns:\n            Shell output and process alive status\n        "
+    },
+    {
+      "name": "close_shell",
+      "description": "\n        Close an interactive shell session and free resources.\n\n        Args:\n            interactive_id: Interactive session ID from start_interactive_shell()\n\n        Returns:\n            Success status\n        "
+    },
+    {
+      "name": "checksec_binary",
+      "description": "\n        Analyze binary security protections (RELRO, Stack Canary, NX, PIE, Symbols). Essential first step for pwnable challenges.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n\n        Returns:\n            Protection mechanisms enabled/disabled with parsed boolean values\n        "
+    },
+    {
+      "name": "find_rop_gadgets",
+      "description": "\n        Search for ROP gadgets in binary using ROPgadget. Use this to build ROP chains for NX bypass.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            search_string: Optional search filter (e.g., 'pop rdi' or 'syscall')\n\n        Returns:\n            List of gadget addresses and instructions\n        "
+    },
+    {
+      "name": "analyze_with_radare2",
+      "description": "\n        Analyze binary with radare2. Default commands: analyze all, disassemble main.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            commands: List of r2 commands (default: ['aaa', 'pdf @ main']). Common commands: 'afl' (list functions), 'iz' (strings), 'pdf @ func' (disassemble)\n\n        Returns:\n            Radare2 analysis output\n        "
+    },
+    {
+      "name": "disassemble_binary",
+      "description": "\n        Disassemble binary with objdump. Modes: disassemble (code), headers (sections), symbols (functions/variables), all (everything).\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            mode: Analysis mode - 'disassemble', 'headers', 'symbols', or 'all'\n\n        Returns:\n            Objdump output in Intel syntax\n        "
+    },
+    {
+      "name": "trace_syscalls",
+      "description": "\n        Trace system calls with strace. Useful for understanding binary behavior and finding vulnerabilities.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            arguments: Command line arguments to pass to binary\n\n        Returns:\n            System call trace output\n        "
+    },
+    {
+      "name": "trace_library_calls",
+      "description": "\n        Trace library calls with ltrace. Reveals functions like strcpy, malloc, printf being called.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            arguments: Command line arguments to pass to binary\n\n        Returns:\n            Library call trace output\n        "
+    },
+    {
+      "name": "extract_strings",
+      "description": "\n        Extract printable strings from binary. Look for flags, passwords, or interesting data.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n            min_length: Minimum string length to extract (default: 4)\n\n        Returns:\n            Extracted strings\n        "
+    },
+    {
+      "name": "run_pwntools_exploit",
+      "description": "\n        Execute a pwntools exploit script. Script should use 'from pwn import *' and can use process() or remote().\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            exploit_script: Complete Python exploit code using pwntools\n            script_name: Filename to save script as (default: 'exploit.py')\n\n        Returns:\n            Exploit execution output including any captured flags\n        "
+    },
+    {
+      "name": "auto_detect_vulnerabilities",
+      "description": "\n        AI-powered automatic vulnerability detection. Analyzes protections, dangerous functions, and infers potential exploits.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            binary_filename: Filename of binary in session workspace\n\n        Returns:\n            Comprehensive findings including protections, dangerous functions, interesting strings, and potential vulnerabilities with severity\n        "
+    },
+    {
+      "name": "hashcat_crack",
+      "description": "\n        Crack password hashes using hashcat GPU-accelerated cracking. Supports 300+ hash types.\n\n        Args:\n            hash_value: Single hash to crack (alternative to hash_file)\n            hash_file: Path to file containing hashes on Kali server\n            hash_type: Hash type mode - '0' for MD5, '100' for SHA1, '1000' for NTLM, '1400' for SHA256, '3200' for bcrypt (default: '0')\n            wordlist: Path to wordlist file (default: '/usr/share/wordlists/rockyou.txt')\n            attack_mode: Attack mode - '0' for straight, '1' for combination, '3' for brute-force (default: '0')\n            additional_args: Additional hashcat args like '--rules-file' or '--increment'\n\n        Returns:\n            Cracked passwords and cracking statistics\n        "
+    },
+    {
+      "name": "factordb_query",
+      "description": "\n        Query FactorDB for integer factorization. Essential for RSA attacks with weak primes.\n\n        Args:\n            number: Large integer to factor (RSA modulus N)\n\n        Returns:\n            Factorization results from FactorDB\n        "
+    },
+    {
+      "name": "rsa_attack",
+      "description": "\n        Perform RSA attacks using RsaCtfTool. Includes factorization, Wiener's attack, Hastad's attack, and more.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            n: RSA modulus (N)\n            e: Public exponent (e)\n            c: Ciphertext to decrypt\n            attack: Attack type - 'all', 'wiener', 'fermat', 'factordb', 'noveltyprimes' (default: 'all')\n\n        Returns:\n            Attack results including private key or plaintext if successful\n        "
+    },
+    {
+      "name": "sage_execute",
+      "description": "\n        Execute SageMath script for advanced cryptographic attacks (elliptic curves, lattices, number theory).\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            script: Complete SageMath script code\n            script_name: Filename to save script as (default: 'crypto_solve.sage')\n\n        Returns:\n            SageMath execution output including mathematical results\n        "
+    },
+    {
+      "name": "openssl_operation",
+      "description": "\n        Perform OpenSSL cryptographic operations (encryption, decryption, key generation, certificate parsing).\n\n        Args:\n            operation: OpenSSL operation - 'enc', 'dec', 'rsa', 'genrsa', 'x509', 'dgst', etc.\n            args: Operation arguments (e.g., '-aes-256-cbc -d -in cipher.txt -out plain.txt -k password')\n\n        Returns:\n            OpenSSL command output\n        "
+    },
+    {
+      "name": "volatility_analyze",
+      "description": "\n        Analyze memory dumps with Volatility 3 for malware analysis, incident response, and forensics.\n\n        Args:\n            dump_file: Path to memory dump file on Kali server\n            plugin: Volatility plugin - 'windows.info', 'windows.pslist', 'windows.netscan', 'windows.malfind', 'linux.bash', etc.\n            additional_args: Additional volatility args like '--pid 1234'\n\n        Returns:\n            Memory analysis results including processes, network connections, or malware artifacts\n        "
+    },
+    {
+      "name": "binwalk_analyze",
+      "description": "\n        Analyze firmware and binaries with binwalk to identify embedded files and filesystems.\n\n        Args:\n            file_path: Path to file on Kali server\n            extract: Extract found files (default: False)\n            session_id: Session ID for organizing extracted files (required if extract=True)\n\n        Returns:\n            Identified file signatures, offsets, and extracted file locations\n        "
+    },
+    {
+      "name": "steghide_extract",
+      "description": "\n        Extract hidden data from images/audio using steghide steganography tool.\n\n        Args:\n            cover_file: Path to cover file (JPG, BMP, WAV, AU) on Kali server\n            passphrase: Steganography passphrase (leave empty to try without passphrase)\n            output_file: Output filename for extracted data\n\n        Returns:\n            Extraction results and hidden file contents\n        "
+    },
+    {
+      "name": "foremost_carve",
+      "description": "\n        Carve files from disk images or corrupted data using foremost.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            file_path: Path to disk image or file on Kali server\n            types: File types to carve - 'jpg,png,pdf,doc,zip' or empty for all types\n\n        Returns:\n            Carved files location and recovery statistics\n        "
+    },
+    {
+      "name": "exiftool_analyze",
+      "description": "\n        Extract metadata from images, documents, and media files using exiftool.\n\n        Args:\n            file_path: Path to file on Kali server\n\n        Returns:\n            Complete metadata including GPS coordinates, camera info, creation dates, author info\n        "
+    },
+    {
+      "name": "tesseract_ocr",
+      "description": "\n        Perform OCR (Optical Character Recognition) on images using tesseract.\n\n        Args:\n            image_path: Path to image file on Kali server\n            lang: Language code - 'eng', 'fra', 'deu', 'jpn', 'kor', etc. (default: 'eng')\n\n        Returns:\n            Extracted text from image\n        "
+    },
+    {
+      "name": "aws_enumerate",
+      "description": "\n        Enumerate AWS resources using AWS CLI. Requires configured AWS credentials.\n\n        Args:\n            profile: AWS CLI profile name (default: 'default')\n            service: AWS service - 's3', 'ec2', 'iam', 'lambda', etc.\n            command: Command type - 'list' for listing resources\n\n        Returns:\n            Enumerated AWS resources (buckets, instances, users, etc.)\n        "
+    },
+    {
+      "name": "s3_bucket_scan",
+      "description": "\n        Scan S3 buckets for misconfigurations and public access.\n\n        Args:\n            bucket_name: Specific S3 bucket name to test\n            wordlist: Path to wordlist file for bucket name enumeration (alternative to bucket_name)\n\n        Returns:\n            S3 bucket accessibility and contents\n        "
+    },
+    {
+      "name": "cloud_metadata_query",
+      "description": "\n        Query cloud metadata service for credentials and instance information.\n\n        Args:\n            provider: Cloud provider - 'aws', 'gcp', or 'azure'\n            endpoint: Metadata endpoint path (e.g., 'iam/security-credentials/' for AWS)\n\n        Returns:\n            Cloud metadata including potential credentials and instance info\n        "
+    },
+    {
+      "name": "pacu_aws_exploit",
+      "description": "\n        Execute Pacu AWS exploitation framework modules. WARNING: Can modify AWS resources.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            module: Pacu module name (e.g., 'iam__enum_permissions', 's3__download_bucket')\n            pacu_session: Pacu session name (default: 'default')\n\n        Returns:\n            Pacu module execution results\n        "
+    },
+    {
+      "name": "slither_analyze",
+      "description": "\n        Analyze Solidity smart contracts with Slither static analysis tool. Detects vulnerabilities and code issues.\n\n        Args:\n            contract_path: Path to .sol contract file on Kali server\n            additional_args: Additional slither args like '--detect reentrancy' or '--exclude-informational'\n\n        Returns:\n            Smart contract vulnerabilities, detectors results, and security findings\n        "
+    },
+    {
+      "name": "mythril_analyze",
+      "description": "\n        Analyze smart contracts with Mythril symbolic execution engine. Finds complex vulnerabilities through symbolic analysis.\n\n        Args:\n            contract_path: Path to .sol contract file on Kali server\n            timeout: Analysis timeout in seconds (default: 300)\n            additional_args: Additional mythril args like '--max-depth 10'\n\n        Returns:\n            Detected vulnerabilities with severity levels and exploit scenarios\n        "
+    },
+    {
+      "name": "web3_interact",
+      "description": "\n        Interact with blockchain networks using web3.py. WARNING: Can execute transactions and spend gas.\n\n        Args:\n            session_id: Session ID from create_analysis_session()\n            script: Complete Python script using web3.py\n            script_name: Filename to save script as (default: 'web3_interact.py')\n\n        Returns:\n            Blockchain interaction results including transaction hashes and contract responses\n        "
+    },
+    {
+      "name": "solidity_compile",
+      "description": "\n        Compile Solidity smart contracts using solc compiler.\n\n        Args:\n            contract_path: Path to .sol contract file on Kali server\n            optimize: Enable optimizer for gas efficiency (default: False)\n            output_dir: Output directory for compiled artifacts (default: '/tmp/solc_output')\n\n        Returns:\n            Compiled contract bytecode and ABI\n        "
+    }
+  ]
+}

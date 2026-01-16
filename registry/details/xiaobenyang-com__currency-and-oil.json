@@ -1,0 +1,52 @@
+{
+  "id": "xiaobenyang-com/currency-and-oil",
+  "displayName": "currency-and-oil",
+  "description": "Track live USD/RUB and EUR/RUB exchange rates and Brent crude prices in USD and RUB. Calculate how many barrels you can purchase for any amount in RUB, USD, or EUR. Streamline budgeting, pricing, and trading decisions with quick, reliable figures.",
+  "createdAt": "2026-01-16T12:48:54.784Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/currency-and-oil"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_usd_rate",
+      "description": "Get current USD/RUB exchange rate from zenrus.ru"
+    },
+    {
+      "name": "get_eur_rate",
+      "description": "Get current EUR/RUB exchange rate from zenrus.ru"
+    },
+    {
+      "name": "get_brent_usd_rate",
+      "description": "Get current Brent crude oil price in USD per barrel from zenrus.ru"
+    },
+    {
+      "name": "get_brent_rub_rate",
+      "description": "Get current Brent crude oil price in RUB per barrel from zenrus.ru"
+    },
+    {
+      "name": "calculate_barrels_for_rub",
+      "description": "Calculate how many barrels of Brent crude oil can be purchased for a given amount in Russian Rubles"
+    },
+    {
+      "name": "calculate_barrels_for_usd",
+      "description": "Calculate how many barrels of Brent crude oil can be purchased for a given amount in US Dollars"
+    },
+    {
+      "name": "calculate_barrels_for_eur",
+      "description": "Calculate how many barrels of Brent crude oil can be purchased for a given amount in Euros"
+    }
+  ]
+}

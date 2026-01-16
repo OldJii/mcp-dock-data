@@ -2,7 +2,7 @@
   "id": "@nimish/pricefetch",
   "displayName": "Crypto Price Quotes | By Onramp.Money",
   "description": "Get live crypto prices from Onramp.money and instantly see how much you can buy with your local currency. Select your country or currency to receive accurate buy quotes across supported networks. Compare options to plan purchases in 60+ countries and more.",
-  "createdAt": "2026-01-16T07:31:22.040Z",
+  "createdAt": "2026-01-16T12:51:21.956Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nimish/pricefetch"

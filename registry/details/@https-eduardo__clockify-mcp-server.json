@@ -2,7 +2,7 @@
   "id": "@https-eduardo/clockify-mcp-server",
   "displayName": "Clockify Time Entry Manager",
   "description": "Manage your Clockify time entries effortlessly by sending prompts to an LLM. Add, view, and control your time tracking directly through AI-powered interactions. Simplify your time management workflow with seamless integration to Clockify.",
-  "createdAt": "2026-01-16T07:24:52.167Z",
+  "createdAt": "2026-01-16T12:42:11.511Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@https-eduardo/clockify-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@huangfeng19820712/mcp-mysql-server",
   "displayName": "MySQL Database Server",
   "description": "Enable AI models to interact with MySQL databases through a standardized interface. Perform database operations such as querying, executing statements, listing tables, and describing table structures securely and efficiently. Simplify database management with automatic connection handling and prepared statement support.",
-  "createdAt": "2026-01-16T07:25:51.573Z",
+  "createdAt": "2026-01-16T12:43:27.023Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@huangfeng19820712/mcp-mysql-server"

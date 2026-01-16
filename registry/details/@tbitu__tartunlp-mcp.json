@@ -2,7 +2,7 @@
   "id": "@tbitu/tartunlp-mcp",
   "displayName": "TartuNLP Translate",
   "description": "Translate text across supported language pairs, including Estonian, English, and Russian. Discover available languages and pairs on demand. Streamline multilingual workflows with straightforward translation.",
-  "createdAt": "2026-01-16T07:20:07.558Z",
+  "createdAt": "2026-01-16T12:35:26.427Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tbitu/tartunlp-mcp"

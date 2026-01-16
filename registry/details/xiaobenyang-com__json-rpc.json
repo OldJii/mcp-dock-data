@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/json-rpc",
   "displayName": "json-rpc",
   "description": "Discover available methods on any JSON-RPC endpoint. Invoke methods with custom parameters to test and automate workflows. Validate integrations faster by exploring, calling, and iterating in one place.",
-  "createdAt": "2026-01-16T07:29:00.431Z",
+  "createdAt": "2026-01-16T12:47:54.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/json-rpc"

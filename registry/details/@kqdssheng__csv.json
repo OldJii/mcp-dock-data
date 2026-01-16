@@ -1,0 +1,12 @@
+{
+  "id": "@kqdssheng/csv",
+  "displayName": "csv",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:14.542Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kqdssheng/csv"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "@mefta.sadat2/pcx",
+  "displayName": "pcx",
+  "description": "Search Loblaw’s grocery catalog to quickly find products. Run multiple keyword queries in parallel to compare options efficiently. Embed a product carousel to showcase results in your app.",
+  "createdAt": "2026-01-16T12:46:21.641Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mefta.sadat2/pcx"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "find_products_single",
+      "description": "Search the product catalog to find grocery products."
+    },
+    {
+      "name": "find_products_multiple",
+      "description": "Search the product catalog for multiple keywords in parallel. Returns results for each search term."
+    }
+  ]
+}

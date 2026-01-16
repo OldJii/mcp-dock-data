@@ -1,0 +1,12 @@
+{
+  "id": "@kakel/lemonado-mcp",
+  "displayName": "lemonado-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:35.308Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kakel/lemonado-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

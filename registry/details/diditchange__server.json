@@ -1,0 +1,12 @@
+{
+  "id": "diditchange/server",
+  "displayName": "server",
+  "description": "",
+  "createdAt": "2026-01-16T13:10:04.428Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/diditchange/server"
+  },
+  "connection": null,
+  "capabilities": []
+}

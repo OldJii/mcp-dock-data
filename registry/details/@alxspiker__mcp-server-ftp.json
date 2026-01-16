@@ -1,0 +1,77 @@
+{
+  "id": "@alxspiker/mcp-server-ftp",
+  "displayName": "FTP Access Server",
+  "description": "Interact with FTP servers seamlessly. List directories, upload and download files, and manage your FTP resources effortlessly using natural language commands.",
+  "createdAt": "2026-01-16T12:41:26.909Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alxspiker/mcp-server-ftp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "ftpHost",
+        "ftpPort",
+        "ftpUser",
+        "ftpPassword",
+        "ftpSecure"
+      ],
+      "properties": {
+        "ftpHost": {
+          "type": "string",
+          "description": "FTP server hostname or IP address",
+          "default": "localhost"
+        },
+        "ftpPort": {
+          "type": "number",
+          "description": "FTP server port",
+          "default": 21
+        },
+        "ftpUser": {
+          "type": "string",
+          "description": "FTP username",
+          "default": "anonymous"
+        },
+        "ftpSecure": {
+          "type": "boolean",
+          "description": "Use secure FTP (FTPS)",
+          "default": false
+        },
+        "ftpPassword": {
+          "type": "string",
+          "description": "FTP password",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-directory",
+      "description": "List contents of an FTP directory"
+    },
+    {
+      "name": "download-file",
+      "description": "Download a file from the FTP server"
+    },
+    {
+      "name": "upload-file",
+      "description": "Upload a file to the FTP server"
+    },
+    {
+      "name": "create-directory",
+      "description": "Create a new directory on the FTP server"
+    },
+    {
+      "name": "delete-file",
+      "description": "Delete a file from the FTP server"
+    },
+    {
+      "name": "delete-directory",
+      "description": "Delete a directory from the FTP server"
+    }
+  ]
+}

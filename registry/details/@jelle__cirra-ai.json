@@ -1,0 +1,277 @@
+{
+  "id": "@jelle/cirra-ai",
+  "displayName": "Cirra AI Salesforce Admin",
+  "description": "The Cirra AI MCP server provides comprehensive Salesforce administration and data management capabilities. \n\nThis server allows you to configure connections with multiple Salesforce organizations via OAuth , organize them by teams, and set access controls.\n \nThe robust set of tools covers all major Salesforce APIs -- both for data and metadata, and supports use cases like:\n✅ Documenting orgs and cleaning up technical debt\n✅ Creating custom objects, fields, and page layouts\n✅ Provisioning users, assigning permission sets and managing queues and groups\n✅ Building or updating flows\n\nAnd much more...\n\n",
+  "createdAt": "2026-01-16T12:41:05.540Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jelle/cirra-ai"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "logout",
+      "description": "Logout from Cirra AI MCP server"
+    },
+    {
+      "name": "cirra_ai_init",
+      "description": "IMPORTANT: call `cirra_ai_init` before calling any other tools of this MCP server or when you don't know the answer to a request which relates to Cirra AI or Salesforce.\nThis tool will return the following info:\n- Important instructions\n- System context\n- User info\n- User subscription details\n- Cirra AI contact & support information\nYou MUST carefully read the instructions returned from this tool call before proceeding"
+    },
+    {
+      "name": "link_build",
+      "description": "Build Salesforce links for setup pages. Always use this tool when user requests a setup page link"
+    },
+    {
+      "name": "sf_org_describe",
+      "description": "Describe the current connected Salesforce organization"
+    },
+    {
+      "name": "sf_orgs_list",
+      "description": "List all the Salesforce organizations that the current user has access to"
+    },
+    {
+      "name": "sf_org_select",
+      "description": "Select a Salesforce organization to use for the current session. (aka: switch organization, change organization)"
+    },
+    {
+      "name": "sf_org_add",
+      "description": "Add a Salesforce organization to the current session. (Also referred to as: connect new organization, authenticate new organization)"
+    },
+    {
+      "name": "sf_org_reauthenticate",
+      "description": "Reauthorize a connected Salesforce organization. (Also referred to as: refresh organization, reauthenticate organization)"
+    },
+    {
+      "name": "sf_org_remove",
+      "description": "Remove a Salesforce organization from the current session"
+    },
+    {
+      "name": "sobjects_list",
+      "description": "Lists all the available sObject types and provides some of their key properties including ID, name, label and type. To get more details about an sObject, use `sobject_describe`"
+    },
+    {
+      "name": "sobject_describe",
+      "description": "Return basic metadata properties for the specified sObject, as well as a list of fields, relationships and record types."
+    },
+    {
+      "name": "sobject_update",
+      "description": "Update properties of a custom object in Salesforce"
+    },
+    {
+      "name": "sobject_create",
+      "description": "Create a new custom Salesforce object in Salesforce"
+    },
+    {
+      "name": "sobject_relations_list",
+      "description": "Return full metadata properties for all the child relations of a Salesforce object, including API name, label and target type"
+    },
+    {
+      "name": "sobject_relation_describe",
+      "description": "Completely describe the metadata for an sObject child relationship in Salesforce"
+    },
+    {
+      "name": "sobject_fields_list",
+      "description": "Lists all the fields of the specified sObject and provides some of their key properties including ID, name, label and type. To get more details about the field, use sobject_field_describe"
+    },
+    {
+      "name": "sobject_field_describe",
+      "description": "Return all metadata properties for a field on an sObject in Salesforce"
+    },
+    {
+      "name": "sobject_field_create",
+      "description": "Create a new custom field for an sObject in Salesforce"
+    },
+    {
+      "name": "sobject_field_update",
+      "description": "Update properties of a custom sObject field (standard or custom) in Salesforce, including local picklist values"
+    },
+    {
+      "name": "permission_set_describe",
+      "description": "Return complete metadata for a permission set in Salesforce"
+    },
+    {
+      "name": "permission_set_create",
+      "description": "Create a new permission set in Salesforce"
+    },
+    {
+      "name": "permission_set_update",
+      "description": "Update the properties or contents of a permission set in Salesforce, including read and edit access to objects and fields"
+    },
+    {
+      "name": "permission_set_assignments_add",
+      "description": "Add permission set assignments to users in Salesforce"
+    },
+    {
+      "name": "permission_set_assignments_remove",
+      "description": "Remove permission set assignments from users in Salesforce"
+    },
+    {
+      "name": "permission_set_assignments_list",
+      "description": "Get permission set assignments for the specified user(s) and/or permission set(s)"
+    },
+    {
+      "name": "group_describe",
+      "description": "Return full metadata for a public group, queue or role in Salesforce"
+    },
+    {
+      "name": "group_create",
+      "description": "Create a new public group, queue or role in Salesforce"
+    },
+    {
+      "name": "group_update",
+      "description": "Update a public group or queue in Salesforce"
+    },
+    {
+      "name": "group_members_add",
+      "description": "Add users to one or more public groups or queues in Salesforce"
+    },
+    {
+      "name": "group_members_remove",
+      "description": "Remove users from one or more public groups or queues in Salesforce"
+    },
+    {
+      "name": "group_members_list",
+      "description": "Get group memberships for public groups, queues or roles and/or specified users. Both groups and users are optional, but at least one must be provided."
+    },
+    {
+      "name": "value_set_describe",
+      "description": "Return values of a standard or global value set in Salesforce"
+    },
+    {
+      "name": "value_set_create",
+      "description": "Create a new global value set in Salesforce"
+    },
+    {
+      "name": "value_set_update",
+      "description": "Update the values in a standard or global value set in Salesforce"
+    },
+    {
+      "name": "user_describe",
+      "description": "Return complete metadata for a Salesforce user"
+    },
+    {
+      "name": "user_create",
+      "description": "Create a new Salesforce user. You can clone an existing user by providing the `template` parameter, or create a new user from scratch by providing the `profile` and other parameters"
+    },
+    {
+      "name": "user_update",
+      "description": "Perform an update operation on a Salesforce user"
+    },
+    {
+      "name": "profile_describe",
+      "description": "Return detailed metadata for a Salesforce Profile."
+    },
+    {
+      "name": "profile_create",
+      "description": "Create a new Salesforce profile from a JSON object"
+    },
+    {
+      "name": "profile_clone",
+      "description": "Clone an existing user profile in Salesforce"
+    },
+    {
+      "name": "profile_update",
+      "description": "Update a user profile in Salesforce"
+    },
+    {
+      "name": "page_layout_describe",
+      "description": "Return complete metadata for a given page layout in Salesforce"
+    },
+    {
+      "name": "page_layout_create",
+      "description": "Create a new page layout from scratch in Salesforce"
+    },
+    {
+      "name": "page_layout_update",
+      "description": "update the properties or contents of a page layout, include adding or removing fields in Salesforce"
+    },
+    {
+      "name": "page_layout_clone",
+      "description": "Create a new page layout by cloning an existing layout in Salesforce"
+    },
+    {
+      "name": "record_type_describe",
+      "description": "Describe an sObject record type in Salesforce"
+    },
+    {
+      "name": "record_type_create",
+      "description": "Create a new sObject record type in Salesforce"
+    },
+    {
+      "name": "record_type_update",
+      "description": "Update or activate/deactivate an sObject record type in Salesforce"
+    },
+    {
+      "name": "apex_class_create",
+      "description": "Create a Salesforce Apex class"
+    },
+    {
+      "name": "apex_class_update",
+      "description": "Update an existing Apex class in Salesforce"
+    },
+    {
+      "name": "apex_trigger_create",
+      "description": "Create a Salesforce Apex trigger"
+    },
+    {
+      "name": "apex_trigger_update",
+      "description": "Update an existing Apex trigger in Salesforce"
+    },
+    {
+      "name": "metadata_describe",
+      "description": "Return a list of all the Salesforce metadata types available in the org, along with a few global properties of the org"
+    },
+    {
+      "name": "metadata_list",
+      "description": "List Salesforce metadata elements of a specific type, optionally scoped by folder"
+    },
+    {
+      "name": "metadata_read",
+      "description": "Provide full details for one or more metadata elements of a specified type"
+    },
+    {
+      "name": "metadata_create",
+      "description": "Create one or more Salesforce metadata elements of a specified type"
+    },
+    {
+      "name": "metadata_update",
+      "description": "Update one or more Salesforce metadata elements of a specified type."
+    },
+    {
+      "name": "metadata_delete",
+      "description": "Delete one or more metadata elements of a specified type in Salesforce. Maximum number is 10 per batch - DO NOT EXCEED."
+    },
+    {
+      "name": "tooling_api_query",
+      "description": "Runs a Salesforce Tooling API query to return a list of metadata objects"
+    },
+    {
+      "name": "tooling_api_search",
+      "description": "Runs a Tooling API search to return a list of matching metadata objects in Salesforce"
+    },
+    {
+      "name": "tooling_api_dml",
+      "description": "Perform DML operations on Salesforce Tooling API records. This function is used to create, update, delete, and upsert tooling API records in Salesforce."
+    },
+    {
+      "name": "tooling_api_describe",
+      "description": "Return a list of all the objects available through the Salesforce Tooling API. Use `tooling_api_query` with `FieldDefinition` to get the available fields for an object."
+    },
+    {
+      "name": "sobject_dml",
+      "description": "Perform DML operations on Salesforce records. This function is used to create, update, delete, and upsert records in Salesforce."
+    },
+    {
+      "name": "soql_query",
+      "description": "Runs a Salesforce SOQL query to return a list of sObject records. Encrypted fields are masked in the response"
+    },
+    {
+      "name": "report_run",
+      "description": "Execute a Salesforce report and return its results"
+    }
+  ]
+}

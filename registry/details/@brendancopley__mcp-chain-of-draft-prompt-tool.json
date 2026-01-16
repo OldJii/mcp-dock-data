@@ -2,7 +2,7 @@
   "id": "@brendancopley/mcp-chain-of-draft-prompt-tool",
   "displayName": "MCP Chain of Draft (CoD) Prompt Tool",
   "description": "MCP Chain of Draft (CoD) Prompt Tool is a BYOLLM MCP (Model Context Protocol) tool that transforms your prompt using another LLM, applying CoD or CoT reasoning techniques, before delivering the final result. CoD is a novel paradigm that allows LLMs to generate minimalistic yet informative intermediate reasoning outputs while solving tasks, significantly reducing token usage while maintaining accuracy. For fast setup -> scroll ↓  click \"Connect\"! --------------------------------------------------------------------------------------------- DO NOT be daunted by all the configurations—you can simply scroll down and hit “Connect” to get started effortlessly.\n",
-  "createdAt": "2026-01-16T07:25:42.109Z",
+  "createdAt": "2026-01-16T12:43:14.996Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brendancopley/mcp-chain-of-draft-prompt-tool"

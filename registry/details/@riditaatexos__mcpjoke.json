@@ -2,7 +2,7 @@
   "id": "@riditaatexos/mcpjoke",
   "displayName": "Jokes MCP Server",
   "description": "Provide a humor-focused agent that delivers concise, engaging jokes upon user request, adapting style to match user preferences. Ensure jokes are appropriate, witty, and avoid repetition or offensive content. Seamlessly integrate with Microsoft Copilot Studio and Visual Studio Code for real-time joke generation.",
-  "createdAt": "2026-01-16T07:20:35.886Z",
+  "createdAt": "2026-01-16T12:36:06.131Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@riditaatexos/mcpjoke"

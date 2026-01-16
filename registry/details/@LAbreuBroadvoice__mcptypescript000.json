@@ -2,7 +2,7 @@
   "id": "@LAbreuBroadvoice/mcptypescript000",
   "displayName": "Character Counter",
   "description": "Count occurrences of any character in your text to quickly gauge frequency. Toggle case sensitivity to refine results. Validate inputs, analyze patterns, and enforce formatting with precise counts.",
-  "createdAt": "2026-01-16T07:25:08.298Z",
+  "createdAt": "2026-01-16T12:42:33.807Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@LAbreuBroadvoice/mcptypescript000"

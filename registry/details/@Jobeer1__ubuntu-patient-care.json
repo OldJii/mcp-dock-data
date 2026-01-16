@@ -1,0 +1,12 @@
+{
+  "id": "@Jobeer1/ubuntu-patient-care",
+  "displayName": "ubuntu-patient-care MCP server",
+  "description": "## 🏥 Ubuntu Patient Care MCP Server: The Intelligent, Offline Authorization Gateway! 🇿🇦\n\nThis **Model Context Protocol (MCP)** server eliminates the **15-minute healthcare bottleneck** ⏰ by providing **instant, offline** medical scheme authorization in South Africa.\n\n---\n\n### 🛠️ Key MCP Tools\n\nOur server exposes three critical tools for seamless authorization:\n\n* `validate_medical_aid` 💳: **Instant** member and plan validation (works completely **offline**).\n* `estimate_patient_cost` 💰: Calculates the exact patient co-payment (**$ZAR$**) instantly and accurately.\n* `create_preauth_request` ✅: Validates and queues pre-authorization requests for an industry-leading **95% approval rate**!\n\n---\n\n### ⭐ Core Value Proposition\n\n* **SPEED:** **$30 \\text{x}$ faster** 🚀 than manual processes.\n* **RESILIENCE:** Works in **load shedding/remote areas** 💡 with full offline capability.\n* **IMPACT:** Ensures financial transparency for patients. This system is **Built for African reality.** 🌍",
+  "createdAt": "2026-01-16T12:55:07.472Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Jobeer1/ubuntu-patient-care"
+  },
+  "connection": null,
+  "capabilities": []
+}

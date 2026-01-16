@@ -2,7 +2,7 @@
   "id": "@RonsDad/mcp-browserbase",
   "displayName": "Browserbase Web Automation Server",
   "description": "Enable AI-powered web browser automation with natural language commands. Control cloud browsers to navigate, interact, extract data, and capture screenshots seamlessly. Manage multiple sessions with advanced stealth and proxy support for robust automation workflows.",
-  "createdAt": "2026-01-16T07:32:55.453Z",
+  "createdAt": "2026-01-16T12:53:33.797Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@RonsDad/mcp-browserbase"

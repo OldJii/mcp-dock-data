@@ -2,7 +2,7 @@
   "id": "@Leon-Algo/feishu_user_token_mcp",
   "displayName": "Feishu Tokens",
   "description": "Manage Feishu app and user access tokens with ease. Fetch valid app tokens and refresh user tokens automatically when needed. Streamline authentication for your Feishu integrations with clear expiry details.",
-  "createdAt": "2026-01-16T07:23:18.084Z",
+  "createdAt": "2026-01-16T12:40:00.442Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Leon-Algo/feishu_user_token_mcp"

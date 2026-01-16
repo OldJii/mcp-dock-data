@@ -1,0 +1,36 @@
+{
+  "id": "@henryhawke/wolfram-llm-mcp",
+  "displayName": "Wolfram Alpha LLM API",
+  "description": "Given LLM's struggle with accurate mathematics and truth having the power of Wolfram Alpha is a huge improvement. Wolfram Alpha's LLM API computational knowledge engine through natural language queries to perform mathematical calculations, scientific computing, geographic information retrieval, and data analysis. Query facts about history, art, astronomy, and more with ease. Handle ambiguous queries with assumption-based clarifications for precise results.",
+  "createdAt": "2026-01-16T12:41:33.568Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@henryhawke/wolfram-llm-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "wolframAlphaAppId"
+      ],
+      "properties": {
+        "wolframAlphaAppId": {
+          "type": "string",
+          "description": "Wolfram Alpha App ID"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "wolfram_query",
+      "description": "Query Wolfram Alpha for computational, mathematical, scientific, and factual information. Supports natural language queries about entities in chemistry, physics, geography, history, art, astronomy, mathematics, and more."
+    },
+    {
+      "name": "wolfram_query_with_assumptions",
+      "description": "Query Wolfram Alpha with specific assumptions when the initial query returns multiple interpretations. Use this when you need to clarify ambiguous queries."
+    }
+  ]
+}

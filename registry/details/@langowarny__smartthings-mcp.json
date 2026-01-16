@@ -2,7 +2,7 @@
   "id": "@langowarny/smartthings-mcp",
   "displayName": "SmartThings MCP",
   "description": "Control SmartThings devices and scenes across your locations. Get live status and history, and send commands instantly. Automate routines by managing rooms, rules, schedules, and event subscriptions with real-time updates.",
-  "createdAt": "2026-01-16T07:29:41.566Z",
+  "createdAt": "2026-01-16T12:48:53.488Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@langowarny/smartthings-mcp"

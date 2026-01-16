@@ -2,7 +2,7 @@
   "id": "@pollot-pierre-10antz/mcp_test",
   "displayName": "MCP Test Server",
   "description": "Provide a test implementation of the Model Context Protocol server to facilitate development and integration. Enable clients to interact with tools, resources, and prompts through a standardized JSON-RPC interface. Simplify testing and prototyping of MCP features in a controlled environment.",
-  "createdAt": "2026-01-16T07:30:27.905Z",
+  "createdAt": "2026-01-16T12:50:00.906Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pollot-pierre-10antz/mcp_test"

@@ -2,7 +2,7 @@
   "id": "investbuddy-mcp/investbuddy-mcp-server",
   "displayName": "InvestBuddy.ai (79% Accuracy Stock AI)",
   "description": "Professional-grade stock market analysis and predictions powered by AI, accessible directly through Claude Desktop.\n\n**Key Features:**\n• 10-day price predictions - 79.86% directional accuracy (validated on 12,901 predictions)\n• Market regime detection - Bull/bear/sideways classification\n• AI-powered stock discovery - Find undervalued opportunities\n• Portfolio optimization - RL-based rebalancing\n• Batch predictions - Analyze 50 stocks at once\n\n**What You Get:**\n- Confidence scores for every prediction\n- Expected price ranges (high/low targets)\n- Risk assessments (volatility, correlation)\n- Statistical validation (Sharpe Ratio 2.34, p < 0.000001)\n- Full transparency: investbuddy.ai/transparency\n\n**5 MCP Tools:**\n1. get_stock_prediction - 10-day forecasts\n2. get_market_regime - Market condition detection\n3. discover_stocks - AI screening\n4. analyze_portfolio - Portfolio optimization\n5. batch_predict - Multiple tickers at once\n\n**Pricing:**\n• Free: 5 MCP calls/day\n• Pro: $19/mo Holiday Beta (normally $39/mo)\n• 7-day free trial, no credit card required\n\n**Tech:**\nv20251130_correlation ensemble (LSTM + RL + Transformers) validated on 30 S&P 100 stocks over 2 years (2023-2025).\n\n**Perfect for:**\nDay traders, financial analysts, long-term investors, and anyone wanting data-driven stock insights without leaving Claude.\n\n**Setup:** 60 seconds via npx. Full documentation at investbuddy.ai/mcp",
-  "createdAt": "2026-01-16T07:35:47.756Z",
+  "createdAt": "2026-01-16T12:57:29.312Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/investbuddy-mcp/investbuddy-mcp-server"

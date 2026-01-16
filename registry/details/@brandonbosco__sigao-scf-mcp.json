@@ -2,7 +2,7 @@
   "id": "@brandonbosco/sigao-scf-mcp",
   "displayName": "See Click Fix MCP Server",
   "description": "Provides access to Civic Plus - See Click Fix,  allowing you to interact with your data via an LLM. \n\nDeveloped and maintained by Sigao. ",
-  "createdAt": "2026-01-16T07:24:58.532Z",
+  "createdAt": "2026-01-16T12:42:20.217Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brandonbosco/sigao-scf-mcp"

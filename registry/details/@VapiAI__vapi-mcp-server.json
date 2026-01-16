@@ -2,7 +2,7 @@
   "id": "@VapiAI/vapi-mcp-server",
   "displayName": "Vapi MCP Server",
   "description": "Integrate your applications with Vapi APIs through seamless function calling. Enable scheduling and managing calls, assistants, and phone numbers directly from your MCP-enabled environment. Access Vapi's capabilities locally or remotely with ease and security.",
-  "createdAt": "2026-01-16T07:28:09.384Z",
+  "createdAt": "2026-01-16T12:46:42.232Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@VapiAI/vapi-mcp-server"

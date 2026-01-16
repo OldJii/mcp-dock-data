@@ -2,7 +2,7 @@
   "id": "@itsanishjain/alchemy-sdk-mcp",
   "displayName": "Alchemy Plugin",
   "description": "Integrate blockchain and NFT operations seamlessly. Retrieve NFTs, their metadata, and the latest block number with ease. Enhance your applications with powerful blockchain capabilities using the Alchemy SDK.",
-  "createdAt": "2026-01-16T07:32:28.537Z",
+  "createdAt": "2026-01-16T12:52:56.776Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@itsanishjain/alchemy-sdk-mcp"

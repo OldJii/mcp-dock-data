@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/mcp-12306",
   "displayName": "mcp-12306",
   "description": "Search real-time 12306 ticket availability for direct and transfer journeys. Look up city and station codes and view detailed stop schedules for specific trains. Interpret relative dates in China Standard Time to ensure accurate results.",
-  "createdAt": "2026-01-16T07:25:39.427Z",
+  "createdAt": "2026-01-16T12:43:11.674Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/mcp-12306"

@@ -1,0 +1,386 @@
+{
+  "id": "@karayaman/lichess-mcp",
+  "displayName": "Lichess Integration",
+  "description": "Interact with the Lichess chess platform using natural language. Manage your account, play games, analyze positions, and join tournaments effortlessly. Enhance your chess experience with seamless communication through Claude Desktop.",
+  "createdAt": "2026-01-16T12:53:18.782Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@karayaman/lichess-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "lichessToken": {
+          "type": "string",
+          "description": "Lichess API token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "set_token",
+      "description": "Set your Lichess API token"
+    },
+    {
+      "name": "get_my_profile",
+      "description": "Get your Lichess profile information"
+    },
+    {
+      "name": "get_user_profile",
+      "description": "Get a user's Lichess profile information"
+    },
+    {
+      "name": "get_my_email",
+      "description": "Get your email address"
+    },
+    {
+      "name": "get_kid_mode",
+      "description": "Get kid mode status"
+    },
+    {
+      "name": "set_kid_mode",
+      "description": "Set kid mode status"
+    },
+    {
+      "name": "create_challenge",
+      "description": "Create a new challenge"
+    },
+    {
+      "name": "make_move",
+      "description": "Make a move in an ongoing game"
+    },
+    {
+      "name": "get_preferences",
+      "description": "Get your preferences"
+    },
+    {
+      "name": "get_timeline",
+      "description": "Get your timeline"
+    },
+    {
+      "name": "test_tokens",
+      "description": "Test multiple OAuth tokens"
+    },
+    {
+      "name": "revoke_token",
+      "description": "Revoke the current access token"
+    },
+    {
+      "name": "upgrade_to_bot",
+      "description": "Upgrade to Bot account. WARNING: This is irreversible and the account must not have played any games."
+    },
+    {
+      "name": "add_user_note",
+      "description": "Add a private note about a user"
+    },
+    {
+      "name": "send_message",
+      "description": "Send a private message to another player"
+    },
+    {
+      "name": "get_following",
+      "description": "Get users followed by the logged in user"
+    },
+    {
+      "name": "follow_user",
+      "description": "Follow a player"
+    },
+    {
+      "name": "unfollow_user",
+      "description": "Unfollow a player"
+    },
+    {
+      "name": "block_user",
+      "description": "Block a player"
+    },
+    {
+      "name": "get_users_status",
+      "description": "Get real-time users status"
+    },
+    {
+      "name": "get_all_top_10",
+      "description": "Get the top 10 players for each speed and variant"
+    },
+    {
+      "name": "get_leaderboard",
+      "description": "Get the leaderboard for a single speed or variant"
+    },
+    {
+      "name": "get_user_public_data",
+      "description": "Get public data of a user"
+    },
+    {
+      "name": "get_rating_history",
+      "description": "Get rating history of a user for all perf types"
+    },
+    {
+      "name": "get_user_performance",
+      "description": "Get performance statistics of a user"
+    },
+    {
+      "name": "get_user_activity",
+      "description": "Get activity feed of a user"
+    },
+    {
+      "name": "get_users_by_id",
+      "description": "Get multiple users by their IDs"
+    },
+    {
+      "name": "unblock_user",
+      "description": "Unblock a user"
+    },
+    {
+      "name": "export_game",
+      "description": "Export one game in PGN or JSON format"
+    },
+    {
+      "name": "export_ongoing_game",
+      "description": "Export ongoing game of a user"
+    },
+    {
+      "name": "export_user_games",
+      "description": "Export all games of a user"
+    },
+    {
+      "name": "export_games_by_ids",
+      "description": "Export multiple games by IDs"
+    },
+    {
+      "name": "get_tv_channels",
+      "description": "Get all TV channels and their current games"
+    },
+    {
+      "name": "get_tv_game",
+      "description": "Get current TV game in PGN format"
+    },
+    {
+      "name": "get_puzzle_activity",
+      "description": "Get your puzzle activity"
+    },
+    {
+      "name": "get_puzzle_dashboard",
+      "description": "Get your puzzle dashboard"
+    },
+    {
+      "name": "get_puzzle_race",
+      "description": "Get info about a puzzle race"
+    },
+    {
+      "name": "create_puzzle_race",
+      "description": "Create a puzzle race"
+    },
+    {
+      "name": "get_puzzle_storm_dashboard",
+      "description": "Get your puzzle storm dashboard"
+    },
+    {
+      "name": "get_team_info",
+      "description": "Get team information by ID"
+    },
+    {
+      "name": "get_team_members",
+      "description": "Get members of a team"
+    },
+    {
+      "name": "get_team_join_requests",
+      "description": "Get join requests for a team"
+    },
+    {
+      "name": "join_team",
+      "description": "Join a team"
+    },
+    {
+      "name": "leave_team",
+      "description": "Leave a team"
+    },
+    {
+      "name": "kick_user_from_team",
+      "description": "Kick a user from your team"
+    },
+    {
+      "name": "accept_join_request",
+      "description": "Accept a join request for your team"
+    },
+    {
+      "name": "decline_join_request",
+      "description": "Decline a join request for your team"
+    },
+    {
+      "name": "search_teams",
+      "description": "Search for teams"
+    },
+    {
+      "name": "make_board_move",
+      "description": "Make a move in a board game"
+    },
+    {
+      "name": "abort_board_game",
+      "description": "Abort a board game"
+    },
+    {
+      "name": "resign_board_game",
+      "description": "Resign a board game"
+    },
+    {
+      "name": "write_in_chat",
+      "description": "Write in the chat of a board game"
+    },
+    {
+      "name": "handle_draw_board_game",
+      "description": "Handle draw offers for a board game"
+    },
+    {
+      "name": "claim_victory",
+      "description": "Claim victory if opponent abandoned the game"
+    },
+    {
+      "name": "list_challenges",
+      "description": "List incoming and outgoing challenges"
+    },
+    {
+      "name": "create_challenge",
+      "description": "Challenge another player"
+    },
+    {
+      "name": "accept_challenge",
+      "description": "Accept an incoming challenge"
+    },
+    {
+      "name": "decline_challenge",
+      "description": "Decline an incoming challenge"
+    },
+    {
+      "name": "cancel_challenge",
+      "description": "Cancel an outgoing challenge"
+    },
+    {
+      "name": "get_arena_tournaments",
+      "description": "Get current tournaments"
+    },
+    {
+      "name": "create_arena",
+      "description": "Create a new arena tournament"
+    },
+    {
+      "name": "get_arena_info",
+      "description": "Get info about an arena tournament"
+    },
+    {
+      "name": "get_arena_games",
+      "description": "Get games of an arena tournament"
+    },
+    {
+      "name": "get_arena_results",
+      "description": "Get results of an arena tournament"
+    },
+    {
+      "name": "join_arena",
+      "description": "Join an arena tournament"
+    },
+    {
+      "name": "withdraw_from_arena",
+      "description": "Withdraw from an arena tournament"
+    },
+    {
+      "name": "get_team_battle_results",
+      "description": "Get results of a team battle tournament"
+    },
+    {
+      "name": "create_swiss",
+      "description": "Create a new Swiss tournament"
+    },
+    {
+      "name": "get_swiss_info",
+      "description": "Get info about a Swiss tournament"
+    },
+    {
+      "name": "get_swiss_games",
+      "description": "Get games of a Swiss tournament"
+    },
+    {
+      "name": "get_swiss_results",
+      "description": "Get results of a Swiss tournament"
+    },
+    {
+      "name": "join_swiss",
+      "description": "Join a Swiss tournament"
+    },
+    {
+      "name": "withdraw_from_swiss",
+      "description": "Withdraw from a Swiss tournament"
+    },
+    {
+      "name": "get_current_simuls",
+      "description": "Get recently started simuls"
+    },
+    {
+      "name": "create_simul",
+      "description": "Create a new simul"
+    },
+    {
+      "name": "join_simul",
+      "description": "Join a simul"
+    },
+    {
+      "name": "withdraw_from_simul",
+      "description": "Withdraw from a simul"
+    },
+    {
+      "name": "export_study_chapter",
+      "description": "Export one study chapter in PGN format"
+    },
+    {
+      "name": "export_all_study_chapters",
+      "description": "Export all chapters of a study in PGN format"
+    },
+    {
+      "name": "get_user_studies",
+      "description": "Get studies created by a user"
+    },
+    {
+      "name": "send_message",
+      "description": "Send a private message to another player"
+    },
+    {
+      "name": "get_thread",
+      "description": "Get a message thread"
+    },
+    {
+      "name": "get_official_broadcasts",
+      "description": "Get official broadcasts (TV shows)"
+    },
+    {
+      "name": "get_broadcast",
+      "description": "Get a broadcast by its ID"
+    },
+    {
+      "name": "get_broadcast_round",
+      "description": "Get one round of a broadcast"
+    },
+    {
+      "name": "push_broadcast_round_pgn",
+      "description": "Push PGN to a broadcast round"
+    },
+    {
+      "name": "get_cloud_eval",
+      "description": "Get cloud evaluation for a position"
+    },
+    {
+      "name": "get_fide_player",
+      "description": "Get FIDE player information"
+    },
+    {
+      "name": "search_fide_players",
+      "description": "Search FIDE players by name"
+    },
+    {
+      "name": "get_ongoing_games",
+      "description": "Get your ongoing games (real-time and correspondence)"
+    }
+  ]
+}

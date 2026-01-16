@@ -1,0 +1,32 @@
+{
+  "id": "@degenpilot404/yap_mcp",
+  "displayName": "YAPS Influence Score Server",
+  "description": "Provide tokenized attention scores and credibility metrics for X/Twitter accounts to enhance LLMs with influencer trust data. Compare influencer scores, access daily leaderboards, and benefit from built-in caching and rate limiting for efficient queries. Integrate seamlessly with LLMs to enrich conversations with social media influence insights.",
+  "createdAt": "2026-01-16T12:40:49.972Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@degenpilot404/yap_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_yaps_score",
+      "description": ""
+    },
+    {
+      "name": "compare_scores",
+      "description": ""
+    },
+    {
+      "name": "leaderboard_today",
+      "description": ""
+    }
+  ]
+}

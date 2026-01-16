@@ -2,7 +2,7 @@
   "id": "server-cmd",
   "displayName": "CMD Server",
   "description": "MCP server for executing CMD and SSH commands.",
-  "createdAt": "2026-01-16T07:25:52.118Z",
+  "createdAt": "2026-01-16T12:43:27.746Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/server-cmd"

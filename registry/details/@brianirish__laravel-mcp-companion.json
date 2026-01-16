@@ -2,7 +2,7 @@
   "id": "@brianirish/laravel-mcp-companion",
   "displayName": "laravel-mcp-companion",
   "description": "Search and navigate Laravel documentation across versions, services, and popular packages in one place. Get tailored package recommendations, integration guides, and compatibility insights for your use case. Stay up to date with continuously refreshed documentation.",
-  "createdAt": "2026-01-16T07:26:26.126Z",
+  "createdAt": "2026-01-16T12:44:16.975Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brianirish/laravel-mcp-companion"

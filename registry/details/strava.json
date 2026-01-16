@@ -1,0 +1,149 @@
+{
+  "id": "strava",
+  "displayName": "Strava",
+  "description": "Strava is a social fitness network and app designed for cyclists and runners.",
+  "createdAt": "2026-01-16T12:35:04.005Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/strava"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "STRAVA_CREATE_AN_ACTIVITY",
+      "description": "Creates a manual activity for an athlete, requires activity:write scope."
+    },
+    {
+      "name": "STRAVA_EXPLORE_SEGMENTS",
+      "description": "Returns the top 10 segments matching a specified query."
+    },
+    {
+      "name": "STRAVA_EXPORT_ROUTE_GPX",
+      "description": "Returns a GPX file of the route. Requires read_all scope for private routes."
+    },
+    {
+      "name": "STRAVA_EXPORT_ROUTE_TCX",
+      "description": "Returns a TCX file of the route. Requires read_all scope for private routes."
+    },
+    {
+      "name": "STRAVA_GET_ACTIVITY",
+      "description": "Returns the given activity that is owned by the authenticated athlete. Requires activity:read for Everyone and Followers activities. Requires activity:read_all for Only Me activities."
+    },
+    {
+      "name": "STRAVA_GET_ACTIVITY_STREAMS",
+      "description": "Returns the given activity's streams. Requires activity:read scope. Requires activity:read_all scope for Only Me activities."
+    },
+    {
+      "name": "STRAVA_GET_ACTIVITY_ZONES",
+      "description": "Summit Feature. Returns the zones of a given activity. Requires activity:read for Everyone and Followers activities. Requires activity:read_all for Only Me activities."
+    },
+    {
+      "name": "STRAVA_GET_ATHLETE_STATS",
+      "description": "Returns the activity stats of an athlete. Only includes data from activities set to Everyone visibilty."
+    },
+    {
+      "name": "STRAVA_GET_AUTHENTICATED_ATHLETE",
+      "description": "Returns the currently authenticated athlete. Tokens with profile:read_all scope will receive a detailed athlete representation; all others will receive a summary representation."
+    },
+    {
+      "name": "STRAVA_GET_CLUB",
+      "description": "Returns a given club using its identifier."
+    },
+    {
+      "name": "STRAVA_GET_EQUIPMENT",
+      "description": "Returns an equipment using its identifier."
+    },
+    {
+      "name": "STRAVA_GET_ROUTE",
+      "description": "Returns a route using its identifier. Requires read_all scope for private routes."
+    },
+    {
+      "name": "STRAVA_GET_ROUTE_STREAMS",
+      "description": "Returns the given route's streams. Requires read_all scope for private routes."
+    },
+    {
+      "name": "STRAVA_GET_SEGMENT",
+      "description": "Returns the specified segment. read_all scope required in order to retrieve athlete-specific segment information, or to retrieve private segments."
+    },
+    {
+      "name": "STRAVA_GET_SEGMENT_EFFORT",
+      "description": "Returns a segment effort from an activity that is owned by the authenticated athlete. Requires subscription."
+    },
+    {
+      "name": "STRAVA_GET_SEGMENT_EFFORT_STREAMS",
+      "description": "Returns a set of streams for a segment effort completed by the authenticated athlete. Requires read_all scope."
+    },
+    {
+      "name": "STRAVA_GET_SEGMENT_STREAMS",
+      "description": "Returns the given segment's streams. Requires read_all scope for private segments."
+    },
+    {
+      "name": "STRAVA_GET_UPLOAD",
+      "description": "Returns an upload for a given identifier. Requires activity:write scope."
+    },
+    {
+      "name": "STRAVA_GET_ZONES",
+      "description": "Returns the the authenticated athlete's heart rate and power zones. Requires profile:read_all."
+    },
+    {
+      "name": "STRAVA_LIST_ACTIVITY_COMMENTS",
+      "description": "Returns the comments on the given activity. Requires activity:read for Everyone and Followers activities. Requires activity:read_all for Only Me activities."
+    },
+    {
+      "name": "STRAVA_LIST_ACTIVITY_KUDOERS",
+      "description": "Returns the athletes who kudoed an activity identified by an identifier. Requires activity:read for Everyone and Followers activities. Requires activity:read_all for Only Me activities."
+    },
+    {
+      "name": "STRAVA_LIST_ACTIVITY_LAPS",
+      "description": "Returns the laps of an activity identified by an identifier. Requires activity:read for Everyone and Followers activities. Requires activity:read_all for Only Me activities."
+    },
+    {
+      "name": "STRAVA_LIST_ATHLETE_ACTIVITIES",
+      "description": "Returns the activities of an athlete for a specific identifier. Requires activity:read. Only Me activities will be filtered out unless requested by a token with activity:read_all."
+    },
+    {
+      "name": "STRAVA_LIST_ATHLETE_CLUBS",
+      "description": "Returns a list of the clubs whose membership includes the authenticated athlete."
+    },
+    {
+      "name": "STRAVA_LIST_ATHLETE_ROUTES",
+      "description": "Returns a list of the routes created by the authenticated athlete. Private routes are filtered out unless requested by a token with read_all scope."
+    },
+    {
+      "name": "STRAVA_LIST_CLUB_ACTIVITIES",
+      "description": "Retrieve recent activities from members of a specific club. The authenticated athlete must belong to the requested club in order to hit this endpoint. Pagination is supported. Athlete profile visibility is respected for all activities."
+    },
+    {
+      "name": "STRAVA_LIST_CLUB_ADMINISTRATORS",
+      "description": "Returns a list of the administrators of a given club."
+    },
+    {
+      "name": "STRAVA_LIST_CLUB_MEMBERS",
+      "description": "Returns a list of the athletes who are members of a given club."
+    },
+    {
+      "name": "STRAVA_LIST_SEGMENT_EFFORTS",
+      "description": "Returns a set of the authenticated athlete's segment efforts for a given segment. Requires subscription."
+    },
+    {
+      "name": "STRAVA_LIST_STARRED_SEGMENTS",
+      "description": "List of the authenticated athlete's starred segments. Private segments are filtered out unless requested by a token with read_all scope."
+    },
+    {
+      "name": "STRAVA_STAR_SEGMENT",
+      "description": "Stars/Unstars the given segment for the authenticated athlete. Requires profile:write scope."
+    },
+    {
+      "name": "STRAVA_UPDATE_ATHLETE",
+      "description": "Update the currently authenticated athlete. Requires profile:write scope."
+    },
+    {
+      "name": "STRAVA_UPLOAD_ACTIVITY",
+      "description": "Uploads a new data file to create an activity from. Requires activity:write scope."
+    }
+  ]
+}

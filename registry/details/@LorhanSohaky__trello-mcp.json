@@ -1,0 +1,55 @@
+{
+  "id": "@LorhanSohaky/trello-mcp",
+  "displayName": "Trello Integration Server",
+  "description": "Enable AI assistants to seamlessly retrieve detailed Trello card information using a standardized interface. Access card data by ID or public link with robust type validation and optional read-only mode for safe operations. Integrate Trello project management data into your AI workflows effortlessly.",
+  "createdAt": "2026-01-16T12:49:14.502Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LorhanSohaky/trello-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey",
+        "apiToken"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Trello API Key"
+        },
+        "apiToken": {
+          "type": "string",
+          "description": "Trello API Token"
+        },
+        "readOnly": {
+          "type": "boolean",
+          "description": "Enable read-only mode",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getCardById",
+      "description": "Get a Trello card by its ID"
+    },
+    {
+      "name": "getCardByLink",
+      "description": "Get a Trello card by its link"
+    }
+  ]
+}

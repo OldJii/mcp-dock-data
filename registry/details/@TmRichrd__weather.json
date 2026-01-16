@@ -2,7 +2,7 @@
   "id": "@TmRichrd/weather",
   "displayName": "Weather Server",
   "description": "Provide real-time weather information and forecasts through a standardized interface. Enable applications to query weather data seamlessly for various locations. Enhance user experience by integrating accurate and up-to-date meteorological data.",
-  "createdAt": "2026-01-16T07:29:08.409Z",
+  "createdAt": "2026-01-16T12:48:06.118Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@TmRichrd/weather"

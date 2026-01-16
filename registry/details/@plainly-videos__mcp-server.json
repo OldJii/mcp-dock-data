@@ -2,7 +2,7 @@
   "id": "@plainly-videos/mcp-server",
   "displayName": "Plainly Videos MCP Server (Adobe After Effects Automation)",
   "description": "MCP server for Plainly Videos that lets users browse and render Adobe After Effects projects directly from their favorite LLM clients. It brings video automation to After Effects, making it easy to trigger batch rendering, personalization, and localization while keeping full creative control. Render at scale through API or CSV, making high-volume video production faster and more accessible.",
-  "createdAt": "2026-01-16T07:32:23.439Z",
+  "createdAt": "2026-01-16T12:52:48.810Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@plainly-videos/mcp-server"

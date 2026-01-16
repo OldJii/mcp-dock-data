@@ -2,7 +2,7 @@
   "id": "@kirbah/mcp-youtube",
   "displayName": "YouTube Data Server",
   "description": "Provide token-optimized, structured YouTube data to enhance your LLM applications. Access efficient tools for video search, detailed metadata retrieval, transcript fetching, channel analysis, and trend discovery. Reduce token consumption and improve performance with AI-tailored data formats.",
-  "createdAt": "2026-01-16T07:24:19.507Z",
+  "createdAt": "2026-01-16T12:41:27.588Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kirbah/mcp-youtube"

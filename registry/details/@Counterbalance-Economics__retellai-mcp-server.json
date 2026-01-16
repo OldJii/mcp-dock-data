@@ -2,7 +2,7 @@
   "id": "@Counterbalance-Economics/retellai-mcp-server",
   "displayName": "Retell Voice",
   "description": "Manage calls, numbers, voices, and agents on Retell to build and run phone and web call experiences. Create, update, and launch calls directly from your workspace while keeping configurations in sync. Monitor activity and iterate quickly as your use cases evolve.",
-  "createdAt": "2026-01-16T07:24:35.983Z",
+  "createdAt": "2026-01-16T12:41:50.598Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Counterbalance-Economics/retellai-mcp-server"

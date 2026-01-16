@@ -1,0 +1,151 @@
+{
+  "id": "@IAmAlexander/readwise-mcp",
+  "displayName": "Readwise",
+  "description": "Manage your Readwise library by searching, retrieving, and organizing highlights, documents, and videos. Create, update, and delete highlights and documents, add notes, tag content, and track reading progress. Accelerate workflows with advanced search, bulk actions, and the ability to save new web content.",
+  "createdAt": "2026-01-16T12:40:20.525Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@IAmAlexander/readwise-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable verbose debug logging to troubleshoot issues",
+          "default": false
+        },
+        "readwiseApiKey": {
+          "type": "string",
+          "description": "Your Readwise API access token. Get it from https://readwise.io/access_token"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_highlights",
+      "description": "Retrieve highlights from your Readwise library"
+    },
+    {
+      "name": "get_books",
+      "description": "Get a list of books from Readwise"
+    },
+    {
+      "name": "get_documents",
+      "description": "Retrieve documents from your Readwise library"
+    },
+    {
+      "name": "search_highlights",
+      "description": "Search for highlights in your Readwise library"
+    },
+    {
+      "name": "get_tags",
+      "description": "Get a list of all tags from Readwise"
+    },
+    {
+      "name": "document_tags",
+      "description": "Get, update, add, or remove tags for a document in Readwise"
+    },
+    {
+      "name": "bulk_tags",
+      "description": "Add tags to multiple documents in Readwise"
+    },
+    {
+      "name": "get_reading_progress",
+      "description": "Get the reading progress of a document from your Readwise library"
+    },
+    {
+      "name": "update_reading_progress",
+      "description": "Update the reading progress of a document in your Readwise library"
+    },
+    {
+      "name": "get_reading_list",
+      "description": "Get a list of documents with their reading progress from your Readwise library"
+    },
+    {
+      "name": "create_highlight",
+      "description": "Create a new highlight in your Readwise library"
+    },
+    {
+      "name": "update_highlight",
+      "description": "Update an existing highlight in your Readwise library"
+    },
+    {
+      "name": "delete_highlight",
+      "description": "Delete a highlight from your Readwise library"
+    },
+    {
+      "name": "create_note",
+      "description": "Create a note on a highlight in your Readwise library"
+    },
+    {
+      "name": "advanced_search",
+      "description": "Search highlights with advanced filters and facets"
+    },
+    {
+      "name": "search_by_tag",
+      "description": "Search highlights by tags"
+    },
+    {
+      "name": "search_by_date",
+      "description": "Search highlights by date range"
+    },
+    {
+      "name": "get_videos",
+      "description": "Get videos from Readwise library"
+    },
+    {
+      "name": "get_video",
+      "description": "Get video details by document ID"
+    },
+    {
+      "name": "create_video_highlight",
+      "description": "Create a highlight on a video at a specific timestamp"
+    },
+    {
+      "name": "get_video_highlights",
+      "description": "Get all highlights from a specific video"
+    },
+    {
+      "name": "update_video_position",
+      "description": "Update the playback position of a video"
+    },
+    {
+      "name": "get_video_position",
+      "description": "Get the current playback position of a video"
+    },
+    {
+      "name": "save_document",
+      "description": "Save a new document (URL, article, or webpage) to your Readwise library"
+    },
+    {
+      "name": "update_document",
+      "description": "Update metadata for an existing document in your Readwise library"
+    },
+    {
+      "name": "delete_document",
+      "description": "Delete a document from your Readwise library (requires confirmation)"
+    },
+    {
+      "name": "get_recent_content",
+      "description": "Get the most recently added or updated content from your Readwise library"
+    },
+    {
+      "name": "bulk_save_documents",
+      "description": "Save multiple documents (URLs, articles, or webpages) to your Readwise library in bulk (requires confirmation)"
+    },
+    {
+      "name": "bulk_update_documents",
+      "description": "Update metadata for multiple documents in your Readwise library in bulk (requires confirmation)"
+    },
+    {
+      "name": "bulk_delete_documents",
+      "description": "Delete multiple documents from your Readwise library in bulk (requires confirmation)"
+    }
+  ]
+}

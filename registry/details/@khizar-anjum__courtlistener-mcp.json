@@ -2,7 +2,7 @@
   "id": "@khizar-anjum/courtlistener-mcp",
   "displayName": "CourtListener Case Law Explorer",
   "description": "Search and analyze U.S. case law across thousands of courts using CourtListener’s open database. Find precedents, read full opinions, validate citations, study judge patterns, and check procedural requirements and legal trends. Search federal dockets, track case status, and analyze case timelines and documents when available.",
-  "createdAt": "2026-01-16T07:23:43.506Z",
+  "createdAt": "2026-01-16T12:40:35.993Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@khizar-anjum/courtlistener-mcp"

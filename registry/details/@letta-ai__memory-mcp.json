@@ -2,7 +2,7 @@
   "id": "@letta-ai/memory-mcp",
   "displayName": "Memory MCP ",
   "description": "Add MemGPT-style tools to any agent with Letta's memory MCP. With this server, your agent will be able to remember you across sessions, and form personalized memories about you as well as the interactions you have. \n\nTo use this MCP server, you must provide a Letta API key as well as a unique `user_id` field (defaults to \"default_user_Id\") for associating memories with. \n\nThe server has two main types of memory: user memory, used to build a memory profile of the user over time, and a vector DB, used to store and search episodic memories. ",
-  "createdAt": "2026-01-16T07:22:40.423Z",
+  "createdAt": "2026-01-16T12:39:06.819Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@letta-ai/memory-mcp"

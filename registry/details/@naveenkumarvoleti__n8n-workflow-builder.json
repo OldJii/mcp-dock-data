@@ -1,0 +1,12 @@
+{
+  "id": "@naveenkumarvoleti/n8n-workflow-builder",
+  "displayName": "n8n-workflow-builder",
+  "description": "",
+  "createdAt": "2026-01-16T13:00:49.237Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@naveenkumarvoleti/n8n-workflow-builder"
+  },
+  "connection": null,
+  "capabilities": []
+}

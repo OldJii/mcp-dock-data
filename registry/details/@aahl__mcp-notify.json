@@ -1,0 +1,18 @@
+{
+  "id": "@aahl/mcp-notify",
+  "displayName": "Notify MCP Server",
+  "description": "MCP Server for notify to Weixin, Telegram, Bark",
+  "createdAt": "2026-01-16T12:42:01.288Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aahl/mcp-notify"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

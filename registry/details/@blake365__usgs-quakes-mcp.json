@@ -1,0 +1,12 @@
+{
+  "id": "@blake365/usgs-quakes-mcp",
+  "displayName": "usgs-quakes-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T12:58:15.893Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@blake365/usgs-quakes-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

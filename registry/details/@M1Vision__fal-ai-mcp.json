@@ -2,7 +2,7 @@
   "id": "@M1Vision/fal-ai-mcp",
   "displayName": "fal-ai-mcp",
   "description": "Explore and search fal models to find the right fit for your tasks. Generate content with any model and manage queued runs by checking status, fetching results, and cancelling when needed. Upload files and get shareable URLs for use in your runs.",
-  "createdAt": "2026-01-16T07:21:35.588Z",
+  "createdAt": "2026-01-16T12:37:31.792Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@M1Vision/fal-ai-mcp"

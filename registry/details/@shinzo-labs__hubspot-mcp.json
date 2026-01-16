@@ -2,7 +2,7 @@
   "id": "@shinzo-labs/hubspot-mcp",
   "displayName": "HubSpot MCP",
   "description": "Access and manage your CRM data seamlessly with 100+ tools in our HubSpot MCP implementation including manipulation of Contacts, Companies, and Associations.\n\nFollow the steps here to get a free Developer API Key (save as HUBSPOT_ACCESS_TOKEN): https://developers.hubspot.com/docs/guides/api/overview",
-  "createdAt": "2026-01-16T07:21:36.522Z",
+  "createdAt": "2026-01-16T12:37:33.145Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@shinzo-labs/hubspot-mcp"

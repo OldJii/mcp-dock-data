@@ -1,0 +1,23 @@
+{
+  "id": "@sinco-lab/mcp-youtube-transcript",
+  "displayName": "YouTube Transcript Server",
+  "description": "Retrieve transcripts and subtitles from YouTube videos effortlessly. Analyze content with support for multiple languages and detailed metadata, enhancing your video processing workflows.",
+  "createdAt": "2026-01-16T12:41:14.197Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sinco-lab/mcp-youtube-transcript"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_transcripts",
+      "description": "Extract and process transcripts from a YouTube video.\n\n**Parameters:**\n- `url` (string, required): YouTube video URL or ID.\n- `lang` (string, optional, default 'en'): Language code for transcripts (e.g. 'en', 'uk', 'ja', 'ru', 'zh').\n- `enableParagraphs` (boolean, optional, default false): Enable automatic paragraph breaks.\n\n**IMPORTANT:** If the user does *not* specify a language *code*, **DO NOT** include the `lang` parameter in the tool call. Do not guess the language or use parts of the user query as the language code."
+    }
+  ]
+}

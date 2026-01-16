@@ -1,0 +1,12 @@
+{
+  "id": "@Dipesh600/esewa-mcp-server",
+  "displayName": "esewa-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:09:37.418Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Dipesh600/esewa-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

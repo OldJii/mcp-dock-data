@@ -2,7 +2,7 @@
   "id": "@hwruchan/chanmcp",
   "displayName": "SMU Campus Hub",
   "description": "Find cafeteria menus, campus notices, exam info, and academic schedules for SMU. Search by date or keyword and filter meals by breakfast, lunch, or dinner. Add or delete schedule entries and get the current Korea time when needed.",
-  "createdAt": "2026-01-16T07:32:54.385Z",
+  "createdAt": "2026-01-16T12:53:32.496Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hwruchan/chanmcp"

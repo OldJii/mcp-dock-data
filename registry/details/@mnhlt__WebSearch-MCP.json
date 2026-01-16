@@ -2,7 +2,7 @@
   "id": "@mnhlt/WebSearch-MCP",
   "displayName": "WebSearch",
   "description": "Enable your AI assistants to perform real-time web searches and retrieve the latest information on any topic. Integrate seamlessly with the WebSearch Crawler API for efficient and accurate search results. Enhance your applications with up-to-date knowledge and insights from the web. This is self-hosted service, free\nYou will need to selfhost web api on local or vps. follow [guide here](https://github.com/mnhlt/WebSearch-MCP/blob/main/README.md)",
-  "createdAt": "2026-01-16T07:25:23.991Z",
+  "createdAt": "2026-01-16T12:42:53.174Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mnhlt/WebSearch-MCP"

@@ -1,0 +1,50 @@
+{
+  "id": "@cuongpo/sei-dex-mcp",
+  "displayName": "DragonSwap",
+  "description": "Swap tokens on Sei with instant quotes and streamlined execution. Explore available liquidity pools to find optimal trading opportunities. Wrap SEI and manage approvals to complete trades securely.",
+  "createdAt": "2026-01-16T12:39:32.732Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/sei-dex-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "privateKey": {
+          "type": "string",
+          "description": "Private key for signing transactions"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_pools",
+      "description": "List available liquidity pools on DragonSwap V1."
+    },
+    {
+      "name": "get_quote",
+      "description": "Get a quote for swapping tokens on DragonSwap V1."
+    },
+    {
+      "name": "execute_swap",
+      "description": "Execute a swap on DragonSwap V1."
+    },
+    {
+      "name": "wrap_sei",
+      "description": "Wrap native SEI into wSEI."
+    },
+    {
+      "name": "approve_wsei",
+      "description": "Approve the DragonSwap router to spend your wSEI."
+    }
+  ]
+}

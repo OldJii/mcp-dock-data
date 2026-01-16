@@ -2,7 +2,7 @@
   "id": "@turnono/datacommons-mcp-server",
   "displayName": "Data Commons",
   "description": "Discover statistical indicators and topics in Data Commons. Retrieve observations for specific variables and places to power analysis and visualization. Verify valid child place types to refine geographic queries.",
-  "createdAt": "2026-01-16T07:30:58.444Z",
+  "createdAt": "2026-01-16T12:50:47.320Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@turnono/datacommons-mcp-server"

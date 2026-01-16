@@ -2,7 +2,7 @@
   "id": "@Sufian73/smithery-deployment-test-ts",
   "displayName": "Random Recall",
   "description": "Generate random numbers and recall the last one to test stateful workflows. Accelerate demos and integration tests with simple randomness that persists between calls. Tailor behavior with basic configuration to fit your needs.",
-  "createdAt": "2026-01-16T07:31:56.460Z",
+  "createdAt": "2026-01-16T12:52:11.045Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Sufian73/smithery-deployment-test-ts"

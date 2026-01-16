@@ -1,0 +1,12 @@
+{
+  "id": "@kamath/zomato",
+  "displayName": "zomato",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:43.294Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/zomato"
+  },
+  "connection": null,
+  "capabilities": []
+}

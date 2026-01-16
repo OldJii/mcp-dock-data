@@ -2,7 +2,7 @@
   "id": "@SaptaDey/adaptive-graph-of-thoughts-mcp-server",
   "displayName": "Scientific Thinking  (Adaptive Graph of Thoughts)",
   "description": "Enable advanced scientific reasoning by leveraging graph structures and dynamic confidence scoring to process complex queries. Connect to external databases for real-time evidence gathering and integrate seamlessly with AI clients via the Model Context Protocol. Deploy easily with Docker and benefit from a modular, high-performance Python and FastAPI-based framework.",
-  "createdAt": "2026-01-16T07:31:15.131Z",
+  "createdAt": "2026-01-16T12:51:11.548Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SaptaDey/adaptive-graph-of-thoughts-mcp-server"

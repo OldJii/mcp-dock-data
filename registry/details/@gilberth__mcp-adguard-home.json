@@ -2,7 +2,7 @@
   "id": "@gilberth/mcp-adguard-home",
   "displayName": "AdGuard Home Server",
   "description": "Manage and query your AdGuard Home DNS records and filtering rules through AI agents. Simplify DNS management by integrating with AI workflows. Enable seamless control over your AdGuard Home instance via a standardized protocol.",
-  "createdAt": "2026-01-16T07:31:32.120Z",
+  "createdAt": "2026-01-16T12:51:36.432Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gilberth/mcp-adguard-home"

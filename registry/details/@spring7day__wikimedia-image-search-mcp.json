@@ -1,0 +1,12 @@
+{
+  "id": "@spring7day/wikimedia-image-search-mcp",
+  "displayName": "wikimedia-image-search-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:01.955Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@spring7day/wikimedia-image-search-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

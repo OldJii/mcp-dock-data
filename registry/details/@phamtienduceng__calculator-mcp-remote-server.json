@@ -2,7 +2,7 @@
   "id": "@phamtienduceng/calculator-mcp-remote-server",
   "displayName": "SSE Calculator Server",
   "description": "Provide real-time, stateful calculator operations with history tracking via Server-Sent Events. Enable seamless integration with AI assistants through the Model Context Protocol for dynamic calculation sessions. Access a web-based interface and manage multiple active sessions efficiently.",
-  "createdAt": "2026-01-16T07:32:11.595Z",
+  "createdAt": "2026-01-16T12:52:32.548Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@phamtienduceng/calculator-mcp-remote-server"

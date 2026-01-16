@@ -2,7 +2,7 @@
   "id": "@N3N-Seoul/n3n-milvus-mcp-server",
   "displayName": "Milvus Search",
   "description": "Index your documents in Milvus for fast semantic search. Retrieve the most relevant passages for RAG, Q&A, and summarization. List collections and inspect their details to manage your knowledge base.",
-  "createdAt": "2026-01-16T07:31:42.526Z",
+  "createdAt": "2026-01-16T12:51:50.784Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@N3N-Seoul/n3n-milvus-mcp-server"

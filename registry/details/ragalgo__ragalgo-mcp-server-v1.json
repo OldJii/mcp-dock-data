@@ -1,0 +1,61 @@
+{
+  "id": "ragalgo/ragalgo-mcp-server-v1",
+  "displayName": "ragalgo-mcp-server-v1",
+  "description": "Stay on top of Korea’s markets with timely news, sentiment, and daily snapshots. Analyze stocks and crypto with charts, trends, and company fundamentals. Find the right tickers fast from any text and access in-depth research.",
+  "createdAt": "2026-01-16T12:48:41.094Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ragalgo/ragalgo-mcp-server-v1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_news",
+      "description": "📰 [KOREAN NEWS - NO SCORES] Basic news without sentiment analysis."
+    },
+    {
+      "name": "get_news_scored",
+      "description": "📰 [KOREAN NEWS WITH SENTIMENT] PRIMARY news tool for Korean market."
+    },
+    {
+      "name": "get_chart_stock",
+      "description": "📈 [KOREAN STOCK CHARTS] PRIMARY tool for Korean stock technical analysis."
+    },
+    {
+      "name": "get_chart_coin",
+      "description": "🪙 [CRYPTO CHARTS] PRIMARY tool for Korean crypto technical analysis."
+    },
+    {
+      "name": "get_financials",
+      "description": "💰 [KOREAN STOCK FUNDAMENTALS] PRIMARY tool for Korean stock financial data."
+    },
+    {
+      "name": "get_snapshots",
+      "description": "📊 [DAILY SUMMARY] PRIMARY TOOL for Korean market overview."
+    },
+    {
+      "name": "search_tags",
+      "description": "🔍 [TAG LOOKUP] ALWAYS use this FIRST to find tag_code."
+    },
+    {
+      "name": "match_tags",
+      "description": "🏷️ [AUTO-TAG EXTRACTION] Extract stock/crypto tags from text."
+    },
+    {
+      "name": "get_trends",
+      "description": "📉 [SENTIMENT TRENDS] Get historical sentiment trend."
+    },
+    {
+      "name": "get_research",
+      "description": "📑 [RESEARCH] Get consulting firm reports."
+    },
+    {
+      "name": "get_available_rooms",
+      "description": "📺 [REALTIME] Get active socket.io rooms."
+    }
+  ]
+}

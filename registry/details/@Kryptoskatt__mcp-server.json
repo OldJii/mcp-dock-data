@@ -2,7 +2,7 @@
   "id": "@Kryptoskatt/mcp-server",
   "displayName": "DefiLlama API Proxy Server",
   "description": "Enable AI assistants to interact seamlessly with the DefiLlama API by translating MCP tool calls into API requests. Dynamically generate tools from the DefiLlama OpenAPI specification to provide up-to-date and comprehensive DeFi data access. Simplify integration with DefiLlama's public API through a standardized MCP interface.",
-  "createdAt": "2026-01-16T07:23:36.399Z",
+  "createdAt": "2026-01-16T12:40:25.878Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kryptoskatt/mcp-server"

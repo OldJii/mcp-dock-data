@@ -2,7 +2,7 @@
   "id": "@wxkingstar/doc-hub-mcp",
   "displayName": "Wecom Feishu Openapi Docs Mcp",
   "description": "🧩 **WeCom & Feishu OpenAPI MCP 插件**\n\n英文名称： wecom-feishu-openapi-mcp\n\n中文名称： 企业微信 & 飞书 OpenAPI 文档聚合 MCP 插件\n\n来源地址： https://github.com/wxkingstar/doc-hub-mcp\n\n⸻\n\n📖 插件简介\n\nwecom-feishu-openapi-mcp 是一款面向企业开发者的 Model Context Protocol（MCP）插件，用于聚合和统一访问 WeCom 与 飞书（Feishu）的开放接口文档。\n\n插件将官方 OpenAPI 文档进行结构化、标准化处理，开发者可通过 MCP 客户端实现接口搜索、补全、上下文调用，无需再反复查阅繁杂的官方文档，大幅提升企业应用的集成与自动化效率。\n\n⸻\n\n🚀 核心特性\n\t\n•\t🧾 OpenAPI 文档聚合：统一收录 WeCom 与 Feishu 官方 API，支持标准 OpenAPI Schema。\n\t\n•\t🧭 上下文接口搜索：通过 MCP 客户端即可快速检索接口定义、参数与返回值结构。\n\t\n•\t🔐 权限与安全提示：接口权限、认证方式一目了然，避免集成踩坑。\n\t\n•\t🤖 自动化集成场景友好：适用于 Bot/Agent 开发、工作流自动化、企业内部工具集成。\n\t\n•\t🧰 CLI 一键启动：无需繁琐部署，通过 npx doc-hub-mcp@latest 即可启动服务。\n\t\n⸻\n\n🏗️ 典型使用场景\n\t\n•\t构建企业内部集成（ERP/CRM/IM 工具对接）\n\t\n•\t快速开发飞书/企微 Bot\n\t\n•\t搭建自动化工作流（如审批流、通知系统、机器人助手）\n\t\n•\t接口调试与研发协同文档平台\n\t\n•\t与 AI Agent 结合，实现智能调用企业 IM 系统 API\n\n⸻\n\n🛠️ 安装与启动\n\nnpx -y doc-hub-mcp@latest\n\n或在 mcp配置中注册：\n\n```json\n{\n  \"mcpServers\": {\n    \"search-docs\": {\n      \"args\": [\"-y\", \"doc-hub-mcp@latest\"],\n      \"command\": \"npx\"\n    }\n  }\n}\n```\n\n⸻\n\n📚 OpenAPI 数据来源\n\t\n•\tWeCom（企业微信）官方开放接口文档\n\t\n•\tFeishu（飞书）官方开放接口文档\n\t\n•\t所有文档通过 OpenAPI Schema 进行结构化聚合，保持与官方同步。\n\n⸻\n\n🧑‍💻 作者信息\n\t\n•\t👤 作者：wxkingstar\n\t\n•\t🌐 仓库：GitHub\n\t\n•\t📧 联系：wx012@qq.com（如有问题或合作意向可联系）\n\n⸻\n\n🪄 标签（Tags）\n\nwecom,feishu,lark,openapi,api,mcp,mcp-plugin,integration,api-docs,workflow-automation,enterprise,china,saas,bot-development,developer-tools\n\n⸻",
-  "createdAt": "2026-01-16T07:40:08.466Z",
+  "createdAt": "2026-01-16T13:03:35.824Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@wxkingstar/doc-hub-mcp"

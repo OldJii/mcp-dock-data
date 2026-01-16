@@ -2,7 +2,7 @@
   "id": "mcp-summarization-functions",
   "displayName": "Summarization Functions",
   "description": "Provides summarised output from various actions that could otherwise eat up tokens and cause crashes.",
-  "createdAt": "2026-01-16T07:26:20.418Z",
+  "createdAt": "2026-01-16T12:44:08.302Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-summarization-functions"

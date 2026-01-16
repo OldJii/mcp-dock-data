@@ -1,0 +1,140 @@
+{
+  "id": "@greirson/mcp-todoist",
+  "displayName": "Todoist Task Manager",
+  "description": "Manage your Todoist tasks, projects, and comments seamlessly using natural language commands. Create, update, complete, and organize tasks and projects efficiently with support for bulk operations and rich task attributes. Enhance productivity by integrating Todoist task management directly into your workflow.",
+  "createdAt": "2026-01-16T12:47:14.333Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@greirson/mcp-todoist"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "todoistApiToken"
+      ],
+      "properties": {
+        "todoistApiToken": {
+          "type": "string",
+          "description": "Your Todoist API token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "todoist_task_create",
+      "description": "Create a new task in Todoist with optional description, due date, priority, labels, deadline, project, and section"
+    },
+    {
+      "name": "todoist_task_get",
+      "description": "Retrieve tasks from Todoist with optional filtering or get a specific task by ID"
+    },
+    {
+      "name": "todoist_task_update",
+      "description": "Update an existing task found by ID or partial name search. Supports updating content, description, due date, priority, labels, deadline, project, and section"
+    },
+    {
+      "name": "todoist_task_delete",
+      "description": "Delete a task found by ID or partial name search (case-insensitive)"
+    },
+    {
+      "name": "todoist_task_complete",
+      "description": "Mark a task as complete found by ID or partial name search (case-insensitive)"
+    },
+    {
+      "name": "todoist_tasks_bulk_create",
+      "description": "Create multiple tasks at once for improved efficiency. Each task can have full attributes like individual task creation."
+    },
+    {
+      "name": "todoist_tasks_bulk_update",
+      "description": "Update multiple tasks at once based on search criteria. Very efficient for updating many tasks with the same changes."
+    },
+    {
+      "name": "todoist_tasks_bulk_delete",
+      "description": "Delete multiple tasks at once based on search criteria. Use with caution - this will permanently delete matching tasks."
+    },
+    {
+      "name": "todoist_tasks_bulk_complete",
+      "description": "Complete multiple tasks at once based on search criteria. Efficiently mark many tasks as done."
+    },
+    {
+      "name": "todoist_project_get",
+      "description": "Get a list of all projects from Todoist with their IDs and names"
+    },
+    {
+      "name": "todoist_section_get",
+      "description": "Get a list of sections within a project from Todoist with their IDs and names"
+    },
+    {
+      "name": "todoist_project_create",
+      "description": "Create a new project in Todoist"
+    },
+    {
+      "name": "todoist_section_create",
+      "description": "Create a new section within a project in Todoist"
+    },
+    {
+      "name": "todoist_comment_create",
+      "description": "Add a comment to a task in Todoist by task ID or task name"
+    },
+    {
+      "name": "todoist_comment_get",
+      "description": "Get comments for a task or project in Todoist"
+    },
+    {
+      "name": "todoist_label_get",
+      "description": "Get all labels in Todoist"
+    },
+    {
+      "name": "todoist_label_create",
+      "description": "Create a new label in Todoist"
+    },
+    {
+      "name": "todoist_label_update",
+      "description": "Update an existing label in Todoist"
+    },
+    {
+      "name": "todoist_label_delete",
+      "description": "Delete a label from Todoist"
+    },
+    {
+      "name": "todoist_label_stats",
+      "description": "Get usage statistics for all labels in Todoist"
+    },
+    {
+      "name": "todoist_subtask_create",
+      "description": "Create a new subtask under a parent task in Todoist"
+    },
+    {
+      "name": "todoist_subtasks_bulk_create",
+      "description": "Create multiple subtasks under a parent task in a single operation"
+    },
+    {
+      "name": "todoist_task_convert_to_subtask",
+      "description": "Convert an existing task to a subtask of another task"
+    },
+    {
+      "name": "todoist_subtask_promote",
+      "description": "Promote a subtask to a main task (remove parent relationship)"
+    },
+    {
+      "name": "todoist_task_hierarchy_get",
+      "description": "Get a task with all its subtasks in a hierarchical structure"
+    },
+    {
+      "name": "todoist_test_connection",
+      "description": "Test the connection to Todoist API and verify API token validity"
+    },
+    {
+      "name": "todoist_test_all_features",
+      "description": "Run comprehensive tests on all Todoist MCP features to verify functionality"
+    },
+    {
+      "name": "todoist_test_performance",
+      "description": "Measure performance and response times of Todoist API operations"
+    }
+  ]
+}

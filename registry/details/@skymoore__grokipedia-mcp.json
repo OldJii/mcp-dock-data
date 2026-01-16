@@ -2,7 +2,7 @@
   "id": "@skymoore/grokipedia-mcp",
   "displayName": "grokipedia-mcp",
   "description": "Search and retrieve Grokipedia articles with filters, full content, and citations. Explore related pages and extract sections to quickly gather relevant knowledge. Run guided workflows to research topics, find sources, and compare subjects.",
-  "createdAt": "2026-01-16T07:20:38.481Z",
+  "createdAt": "2026-01-16T12:36:10.162Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@skymoore/grokipedia-mcp"

@@ -1,0 +1,74 @@
+{
+  "id": "@Jongtae/nodit-mcp-smithery",
+  "displayName": "Nodit Blockchain API Tools",
+  "description": "Provide seamless integration with blockchain APIs to empower your applications with real-time blockchain data and operations. Enable efficient access and manipulation of blockchain resources through standardized tools and protocols. Enhance your development workflow with ready-to-use blockchain context capabilities.",
+  "createdAt": "2026-01-16T12:48:49.570Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Jongtae/nodit-mcp-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "noditApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "noditApiKey": {
+          "type": "string",
+          "description": "Your Nodit API Key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_nodit_api_categories",
+      "description": "Lists available Nodit API categories from Nodit Blockchain Context. To use the Nodit API tool, you must first call this tool."
+    },
+    {
+      "name": "list_nodit_node_apis",
+      "description": "Lists available Nodit API operations."
+    },
+    {
+      "name": "list_nodit_data_apis",
+      "description": "Lists available Nodit Data API operations."
+    },
+    {
+      "name": "list_nodit_webhook_apis",
+      "description": "Lists available Nodit Webhook API operations."
+    },
+    {
+      "name": "list_nodit_aptos_indexer_api_query_root",
+      "description": "Lists all query roots available in the Nodit Aptos Indexer GraphQL API."
+    },
+    {
+      "name": "get_nodit_aptos_indexer_api_spec",
+      "description": "Returns the GraphQL specification for a specific query root in the Nodit Aptos Indexer API."
+    },
+    {
+      "name": "call_nodit_aptos_indexer_api",
+      "description": "Calls a Nodit Aptos Indexer API. Returns the API response. Before making the call, it's recommended to verify the detailed API specifications using the 'get_nodit_aptos_indexer_api_spec' tool. Please note that using this tool will consume your API quota."
+    },
+    {
+      "name": "get_nodit_api_spec",
+      "description": "Gets the fully resolved spec details for a Nodit Blockchain Context API operationId. Returns details as a JSON string."
+    },
+    {
+      "name": "call_nodit_api",
+      "description": "This function calls a specific Nodit Blockchain Context API using its operationId. Before making the call, it's recommended to verify the detailed API specifications using the 'get_nodit_api_spec' tool. Please note that using this tool will consume your API quota."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "@fozagtx/somnia-mcp",
+  "displayName": "Somnia",
+  "description": "Search official Somnia documentation and query on-chain data for accounts, transactions, and blocks. Manage a wallet to view balances, transfer native or token assets, and control allowances. Sign messages, typed data, and transactions with fee guidance for reliable execution.",
+  "createdAt": "2026-01-16T12:35:27.090Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fozagtx/somnia-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_address",
+      "description": "Get the address of the wallet"
+    },
+    {
+      "name": "get_chain",
+      "description": "Get the chain of the wallet"
+    },
+    {
+      "name": "sign_message",
+      "description": "Sign a message with the wallet"
+    },
+    {
+      "name": "get_balance",
+      "description": "Get the balance of the wallet for native currency or a specific ERC20 token."
+    },
+    {
+      "name": "get_token_info_by_ticker",
+      "description": "Get information about a configured token (like contract address and decimals) by its ticker symbol."
+    },
+    {
+      "name": "convert_to_base_units",
+      "description": "Convert a token amount from human-readable units to its smallest unit (e.g., wei)."
+    },
+    {
+      "name": "convert_from_base_units",
+      "description": "Convert a token amount from its smallest unit (e.g., wei) to human-readable units."
+    },
+    {
+      "name": "sign_typed_data_evm",
+      "description": "Sign an EIP-712 typed data structure (EVM)"
+    },
+    {
+      "name": "get_token_allowance_evm",
+      "description": "Get the allowance of an ERC20 token for a spender (returns amount in base units)"
+    },
+    {
+      "name": "send_token",
+      "description": "Send native currency or an ERC20 token to a recipient, in base units."
+    },
+    {
+      "name": "approve_token_evm",
+      "description": "Approve an amount (specified in base units) of an ERC20 token for a spender"
+    },
+    {
+      "name": "revoke_token_approval_evm",
+      "description": "Revoke approval for an ERC20 token from a spender (sets allowance to 0)"
+    },
+    {
+      "name": "search_documentation",
+      "description": "Search across the documentation to find relevant information, code examples, API references, and guides. Use this tool when you need to answer questions about Somnia Docs, find specific documentation, understand how features work, or locate implementation details. The search returns contextual content with titles and direct links to the documentation pages."
+    },
+    {
+      "name": "get_account",
+      "description": "Get information about a Somnia account/contract by address. Optionally specify a revision (best | justified | finalized | block number | block ID)."
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get a Somnia transaction by its ID. Optionally include pending txs (meta may be null), return raw hex, or pin to a specific head block."
+    },
+    {
+      "name": "get_block",
+      "description": "Retrieve information about a Somnia block by its revision (block ID, number, or keywords: best | justified | finalized)."
+    },
+    {
+      "name": "get_priority_fee",
+      "description": "Fetch a suggested priority fee for including a transaction in the next blocks from Somnia mainnet."
+    },
+    {
+      "name": "create_wallet",
+      "description": "Generate a BIP-39 mnemonic (12/15/18/21/24 words) and derive the Ethereum-compatible account at standard derivation path m/44'/60'/0'/0/0. Returns mnemonic, private key, and public address."
+    },
+    {
+      "name": "sign_certificate",
+      "description": "Create and sign a canonical certificate. Includes purpose, payload, domain, timestamp, nonce, and expiresAt."
+    },
+    {
+      "name": "sign_raw_transaction",
+      "description": "Sign an Ethereum raw transaction string."
+    }
+  ]
+}

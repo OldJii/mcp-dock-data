@@ -1,0 +1,21 @@
+{
+  "id": "@guanqun-yang/mcp-server-r-counter",
+  "displayName": "R Counter",
+  "description": "Count the number of 'R' characters in any text, uppercase and lowercase. Quickly analyze strings, logs, or documents where 'R' frequency matters. Get instant counts for validation, analysis, or curiosity.",
+  "createdAt": "2026-01-16T12:38:52.826Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-r-counter"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "count",
+      "description": "Count number of R's or r's in the input query"
+    }
+  ]
+}

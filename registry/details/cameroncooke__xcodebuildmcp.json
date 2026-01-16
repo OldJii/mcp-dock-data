@@ -1,0 +1,301 @@
+{
+  "id": "cameroncooke/xcodebuildmcp",
+  "displayName": "XcodeBuildMCP",
+  "description": "A Model Context Protocol (MCP) server that provides Xcode-related tools for integration with AI assistants and other MCP clients.",
+  "createdAt": "2026-01-16T12:36:04.791Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/cameroncooke/xcodebuildmcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "debug_attach_sim",
+      "description": "Attach LLDB to a running iOS simulator app. Provide bundleId or pid, plus simulator defaults."
+    },
+    {
+      "name": "debug_breakpoint_add",
+      "description": "Add a breakpoint by file/line or function name for the active debug session."
+    },
+    {
+      "name": "debug_breakpoint_remove",
+      "description": "Remove a breakpoint by id for the active debug session."
+    },
+    {
+      "name": "debug_continue",
+      "description": "Resume execution in the active debug session or a specific debugSessionId."
+    },
+    {
+      "name": "debug_detach",
+      "description": "Detach the current debugger session or a specific debugSessionId."
+    },
+    {
+      "name": "debug_lldb_command",
+      "description": "Run an arbitrary LLDB command within the active debug session."
+    },
+    {
+      "name": "debug_stack",
+      "description": "Return a thread backtrace from the active debug session."
+    },
+    {
+      "name": "debug_variables",
+      "description": "Return variables for a selected frame in the active debug session."
+    },
+    {
+      "name": "build_device",
+      "description": "Builds an app for a connected device."
+    },
+    {
+      "name": "clean",
+      "description": "Cleans build products with xcodebuild."
+    },
+    {
+      "name": "discover_projs",
+      "description": "Scans a directory (defaults to workspace root) to find Xcode project (.xcodeproj) and workspace (.xcworkspace) files."
+    },
+    {
+      "name": "get_app_bundle_id",
+      "description": "Extracts the bundle identifier from an app bundle (.app) for any Apple platform (iOS, iPadOS, watchOS, tvOS, visionOS). IMPORTANT: You MUST provide the appPath parameter. Example: get_app_bundle_id({ appPath: '/path/to/your/app.app' })"
+    },
+    {
+      "name": "get_device_app_path",
+      "description": "Retrieves the built app path for a connected device."
+    },
+    {
+      "name": "install_app_device",
+      "description": "Installs an app on a connected device."
+    },
+    {
+      "name": "launch_app_device",
+      "description": "Launches an app on a connected device."
+    },
+    {
+      "name": "list_devices",
+      "description": "Lists connected physical Apple devices (iPhone, iPad, Apple Watch, Apple TV, Apple Vision Pro) with their UUIDs, names, and connection status. Use this to discover physical devices for testing."
+    },
+    {
+      "name": "list_schemes",
+      "description": "Lists schemes for a project or workspace."
+    },
+    {
+      "name": "show_build_settings",
+      "description": "Shows xcodebuild build settings."
+    },
+    {
+      "name": "start_device_log_cap",
+      "description": "Starts log capture on a connected device."
+    },
+    {
+      "name": "stop_app_device",
+      "description": "Stops a running app on a connected device."
+    },
+    {
+      "name": "stop_device_log_cap",
+      "description": "Stops an active Apple device log capture session and returns the captured logs."
+    },
+    {
+      "name": "test_device",
+      "description": "Runs tests on a physical Apple device."
+    },
+    {
+      "name": "doctor",
+      "description": "Provides comprehensive information about the MCP server environment, available dependencies, and configuration status."
+    },
+    {
+      "name": "start_sim_log_cap",
+      "description": "Starts capturing logs from a specified simulator. Returns a session ID. By default, captures only structured logs."
+    },
+    {
+      "name": "stop_sim_log_cap",
+      "description": "Stops an active simulator log capture session and returns the captured logs."
+    },
+    {
+      "name": "build_macos",
+      "description": "Builds a macOS app."
+    },
+    {
+      "name": "build_run_macos",
+      "description": "Builds and runs a macOS app."
+    },
+    {
+      "name": "get_mac_app_path",
+      "description": "Retrieves the built macOS app bundle path."
+    },
+    {
+      "name": "get_mac_bundle_id",
+      "description": "Extracts the bundle identifier from a macOS app bundle (.app). IMPORTANT: You MUST provide the appPath parameter. Example: get_mac_bundle_id({ appPath: '/path/to/your/app.app' }) Note: In some environments, this tool may be prefixed as mcp0_get_macos_bundle_id."
+    },
+    {
+      "name": "launch_mac_app",
+      "description": "Launches a macOS application. IMPORTANT: You MUST provide the appPath parameter. Example: launch_mac_app({ appPath: '/path/to/your/app.app' }) Note: In some environments, this tool may be prefixed as mcp0_launch_macos_app."
+    },
+    {
+      "name": "stop_mac_app",
+      "description": "Stops a running macOS application. Can stop by app name or process ID."
+    },
+    {
+      "name": "test_macos",
+      "description": "Runs tests for a macOS target."
+    },
+    {
+      "name": "scaffold_ios_project",
+      "description": "Scaffold a new iOS project from templates. Creates a modern Xcode project with workspace structure, SPM package for features, and proper iOS configuration."
+    },
+    {
+      "name": "scaffold_macos_project",
+      "description": "Scaffold a new macOS project from templates. Creates a modern Xcode project with workspace structure, SPM package for features, and proper macOS configuration."
+    },
+    {
+      "name": "session-clear-defaults",
+      "description": "Clear selected or all session defaults."
+    },
+    {
+      "name": "session-set-defaults",
+      "description": "Set the session defaults needed by many tools. Most tools require one or more session defaults to be set before they can be used. Agents should set all relevant defaults up front in a single call (e.g., project/workspace, scheme, simulator or device ID, useLatestOS) to avoid iterative prompts; only set the keys your workflow needs."
+    },
+    {
+      "name": "session-show-defaults",
+      "description": "Show current session defaults."
+    },
+    {
+      "name": "boot_sim",
+      "description": "Boots an iOS simulator."
+    },
+    {
+      "name": "build_run_sim",
+      "description": "Builds and runs an app on an iOS simulator."
+    },
+    {
+      "name": "build_sim",
+      "description": "Builds an app for an iOS simulator."
+    },
+    {
+      "name": "describe_ui",
+      "description": "Gets entire view hierarchy with precise frame coordinates (x, y, width, height) for all visible elements. Use this before UI interactions or after layout changes - do NOT guess coordinates from screenshots. Returns JSON tree with frame data for accurate automation. Requires the target process to be running; paused debugger/breakpoints can yield an empty tree."
+    },
+    {
+      "name": "get_sim_app_path",
+      "description": "Retrieves the built app path for an iOS simulator."
+    },
+    {
+      "name": "install_app_sim",
+      "description": "Installs an app in an iOS simulator."
+    },
+    {
+      "name": "launch_app_logs_sim",
+      "description": "Launches an app in an iOS simulator and captures its logs."
+    },
+    {
+      "name": "launch_app_sim",
+      "description": "Launches an app in an iOS simulator."
+    },
+    {
+      "name": "list_sims",
+      "description": "Lists available iOS simulators with their UUIDs. "
+    },
+    {
+      "name": "open_sim",
+      "description": "Opens the iOS Simulator app."
+    },
+    {
+      "name": "record_sim_video",
+      "description": "Starts or stops video capture for an iOS simulator."
+    },
+    {
+      "name": "screenshot",
+      "description": "Captures screenshot for visual verification. For UI coordinates, use describe_ui instead (don't determine coordinates from screenshots)."
+    },
+    {
+      "name": "stop_app_sim",
+      "description": "Stops an app running in an iOS simulator."
+    },
+    {
+      "name": "test_sim",
+      "description": "Runs tests on an iOS simulator."
+    },
+    {
+      "name": "erase_sims",
+      "description": "Erases a simulator by UDID."
+    },
+    {
+      "name": "reset_sim_location",
+      "description": "Resets the simulator's location to default."
+    },
+    {
+      "name": "set_sim_appearance",
+      "description": "Sets the appearance mode (dark/light) of an iOS simulator."
+    },
+    {
+      "name": "set_sim_location",
+      "description": "Sets a custom GPS location for the simulator."
+    },
+    {
+      "name": "sim_statusbar",
+      "description": "Sets the data network indicator in the iOS simulator status bar. Use \"clear\" to reset all overrides, or specify a network type (hide, wifi, 3g, 4g, lte, lte-a, lte+, 5g, 5g+, 5g-uwb, 5g-uc)."
+    },
+    {
+      "name": "swift_package_build",
+      "description": "Builds a Swift Package with swift build"
+    },
+    {
+      "name": "swift_package_clean",
+      "description": "Cleans Swift Package build artifacts and derived data"
+    },
+    {
+      "name": "swift_package_list",
+      "description": "Lists currently running Swift Package processes"
+    },
+    {
+      "name": "swift_package_run",
+      "description": "Runs an executable target from a Swift Package with swift run"
+    },
+    {
+      "name": "swift_package_stop",
+      "description": "Stops a running Swift Package executable started with swift_package_run"
+    },
+    {
+      "name": "swift_package_test",
+      "description": "Runs tests for a Swift Package with swift test"
+    },
+    {
+      "name": "button",
+      "description": "Press hardware button on iOS simulator. Supported buttons: apple-pay, home, lock, side-button, siri"
+    },
+    {
+      "name": "gesture",
+      "description": "Perform gesture on iOS simulator using preset gestures: scroll-up, scroll-down, scroll-left, scroll-right, swipe-from-left-edge, swipe-from-right-edge, swipe-from-top-edge, swipe-from-bottom-edge"
+    },
+    {
+      "name": "key_press",
+      "description": "Press a single key by keycode on the simulator. Common keycodes: 40=Return, 42=Backspace, 43=Tab, 44=Space, 58-67=F1-F10."
+    },
+    {
+      "name": "key_sequence",
+      "description": "Press key sequence using HID keycodes on iOS simulator with configurable delay"
+    },
+    {
+      "name": "long_press",
+      "description": "Long press at specific coordinates for given duration (ms). Use describe_ui for precise coordinates (don't guess from screenshots)."
+    },
+    {
+      "name": "swipe",
+      "description": "Swipe from one point to another. Use describe_ui for precise coordinates (don't guess from screenshots). Supports configurable timing."
+    },
+    {
+      "name": "tap",
+      "description": "Tap at specific coordinates or target elements by accessibility id or label. Use describe_ui to get precise element coordinates prior to using x/y parameters (don't guess from screenshots). Supports optional timing delays."
+    },
+    {
+      "name": "touch",
+      "description": "Perform touch down/up events at specific coordinates. Use describe_ui for precise coordinates (don't guess from screenshots)."
+    },
+    {
+      "name": "type_text",
+      "description": "Type text (supports US keyboard characters). Use describe_ui to find text field, tap to focus, then type."
+    }
+  ]
+}

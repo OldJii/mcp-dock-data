@@ -1,0 +1,12 @@
+{
+  "id": "@kitsanannam-hue/minimax",
+  "displayName": "minimax",
+  "description": "",
+  "createdAt": "2026-01-16T12:57:50.621Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kitsanannam-hue/minimax"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -2,7 +2,7 @@
   "id": "lanonasis/lanonasis-mcp",
   "displayName": "lanonasis-mcp",
   "description": "Manage long-term memory across projects with fast semantic search and retrieval. Create, update, and organize memories, then query them to ground your workflows with relevant context. Control API keys and configuration, monitor system status, and instantly search the LanOnasis docs when you need guidance.",
-  "createdAt": "2026-01-16T07:32:53.859Z",
+  "createdAt": "2026-01-16T12:53:31.840Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/lanonasis/lanonasis-mcp"

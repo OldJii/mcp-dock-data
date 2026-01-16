@@ -2,7 +2,7 @@
   "id": "@kodey-ai/salesforce-mcp",
   "displayName": "Salesforce Query",
   "description": "Run SOQL queries to explore and retrieve Salesforce data. Inspect records, fields, and relationships from your workflow. Speed up reporting, auditing, and troubleshooting with fast, targeted results.",
-  "createdAt": "2026-01-16T07:29:52.118Z",
+  "createdAt": "2026-01-16T12:49:09.144Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp"

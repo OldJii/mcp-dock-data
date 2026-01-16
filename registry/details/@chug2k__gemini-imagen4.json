@@ -2,7 +2,7 @@
   "id": "@chug2k/gemini-imagen4",
   "displayName": "Gemini Imagen4",
   "description": "Generate stunning images from text descriptions using Google's cutting-edge Imagen 4.0 models. Customize image generation with multiple model variants, aspect ratios, and output formats. Browse and manage generated images locally through the MCP protocol with built-in safety filtering.",
-  "createdAt": "2026-01-16T07:24:07.399Z",
+  "createdAt": "2026-01-16T12:41:10.188Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@chug2k/gemini-imagen4"

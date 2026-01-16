@@ -1,0 +1,12 @@
+{
+  "id": "jjj/xray-mcp-server",
+  "displayName": "xray-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:12:04.874Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/jjj/xray-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

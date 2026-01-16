@@ -2,7 +2,7 @@
   "id": "@Kylejeong2/twitter-mcp",
   "displayName": "Twitter Automation Server",
   "description": "Automate Twitter interactions by posting tweets, replying, and searching tweets with structured results. Maintain persistent browser sessions to preserve login state and avoid repeated authentications. Manage browser context IDs for seamless session continuity across requests.",
-  "createdAt": "2026-01-16T07:28:18.491Z",
+  "createdAt": "2026-01-16T12:46:55.254Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kylejeong2/twitter-mcp"

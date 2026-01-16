@@ -2,7 +2,7 @@
   "id": "@egyleader/dart-mcp",
   "displayName": "Dart MCP Server",
   "description": "Bridge the gap between AI coding assistants and Dart/Flutter development workflows. Utilize powerful Dart SDK commands to analyze, compile, and manage your Dart projects seamlessly. Experience intelligent path handling and zero configuration for a smooth development experience.",
-  "createdAt": "2026-01-16T07:25:05.423Z",
+  "createdAt": "2026-01-16T12:42:29.803Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@egyleader/dart-mcp"

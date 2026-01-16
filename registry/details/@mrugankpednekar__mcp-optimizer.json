@@ -2,7 +2,7 @@
   "id": "@mrugankpednekar/mcp-optimizer",
   "displayName": "Crew Optimizer",
   "description": "Optimize crew and workforce schedules, resource allocation, and routing with linear and mixed-integer programming. Parse natural-language problem statements into solvable models in seconds. Diagnose infeasibility and get actionable hints to fix constraints fast.",
-  "createdAt": "2026-01-16T07:30:49.634Z",
+  "createdAt": "2026-01-16T12:50:34.917Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mrugankpednekar/mcp-optimizer"

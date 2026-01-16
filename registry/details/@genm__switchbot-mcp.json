@@ -1,0 +1,45 @@
+{
+  "id": "@genm/switchbot-mcp",
+  "displayName": "SwitchBot Server",
+  "description": "Control SwitchBot devices with your AI assistant.",
+  "createdAt": "2026-01-16T12:50:39.485Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@genm/switchbot-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "switchbotToken",
+        "switchbotSecret"
+      ],
+      "properties": {
+        "switchbotToken": {
+          "type": "string",
+          "description": "The API token for accessing SwitchBot services."
+        },
+        "switchbotSecret": {
+          "type": "string",
+          "description": "The API secret for accessing SwitchBot services."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_devices",
+      "description": "デバイス一覧を取得します"
+    },
+    {
+      "name": "get_device_status",
+      "description": "デバイスのステータスを取得します"
+    },
+    {
+      "name": "control_device",
+      "description": "デバイスを制御します"
+    }
+  ]
+}

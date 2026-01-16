@@ -1,0 +1,12 @@
+{
+  "id": "@hunseokko/mcp-google-sheets",
+  "displayName": "mcp-google-sheets",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:10.941Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hunseokko/mcp-google-sheets"
+  },
+  "connection": null,
+  "capabilities": []
+}

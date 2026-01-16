@@ -2,7 +2,7 @@
   "id": "@smithery-ai/filesystem",
   "displayName": "Filesystem MCP Server",
   "description": "Node.js server for filesystem operations, including reading/writing files and managing directories.",
-  "createdAt": "2026-01-16T07:28:10.462Z",
+  "createdAt": "2026-01-16T12:46:43.538Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@smithery-ai/filesystem"

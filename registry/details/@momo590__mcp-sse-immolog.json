@@ -2,7 +2,7 @@
   "id": "@momo590/mcp-sse-immolog",
   "displayName": "Immolog MCP SSE Server",
   "description": "Provide a specialized MCP server using Server-Sent Events (SSE) to integrate Immolog's business tools and prompts. Enable seamless connection with LibreChat and other clients for real-time data and action handling. Customize and extend the server to fit specific business needs with ease.",
-  "createdAt": "2026-01-16T07:20:46.124Z",
+  "createdAt": "2026-01-16T12:36:20.818Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@momo590/mcp-sse-immolog"

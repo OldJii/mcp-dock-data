@@ -1,0 +1,25 @@
+{
+  "id": "@PabloLec/keyprobe-mcp",
+  "displayName": "KeyProbe",
+  "description": "Audit certificates and keystores to surface expiry risks, weak algorithms, and misconfigurations. Generate concise reports and compact JSON summaries from files or pasted data. Explain results in plain language to speed remediation and compliance.",
+  "createdAt": "2026-01-16T12:38:45.759Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@PabloLec/keyprobe-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "analyze_from_local_path",
+      "description": "Analyze a local certificate/keystore file and return a detailed JSON summary. Read-only and idempotent. Best for sandboxed setups where the server can read files."
+    },
+    {
+      "name": "analyze_from_b64_string",
+      "description": "Analyze a certificate/keystore provided as base64 and return a JSON summary. Use this when the client cannot expose a local path (e.g., remote deployment). Read-only and idempotent."
+    }
+  ]
+}

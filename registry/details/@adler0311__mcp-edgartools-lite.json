@@ -2,7 +2,7 @@
   "id": "@adler0311/mcp-edgartools-lite",
   "displayName": "mcp-edgartools-lite",
   "description": "Research SEC filings by ticker or CIK to get company details, recent forms, and insider transactions. Extract targeted sections from 10-K, 10-Q, and 8-K to surface the information you need. Streamline due diligence and monitoring with fast, focused access to official disclosures.",
-  "createdAt": "2026-01-16T07:24:06.648Z",
+  "createdAt": "2026-01-16T12:41:08.859Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@adler0311/mcp-edgartools-lite"

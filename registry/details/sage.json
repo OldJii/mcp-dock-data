@@ -1,0 +1,12 @@
+{
+  "id": "sage",
+  "displayName": "Sage",
+  "description": "Sage delivers accounting, payroll, and payment software solutions aimed at small to medium enterprises, automating financial tasks and compliance",
+  "createdAt": "2026-01-16T12:53:58.589Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/sage"
+  },
+  "connection": null,
+  "capabilities": []
+}

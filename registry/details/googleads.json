@@ -1,0 +1,37 @@
+{
+  "id": "googleads",
+  "displayName": "Google Ads",
+  "description": "Google Ads, is an online advertising platform developed by Google, where advertisers bid to display brief advertisements, service offerings, product listings, and videos to web users.",
+  "createdAt": "2026-01-16T12:35:11.421Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googleads"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLEADS_ADD_OR_REMOVE_TO_CUSTOMER_LIST",
+      "description": "AddOrRemoveToCustomerList Tool will add a contact to a customer list in Google Ads. Note: It takes 6 to 12 hours for changes to be reflected in the customer list."
+    },
+    {
+      "name": "GOOGLEADS_CREATE_CUSTOMER_LIST",
+      "description": "CreateCustomerList Tool will create a customer list in Google Ads."
+    },
+    {
+      "name": "GOOGLEADS_GET_CAMPAIGN_BY_ID",
+      "description": "GetCampaignById Tool will return details of a campaign in Google Ads."
+    },
+    {
+      "name": "GOOGLEADS_GET_CAMPAIGN_BY_NAME",
+      "description": "GetCampaignByName Tool will run a SQL GetCampaignByName in Google Ads."
+    },
+    {
+      "name": "GOOGLEADS_GET_CUSTOMER_LISTS",
+      "description": "GetCustomerLists Tool will list all customer lists in Google Ads."
+    }
+  ]
+}

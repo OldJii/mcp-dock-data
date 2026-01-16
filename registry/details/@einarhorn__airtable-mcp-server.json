@@ -1,0 +1,12 @@
+{
+  "id": "@einarhorn/airtable-mcp-server",
+  "displayName": "airtable-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T13:05:38.911Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@einarhorn/airtable-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

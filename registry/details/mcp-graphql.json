@@ -1,0 +1,32 @@
+{
+  "id": "mcp-graphql",
+  "displayName": "GraphQL MCP Server",
+  "description": "MCP server for interfacing with GraphQL servers.",
+  "createdAt": "2026-01-16T12:51:24.566Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-graphql"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "schemaUrl",
+        "graphqlServerUrl"
+      ],
+      "properties": {
+        "schemaUrl": {
+          "type": "string",
+          "description": "The URL of the GraphQL schema."
+        },
+        "graphqlServerUrl": {
+          "type": "string",
+          "description": "The URL of the GraphQL server."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

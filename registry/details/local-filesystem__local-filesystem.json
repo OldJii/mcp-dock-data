@@ -2,7 +2,7 @@
   "id": "local-filesystem/local-filesystem",
   "displayName": "local-filesystem",
   "description": "Explore and organize files and folders across your workspace. Read, write, move, and delete items while inspecting detailed metadata. Find anything fast with name, glob, regex, and in-file text search.",
-  "createdAt": "2026-01-16T07:23:41.137Z",
+  "createdAt": "2026-01-16T12:40:32.675Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/local-filesystem/local-filesystem"

@@ -1,0 +1,12 @@
+{
+  "id": "@owenjeon/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T13:11:27.545Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@owenjeon/test"
+  },
+  "connection": null,
+  "capabilities": []
+}
