@@ -1,0 +1,12 @@
+{
+  "id": "@mailtrap/mailtrap-mcp",
+  "displayName": "mailtrap-mcp",
+  "description": "An MCP server that provides tools for sending transactional emails and managing email templates via Mailtrap.",
+  "createdAt": "2026-01-16T07:35:28.498Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mailtrap/mailtrap-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

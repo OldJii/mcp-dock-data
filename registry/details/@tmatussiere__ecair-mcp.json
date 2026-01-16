@@ -1,0 +1,12 @@
+{
+  "id": "@tmatussiere/ecair-mcp",
+  "displayName": "ecair-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:24.332Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tmatussiere/ecair-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

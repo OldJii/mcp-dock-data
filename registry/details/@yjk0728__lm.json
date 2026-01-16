@@ -1,0 +1,12 @@
+{
+  "id": "@yjk0728/lm",
+  "displayName": "lm",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:20.022Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yjk0728/lm"
+  },
+  "connection": null,
+  "capabilities": []
+}

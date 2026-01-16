@@ -1,0 +1,49 @@
+{
+  "id": "@minbang930/youtube-vision-mcp",
+  "displayName": "YouTube Vision",
+  "description": "Analyze YouTube videos and extract insights using the Gemini Vision API. Get descriptions, summaries, and key moments effortlessly to enhance your video interactions.",
+  "createdAt": "2026-01-16T07:33:01.082Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@minbang930/youtube-vision-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "geminiApiKey"
+      ],
+      "properties": {
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Your Google Gemini API key."
+        },
+        "geminiModelName": {
+          "type": "string",
+          "description": "The Gemini model name to use. Defaults to gemini-2.0-flash.",
+          "default": "gemini-2.0-flash"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "summarize_youtube_video",
+      "description": "Generates a summary of a given YouTube video URL using Gemini Vision API."
+    },
+    {
+      "name": "ask_about_youtube_video",
+      "description": "Answers a question about the video or provides a general description if no question is asked."
+    },
+    {
+      "name": "extract_key_moments",
+      "description": "Extracts key moments (timestamps and descriptions) from a given YouTube video."
+    },
+    {
+      "name": "list_supported_models",
+      "description": "Lists available Gemini models that support the 'generateContent' method."
+    }
+  ]
+}

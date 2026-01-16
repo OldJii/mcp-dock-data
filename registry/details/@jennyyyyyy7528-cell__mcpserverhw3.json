@@ -1,0 +1,32 @@
+{
+  "id": "@jennyyyyyy7528-cell/mcpserverhw3",
+  "displayName": "Weather",
+  "description": "Get timely U.S. weather alerts and precise local forecasts. Monitor severe conditions, plan travel, and make day-to-day decisions with confidence. Stay informed with concise, up-to-date outlooks for your locations.",
+  "createdAt": "2026-01-16T07:22:08.558Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jennyyyyyy7528-cell/mcpserverhw3"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_alerts",
+      "description": "Get weather alerts for a US state.\n\n    Args:\n        state: Two-letter US state code (e.g. CA, NY)\n    "
+    },
+    {
+      "name": "get_forecast",
+      "description": "Get weather forecast for a location.\n\n    Args:\n        latitude: Latitude of the location\n        longitude: Longitude of the location\n    "
+    }
+  ]
+}

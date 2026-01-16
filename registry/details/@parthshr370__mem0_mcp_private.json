@@ -1,0 +1,75 @@
+{
+  "id": "@parthshr370/mem0_mcp_private",
+  "displayName": "mem0_mcp_private",
+  "description": "Save, search, and manage long-term memories across users and apps. Quickly recall facts, preferences, and past conversations with semantic search and structured filters. Update or delete specific entries, or bulk-clear a scope to keep context accurate and tidy.",
+  "createdAt": "2026-01-16T07:25:30.039Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@parthshr370/mem0_mcp_private"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mem0_api_key"
+      ],
+      "properties": {
+        "mem0_api_key": {
+          "type": "string",
+          "description": "Mem0 API key (required)"
+        },
+        "default_user_id": {
+          "type": "string",
+          "description": "Default user_id injected into filters when unspecified.",
+          "default": null
+        },
+        "enable_graph_default": {
+          "type": "string",
+          "description": "Default enable_graph toggle when clients omit the flag.",
+          "default": null
+        }
+      },
+      "description": "Session-level overrides used when hosting via Smithery or HTTP."
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add_memory",
+      "description": "Store a new preference, fact, or conversation snippet. Requires at least one: user_id, agent_id, or run_id."
+    },
+    {
+      "name": "search_memories",
+      "description": "Run a semantic search over existing memories.\n\n        Use filters to narrow results. Common filter patterns:\n        - Single user: {\"AND\": [{\"user_id\": \"john\"}]}\n        - Agent memories: {\"AND\": [{\"agent_id\": \"agent_name\"}]}\n        - Recent memories: {\"AND\": [{\"user_id\": \"john\"}, {\"created_at\": {\"gte\": \"2024-01-01\"}}]}\n        - Multiple users: {\"AND\": [{\"user_id\": {\"in\": [\"john\", \"jane\"]}}]}\n        - Cross-entity: {\"OR\": [{\"user_id\": \"john\"}, {\"agent_id\": \"agent_name\"}]}\n\n        user_id is automatically added to filters if not provided.\n        "
+    },
+    {
+      "name": "get_memories",
+      "description": "Page through memories using filters instead of search.\n\n        Use filters to list specific memories. Common filter patterns:\n        - Single user: {\"AND\": [{\"user_id\": \"john\"}]}\n        - Agent memories: {\"AND\": [{\"agent_id\": \"agent_name\"}]}\n        - Recent memories: {\"AND\": [{\"user_id\": \"john\"}, {\"created_at\": {\"gte\": \"2024-01-01\"}}]}\n        - Multiple users: {\"AND\": [{\"user_id\": {\"in\": [\"john\", \"jane\"]}}]}\n\n        Pagination: Use page (1-indexed) and page_size for browsing results.\n        user_id is automatically added to filters if not provided.\n        "
+    },
+    {
+      "name": "delete_all_memories",
+      "description": "Delete every memory in the given user/agent/app/run but keep the entity."
+    },
+    {
+      "name": "list_entities",
+      "description": "List which users/agents/apps/runs currently hold memories."
+    },
+    {
+      "name": "get_memory",
+      "description": "Fetch a single memory once you know its memory_id."
+    },
+    {
+      "name": "update_memory",
+      "description": "Overwrite an existing memory’s text."
+    },
+    {
+      "name": "delete_memory",
+      "description": "Delete one memory after the user confirms its memory_id."
+    },
+    {
+      "name": "delete_entities",
+      "description": "Remove a user/agent/app/run record entirely (and cascade-delete its memories)."
+    }
+  ]
+}

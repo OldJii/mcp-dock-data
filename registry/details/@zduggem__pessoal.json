@@ -1,0 +1,12 @@
+{
+  "id": "@zduggem/pessoal",
+  "displayName": "pessoal",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:05.557Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zduggem/pessoal"
+  },
+  "connection": null,
+  "capabilities": []
+}

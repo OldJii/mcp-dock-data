@@ -1,0 +1,31 @@
+{
+  "id": "@metatool-ai/mcp-server-metamcp",
+  "displayName": "MetaMCP Server",
+  "description": "Manage multiple MCP servers seamlessly. Route requests and configurations dynamically across various MCPs.",
+  "createdAt": "2026-01-16T07:26:36.515Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@metatool-ai/mcp-server-metamcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "metamcpApiKey"
+      ],
+      "properties": {
+        "metamcpApiKey": {
+          "type": "string",
+          "description": "The API key from metamcp.com/api-keys. Required."
+        },
+        "metamcpApiBaseUrl": {
+          "type": "string",
+          "description": "Optional override for the MetaMCP App URL (default is https://api.metamcp.com)."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

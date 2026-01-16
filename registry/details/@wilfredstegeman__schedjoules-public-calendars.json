@@ -1,0 +1,12 @@
+{
+  "id": "@wilfredstegeman/schedjoules-public-calendars",
+  "displayName": "schedjoules-public-calendars",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:12.680Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wilfredstegeman/schedjoules-public-calendars"
+  },
+  "connection": null,
+  "capabilities": []
+}

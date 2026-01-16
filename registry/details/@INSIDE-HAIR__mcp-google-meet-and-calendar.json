@@ -1,0 +1,159 @@
+{
+  "id": "@INSIDE-HAIR/mcp-google-meet-and-calendar",
+  "displayName": "Google Calendar and Meet",
+  "description": "Manage and automate your Google Meet workflows with enterprise-grade tools for calendar event management, meeting moderation, attendance tracking, and smart notes. Deploy easily via Docker, Smithery, or manual setup with secure token authentication and team-friendly features. Enhance productivity with advanced Google Meet space management and AI-powered meeting summaries.",
+  "createdAt": "2026-01-16T07:21:23.144Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@INSIDE-HAIR/mcp-google-meet-and-calendar"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "CLIENT_ID": {
+          "type": "string",
+          "description": "Google OAuth2 Client ID for direct token authentication"
+        },
+        "CLIENT_SECRET": {
+          "type": "string",
+          "description": "Google OAuth2 Client Secret"
+        },
+        "REFRESH_TOKEN": {
+          "type": "string",
+          "description": "Google OAuth2 Refresh Token"
+        },
+        "googleMeetTokenPath": {
+          "type": "string",
+          "description": "Path to token file (legacy)"
+        },
+        "googleOAuthCredentials": {
+          "type": "string",
+          "description": "Path to Google OAuth credentials JSON file (legacy)"
+        },
+        "googleMeetCredentialsPath": {
+          "type": "string",
+          "description": "Path to credentials file (legacy)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check if the Google Meet MCP Server is healthy"
+    },
+    {
+      "name": "calendar_v3_list_calendars",
+      "description": "[Calendar API v3] List all calendars available to the user"
+    },
+    {
+      "name": "calendar_v3_list_events",
+      "description": "[Calendar API v3] List upcoming calendar events with Google Meet conferences"
+    },
+    {
+      "name": "calendar_v3_get_event",
+      "description": "[Calendar API v3] Get details of a specific calendar event"
+    },
+    {
+      "name": "calendar_v3_create_event",
+      "description": "[Calendar API v3] Create a new calendar event with Google Meet conference and guest permissions"
+    },
+    {
+      "name": "calendar_v3_update_event",
+      "description": "[Calendar API v3] Update an existing calendar event"
+    },
+    {
+      "name": "calendar_v3_delete_event",
+      "description": "[Calendar API v3] Delete a calendar event"
+    },
+    {
+      "name": "calendar_v3_move_event",
+      "description": "[Calendar API v3] Move a calendar event from one calendar to another"
+    },
+    {
+      "name": "calendar_v3_freebusy_query",
+      "description": "[Calendar API v3] Query free/busy information for calendars"
+    },
+    {
+      "name": "calendar_v3_quick_add",
+      "description": "[Calendar API v3] Create event using natural language"
+    },
+    {
+      "name": "meet_v2_create_space",
+      "description": "[Meet API v2 GA] Create a Google Meet space with advanced configuration"
+    },
+    {
+      "name": "meet_v2_get_space",
+      "description": "[Meet API v2 GA] Get details of a Google Meet space"
+    },
+    {
+      "name": "meet_v2_update_space",
+      "description": "[Meet API v2 GA] Update configuration of a Google Meet space"
+    },
+    {
+      "name": "meet_v2_end_active_conference",
+      "description": "[Meet API v2 GA] End the active conference in a Google Meet space"
+    },
+    {
+      "name": "meet_v2_list_conference_records",
+      "description": "[Meet API v2 GA] List conference records for historical meetings"
+    },
+    {
+      "name": "meet_v2_get_conference_record",
+      "description": "[Meet API v2 GA] Get details of a specific conference record"
+    },
+    {
+      "name": "meet_v2_list_recordings",
+      "description": "[Meet API v2 GA] List recordings for a conference record"
+    },
+    {
+      "name": "meet_v2_get_recording",
+      "description": "[Meet API v2 GA] Get details of a specific recording"
+    },
+    {
+      "name": "meet_v2_list_transcripts",
+      "description": "[Meet API v2 GA] List transcripts for a conference record"
+    },
+    {
+      "name": "meet_v2_get_transcript",
+      "description": "[Meet API v2 GA] Get details of a specific transcript"
+    },
+    {
+      "name": "meet_v2_list_transcript_entries",
+      "description": "[Meet API v2 GA] List transcript entries (individual speech segments)"
+    },
+    {
+      "name": "meet_v2_get_participant",
+      "description": "[Meet API v2 GA] Get details of a specific participant"
+    },
+    {
+      "name": "meet_v2_list_participants",
+      "description": "[Meet API v2 GA] List participants for a conference record"
+    },
+    {
+      "name": "meet_v2_get_participant_session",
+      "description": "[Meet API v2 GA] Get details of a specific participant session"
+    },
+    {
+      "name": "meet_v2_list_participant_sessions",
+      "description": "[Meet API v2 GA] List sessions for a specific participant"
+    },
+    {
+      "name": "get_current_time",
+      "description": "Get the current time in UTC or specific timezone"
+    }
+  ]
+}

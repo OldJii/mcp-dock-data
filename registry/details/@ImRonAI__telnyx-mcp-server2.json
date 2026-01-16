@@ -1,0 +1,12 @@
+{
+  "id": "@ImRonAI/telnyx-mcp-server2",
+  "displayName": "telnyx-mcp-server2",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:30.403Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ImRonAI/telnyx-mcp-server2"
+  },
+  "connection": null,
+  "capabilities": []
+}

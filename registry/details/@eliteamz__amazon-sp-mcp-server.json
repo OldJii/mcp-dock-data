@@ -1,0 +1,133 @@
+{
+  "id": "@eliteamz/amazon-sp-mcp-server",
+  "displayName": "Amazon Selling Partner API Integration Server",
+  "description": "Manage your Amazon seller account effortlessly. Create reports, update prices, and get inventory summaries with seamless integration to the Amazon Selling Partner API. Streamline your operations and enhance your selling experience on Amazon.",
+  "createdAt": "2026-01-16T07:31:02.970Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@eliteamz/amazon-sp-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "clientId",
+        "clientSecret",
+        "refreshToken",
+        "sellingPartnerId"
+      ],
+      "properties": {
+        "region": {
+          "type": "string",
+          "description": "Amazon SP API region (na=North America, eu=Europe, fe=Far East)",
+          "default": "na"
+        },
+        "clientId": {
+          "type": "string",
+          "description": "Your Amazon SP API Client ID"
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "Your Amazon SP API Client Secret"
+        },
+        "refreshToken": {
+          "type": "string",
+          "description": "Your Amazon SP API refresh token"
+        },
+        "marketplaceId": {
+          "type": "string",
+          "description": "Your Amazon Marketplace ID",
+          "default": "A2Q3Y263D00KWC"
+        },
+        "sellingPartnerId": {
+          "type": "string",
+          "description": "Your Amazon Seller Partner ID"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "amazon_sp_create_report",
+      "description": "Create a new report in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_report",
+      "description": "Get a report from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_ready_report",
+      "description": "Get the contents of a report from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_update_price",
+      "description": "Update the price of a product in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_create_subscription",
+      "description": "Create a subscription for notifications in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_inventory_summaries",
+      "description": "Get inventory summaries from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_fees_estimate",
+      "description": "Get fees estimate for a product from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_catalog_item",
+      "description": "Get catalog item details from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_marketplace_participations",
+      "description": "Get marketplace participations from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_search_listings_items",
+      "description": "Search listings items in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_pricing",
+      "description": "Get pricing information for ASINs from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_download_report",
+      "description": "Download a report from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_check_report_status_and_download",
+      "description": "Check report status and download when ready from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_create_destination",
+      "description": "Create a notification destination in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_list_destinations",
+      "description": "List notification destinations in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_delete_destination",
+      "description": "Delete a notification destination in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_delete_subscription",
+      "description": "Delete a notification subscription in Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_subscription",
+      "description": "Get notification subscription details from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_list_catalog_items",
+      "description": "List catalog items from Amazon Selling Partner API"
+    },
+    {
+      "name": "amazon_sp_get_listing_offers",
+      "description": "Get listing offers from Amazon Selling Partner API"
+    }
+  ]
+}

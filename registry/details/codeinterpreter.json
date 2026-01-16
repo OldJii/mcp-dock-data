@@ -1,0 +1,37 @@
+{
+  "id": "codeinterpreter",
+  "displayName": "Codeinterpreter",
+  "description": "CodeInterpreter extends Python-based coding environments with integrated data analysis, enabling developers to run scripts, visualize results, and prototype solutions inside supported platforms",
+  "createdAt": "2026-01-16T07:19:46.072Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/codeinterpreter"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CODEINTERPRETER_CREATE_SANDBOX",
+      "description": "Create a sandbox to execute python code in a Jupyter notebook cell. This is useful for agents to communicate, execute code, see output, read files, write files, etc. It's like you own personal computer, but in the cloud. Use /home/user folder to write/read files."
+    },
+    {
+      "name": "CODEINTERPRETER_EXECUTE_CODE",
+      "description": "Execute python code in a sandbox and return any result, stdout, stderr, and error. Use /home/user folder to write/read files. Try to not use plt.show() as the code is executed remotely. Use files for image/chart output instead."
+    },
+    {
+      "name": "CODEINTERPRETER_GET_FILE_CMD",
+      "description": "Get a file from the sandbox and returns the file. The files should be read from /home/user folder."
+    },
+    {
+      "name": "CODEINTERPRETER_RUN_TERMINAL_CMD",
+      "description": "Run a command in the terminal and returns the stdout, stderr, and error code. Use /home/user folder to write/read files."
+    },
+    {
+      "name": "CODEINTERPRETER_UPLOAD_FILE_CMD",
+      "description": "Upload a file to the sandbox environment. The files should be uploaded to the /home/user folder."
+    }
+  ]
+}

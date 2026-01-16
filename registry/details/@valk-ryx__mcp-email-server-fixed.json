@@ -1,0 +1,12 @@
+{
+  "id": "@valk-ryx/mcp-email-server-fixed",
+  "displayName": "mcp-email-server-fixed",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:40.933Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@valk-ryx/mcp-email-server-fixed"
+  },
+  "connection": null,
+  "capabilities": []
+}

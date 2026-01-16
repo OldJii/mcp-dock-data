@@ -1,0 +1,12 @@
+{
+  "id": "txn2/kubefwd",
+  "displayName": "kubefwd",
+  "description": "Manage Kubernetes service port forwarding for local development through AI-powered workflows. kubefwd bulk-forwards services from namespaces to your local machine, assigning each service a unique loopback IP so multiple services can use the same ports without conflicts. Query forwarded services, check connection status, view traffic metrics, diagnose errors, and manage port forwards through natural language. Ideal for developers working with microservices who need seamless cluster connectivity.",
+  "createdAt": "2026-01-16T07:33:44.816Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/txn2/kubefwd"
+  },
+  "connection": null,
+  "capabilities": []
+}

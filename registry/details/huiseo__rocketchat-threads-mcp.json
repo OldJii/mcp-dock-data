@@ -1,0 +1,77 @@
+{
+  "id": "huiseo/rocketchat-threads-mcp",
+  "displayName": "Rocket.Chat",
+  "description": "Manage your Rocket.Chat workspace by browsing channels, messages, and complex discussion threads. Locate organizational knowledge quickly with search tools that span across all your conversations. Interact directly with your team by sending messages, replying to threads, and adding reactions to keep work moving forward.",
+  "createdAt": "2026-01-16T07:25:59.487Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/huiseo/rocketchat-threads-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "rocketchat_list_channels",
+      "description": "List all accessible Rocket.Chat channels.\n\n**START HERE** - Use this tool first to discover available channels and get their IDs.\n\nReturns channel information including:\n- Channel ID and name (use ID for other API calls)\n- Type (public/private/direct)\n- Member count and message count\n- Topic and description\n- Last activity timestamp\n\n**Typical Workflow:**\n1. rocketchat_list_channels → Get channel IDs\n2. rocketchat_get_messages or rocketchat_list_threads → Read content\n3. rocketchat_search_messages or rocketchat_search_threads → Find specific content\n\n**Performance Tips:**\n- Default \"joined\" type is faster than \"all\"\n- Use pagination (offset) for large channel lists\n\n**No special requirements** - Works without OpenSearch.\n\nExamples:\n- List joined channels: {}\n- List all public channels: { \"type\": \"all\" }\n- Paginate results: { \"limit\": 20, \"offset\": 40 }"
+    },
+    {
+      "name": "rocketchat_search_channels",
+      "description": "Search for Rocket.Chat channels by name or topic.\n\nUse this to find specific channels when you know part of the name.\n\nExamples:\n- Find project channels: { \"query\": \"project\" }\n- Find channels by topic: { \"query\": \"support\" }"
+    },
+    {
+      "name": "rocketchat_get_channel_info",
+      "description": "Get detailed information about a specific Rocket.Chat channel.\n\nReturns:\n- Channel ID, name, and display name\n- Type (public/private/direct/livechat)\n- Member and message counts\n- Topic, description, and announcement\n- Read-only status\n- Last activity timestamp\n\nExamples:\n- By ID: { \"roomId\": \"GENERAL\" }\n- By name: { \"roomName\": \"general\" }"
+    },
+    {
+      "name": "rocketchat_get_messages",
+      "description": "Get messages from a Rocket.Chat channel.\n\nReturns message information including:\n- Message ID, text, and author\n- Timestamp and edit history\n- Thread information (if part of a thread)\n- Reactions and attachments\n- Pinned status\n\nTime filtering options:\n- Relative: \"1d\" (1 day), \"7d\" (7 days), \"1w\" (1 week), \"1m\" (1 month)\n- ISO date: \"2024-01-15\" (from that date to now)\n- Unix timestamp: \"1705276800\"\n\nExamples:\n- Recent messages: { \"roomId\": \"GENERAL\" }\n- Last 24 hours: { \"roomId\": \"GENERAL\", \"timeRange\": \"1d\" }\n- Last week: { \"roomId\": \"GENERAL\", \"timeRange\": \"1w\", \"limit\": 100 }"
+    },
+    {
+      "name": "rocketchat_search_messages",
+      "description": "Search for messages containing specific text across all channels or in a specific channel.\n\n**IMPORTANT: Use global search (without roomId) first!**\n- Global search finds messages across ALL channels at once\n- Only use roomId if you need to filter results to a specific channel\n- Do NOT iterate through channels one by one - use global search instead\n\nThis searches message content (parent messages only, not thread replies).\nFor searching within threads, use rocketchat_search_threads instead.\n\n**Search Strategy (Recommended):**\n1. First, try global search WITHOUT roomId - this searches all channels at once\n2. If global search fails with \"roomId required\" error, then use channel-specific search\n3. Do NOT loop through channels - global search is much more efficient\n\n**OpenSearch Dependency:**\n- WITHOUT roomId (global search): REQUIRES OpenSearch integration - searches ALL channels\n- WITH roomId: Works on all servers but only searches ONE channel\n\nReturns:\n- Search summary (query, total results, time range)\n- Matching messages with full details (including which channel/roomId each message is from)\n- Thread IDs for messages that are thread parents\n- Highlighted text snippets (when OpenSearch is available)\n\n**When to use which tool:**\n- rocketchat_search_messages: Find messages by keyword (fast, single messages)\n- rocketchat_search_threads: Find discussions/decisions (searches replies too)\n- rocketchat_get_messages: Browse recent messages chronologically\n\n**Error Handling:**\n- If \"roomId required\" error: Server lacks OpenSearch, provide roomId\n- If empty results: Try broader search terms\n\nExamples:\n- Global search (RECOMMENDED): { \"query\": \"삼성전자\" }\n- Global search (RECOMMENDED): { \"query\": \"authentication\" }\n- Channel-specific (only if needed): { \"query\": \"API integration\", \"roomId\": \"GENERAL\" }"
+    },
+    {
+      "name": "rocketchat_get_message",
+      "description": "Get a specific message by its ID.\n\nUse this to retrieve full details of a message when you have its ID.\n\nExamples:\n- Get message: { \"messageId\": \"abc123xyz\" }"
+    },
+    {
+      "name": "rocketchat_list_threads",
+      "description": "List all threads in a Rocket.Chat channel.\n\nReturns thread information including:\n- Thread ID (same as parent message ID)\n- Title (first message text, truncated)\n- Author and creation time\n- Reply count and last reply time\n- Participant user IDs\n\nUse this to discover discussions in a channel before diving into details.\n\nExamples:\n- List all threads: { \"roomId\": \"GENERAL\" }\n- Recent threads: { \"roomId\": \"GENERAL\", \"timeRange\": \"7d\" }\n- Paginate: { \"roomId\": \"GENERAL\", \"limit\": 20, \"offset\": 20 }"
+    },
+    {
+      "name": "rocketchat_get_thread",
+      "description": "Get a thread with all its replies.\n\nReturns complete thread information:\n- Thread metadata (ID, title, author, timestamps)\n- Parent message with full details\n- All reply messages in chronological order\n- Participant information\n\nThis is the primary tool for reading organizational discussions, agreements, and decisions.\n\nExamples:\n- Get full thread: { \"threadId\": \"abc123xyz\" }\n- Get with pagination: { \"threadId\": \"abc123xyz\", \"limit\": 100 }"
+    },
+    {
+      "name": "rocketchat_search_threads",
+      "description": "Search for threads containing specific text.\n\nIMPORTANT: Unlike basic message search, this tool searches BOTH parent messages AND replies within threads. This is essential for finding organizational knowledge that may be discussed in thread replies.\n\nReturns:\n- Thread ID and title\n- Where the match was found (parent or reply)\n- Match count within the thread\n- Reply count and participants\n\nUse cases:\n- Finding discussions: \"Find threads about API authentication\"\n- Finding decisions: \"Server migration decisions\"\n- Finding agreements: \"API spec agreements\"\n\nExamples:\n- Search discussions: { \"query\": \"deployment\", \"roomId\": \"GENERAL\" }\n- Search with more results: { \"query\": \"migration\", \"roomId\": \"dev-team\", \"limit\": 50 }"
+    },
+    {
+      "name": "rocketchat_lookup_user",
+      "description": "Look up a Rocket.Chat user by ID or username.\n\nReturns user information:\n- User ID and username\n- Display name\n- Email (if visible)\n- Status (online/away/busy/offline)\n- Roles (admin, user, etc.)\n\nUse this to get details about message authors or participants.\n\nExamples:\n- By ID: { \"userId\": \"x3JG6uXJgE7YNHR3S\" }\n- By username: { \"username\": \"john.doe\" }"
+    },
+    {
+      "name": "rocketchat_list_users",
+      "description": "List Rocket.Chat users with pagination.\n\nReturns user list with basic information for each user.\nUse rocketchat_lookup_user for detailed information about a specific user.\n\nExamples:\n- List users: {}\n- Paginate: { \"limit\": 20, \"offset\": 40 }"
+    },
+    {
+      "name": "rocketchat_get_me",
+      "description": "Get information about the current authenticated user.\n\nReturns the user information for the account used to authenticate with the MCP server.\nUseful for understanding the current context and permissions.\n\nExample: {}"
+    },
+    {
+      "name": "rocketchat_send_message",
+      "description": "Send a message to a Rocket.Chat channel.\n\n**IMPORTANT - Check First:**\n1. Call rocketchat_get_write_status to verify write is enabled\n2. If disabled, inform user that ROCKETCHAT_WRITE_ENABLED=true is required\n\n**Requirements:**\n- ROCKETCHAT_WRITE_ENABLED=true (server configuration)\n- Room must be in whitelist (if configured) or not in blacklist\n\n**Safety Features (automatic):**\n- @all, @here, @channel mentions are neutralized to prevent mass notifications\n- Messages to unauthorized rooms are blocked\n- Message length limited to 10000 characters\n\n**Error Handling:**\n- \"Write disabled\": Server not configured for writes\n- \"Room not allowed\": Room not in whitelist or is blacklisted\n- \"API error\": Check roomId is valid\n\nReturns:\n- Sent message details\n- Whether sanitization was applied\n- List of neutralized patterns (if any)\n\nExamples:\n- Send to channel: { \"roomId\": \"GENERAL\", \"text\": \"Hello team!\" }\n- Reply to thread: { \"roomId\": \"GENERAL\", \"text\": \"I agree\", \"threadId\": \"abc123\" }"
+    },
+    {
+      "name": "rocketchat_react",
+      "description": "Add a reaction emoji to a message.\n\nRequires ROCKETCHAT_WRITE_ENABLED=true.\n\nEmoji format:\n- With colons: \":thumbsup:\"\n- Without colons: \"thumbsup\" (will be normalized)\n\nCommon reactions:\n- :thumbsup: - Agreement/approval\n- :eyes: - Looking into it\n- :white_check_mark: - Done/completed\n- :hourglass: - In progress\n- :question: - Needs clarification\n\nExamples:\n- Add thumbsup: { \"messageId\": \"abc123\", \"emoji\": \":thumbsup:\" }\n- Mark as done: { \"messageId\": \"abc123\", \"emoji\": \"white_check_mark\" }"
+    },
+    {
+      "name": "rocketchat_get_write_status",
+      "description": "Check if write operations are enabled and get the current configuration.\n\n**Call this BEFORE using rocketchat_send_message or rocketchat_react.**\n\nReturns:\n- enabled: Whether write operations are allowed\n- whitelist: Rooms where writes are allowed (if configured)\n- blacklist: Rooms where writes are blocked\n- description: Human-readable status summary\n\n**Decision Tree:**\n1. If enabled=false → Inform user writes are disabled\n2. If enabled=true + whitelist → Check if target room is in whitelist\n3. If enabled=true + no whitelist → All rooms allowed except blacklist\n\nExample: {}"
+    }
+  ]
+}

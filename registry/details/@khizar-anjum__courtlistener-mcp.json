@@ -1,0 +1,91 @@
+{
+  "id": "@khizar-anjum/courtlistener-mcp",
+  "displayName": "CourtListener Case Law Explorer",
+  "description": "Search and analyze U.S. case law across thousands of courts using CourtListener’s open database. Find precedents, read full opinions, validate citations, study judge patterns, and check procedural requirements and legal trends. Search federal dockets, track case status, and analyze case timelines and documents when available.",
+  "createdAt": "2026-01-16T07:23:43.506Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@khizar-anjum/courtlistener-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "courtlistener_api_key": {
+          "type": "string",
+          "description": "CourtListener API key for enhanced access"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_cases_by_problem",
+      "description": "Find relevant cases using LLM-generated search keywords. The LLM should extract legal keywords from the problem description and provide them for precise case law search."
+    },
+    {
+      "name": "get_case_details",
+      "description": "Deep dive into specific case for precedent analysis with full legal reasoning"
+    },
+    {
+      "name": "find_similar_precedents",
+      "description": "Find cases with similar legal reasoning or outcomes to a reference case"
+    },
+    {
+      "name": "analyze_case_outcomes",
+      "description": "Analyze outcome patterns for similar cases to predict success likelihood"
+    },
+    {
+      "name": "get_judge_analysis",
+      "description": "Analyze judge's typical rulings on similar issues for strategic insights"
+    },
+    {
+      "name": "validate_citations",
+      "description": "Verify and expand legal citations with related case discovery"
+    },
+    {
+      "name": "get_procedural_requirements",
+      "description": "Find procedural rules and filing requirements for specific case types in any jurisdiction"
+    },
+    {
+      "name": "track_legal_trends",
+      "description": "Identify recent trends in similar cases for strategic advantage"
+    },
+    {
+      "name": "search_pacer_dockets",
+      "description": "📊 PACER SEARCH: Search federal court dockets from PACER via CourtListener's RECAP Archive. Find active and terminated cases with comprehensive party, attorney, and filing information. Search by case name, party name, or nature of suit across all federal courts or specific jurisdictions."
+    },
+    {
+      "name": "get_docket_entries",
+      "description": "🔒 PREMIUM ACCESS REQUIRED | EXPERIMENTAL: Get detailed docket entries for a specific case, including all filings, orders, and document references from PACER. Note: This function requires CourtListener premium API access and is experimental - may not work with basic API keys."
+    },
+    {
+      "name": "search_parties_attorneys",
+      "description": "📊 BASIC ACCESS: Search for parties and attorneys across PACER cases. Track representation patterns and attorney success rates. Note: Basic API access provides limited data - premium access required for full attorney/party details."
+    },
+    {
+      "name": "analyze_case_timeline",
+      "description": "🔒 PREMIUM ACCESS REQUIRED | EXPERIMENTAL: Analyze case progression timeline from PACER docket entries. Track delays, activity patterns, and case development. Note: Requires premium access to docket-entries endpoint - basic API access provides limited timeline data only."
+    },
+    {
+      "name": "track_case_status",
+      "description": "📊 BASIC ACCESS: Track current status and recent activity for PACER cases. Monitor active litigation progress. Note: Basic access provides case metadata only - premium access required for detailed activity tracking."
+    },
+    {
+      "name": "get_case_documents",
+      "description": "🔒 PREMIUM ACCESS REQUIRED | EXPERIMENTAL: Retrieve case documents from PACER with full text extraction. Access orders, motions, briefs, and opinions. Note: This function requires CourtListener premium API access and is experimental - may not work with basic API keys."
+    }
+  ]
+}

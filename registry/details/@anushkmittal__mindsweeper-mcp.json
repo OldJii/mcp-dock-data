@@ -1,0 +1,12 @@
+{
+  "id": "@anushkmittal/mindsweeper-mcp",
+  "displayName": "mindsweeper-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:54.481Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anushkmittal/mindsweeper-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

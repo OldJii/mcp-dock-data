@@ -1,0 +1,12 @@
+{
+  "id": "@aglolz/mcp-fetch",
+  "displayName": "mcp-fetch",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:04.479Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aglolz/mcp-fetch"
+  },
+  "connection": null,
+  "capabilities": []
+}

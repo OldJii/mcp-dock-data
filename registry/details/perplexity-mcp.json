@@ -1,0 +1,27 @@
+{
+  "id": "perplexity-mcp",
+  "displayName": "Perplexity MCP",
+  "description": "An MCP server providing web search functionality using Perplexity AI's API. You can select the model you want to use as well a search recency, day, month, year, etc.",
+  "createdAt": "2026-01-16T07:25:17.977Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/perplexity-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "perplexityApiKey"
+      ],
+      "properties": {
+        "perplexityApiKey": {
+          "type": "string",
+          "description": "Your Perplexity AI API key"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "@kodey-ai/salesforce-mcp-server",
+  "displayName": "Salesforce SOQL",
+  "description": "Run SOQL queries against your Salesforce org to retrieve records and insights. Explore objects, filter data, and troubleshoot CRM issues without leaving your workflow. Save time by querying accounts, opportunities, and custom objects on demand.",
+  "createdAt": "2026-01-16T07:29:18.599Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "clientId": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Client ID (Connected App Consumer Key)"
+        },
+        "loginUrl": {
+          "type": "string",
+          "description": "Salesforce login URL (use https://test.salesforce.com for sandboxes)",
+          "default": "https://login.salesforce.com"
+        },
+        "password": {
+          "type": "string",
+          "description": "Salesforce password"
+        },
+        "username": {
+          "type": "string",
+          "description": "Salesforce username"
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Salesforce access token (if already authenticated)"
+        },
+        "instanceUrl": {
+          "type": "string",
+          "description": "Salesforce instance URL (e.g., https://yourinstance.my.salesforce.com)"
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Client Secret (Connected App Consumer Secret)"
+        },
+        "refreshToken": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Refresh Token"
+        },
+        "securityToken": {
+          "type": "string",
+          "description": "Salesforce security token (if required)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": []
+}

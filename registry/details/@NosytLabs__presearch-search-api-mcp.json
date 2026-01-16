@@ -1,0 +1,133 @@
+{
+  "id": "@NosytLabs/presearch-search-api-mcp",
+  "displayName": "Presearch MCP",
+  "description": "Search the web with Presearch API using country, freshness, and safety filters. Export results to JSON, CSV, or Markdown for easy reuse. Scrape content from result links and speed up workflows with caching.\n\nGet Presearch API key here - https://presearch.io/searchapi",
+  "createdAt": "2026-01-16T07:32:07.436Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NosytLabs/presearch-search-api-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "PRESEARCH_API_KEY"
+      ],
+      "properties": {
+        "CACHE_TTL": {
+          "type": "number",
+          "description": "Time-To-Live for cached entries in seconds.",
+          "default": 300
+        },
+        "LOG_LEVEL": {
+          "type": "string",
+          "description": "Verbosity of logging output.",
+          "default": "info"
+        },
+        "LOG_PRETTY": {
+          "type": "boolean",
+          "description": "Format logs for human readability (not recommended for production).",
+          "default": false
+        },
+        "CACHE_ENABLED": {
+          "type": "boolean",
+          "description": "Enable in-memory caching of search results to improve performance.",
+          "default": true
+        },
+        "CACHE_MAX_KEYS": {
+          "type": "number",
+          "description": "Maximum number of entries to store in the cache.",
+          "default": 1000
+        },
+        "PRESEARCH_API_KEY": {
+          "type": "string",
+          "description": "Your Presearch API Key for authentication. Get one at https://presearch.com/"
+        },
+        "PRESEARCH_RETRIES": {
+          "type": "number",
+          "description": "Number of retry attempts for failed API requests.",
+          "default": 3
+        },
+        "PRESEARCH_TIMEOUT": {
+          "type": "number",
+          "description": "Maximum time in milliseconds to wait for API requests.",
+          "default": 10000
+        },
+        "SEARCH_MAX_RESULTS": {
+          "type": "number",
+          "description": "Maximum number of search results to return per query.",
+          "default": 50
+        },
+        "RATE_LIMIT_WINDOW_MS": {
+          "type": "number",
+          "description": "Time window for rate limiting in milliseconds.",
+          "default": 60000
+        },
+        "PRESEARCH_SAFE_SEARCH": {
+          "type": "string",
+          "description": "Filter adult content from search results.",
+          "default": "moderate"
+        },
+        "RATE_LIMIT_MAX_REQUESTS": {
+          "type": "number",
+          "description": "Maximum number of requests allowed per window.",
+          "default": 100
+        },
+        "PRESEARCH_DEFAULT_LANGUAGE": {
+          "type": "string",
+          "description": "Default language code for searches (e.g., en-US).",
+          "default": "en-US"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "presearch_ai_search",
+      "description": "Privacy-focused search engine returning ranked results with relevance scores. Supports quotes, minus sign exclusion, and site: operators."
+    },
+    {
+      "name": "analyze_content",
+      "description": "NLP-based content analysis supporting summary, keywords, sentiment, and topics extraction."
+    },
+    {
+      "name": "export_search_results",
+      "description": "Export search results to JSON, CSV, Markdown, or HTML format with optional metadata."
+    },
+    {
+      "name": "scrape_url",
+      "description": "Scrape content from a specific URL with options for format (text, markdown, html) and main content extraction."
+    },
+    {
+      "name": "presearch_search_and_scrape",
+      "description": "Combined search and scraping (50-70% faster than sequential). Searches then extracts from top results."
+    },
+    {
+      "name": "site_export",
+      "description": "Deep crawl and export site content to JSON, Markdown, HTML, or PDF. Supports recursive crawling and asset inclusion."
+    },
+    {
+      "name": "cache_stats",
+      "description": "Retrieve cache performance metrics: hits, misses, size, and entry count."
+    },
+    {
+      "name": "cache_clear",
+      "description": "Clear all cached data and reset statistics for fresh data collection."
+    },
+    {
+      "name": "presearch_health_check",
+      "description": "Verify API connectivity, authentication, and rate limit status."
+    },
+    {
+      "name": "presearch_node_status",
+      "description": "Monitor Presearch network node health and performance metrics."
+    },
+    {
+      "name": "presearch_deep_research",
+      "description": "Performs a deep research session: searches multiple queries (if needed), scrapes authoritative sources, analyzes content quality/relevance, and synthesizes a comprehensive report with citations. Ideal for complex topics requiring fact-checking or broad overview."
+    }
+  ]
+}

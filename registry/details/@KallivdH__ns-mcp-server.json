@@ -1,0 +1,63 @@
+{
+  "id": "@KallivdH/ns-mcp-server",
+  "displayName": "NS Travel",
+  "description": "Plan Dutch rail journeys with real-time routes, transfers, platforms, and crowding insights. Check live departures and arrivals, and get alerts for current and planned disruptions with travel advice. Look up station details, OV-fiets availability, and ticket prices to optimize your trip.",
+  "createdAt": "2026-01-16T07:23:54.027Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KallivdH/ns-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "NS_API_KEY"
+      ],
+      "properties": {
+        "NS_API_KEY": {
+          "type": "string",
+          "description": "NS API key for accessing Dutch railway data"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_disruptions",
+      "description": "Get comprehensive information about current and planned disruptions on the Dutch railway network. Returns details about maintenance work, unexpected disruptions, alternative transport options, impact on travel times, and relevant advice. Can filter for active disruptions and specific disruption types."
+    },
+    {
+      "name": "get_travel_advice",
+      "description": "Get detailed travel routes between two train stations, including transfers, real-time updates, platform information, and journey duration. Can plan trips for immediate departure or for a specific future time, with options to optimize for arrival time. Returns multiple route options with status and crowding information."
+    },
+    {
+      "name": "get_departures",
+      "description": "Get real-time departure information for trains from a specific station, including platform numbers, delays, route details, and any relevant travel notes. Returns a list of upcoming departures with timing, destination, and status information."
+    },
+    {
+      "name": "get_ovfiets",
+      "description": "Get OV-fiets availability at a train station"
+    },
+    {
+      "name": "get_station_info",
+      "description": "Get detailed information about a train station"
+    },
+    {
+      "name": "get_current_time_in_rfc3339",
+      "description": "Get the current server time (Europe/Amsterdam timezone) in RFC3339 format. This can be used as input for other tools that require date-time parameters."
+    },
+    {
+      "name": "get_arrivals",
+      "description": "Get real-time arrival information for trains at a specific station, including platform numbers, delays, origin stations, and any relevant travel notes. Returns a list of upcoming arrivals with timing, origin, and status information."
+    },
+    {
+      "name": "get_prices",
+      "description": "Get price information for domestic train journeys, including different travel classes, ticket types, and discounts. Returns detailed pricing information with conditions and validity."
+    }
+  ]
+}

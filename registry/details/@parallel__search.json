@@ -1,0 +1,21 @@
+{
+  "id": "@parallel/search",
+  "displayName": "Parallel Web Search",
+  "description": "Highest accuracy web search for AIs",
+  "createdAt": "2026-01-16T07:22:48.498Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@parallel/search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "web_search_preview",
+      "description": "Purpose: Perform web searches for a given objective and return results\nin an LLM-friendly format and with parameters tuned for LLMs.\n\nIdeal Use Cases:\n- For live queries that benefit from updated data from the web.\n- When needing to gather information from multiple sources at once or gathering\ndetailed information from a single source.\nPerformance Benefits:\n- Ability to handle complex queries more effectively.\n- Controllability in output size and sources considered.\n\nExamples:\n- Performing a broad search on a topic with multiple facets.\n- Enquiring about a specific detail on a topic.\n\nHow to use:\n- For multi-hop queries, first try to use list to narrow down sources. Then\nuse targeted with include_domains to get more detailed results.\n- If you have budget or multi turn capabilities, start with list searches first.\n"
+    }
+  ]
+}

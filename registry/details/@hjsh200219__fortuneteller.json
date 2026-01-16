@@ -1,0 +1,52 @@
+{
+  "id": "@hjsh200219/fortuneteller",
+  "displayName": "Saju Insights",
+  "description": "Discover personalized Four Pillars (Saju) readings, from daily to yearly fortunes and 10-year luck cycles, based on your birth data. Check relationship compatibility and receive Yongshin-driven guidance with practical tips on colors, directions, and careers. Convert between lunar and solar calendars and tailor interpretations across different schools.",
+  "createdAt": "2026-01-16T07:20:23.898Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hjsh200219/fortuneteller"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_saju",
+      "description": "사주 분석 통합 (basic/fortune/yongsin/school_compare/yongsin_method)"
+    },
+    {
+      "name": "check_compatibility",
+      "description": "두 사람 궁합 분석"
+    },
+    {
+      "name": "convert_calendar",
+      "description": "양력↔음력 변환"
+    },
+    {
+      "name": "get_daily_fortune",
+      "description": "일일 운세"
+    },
+    {
+      "name": "get_dae_un",
+      "description": "10년 대운"
+    },
+    {
+      "name": "get_fortune_by_period",
+      "description": "시간대별 운세 (year/month/hour/multi-year)"
+    },
+    {
+      "name": "manage_settings",
+      "description": "해석 설정 관리 (get/set)"
+    }
+  ]
+}

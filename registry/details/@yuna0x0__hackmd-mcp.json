@@ -1,0 +1,82 @@
+{
+  "id": "@yuna0x0/hackmd-mcp",
+  "displayName": "HackMD MCP Server",
+  "description": "Interact with your HackMD notes and teams seamlessly. Manage your notes, view reading history, and collaborate with team members using AI assistants. Simplify your note-taking experience with powerful API integrations.",
+  "createdAt": "2026-01-16T07:24:33.510Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yuna0x0/hackmd-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "hackmdApiToken"
+      ],
+      "properties": {
+        "hackmdApiUrl": {
+          "type": "string",
+          "description": "Optional HackMD API URL, defaults to https://api.hackmd.io/v1",
+          "default": "https://api.hackmd.io/v1"
+        },
+        "hackmdApiToken": {
+          "type": "string",
+          "description": "Your HackMD API token for API authentication."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_user_info",
+      "description": "Get information about the authenticated user"
+    },
+    {
+      "name": "list_teams",
+      "description": "List all teams accessible to the user"
+    },
+    {
+      "name": "get_history",
+      "description": "Get user's reading history"
+    },
+    {
+      "name": "list_team_notes",
+      "description": "List all notes in a team"
+    },
+    {
+      "name": "create_team_note",
+      "description": "Create a new note in a team"
+    },
+    {
+      "name": "update_team_note",
+      "description": "Update an existing note in a team"
+    },
+    {
+      "name": "delete_team_note",
+      "description": "Delete a note in a team"
+    },
+    {
+      "name": "list_user_notes",
+      "description": "List all notes owned by the user"
+    },
+    {
+      "name": "get_note",
+      "description": "Get a note by its ID"
+    },
+    {
+      "name": "create_note",
+      "description": "Create a new note"
+    },
+    {
+      "name": "update_note",
+      "description": "Update an existing note"
+    },
+    {
+      "name": "delete_note",
+      "description": "Delete a note"
+    }
+  ]
+}

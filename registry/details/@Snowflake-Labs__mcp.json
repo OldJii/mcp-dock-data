@@ -1,0 +1,12 @@
+{
+  "id": "@Snowflake-Labs/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:53.426Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Snowflake-Labs/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

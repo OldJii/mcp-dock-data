@@ -1,0 +1,12 @@
+{
+  "id": "@sergey/clockify-mcp",
+  "displayName": "clockify-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:44.203Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sergey/clockify-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

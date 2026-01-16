@@ -1,0 +1,21 @@
+{
+  "id": "@markchiang/agent-ip",
+  "displayName": "agent-ip",
+  "description": "GeneOnline Agent IP MCP Server",
+  "createdAt": "2026-01-16T07:26:53.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@markchiang/agent-ip"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_patents",
+      "description": "Searches Google Patents using SerpApi. Allows filtering by date, inventor, assignee, country, language, status, type, and sorting."
+    }
+  ]
+}

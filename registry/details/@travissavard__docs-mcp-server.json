@@ -1,0 +1,12 @@
+{
+  "id": "@travissavard/docs-mcp-server",
+  "displayName": "docs-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:11.622Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@travissavard/docs-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

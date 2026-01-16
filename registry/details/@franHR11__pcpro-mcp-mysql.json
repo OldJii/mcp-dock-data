@@ -1,0 +1,64 @@
+{
+  "id": "@franHR11/pcpro-mcp-mysql",
+  "displayName": "pcpro-mcp-mysql",
+  "description": "Explore and query your MySQL database with ease. List tables, inspect table structures, and run SELECT queries to fetch results fast. Streamline debugging and analysis by getting schema details and data in one place.",
+  "createdAt": "2026-01-16T07:31:10.442Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@franHR11/pcpro-mcp-mysql"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mysqlHost",
+        "mysqlUser",
+        "mysqlPassword",
+        "mysqlDatabase"
+      ],
+      "properties": {
+        "mysqlHost": {
+          "type": "string",
+          "description": "Hostname for the MySQL server"
+        },
+        "mysqlUser": {
+          "type": "string",
+          "description": "MySQL user name"
+        },
+        "mysqlDatabase": {
+          "type": "string",
+          "description": "MySQL database name"
+        },
+        "mysqlPassword": {
+          "type": "string",
+          "description": "MySQL user's password"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "connect_db",
+      "description": "Connect to MySQL database"
+    },
+    {
+      "name": "query",
+      "description": "Execute a SELECT query"
+    },
+    {
+      "name": "execute",
+      "description": "Execute an INSERT, UPDATE, or DELETE query"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get table structure"
+    }
+  ]
+}

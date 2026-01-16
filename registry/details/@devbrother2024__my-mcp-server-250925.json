@@ -1,0 +1,52 @@
+{
+  "id": "@devbrother2024/my-mcp-server-250925",
+  "displayName": "Greeting & Utilities",
+  "description": "Send friendly greetings in multiple languages, run quick calculations, and get the current time for any timezone. Generate images from text prompts to visualize ideas. Boost development with a ready-made code review prompt.",
+  "createdAt": "2026-01-16T07:30:15.049Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devbrother2024/my-mcp-server-250925"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "Friendly greeting tool that can greet users in various languages"
+    },
+    {
+      "name": "add",
+      "description": "Addition calculator that adds two numbers"
+    },
+    {
+      "name": "subtract",
+      "description": "Subtraction calculator that subtracts second number from first number"
+    },
+    {
+      "name": "multiply",
+      "description": "Multiplication calculator that multiplies two numbers"
+    },
+    {
+      "name": "divide",
+      "description": "Division calculator that divides first number by second number"
+    },
+    {
+      "name": "time",
+      "description": "Get current time in specified timezone"
+    },
+    {
+      "name": "generate-image",
+      "description": "Generate an image from text prompt using AI"
+    }
+  ]
+}

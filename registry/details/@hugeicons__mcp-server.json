@@ -1,0 +1,41 @@
+{
+  "id": "@hugeicons/mcp-server",
+  "displayName": "Hugeicons MCP Server",
+  "description": "Integrate Hugeicons seamlessly into your applications. Discover icons, access platform-specific usage instructions, and enhance your projects with comprehensive documentation and examples.",
+  "createdAt": "2026-01-16T07:21:19.450Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hugeicons/mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_icons",
+      "description": "Get a list of all available Hugeicons icons"
+    },
+    {
+      "name": "search_icons",
+      "description": "Search for icons by name or tags. Use commas to search for multiple icons (e.g. 'home, notification, settings')"
+    },
+    {
+      "name": "get_platform_usage",
+      "description": "Get platform-specific usage instructions for Hugeicons"
+    },
+    {
+      "name": "get_icon_glyphs",
+      "description": "Get all glyphs (unicode characters) for a specific icon across all available styles"
+    },
+    {
+      "name": "get_icon_glyph_by_style",
+      "description": "Get the glyph (unicode character) for a specific icon with a particular style"
+    }
+  ]
+}

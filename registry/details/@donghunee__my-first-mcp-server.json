@@ -1,0 +1,38 @@
+{
+  "id": "@donghunee/my-first-mcp-server",
+  "displayName": "Weather",
+  "description": "Check current weather by city. Browse available cities and quickly retrieve temperature and conditions. Plan your day with up-to-date local conditions.",
+  "createdAt": "2026-01-16T07:23:24.939Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@donghunee/my-first-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-weather",
+      "description": "지정된 도시의 현재 날씨 정보를 조회합니다"
+    },
+    {
+      "name": "list-cities",
+      "description": "날씨 조회가 가능한 도시 목록을 표시합니다"
+    }
+  ]
+}

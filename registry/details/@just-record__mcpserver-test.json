@@ -1,0 +1,28 @@
+{
+  "id": "@just-record/mcpserver-test",
+  "displayName": "MCP Server Test",
+  "description": "Provide a test implementation of an MCP server to validate and demonstrate MCP protocol features. Enable developers to experiment with MCP interactions and verify tool, resource, and prompt handling. Facilitate integration testing for MCP clients and servers.",
+  "createdAt": "2026-01-16T07:21:37.596Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@just-record/mcpserver-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_alerts",
+      "description": "Get weather alerts for a US state.\n\nArgs:\n    state: Two-letter US state code (e.g. CA, NY)"
+    },
+    {
+      "name": "get_forecast",
+      "description": "Get weather forecast for a location.\n\nArgs:\n    latitude: Latitude of the location\n    longitude: Longitude of the location"
+    }
+  ]
+}

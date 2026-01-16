@@ -1,0 +1,31 @@
+{
+  "id": "@pierre/htt",
+  "displayName": "htt",
+  "description": "Create instant call links for Snapcall conversations. Start assist recordings to capture photos and information you can reference later. Browse guided flows to streamline troubleshooting and help users communicate issues clearly.",
+  "createdAt": "2026-01-16T07:26:41.369Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pierre/htt"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "MCP Server for Snapcall integration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "snapcall_call",
+      "description": "Create a Snapcall Call and return the link."
+    },
+    {
+      "name": "snapcall_assist",
+      "description": "Create a Snapcall assist recording stream and return the link. This allow the user to record information or take photos you could exploit later.\n    "
+    },
+    {
+      "name": "list_flow",
+      "description": "List the available flows to create a stream.\nA flow is a list of steps that can be executed in sequence in snapcall in order to help the user to communicate his issue.\nreturn a list of name, description and a token. You can use the toke to create a stream. \n    "
+    }
+  ]
+}

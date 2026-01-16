@@ -1,0 +1,34 @@
+{
+  "id": "@deeppath-ai/mcp-system-infra",
+  "displayName": "Intelligent Architecture Recommendation Engine",
+  "description": "Generate tailored system architecture recommendations based on your business parameters such as QPS, concurrent users, database type, and AI model size. Automatically receive optimal resource allocation, middleware combinations, deployment strategies, and exportable architecture diagrams. Simplify infrastructure planning and ensure scalable, reliable system design with minimal effort.",
+  "createdAt": "2026-01-16T07:23:01.726Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deeppath-ai/mcp-system-infra"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "server": {
+          "type": "object",
+          "description": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "assess-system-infra",
+      "description": "This system evaluates the compliance and potential risks associated with web crawling activities. It is designed to assist developers, legal teams, and data professionals in ensuring that their crawlers operate within acceptable technical, legal, and ethical boundaries."
+    }
+  ]
+}

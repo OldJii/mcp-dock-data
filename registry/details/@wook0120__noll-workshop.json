@@ -1,0 +1,12 @@
+{
+  "id": "@wook0120/noll-workshop",
+  "displayName": "noll-workshop",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:46.719Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wook0120/noll-workshop"
+  },
+  "connection": null,
+  "capabilities": []
+}

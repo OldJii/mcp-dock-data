@@ -1,0 +1,29 @@
+{
+  "id": "@flynnhou/deep-dive-mcp",
+  "displayName": "Deep Dive MCP Server",
+  "description": "Provide a customizable MCP server implementation that integrates with Claude Desktop and other clients. Enable dynamic loading and execution of tools and resources via the Model Context Protocol to enhance LLM applications. Simplify installation and deployment with support for Smithery and containerized environments.",
+  "createdAt": "2026-01-16T07:21:29.484Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@flynnhou/deep-dive-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-alerts",
+      "description": "Get weather alerts for a state"
+    },
+    {
+      "name": "get-forecast",
+      "description": "Get weather forecast for a location"
+    }
+  ]
+}

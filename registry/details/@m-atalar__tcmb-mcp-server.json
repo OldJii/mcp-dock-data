@@ -1,0 +1,12 @@
+{
+  "id": "@m-atalar/tcmb-mcp-server",
+  "displayName": "tcmb-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:16.380Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@m-atalar/tcmb-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

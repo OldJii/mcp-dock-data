@@ -1,0 +1,97 @@
+{
+  "id": "@Open-Scout/mcp",
+  "displayName": "OnePager",
+  "description": "Create and publish one-pagers and boards for your organization. Upload images from the web, update content, and manage links before going live. Check slug availability and share instantly.",
+  "createdAt": "2026-01-16T07:27:21.154Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Open-Scout/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {
+        "userEmail": {
+          "type": "string",
+          "description": "ONEPAGER_USER_EMAIL"
+        },
+        "apiBaseUrl": {
+          "type": "string",
+          "description": "ONEPAGER_API_BASE_URL"
+        },
+        "userPassword": {
+          "type": "string",
+          "description": "ONEPAGER_USER_PASSWORD"
+        },
+        "publicBaseUrl": {
+          "type": "string",
+          "description": "PUBLIC_ONEPAGER_BASE_URL"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_onepager",
+      "description": "Creates a new OnePager in your organization. After creation, call update_onepager to populate fields, then publish_onepager. Example: {\"onepager_name\":\"Acme\",\"onepager_type\":\"fundraising\"}"
+    },
+    {
+      "name": "create_board",
+      "description": "Creates a Board (curated list). location and description are required at creation."
+    },
+    {
+      "name": "upload_image_from_url",
+      "description": "Fetch an image and upload via signed S3 URL. Use returned key in update_onepager (image_key, founders[].image_key, investors[].image_key)."
+    },
+    {
+      "name": "update_onepager",
+      "description": "Update any OnePager fields. Typical flow: set short_description, links.web_url, founders[], image_key, category_uuids; then publish_onepager. Use list_categories to map category names to UUIDs."
+    },
+    {
+      "name": "update_board",
+      "description": "Update board properties, curators, and tags. Wraps backend shape { update: { board, curators, tags } }."
+    },
+    {
+      "name": "publish_board",
+      "description": "Publish a board. If first publish, slug is required and must be unique; otherwise slug cannot change."
+    },
+    {
+      "name": "check_board_slug",
+      "description": "Checks if a board slug is available (based on 404 for GET /boards/p/{slug}/valid)."
+    },
+    {
+      "name": "publish_onepager",
+      "description": "Publishes a OnePager. Optionally set slug and view_setting (anyone_with_link | access_list_only | anyone_anonymous). Use check_onepager_slug to validate custom slugs."
+    },
+    {
+      "name": "check_onepager_slug",
+      "description": "Checks if a slug is available for publishing."
+    },
+    {
+      "name": "list_categories",
+      "description": "Lists categories (uuid, name) to map tags to internal categories. Use uuids in update_onepager.category_uuids."
+    },
+    {
+      "name": "health",
+      "description": "Returns ok: true to verify tool detection"
+    },
+    {
+      "name": "create_organization",
+      "description": "Creates a new organization and adds the current user as admin."
+    },
+    {
+      "name": "invite_user_to_organization",
+      "description": "Adds an existing user or invites a new one to the organization, and grants access to existing OnePagers/Boards."
+    },
+    {
+      "name": "update_organization_user",
+      "description": "Updates user role or nickname in the organization."
+    }
+  ]
+}

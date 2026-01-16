@@ -1,0 +1,12 @@
+{
+  "id": "@jesec/retell",
+  "displayName": "retell",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:39.379Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jesec/retell"
+  },
+  "connection": null,
+  "capabilities": []
+}

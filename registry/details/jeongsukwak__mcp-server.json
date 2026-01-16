@@ -1,0 +1,12 @@
+{
+  "id": "jeongsukwak/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:44.364Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/jeongsukwak/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

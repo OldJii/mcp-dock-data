@@ -1,0 +1,12 @@
+{
+  "id": "@Fabrutus/mcp-servers",
+  "displayName": "mcp-servers",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:30.438Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Fabrutus/mcp-servers"
+  },
+  "connection": null,
+  "capabilities": []
+}

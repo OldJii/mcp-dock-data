@@ -1,0 +1,54 @@
+{
+  "id": "@arturwyroslak/mcp-agent",
+  "displayName": "Session Control",
+  "description": "Manage session settings, health checks, and security safeguards in one place. Configure limits, logging, and sandboxing to fit your workflows. Monitor status and adjust behavior without leaving your workspace.",
+  "createdAt": "2026-01-16T07:31:20.552Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arturwyroslak/mcp-agent"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "logLevel": {
+          "type": "string",
+          "description": "Logging level",
+          "default": "info",
+          "enum": [
+            "error",
+            "warn",
+            "info",
+            "debug"
+          ]
+        },
+        "maxTokens": {
+          "type": "number",
+          "description": "Maximum tokens for processing",
+          "default": 100000
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key for enhanced AI features"
+        },
+        "enableSandbox": {
+          "type": "boolean",
+          "description": "Enable security sandbox for operations",
+          "default": true
+        },
+        "enableWebInterface": {
+          "type": "boolean",
+          "description": "Enable web configuration interface",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": []
+}

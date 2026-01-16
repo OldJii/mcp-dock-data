@@ -1,0 +1,46 @@
+{
+  "id": "@emirks/yokatlas-mcp-typescript",
+  "displayName": "YOKATLAS MCP Server",
+  "description": "Provide access to Turkish higher education data through a standardized protocol. Enable seamless integration of university and education-related information into applications. Facilitate data retrieval and interaction using the Model Context Protocol.",
+  "createdAt": "2026-01-16T07:21:31.003Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@emirks/yokatlas-mcp-typescript"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check the health and capabilities of the YOKATLAS server, including search method and data availability"
+    },
+    {
+      "name": "get_associate_degree_atlas_details",
+      "description": "Get comprehensive details for a specific associate degree program from YOKATLAS Atlas"
+    },
+    {
+      "name": "get_bachelor_degree_atlas_details",
+      "description": "Get comprehensive details for a specific bachelor's degree program from YOKATLAS Atlas"
+    },
+    {
+      "name": "search_bachelor_degree_programs",
+      "description": "Search for bachelor's degree programs using LOCAL DATA with instant results, smart fuzzy matching, and bell curve sampling for large result sets"
+    },
+    {
+      "name": "search_associate_degree_programs",
+      "description": "Search for associate degree (önlisans) programs using LOCAL DATA with instant results, smart fuzzy matching, and bell curve sampling for large result sets"
+    }
+  ]
+}

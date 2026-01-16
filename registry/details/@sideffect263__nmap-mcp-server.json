@@ -1,0 +1,28 @@
+{
+  "id": "@sideffect263/nmap-mcp-server",
+  "displayName": "Nmap Scanner Server",
+  "description": "Enable network scanning by initiating Nmap scans and retrieving structured JSON results through a simple HTTP API. Manage scan tasks with real-time status updates and detailed parsed outputs. Simplify network reconnaissance workflows with automated and accessible scanning capabilities.",
+  "createdAt": "2026-01-16T07:24:31.996Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sideffect263/nmap-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "nmapScan",
+      "description": ""
+    },
+    {
+      "name": "getInfo",
+      "description": ""
+    }
+  ]
+}

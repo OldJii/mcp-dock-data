@@ -1,0 +1,105 @@
+{
+  "id": "@Qwinty/anytype-mcp",
+  "displayName": "Anytype MCP Server",
+  "description": "Access your Anytype data seamlessly with this server. Interact with spaces, objects, and templates to enhance your AI assistant's capabilities. Manage your data efficiently and optimize token usage for better performance.\n\nFor more info refer to: https://github.com/Qwinty/anytype-mcp",
+  "createdAt": "2026-01-16T07:30:11.410Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Qwinty/anytype-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "anytypeAppKey"
+      ],
+      "properties": {
+        "apiPort": {
+          "type": "number",
+          "description": "The port on which the Anytype API is available (default is 31009).",
+          "default": 31009
+        },
+        "anytypeAppKey": {
+          "type": "string",
+          "description": "The Anytype App Key obtained from the Anytype desktop application."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_spaces",
+      "description": "Retrieves all available Anytype spaces for the current user. This tool returns a list of spaces with their IDs, names, and other metadata. Use this tool to get an overview of all spaces or to find a specific space ID for use with other tools. No parameters are required."
+    },
+    {
+      "name": "get_objects",
+      "description": "Searches for and retrieves objects within a specified Anytype space. This tool allows you to list all objects or filter them using a search query. Results are paginated for better performance with large spaces. Use this tool to discover objects within a space, find specific objects by name, or browse through collections of objects. The optional include_text parameter allows retrieving the full formatted text content of objects."
+    },
+    {
+      "name": "get_object_content",
+      "description": "Retrieves detailed content and metadata for a specific object in an Anytype space. This tool provides comprehensive information about an object including its properties, relations, and content. Use this tool when you need to examine a specific object's details after discovering its ID through the get_objects tool. The optional include_text parameter allows retrieving the full formatted text content of the object."
+    },
+    {
+      "name": "create_space",
+      "description": "Creates a new Anytype space with the specified name. This tool allows you to set up a fresh workspace for organizing objects and collaborating with others. Use this tool when you need to establish a new organizational container for your Anytype content."
+    },
+    {
+      "name": "create_object",
+      "description": "Creates a new object within a specified Anytype space. This tool allows you to add various types of content (pages, notes, tasks, etc.) to your spaces. You can specify the object's name, type, description, icon, and content. Optionally, you can use a template to create pre-structured objects. Use this tool when you need to add new content to an existing space."
+    },
+    {
+      "name": "delete_object",
+      "description": "Permanently removes an object from a specified Anytype space. This tool deletes the object and all its content. Use this tool with caution as deleted objects cannot be recovered. Always verify the object ID before deletion to avoid removing important content."
+    },
+    {
+      "name": "export_object",
+      "description": "Exports an Anytype object in Markdown format. This tool allows you to extract content from Anytype for use in other applications or for backup purposes. Markdown format is human-readable and suitable for documentation. Use this tool when you need to share Anytype content with external systems or create portable backups."
+    },
+    {
+      "name": "get_space_members",
+      "description": "Retrieves a list of all members who have access to a specified Anytype space. This tool provides information about each member including their ID, name, and access level. Results are paginated for spaces with many members. Use this tool when you need to understand who has access to a space or manage collaboration permissions."
+    },
+    {
+      "name": "get_types",
+      "description": "Retrieves all object types available in a specified Anytype space. This tool provides information about the different types of objects that can be created in the space, including their IDs, names, and metadata. Results are paginated for spaces with many types. Use this tool when you need to understand what types of objects can be created or to find the correct type ID for creating new objects."
+    },
+    {
+      "name": "get_type_details",
+      "description": "Retrieves detailed information about a specific object type in an Anytype space. This tool provides comprehensive details about the type's structure, including its relations, views, and configuration options. Use this tool when you need to understand the structure of a particular object type or to examine its available relations and properties."
+    },
+    {
+      "name": "get_templates",
+      "description": "Retrieves all available templates for a specific object type in an Anytype space. Templates provide pre-configured structures and content for creating new objects. This tool returns a list of templates with their IDs, names, and metadata. Results are paginated for types with many templates. Use this tool when you need to find appropriate templates for creating new objects of a specific type."
+    },
+    {
+      "name": "get_template_details",
+      "description": "Retrieves detailed information about a specific template in an Anytype space. This tool provides comprehensive details about the template's structure, content, and configuration. Use this tool when you need to examine a template's properties before using it to create new objects, or to understand how a particular template is structured."
+    },
+    {
+      "name": "get_list_views",
+      "description": "Retrieves views configured for a specific list in a space. Views define how objects in the list are filtered and sorted."
+    },
+    {
+      "name": "get_list_view_objects",
+      "description": "Retrieves objects from a specific list view with applied filters and sorting."
+    },
+    {
+      "name": "add_objects_to_list",
+      "description": "Adds one or more objects to a specific list in a space."
+    },
+    {
+      "name": "remove_object_from_list",
+      "description": "Removes an object from a specific list in a space."
+    },
+    {
+      "name": "global_search",
+      "description": "Executes a search across all spaces the user has access to, with options for filtering by type and sorting."
+    },
+    {
+      "name": "search_space",
+      "description": "Executes a search within a specific space, with options for filtering by type and sorting."
+    }
+  ]
+}

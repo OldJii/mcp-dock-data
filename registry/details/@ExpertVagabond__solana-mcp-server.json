@@ -1,0 +1,84 @@
+{
+  "id": "@ExpertVagabond/solana-mcp-server",
+  "displayName": "Solana MCP Server",
+  "description": "Create and import Solana wallets, manage balances, and view account information. Transfer SOL and SPL tokens, request airdrops on devnet/testnet, and set up token accounts. Switch networks and inspect transactions to streamline development and testing.",
+  "createdAt": "2026-01-16T07:24:37.604Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ExpertVagabond/solana-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_wallet",
+      "description": "Create a new Solana wallet"
+    },
+    {
+      "name": "import_wallet",
+      "description": "Import an existing wallet from private key or mnemonic"
+    },
+    {
+      "name": "list_wallets",
+      "description": "List all created/imported wallets"
+    },
+    {
+      "name": "get_balance",
+      "description": "Get SOL balance for a wallet"
+    },
+    {
+      "name": "get_token_balance",
+      "description": "Get SPL token balance for a wallet"
+    },
+    {
+      "name": "transfer_sol",
+      "description": "Transfer SOL between wallets"
+    },
+    {
+      "name": "transfer_tokens",
+      "description": "Transfer SPL tokens between wallets"
+    },
+    {
+      "name": "airdrop_sol",
+      "description": "Request SOL airdrop for testing (devnet/testnet only)"
+    },
+    {
+      "name": "get_account_info",
+      "description": "Get detailed account information"
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get transaction details by signature"
+    },
+    {
+      "name": "get_recent_blockhash",
+      "description": "Get recent blockhash for transaction building"
+    },
+    {
+      "name": "switch_network",
+      "description": "Switch Solana network"
+    },
+    {
+      "name": "get_network_info",
+      "description": "Get current network information"
+    },
+    {
+      "name": "create_token_account",
+      "description": "Create associated token account for SPL tokens"
+    },
+    {
+      "name": "get_token_accounts",
+      "description": "Get all token accounts for a wallet"
+    }
+  ]
+}

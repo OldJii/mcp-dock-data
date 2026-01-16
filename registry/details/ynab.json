@@ -1,0 +1,125 @@
+{
+  "id": "ynab",
+  "displayName": "Ynab",
+  "description": "YNAB (You Need A Budget) is a budgeting tool helping users track expenses, plan finances, and gain control over spending to reduce debt",
+  "createdAt": "2026-01-16T07:19:49.900Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ynab"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "YNAB_CREATE_ACCOUNT",
+      "description": "Tool to create a new account in a budget. Use when you need to add a manual (non-linked) account to a specific budget."
+    },
+    {
+      "name": "YNAB_CREATE_SCHEDULED_TRANSACTION",
+      "description": "Tool to create a scheduled transaction. Use when you need to set up a repeating transaction in a budget."
+    },
+    {
+      "name": "YNAB_DELETE_SCHEDULED_TRANSACTION",
+      "description": "Tool to delete an existing scheduled transaction. Use after confirming the scheduled transaction ID."
+    },
+    {
+      "name": "YNAB_GET_ACCOUNT_BY_ID",
+      "description": "Tool to retrieve a single account resource. Use when you need details of a specific account by its ID after determining the budget."
+    },
+    {
+      "name": "YNAB_GET_BUDGET_BY_ID",
+      "description": "Tool to retrieve a single budget by ID. Use when you need detailed budget info including date and currency formats. Supports optional delta via last_knowledge_of_server."
+    },
+    {
+      "name": "YNAB_GET_BUDGET_MONTH",
+      "description": "Tool to retrieve a specific budget month. Use when you need detailed summary and category budgets for a given month after confirming the budget ID."
+    },
+    {
+      "name": "YNAB_GET_BUDGET_SETTINGS",
+      "description": "Tool to retrieve budget-level settings. Use when you need to fetch currency and date formatting preferences for a specific budget."
+    },
+    {
+      "name": "YNAB_GET_CATEGORY_BY_ID",
+      "description": "Tool to retrieve a single budget category by its ID. Use when you need detailed information about one category after confirming the budget selection."
+    },
+    {
+      "name": "YNAB_GET_MONTH_CATEGORY_BY_ID",
+      "description": "Tool to retrieve a single category for a specific budget month. Use after selecting the budget and month when you need month-specific category details."
+    },
+    {
+      "name": "YNAB_GET_PAYEE_BY_ID",
+      "description": "Tool to retrieve a single payee by its ID. Use when you need full details of a payee after confirming the budget and payee selection."
+    },
+    {
+      "name": "YNAB_GET_SCHEDULED_TRANSACTION_BY_ID",
+      "description": "Tool to retrieve a single scheduled transaction. Use when you need details of a specific scheduled transaction by its ID after confirming the budget."
+    },
+    {
+      "name": "YNAB_GET_TRANSACTION_BY_ID",
+      "description": "Tool to retrieve a single transaction by its ID. Use when you need detailed information for a specific transaction after confirming the budget."
+    },
+    {
+      "name": "YNAB_GET_USER",
+      "description": "Tool to retrieve the authorized user's information. Use after authentication to get current user details."
+    },
+    {
+      "name": "YNAB_LIST_ACCOUNTS",
+      "description": "Tool to list all accounts in a budget. Use when you need to retrieve all accounts (optionally only changes since last sync) after confirming the budget ID."
+    },
+    {
+      "name": "YNAB_LIST_BUDGETS",
+      "description": "Tool to list budgets available to the authorized user. Use when you need to retrieve all budgets for the account."
+    },
+    {
+      "name": "YNAB_LIST_CATEGORIES",
+      "description": "Tool to list all category groups and their categories for a budget. Use when you need the full set of budget categories or only those changed since last sync."
+    },
+    {
+      "name": "YNAB_LIST_MONTHS",
+      "description": "Tool to list months for a budget with summary information. Use when you need an overview of all months or only changed months since a given knowledge value (delta requests)."
+    },
+    {
+      "name": "YNAB_LIST_PAYEE_LOCATIONS",
+      "description": "Tool to list payee locations for a budget. Use when you need to retrieve all stored latitude/longitude details for payees under a specific budget."
+    },
+    {
+      "name": "YNAB_LIST_PAYEE_LOCATIONS_BY_PAYEE",
+      "description": "Tool to list locations associated with a payee. Use when you need all location entries of a given payee after confirming the budget."
+    },
+    {
+      "name": "YNAB_LIST_PAYEES",
+      "description": "Tool to list payees in a budget. Use when you need all payees or only those changed since a known server knowledge value."
+    },
+    {
+      "name": "YNAB_LIST_SCHEDULED_TRANSACTIONS",
+      "description": "Tool to list scheduled transactions for a budget. Use after confirming the budget ID; supports delta sync via last_knowledge_of_server."
+    },
+    {
+      "name": "YNAB_LIST_TRANSACTIONS",
+      "description": "Tool to list transactions in a budget. Use when you need all or delta-filtered transactions after confirming the budget."
+    },
+    {
+      "name": "YNAB_LIST_TRANSACTIONS_BY_ACCOUNT",
+      "description": "Tool to list transactions for a specific account. Use when you need all or delta-filtered transactions for a given account after confirming the budget and account ID."
+    },
+    {
+      "name": "YNAB_LIST_TRANSACTIONS_BY_CATEGORY",
+      "description": "Tool to list transactions for a specific category (excludes pending). Use when you need completed transactions for a given category after obtaining budget_id and category_id."
+    },
+    {
+      "name": "YNAB_LIST_TRANSACTIONS_BY_PAYEE",
+      "description": "Tool to list transactions for a specific payee in a budget. Use when you need to fetch all non-pending transactions for a payee after confirming budget and payee IDs."
+    },
+    {
+      "name": "YNAB_UPDATE_PAYEE",
+      "description": "Tool to update a payee. Use when you need to rename an existing payee."
+    },
+    {
+      "name": "YNAB_UPDATE_SCHEDULED_TRANSACTION",
+      "description": "Tool to update an existing scheduled transaction. Use when you need to change details of a scheduled transaction after confirming IDs."
+    }
+  ]
+}

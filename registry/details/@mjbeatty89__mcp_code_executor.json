@@ -1,0 +1,12 @@
+{
+  "id": "@mjbeatty89/mcp_code_executor",
+  "displayName": "mcp_code_executor",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:30.937Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mjbeatty89/mcp_code_executor"
+  },
+  "connection": null,
+  "capabilities": []
+}

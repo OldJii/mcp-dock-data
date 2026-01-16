@@ -1,0 +1,136 @@
+{
+  "id": "@pbteja1998/sourcesyncai-mcp",
+  "displayName": "SourceSync.ai MCP Server",
+  "description": "Integrate your AI models with SourceSync.ai's knowledge management platform. Seamlessly manage, ingest, and search your documents while leveraging external services for enhanced data retrieval. Empower your AI with organized knowledge and efficient document management.",
+  "createdAt": "2026-01-16T07:29:17.535Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pbteja1998/sourcesyncai-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "sourcesyncApiKey"
+      ],
+      "properties": {
+        "sourcesyncApiKey": {
+          "type": "string",
+          "description": "Your SourceSync.ai API key"
+        },
+        "sourcesyncTenantId": {
+          "type": "string",
+          "description": "Optional Your SourceSync.ai tenant ID"
+        },
+        "sourcesyncNamespaceId": {
+          "type": "string",
+          "description": "Optional SourceSync.ai namespace ID"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "validateApiKey",
+      "description": "Validates the API key by attempting to list namespaces. Returns the list of namespaces if successful."
+    },
+    {
+      "name": "createNamespace",
+      "description": "Creates a new namespace with the provided configuration. Requires a name, file storage configuration, vector storage configuration, and embedding model configuration."
+    },
+    {
+      "name": "listNamespaces",
+      "description": "Lists all namespaces available for the current API key and optional tenant ID."
+    },
+    {
+      "name": "getNamespace",
+      "description": "Retrieves a specific namespace by its ID."
+    },
+    {
+      "name": "updateNamespace",
+      "description": "Updates an existing namespace with the provided configuration parameters."
+    },
+    {
+      "name": "deleteNamespace",
+      "description": "Permanently deletes a namespace by its ID."
+    },
+    {
+      "name": "ingestText",
+      "description": "Ingests raw text content into the namespace. Supports optional metadata and chunk configuration."
+    },
+    {
+      "name": "ingestFile",
+      "description": "Ingests a file into the namespace. Supports various file formats with automatic parsing."
+    },
+    {
+      "name": "ingestUrls",
+      "description": "Ingests content from a list of URLs. Supports scraping options and metadata."
+    },
+    {
+      "name": "ingestSitemap",
+      "description": "Ingests content from a website using its sitemap.xml. Supports path filtering and link limits."
+    },
+    {
+      "name": "ingestWebsite",
+      "description": "Crawls and ingests content from a website recursively. Supports depth control and path filtering."
+    },
+    {
+      "name": "ingestConnector",
+      "description": "Ingests all documents in the connector that are in backlog or failed status. No need to provide the document ids or file ids for the ingestion. Ids are already in the backlog when picked thorough the picker. If not, the user has to go through the authorization flow again, where they will be asked to pick the documents again."
+    },
+    {
+      "name": "getIngestJobRunStatus",
+      "description": "Checks the status of a previously submitted ingestion job."
+    },
+    {
+      "name": "fetchDocuments",
+      "description": "Fetches documents from the namespace based on filter criteria. Supports pagination and including specific document properties."
+    },
+    {
+      "name": "updateDocuments",
+      "description": "Updates metadata for documents that match the specified filter criteria."
+    },
+    {
+      "name": "deleteDocuments",
+      "description": "Permanently deletes documents that match the specified filter criteria."
+    },
+    {
+      "name": "resyncDocuments",
+      "description": "Reprocesses documents that match the specified filter criteria. Useful for updating after schema changes."
+    },
+    {
+      "name": "semanticSearch",
+      "description": "Performs semantic search across the namespace to find relevant content based on meaning rather than exact keyword matches."
+    },
+    {
+      "name": "hybridSearch",
+      "description": "Performs a combined keyword and semantic search, balancing between exact matches and semantic similarity. Requires hybridConfig with weights for both search types."
+    },
+    {
+      "name": "createConnection",
+      "description": "Creates a new connection to a specific source. The connector parameter should be a valid SourceSync connector enum value. The clientRedirectUrl parameter is optional and can be used to specify a custom redirect URL for the connection. This will give you a authorization url which you can redirect the user to. The user will then be asked to pick the documents they want to ingest."
+    },
+    {
+      "name": "listConnections",
+      "description": "Lists all connections for the current namespace, optionally filtered by connector type."
+    },
+    {
+      "name": "getConnection",
+      "description": "Retrieves details for a specific connection by its ID."
+    },
+    {
+      "name": "updateConnection",
+      "description": "Updates a connection to a specific source. The connector parameter should be a valid SourceSync connector enum value. The clientRedirectUrl parameter is optional and can be used to specify a custom redirect URL for the connection. This will give you a authorization url which you can redirect the user to. The user will then be asked to pick the documents they want to ingest. This is useful if you want to update the connection to a different source or if you want to update the clientRedirectUrl or if you want to pick a different or new set of documents."
+    },
+    {
+      "name": "revokeConnection",
+      "description": "Revokes access for a specific connection, removing the integration with the external service."
+    },
+    {
+      "name": "fetchUrlContent",
+      "description": "Fetches the content of a URL. Particularly useful for fetching parsed text file URLs."
+    }
+  ]
+}

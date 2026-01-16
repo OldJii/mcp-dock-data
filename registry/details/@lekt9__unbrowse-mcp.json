@@ -1,0 +1,69 @@
+{
+  "id": "@lekt9/unbrowse-mcp",
+  "displayName": "Unbrowse",
+  "description": "Connect to any website's backend directly by indexing it with our chrome extension. \nWrite API-level scraping code simply by asking for unbrowse RAG mode, where any indexed api's documentation is added to context, easily vibeable to be integrated into your codebase.\n\nExecute queries and actions at the network level without browser overhead. Pull competitor analytics, post content, extract reviews, and automate a plethora of workflows indexed by the public - using your existing credentials - up to 50x faster than browser automation.\n\nGrab your API key and set your encryption key at https://www.unbrowse.ai\n\nExamples:\nHelp me RAG unbrowse to fetch yahoo finance stock data in my codebase -> unbrowse provides a route that will be inserted to your python script to fetch live stock data.",
+  "createdAt": "2026-01-16T07:25:41.575Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lekt9/unbrowse-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Your Unbrowse API key from the dashboard (starts with re_). Alternative to sessionToken or solanaPrivateKey."
+        },
+        "devMode": {
+          "type": "boolean",
+          "description": "Enable developer mode to see detailed API usage documentation in search results (RAG mode)",
+          "default": false
+        },
+        "password": {
+          "type": "string",
+          "description": "Your encryption password for credential decryption. Only required if abilities need credentials."
+        },
+        "sessionToken": {
+          "type": "string",
+          "description": "Your session token (alternative to apiKey or solanaPrivateKey)."
+        },
+        "solanaRpcUrl": {
+          "type": "string",
+          "description": "Custom Solana RPC URL (defaults to devnet or mainnet based on server response)."
+        },
+        "enableIndexTool": {
+          "type": "boolean",
+          "description": "Enable the ingest_api_endpoint tool for indexing new APIs",
+          "default": false
+        },
+        "solanaPrivateKey": {
+          "type": "string",
+          "description": "Base58 encoded Solana private key for x402 payment-based authentication. Alternative to apiKey/sessionToken. Wallet must have USDC balance for payments."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute_abilities",
+      "description": "Executes multiple abilities simultaneously in parallel using Promise.all. Useful for batch operations like fetching multiple pages of a paginated API, or fetching data from multiple different APIs at once. Unlike execute_ability_chain (which runs sequentially with output piping), this runs all abilities independently and concurrently.\n\n⚠️ IMPORTANT: If responses are truncated (indicated by 'truncated: true' in results), use the 'transform_code' parameter to extract only the specific data you need. Transform code runs server-side BEFORE truncation, allowing you to get complete filtered data instead of cut-off responses."
+    },
+    {
+      "name": "search_abilities_parallel",
+      "description": "Executes multiple ability searches simultaneously in parallel. Useful when you need to search for different capabilities at once (e.g., searching for 'create user' and 'send email' and 'upload file' all at the same time)."
+    },
+    {
+      "name": "search_abilities",
+      "description": "Searches for abilities across both your personal abilities and the global published index. Use this when user requests for something that you do not have capabilities of doing."
+    }
+  ]
+}

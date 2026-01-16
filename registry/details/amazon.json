@@ -1,0 +1,12 @@
+{
+  "id": "amazon",
+  "displayName": "Amazon",
+  "description": "Amazon is an e-commerce giant delivering a massive online marketplace, cloud services, and digital products that connect retailers, consumers, and businesses worldwide for seamless transactions",
+  "createdAt": "2026-01-16T07:33:09.580Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/amazon"
+  },
+  "connection": null,
+  "capabilities": []
+}

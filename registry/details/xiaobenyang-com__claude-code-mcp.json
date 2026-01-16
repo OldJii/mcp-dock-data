@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/claude-code-mcp",
+  "displayName": "claude-code-mcp",
+  "description": "Streamline development by automating code generation and fixes, file operations, Git workflows, and terminal commands. Search the web, summarize content, and orchestrate multi-step tasks like version bumps, changelog updates, and release tagging. Integrate with GitHub for PRs and CI checks, and get second-opinion analyses without modifying files.",
+  "createdAt": "2026-01-16T07:25:19.485Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/claude-code-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "claude_code",
+      "description": "Claude Code Agent: Your versatile multi-modal assistant for code, file, Git, and terminal operations via Claude CLI. Use `workFolder` for contextual execution.\n\n• File ops: Create, read, (fuzzy) edit, move, copy, delete, list files, analyze/ocr images, file content analysis\n    └─ e.g., \"Create /tmp/log.txt with 'system boot'\", \"Edit main.py to replace 'debug_mode = True' with 'debug_mode = False'\", \"List files in /src\", \"Move a specific section somewhere else\"\n\n• Code: Generate / analyse / refactor / fix\n    └─ e.g. \"Generate Python to parse CSV→JSON\", \"Find bugs in my_script.py\"\n\n• Git: Stage ▸ commit ▸ push ▸ tag (any workflow)\n    └─ \"Commit '/workspace/src/main.java' with 'feat: user auth' to develop.\"\n\n• Terminal: Run any CLI cmd or open URLs\n    └─ \"npm run build\", \"Open https://developer.mozilla.org\"\n\n• Web search + summarise content on-the-fly\n\n• Multi-step workflows  (Version bumps, changelog updates, release tagging, etc.)\n\n• GitHub integration  Create PRs, check CI status\n\n• Confused or stuck on an issue? Ask Claude Code for a second opinion, it might surprise you!\n\n**Prompt tips**\n\n1. Be concise, explicit & step-by-step for complex tasks. No need for niceties, this is a tool to get things done.\n2. For multi-line text, write it to a temporary file in the project root, use that file, then delete it.\n3. If you get a timeout, split the task into smaller steps.\n4. **Seeking a second opinion/analysis**: If you're stuck or want advice, you can ask `claude_code` to analyze a problem and suggest solutions. Clearly state in your prompt that you are looking for analysis only and no actual file modifications should be made.\n5. If workFolder is set to the project path, there is no need to repeat that path in the prompt and you can use relative paths for files.\n6. Claude Code is really good at complex multi-step file operations and refactorings and faster than your native edit features.\n7. Combine file operations, README updates, and Git commands in a sequence.\n8. Claude can do much more, just ask it!\n\n        "
+    }
+  ]
+}

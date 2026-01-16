@@ -1,0 +1,12 @@
+{
+  "id": "@ImRonAI/telnyx-ai",
+  "displayName": "telnyx-ai",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:21.517Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ImRonAI/telnyx-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

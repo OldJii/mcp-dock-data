@@ -1,0 +1,33 @@
+{
+  "id": "@jjyaoao/weather-mcp-server",
+  "displayName": "China Weather",
+  "description": "Get real-time weather for supported Chinese cities. Browse the full list of cities to quickly find coverage. Stay informed with concise, up-to-date conditions for your location.",
+  "createdAt": "2026-01-16T07:22:32.560Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jjyaoao/weather-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_weather",
+      "description": "获取指定城市的当前天气"
+    },
+    {
+      "name": "list_supported_cities",
+      "description": "列出所有支持的中文城市"
+    },
+    {
+      "name": "get_server_info",
+      "description": "获取服务器信息"
+    }
+  ]
+}

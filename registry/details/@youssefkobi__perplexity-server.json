@@ -1,0 +1,12 @@
+{
+  "id": "@youssefkobi/perplexity-server",
+  "displayName": "perplexity-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:49.891Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@youssefkobi/perplexity-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

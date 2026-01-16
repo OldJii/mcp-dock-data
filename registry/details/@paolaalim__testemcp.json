@@ -1,0 +1,35 @@
+{
+  "id": "@paolaalim/testemcp",
+  "displayName": "TesteServidorMCP",
+  "description": "Provide a Python-based MCP server that offers tools for word frequency counting, URL extraction, AI site recommendation, and internal log registration. Enable integration with LLM applications to perform these specific actions dynamically. Facilitate enhanced interaction with external data and operations through a simple MCP interface.",
+  "createdAt": "2026-01-16T07:32:35.011Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@paolaalim/testemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "contar_frequencia_palavras",
+      "description": "Conta a frequência das palavras importantes num texto, ignorando artigos e preposições."
+    },
+    {
+      "name": "obter_previsao_tempo",
+      "description": "Retorna a previsão do tempo simulada para uma cidade específica."
+    },
+    {
+      "name": "extrair_urls_texto",
+      "description": "Encontra e lista todas as URLs (http ou https) dentro de um texto."
+    },
+    {
+      "name": "registrar_log_interno",
+      "description": "Registra uma mensagem nos logs internos do servidor."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "@kamath/agentmail-mcps",
+  "displayName": "AgentMail",
+  "description": "Create inboxes and send emails. Manage threads, labels, and replies to keep conversations organized and surface messages that need attention. Automate workflows to find unreplied threads, respond, and update labels in one pass.",
+  "createdAt": "2026-01-16T07:29:22.581Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/agentmail-mcps"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "agentmailApiKey"
+      ],
+      "properties": {
+        "agentmailApiKey": {
+          "type": "string",
+          "description": "AgentMail API key for email operations"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_inbox",
+      "description": "Create a new email inbox"
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email from an inbox"
+    },
+    {
+      "name": "get_thread",
+      "description": "Get detailed information about a thread including all messages"
+    },
+    {
+      "name": "reply_to_message",
+      "description": "Reply to a specific message in a thread"
+    },
+    {
+      "name": "list_threads",
+      "description": "List threads in an inbox, optionally filtered by labels"
+    },
+    {
+      "name": "update_message_labels",
+      "description": "Update labels on a message (add new labels and/or remove existing ones)"
+    },
+    {
+      "name": "find_unreplied_threads",
+      "description": "Find threads that need replies by looking for specific labels"
+    },
+    {
+      "name": "process_conversational_loop",
+      "description": "Complete workflow: find unreplied thread, get details, send reply, and update labels"
+    },
+    {
+      "name": "list_messages",
+      "description": "List messages in an inbox, optionally filtered by labels"
+    },
+    {
+      "name": "get_message",
+      "description": "Get detailed information about a specific message"
+    }
+  ]
+}

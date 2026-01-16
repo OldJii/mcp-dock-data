@@ -1,0 +1,41 @@
+{
+  "id": "@mrugankpednekar/bill_splitter_mcp",
+  "displayName": "SplitFast",
+  "description": "Track and split shared expenses across trips, events, and groups. Create groups, add expenses, and get optimized settlement suggestions that minimize cash transfers. Settle up quickly and keep everyone square.",
+  "createdAt": "2026-01-16T07:27:40.317Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mrugankpednekar/bill_splitter_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "create_group",
+      "description": "Create a group and return {group_id, secret}."
+    },
+    {
+      "name": "record_debt",
+      "description": "Splitwise-style direct debt: 'debtor owes creditor amount'.\nImplementation: store one expense paid by creditor, with participants=[debtor] for full amount."
+    },
+    {
+      "name": "add_split",
+      "description": "Equal split receipt. If include_payer=True, payer also owes a share (Splitwise default).\nExample: payer='Owen', amount=60, participants=['Owen','Mrugank','David'] -> shares=$20 each."
+    },
+    {
+      "name": "history",
+      "description": "Return recent raw entries for the group."
+    },
+    {
+      "name": "balances",
+      "description": "Return minimal settlement transfers: [{from, to, amount}]."
+    },
+    {
+      "name": "quick_settle",
+      "description": "Paste: 'owen owes mrugank 20, mrugank owes david 15, barath owes david 7, owen owes barath 14'\nReturns minimal settlement without writing to DB."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "@Auxin-io/not-friendly-nyc-friend",
+  "displayName": "NYC Friend",
+  "description": "Get candid, local answers from a New Yorker. Ask about neighborhoods, transit, food, culture, and daily life with a straight-talking friend vibe. Use it for quick tips, opinions, and practical guidance across NYC.",
+  "createdAt": "2026-01-16T07:32:52.024Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/not-friendly-nyc-friend"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "askNYCFriendQuestion",
+      "description": "My friend from NYC answers questions"
+    }
+  ]
+}

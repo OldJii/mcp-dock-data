@@ -1,0 +1,16 @@
+{
+  "id": "@Aman-Amith-Shastry/mcp_numpy",
+  "displayName": "NumPy Computation Server",
+  "description": "Perform advanced numerical computations and array manipulations using NumPy through a standardized protocol. Enable seamless integration of scientific computing capabilities into your applications. Simplify complex math operations with a ready-to-use server interface.",
+  "createdAt": "2026-01-16T07:30:19.944Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Aman-Amith-Shastry/mcp_numpy"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

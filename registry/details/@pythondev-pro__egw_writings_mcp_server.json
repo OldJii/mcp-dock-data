@@ -1,0 +1,55 @@
+{
+  "id": "@pythondev-pro/egw_writings_mcp_server",
+  "displayName": "egw_writings_mcp_server",
+  "description": "Explore Ellen G. White’s writings offline with fast, precise search and reference navigation. Generate customized PDFs for study, teaching, or sharing. Browse books, retrieve context-rich passages, and compile quotes without needing an internet connection.",
+  "createdAt": "2026-01-16T07:29:54.459Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pythondev-pro/egw_writings_mcp_server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_local",
+      "description": "Search local EGW writings database"
+    },
+    {
+      "name": "get_local_book",
+      "description": "Get information about a specific book"
+    },
+    {
+      "name": "get_local_content",
+      "description": "Get content from a specific book"
+    },
+    {
+      "name": "list_local_books",
+      "description": "List all available books"
+    },
+    {
+      "name": "get_database_stats",
+      "description": "Get database statistics"
+    },
+    {
+      "name": "find_egw_quotes",
+      "description": "Find specific EGW quotes containing a search term with proper filtering for genuine EGW content"
+    },
+    {
+      "name": "launch_local_chat_ai",
+      "description": "Launch local EGW Writings MCP Server setup with chat interface"
+    },
+    {
+      "name": "bash",
+      "description": "Execute bash commands with automatic GitHub PAT integration for git operations within specified workspace"
+    },
+    {
+      "name": "admin_local_server",
+      "description": "Execute system-level commands for file manipulation, git operations, and server management (ADMIN PASSWORD REQUIRED)"
+    }
+  ]
+}

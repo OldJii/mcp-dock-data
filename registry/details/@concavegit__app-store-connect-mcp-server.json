@@ -1,0 +1,173 @@
+{
+  "id": "@concavegit/app-store-connect-mcp-server",
+  "displayName": "app-store-connect-mcp-server",
+  "description": "Manage apps, metadata, and localizations across App Store Connect. Streamline beta testing, user/device administration, and bundle ID capabilities. Access analytics and finance reports, and monitor CI workflows with build logs, issues, and test results.",
+  "createdAt": "2026-01-16T07:26:59.349Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@concavegit/app-store-connect-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "APP_STORE_CONNECT_KEY_ID",
+        "APP_STORE_CONNECT_ISSUER_ID"
+      ],
+      "properties": {
+        "APP_STORE_CONNECT_KEY_ID": {
+          "type": "string",
+          "description": "Your App Store Connect API Key ID (found in App Store Connect > Users and Access > Keys)"
+        },
+        "APP_STORE_CONNECT_P8_PATH": {
+          "type": "string",
+          "description": "Absolute path to your App Store Connect P8 private key file (provide either this or P8_B64_STRING)"
+        },
+        "APP_STORE_CONNECT_ISSUER_ID": {
+          "type": "string",
+          "description": "Your App Store Connect Issuer ID (found in App Store Connect > Users and Access > Keys)"
+        },
+        "APP_STORE_CONNECT_P8_B64_STRING": {
+          "type": "string",
+          "description": "Base64 encoded contents of your App Store Connect P8 private key file (provide either this or P8_PATH)"
+        },
+        "APP_STORE_CONNECT_VENDOR_NUMBER": {
+          "type": "string",
+          "description": "Your vendor number from App Store Connect (optional - enables sales and finance reporting tools)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_apps",
+      "description": "Get a list of all apps in App Store Connect"
+    },
+    {
+      "name": "get_app_info",
+      "description": "Get detailed information about a specific app"
+    },
+    {
+      "name": "list_beta_groups",
+      "description": "Get a list of all beta groups (internal and external)"
+    },
+    {
+      "name": "list_group_testers",
+      "description": "Get a list of all testers in a specific beta group"
+    },
+    {
+      "name": "add_tester_to_group",
+      "description": "Add a new tester to a beta group"
+    },
+    {
+      "name": "remove_tester_from_group",
+      "description": "Remove a tester from a beta group"
+    },
+    {
+      "name": "list_beta_feedback_screenshots",
+      "description": "List all beta feedback screenshot submissions for an app. This includes feedback with screenshots, device information, and tester comments. You can identify the app using either appId or bundleId."
+    },
+    {
+      "name": "get_beta_feedback_screenshot",
+      "description": "Get detailed information about a specific beta feedback screenshot submission. By default, downloads and returns the screenshot image."
+    },
+    {
+      "name": "create_app_store_version",
+      "description": "Create a new app store version for an app"
+    },
+    {
+      "name": "list_app_store_versions",
+      "description": "Get all app store versions for a specific app"
+    },
+    {
+      "name": "list_app_store_version_localizations",
+      "description": "Get all localizations for a specific app store version"
+    },
+    {
+      "name": "get_app_store_version_localization",
+      "description": "Get detailed information about a specific app store version localization"
+    },
+    {
+      "name": "update_app_store_version_localization",
+      "description": "Update a specific field in an app store version localization"
+    },
+    {
+      "name": "create_bundle_id",
+      "description": "Register a new bundle ID for app development"
+    },
+    {
+      "name": "list_bundle_ids",
+      "description": "Find and list bundle IDs that are registered to your team"
+    },
+    {
+      "name": "get_bundle_id_info",
+      "description": "Get detailed information about a specific bundle ID"
+    },
+    {
+      "name": "enable_bundle_capability",
+      "description": "Enable a capability for a bundle ID"
+    },
+    {
+      "name": "disable_bundle_capability",
+      "description": "Disable a capability for a bundle ID"
+    },
+    {
+      "name": "list_devices",
+      "description": "Get a list of all devices registered to your team"
+    },
+    {
+      "name": "list_users",
+      "description": "Get a list of all users registered on your App Store Connect team"
+    },
+    {
+      "name": "create_analytics_report_request",
+      "description": "Create a new analytics report request for an app"
+    },
+    {
+      "name": "list_analytics_reports",
+      "description": "Get available analytics reports for a specific report request"
+    },
+    {
+      "name": "list_analytics_report_segments",
+      "description": "Get segments for a specific analytics report (contains download URLs)"
+    },
+    {
+      "name": "download_analytics_report_segment",
+      "description": "Download data from an analytics report segment URL"
+    },
+    {
+      "name": "list_schemes",
+      "description": "List all available schemes in an Xcode project or workspace"
+    },
+    {
+      "name": "list_workflows",
+      "description": "List all App Store Connect workflows (CI products) and their associated apps"
+    },
+    {
+      "name": "list_build_runs",
+      "description": "List build runs for a specific workflow/CI product, including git commit information"
+    },
+    {
+      "name": "list_ci_build_actions",
+      "description": "List build actions (analyze, build, test, archive) for a specific build run"
+    },
+    {
+      "name": "get_ci_build_action",
+      "description": "Get detailed information about a specific build action"
+    },
+    {
+      "name": "list_ci_issues",
+      "description": "List issues and errors from a build run or build action"
+    },
+    {
+      "name": "list_ci_test_results",
+      "description": "List test results from a build run or build action"
+    }
+  ]
+}

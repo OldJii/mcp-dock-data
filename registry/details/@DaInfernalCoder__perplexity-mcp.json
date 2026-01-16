@@ -1,0 +1,40 @@
+{
+  "id": "@DaInfernalCoder/perplexity-mcp",
+  "displayName": "Perplexity-researcher-mcp",
+  "description": "Utilize advanced API capabilities to enhance your coding experience.",
+  "createdAt": "2026-01-16T07:24:12.683Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DaInfernalCoder/perplexity-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "perplexityApiKey"
+      ],
+      "properties": {
+        "perplexityApiKey": {
+          "type": "string",
+          "description": "The API key for the Perplexity API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Quick search for simple queries using Perplexity's Sonar Pro model. Best for straightforward questions and basic information lookup."
+    },
+    {
+      "name": "reason",
+      "description": "Handles complex, multi-step tasks using Perplexity's Sonar Reasoning Pro model. Best for explanations, comparisons, and problem-solving."
+    },
+    {
+      "name": "deep_research",
+      "description": "Conducts in-depth analysis and generates detailed reports using Perplexity's Sonar Deep Research model. Best for comprehensive research topics."
+    }
+  ]
+}

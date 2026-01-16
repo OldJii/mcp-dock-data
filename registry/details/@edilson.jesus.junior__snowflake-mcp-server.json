@@ -1,0 +1,12 @@
+{
+  "id": "@edilson.jesus.junior/snowflake-mcp-server",
+  "displayName": "snowflake-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:43.519Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@edilson.jesus.junior/snowflake-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

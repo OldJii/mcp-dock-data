@@ -1,0 +1,57 @@
+{
+  "id": "@ivo-toby/contentful-mcp-graphql",
+  "displayName": "Contentful GraphQL Server",
+  "description": "Enable efficient and flexible content retrieval from Contentful using GraphQL queries. Explore your content model schema, generate example queries, and execute custom queries with smart pagination and secure read-only access. Simplify content delivery and schema exploration for your applications.",
+  "createdAt": "2026-01-16T07:29:44.872Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ivo-toby/contentful-mcp-graphql"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "contentfulDeliveryAccessToken",
+        "spaceId"
+      ],
+      "properties": {
+        "spaceId": {
+          "type": "string",
+          "description": "Your Contentful Space ID"
+        },
+        "contentfulDeliveryAccessToken": {
+          "type": "string",
+          "description": "Your Delivery API token from Contentful"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "graphql_query",
+      "description": "IMPORTANT: Before using this tool, you MUST first use graphql_list_content_types and graphql_get_content_type_schema to understand the available content types and their structure. Execute a GraphQL query against the Contentful GraphQL API. This tool allows you to use Contentful's powerful GraphQL interface to retrieve content in a more flexible and efficient way than REST API calls. The space ID and CDA token are automatically retrieved from environment variables."
+    },
+    {
+      "name": "graphql_list_content_types",
+      "description": "IMPORTANT: Use this tool FIRST before attempting to write any GraphQL queries. This tool lists all available content types in the Contentful space's GraphQL schema. You should always use this tool to understand what content types are available before formulating GraphQL queries. The space ID and CDA token are automatically retrieved from environment variables."
+    },
+    {
+      "name": "graphql_get_content_type_schema",
+      "description": "IMPORTANT: Use this tool AFTER using graphql_list_content_types to get a detailed schema for a specific content type. This tool provides all fields, their types, and relationships for a content type. You should ALWAYS use this tool to understand the structure of a content type before creating a query for it. The space ID and CDA token are automatically retrieved from environment variables."
+    },
+    {
+      "name": "graphql_get_example",
+      "description": "IMPORTANT: Use this tool AFTER using graphql_get_content_type_schema to see example GraphQL queries for a specific content type. Learning from these examples will help you construct valid queries. The space ID and CDA token are automatically retrieved from environment variables."
+    },
+    {
+      "name": "smart_search",
+      "description": "Perform intelligent search across multiple content types using cached metadata. This tool automatically searches all text fields in your content types for the given query term. Much faster and easier than manually chaining multiple GraphQL calls."
+    },
+    {
+      "name": "build_search_query",
+      "description": "Generate a GraphQL search query for a specific content type based on cached schema information. Returns the query string and variables needed to search text fields in the content type."
+    }
+  ]
+}

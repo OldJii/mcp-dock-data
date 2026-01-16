@@ -1,0 +1,12 @@
+{
+  "id": "@bgucci85/mcp_playwright",
+  "displayName": "mcp_playwright",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:20.569Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bgucci85/mcp_playwright"
+  },
+  "connection": null,
+  "capabilities": []
+}

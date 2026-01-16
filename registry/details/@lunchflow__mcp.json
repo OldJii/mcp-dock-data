@@ -1,0 +1,46 @@
+{
+  "id": "@lunchflow/mcp",
+  "displayName": "Lunch Flow: connect your banks and financial data",
+  "description": "Connect your bank accounts to view real-time balances, transactions, and spending insights. Search and compare activity across accounts, merchants, and categories to answer money questions quickly. Access coverage for 20,000+ banks in 40+ countries through your [Lunch Flow](https://lunchflow.app) account.",
+  "createdAt": "2026-01-16T07:23:29.803Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lunchflow/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Lunch Flow API key from https://lunchflow.app/destinations"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "API endpoint URL",
+          "default": "https://lunchflow.app/api/v1"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "lunchflow_list_accounts",
+      "description": "Get a list of all connected accounts for the authenticated user. Returns account details including name, institution, provider, currency, and status."
+    },
+    {
+      "name": "lunchflow_get_account_transactions",
+      "description": "Get transactions for a specific bank account. Returns transaction history including date, amount, description, merchant, and category information."
+    },
+    {
+      "name": "lunchflow_get_account_balance",
+      "description": "Get the current balance for a specific bank account. Returns available and current balance information."
+    }
+  ]
+}

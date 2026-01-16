@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/drand",
+  "displayName": "drand",
+  "description": "Fetch publicly verifiable randomness from the drand quicknet. Retrieve the latest value or look up randomness by round or timestamp. Seed simulations, raffles, and cryptographic workflows with unbiased entropy.",
+  "createdAt": "2026-01-16T07:31:39.449Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/drand"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-randomness-latest",
+      "description": "Get the latest random value from drand quicknet"
+    },
+    {
+      "name": "get-randomness-by-round",
+      "description": "Get the random value associated with a specfic round from drand quicknet"
+    },
+    {
+      "name": "get-randomness-by-time",
+      "description": "Get the random value associated with a specific time from drand quicknet"
+    }
+  ]
+}

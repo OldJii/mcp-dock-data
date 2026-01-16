@@ -1,0 +1,12 @@
+{
+  "id": "@saunack-shapley/test-mcp",
+  "displayName": "test-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:35.647Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@saunack-shapley/test-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

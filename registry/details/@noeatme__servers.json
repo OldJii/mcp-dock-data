@@ -1,0 +1,12 @@
+{
+  "id": "@noeatme/servers",
+  "displayName": "servers",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:44.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@noeatme/servers"
+  },
+  "connection": null,
+  "capabilities": []
+}

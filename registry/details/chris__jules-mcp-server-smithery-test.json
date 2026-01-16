@@ -1,0 +1,12 @@
+{
+  "id": "chris/jules-mcp-server-smithery-test",
+  "displayName": "jules-mcp-server-smithery-test",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:30.438Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/jules-mcp-server-smithery-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

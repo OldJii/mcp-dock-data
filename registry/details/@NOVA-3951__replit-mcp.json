@@ -1,0 +1,12 @@
+{
+  "id": "@NOVA-3951/replit-mcp",
+  "displayName": "replit-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:35.453Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/replit-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

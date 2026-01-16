@@ -1,0 +1,12 @@
+{
+  "id": "@the-artinet-project/artinet-relay-mcp",
+  "displayName": "artinet-relay-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:43.463Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@the-artinet-project/artinet-relay-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

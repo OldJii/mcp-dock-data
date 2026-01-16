@@ -1,0 +1,12 @@
+{
+  "id": "@gaiahead/my-first-blog",
+  "displayName": "my-first-blog",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:02.890Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gaiahead/my-first-blog"
+  },
+  "connection": null,
+  "capabilities": []
+}

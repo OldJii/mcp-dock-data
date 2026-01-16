@@ -1,0 +1,34 @@
+{
+  "id": "@Auxin-io/miami-friends",
+  "displayName": "Miami Friend",
+  "description": "Ask anything and get friendly, Miami-flavored answers. Receive quick tips, explanations, and local-minded guidance across topics. Enjoy clear, conversational replies that keep things helpful and to the point.",
+  "createdAt": "2026-01-16T07:25:49.203Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/miami-friends"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "askMiamiFriendQuestion",
+      "description": "My friend in Miami Answers Questions"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@WordDirectory/directory",
+  "displayName": "WordDirectory MCP Server",
+  "description": "Provide word definition lookups and suggestions for similar words through a standardized interface. Enhance your applications with easy access to human-readable word definitions from WordDirectory. Quickly integrate dictionary capabilities using the lookup_word tool.",
+  "createdAt": "2026-01-16T07:21:28.951Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@WordDirectory/directory"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "lookup_word",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "@dabhivijay2478/auth",
+  "displayName": "Better Auth Server",
+  "description": "# Better Auth MCP Server\n\n[![smithery badge](https://smithery.ai/badge/@dabhivijay2478/auth)](https://smithery.ai/server/@dabhivijay2478/auth)\n\n**Comprehensive Better Auth integration tools for TypeScript applications.**  \nAccess complete documentation, configure **6+ authentication providers** (Google, GitHub, Apple, Facebook, Microsoft, Email/Password), **6 database adapters** (PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle), and **14+ security plugins**.  \n\nWith this MCP server you can:  \n- Generate **production-ready configurations**  \n- Validate setups with best-practice recommendations  \n- Explore detailed **framework-specific guides** for Next.js, Nuxt, SvelteKit, Remix, and more  \n",
+  "createdAt": "2026-01-16T07:32:50.446Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dabhivijay2478/auth"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_better_auth_features",
+      "description": "Get a list of all available Better Auth plugins and features organized by category"
+    },
+    {
+      "name": "get_feature_details",
+      "description": "Get detailed information about a specific Better Auth plugin or feature"
+    },
+    {
+      "name": "get_integration_guide",
+      "description": "Get integration guide for a specific framework or platform"
+    },
+    {
+      "name": "get_auth_examples",
+      "description": "Get usage examples and code snippets for Better Auth features"
+    },
+    {
+      "name": "search_better_auth",
+      "description": "Search Better Auth documentation by keyword"
+    },
+    {
+      "name": "get_llms_context",
+      "description": "Get Better Auth LLMs.txt content for comprehensive context"
+    }
+  ]
+}

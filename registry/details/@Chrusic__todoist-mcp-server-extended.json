@@ -1,0 +1,104 @@
+{
+  "id": "@Chrusic/todoist-mcp-server-extended",
+  "displayName": "Todoist-mcp-server-extended",
+  "description": "Integrate natural language task management with Todoist. Manage tasks, projects, and labels effortlessly using everyday language.",
+  "createdAt": "2026-01-16T07:24:40.058Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Chrusic/todoist-mcp-server-extended"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "todoistApiToken"
+      ],
+      "properties": {
+        "todoistApiToken": {
+          "type": "string",
+          "description": "The API token for accessing Todoist API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "todoist_create_task",
+      "description": "Create one or more tasks in Todoist with full parameter support"
+    },
+    {
+      "name": "todoist_get_tasks",
+      "description": "Get a list of tasks from Todoist with various filters - handles both single and batch retrieval"
+    },
+    {
+      "name": "todoist_update_task",
+      "description": "Update one or more tasks in Todoist with full parameter support"
+    },
+    {
+      "name": "todoist_delete_task",
+      "description": "Delete one or more tasks from Todoist"
+    },
+    {
+      "name": "todoist_complete_task",
+      "description": "Mark one or more tasks as complete in Todoist"
+    },
+    {
+      "name": "todoist_get_projects",
+      "description": "Get projects with optional filtering and hierarchy information"
+    },
+    {
+      "name": "todoist_create_project",
+      "description": "Create one or more projects with support for nested hierarchies"
+    },
+    {
+      "name": "todoist_update_project",
+      "description": "Update one or more projects in Todoist"
+    },
+    {
+      "name": "todoist_get_project_sections",
+      "description": "Get sections from one or more projects in Todoist"
+    },
+    {
+      "name": "todoist_create_project_section",
+      "description": "Create one or more sections in Todoist projects"
+    },
+    {
+      "name": "todoist_get_personal_labels",
+      "description": "Get all personal labels from Todoist"
+    },
+    {
+      "name": "todoist_create_personal_label",
+      "description": "Create one or more personal labels in Todoist"
+    },
+    {
+      "name": "todoist_get_personal_label",
+      "description": "Get a personal label by ID"
+    },
+    {
+      "name": "todoist_update_personal_label",
+      "description": "Update one or more existing personal labels in Todoist"
+    },
+    {
+      "name": "todoist_delete_personal_label",
+      "description": "Delete a personal label from Todoist"
+    },
+    {
+      "name": "todoist_get_shared_labels",
+      "description": "Get all shared labels from Todoist"
+    },
+    {
+      "name": "todoist_rename_shared_labels",
+      "description": "Rename one or more shared labels in Todoist"
+    },
+    {
+      "name": "todoist_remove_shared_labels",
+      "description": "Remove one or more shared labels from Todoist tasks"
+    },
+    {
+      "name": "todoist_update_task_labels",
+      "description": "Update the labels of one or more tasks in Todoist"
+    }
+  ]
+}

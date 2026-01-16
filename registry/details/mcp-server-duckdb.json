@@ -1,0 +1,31 @@
+{
+  "id": "mcp-server-duckdb",
+  "displayName": "DuckDB Server",
+  "description": "A DuckDB MCP server allowing interaction with DuckDB databases through MCP.",
+  "createdAt": "2026-01-16T07:26:37.592Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-server-duckdb"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "dbPath"
+      ],
+      "properties": {
+        "dbPath": {
+          "type": "string",
+          "description": "Path to the DuckDB database file."
+        },
+        "readonly": {
+          "type": "boolean",
+          "description": "Run server in read-only mode."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "@Jeetanshu18/time-mcp",
+  "displayName": "Time Awareness Server",
+  "description": "Provide LLMs with time awareness capabilities by exposing tools to get current time, relative time, timestamps, days in a month, time zone conversions, and week information. Enhance your AI applications with accurate and flexible time-related data and operations. Easily integrate with popular LLM clients via standard MCP interfaces.",
+  "createdAt": "2026-01-16T07:32:41.002Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Jeetanshu18/time-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "current_time",
+      "description": "Get the current date and time."
+    },
+    {
+      "name": "relative_time",
+      "description": "Get the relative time from now."
+    },
+    {
+      "name": "days_in_month",
+      "description": "Get the number of days in a month. If no date is provided, get the number of days in the current month."
+    },
+    {
+      "name": "get_timestamp",
+      "description": "Get the timestamp for the time."
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time between timezones."
+    },
+    {
+      "name": "get_week_year",
+      "description": "Get the week and isoWeek of the year."
+    }
+  ]
+}

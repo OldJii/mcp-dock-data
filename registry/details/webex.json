@@ -1,0 +1,129 @@
+{
+  "id": "webex",
+  "displayName": "Webex",
+  "description": "Webex is a Cisco-powered video conferencing and collaboration platform offering online meetings, webinars, screen sharing, and team messaging",
+  "createdAt": "2026-01-16T07:19:43.872Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/webex"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "WEBEX_CREATE_ROOM",
+      "description": "Tool to create a new room. Use when you need to spin up a dedicated space for team collaboration or topic discussion."
+    },
+    {
+      "name": "WEBEX_CREATE_TEAM",
+      "description": "Tool to create a new team. Use when you need to group rooms under a shared team."
+    },
+    {
+      "name": "WEBEX_GET_TEAM_DETAILS",
+      "description": "Tool to retrieve details for a specific team by teamId. Use when you need full metadata of a team before performing team-related operations."
+    },
+    {
+      "name": "WEBEX_LIST_TEAMS",
+      "description": "Tool to list teams. Use when you need to retrieve the teams the authenticated user is a member of."
+    },
+    {
+      "name": "WEBEX_LIST_WEBHOOKS",
+      "description": "Tool to list webhooks. Use after authentication to retrieve webhooks filtered by max or ownership."
+    },
+    {
+      "name": "WEBEX_MESSAGING_CREATE_MESSAGE",
+      "description": "Tool to post a message to a Webex room or person. Use when you have a target roomId or private recipient and want to send text, markdown, files, or card attachments."
+    },
+    {
+      "name": "WEBEX_MESSAGING_CREATE_ROOM",
+      "description": "Tool to create a new room. Use to create a dedicated space for collaboration after authentication."
+    },
+    {
+      "name": "WEBEX_MESSAGING_CREATE_TEAM_MEMBERSHIP",
+      "description": "Tool to add a person to a Webex team by personId or personEmail. Use when granting a user access to a team; requires teamId and one of personId or personEmail."
+    },
+    {
+      "name": "WEBEX_MESSAGING_DELETE_MEMBERSHIP",
+      "description": "Tool to delete a Webex membership by its unique identifier. Use when you need to remove a member from a space after confirming the membership exists. Example: \"Delete the membership with ID Y2lzY29zcGFjMDczNzA2Njg0ZDliY2YxNDE4NDQyYzQ5NDQzOTExYTk4\"."
+    },
+    {
+      "name": "WEBEX_MESSAGING_DELETE_MESSAGE",
+      "description": "Tool to delete a Webex message by its unique identifier. Use after confirming the messageId to remove unintended or obsolete messages. Example: \"Delete the message with ID Y2lzY29zcGFyazovL21lc3NhZ2UvYWJjMTIzNDU2Nzg5\"."
+    },
+    {
+      "name": "WEBEX_MESSAGING_DELETE_ROOM",
+      "description": "Tool to delete a Webex room by its ID. Use after confirming the roomId when you need to permanently remove or archive a space. Example: \"Delete the room with ID Y2lzY29...\""
+    },
+    {
+      "name": "WEBEX_MESSAGING_GET_MEMBERSHIP_DETAILS",
+      "description": "Tool to retrieve details for a specific membership. Use when you need metadata for a membership by its ID."
+    },
+    {
+      "name": "WEBEX_MESSAGING_GET_MESSAGE_DETAILS",
+      "description": "Tool to retrieve details for a specific message. Use when you need full content and metadata by message ID."
+    },
+    {
+      "name": "WEBEX_MESSAGING_GET_ROOM_DETAILS",
+      "description": "Tool to retrieve details for a specific room. Use when you need full metadata of a specific room before posting messages or updating settings."
+    },
+    {
+      "name": "WEBEX_MESSAGING_GET_TEAM_MEMBERSHIP_DETAILS",
+      "description": "Tool to retrieve details for a specific team membership. Use when you need metadata for a team membership by its ID."
+    },
+    {
+      "name": "WEBEX_MESSAGING_LIST_MEMBERSHIPS",
+      "description": "Tool to list memberships in a Webex room. Use when you need to retrieve or filter membership details by roomId, personId, personEmail, or teamId. Supports limiting the response size."
+    },
+    {
+      "name": "WEBEX_MESSAGING_LIST_MESSAGES",
+      "description": "Tool to list messages in a room. Use when you need to retrieve chat history filtered by room, time window, or mentions."
+    },
+    {
+      "name": "WEBEX_MESSAGING_LIST_ROOMS",
+      "description": "Tool to list rooms the authenticated user belongs to. Use after authentication when needing to retrieve spaces filtered by team, type, or sorted. Example: \"List my group rooms sorted by last activity.\""
+    },
+    {
+      "name": "WEBEX_MESSAGING_LIST_TEAM_MEMBERSHIPS",
+      "description": "Tool to list team memberships. Use when you need to retrieve or filter team membership details by teamId, personId, or personEmail, with optional max limit. Use after confirming the team or person context."
+    },
+    {
+      "name": "WEBEX_PEOPLE_GET_PERSON",
+      "description": "Tool to get details for a specific person. Use when you have a person's ID and need full profile information. Call after confirming the person's ID."
+    },
+    {
+      "name": "WEBEX_PEOPLE_LIST_PEOPLE",
+      "description": "Tool to list people in your organization. Use when you need to retrieve people filtered by email, display name, IDs, roles, or location."
+    },
+    {
+      "name": "WEBEX_ROOMS_GET_ROOM_DETAILS",
+      "description": "Tool to retrieve details for a specific room. Use when you need full metadata of a room before posting messages or updating settings."
+    },
+    {
+      "name": "WEBEX_UPDATE_MEMBERSHIP",
+      "description": "Tool to update a membership by membershipId. Use when modifying a member's moderator or monitor status in a Webex room."
+    },
+    {
+      "name": "WEBEX_UPDATE_ROOM",
+      "description": "Tool to update a room's title and settings. Use when you need to rename, lock/unlock, or reassign a Webex space."
+    },
+    {
+      "name": "WEBEX_UPDATE_TEAM",
+      "description": "Tool to update a team's name by teamId. Use when you need to rename a Webex team. Example: \"Change team 12345 name to 'Project X Team'\"."
+    },
+    {
+      "name": "WEBEX_WEBHOOKS_CREATE_WEBHOOK",
+      "description": "Tool to create a new webhook for events. Use when you need to register for Webex event notifications."
+    },
+    {
+      "name": "WEBEX_WEBHOOKS_DELETE_WEBHOOK",
+      "description": "Tool to delete a specific webhook. Use when you need to remove an existing webhook by its ID after confirming the identifier."
+    },
+    {
+      "name": "WEBEX_WEBHOOKS_GET_WEBHOOK",
+      "description": "Tool to get details for a specific webhook. Use when you need to inspect a webhook's configuration before taking action."
+    }
+  ]
+}

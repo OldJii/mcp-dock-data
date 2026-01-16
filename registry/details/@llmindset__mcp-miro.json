@@ -1,0 +1,27 @@
+{
+  "id": "@llmindset/mcp-miro",
+  "displayName": "MIRO Whiteboard Connector",
+  "description": "Connects to the MIRO Whiteboard Application for board manipulation and sticky creation.",
+  "createdAt": "2026-01-16T07:31:38.925Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@llmindset/mcp-miro"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "miroOauthKey"
+      ],
+      "properties": {
+        "miroOauthKey": {
+          "type": "string",
+          "description": "The OAuth key for accessing MIRO API services."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

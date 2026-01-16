@@ -1,0 +1,12 @@
+{
+  "id": "@esteban.job/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:11.601Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@esteban.job/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

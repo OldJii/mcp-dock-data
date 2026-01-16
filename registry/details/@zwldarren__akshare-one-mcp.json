@@ -1,0 +1,57 @@
+{
+  "id": "@zwldarren/akshare-one-mcp",
+  "displayName": "AKShare One MCP Server",
+  "description": "Provide access to Chinese stock market data including historical prices, real-time data, news, and financial statements. Retrieve comprehensive financial information for stocks with flexible parameters. Enhance your financial analysis and decision-making with up-to-date market insights.",
+  "createdAt": "2026-01-16T07:20:48.501Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zwldarren/akshare-one-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "default": {},
+      "description": "No configuration required for akshare-one-mcp"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_hist_data",
+      "description": "Get historical stock market data. 'eastmoney_direct' support all A,B,H shares"
+    },
+    {
+      "name": "get_realtime_data",
+      "description": "Get real-time stock market data. 'eastmoney_direct' support all A,B,H shares"
+    },
+    {
+      "name": "get_news_data",
+      "description": "Get stock-related news data."
+    },
+    {
+      "name": "get_balance_sheet",
+      "description": "Get company balance sheet data."
+    },
+    {
+      "name": "get_income_statement",
+      "description": "Get company income statement data."
+    },
+    {
+      "name": "get_cash_flow",
+      "description": "Get company cash flow statement data."
+    },
+    {
+      "name": "get_inner_trade_data",
+      "description": "Get company insider trading data."
+    },
+    {
+      "name": "get_financial_metrics",
+      "description": "Get key financial metrics from the three major financial statements."
+    },
+    {
+      "name": "get_time_info",
+      "description": "Get current time with ISO format, timestamp, and the last trading day."
+    }
+  ]
+}

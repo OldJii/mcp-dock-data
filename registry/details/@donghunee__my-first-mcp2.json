@@ -1,0 +1,34 @@
+{
+  "id": "@donghunee/my-first-mcp2",
+  "displayName": "Hello",
+  "description": "Create quick, personalized greetings for people or teams. Use it to add a friendly touch to onboarding, demos, or status updates. Customize the message style to match your tone.",
+  "createdAt": "2026-01-16T07:32:24.942Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@donghunee/my-first-mcp2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

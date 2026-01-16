@@ -1,0 +1,12 @@
+{
+  "id": "@loopiezlol/runescape-wiki-mcp",
+  "displayName": "runescape-wiki-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:53.425Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@loopiezlol/runescape-wiki-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

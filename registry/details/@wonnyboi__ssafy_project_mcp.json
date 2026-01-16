@@ -1,0 +1,16 @@
+{
+  "id": "@wonnyboi/ssafy_project_mcp",
+  "displayName": "Project Portfolio Guide",
+  "description": "Collect and structure project portfolio information through a guided conversation flow. Integrate with GitHub repositories and manage data via RESTful API endpoints. Deploy easily with Docker and Smithery for scalable usage.",
+  "createdAt": "2026-01-16T07:31:48.485Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wonnyboi/ssafy_project_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

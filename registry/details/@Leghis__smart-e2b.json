@@ -1,0 +1,48 @@
+{
+  "id": "@Leghis/smart-e2b",
+  "displayName": "SMART-E2B",
+  "description": "Execute JavaScript and Python code securely in the cloud. Manage files and optimize performance with intelligent session reuse. Integrate seamlessly with Claude AI Desktop for enhanced capabilities.",
+  "createdAt": "2026-01-16T07:25:01.427Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Leghis/smart-e2b"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "e2bApiKey"
+      ],
+      "properties": {
+        "e2bApiKey": {
+          "type": "string",
+          "description": "Your E2B API key used for authorization."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "executeJavaScript",
+      "description": "Execute JavaScript code in a secure cloud sandbox"
+    },
+    {
+      "name": "executePython",
+      "description": "Execute Python code in a secure cloud sandbox"
+    },
+    {
+      "name": "uploadFile",
+      "description": "Upload a file to the sandbox"
+    },
+    {
+      "name": "listFiles",
+      "description": "List files in a directory in the sandbox"
+    },
+    {
+      "name": "readFile",
+      "description": "Read a file from the sandbox"
+    }
+  ]
+}

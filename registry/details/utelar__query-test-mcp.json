@@ -1,0 +1,12 @@
+{
+  "id": "utelar/query-test-mcp",
+  "displayName": "query-test-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:18.434Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/utelar/query-test-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

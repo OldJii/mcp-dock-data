@@ -1,0 +1,25 @@
+{
+  "id": "entelligence",
+  "displayName": "Entelligence",
+  "description": "Entelligence leverages artificial intelligence to provide insights, recommendations, and predictive analytics for businesses seeking data-driven decision-making capabilities",
+  "createdAt": "2026-01-16T07:19:42.782Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/entelligence"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ENTELLIGENCE_ADD_A_NEW_REPOSITORY",
+      "description": "Add a new repository to the system with specified details"
+    },
+    {
+      "name": "ENTELLIGENCE_INTERACT_WITH_THE_REPOSITORY_AGENT",
+      "description": "Send a question and related information to the Repository Agent and receive a streaming response"
+    }
+  ]
+}

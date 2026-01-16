@@ -1,0 +1,143 @@
+{
+  "id": "@xinkuang/china-stock-mcp",
+  "displayName": "China Stock Insights",
+  "description": "Access real-time and historical market data for China A-shares and Hong Kong stocks, along with news and macro indicators. Retrieve financial statements, key ratios, shareholder and insider activity, sentiment analysis, and company profiles to power investment research and strategies.",
+  "createdAt": "2026-01-16T07:20:31.147Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xinkuang/china-stock-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "default": {},
+      "description": "No configuration required for china-stock-mcp",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_hist_data",
+      "description": "获取指定的股票历史行情数据及技术指标"
+    },
+    {
+      "name": "get_realtime_data",
+      "description": "获取指定的股票实时行情数据"
+    },
+    {
+      "name": "get_news_data",
+      "description": "获取股票相关的新闻数据"
+    },
+    {
+      "name": "get_balance_sheet",
+      "description": "获取公司的资产负债表"
+    },
+    {
+      "name": "get_income_statement",
+      "description": "获取指定股票代码的公司的利润表"
+    },
+    {
+      "name": "get_cash_flow",
+      "description": "获取指定股票代码的公司的现金流量表"
+    },
+    {
+      "name": "get_fund_flow",
+      "description": "获取股票资金流向数据 (近100交易日)"
+    },
+    {
+      "name": "get_inner_trade_data",
+      "description": "获取公司内部股东交易数据"
+    },
+    {
+      "name": "get_financial_metrics",
+      "description": "获取公司关键财务指标"
+    },
+    {
+      "name": "get_time_info",
+      "description": "获取当前时间（ISO格式、时间戳）和最近一个交易日"
+    },
+    {
+      "name": "get_stock_basic_info",
+      "description": "获取指定股票的基本概要信息"
+    },
+    {
+      "name": "get_macro_data",
+      "description": "获取宏观经济指标数据，支持多个指标"
+    },
+    {
+      "name": "get_investor_sentiment",
+      "description": "分析投资者情绪数据，包括用户关注指数、日度市场参与意愿、股票评级记录和机构参与度。"
+    },
+    {
+      "name": "get_shareholder_info",
+      "description": "获取指定股票的股东情况"
+    },
+    {
+      "name": "get_product_info",
+      "description": "获取公司主要产品/业务构成"
+    },
+    {
+      "name": "get_profit_forecast",
+      "description": "获取股票的业绩预测数据，包括预测年报净利润和每股收益"
+    },
+    {
+      "name": "get_stock_fhps_detail",
+      "description": "获取指定股票的分红配送情况"
+    },
+    {
+      "name": "get_stock_cyq",
+      "description": "获取指定股票的筹码分布情况"
+    },
+    {
+      "name": "get_stock_research_report",
+      "description": "获取指定股票的个股研报及盈利预测"
+    },
+    {
+      "name": "get_stock_circulate_stock_holder",
+      "description": "获取指定股票的流通股东情况"
+    },
+    {
+      "name": "get_stock_management_change",
+      "description": "获取指定股票的高管持股变动情况"
+    },
+    {
+      "name": "get_stock_restricted_release_queue",
+      "description": "获取指定股票的个股限售解禁情况"
+    },
+    {
+      "name": "get_stock_value",
+      "description": "获取指定股票的个股估值分析数据"
+    },
+    {
+      "name": "get_stock_a_code_name",
+      "description": "获取沪深京 A 股股票代码和股票简称数据"
+    },
+    {
+      "name": "get_stock_volatility",
+      "description": "通过分钟级历史行情计算指定个股的波动率指标"
+    },
+    {
+      "name": "get_all_cni_indices",
+      "description": "获取所有指数的代码和基本信息"
+    },
+    {
+      "name": "get_cni_index_hist",
+      "description": "获取指定指数的日频率历史行情数据"
+    },
+    {
+      "name": "get_cni_index_detail",
+      "description": "获取指定指数的成分股样本详情"
+    },
+    {
+      "name": "get_stock_technical_rank",
+      "description": "获取技术选股指标数据，包括创新高、创新低、连续上涨、连续下跌、持续放量、持续缩量、向上突破、向下突破、量价齐升、量价齐跌、险资举牌。"
+    },
+    {
+      "name": "get_stock_board_industry_summary",
+      "description": "获取所有行业板块实时行情数据"
+    }
+  ]
+}

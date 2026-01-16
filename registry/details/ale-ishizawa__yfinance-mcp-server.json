@@ -1,0 +1,12 @@
+{
+  "id": "ale-ishizawa/yfinance-mcp-server",
+  "displayName": "yfinance-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:53.982Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ale-ishizawa/yfinance-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

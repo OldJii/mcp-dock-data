@@ -1,0 +1,68 @@
+{
+  "id": "@Kylejeong2/twitter-mcp",
+  "displayName": "Twitter Automation Server",
+  "description": "Automate Twitter interactions by posting tweets, replying, and searching tweets with structured results. Maintain persistent browser sessions to preserve login state and avoid repeated authentications. Manage browser context IDs for seamless session continuity across requests.",
+  "createdAt": "2026-01-16T07:28:18.491Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kylejeong2/twitter-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "browserbaseApiKey",
+        "browserbaseProjectId",
+        "openaiApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "contextId": {
+          "type": "string",
+          "description": "Browserbase context ID for persistent sessions to maintain login state (falls back to env BROWSERBASE_CONTEXT_ID)"
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key for AI actions (falls back to env OPENAI_API_KEY)"
+        },
+        "browserbaseApiKey": {
+          "type": "string",
+          "description": "Browserbase API key (falls back to env BROWSERBASE_API_KEY)"
+        },
+        "browserbaseProjectId": {
+          "type": "string",
+          "description": "Browserbase project ID (falls back to env BROWSERBASE_PROJECT_ID)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "twitter_post",
+      "description": "Post a tweet to Twitter"
+    },
+    {
+      "name": "twitter_search",
+      "description": "Search for tweets on Twitter"
+    },
+    {
+      "name": "get_context_id",
+      "description": "Get the current Browserbase context ID for persistent sessions"
+    },
+    {
+      "name": "set_context_id",
+      "description": "Set the context ID for persistent sessions"
+    }
+  ]
+}

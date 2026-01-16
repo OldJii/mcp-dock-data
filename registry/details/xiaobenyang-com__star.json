@@ -1,0 +1,52 @@
+{
+  "id": "xiaobenyang-com/star",
+  "displayName": "star",
+  "description": "查询星座的性格特征、守护星与元素等要点。获取每日运势，并根据生日快速确定你的星座。匹配两人星座看配对指数，计算并解读你的上升星座。",
+  "createdAt": "2026-01-16T07:30:08.532Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/star"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_zodiac_info",
+      "description": "获取指定星座的详细信息，包括性格特征、守护星、元素等"
+    },
+    {
+      "name": "get_daily_horoscope",
+      "description": "获取指定星座的今日运势"
+    },
+    {
+      "name": "get_compatibility",
+      "description": "获取两个星座的配对指数和关系分析"
+    },
+    {
+      "name": "get_all_zodiacs",
+      "description": "获取所有星座的基本信息列表"
+    },
+    {
+      "name": "get_zodiac_by_date",
+      "description": "根据出生日期确定星座"
+    },
+    {
+      "name": "get_rising_sign",
+      "description": "计算上升星座，需要出生时间、地点和日期"
+    },
+    {
+      "name": "get_rising_sign_info",
+      "description": "获取指定上升星座的详细信息"
+    }
+  ]
+}

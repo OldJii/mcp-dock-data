@@ -1,0 +1,12 @@
+{
+  "id": "@cojay80/kiwoom-hts-dashboard",
+  "displayName": "kiwoom-hts-dashboard",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:52.666Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cojay80/kiwoom-hts-dashboard"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@Talljack/mcp_server_trending",
+  "displayName": "mcp_server_trending",
+  "description": "Track tech trends across GitHub, Hacker News, Product Hunt, npm, PyPI, arXiv, and more. Discover hot repos, articles, models, plugins, jobs, and products in one place. Compare platforms and run cross-source analyses to spot opportunities faster.",
+  "createdAt": "2026-01-16T07:31:21.512Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Talljack/mcp_server_trending"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

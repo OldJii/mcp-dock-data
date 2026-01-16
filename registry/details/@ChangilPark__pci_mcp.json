@@ -1,0 +1,12 @@
+{
+  "id": "@ChangilPark/pci_mcp",
+  "displayName": "pci_mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:19.434Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ChangilPark/pci_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

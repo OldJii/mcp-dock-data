@@ -1,0 +1,93 @@
+{
+  "id": "@HenkDz/postgresql-mcp-server",
+  "displayName": "PostgreSQL Database Management Server",
+  "description": "Analyze, manage, and optimize your PostgreSQL databases effortlessly. Streamline your database operations with powerful tools for debugging, schema management, and data migration. Enhance performance monitoring and ensure your database runs smoothly with real-time insights and recommendations.",
+  "createdAt": "2026-01-16T07:23:03.023Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@HenkDz/postgresql-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "pg_analyze_database",
+      "description": "Analyze PostgreSQL database configuration and performance"
+    },
+    {
+      "name": "pg_debug_database",
+      "description": "Debug common PostgreSQL issues"
+    },
+    {
+      "name": "pg_manage_schema",
+      "description": "Manage PostgreSQL schema - get schema info, create/alter tables, manage enums. Examples: operation=\"get_info\" for table lists, operation=\"create_table\" with tableName and columns, operation=\"get_enums\" to list enums, operation=\"create_enum\" with enumName and values"
+    },
+    {
+      "name": "pg_manage_functions",
+      "description": "Manage PostgreSQL functions - get, create, or drop functions with a single tool. Examples: operation=\"get\" to list functions, operation=\"create\" with functionName=\"test_func\", parameters=\"\" (empty for no params), returnType=\"TEXT\", functionBody=\"SELECT 'Hello'\""
+    },
+    {
+      "name": "pg_manage_triggers",
+      "description": "Manage PostgreSQL triggers - get, create, drop, and enable/disable triggers. Examples: operation=\"get\" to list triggers, operation=\"create\" with triggerName, tableName, functionName, operation=\"drop\" with triggerName and tableName, operation=\"set_state\" with triggerName, tableName, enable"
+    },
+    {
+      "name": "pg_manage_indexes",
+      "description": "Manage PostgreSQL indexes - get, create, drop, reindex, and analyze usage with a single tool. Examples: operation=\"get\" to list indexes, operation=\"create\" with indexName, tableName, columns, operation=\"analyze_usage\" for performance analysis"
+    },
+    {
+      "name": "pg_manage_constraints",
+      "description": "Manage PostgreSQL constraints - get, create foreign keys, drop foreign keys, create constraints, drop constraints. Examples: operation=\"get\" to list constraints, operation=\"create_fk\" with constraintName, tableName, columnNames, referencedTable, referencedColumns"
+    },
+    {
+      "name": "pg_manage_rls",
+      "description": "Manage PostgreSQL Row-Level Security - enable/disable RLS and manage policies. Examples: operation=\"enable\" with tableName=\"users\", operation=\"create_policy\" with tableName, policyName, using, check"
+    },
+    {
+      "name": "pg_manage_users",
+      "description": "Manage PostgreSQL users and permissions - create, drop, alter users, grant/revoke permissions. Examples: operation=\"create\" with username=\"testuser\", operation=\"grant\" with username, permissions, target, targetType"
+    },
+    {
+      "name": "pg_manage_query",
+      "description": "Manage PostgreSQL query analysis and performance - operation=\"explain\" for EXPLAIN plans, operation=\"get_slow_queries\" for slow query analysis, operation=\"get_stats\" for query statistics, operation=\"reset_stats\" for clearing statistics"
+    },
+    {
+      "name": "pg_execute_query",
+      "description": "Execute SELECT queries and data retrieval operations - operation=\"select/count/exists\" with query and optional parameters. Examples: operation=\"select\", query=\"SELECT * FROM users WHERE created_at > $1\", parameters=[\"2024-01-01\"]"
+    },
+    {
+      "name": "pg_execute_mutation",
+      "description": "Execute data modification operations (INSERT/UPDATE/DELETE/UPSERT) - operation=\"insert/update/delete/upsert\" with table and data. Examples: operation=\"insert\", table=\"users\", data={\"name\":\"John\",\"email\":\"john@example.com\"}"
+    },
+    {
+      "name": "pg_execute_sql",
+      "description": "Execute arbitrary SQL statements - sql=\"ANY_VALID_SQL\" with optional parameters and transaction support. Examples: sql=\"CREATE INDEX ...\", sql=\"WITH complex_cte AS (...) SELECT ...\", transactional=true"
+    },
+    {
+      "name": "pg_manage_comments",
+      "description": "Manage PostgreSQL object comments - get, set, remove comments on tables, columns, functions, and other database objects. Examples: operation=\"get\" with objectType=\"table\", objectName=\"users\", operation=\"set\" with comment text, operation=\"bulk_get\" for discovery"
+    },
+    {
+      "name": "pg_export_table_data",
+      "description": "Export table data to JSON or CSV format"
+    },
+    {
+      "name": "pg_import_table_data",
+      "description": "Import data from JSON or CSV file into a table"
+    },
+    {
+      "name": "pg_copy_between_databases",
+      "description": "Copy data between two databases"
+    },
+    {
+      "name": "pg_monitor_database",
+      "description": "Get real-time monitoring information for a PostgreSQL database"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "@brianellin/bsky-mcp-server",
+  "displayName": "Bluesky MCP Server",
+  "description": "Connect to Bluesky and interact with the ATProtocol using natural language. Fetch, analyze, and post content seamlessly within your LLM applications. Enhance your experience by leveraging Bluesky's features directly in your context window.",
+  "createdAt": "2026-01-16T07:28:39.431Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brianellin/bsky-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "blueskyIdentifier",
+        "blueskyAppPassword",
+        "blueskyServiceUrl"
+      ],
+      "properties": {
+        "blueskyIdentifier": {
+          "type": "string",
+          "description": "Your Bluesky handle/identifier"
+        },
+        "blueskyServiceUrl": {
+          "type": "string",
+          "description": "The URL of the Bluesky service (e.g., https://bsky.social)"
+        },
+        "blueskyAppPassword": {
+          "type": "string",
+          "description": "Your Bluesky app password"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-my-handle-and-did",
+      "description": "Return the handle and did of the currently authenticated user for this blusesky session. Useful for when someone asks information about themselves using \"me\" or \"my\" on bluesky."
+    },
+    {
+      "name": "get-timeline-posts",
+      "description": "Fetch your home timeline from Bluesky, which includes posts from all of the people you follow in reverse chronological order"
+    },
+    {
+      "name": "create-post",
+      "description": "Create a new post on Bluesky"
+    },
+    {
+      "name": "get-profile",
+      "description": "Get a user's profile from Bluesky"
+    },
+    {
+      "name": "search-posts",
+      "description": "Search for posts on Bluesky"
+    },
+    {
+      "name": "get-post-thread",
+      "description": "Get a full conversation thread for a specific post, showing replies and context"
+    },
+    {
+      "name": "convert-url-to-uri",
+      "description": "Convert a Bluesky web URL to an AT URI format that can be used with other tools"
+    },
+    {
+      "name": "search-people",
+      "description": "Search for users/actors on Bluesky"
+    },
+    {
+      "name": "search-feeds",
+      "description": "Search for custom feeds on Bluesky"
+    },
+    {
+      "name": "get-liked-posts",
+      "description": "Get a list of posts that the authenticated user has liked"
+    },
+    {
+      "name": "get-trends",
+      "description": "Get current trending topics on Bluesky"
+    },
+    {
+      "name": "like-post",
+      "description": "Like a post on Bluesky"
+    },
+    {
+      "name": "follow-user",
+      "description": "Follow a user on Bluesky"
+    },
+    {
+      "name": "get-pinned-feeds",
+      "description": "Get the authenticated user's pinned feeds and lists."
+    },
+    {
+      "name": "get-feed-posts",
+      "description": "Fetch posts from a specified feed"
+    },
+    {
+      "name": "get-list-posts",
+      "description": "Fetch posts from users in a specified list"
+    },
+    {
+      "name": "get-user-posts",
+      "description": "Fetch posts from a specific user"
+    },
+    {
+      "name": "get-follows",
+      "description": "Get a list of users that a person follows"
+    },
+    {
+      "name": "get-followers",
+      "description": "Get a list of users that follow a person"
+    },
+    {
+      "name": "get-post-likes",
+      "description": "Get information about users who have liked a specific post"
+    },
+    {
+      "name": "list-resources",
+      "description": "List all available MCP resources with their descriptions"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@michaelradigan-cpc/cpassist-mcp",
+  "displayName": "cpassist-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:53.025Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@michaelradigan-cpc/cpassist-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

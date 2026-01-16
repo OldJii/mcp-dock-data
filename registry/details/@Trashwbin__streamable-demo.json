@@ -1,0 +1,33 @@
+{
+  "id": "@Trashwbin/streamable-demo",
+  "displayName": "Streamable Demo",
+  "description": "Manage and summarize text notes efficiently using a simple MCP server. Create new notes with ease and generate comprehensive summaries of all stored notes. Access and manipulate notes through intuitive URIs and tools designed for seamless integration.",
+  "createdAt": "2026-01-16T07:31:49.537Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Trashwbin/streamable-demo"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greet",
+      "description": "一个简单的问候工具"
+    },
+    {
+      "name": "multi-greet",
+      "description": "一个工具，发送不同的问候，并在它们之间有延迟"
+    },
+    {
+      "name": "start-notification-stream",
+      "description": "开始发送周期性通知以测试恢复"
+    }
+  ]
+}

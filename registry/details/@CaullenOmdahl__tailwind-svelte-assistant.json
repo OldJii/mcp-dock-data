@@ -1,0 +1,69 @@
+{
+  "id": "@CaullenOmdahl/tailwind-svelte-assistant",
+  "displayName": "Tailwind Svelte Assistant",
+  "description": "Provide instant access to SvelteKit and Tailwind CSS documentation along with ready-to-use Svelte component snippets styled with Tailwind. Enable efficient UI development by retrieving relevant docs, utility class info, and component code snippets on demand. Streamline your frontend workflow with organized content discovery and configurable documentation scraping.",
+  "createdAt": "2026-01-16T07:25:15.829Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@CaullenOmdahl/tailwind-svelte-assistant"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_sveltekit_doc",
+      "description": "[LEGACY] Get SvelteKit documentation for a specific topic. NOTE: This tool only covers ~8% of SvelteKit docs. Use 'get_svelte_full_docs' for complete documentation coverage."
+    },
+    {
+      "name": "get_tailwind_info",
+      "description": "[LEGACY] Get Tailwind CSS information for a specific query. NOTE: This tool only covers ~4% of Tailwind docs. Use 'get_tailwind_full_docs' for complete documentation coverage."
+    },
+    {
+      "name": "get_component_snippet",
+      "description": "Get a Svelte component code snippet for a specific UI element."
+    },
+    {
+      "name": "list_sveltekit_topics",
+      "description": "Lists available SvelteKit documentation topics."
+    },
+    {
+      "name": "list_tailwind_info_topics",
+      "description": "Lists available Tailwind CSS documentation topics."
+    },
+    {
+      "name": "list_snippet_categories",
+      "description": "Lists available component snippet categories."
+    },
+    {
+      "name": "list_snippets_in_category",
+      "description": "Lists available snippets within a specified category."
+    },
+    {
+      "name": "get_svelte_full_docs",
+      "description": "Get the complete Svelte and SvelteKit documentation (~1MB, 100% coverage). WARNING: This returns ~320,000 tokens. Only use with LLMs that support large context windows (100k+ tokens). For smaller contexts, use 'search_svelte_docs' or 'get_sveltekit_doc' instead."
+    },
+    {
+      "name": "get_tailwind_full_docs",
+      "description": "Get the complete Tailwind CSS documentation (~2.1MB, 249 files, 100% coverage). WARNING: This returns ~730,000 tokens. Only use with LLMs that support very large context windows (200k+ tokens). For smaller contexts, use 'search_tailwind_docs' or 'get_tailwind_info' instead."
+    },
+    {
+      "name": "search_svelte_docs",
+      "description": "Search within the complete Svelte and SvelteKit documentation for specific topics or keywords."
+    },
+    {
+      "name": "search_tailwind_docs",
+      "description": "Search within the complete Tailwind CSS documentation for specific utility classes or concepts."
+    }
+  ]
+}

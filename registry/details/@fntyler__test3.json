@@ -1,0 +1,12 @@
+{
+  "id": "@fntyler/test3",
+  "displayName": "test3",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:19.488Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fntyler/test3"
+  },
+  "connection": null,
+  "capabilities": []
+}

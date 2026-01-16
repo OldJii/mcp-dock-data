@@ -1,0 +1,12 @@
+{
+  "id": "@rsafaya-edrv/uk-aml-mcp",
+  "displayName": "uk-aml-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:10.514Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rsafaya-edrv/uk-aml-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

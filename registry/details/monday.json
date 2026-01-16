@@ -1,0 +1,265 @@
+{
+  "id": "monday",
+  "displayName": "Monday",
+  "description": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more",
+  "createdAt": "2026-01-16T07:19:44.415Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/monday"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MONDAY_ADD_USERS_TO_BOARD",
+      "description": "Adds users to a Monday.com board with a specified role."
+    },
+    {
+      "name": "MONDAY_ADD_USERS_TO_TEAM",
+      "description": "Tool to add users to a Monday.com team. Use when updating team membership by adding user(s)."
+    },
+    {
+      "name": "MONDAY_ADD_USERS_TO_WORKSPACE",
+      "description": "Tool to add one or more users to a workspace. Use when inviting existing users to collaborate in a workspace."
+    },
+    {
+      "name": "MONDAY_ARCHIVE_BOARD",
+      "description": "Archives a specified, existing, and unarchived board in Monday.com; archived boards can typically be restored later."
+    },
+    {
+      "name": "MONDAY_ARCHIVE_ITEM",
+      "description": "Archives an existing Monday.com item, moving it from active board views to the archive where it can be potentially restored."
+    },
+    {
+      "name": "MONDAY_ARCHIVE_WORKSPACE",
+      "description": "Tool to archive a Monday.com workspace. Use when you want to soft-remove a workspace from view."
+    },
+    {
+      "name": "MONDAY_CHANGE_SIMPLE_COLUMN_VALUE",
+      "description": "Changes a specific column's value for a Monday.com item using a simple string, suitable for Text, Status, or Dropdown columns; can create new labels if `create_labels_if_missing` is true for Status/Dropdown columns."
+    },
+    {
+      "name": "MONDAY_CREATE_BOARD",
+      "description": "Creates a Monday.com board; `template_id` if used must be accessible, and `folder_id` must be in `workspace_id` if both are provided."
+    },
+    {
+      "name": "MONDAY_CREATE_COLUMN",
+      "description": "Creates a new column with a specified type and title on a monday.com board."
+    },
+    {
+      "name": "MONDAY_CREATE_DOC",
+      "description": "Tool to create a new doc in Monday.com. Use when you need to add a doc to a workspace or into a doc column on an item."
+    },
+    {
+      "name": "MONDAY_CREATE_GROUP",
+      "description": "Creates a new group with the given `group_name` on an existing Monday.com board, identified by its `board_id`."
+    },
+    {
+      "name": "MONDAY_CREATE_ITEM",
+      "description": "Creates a new item on a Monday.com board, optionally assigning it to a group and setting column values."
+    },
+    {
+      "name": "MONDAY_CREATE_NOTIFICATION",
+      "description": "Tool to send a notification to a user. Use when you need to alert a user about a board, item, or update. Call after obtaining the user and target IDs."
+    },
+    {
+      "name": "MONDAY_CREATE_TAG",
+      "description": "Tool to create a new tag or return an existing tag. Use when you need to label items with color-coded tags on a public or private board."
+    },
+    {
+      "name": "MONDAY_CREATE_UPDATE",
+      "description": "Tool to create a new update for an item or reply to an existing update. Use after determining the target item or update to comment on."
+    },
+    {
+      "name": "MONDAY_CREATE_USER",
+      "description": "Tool to invite and create a new user. Use when you need to programmatically add new users to your Monday account."
+    },
+    {
+      "name": "MONDAY_CREATE_WORKSPACE",
+      "description": "Tool to create a Monday.com workspace. Use when you need to programmatically add a workspace after planning your project structure."
+    },
+    {
+      "name": "MONDAY_DELETE_ASSET",
+      "description": "Tool to remove uploaded files. Since monday.com doesn't provide a direct asset deletion API, this tool deletes the enclosing update or clears files from a File column."
+    },
+    {
+      "name": "MONDAY_DELETE_BOARD",
+      "description": "Tool to permanently delete a board from your Monday.com account. Use when you need to remove a board permanently after verifying its ID. This action cannot be undone."
+    },
+    {
+      "name": "MONDAY_DELETE_COLUMN",
+      "description": "Deletes a specified column from a Monday.com board; this action is destructive and cannot be undone via the API."
+    },
+    {
+      "name": "MONDAY_DELETE_DOC",
+      "description": "Tool to delete a Monday.com doc by its ID. Use when you need to remove a doc that is no longer needed."
+    },
+    {
+      "name": "MONDAY_DELETE_GROUP",
+      "description": "Permanently deletes an existing group (and its items) from an existing board in Monday.com."
+    },
+    {
+      "name": "MONDAY_DELETE_ITEM",
+      "description": "Permanently deletes an existing Monday.com item; this action is irreversible via the API."
+    },
+    {
+      "name": "MONDAY_DELETE_TAG",
+      "description": "Tool to process deletion of a tag. Note: monday.com's public API does not currently support permanently deleting a tag across the account. As a best-effort, this action validates that the tag exists and returns its id."
+    },
+    {
+      "name": "MONDAY_DELETE_TEAM",
+      "description": "Tool to delete an existing team; use when you need to permanently remove a team by its ID after confirming it’s no longer needed."
+    },
+    {
+      "name": "MONDAY_DELETE_UPDATE",
+      "description": "Tool to delete an update by its ID. Use when an update is no longer relevant. Use after confirming deletion is irreversible."
+    },
+    {
+      "name": "MONDAY_DELETE_USER",
+      "description": "Tool to deactivate or remove a user by ID. Use when you need to permanently disable a user's access; operation cannot be undone."
+    },
+    {
+      "name": "MONDAY_DELETE_WORKSPACE",
+      "description": "Tool to permanently delete a workspace by its ID. Use when a workspace is no longer needed. Use after confirming deletion is irreversible."
+    },
+    {
+      "name": "MONDAY_DUPLICATE_ITEM",
+      "description": "Duplicates an item on a Monday.com board, optionally including its updates."
+    },
+    {
+      "name": "MONDAY_GET_ACCOUNT_INFO",
+      "description": "Tool to retrieve account metadata and settings. Use when you need to inspect account configuration before performing account-scoped operations after authenticating."
+    },
+    {
+      "name": "MONDAY_GET_ASSET",
+      "description": "Tool to retrieve metadata for an uploaded asset. Use when you need to fetch file details by its ID after upload."
+    },
+    {
+      "name": "MONDAY_GET_DOC",
+      "description": "Tool to retrieve details of a specific doc. Use when you need to fetch a document by its ID after confirming the doc ID."
+    },
+    {
+      "name": "MONDAY_GET_GROUP_DETAILS",
+      "description": "Retrieves details (ID, title, color, archived/deleted status) for a specific group on an accessible Monday.com board."
+    },
+    {
+      "name": "MONDAY_GET_ME",
+      "description": "Tool to fetch the current authenticated user's profile and permissions. Use when you need to retrieve user metadata before performing other operations."
+    },
+    {
+      "name": "MONDAY_GET_TAGS",
+      "description": "Tool to retrieve tags from the account. Use when you need to list all tags or filter by specific IDs."
+    },
+    {
+      "name": "MONDAY_GET_TEAMS",
+      "description": "Tool to retrieve teams from Monday.com. Use when you need an overview of teams in your account."
+    },
+    {
+      "name": "MONDAY_GET_UPDATES",
+      "description": "Tool to retrieve updates for a specific item. Use when you need to fetch the conversation history tied to an item."
+    },
+    {
+      "name": "MONDAY_GET_WEBHOOKS",
+      "description": "Tool to retrieve webhooks for a board. Use when you need to list all webhooks on a board."
+    },
+    {
+      "name": "MONDAY_GET_WORKSPACES",
+      "description": "Tool to retrieve workspaces. Use when you need to list workspaces with optional filtering, pagination, or ordering after authentication."
+    },
+    {
+      "name": "MONDAY_LIST_BOARD_ITEMS",
+      "description": "Retrieves ID, name, and state for all items on a specified Monday.com board."
+    },
+    {
+      "name": "MONDAY_LIST_BOARDS",
+      "description": "Retrieves a list of boards from a Monday.com account, supporting pagination and filtering by state."
+    },
+    {
+      "name": "MONDAY_LIST_COLUMNS",
+      "description": "Lists all columns and their properties for a specified Monday.com `board_id`; the board must exist."
+    },
+    {
+      "name": "MONDAY_LIST_DOCS",
+      "description": "Tool to list docs. Use when you need to retrieve docs accessible in an account or workspace."
+    },
+    {
+      "name": "MONDAY_LIST_GROUPS",
+      "description": "Tool to retrieve all groups of a specified board. Use when you need to list groups on a board after confirming its board ID."
+    },
+    {
+      "name": "MONDAY_LIST_ITEMS",
+      "description": "Retrieves specified subitems from Monday.com using their IDs, returning the raw JSON response."
+    },
+    {
+      "name": "MONDAY_LIST_TEAM_MEMBERS",
+      "description": "Tool to list members of a specified team. Use when you need to retrieve all users in a given Monday.com team after confirming its team ID."
+    },
+    {
+      "name": "MONDAY_LIST_USERS",
+      "description": "Retrieves a list of users from Monday.com; an empty user list in the response 'data' field does not signify action failure."
+    },
+    {
+      "name": "MONDAY_MOVE_ITEM_TO_BOARD",
+      "description": "Moves a Monday.com item to a specified board and group; requires the item, target board, and target group to exist."
+    },
+    {
+      "name": "MONDAY_MOVE_ITEM_TO_GROUP",
+      "description": "Moves an item to a different group on the same Monday.com board; the item and group must exist."
+    },
+    {
+      "name": "MONDAY_REMOVE_USERS_FROM_TEAM",
+      "description": "Tool to remove users from a Monday.com team. Use when updating team membership by removing user(s)."
+    },
+    {
+      "name": "MONDAY_REMOVE_USERS_FROM_WORKSPACE",
+      "description": "Tool to remove users from a workspace. Use when revoking access for specific users in a workspace."
+    },
+    {
+      "name": "MONDAY_UPDATE_BOARD",
+      "description": "Updates a specified attribute of an existing board on Monday.com."
+    },
+    {
+      "name": "MONDAY_UPDATE_COLUMN",
+      "description": "Tool to update column title or description. Use when modifying a column’s metadata after creation."
+    },
+    {
+      "name": "MONDAY_UPDATE_DOC",
+      "description": "Tool to update a doc's title or append markdown content. Use when renaming docs or adding Markdown blocks to existing docs."
+    },
+    {
+      "name": "MONDAY_UPDATE_GROUP",
+      "description": "Tool to update an existing group on a board. Use when you need to modify a group's attribute (title, color, or position) after confirming the group ID."
+    },
+    {
+      "name": "MONDAY_UPDATE_ITEM",
+      "description": "Tool to update an existing item's column value on Monday.com. Use when setting complex column types like Timeline or People."
+    },
+    {
+      "name": "MONDAY_UPDATE_TAG",
+      "description": "Tool to return a tag's details or best-effort \"rename\" by creating or getting a tag with the requested name. The monday API does not support updating existing tag name/color."
+    },
+    {
+      "name": "MONDAY_UPDATE_TEAM",
+      "description": "Tool to update a team's details in Monday.com. Use after identifying the team and desired changes."
+    },
+    {
+      "name": "MONDAY_UPDATE_UPDATE",
+      "description": "Tool to edit an existing update's content. Use when you need to correct or change a previously posted update."
+    },
+    {
+      "name": "MONDAY_UPDATE_USER",
+      "description": "Tool to update a user on Monday.com. Use when changing profile attributes like name, email, or department; ensure user ID is valid."
+    },
+    {
+      "name": "MONDAY_UPDATE_WORKSPACE",
+      "description": "Tool to update a Monday.com workspace. Use when you need to modify the name, description, visibility, or product placement of an existing workspace."
+    },
+    {
+      "name": "MONDAY_UPLOAD_ASSET",
+      "description": "Tool to upload a file to an update or file column. Use when you need to attach a file to an existing update or file column."
+    }
+  ]
+}

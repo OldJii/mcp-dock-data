@@ -1,0 +1,12 @@
+{
+  "id": "@uarlouski/ssh-mcp-server",
+  "displayName": "ssh-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:24.201Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@uarlouski/ssh-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

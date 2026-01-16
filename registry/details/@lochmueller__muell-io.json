@@ -1,0 +1,21 @@
+{
+  "id": "@lochmueller/muell-io",
+  "displayName": "muell-io",
+  "description": "",
+  "createdAt": "2026-01-16T07:23:40.072Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lochmueller/muell-io"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "fetch-garbage-information-via-address",
+      "description": "Fetch garbage information via full address search. Get a list of garbage types and dates for the given address."
+    }
+  ]
+}

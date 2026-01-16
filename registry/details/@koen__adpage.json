@@ -1,0 +1,12 @@
+{
+  "id": "@koen/adpage",
+  "displayName": "adpage",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:30.922Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@koen/adpage"
+  },
+  "connection": null,
+  "capabilities": []
+}

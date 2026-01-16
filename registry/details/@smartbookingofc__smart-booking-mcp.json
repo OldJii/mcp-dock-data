@@ -1,0 +1,16 @@
+{
+  "id": "@smartbookingofc/smart-booking-mcp",
+  "displayName": "smart-booking-mcp",
+  "description": "Retrieve your Smart Booking appointments with structured access. Filter by day, week, month, date range, status, or search term, and paginate results to stay focused. Quickly surface upcoming, past, or specific bookings to streamline scheduling.",
+  "createdAt": "2026-01-16T07:26:45.044Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@smartbookingofc/smart-booking-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

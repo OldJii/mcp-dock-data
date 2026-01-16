@@ -1,0 +1,72 @@
+{
+  "id": "ReportDash/DataStore",
+  "displayName": "ReportDash DataStore",
+  "description": "The ReportDash Datastore MCP (Model Context Protocol) server provides a standardized interface for AI assistants to query your connected advertising and analytics platforms including Facebook Ads, Google Ads, Instagram, LinkedIn, TikTok, and more.",
+  "createdAt": "2026-01-16T07:23:58.553Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ReportDash/DataStore"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "icon": "https://storage.googleapis.com/datastore-reportdash/logo/squared_icon_yellow.png",
+      "name": "datastore",
+      "license": "MIT",
+      "homepage": "https://datastore.reportdash.com",
+      "endpoints": {
+        "mcp": "https://datastore.reportdash.com/api/mcp/v1",
+        "token": "https://datastore.reportdash.com/api/mcp/v1/token",
+        "authorization": "https://datastore.reportdash.com/mcp/authorize"
+      },
+      "publisher": "ReportDash",
+      "categories": [
+        "data",
+        "analytics",
+        "business",
+        "marketing"
+      ],
+      "repository": "https://github.com/reportdash/datastore-mcp",
+      "description": "Connect to ReportDash Datastore for instant access to your marketing analytics",
+      "displayName": "Datastore by ReportDash",
+      "authentication": {
+        "type": "oauth",
+        "scopes": [
+          "datastore.read"
+        ],
+        "required": true
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_sources",
+      "description": "List connected sources for the authenticated user"
+    },
+    {
+      "name": "list_tables",
+      "description": "List tables of sources"
+    },
+    {
+      "name": "describe_table",
+      "description": "Return schema metadata for a table (columns and its types)."
+    },
+    {
+      "name": "query_table",
+      "description": "Run a read-only query against one table using a structured query object. Supports selecting columns, applying filters, grouping and aggregating metrics, ordering results, and limiting rows. Raw SQL is not accepted."
+    },
+    {
+      "name": "list_views",
+      "description": "List all available Datastore views. Views are curated, unified datasets that combine multiple sources—either across platforms (e.g., Google Ads + Facebook Ads) or within the same platform (e.g., multiple Google Ads accounts)."
+    },
+    {
+      "name": "describe_view",
+      "description": "Return schema metadata for a data view (columns and its types)."
+    },
+    {
+      "name": "query_view",
+      "description": "Run a read-only query against one view using a structured query object. Supports selecting columns, applying filters, ordering results, and limiting rows. Raw SQL is not accepted. Grouping and aggregate not supported."
+    }
+  ]
+}

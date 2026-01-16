@@ -1,0 +1,40 @@
+{
+  "id": "@slicequeue/k-targo-subway-mcp-server",
+  "displayName": "K-Targo Subway Server",
+  "description": "Provide real-time and comprehensive subway information for South Korea, including station search and train timetables. Access up-to-date data via the national Tago API to enhance transportation-related applications. Seamlessly integrate with MCP clients to query subway details efficiently.",
+  "createdAt": "2026-01-16T07:27:18.477Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@slicequeue/k-targo-subway-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "govApiKey"
+      ],
+      "properties": {
+        "govApiKey": {
+          "type": "string",
+          "description": "API key for the 국토교통부_(TAGO)_지하철정보 API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_subway_station",
+      "description": "지하철역 이름으로 역 정보를 검색합니다. 역 ID, 역 이름, 노선 정보를 반환합니다. '역' 접미사는 자동으로 제거됩니다 (예: '강남역' → '강남')."
+    },
+    {
+      "name": "get_subway_timetable",
+      "description": "지하철역의 시간표를 조회합니다. 요일별, 상하행별 시간표를 제공합니다."
+    },
+    {
+      "name": "get_all_subway_timetables",
+      "description": "지하철역의 모든 요일, 모든 방향의 시간표를 한 번에 조회합니다. 평일/토요일/일요일, 상행/하행 모든 조합을 제공합니다."
+    }
+  ]
+}

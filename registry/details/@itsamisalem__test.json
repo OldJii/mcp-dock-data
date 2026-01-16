@@ -1,0 +1,12 @@
+{
+  "id": "@itsamisalem/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:45.433Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itsamisalem/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

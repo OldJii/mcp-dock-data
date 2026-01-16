@@ -1,0 +1,80 @@
+{
+  "id": "@samihalawa/wuolah-mcp-server",
+  "displayName": "Wuolah Student Outreach Server",
+  "description": "Enable seamless interaction with the Wuolah platform to post educational content, send bulk messages, and find students in AI/ML programs. Automate outreach and content management tasks to enhance engagement with Wuolah's academic community. Simplify searching for relevant degree and master programs and managing your Wuolah profile.",
+  "createdAt": "2026-01-16T07:32:18.539Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/wuolah-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "timeout": {
+          "type": "number",
+          "description": "Request timeout in seconds",
+          "default": 30
+        },
+        "headless": {
+          "type": "boolean",
+          "description": "Run browser in headless mode",
+          "default": true
+        },
+        "chrome_path": {
+          "type": "string",
+          "description": "Path to Chrome/Chromium executable",
+          "default": ""
+        },
+        "wuolah_email": {
+          "type": "string",
+          "description": "Your Wuolah email address",
+          "default": ""
+        },
+        "wuolah_password": {
+          "type": "string",
+          "description": "Your Wuolah password",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "wuolah_navigate_and_find",
+      "description": "Navigate to Wuolah and find AI/ML students"
+    },
+    {
+      "name": "wuolah_bulk_message",
+      "description": "Send messages to multiple students"
+    },
+    {
+      "name": "wuolah_post_content",
+      "description": "Post educational content to Wuolah"
+    },
+    {
+      "name": "wuolah_find_programs",
+      "description": "Find relevant Wuolah degree and master programs"
+    },
+    {
+      "name": "wuolah_extract_courses",
+      "description": "Extract all courses/subjects from a program page"
+    },
+    {
+      "name": "wuolah_comment_on_post",
+      "description": "Comment on an existing Wuolah post"
+    },
+    {
+      "name": "wuolah_update_profile",
+      "description": "Update your Wuolah profile information"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "@omd01/aws-ses-mcp",
+  "displayName": "AWS SES Email Sender",
+  "description": "Send emails directly from your applications using AWS SES. Integrate seamlessly with Cursor or Claude Desktop to compose and dispatch emails without manual copy-pasting. Enjoy features like CC, BCC, and customizable sender addresses for enhanced email management.",
+  "createdAt": "2026-01-16T07:25:32.216Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@omd01/aws-ses-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "awsAccessKeyId",
+        "awsSecretAccessKey",
+        "awsRegion",
+        "senderEmail",
+        "replyToEmails"
+      ],
+      "properties": {
+        "awsRegion": {
+          "type": "string",
+          "description": "AWS Region for SES"
+        },
+        "senderEmail": {
+          "type": "string",
+          "description": "Verified sender email address"
+        },
+        "replyToEmails": {
+          "type": "string",
+          "description": "Comma-separated reply-to email addresses"
+        },
+        "awsAccessKeyId": {
+          "type": "string",
+          "description": "AWS SES Access Key ID"
+        },
+        "awsSecretAccessKey": {
+          "type": "string",
+          "description": "AWS SES Secret Access Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "send-email",
+      "description": "Send an email using AWS SES"
+    }
+  ]
+}

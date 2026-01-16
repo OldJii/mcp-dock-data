@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/logo-analyze",
+  "displayName": "logo-analyze",
+  "description": "提取任意网站的最佳Logo链接，方便在页面、卡片或报告中直接使用。分析Logo的尺寸、格式与清晰度，自动挑选最合适的版本。节省查找与比对时间，让你的界面呈现更专业。",
+  "createdAt": "2026-01-16T07:26:06.103Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/logo-analyze"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_best_logo_url",
+      "description": "从网站提取并返回最佳Logo的URL地址，适用于只需要获取最佳Logo URL的场景"
+    },
+    {
+      "name": "analyze_logo",
+      "description": "分析Logo的基本信息（尺寸、格式、质量等），支持onlyBestUrl参数只返回最佳Logo的URL"
+    }
+  ]
+}

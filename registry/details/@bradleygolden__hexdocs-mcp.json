@@ -1,0 +1,41 @@
+{
+  "id": "@bradleygolden/hexdocs-mcp",
+  "displayName": "HexDocs MCP",
+  "description": "Semantically searches hex documentation right from your editor.",
+  "createdAt": "2026-01-16T07:27:23.281Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bradleygolden/hexdocs-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "semantic_search",
+      "description": "Searches the documentation of one or more Elixir Hex packages using semantic vector embeddings. Given a natural language query, returns the most relevant documentation snippets. This is unique to hexdocs-mcp and complements TideWave by providing embeddings-based search capabilities that TideWave does not offer. Always available regardless of TideWave status. Requires that embeddings have been generated for the target package(s) using the fetch_docs tool."
+    },
+    {
+      "name": "fetch_docs",
+      "description": "Downloads and processes the documentation for a specified Elixir Hex package and version, converting it to markdown, splitting it into semantic chunks, and generating vector embeddings. This enables the unique semantic_search capability that complements TideWave. Always useful regardless of TideWave availability. Must be run before searching a package for the first time or to update embeddings."
+    },
+    {
+      "name": "hex_search",
+      "description": "Searches for Elixir packages on Hex.pm by name or description. Can search across all packages, within a specific package's versions, or get info for a specific package version. Note: If TideWave is available in your current Phoenix project, prefer using TideWave's hex search for better project integration. Use this tool when TideWave is not available or for general package discovery outside of a Phoenix project."
+    },
+    {
+      "name": "fulltext_search",
+      "description": "Performs full-text search on HexDocs documentation using Typesense search engine. This searches the actual documentation content across all packages on HexDocs.\n\nNote: If TideWave is available in your current Phoenix project, prefer using TideWave's documentation search for better project context. Use this tool when TideWave is not available or for searching packages not in your current project.\n\nQuery Syntax:\n- Basic search: \"Phoenix.LiveView\" (searches for both terms)\n- Exact phrase: \"\\\"handle event\\\"\" (use escaped quotes)\n- AND operator: \"Phoenix AND LiveView\" (both terms required)\n- OR operator: \"Phoenix OR Plug\" (either term)\n- Exclude terms: \"Phoenix -test\" (minus sign excludes)\n- Module/function: \"Enum.map\" or \"GenServer.handle_call\"\n\nBest Practices:\n- Use exact module.function names for precise results\n- Combine with packageName filter for focused search\n- Use quotes for multi-word exact phrases\n- For callbacks use patterns like \"@callback handle_\"\n- For types use patterns like \"@type t()\"\n\nExamples:\n- Find LiveView event handlers: query: \"handle_event\", packageName: \"phoenix_live_view\"\n- Find Ecto changesets: query: \"changeset\", packageName: \"ecto\"\n- Find specific function: query: \"\\\"Enum.map/2\\\"\"\n- Find type definitions: query: \"@type\", packageName: \"phoenix\""
+    },
+    {
+      "name": "check_embeddings",
+      "description": "Checks if embeddings exist for a specific Hex package and version. This is useful before attempting semantic search to ensure the package has been processed. Returns information about whether embeddings exist and how many."
+    }
+  ]
+}

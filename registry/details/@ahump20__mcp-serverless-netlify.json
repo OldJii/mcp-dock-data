@@ -1,0 +1,12 @@
+{
+  "id": "@ahump20/mcp-serverless-netlify",
+  "displayName": "mcp-serverless-netlify",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:10.054Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ahump20/mcp-serverless-netlify"
+  },
+  "connection": null,
+  "capabilities": []
+}

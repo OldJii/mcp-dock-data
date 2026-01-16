@@ -1,0 +1,58 @@
+{
+  "id": "@sylweriusz/mcp-neo4j-memory-server",
+  "displayName": "Neo4j Knowledge Graph Memory",
+  "description": "Store and retrieve user-specific memories across sessions using Neo4j graph database. This MCP memory infrastructure enables AI assistants to maintain context, recall past interactions, and manage memories with semantic search capabilities. Transform your agent's conversations into a searchable memory bank with entities and relationships.\n\n### Key capabilities:\n- **Store memories** persistently across multiple sessions\n- **Retrieve context** with hybrid semantic and exact search  \n- **Manage memory banks** with multi-database project isolation\n- **Recall information** through vector embeddings and graph traversal\n- **Memory extension** for AI agents with temporal tracking\n- **Knowledge graph** format with intelligent relationships\n\nPerfect for building AI assistants with long-term memory, maintaining user context, and creating memory systems that remember preferences and past interactions. Self-hosted memory infrastructure built on Neo4j for reliability and performance.",
+  "createdAt": "2026-01-16T07:24:04.499Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sylweriusz/mcp-neo4j-memory-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "neo4jUri": {
+          "type": "string",
+          "description": "Neo4j connection URI (optional - tools can be listed without database)",
+          "default": ""
+        },
+        "neo4jDatabase": {
+          "type": "string",
+          "description": "Neo4j database name (optional)",
+          "default": "neo4j"
+        },
+        "neo4jPassword": {
+          "type": "string",
+          "description": "Password for Neo4j authentication (optional)",
+          "default": ""
+        },
+        "neo4jUsername": {
+          "type": "string",
+          "description": "Username for Neo4j authentication (optional)",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "memory_store",
+      "description": "Create memories with observations and relationships. **Pattern**: Search→Create→Connect. **Observations**: Self-contained context units (what/when/where/why/impact). **LocalIds**: Cross-references within THIS request only. **Limits**: 50 memories, 200 relations. **Quality**: Each observation = complete detective notes answering setting/action/actors/evidence/impact/significance."
+    },
+    {
+      "name": "memory_find",
+      "description": "Unified search/retrieval. **Query**: text, IDs array, or \"*\". **Context**: minimal (lists), full (everything), relations-only (graph). **Temporal**: createdAfter \"7d\"/\"2024-01-15\". **Graph**: traverseFrom + relations + depth. **Always search before creating**. Updates access timestamps for analytics."
+    },
+    {
+      "name": "memory_modify",
+      "description": "Update/delete memories, manage observations/relations. **Operations**: update (properties), delete (cascade), add-observations (append insights), create-relations (link existing). **Atomic**: All succeed or all fail. **Quality**: One substantial observation per session - complete context stories, not fragments."
+    },
+    {
+      "name": "database_switch",
+      "description": "Switch active database context (creates if missing). ALL subsequent operations use this DB. Call once per session/project. Like 'cd' for memories. **Session-scoped**: Establishes context for entire workflow, not per-operation."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@aiagentshub/simple-navbar",
+  "displayName": "simple-navbar",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:31.511Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aiagentshub/simple-navbar"
+  },
+  "connection": null,
+  "capabilities": []
+}

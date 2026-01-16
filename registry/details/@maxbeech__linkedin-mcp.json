@@ -1,0 +1,61 @@
+{
+  "id": "@maxbeech/linkedin-mcp",
+  "displayName": "LinkedIn MCP",
+  "description": "Publish posts to LinkedIn with images and visibility controls. React to posts and add, edit, or delete comments to drive conversation. Retrieve content details to inform and track your interactions.",
+  "createdAt": "2026-01-16T07:25:13.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maxbeech/linkedin-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "url": "https://linkedin-mcp-rho.vercel.app",
+      "name": "linkedin-mcp-server",
+      "type": "external",
+      "version": "1.0.0",
+      "transport": "shttp",
+      "capabilities": {
+        "tools": true,
+        "prompts": false,
+        "sampling": false,
+        "resources": false
+      },
+      "authentication": {
+        "type": "oauth2",
+        "scopes": [
+          "linkedin"
+        ],
+        "tokenUrl": "https://linkedin-mcp-rho.vercel.app/auth/callback",
+        "authorizationUrl": "https://linkedin-mcp-rho.vercel.app/auth/start"
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "linkedin.post.create",
+      "description": "Create a new post on LinkedIn with optional images and visibility settings"
+    },
+    {
+      "name": "linkedin.react",
+      "description": "Add a reaction to a LinkedIn post or comment"
+    },
+    {
+      "name": "linkedin.comment.create",
+      "description": "Add a comment to a LinkedIn post"
+    },
+    {
+      "name": "linkedin.comment.edit",
+      "description": "Edit an existing LinkedIn comment"
+    },
+    {
+      "name": "linkedin.comment.delete",
+      "description": "Delete a LinkedIn comment"
+    },
+    {
+      "name": "linkedin.content.get",
+      "description": "Retrieve details of LinkedIn content by URN"
+    }
+  ]
+}

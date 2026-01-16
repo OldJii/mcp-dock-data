@@ -1,0 +1,12 @@
+{
+  "id": "@itgoon/crm",
+  "displayName": "crm",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:31.434Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itgoon/crm"
+  },
+  "connection": null,
+  "capabilities": []
+}

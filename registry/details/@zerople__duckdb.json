@@ -1,0 +1,12 @@
+{
+  "id": "@zerople/duckdb",
+  "displayName": "duckdb",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:38.649Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zerople/duckdb"
+  },
+  "connection": null,
+  "capabilities": []
+}

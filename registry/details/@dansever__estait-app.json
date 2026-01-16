@@ -1,0 +1,12 @@
+{
+  "id": "@dansever/estait-app",
+  "displayName": "estait-app",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:34.408Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dansever/estait-app"
+  },
+  "connection": null,
+  "capabilities": []
+}

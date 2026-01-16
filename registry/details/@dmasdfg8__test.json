@@ -1,0 +1,25 @@
+{
+  "id": "@dmasdfg8/test",
+  "displayName": "Find a Domain",
+  "description": "test",
+  "createdAt": "2026-01-16T07:22:22.554Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dmasdfg8/test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "check_domain",
+      "description": "Check if a domain is available for a specific TLD"
+    },
+    {
+      "name": "list_tlds",
+      "description": "Get a list of all available top-level domains (TLDs)"
+    }
+  ]
+}

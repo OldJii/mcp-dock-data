@@ -1,0 +1,40 @@
+{
+  "id": "@lite/iterm-mcp",
+  "displayName": "iTerm MCP",
+  "description": "Access your iTerm session and control terminal commands seamlessly.",
+  "createdAt": "2026-01-16T07:24:30.915Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lite/iterm-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "nodeVersion"
+      ],
+      "properties": {
+        "nodeVersion": {
+          "type": "string",
+          "description": "Ensure Node version 18 or greater is installed."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "write_to_terminal",
+      "description": "Writes text to the active iTerm terminal - often used to run a command in the terminal"
+    },
+    {
+      "name": "read_terminal_output",
+      "description": "Reads the output from the active iTerm terminal"
+    },
+    {
+      "name": "send_control_character",
+      "description": "Sends a control character to the active iTerm terminal (e.g., Control-C)"
+    }
+  ]
+}

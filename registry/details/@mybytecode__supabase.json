@@ -1,0 +1,12 @@
+{
+  "id": "@mybytecode/supabase",
+  "displayName": "supabase",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:36.938Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mybytecode/supabase"
+  },
+  "connection": null,
+  "capabilities": []
+}

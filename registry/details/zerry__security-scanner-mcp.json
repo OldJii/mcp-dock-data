@@ -1,0 +1,12 @@
+{
+  "id": "zerry/security-scanner-mcp",
+  "displayName": "security-scanner-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:33.482Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zerry/security-scanner-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

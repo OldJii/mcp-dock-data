@@ -1,0 +1,12 @@
+{
+  "id": "knowledge-graph/knowledge-graph-mcp",
+  "displayName": "knowledge-graph-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:53.958Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/knowledge-graph/knowledge-graph-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

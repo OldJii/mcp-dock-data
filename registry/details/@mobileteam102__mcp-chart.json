@@ -1,0 +1,12 @@
+{
+  "id": "@mobileteam102/mcp-chart",
+  "displayName": "mcp-chart",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:26.121Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mobileteam102/mcp-chart"
+  },
+  "connection": null,
+  "capabilities": []
+}

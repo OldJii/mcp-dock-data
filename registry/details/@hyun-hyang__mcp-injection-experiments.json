@@ -1,0 +1,12 @@
+{
+  "id": "@hyun-hyang/mcp-injection-experiments",
+  "displayName": "mcp-injection-experiments",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:04.140Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hyun-hyang/mcp-injection-experiments"
+  },
+  "connection": null,
+  "capabilities": []
+}

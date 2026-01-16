@@ -1,0 +1,121 @@
+{
+  "id": "@dashayus/aliceblue-mcp-server",
+  "displayName": "AliceBlue",
+  "description": "Manage your AliceBlue portfolio, orders, and funds from one place. View holdings, positions, margins, and real-time market data, and place, modify, or cancel orders with ease. Track order and trade history, convert or square off positions, and automate entries with GTT orders.",
+  "createdAt": "2026-01-16T07:25:41.039Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dashayus/aliceblue-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "required": [
+        "user_id",
+        "auth_code",
+        "api_secret"
+      ],
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Your AliceBlue User ID"
+        },
+        "auth_code": {
+          "type": "string",
+          "description": "Your AliceBlue Auth Code"
+        },
+        "api_secret": {
+          "type": "string",
+          "description": "Your AliceBlue API Secret"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_connection",
+      "description": "Test connection to AliceBlue API and verify authentication"
+    },
+    {
+      "name": "check_and_authenticate",
+      "description": "Check if AliceBlue session is active and re-authenticate if needed."
+    },
+    {
+      "name": "get_profile",
+      "description": "Fetches the user's profile details."
+    },
+    {
+      "name": "get_holdings",
+      "description": "Fetches the user's Holdings Stock"
+    },
+    {
+      "name": "get_positions",
+      "description": "Fetches the user's Positions"
+    },
+    {
+      "name": "get_positions_sqroff",
+      "description": "Position Square Off"
+    },
+    {
+      "name": "get_position_conversion",
+      "description": "Position conversion"
+    },
+    {
+      "name": "place_order",
+      "description": "Places an order for the given stock."
+    },
+    {
+      "name": "get_order_book",
+      "description": "Fetches Order Book"
+    },
+    {
+      "name": "get_order_history",
+      "description": "Fetchs Orders History"
+    },
+    {
+      "name": "get_modify_order",
+      "description": "Modify Order"
+    },
+    {
+      "name": "get_cancel_order",
+      "description": "Cancel Order"
+    },
+    {
+      "name": "get_trade_book",
+      "description": "Fetches Trade Book"
+    },
+    {
+      "name": "get_order_margin",
+      "description": "Order Margin"
+    },
+    {
+      "name": "get_exit_bracket_order",
+      "description": "Exit Bracket Order"
+    },
+    {
+      "name": "get_place_gtt_order",
+      "description": "Place GTT Order"
+    },
+    {
+      "name": "get_gtt_order_book",
+      "description": "Fetches GTT Order Book"
+    },
+    {
+      "name": "get_modify_gtt_order",
+      "description": "Modify GTT Order"
+    },
+    {
+      "name": "get_cancel_gtt_order",
+      "description": "Cancel GTT Order"
+    },
+    {
+      "name": "get_limits",
+      "description": "Get Account Limits"
+    }
+  ]
+}

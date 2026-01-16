@@ -1,0 +1,12 @@
+{
+  "id": "@samihalawa/mcp-agentapi",
+  "displayName": "mcp-agentapi",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:34.820Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/mcp-agentapi"
+  },
+  "connection": null,
+  "capabilities": []
+}

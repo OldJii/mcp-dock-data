@@ -1,0 +1,12 @@
+{
+  "id": "@ropon/mcp-server-v2ex",
+  "displayName": "mcp-server-v2ex",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:57.444Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ropon/mcp-server-v2ex"
+  },
+  "connection": null,
+  "capabilities": []
+}

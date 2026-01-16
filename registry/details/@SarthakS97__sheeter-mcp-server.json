@@ -1,0 +1,74 @@
+{
+  "id": "@SarthakS97/sheeter-mcp-server",
+  "displayName": "Sheeter",
+  "description": "Create new Google Sheets and read data from existing ones. Automate reporting, dashboards, and data pipelines by generating and retrieving sheet content on demand. Streamline workflows by integrating sheet operations into your apps.",
+  "createdAt": "2026-01-16T07:32:52.586Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SarthakS97/sheeter-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Sheeter API key (get it from https://sheeter-2.onrender.com)"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Sheeter API base URL",
+          "default": "https://sheeter-2.onrender.com"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_spreadsheet",
+      "description": "Create a new Google Spreadsheet"
+    },
+    {
+      "name": "read_sheet",
+      "description": "Read data from a Google Sheet"
+    },
+    {
+      "name": "write_sheet",
+      "description": "Update values in a single range of a Google Sheet"
+    },
+    {
+      "name": "append_to_sheet",
+      "description": "Append values to the end of a Google Sheet"
+    },
+    {
+      "name": "clear_range",
+      "description": "Clear values from a specific range in a Google Sheet"
+    },
+    {
+      "name": "batch_get_ranges",
+      "description": "Read values from multiple ranges in a Google Sheet"
+    },
+    {
+      "name": "batch_update_ranges",
+      "description": "Update values in multiple ranges of a Google Sheet"
+    },
+    {
+      "name": "get_sheet_metadata",
+      "description": "Get information about a Google Spreadsheet including sheets and properties"
+    },
+    {
+      "name": "delete_rows",
+      "description": "Delete specific rows from a Google Sheet"
+    },
+    {
+      "name": "batch_update_spreadsheet",
+      "description": "Perform complex operations like find/replace, formatting, adding sheets, etc."
+    }
+  ]
+}

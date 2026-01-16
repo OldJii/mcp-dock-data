@@ -1,0 +1,262 @@
+{
+  "id": "Polaralias/clickup-mcp",
+  "displayName": "ClickUp",
+  "description": "Manage projects, tasks, and documents directly through a comprehensive suite of productivity tools. Search for tasks, generate status reports, and track time entries across entire workspaces. Access document hierarchies and member information to streamline collaboration and project oversight.",
+  "createdAt": "2026-01-16T07:26:00.584Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/Polaralias/clickup-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey",
+        "readOnly",
+        "selectiveWrite",
+        "charLimit",
+        "maxAttachmentMb",
+        "hierarchyCacheTtlMs",
+        "spaceConfigCacheTtlMs",
+        "reportingMaxTasks",
+        "defaultRiskWindowDays"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "ClickUp personal API token used for all API requests"
+        },
+        "teamId": {
+          "type": "string",
+          "description": "ClickUp workspace ID applied when tool inputs omit one"
+        },
+        "readOnly": {
+          "type": "boolean",
+          "description": "When true, all write operations are disabled. Takes precedence over other write settings.",
+          "default": false
+        },
+        "charLimit": {
+          "type": "number",
+          "description": "Maximum characters returned before responses are truncated",
+          "default": 16000
+        },
+        "writeMode": {
+          "type": "string",
+          "description": "Explicit write mode configuration",
+          "enum": [
+            "write",
+            "read",
+            "selective"
+          ]
+        },
+        "writeLists": {
+          "type": "array",
+          "description": "List IDs where write operations are permitted"
+        },
+        "writeSpaces": {
+          "type": "array",
+          "description": "Space IDs where write operations are permitted"
+        },
+        "selectiveWrite": {
+          "type": "boolean",
+          "description": "When true, write access is restricted to specific lists or spaces defined in writeLists and writeSpaces.",
+          "default": false
+        },
+        "maxAttachmentMb": {
+          "type": "number",
+          "description": "Largest file attachment (MB) allowed for uploads",
+          "default": 8
+        },
+        "reportingMaxTasks": {
+          "type": "number",
+          "description": "Max tasks to fetch for reports",
+          "default": 200
+        },
+        "hierarchyCacheTtlMs": {
+          "type": "number",
+          "description": "Hierarchy cache TTL in milliseconds",
+          "default": 300000
+        },
+        "defaultRiskWindowDays": {
+          "type": "number",
+          "description": "Default window for risk reports",
+          "default": 5
+        },
+        "spaceConfigCacheTtlMs": {
+          "type": "number",
+          "description": "Space config cache TTL in milliseconds",
+          "default": 300000
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ping",
+      "description": "Echo request for connectivity checks."
+    },
+    {
+      "name": "health",
+      "description": "Report server readiness and enforced safety limits."
+    },
+    {
+      "name": "tool_catalogue",
+      "description": "Enumerate all available tools with their annotations."
+    },
+    {
+      "name": "workspace_capability_snapshot",
+      "description": "Expose cached ClickUp capability probes for this session."
+    },
+    {
+      "name": "workspace_list",
+      "description": "List accessible ClickUp workspaces (teams). Use when you need workspace IDs before exploring spaces."
+    },
+    {
+      "name": "space_list_for_workspace",
+      "description": "List spaces for a workspace by workspaceId. Use search when you only know workspace names."
+    },
+    {
+      "name": "folder_list_for_space",
+      "description": "List folders within a ClickUp space. Use when you already know spaceId."
+    },
+    {
+      "name": "list_list_for_space_or_folder",
+      "description": "List lists inside a space or folder by ID. If you only know names, resolve them first with resolve_path_to_ids."
+    },
+    {
+      "name": "workspace_overview",
+      "description": "Summarise workspace metrics and recent spaces/folders/lists when you have a workspaceId."
+    },
+    {
+      "name": "workspace_hierarchy",
+      "description": "Fetch nested hierarchy (spaces, folders, lists) for one or more workspaces. Use this to browse structure without task data."
+    },
+    {
+      "name": "hierarchy_resolve_path",
+      "description": "Resolve workspace/space/folder/list names into IDs. Use before tools that require IDs."
+    },
+    {
+      "name": "member_list_for_workspace",
+      "description": "List members in a workspace by teamId. Use when you already know the workspaceId."
+    },
+    {
+      "name": "member_resolve",
+      "description": "Resolve member identifiers (id, email, username) into member records for a workspace."
+    },
+    {
+      "name": "member_search_by_name",
+      "description": "Fuzzy search member names to find member IDs."
+    },
+    {
+      "name": "task_assignee_resolve",
+      "description": "Translate assignee references into suggested member IDs for tasks."
+    },
+    {
+      "name": "space_tag_list",
+      "description": "List tags configured for a space using spaceId."
+    },
+    {
+      "name": "reference_link_list",
+      "description": "List public ClickUp API reference links."
+    },
+    {
+      "name": "reference_page_fetch",
+      "description": "Fetch a public ClickUp API reference page from a link returned by reference_link_list."
+    },
+    {
+      "name": "task_search",
+      "description": "Structured task search with filters. Use when you have listIds/tagIds; returns tasks across lists."
+    },
+    {
+      "name": "task_search_fuzzy",
+      "description": "Fuzzy task search from natural language when you do not have precise filters."
+    },
+    {
+      "name": "task_search_fuzzy_bulk",
+      "description": "Batch fuzzy task searches for multiple natural language prompts."
+    },
+    {
+      "name": "task_status_report",
+      "description": "Summarise task status and priority for a workspace, space, folder or list without returning full task lists."
+    },
+    {
+      "name": "task_risk_report",
+      "description": "Summarise overdue and at-risk tasks within a workspace, space, folder or list. Subtasks are included by default; use includeSubtasks to focus on parent tasks and inspect isSubtask/parentId in results to understand hierarchy."
+    },
+    {
+      "name": "task_read",
+      "description": "Fetch task details including createdDate/updatedDate fields derived from ClickUp timestamps. Subtask cues (isSubtask, parentId, hasSubtasks, subtaskCount) are included; check them before claiming there are no subtasks. GET /task/{task_id}"
+    },
+    {
+      "name": "task_list_for_list",
+      "description": "List tasks in a list. Tasks linked from other lists are included by default (include_timl=true). Outputs include createdDate derived from ClickUp date_created and hierarchy cues (isSubtask, parentId, hasSubtasks, subtaskCount). Always review hasSubtasks/subtaskCount before asserting there are no subtasks. Results are paginated and may span multiple pages; iterate via the page input to retrieve additional pages. GET /list/{list_id}/task"
+    },
+    {
+      "name": "task_comment_list",
+      "description": "Retrieve task comments for a taskId."
+    },
+    {
+      "name": "list_custom_field_list",
+      "description": "List custom fields configured for a list by listId."
+    },
+    {
+      "name": "doc_list",
+      "description": "List documents within a workspace using filters."
+    },
+    {
+      "name": "doc_read",
+      "description": "Fetch document metadata and pages for a docId."
+    },
+    {
+      "name": "doc_pages_read",
+      "description": "Fetch selected document pages by docId and pageIds."
+    },
+    {
+      "name": "doc_page_list",
+      "description": "List page hierarchy for a document by docId."
+    },
+    {
+      "name": "doc_page_read",
+      "description": "Fetch a single document page by docId and pageId."
+    },
+    {
+      "name": "doc_search",
+      "description": "Search document content across a workspace. Use doc_page_read for specific pages."
+    },
+    {
+      "name": "doc_search_bulk",
+      "description": "Batch document searches when you need several queries processed together."
+    },
+    {
+      "name": "task_time_entry_list",
+      "description": "Fetch time entries for a taskId, including total duration."
+    },
+    {
+      "name": "time_entry_current",
+      "description": "Retrieve the current running timer for the workspace."
+    },
+    {
+      "name": "time_entry_list",
+      "description": "List time entries with filters. Accepts ISO 8601 or epoch boundaries; include taskId when focusing on a single task."
+    },
+    {
+      "name": "time_report_for_tag",
+      "description": "Aggregate logged time for a tag across the workspace. Use space_tag_list to discover tags, and includeSubtasks to control whether child task time is counted."
+    },
+    {
+      "name": "time_report_for_container",
+      "description": "Aggregate time for a workspace, space, folder or list using containerId + containerType. Resolve IDs with resolve_path_to_ids, list_workspaces/spaces/folders/lists, and set includeSubtasks to clarify hierarchy handling."
+    },
+    {
+      "name": "time_report_for_context",
+      "description": "Aggregate time for a task, list (including filtered views), space or workspace. Use search_tasks or task_list_for_list to source listId/taskId before calling. Subtask handling is explicit via includeSubtasks."
+    },
+    {
+      "name": "time_report_for_space_tag",
+      "description": "Aggregate time for a tag within a space using spaceId. Use space_tag_list to pick the tag and includeSubtasks to control hierarchy."
+    }
+  ]
+}

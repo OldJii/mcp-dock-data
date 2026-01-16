@@ -1,0 +1,81 @@
+{
+  "id": "@VapiAI/vapi-mcp-server",
+  "displayName": "Vapi MCP Server",
+  "description": "Integrate your applications with Vapi APIs through seamless function calling. Enable scheduling and managing calls, assistants, and phone numbers directly from your MCP-enabled environment. Access Vapi's capabilities locally or remotely with ease and security.",
+  "createdAt": "2026-01-16T07:28:09.384Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@VapiAI/vapi-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "VAPI_TOKEN"
+      ],
+      "properties": {
+        "VAPI_TOKEN": {
+          "type": "string",
+          "description": "Vapi API token used for making API calls",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_assistants",
+      "description": "Lists all Vapi assistants"
+    },
+    {
+      "name": "create_assistant",
+      "description": "Creates a new Vapi assistant"
+    },
+    {
+      "name": "get_assistant",
+      "description": "Gets a Vapi assistant by ID"
+    },
+    {
+      "name": "update_assistant",
+      "description": "Updates an existing Vapi assistant"
+    },
+    {
+      "name": "list_calls",
+      "description": "Lists all Vapi calls"
+    },
+    {
+      "name": "create_call",
+      "description": "Creates a outbound call"
+    },
+    {
+      "name": "get_call",
+      "description": "Gets details of a specific call"
+    },
+    {
+      "name": "list_phone_numbers",
+      "description": "Lists all Vapi phone numbers"
+    },
+    {
+      "name": "get_phone_number",
+      "description": "Gets details of a specific phone number"
+    },
+    {
+      "name": "list_tools",
+      "description": "Lists all Vapi tools"
+    },
+    {
+      "name": "get_tool",
+      "description": "Gets details of a specific tool"
+    },
+    {
+      "name": "create_tool",
+      "description": "Creates a new Vapi tool"
+    },
+    {
+      "name": "update_tool",
+      "description": "Updates an existing Vapi tool"
+    }
+  ]
+}

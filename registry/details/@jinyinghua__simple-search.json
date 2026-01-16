@@ -1,0 +1,25 @@
+{
+  "id": "@jinyinghua/simple-search",
+  "displayName": "simple-search",
+  "description": "Simple Tavily Search MCP Server  \nThis is a simplified version of the Tavily search server for Smithery.",
+  "createdAt": "2026-01-16T07:24:55.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jinyinghua/simple-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "simple_search",
+      "description": "搜索网络获取实时信息。当需要查询最新事件、事实信息或当前数据时使用此工具。"
+    },
+    {
+      "name": "fetch",
+      "description": "获取指定 URL 的网页文本内容。当搜索结果的摘要信息不足，需要阅读网页全文时使用此工具。"
+    }
+  ]
+}

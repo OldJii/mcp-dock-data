@@ -1,0 +1,70 @@
+{
+  "id": "@tech-ibaad/e2b-remote-mcp",
+  "displayName": "E2B Remote Server",
+  "description": "Manage sandboxes, run commands, host websites, and read or write files remotely. Enable flexible and secure execution environments for diverse use cases. Simplify remote code execution and file management with sandbox isolation.",
+  "createdAt": "2026-01-16T07:23:17.000Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tech-ibaad/e2b-remote-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "E2B_API_KEY"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "E2B_API_KEY": {
+          "type": "string",
+          "description": "E2B API key for authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_sandbox",
+      "description": "Create a new E2B sandbox"
+    },
+    {
+      "name": "run_command",
+      "description": "Run a command in the sandbox"
+    },
+    {
+      "name": "read_file",
+      "description": "Read a file from the sandbox"
+    },
+    {
+      "name": "write_file",
+      "description": "Write content to a file in the sandbox"
+    },
+    {
+      "name": "list_files",
+      "description": "List files in a directory"
+    },
+    {
+      "name": "run_code",
+      "description": "Run code in the sandbox"
+    },
+    {
+      "name": "get_sandbox_url",
+      "description": "Get the URL for a sandbox on a specific port"
+    },
+    {
+      "name": "kill_sandbox",
+      "description": "Kill a sandbox"
+    }
+  ]
+}

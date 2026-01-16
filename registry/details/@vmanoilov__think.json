@@ -1,0 +1,12 @@
+{
+  "id": "@vmanoilov/think",
+  "displayName": "think",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:12.331Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vmanoilov/think"
+  },
+  "connection": null,
+  "capabilities": []
+}

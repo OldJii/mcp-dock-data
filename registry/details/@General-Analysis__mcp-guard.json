@@ -1,0 +1,44 @@
+{
+  "id": "@General-Analysis/mcp-guard",
+  "displayName": "MCP Guardrail",
+  "description": "Add AI-powered security and moderation to your MCP setup by aggregating multiple MCP servers into a single secure interface. Prevent prompt injection attacks with intelligent moderation and easily configure your MCP environment with automatic detection and updates. Support both local and remote MCP servers transparently for enhanced safety and convenience.\n\nInstall the MCP Guard with 3 commands. Check out set up instructions: https://github.com/General-Analysis/mcp-guard",
+  "createdAt": "2026-01-16T07:31:51.050Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@General-Analysis/mcp-guard"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for General Analysis moderation service. Required when enableGuardApi is true. Can also be set via API_KEY environment variable."
+        },
+        "servers": {
+          "type": "array",
+          "description": "Array of MCP server configurations to aggregate. Each server can be either a local server (with command and args) or a remote server (with URL).",
+          "default": []
+        },
+        "enableGuardApi": {
+          "type": "boolean",
+          "description": "Enable AI-powered moderation for tool outputs to prevent prompt injection attacks. Requires a valid apiKey.",
+          "default": false
+        }
+      },
+      "description": "Configuration for MCP Guard - a security layer that aggregates multiple MCP servers with optional AI-powered moderation",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mcp_guard_status",
+      "description": "Get the current status of the MCP Guard, including connected servers and moderation state"
+    }
+  ]
+}

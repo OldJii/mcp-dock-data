@@ -1,0 +1,12 @@
+{
+  "id": "open-hermios/kosmo",
+  "displayName": "kosmo",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:11.450Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/open-hermios/kosmo"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "@recraft-ai/mcp-recraft-server",
+  "displayName": "Recraft",
+  "description": "Generate and edit high-quality raster and vector images using Recraft's advanced tools. Create custom styles, vectorize images, remove or replace backgrounds, and upscale images seamlessly. Enhance your creative workflows by integrating these powerful image operations into your MCP Client.",
+  "createdAt": "2026-01-16T07:29:58.723Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@recraft-ai/mcp-recraft-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "RECRAFT_API_KEY"
+      ],
+      "properties": {
+        "RECRAFT_API_KEY": {
+          "type": "string",
+          "description": "Your Recraft API key. Get one at https://www.recraft.ai/profile/api"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_image",
+      "description": "Generate an image using Recraft from a text prompt.\nYou can specify the image size, style, model, and number of images to generate.\nYou don't need to change default parameters if you don't have any specific requirements.\nYou can use styles to refine the image generation, and also to generate raster or vector images.\nLocal paths or URLs to generated images and their previews will be returned in the response."
+    },
+    {
+      "name": "create_style",
+      "description": "Create a style in Recraft from the set of style reference images.\nA style is extracted from the provided images and can be used in image generation tools.\nID of the created style will be returned in the response."
+    },
+    {
+      "name": "vectorize_image",
+      "description": "Vectorize an input image using Recraft.\nThis operation takes an input image and returns a vector SVG image, close to it.\nLocal path or URL to resulting image and its preview will be returned in the response."
+    },
+    {
+      "name": "image_to_image",
+      "description": "Generate an image using Recraft from an input image and a text prompt.\nYou can specify the reference input image, style, model, and number of images to generate.\nYou should provide the same style/substyle/styleID settings as were used for input image generation (if exists) if there are no specific requirements to change the style.\nOther parameters are recommended to keep default if you don't have any specific requirements on them.\nYou can use styles to refine the image generation, and also to generate raster or vector images.\nLocal paths or URLs to generated images and their previews will be returned in the response."
+    },
+    {
+      "name": "remove_background",
+      "description": "Remove background in the input image using Recraft.\nThis operation takes an input image and returns the same image with detected background removed. Raster image will be always returned.\nLocal path or URL to resulting image and its preview will be returned in the response."
+    },
+    {
+      "name": "replace_background",
+      "description": "Generate an image using Recraft from an input image with its detected background replaced based on the prompt.\nYou can specify the input image, style, model, and number of images to generate.\nYou should provide the same style/substyle/styleID settings as were used for input image generation (if exists) if there are no specific requirements to change the style.\nOther parameters are recommended to keep default if you don't have any specific requirements on them.\nYou can use styles to refine the image background generation, and also to generate raster or vector images.\nLocal paths or URLs to generated images and their previews will be returned in the response."
+    },
+    {
+      "name": "crisp_upscale",
+      "description": "Crisp upscale of the input image using Recraft.\nThis operation takes an input image and returns an upscaled image, making the image sharper and cleaner.\nThis version of upscale is much cheaper and faster than creative upscale.\nLocal path or URL to resulting image and its preview will be returned in the response."
+    },
+    {
+      "name": "creative_upscale",
+      "description": "Creative upscale of the input image using Recraft.\nThis operation takes an input image and returns an upscaled image, boosting resolution with a focus on refining small details and faces.\nThis version of upscale is expensive and slower than crisp upscale.\nLocal path or URL to resulting image and its preview will be returned in the response."
+    },
+    {
+      "name": "get_user",
+      "description": "Get information about the current Recraft API user (their email, name, and credit balance)."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "@dravidsajinraj-iex/ai-image-generator-mcp",
+  "displayName": "Leonardo AI Image Generator",
+  "description": "Generate high-quality images from text prompts using Leonardo AI's advanced models. Transform your ideas into visuals seamlessly with a simple MCP interface. Benefit from robust error handling and reliable image generation capabilities.",
+  "createdAt": "2026-01-16T07:30:59.414Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dravidsajinraj-iex/ai-image-generator-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "leonardoApiKey",
+        "presignedUrl",
+        "generationUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "presignedUrl": {
+          "type": "string",
+          "description": "Leonardo presigned base url"
+        },
+        "generationUrl": {
+          "type": "string",
+          "description": "Leonardo image generation url"
+        },
+        "leonardoApiKey": {
+          "type": "string",
+          "description": "Leonardo API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generateHeroImage",
+      "description": "Generate a hero image from text"
+    }
+  ]
+}

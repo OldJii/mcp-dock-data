@@ -1,0 +1,53 @@
+{
+  "id": "@blake365/macrostrat-mcp",
+  "displayName": "macrostrat-mcp",
+  "description": "Explore global geologic data to answer questions about bedrock, formations, ages, and stratigraphy. Retrieve units, columns, minerals, timescales, and definitions for any location to build accurate geological context. Generate geology map tiles for quick visualization of areas of interest.",
+  "createdAt": "2026-01-16T07:21:24.439Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@blake365/macrostrat-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find-columns",
+      "description": "Find geological stratigraphic columns, rock layers, and geological history for any location worldwide. Use for geology, bedrock, formations, age dating, and stratigraphic analysis."
+    },
+    {
+      "name": "find-units",
+      "description": "Find geological rock units, formations, bedrock geology, and mineral information for any location worldwide. Use for geology questions, rock types, age dating, lithology, and geological analysis."
+    },
+    {
+      "name": "defs",
+      "description": "Routes giving access to standard fields and dictionaries used in Macrostrat"
+    },
+    {
+      "name": "defs-autocomplete",
+      "description": "Quickly retrieve all definitions matching a query. Limited to 100 results"
+    },
+    {
+      "name": "mineral-info",
+      "description": "Get information about a mineral, use one property"
+    },
+    {
+      "name": "timescale",
+      "description": "Get information about a time period"
+    },
+    {
+      "name": "lat-lng-to-tile",
+      "description": "Convert latitude/longitude coordinates to map tile coordinates (x, y) for a given zoom level. Uses the same web mercator projection as MapKit."
+    },
+    {
+      "name": "map-tiles",
+      "description": "Get map tile URLs from the Macrostrat tiles server. Use lat-lng-to-tile tool first to get proper x,y coordinates. Defaults to 'carto' scale which automatically adapts detail level to zoom."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "@GDanksAnchor/mcp",
+  "displayName": "Browser MCP",
+  "description": "Leverage Anchor Browser's infrastructure for scalable, geo-targeted, and anti-detection browser automation without local dependencies. Simplify browser automation with fast, structured data access and deterministic tool execution.\n\nFor more information visit [BrowserMCP](http://browsermcp.com?utm_source=smithery)",
+  "createdAt": "2026-01-16T07:23:50.553Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GDanksAnchor/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "anchor_close",
+      "description": "Close the page"
+    },
+    {
+      "name": "anchor_resize",
+      "description": "Resize the browser window"
+    },
+    {
+      "name": "anchor_console_messages",
+      "description": "Returns all console messages"
+    },
+    {
+      "name": "anchor_handle_dialog",
+      "description": "Handle a dialog"
+    },
+    {
+      "name": "browser_evaluate",
+      "description": "Evaluate JavaScript expression on page or element"
+    },
+    {
+      "name": "anchor_file_upload",
+      "description": "Upload one or multiple files"
+    },
+    {
+      "name": "anchor_press_key",
+      "description": "Press a key on the keyboard"
+    },
+    {
+      "name": "browser_type",
+      "description": "Type text into editable element"
+    },
+    {
+      "name": "anchor_navigate",
+      "description": "Navigate to a URL"
+    },
+    {
+      "name": "anchor_navigate_back",
+      "description": "Go back to the previous page"
+    },
+    {
+      "name": "anchor_navigate_forward",
+      "description": "Go forward to the next page"
+    },
+    {
+      "name": "anchor_network_requests",
+      "description": "Returns all network requests since loading the page"
+    },
+    {
+      "name": "anchor_pdf_save",
+      "description": "Save page as PDF"
+    },
+    {
+      "name": "anchor_take_screenshot",
+      "description": "Take a screenshot of the current page. You can't perform actions based on the screenshot, use browser_snapshot for actions."
+    },
+    {
+      "name": "anchor_snapshot",
+      "description": "Capture accessibility snapshot of the current page, this is better than screenshot"
+    },
+    {
+      "name": "anchor_click",
+      "description": "Perform click on a web page"
+    },
+    {
+      "name": "anchor_drag",
+      "description": "Perform drag and drop between two elements"
+    },
+    {
+      "name": "anchor_hover",
+      "description": "Hover over element on page"
+    },
+    {
+      "name": "anchor_select_option",
+      "description": "Select an option in a dropdown"
+    },
+    {
+      "name": "anchor_tab_list",
+      "description": "List browser tabs"
+    },
+    {
+      "name": "anchor_tab_new",
+      "description": "Open a new tab"
+    },
+    {
+      "name": "anchor_tab_select",
+      "description": "Select a tab by index"
+    },
+    {
+      "name": "anchor_tab_close",
+      "description": "Close a tab"
+    },
+    {
+      "name": "anchor_wait_for",
+      "description": "Wait for text to appear or disappear or a specified time to pass"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "@wgong/sqlite-mcp-server",
+  "displayName": "SQLite Explorer",
+  "description": "Explore, query, and inspect SQLite databases with ease. List tables, preview results, and view detailed schema metadata to understand structure quickly. Verify connectivity and readiness with a quick health check.",
+  "createdAt": "2026-01-16T07:20:49.042Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wgong/sqlite-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_query",
+      "description": "Execute a query on the SQLite database.\n\nArgs:\n    query: SELECT SQL query to execute\n    params: Optional list of parameters for the query\n    fetch_all: If True, fetches all results. If False, fetches one row.\n    row_limit: Maximum number of rows to return (default 1000)\n\nReturns:\n    List of dictionaries containing the query results"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the SQLite database.\n\nReturns:\n    List of table names in the database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get detailed information about a table's schema.\n\nArgs:\n    table_name: Name of the table to describe\n\nReturns:\n    List of dictionaries containing column information:\n    - name: Column name\n    - type: Column data type\n    - notnull: Whether the column can contain NULL values\n    - dflt_value: Default value for the column\n    - pk: Whether the column is part of the primary key"
+    },
+    {
+      "name": "health_check",
+      "description": "Check if the server and database are working properly."
+    }
+  ]
+}

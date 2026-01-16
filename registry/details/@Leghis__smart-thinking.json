@@ -1,0 +1,49 @@
+{
+  "id": "@Leghis/smart-thinking",
+  "displayName": "Smart‑Thinking",
+  "description": "Find relevant Smart‑Thinking memories fast. Fetch full entries by ID to get complete context. Speed up research, writing, and decision‑making.",
+  "createdAt": "2026-01-16T07:23:52.720Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Leghis/smart-thinking"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "default": {
+        "mode": "full"
+      },
+      "properties": {
+        "mode": {
+          "type": "string",
+          "description": "Mode du serveur Smart-Thinking",
+          "default": "full",
+          "enum": [
+            "full",
+            "connector"
+          ]
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "smartthinking",
+      "description": ""
+    },
+    {
+      "name": "search",
+      "description": "Recherche les pensées et mémoires Smart-Thinking pertinentes pour la requête"
+    },
+    {
+      "name": "fetch",
+      "description": "Récupère le contenu complet d'une mémoire Smart-Thinking par identifiant"
+    }
+  ]
+}

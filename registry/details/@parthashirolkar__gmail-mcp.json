@@ -1,0 +1,16 @@
+{
+  "id": "@parthashirolkar/gmail-mcp",
+  "displayName": "Gmail MCP Server",
+  "description": "Enable AI applications to securely send and manage emails through Gmail with multi-user OAuth2 authentication. Compose, send, and manage drafts with HTML and plain text support while keeping credentials and tokens encrypted and server-side. Seamlessly integrate with MCP clients like Claude Desktop for enhanced email workflows.",
+  "createdAt": "2026-01-16T07:27:00.423Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@parthashirolkar/gmail-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

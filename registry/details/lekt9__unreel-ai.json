@@ -1,0 +1,29 @@
+{
+  "id": "lekt9/unreel-ai",
+  "displayName": "Unreel",
+  "description": "Create high-quality videos directly from natural language scripts and text descriptions. Monitor the status of generation tasks and manage a complete list of your video projects. Simplify content production by automating the visual storytelling process.",
+  "createdAt": "2026-01-16T07:28:35.993Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lekt9/unreel-ai"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "generate_video",
+      "description": "Start video generation from a natural language script. Returns job_id to poll for completion."
+    },
+    {
+      "name": "get_job_status",
+      "description": "Get the status of a video generation job"
+    },
+    {
+      "name": "list_jobs_mcp",
+      "description": "List all video generation jobs"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "@Myangsun/loc-memory-server",
+  "displayName": "Memory Graph",
+  "description": "Remember user details and preferences across conversations. Organize facts into connected profiles for richer, long-term context. Search, update, and automatically extract locations to keep memories accurate and actionable.",
+  "createdAt": "2026-01-16T07:24:16.369Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Myangsun/loc-memory-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_entities",
+      "description": "Create multiple new entities in the knowledge graph"
+    },
+    {
+      "name": "create_relations",
+      "description": "Create multiple new relations between entities in the knowledge graph. Relations should be in active voice"
+    },
+    {
+      "name": "add_observations",
+      "description": "Add new observations to existing entities in the knowledge graph"
+    },
+    {
+      "name": "delete_entities",
+      "description": "Delete multiple entities and their associated relations from the knowledge graph"
+    },
+    {
+      "name": "delete_observations",
+      "description": "Delete specific observations from entities in the knowledge graph"
+    },
+    {
+      "name": "delete_relations",
+      "description": "Delete multiple relations from the knowledge graph"
+    },
+    {
+      "name": "read_graph",
+      "description": "Read the entire knowledge graph"
+    },
+    {
+      "name": "search_nodes",
+      "description": "Search for nodes in the knowledge graph based on a query"
+    },
+    {
+      "name": "open_nodes",
+      "description": "Open specific nodes in the knowledge graph by their names"
+    },
+    {
+      "name": "extract_locations",
+      "description": "Extract locations from text and add them to the knowledge graph as entities with geographic relationships"
+    }
+  ]
+}

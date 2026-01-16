@@ -1,0 +1,12 @@
+{
+  "id": "@maragathamani-boothalingam/math-mcp-server",
+  "displayName": "math-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:21.865Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maragathamani-boothalingam/math-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

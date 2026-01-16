@@ -1,0 +1,25 @@
+{
+  "id": "@stonesteel84/typescript-mcp-server-boilerplate-2",
+  "displayName": "typescript-mcp-server-boilerplate-2",
+  "description": "Kickstart development with a ready-made TypeScript project for quickly adding tools, resources, and prompts. Customize sample actions like greeting, calculator, and image generation to fit your needs. Build and run immediately with minimal setup.",
+  "createdAt": "2026-01-16T07:30:23.043Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@stonesteel84/typescript-mcp-server-boilerplate-2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "hfToken": {
+          "type": "string",
+          "description": "Hugging Face API 토큰 (이미지 생성에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

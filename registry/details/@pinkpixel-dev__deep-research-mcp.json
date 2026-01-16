@@ -1,0 +1,79 @@
+{
+  "id": "@pinkpixel-dev/deep-research-mcp",
+  "displayName": "Deep Research Server",
+  "description": "Perform comprehensive web research by combining AI-powered search and deep content crawling to gather extensive, up-to-date information on any topic. Aggregate and structure research data into detailed JSON outputs optimized for generating high-quality markdown documentation with LLMs. Customize documentation prompts and output paths to fit your workflow and save research results securely.",
+  "createdAt": "2026-01-16T07:25:36.527Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pinkpixel-dev/deep-research-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tavilyApiKey"
+      ],
+      "properties": {
+        "crawlLimit": {
+          "type": "number",
+          "description": "Optional maximum number of URLs to crawl per source.",
+          "default": 10
+        },
+        "crawlTimeout": {
+          "type": "number",
+          "description": "Optional timeout in seconds for crawl requests.",
+          "default": 180
+        },
+        "tavilyApiKey": {
+          "type": "string",
+          "description": "Tavily API key for authentication."
+        },
+        "crawlMaxDepth": {
+          "type": "number",
+          "description": "Optional maximum crawl depth from source URL.",
+          "default": 1
+        },
+        "searchTimeout": {
+          "type": "number",
+          "description": "Optional timeout in seconds for search requests.",
+          "default": 60
+        },
+        "fileWriteEnabled": {
+          "type": "boolean",
+          "description": "Enable file writing tool.",
+          "default": false
+        },
+        "maxSearchResults": {
+          "type": "number",
+          "description": "Optional maximum number of search results to retrieve.",
+          "default": 7
+        },
+        "allowedWritePaths": {
+          "type": "string",
+          "description": "Comma-separated allowed directories for file writing."
+        },
+        "fileWriteLineLimit": {
+          "type": "number",
+          "description": "Maximum lines per file write operation.",
+          "default": 200
+        },
+        "documentationPrompt": {
+          "type": "string",
+          "description": "Optional custom documentation prompt to override default."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "deep-research-tool",
+      "description": "Performs extensive web research using Tavily Search and Crawl. Returns aggregated JSON data including the query, search summary (if any), detailed research findings, and documentation instructions. The documentation instructions will guide you on how the user wants the research data to be formatted into markdown."
+    },
+    {
+      "name": "write-research-file",
+      "description": "Write research content to a file. This tool allows you to save research findings, documentation, or any text content to a specified file path.\n\n                    SECURITY: File writing is controlled by environment variables:\n                    - FILE_WRITE_ENABLED must be set to 'true' to enable file writing\n                    - ALLOWED_WRITE_PATHS can specify allowed directories (comma-separated)\n                    - If no ALLOWED_WRITE_PATHS specified, defaults to user's home directory\n                    - FILE_WRITE_LINE_LIMIT controls maximum lines per write operation (default: 200)\n\n                    Use this tool to save research reports, documentation, or any content generated from the deep-research-tool results."
+    }
+  ]
+}

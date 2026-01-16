@@ -1,0 +1,273 @@
+{
+  "id": "@Michael98671/agentbay",
+  "displayName": "Wuying AgentBay Server",
+  "description": "Enable rapid integration and execution of AI Agent tasks in a secure, serverless cloud environment. Provide enterprises and developers with one-click configuration and real-time edge-cloud interaction for AI workflows. Facilitate seamless use of standard tools like browser, file, and terminal within a scalable infrastructure.\n\nAfter logging in and registering on the Alibaba Cloud AgentBay official website, apply for an API Key.\n\nAgentBay International Official Website: https://www.alibabacloud.com/en/product/agentbay?_p_lc=1, select \"Try for FREE\"\n\nAgentBay China Official Website: https://www.aliyun.com/activity/wuying/aiagent, select \"Experience Now\"",
+  "createdAt": "2026-01-16T07:31:45.410Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Michael98671/agentbay"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "APIKEY": {
+          "type": "string",
+          "description": "API key for authentication",
+          "default": ""
+        },
+        "REGION": {
+          "type": "string",
+          "description": "singapore or china for region",
+          "default": "singapore"
+        },
+        "IMAGEID": {
+          "type": "string",
+          "description": "Image ID to use",
+          "default": "linux_latest"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_resource",
+      "description": "The command to retrieve a wuying mcp runtime URL when user wants to get access to this runtime. Each retrieved URL will expire after a single use"
+    },
+    {
+      "name": "system_screenshot",
+      "description": "Captures a full-screen screenshot of the current display and returns a shareable URL. The screenshot is automatically processed and stored securely. The generated URL will expire after 64 minutes for security purposes."
+    },
+    {
+      "name": "release_resource",
+      "description": "release resource when task finished"
+    },
+    {
+      "name": "start_app",
+      "description": "Start a specified application using the provided command and optional working directory. Returns a list of processes associated with the launched application, including their process names, PIDs, and startup commands."
+    },
+    {
+      "name": "stop_app_by_pname",
+      "description": "Stop all processes associated with a specified process name. Use with caution as this will forcefully terminate the specified process."
+    },
+    {
+      "name": "stop_app_by_pid",
+      "description": "Terminate a specific process identified by its Process ID. Use with caution as this will forcefully terminate the specified process."
+    },
+    {
+      "name": "stop_app_by_cmd",
+      "description": "Terminate an application using the provided stop command. Use with caution as this will forcefully terminate the specified process."
+    },
+    {
+      "name": "list_visible_apps",
+      "description": "List all applications with visible windows, including their associated process information. Returns a list of processes that have visible windows, including their process names, PIDs, and startup commands."
+    },
+    {
+      "name": "get_installed_apps",
+      "description": "Retrieve a list of installed applications on the system. Supports filtering by Start Menu entries and Desktop shortcuts, with an option to exclude system applications. Returns application details including name, start command, optional stop command, and working directory."
+    },
+    {
+      "name": "create_directory",
+      "description": "Create a new directory or ensure a directory exists. Can create multiple nested directories in one operation. If the directory already exists, this operation will succeed silently."
+    },
+    {
+      "name": "edit_file",
+      "description": "Make line-based edits to a text file. Each edit replaces exact line sequences with new content. Returns a git-style diff showing the changes made."
+    },
+    {
+      "name": "get_file_info",
+      "description": "Retrieve detailed metadata about a file or directory. Returns comprehensive information including size, creation time, last modified time, permissions, and type."
+    },
+    {
+      "name": "read_file",
+      "description": "Read the contents of a file from the file system. You can specify an optional 'offset' (in bytes) to start reading from a specific position, and an optional 'length' (in bytes) to limit how many bytes to read."
+    },
+    {
+      "name": "read_multiple_files",
+      "description": "Read the contents of multiple files simultaneously. This is more efficient than reading files one by one when you need to analyze or compare multiple files."
+    },
+    {
+      "name": "list_directory",
+      "description": "Get a detailed listing of all files and directories in a specified path. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes."
+    },
+    {
+      "name": "move_file",
+      "description": "Move or rename files and directories. Can move files between directories and rename them in a single operation. If the destination exists, the operation will fail."
+    },
+    {
+      "name": "search_files",
+      "description": "Recursively search for files and directories matching a pattern. Searches through all subdirectories from the starting path. The search is case-sensitive and matches partial names."
+    },
+    {
+      "name": "write_file",
+      "description": "Create a new file or write content to an existing file. You can choose to completely overwrite the file or append to the end by specifying the 'mode' parameter."
+    },
+    {
+      "name": "oss_upload_annon",
+      "description": "Upload a local file or directory to the specified URL using HTTP PUT. If a directory is specified, it will be compressed into a zip file before uploading."
+    },
+    {
+      "name": "oss_download",
+      "description": "Download an object from the specified OSS bucket to the given local path. Note: You must call the oss_env_init tool to initialize OSS environment variables before using this tool."
+    },
+    {
+      "name": "oss_env_init",
+      "description": "Create and initialize OSS environment variables with the specified endpoint, access key ID, access key secret, security token, and region."
+    },
+    {
+      "name": "oss_download_annon",
+      "description": "Download a file from the specified URL to the given local path. If the parent directory does not exist, it will be created automatically."
+    },
+    {
+      "name": "oss_upload",
+      "description": "Upload a local file or directory to the specified OSS bucket. Note: You must call the oss_env_init tool to initialize OSS environment variables before using this tool."
+    },
+    {
+      "name": "browser_snapshot",
+      "description": "Capture accessibility snapshot of the current page, this is better than screenshot"
+    },
+    {
+      "name": "browser_click",
+      "description": "Perform click on a web page"
+    },
+    {
+      "name": "browser_drag",
+      "description": "Perform drag and drop between two elements"
+    },
+    {
+      "name": "browser_hover",
+      "description": "Hover over element on page"
+    },
+    {
+      "name": "browser_type",
+      "description": "Type text into editable element"
+    },
+    {
+      "name": "browser_select_option",
+      "description": "Select an option in a dropdown"
+    },
+    {
+      "name": "browser_tab_list",
+      "description": "List browser tabs"
+    },
+    {
+      "name": "browser_tab_new",
+      "description": "Open a new tab"
+    },
+    {
+      "name": "browser_tab_select",
+      "description": "Select a tab by index"
+    },
+    {
+      "name": "browser_tab_close",
+      "description": "Close a tab"
+    },
+    {
+      "name": "browser_generate_playwright_test",
+      "description": "Generate a Playwright test for given scenario"
+    },
+    {
+      "name": "browser_wait_for",
+      "description": "Wait for text to appear or disappear or a specified time to pass"
+    },
+    {
+      "name": "browser_take_screenshot",
+      "description": "Take a screenshot of the current page. You can't perform actions based on the screenshot, use browser_snapshot for actions."
+    },
+    {
+      "name": "browser_close",
+      "description": "Close the page"
+    },
+    {
+      "name": "browser_resize",
+      "description": "Resize the browser window"
+    },
+    {
+      "name": "browser_console_messages",
+      "description": "Returns all console messages"
+    },
+    {
+      "name": "browser_handle_dialog",
+      "description": "Handle a dialog"
+    },
+    {
+      "name": "browser_file_upload",
+      "description": "Upload one or multiple files"
+    },
+    {
+      "name": "browser_install",
+      "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed."
+    },
+    {
+      "name": "browser_press_key",
+      "description": "Press a key on the keyboard"
+    },
+    {
+      "name": "browser_navigate",
+      "description": "Navigate to a URL"
+    },
+    {
+      "name": "browser_navigate_back",
+      "description": "Go back to the previous page"
+    },
+    {
+      "name": "browser_navigate_forward",
+      "description": "Go forward to the next page"
+    },
+    {
+      "name": "browser_network_requests",
+      "description": "Returns all network requests since loading the page"
+    },
+    {
+      "name": "browser_pdf_save",
+      "description": "Save page as PDF"
+    },
+    {
+      "name": "shell",
+      "description": "Executes a shell command with timeout and returns the output or an error on linux platform."
+    },
+    {
+      "name": "fullscreen_window",
+      "description": "Set a specific window to fullscreen mode by its window ID."
+    },
+    {
+      "name": "list_root_windows",
+      "description": "List all root windows with their associated information. Returns a list of root windows, including their window IDs, window titles, process IDs, and process names."
+    },
+    {
+      "name": "get_active_window",
+      "description": "Retrieve information about the currently active window. Returns details including window ID, title, process ID (pid), and process name (pname)."
+    },
+    {
+      "name": "activate_window",
+      "description": "Activate a specific window by its window ID."
+    },
+    {
+      "name": "maximize_window",
+      "description": "Maximize a specific window by its window ID."
+    },
+    {
+      "name": "minimize_window",
+      "description": "Minimize a specific window by its window ID."
+    },
+    {
+      "name": "restore_window",
+      "description": "Restore a specific window to its normal state by its window ID."
+    },
+    {
+      "name": "close_window",
+      "description": "Close a specific window by its window ID."
+    },
+    {
+      "name": "resize_window",
+      "description": "Resize a specific window by its window ID."
+    },
+    {
+      "name": "focus_mode",
+      "description": "Enable or disable focus mode. When focus mode is enabled, only windows from the currently active process and its child processes are allowed to remain in the foreground."
+    }
+  ]
+}

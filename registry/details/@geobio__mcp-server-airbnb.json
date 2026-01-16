@@ -1,0 +1,35 @@
+{
+  "id": "@geobio/mcp-server-airbnb",
+  "displayName": "Airbnb Search and Listing Details Server",
+  "description": "Search Airbnb listings and retrieve detailed information about specific listings. Get structured JSON data without requiring an API key, while respecting Airbnb's robots.txt rules. Simplify your vacation rental planning with easy access to Airbnb data.",
+  "createdAt": "2026-01-16T07:21:14.456Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@geobio/mcp-server-airbnb"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "ignoreRobotsTxt": {
+          "type": "boolean",
+          "description": "If set to true, the server will ignore robots.txt rules.",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "airbnb_search",
+      "description": "Search for Airbnb listings with various filters and pagination. Provide direct links to the user"
+    },
+    {
+      "name": "airbnb_listing_details",
+      "description": "Get detailed information about a specific Airbnb listing. Provide direct links to the user"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "@YachtsyAI/yachtsy-mcp-server",
+  "displayName": "Yachtsy AI",
+  "description": "Explore the world’s most complete sailboat and yacht research platform. Search and compare listings by model, price, year, and location while uncovering detailed specs, rig plans, and performance insights. Conduct deep research on sailboats and cruisers — from design history and reviews to current market trends and resale values. Get tailored recommendations, practical sailing guidance, and data-driven comparisons to help you choose the right boat with confidence. https://yachtsy.ai/",
+  "createdAt": "2026-01-16T07:26:17.516Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@YachtsyAI/yachtsy-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "yachtsyApiKey"
+      ],
+      "properties": {
+        "yachtsyApiKey": {
+          "type": "string",
+          "description": "Your Yachtsy API key (get one at https://www.yachtsy.ai/signup)"
+        },
+        "yachtsyApiBaseUrl": {
+          "type": "string",
+          "description": "Yachtsy API base URL",
+          "default": "https://api.yachtsy.ai/v1"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "yachtsy-agent",
+      "description": "Main Yachtsy agent with automatic routing to specialized sub-agents. Intelligently routes queries to Listings Agent, General Boat Expert, or Deep Research Agent. Handles boat listings searches, yacht specifications, market trends, sailing advice, and general yacht-related questions. Example queries: 'Show me Catalina 34 sailboats under $100k', 'What are the best bluewater cruising boats?', 'Find me yacht listings in Florida'"
+    }
+  ]
+}

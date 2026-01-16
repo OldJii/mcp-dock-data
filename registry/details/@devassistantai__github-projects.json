@@ -1,0 +1,119 @@
+{
+  "id": "@devassistantai/github-projects",
+  "displayName": "GitHub Projects",
+  "description": "Manage GitHub Projects V2 efficiently by interacting with the GitHub Projects API through a set of powerful tools. Perform project, item, task, field, and view management operations seamlessly from your language model or client. Enhance your workflow with tested, production-ready capabilities for project automation and organization.",
+  "createdAt": "2026-01-16T07:27:12.100Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devassistantai/github-projects"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "githubToken"
+      ],
+      "properties": {
+        "logLevel": {
+          "type": "string",
+          "description": "Logging level",
+          "default": "info"
+        },
+        "disableLogs": {
+          "type": "boolean",
+          "description": "Disable console output",
+          "default": false
+        },
+        "githubToken": {
+          "type": "string",
+          "description": "GitHub classic personal access token (ghp_...)"
+        },
+        "logDiagnostics": {
+          "type": "boolean",
+          "description": "Enable detailed API request/response logging",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_connection",
+      "description": "Test GitHub API connection and token validity"
+    },
+    {
+      "name": "list_projects",
+      "description": "List GitHub Projects (V2) for a user or organization"
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new GitHub Project (V2) for a user or organization"
+    },
+    {
+      "name": "update_project",
+      "description": "Update an existing GitHub Project (V2)"
+    },
+    {
+      "name": "toggle_project_archive",
+      "description": "Archive or unarchive a GitHub Project (V2)"
+    },
+    {
+      "name": "update_project_item",
+      "description": "Update an existing project item in a GitHub Project (V2)"
+    },
+    {
+      "name": "remove_project_item",
+      "description": "Remove an item from a GitHub Project (V2)"
+    },
+    {
+      "name": "list_project_fields",
+      "description": "List fields from a GitHub Project (V2)"
+    },
+    {
+      "name": "list_project_views",
+      "description": "List views from a GitHub Project (V2)"
+    },
+    {
+      "name": "list_project_items",
+      "description": "List items from a GitHub Project (V2)"
+    },
+    {
+      "name": "add_project_item",
+      "description": "Add an existing Issue or Pull Request to a GitHub Project (V2)"
+    },
+    {
+      "name": "create_draft_item",
+      "description": "Create a draft item in a GitHub Project (V2)"
+    },
+    {
+      "name": "create_project_field",
+      "description": "Create a new field in a GitHub Project (V2)"
+    },
+    {
+      "name": "create_task",
+      "description": "Create a new task (as draft or real issue) in a GitHub Project (V2)"
+    },
+    {
+      "name": "manage_task_status",
+      "description": "Update task status and optionally add a comment in a GitHub Project (V2)"
+    },
+    {
+      "name": "group_tasks",
+      "description": "Group multiple tasks by setting the same field value for all of them in a GitHub Project (V2)"
+    },
+    {
+      "name": "convert_draft_to_issue",
+      "description": "Convert a draft item to an issue in a GitHub Project (V2)"
+    },
+    {
+      "name": "get_issue_id",
+      "description": "Get the ID of an issue in a GitHub Project (V2)"
+    },
+    {
+      "name": "bulk_add_issues",
+      "description": "Bulk add issues to a GitHub Project (V2)"
+    }
+  ]
+}

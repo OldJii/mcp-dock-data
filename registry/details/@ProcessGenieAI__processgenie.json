@@ -1,0 +1,12 @@
+{
+  "id": "@ProcessGenieAI/processgenie",
+  "displayName": "processgenie",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:29.992Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ProcessGenieAI/processgenie"
+  },
+  "connection": null,
+  "capabilities": []
+}

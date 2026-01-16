@@ -1,0 +1,29 @@
+{
+  "id": "@infobip/plantuml-mcp-server",
+  "displayName": "PlantUML Diagrams",
+  "description": "Create PlantUML diagrams with automatic syntax validation and auto-fix suggestions. Get embeddable image URLs for valid diagrams and structured feedback to resolve issues. Encode or decode PlantUML code for easy URL sharing.",
+  "createdAt": "2026-01-16T07:23:03.558Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@infobip/plantuml-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "generate_plantuml_diagram",
+      "description": "Generate a PlantUML diagram with automatic syntax validation and error reporting for auto-fix workflows. Returns embeddable image URLs for valid diagrams or structured error details for invalid syntax that can be automatically corrected. Optionally saves the diagram to a local file."
+    },
+    {
+      "name": "encode_plantuml",
+      "description": "Encode PlantUML code for URL usage"
+    },
+    {
+      "name": "decode_plantuml",
+      "description": "Decode encoded PlantUML string back to PlantUML code"
+    }
+  ]
+}

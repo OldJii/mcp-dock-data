@@ -1,0 +1,12 @@
+{
+  "id": "@zicozip/n8n-smithery",
+  "displayName": "n8n-smithery",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:02.999Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zicozip/n8n-smithery"
+  },
+  "connection": null,
+  "capabilities": []
+}

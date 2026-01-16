@@ -1,0 +1,12 @@
+{
+  "id": "mcp-edu/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:45.675Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-edu/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

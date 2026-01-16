@@ -1,0 +1,184 @@
+{
+  "id": "@liveblocks/liveblocks-mcp-server",
+  "displayName": "Liveblocks",
+  "description": "Enable AI agents to interact with Liveblocks by creating, modifying, and deleting rooms, threads, comments, notifications, and more. Provide AI with read access to Liveblocks Storage and Yjs for enhanced collaborative capabilities. Simplify integration of Liveblocks features into AI workflows for real-time collaboration and data management.",
+  "createdAt": "2026-01-16T07:25:25.671Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@liveblocks/liveblocks-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "secretKey"
+      ],
+      "properties": {
+        "secretKey": {
+          "type": "string",
+          "description": "Liveblocks secret key from liveblocks.io/dashboard"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-rooms",
+      "description": "Get recent Liveblocks rooms"
+    },
+    {
+      "name": "create-room",
+      "description": "Create a Liveblocks room"
+    },
+    {
+      "name": "get-room",
+      "description": "Get a Liveblocks room"
+    },
+    {
+      "name": "update-room",
+      "description": "Update a Liveblocks room"
+    },
+    {
+      "name": "delete-room",
+      "description": "Delete a Liveblocks room"
+    },
+    {
+      "name": "update-room-id",
+      "description": "Update a Liveblocks room's ID"
+    },
+    {
+      "name": "get-active-users",
+      "description": "Get a Liveblocks room's active users"
+    },
+    {
+      "name": "broadcast-event",
+      "description": "Broadcast an event to a Liveblocks room"
+    },
+    {
+      "name": "get-storage-document",
+      "description": "Get a Liveblocks storage document"
+    },
+    {
+      "name": "get-yjs-document",
+      "description": "Get a Liveblocks Yjs text document"
+    },
+    {
+      "name": "get-threads",
+      "description": "Get recent Liveblocks threads"
+    },
+    {
+      "name": "create-thread",
+      "description": "Create a Liveblocks thread. Always ask for a userId."
+    },
+    {
+      "name": "get-thread",
+      "description": "Get a Liveblocks thread"
+    },
+    {
+      "name": "get-thread-participants",
+      "description": "Get a Liveblocks thread's participants"
+    },
+    {
+      "name": "edit-thread-metadata",
+      "description": "Edit a Liveblocks thread's metadata. `null` can be used to remove a key."
+    },
+    {
+      "name": "mark-thread-as-resolved",
+      "description": "Mark a Liveblocks thread as resolved"
+    },
+    {
+      "name": "mark-thread-as-unresolved",
+      "description": "Mark a Liveblocks thread as unresolved"
+    },
+    {
+      "name": "delete-thread",
+      "description": "Delete a Liveblocks thread"
+    },
+    {
+      "name": "subscribe-to-thread",
+      "description": "Subscribe to a Liveblocks thread"
+    },
+    {
+      "name": "unsubscribe-from-thread",
+      "description": "Unsubscribe from a Liveblocks thread"
+    },
+    {
+      "name": "get-thread-subscriptions",
+      "description": "Get a Liveblocks thread's subscriptions"
+    },
+    {
+      "name": "create-comment",
+      "description": "Create a Liveblocks comment. Always ask for a userId."
+    },
+    {
+      "name": "get-comment",
+      "description": "Get a Liveblocks comment"
+    },
+    {
+      "name": "edit-comment",
+      "description": "Edit a Liveblocks comment"
+    },
+    {
+      "name": "delete-comment",
+      "description": "Delete a Liveblocks comment"
+    },
+    {
+      "name": "add-comment-reaction",
+      "description": "Add a reaction to a Liveblocks comment"
+    },
+    {
+      "name": "remove-comment-reaction",
+      "description": "Remove a reaction from a Liveblocks comment"
+    },
+    {
+      "name": "get-room-subscription-settings",
+      "description": "Get a Liveblocks room's subscription settings"
+    },
+    {
+      "name": "update-room-subscription-settings",
+      "description": "Update a Liveblocks room's subscription settings"
+    },
+    {
+      "name": "delete-room-subscription-settings",
+      "description": "Delete a Liveblocks room's subscription settings"
+    },
+    {
+      "name": "get-user-room-subscription-settings",
+      "description": "Get a user's room subscription settings"
+    },
+    {
+      "name": "get-inbox-notifications",
+      "description": "Get recent Liveblocks inbox notifications"
+    },
+    {
+      "name": "get-inbox-notification",
+      "description": "Get a Liveblocks inbox notification"
+    },
+    {
+      "name": "trigger-inbox-notification",
+      "description": "Create a custom Liveblocks inbox notification"
+    },
+    {
+      "name": "delete-inbox-notification",
+      "description": "Delete a Liveblocks inbox notification"
+    },
+    {
+      "name": "delete-all-inbox-notifications",
+      "description": "Delete all Liveblocks inbox notifications"
+    },
+    {
+      "name": "get-notification-settings",
+      "description": "Get a Liveblocks notification settings"
+    },
+    {
+      "name": "update-notification-settings",
+      "description": "Update Liveblocks notification settings"
+    },
+    {
+      "name": "delete-notification-settings",
+      "description": "Delete Liveblocks notification settings"
+    }
+  ]
+}

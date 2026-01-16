@@ -1,0 +1,45 @@
+{
+  "id": "@mikechao/artic-mcp",
+  "displayName": "Art Institute of Chicago Collection Server",
+  "description": "Provide AI models with natural language access to the Art Institute of Chicago's art collection. Enable searching artworks by title, full text, or artist, and retrieving detailed artwork information including images. Enhance AI interactions with rich art data as accessible resources.",
+  "createdAt": "2026-01-16T07:31:14.603Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mikechao/artic-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search-by-title",
+      "description": "Search for artworks by title in the Art Institute of Chicago. Pagination is supported with the page parameter"
+    },
+    {
+      "name": "get-artwork-by-id",
+      "description": "Get additional information, including an image if available, about a specific artwork by its ID from the Art Institute of Chicago. Using the value of Artwork ID from the 'search-by-title' tool."
+    },
+    {
+      "name": "full-text-search",
+      "description": "Search for artworks in the Art Institute of Chicago collection whose metadata contains mention of the query term.Pagination is supported with the page parameter"
+    },
+    {
+      "name": "search-for-artist",
+      "description": "Search for artists in the Art Institute of Chicago collection"
+    },
+    {
+      "name": "get-artwork-by-artist",
+      "description": "Get artworks by artist id in the Art Institute of Chicago collection. Pagination is supported with the page parameter."
+    },
+    {
+      "name": "search-by-medium",
+      "description": "Search for artworks by medium in the Art Institute of Chicago. Pagination is supported with the page parameter"
+    }
+  ]
+}

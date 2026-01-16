@@ -1,0 +1,58 @@
+{
+  "id": "@afarhadi99/spaces-download-mcp",
+  "displayName": "Twitter Spaces Downloader and Transcriber",
+  "description": "Download and transcribe Twitter Spaces effortlessly using AI-powered transcription. Access multiple transcript formats and manage your downloaded spaces with ease. Streamline the complete workflow from availability check to transcription in one integrated solution.",
+  "createdAt": "2026-01-16T07:24:49.460Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@afarhadi99/spaces-download-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiUrl"
+      ],
+      "properties": {
+        "apiUrl": {
+          "type": "string",
+          "description": "Base URL of the Twitter Spaces API backend",
+          "default": "http://localhost:8000"
+        },
+        "timeout": {
+          "type": "number",
+          "description": "Timeout in seconds for API requests",
+          "default": 30
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_space_availability",
+      "description": "Check if a Twitter Space is available for download"
+    },
+    {
+      "name": "download_twitter_space",
+      "description": "Download a Twitter Space and wait for completion"
+    },
+    {
+      "name": "transcribe_space",
+      "description": "Transcribe a downloaded Twitter Space using AI"
+    },
+    {
+      "name": "get_transcript",
+      "description": "Download transcript in various formats (json, txt, paragraphs, timecoded, summary)"
+    },
+    {
+      "name": "list_spaces",
+      "description": "List all downloaded Twitter Spaces"
+    },
+    {
+      "name": "download_and_transcribe_space",
+      "description": "Download a Twitter Space and automatically transcribe it"
+    }
+  ]
+}

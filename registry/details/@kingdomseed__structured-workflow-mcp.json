@@ -1,0 +1,101 @@
+{
+  "id": "@kingdomseed/structured-workflow-mcp",
+  "displayName": "Structured Workflow Server",
+  "description": "Enforce disciplined AI-assisted programming workflows by requiring systematic auditing, analysis, and verified outputs at each development phase. Guide AI through structured phases like refactoring, feature development, and testing to ensure thorough understanding and quality results. Prevent skipping steps and maintain session state to uphold workflow integrity.\n\n## Manual Installation\n### Clone the repository\n- git clone https://github.com/kingdomseed/structured-workflow-mcp\n- cd structured-workflow-mcp\n\n### Install dependencies and build\n- npm install\n- npm run build\n\nThen add this to your MCP.json\n```\n\"structured-workflow\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/path/to/your/structured-workflow-mcp/dist/index.js\"\n      ],\n      \"env\": {}\n    }\n```",
+  "createdAt": "2026-01-16T07:31:09.467Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kingdomseed/structured-workflow-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "refactor_workflow",
+      "description": "Start a structured refactoring workflow to improve existing code without changing functionality"
+    },
+    {
+      "name": "create_feature_workflow",
+      "description": "Start a structured workflow for adding new functionality with integrated testing"
+    },
+    {
+      "name": "test_workflow",
+      "description": "Start a focused workflow for writing or improving test coverage"
+    },
+    {
+      "name": "tdd_workflow",
+      "description": "Start a Test-Driven Development workflow with Red-Green-Refactor cycles"
+    },
+    {
+      "name": "build_custom_workflow",
+      "description": "Build a custom workflow with full control over phases and configuration. Use specific workflow tools (refactor_workflow, create_feature_workflow, etc.) for optimized presets."
+    },
+    {
+      "name": "setup_guidance",
+      "description": "Get guidance for the SETUP phase - initialize workflow and establish patterns"
+    },
+    {
+      "name": "audit_inventory_guidance",
+      "description": "Get guidance for the AUDIT_INVENTORY phase - analyze code and catalog changes"
+    },
+    {
+      "name": "compare_analyze_guidance",
+      "description": "Get guidance for the COMPARE/ANALYZE phase - evaluating approaches"
+    },
+    {
+      "name": "question_determine_guidance",
+      "description": "Get guidance for the QUESTION_DETERMINE phase - clarify and finalize plan"
+    },
+    {
+      "name": "refactor_guidance",
+      "description": "Get guidance for the WRITE/REFACTOR phase - implementing changes"
+    },
+    {
+      "name": "lint_guidance",
+      "description": "Get guidance for the LINT phase - verifying code quality"
+    },
+    {
+      "name": "iterate_guidance",
+      "description": "Get guidance for the ITERATE phase - fixing issues"
+    },
+    {
+      "name": "present_guidance",
+      "description": "Get guidance for the PRESENT phase - summarizing work"
+    },
+    {
+      "name": "test_guidance",
+      "description": "Get MANDATORY guidance for the TEST phase - execute tests and validate functionality after refactoring"
+    },
+    {
+      "name": "validate_action",
+      "description": "Check if an action follows critical safety rules"
+    },
+    {
+      "name": "validate_phase_completion",
+      "description": "Validate that current phase meets all completion requirements before allowing progression"
+    },
+    {
+      "name": "user_input_required_guidance",
+      "description": "Handle escalation to user input when iteration limits reached or checkpoints triggered"
+    },
+    {
+      "name": "workflow_status",
+      "description": "Check current workflow progress and session state"
+    },
+    {
+      "name": "phase_output",
+      "description": "Record the output/results when completing a workflow phase - REQUIRES ACTUAL OUTPUT ARTIFACTS with numbered file naming"
+    },
+    {
+      "name": "discover_workflow_tools",
+      "description": "List the workflow guidance tools provided by this MCP server"
+    }
+  ]
+}

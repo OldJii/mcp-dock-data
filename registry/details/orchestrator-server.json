@@ -1,0 +1,25 @@
+{
+  "id": "orchestrator-server",
+  "displayName": "Orchestrator Server",
+  "description": "Provides task management and coordination capabilities for distributed systems.",
+  "createdAt": "2026-01-16T07:25:35.436Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/orchestrator-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "number",
+          "description": "Port to run the server on.",
+          "default": 3000
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

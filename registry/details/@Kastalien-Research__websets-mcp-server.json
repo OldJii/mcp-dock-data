@@ -1,0 +1,12 @@
+{
+  "id": "@Kastalien-Research/websets-mcp-server",
+  "displayName": "websets-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:13.951Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kastalien-Research/websets-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

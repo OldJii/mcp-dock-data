@@ -1,0 +1,29 @@
+{
+  "id": "@tbakerx/instant-mcp",
+  "displayName": "Instant Domain Search",
+  "description": "**Lightning-fast domain search directly in your AI workflow**\n\nSearch domain availability, generate brandable alternatives, and validate bulk domain lists without leaving Claude, Cursor, or any other MCP-compatible environment. Powered by the same sub-10ms API infrastructure behind Instant Domain Search.\n\n**Features:**\n- **Bulk availability checking** across multiple TLDs with comprehensive results\n- **Smart name variations** that generate pronounceable, brandable alternatives (no random letter spam)\n- **Authoritative verification** for any domain list with direct registry validation\n- **Privacy-first** architecture that keeps your searches off sales databases and repricing algorithms\n\nPerfect for developers naming projects, entrepreneurs launching products, or anyone who needs to check hundreds of domains in minutes instead of hours.",
+  "createdAt": "2026-01-16T07:26:49.050Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tbakerx/instant-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_domains",
+      "description": "Search for domain availability and suggestions."
+    },
+    {
+      "name": "generate_domain_variations",
+      "description": "Generate domain name variations with prefixes and suffixes."
+    },
+    {
+      "name": "check_domain_availability",
+      "description": "Check availability of specific domains via DNS."
+    }
+  ]
+}

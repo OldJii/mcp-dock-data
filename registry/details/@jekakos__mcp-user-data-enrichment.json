@@ -1,0 +1,33 @@
+{
+  "id": "@jekakos/mcp-user-data-enrichment",
+  "displayName": "User Data Enrichment Server",
+  "description": "Enrich user data by adding social network links based on provided personal information. Integrate seamlessly with AI platforms to discover social media profiles dynamically or use pre-configured mock data for demonstration. Enable AI agents to enhance user profiles with relevant social connections effortlessly.",
+  "createdAt": "2026-01-16T07:31:10.967Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jekakos/mcp-user-data-enrichment"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Optional API key for authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "echo_data",
+      "description": "Echo data tool for proxy testing - returns the same data that was sent in parameters"
+    }
+  ]
+}

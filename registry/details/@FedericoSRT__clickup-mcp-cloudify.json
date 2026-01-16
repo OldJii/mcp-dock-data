@@ -1,0 +1,12 @@
+{
+  "id": "@FedericoSRT/clickup-mcp-cloudify",
+  "displayName": "clickup-mcp-cloudify",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:20.008Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FedericoSRT/clickup-mcp-cloudify"
+  },
+  "connection": null,
+  "capabilities": []
+}

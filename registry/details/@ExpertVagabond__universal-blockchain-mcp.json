@@ -1,0 +1,248 @@
+{
+  "id": "@ExpertVagabond/universal-blockchain-mcp",
+  "displayName": "Universal Blockchain",
+  "description": "Build cross-chain apps on ZetaChain, manage accounts and balances, list tokens, and request testnet ZETA. Create projects, call contracts, and transfer tokens across connected chains from one place. Track cross-chain transactions and fees with real-time queries and network status.",
+  "createdAt": "2026-01-16T07:33:07.479Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ExpertVagabond/universal-blockchain-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_account",
+      "description": "Create a new ZetaChain account with mnemonic phrase"
+    },
+    {
+      "name": "import_account",
+      "description": "Import existing account using private key or mnemonic"
+    },
+    {
+      "name": "list_accounts",
+      "description": "List all available ZetaChain accounts"
+    },
+    {
+      "name": "show_account",
+      "description": "Show details of a specific account"
+    },
+    {
+      "name": "get_balances",
+      "description": "Fetch native and ZETA token balances for an address"
+    },
+    {
+      "name": "query_cctx",
+      "description": "Query cross-chain transaction data in real-time"
+    },
+    {
+      "name": "get_fees",
+      "description": "Fetch omnichain and cross-chain messaging fees"
+    },
+    {
+      "name": "call_contract",
+      "description": "Call a contract on a connected chain from ZetaChain"
+    },
+    {
+      "name": "withdraw_tokens",
+      "description": "Withdraw tokens from ZetaChain to a connected chain"
+    },
+    {
+      "name": "withdraw_and_call",
+      "description": "Withdraw tokens from ZetaChain and call a contract on connected chain"
+    },
+    {
+      "name": "list_tokens",
+      "description": "List ZRC-20 tokens"
+    },
+    {
+      "name": "list_chains",
+      "description": "List all supported chains"
+    },
+    {
+      "name": "request_faucet",
+      "description": "Request testnet ZETA tokens from the faucet"
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new universal contract project"
+    },
+    {
+      "name": "get_network_info",
+      "description": "Get current ZetaChain network status and information"
+    },
+    {
+      "name": "check_foundry",
+      "description": "Check if Foundry (forge, cast, anvil) is properly installed and working"
+    },
+    {
+      "name": "forge_build",
+      "description": "Compile smart contracts using Foundry Forge"
+    },
+    {
+      "name": "forge_test",
+      "description": "Run smart contract tests using Foundry Forge"
+    },
+    {
+      "name": "forge_create",
+      "description": "Deploy smart contracts using Foundry Forge"
+    },
+    {
+      "name": "forge_verify",
+      "description": "Verify smart contracts on block explorers"
+    },
+    {
+      "name": "cast_call",
+      "description": "Make a read-only call to a smart contract"
+    },
+    {
+      "name": "cast_send",
+      "description": "Send a transaction to a smart contract"
+    },
+    {
+      "name": "cast_balance",
+      "description": "Get ETH balance of an address"
+    },
+    {
+      "name": "cast_nonce",
+      "description": "Get transaction nonce for an address"
+    },
+    {
+      "name": "cast_gas_price",
+      "description": "Get current gas price"
+    },
+    {
+      "name": "cast_block",
+      "description": "Get block information"
+    },
+    {
+      "name": "cast_tx",
+      "description": "Get transaction information"
+    },
+    {
+      "name": "anvil_start",
+      "description": "Start a local Ethereum node using Anvil"
+    },
+    {
+      "name": "anvil_snapshot",
+      "description": "Create a snapshot of the current blockchain state"
+    },
+    {
+      "name": "anvil_revert",
+      "description": "Revert to a previous snapshot"
+    },
+    {
+      "name": "zeta_validator_create",
+      "description": "Create a ZetaChain validator"
+    },
+    {
+      "name": "zeta_governance_vote",
+      "description": "Vote on ZetaChain governance proposals"
+    },
+    {
+      "name": "zeta_governance_proposals",
+      "description": "List active governance proposals"
+    },
+    {
+      "name": "zeta_staking_delegate",
+      "description": "Delegate ZETA tokens to a validator"
+    },
+    {
+      "name": "zeta_staking_rewards",
+      "description": "Query staking rewards for a delegator"
+    },
+    {
+      "name": "cross_chain_send",
+      "description": "Send tokens across chains using ZetaChain"
+    },
+    {
+      "name": "cross_chain_status",
+      "description": "Check status of cross-chain transaction"
+    },
+    {
+      "name": "contract_compile",
+      "description": "Compile Solidity smart contracts"
+    },
+    {
+      "name": "contract_deploy",
+      "description": "Deploy compiled smart contracts"
+    },
+    {
+      "name": "contract_interact",
+      "description": "Interact with deployed smart contracts"
+    },
+    {
+      "name": "defi_swap",
+      "description": "Perform token swaps on DEX platforms"
+    },
+    {
+      "name": "defi_liquidity_add",
+      "description": "Add liquidity to DEX pools"
+    },
+    {
+      "name": "defi_yield_farm",
+      "description": "Stake tokens in yield farming protocols"
+    },
+    {
+      "name": "nft_mint",
+      "description": "Mint NFTs"
+    },
+    {
+      "name": "nft_transfer",
+      "description": "Transfer NFTs"
+    },
+    {
+      "name": "nft_metadata",
+      "description": "Get NFT metadata"
+    },
+    {
+      "name": "block_explorer",
+      "description": "Search and analyze blockchain data"
+    },
+    {
+      "name": "gas_tracker",
+      "description": "Track and analyze gas prices across chains"
+    },
+    {
+      "name": "portfolio_tracker",
+      "description": "Track portfolio value across multiple chains"
+    },
+    {
+      "name": "security_audit",
+      "description": "Perform basic security audit on smart contracts"
+    },
+    {
+      "name": "wallet_export",
+      "description": "Export wallet private key or mnemonic"
+    },
+    {
+      "name": "wallet_backup",
+      "description": "Create encrypted backup of wallet"
+    },
+    {
+      "name": "transaction_history",
+      "description": "Get transaction history for an address"
+    },
+    {
+      "name": "gas_optimizer",
+      "description": "Optimize gas usage for smart contract transactions"
+    },
+    {
+      "name": "multisig_create",
+      "description": "Create a multisig wallet"
+    },
+    {
+      "name": "bridge_status",
+      "description": "Check status of cross-chain bridge operations"
+    }
+  ]
+}

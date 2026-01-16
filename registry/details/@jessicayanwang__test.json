@@ -1,0 +1,41 @@
+{
+  "id": "@jessicayanwang/test",
+  "displayName": "Frankfurter Exchange Rates",
+  "description": "Fetch latest and historical currency exchange rates from Frankfurter. Convert amounts between currencies using current or date-specific rates, and list supported currency codes. Filter results by base and symbols to focus on the rates you need.",
+  "createdAt": "2026-01-16T07:22:59.558Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jessicayanwang/test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_supported_currencies",
+      "description": "Returns a list of three-letter currency codes for the supported currencies."
+    },
+    {
+      "name": "get_latest_exchange_rates",
+      "description": "Returns the latest exchange rates for specific currencies. The\nsymbols can be used to filter the results to specific currencies.\nIf symbols is not provided, all supported currencies will be returned."
+    },
+    {
+      "name": "convert_currency_latest",
+      "description": "Converts an amount from one currency to another using the latest exchange rates."
+    },
+    {
+      "name": "get_historical_exchange_rates",
+      "description": "Returns historical exchange rates for a specific date or date range.\nIf the exchange rates for a specified date is not available, the rates available for\nthe closest date before the specified date will be provided.\nEither a specific date, a start date, or a date range must be provided.\nThe symbols can be used to filter the results to specific currencies.\nIf symbols are not provided, all supported currencies will be returned."
+    },
+    {
+      "name": "convert_currency_specific_date",
+      "description": "Convert an amount from one currency to another using the exchange rates for a specific date.\nIf there is no exchange rate available for the specific date, the rate for the closest available date before\nthe specified date will be used."
+    }
+  ]
+}

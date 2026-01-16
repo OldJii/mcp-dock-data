@@ -1,0 +1,27 @@
+{
+  "id": "@alperenkocyigit/call-for-papers-mcp",
+  "displayName": "call-for-papers-mcp",
+  "description": "Call for papers MCP",
+  "createdAt": "2026-01-16T07:21:21.518Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alperenkocyigit/call-for-papers-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_events",
+      "description": "Search for conferences matching specific keywords."
+    }
+  ]
+}

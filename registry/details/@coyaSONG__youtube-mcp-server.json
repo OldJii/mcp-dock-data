@@ -1,0 +1,82 @@
+{
+  "id": "@coyaSONG/youtube-mcp-server",
+  "displayName": "Advanced YouTube",
+  "description": "A Model Context Protocol (MCP) server for interacting with YouTube data. This server provides resources and tools to query YouTube videos, channels, comments, and transcripts through a stdio interface.",
+  "createdAt": "2026-01-16T07:31:07.871Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@coyaSONG/youtube-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "youtubeApiKey"
+      ],
+      "properties": {
+        "port": {
+          "type": "string",
+          "description": "Server port",
+          "default": "3000"
+        },
+        "youtubeApiKey": {
+          "type": "string",
+          "description": "YouTube Data API v3 key"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search-videos",
+      "description": "Search for YouTube videos with advanced filtering options. Supports parameters: - query: Search term (required) - maxResults: Number of results to return (1-50) - channelId: Filter by specific channel - order: Sort by date, rating, viewCount, relevance, title - type: Filter by resource type (video, channel, playlist) - videoDuration: Filter by length (short: <4min, medium: 4-20min, long: >20min) - publishedAfter/publishedBefore: Filter by publish date (ISO format) - videoCaption: Filter by caption availability - videoDefinition: Filter by quality (standard/high) - regionCode: Filter by country (ISO country code)"
+    },
+    {
+      "name": "get-video-comments",
+      "description": "Retrieve comments for a specific YouTube video with sorting options"
+    },
+    {
+      "name": "get-video-transcript",
+      "description": "Get the transcript/captions for a YouTube video with optional language selection. This tool retrieves the full transcript of a video with timestamped captions. Each caption includes the text and its timestamp in the video. Parameters: videoId (required) - The YouTube video ID; language (optional) - Language code for the transcript (e.g., \"en\", \"ko\", \"ja\"). If not specified, the default language for the video will be used. Returns a text with each caption line preceded by its timestamp."
+    },
+    {
+      "name": "get-video-stats",
+      "description": "Get statistical information for a specific YouTube video (views, likes, comments, upload date, etc.)"
+    },
+    {
+      "name": "get-channel-stats",
+      "description": "Get statistical information for a specific YouTube channel (subscriber count, total views, video count, etc.)"
+    },
+    {
+      "name": "compare-videos",
+      "description": "Compare statistics for multiple YouTube videos"
+    },
+    {
+      "name": "get-trending-videos",
+      "description": "Retrieve trending videos by region and category. This helps analyze current popular content trends."
+    },
+    {
+      "name": "get-video-categories",
+      "description": "Retrieve available video categories for a specific region"
+    },
+    {
+      "name": "analyze-channel-videos",
+      "description": "Analyze recent videos from a specific channel to identify performance trends"
+    },
+    {
+      "name": "enhanced-transcript",
+      "description": "Advanced transcript extraction tool with filtering, search, and multi-video capabilities. Provides rich transcript data for detailed analysis and processing. This tool offers multiple advanced features: 1) Extract transcripts from multiple videos in one request; 2) Filter by time ranges to focus on specific parts; 3) Search for specific content within transcripts; 4) Segment transcripts for structural analysis; 5) Format output in different ways (raw, timestamped, merged text); 6) Include video metadata. Parameters: videoIds (required) - Array of YouTube video IDs (up to 5); language (optional) - Language code; format (optional) - Output format (\"raw\", \"timestamped\", \"merged\"); includeMetadata (optional) - Whether to include video details; filters (optional) - Complex filtering options including timeRange, search, and segment."
+    },
+    {
+      "name": "get-key-moments",
+      "description": "Extract key moments with timestamps from a video transcript for easier navigation and summarization. This tool analyzes the video transcript to identify important segments based on content density and creates a structured output with timestamped key moments. Useful for quickly navigating to important parts of longer videos. Parameters: videoId (required) - The YouTube video ID; maxMoments (optional) - Number of key moments to extract (default: 5, max: 10). Returns a formatted text with key moments and their timestamps, plus the full transcript."
+    },
+    {
+      "name": "get-segmented-transcript",
+      "description": "Divide a video transcript into segments for easier analysis and navigation. This tool splits the video into equal time segments and extracts the transcript for each segment with proper timestamps. Ideal for analyzing the structure of longer videos or when you need to focus on specific parts of the content. Parameters: videoId (required) - The YouTube video ID; segmentCount (optional) - Number of segments to divide the video into (default: 4, max: 10). Returns a markdown-formatted text with each segment clearly labeled with time ranges and containing the relevant transcript text."
+    }
+  ]
+}

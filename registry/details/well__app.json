@@ -1,0 +1,33 @@
+{
+  "id": "well/app",
+  "displayName": "Well",
+  "description": "Manage business data including invoices, companies, and contacts through a structured database interface. Discover available data schemas to efficiently query specific records for reporting and dashboarding. Streamline administrative tasks by creating new company profiles and personnel entries directly.",
+  "createdAt": "2026-01-16T07:28:06.524Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/well/app"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "well_get_schema",
+      "description": "Discover available data types and fields.\n\nUSAGE:\n- well_get_schema() → List available roots (invoices, companies, people, documents, connectors)\n- well_get_schema({ root: \"invoices\" }) → List all available fields for invoices\n\nWORKFLOW:\n1. Call well_get_schema(root) to see available fields\n2. Pick the fields you need for your task (typically 5-15)\n3. Call well_query_records with those specific fields\n\nReturns field paths like:\n- \"invoices.grand_total\" → scalar field\n- \"invoices.issuer.name\" → relationship field (company name)\n- \"invoices.receiver.name\" → relationship field\n\nTo use in well_query_records, convert path to array:\n\"invoices.issuer.name\" → [\"invoices\", \"issuer\", \"name\"]"
+    },
+    {
+      "name": "well_query_records",
+      "description": "Query records from Well's database.\n\n⚠️ WORKFLOW:\n1. Call well_get_schema(root) FIRST to discover available fields\n2. Select ONLY the fields you need (5-15 typically)\n3. Call well_query_records with those specific fields\n\nROOTS: invoices, companies, people, documents, connectors\n\nEXAMPLE - Get all invoices for dashboard:\nwell_query_records({\n  root: \"invoices\",\n  fields: [\n    [\"invoices\", \"invoice_number\"],\n    [\"invoices\", \"grand_total\"],\n    [\"invoices\", \"issue_date\"],\n    [\"invoices\", \"issuer\", \"name\"],\n    [\"invoices\", \"receiver\", \"name\"]\n  ],\n  limit: 500\n})\n\n⚠️ RULES:\n- ALWAYS select specific fields (not allFields) for best performance\n- Field paths from schema: \"invoices.issuer.name\" → [\"invoices\", \"issuer\", \"name\"]\n- With specific fields, you can request up to 500 records\n\nReturns { rows, totalCount, success }."
+    },
+    {
+      "name": "well_create_company",
+      "description": "Create a new company in Well.\n\n⚠️ Call well_get_schema(\"companies\") FIRST to discover all available fields and their required status.\n\nREQUIRED: name\nCOMMON FIELDS: domain, description, tax_id, registered_name, trade_name\n\nThe schema may include additional fields - use get_schema to see the complete list."
+    },
+    {
+      "name": "well_create_person",
+      "description": "Create a new person/contact in Well.\n\nREQUIRED: first_name (last_name can be null)\nFIELDS: first_name, last_name, email, phone, job_title\n\nEXAMPLES:\n- Simple: well_create_person({ first_name: \"John\", last_name: \"Doe\" })\n- With email: well_create_person({ first_name: \"John\", last_name: \"Doe\", email: \"john@example.com\" })\n- Full: well_create_person({ first_name: \"John\", last_name: \"Doe\", email: \"john@example.com\", phone: \"+33612345678\", job_title: \"CEO\" })"
+    }
+  ]
+}

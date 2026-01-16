@@ -1,0 +1,78 @@
+{
+  "id": "@knowall-ai/mcp-neo4j-agent-memory",
+  "displayName": "Neo4j Agent Memory Server",
+  "description": "Neo4j Agent Memory enables AI assistants to build and query persistent knowledge graphs. Store information as nodes, create meaningful relationships between them, and search across your connected data. Unlike simple key-value stores, this graph-based approach captures how information relates, providing rich context for more intelligent responses.\n\n### Key Features:\n* **Store facts as nodes** - people, places, organizations, projects, events\n* **Connect with semantic relationships** - KNOWS, WORKS_AT, CREATED, MANAGES\n* **Word-tokenized search** - finds \"John\" OR \"Smith\" when searching \"John Smith\"\n* **Date filtering** - find memories created after specific dates\n* **Multi-hop traversal** - explore connections up to 3 levels deep\n* **Automatic timestamps** - track when memories were created\n* **Flexible schema** - use any label or property you need\n* **Relationship properties** - add context like \"since: 2023\" to connections\n* **10 specialized tools** - search, create, update, delete memories and connections\n* **LLM-friendly design** - simple atomic operations, AI handles the intelligence\n\nBuild persistent, queryable knowledge graphs that grow smarter over time.",
+  "createdAt": "2026-01-16T07:24:26.145Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@knowall-ai/mcp-neo4j-agent-memory"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "neo4jUri": {
+          "type": "string",
+          "description": "The URI for the Neo4j database.",
+          "default": "bolt://localhost:7687"
+        },
+        "neo4jDatabase": {
+          "type": "string",
+          "description": "The database name for Neo4j Enterprise (optional).",
+          "default": "neo4j"
+        },
+        "neo4jPassword": {
+          "type": "string",
+          "description": "The password for the Neo4j database.",
+          "default": ""
+        },
+        "neo4jUsername": {
+          "type": "string",
+          "description": "The username for the Neo4j database.",
+          "default": "neo4j"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_memories",
+      "description": "Search and retrieve memories from the knowledge graph"
+    },
+    {
+      "name": "create_memory",
+      "description": "Create a new memory in the knowledge graph. Consider that the memory might already exist, so Search → Create → Connect (its important to try and connect memories)"
+    },
+    {
+      "name": "create_connection",
+      "description": "Create a connection between two memories (its good to have connected memories)"
+    },
+    {
+      "name": "update_memory",
+      "description": "Update properties of an existing memory such as adding more detail or make a change when you find out something new"
+    },
+    {
+      "name": "update_connection",
+      "description": "Update properties of an existing connection between memories"
+    },
+    {
+      "name": "delete_memory",
+      "description": "Delete a memory and all its connections (use with caution - this permanently removes the memory and all its connections)"
+    },
+    {
+      "name": "delete_connection",
+      "description": "Delete a specific connection between two memories (use with caution - this permanently removes the relationship)"
+    },
+    {
+      "name": "list_memory_labels",
+      "description": "List all unique memory labels currently in use with their counts (useful for getting an overview of the knowledge graph)"
+    },
+    {
+      "name": "get_guidance",
+      "description": "Get help on using the memory tools effectively"
+    }
+  ]
+}

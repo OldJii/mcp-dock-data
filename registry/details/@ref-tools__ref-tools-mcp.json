@@ -1,0 +1,35 @@
+{
+  "id": "@ref-tools/ref-tools-mcp",
+  "displayName": "Ref",
+  "description": "Provide your AI coding tools with token-efficient access to up-to-date technical documentation for APIs, services, libraries, and more. Enable powerful search and reading capabilities to help your agent find precise information from documentation and web pages. \n\nLearn more:  https://ref.tools\n\nHow is this different from Context7?\n- Context7 works by looking up a library and giving you the 10k most relevant tokens. If you have 2 libraries, that's 20k tokens etc. It's unlikely you need all of that and it's costly. Ref uses on average 60% fewer tokens and up to 95% fewer (eg 500 tokens instead of 10000) in some cases.\n- Ref supports indexing private GitHub repos and PDFs so you can bring your own context as well.\n\nWant to chat or have a feature request?\n- Reach out to hello@ref.tools and say hi!",
+  "createdAt": "2026-01-16T07:20:52.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ref-tools/ref-tools-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "refApiKey"
+      ],
+      "properties": {
+        "refApiKey": {
+          "type": "string",
+          "description": "API key for Ref MCP server. Get one from https://ref.tools/keys"
+        },
+        "disableSearchWeb": {
+          "type": "boolean",
+          "description": "Disable the fallback web search tool",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@lekt9/tiktok",
+  "displayName": "tiktok",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:38.802Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lekt9/tiktok"
+  },
+  "connection": null,
+  "capabilities": []
+}

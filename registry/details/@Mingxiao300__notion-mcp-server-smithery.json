@@ -1,0 +1,113 @@
+{
+  "id": "@Mingxiao300/notion-mcp-server-smithery",
+  "displayName": "Notion",
+  "description": "Manage Notion pages and databases from your workflow. Search, read, and update content, properties, and relations across your workspace. Automate tasks like creating pages, querying databases, and appending notes.",
+  "createdAt": "2026-01-16T07:22:56.435Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Mingxiao300/notion-mcp-server-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "notionToken"
+      ],
+      "properties": {
+        "baseUrl": {
+          "type": "string",
+          "description": "Notion API base URL",
+          "default": "https://api.notion.com"
+        },
+        "notionToken": {
+          "type": "string",
+          "description": "Notion integration token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "API-get-user",
+      "description": "Notion | Retrieve a user"
+    },
+    {
+      "name": "API-get-users",
+      "description": "Notion | List all users"
+    },
+    {
+      "name": "API-get-self",
+      "description": "Notion | Retrieve your token's bot user"
+    },
+    {
+      "name": "API-post-database-query",
+      "description": "Notion | Query a database"
+    },
+    {
+      "name": "API-post-search",
+      "description": "Notion | Search by title"
+    },
+    {
+      "name": "API-get-block-children",
+      "description": "Notion | Retrieve block children"
+    },
+    {
+      "name": "API-patch-block-children",
+      "description": "Notion | Append block children"
+    },
+    {
+      "name": "API-retrieve-a-block",
+      "description": "Notion | Retrieve a block"
+    },
+    {
+      "name": "API-update-a-block",
+      "description": "Notion | Update a block"
+    },
+    {
+      "name": "API-delete-a-block",
+      "description": "Notion | Delete a block"
+    },
+    {
+      "name": "API-retrieve-a-page",
+      "description": "Notion | Retrieve a page"
+    },
+    {
+      "name": "API-patch-page",
+      "description": "Notion | Update page properties"
+    },
+    {
+      "name": "API-post-page",
+      "description": "Notion | Create a page"
+    },
+    {
+      "name": "API-create-a-database",
+      "description": "Notion | Create a database"
+    },
+    {
+      "name": "API-update-a-database",
+      "description": "Notion | Update a database"
+    },
+    {
+      "name": "API-retrieve-a-database",
+      "description": "Notion | Retrieve a database"
+    },
+    {
+      "name": "API-retrieve-a-page-property",
+      "description": "Notion | Retrieve a page property item"
+    },
+    {
+      "name": "API-retrieve-a-comment",
+      "description": "Notion | Retrieve comments"
+    },
+    {
+      "name": "API-create-a-comment",
+      "description": "Notion | Create comment"
+    }
+  ]
+}

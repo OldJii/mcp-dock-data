@@ -1,0 +1,154 @@
+{
+  "id": "pocketbase-server",
+  "displayName": "Advanced PocketBase Server",
+  "description": "(Tools Fixed July 28th includes Stripe integration for full SAAS support) An MCP server for interacting with PocketBase databases, offering advanced database operations and schema management.",
+  "createdAt": "2026-01-16T07:23:31.943Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/pocketbase-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "pocketbaseUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging for troubleshooting",
+          "default": false
+        },
+        "smtpHost": {
+          "type": "string",
+          "description": "SMTP host for email sending"
+        },
+        "smtpPass": {
+          "type": "string",
+          "description": "SMTP password for email sending"
+        },
+        "smtpPort": {
+          "type": "number",
+          "description": "SMTP port for email sending"
+        },
+        "smtpUser": {
+          "type": "string",
+          "description": "SMTP username for email sending"
+        },
+        "adminEmail": {
+          "type": "string",
+          "description": "Admin email for elevated operations (enables super admin authentication)"
+        },
+        "adminPassword": {
+          "type": "string",
+          "description": "Admin password for elevated operations"
+        },
+        "pocketbaseUrl": {
+          "type": "string",
+          "description": "PocketBase instance URL (e.g., https://your-pb.com)"
+        },
+        "sendgridApiKey": {
+          "type": "string",
+          "description": "SendGrid API key for advanced email features"
+        },
+        "stripeSecretKey": {
+          "type": "string",
+          "description": "Stripe secret key for payment processing"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Simple health check endpoint"
+    },
+    {
+      "name": "get_server_status",
+      "description": "Get comprehensive server status and configuration"
+    },
+    {
+      "name": "pocketbase_list_collections",
+      "description": "List all PocketBase collections"
+    },
+    {
+      "name": "pocketbase_get_collection",
+      "description": "Get details for a specific PocketBase collection"
+    },
+    {
+      "name": "pocketbase_create_collection",
+      "description": "Create a new PocketBase collection"
+    },
+    {
+      "name": "pocketbase_list_records",
+      "description": "List records from a PocketBase collection"
+    },
+    {
+      "name": "pocketbase_get_record",
+      "description": "Get a specific record from a PocketBase collection"
+    },
+    {
+      "name": "pocketbase_create_record",
+      "description": "Create a new record in a PocketBase collection"
+    },
+    {
+      "name": "pocketbase_update_record",
+      "description": "Update a record in a PocketBase collection"
+    },
+    {
+      "name": "pocketbase_delete_record",
+      "description": "Delete a record from a PocketBase collection"
+    },
+    {
+      "name": "pocketbase_auth_with_password",
+      "description": "Authenticate a user with email and password"
+    },
+    {
+      "name": "pocketbase_register_user",
+      "description": "Register a new user"
+    },
+    {
+      "name": "stripe_create_customer",
+      "description": "Create a new Stripe customer"
+    },
+    {
+      "name": "stripe_create_payment_intent",
+      "description": "Create a payment intent for processing payments"
+    },
+    {
+      "name": "stripe_create_product",
+      "description": "Create a new Stripe product"
+    },
+    {
+      "name": "stripe_create_checkout_session",
+      "description": "Create a Stripe Checkout session"
+    },
+    {
+      "name": "email_send_simple",
+      "description": "Send a simple email"
+    },
+    {
+      "name": "email_create_template",
+      "description": "Create an email template"
+    },
+    {
+      "name": "email_send_templated",
+      "description": "Send an email using a template"
+    },
+    {
+      "name": "email_test_connection",
+      "description": "Test email service connection"
+    },
+    {
+      "name": "list_all_tools",
+      "description": "List all available tools in this server"
+    }
+  ]
+}

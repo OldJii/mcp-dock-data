@@ -1,0 +1,133 @@
+{
+  "id": "@lowkeyrd/servers",
+  "displayName": "GitHub API MCP Server",
+  "description": "Enable seamless file operations, repository management, and advanced search functionalities on GitHub. Automate your workflows with automatic branch creation and comprehensive error handling, all while preserving Git history. Enhance your development experience by integrating GitHub capabilities directly into your applications.",
+  "createdAt": "2026-01-16T07:28:51.817Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lowkeyrd/servers"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "githubPersonalAccessToken"
+      ],
+      "properties": {
+        "githubPersonalAccessToken": {
+          "type": "string",
+          "description": "GitHub Personal Access Token for accessing the GitHub API",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_or_update_file",
+      "description": "Create or update a single file in a GitHub repository"
+    },
+    {
+      "name": "search_repositories",
+      "description": "Search for GitHub repositories"
+    },
+    {
+      "name": "create_repository",
+      "description": "Create a new GitHub repository in your account"
+    },
+    {
+      "name": "get_file_contents",
+      "description": "Get the contents of a file or directory from a GitHub repository"
+    },
+    {
+      "name": "push_files",
+      "description": "Push multiple files to a GitHub repository in a single commit"
+    },
+    {
+      "name": "create_issue",
+      "description": "Create a new issue in a GitHub repository"
+    },
+    {
+      "name": "create_pull_request",
+      "description": "Create a new pull request in a GitHub repository"
+    },
+    {
+      "name": "fork_repository",
+      "description": "Fork a GitHub repository to your account or specified organization"
+    },
+    {
+      "name": "create_branch",
+      "description": "Create a new branch in a GitHub repository"
+    },
+    {
+      "name": "list_commits",
+      "description": "Get list of commits of a branch in a GitHub repository"
+    },
+    {
+      "name": "list_issues",
+      "description": "List issues in a GitHub repository with filtering options"
+    },
+    {
+      "name": "update_issue",
+      "description": "Update an existing issue in a GitHub repository"
+    },
+    {
+      "name": "add_issue_comment",
+      "description": "Add a comment to an existing issue"
+    },
+    {
+      "name": "search_code",
+      "description": "Search for code across GitHub repositories"
+    },
+    {
+      "name": "search_issues",
+      "description": "Search for issues and pull requests across GitHub repositories"
+    },
+    {
+      "name": "search_users",
+      "description": "Search for users on GitHub"
+    },
+    {
+      "name": "get_issue",
+      "description": "Get details of a specific issue in a GitHub repository."
+    },
+    {
+      "name": "get_pull_request",
+      "description": "Get details of a specific pull request"
+    },
+    {
+      "name": "list_pull_requests",
+      "description": "List and filter repository pull requests"
+    },
+    {
+      "name": "create_pull_request_review",
+      "description": "Create a review on a pull request"
+    },
+    {
+      "name": "merge_pull_request",
+      "description": "Merge a pull request"
+    },
+    {
+      "name": "get_pull_request_files",
+      "description": "Get the list of files changed in a pull request"
+    },
+    {
+      "name": "get_pull_request_status",
+      "description": "Get the combined status of all status checks for a pull request"
+    },
+    {
+      "name": "update_pull_request_branch",
+      "description": "Update a pull request branch with the latest changes from the base branch"
+    },
+    {
+      "name": "get_pull_request_comments",
+      "description": "Get the review comments on a pull request"
+    },
+    {
+      "name": "get_pull_request_reviews",
+      "description": "Get the reviews on a pull request"
+    }
+  ]
+}

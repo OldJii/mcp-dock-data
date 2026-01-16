@@ -1,0 +1,25 @@
+{
+  "id": "@nickthelegend/test-mcp",
+  "displayName": "HTML to PDF",
+  "description": "Convert HTML and webpages into polished PDFs in seconds. Create invoices, reports, and archives with consistent layout and branding. Streamline document workflows by automating PDF generation.",
+  "createdAt": "2026-01-16T07:22:58.566Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nickthelegend/test-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "html_to_pdf",
+      "description": "Convert HTML to PDF using Api2Pdf service."
+    },
+    {
+      "name": "mint_nft",
+      "description": "\n        Mint an NFT with metadata image pointing to `url`.\n        Returns: { id, name, url, markdown, policy_id, tx_id }\n        "
+    }
+  ]
+}

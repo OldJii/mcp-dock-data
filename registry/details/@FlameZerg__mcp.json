@@ -1,0 +1,12 @@
+{
+  "id": "@FlameZerg/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:04.269Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FlameZerg/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

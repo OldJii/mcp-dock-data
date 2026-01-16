@@ -1,0 +1,36 @@
+{
+  "id": "@tahaswx/mcp-server-serper-test",
+  "displayName": "Serper Search and Scrape",
+  "description": "Enable powerful web search and content extraction capabilities. Perform web searches and scrape webpage content seamlessly to enhance your applications with real-time data.",
+  "createdAt": "2026-01-16T07:28:03.975Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tahaswx/mcp-server-serper-test"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "serperApiKey"
+      ],
+      "properties": {
+        "serperApiKey": {
+          "type": "string",
+          "description": "The API key for the Serper MCP server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "google_search",
+      "description": "Tool to perform web searches via Serper API and retrieve rich results. It is able to retrieve organic search results, people also ask, related searches, and knowledge graph."
+    },
+    {
+      "name": "scrape",
+      "description": "Tool to scrape a webpage and retrieve the text and, optionally, the markdown content. It will retrieve also the JSON-LD metadata and the head metadata."
+    }
+  ]
+}

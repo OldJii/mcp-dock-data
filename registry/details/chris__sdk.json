@@ -1,0 +1,49 @@
+{
+  "id": "chris/sdk",
+  "displayName": "sdk",
+  "description": "Analyze your project to detect its language and deployment needs. Generate and validate Smithery-ready configuration, with the option to initialize files when you approve. Follow a guided workflow to convert existing setups and deploy with confidence.",
+  "createdAt": "2026-01-16T07:24:05.574Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/sdk"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "detect",
+      "description": "Analyze a directory to detect the type of MCP server (TypeScript, Python, or container) and extract configuration details"
+    },
+    {
+      "name": "generate_config",
+      "description": "Generate smithery.yaml and other deployment files for an MCP server without writing to disk. Returns the file contents."
+    },
+    {
+      "name": "init",
+      "description": "Initialize Smithery deployment by writing smithery.yaml and other required files to disk. Requires allowWrite=true in config."
+    },
+    {
+      "name": "validate",
+      "description": "Validate that an MCP server is properly configured for Smithery deployment"
+    },
+    {
+      "name": "guide",
+      "description": "Get a detailed guide for transforming an MCP server to be Smithery-compatible"
+    },
+    {
+      "name": "list_files",
+      "description": "List relevant files in a directory to understand the project structure"
+    },
+    {
+      "name": "read_file",
+      "description": "Read the contents of a file in the project"
+    },
+    {
+      "name": "deploy_from_git",
+      "description": "Clone a git repository, generate Smithery deployment files, and push to GitHub for automatic deployment via Smithery's GitHub App. Requires githubToken in server config."
+    }
+  ]
+}

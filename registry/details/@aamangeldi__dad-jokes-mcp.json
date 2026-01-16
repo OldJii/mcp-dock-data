@@ -1,0 +1,31 @@
+{
+  "id": "@aamangeldi/dad-jokes-mcp",
+  "displayName": "Dad Jokes",
+  "description": "Get a random dad joke whenever you need a quick laugh. Search jokes by keyword or pull up a specific favorite. Add lighthearted humor to chats, demos, and prototypes in seconds.",
+  "createdAt": "2026-01-16T07:23:09.064Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aamangeldi/dad-jokes-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_random_joke_tool",
+      "description": "Get a random dad joke from icanhazdadjoke.com"
+    },
+    {
+      "name": "search_jokes_tool",
+      "description": "\n        Search for dad jokes by keyword or phrase.\n\n        Args:\n            term: Search term to find jokes\n            limit: Number of jokes to return (default: 5, max: 30)\n        "
+    },
+    {
+      "name": "get_joke_by_id_tool",
+      "description": "\n        Get a specific dad joke by its ID.\n\n        Args:\n            joke_id: The ID of the joke to retrieve\n        "
+    }
+  ]
+}

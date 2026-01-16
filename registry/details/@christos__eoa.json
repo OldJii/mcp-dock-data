@@ -1,0 +1,21 @@
+{
+  "id": "@christos/eoa",
+  "displayName": "Zuplo",
+  "description": "Retrieve insurance profiles on demand to enrich customer workflows. Access up-to-date account details securely and quickly. Simplify profile lookups across your systems.",
+  "createdAt": "2026-01-16T07:32:11.065Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@christos/eoa"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "retrieveInsProfile",
+      "description": "Authenticate using headers:\n- AUSER: Username\n- APASSWORD: Password\n"
+    }
+  ]
+}

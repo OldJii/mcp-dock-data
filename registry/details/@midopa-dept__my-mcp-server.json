@@ -1,0 +1,40 @@
+{
+  "id": "@midopa-dept/my-mcp-server",
+  "displayName": "Greetings & Utilities",
+  "description": "Send personalized greetings in your chosen language. Perform quick calculations, check the current time by time zone, and generate images from text prompts. Create tailored code review prompts to improve code quality.",
+  "createdAt": "2026-01-16T07:29:49.560Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@midopa-dept/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자의 이름과 언어를 입력받아 해당 언어로 인사합니다"
+    },
+    {
+      "name": "calculator",
+      "description": "두 개의 숫자를 입력받아 연산자에 따라 사칙연산 결과를 반환합니다"
+    },
+    {
+      "name": "getCurrentTime",
+      "description": "유저의 Time Zone에 따라 현재 시간을 알려줍니다"
+    },
+    {
+      "name": "generateImage",
+      "description": "텍스트 프롬프트를 입력받아 AI 이미지를 생성합니다"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/iconify-icon",
+  "displayName": "iconify-icon",
+  "description": "Browse 200,000+ open-source vector icons across 200+ sets. Search and filter by collection or name to find the perfect icon fast. Get ready-to-use code snippets for React, Vue, Svelte, and more.",
+  "createdAt": "2026-01-16T07:25:33.827Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/iconify-icon"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_all_icon_sets",
+      "description": "Browse all available icon collections from Iconify (200+ icon sets with 200,000+ icons). Returns a list of all icon sets with their metadata including name, total icons, author, license, and sample icons."
+    },
+    {
+      "name": "get_icon_set",
+      "description": "Retrieve detailed information about a specific icon set including all available icons in that set. Provide the icon set prefix (e.g., 'mdi', 'fa', 'bi')."
+    },
+    {
+      "name": "search_icons",
+      "description": "Search through Iconify's icon collection with flexible query parameters. Returns matching icons from all icon sets or a specific set."
+    },
+    {
+      "name": "get_icon_data",
+      "description": "Retrieve specific icon data with usage examples for popular frameworks (React, Vue, Svelte, etc.). Provide the full icon name in format 'prefix:icon-name' (e.g., 'mdi:home', 'fa:user')."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@GlacierEQ/mcp-sovereign-deployment-complete",
+  "displayName": "mcp-sovereign-deployment-complete",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:01.275Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GlacierEQ/mcp-sovereign-deployment-complete"
+  },
+  "connection": null,
+  "capabilities": []
+}

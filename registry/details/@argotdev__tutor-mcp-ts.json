@@ -1,0 +1,12 @@
+{
+  "id": "@argotdev/tutor-mcp-ts",
+  "displayName": "tutor-mcp-ts",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:32.236Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@argotdev/tutor-mcp-ts"
+  },
+  "connection": null,
+  "capabilities": []
+}

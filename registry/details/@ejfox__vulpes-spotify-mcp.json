@@ -1,0 +1,83 @@
+{
+  "id": "@ejfox/vulpes-spotify-mcp",
+  "displayName": "Vulpes Spotify Server",
+  "description": "Enable AI assistants to search, play, and control Spotify tracks and playlists seamlessly. Access your Spotify playback devices, currently playing track info, and manage playlists directly through AI interactions. Enhance your music experience by integrating Spotify controls into your AI workflows.",
+  "createdAt": "2026-01-16T07:32:45.235Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ejfox/vulpes-spotify-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "spotifyClientId",
+        "spotifyClientSecret",
+        "spotifyRedirectUri",
+        "spotifyRefreshToken"
+      ],
+      "properties": {
+        "spotifyClientId": {
+          "type": "string",
+          "description": "Your Spotify API Client ID"
+        },
+        "spotifyRedirectUri": {
+          "type": "string",
+          "description": "Your Spotify Redirect URI"
+        },
+        "spotifyClientSecret": {
+          "type": "string",
+          "description": "Your Spotify API Client Secret"
+        },
+        "spotifyRefreshToken": {
+          "type": "string",
+          "description": "Your Spotify Refresh Token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "spotify-search",
+      "description": "Search for tracks on Spotify by query (artist, track name, etc.)"
+    },
+    {
+      "name": "spotify-play",
+      "description": "Play a specific track by ID or URI"
+    },
+    {
+      "name": "spotify-currently-playing",
+      "description": "Get the currently playing track"
+    },
+    {
+      "name": "spotify-devices",
+      "description": "Get available Spotify playback devices"
+    },
+    {
+      "name": "spotify-playlists",
+      "description": "Get a list of the user's Spotify playlists"
+    },
+    {
+      "name": "spotify-playlist-tracks",
+      "description": "Get tracks from a specific playlist"
+    },
+    {
+      "name": "spotify-play-playlist",
+      "description": "Play a specific playlist (with optional shuffle)"
+    },
+    {
+      "name": "spotify-search-and-play",
+      "description": "Search for a track and play the top result"
+    },
+    {
+      "name": "spotify-find-playlist",
+      "description": "Find a playlist by name and play it (with optional shuffle)"
+    },
+    {
+      "name": "spotify-debug",
+      "description": "Debug Spotify configuration and connection"
+    }
+  ]
+}

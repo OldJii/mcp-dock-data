@@ -1,0 +1,12 @@
+{
+  "id": "go2/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:14.540Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/go2/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

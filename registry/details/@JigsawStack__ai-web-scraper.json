@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/ai-web-scraper",
+  "displayName": "JigsawStack AI Web Scraper",
+  "description": "Scrape any website instantly and get consistent structured data in seconds without writing any css selector code, check out API documentation here: https://jigsawstack.com/docs/api-reference/ai/scrape Get your API key here: https://jigsawstack.com/dashboard/",
+  "createdAt": "2026-01-16T07:33:06.195Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/ai-web-scraper"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ai-scraper",
+      "description": "Scrape a website"
+    }
+  ]
+}

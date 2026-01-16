@@ -1,0 +1,12 @@
+{
+  "id": "@inchan/other-agents",
+  "displayName": "other-agents",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:12.168Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@inchan/other-agents"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@BingoWon/apple-rag-mcp",
+  "displayName": "apple-rag-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:47.793Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BingoWon/apple-rag-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

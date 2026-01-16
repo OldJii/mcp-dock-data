@@ -1,0 +1,565 @@
+{
+  "id": "@mario-andreschak/mcp-abap-abap-adt-api",
+  "displayName": "ABAP-ADT-API MCP-Server",
+  "description": "1:1 wrapping of abap-adt-api into a MCP server.",
+  "createdAt": "2026-01-16T07:29:09.474Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mario-andreschak/mcp-abap-abap-adt-api"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "sapUrl",
+        "sapUser",
+        "sapPassword"
+      ],
+      "properties": {
+        "sapUrl": {
+          "type": "string",
+          "description": "URL of the SAP server."
+        },
+        "sapUser": {
+          "type": "string",
+          "description": "SAP username."
+        },
+        "sapClient": {
+          "type": "string",
+          "description": "SAP client number. Optional.",
+          "default": ""
+        },
+        "sapLanguage": {
+          "type": "string",
+          "description": "SAP language code. Optional.",
+          "default": ""
+        },
+        "sapPassword": {
+          "type": "string",
+          "description": "SAP password."
+        },
+        "nodeTlsRejectUnauthorized": {
+          "type": "boolean",
+          "description": "Set to false to ignore self-signed certificates. Optional.",
+          "default": true
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "login",
+      "description": "Authenticate with ABAP system"
+    },
+    {
+      "name": "logout",
+      "description": "Terminate ABAP session"
+    },
+    {
+      "name": "dropSession",
+      "description": "Clear local session cache"
+    },
+    {
+      "name": "transportInfo",
+      "description": "Get transport information for an object source"
+    },
+    {
+      "name": "createTransport",
+      "description": "Create a new transport request"
+    },
+    {
+      "name": "hasTransportConfig",
+      "description": "Check if transport configuration exists"
+    },
+    {
+      "name": "transportConfigurations",
+      "description": "Retrieves transport configurations."
+    },
+    {
+      "name": "getTransportConfiguration",
+      "description": "Retrieves a specific transport configuration."
+    },
+    {
+      "name": "setTransportsConfig",
+      "description": "Sets transport configurations."
+    },
+    {
+      "name": "createTransportsConfig",
+      "description": "Creates transport configurations."
+    },
+    {
+      "name": "userTransports",
+      "description": "Retrieves transports for a user."
+    },
+    {
+      "name": "transportsByConfig",
+      "description": "Retrieves transports by configuration."
+    },
+    {
+      "name": "transportDelete",
+      "description": "Deletes a transport."
+    },
+    {
+      "name": "transportRelease",
+      "description": "Releases a transport."
+    },
+    {
+      "name": "transportSetOwner",
+      "description": "Sets the owner of a transport."
+    },
+    {
+      "name": "transportAddUser",
+      "description": "Adds a user to a transport."
+    },
+    {
+      "name": "systemUsers",
+      "description": "Retrieves a list of system users."
+    },
+    {
+      "name": "transportReference",
+      "description": "Retrieves a transport reference."
+    },
+    {
+      "name": "objectStructure",
+      "description": "Get object structure details"
+    },
+    {
+      "name": "searchObject",
+      "description": "Search for objects"
+    },
+    {
+      "name": "findObjectPath",
+      "description": "Find path for an object"
+    },
+    {
+      "name": "objectTypes",
+      "description": "Retrieves object types."
+    },
+    {
+      "name": "reentranceTicket",
+      "description": "Retrieves a reentrance ticket."
+    },
+    {
+      "name": "classIncludes",
+      "description": "Get class includes structure"
+    },
+    {
+      "name": "classComponents",
+      "description": "List class components"
+    },
+    {
+      "name": "createTestInclude",
+      "description": "Create test include for class"
+    },
+    {
+      "name": "syntaxCheckCode",
+      "description": "Perform ABAP syntax check with source code"
+    },
+    {
+      "name": "syntaxCheckCdsUrl",
+      "description": "Perform ABAP syntax check with CDS URL"
+    },
+    {
+      "name": "codeCompletion",
+      "description": "Get code completion suggestions"
+    },
+    {
+      "name": "findDefinition",
+      "description": "Find symbol definition"
+    },
+    {
+      "name": "usageReferences",
+      "description": "Find symbol references"
+    },
+    {
+      "name": "syntaxCheckTypes",
+      "description": "Retrieves syntax check types."
+    },
+    {
+      "name": "codeCompletionFull",
+      "description": "Performs full code completion."
+    },
+    {
+      "name": "runClass",
+      "description": "Runs a class."
+    },
+    {
+      "name": "codeCompletionElement",
+      "description": "Retrieves code completion element information."
+    },
+    {
+      "name": "usageReferenceSnippets",
+      "description": "Retrieves usage reference snippets."
+    },
+    {
+      "name": "fixProposals",
+      "description": "Retrieves fix proposals."
+    },
+    {
+      "name": "fixEdits",
+      "description": "Applies fix edits."
+    },
+    {
+      "name": "fragmentMappings",
+      "description": "Retrieves fragment mappings."
+    },
+    {
+      "name": "abapDocumentation",
+      "description": "Retrieves ABAP documentation."
+    },
+    {
+      "name": "lock",
+      "description": "Lock an object"
+    },
+    {
+      "name": "unLock",
+      "description": "Unlock an object"
+    },
+    {
+      "name": "getObjectSource",
+      "description": "Retrieves source code for ABAP objects"
+    },
+    {
+      "name": "setObjectSource",
+      "description": "Sets source code for ABAP objects"
+    },
+    {
+      "name": "deleteObject",
+      "description": "Deletes an ABAP object from the system"
+    },
+    {
+      "name": "activateObjects",
+      "description": "Activate ABAP objects using object references"
+    },
+    {
+      "name": "activateByName",
+      "description": "Activate an ABAP object using name and URL"
+    },
+    {
+      "name": "inactiveObjects",
+      "description": "Get list of inactive objects"
+    },
+    {
+      "name": "objectRegistrationInfo",
+      "description": "Get registration information for an ABAP object"
+    },
+    {
+      "name": "validateNewObject",
+      "description": "Validate parameters for a new ABAP object"
+    },
+    {
+      "name": "createObject",
+      "description": "Create a new ABAP object"
+    },
+    {
+      "name": "nodeContents",
+      "description": "Retrieves the contents of a node in the ABAP repository tree."
+    },
+    {
+      "name": "mainPrograms",
+      "description": "Retrieves the main programs for a given include."
+    },
+    {
+      "name": "featureDetails",
+      "description": "Retrieves details for a given feature."
+    },
+    {
+      "name": "collectionFeatureDetails",
+      "description": "Retrieves details for a given collection feature."
+    },
+    {
+      "name": "findCollectionByUrl",
+      "description": "Finds a collection by its URL."
+    },
+    {
+      "name": "loadTypes",
+      "description": "Loads object types."
+    },
+    {
+      "name": "adtDiscovery",
+      "description": "Performs ADT discovery."
+    },
+    {
+      "name": "adtCoreDiscovery",
+      "description": "Performs ADT core discovery."
+    },
+    {
+      "name": "adtCompatibiliyGraph",
+      "description": "Retrieves the ADT compatibility graph."
+    },
+    {
+      "name": "unitTestRun",
+      "description": "Runs unit tests."
+    },
+    {
+      "name": "unitTestEvaluation",
+      "description": "Evaluates unit test results."
+    },
+    {
+      "name": "unitTestOccurrenceMarkers",
+      "description": "Retrieves unit test occurrence markers."
+    },
+    {
+      "name": "createTestInclude",
+      "description": "Creates a test include for a class."
+    },
+    {
+      "name": "prettyPrinterSetting",
+      "description": "Retrieves the pretty printer settings."
+    },
+    {
+      "name": "setPrettyPrinterSetting",
+      "description": "Sets the pretty printer settings."
+    },
+    {
+      "name": "prettyPrinter",
+      "description": "Formats ABAP code using the pretty printer."
+    },
+    {
+      "name": "gitRepos",
+      "description": "Retrieves a list of Git repositories."
+    },
+    {
+      "name": "gitExternalRepoInfo",
+      "description": "Retrieves information about an external Git repository."
+    },
+    {
+      "name": "gitCreateRepo",
+      "description": "Creates a new Git repository."
+    },
+    {
+      "name": "gitPullRepo",
+      "description": "Pulls changes from a Git repository."
+    },
+    {
+      "name": "gitUnlinkRepo",
+      "description": "Unlinks a Git repository."
+    },
+    {
+      "name": "stageRepo",
+      "description": "Stages changes in a Git repository."
+    },
+    {
+      "name": "pushRepo",
+      "description": "Pushes changes to a Git repository."
+    },
+    {
+      "name": "checkRepo",
+      "description": "Checks a Git repository."
+    },
+    {
+      "name": "remoteRepoInfo",
+      "description": "Retrieves information about a remote Git repository."
+    },
+    {
+      "name": "switchRepoBranch",
+      "description": "Switches the branch of a Git repository."
+    },
+    {
+      "name": "annotationDefinitions",
+      "description": "Retrieves annotation definitions."
+    },
+    {
+      "name": "ddicElement",
+      "description": "Retrieves information about a DDIC element."
+    },
+    {
+      "name": "ddicRepositoryAccess",
+      "description": "Accesses the DDIC repository."
+    },
+    {
+      "name": "packageSearchHelp",
+      "description": "Performs a package search help."
+    },
+    {
+      "name": "publishServiceBinding",
+      "description": "Publishes a service binding."
+    },
+    {
+      "name": "unPublishServiceBinding",
+      "description": "Unpublishes a service binding."
+    },
+    {
+      "name": "bindingDetails",
+      "description": "Retrieves details of a service binding."
+    },
+    {
+      "name": "tableContents",
+      "description": "Retrieves the contents of an ABAP table."
+    },
+    {
+      "name": "runQuery",
+      "description": "Runs a SQL query on the target system."
+    },
+    {
+      "name": "feeds",
+      "description": "Retrieves a list of feeds."
+    },
+    {
+      "name": "dumps",
+      "description": "Retrieves a list of dumps."
+    },
+    {
+      "name": "debuggerListeners",
+      "description": "Retrieves a list of debugger listeners."
+    },
+    {
+      "name": "debuggerListen",
+      "description": "Listens for debugging events."
+    },
+    {
+      "name": "debuggerDeleteListener",
+      "description": "Stops a debug listener."
+    },
+    {
+      "name": "debuggerSetBreakpoints",
+      "description": "Sets breakpoints."
+    },
+    {
+      "name": "debuggerDeleteBreakpoints",
+      "description": "Deletes breakpoints."
+    },
+    {
+      "name": "debuggerAttach",
+      "description": "Attaches the debugger."
+    },
+    {
+      "name": "debuggerSaveSettings",
+      "description": "Saves debugger settings."
+    },
+    {
+      "name": "debuggerStackTrace",
+      "description": "Retrieves the debugger stack trace."
+    },
+    {
+      "name": "debuggerVariables",
+      "description": "Retrieves debugger variables."
+    },
+    {
+      "name": "debuggerChildVariables",
+      "description": "Retrieves child variables of a debugger variable."
+    },
+    {
+      "name": "debuggerStep",
+      "description": "Performs a debugger step."
+    },
+    {
+      "name": "debuggerGoToStack",
+      "description": "Navigates to a specific stack entry in the debugger."
+    },
+    {
+      "name": "debuggerSetVariableValue",
+      "description": "Sets the value of a debugger variable."
+    },
+    {
+      "name": "renameEvaluate",
+      "description": "Evaluates a rename refactoring."
+    },
+    {
+      "name": "renamePreview",
+      "description": "Previews a rename refactoring."
+    },
+    {
+      "name": "renameExecute",
+      "description": "Executes a rename refactoring."
+    },
+    {
+      "name": "atcCustomizing",
+      "description": "Retrieves ATC customizing information."
+    },
+    {
+      "name": "atcCheckVariant",
+      "description": "Retrieves information about an ATC check variant."
+    },
+    {
+      "name": "createAtcRun",
+      "description": "Creates an ATC run."
+    },
+    {
+      "name": "atcWorklists",
+      "description": "Retrieves ATC worklists."
+    },
+    {
+      "name": "atcUsers",
+      "description": "Retrieves a list of ATC users."
+    },
+    {
+      "name": "atcExemptProposal",
+      "description": "Retrieves an ATC exemption proposal."
+    },
+    {
+      "name": "atcRequestExemption",
+      "description": "Requests an ATC exemption."
+    },
+    {
+      "name": "isProposalMessage",
+      "description": "Checks if a given object is a proposal message."
+    },
+    {
+      "name": "atcContactUri",
+      "description": "Retrieves the contact URI for an ATC finding."
+    },
+    {
+      "name": "atcChangeContact",
+      "description": "Changes the contact for an ATC finding."
+    },
+    {
+      "name": "tracesList",
+      "description": "Retrieves a list of traces."
+    },
+    {
+      "name": "tracesListRequests",
+      "description": "Retrieves a list of trace requests."
+    },
+    {
+      "name": "tracesHitList",
+      "description": "Retrieves the hit list for a trace."
+    },
+    {
+      "name": "tracesDbAccess",
+      "description": "Retrieves database access information for a trace."
+    },
+    {
+      "name": "tracesStatements",
+      "description": "Retrieves statements for a trace."
+    },
+    {
+      "name": "tracesSetParameters",
+      "description": "Sets trace parameters."
+    },
+    {
+      "name": "tracesCreateConfiguration",
+      "description": "Creates a trace configuration."
+    },
+    {
+      "name": "tracesDeleteConfiguration",
+      "description": "Deletes a trace configuration."
+    },
+    {
+      "name": "tracesDelete",
+      "description": "Deletes a trace."
+    },
+    {
+      "name": "extractMethodEvaluate",
+      "description": "Evaluates an extract method refactoring."
+    },
+    {
+      "name": "extractMethodPreview",
+      "description": "Previews an extract method refactoring."
+    },
+    {
+      "name": "extractMethodExecute",
+      "description": "Executes an extract method refactoring."
+    },
+    {
+      "name": "revisions",
+      "description": "Retrieves revisions for an object."
+    },
+    {
+      "name": "healthcheck",
+      "description": "Check server health and connectivity"
+    }
+  ]
+}

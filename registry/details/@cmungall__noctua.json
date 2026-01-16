@@ -1,0 +1,12 @@
+{
+  "id": "@cmungall/noctua",
+  "displayName": "noctua",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:00.011Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cmungall/noctua"
+  },
+  "connection": null,
+  "capabilities": []
+}

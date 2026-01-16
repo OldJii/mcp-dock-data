@@ -1,0 +1,72 @@
+{
+  "id": "@rainbowgore/stealthee-mcp-tools",
+  "displayName": "Stealth Launch Radar",
+  "description": "Spot pre-launch products before they trend. Search the web and tech sites, extract and parse pages, and score signals to prioritize promising launches. Automate end-to-end detection and receive alerts for high-confidence leads.",
+  "createdAt": "2026-01-16T07:27:15.813Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rainbowgore/stealthee-mcp-tools"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "required": [
+        "tavily_api_key",
+        "openai_api_key"
+      ],
+      "properties": {
+        "nimble_api_key": {
+          "type": "string",
+          "description": "Nimble API key for parsing",
+          "default": null
+        },
+        "openai_api_key": {
+          "type": "string",
+          "description": "OpenAI API key for AI scoring"
+        },
+        "tavily_api_key": {
+          "type": "string",
+          "description": "Tavily API key for web search"
+        },
+        "slack_webhook_url": {
+          "type": "string",
+          "description": "Slack webhook for alerts",
+          "default": null
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "web_search",
+      "description": "Search the web for information about stealth product launches."
+    },
+    {
+      "name": "url_extract",
+      "description": "Extract and clean text content from a given URL."
+    },
+    {
+      "name": "score_signal",
+      "description": "Score a textual signal for likelihood of being a stealth product launch."
+    },
+    {
+      "name": "search_tech_sites",
+      "description": "Search tech news sites and Product Hunt for stealth launches."
+    },
+    {
+      "name": "batch_score_signals",
+      "description": "Score multiple signals for stealth launch likelihood in batch."
+    },
+    {
+      "name": "parse_fields",
+      "description": "Extract structured stealth-launch indicators from raw HTML using Nimble's AI Parsing Skills."
+    },
+    {
+      "name": "run_pipeline",
+      "description": "End-to-end detection pipeline for stealth product launches."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "@ALWcreations/geobed",
+  "displayName": "Geobed",
+  "description": "Browse all registered domains and retrieve details for any domain by name. Speed up research, audits, and documentation with quick access to domain metadata. Keep your domain catalog organized and accessible within your workflows.",
+  "createdAt": "2026-01-16T07:21:47.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ALWcreations/geobed"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-domains",
+      "description": "Returns a list of registered domains with info"
+    },
+    {
+      "name": "get-domain",
+      "description": "Get info about a specific domain by name"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@wtfisai/smithery-mcp",
+  "displayName": "smithery-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:33.315Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wtfisai/smithery-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

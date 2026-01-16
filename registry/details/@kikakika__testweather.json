@@ -1,0 +1,12 @@
+{
+  "id": "@kikakika/testweather",
+  "displayName": "testweather",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:12.863Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kikakika/testweather"
+  },
+  "connection": null,
+  "capabilities": []
+}

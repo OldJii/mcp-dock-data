@@ -1,0 +1,37 @@
+{
+  "id": "@hahongchul/mcp-server",
+  "displayName": "mcp-server",
+  "description": "Perform fast arithmetic for sums, differences, products, and quotients. Save time and reduce errors in everyday calculations. Ensure consistent numeric results across your tasks.",
+  "createdAt": "2026-01-16T07:26:24.527Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hahongchul/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add",
+      "description": "두 숫자의 합을 반환합니다."
+    },
+    {
+      "name": "multiply",
+      "description": "두 숫자의 곱을 반환합니다."
+    },
+    {
+      "name": "subtract",
+      "description": "두 숫자의 차를 반환합니다."
+    },
+    {
+      "name": "divide",
+      "description": "두 숫자의 나눗셈 결과를 반환합니다. b가 0이면 예외를 발생시킵니다."
+    }
+  ]
+}

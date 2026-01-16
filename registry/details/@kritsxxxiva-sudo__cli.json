@@ -1,0 +1,12 @@
+{
+  "id": "@kritsxxxiva-sudo/cli",
+  "displayName": "cli",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:47.998Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kritsxxxiva-sudo/cli"
+  },
+  "connection": null,
+  "capabilities": []
+}

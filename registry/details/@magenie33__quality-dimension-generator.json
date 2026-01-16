@@ -1,0 +1,52 @@
+{
+  "id": "@magenie33/quality-dimension-generator",
+  "displayName": "Quality Dimension Generator",
+  "description": "Generate tailored quality criteria and scoring guides from your task descriptions. Refine objectives, produce 6-8-10 benchmarks across configurable dimensions, and save both the refined task and the rubric for consistent evaluations. Streamline reviews with clear, reusable standards.",
+  "createdAt": "2026-01-16T07:23:10.361Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@magenie33/quality-dimension-generator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "enabledTools": {
+          "type": "array",
+          "description": "List of tools to enable"
+        },
+        "expectedScore": {
+          "type": "number",
+          "description": "Expected target score for quality evaluation (0-10 scale, default: 8)",
+          "default": 8
+        },
+        "dimensionCount": {
+          "type": "number",
+          "description": "Number of quality dimensions to generate (default: 5)",
+          "default": 5
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_task_analysis_prompt",
+      "description": "Generate task analysis prompt for LLM to analyze core tasks in user conversations"
+    },
+    {
+      "name": "generate_quality_dimensions_prompt",
+      "description": "Generate quality dimensions prompt based on task analysis. Uses default target score from configuration or task complexity to determine evaluation strictness."
+    }
+  ]
+}

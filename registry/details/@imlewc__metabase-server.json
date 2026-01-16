@@ -1,0 +1,86 @@
+{
+  "id": "@imlewc/metabase-server",
+  "displayName": "Metabase Integration Server",
+  "description": "Interact with Metabase seamlessly. Access dashboards, execute queries, and retrieve data directly from your Metabase instance, enhancing your AI assistant's capabilities.",
+  "createdAt": "2026-01-16T07:23:30.334Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@imlewc/metabase-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "metabaseUrl",
+        "metabaseUsername",
+        "metabasePassword"
+      ],
+      "properties": {
+        "metabaseUrl": {
+          "type": "string",
+          "description": "URL of the Metabase instance (e.g. https://your-metabase-instance.com)"
+        },
+        "metabasePassword": {
+          "type": "string",
+          "description": "Password for authenticating with Metabase"
+        },
+        "metabaseUsername": {
+          "type": "string",
+          "description": "Username for authenticating with Metabase"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_dashboards",
+      "description": "List all dashboards in Metabase"
+    },
+    {
+      "name": "list_cards",
+      "description": "List all questions/cards in Metabase"
+    },
+    {
+      "name": "list_databases",
+      "description": "List all databases in Metabase"
+    },
+    {
+      "name": "execute_card",
+      "description": "Execute a Metabase question/card and get results"
+    },
+    {
+      "name": "get_dashboard_cards",
+      "description": "Get all cards in a dashboard"
+    },
+    {
+      "name": "execute_query",
+      "description": "Execute a SQL query against a Metabase database"
+    },
+    {
+      "name": "create_card",
+      "description": "Create a new Metabase question (card)."
+    },
+    {
+      "name": "update_card",
+      "description": "Update an existing Metabase question (card)."
+    },
+    {
+      "name": "delete_card",
+      "description": "Delete a Metabase question (card)."
+    },
+    {
+      "name": "create_dashboard",
+      "description": "Create a new Metabase dashboard."
+    },
+    {
+      "name": "update_dashboard",
+      "description": "Update an existing Metabase dashboard."
+    },
+    {
+      "name": "delete_dashboard",
+      "description": "Delete a Metabase dashboard."
+    }
+  ]
+}

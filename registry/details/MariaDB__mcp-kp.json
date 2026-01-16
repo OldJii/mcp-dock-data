@@ -1,0 +1,12 @@
+{
+  "id": "MariaDB/mcp-kp",
+  "displayName": "mcp-kp",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:11.992Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/MariaDB/mcp-kp"
+  },
+  "connection": null,
+  "capabilities": []
+}

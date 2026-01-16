@@ -1,0 +1,12 @@
+{
+  "id": "@mayla-debug/google-calendar",
+  "displayName": "google-calendar",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:17.958Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mayla-debug/google-calendar"
+  },
+  "connection": null,
+  "capabilities": []
+}

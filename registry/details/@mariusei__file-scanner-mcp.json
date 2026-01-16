@@ -1,0 +1,45 @@
+{
+  "id": "@mariusei/file-scanner-mcp",
+  "displayName": "Scantool - File Structure Explorer",
+  "description": "Scan files and directories to map code structure and navigate large codebases faster. See a compact overview of key elements to decide what to read next. Search for specific structures—like tests, async methods, or dataclasses—to target exploration and refactoring.",
+  "createdAt": "2026-01-16T07:21:08.619Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mariusei/file-scanner-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "preview_directory",
+      "description": "Preview directory with intelligent code analysis - PRIMARY TOOL for understanding codebases (5-10s, includes hot functions, replaces ls/find/grep)"
+    },
+    {
+      "name": "code_map",
+      "description": "[DEPRECATED] Use preview_directory() instead - Same functionality, better UX"
+    },
+    {
+      "name": "list_directories",
+      "description": "List directory tree structure (folders only, no files) - USE THIS to see folder hierarchy"
+    },
+    {
+      "name": "scan_file_content",
+      "description": "Scan file content directly - USE THIS for remote files, GitHub, APIs instead of saving to disk first"
+    },
+    {
+      "name": "scan_file",
+      "description": "Scan local file structure - USE THIS BEFORE Read to get overview with line numbers"
+    },
+    {
+      "name": "scan_directory",
+      "description": "Scan directory structure - USE THIS INSTEAD of Glob when you want to see both file tree AND code structure"
+    },
+    {
+      "name": "search_structures",
+      "description": "Search code structures - USE THIS INSTEAD of Grep when searching for classes, functions, or methods by name/type/decorator"
+    }
+  ]
+}

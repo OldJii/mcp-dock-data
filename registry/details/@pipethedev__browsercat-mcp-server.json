@@ -1,0 +1,45 @@
+{
+  "id": "@pipethedev/browsercat-mcp-server",
+  "displayName": "BrowserCat Remote Browser Automation",
+  "description": "Enable LLMs to automate web browsing tasks remotely using BrowserCat's cloud browser service. Interact with web pages by navigating, clicking, filling forms, taking screenshots, and executing JavaScript without local browser installation. Monitor console logs and capture screenshots seamlessly for enhanced web interaction workflows.",
+  "createdAt": "2026-01-16T07:32:38.650Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pipethedev/browsercat-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "browsercat_navigate",
+      "description": "Navigate to a URL"
+    },
+    {
+      "name": "browsercat_screenshot",
+      "description": "Take a screenshot of the current page or a specific element"
+    },
+    {
+      "name": "browsercat_click",
+      "description": "Click an element on the page"
+    },
+    {
+      "name": "browsercat_fill",
+      "description": "Fill out an input field"
+    },
+    {
+      "name": "browsercat_select",
+      "description": "Select an option from a dropdown menu"
+    },
+    {
+      "name": "browsercat_hover",
+      "description": "Hover over an element on the page"
+    },
+    {
+      "name": "browsercat_evaluate",
+      "description": "Execute JavaScript in the browser console"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "mona/ultrahuman",
+  "displayName": "ultrahuman",
+  "description": "Access Ultrahuman metrics to monitor sleep, recovery, steps, heart rate, HRV, temperature, glucose, and metabolic score. Get rich sleep summaries with efficiency, HR/HRV quick stats, and stage breakdowns, plus daylong step counts. Track daily trends to guide training, wellness decisions, and personalized coaching.",
+  "createdAt": "2026-01-16T07:22:24.913Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mona/ultrahuman"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "authorizationKey",
+        "email"
+      ],
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "Email of the user whose data to access (e.g., user@example.com)"
+        },
+        "authorizationKey": {
+          "type": "string",
+          "description": "Ultrahuman API Authorization key provided by Ultrahuman"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-user-metrics",
+      "description": "Fetch Ultrahuman metrics for the configured user and a specific date. Returns sleep data, movement data, heart rate, HRV, temperature, steps, glucose, metabolic score, and more."
+    },
+    {
+      "name": "get-sleep",
+      "description": "Fetch sleep data for the configured user on a specific date. Returns sleep summary, quick metrics (total sleep, efficiency, heart rate, HRV), and sleep stages breakdown."
+    },
+    {
+      "name": "get-recovery",
+      "description": "Fetch recovery score for the configured user on a specific date."
+    },
+    {
+      "name": "get-steps",
+      "description": "Fetch steps data for the configured user on a specific date. Returns step count values throughout the day and average steps."
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "id": "discordbot",
+  "displayName": "Discordbot",
+  "description": "Discordbot refers to automated programs on Discord servers, performing tasks like moderation, music playback, and user engagement to enhance community interactions",
+  "createdAt": "2026-01-16T07:19:46.666Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/discordbot"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "DISCORDBOT_ADD_GROUP_DM_USER",
+      "description": "Adds a user to a Discord group Direct Message (DM) channel."
+    },
+    {
+      "name": "DISCORDBOT_ADD_GUILD_MEMBER",
+      "description": "Adds a user (who is not already a member) to a guild using their `access_token` (which must have `guilds.join` scope), optionally setting nickname, roles, mute/deaf status, or flags."
+    },
+    {
+      "name": "DISCORDBOT_ADD_GUILD_MEMBER_ROLE",
+      "description": "Assigns a role to a guild member, provided the bot has 'Manage Roles' permission in the guild and the role to be assigned is hierarchically lower than the bot's highest role."
+    },
+    {
+      "name": "DISCORDBOT_ADD_MY_MESSAGE_REACTION",
+      "description": "Adds an emoji reaction from the authenticated user/bot to a specific message in a Discord channel; does not return information about existing reactions."
+    },
+    {
+      "name": "DISCORDBOT_ADD_THREAD_MEMBER",
+      "description": "Adds a user to a specific, unarchived thread; the user must have access to the thread's parent channel, and for private threads, the bot must already be a member."
+    },
+    {
+      "name": "DISCORDBOT_BAN_USER_FROM_GUILD",
+      "description": "Permanently bans a user from a Discord guild, optionally deleting their recent messages (specify deletion period in seconds OR days, not both)."
+    },
+    {
+      "name": "DISCORDBOT_BULK_BAN_USERS_FROM_GUILD",
+      "description": "Bans up to 200 users from a Discord guild, optionally deleting their recent messages; the bot must have 'Ban Members' permission in the guild, and this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_BULK_DELETE_MESSAGES",
+      "description": "Atomically bulk deletes messages in a Discord channel for moderation or maintenance; deletion may not be instantaneous and messages are unrecoverable."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_APPLICATION_COMMAND",
+      "description": "Creates a new global Discord application command, accessible across guilds and in DMs (if `dm_permission` is true), noting global commands can take up to an hour to propagate and have registration limits; for guild-specific commands, use a different action."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_AUTO_MODERATION_RULE",
+      "description": "Creates a new auto moderation rule for a Discord guild, requiring 'MANAGE_GUILD' permission; rule parameters are passed in the JSON request body (see request schema description for body content)."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_CHANNEL_INVITE",
+      "description": "Creates a new invite for the specified Discord channel, provided the bot has 'CREATE_INSTANT_INVITE' permission for that channel."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_DM",
+      "description": "Creates a new direct message (DM) channel or retrieves an existing one, using `recipient_id` for a 1-on-1 DM or `access_tokens` for a group DM; this action only establishes or fetches the channel and does not send messages."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD",
+      "description": "Creates a new Discord guild (server) with the specified name, roles, and channels; icon must be a base64 encoded 128x128 image, and if `afk_channel_id` is set, `afk_timeout` must also be set."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_APPLICATION_COMMAND",
+      "description": "Creates a new guild-specific application command (slash, user, or message) in Discord; command name must be unique per type within the guild (max 100 total commands), and client UI updates may take up to an hour."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_CHANNEL",
+      "description": "Creates a new Discord channel (text, voice, category, etc.) within a guild, with options for permissions, topic, and type-specific settings."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_EMOJI",
+      "description": "Creates a new custom emoji in a specified Discord guild, requiring `CREATE_EXPRESSIONS` permission and adherence to guild emoji limits."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_FROM_TEMPLATE",
+      "description": "Creates a new Discord guild by applying channels, roles, and settings from a specified, valid, and accessible guild template code."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_ROLE",
+      "description": "Creates a new role in a Discord guild with customizable name, permissions, color, hoist, mentionability, and icon; `icon` (custom image hash) and `unicode_emoji` (standard emoji) are mutually exclusive."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_SCHEDULED_EVENT",
+      "description": "Creates a new scheduled event in a Discord guild; a separate JSON request body (not defined in this action's request schema model) with event details (e.g., name, type, schedule) is required, and its specific fields depend on the event's `entity_type`."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_STICKER",
+      "description": "Uploads a PNG, APNG, or Lottie JSON file (max 512KB) as a new custom sticker to the specified Discord guild; requires 'Manage Expressions' permissions and sufficient server boost level for sticker slots."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_GUILD_TEMPLATE",
+      "description": "Creates a template of an existing Discord guild's structure (settings, roles, channels) but not its content (e.g., messages, members)."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_INTERACTION_RESPONSE",
+      "description": "Sends a response to a Discord interaction (e.g., slash command, component); ensure response type is context-appropriate and initial reply is within 3 seconds."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_MESSAGE",
+      "description": "Sends a message to a specified Discord channel (text, embeds, stickers, components, attachments); requires `SEND_MESSAGES` permission and one of `content`, `embeds`, `sticker_ids`, or `attachments`."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_STAGE_INSTANCE",
+      "description": "Creates a new Stage instance in a specified Stage channel for live audio events; requires `MANAGE_CHANNELS`, `MUTE_MEMBERS`, and `MOVE_MEMBERS` permissions in the channel."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_THREAD",
+      "description": "Creates a new thread in a text or announcement Discord channel; requires a 'name' and optionally other details (e.g., 'auto_archive_duration', an initial 'message') in the request body."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_THREAD_FROM_MESSAGE",
+      "description": "Creates a new thread from a specific message in a Discord channel, requiring `CREATE_PUBLIC_THREADS` permission (and `SEND_MESSAGES` if in a forum/media channel)."
+    },
+    {
+      "name": "DISCORDBOT_CREATE_WEBHOOK",
+      "description": "Creates a webhook in a specified Discord channel for external applications to post messages, provided the caller has 'MANAGE_WEBHOOKS' permission in that channel."
+    },
+    {
+      "name": "DISCORDBOT_CROSSPOST_MESSAGE",
+      "description": "Crossposts a message from an announcement channel to all following channels, provided the message has not been previously crossposted and is not a system message or a message sent by a webhook."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_ALL_MESSAGE_REACTIONS",
+      "description": "Deletes all reactions (not just the bot's) from a message in a channel; requires 'Manage Messages' permission."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_ALL_MESSAGE_REACTIONS_BY_EMOJI",
+      "description": "Removes all reactions for a specific emoji from a message in a Discord channel; requires 'MANAGE_MESSAGES' permission and this operation is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_APPLICATION_COMMAND",
+      "description": "Permanently deletes a specific application command; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_AUTO_MODERATION_RULE",
+      "description": "Deletes a specific auto-moderation rule from a Discord guild."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_CHANNEL",
+      "description": "Permanently deletes a Discord channel by its ID; this action is irreversible and the channel must exist and be deletable."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_CHANNEL_PERMISSION_OVERWRITE",
+      "description": "Deletes a specific user's or role's permission overwrite in a Discord channel, reverting their permissions to default; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GROUP_DM_USER",
+      "description": "Permanently removes a user from an accessible Discord group DM channel, revoking their access."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD",
+      "description": "Permanently deletes a specified Discord guild (server); the authenticated user must be the owner of the guild."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_APPLICATION_COMMAND",
+      "description": "Permanently deletes a specific application command (e.g., slash, user, or message) for an application from a Discord guild, used to remove outdated or unnecessary commands."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_EMOJI",
+      "description": "Permanently deletes a specified custom emoji from a guild, requiring 'Manage Expressions' permissions; cannot delete default emojis and is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_INTEGRATION",
+      "description": "Permanently deletes a specific, unwanted or problematic integration from a Discord guild; requires 'Manage Server' or 'Administrator' permissions."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_MEMBER",
+      "description": "Removes (kicks) a member from a Discord guild; the user must be an existing member of the specified guild, and this action is permanent."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_MEMBER_ROLE",
+      "description": "Removes a specified role from a member of a Discord guild, provided the member currently possesses that role."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_ROLE",
+      "description": "Permanently deletes a specified role from a Discord guild, revoking it from all members; requires 'Manage Roles' permission and the target role must be lower in hierarchy than the bot's highest role."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_SCHEDULED_EVENT",
+      "description": "Permanently deletes a specific scheduled event from a Discord guild; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_STICKER",
+      "description": "Permanently deletes a custom sticker from a Discord guild; the specified guild and sticker must exist, and this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_GUILD_TEMPLATE",
+      "description": "Deletes an existing guild template by its unique code from a specified guild, returning the deleted template's details."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_MESSAGE",
+      "description": "Permanently and irreversibly deletes a message from a specified Discord channel."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_MY_MESSAGE_REACTION",
+      "description": "Removes the authenticated user's own emoji reaction, which they must have previously added, from a specific message in a Discord channel; this action is irreversible and cannot remove others' reactions."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_ORIGINAL_WEBHOOK_MESSAGE",
+      "description": "Permanently deletes an existing original message posted by a webhook (using its ID and token), optionally within a specific thread."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_STAGE_INSTANCE",
+      "description": "Deletes the Stage Instance for the given `channel_id`, permanently ending its live audio event."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_THREAD_MEMBER",
+      "description": "Removes a user from a specified, unarchived thread in a Discord channel."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_USER_MESSAGE_REACTION",
+      "description": "Removes a specific user's emoji reaction from a message; requires 'Manage Messages' permission if deleting reactions from other users."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_WEBHOOK",
+      "description": "Permanently deletes a specified, existing Discord webhook by its unique ID; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_WEBHOOK_BY_TOKEN",
+      "description": "Permanently deletes a Discord webhook specified by its ID and token; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_DELETE_WEBHOOK_MESSAGE",
+      "description": "Deletes a message previously sent by the specified webhook, optionally within a specific thread."
+    },
+    {
+      "name": "DISCORDBOT_EXECUTE_GITHUB_COMPATIBLE_WEBHOOK",
+      "description": "Forwards GitHub event notifications to a Discord channel via a webhook configured for GitHub-formatted payloads (URL ending in `/github`)."
+    },
+    {
+      "name": "DISCORDBOT_EXECUTE_SLACK_COMPATIBLE_WEBHOOK",
+      "description": "Sends richly formatted messages to Discord via its Slack-compatible webhook endpoint; requires at least one of `text` or `attachments` and adherence to content limits."
+    },
+    {
+      "name": "DISCORDBOT_EXECUTE_WEBHOOK",
+      "description": "Executes a Discord webhook to send messages, embeds, or interactive components to a specific Discord channel or thread."
+    },
+    {
+      "name": "DISCORDBOT_FOLLOW_CHANNEL",
+      "description": "Follows a specified Announcement Channel (`channel_id`), relaying its messages to `webhook_channel_id` in the current server; requires 'Manage Webhooks' permission in the current server and that it has Community features enabled."
+    },
+    {
+      "name": "DISCORDBOT_GET_ACTIVE_GUILD_THREADS",
+      "description": "Retrieves all currently active and visible threads within a specified Discord guild, excluding archived or hidden threads."
+    },
+    {
+      "name": "DISCORDBOT_GET_APPLICATION",
+      "description": "Retrieves the full details of a Discord application using its unique `application_id`."
+    },
+    {
+      "name": "DISCORDBOT_GET_APPLICATION_COMMAND",
+      "description": "Fetches the details of a specific, existing application command, identified by its application Snowflake ID and command Snowflake ID."
+    },
+    {
+      "name": "DISCORDBOT_GET_APPLICATION_ROLE_CONNECTIONS_METADATA",
+      "description": "Retrieves all role connection metadata records for a given Discord application ID; an empty list is returned if none are configured."
+    },
+    {
+      "name": "DISCORDBOT_GET_APPLICATION_USER_ROLE_CONNECTION",
+      "description": "Fetches the role connection object for the current user for a specified Discord application."
+    },
+    {
+      "name": "DISCORDBOT_GET_AUTO_MODERATION_RULE",
+      "description": "Retrieves the complete configuration details of a specific auto-moderation rule within a Discord guild for inspection or verification."
+    },
+    {
+      "name": "DISCORDBOT_GET_BOT_GATEWAY",
+      "description": "Retrieves the WSS URL, recommended shard count, and session start limits, which are prerequisite for a bot to connect to the Discord Gateway and receive events."
+    },
+    {
+      "name": "DISCORDBOT_GET_CHANNEL",
+      "description": "Retrieves detailed metadata for a specific Discord channel using its `channel_id`, which must be a valid and accessible channel ID; note that this action returns only channel metadata, not message content or member lists."
+    },
+    {
+      "name": "DISCORDBOT_GET_GATEWAY",
+      "description": "Retrieves the WebSocket URL to connect to Discord's Gateway for receiving real-time events."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD",
+      "description": "Retrieves detailed information for a specified Discord guild (server) by its `guild_id`, optionally including approximate member and presence counts if `with_counts` is true."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_APPLICATION_COMMAND",
+      "description": "Fetches detailed information for a specific application command within a Discord guild, identified by `application_id`, `guild_id`, and `command_id`."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_APPLICATION_COMMAND_PERMISSIONS",
+      "description": "Fetches the permissions for a specific application command within a guild, used to inspect its current access settings."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_BAN",
+      "description": "Fetches the ban details for a specific user in a Discord guild, if that user is currently banned."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_EMOJI",
+      "description": "Retrieves details for a specific custom emoji within a specified Discord guild, requiring valid and accessible guild and emoji IDs."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_MEMBER",
+      "description": "Retrieves detailed information for a specific member of a Discord guild, provided the bot belongs to the guild and has necessary permissions (e.g., GUILD_MEMBERS intent)."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_NEW_MEMBER_WELCOME",
+      "description": "Retrieves the configured new member welcome screen for a Discord guild, detailing the welcome message, suggested member actions, and resource channels."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_PREVIEW",
+      "description": "Fetches a public preview of a Discord guild by its ID, if the guild has the preview feature enabled."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_SCHEDULED_EVENT",
+      "description": "Retrieves a specific scheduled event from a Discord guild by its ID, optionally including the count of subscribed users."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILDS_ONBOARDING",
+      "description": "Retrieves the onboarding settings for a specified Discord guild, including prompts, options, default channels, and enabled status, to examine its new member guidance process when the guild_id is known and accessible."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_STICKER",
+      "description": "Retrieves a specific sticker from a Discord guild using the guild and sticker IDs; requires the sticker to exist in the guild."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_TEMPLATE",
+      "description": "Retrieves the complete structure and details of a Discord guild template using its unique code; the code must be valid and refer to an existing, accessible template."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_VANITY_URL",
+      "description": "Fetches the vanity URL, including the invite `code` and its `uses` count, for a given Discord `guild_id`, which must correspond to an existing guild."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_WEBHOOKS",
+      "description": "Retrieves all webhook objects for a specified Discord guild; requires 'MANAGE_WEBHOOKS' permission for the authenticated entity."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_WELCOME_SCREEN",
+      "description": "Retrieves the configured welcome screen for a specific Discord guild that has the 'Community' feature enabled."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_WIDGET",
+      "description": "Retrieves the public JSON widget data for a Discord guild, if the widget is enabled for that guild."
+    },
+    {
+      "name": "DISCORDBOT_GET_GUILD_WIDGET_SETTINGS",
+      "description": "Retrieves the widget settings for a specified Discord guild, indicating if the widget is enabled and its configured channel ID; requires a valid `guild_id`."
+    },
+    {
+      "name": "DISCORDBOT_GET_MESSAGE",
+      "description": "Retrieves a specific message from a Discord channel, identified by `channel_id` and `message_id`, if the channel and message exist and are accessible."
+    },
+    {
+      "name": "DISCORDBOT_GET_MY_APPLICATION",
+      "description": "Retrieves detailed information about the current authenticated Discord application."
+    },
+    {
+      "name": "DISCORDBOT_GET_MY_OAUTH2_APPLICATION",
+      "description": "Retrieves detailed information about the OAuth2 application associated with the current authentication; cannot query other applications."
+    },
+    {
+      "name": "DISCORDBOT_GET_ORIGINAL_WEBHOOK_MESSAGE",
+      "description": "Fetches the original, unedited message posted by a specific Discord webhook, requiring a message to have been previously sent by this webhook and to exist in the specified thread if `thread_id` is provided."
+    },
+    {
+      "name": "DISCORDBOT_GET_PUBLIC_KEYS",
+      "description": "Retrieves Discord's OAuth2 public keys (JWK format) for verifying access tokens; keys may rotate, so refresh caches periodically."
+    },
+    {
+      "name": "DISCORDBOT_GET_STAGE_INSTANCE",
+      "description": "Gets the active stage instance for a given stage channel ID."
+    },
+    {
+      "name": "DISCORDBOT_GET_STICKER",
+      "description": "Retrieves a specific Discord sticker by its unique ID."
+    },
+    {
+      "name": "DISCORDBOT_GET_THREAD_MEMBER",
+      "description": "Retrieves a member from a specified thread using their user ID, optionally including the full guild member object."
+    },
+    {
+      "name": "DISCORDBOT_GET_USER",
+      "description": "Fetches public information for a Discord user, requiring a valid and existing user ID (snowflake)."
+    },
+    {
+      "name": "DISCORDBOT_GET_WEBHOOK",
+      "description": "Retrieves detailed information for an existing Discord webhook, identified by its unique ID, to verify settings or manage the webhook."
+    },
+    {
+      "name": "DISCORDBOT_GET_WEBHOOK_BY_TOKEN",
+      "description": "Fetches a Discord webhook's configuration details (e.g., name, avatar, channel ID) using its ID and token; this excludes message history or usage statistics."
+    },
+    {
+      "name": "DISCORDBOT_GET_WEBHOOK_MESSAGE",
+      "description": "Retrieves a specific message previously sent by a Discord webhook using its `message_id`, requiring `thread_id` if the message is part of a thread."
+    },
+    {
+      "name": "DISCORDBOT_INVITE_RESOLVE",
+      "description": "Resolves a Discord invite code to get its details, optionally including member counts or data for a specific guild scheduled event; visibility of some details may depend on bot permissions."
+    },
+    {
+      "name": "DISCORDBOT_INVITE_REVOKE",
+      "description": "Revokes a Discord server invite using its unique code, permanently preventing new joins via this link (does not affect existing members); requires 'Manage Server' or 'Manage Invites' permissions on the server."
+    },
+    {
+      "name": "DISCORDBOT_JOIN_THREAD",
+      "description": "Joins the authenticated user to a thread specified by `channel_id`; use this when the user is not already a member, for archived threads, or for threads requiring explicit joining, provided the thread is joinable, not locked or full, and the user has permissions."
+    },
+    {
+      "name": "DISCORDBOT_LEAVE_GUILD",
+      "description": "Enables the authenticated user to leave a specified Discord guild of which they are a member but not the owner; this action is irreversible."
+    },
+    {
+      "name": "DISCORDBOT_LEAVE_THREAD",
+      "description": "Removes the currently authenticated user from a specified, existing, and accessible Discord thread of which they are currently a member."
+    },
+    {
+      "name": "DISCORDBOT_LIST_APPLICATION_COMMANDS",
+      "description": "Fetches all global application commands for the specified Discord application ID; does not fetch guild-specific commands."
+    },
+    {
+      "name": "DISCORDBOT_LIST_AUTO_MODERATION_RULES",
+      "description": "Fetches all auto moderation rules for a specified Discord guild to review or audit its configuration; requires `VIEW_AUDIT_LOG` permissions and the action does not modify rules."
+    },
+    {
+      "name": "DISCORDBOT_LIST_CHANNEL_INVITES",
+      "description": "Fetches all active invites for a given Discord channel_id (read-only), requiring channel invite view permissions; response object structures may vary."
+    },
+    {
+      "name": "DISCORDBOT_LIST_CHANNEL_WEBHOOKS",
+      "description": "Fetches detailed information for all webhooks in a given valid Discord channel, useful for review or auditing purposes."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_APPLICATION_COMMAND_PERMISSIONS",
+      "description": "Call this action to retrieve all explicitly set guild-level permission settings for all commands of a specific application within a given guild, typically for auditing or troubleshooting command access."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_APPLICATION_COMMANDS",
+      "description": "Fetches all application command definitions (slash, user, and message types) for a specific application within a given Discord guild, optionally including localizations; does not return permissions or usage statistics."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_AUDIT_LOG_ENTRIES",
+      "description": "Retrieves audit log entries (e.g., message deletions, member kicks/bans, role changes) for a specified Discord guild, requiring 'VIEW_AUDIT_LOG' permission."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_BANS",
+      "description": "Fetches a list of users banned from a specified Discord guild; `before`/`after` parameters require user IDs from previous results for correct pagination."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_CHANNELS",
+      "description": "Fetches all channels (e.g., text, voice, category, threads) and their structural information for a specified Discord guild ID; does not include message content."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_EMOJIS",
+      "description": "Fetches all custom emoji objects for a specified Discord guild if the bot has access; returns only custom guild emojis, not standard Unicode or Nitro emojis."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_INTEGRATIONS",
+      "description": "Lists all integration objects for a specified Discord guild."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_INVITES",
+      "description": "Retrieves all currently active invite codes for a specified Discord guild, typically for administration, analytics, or managing guild invitations."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_MEMBERS",
+      "description": "Retrieves members for a Discord guild; requires a valid guild_id for an existing guild."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_ROLES",
+      "description": "Fetches all roles in a Discord guild, providing details for each role but not user assignments; `guild_id` must be valid."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_SCHEDULED_EVENTS",
+      "description": "Retrieves a list of scheduled events for a specified Discord guild, optionally including subscribed user counts, provided the authenticated user/bot has access to the guild."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_SCHEDULED_EVENT_USERS",
+      "description": "Fetches users who have expressed interest in a specific scheduled event, requiring valid guild and event IDs."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_STICKERS",
+      "description": "Retrieves all custom sticker objects for a Discord guild; does not include standard/Nitro stickers."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_TEMPLATES",
+      "description": "Retrieves all guild templates for an existing Discord guild, specified by its ID."
+    },
+    {
+      "name": "DISCORDBOT_LIST_GUILD_VOICE_REGIONS",
+      "description": "Fetches a list of available voice regions for a specified Discord guild."
+    },
+    {
+      "name": "DISCORDBOT_LIST_MESSAGE_REACTIONS_BY_EMOJI",
+      "description": "Fetches a list of users who reacted to a specific message with a given emoji in a Discord channel; retrieves users for one emoji at a time."
+    },
+    {
+      "name": "DISCORDBOT_LIST_MESSAGES",
+      "description": "Retrieves historical messages from a specified, accessible Discord channel, typically newest first; for real-time messages, use Discord's WebSocket Gateway API."
+    },
+    {
+      "name": "DISCORDBOT_LIST_MY_PRIVATE_ARCHIVED_THREADS",
+      "description": "Retrieves private archived threads from a specified channel that the current user is a member of."
+    },
+    {
+      "name": "DISCORDBOT_LIST_PINNED_MESSAGES",
+      "description": "Retrieves all currently pinned messages from a Discord channel using its valid, existing ID; typically limited to 50 messages, and no history of past pins is returned."
+    },
+    {
+      "name": "DISCORDBOT_LIST_PRIVATE_ARCHIVED_THREADS",
+      "description": "Lists a channel's private archived threads, sorted by most recent archival, requiring view access to them."
+    },
+    {
+      "name": "DISCORDBOT_LIST_PUBLIC_ARCHIVED_THREADS",
+      "description": "Lists public archived threads in an accessible Discord channel, returning an empty list if none exist; does not list private or active threads."
+    },
+    {
+      "name": "DISCORDBOT_LIST_STICKER_PACKS",
+      "description": "Fetches sticker packs available to Nitro subscribers on Discord, excluding custom or guild-specific ones."
+    },
+    {
+      "name": "DISCORDBOT_LIST_THREAD_MEMBERS",
+      "description": "Retrieves members of a specified Discord thread, with an option to include full guild member objects for each."
+    },
+    {
+      "name": "DISCORDBOT_LIST_VOICE_REGIONS",
+      "description": "Lists all available Discord voice regions with their ID, name, operational status (custom, deprecated, optimal), noting that availability may vary by server."
+    },
+    {
+      "name": "DISCORDBOT_PIN_MESSAGE",
+      "description": "Pins a message in a Discord channel for increased visibility, if the channel's pin limit (typically 50) is not exceeded."
+    },
+    {
+      "name": "DISCORDBOT_PREVIEW_PRUNE_GUILD",
+      "description": "Previews the number of members that would be pruned from a Discord guild based on inactivity days and optional roles; this action only returns a count and does not remove members."
+    },
+    {
+      "name": "DISCORDBOT_PRUNE_GUILD",
+      "description": "Removes inactive members from a Discord guild, requiring 'KICK_MEMBERS' permission; use `compute_prune_count=True` to preview results before actual removal."
+    },
+    {
+      "name": "DISCORDBOT_PUT_GUILDS_ONBOARDING",
+      "description": "Configures or updates a Discord guild's new member onboarding flow, including defining prompts with options, assigning roles/channels, setting default channels, and managing the flow's active status."
+    },
+    {
+      "name": "DISCORDBOT_SEARCH_GUILD_MEMBERS",
+      "description": "Searches for members in a specific Discord guild, allowing filtering by a query string."
+    },
+    {
+      "name": "DISCORDBOT_SET_CHANNEL_PERMISSION_OVERWRITE",
+      "description": "Updates or creates a permission overwrite for a role (type `0`) or member (type `1`) specified by `overwrite_id` within an existing Discord channel (`channel_id`), using `allow` and `deny` bitwise values to precisely control permissions."
+    },
+    {
+      "name": "DISCORDBOT_SYNC_GUILD_TEMPLATE",
+      "description": "Synchronizes a guild template (by `code`) with its source guild (`guild_id`), updating it to match the source's current configuration; this does not affect guilds already created from this template."
+    },
+    {
+      "name": "DISCORDBOT_TRIGGER_TYPING_INDICATOR",
+      "description": "Shows the bot is 'typing' in a Discord channel, typically before sending a message; indicator stops after 10 seconds or upon message send, so use when actively preparing a response."
+    },
+    {
+      "name": "DISCORDBOT_UNBAN_USER_FROM_GUILD",
+      "description": "Revokes a ban for a user from a Discord guild, allowing them to rejoin if they choose."
+    },
+    {
+      "name": "DISCORDBOT_UNPIN_MESSAGE",
+      "description": "Unpins a message that is currently pinned in a specified Discord channel; the message itself is not deleted."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_APPLICATION",
+      "description": "Updates a Discord application's settings using its `application_id`; `max_participants` requires the `APPLICATION_EMBEDDED_ACTIVITIES` flag, and `team_id`, `type`, or `install_params` must be `null` if specified."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_APPLICATION_COMMAND",
+      "description": "Updates specified properties of a Discord application command (e.g., name, description); omitted properties remain unchanged, and the `options` field, if provided, overwrites all existing options."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_APPLICATION_USER_ROLE_CONNECTION",
+      "description": "Updates the authorized user's role connection for a specific application, which must have a linked role connection configured."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_AUTO_MODERATION_RULE",
+      "description": "Updates an existing auto-moderation rule, identified by `guild_id` and `rule_id` in the path, with new values for rule properties (e.g., `name`, `event_type`) provided in the request body."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_CHANNEL",
+      "description": "Partially updates an existing Discord channel, using `channel_id` for identification and properties in the request body for changes, ensuring these properties are applicable to the channel's type."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD",
+      "description": "Updates settings for a Discord guild, such as its name, region, or icon; transferring ownership requires being the current owner, and managing features or certain visual elements (e.g., banners, splashes) may require specific permissions or guild statuses like 'COMMUNITY' or 'VIP'."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_APPLICATION_COMMAND",
+      "description": "Updates a specific Discord application command's properties (like name, description, options, or permissions) within a given guild; `application_id`, `guild_id`, and `command_id` must refer to valid entities."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_EMOJI",
+      "description": "Updates a custom emoji's name and/or role restrictions in a Discord guild; cannot create or delete emojis, and role updates for managed emojis may be restricted by their integration."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_MEMBER",
+      "description": "Updates a guild member's attributes (e.g., nickname, roles, voice state); if moving via `channel_id`, it must be a valid voice channel in the guild."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_ROLE",
+      "description": "Updates a Discord guild role's attributes (name, permissions, color, etc.); requires `MANAGE_ROLES` permission, and the `ROLE_ICONS` guild feature if using `unicode_emoji`; unspecified attributes remain unchanged."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_SCHEDULED_EVENT",
+      "description": "Updates attributes such as name, description, schedule, status, or location for an existing Discord guild event; only fields in the request body are changed."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_STICKER",
+      "description": "Modifies a guild sticker's name, description, or tags, requiring 'MANAGE_EMOJIS_AND_STICKERS' permission."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_TEMPLATE",
+      "description": "Updates a Discord guild template's `name` and/or `description` given its `guild_id` and template `code`; omitted fields retain current values, and an empty string for `description` clears it."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_WELCOME_SCREEN",
+      "description": "Updates a guild's welcome screen, including its description, enabled status, and up to 5 welcome channels; when specifying channel emojis, use `emoji_name` as `emoji_id` must be `null` if sent."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_GUILD_WIDGET_SETTINGS",
+      "description": "Updates an existing Discord guild's widget settings, such as its enabled state or clearing its invite channel."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_MESSAGE",
+      "description": "Updates a message previously sent by the bot in a Discord channel, by modifying its content, embeds, components, flags, or attachment metadata (new attachments cannot be uploaded); only provide fields to change, using null or an empty list to clear existing values."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_MY_APPLICATION",
+      "description": "Modifies settings for the current authenticated Discord application (e.g., description, icon, interaction URLs); setting `team_id` to `null` (None) transfers team ownership, while `null` (None) for `type` or `install_params` clears/resets them."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_MY_GUILD_MEMBER",
+      "description": "Modifies the nickname of the currently authenticated user within a specified Discord guild."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_MY_USER",
+      "description": "Updates the current authenticated user's Discord username and/or avatar."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_ORIGINAL_WEBHOOK_MESSAGE",
+      "description": "Updates the original editable message previously sent by a webhook, allowing partial modification of its content (max 2000 chars), embeds (max 10), attachments (kept by `id`, metadata updatable), components, allowed mentions, and flags."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_SELF_VOICE_STATE",
+      "description": "Updates the current user's voice state in a guild (e.g., mute, request to speak), and can explicitly disconnect the user from voice; this action does not support joining or switching voice channels."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_VOICE_STATE",
+      "description": "Updates a user's voice state in a Discord guild, such as toggling server mute or disconnecting from a voice channel; requires `MUTE_MEMBERS` permission to change mute status or `MOVE_MEMBERS` to disconnect."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_WEBHOOK",
+      "description": "Updates properties (e.g., name, avatar, channel ID) of an existing Discord webhook; the webhook and any new channel (if specified) must exist, with the new channel being in the same server."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_WEBHOOK_BY_TOKEN",
+      "description": "Updates the default name and/or avatar for an existing Discord webhook, using its ID and token."
+    },
+    {
+      "name": "DISCORDBOT_UPDATE_WEBHOOK_MESSAGE",
+      "description": "Updates a message previously sent by the *same* webhook, allowing partial modification of content, embeds, attachments, or components; will not edit user/bot messages."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "godson/dowhistle-mcp-server",
+  "displayName": "dowhistle-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:06.029Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/godson/dowhistle-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

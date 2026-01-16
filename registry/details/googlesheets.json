@@ -1,0 +1,169 @@
+{
+  "id": "googlesheets",
+  "displayName": "Google Sheets",
+  "description": "Google Sheets is a cloud-based spreadsheet tool enabling real-time collaboration, data analysis, and integration with other Google Workspace apps",
+  "createdAt": "2026-01-16T07:19:10.387Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googlesheets"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLESHEETS_ADD_SHEET",
+      "description": "Adds a new sheet (worksheet) to a spreadsheet. Use this tool to create a new tab within an existing Google Sheet, optionally specifying its title, index, size, and other properties. IMPORTANT: - Always provide the spreadsheetId. Use 'Search Spreadsheets' action if you need to find it by name - Sheet names must be unique within the spreadsheet - For tab colors, use EITHER rgbColor OR themeColor, never both - Index must be less than or equal to the current number of sheets - CONCURRENCY WARNING: Do not use 'index' when creating multiple sheets in parallel - this causes 'index is too high' errors. For parallel creation, omit the index field and let sheets be added at the end Common use cases: - Add a new sheet with a specific name - Insert a sheet at a specific position - Create a sheet with custom colors and formatting"
+    },
+    {
+      "name": "GOOGLESHEETS_AGGREGATE_COLUMN_DATA",
+      "description": "Searches for rows where a specific column matches a value and performs mathematical operations on data from another column."
+    },
+    {
+      "name": "GOOGLESHEETS_APPEND_DIMENSION",
+      "description": "Tool to append new rows or columns to a sheet, increasing its size. Use when you need to add empty rows or columns to an existing sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_BATCH_GET",
+      "description": "Retrieves data from specified cell ranges in a Google Spreadsheet."
+    },
+    {
+      "name": "GOOGLESHEETS_BATCH_UPDATE",
+      "description": "Updates a specified range in a Google Sheet with given values, or appends them as new rows if `first_cell_location` is omitted. Auto-expands grid for large datasets, preventing range errors. Requirements: Target sheet must exist and spreadsheet must contain at least one worksheet."
+    },
+    {
+      "name": "GOOGLESHEETS_BATCH_UPDATE_VALUES_BY_DATA_FILTER",
+      "description": "Tool to update values in ranges matching data filters. Use when you need to update specific data in a Google Sheet based on criteria rather than fixed cell ranges."
+    },
+    {
+      "name": "GOOGLESHEETS_CLEAR_BASIC_FILTER",
+      "description": "Tool to clear the basic filter from a sheet. Use when you need to remove an existing basic filter from a specific sheet within a Google Spreadsheet."
+    },
+    {
+      "name": "GOOGLESHEETS_CLEAR_VALUES",
+      "description": "Clears cell content (preserving formatting and notes) from a specified A1 notation range in a Google Spreadsheet; the range must correspond to an existing sheet and cells."
+    },
+    {
+      "name": "GOOGLESHEETS_CREATE_CHART",
+      "description": "Create a chart in a Google Sheets spreadsheet using the specified data range and chart type. Conditional requirements: - Provide either a simple chart via chart_type + data_range (basicChart), OR supply a full chart_spec supporting all chart types. Exactly one approach should be used. - When using chart_spec, set exactly one of the union fields (basicChart | pieChart | bubbleChart | candlestickChart | histogramChart | waterfallChart | treemapChart | orgChart | scorecardChart)."
+    },
+    {
+      "name": "GOOGLESHEETS_CREATE_GOOGLE_SHEET1",
+      "description": "Creates a new Google Spreadsheet in Google Drive using the provided title."
+    },
+    {
+      "name": "GOOGLESHEETS_CREATE_SPREADSHEET_COLUMN",
+      "description": "Creates a new column in a Google Spreadsheet, requiring a valid `spreadsheet_id` and an existing `sheet_id`; an out-of-bounds `insert_index` may append/prepend the column."
+    },
+    {
+      "name": "GOOGLESHEETS_CREATE_SPREADSHEET_ROW",
+      "description": "Inserts a new, empty row into a specified sheet of a Google Spreadsheet at a given index, optionally inheriting formatting from the row above."
+    },
+    {
+      "name": "GOOGLESHEETS_DELETE_DIMENSION",
+      "description": "Tool to delete specified rows or columns from a sheet in a Google Spreadsheet. Use when you need to remove a range of rows or columns."
+    },
+    {
+      "name": "GOOGLESHEETS_DELETE_SHEET",
+      "description": "Tool to delete a sheet (worksheet) from a spreadsheet. Use when you need to remove a specific sheet from a Google Sheet document."
+    },
+    {
+      "name": "GOOGLESHEETS_EXECUTE_SQL",
+      "description": "Execute SQL queries against Google Sheets tables. Supports SELECT, INSERT, UPDATE, and DELETE operations with familiar SQL syntax. Tables are automatically detected and mapped from the spreadsheet structure."
+    },
+    {
+      "name": "GOOGLESHEETS_FIND_REPLACE",
+      "description": "Tool to find and replace text in a Google Spreadsheet. Use when you need to fix formula errors, update values, or perform bulk text replacements across cells. Common use cases: - Fix #ERROR! cells by replacing with empty string or correct formula - Update old values with new ones across multiple cells - Fix formula references or patterns - Clean up data formatting issues"
+    },
+    {
+      "name": "GOOGLESHEETS_FIND_WORKSHEET_BY_TITLE",
+      "description": "Finds a worksheet by its exact, case-sensitive title within a Google Spreadsheet; returns a boolean indicating if found and the complete metadata of the entire spreadsheet, regardless of whether the target worksheet is found."
+    },
+    {
+      "name": "GOOGLESHEETS_FORMAT_CELL",
+      "description": "Applies text and background cell formatting to a specified range in a Google Sheets worksheet."
+    },
+    {
+      "name": "GOOGLESHEETS_GET_SHEET_NAMES",
+      "description": "Lists all worksheet names from a specified Google Spreadsheet (which must exist), useful for discovering sheets before further operations."
+    },
+    {
+      "name": "GOOGLESHEETS_GET_SPREADSHEET_BY_DATA_FILTER",
+      "description": "Returns the spreadsheet at the given ID, filtered by the specified data filters. Use this tool when you need to retrieve specific subsets of data from a Google Sheet based on criteria like A1 notation, developer metadata, or grid ranges."
+    },
+    {
+      "name": "GOOGLESHEETS_GET_SPREADSHEET_INFO",
+      "description": "Retrieves comprehensive metadata for a Google Spreadsheet using its ID, excluding cell data."
+    },
+    {
+      "name": "GOOGLESHEETS_GET_TABLE_SCHEMA",
+      "description": "This action is used to get the schema of a table in a Google Spreadsheet, call this action to get the schema of a table in a spreadsheet BEFORE YOU QUERY THE TABLE. Analyze table structure and infer column names, types, and constraints. Uses statistical analysis of sample data to determine the most likely data type for each column. Call this action after calling the LIST_TABLES action to get the schema of a table in a spreadsheet."
+    },
+    {
+      "name": "GOOGLESHEETS_INSERT_DIMENSION",
+      "description": "Tool to insert new rows or columns into a sheet at a specified location. Use when you need to add empty rows or columns within an existing Google Sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_LIST_TABLES",
+      "description": "This action is used to list all tables in a Google Spreadsheet, call this action to get the list of tables in a spreadsheet. Discover all tables in a Google Spreadsheet by analyzing sheet structure and detecting data patterns. Uses heuristic analysis to find header rows, data boundaries, and table structures."
+    },
+    {
+      "name": "GOOGLESHEETS_LOOKUP_SPREADSHEET_ROW",
+      "description": "Finds the first row in a Google Spreadsheet where a cell's entire content exactly matches the query string, searching within a specified A1 notation range or the first sheet by default."
+    },
+    {
+      "name": "GOOGLESHEETS_QUERY_TABLE",
+      "description": "This action is used to query a table in a Google Spreadsheet, call this action to query a table in a spreadsheet. Execute SQL-like SELECT queries against spreadsheet tables. Supports WHERE conditions, ORDER BY, LIMIT clauses. Call this action after calling the GET_TABLE_SCHEMA action to query a table in a spreadsheet."
+    },
+    {
+      "name": "GOOGLESHEETS_SEARCH_DEVELOPER_METADATA",
+      "description": "Tool to search for developer metadata in a spreadsheet. Use when you need to find specific metadata entries based on filters."
+    },
+    {
+      "name": "GOOGLESHEETS_SEARCH_SPREADSHEETS",
+      "description": "Search for Google Spreadsheets using various filters including name, content, date ranges, and more."
+    },
+    {
+      "name": "GOOGLESHEETS_SET_BASIC_FILTER",
+      "description": "Tool to set a basic filter on a sheet in a Google Spreadsheet. Use when you need to filter or sort data within a specific range on a sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_SHEET_FROM_JSON",
+      "description": "Creates a new Google Spreadsheet and populates its first worksheet from `sheet_json`, which must be non-empty as its first item's keys establish the headers."
+    },
+    {
+      "name": "GOOGLESHEETS_SPREADSHEETS_SHEETS_COPY_TO",
+      "description": "Tool to copy a single sheet from a spreadsheet to another spreadsheet. Use when you need to duplicate a sheet into a different spreadsheet."
+    },
+    {
+      "name": "GOOGLESHEETS_SPREADSHEETS_VALUES_APPEND",
+      "description": "Tool to append values to a spreadsheet. Use when you need to add new data to the end of an existing table in a Google Sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_SPREADSHEETS_VALUES_BATCH_CLEAR",
+      "description": "Tool to clear one or more ranges of values from a spreadsheet. Use when you need to remove data from specific cells or ranges while keeping formatting and other properties intact."
+    },
+    {
+      "name": "GOOGLESHEETS_SPREADSHEETS_VALUES_BATCH_CLEAR_BY_DATA_FILTER",
+      "description": "Clears one or more ranges of values from a spreadsheet using data filters. The caller must specify the spreadsheet ID and one or more DataFilters. Ranges matching any of the specified data filters will be cleared. Only values are cleared -- all other properties of the cell (such as formatting, data validation, etc..) are kept."
+    },
+    {
+      "name": "GOOGLESHEETS_SPREADSHEETS_VALUES_BATCH_GET_BY_DATA_FILTER",
+      "description": "Tool to return one or more ranges of values from a spreadsheet that match the specified data filters. Use when you need to retrieve specific data sets based on filtering criteria rather than entire sheets or fixed ranges."
+    },
+    {
+      "name": "GOOGLESHEETS_UPDATE_SHEET_PROPERTIES",
+      "description": "Tool to update properties of a sheet (worksheet) within a Google Spreadsheet, such as its title, index, visibility, tab color, or grid properties. Use this when you need to modify the metadata or appearance of a specific sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_UPDATE_SPREADSHEET_PROPERTIES",
+      "description": "Tool to update properties of a spreadsheet, such as its title, locale, or auto-recalculation settings. Use when you need to modify the overall configuration of a Google Sheet."
+    },
+    {
+      "name": "GOOGLESHEETS_UPSERT_ROWS",
+      "description": "Upsert rows - update existing rows by key, append new ones. Automatically handles column mapping and partial updates. Use for: CRM syncs (match Lead ID), transaction imports (match Transaction ID), inventory updates (match SKU), calendar syncs (match Event ID). Features: - Auto-adds missing columns to sheet - Partial column updates (only update Phone + Status, preserve other columns) - Column order doesn't matter (auto-maps by header name) - Prevents duplicates by matching key column Example inputs: - Contact update: keyColumn='Email', headers=['Email','Phone','Status'], data=[['john@ex.com','555-0101','Active']] - Inventory sync: keyColumn='SKU', headers=['SKU','Stock','Price'], data=[['WIDGET-001',50,9.99],['GADGET-002',30,19.99]] - CRM lead update: keyColumn='Lead ID', headers=['Lead ID','Score','Status'], data=[['L-12345',85,'Hot']] - Partial update: keyColumn='Email', headers=['Email','Phone'] (only updates Phone, preserves Name/Address/etc)"
+    }
+  ]
+}

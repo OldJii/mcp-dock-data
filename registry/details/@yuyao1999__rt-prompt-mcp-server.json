@@ -1,0 +1,45 @@
+{
+  "id": "@yuyao1999/rt-prompt-mcp-server",
+  "displayName": "RT-Prompt",
+  "description": "Provide specialized prompt engineering suggestions to enhance LLM-generated content for development and design tasks. Support backend, frontend, UI design, and general scenarios with tailored prompt completions. Easily integrate with MCP-compatible clients to improve prompt quality and relevance.",
+  "createdAt": "2026-01-16T07:21:51.490Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yuyao1999/rt-prompt-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_backend_suggestions",
+      "description": ""
+    },
+    {
+      "name": "get_frontend_suggestions",
+      "description": ""
+    },
+    {
+      "name": "get_general_suggestions",
+      "description": ""
+    },
+    {
+      "name": "get_ui_design_suggestions",
+      "description": ""
+    },
+    {
+      "name": "get_rt_crud_suggestions",
+      "description": ""
+    },
+    {
+      "name": "get_feishu_prompt",
+      "description": ""
+    }
+  ]
+}

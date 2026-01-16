@@ -1,0 +1,12 @@
+{
+  "id": "@jessicayanwang/mcp-filesystem-server",
+  "displayName": "mcp-filesystem-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:46.107Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jessicayanwang/mcp-filesystem-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

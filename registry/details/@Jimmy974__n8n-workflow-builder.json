@@ -1,0 +1,25 @@
+{
+  "id": "@Jimmy974/n8n-workflow-builder",
+  "displayName": "n8n Workflow Builder",
+  "description": "Create and manage n8n workflows programmatically.",
+  "createdAt": "2026-01-16T07:22:14.431Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Jimmy974/n8n-workflow-builder"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_workflow",
+      "description": "Create and configure n8n workflows programmatically"
+    }
+  ]
+}

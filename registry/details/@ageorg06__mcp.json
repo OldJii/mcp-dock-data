@@ -1,0 +1,12 @@
+{
+  "id": "@ageorg06/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:57.563Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ageorg06/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

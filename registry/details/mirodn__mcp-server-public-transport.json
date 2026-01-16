@@ -1,0 +1,65 @@
+{
+  "id": "mirodn/mcp-server-public-transport",
+  "displayName": "mcp-server-public-transport",
+  "description": "Access real-time public transport across Europe with live departures, connections, and vehicle details. Plan door-to-door trips, search stations and places, and find nearby stops with up-to-the-minute results. Benefit from coverage in the UK, Switzerland, Belgium, and Norway.",
+  "createdAt": "2026-01-16T07:24:11.066Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mirodn/mcp-server-public-transport"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ch_search_connections",
+      "description": "Search for train connections in Switzerland between two stations. Uses transport.opendata.ch API to provide real-time connection data including departure times, duration, platforms, and transfers."
+    },
+    {
+      "name": "ch_search_stations",
+      "description": "Search for Swiss train stations by name or location."
+    },
+    {
+      "name": "ch_get_departures",
+      "description": "Get departure board for a Swiss train station with real-time information."
+    },
+    {
+      "name": "ch_nearby_stations",
+      "description": "Find nearby Swiss train stations based on coordinates (latitude, longitude)."
+    },
+    {
+      "name": "be_search_connections",
+      "description": "Search train connections in Belgium between two stations. Powered by iRail API for real-time routes and schedules."
+    },
+    {
+      "name": "be_search_stations",
+      "description": "Search for Belgian train stations by name."
+    },
+    {
+      "name": "be_get_departures",
+      "description": "Get live departure board for a Belgian train station."
+    },
+    {
+      "name": "be_get_vehicle",
+      "description": "Get details about a specific Belgian train vehicle by its ID."
+    },
+    {
+      "name": "no_search_places",
+      "description": "Autocomplete search across stops/addresses/POIs in Norway via Entur Geocoder."
+    },
+    {
+      "name": "no_stop_departures",
+      "description": "Upcoming departures for a StopPlace ID (e.g., 'NSR:StopPlace:58368')."
+    },
+    {
+      "name": "no_trip",
+      "description": "Door-to-door trip planning between two StopPlaces (NSR IDs)."
+    },
+    {
+      "name": "no_nearest_stops",
+      "description": "Find nearest StopPlaces for a coordinate (lat, lon) within a radius in meters."
+    }
+  ]
+}

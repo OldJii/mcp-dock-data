@@ -1,0 +1,33 @@
+{
+  "id": "@Kashyap-AI-ML-Solutions/webex-messaging-mcp-server",
+  "displayName": "Webex Messaging Server",
+  "description": "Enable AI assistants to fully interact with Cisco Webex messaging by sending messages, managing rooms, teams, users, webhooks, and enterprise features. Access a comprehensive set of 52 tools covering all major messaging operations with secure, production-ready deployment options including Docker and dual transport modes. Simplify collaboration automation and integration with centralized configuration and enterprise authentication support.",
+  "createdAt": "2026-01-16T07:24:55.092Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kashyap-AI-ML-Solutions/webex-messaging-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "webexApiKey"
+      ],
+      "properties": {
+        "webexApiKey": {
+          "type": "string",
+          "description": "Webex API Bearer token from developer.webex.com (without 'Bearer ' prefix)"
+        },
+        "webexApiBaseUrl": {
+          "type": "string",
+          "description": "Base URL for Webex API (defaults to https://webexapis.com/v1)",
+          "default": "https://webexapis.com/v1"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

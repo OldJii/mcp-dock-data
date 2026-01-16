@@ -1,0 +1,25 @@
+{
+  "id": "@lex-tools/codebase-context-dumper",
+  "displayName": "Codebase Context Dumper",
+  "description": "Automate the extraction of your codebase context for Large Language Models. This tool scans your project directory, respects .gitignore rules, and formats the output for seamless integration with MCP-compatible clients. Save time and enhance your LLM's context with structured codebase information.",
+  "createdAt": "2026-01-16T07:24:20.040Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lex-tools/codebase-context-dumper"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "dump_codebase_context",
+      "description": "Recursively reads text files from a specified directory, respecting .gitignore rules and skipping binary files. Concatenates content with file path headers/footers. Supports chunking the output for large codebases."
+    }
+  ]
+}

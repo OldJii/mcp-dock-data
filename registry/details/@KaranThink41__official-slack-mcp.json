@@ -1,0 +1,69 @@
+{
+  "id": "@KaranThink41/official-slack-mcp",
+  "displayName": "Slack Workspace Automation Server",
+  "description": "Automate your Slack workspace interactions by posting messages, replying to threads, adding reactions, and fetching channel or user information. Streamline Slack communication and management with easy-to-use tools accessible via the Model Context Protocol. Enhance productivity by integrating Slack API capabilities directly into your workflows.",
+  "createdAt": "2026-01-16T07:32:21.846Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KaranThink41/official-slack-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "SLACK_BOT_TOKEN",
+        "SLACK_TEAM_ID"
+      ],
+      "properties": {
+        "SLACK_TEAM_ID": {
+          "type": "string",
+          "description": "The Slack Team ID for the workspace"
+        },
+        "SLACK_BOT_TOKEN": {
+          "type": "string",
+          "description": "The Bot User OAuth Token for the Slack app"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "channels_list_on_slack",
+      "description": "List public channels in the workspace with pagination"
+    },
+    {
+      "name": "send_message_on_slack",
+      "description": "Post a new message to a Slack channel. Provide either channel_id or channel_name."
+    },
+    {
+      "name": "reply_to_thread_on_slack",
+      "description": "Reply to a specific message thread in Slack. Provide either channel_id or channel_name."
+    },
+    {
+      "name": "get_channel_history_on_slack",
+      "description": "Get recent messages from a channel. Provide either channel_id or channel_name."
+    },
+    {
+      "name": "get_thread_replies_on_slack",
+      "description": "Get all replies in a message thread. Provide either channel_id or channel_name."
+    },
+    {
+      "name": "get_users_on_slack",
+      "description": "Get a list of all users in the workspace with their basic profile information"
+    },
+    {
+      "name": "get_user_profile_on_slack",
+      "description": "Get detailed profile information for a specific user"
+    },
+    {
+      "name": "get_channel_messages_on_slack",
+      "description": "Fetch the last N messages from a Slack channel (by channel_id or channel_name)."
+    },
+    {
+      "name": "get_mentions_on_slack",
+      "description": "Fetch recent messages where the bot/user is mentioned (optionally by channel)."
+    }
+  ]
+}

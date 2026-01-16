@@ -1,0 +1,12 @@
+{
+  "id": "@ssdeanx/ssd-ai",
+  "displayName": "ssd-ai",
+  "description": "This is upgrade of hi-ai mcp server converted into english,  also all unuse variables implemented & fixed sqlite saving mechanic",
+  "createdAt": "2026-01-16T07:42:47.359Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ssdeanx/ssd-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

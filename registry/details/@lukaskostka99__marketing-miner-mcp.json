@@ -1,0 +1,25 @@
+{
+  "id": "@lukaskostka99/marketing-miner-mcp",
+  "displayName": "Marketing Miner",
+  "description": "Discover keyword suggestions and search volume data from Marketing Miner. Speed up SEO research with question, new, and trending ideas and optional keyword metrics across Czech, Slovak, Polish, Hungarian, Romanian, UK, and US markets.",
+  "createdAt": "2026-01-16T07:29:27.473Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lukaskostka99/marketing-miner-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_keyword_suggestions",
+      "description": "Získá návrhy klíčových slov z Marketing Miner API.\nlang: cs/sk/pl/hu/ro/gb/us\nsuggestions_type: questions/new/trending (volitelné)\nwith_keyword_data: bool (volitelné)"
+    },
+    {
+      "name": "get_search_volume_data",
+      "description": "Získá data o hledanosti klíčového slova z Marketing Miner API.\nlang: cs/sk/pl/hu/ro/gb/us"
+    }
+  ]
+}

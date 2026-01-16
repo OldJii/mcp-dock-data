@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/date",
+  "displayName": "date",
+  "description": "Manage dates and times effortlessly. Retrieve the current date and time, find the day of the week for any date, and format dates in your preferred style. Get clear timezone details for your current or a specified region.",
+  "createdAt": "2026-01-16T07:28:55.233Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/date"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-current-datetime",
+      "description": "Returns the current date and time. Optionally specify a timezone."
+    },
+    {
+      "name": "get-day-of-week",
+      "description": "Returns the day of the week for a given date or today."
+    },
+    {
+      "name": "get-timezone-info",
+      "description": "Returns information about the current or specified timezone."
+    },
+    {
+      "name": "format-date",
+      "description": "Format a date in various styles (short, medium, long, full)."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "@hungthai1401/bruno-mcp",
+  "displayName": "Bruno MCP Server",
+  "description": "Run API tests seamlessly with Bruno collections. Get detailed execution results and insights through a standardized interface, enhancing your testing workflow. Simplify your API testing process and ensure reliability with comprehensive test summaries and failure details.",
+  "createdAt": "2026-01-16T07:32:54.919Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hungthai1401/bruno-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "run-collection",
+      "description": "Run a Bruno Collection using Bruno CLI"
+    }
+  ]
+}

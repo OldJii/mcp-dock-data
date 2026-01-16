@@ -1,0 +1,12 @@
+{
+  "id": "@yoursissu.me/isk-hub",
+  "displayName": "isk-hub",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:41.471Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yoursissu.me/isk-hub"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@easyspace/spotify-mcp",
+  "displayName": "spotify-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:12.710Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@easyspace/spotify-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

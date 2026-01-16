@@ -1,0 +1,122 @@
+{
+  "id": "cisa-m365",
+  "displayName": "CISA M365",
+  "description": "Implements CISA BOD 25-01 security controls for Microsoft 365 (Azure AD/Entra ID).",
+  "createdAt": "2026-01-16T07:29:58.189Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/cisa-m365"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tenantId",
+        "clientId",
+        "clientSecret"
+      ],
+      "properties": {
+        "clientId": {
+          "type": "string",
+          "description": "The client ID for the Azure AD application."
+        },
+        "tenantId": {
+          "type": "string",
+          "description": "The tenant ID of the Microsoft 365 setup."
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "The client secret for the Azure AD application."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "block_legacy_auth",
+      "description": "Block legacy authentication (MS.AAD.1.1v1)"
+    },
+    {
+      "name": "block_high_risk_users",
+      "description": "Block users detected as high risk (MS.AAD.2.1v1)"
+    },
+    {
+      "name": "block_high_risk_signins",
+      "description": "Block sign-ins detected as high risk (MS.AAD.2.3v1)"
+    },
+    {
+      "name": "enforce_phishing_resistant_mfa",
+      "description": "Enforce phishing-resistant MFA for all users (MS.AAD.3.1v1)"
+    },
+    {
+      "name": "enforce_alternative_mfa",
+      "description": "Enforce alternative MFA method if phishing-resistant MFA not enforced (MS.AAD.3.2v1)"
+    },
+    {
+      "name": "configure_authenticator_context",
+      "description": "Configure Microsoft Authenticator to show login context (MS.AAD.3.3v1)"
+    },
+    {
+      "name": "complete_auth_methods_migration",
+      "description": "Set Authentication Methods Manage Migration to Complete (MS.AAD.3.4v1)"
+    },
+    {
+      "name": "enforce_privileged_mfa",
+      "description": "Enforce phishing-resistant MFA for privileged roles (MS.AAD.3.6v1)"
+    },
+    {
+      "name": "restrict_app_registration",
+      "description": "Allow only administrators to register applications (MS.AAD.5.1v1)"
+    },
+    {
+      "name": "restrict_app_consent",
+      "description": "Allow only administrators to consent to applications (MS.AAD.5.2v1)"
+    },
+    {
+      "name": "configure_admin_consent",
+      "description": "Configure admin consent workflow for applications (MS.AAD.5.3v1)"
+    },
+    {
+      "name": "restrict_group_consent",
+      "description": "Prevent group owners from consenting to applications (MS.AAD.5.4v1)"
+    },
+    {
+      "name": "disable_password_expiry",
+      "description": "Disable password expiration (MS.AAD.6.1v1)"
+    },
+    {
+      "name": "configure_global_admins",
+      "description": "Configure Global Administrator role assignments (MS.AAD.7.1v1)"
+    },
+    {
+      "name": "enforce_granular_roles",
+      "description": "Enforce use of granular roles instead of Global Administrator (MS.AAD.7.2v1)"
+    },
+    {
+      "name": "enforce_cloud_accounts",
+      "description": "Enforce cloud-only accounts for privileged users (MS.AAD.7.3v1)"
+    },
+    {
+      "name": "enforce_pam",
+      "description": "Enforce PAM system for privileged role assignments (MS.AAD.7.5v1)"
+    },
+    {
+      "name": "configure_global_admin_approval",
+      "description": "Configure approval requirement for Global Administrator activation (MS.AAD.7.6v1)"
+    },
+    {
+      "name": "configure_role_alerts",
+      "description": "Configure alerts for privileged role assignments (MS.AAD.7.7v1)"
+    },
+    {
+      "name": "configure_admin_alerts",
+      "description": "Configure alerts for Global Administrator activation (MS.AAD.7.8v1)"
+    },
+    {
+      "name": "get_policy_status",
+      "description": "Get current status of all CISA M365 security policies"
+    }
+  ]
+}

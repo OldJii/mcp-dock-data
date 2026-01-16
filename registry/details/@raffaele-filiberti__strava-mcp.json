@@ -1,0 +1,12 @@
+{
+  "id": "@raffaele-filiberti/strava-mcp",
+  "displayName": "strava-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:56.535Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@raffaele-filiberti/strava-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

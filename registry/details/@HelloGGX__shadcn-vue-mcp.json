@@ -1,0 +1,40 @@
+{
+  "id": "@HelloGGX/shadcn-vue-mcp",
+  "displayName": "Shadcn Vue MCP Server",
+  "description": "Shadcn-vue MCP Server is a powerful AI-driven tool that helps developers instantly create beautiful, modern UI components through natural language descriptions. It integrates the shadcn-vue component library and tailwindcss, seamlessly connects with mainstream IDEs, and provides a streamlined UI development workflow.",
+  "createdAt": "2026-01-16T07:21:02.881Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@HelloGGX/shadcn-vue-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "description": "Empty configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "requirement-structuring",
+      "description": "analyze the user's natural language and structure the requirements into a clear and structured component requirement document. Use this tool when the user requests a new UI component—e.g., mentions /ui, or asks for a button, input, dialog, table, form, banner, card, or other Vue component"
+    },
+    {
+      "name": "components-filter",
+      "description": "filter components with shadcn/ui components and tailwindcss, Use this tool when mentions /filter"
+    },
+    {
+      "name": "component-usage-doc",
+      "description": "read usage doc of a component， Use this tool when mentions /doc."
+    },
+    {
+      "name": "component-builder",
+      "description": "Retrieve documentation for all filtered components and charts to prepare for component generation, This tool ONLY returns the text snippet for that UI component. After calling this tool, you must edit or add files to integrate the snippet into the codebase."
+    },
+    {
+      "name": "component-quality-check",
+      "description": "Automatically check Vue component quality and provide detailed feedback. Use this tool when you need to validate component quality, accessibility, performance, and best practices compliance. or when mentions /check."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@luis.ticas1/vsfclub4",
+  "displayName": "vsfclub4",
+  "description": "",
+  "createdAt": "2026-01-16T07:26:38.148Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@luis.ticas1/vsfclub4"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "@mpuhacz/aaaa-remove",
+  "displayName": "Say Hello",
+  "description": "Create friendly, personalized greetings by name. Switch to a playful pirate voice when you want extra flair. Generate quick salutations for any recipient.",
+  "createdAt": "2026-01-16T07:27:29.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mpuhacz/aaaa-remove"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@dave/testing",
+  "displayName": "testing",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:39.911Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dave/testing"
+  },
+  "connection": null,
+  "capabilities": []
+}

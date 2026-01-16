@@ -1,0 +1,12 @@
+{
+  "id": "@swseo92/jira-mcp-server",
+  "displayName": "jira-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:43.438Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@swseo92/jira-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

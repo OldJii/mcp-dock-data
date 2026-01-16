@@ -1,0 +1,56 @@
+{
+  "id": "@lgariv/ssh-mcp",
+  "displayName": "SSH Remote Command Executor",
+  "description": "Execute remote SSH commands and test SSH connectivity seamlessly through a standardized MCP interface. Manage SSH sessions securely by configuring connection details via environment variables or remote server UI. Simplify remote server management by integrating SSH operations directly into your MCP-enabled workflows.",
+  "createdAt": "2026-01-16T07:21:33.445Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lgariv/ssh-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "sshHost",
+        "sshUsername",
+        "sshPassword"
+      ],
+      "properties": {
+        "sshHost": {
+          "type": "string",
+          "description": "Target SSH IP/hostname"
+        },
+        "sshPort": {
+          "type": "integer",
+          "description": "SSH port",
+          "default": 22
+        },
+        "sshPassword": {
+          "type": "string",
+          "description": "SSH password"
+        },
+        "sshUsername": {
+          "type": "string",
+          "description": "SSH username"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ssh_test_connection",
+      "description": "Attempts to connect and returns the remote hostname"
+    },
+    {
+      "name": "ssh_run",
+      "description": "Runs a non-interactive command on the remote host"
+    }
+  ]
+}

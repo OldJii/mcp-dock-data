@@ -1,0 +1,85 @@
+{
+  "id": "zoom",
+  "displayName": "Zoom",
+  "description": "Zoom is a video conferencing and online meeting platform featuring breakout rooms, screen sharing, and integrations with various enterprise tools",
+  "createdAt": "2026-01-16T07:19:30.281Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoom"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOOM_ADD_A_MEETING_REGISTRANT",
+      "description": "This text guides on creating and customizing a user's registration for a Zoom meeting, with a max of 4,999 registrants. Preconditions include the host being licensed. API scopes and a light rate limit apply."
+    },
+    {
+      "name": "ZOOM_ADD_A_WEBINAR_REGISTRANT",
+      "description": "Zoom users with a Webinar plan can create and manage webinars, broadcasting to up to 10,000 attendees. Registration requires a Pro plan, specific permissions, and is governed by a \"LIGHT\" rate limit."
+    },
+    {
+      "name": "ZOOM_CREATE_A_MEETING",
+      "description": "Enable Zoom meeting creation via user-level apps with \"me\". \"Start_url\" for hosts expires in 2 hours, or 90 days for \"custCreate\" users. Renew via API, capped at 100 requests/day. Requires \"meeting:write\" permission, subject to medium rate limit."
+    },
+    {
+      "name": "ZOOM_DELETE_MEETING_RECORDINGS",
+      "description": "Summary: To delete all meeting recordings, ensure the user's account has Cloud Recording enabled. Required permissions include `recording:write:admin` and `recording:write` with a `Light` rate limit label."
+    },
+    {
+      "name": "ZOOM_GET_A_MEETING",
+      "description": "The text provides details on API permissions for reading meeting information, categorizing permissions into general and granular scopes, and labels the rate limit as 'LIGHT'."
+    },
+    {
+      "name": "ZOOM_GET_A_MEETING_SUMMARY",
+      "description": "Meeting summary info requires a Pro+ host plan, AI Companion enabled, excluding E2ee meetings. Scopes include meeting_summary:read and admin versions. Rate limit: LIGHT."
+    },
+    {
+      "name": "ZOOM_GET_A_WEBINAR",
+      "description": "Access Zoom Webinar details requires Pro or higher plan and Webinar add-on. Scopes include `webinar:read:admin` and `webinar:read`. Granular scopes and a 'LIGHT' rate limit also apply."
+    },
+    {
+      "name": "ZOOM_GET_DAILY_USAGE_REPORT",
+      "description": "The daily report provides Zoom service usage details, like new users, meetings, participants, and minutes per day for a month, requiring a Pro plan or higher. It has a 'Heavy' rate limit."
+    },
+    {
+      "name": "ZOOM_GET_MEETING_RECORDINGS",
+      "description": "To download meeting recordings, use `download_url`. Include OAuth token in the header for passcode-protected ones. Supports `recording:read` and `phone_recording:read:admin` scopes, with a `LIGHT` rate limit."
+    },
+    {
+      "name": "ZOOM_GET_PAST_MEETING_PARTICIPANTS",
+      "description": "API allows paid users (Pro+) to fetch past meeting attendee info, excluding solo participants. Requires double encoding for certain UUIDs, with `meeting:read` scope and others. Rate limit is medium."
+    },
+    {
+      "name": "ZOOM_LIST_ALL_RECORDINGS",
+      "description": "This text details how to list Zoom cloud recordings for a user, notably by using \"me\" for user-level apps and requiring an OAuth token for access. It requires a Pro plan, Cloud Recording enabled, and has a MEDIUM rate limit."
+    },
+    {
+      "name": "ZOOM_LIST_ARCHIVED_FILES",
+      "description": "Zoom's archiving solution enables administrators to automatically record and archive meeting data to third-party platforms for compliance, needing the Meeting and Webinar Archiving feature enabled."
+    },
+    {
+      "name": "ZOOM_LIST_DEVICES",
+      "description": "This API lets you list devices. **Scopes:** `device:read:admin`,`device:write:admin` **[Rate Limit Label](https://marketplace.zoom.us/docs/api-reference/rate-limits#rate-limits):** `HEAVY`"
+    },
+    {
+      "name": "ZOOM_LIST_MEETINGS",
+      "description": "This Zoom API lists a user's scheduled meetings using the `me` value for user-level apps, excluding instant meetings and only showing unexpired ones. It requires specific scopes and has a `MEDIUM` rate limit."
+    },
+    {
+      "name": "ZOOM_LIST_WEBINAR_PARTICIPANTS",
+      "description": "Get a list of past webinar participants with a Pro plan or above plus an add-on. Requires specific scopes and has a medium rate limit."
+    },
+    {
+      "name": "ZOOM_LIST_WEBINARS",
+      "description": "The API lists all scheduled webinars for Zoom users with a webinar plan, using `me` for user-level apps. It only shows unexpired webinars for hosts broadcasting to up to 10,000 attendees. Requires Pro plan upwards and specific scopes. Rate limit: MEDIUM."
+    },
+    {
+      "name": "ZOOM_UPDATE_A_MEETING",
+      "description": "To update a meeting via API, ensure `start_time` is future-dated; `recurrence` is needed. Limit: 100 requests/day, 100 updates/meeting in 24 hrs. Requires `meeting:write` and `meeting:write:admin` scopes, with a `LIGHT` rate limit."
+    }
+  ]
+}

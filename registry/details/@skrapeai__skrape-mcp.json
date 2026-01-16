@@ -1,0 +1,32 @@
+{
+  "id": "@skrapeai/skrape-mcp",
+  "displayName": "Skrape MCP Server",
+  "description": "Get any website content - Convert webpages into clean, LLM-ready Markdown.",
+  "createdAt": "2026-01-16T07:26:52.840Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skrapeai/skrape-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "skrapeApiKey"
+      ],
+      "properties": {
+        "skrapeApiKey": {
+          "type": "string",
+          "description": "The API key for the Skrape MCP server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_markdown",
+      "description": "Get markdown content from a webpage using skrape.ai"
+    }
+  ]
+}

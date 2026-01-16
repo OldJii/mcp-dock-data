@@ -1,0 +1,12 @@
+{
+  "id": "@calclavia/braintrust",
+  "displayName": "braintrust",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:21.483Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@calclavia/braintrust"
+  },
+  "connection": null,
+  "capabilities": []
+}

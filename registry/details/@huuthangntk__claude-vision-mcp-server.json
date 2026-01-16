@@ -1,0 +1,41 @@
+{
+  "id": "@huuthangntk/claude-vision-mcp-server",
+  "displayName": "Claude Vision",
+  "description": "Analyze images from multiple angles to extract detailed insights or quick summaries. Describe visuals rapidly or dive deeper with iterative reasoning when you need thorough understanding. Get strategic guidance and suggestions grounded in your conversation context.",
+  "createdAt": "2026-01-16T07:29:34.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@huuthangntk/claude-vision-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "description": "Claude model to use",
+          "default": "claude-sonnet-4-5-20250929"
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Your Anthropic Claude API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "claude_think",
+      "description": "CRITICAL: Use this tool BEFORE writing or modifying code when new information arrives (errors, requirements, feedback, documentation). This tool analyzes the context deeply to provide intelligent insights, identify pitfalls, suggest best practices, and extract key information that will make the code implementation better, faster, and more reliable. Always call this first when you encounter new findings or need to make code changes."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@mdornich/google-drive-mcp2",
+  "displayName": "Google Drive Integration Server",
+  "description": "Enable seamless interaction with Google Drive through a standardized interface. Manage files, folders, permissions, comments, and shared drives efficiently. Perform operations like file upload, search, version control, and change tracking with ease.",
+  "createdAt": "2026-01-16T07:25:20.557Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mdornich/google-drive-mcp2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

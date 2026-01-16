@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/jigsawstack-text-to-speech",
+  "displayName": "JigsawStack Text To Speech",
+  "description": "Convert Speech to Text using JigsawStack AI Models.",
+  "createdAt": "2026-01-16T07:25:51.036Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/jigsawstack-text-to-speech"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "text-to-speech",
+      "description": "Convert text to speech"
+    }
+  ]
+}

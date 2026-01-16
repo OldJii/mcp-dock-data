@@ -1,0 +1,12 @@
+{
+  "id": "@yjqian19/exa-mcp-server",
+  "displayName": "exa-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:57.984Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yjqian19/exa-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

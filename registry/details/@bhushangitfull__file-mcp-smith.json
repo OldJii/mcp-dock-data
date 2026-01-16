@@ -1,0 +1,39 @@
+{
+  "id": "@bhushangitfull/file-mcp-smith",
+  "displayName": "Filesystem",
+  "description": "Manage files and folders with ease. Read and write files, list directories, create folders, and delete unwanted items to keep projects organized.",
+  "createdAt": "2026-01-16T07:20:15.592Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bhushangitfull/file-mcp-smith"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_file",
+      "description": "Read contents of a file.\n        \n        Args:\n            path: Path to the file to read\n        "
+    },
+    {
+      "name": "write_file",
+      "description": "Write content to a file.\n        \n        Args:\n            path: Path to the file to write\n            content: Content to write to the file\n        "
+    },
+    {
+      "name": "list_directory",
+      "description": "List contents of a directory.\n        \n        Args:\n            path: Path to the directory (defaults to current directory)\n        "
+    },
+    {
+      "name": "create_directory",
+      "description": "Create a new directory.\n        \n        Args:\n            path: Path to the directory to create\n        "
+    },
+    {
+      "name": "delete_file",
+      "description": "Delete a file.\n        \n        Args:\n            path: Path to the file to delete\n        "
+    }
+  ]
+}

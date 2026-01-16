@@ -1,0 +1,47 @@
+{
+  "id": "@blockehh/mcp_twilio_build",
+  "displayName": "Twilio API MCP Server",
+  "description": "Expose Twilio's APIs to AI assistants and tools supporting the Model Context Protocol. Enable seamless integration of Twilio's communication capabilities into AI workflows. Simplify access to Twilio services through a standardized protocol interface.",
+  "createdAt": "2026-01-16T07:28:43.050Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@blockehh/mcp_twilio_build"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "TWILIO_ACCOUNT_SID",
+        "TWILIO_API_KEY",
+        "TWILIO_API_SECRET"
+      ],
+      "properties": {
+        "NODE_ENV": {
+          "type": "string",
+          "description": "Node environment",
+          "default": "production"
+        },
+        "services": {
+          "type": "array",
+          "description": "Select which Twilio services to enable (leave empty for all services)",
+          "default": []
+        },
+        "TWILIO_API_KEY": {
+          "type": "string",
+          "description": "Your Twilio API Key starting with 'SK'. Create one in Twilio Console > Account > API Keys & Tokens."
+        },
+        "TWILIO_API_SECRET": {
+          "type": "string",
+          "description": "Your Twilio API Secret (paired with the API Key above)"
+        },
+        "TWILIO_ACCOUNT_SID": {
+          "type": "string",
+          "description": "Your Twilio Account SID starting with 'AC'. Find this in your Twilio Console Dashboard."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

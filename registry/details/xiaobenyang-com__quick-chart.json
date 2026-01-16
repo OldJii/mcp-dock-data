@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/quick-chart",
+  "displayName": "quick-chart",
+  "description": "Create chart images and get instant shareable links. Customize chart types and styling to fit your data. Embed links in docs, dashboards, or messages without hosting images yourself.",
+  "createdAt": "2026-01-16T07:32:35.541Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/quick-chart"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "GetChartImgLink",
+      "description": "To draw chart and get chart image link by parameters, and parameter grammar follows Quick Chart API (quickchart.io)."
+    }
+  ]
+}

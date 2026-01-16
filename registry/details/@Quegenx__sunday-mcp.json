@@ -1,0 +1,78 @@
+{
+  "id": "@Quegenx/sunday-mcp",
+  "displayName": "Medici Hotels Booking Server",
+  "description": "Enable AI assistants to search hotels, manage bookings, and access hotel data seamlessly through the Medici Hotels API. Simplify hotel price searches, room management, and booking operations with secure JWT authentication. Enhance your travel or hospitality applications with real-time hotel booking capabilities.",
+  "createdAt": "2026-01-16T07:25:10.987Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Quegenx/sunday-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "mediciToken"
+      ],
+      "properties": {
+        "mediciToken": {
+          "type": "string",
+          "description": "Medici Hotels JWT token (required)"
+        },
+        "mediciBaseUrl": {
+          "type": "string",
+          "description": "Medici Hotels API base URL",
+          "default": "https://medici-backend.azurewebsites.net"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_instant_search_price",
+      "description": "Get instant search prices for hotels based on dates, location, and other criteria"
+    },
+    {
+      "name": "get_rooms_active",
+      "description": "Get active room bookings with filtering options"
+    },
+    {
+      "name": "get_rooms_sales",
+      "description": "Get room sales data with filtering options"
+    },
+    {
+      "name": "get_rooms_cancel",
+      "description": "Get cancelled room bookings with filtering options"
+    },
+    {
+      "name": "get_opportunities",
+      "description": "Get booking opportunities with filtering options"
+    },
+    {
+      "name": "get_room_archive_data",
+      "description": "Get archived room data with filtering and pagination options"
+    },
+    {
+      "name": "insert_opportunity",
+      "description": "Create a new booking opportunity"
+    },
+    {
+      "name": "update_rooms_active_push_price",
+      "description": "Update the push price for active room bookings"
+    },
+    {
+      "name": "cancel_room_active",
+      "description": "Cancel an active room booking - WARNING: This action is irreversible"
+    },
+    {
+      "name": "manual_book_room",
+      "description": "Manually book a room with complete guest and booking details"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@codly.fun/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:58.030Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@codly.fun/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

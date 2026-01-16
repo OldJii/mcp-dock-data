@@ -1,0 +1,16 @@
+{
+  "id": "@riteshtk/notion-mcp-server",
+  "displayName": "Notion API Server",
+  "description": "Enable seamless interaction with your Notion workspace through natural language commands. Automate content retrieval, page creation, and commenting by leveraging the Notion API via a standardized MCP interface. Enhance your productivity by integrating Notion data and actions directly into your LLM workflows.",
+  "createdAt": "2026-01-16T07:26:10.545Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@riteshtk/notion-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

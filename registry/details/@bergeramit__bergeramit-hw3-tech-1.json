@@ -1,0 +1,25 @@
+{
+  "id": "@bergeramit/bergeramit-hw3-tech-1",
+  "displayName": "Greet and Add",
+  "description": "Add two numbers instantly and generate friendly greetings on demand. Speed up quick math and personalized salutations in your workflow. Keep simple tasks fast and reliable.",
+  "createdAt": "2026-01-16T07:22:21.483Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bergeramit/bergeramit-hw3-tech-1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "email_scam_detection",
+      "description": "Implementation will come soon..."
+    }
+  ]
+}

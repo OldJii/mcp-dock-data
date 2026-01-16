@@ -1,0 +1,12 @@
+{
+  "id": "@aixsignal/smithly",
+  "displayName": "smithly",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:59.113Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aixsignal/smithly"
+  },
+  "connection": null,
+  "capabilities": []
+}

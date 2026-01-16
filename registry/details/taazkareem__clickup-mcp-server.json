@@ -1,0 +1,12 @@
+{
+  "id": "taazkareem/clickup-mcp-server",
+  "displayName": "clickup-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:49.486Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/taazkareem/clickup-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

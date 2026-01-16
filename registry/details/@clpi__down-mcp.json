@@ -1,0 +1,12 @@
+{
+  "id": "@clpi/down-mcp",
+  "displayName": "down-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:46.438Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@clpi/down-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,125 @@
+{
+  "id": "@Counterbalance-Economics/retellai-mcp-server",
+  "displayName": "Retell Voice",
+  "description": "Manage calls, numbers, voices, and agents on Retell to build and run phone and web call experiences. Create, update, and launch calls directly from your workspace while keeping configurations in sync. Monitor activity and iterate quickly as your use cases evolve.",
+  "createdAt": "2026-01-16T07:24:35.983Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Counterbalance-Economics/retellai-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "retellApiKey"
+      ],
+      "properties": {
+        "retellApiKey": {
+          "type": "string",
+          "description": "RetellAI API key used to authenticate requests to Retell service"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_phone_call",
+      "description": "Creates a new phone call"
+    },
+    {
+      "name": "create_web_call",
+      "description": "Creates a new web call"
+    },
+    {
+      "name": "get_call",
+      "description": "Gets a call by ID"
+    },
+    {
+      "name": "list_calls",
+      "description": "Lists all calls"
+    },
+    {
+      "name": "update_call",
+      "description": "Updates an existing call"
+    },
+    {
+      "name": "delete_call",
+      "description": "Deletes a call"
+    },
+    {
+      "name": "list_agents",
+      "description": "Lists all Retell agents"
+    },
+    {
+      "name": "create_agent",
+      "description": "Creates a new Retell agent"
+    },
+    {
+      "name": "get_agent",
+      "description": "Gets a Retell agent by ID"
+    },
+    {
+      "name": "update_agent",
+      "description": "Updates an existing Retell agent"
+    },
+    {
+      "name": "delete_agent",
+      "description": "Deletes a Retell agent"
+    },
+    {
+      "name": "get_agent_versions",
+      "description": "Gets all versions of a Retell agent"
+    },
+    {
+      "name": "list_phone_numbers",
+      "description": "Lists all Retell phone numbers"
+    },
+    {
+      "name": "create_phone_number",
+      "description": "Creates a new phone number"
+    },
+    {
+      "name": "get_phone_number",
+      "description": "Gets details of a specific phone number"
+    },
+    {
+      "name": "update_phone_number",
+      "description": "Updates a phone number"
+    },
+    {
+      "name": "delete_phone_number",
+      "description": "Deletes a phone number"
+    },
+    {
+      "name": "list_voices",
+      "description": "Lists all available Retell voices"
+    },
+    {
+      "name": "get_voice",
+      "description": "Gets details of a specific voice"
+    },
+    {
+      "name": "list_retell_llms",
+      "description": "Lists all Retell LLMs"
+    },
+    {
+      "name": "create_retell_llm",
+      "description": "Creates a new Retell LLM"
+    },
+    {
+      "name": "get_retell_llm",
+      "description": "Gets a Retell LLM by ID"
+    },
+    {
+      "name": "update_retell_llm",
+      "description": "Updates an existing Retell LLM"
+    },
+    {
+      "name": "delete_retell_llm",
+      "description": "Deletes a Retell LLM"
+    }
+  ]
+}

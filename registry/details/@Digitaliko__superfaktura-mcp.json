@@ -1,0 +1,12 @@
+{
+  "id": "@Digitaliko/superfaktura-mcp",
+  "displayName": "superfaktura-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:12.578Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Digitaliko/superfaktura-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "@alexandrebagio/swapi-mcp",
+  "displayName": "SWAPI Server",
+  "description": "Provide seamless access to Star Wars API data for your applications. Fetch, manipulate, and integrate Star Wars universe information effortlessly. Enhance your projects with rich, structured data from the iconic franchise.",
+  "createdAt": "2026-01-16T07:24:44.517Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alexandrebagio/swapi-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "planets",
+      "description": "List all planets"
+    },
+    {
+      "name": "planet",
+      "description": "Get a details of a planet by id"
+    },
+    {
+      "name": "peoples",
+      "description": "List all peoples"
+    },
+    {
+      "name": "people",
+      "description": "Get a details of a people by id"
+    },
+    {
+      "name": "films",
+      "description": "List all films"
+    },
+    {
+      "name": "film",
+      "description": "Get a details of a film by id"
+    },
+    {
+      "name": "species",
+      "description": "List all species"
+    },
+    {
+      "name": "specie",
+      "description": "Get a details of a specie by id"
+    },
+    {
+      "name": "vehicles",
+      "description": "List all vehicles"
+    },
+    {
+      "name": "vehicle",
+      "description": "Get a details of a vehicle by id"
+    },
+    {
+      "name": "starships",
+      "description": "List all starships"
+    },
+    {
+      "name": "starship",
+      "description": "Get a details of a starship by id"
+    }
+  ]
+}

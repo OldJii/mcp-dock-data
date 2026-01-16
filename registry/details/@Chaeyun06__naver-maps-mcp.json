@@ -1,0 +1,59 @@
+{
+  "id": "@Chaeyun06/naver-maps-mcp",
+  "displayName": "Naver Maps Directions Server",
+  "description": "Provide route finding and navigation capabilities using the Naver Maps API. Enable agents to access detailed directions and map data for locations in Korea. Enhance location-based applications with accurate and up-to-date navigation information.",
+  "createdAt": "2026-01-16T07:24:24.475Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Chaeyun06/naver-maps-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "NAVER_CLIENT_ID",
+        "NAVER_CLIENT_SECRET"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "디버그 로깅 활성화",
+          "default": false
+        },
+        "NAVER_CLIENT_ID": {
+          "type": "string",
+          "description": "네이버 클라우드 플랫폼 Client ID"
+        },
+        "NAVER_CLIENT_SECRET": {
+          "type": "string",
+          "description": "네이버 클라우드 플랫폼 Client Secret"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "naver_directions",
+      "description": "네이버 지도 API를 사용하여 두 지점 간의 길찾기 정보를 제공합니다"
+    },
+    {
+      "name": "naver_geocode",
+      "description": "주소를 위도/경도 좌표로 변환합니다"
+    },
+    {
+      "name": "naver_reverse_geocode",
+      "description": "위도/경도 좌표를 주소로 변환합니다"
+    },
+    {
+      "name": "naver_static_map",
+      "description": "네이버 지도 API를 사용하여 정적 지도 이미지를 Base64 data URI로 반환합니다"
+    }
+  ]
+}

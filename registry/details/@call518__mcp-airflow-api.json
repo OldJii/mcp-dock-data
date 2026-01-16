@@ -1,0 +1,189 @@
+{
+  "id": "@call518/mcp-airflow-api",
+  "displayName": "MCP-Airflow-API",
+  "description": "Manage Apache Airflow clusters in plain language—monitor DAGs, trigger or pause runs, and browse code, logs, variables, pools, and connections. Accelerate troubleshooting with quick views of failed tasks, event logs, run durations, and cluster health. Work seamlessly across Airflow 2.x and 3.x, including asset insights for data-aware scheduling.",
+  "createdAt": "2026-01-16T07:32:56.955Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@call518/mcp-airflow-api"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_prompt_template",
+      "description": "[Tool Role]: Provides comprehensive prompt template for LLM interactions with Airflow operations.\n\nArgs:\n    section: Optional section name to get specific part of template\n    mode: Optional mode (summary/detailed) to control response verbosity\n\nReturns:\n    Comprehensive template or specific section for optimal LLM guidance"
+    },
+    {
+      "name": "list_dags",
+      "description": "[Tool Role]: Lists all DAGs registered in the Airflow cluster with pagination support.\n\nArgs:\n    limit: Maximum number of DAGs to return (default: 20)\n    offset: Number of DAGs to skip for pagination (default: 0)\n    fetch_all: If True, fetches all DAGs regardless of limit/offset\n    id_contains: Filter DAGs by ID containing this string\n    name_contains: Filter DAGs by display name containing this string\n\nReturns:\n    Dict containing dags list, pagination info, and total counts"
+    },
+    {
+      "name": "get_dag",
+      "description": "[Tool Role]: Retrieves detailed information for a specific DAG.\n\nArgs:\n    dag_id: The DAG ID to get details for\n\nReturns:\n    Comprehensive DAG details"
+    },
+    {
+      "name": "get_dags_detailed_batch",
+      "description": "[Tool Role]: Retrieves detailed information for multiple DAGs in batch with latest run information."
+    },
+    {
+      "name": "running_dags",
+      "description": "[Tool Role]: Lists all currently running DAG runs in the Airflow cluster."
+    },
+    {
+      "name": "failed_dags",
+      "description": "[Tool Role]: Lists all recently failed DAG runs in the Airflow cluster."
+    },
+    {
+      "name": "trigger_dag",
+      "description": "[Tool Role]: Triggers a new DAG run for a specified Airflow DAG."
+    },
+    {
+      "name": "pause_dag",
+      "description": "[Tool Role]: Pauses the specified Airflow DAG (prevents scheduling new runs)."
+    },
+    {
+      "name": "unpause_dag",
+      "description": "[Tool Role]: Unpauses the specified Airflow DAG (allows scheduling new runs)."
+    },
+    {
+      "name": "dag_graph",
+      "description": "[Tool Role]: Retrieves task graph structure for the specified DAG."
+    },
+    {
+      "name": "list_tasks",
+      "description": "[Tool Role]: Lists all tasks within the specified DAG."
+    },
+    {
+      "name": "dag_code",
+      "description": "[Tool Role]: Retrieves the source code for the specified DAG."
+    },
+    {
+      "name": "list_event_logs",
+      "description": "[Tool Role]: Lists event logs from Airflow."
+    },
+    {
+      "name": "get_event_log",
+      "description": "[Tool Role]: Retrieves a specific event log entry."
+    },
+    {
+      "name": "all_dag_event_summary",
+      "description": "[Tool Role]: Provides summary of event logs across all DAGs."
+    },
+    {
+      "name": "list_import_errors",
+      "description": "[Tool Role]: Lists import errors in Airflow."
+    },
+    {
+      "name": "get_import_error",
+      "description": "[Tool Role]: Retrieves a specific import error."
+    },
+    {
+      "name": "all_dag_import_summary",
+      "description": "[Tool Role]: Provides summary of import errors across all DAGs."
+    },
+    {
+      "name": "dag_run_duration",
+      "description": "[Tool Role]: Analyzes DAG run durations and performance metrics."
+    },
+    {
+      "name": "dag_task_duration",
+      "description": "[Tool Role]: Analyzes task durations within a DAG run."
+    },
+    {
+      "name": "dag_calendar",
+      "description": "[Tool Role]: Shows DAG schedule and execution calendar for a date range."
+    },
+    {
+      "name": "get_health",
+      "description": "[Tool Role]: Checks Airflow cluster health status."
+    },
+    {
+      "name": "get_version",
+      "description": "[Tool Role]: Gets Airflow version information."
+    },
+    {
+      "name": "get_config",
+      "description": "[Tool Role]: Retrieves Airflow configuration."
+    },
+    {
+      "name": "list_config_sections",
+      "description": "[Tool Role]: Lists all configuration sections with summary."
+    },
+    {
+      "name": "get_config_section",
+      "description": "[Tool Role]: Gets all options within a specific configuration section."
+    },
+    {
+      "name": "search_config_options",
+      "description": "[Tool Role]: Searches for configuration options matching a term."
+    },
+    {
+      "name": "list_pools",
+      "description": "[Tool Role]: Lists all pools in Airflow."
+    },
+    {
+      "name": "get_pool",
+      "description": "[Tool Role]: Gets details for a specific pool."
+    },
+    {
+      "name": "list_task_instances_all",
+      "description": "[Tool Role]: Lists task instances with comprehensive filtering options."
+    },
+    {
+      "name": "get_task_instance_details",
+      "description": "[Tool Role]: Gets detailed information for a specific task instance."
+    },
+    {
+      "name": "list_task_instances_batch",
+      "description": "[Tool Role]: Lists task instances in batch with date and state filtering."
+    },
+    {
+      "name": "get_task_instance_extra_links",
+      "description": "[Tool Role]: Gets extra links for a task instance."
+    },
+    {
+      "name": "get_task_instance_logs",
+      "description": "[Tool Role]: Retrieves logs for a specific task instance."
+    },
+    {
+      "name": "list_variables",
+      "description": "[Tool Role]: Lists all variables in Airflow."
+    },
+    {
+      "name": "get_variable",
+      "description": "[Tool Role]: Gets the value of a specific variable."
+    },
+    {
+      "name": "list_xcom_entries",
+      "description": "[Tool Role]: Lists XCom entries for a specific task instance."
+    },
+    {
+      "name": "get_xcom_entry",
+      "description": "[Tool Role]: Gets a specific XCom entry."
+    },
+    {
+      "name": "list_connections",
+      "description": "[Tool Role]: Lists all connections in Airflow."
+    },
+    {
+      "name": "get_connection",
+      "description": "[Tool Role]: Gets details for a specific connection."
+    },
+    {
+      "name": "create_connection",
+      "description": "[Tool Role]: Creates a new connection."
+    },
+    {
+      "name": "update_connection",
+      "description": "[Tool Role]: Updates an existing connection."
+    },
+    {
+      "name": "delete_connection",
+      "description": "[Tool Role]: Deletes a connection."
+    }
+  ]
+}

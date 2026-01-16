@@ -1,0 +1,25 @@
+{
+  "id": "freshbooks",
+  "displayName": "Freshbooks",
+  "description": "FreshBooks is a cloud-based accounting software service designed for small and medium-sized businesses, offering features like invoicing, expense tracking, and time management.",
+  "createdAt": "2026-01-16T07:19:27.877Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/freshbooks"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "FRESHBOOKS_LIST_BUSINESSES",
+      "description": "Tool to list all businesses associated with the authenticated user."
+    },
+    {
+      "name": "FRESHBOOKS_LIST_PROJECTS",
+      "description": "Tool to list all projects for a business. Use after confirming the business ID."
+    }
+  ]
+}

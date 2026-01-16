@@ -1,0 +1,85 @@
+{
+  "id": "@Parc-Dev/todo-mcp-server",
+  "displayName": "todo-mcp",
+  "description": "Organize tasks and subtasks with fast create, update, complete, and reopen actions. Filter views by today, upcoming, overdue, or all to stay focused. Recover mistakes with soft delete and restore.",
+  "createdAt": "2026-01-16T07:24:09.555Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Parc-Dev/todo-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "todoApiBaseUrl": {
+          "type": "string",
+          "description": "Base URL of Todo API server"
+        },
+        "todoApiAccessToken": {
+          "type": "string",
+          "description": "Access token for Todo API authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_tasks",
+      "description": "List tasks with optional filters (today, upcoming, overdue, all)"
+    },
+    {
+      "name": "create_task",
+      "description": "Create a new task, generating subtasks created by AI"
+    },
+    {
+      "name": "update_task",
+      "description": "Update an existing task. All fields except taskId are optional."
+    },
+    {
+      "name": "complete_task",
+      "description": "Mark a task as completed (automatically completes all subtasks)"
+    },
+    {
+      "name": "reopen_task",
+      "description": "Reopen a completed task"
+    },
+    {
+      "name": "delete_task",
+      "description": "Soft delete a task (recoverable)"
+    },
+    {
+      "name": "undelete_task",
+      "description": "Restore a deleted task"
+    },
+    {
+      "name": "create_subtask",
+      "description": "Create a new subtask under a specified task"
+    },
+    {
+      "name": "update_subtask",
+      "description": "Update a subtask's title"
+    },
+    {
+      "name": "complete_subtask",
+      "description": "Mark a subtask as completed"
+    },
+    {
+      "name": "reopen_subtask",
+      "description": "Reopen a completed subtask"
+    },
+    {
+      "name": "delete_subtask",
+      "description": "Soft delete a subtask (recoverable)"
+    },
+    {
+      "name": "undelete_subtask",
+      "description": "Restore a deleted subtask"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "@DynamicEndpoints/paloalto-device-server",
+  "displayName": "Palo Alto Device Server",
+  "description": "Manage your Palo Alto firewalls effortlessly through their REST API. Retrieve system information, perform upgrades, and manage certificates with ease. Streamline your firewall operations and ensure your systems are always up-to-date and secure.",
+  "createdAt": "2026-01-16T07:27:37.133Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/paloalto-device-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "panosApiKey"
+      ],
+      "properties": {
+        "panosApiKey": {
+          "type": "string",
+          "description": "Your Palo Alto firewall API key. (required)"
+        },
+        "panosApiBaseUrl": {
+          "type": "string",
+          "description": "Base URL for the Palo Alto REST API. Optional, defaults shown.",
+          "default": "https://firewall.example.com/restapi/v11.0"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_system_info",
+      "description": "Get system information from the Palo Alto firewall"
+    },
+    {
+      "name": "upgrade_firewall",
+      "description": "Upgrade the Palo Alto firewall to the latest PAN-OS version"
+    },
+    {
+      "name": "upgrade_ha_firewalls_from_panorama",
+      "description": "Upgrade PAN-OS on Multiple HA Firewalls through Panorama"
+    },
+    {
+      "name": "check_install_content_updates",
+      "description": "Automatically Check for and Install Content Updates"
+    },
+    {
+      "name": "manage_certificates",
+      "description": "Manage certificates on the Palo Alto firewall"
+    },
+    {
+      "name": "run_operational_mode_command",
+      "description": "Run an operational mode command on the Palo Alto firewall"
+    }
+  ]
+}

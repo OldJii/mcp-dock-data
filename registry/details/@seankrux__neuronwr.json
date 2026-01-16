@@ -1,0 +1,34 @@
+{
+  "id": "@seankrux/neuronwr",
+  "displayName": "NeuronWriter",
+  "description": "Browse and manage your NeuronWriter projects. Create content writer queries to kickstart briefs and drafts for your topics. Accelerate content planning and writing.",
+  "createdAt": "2026-01-16T07:32:02.966Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@seankrux/neuronwr"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "default": {},
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "nw.listProjects",
+      "description": "Fetch projects from NeuronWriter"
+    },
+    {
+      "name": "nw.newQuery",
+      "description": "Create a content writer query for a project"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "yongkangc/tempo-mcp-rs",
+  "displayName": "tempo-mcp-rs",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:38.618Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/yongkangc/tempo-mcp-rs"
+  },
+  "connection": null,
+  "capabilities": []
+}

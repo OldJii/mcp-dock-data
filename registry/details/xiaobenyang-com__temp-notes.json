@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/temp-notes",
+  "displayName": "temp-notes",
+  "description": "Capture quick notes in a single workspace. Read, write, and append ideas effortlessly as they evolve. Reset the page to start fresh whenever you need.",
+  "createdAt": "2026-01-16T07:31:07.341Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/temp-notes"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "clear_note",
+      "description": "Clears the current note, making it empty."
+    },
+    {
+      "name": "write_note",
+      "description": "Replaces the current note with a new string."
+    },
+    {
+      "name": "read_note",
+      "description": "Returns the current content of the note."
+    },
+    {
+      "name": "append_note",
+      "description": "Appends new text to the current note, starting with a new line. Optionally includes a separator line."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "king-of-the-grackles/discourse-mcp",
+  "displayName": "discourse-mcp",
+  "description": "Connect to any Discourse site to search and read topics, posts, users, categories, tags, and chat channels. Draft and publish posts and topics, and manage categories and users with opt-in, safeguarded writes when authorized. Filter precisely with a concise query language and receive permission-aware results.",
+  "createdAt": "2026-01-16T07:22:54.035Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/king-of-the-grackles/discourse-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "site": {
+          "type": "string",
+          "description": "Full URL to your Discourse site (e.g., https://meta.discourse.org)"
+        },
+        "api_key": {
+          "type": "string",
+          "description": "Discourse Admin API key for authenticated requests. Get this from Admin > API > New API Key"
+        },
+        "log_level": {
+          "type": "string",
+          "description": "Logging verbosity: 'silent' for no logs, 'error' for errors only, 'info' for standard, 'debug' for verbose",
+          "default": "info"
+        },
+        "read_only": {
+          "type": "boolean",
+          "description": "When enabled, only read operations are allowed. Prevents creating posts, topics, or users",
+          "default": true
+        },
+        "tools_mode": {
+          "type": "string",
+          "description": "Which tools to expose: 'auto' detects available APIs, 'discourse_api_only' uses built-in tools only, 'tool_exec_api' includes remote tools",
+          "default": "auto"
+        },
+        "allow_writes": {
+          "type": "boolean",
+          "description": "Enable topic/post creation and other write operations. Requires valid authentication",
+          "default": false
+        },
+        "api_username": {
+          "type": "string",
+          "description": "Username associated with the Admin API key (usually 'system' or an admin username)"
+        },
+        "user_api_key": {
+          "type": "string",
+          "description": "Discourse User API key (alternative to Admin API key). Generated via user-api-key flow"
+        },
+        "default_search": {
+          "type": "string",
+          "description": "Prefix automatically added to all search queries (e.g., 'category:support' to filter searches)"
+        },
+        "max_read_length": {
+          "type": "number",
+          "description": "Maximum characters to return per content item. Larger values return more content but may hit token limits",
+          "default": 50000
+        },
+        "user_api_client_id": {
+          "type": "string",
+          "description": "Client ID for User API key authentication. Generated when creating the User API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "discourse_select_site",
+      "description": "Validate and select a Discourse site for subsequent tool calls. Verifies the site is reachable and retrieves its title. Must be called before using other tools when multiple sites are configured."
+    },
+    {
+      "name": "discourse_search",
+      "description": "Search Discourse site content including topics, posts, and users. Use search operators like @username, #tag, category:name for filtered results."
+    },
+    {
+      "name": "discourse_read_topic",
+      "description": "Read a Discourse topic including its metadata (title, category, tags) and posts. Supports pagination for long topics."
+    },
+    {
+      "name": "discourse_read_post",
+      "description": "Read a specific post by its ID. Returns the post content, author, creation date, and link to the post."
+    },
+    {
+      "name": "discourse_list_categories",
+      "description": "List all categories visible to the current user. Returns category names and topic counts. Useful for discovering where to post or search."
+    },
+    {
+      "name": "discourse_list_tags",
+      "description": "List all available tags on the Discourse site (if tagging is enabled). Returns tag names and usage counts. Use tags in search queries with #tagname."
+    },
+    {
+      "name": "discourse_get_user",
+      "description": "Get information about a Discourse user by username. Returns name, trust level, join date, bio, and profile link."
+    },
+    {
+      "name": "discourse_list_user_posts",
+      "description": "Get a paginated list of posts and replies by a specific user, with the most recent first. Returns 30 posts per page. Includes topic title, post date, excerpt, and direct links."
+    },
+    {
+      "name": "discourse_filter_topics",
+      "description": "Filter topics with a concise query language: use key:value tokens separated by spaces; category/categories for categories (comma = OR, '=category' = without subcats, '-' prefix = exclude), tag/tags (comma = OR, '+' = AND) and tag_group; status:(open|closed|archived|listed|unlisted|public) and personal in:(bookmarked|watching|tracking|muted|pinned); dates: created/activity/latest-post-(before|after) with YYYY-MM-DD or N (days); numeric: likes[-op]-(min|max), posts-(min|max), posters-(min|max), views-(min|max); order: activity|created|latest-post|likes|likes-op|posters|title|views|category with optional -asc; free text terms are matched full-text. Results are permission-aware."
+    },
+    {
+      "name": "discourse_list_chat_channels",
+      "description": "List all public chat channels visible to the current user. Returns channel information including title, description, and member counts. Supports filtering and pagination."
+    },
+    {
+      "name": "discourse_list_user_chat_channels",
+      "description": "List all chat channels for the currently authenticated user, including both public channels they're a member of and direct message channels. Includes unread tracking information."
+    },
+    {
+      "name": "discourse_get_chat_messages",
+      "description": "Get messages from a chat channel with flexible pagination and date-based filtering. Supports: (1) paginating with direction='past'/'future' from a target_message_id, (2) querying messages around a specific target_date, (3) getting messages around a target_message_id, or (4) fetching from last read position."
+    },
+    {
+      "name": "discourse_list_drafts",
+      "description": "List all drafts for the current user. Returns draft keys, sequences, and preview content. Use this to find existing drafts before updating them."
+    },
+    {
+      "name": "discourse_get_draft",
+      "description": "Retrieve a specific draft by its key. Common keys: \"new_topic\" for new topic drafts, \"topic_<id>\" for reply drafts."
+    },
+    {
+      "name": "search_discourse_communities",
+      "description": "Discover Discourse forum communities by topic or find similar communities. Use 'query' for semantic text search (e.g., 'note taking productivity') or 'similar_to' to find communities similar to a known one by URL or ID. Provide exactly one of 'query' or 'similar_to'. Returns communities with confidence scores and engagement metrics."
+    }
+  ]
+}

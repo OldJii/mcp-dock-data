@@ -1,0 +1,26 @@
+{
+  "id": "@lmsorry/ohmysmithery",
+  "displayName": "ohmysmithery",
+  "description": "Generate friendly greetings on demand. Toggle pirate mode to add swashbuckling flair. Personalize salutations for any name or context.",
+  "createdAt": "2026-01-16T07:28:38.365Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lmsorry/ohmysmithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

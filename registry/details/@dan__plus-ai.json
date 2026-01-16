@@ -1,0 +1,12 @@
+{
+  "id": "@dan/plus-ai",
+  "displayName": "plus-ai",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:28.383Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dan/plus-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

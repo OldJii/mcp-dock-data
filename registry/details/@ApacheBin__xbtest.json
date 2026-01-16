@@ -1,0 +1,12 @@
+{
+  "id": "@ApacheBin/xbtest",
+  "displayName": "xbtest",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:46.832Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ApacheBin/xbtest"
+  },
+  "connection": null,
+  "capabilities": []
+}

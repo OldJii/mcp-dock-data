@@ -1,0 +1,12 @@
+{
+  "id": "@adamanz/sendblue-mcp",
+  "displayName": "sendblue-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:52.003Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@adamanz/sendblue-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

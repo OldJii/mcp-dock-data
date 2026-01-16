@@ -1,0 +1,12 @@
+{
+  "id": "ubiq/supabase-godmode-v2",
+  "displayName": "supabase-godmode-v2",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:52.072Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ubiq/supabase-godmode-v2"
+  },
+  "connection": null,
+  "capabilities": []
+}

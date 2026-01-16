@@ -1,0 +1,35 @@
+{
+  "id": "@linxule/mineru-mcp",
+  "displayName": "mineru-mcp",
+  "description": "MCP server for [MinerU](https://mineru.net) document parsing API - extract text, tables, and formulas from PDFs, DOCs, and images.\n\n  ## Features\n\n  - **VLM model** - 90%+ accuracy for complex documents\n  - **Pipeline model** - Fast processing for simple documents\n  - **Batch processing** - Parse up to 200 documents at once\n  - **Page ranges** - Extract specific pages only\n  - **109 language OCR** support\n  - **Optimized for Claude Code** - 73% token reduction vs alternatives\n\n  ## Tools\n\n  | Tool | Description |\n  |------|-------------|\n  | `mineru_parse` | Parse a document URL |\n  | `mineru_status` | Check task progress, get download URL |\n  | `mineru_batch` | Parse multiple URLs (max 200) |\n  | `mineru_batch_status` | Get batch results with pagination |\n\n  ## Supported Formats\n\n  PDF, DOC, DOCX, PPT, PPTX, PNG, JPG, JPEG\n\n  ## Requirements\n\n  Get your API key at [mineru.net](https://mineru.net)",
+  "createdAt": "2026-01-16T07:25:17.444Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@linxule/mineru-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mineru_parse",
+      "description": "Parse a document URL. Returns task_id to check status."
+    },
+    {
+      "name": "mineru_status",
+      "description": "Check task progress. Returns download URL when done."
+    },
+    {
+      "name": "mineru_batch",
+      "description": "Parse multiple URLs in one batch (max 200)."
+    },
+    {
+      "name": "mineru_batch_status",
+      "description": "Get batch results. Supports pagination for large batches."
+    }
+  ]
+}

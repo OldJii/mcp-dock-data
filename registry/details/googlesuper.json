@@ -1,0 +1,817 @@
+{
+  "id": "googlesuper",
+  "displayName": "Google Super",
+  "description": "Google Super App combines all Google services including Drive, Calendar, Gmail, Sheets, Analytics, Ads, and more, providing a unified platform for seamless integration and management of your digital life.",
+  "createdAt": "2026-01-16T07:19:08.672Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googlesuper"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLESUPER_ACL_PATCH",
+      "description": "Updates an access control rule for a calendar using patch semantics (partial update). This allows modifying specific fields without affecting other properties. Note: Each patch request consumes three quota units. For domain-type ACL rules, if PATCH fails with 500 error, this action will automatically fallback to UPDATE method."
+    },
+    {
+      "name": "GOOGLESUPER_ADD_ENRICHMENT",
+      "description": "Adds an enrichment at a specified position in a defined album."
+    },
+    {
+      "name": "GOOGLESUPER_ADD_FILE_SHARING_PREFERENCE",
+      "description": "Modifies sharing permissions for an existing Google Drive file, granting a specified role to a user, group, domain, or 'anyone'."
+    },
+    {
+      "name": "GOOGLESUPER_ADD_LABEL_TO_EMAIL",
+      "description": "Adds and/or removes specified Gmail labels for a message; ensure `message_id` and all `label_ids` are valid (use 'listLabels' for custom label IDs)."
+    },
+    {
+      "name": "GOOGLESUPER_ADD_OR_REMOVE_TO_CUSTOMER_LIST",
+      "description": "AddOrRemoveToCustomerList Tool will add a contact to a customer list in Google Ads. Note: It takes 6 to 12 hours for changes to be reflected in the customer list."
+    },
+    {
+      "name": "GOOGLESUPER_ADD_SHEET",
+      "description": "Adds a new sheet (worksheet) to a spreadsheet. Use this tool to create a new tab within an existing Google Sheet, optionally specifying its title, index, size, and other properties. IMPORTANT: - Always provide the spreadsheetId. Use 'Search Spreadsheets' action if you need to find it by name - Sheet names must be unique within the spreadsheet - For tab colors, use EITHER rgbColor OR themeColor, never both - Index must be less than or equal to the current number of sheets - CONCURRENCY WARNING: Do not use 'index' when creating multiple sheets in parallel - this causes 'index is too high' errors. For parallel creation, omit the index field and let sheets be added at the end Common use cases: - Add a new sheet with a specific name - Insert a sheet at a specific position - Create a sheet with custom colors and formatting"
+    },
+    {
+      "name": "GOOGLESUPER_AGGREGATE_COLUMN_DATA",
+      "description": "Searches for rows where a specific column matches a value and performs mathematical operations on data from another column."
+    },
+    {
+      "name": "GOOGLESUPER_APPEND_DIMENSION",
+      "description": "Tool to append new rows or columns to a sheet, increasing its size. Use when you need to add empty rows or columns to an existing sheet."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_ADD_MEDIA_ITEMS",
+      "description": "Adds one or more media items to an album in Google Photos."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_CREATE_MEDIA_ITEMS",
+      "description": "Unified action to upload media files and create them as items in Google Photos."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_DELETE_MESSAGES",
+      "description": "Tool to permanently delete multiple Gmail messages in bulk. Use when you need to efficiently remove large numbers of emails (e.g., retention enforcement, mailbox hygiene)."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_GET",
+      "description": "Retrieves data from specified cell ranges in a Google Spreadsheet."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_GET_MEDIA_ITEMS",
+      "description": "Returns the list of media items for the specified media item identifiers."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_MODIFY_MESSAGES",
+      "description": "Modify labels on multiple Gmail messages in one efficient API call. Supports up to 1,000 messages per request for bulk operations like archiving, marking as read/unread, or applying custom labels."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_RUN_REPORTS",
+      "description": "Tool to return multiple analytics data reports in a batch. Use when you need to fetch multiple reports for one GA4 property in a single request."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_UPDATE",
+      "description": "Updates a specified range in a Google Sheet with given values, or appends them as new rows if `first_cell_location` is omitted. Auto-expands grid for large datasets, preventing range errors. Requirements: Target sheet must exist and spreadsheet must contain at least one worksheet."
+    },
+    {
+      "name": "GOOGLESUPER_BATCH_UPDATE_VALUES_BY_DATA_FILTER",
+      "description": "Tool to update values in ranges matching data filters. Use when you need to update specific data in a Google Sheet based on criteria rather than fixed cell ranges."
+    },
+    {
+      "name": "GOOGLESUPER_CALENDAR_LIST_INSERT",
+      "description": "Inserts an existing calendar into the user's calendar list."
+    },
+    {
+      "name": "GOOGLESUPER_CALENDAR_LIST_UPDATE",
+      "description": "Updates an existing entry on the user\\'s calendar list."
+    },
+    {
+      "name": "GOOGLESUPER_CALENDARS_DELETE",
+      "description": "Deletes a secondary calendar. Use calendars.clear for clearing all events on primary calendars."
+    },
+    {
+      "name": "GOOGLESUPER_CALENDARS_UPDATE",
+      "description": "Updates metadata for a calendar."
+    },
+    {
+      "name": "GOOGLESUPER_CHECK_COMPATIBILITY",
+      "description": "Tool to list dimensions and metrics compatible with a GA4 report request. Use when you need to validate compatibility of chosen dimensions or metrics before running a report."
+    },
+    {
+      "name": "GOOGLESUPER_CLEAR_BASIC_FILTER",
+      "description": "Tool to clear the basic filter from a sheet. Use when you need to remove an existing basic filter from a specific sheet within a Google Spreadsheet."
+    },
+    {
+      "name": "GOOGLESUPER_CLEAR_CALENDAR",
+      "description": "Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account."
+    },
+    {
+      "name": "GOOGLESUPER_CLEAR_TASKS",
+      "description": "Permanently clears all completed tasks from a specified Google Tasks list; this action is destructive and idempotent."
+    },
+    {
+      "name": "GOOGLESUPER_CLEAR_VALUES",
+      "description": "Clears cell content (preserving formatting and notes) from a specified A1 notation range in a Google Spreadsheet; the range must correspond to an existing sheet and cells."
+    },
+    {
+      "name": "GOOGLESUPER_COMPUTE_ROUTE_MATRIX",
+      "description": "Calculates travel distance and duration matrix between multiple origins and destinations using the modern Routes API; supports OAuth2 authentication and various travel modes."
+    },
+    {
+      "name": "GOOGLESUPER_COPY_DOCUMENT",
+      "description": "Tool to create a copy of an existing Google Document. Use this to duplicate a document, for example, when using an existing document as a template. The copied document will have a default title (e.g., 'Copy of [original title]') if no new title is provided, and will be placed in the user's root Google Drive folder."
+    },
+    {
+      "name": "GOOGLESUPER_COPY_FILE",
+      "description": "Duplicates an existing file in Google Drive, identified by its `file_id`."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_ALBUM",
+      "description": "Creates a new album in Google Photos."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_AUDIENCE_EXPORT",
+      "description": "Tool to create an audience export. Use after configuring the audience and dimensions to produce a long-running Operation."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_AUDIENCE_LIST",
+      "description": "Tool to create an audience list. Use when you need to define and asynchronously populate a new AudienceList resource under a GA4 property."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_CHART",
+      "description": "Create a chart in a Google Sheets spreadsheet using the specified data range and chart type. Conditional requirements: - Provide either a simple chart via chart_type + data_range (basicChart), OR supply a full chart_spec supporting all chart types. Exactly one approach should be used. - When using chart_spec, set exactly one of the union fields (basicChart | pieChart | bubbleChart | candlestickChart | histogramChart | waterfallChart | treemapChart | orgChart | scorecardChart)."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_COMMENT",
+      "description": "Tool to create a comment on a file. Use when you need to add a new comment to a specific file in Google Drive."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_CUSTOMER_LIST",
+      "description": "CreateCustomerList Tool will create a customer list in Google Ads."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_DOCUMENT",
+      "description": "Creates a new Google Docs document using the provided title as filename and inserts the initial text at the beginning if non-empty, returning the document's ID and metadata (excluding body content)."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_DOCUMENT_MARKDOWN",
+      "description": "Creates a new Google Docs document, optionally initializing it with a title and content provided as Markdown text."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_DRIVE",
+      "description": "Tool to create a new shared drive. Use when you need to programmatically create a new shared drive for collaboration or storage."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_EMAIL_DRAFT",
+      "description": "Creates a Gmail email draft, requiring at least one of recipient_email, cc, or bcc must be provided. Atleast one of subject or body must be provided. Supports To/Cc/Bcc, subject, plain/HTML body (ensure `is_html=True` for HTML), attachments, and threading. When creating a draft reply to an existing thread (thread_id provided), leave subject empty to stay in the same thread; setting a subject will create a NEW thread instead."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_EVENT",
+      "description": "Create a Google Calendar event using `start_datetime` plus `event_duration_hour` and `event_duration_minutes` fields to derive the end time. Requires calendar write access. The organizer is added as an attendee unless `exclude_organizer` is True. Example request to create event for 1 hour 30 minutes: { \"calendar_id\": \"primary\", \"start_datetime\": \"2025-01-16T13:00:00\", \"timezone\": \"America/New_York\", \"event_duration_hour\": 1, \"event_duration_minutes\": 30, \"summary\": \"Client sync\", \"attendees\": [{\"email\": \"guest@example.com\"}] }"
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_EXPANDED_DATA_SET",
+      "description": "Tool to create an expanded data set for a property. Use when you need to combine specific dimensions and metrics into a custom dataset after property creation."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_FILE",
+      "description": "Creates a new file or folder with metadata. Use to create empty files or folders, or files with content by providing it in the request body (though this action primarily focuses on metadata creation)."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_FILE_FROM_TEXT",
+      "description": "Creates a new file in Google Drive from provided text content (up to 10MB), supporting various formats including automatic conversion to Google Workspace types."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_FOLDER",
+      "description": "Creates a new folder in Google Drive, optionally within a parent folder specified by its ID or name; if a parent name is provided but not found, the action will fail."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_FOOTER",
+      "description": "Tool to create a new footer in a Google Document. Use when you need to add a footer, optionally specifying its type and the section it applies to."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_FOOTNOTE",
+      "description": "Tool to create a new footnote in a Google Document. Use this when you need to add a footnote at a specific location or at the end of the document body."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_GOOGLE_SHEET1",
+      "description": "Creates a new Google Spreadsheet in Google Drive using the provided title."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_HEADER",
+      "description": "Tool to create a new header in a Google Document. Use this tool when you need to add a header to a document, optionally specifying the section it applies to."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_LABEL",
+      "description": "Creates a new label with a unique name in the specified user's Gmail account."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_MEET",
+      "description": "Creates a new Google Meet space, optionally configuring its access type and entry point access controls."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_NAMED_RANGE",
+      "description": "Tool to create a new named range in a Google Document. Use this to assign a name to a specific part of the document for easier reference or programmatic manipulation."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_PARAGRAPH_BULLETS",
+      "description": "Tool to add bullets to paragraphs within a specified range in a Google Document. Use when you need to format a list or a set of paragraphs as bullet points."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_REPLY",
+      "description": "Tool to create a reply to a comment in Google Drive. Use when you need to respond to an existing comment on a file."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_ROLLUP_PROPERTY",
+      "description": "Tool to create a GA4 Roll-up Property and optionally initial source links."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_SHORTCUT_TO_FILE",
+      "description": "Tool to create a shortcut to a file or folder in Google Drive. Use when you need to link to an existing Drive item from another location without duplicating it."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_SPREADSHEET_COLUMN",
+      "description": "Creates a new column in a Google Spreadsheet, requiring a valid `spreadsheet_id` and an existing `sheet_id`; an out-of-bounds `insert_index` may append/prepend the column."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_SPREADSHEET_ROW",
+      "description": "Inserts a new, empty row into a specified sheet of a Google Spreadsheet at a given index, optionally inheriting formatting from the row above."
+    },
+    {
+      "name": "GOOGLESUPER_CREATE_TASK_LIST",
+      "description": "Creates a new task list with the specified title."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_COMMENT",
+      "description": "Deletes a comment from a file. Use when you need to remove a specific comment from a Google Drive file."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_CONTENT_RANGE",
+      "description": "Tool to delete a range of content from a Google Document. Use when you need to remove a specific portion of text or other structural elements within a document."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_DIMENSION",
+      "description": "Tool to delete specified rows or columns from a sheet in a Google Spreadsheet. Use when you need to remove a range of rows or columns."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_DRAFT",
+      "description": "Permanently deletes a specific Gmail draft using its ID; ensure the draft exists and the user has necessary permissions for the given `user_id`."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_DRIVE",
+      "description": "Tool to permanently delete a shared drive. Use when you need to remove a shared drive and its contents (if specified)."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_EVENT",
+      "description": "Deletes a specified event by `event_id` from a Google Calendar (`calendar_id`); this action is idempotent and raises a 404 error if the event is not found."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_FOOTER",
+      "description": "Tool to delete a footer from a Google Document. Use when you need to remove a footer from a specific section or the default footer."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_HEADER",
+      "description": "Deletes the header from the specified section or the default header if no section is specified. Use this tool to remove a header from a Google Document."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_MESSAGE",
+      "description": "Permanently deletes a specific email message by its ID from a Gmail mailbox; for `user_id`, use 'me' for the authenticated user or an email address to which the authenticated user has delegated access."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_NAMED_RANGE",
+      "description": "Tool to delete a named range from a Google Document. Use when you need to remove a previously defined named range by its ID or name."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_PARAGRAPH_BULLETS",
+      "description": "Tool to remove bullets from paragraphs within a specified range in a Google Document. Use when you need to clear bullet formatting from a section of a document."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_PERMISSION",
+      "description": "Deletes a permission from a file by permission ID. Use when you need to revoke access for a specific user or group from a file."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_REPLY",
+      "description": "Tool to delete a specific reply by reply ID. Use when you need to remove a reply from a comment on a file."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_SHEET",
+      "description": "Tool to delete a sheet (worksheet) from a spreadsheet. Use when you need to remove a specific sheet from a Google Sheet document."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_TABLE",
+      "description": "Tool to delete an entire table from a Google Document. Use when you have the document ID and the specific start and end index of the table element to be removed. The table's range can be found by inspecting the document's content structure."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_TABLE_COLUMN",
+      "description": "Tool to delete a column from a table in a Google Document. Use this tool when you need to remove a specific column from an existing table within a document."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_TABLE_ROW",
+      "description": "Tool to delete a row from a table in a Google Document. Use when you need to remove a specific row from an existing table."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_TASK",
+      "description": "Deletes a specified task from a given task list in Google Tasks."
+    },
+    {
+      "name": "GOOGLESUPER_DELETE_TASK_LIST",
+      "description": "Permanently deletes an existing Google Task list, identified by `tasklist_id`, along with all its tasks; this operation is irreversible."
+    },
+    {
+      "name": "GOOGLESUPER_DISTANCE_MATRIX_API",
+      "description": "DEPRECATED: Legacy API that calculates travel distance and time for a matrix of origins and destinations. This API only works with API keys (no OAuth2 support). Use the modern 'Compute Route Matrix' action instead, which supports OAuth2 authentication. Supports different modes of transportation and options like departure/arrival times."
+    },
+    {
+      "name": "GOOGLESUPER_DOWNLOAD_FILE",
+      "description": "Downloads a file from Google Drive by its ID. For Google Workspace documents (Docs, Sheets, Slides), optionally exports to a specified `mime_type`. For other file types, downloads in their native format regardless of mime_type. Examples: Export a Google Doc to plain text: {\"file_id\": \"1N2o5xQWmAbCdEfGhIJKlmnOPq\", \"mime_type\": \"text/plain\"} Download a Google Sheet as CSV: {\"file_id\": \"1ZyXwVuTsRqPoNmLkJiHgFeDcB\", \"mime_type\": \"text/csv\"}"
+    },
+    {
+      "name": "GOOGLESUPER_DUPLICATE_CALENDAR",
+      "description": "Creates a new, empty Google Calendar with the specified title (summary)."
+    },
+    {
+      "name": "GOOGLESUPER_EDIT_FILE",
+      "description": "Updates an existing Google Drive file by overwriting its entire content with new text (max 10MB). This action allows users to change the content of a Drive file, ensuring that the latest updates are saved and available without creating a new file. Users can specify different MIME types for the content being uploaded, facilitating various file formats."
+    },
+    {
+      "name": "GOOGLESUPER_EMPTY_TRASH",
+      "description": "Tool to permanently delete all of the user's trashed files. Use when you want to empty the trash in Google Drive. This action allows you to permanently remove all files that are currently in the trash of Google Drive. It can be applied to files in both the user's root trash and shared drives, ensuring a complete removal of unwanted files."
+    },
+    {
+      "name": "GOOGLESUPER_EVENTS_INSTANCES",
+      "description": "Returns instances of the specified recurring event."
+    },
+    {
+      "name": "GOOGLESUPER_EVENTS_LIST",
+      "description": "Returns events on the specified calendar."
+    },
+    {
+      "name": "GOOGLESUPER_EVENTS_MOVE",
+      "description": "Moves an event to another calendar, i.e., changes an event's organizer."
+    },
+    {
+      "name": "GOOGLESUPER_EVENTS_WATCH",
+      "description": "Watch for changes to Events resources."
+    },
+    {
+      "name": "GOOGLESUPER_EXECUTE_SQL",
+      "description": "Execute SQL queries against Google Sheets tables. Supports SELECT, INSERT, UPDATE, and DELETE operations with familiar SQL syntax. Tables are automatically detected and mapped from the spreadsheet structure."
+    },
+    {
+      "name": "GOOGLESUPER_FETCH_EMAILS",
+      "description": "Fetches a list of email messages from a Gmail account, supporting filtering, pagination, and optional full content retrieval."
+    },
+    {
+      "name": "GOOGLESUPER_FETCH_MESSAGE_BY_MESSAGE_ID",
+      "description": "Fetches a specific email message by its ID, provided the `message_id` exists and is accessible to the authenticated `user_id`."
+    },
+    {
+      "name": "GOOGLESUPER_FETCH_MESSAGE_BY_THREAD_ID",
+      "description": "Retrieves messages from a Gmail thread using its `thread_id`, where the thread must be accessible by the specified `user_id`."
+    },
+    {
+      "name": "GOOGLESUPER_FILES_MODIFY_LABELS",
+      "description": "Modifies the set of labels applied to a file. Returns a list of the labels that were added or modified. Use when you need to programmatically change labels on a Google Drive file, such as adding, updating, or removing them."
+    },
+    {
+      "name": "GOOGLESUPER_FIND_EVENT",
+      "description": "Finds events in a specified Google Calendar using text query, time ranges (event start/end, last modification), and event types; ensure `timeMin` is not chronologically after `timeMax` if both are provided."
+    },
+    {
+      "name": "GOOGLESUPER_FIND_FILE",
+      "description": "The comprehensive Google Drive search tool that handles all file and folder discovery needs. Use this for any file finding task - from simple name searches to complex queries with date filters, MIME types, permissions, custom properties, folder scoping, and more. Searches across My Drive and shared drives with full metadata support. Examples: - Find PDFs: q=\"mimeType = 'application/pdf'\" - Find recent files: q=\"modifiedTime > '2024-01-01T00:00:00'\" - Search by name: q=\"name contains 'report'\" - Files in folder: folderId=\"abc123\" or q=\"'FOLDER_ID' in parents\""
+    },
+    {
+      "name": "GOOGLESUPER_FIND_FOLDER",
+      "description": "Tool to find a folder in Google Drive by its name and optionally a parent folder. Use when you need to locate a specific folder to perform further actions like creating files in it or listing its contents."
+    },
+    {
+      "name": "GOOGLESUPER_FIND_FREE_SLOTS",
+      "description": "Finds both free and busy time slots in Google Calendars for specified calendars within a defined time range (defaults to the current day UTC if `time_min`/`time_max` are omitted). Returns busy intervals enriched with event details and calculates free slots by finding gaps between busy periods; `time_min` must precede `time_max` if both are provided. This action retrieves free and busy time slots for the specified calendars over a given time period. It analyzes the busy intervals from the calendars and provides calculated free slots based on the gaps in the busy periods."
+    },
+    {
+      "name": "GOOGLESUPER_FIND_REPLACE",
+      "description": "Tool to find and replace text in a Google Spreadsheet. Use when you need to fix formula errors, update values, or perform bulk text replacements across cells. Common use cases: - Fix #ERROR! cells by replacing with empty string or correct formula - Update old values with new ones across multiple cells - Fix formula references or patterns - Clean up data formatting issues"
+    },
+    {
+      "name": "GOOGLESUPER_FIND_WORKSHEET_BY_TITLE",
+      "description": "Finds a worksheet by its exact, case-sensitive title within a Google Spreadsheet; returns a boolean indicating if found and the complete metadata of the entire spreadsheet, regardless of whether the target worksheet is found."
+    },
+    {
+      "name": "GOOGLESUPER_FORMAT_CELL",
+      "description": "Applies text and background cell formatting to a specified range in a Google Sheets worksheet."
+    },
+    {
+      "name": "GOOGLESUPER_FORWARD_MESSAGE",
+      "description": "Forward an existing Gmail message to specified recipients, preserving original body and attachments."
+    },
+    {
+      "name": "GOOGLESUPER_FREE_BUSY_QUERY",
+      "description": "Returns free/busy information for a set of calendars."
+    },
+    {
+      "name": "GOOGLESUPER_GENERATE_IDS",
+      "description": "Generates a set of file IDs which can be provided in create or copy requests. Use when you need to pre-allocate IDs for new files or copies."
+    },
+    {
+      "name": "GOOGLESUPER_GEOCODING_API",
+      "description": "DEPRECATED: Legacy API to convert addresses into geographic coordinates (latitude and longitude) and vice versa (reverse geocoding), or get an address for a Place ID. This API only works with API keys (no OAuth2 support). Consider using the modern Places API (Text Search or Nearby Search) for similar functionality with OAuth2 authentication."
+    },
+    {
+      "name": "GOOGLESUPER_GET_ABOUT",
+      "description": "Tool to retrieve information about the user, the user's Drive, and system capabilities. Use when you need to check storage quotas, user details, or supported import/export formats."
+    },
+    {
+      "name": "GOOGLESUPER_GET_ACCOUNT",
+      "description": "Tool to retrieve a single Account by its resource name. Use when you need detailed account info after confirming the account resource name (e.g., accounts/100)."
+    },
+    {
+      "name": "GOOGLESUPER_GET_ALBUM",
+      "description": "Returns the album based on the specified albumId."
+    },
+    {
+      "name": "GOOGLESUPER_GET_ATTACHMENT",
+      "description": "Retrieves a specific attachment by ID from a message in a user's Gmail mailbox, requiring valid message and attachment IDs."
+    },
+    {
+      "name": "GOOGLESUPER_GET_AUDIENCE_EXPORT",
+      "description": "Tool to get configuration metadata for an Audience Export. Use after creating an Audience Export to retrieve its status and details."
+    },
+    {
+      "name": "GOOGLESUPER_GET_AUDIENCE_LIST",
+      "description": "Tool to get configuration metadata about a specific audience list. Use after confirming the audience list resource name."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CALENDAR",
+      "description": "Retrieves a specific Google Calendar, identified by `calendar_id`, to which the authenticated user has access."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CAMPAIGN_BY_ID",
+      "description": "GetCampaignById Tool will return details of a campaign in Google Ads."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CAMPAIGN_BY_NAME",
+      "description": "GetCampaignByName Tool will run a SQL GetCampaignByName in Google Ads."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CHANGES_START_PAGE_TOKEN",
+      "description": "Tool to get the starting pageToken for listing future changes in Google Drive. Use this when you need to track changes to files and folders."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CHARTS_FROM_SPREADSHEET",
+      "description": "Tool to retrieve a list of all charts from a specified Google Sheets spreadsheet. Use when you need to get chart IDs and their specifications for embedding or referencing elsewhere, such as in Google Docs."
+    },
+    {
+      "name": "GOOGLESUPER_GET_COMMENT",
+      "description": "Tool to get a comment by ID. Use when you need to retrieve a specific comment from a Google Drive file and have both the file ID and comment ID."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CONFERENCE_RECORD_FOR_MEET",
+      "description": "Get conference record"
+    },
+    {
+      "name": "GOOGLESUPER_GET_CONTACTS",
+      "description": "Fetches contacts (connections) for the authenticated Google account, allowing selection of specific data fields and pagination."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CURRENT_DATE_TIME",
+      "description": "Gets the current date and time, allowing for a specific timezone offset."
+    },
+    {
+      "name": "GOOGLESUPER_GET_CUSTOMER_LISTS",
+      "description": "GetCustomerLists Tool will list all customer lists in Google Ads."
+    },
+    {
+      "name": "GOOGLESUPER_GET_DIRECTION",
+      "description": "DEPRECATED: Legacy API that fetches detailed directions between an origin and a destination, supporting intermediate waypoints and various travel modes. This API only works with API keys (no OAuth2 support). Use the modern 'Get Route' action instead, which supports OAuth2 authentication."
+    },
+    {
+      "name": "GOOGLESUPER_GET_DOCUMENT_BY_ID",
+      "description": "Retrieves an existing Google Document by its ID; will error if the document is not found."
+    },
+    {
+      "name": "GOOGLESUPER_GET_DRIVE",
+      "description": "Tool to get a shared drive by ID. Use when you need to retrieve information about a specific shared drive."
+    },
+    {
+      "name": "GOOGLESUPER_GET_FILE_METADATA",
+      "description": "Tool to get a file's metadata by ID. Use when you need to retrieve the metadata for a specific file in Google Drive."
+    },
+    {
+      "name": "GOOGLESUPER_GET_KEY_EVENT",
+      "description": "Tool to retrieve a Key Event. Use after confirming the key event resource name."
+    },
+    {
+      "name": "GOOGLESUPER_GET_MEDIA_ITEM_DOWNLOAD",
+      "description": "Downloads a media item from Google Photos and returns it as a file."
+    },
+    {
+      "name": "GOOGLESUPER_GET_MEET",
+      "description": "Retrieve details of a Google Meet space using its unique identifier."
+    },
+    {
+      "name": "GOOGLESUPER_GET_METADATA",
+      "description": "Tool to get metadata for dimensions, metrics, and comparisons for a GA4 property. Use when you need to discover available fields before building a report."
+    },
+    {
+      "name": "GOOGLESUPER_GET_PARTICIPANT_SESSION",
+      "description": "Tool to get a specific participant session from a conference record. Use when you need to retrieve details about a particular participant in a past meeting."
+    },
+    {
+      "name": "GOOGLESUPER_GET_PEOPLE",
+      "description": "Retrieves either a specific person's details (using `resource_name`) or lists 'Other Contacts' (if `other_contacts` is true), with `person_fields` specifying the data to return."
+    },
+    {
+      "name": "GOOGLESUPER_GET_PERMISSION",
+      "description": "Gets a permission by ID. Use this tool to retrieve a specific permission for a file or shared drive."
+    },
+    {
+      "name": "GOOGLESUPER_GET_PROFILE",
+      "description": "Retrieves key Gmail profile information (email address, message/thread totals, history ID) for a user."
+    },
+    {
+      "name": "GOOGLESUPER_GET_PROPERTY_QUOTAS_SNAPSHOT",
+      "description": "Tool to retrieve all property quotas organized by category for a given property. Use when you need to check current quota usage for a GA4 property."
+    },
+    {
+      "name": "GOOGLESUPER_GET_RECORDINGS_BY_CONFERENCE_RECORD_ID",
+      "description": "Retrieves recordings from Google Meet for a given conference record ID."
+    },
+    {
+      "name": "GOOGLESUPER_GET_REPLY",
+      "description": "Tool to get a specific reply to a comment on a file. Use when you need to retrieve the details of a particular reply."
+    },
+    {
+      "name": "GOOGLESUPER_GET_REVISION",
+      "description": "Tool to get a specific revision's metadata by revision ID. Use when you need to retrieve information about a particular version of a file."
+    },
+    {
+      "name": "GOOGLESUPER_GET_ROUTE",
+      "description": "Calculates one or more routes between two specified locations. Uses various travel modes and preferences; addresses must be resolvable by Google Maps."
+    },
+    {
+      "name": "GOOGLESUPER_GET_SHEET_NAMES",
+      "description": "Lists all worksheet names from a specified Google Spreadsheet (which must exist), useful for discovering sheets before further operations."
+    },
+    {
+      "name": "GOOGLESUPER_GET_SPREADSHEET_BY_DATA_FILTER",
+      "description": "Returns the spreadsheet at the given ID, filtered by the specified data filters. Use this tool when you need to retrieve specific subsets of data from a Google Sheet based on criteria like A1 notation, developer metadata, or grid ranges."
+    },
+    {
+      "name": "GOOGLESUPER_GET_SPREADSHEET_INFO",
+      "description": "Retrieves comprehensive metadata for a Google Spreadsheet using its ID, excluding cell data."
+    },
+    {
+      "name": "GOOGLESUPER_GET_TABLE_SCHEMA",
+      "description": "This action is used to get the schema of a table in a Google Spreadsheet, call this action to get the schema of a table in a spreadsheet BEFORE YOU QUERY THE TABLE. Analyze table structure and infer column names, types, and constraints. Uses statistical analysis of sample data to determine the most likely data type for each column. Call this action after calling the LIST_TABLES action to get the schema of a table in a spreadsheet."
+    },
+    {
+      "name": "GOOGLESUPER_GET_TASK",
+      "description": "Use to retrieve a specific Google Task if its `task_id` and parent `tasklist_id` are known."
+    },
+    {
+      "name": "GOOGLESUPER_GET_TASK_LIST",
+      "description": "Retrieves a specific task list from the user's Google Tasks if the `tasklist_id` exists for the authenticated user."
+    },
+    {
+      "name": "GOOGLESUPER_GET_TRANSCRIPTS_BY_CONFERENCE_RECORD_ID",
+      "description": "Retrieves all transcripts for a specific Google Meet conference using its conferenceRecord_id."
+    },
+    {
+      "name": "GOOGLESUPER_GOOGLE_DRIVE_DELETE_FOLDER_OR_FILE_ACTION",
+      "description": "Tool to delete a file or folder in Google Drive. Use when you need to permanently remove a specific file or folder using its ID. Note: This action is irreversible."
+    },
+    {
+      "name": "GOOGLESUPER_HIDE_DRIVE",
+      "description": "Tool to hide a shared drive from the default view. Use when you want to remove a shared drive from the user's main Google Drive interface without deleting it."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_DIMENSION",
+      "description": "Tool to insert new rows or columns into a sheet at a specified location. Use when you need to add empty rows or columns within an existing Google Sheet."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_INLINE_IMAGE",
+      "description": "Tool to insert an image from a given URI at a specified location in a Google Document as an inline image. Use when you need to add an image to a document programmatically."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_PAGE_BREAK",
+      "description": "Tool to insert a page break into a Google Document. Use when you need to start new content on a fresh page, such as at the end of a chapter or section."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_TABLE_ACTION",
+      "description": "Tool to insert a table into a Google Document. Use when you need to add a new table at a specific location or at the end of a segment (like document body, header, or footer) in a document."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_TABLE_COLUMN",
+      "description": "Tool to insert a new column into a table in a Google Document. Use this tool when you need to add a column to an existing table at a specific location."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_TASK",
+      "description": "Creates a new task in a given `tasklist_id`, optionally as a subtask of an existing `task_parent` or positioned after an existing `task_previous` sibling, where both `task_parent` and `task_previous` must belong to the same `tasklist_id` if specified. IMPORTANT: Date fields (due, completed) accept various formats like '28 Sep 2025', '11:59 PM, 22 Sep 2025', or ISO format '2025-09-21T15:30:00Z' and will automatically convert them to RFC3339 format required by the API."
+    },
+    {
+      "name": "GOOGLESUPER_INSERT_TEXT_ACTION",
+      "description": "Tool to insert a string of text at a specified location within a Google Document. Use when you need to add new text content to an existing document."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_ACCOUNTS",
+      "description": "Tool to list all Accounts accessible by the caller. Use when you need to enumerate all Google Analytics accounts your credentials can access."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_ACL_RULES",
+      "description": "Retrieves the list of access control rules (ACLs) for a specified calendar, providing the necessary 'rule_id' values required for updating specific ACL rules."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_ALBUMS",
+      "description": "Lists all albums shown to a user in the Albums tab of Google Photos."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_AUDIENCE_EXPORTS",
+      "description": "Tool to list all audience exports for a GA4 property. Use when you need to fetch its export history after initiating exports."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_AUDIENCE_LISTS",
+      "description": "Tool to list all audience lists for a GA4 property. Use when you need to retrieve a property's configured audience lists after confirming the property ID."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_AUDIENCES",
+      "description": "Tool to list all audiences on a property. Use when you need to fetch all audiences for a GA4 property after confirming its existence."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_CALENDARS",
+      "description": "Retrieves a paginated list of calendars from the user's calendar list, with optional filtering and sync capabilities."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_CHANGES",
+      "description": "Tool to list the changes for a user or shared drive. Use when you need to track modifications to files and folders, such as creations, deletions, or permission changes. This action requires a `pageToken` which can be initially obtained using the `get_changes_start_page_token` action or from a previous `LIST_CHANGES` response. Example usage: ```json { \"pageSize\": 100, \"includeRemoved\": true } ``` Returns changes with timestamps, file IDs, and modification details. Save the `newStartPageToken` from the response to monitor future changes efficiently."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_COMMENTS",
+      "description": "Tool to list all comments for a file in Google Drive. Use when you need to retrieve comments associated with a specific file."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_CONFERENCE_RECORDS",
+      "description": "Tool to list conference records. Use when you need to retrieve a list of past conferences, optionally filtering them by criteria like meeting code, space name, or time range."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_DRAFTS",
+      "description": "Retrieves a paginated list of email drafts from a user's Gmail account. Use verbose=true to get full draft details including subject, body, sender, and timestamp."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_FILE_LABELS",
+      "description": "Tool to list the labels on a file. Use when you need to retrieve all labels associated with a specific file in Google Drive."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_FILES",
+      "description": "Tool to list a user's files and folders in Google Drive. Use this to search or browse for files and folders based on various criteria."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_HISTORY",
+      "description": "Tool to list Gmail mailbox change history since a known startHistoryId. Use when performing incremental mailbox syncs to fetch only new changes."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_KEY_EVENTS",
+      "description": "Tool to list Key Events. Use when you need to retrieve all key event definitions for a given property."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_LABELS",
+      "description": "Retrieves a list of all system and user-created labels for the specified Gmail account."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_MEDIA_ITEMS",
+      "description": "Lists all media items from a user's Google Photos library."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_PARTICIPANT_SESSIONS",
+      "description": "Tool to list all participant sessions for a specific conference record in Google Meet. Use this when you need to retrieve a list of participants who joined a particular meeting."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_PERMISSIONS",
+      "description": "Tool to list a file's permissions. Use when you need to retrieve all permissions associated with a specific file or shared drive."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_PROPERTIES",
+      "description": "Tool to list GA4 properties under a specific account. Use after obtaining an account ID; supports pagination and including soft-deleted properties."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_REPLIES_TO_COMMENT",
+      "description": "Tool to list replies to a comment in Google Drive. Use this when you need to retrieve all replies associated with a specific comment on a file."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_REPORTING_DATA_ANNOTATIONS",
+      "description": "Tool to list all Reporting Data Annotations on a property. Use when you need to retrieve or inspect annotations for a GA4 property."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_REVISIONS",
+      "description": "Tool to list a file's revisions. Use when you need to retrieve the revision history of a specific file in Google Drive."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_ROLLUP_PROPERTIES",
+      "description": "Tool to list roll-up GA4 properties accessible to the caller. Use when you need to identify roll-up properties across all accessible accounts."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_SEARCH_ADS360_LINKS",
+      "description": "Tool to list all SearchAds360Links on a property. Use when you need to fetch all Search Ads 360 links for a given property after authenticating."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_SHARED_DRIVES",
+      "description": "Tool to list the user's shared drives. Use when you need to get a list of all shared drives accessible to the authenticated user."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_SPREADSHEET_CHARTS_ACTION",
+      "description": "Tool to retrieve a list of charts with their IDs and metadata from a Google Sheets spreadsheet. Use to identify charts available for embedding into Google Docs."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_TABLES",
+      "description": "This action is used to list all tables in a Google Spreadsheet, call this action to get the list of tables in a spreadsheet. Discover all tables in a Google Spreadsheet by analyzing sheet structure and detecting data patterns. Uses heuristic analysis to find header rows, data boundaries, and table structures."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_TASK_LISTS",
+      "description": "Fetches the authenticated user's task lists from Google Tasks; results may be paginated."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_TASKS",
+      "description": "Retrieves tasks from a Google Tasks list; all date/time strings must be RFC3339 UTC, and `showCompleted` must be true if `completedMin` or `completedMax` are specified."
+    },
+    {
+      "name": "GOOGLESUPER_LIST_THREADS",
+      "description": "Retrieves a list of email threads from a Gmail account, identified by `user_id` (email address or 'me'), supporting filtering and pagination."
+    },
+    {
+      "name": "GOOGLESUPER_LOOKUP_SPREADSHEET_ROW",
+      "description": "Finds the first row in a Google Spreadsheet where a cell's entire content exactly matches the query string, searching within a specified A1 notation range or the first sheet by default."
+    },
+    {
+      "name": "GOOGLESUPER_MAPS_EMBED_API",
+      "description": "Tool to generate an embeddable Google Map URL and HTML iframe code. Use when you need to display a map (place, view, directions, street view, search) on a webpage without JavaScript. Note: This API only works with API keys (no OAuth2 support). It generates embed URLs and does not make direct API calls."
+    },
+    {
+      "name": "GOOGLESUPER_MODIFY_THREAD_LABELS",
+      "description": "Adds or removes specified existing label IDs from a Gmail thread, affecting all its messages; ensure the thread ID is valid."
+    },
+    {
+      "name": "GOOGLESUPER_MOVE_FILE",
+      "description": "Tool to move a file from one folder to another in Google Drive. Use when you need to reorganize files by changing their parent folder(s)."
+    },
+    {
+      "name": "GOOGLESUPER_MOVE_TASK",
+      "description": "Moves the specified task to another position in the destination task list."
+    },
+    {
+      "name": "GOOGLESUPER_MOVE_TO_TRASH",
+      "description": "Moves an existing, non-deleted email message to the trash for the specified user."
+    },
+    {
+      "name": "GOOGLESUPER_NEARBY_SEARCH",
+      "description": "Searches for places (e.g., restaurants, parks) within a specified circular area, with options to filter by place types and customize the returned fields and number of results."
+    },
+    {
+      "name": "GOOGLESUPER_PARSE_FILE",
+      "description": "DEPRECATED: Exports Google Workspace files (max 10MB) to a specified format using `mime_type`, or downloads other file types; use `GOOGLEDRIVE_DOWNLOAD_FILE` instead."
+    },
+    {
+      "name": "GOOGLESUPER_PATCH_CALENDAR",
+      "description": "Partially updates (PATCHes) an existing Google Calendar, modifying only the fields provided; `summary` is mandatory and cannot be an empty string, and an empty string for `description` or `location` clears them."
+    },
+    {
+      "name": "GOOGLESUPER_PATCH_EVENT",
+      "description": "Update specified fields of an existing event in a Google Calendar using patch semantics (array fields like `attendees` are fully replaced if provided); ensure the `calendar_id` and `event_id` are valid and the user has write access to the calendar."
+    },
+    {
+      "name": "GOOGLESUPER_PATCH_LABEL",
+      "description": "Patches the specified label."
+    },
+    {
+      "name": "GOOGLESUPER_PATCH_TASK",
+      "description": "Partially updates an existing task (identified by `task_id`) within a specific Google Task list (identified by `tasklist_id`), modifying only the provided attributes from `TaskInput` (e.g., `title`, `notes`, `due` date, `status`) and requiring both the task and list to exist."
+    },
+    {
+      "name": "GOOGLESUPER_PATCH_TASK_LIST",
+      "description": "Updates the title of an existing Google Tasks task list."
+    },
+    {
+      "name": "GOOGLESUPER_QUERY_AUDIENCE_EXPORT",
+      "description": "Tool to query a completed audience export. Use when you need to fetch user rows with pagination."
+    },
+    {
+      "name": "GOOGLESUPER_QUERY_AUDIENCE_LIST",
+      "description": "Tool to query an audience list. Use when you need to retrieve user rows from a GA4 audience list with pagination."
+    },
+    {
+      "name": "GOOGLESUPER_QUERY_TABLE",
+      "description": "This action is used to query a table in a Google Spreadsheet, call this action to query a table in a spreadsheet. Execute SQL-like SELECT queries against spreadsheet tables. Supports WHERE conditions, ORDER BY, LIMIT clauses. Call this action after calling the GET_TABLE_SCHEMA action to query a table in a spreadsheet."
+    },
+    {
+      "name": "GOOGLESUPER_QUICK_ADD",
+      "description": "Parses natural language text to quickly create a basic Google Calendar event with its title, date, and time, suitable for simple scheduling; does not support direct attendee addition or recurring events, and `calendar_id` must be valid if not 'primary'."
+    },
+    {
+      "name": "GOOGLESUPER_REMOVE_ATTENDEE",
+      "description": "Removes an attendee from a specified event in a Google Calendar; the calendar and event must exist."
+    }
+  ]
+}

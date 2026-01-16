@@ -1,0 +1,51 @@
+{
+  "id": "@enescinar/twitter-mcp",
+  "displayName": "Twitter Server",
+  "description": "A Model Context Protocol server that allows interaction with Twitter, enabling posting tweets and searching Twitter.",
+  "createdAt": "2026-01-16T07:27:00.954Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@enescinar/twitter-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey",
+        "apiSecretKey",
+        "accessToken",
+        "accessTokenSecret"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Twitter API key."
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Twitter access token."
+        },
+        "apiSecretKey": {
+          "type": "string",
+          "description": "Twitter API secret key."
+        },
+        "accessTokenSecret": {
+          "type": "string",
+          "description": "Twitter access token secret."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "post_tweet",
+      "description": "Post a new tweet to Twitter"
+    },
+    {
+      "name": "search_tweets",
+      "description": "Search for tweets on Twitter"
+    }
+  ]
+}

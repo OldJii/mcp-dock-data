@@ -1,0 +1,12 @@
+{
+  "id": "@quanttraderkim/lotto-mcp-server",
+  "displayName": "lotto-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:34.935Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@quanttraderkim/lotto-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

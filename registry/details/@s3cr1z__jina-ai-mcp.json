@@ -1,0 +1,12 @@
+{
+  "id": "@s3cr1z/jina-ai-mcp",
+  "displayName": "jina-ai-mcp",
+  "description": "mcp.jina.ai/sse",
+  "createdAt": "2026-01-16T07:37:06.560Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@s3cr1z/jina-ai-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

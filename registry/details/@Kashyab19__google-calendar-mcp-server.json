@@ -1,0 +1,77 @@
+{
+  "id": "@Kashyab19/google-calendar-mcp-server",
+  "displayName": "Google Calendar",
+  "description": "Connect your Google account to browse and manage calendars and events. Create, update, and delete single, recurring, or all-day events. Find events across calendars and keep schedules in sync.",
+  "createdAt": "2026-01-16T07:24:40.599Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kashyab19/google-calendar-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "refreshToken": {
+          "type": "string",
+          "description": "Optional: Pre-existing refresh token for Google Calendar access"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "authenticate",
+      "description": "Automatically authenticate with Google Calendar using OAuth 2.1 with popup support"
+    },
+    {
+      "name": "check_authentication",
+      "description": "Check if you are already authenticated with Google Calendar via Smithery"
+    },
+    {
+      "name": "start_manual_auth",
+      "description": "Start manual OAuth authentication if Smithery OAuth is not available"
+    },
+    {
+      "name": "exchange_auth_code",
+      "description": "Exchange authorization code for access and refresh tokens. Use this after user has authorized via the OAuth URL."
+    },
+    {
+      "name": "complete_authentication",
+      "description": "Complete OAuth 2.1 authentication using authorization code from callback"
+    },
+    {
+      "name": "check_auth_status",
+      "description": "Check the current authentication status and token information"
+    },
+    {
+      "name": "list_calendars",
+      "description": "List all calendars accessible to the user"
+    },
+    {
+      "name": "manage_calendars",
+      "description": "Create, get details, update, or delete calendars"
+    },
+    {
+      "name": "get_current_time",
+      "description": "Get the current system date and time for creating events"
+    },
+    {
+      "name": "create_events",
+      "description": "Create single, multiple, or recurring calendar events"
+    },
+    {
+      "name": "list_events",
+      "description": "List events from a calendar with optional filtering and search"
+    },
+    {
+      "name": "update_events",
+      "description": "Update or delete calendar events by ID, name, or search criteria"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@cgmzfy/mcp111",
+  "displayName": "mcp111",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:39.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cgmzfy/mcp111"
+  },
+  "connection": null,
+  "capabilities": []
+}

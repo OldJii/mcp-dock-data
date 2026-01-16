@@ -1,0 +1,224 @@
+{
+  "id": "@zeta-chain/cli",
+  "displayName": "Universal Blockchain",
+  "description": "An MCP server that connects ZetaChain CLI into your editor. Query balances, send cross-chain transactions, and manage universal contracts directly through MCP.",
+  "createdAt": "2026-01-16T07:24:25.613Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zeta-chain/cli"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "new",
+      "description": "New"
+    },
+    {
+      "name": "accounts_create",
+      "description": "Create a new account"
+    },
+    {
+      "name": "accounts_delete",
+      "description": "Delete an existing account"
+    },
+    {
+      "name": "accounts_import",
+      "description": "Import an existing account"
+    },
+    {
+      "name": "accounts_list",
+      "description": "List all stored accounts"
+    },
+    {
+      "name": "accounts_show",
+      "description": "View details of a specific account"
+    },
+    {
+      "name": "query_balances",
+      "description": "Fetch native and ZRC-20 token balances"
+    },
+    {
+      "name": "query_cctx",
+      "description": "Track the status of a cross-chain transaction."
+    },
+    {
+      "name": "query_contracts_list",
+      "description": "List protocol contracts on all connected chains"
+    },
+    {
+      "name": "query_contracts_show",
+      "description": "Show a protocol contract address on a specific chain"
+    },
+    {
+      "name": "query_fees_list",
+      "description": "List withdraw gas fees"
+    },
+    {
+      "name": "query_fees_show",
+      "description": "Query Fees Show"
+    },
+    {
+      "name": "query_tokens_list",
+      "description": "List all ZRC-20 tokens"
+    },
+    {
+      "name": "query_tokens_show",
+      "description": "Show details for a ZRC-20 token"
+    },
+    {
+      "name": "query_chains_list",
+      "description": "List all connected chains"
+    },
+    {
+      "name": "query_chains_show",
+      "description": "Show details for a connected chain"
+    },
+    {
+      "name": "faucet",
+      "description": "Request testnet ZETA tokens from the faucet"
+    },
+    {
+      "name": "zetachain_call",
+      "description": "Call a contract on a connected chain from ZetaChain"
+    },
+    {
+      "name": "zetachain_withdraw",
+      "description": "Withdraw tokens from ZetaChain to a connected chain"
+    },
+    {
+      "name": "zetachain_withdraw-and-call",
+      "description": "Withdraw tokens and call a contract on a connected chain"
+    },
+    {
+      "name": "evm_call",
+      "description": "Call a contract on ZetaChain from an EVM-compatible chain"
+    },
+    {
+      "name": "evm_deposit-and-call",
+      "description": "Deposit tokens and call a contract on ZetaChain from an EVM-compatible chain"
+    },
+    {
+      "name": "evm_deposit",
+      "description": "Deposit tokens to ZetaChain from an EVM-compatible chain"
+    },
+    {
+      "name": "solana_call",
+      "description": "Call a contract on ZetaChain from Solana"
+    },
+    {
+      "name": "solana_deposit-and-call",
+      "description": "Deposit tokens from Solana and call a contract on ZetaChain"
+    },
+    {
+      "name": "solana_deposit",
+      "description": "Deposit tokens from Solana"
+    },
+    {
+      "name": "solana_encode",
+      "description": "Encode payload data for Solana"
+    },
+    {
+      "name": "sui_deposit-and-call",
+      "description": "Deposit tokens from Sui and call a contract on ZetaChain"
+    },
+    {
+      "name": "sui_deposit",
+      "description": "Deposit tokens from Sui"
+    },
+    {
+      "name": "sui_encode",
+      "description": "Encode payload data for SUI"
+    },
+    {
+      "name": "ton_deposit-and-call",
+      "description": "Deposit TON and call a contract on ZetaChain"
+    },
+    {
+      "name": "ton_deposit",
+      "description": "Deposit tokens from TON"
+    },
+    {
+      "name": "bitcoin_inscription_call",
+      "description": "Call a contract on ZetaChain"
+    },
+    {
+      "name": "bitcoin_inscription_deposit-and-call",
+      "description": "Deposit BTC and call a contract on ZetaChain"
+    },
+    {
+      "name": "bitcoin_inscription_deposit",
+      "description": "Deposit BTC to ZetaChain"
+    },
+    {
+      "name": "bitcoin_inscription_encode",
+      "description": "Encode data for Bitcoin transactions using ABI encoding"
+    },
+    {
+      "name": "bitcoin_memo_call",
+      "description": "Call a contract on ZetaChain"
+    },
+    {
+      "name": "bitcoin_memo_deposit-and-call",
+      "description": "Deposit BTC and call a contract on ZetaChain"
+    },
+    {
+      "name": "bitcoin_memo_deposit",
+      "description": "Deposit BTC to ZetaChain"
+    },
+    {
+      "name": "localnet_start",
+      "description": "Localnet Start"
+    },
+    {
+      "name": "localnet_stop",
+      "description": "Localnet Stop"
+    },
+    {
+      "name": "localnet_check",
+      "description": "Localnet Check"
+    },
+    {
+      "name": "localnet_ton_balance",
+      "description": "Localnet Ton Balance"
+    },
+    {
+      "name": "localnet_ton_faucet",
+      "description": "Localnet Ton Faucet"
+    },
+    {
+      "name": "localnet_ton_wallet",
+      "description": "Localnet Ton Wallet"
+    },
+    {
+      "name": "localnet_ton_withdraw",
+      "description": "Localnet Ton Withdraw"
+    },
+    {
+      "name": "mcp_install",
+      "description": "Mcp Install"
+    },
+    {
+      "name": "mcp_remove",
+      "description": "Mcp Remove"
+    },
+    {
+      "name": "mcp_list",
+      "description": "Mcp List"
+    },
+    {
+      "name": "docs",
+      "description": "Docs"
+    }
+  ]
+}

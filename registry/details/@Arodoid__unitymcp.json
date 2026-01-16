@@ -1,0 +1,33 @@
+{
+  "id": "@Arodoid/unitymcp",
+  "displayName": "UnityMCP",
+  "description": "Integrate AI assistants seamlessly into your Unity projects. Monitor editor states, execute commands in real-time, and manage logs efficiently to enhance your development workflow.",
+  "createdAt": "2026-01-16T07:23:49.566Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Arodoid/unitymcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_editor_state",
+      "description": "Retrieve the current state of the Unity Editor, including active GameObjects, selection state, play mode status, scene hierarchy, and project structure. This tool provides a comprehensive snapshot of the editor's current context."
+    },
+    {
+      "name": "execute_editor_command",
+      "description": "Execute arbitrary C# code within the Unity Editor context. This powerful tool allows for direct manipulation of the Unity Editor, GameObjects, components, and project assets using the Unity Editor API."
+    },
+    {
+      "name": "get_logs",
+      "description": "Retrieve and filter Unity Editor logs with comprehensive filtering options. This tool provides access to editor logs, console messages, warnings, errors, and exceptions with powerful filtering capabilities."
+    }
+  ]
+}

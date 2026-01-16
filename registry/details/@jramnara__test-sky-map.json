@@ -1,0 +1,12 @@
+{
+  "id": "@jramnara/test-sky-map",
+  "displayName": "test-sky-map",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:57.372Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jramnara/test-sky-map"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,139 @@
+{
+  "id": "@imatrixme/pocketbase-mcp-server",
+  "displayName": "PocketBase MCP Server",
+  "description": "Manage your PocketBase databases effortlessly. Perform advanced database operations, schema management, and data manipulation with ease using our comprehensive tools.",
+  "createdAt": "2026-01-16T07:32:48.939Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@imatrixme/pocketbase-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "pocketbaseUrl"
+      ],
+      "properties": {
+        "pocketbaseUrl": {
+          "type": "string",
+          "description": "The URL of your PocketBase instance."
+        },
+        "pocketbaseDataDir": {
+          "type": "string",
+          "description": "Custom data directory path.",
+          "default": ""
+        },
+        "pocketbaseAdminEmail": {
+          "type": "string",
+          "description": "Admin email for certain operations.",
+          "default": ""
+        },
+        "pocketbaseAdminPassword": {
+          "type": "string",
+          "description": "Admin password.",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_collection",
+      "description": "Create a new collection in PocketBase"
+    },
+    {
+      "name": "create_record",
+      "description": "Create a new record in a collection"
+    },
+    {
+      "name": "list_records",
+      "description": "List records from a collection with optional filters"
+    },
+    {
+      "name": "update_record",
+      "description": "Update an existing record"
+    },
+    {
+      "name": "delete_record",
+      "description": "Delete a record"
+    },
+    {
+      "name": "list_auth_methods",
+      "description": "List all available authentication methods"
+    },
+    {
+      "name": "authenticate_user",
+      "description": "Authenticate a user with email and password"
+    },
+    {
+      "name": "authenticate_with_oauth2",
+      "description": "Authenticate a user with OAuth2"
+    },
+    {
+      "name": "authenticate_with_otp",
+      "description": "Authenticate a user with one-time password"
+    },
+    {
+      "name": "auth_refresh",
+      "description": "Refresh authentication token"
+    },
+    {
+      "name": "request_verification",
+      "description": "Request email verification"
+    },
+    {
+      "name": "confirm_verification",
+      "description": "Confirm email verification with token"
+    },
+    {
+      "name": "request_password_reset",
+      "description": "Request password reset"
+    },
+    {
+      "name": "confirm_password_reset",
+      "description": "Confirm password reset with token"
+    },
+    {
+      "name": "request_email_change",
+      "description": "Request email change"
+    },
+    {
+      "name": "confirm_email_change",
+      "description": "Confirm email change with token"
+    },
+    {
+      "name": "impersonate_user",
+      "description": "Impersonate another user (admin only)"
+    },
+    {
+      "name": "create_user",
+      "description": "Create a new user account"
+    },
+    {
+      "name": "get_collection_schema",
+      "description": "Get schema details for a collection"
+    },
+    {
+      "name": "backup_database",
+      "description": "Create a backup of the PocketBase database"
+    },
+    {
+      "name": "import_data",
+      "description": "Import data into a collection"
+    },
+    {
+      "name": "migrate_collection",
+      "description": "Migrate collection schema with data preservation"
+    },
+    {
+      "name": "query_collection",
+      "description": "Advanced query with filtering, sorting, and aggregation"
+    },
+    {
+      "name": "manage_indexes",
+      "description": "Manage collection indexes"
+    }
+  ]
+}

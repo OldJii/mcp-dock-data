@@ -1,0 +1,12 @@
+{
+  "id": "@gott150/obsidian",
+  "displayName": "obsidian",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:07.886Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gott150/obsidian"
+  },
+  "connection": null,
+  "capabilities": []
+}

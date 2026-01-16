@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/rfc-server",
+  "displayName": "rfc-server",
+  "description": "Search and fetch RFCs by keyword or number. Jump directly to specific sections for precise citations. Speed up standards research and technical writing.",
+  "createdAt": "2026-01-16T07:29:06.619Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/rfc-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_rfc",
+      "description": "Fetch an RFC document by its number"
+    },
+    {
+      "name": "search_rfcs",
+      "description": "Search for RFCs by keyword"
+    },
+    {
+      "name": "get_rfc_section",
+      "description": "Get a specific section from an RFC"
+    }
+  ]
+}

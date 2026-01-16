@@ -1,0 +1,25 @@
+{
+  "id": "@punitarani/fli",
+  "displayName": "Search Google Flights",
+  "description": "Search for Flights on Google Flights.\n\nYou can search for the cheapest days to fly and also the specific flight information.",
+  "createdAt": "2026-01-16T07:22:17.563Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@punitarani/fli"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_flights",
+      "description": "Search for flights with flexible filtering options.\n\nThis tool searches for flights between two airports on a specific date\nwith various filtering options like time ranges, airlines, seat class, etc."
+    },
+    {
+      "name": "search_cheap_flights",
+      "description": "Find the cheapest dates to fly between two airports over a date range.\n\nThis tool searches for the cheapest flights across a flexible date range,\nperfect for finding the best deals when your travel dates are flexible."
+    }
+  ]
+}

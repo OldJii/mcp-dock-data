@@ -1,0 +1,12 @@
+{
+  "id": "@nera0875/ssh-mcp",
+  "displayName": "ssh-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:35.459Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nera0875/ssh-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

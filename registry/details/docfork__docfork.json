@@ -1,0 +1,31 @@
+{
+  "id": "docfork/docfork",
+  "displayName": "Docfork",
+  "description": "Search and retrieve documentation from GitHub repositories and the web to find technical answers quickly. Transform complex web pages into clean markdown for efficient reading and analysis. Simplify library research by using specific repository identifiers for targeted documentation access.",
+  "createdAt": "2026-01-16T07:32:45.766Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/docfork/docfork"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "configSchema": {
+        "type": "object",
+        "properties": {},
+        "description": "No configuration required"
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "docfork_search_docs",
+      "description": "Search documentation across GitHub repositories or the web. For targeted searches INSIDE a specific library's documentation, use the docforkIdentifier parameter (author/repo format). Extract from GitHub URLs (e.g., github.com/facebook/react → 'facebook/react') and include in ALL subsequent searches about that library for focused, accurate results."
+    },
+    {
+      "name": "docfork_read_url",
+      "description": "Fetches and returns the full content of a documentation page as markdown. This is ESSENTIAL for getting complete, detailed information after searching. Always use this to read URLs from docfork_search_docs results to get the actual documentation content."
+    }
+  ]
+}

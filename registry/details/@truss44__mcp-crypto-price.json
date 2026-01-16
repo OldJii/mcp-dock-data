@@ -1,0 +1,38 @@
+{
+  "id": "@truss44/mcp-crypto-price",
+  "displayName": "Crypto Price & Market Analysis Server",
+  "description": "Provide real-time cryptocurrency price data and market analysis.",
+  "createdAt": "2026-01-16T07:22:25.450Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@truss44/mcp-crypto-price"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "coincapApiKey": {
+          "type": "string",
+          "description": "Optional API key for CoinCap to increase rate limits"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-crypto-price",
+      "description": "Get current price and 24h stats for a cryptocurrency"
+    },
+    {
+      "name": "get-market-analysis",
+      "description": "Get detailed market analysis including top exchanges and volume distribution"
+    },
+    {
+      "name": "get-historical-analysis",
+      "description": "Get historical price analysis with customizable timeframe"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "googlecalendar",
+  "displayName": "Google Calendar",
+  "description": "Google Calendar is a time management tool providing scheduling features, event reminders, and integration with email and other apps for streamlined organization",
+  "createdAt": "2026-01-16T07:19:07.488Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googlecalendar"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLECALENDAR_ACL_PATCH",
+      "description": "Updates an access control rule for a calendar using patch semantics (partial update). This allows modifying specific fields without affecting other properties. Note: Each patch request consumes three quota units. For domain-type ACL rules, if PATCH fails with 500 error, this action will automatically fallback to UPDATE method."
+    },
+    {
+      "name": "GOOGLECALENDAR_CALENDAR_LIST_INSERT",
+      "description": "Inserts an existing calendar into the user's calendar list."
+    },
+    {
+      "name": "GOOGLECALENDAR_CALENDAR_LIST_UPDATE",
+      "description": "Updates an existing entry on the user\\'s calendar list."
+    },
+    {
+      "name": "GOOGLECALENDAR_CALENDARS_DELETE",
+      "description": "Deletes a secondary calendar. Use calendars.clear for clearing all events on primary calendars."
+    },
+    {
+      "name": "GOOGLECALENDAR_CALENDARS_UPDATE",
+      "description": "Updates metadata for a calendar."
+    },
+    {
+      "name": "GOOGLECALENDAR_CLEAR_CALENDAR",
+      "description": "Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account."
+    },
+    {
+      "name": "GOOGLECALENDAR_CREATE_EVENT",
+      "description": "Create a Google Calendar event using `start_datetime` plus `event_duration_hour` and `event_duration_minutes` fields to derive the end time. Requires calendar write access. The organizer is added as an attendee unless `exclude_organizer` is True. Example request to create event for 1 hour 30 minutes: { \"calendar_id\": \"primary\", \"start_datetime\": \"2025-01-16T13:00:00\", \"timezone\": \"America/New_York\", \"event_duration_hour\": 1, \"event_duration_minutes\": 30, \"summary\": \"Client sync\", \"attendees\": [{\"email\": \"guest@example.com\"}] }"
+    },
+    {
+      "name": "GOOGLECALENDAR_DELETE_EVENT",
+      "description": "Deletes a specified event by `event_id` from a Google Calendar (`calendar_id`); this action is idempotent and raises a 404 error if the event is not found."
+    },
+    {
+      "name": "GOOGLECALENDAR_DUPLICATE_CALENDAR",
+      "description": "Creates a new, empty Google Calendar with the specified title (summary)."
+    },
+    {
+      "name": "GOOGLECALENDAR_EVENTS_INSTANCES",
+      "description": "Returns instances of the specified recurring event."
+    },
+    {
+      "name": "GOOGLECALENDAR_EVENTS_LIST",
+      "description": "Returns events on the specified calendar."
+    },
+    {
+      "name": "GOOGLECALENDAR_EVENTS_MOVE",
+      "description": "Moves an event to another calendar, i.e., changes an event's organizer."
+    },
+    {
+      "name": "GOOGLECALENDAR_EVENTS_WATCH",
+      "description": "Watch for changes to Events resources."
+    },
+    {
+      "name": "GOOGLECALENDAR_FIND_EVENT",
+      "description": "Finds events in a specified Google Calendar using text query, time ranges (event start/end, last modification), and event types; ensure `timeMin` is not chronologically after `timeMax` if both are provided."
+    },
+    {
+      "name": "GOOGLECALENDAR_FIND_FREE_SLOTS",
+      "description": "Finds both free and busy time slots in Google Calendars for specified calendars within a defined time range (defaults to the current day UTC if `time_min`/`time_max` are omitted). Returns busy intervals enriched with event details and calculates free slots by finding gaps between busy periods; `time_min` must precede `time_max` if both are provided. This action retrieves free and busy time slots for the specified calendars over a given time period. It analyzes the busy intervals from the calendars and provides calculated free slots based on the gaps in the busy periods."
+    },
+    {
+      "name": "GOOGLECALENDAR_FREE_BUSY_QUERY",
+      "description": "Returns free/busy information for a set of calendars."
+    },
+    {
+      "name": "GOOGLECALENDAR_GET_CALENDAR",
+      "description": "Retrieves a specific Google Calendar, identified by `calendar_id`, to which the authenticated user has access."
+    },
+    {
+      "name": "GOOGLECALENDAR_GET_CURRENT_DATE_TIME",
+      "description": "Gets the current date and time, allowing for a specific timezone offset."
+    },
+    {
+      "name": "GOOGLECALENDAR_LIST_ACL_RULES",
+      "description": "Retrieves the list of access control rules (ACLs) for a specified calendar, providing the necessary 'rule_id' values required for updating specific ACL rules."
+    },
+    {
+      "name": "GOOGLECALENDAR_LIST_CALENDARS",
+      "description": "Retrieves a paginated list of calendars from the user's calendar list, with optional filtering and sync capabilities."
+    },
+    {
+      "name": "GOOGLECALENDAR_PATCH_CALENDAR",
+      "description": "Partially updates (PATCHes) an existing Google Calendar, modifying only the fields provided; `summary` is mandatory and cannot be an empty string, and an empty string for `description` or `location` clears them."
+    },
+    {
+      "name": "GOOGLECALENDAR_PATCH_EVENT",
+      "description": "Update specified fields of an existing event in a Google Calendar using patch semantics (array fields like `attendees` are fully replaced if provided); ensure the `calendar_id` and `event_id` are valid and the user has write access to the calendar."
+    },
+    {
+      "name": "GOOGLECALENDAR_QUICK_ADD",
+      "description": "Parses natural language text to quickly create a basic Google Calendar event with its title, date, and time, suitable for simple scheduling; does not support direct attendee addition or recurring events, and `calendar_id` must be valid if not 'primary'."
+    },
+    {
+      "name": "GOOGLECALENDAR_REMOVE_ATTENDEE",
+      "description": "Removes an attendee from a specified event in a Google Calendar; the calendar and event must exist."
+    },
+    {
+      "name": "GOOGLECALENDAR_SETTINGS_LIST",
+      "description": "Returns all user settings for the authenticated user."
+    },
+    {
+      "name": "GOOGLECALENDAR_SETTINGS_WATCH",
+      "description": "Watch for changes to Settings resources."
+    },
+    {
+      "name": "GOOGLECALENDAR_SYNC_EVENTS",
+      "description": "Synchronizes Google Calendar events, performing a full sync if no `sync_token` is provided or if a 410 GONE error (due to an expired token) necessitates it, otherwise performs an incremental sync for events changed since the `sync_token` was issued."
+    },
+    {
+      "name": "GOOGLECALENDAR_UPDATE_ACL_RULE",
+      "description": "Updates an access control rule for the specified calendar."
+    },
+    {
+      "name": "GOOGLECALENDAR_UPDATE_EVENT",
+      "description": "Updates an existing event by `event_id` in a Google Calendar; this is a full PUT replacement, so provide all desired fields as unspecified ones may be cleared or reset."
+    }
+  ]
+}

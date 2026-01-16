@@ -1,0 +1,65 @@
+{
+  "id": "@LucaDeLeo/amazing-marvin-mcp",
+  "displayName": "amazing-marvin-mcp",
+  "description": "Plan your day by pulling today’s and overdue tasks from Amazing Marvin. Create, organize, and complete tasks with projects, labels, due dates, priorities, and time tracking. Browse categories to find items and start or stop timers without leaving your workflow.",
+  "createdAt": "2026-01-16T07:27:51.464Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LucaDeLeo/amazing-marvin-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "api_token"
+      ],
+      "properties": {
+        "api_token": {
+          "type": "string",
+          "description": "Your Amazing Marvin API token. Get it from: https://app.amazingmarvin.com/pre?api="
+        }
+      },
+      "description": "Configuration schema for user-provided API token."
+    }
+  },
+  "capabilities": [
+    {
+      "name": "marvin_add_task",
+      "description": "\n        Create a new task in Amazing Marvin with full support for scheduling, labels, and organization.\n\n        This tool creates tasks with auto-completion support for shortcuts in the title.\n        Amazing Marvin shortcuts: #Project, @label, ~timeEstimate, +dueDate, ^priority.\n\n        Args:\n            params (AddTaskInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: Success message with task ID and title, or error message\n        "
+    },
+    {
+      "name": "marvin_get_todays_tasks",
+      "description": "\n        Retrieve all tasks scheduled for today (or a specific date) in Amazing Marvin.\n\n        Args:\n            params (GetTasksInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: List of tasks formatted as markdown or JSON\n        "
+    },
+    {
+      "name": "marvin_mark_done",
+      "description": "\n        Mark a specific task as complete in Amazing Marvin.\n\n        Args:\n            params (MarkDoneInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: Success confirmation with task ID\n        "
+    },
+    {
+      "name": "marvin_get_due_tasks",
+      "description": "\n        Get all tasks that are due today or overdue in Amazing Marvin.\n\n        Args:\n            params (GetTasksInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: List of due/overdue tasks formatted as markdown or JSON\n        "
+    },
+    {
+      "name": "marvin_get_categories",
+      "description": "\n        List all categories and projects in Amazing Marvin to help identify parent IDs.\n\n        Args:\n            params (SimpleFormatInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: List of categories/projects formatted as markdown or JSON\n        "
+    },
+    {
+      "name": "marvin_get_labels",
+      "description": "\n        List all labels in Amazing Marvin to help identify label IDs for task creation.\n\n        Args:\n            params (SimpleFormatInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: List of labels formatted as markdown or JSON\n        "
+    },
+    {
+      "name": "marvin_get_children",
+      "description": "\n        Get all tasks and projects within a specific category or project in Amazing Marvin.\n\n        Args:\n            params (GetChildrenInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: List of child items formatted as markdown or JSON\n        "
+    },
+    {
+      "name": "marvin_start_tracking",
+      "description": "\n        Start time tracking for a specific task in Amazing Marvin.\n\n        Args:\n            params (StartTrackingInput): Validated input parameters\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: Success confirmation with task ID\n        "
+    },
+    {
+      "name": "marvin_stop_tracking",
+      "description": "\n        Stop the currently running time tracker in Amazing Marvin.\n\n        Args:\n            ctx (Context): Smithery context with session configuration\n\n        Returns:\n            str: Success confirmation\n        "
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@mefta.sadat2/pcexpress",
+  "displayName": "Loblaw Grocery Search",
+  "description": "Find grocery products across Loblaw’s online catalog. Compare brands and sizes to choose the right items. Streamline your shopping list by quickly locating what you need.",
+  "createdAt": "2026-01-16T07:32:31.389Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mefta.sadat2/pcexpress"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "catalog_search",
+      "description": "Search the product catalog to find grocery products."
+    }
+  ]
+}

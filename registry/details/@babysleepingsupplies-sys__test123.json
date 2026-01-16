@@ -1,0 +1,29 @@
+{
+  "id": "@babysleepingsupplies-sys/test123",
+  "displayName": "DeepWiki",
+  "description": "Explore and query GitHub repository documentation in depth. Browse wiki topics, read pages, and get direct answers to questions about a repo. Quickly find the guidance you need across complex project docs.",
+  "createdAt": "2026-01-16T07:32:07.966Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@babysleepingsupplies-sys/test123"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "read_wiki_structure",
+      "description": "Get a list of documentation topics for a GitHub repository"
+    },
+    {
+      "name": "read_wiki_contents",
+      "description": "View documentation about a GitHub repository"
+    },
+    {
+      "name": "ask_question",
+      "description": "Ask any question about a GitHub repository"
+    }
+  ]
+}

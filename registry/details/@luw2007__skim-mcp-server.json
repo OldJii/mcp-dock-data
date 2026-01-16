@@ -1,0 +1,12 @@
+{
+  "id": "@luw2007/skim-mcp-server",
+  "displayName": "skim-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:09.415Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@luw2007/skim-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

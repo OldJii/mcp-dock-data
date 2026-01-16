@@ -1,0 +1,81 @@
+{
+  "id": "@sitebay/sitebay-mcp",
+  "displayName": "SiteBay WordPress Hosting Manager",
+  "description": "Manage your WordPress hosting on SiteBay through natural language commands. Create, update, and delete sites, execute server commands, edit files, and view logs seamlessly. Access hosting regions, templates, and proxy configurations to streamline your SiteBay cloud infrastructure management.",
+  "createdAt": "2026-01-16T07:24:36.530Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sitebay/sitebay-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "sitebay_list_sites",
+      "description": "List all WordPress sites for the authenticated user.\n\nArgs:\n    team_id: Optional team ID (UUID4) to filter sites by team\n\nReturns:\n    Formatted string with site details including domain, status, region, and versions"
+    },
+    {
+      "name": "sitebay_get_site",
+      "description": "Get detailed information about a specific WordPress site.\n\nArgs:\n    fqdn: The fully qualified domain name of the site (e.g., \"www.example.com\")\n\nReturns:\n    Detailed site information including status, versions, URLs, and configuration"
+    },
+    {
+      "name": "sitebay_create_site",
+      "description": "Create a new WordPress site (SiteLiveCreate schema).\n\nArgs:\n    team_id: Team UUID that owns the site\n    fqdn: The fully qualified domain name for the new site (e.g., \"www.example.org\")\n    wordpress_blog_name: Blog/site title\n    wordpress_first_name: Admin first name\n    wordpress_last_name: Admin last name\n    wordpress_email: Admin email address\n    wordpress_username: Admin username\n    wordpress_password: Admin password (strong)\n    git_url: Optional Git repository URL\n    ready_made_site_name: Optional ready-made site name\n    is_free: Optional flag for free plan\n\nReturns:\n    Success message with new site details and access information"
+    },
+    {
+      "name": "sitebay_update_site",
+      "description": "Update an existing SiteBay site configuration.\n\nArgs:\n    fqdn: Site domain to update\n    cf_dev_mode_enabled: Enable/disable Cloudflare dev mode\n    new_fqdn: Change the site domain\n    git_url: Set repository URL for deployments\n    http_auth_enabled: Enable/disable HTTP basic auth\n    team_id: Move site to a different team\n    is_free: Toggle free plan flag\n\nReturns:\n    Confirmation message with updated settings"
+    },
+    {
+      "name": "sitebay_delete_site",
+      "description": "Delete a WordPress site permanently. This action cannot be undone.\n\nArgs:\n    fqdn: The fully qualified domain name of the site to delete\n\nReturns:\n    Confirmation message"
+    },
+    {
+      "name": "sitebay_site_shell_command",
+      "description": "Execute a shell command on a WordPress site. Supports WP-CLI commands, system commands, etc.\n\nArgs:\n    fqdn: The fully qualified domain name of the site\n    command: The shell command to execute (e.g., \"wp plugin list\", \"ls -la\", \"wp search-replace\")\n\nReturns:\n    Command output and execution details"
+    },
+    {
+      "name": "sitebay_site_edit_file",
+      "description": "Edit a file in the site's wp-content directory.\n\nArgs:\n    fqdn: The fully qualified domain name of the site\n    file_path: Path to the file in wp-content (e.g., \"wp-content/themes/mytheme/style.css\")\n    content: New content for the file\n\nReturns:\n    Success confirmation with file details"
+    },
+    {
+      "name": "sitebay_list_ready_made_sites",
+      "description": "List available ready-made sites for quick launches.\n\nReturns:\n    List of ready-made sites with descriptions"
+    },
+    {
+      "name": "sitebay_list_teams",
+      "description": "List all teams for the authenticated user.\n\nReturns:\n    Formatted list of teams with their details and member information"
+    },
+    {
+      "name": "sitebay_wordpress_proxy",
+      "description": "Proxy requests to a WordPress site's REST API.\n\nArgs:\n    fqdn: The site domain\n    path: WordPress API path (e.g., \"/wp-json/wp/v2/posts\")\n    query_params_json: Optional JSON string for payload or query params\n    method: HTTP method (get, post, put, delete)\n\nReturns:\n    WordPress API response"
+    },
+    {
+      "name": "sitebay_shopify_proxy",
+      "description": "Proxy requests to a Shopify Admin API.\n\nArgs:\n    shop_name: Shopify shop name\n    path: Shopify API path (e.g., \"/admin/api/2024-04/products.json\")\n    query_params_json: Optional JSON string for payload or query params\n    method: HTTP method (get, post, put, delete)\n\nReturns:\n    Shopify API response"
+    },
+    {
+      "name": "sitebay_posthog_proxy",
+      "description": "Proxy POST requests to PostHog analytics API.\n\nArgs:\n    path: PostHog API path\n    query_params_json: Optional JSON string for payload or query params\n    method: HTTP method (get, post, put, delete)\n\nReturns:\n    PostHog API response"
+    },
+    {
+      "name": "sitebay_backup_list_commits",
+      "description": "List available backup commits for point-in-time restore.\n\nArgs:\n    fqdn: The site domain\n    number_to_fetch: Number of backup entries to fetch (default: 1)\n\nReturns:\n    List of available backup commits"
+    },
+    {
+      "name": "sitebay_backup_restore",
+      "description": "Restore a site to a previous point in time.\n\nArgs (PITRestoreCreate schema):\n    fqdn: The site domain\n    restore_point: ISO datetime string (or omit for latest)\n    for_stage_site: Whether to restore the stage site\n    restore_db: Restore database (default true)\n    restore_wp_content: Restore wp-content (default true)\n    delete_extra_files: Delete extra files from target (default false)\n    dolt_restore_hash: Optional Dolt hash to restore DB\n    is_dry_run: Simulate restore without applying changes\n\nReturns:\n    Restore operation confirmation"
+    },
+    {
+      "name": "sitebay_account_affiliates",
+      "description": "Get affiliate referral information.\n\nReturns:\n    List of users who signed up using your affiliate links"
+    },
+    {
+      "name": "sitebay_account_create_checkout",
+      "description": "Create a Stripe checkout session for team billing.\n\nArgs:\n    plan_name: Plan type (\"starter\", \"business\", \"micro\")\n    interval: Billing interval (\"month\", \"year\")\n    team_id: Optional team ID to purchase for\n\nReturns:\n    Stripe checkout URL"
+    }
+  ]
+}

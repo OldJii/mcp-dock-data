@@ -1,0 +1,12 @@
+{
+  "id": "@cristianoaredes/mcp-senado",
+  "displayName": "mcp-senado",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:43.625Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cristianoaredes/mcp-senado"
+  },
+  "connection": null,
+  "capabilities": []
+}

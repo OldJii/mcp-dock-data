@@ -1,0 +1,80 @@
+{
+  "id": "@madhukarkumar/singlestore-mcp-server",
+  "displayName": "SingleStore MCP Server",
+  "description": "Interact with SingleStore databases using a standardized protocol. Execute queries, describe schemas, and generate ER diagrams effortlessly.",
+  "createdAt": "2026-01-16T07:28:33.672Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@madhukarkumar/singlestore-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "singlestoreHost",
+        "singlestorePort",
+        "singlestoreUser",
+        "singlestorePassword",
+        "singlestoreDatabase"
+      ],
+      "properties": {
+        "singlestoreHost": {
+          "type": "string",
+          "description": "The hostname of the SingleStore instance."
+        },
+        "singlestorePort": {
+          "type": "number",
+          "description": "The port number to connect to SingleStore, usually 3306."
+        },
+        "singlestoreUser": {
+          "type": "string",
+          "description": "The username for SingleStore authentication."
+        },
+        "singlestoreDatabase": {
+          "type": "string",
+          "description": "The name of the SingleStore database to connect to."
+        },
+        "singlestorePassword": {
+          "type": "string",
+          "description": "The password for SingleStore authentication."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_er_diagram",
+      "description": "Generate a Mermaid ER diagram of the database schema"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the database"
+    },
+    {
+      "name": "query_table",
+      "description": "Execute a query on a table"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get detailed information about a table"
+    },
+    {
+      "name": "run_read_query",
+      "description": "Execute a read-only (SELECT) query on the database"
+    },
+    {
+      "name": "create_table",
+      "description": "Create a new table in the database with specified columns and constraints"
+    },
+    {
+      "name": "generate_synthetic_data",
+      "description": "Generate and insert synthetic data into an existing table"
+    },
+    {
+      "name": "optimize_sql",
+      "description": "Analyze a SQL query using PROFILE and provide optimization recommendations"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@wtyler2505/mcp-arduino-server",
+  "displayName": "mcp-arduino-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:02.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wtyler2505/mcp-arduino-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

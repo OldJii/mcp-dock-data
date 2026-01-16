@@ -1,0 +1,12 @@
+{
+  "id": "@joonho-wowpocket/my-smithly-app",
+  "displayName": "my-smithly-app",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:16.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joonho-wowpocket/my-smithly-app"
+  },
+  "connection": null,
+  "capabilities": []
+}

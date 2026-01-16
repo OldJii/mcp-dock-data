@@ -1,0 +1,21 @@
+{
+  "id": "@guanqun-yang/mcp-server-char-counter",
+  "displayName": "Character Counter",
+  "description": "Count characters in any text to quickly check length and meet limits. Validate inputs for tweets, SMS, forms, or code. Get instant counts to compare drafts and avoid overages.",
+  "createdAt": "2026-01-16T07:23:05.603Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-char-counter"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "count",
+      "description": "Count number of characters `char` in query."
+    }
+  ]
+}

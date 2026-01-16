@@ -1,0 +1,21 @@
+{
+  "id": "@nimish/pricefetch",
+  "displayName": "Crypto Price Quotes | By Onramp.Money",
+  "description": "Get live crypto prices from Onramp.money and instantly see how much you can buy with your local currency. Select your country or currency to receive accurate buy quotes across supported networks. Compare options to plan purchases in 60+ countries and more.",
+  "createdAt": "2026-01-16T07:31:22.040Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nimish/pricefetch"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "cryptoPriceINR",
+      "description": "Get live price of a cryptocurrency on onramp.money for ANY supported fiat and calculate how much crypto you can buy. IMPORTANT: Before calling this tool, determine fiatType from the user's country/fiat using Onramp's `fetchAllCountryConfig` API (`/onramp/api/v2/common/public/fetchAllCountryConfig`). Ask the user for their country or local currency, then select the appropriate active entry from `data.buy` and use its key as fiatType (e.g., '1' for INR/India, '21' for USD/US). PARAMETER PRIORITY: coinCode > fiatType > network > fiatAmount. Resolve missing parameters in this order, then call this tool so it can query Onramp's `coinDetails` API."
+    }
+  ]
+}

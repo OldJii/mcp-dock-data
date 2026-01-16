@@ -1,0 +1,12 @@
+{
+  "id": "@joeleesuh/servers",
+  "displayName": "servers",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:05.984Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joeleesuh/servers"
+  },
+  "connection": null,
+  "capabilities": []
+}

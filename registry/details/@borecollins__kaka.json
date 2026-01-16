@@ -1,0 +1,12 @@
+{
+  "id": "@borecollins/kaka",
+  "displayName": "autohaven",
+  "description": "Search for cars",
+  "createdAt": "2026-01-16T07:42:41.584Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@borecollins/kaka"
+  },
+  "connection": null,
+  "capabilities": []
+}

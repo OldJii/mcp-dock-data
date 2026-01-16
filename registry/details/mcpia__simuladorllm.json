@@ -1,0 +1,12 @@
+{
+  "id": "mcpia/simuladorllm",
+  "displayName": "simuladorllm",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:30.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcpia/simuladorllm"
+  },
+  "connection": null,
+  "capabilities": []
+}

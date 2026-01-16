@@ -1,0 +1,12 @@
+{
+  "id": "@theparkerk/ms-365-mcp-server",
+  "displayName": "ms-365-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:49.057Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@theparkerk/ms-365-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "@re-rank/uiux-mcp",
+  "displayName": "KRDS Design System",
+  "description": "Build interfaces that follow the Korea Responsive Design System (KRDS) faster. Search and insert official components, retrieve ready-to-use HTML, and explore color, spacing, and typography tokens. Validate your code for KRDS compliance and accessibility and get actionable improvement suggestions.",
+  "createdAt": "2026-01-16T07:20:17.991Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@re-rank/uiux-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "enableSuggestions": {
+          "type": "boolean",
+          "description": "KRDS 컴포넌트 추천 사용 여부",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_krds_components",
+      "description": "KRDS 컴포넌트를 검색합니다. 검색어나 카테고리로 필터링할 수 있습니다."
+    },
+    {
+      "name": "get_component_code",
+      "description": "특정 KRDS 컴포넌트의 전체 HTML 코드와 정보를 가져옵니다."
+    },
+    {
+      "name": "list_component_categories",
+      "description": "모든 KRDS 컴포넌트 카테고리 목록을 가져옵니다."
+    },
+    {
+      "name": "list_all_components",
+      "description": "모든 KRDS 컴포넌트 이름 목록을 가져옵니다."
+    },
+    {
+      "name": "search_design_tokens",
+      "description": "KRDS 디자인 토큰을 검색합니다 (색상, 간격, 타이포그래피 등)."
+    },
+    {
+      "name": "get_color_palette",
+      "description": "KRDS 전체 색상 팔레트를 가져옵니다."
+    },
+    {
+      "name": "get_token_stats",
+      "description": "디자인 토큰 통계 정보를 가져옵니다."
+    },
+    {
+      "name": "validate_krds_compliance",
+      "description": "HTML/CSS 코드를 분석하여 KRDS 가이드라인 준수 여부를 확인하고 개선 제안을 제공합니다."
+    },
+    {
+      "name": "get_krds_resources",
+      "description": "KRDS 리소스 파일 경로와 사용법을 가져옵니다."
+    }
+  ]
+}

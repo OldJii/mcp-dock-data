@@ -1,0 +1,21 @@
+{
+  "id": "@ahump20/mlb-api-mcp-2033",
+  "displayName": "mlb-api-mcp-2033",
+  "description": "",
+  "createdAt": "2026-01-16T07:32:09.558Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ahump20/mlb-api-mcp-2033"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "start-notification-stream",
+      "description": "Starts sending periodic notifications for testing resumability"
+    }
+  ]
+}

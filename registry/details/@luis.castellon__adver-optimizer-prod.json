@@ -1,0 +1,12 @@
+{
+  "id": "@luis.castellon/adver-optimizer-prod",
+  "displayName": "adver-optimizer-prod",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:05.020Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@luis.castellon/adver-optimizer-prod"
+  },
+  "connection": null,
+  "capabilities": []
+}

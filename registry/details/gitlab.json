@@ -1,0 +1,233 @@
+{
+  "id": "gitlab",
+  "displayName": "Gitlab",
+  "description": "A web-based DevOps lifecycle tool that provides a Git repository manager providing wiki, issue-tracking, and CI/CD pipeline features.",
+  "createdAt": "2026-01-16T07:19:33.876Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/gitlab"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GITLAB_ARCHIVE_PROJECT",
+      "description": "Tool to archive a project. Use when you need to mark a project read-only after finishing active development. Call after confirming no further changes are required."
+    },
+    {
+      "name": "GITLAB_CREATE_GROUP",
+      "description": "Tool to create a new group in GitLab. Use when you need to establish a new group for projects or collaboration."
+    },
+    {
+      "name": "GITLAB_CREATE_PROJECT",
+      "description": "Tool to create a new project in GitLab. Implements POST /projects endpoint."
+    },
+    {
+      "name": "GITLAB_CREATE_PROJECT_ISSUE",
+      "description": "Tool to create a new issue in a GitLab project. Use when you need to report a bug, request a feature, or track a task within a specific project."
+    },
+    {
+      "name": "GITLAB_CREATE_REPOSITORY_BRANCH",
+      "description": "Tool to create a new branch in a project. Use when you need to create a new branch from an existing branch or a specific commit in a GitLab project."
+    },
+    {
+      "name": "GITLAB_DELETE_PROJECT",
+      "description": "Tool to delete a GitLab project by its ID. Use when you need to remove a project, either by marking it for later deletion or deleting it immediately."
+    },
+    {
+      "name": "GITLAB_DOWNLOAD_PROJECT_AVATAR",
+      "description": "Tool to download a project’s avatar image. Use when you need the raw avatar bytes after confirming the project exists."
+    },
+    {
+      "name": "GITLAB_ERASE_JOB",
+      "description": "Tool to erase the content of a specified job within a project. Use when you need to remove job artifacts and logs."
+    },
+    {
+      "name": "GITLAB_GET_COMMIT_REFS",
+      "description": "Tool to get all references (branches or tags) a commit is pushed to. Use when you need to find out which branches or tags a specific commit belongs to in a GitLab project."
+    },
+    {
+      "name": "GITLAB_GET_COMMIT_SEQUENCE",
+      "description": "Tool to get the sequence number of a commit in a project by following parent links from the given commit. Use when you need to determine the order of a commit in the project's history."
+    },
+    {
+      "name": "GITLAB_GET_GROUP",
+      "description": "Tool to retrieve information about a specific group by its ID. Use when you need to get details of a GitLab group."
+    },
+    {
+      "name": "GITLAB_GET_GROUP_MEMBER",
+      "description": "Tool to retrieve details for a specific group member. Use when you need to fetch membership information for a user in a group after you know both group ID and user ID."
+    },
+    {
+      "name": "GITLAB_GET_GROUPS",
+      "description": "Get Groups"
+    },
+    {
+      "name": "GITLAB_GET_JOB_DETAILS",
+      "description": "Tool to retrieve details of a single job by its ID within a specified project. Use this when you need to fetch specific information about a particular CI/CD job."
+    },
+    {
+      "name": "GITLAB_GET_MERGE_REQUEST_NOTES",
+      "description": "Tool to fetch comments on a merge request. Use when you need to retrieve all notes for a specific merge request."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT",
+      "description": "Tool to get a single project by ID or URL-encoded path."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT_LANGUAGES",
+      "description": "Tool to list programming languages used in a project with percentages. Use when you need the project language breakdown."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT_MEMBER",
+      "description": "Tool to retrieve details for a specific project member. Use after confirming project and user IDs to fetch membership information for a project member."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT_MEMBER_ALL",
+      "description": "Tool to retrieve details for a specific project member (including inherited and invited members). Use when you need the effective membership info (including invitations and inheritance)."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT_MERGE_REQUEST_COMMITS",
+      "description": "Tool to get commits of a merge request. Use when you need to retrieve all commits associated with a specific merge request."
+    },
+    {
+      "name": "GITLAB_GET_PROJECT_MERGE_REQUESTS",
+      "description": "Tool to retrieve a list of merge requests for a specific project. Use when you need to get all merge requests associated with a project, with options to filter by state, labels, milestones, and other attributes."
+    },
+    {
+      "name": "GITLAB_GET_PROJECTS",
+      "description": "Tool to list all projects accessible to the authenticated user. Supports filtering."
+    },
+    {
+      "name": "GITLAB_GET_PROJECTS_ID_MERGE_REQUESTS_IID_DIFFS",
+      "description": "Tool to list all diff versions of a merge request. Use when you need to inspect changes across different diff versions after creating or updating a merge request."
+    },
+    {
+      "name": "GITLAB_GET_REPOSITORY_BRANCH",
+      "description": "Tool to retrieve information about a specific branch in a project. Use when you need to get details for a single branch."
+    },
+    {
+      "name": "GITLAB_GET_REPOSITORY_BRANCHES",
+      "description": "Retrieves a list of repository branches for a project. Use this when you need to get all branches or search for specific branches within a GitLab project."
+    },
+    {
+      "name": "GITLAB_GET_SINGLE_COMMIT",
+      "description": "Tool to get a specific commit identified by the commit hash or name of a branch or tag. Use this when you need to retrieve detailed information about a single commit in a GitLab project repository."
+    },
+    {
+      "name": "GITLAB_GET_SINGLE_PIPELINE",
+      "description": "Tool to retrieve details of a single pipeline by its ID within a specified project. Use when you need to get information about a specific CI/CD pipeline."
+    },
+    {
+      "name": "GITLAB_GET_USER",
+      "description": "Tool to retrieve information about a specific user by their ID. Use when you need to fetch details for a single GitLab user."
+    },
+    {
+      "name": "GITLAB_GET_USER_PREFERENCES",
+      "description": "Tool to get the current user's preferences. Use when you need to retrieve the user's diff display and CI identity JWT settings after authentication."
+    },
+    {
+      "name": "GITLAB_GET_USERS",
+      "description": "Tool to retrieve a list of users from GitLab. Use this when you need to find user information, search for specific users, or filter users based on various criteria like activity status or creation date."
+    },
+    {
+      "name": "GITLAB_GET_USERS_ID_STATUS",
+      "description": "Tool to get a user's status by ID. Use when you need to retrieve a GitLab user's current status message, emoji, and availability after identifying their user ID."
+    },
+    {
+      "name": "GITLAB_GET_USER_STATUS",
+      "description": "Tool to get the current user's status. Use when displaying or verifying the authenticated user's GitLab status after login."
+    },
+    {
+      "name": "GITLAB_GET_USER_SUPPORT_PIN",
+      "description": "Tool to get details of the current user's Support PIN. Use when you need to retrieve the active support PIN and its expiration for the authenticated user."
+    },
+    {
+      "name": "GITLAB_IMPORT_PROJECT_MEMBERS",
+      "description": "Tool to import members from one project to another. Use when migrating members between projects."
+    },
+    {
+      "name": "GITLAB_LIST_ALL_GROUP_MEMBERS",
+      "description": "Tool to list all members of a group including direct, inherited, and invited members. Use when you need a comprehensive membership list beyond direct members."
+    },
+    {
+      "name": "GITLAB_LIST_ALL_PROJECT_MEMBERS",
+      "description": "Tool to list all members of a project (direct, inherited, invited). Use when you need the effective membership list including inherited and invited members."
+    },
+    {
+      "name": "GITLAB_LIST_BILLABLE_GROUP_MEMBERS",
+      "description": "Tool to list billable members of a top-level group (including its subgroups and projects). Use when generating billing reports; requires Owner role on the group."
+    },
+    {
+      "name": "GITLAB_LIST_GROUP_MEMBERS",
+      "description": "Tool to list direct members of a group. Use when you need to retrieve or filter a group's direct membership."
+    },
+    {
+      "name": "GITLAB_LIST_PENDING_GROUP_MEMBERS",
+      "description": "Tool to list pending members of a group and its subgroups and projects. Use when you need to review users awaiting approval or invited without an account. Call after confirming the top-level group ID."
+    },
+    {
+      "name": "GITLAB_LIST_PIPELINE_JOBS",
+      "description": "Tool to retrieve a list of jobs for a specified pipeline within a project. Use this when you need to inspect the status or details of jobs associated with a particular CI/CD pipeline."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_GROUPS",
+      "description": "Tool to list ancestor groups of a project. Use when you need to retrieve all groups a project belongs to or is shared with."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_INVITED_GROUPS",
+      "description": "Tool to list groups invited to a project. Use when auditing which groups have access to a project."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_PIPELINES",
+      "description": "Tool to retrieve a list of pipelines for a specified project. Use when you need to get information about CI/CD pipelines, such as their status, source, or creation/update times."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_SHAREABLE_GROUPS",
+      "description": "Tool to list groups that can be shared with a project. Use before sharing a project to fetch eligible groups."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_TAGS",
+      "description": "Tool to retrieve a list of repository tags for a specified project. Use when you need to get all tags associated with a project in GitLab."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_TRANSFER_LOCATIONS",
+      "description": "Tool to list namespaces available for project transfer. Use when you need to determine which groups a project can be transferred into."
+    },
+    {
+      "name": "GITLAB_LIST_PROJECT_USERS",
+      "description": "Tool to list users of a project. Use after you have a project ID and want to retrieve its users."
+    },
+    {
+      "name": "GITLAB_LIST_REPOSITORY_COMMITS",
+      "description": "Tool to get a list of repository commits in a project. Use when you need to retrieve commit history for a specific project, branch, or time range."
+    },
+    {
+      "name": "GITLAB_LIST_USER_PROJECTS",
+      "description": "Tool to list projects owned by a specific user. Use after obtaining target user identity to fetch owned projects."
+    },
+    {
+      "name": "GITLAB_POST_USER_SUPPORT_PIN",
+      "description": "Tool to create a support PIN for your authenticated user. Use when GitLab Support requests a PIN to verify your identity."
+    },
+    {
+      "name": "GITLAB_PUT_USER_PREFERENCES",
+      "description": "Tool to update the current user's preferences. Use when adjusting default diff viewing and CI identity settings."
+    },
+    {
+      "name": "GITLAB_SET_USER_STATUS",
+      "description": "Tool to set the current user's status. Use when you need to update availability or convey current mood on GitLab."
+    },
+    {
+      "name": "GITLAB_SHARE_PROJECT_WITH_GROUP",
+      "description": "Tool to share a project with a group. Use when you need to grant a group specific access level to a project."
+    },
+    {
+      "name": "GITLAB_START_PROJECT_HOUSEKEEPING",
+      "description": "Tool to start the housekeeping task for a project. Use when you need to trigger manual maintenance or pruning on a repository."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@kaliaboi/mcp-zotero",
+  "displayName": "mcp-zotero",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:32.539Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kaliaboi/mcp-zotero"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@chipi-pay/chipi-v0-shadcn",
+  "displayName": "chipi-v0-shadcn",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:31.462Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chipi-pay/chipi-v0-shadcn"
+  },
+  "connection": null,
+  "capabilities": []
+}

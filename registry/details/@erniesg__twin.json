@@ -1,0 +1,49 @@
+{
+  "id": "@erniesg/twin",
+  "displayName": "Twin Persona",
+  "description": "Generate personas for testing and prototyping. Build from your connected accounts or custom guidance to mirror real-world behavior. Export in multiple formats for easy sharing and integration.",
+  "createdAt": "2026-01-16T07:27:42.964Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@erniesg/twin"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "persona.generate_mock",
+      "description": "Generate mock persona for testing with optional custom instructions"
+    },
+    {
+      "name": "persona.generate_from_accounts",
+      "description": "Generate persona from connected accounts (Google, GitHub, LinkedIn, Twitter)"
+    },
+    {
+      "name": "persona.save",
+      "description": "Save/update a persona (creates new version)"
+    },
+    {
+      "name": "persona.get",
+      "description": "Get persona by user ID or persona ID"
+    },
+    {
+      "name": "persona.update_field",
+      "description": "Update a specific field in the persona (creates new version)"
+    },
+    {
+      "name": "persona.get_history",
+      "description": "Get version history for a persona"
+    },
+    {
+      "name": "persona.rollback",
+      "description": "Rollback persona to a previous version"
+    },
+    {
+      "name": "persona.export",
+      "description": "Export persona in different formats (JSON, YAML, LLM prompt)"
+    }
+  ]
+}

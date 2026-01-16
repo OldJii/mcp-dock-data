@@ -1,0 +1,145 @@
+{
+  "id": "luancamara/mcpfirebird",
+  "displayName": "mcpfirebird",
+  "description": "Run queries, explore schemas, and retrieve table data with ease. Diagnose performance with execution plans, index recommendations, and table statistics to speed up workloads. Safeguard your database with backup, restore, validation, and health checks.",
+  "createdAt": "2026-01-16T07:24:12.141Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/luancamara/mcpfirebird"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "database"
+      ],
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "Hostname or IP address of the Firebird database server",
+          "default": "localhost"
+        },
+        "port": {
+          "type": "number",
+          "description": "Port number for the Firebird database",
+          "default": 3050
+        },
+        "user": {
+          "type": "string",
+          "description": "Database username for authentication",
+          "default": "SYSDBA"
+        },
+        "database": {
+          "type": "string",
+          "description": "Absolute path to the Firebird database file (e.g., /path/to/database.fdb)"
+        },
+        "logLevel": {
+          "type": "string",
+          "description": "Logging verbosity level",
+          "default": "info"
+        },
+        "password": {
+          "type": "string",
+          "description": "Database password for authentication",
+          "default": "masterkey"
+        },
+        "useNativeDriver": {
+          "type": "boolean",
+          "description": "Enable native driver for wire encryption support",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute-query",
+      "description": "Executes a SQL query in the Firebird database. Uses FIRST/ROWS for pagination."
+    },
+    {
+      "name": "list-tables",
+      "description": "Lists all user tables in the current Firebird database."
+    },
+    {
+      "name": "describe-table",
+      "description": "Gets the detailed schema (columns, types, etc.) of a specific table."
+    },
+    {
+      "name": "get-field-descriptions",
+      "description": "Gets the stored descriptions for fields of a specific table (if they exist)."
+    },
+    {
+      "name": "analyze-query-performance",
+      "description": "Analyzes the performance of a SQL query by executing it multiple times and measuring execution time"
+    },
+    {
+      "name": "get-execution-plan",
+      "description": "Gets the execution plan for a SQL query to understand how the database will execute it"
+    },
+    {
+      "name": "analyze-missing-indexes",
+      "description": "Analyzes a SQL query to identify missing indexes that could improve performance"
+    },
+    {
+      "name": "backup-database",
+      "description": "Creates a backup of the Firebird database"
+    },
+    {
+      "name": "restore-database",
+      "description": "Restores a Firebird database from a backup"
+    },
+    {
+      "name": "validate-database",
+      "description": "Validates the integrity of the Firebird database"
+    },
+    {
+      "name": "execute-batch-queries",
+      "description": "Executes multiple SQL queries in parallel for improved performance."
+    },
+    {
+      "name": "describe-batch-tables",
+      "description": "Gets the detailed schema of multiple tables in parallel for improved performance."
+    },
+    {
+      "name": "get-table-data",
+      "description": "Retrieves data from a specific table with optional filtering, pagination, and ordering."
+    },
+    {
+      "name": "analyze-table-statistics",
+      "description": "Analyzes statistical information about a table including row count, column statistics, and data distribution."
+    },
+    {
+      "name": "verify-wire-encryption",
+      "description": "Verifies if the current database connection is using wire encryption (requires native driver)."
+    },
+    {
+      "name": "get-database-info",
+      "description": "Retrieves general information about the connected Firebird database."
+    },
+    {
+      "name": "get-server-info",
+      "description": "Obtiene información sobre el servidor MCP Firebird y las herramientas disponibles"
+    },
+    {
+      "name": "list-available-tools",
+      "description": "Lista todas las herramientas disponibles en el servidor MCP"
+    },
+    {
+      "name": "get-tool-help",
+      "description": "Obtiene información detallada sobre una herramienta específica"
+    },
+    {
+      "name": "system-health-check",
+      "description": "Verifica el estado de salud del sistema y la conectividad de la base de datos"
+    },
+    {
+      "name": "echo",
+      "description": "Echoes back the input message"
+    }
+  ]
+}

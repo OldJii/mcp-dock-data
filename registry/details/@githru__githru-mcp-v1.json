@@ -1,0 +1,46 @@
+{
+  "id": "@githru/githru-mcp-v1",
+  "displayName": "Githru Insights v0.1",
+  "description": "# Githru MCP Server\n\n<p align=\"center\">\n  <strong>A powerful Model Context Protocol (MCP) server that provides advanced Git repository analysis and visualization tools designed to enhance team collaboration.</strong>\n</p>\n\n---\n\n## 🚀 Overview\n\nThe **Githru MCP Server** extends Claude’s capabilities through the **Model Context Protocol (MCP)** — enabling real-time access to Git analytics, PR insights, and repository visualization.\n\nThis MCP server is deployed on **[smithery.ai](https://smithery.ai)** and can be used directly from Claude’s MCP integration feature.\n\n---\n\n## 🧩 Prerequisites\n\nBefore you begin, make sure you have:\n\n- **Claude Desktop App** (with MCP support)  \n  👉 [Download here](https://claude.ai/download)\n- Access to the deployed **Githru MCP Server** on `smithery.ai`\n\n---\n\n## ⚙️ Setup in Claude\n\n1. **Find the JSON configuration**\n   - When you visit the [Githru MCP Server page on Smithery.ai](https://smithery.ai/server/@githru/githru-mcp-v1),  \n     click **“Connect → JSON”** to view the configuration details for our MCP server.\n\n2. **Insert the Githru MCP configuration**\n   - Claude Desktop reads MCP server settings from the `claude_desktop_config.json` file.  \n     You need to modify the `args` path inside your local configuration file.\n\n   **File locations:**\n   - **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`\n   - **Windows:** `%APPDATA%\\Claude\\claude_desktop_config.json`\n\n   ```json\n   {\n      \"mcpServers\": {\n        \"githru-mcp-v1\": {\n          \"command\": \"npx\",\n          \"args\": [\n            \"-y\",\n            \"@smithery/cli@latest\",\n            \"run\",\n            \"@githru/githru-mcp-v1\",\n            \"--key\",\n            \"YOUR_API_KEY\",\n            \"--profile\",\n            \"PROFILE\"\n          ],\n          \"env\": {\n            \"GITHUB_TOKEN\": \"YOUR_GITHUB_TOKEN\"\n          }\n        }\n      }\n    }\n   ```\n> 🧠 Tip: Replace the URL above with your actual Smithery MCP endpoint if it differs.\n\n3. Save and reconnecting\n  - After saving, Claude will automatically connect to your Githru MCP instance.\n  - so reconnect Claude\n\n---\n\n## 🧠 About Model Context Protocol (MCP)\n\nMCP is an open standard that lets Claude connect to external data and services safely and dynamically.\nYour Githru MCP Server acts as a “bridge” — providing contextual Git insights directly within the Claude chat interface.\n\nFor more on MCP:\n👉 (https://modelcontextprotocol.io)[https://modelcontextprotocol.io]\n\n---\n\n## 📄 License\n\nThis project is licensed under the MIT License.\n\n---\n\n## 🤝 Contributing\n\nWe welcome contributions!\nIf you’d like to improve the Githru MCP Server, please open a PR or file an issue on [GitHub](https://github.com/githru/githru-vscode-ext).",
+  "createdAt": "2026-01-16T07:22:01.154Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@githru/githru-mcp-v1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "contributor_recommender",
+      "description": "Recommends contributors who have contributed most to specific files/branches/PR areas by aggregating recent contribution data."
+    },
+    {
+      "name": "feature_impact_analyzer",
+      "description": "Takes a GitHub repository URL, Pull Request number, and authentication token as input.\n        Analyzes the PR’s commits and changed files to compute impact metrics — scale, dispersion,\n        chaos, isolation, lag, and coupling — and outputs a detailed HTML report highlighting\n        long-tail file path outliers."
+    },
+    {
+      "name": "author_work_pattern",
+      "description": "Analyzes an author’s development activity within a given period to measure workload and commit patterns. Aggregates metrics such as commits, insertions, deletions, and churn, and classifies commit types to reveal focus areas."
+    },
+    {
+      "name": "render_storyline_ui",
+      "description": "Generate storyline visualization using FolderActivityFlow component with CSMDict data"
+    }
+  ]
+}

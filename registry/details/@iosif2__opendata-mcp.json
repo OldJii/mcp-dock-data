@@ -1,0 +1,42 @@
+{
+  "id": "@iosif2/opendata-mcp",
+  "displayName": "OpenData MCP",
+  "description": "OpenData MCP는 표준화된 MCP 인터페이스를 통해 공공데이터 자원에 대한 접근을 제공합니다. 키워드 검색으로 API 목록을 조회하고, 표준 문서를 자동 생성하며, OpenAPI 엔드포인트를 직접 호출할 수 있습니다. 클라이언트가 다양한 공공데이터 자원을 원활하게 탐색하고 활용할 수 있도록 지원하며, 외부 데이터를 LLM 애플리케이션에 통합하여 향상된 컨텍스트와 기능을 제공합니다.\n\nOpenData MCP provides access to open data resources through a standardized MCP interface. Search APIs by keywords, automatically generate standard documentation, and directly call OpenAPI endpoints. Enables clients to seamlessly explore and utilize various open data resources while integrating external data into LLM applications for enhanced context and capabilities.",
+  "createdAt": "2026-01-16T07:23:55.637Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@iosif2/opendata-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "ODP_SERVICE_KEY": {
+          "type": "string",
+          "description": "Service key for Open Data Portal(공공데이터포털) for authenticated requests while using fetch_data tool.(If serviceKey is not provided, only No-Auth API is supported.)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_api",
+      "description": "Search for APIs in the Open Data Portal using keywords.(API Provider: OpenDataAPI(mcp.ezrnd.co.kr))"
+    },
+    {
+      "name": "get_std_docs",
+      "description": "Get standard documents from the search results."
+    },
+    {
+      "name": "fetch_data",
+      "description": "Fetch data from the API.(Base on information of get_std_docs tool)"
+    }
+  ]
+}

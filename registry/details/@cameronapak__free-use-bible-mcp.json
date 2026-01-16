@@ -1,0 +1,29 @@
+{
+  "id": "@cameronapak/free-use-bible-mcp",
+  "displayName": "Bible MCP",
+  "description": "Get Scripture from the Bible using Bible MCP. \n\nThank you to AO Lab for the Free Use Bible API that makes this possible.\n\nOpen source. Freely given. ",
+  "createdAt": "2026-01-16T07:20:53.470Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cameronapak/free-use-bible-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_available_translations",
+      "description": "Fetch Available Bible Translations"
+    },
+    {
+      "name": "get_verse",
+      "description": "Fetch Bible verses (single or range)"
+    },
+    {
+      "name": "get_chapter",
+      "description": "Fetch a Bible chapter"
+    }
+  ]
+}

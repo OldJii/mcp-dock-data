@@ -1,0 +1,60 @@
+{
+  "id": "xiaobenyang-com/oecd-search",
+  "displayName": "oecd-search",
+  "description": "Discover OECD datasets and indicators, and browse categories across economy, health, education, environment, and more. Inspect dataset structures to identify dimensions, attributes, and valid values for precise queries. Query time series with filters and generate shareable links to explore results in your browser.",
+  "createdAt": "2026-01-16T07:29:36.860Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/oecd-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_dataflows",
+      "description": "Search for OECD datasets (dataflows) by keyword. Returns matching datasets with their IDs, names, and descriptions."
+    },
+    {
+      "name": "list_dataflows",
+      "description": "List available OECD dataflows (datasets), optionally filtered by category. Use this to browse datasets by topic area."
+    },
+    {
+      "name": "get_data_structure",
+      "description": "Get the metadata and structure of a specific OECD dataset. Returns dimensions, attributes, and valid values for querying data."
+    },
+    {
+      "name": "query_data",
+      "description": "Query actual statistical data from an OECD dataset. ⚠️ IMPORTANT: Defaults to last 100 observations (max 1000) to protect context window. Use filters, time periods, or last_n_observations to control data size. Large datasets (e.g. SOCX_AGG) can have 70,000+ observations - always specify limits!"
+    },
+    {
+      "name": "get_categories",
+      "description": "Get all available OECD data categories (17 categories covering all topics: Economy, Health, Education, Environment, etc.)"
+    },
+    {
+      "name": "get_popular_datasets",
+      "description": "Get a curated list of commonly used OECD datasets across all categories."
+    },
+    {
+      "name": "search_indicators",
+      "description": "Search for specific economic or social indicators by keyword (e.g., \"inflation\", \"unemployment\", \"GDP\")."
+    },
+    {
+      "name": "get_dataflow_url",
+      "description": "Generate an OECD Data Explorer URL for a dataset. Use this to provide users with a direct link to explore data visually in their browser."
+    },
+    {
+      "name": "list_categories_detailed",
+      "description": "Get all OECD data categories with example datasets for each category. Returns comprehensive information about all 17 categories."
+    }
+  ]
+}

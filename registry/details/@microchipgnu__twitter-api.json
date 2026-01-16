@@ -1,0 +1,77 @@
+{
+  "id": "@microchipgnu/twitter-api",
+  "displayName": "twitter-api",
+  "description": "",
+  "createdAt": "2026-01-16T07:29:29.599Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@microchipgnu/twitter-api"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "getUserInfo",
+      "description": "Get Twitter user information by username"
+    },
+    {
+      "name": "getUserTweets",
+      "description": "Get recent tweets from a user"
+    },
+    {
+      "name": "getUserFollowers",
+      "description": "Get followers of a Twitter user"
+    },
+    {
+      "name": "getUserFollowing",
+      "description": "Get users that a Twitter user is following"
+    },
+    {
+      "name": "searchUsers",
+      "description": "Search for Twitter users by keyword"
+    },
+    {
+      "name": "getTweetsByIds",
+      "description": "Get tweets by their IDs"
+    },
+    {
+      "name": "getTweetReplies",
+      "description": "Get replies to a specific tweet"
+    },
+    {
+      "name": "advancedTweetSearch",
+      "description": "Perform advanced search for tweets with filters"
+    },
+    {
+      "name": "getTweetQuotes",
+      "description": "Get quotes (retweets with comments) of a specific tweet"
+    },
+    {
+      "name": "getTweetThread",
+      "description": "Get the entire conversation thread for a tweet"
+    },
+    {
+      "name": "getUserMentions",
+      "description": "Get tweets mentioning a specific user"
+    },
+    {
+      "name": "getTrends",
+      "description": "Get trending topics by location"
+    },
+    {
+      "name": "checkFollowRelationship",
+      "description": "Check if one user follows another user"
+    },
+    {
+      "name": "getListTweets",
+      "description": "Get tweets from a Twitter List"
+    },
+    {
+      "name": "batchGetUsers",
+      "description": "Get multiple user profiles by user IDs (batch operation)"
+    }
+  ]
+}

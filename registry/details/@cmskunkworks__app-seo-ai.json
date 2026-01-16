@@ -1,0 +1,12 @@
+{
+  "id": "@cmskunkworks/app-seo-ai",
+  "displayName": "app-seo-ai",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:24.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cmskunkworks/app-seo-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

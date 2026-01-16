@@ -1,0 +1,12 @@
+{
+  "id": "robbie/loggly-mcp-server",
+  "displayName": "loggly-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:22.022Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/robbie/loggly-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "@osamah96/bmp22",
+  "displayName": "bmp22",
+  "description": "",
+  "createdAt": "2026-01-16T07:28:21.056Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@osamah96/bmp22"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_brand_context",
+      "description": "Retrieve comprehensive brand guidelines and rules"
+    },
+    {
+      "name": "get_brand_visuals",
+      "description": "Fetch PDFs and visual assets from brand"
+    },
+    {
+      "name": "analyze_content",
+      "description": "Analyze content against brand guidelines"
+    }
+  ]
+}

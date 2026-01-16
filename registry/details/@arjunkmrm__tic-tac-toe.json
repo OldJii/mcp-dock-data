@@ -1,0 +1,36 @@
+{
+  "id": "@arjunkmrm/tic-tac-toe",
+  "displayName": "Tic-Tac-Toe",
+  "description": "Play tic‑tac‑toe right from your chat and track turns effortlessly. Start a new game, make moves, and view the current board state anytime. Add a quick, strategic break to your workflow.",
+  "createdAt": "2026-01-16T07:21:22.600Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arjunkmrm/tic-tac-toe"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "start-game",
+      "description": "Start a new tic-tac-toe game"
+    },
+    {
+      "name": "make-move",
+      "description": "Make a move in the tic-tac-toe game"
+    },
+    {
+      "name": "get-game-state",
+      "description": "Get the current state of the tic-tac-toe game"
+    }
+  ]
+}

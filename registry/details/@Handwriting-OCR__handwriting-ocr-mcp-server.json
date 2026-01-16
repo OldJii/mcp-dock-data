@@ -1,0 +1,40 @@
+{
+  "id": "@Handwriting-OCR/handwriting-ocr-mcp-server",
+  "displayName": "Handwriting OCR",
+  "description": "Integrate your applications with the Handwriting OCR service to effortlessly upload documents, check their processing status, and retrieve OCR results in Markdown format. Enhance your workflows by automating text extraction from images and PDFs with ease.",
+  "createdAt": "2026-01-16T07:28:13.049Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Handwriting-OCR/handwriting-ocr-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiToken"
+      ],
+      "properties": {
+        "apiToken": {
+          "type": "string",
+          "description": "Your Handwriting OCR API token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "upload_document",
+      "description": "Upload a document to Handwriting OCR API for transcription"
+    },
+    {
+      "name": "check_status",
+      "description": "Check the status of a document"
+    },
+    {
+      "name": "get_text",
+      "description": "Retrieve the transcribed text from a document"
+    }
+  ]
+}

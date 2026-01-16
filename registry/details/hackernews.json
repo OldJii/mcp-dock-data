@@ -1,0 +1,41 @@
+{
+  "id": "hackernews",
+  "displayName": "Hackernews",
+  "description": "Hacker News is a tech-focused news aggregator by Y Combinator, featuring user-submitted stories and discussions on startups, programming, and emerging trends",
+  "createdAt": "2026-01-16T07:19:50.988Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hackernews"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "HACKERNEWS_GET_FRONTPAGE",
+      "description": "Get the frontpage posts of Hacker News."
+    },
+    {
+      "name": "HACKERNEWS_GET_ITEM_WITH_ID",
+      "description": "Get a specific item from Hacker News using its ID. Limits response size to prevent context overflow."
+    },
+    {
+      "name": "HACKERNEWS_GET_LATEST_POSTS",
+      "description": "Get the latest posts from Hacker News based on optional filters. Results can be limited using the size parameter."
+    },
+    {
+      "name": "HACKERNEWS_GET_TODAYS_POSTS",
+      "description": "Get today's posts from Hacker News."
+    },
+    {
+      "name": "HACKERNEWS_GET_USER",
+      "description": "Get a specific user from Hacker News using their username."
+    },
+    {
+      "name": "HACKERNEWS_SEARCH_POSTS",
+      "description": "Get relevant posts from Hacker News based on a full-text query and optional filters. Results can be limited using the size parameter."
+    }
+  ]
+}

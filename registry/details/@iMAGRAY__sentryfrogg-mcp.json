@@ -1,0 +1,12 @@
+{
+  "id": "@iMAGRAY/sentryfrogg-mcp",
+  "displayName": "sentryfrogg-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:26.457Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@iMAGRAY/sentryfrogg-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

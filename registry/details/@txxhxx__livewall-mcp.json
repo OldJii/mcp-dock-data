@@ -1,0 +1,16 @@
+{
+  "id": "@txxhxx/livewall-mcp",
+  "displayName": "LiveWall Event Server",
+  "description": "Analyze web links to create and manage event data efficiently. Extract event details and automatically generate related topics to streamline event organization. Retrieve paginated lists of user-created events with associated topic information.",
+  "createdAt": "2026-01-16T07:31:19.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@txxhxx/livewall-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

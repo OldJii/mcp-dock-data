@@ -1,0 +1,36 @@
+{
+  "id": "@arjunkmrm/cafe-explorer",
+  "displayName": "Cafe Explorer",
+  "description": "A simple demonstration of ChatGPT app with map integration",
+  "createdAt": "2026-01-16T07:21:03.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arjunkmrm/cafe-explorer"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search-coffee-shops",
+      "description": "Find specialty coffee shops in Singapore with optional filters"
+    },
+    {
+      "name": "get-shop-details",
+      "description": "View detailed information about a specific coffee shop"
+    },
+    {
+      "name": "explore-all-shops",
+      "description": "View all specialty coffee shops in Singapore on an interactive map"
+    }
+  ]
+}

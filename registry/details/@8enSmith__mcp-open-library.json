@@ -1,0 +1,41 @@
+{
+  "id": "@8enSmith/mcp-open-library",
+  "displayName": "Open Library MCP Server",
+  "description": "Enable AI assistants to search and retrieve detailed book and author information from the Open Library. Provide structured, consistent JSON responses for book titles, author details, and cover images. Enhance AI capabilities with comprehensive book and author data access via a standardized protocol.",
+  "createdAt": "2026-01-16T07:21:13.902Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@8enSmith/mcp-open-library"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_book_by_title",
+      "description": "Search for a book by its title on Open Library."
+    },
+    {
+      "name": "get_authors_by_name",
+      "description": "Search for author information on Open Library."
+    },
+    {
+      "name": "get_author_info",
+      "description": "Get detailed information for a specific author using their Open Library Author Key (e.g. OL23919A)."
+    },
+    {
+      "name": "get_author_photo",
+      "description": "Get the URL for an author's photo using their Open Library Author ID (OLID e.g. OL23919A)."
+    },
+    {
+      "name": "get_book_cover",
+      "description": "Get the URL for a book's cover image using a key (ISBN, OCLC, LCCN, OLID, ID) and value."
+    },
+    {
+      "name": "get_book_by_id",
+      "description": "Get detailed information about a book using its identifier (ISBN, LCCN, OCLC, OLID)."
+    }
+  ]
+}

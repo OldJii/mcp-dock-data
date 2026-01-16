@@ -1,0 +1,12 @@
+{
+  "id": "@suse00544/xiaohongshu-mcp",
+  "displayName": "xiaohongshu-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:23.360Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@suse00544/xiaohongshu-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

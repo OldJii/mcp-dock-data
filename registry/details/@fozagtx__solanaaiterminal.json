@@ -1,0 +1,61 @@
+{
+  "id": "@fozagtx/solanaaiterminal",
+  "displayName": "Solana Dev Essentials",
+  "description": "Search Solana documentation to quickly find concepts, guides, and examples. Inspect on-chain state by fetching balances, accounts, transactions, blocks, and slots. Create and manage wallets, sign messages, and request testnet airdrops to speed up development.",
+  "createdAt": "2026-01-16T07:26:58.816Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fozagtx/solanaaiterminal"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_documentation",
+      "description": "Search across the Solana documentation to find relevant information, code examples, API references, and guides. Use this tool when you need to answer questions about Solana, find specific documentation, understand how features work, or locate implementation details. The search returns contextual content with titles and direct links to the documentation pages."
+    },
+    {
+      "name": "get_account_info",
+      "description": "Get information about a Solana account by its public key. Returns account balance, owner, data, and executable status."
+    },
+    {
+      "name": "get_balance",
+      "description": "Get the SOL balance of a Solana account in both lamports and SOL."
+    },
+    {
+      "name": "get_transaction",
+      "description": "Retrieve details of a Solana transaction by its signature."
+    },
+    {
+      "name": "get_block",
+      "description": "Retrieve information about a Solana block by slot number."
+    },
+    {
+      "name": "get_slot",
+      "description": "Get the current slot that the node is processing."
+    },
+    {
+      "name": "create_wallet",
+      "description": "Generate a new Solana wallet with mnemonic phrase (12/24 words). Returns mnemonic, private key (base58), and public key."
+    },
+    {
+      "name": "get_wallet_address",
+      "description": "Get the public key of the currently configured wallet."
+    },
+    {
+      "name": "sign_message",
+      "description": "Sign an arbitrary message with the wallet's private key."
+    },
+    {
+      "name": "request_airdrop",
+      "description": "Request an airdrop of SOL tokens on Devnet or Testnet. Not available on Mainnet."
+    }
+  ]
+}

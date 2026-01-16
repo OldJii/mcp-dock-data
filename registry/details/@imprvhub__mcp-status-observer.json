@@ -1,0 +1,25 @@
+{
+  "id": "@imprvhub/mcp-status-observer",
+  "displayName": "Status Observer",
+  "description": "Monitor and query the operational status of major digital platforms in real-time. Get detailed status information for specific services and components with a simple query interface. Stay informed about platform health to quickly respond to service disruptions.",
+  "createdAt": "2026-01-16T07:22:25.986Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@imprvhub/mcp-status-observer"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "status",
+      "description": "Check operational status of major digital platforms including AI providers like OpenRouter, OpenAI, Anthropic; cloud services like GCP, Vercel; and developer tools"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@intruder-io/intruder-io",
+  "displayName": "intruder-io",
+  "description": "test",
+  "createdAt": "2026-01-16T07:35:31.703Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@intruder-io/intruder-io"
+  },
+  "connection": null,
+  "capabilities": []
+}

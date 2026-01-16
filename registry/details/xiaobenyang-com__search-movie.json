@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/search-movie",
+  "displayName": "search-movie",
+  "description": "搜索电影和电视剧资源，快速找到最匹配的观看链接。验证链接可播放性，确保点开就能看。批量校验多个候选，节省筛选时间。",
+  "createdAt": "2026-01-16T07:26:28.087Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/search-movie"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_movie",
+      "description": "搜索电影或电视剧资源。返回未验证的搜索结果列表，包含标题、链接和质量信息。使用此工具获取候选资源后，请从结果中选择最匹配的链接，然后使用 validate_video_url 工具验证其可播放性。"
+    },
+    {
+      "name": "validate_video_url",
+      "description": "验证特定视频链接的可播放性。接收一个视频播放页面的 URL 或 URL 数组，返回该链接是否可以正常播放。支持批量验证多个链接。只有通过验证的链接才能确保用户可以观看。"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "@mikechao/brave-search-mcp",
+  "displayName": "Brave Search Server",
+  "description": "Provide comprehensive web search capabilities including web, image, news, video, and local points of interest searches using the Brave Search API. Enable users to perform targeted searches and retrieve relevant results as resources. Integrate seamlessly with LLM applications to enhance search-driven workflows.",
+  "createdAt": "2026-01-16T07:25:16.365Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mikechao/brave-search-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "braveapikey": {
+          "type": "string",
+          "description": "The API key for Brave Search."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "brave_image_search",
+      "description": "A tool for searching the web for images using the Brave Search API."
+    },
+    {
+      "name": "brave_web_search",
+      "description": "Performs a web search using the Brave Search API, ideal for general queries, and online content. Use this for broad information gathering, recent events, or when you need diverse web sources. Maximum 20 results per request "
+    },
+    {
+      "name": "brave_local_search",
+      "description": "Searches for local businesses and places using Brave's Local Search API. Best for queries related to physical locations, businesses, restaurants, services, etc. Returns detailed information including:\n- Business names and addresses\n- Ratings and review counts\n- Phone numbers and opening hours\nUse this when the query implies 'near me' or mentions specific locations. Automatically falls back to web search if no local results are found."
+    },
+    {
+      "name": "brave_news_search",
+      "description": "Searches for news articles using the Brave Search API. Use this for recent events, trending topics, or specific news stories. Returns a list of articles with titles, URLs, and descriptions. Maximum 20 results per request."
+    },
+    {
+      "name": "brave_video_search",
+      "description": "Searches for videos using the Brave Search API. Use this for video content, tutorials, or any media-related queries. Returns a list of videos with titles, URLs, and descriptions. Maximum 20 results per request."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "@keithah/seam-mcp",
+  "displayName": "Seam Smart Locks",
+  "description": "Manage smart locks and access codes across your Seam-connected devices. Check lock status, lock or unlock doors, and create, update, or delete time-bound access codes for one or many locks. Streamline property operations and guest access with bulk code management.",
+  "createdAt": "2026-01-16T07:27:14.234Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/seam-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "seamApiKey"
+      ],
+      "properties": {
+        "seamApiKey": {
+          "type": "string",
+          "description": "Your Seam API key from https://console.seam.co/"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_locks",
+      "description": "List all smart locks connected to your Seam account"
+    },
+    {
+      "name": "get_status",
+      "description": "Get a comprehensive status overview of all locks including battery levels, lock states, and any issues"
+    },
+    {
+      "name": "get_lock",
+      "description": "Get detailed information about a specific lock"
+    },
+    {
+      "name": "lock_door",
+      "description": "Lock a specific door"
+    },
+    {
+      "name": "unlock_door",
+      "description": "Unlock a specific door"
+    },
+    {
+      "name": "get_lock_status",
+      "description": "Get the current lock status (locked/unlocked) of a specific lock"
+    },
+    {
+      "name": "create_access_code",
+      "description": "Create an access code on a specific lock with optional time limits"
+    },
+    {
+      "name": "create_access_code_on_multiple_locks",
+      "description": "Create the same access code on multiple locks (useful for creating one code for all locks in a location)"
+    },
+    {
+      "name": "list_access_codes",
+      "description": "List all access codes, optionally filtered by device"
+    },
+    {
+      "name": "delete_access_code",
+      "description": "Delete an access code from a lock"
+    },
+    {
+      "name": "update_access_code",
+      "description": "Update an existing access code (change name, code, or time limits)"
+    }
+  ]
+}

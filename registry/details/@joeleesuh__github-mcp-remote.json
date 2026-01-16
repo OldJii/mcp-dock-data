@@ -1,0 +1,12 @@
+{
+  "id": "@joeleesuh/github-mcp-remote",
+  "displayName": "github-mcp-remote",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:54.508Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joeleesuh/github-mcp-remote"
+  },
+  "connection": null,
+  "capabilities": []
+}

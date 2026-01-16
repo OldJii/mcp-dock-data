@@ -1,0 +1,16 @@
+{
+  "id": "@JDeun/unified-search-mcp-server",
+  "displayName": "Unified Google Search",
+  "description": "Provide integrated search capabilities across Google Scholar, Google Web, and YouTube to deliver comprehensive and simultaneous search results. Enhance your applications with secure, scalable, and enterprise-ready search features including caching, rate limiting, and monitoring. Simplify access to diverse search data sources through a unified MCP server interface.",
+  "createdAt": "2026-01-16T07:31:53.389Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JDeun/unified-search-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

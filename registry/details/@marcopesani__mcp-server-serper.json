@@ -1,0 +1,36 @@
+{
+  "id": "@marcopesani/mcp-server-serper",
+  "displayName": "Serper Search and Scrape",
+  "description": "A TypeScript-based MCP server that provides web search and webpage scraping capabilities using the Serper API. This server integrates with Cursor, Cline, Claude Desktop, and any MCP-compatible client to enable powerful web search and content extraction features in one convenient package.",
+  "createdAt": "2026-01-16T07:23:54.560Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@marcopesani/mcp-server-serper"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "serperApiKey"
+      ],
+      "properties": {
+        "serperApiKey": {
+          "type": "string",
+          "description": "The API key for the Serper MCP server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "google_search",
+      "description": "Tool to perform web searches via Serper API and retrieve rich results. It is able to retrieve organic search results, people also ask, related searches, and knowledge graph."
+    },
+    {
+      "name": "scrape",
+      "description": "Tool to scrape a webpage and retrieve the text and, optionally, the markdown content. It will retrieve also the JSON-LD metadata and the head metadata."
+    }
+  ]
+}

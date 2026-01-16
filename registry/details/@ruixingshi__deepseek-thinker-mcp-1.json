@@ -1,0 +1,42 @@
+{
+  "id": "@ruixingshi/deepseek-thinker-mcp-1",
+  "displayName": "Deepseek Thinker",
+  "description": "Leverage Deepseek's reasoning capabilities to enhance your AI interactions. Access structured reasoning outputs from Deepseek's thought processes seamlessly. Integrate easily with your AI clients for enriched conversational experiences.",
+  "createdAt": "2026-01-16T07:29:56.481Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ruixingshi/deepseek-thinker-mcp-1"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey",
+        "baseUrl"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "The API key for the OpenAI service."
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "The base URL for the OpenAI API."
+        },
+        "useOllama": {
+          "type": "boolean",
+          "description": "Set to true to use the Ollama mode instead of OpenAI API mode.",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-deepseek-thinker",
+      "description": "think with deepseek"
+    }
+  ]
+}

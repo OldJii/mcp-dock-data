@@ -1,0 +1,45 @@
+{
+  "id": "zoho_mail",
+  "displayName": "Zoho mail",
+  "description": "Zoho Mail is a secure and ad-free email hosting platform with collaboration tools, calendar integration, and extensive administrative controls",
+  "createdAt": "2026-01-16T07:19:37.787Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_mail"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_MAIL_DOMAIN_OPERATIONS",
+      "description": "Tool to perform domain operations like verify, set primary domain, hosting, aliases, MX/SPF checks, DKIM management, and notifications. Use after creating or retrieving a domain."
+    },
+    {
+      "name": "ZOHO_MAIL_GROUPS_DELETE_GROUP_BULK",
+      "description": "Tool to bulk delete multiple groups. Use when you need to remove several groups in one API call."
+    },
+    {
+      "name": "ZOHO_MAIL_GROUPS_DELETE_GROUP_BY_ZGID",
+      "description": "Tool to delete a specific mail group by its zgid. Use when you need to remove a group from your organization after confirming the IDs."
+    },
+    {
+      "name": "ZOHO_MAIL_ORGANIZATION_GET_USER_STORAGE_DETAILS",
+      "description": "Tool to retrieve storage details for a specific user in the organization. Use when you need to know a user’s total and used storage quotas."
+    },
+    {
+      "name": "ZOHO_MAIL_ORGANIZATION_UPDATE_SPAM_PROCESS_TYPE",
+      "description": "Tool to update organization spam processing type. Use when changing the spam filtering strategy for an organization."
+    },
+    {
+      "name": "ZOHO_MAIL_ORGANIZATION_UPDATE_USER_STORAGE",
+      "description": "Tool to modify a user's base or add-on storage allocation. Use when adjusting storage plan for a user within an organization after confirming the IDs."
+    },
+    {
+      "name": "ZOHO_MAIL_UPDATE_GROUP_SETTINGS",
+      "description": "Tool to update group settings. Use after group creation to adjust general or text settings."
+    }
+  ]
+}

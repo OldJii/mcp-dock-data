@@ -1,0 +1,25 @@
+{
+  "id": "@aicastle-school/stock-price",
+  "displayName": "Stock Price",
+  "description": "Fetch current stock quotes by ticker symbol across global markets. Integrate up-to-date pricing into research, dashboards, and alerts. Use tickers like AAPL or 005930.KS to quickly retrieve quote details.",
+  "createdAt": "2026-01-16T07:22:14.966Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aicastle-school/stock-price"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_stock_price",
+      "description": "주가 조회 (Yahoo Finance 기반)\nArgs:\n    symbol (str): 종목 코드 (예: 'AAPL' 미국 애플, '005930.KS' 삼성전자)\nReturns:\n    Dict[str, Any]: 주가 정보"
+    }
+  ]
+}

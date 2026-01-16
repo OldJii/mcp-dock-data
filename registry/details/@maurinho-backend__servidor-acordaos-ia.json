@@ -1,0 +1,12 @@
+{
+  "id": "@maurinho-backend/servidor-acordaos-ia",
+  "displayName": "servidor-acordaos-ia",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:57.036Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maurinho-backend/servidor-acordaos-ia"
+  },
+  "connection": null,
+  "capabilities": []
+}

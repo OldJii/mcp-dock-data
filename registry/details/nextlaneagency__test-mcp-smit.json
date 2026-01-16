@@ -1,0 +1,12 @@
+{
+  "id": "nextlaneagency/test-mcp-smit",
+  "displayName": "test-mcp-smit",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:33.511Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/nextlaneagency/test-mcp-smit"
+  },
+  "connection": null,
+  "capabilities": []
+}

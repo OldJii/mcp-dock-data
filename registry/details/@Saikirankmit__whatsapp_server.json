@@ -1,0 +1,12 @@
+{
+  "id": "@Saikirankmit/whatsapp_server",
+  "displayName": "whatsapp_server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:22.411Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Saikirankmit/whatsapp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

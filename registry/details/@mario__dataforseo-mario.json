@@ -1,0 +1,12 @@
+{
+  "id": "@mario/dataforseo-mario",
+  "displayName": "dataforseo-mario",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:58.563Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mario/dataforseo-mario"
+  },
+  "connection": null,
+  "capabilities": []
+}

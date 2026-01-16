@@ -1,0 +1,12 @@
+{
+  "id": "zoho_desk",
+  "displayName": "Zoho desk",
+  "description": "Zoho Desk is a context-aware helpdesk platform enabling support teams to track tickets, automate workflows, and gain insights on customer interactions",
+  "createdAt": "2026-01-16T07:33:12.579Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_desk"
+  },
+  "connection": null,
+  "capabilities": []
+}

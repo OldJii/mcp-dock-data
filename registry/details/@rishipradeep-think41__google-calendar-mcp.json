@@ -1,0 +1,54 @@
+{
+  "id": "@rishipradeep-think41/google-calendar-mcp",
+  "displayName": "Google Calendar Integration",
+  "description": "Enable seamless interaction with Google Calendar through a standardized protocol. Manage events, retrieve calendar data, and automate scheduling tasks efficiently. Enhance your applications by integrating calendar functionalities with ease.",
+  "createdAt": "2026-01-16T07:25:07.477Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rishipradeep-think41/google-calendar-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "REFRESH_TOKEN"
+      ],
+      "properties": {
+        "CLIENT_ID": {
+          "type": "string",
+          "description": "Google client id"
+        },
+        "CLIENT_SECRET": {
+          "type": "string",
+          "description": "Google client secret"
+        },
+        "REFRESH_TOKEN": {
+          "type": "string",
+          "description": "Google refresh token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_events",
+      "description": "List upcoming calendar events"
+    },
+    {
+      "name": "create_event",
+      "description": "Create a new calendar event"
+    },
+    {
+      "name": "update_event",
+      "description": "Update an existing calendar event"
+    },
+    {
+      "name": "delete_event",
+      "description": "Delete a calendar event"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "id": "@Gene-Fong/autotask-mcp-main",
+  "displayName": "Autotask PSA",
+  "description": "Access Kaseya Autotask PSA to search, create, and update companies, contacts, tickets, projects, and more. Run powerful filtered searches, get full ticket details, log time, and manage notes, attachments, quotes, invoices, contracts, and tasks. Work faster with automatic ID-to-name mapping and complete results for reliable reporting.",
+  "createdAt": "2026-01-16T07:30:16.859Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Gene-Fong/autotask-mcp-main"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "autotaskUsername",
+        "autotaskSecret",
+        "autotaskIntegrationCode"
+      ],
+      "properties": {
+        "httpHost": {
+          "type": "string",
+          "description": "HTTP host for HTTP transport",
+          "default": "0.0.0.0"
+        },
+        "httpPort": {
+          "type": "integer",
+          "description": "HTTP port for HTTP transport",
+          "default": 3000
+        },
+        "logLevel": {
+          "type": "string",
+          "description": "Logging level for server output",
+          "default": "info",
+          "enum": [
+            "error",
+            "warn",
+            "info",
+            "debug"
+          ]
+        },
+        "logFormat": {
+          "type": "string",
+          "description": "Logging format for server output",
+          "default": "simple",
+          "enum": [
+            "simple",
+            "json"
+          ]
+        },
+        "transport": {
+          "type": "string",
+          "description": "Transport(s) to enable for this server instance",
+          "default": "http",
+          "enum": [
+            "stdio",
+            "http",
+            "both"
+          ]
+        },
+        "serverName": {
+          "type": "string",
+          "description": "Name reported to MCP clients",
+          "default": "autotask-mcp"
+        },
+        "serverVersion": {
+          "type": "string",
+          "description": "Semantic version reported to clients",
+          "default": "1.0.0"
+        },
+        "autotaskApiUrl": {
+          "type": "string",
+          "description": "Optional Autotask API base URL override"
+        },
+        "autotaskSecret": {
+          "type": "string",
+          "description": "Autotask API secret key"
+        },
+        "httpAuthEnabled": {
+          "type": "boolean",
+          "description": "Enable HTTP basic authentication",
+          "default": false
+        },
+        "autotaskUsername": {
+          "type": "string",
+          "description": "Autotask API username (email)"
+        },
+        "httpAuthPassword": {
+          "type": "string",
+          "description": "HTTP basic auth password (required when auth enabled)"
+        },
+        "httpAuthUsername": {
+          "type": "string",
+          "description": "HTTP basic auth username (required when auth enabled)"
+        },
+        "autotaskIntegrationCode": {
+          "type": "string",
+          "description": "Autotask integration code"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_connection",
+      "description": "Test the connection to Autotask API"
+    },
+    {
+      "name": "search_companies",
+      "description": "Search for companies in Autotask with optional filters"
+    },
+    {
+      "name": "create_company",
+      "description": "Create a new company in Autotask"
+    },
+    {
+      "name": "update_company",
+      "description": "Update an existing company in Autotask"
+    },
+    {
+      "name": "search_contacts",
+      "description": "Search for contacts in Autotask with optional filters"
+    },
+    {
+      "name": "create_contact",
+      "description": "Create a new contact in Autotask"
+    },
+    {
+      "name": "search_tickets",
+      "description": "Search for tickets in Autotask with optional filters. BY DEFAULT retrieves ALL matching tickets via pagination for complete accuracy. Only specify pageSize to limit results. Perfect for reports and analytics."
+    },
+    {
+      "name": "get_ticket_details",
+      "description": "Get detailed information for a specific ticket by ID. Use this for full ticket data when needed."
+    },
+    {
+      "name": "create_ticket",
+      "description": "Create a new ticket in Autotask"
+    },
+    {
+      "name": "update_ticket",
+      "description": "Update an existing ticket in Autotask using PATCH semantics for core fields"
+    },
+    {
+      "name": "create_time_entry",
+      "description": "Create a time entry in Autotask"
+    },
+    {
+      "name": "search_projects",
+      "description": "Search for projects in Autotask with optional filters. Returns optimized project data to prevent large responses."
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new project in Autotask"
+    },
+    {
+      "name": "search_resources",
+      "description": "Search for resources (users) in Autotask with optional filters"
+    },
+    {
+      "name": "get_ticket_note",
+      "description": "Get a specific ticket note by ticket ID and note ID"
+    },
+    {
+      "name": "search_ticket_notes",
+      "description": "Search for notes on a specific ticket"
+    },
+    {
+      "name": "create_ticket_note",
+      "description": "Create a new note for a ticket"
+    },
+    {
+      "name": "get_project_note",
+      "description": "Get a specific project note by project ID and note ID"
+    },
+    {
+      "name": "search_project_notes",
+      "description": "Search for notes on a specific project"
+    },
+    {
+      "name": "create_project_note",
+      "description": "Create a new note for a project"
+    },
+    {
+      "name": "get_company_note",
+      "description": "Get a specific company note by company ID and note ID"
+    },
+    {
+      "name": "search_company_notes",
+      "description": "Search for notes on a specific company"
+    },
+    {
+      "name": "create_company_note",
+      "description": "Create a new note for a company"
+    },
+    {
+      "name": "get_ticket_attachment",
+      "description": "Get a specific ticket attachment by ticket ID and attachment ID"
+    },
+    {
+      "name": "search_ticket_attachments",
+      "description": "Search for attachments on a specific ticket"
+    },
+    {
+      "name": "get_expense_report",
+      "description": "Get a specific expense report by ID"
+    },
+    {
+      "name": "search_expense_reports",
+      "description": "Search for expense reports with optional filters"
+    },
+    {
+      "name": "create_expense_report",
+      "description": "Create a new expense report"
+    },
+    {
+      "name": "get_quote",
+      "description": "Get a specific quote by ID"
+    },
+    {
+      "name": "search_quotes",
+      "description": "Search for quotes with optional filters"
+    },
+    {
+      "name": "create_quote",
+      "description": "Create a new quote"
+    },
+    {
+      "name": "search_configuration_items",
+      "description": "Search for configuration items in Autotask with optional filters"
+    },
+    {
+      "name": "search_contracts",
+      "description": "Search for contracts in Autotask with optional filters"
+    },
+    {
+      "name": "search_invoices",
+      "description": "Search for invoices in Autotask with optional filters"
+    },
+    {
+      "name": "search_tasks",
+      "description": "Search for tasks in Autotask with optional filters. Returns optimized task data to prevent large responses."
+    },
+    {
+      "name": "create_task",
+      "description": "Create a new task in Autotask"
+    }
+  ]
+}

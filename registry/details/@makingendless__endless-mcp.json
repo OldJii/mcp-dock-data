@@ -1,0 +1,29 @@
+{
+  "id": "@makingendless/endless-mcp",
+  "displayName": "Endless",
+  "description": "MCP server for Endless, an all-in-one platform to collaborate, transform, and create content.",
+  "createdAt": "2026-01-16T07:22:34.072Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@makingendless/endless-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-alerts",
+      "description": "Get weather alerts for a state"
+    },
+    {
+      "name": "get-forecast",
+      "description": "Get weather forecast for a location"
+    }
+  ]
+}

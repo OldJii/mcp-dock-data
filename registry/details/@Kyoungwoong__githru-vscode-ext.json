@@ -1,0 +1,46 @@
+{
+  "id": "@Kyoungwoong/githru-vscode-ext",
+  "displayName": "Githru Insights",
+  "description": "Discover top contributors by file, branch, or PR area to route reviews and clarify ownership. Assess pull requests with impact metrics to surface risky changes and long-tail hotspots. Visualize repository storylines and author work patterns to plan refactors and improve collaboration.",
+  "createdAt": "2026-01-16T07:21:48.029Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kyoungwoong/githru-vscode-ext"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "contributor_recommender",
+      "description": "Recommends contributors who have contributed most to specific files/branches/PR areas by aggregating recent contribution data."
+    },
+    {
+      "name": "feature_impact_analyzer",
+      "description": "Takes a GitHub repository URL, Pull Request number, and authentication token as input.\n        Analyzes the PR’s commits and changed files to compute impact metrics — scale, dispersion,\n        chaos, isolation, lag, and coupling — and outputs a detailed HTML report highlighting\n        long-tail file path outliers."
+    },
+    {
+      "name": "author_work_pattern",
+      "description": "특정 author의 기간 내 작업량(Commits/LOC/Churn)과 커밋 타입(feat/fix/refactor/...) 분포를 Octokit으로 계산합니다."
+    },
+    {
+      "name": "render_storyline_ui",
+      "description": "Generate storyline visualization using FolderActivityFlow component with CSMDict data"
+    }
+  ]
+}

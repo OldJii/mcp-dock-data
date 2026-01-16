@@ -1,0 +1,260 @@
+{
+  "id": "@code-rabi/mews-mcp",
+  "displayName": "Mews Hospitality Platform Server",
+  "description": "Provide seamless access to the Mews hospitality platform API through a standardized interface. Manage customers, reservations, financial transactions, and services inventory efficiently. Enable integration of hospitality management operations into AI workflows with ease.",
+  "createdAt": "2026-01-16T07:30:02.339Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@code-rabi/mews-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "clientToken",
+        "accessToken"
+      ],
+      "properties": {
+        "client": {
+          "type": "string",
+          "description": "Client identifier for API requests",
+          "default": "mews-mcp"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Mews API base URL",
+          "default": "https://api.mews.com"
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Mews API access token"
+        },
+        "clientToken": {
+          "type": "string",
+          "description": "Mews API client token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getAllAddresses",
+      "description": "Get all addresses associated with specified accounts"
+    },
+    {
+      "name": "addAddresses",
+      "description": "Add new addresses to accounts"
+    },
+    {
+      "name": "getAllCustomers",
+      "description": "Get customers with filters. Note: At least one filter must be provided (CustomerIds, Emails, FirstNames, LastNames, LoyaltyCodes, CompanyIds, CreatedUtc, UpdatedUtc, or DeletedUtc). If no filters are specified, defaults to ActivityStates: [\"Active\"] to return all active customers. IMPORTANT LIMITATIONS: Date range filters (CreatedUtc, UpdatedUtc, DeletedUtc) have a maximum interval of 3 months and 1 day. All array filters have specific maximum item limits (typically 1000, except CompanyIds which is limited to 1)."
+    },
+    {
+      "name": "addCustomer",
+      "description": "Create a new customer"
+    },
+    {
+      "name": "updateCustomers",
+      "description": "Updates personal information of existing customers"
+    },
+    {
+      "name": "deleteCustomers",
+      "description": "Deletes specified customers"
+    },
+    {
+      "name": "mergeCustomers",
+      "description": "Merges two customers together"
+    },
+    {
+      "name": "getAllCompanies",
+      "description": "Returns all companies, optionally filtered by criteria"
+    },
+    {
+      "name": "addCompany",
+      "description": "Adds a new company"
+    },
+    {
+      "name": "updateCompanies",
+      "description": "Updates company information"
+    },
+    {
+      "name": "deleteCompanies",
+      "description": "Deletes specified companies"
+    },
+    {
+      "name": "getAllReservations",
+      "description": "Get reservations with filters. Note: The time interval between StartUtc and EndUtc must not exceed 100 hours."
+    },
+    {
+      "name": "addReservation",
+      "description": "Adds a new reservation with the specified details"
+    },
+    {
+      "name": "updateReservations",
+      "description": "Updates reservation properties"
+    },
+    {
+      "name": "cancelReservations",
+      "description": "Cancels specified reservations"
+    },
+    {
+      "name": "getConfiguration",
+      "description": "Returns configuration of the enterprise and the client"
+    },
+    {
+      "name": "getAllCountries",
+      "description": "Returns all countries supported by the API"
+    },
+    {
+      "name": "getAllCurrencies",
+      "description": "Returns all currencies supported by the API"
+    },
+    {
+      "name": "getAllTaxEnvironments",
+      "description": "Returns all tax environments supported by the API"
+    },
+    {
+      "name": "getAllTaxations",
+      "description": "Returns all taxations supported in tax environments"
+    },
+    {
+      "name": "getAllLanguages",
+      "description": "Returns all languages supported by the API"
+    },
+    {
+      "name": "getLanguageTexts",
+      "description": "Returns translations of texts in the specified languages"
+    },
+    {
+      "name": "getAllBills",
+      "description": "Returns all bills by filter parameters, used for retrieving billing information"
+    },
+    {
+      "name": "getAllAccountingItems",
+      "description": "Returns all accounting items (charges, payments, etc.) based on filter parameters. REQUIRED: At least one of the following filters must be specified: AccountingItemIds, RebatedItemIds, ClosedUtc, ConsumedUtc, or UpdatedUtc."
+    },
+    {
+      "name": "addAccountingItems",
+      "description": "Adds new accounting items (charges, payments, etc.) to customer bills"
+    },
+    {
+      "name": "addPayment",
+      "description": "Adds a new payment to a customer's bill"
+    },
+    {
+      "name": "chargeCreditCard",
+      "description": "Charges a credit card and adds the resulting payment to a customer bill"
+    },
+    {
+      "name": "getAllPayments",
+      "description": "Returns all payments based on filter parameters"
+    },
+    {
+      "name": "getAllServices",
+      "description": "Returns all services offered by the enterprise"
+    },
+    {
+      "name": "getAllSpaces",
+      "description": "Returns all spaces of the enterprise, or only those specified"
+    },
+    {
+      "name": "getAllSpaceCategories",
+      "description": "Returns all space categories of a service"
+    },
+    {
+      "name": "getAllAccountNotes",
+      "description": "Returns all the account notes associated with the specified accounts within the chain"
+    },
+    {
+      "name": "addAccountNotes",
+      "description": "Adds new account notes to the system and assigns them to specified accounts"
+    },
+    {
+      "name": "getAllRates",
+      "description": "Returns all rates (pricing) of the enterprise"
+    },
+    {
+      "name": "getRatePricing",
+      "description": "Returns prices of rates during the specified period"
+    },
+    {
+      "name": "exportAccountingItems",
+      "description": "Exports accounting items (charges, payments, etc.) in the specified format and period"
+    },
+    {
+      "name": "exportReservations",
+      "description": "Exports reservations in the specified format and period"
+    },
+    {
+      "name": "getAllAvailabilityBlocks",
+      "description": "Returns all availability blocks (reservations blocked by rate, space category, or space) based on filter parameters. Note: At least one filter must be provided (CreatedUtc, UpdatedUtc, CollidingUtc, AvailabilityBlockIds, or ExternalIdentifiers). The time interval must not exceed 100 hours."
+    },
+    {
+      "name": "addVouchers",
+      "description": "Adds new vouchers (discount codes, gift certificates) to the system"
+    },
+    {
+      "name": "getAllTasks",
+      "description": "Returns all tasks of the enterprise, filtered by identifiers or other filters. REQUIRED: At least one filter must be provided (TaskIds, DepartmentIds, ServiceOrderIds, CreatedUtc, ClosedUtc, or DeadlineUtc). LIMITATIONS: Date range filters (CreatedUtc, ClosedUtc, DeadlineUtc) have a maximum interval of 3 months and 1 day. Array filters (TaskIds, DepartmentIds, ServiceOrderIds) are limited to 1000 items each. The Limitation parameter with Count is mandatory for pagination."
+    },
+    {
+      "name": "addTask",
+      "description": "Adds a new task to the enterprise, optionally to a specified department"
+    },
+    {
+      "name": "getAllLoyaltyMemberships",
+      "description": "Returns all loyalty memberships of the enterprise, optionally filtered by specific loyalty membership identifiers, activity states, or other filter parameters. Note this operation uses Pagination and supports Portfolio Access Tokens."
+    },
+    {
+      "name": "addLoyaltyMemberships",
+      "description": "Adds new loyalty memberships to the system"
+    },
+    {
+      "name": "updateLoyaltyMemberships",
+      "description": "Updates information about the specified loyalty memberships. Note this operation supports Portfolio Access Tokens."
+    },
+    {
+      "name": "deleteLoyaltyMemberships",
+      "description": "Deletes loyalty memberships"
+    },
+    {
+      "name": "getAllLoyaltyPrograms",
+      "description": "Returns all loyalty programs of the enterprise, optionally filtered by specific loyalty program identifiers or other filter parameters."
+    },
+    {
+      "name": "addLoyaltyPrograms",
+      "description": "Adds new loyalty programs to the system"
+    },
+    {
+      "name": "updateLoyaltyPrograms",
+      "description": "Updates information about the specified loyalty programs"
+    },
+    {
+      "name": "deleteLoyaltyPrograms",
+      "description": "Deletes loyalty programs"
+    },
+    {
+      "name": "getAllLoyaltyTiers",
+      "description": "Returns all loyalty tiers of the enterprise, optionally filtered by specific loyalty tier identifiers or other filter parameters."
+    },
+    {
+      "name": "addLoyaltyTiers",
+      "description": "Adds new loyalty tiers to the system"
+    },
+    {
+      "name": "updateLoyaltyTiers",
+      "description": "Updates information about the specified loyalty tiers"
+    },
+    {
+      "name": "deleteLoyaltyTiers",
+      "description": "Deletes loyalty tiers"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@ReduceMyIns/nowcerts-mcp",
+  "displayName": "nowcerts-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:35.597Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ReduceMyIns/nowcerts-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

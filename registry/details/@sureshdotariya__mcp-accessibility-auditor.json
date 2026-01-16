@@ -1,0 +1,12 @@
+{
+  "id": "@sureshdotariya/mcp-accessibility-auditor",
+  "displayName": "mcp-accessibility-auditor",
+  "description": "MCP Accessibility Auditor is a powerful tool that brings professional web accessibility testing directly into your AI assistant (like Claude or Cursor). It scans websites and generates comprehensive reports showing accessibility issues based on WCAG 2.2 standards.\n\nThe Problem It Solves\nWeb accessibility is crucial but often overlooked. Traditional accessibility testing requires:\n\nMultiple tools and browser extensions\nManual checking and documentation\nTechnical knowledge to interpret results\nTime-consuming report generation\nThis tool solves all of that by integrating accessibility auditing directly into your AI workflow.",
+  "createdAt": "2026-01-16T07:39:39.066Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sureshdotariya/mcp-accessibility-auditor"
+  },
+  "connection": null,
+  "capabilities": []
+}

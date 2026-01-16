@@ -1,0 +1,65 @@
+{
+  "id": "@yoriichi-07/multi_orchestrator_mcp",
+  "displayName": "Multi Orchestrator",
+  "description": "Coordinate specialized roles to plan, build, test, and deploy applications end to end. Generate architecture, automatically fix code, and produce comprehensive tests to accelerate delivery and improve quality. Monitor health and analytics to keep projects on track.",
+  "createdAt": "2026-01-16T07:24:22.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yoriichi-07/multi_orchestrator_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ping",
+      "description": "Simple health check ping"
+    },
+    {
+      "name": "orchestrate_task",
+      "description": "Orchestrate a complex development task using multiple AI agents\n\nArgs:\n    task_description: Description of the task to be completed\n    task_type: Type of task (development, architecture, testing, deployment)\n    priority: Task priority (low, normal, high, critical)"
+    },
+    {
+      "name": "generate_architecture",
+      "description": "Generate software architecture recommendations\n\nArgs:\n    project_description: Description of the project\n    tech_stack: List of technologies to use\n    requirements: List of functional and non-functional requirements"
+    },
+    {
+      "name": "auto_fix_code",
+      "description": "Automatically fix code issues using self-healing capabilities\n\nArgs:\n    code: The code that has issues\n    error_message: The error message encountered\n    context: Additional context about the code"
+    },
+    {
+      "name": "list_capabilities",
+      "description": "List all available capabilities and agent types including advanced upgrades"
+    },
+    {
+      "name": "get_system_status",
+      "description": "Get current system status and health metrics"
+    },
+    {
+      "name": "advanced_generate_application",
+      "description": "Enterprise application generation using advanced AI agents\n\nArgs:\n    description: Detailed description of the application to build\n    complexity_level: Target complexity (simple, advanced, enterprise, professional)\n    innovation_requirements: List of innovative features to include\n    deployment_strategy: Deployment approach (local, cloud-native, multi-cloud, edge)"
+    },
+    {
+      "name": "autonomous_architect",
+      "description": "Activate the Autonomous Architect Agent for dynamic system design\n\nArgs:\n    project_goals: List of high-level project objectives\n    constraints: Technical, business, or resource constraints\n    learning_objectives: Areas where the agent should learn and improve"
+    },
+    {
+      "name": "proactive_quality_assurance",
+      "description": "Activate proactive quality framework with policy-as-code\n\nArgs:\n    code_context: Code or project context to analyze\n    quality_standards: Custom quality policies to apply\n    auto_remediation: Whether to automatically fix violations"
+    },
+    {
+      "name": "evolutionary_prompt_optimization",
+      "description": "Activate evolutionary prompt engine for self-improving AI communication\n\nArgs:\n    base_prompt: Initial prompt to optimize\n    optimization_goals: Specific areas to improve (clarity, effectiveness, etc.)\n    performance_metrics: Current performance data for optimization"
+    },
+    {
+      "name": "last_mile_cloud_deployment",
+      "description": "Activate Last Mile Cloud Agent for autonomous deployment and verification\n\nArgs:\n    application_context: Application details and requirements\n    target_environments: Target deployment environments\n    verification_requirements: Custom verification criteria"
+    },
+    {
+      "name": "debug_server_config",
+      "description": "🔧 TEMPORARY DEBUG TOOL - No authentication required\n\nThis tool bypasses authentication to help diagnose server-side configuration issues.\nReturns environment variables and configuration status for troubleshooting.\n\n⚠️ Remove this tool after debugging is complete!"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "@rdassignies/openlegi",
+  "displayName": "openlegi",
+  "description": "Serveur MCP pour les sources juridiques suivantes : \n- Legifrance\n- Judilibre\n- Registre National des Entreprises (RNE)\n- BODACC\n- BOAMP\n...",
+  "createdAt": "2026-01-16T07:21:38.128Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rdassignies/openlegi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "rechercher_dans_texte_legal",
+      "description": "\nRecherche dans les textes légaux historiques avec validation MCP. Il faut impérativement \nciter le contenu trouvé avec le lien officiel fournis par legifrance. \n\nArgs:\n    search: Mots-clés de recherche ou numéro d'article\n    text_id: Le numéro du texte (format AAAA-NUMERO) (optionnel)\n    champ: Champ de recherche (\"ALL\", \"TITLE\", \"TABLE\", \"NUM_ARTICLE\", \"ARTICLE\")\n    sort: Tri des résultats (\"PERTINENCE\" (défaut), \"PUBLICATION_DATE_DESC\" (antéchronologique) , \"PUBLICATION_DATE_ASC\" (chronologique))\n    type_recherche: Type de recherche (\"TOUS_LES_MOTS_DANS_UN_CHAMP\" (defaut), \"EXACTE\", \"UN_DES_MOT\")\n    max_results: Nombre de résultats (defaut: 10,  maximum: 100)\n\nReturns:\n    Résultats formatés avec messages d'erreur contextuels\n    \nExemples:\n    - Pour l'article 7 de la loi 78-17: rechercher_dans_texte_legal(\"7\", text_id=\"78-17\", champ=\"NUM_ARTICLE\")\n    - Signature électronique: rechercher_dans_texte_legal(\"signature électronique validité conditions\")\n"
+    },
+    {
+      "name": "rechercher_code",
+      "description": "\nRecherche des articles juridiques dans les codes de loi français. \n\nArgs:\n    search: Termes de recherche (ex: \"contrat de travail\", \"légitime défense\")\n    code_name: Nom complet du code juridique (ex: \"Code civil\", \"Code du travail\", \"Code pénal\")\n    champ : Champ dans lequel recherché (\"ALL\", \"TITLE\", \"TABLE\", \"NUM_ARTICLE\", \"ARTICLE\")\n    type_recherche: Type de recherche (\"TOUS_LES_MOTS_DANS_UN_CHAMP\" (defaut), \"EXACTE\", \"UN_DES_MOT\")\n    sort: Tri des résultats (\"PERTINENCE\" (défaut), \"DATE_DESC\" (antéchronologique) , \"DATE_ASC\" (chronologique))\n    max_results: Nombre maximum de résultats (défaut: 10, maximum: 100)\n\nReturns:\n    Liste de résultats formatés avec messages d'erreur contextuels. \n\nExemples:\n    - Pour le PACS dans le Code civil: rechercher_code(\"pacte civil de solidarité\", \"Code civil\")\n    - Légitime défense dans le Code pénal: rechercher_code(\"légitime défense\", \"Code pénal\")\n    - Contrat de travail: rechercher_code(\"contrat de travail\", \"Code du travail\")\n\nNote: Utilisez 'lister_codes_juridiques' pour voir tous les codes disponibles\n"
+    },
+    {
+      "name": "rechercher_jurisprudence_judiciaire",
+      "description": "\nRecherche des jurisprudences judiciaires avec validation MCP\n\nArgs:\n    search: Termes ou numéros d'affaires à rechercher\n    champ: champ de rechercher (valeurs possibles : \"ALL\" (defaut) , \"TITLE\", \"ABSTRATS\", \"TEXTE\", \"RESUMES\", \"NUM_AFFAIRE\")\n    type_recherche: Type de recherche (\"TOUS_LES_MOTS_DANS_UN_CHAMP\" (defaut), \"EXACTE\", \"UN_DES_MOT\")\n    publication_bulletin: Si publiée au bulletin ['T'] sinon ['F']. Attention ! Ne concerne que \"Cour de cassation\", \n    si le champ est renseigné dans les autres cas, il ne peut y avoir de résultat. \n    sort: Tri des résultats (\"PERTINENCE\" (défaut), \"DATE_DESC\" (antéchronologique) , \"DATE_ASC\" (chronologique))\n    juridiction_judiciaire: Liste des juridictions à inclure, valeurs (list) : [\"Cour de cassation\", \"Juridictions d'appel\", \"Juridictions du premier degré\"]\n    max_results: Nombre maximum de résultats (défaut: 10, maximum: 100)\n\nReturns:\n    Résultats formatés avec messages d'erreur contextuels\n    \nExemples:\n    - Panorama jurisprudence: \n      rechercher_jurisprudence_judiciaire(search=\"tierce opposition salarié société liquidation\", type_recherche=\"TOUS)\n    - Dernières jurisprudences: rechercher_jurisprudence_judiciaire(\"signature électronique\", sort=\"DATE_DESC\")\n    - Juridictions spécifiques: rechercher_jurisprudence_judiciaire(\"contrat travail\", champ = \"ALL\", juridiction_judiciaire=[\"Cour de cassation\"])\n"
+    },
+    {
+      "name": "recherche_journal_officiel",
+      "description": "\nRecherche dans le Journal Officiel français avec validation MCP\n\nArgs:\n    search: Mots-clés à rechercher (ex: \"nomination culture\")\n    champ: Champ de recherche (\"ALL\", \"TITLE\", \"TABLE\", \"NOR\", \"NUM\", \"NUM_ARTICLE\", \"ARTICLE\", \"VISA\", \"NOTICE\", \"VISA_NOTICE\", \"TRAVAUX_PREP\", \"SIGNATURE\", \"NOTA\")\n    type_recherche: Type de recherche (\"TOUS_LES_MOTS_DANS_UN_CHAMP\" (defaut), \"EXACT\", \"UN_DES_MOT\")\n    sort: Tri des résultats, par défaut \"PERTINENCE\" (\"PERTINENCE\", \"SIGNATURE_DATE_DESC\", \"SIGNATURE_DATE_ASC\", \"PUBLI_DATE_DESC\", \"PUBLI_DATE_ASC\")\n    date_publication: Date de publication sous forme de liste [date_debut, date_fin] au format YYYY-MM-DD\n    ministeres: Liste des ministères (optionnel)\n    emetteurs: Liste des émetteurs/autorités (optionnel) - outil \"lister_emetteurs_jorf\" pour la liste complète\n    text_types: Types de textes (LOI, DECRET, ARRETE, etc.) - outil  \"lister_natures_textes_jorf\" pour la liste des textes publiés au JORF\n    max_results: Nombre maximum de résultats (défaut: 5, maximum: 100)\n\nReturns:\n    Résultats formatés avec messages d'erreur contextuels\n    \nExemples:\n    - Recherche simple: recherche_journal_officiel(\"nomination cinéma\")\n    - Avec filtres: recherche_journal_officiel(\"nomination\", ministeres=[\"MINISTERE_CULTURE\"], text_types=[\"ARRETE\"])\n    - Pour rechercher avec tri du plus récent au plus ancien (sort=\"SIGNATURE_DATE_DESC)\nNotes: \n    Utilisez 'lister_emetteurs_jorf' pour voir tous les émetteurs disponibles\n    Utilisez 'lister_natures_textes_jorf' pour voir la liste des types de textes publiés au JO\n"
+    },
+    {
+      "name": "lister_codes_juridiques",
+      "description": "\nListe tous les codes juridiques disponibles sur Legifrance\n\nReturns:\n    Liste complète des codes avec leurs noms exacts à utiliser dans rechercher_code()\n    \nExemples d'utilisation:\n    - Découvrir tous les codes disponibles avant une recherche\n    - Vérifier l'orthographe exacte d'un nom de code\n    - Explorer les différents domaines juridiques\n"
+    },
+    {
+      "name": "lister_emetteurs_jorf",
+      "description": "\nListe tous les émetteurs/autorités disponibles pour les recherches dans le Journal Officiel de la République Française (JORF)\n\nReturns:\n    Liste complète des émetteurs avec leurs noms exacts à utiliser dans recherche_journal_officiel()\n    \nNote:\n    Les émetteurs sont distincts des ministères et incluent souvent des autorités \n    administratives indépendantes (AAI), agences, établissements publics, etc.\n    \nExemples d'utilisation:\n    - Découvrir tous les émetteurs disponibles avant une recherche JORF\n    - Vérifier l'orthographe exacte d'un nom d'émetteur\n    - Explorer les différentes autorités publiques qui émettent des actes réglementaires publiés au JORF\n"
+    },
+    {
+      "name": "lister_natures_textes_jorf",
+      "description": "\nListe toutes les natures de textes disponibles pour les recherches dans le Journal Officiel de la République Française (JORF)\n\nReturns:\n    Liste complète des natures de textes avec leurs noms exacts à utiliser dans recherche_journal_officiel()\n    \nNote:\n    Les natures de textes permettent de filtrer par type d'acte juridique publié au JORF\n    (lois, décrets, arrêtés, ordonnances, circulaires, etc.)\n    \nExemples d'utilisation:\n    - Découvrir toutes les natures de textes disponibles avant une recherche JORF\n    - Vérifier l'orthographe exacte d'une nature de texte\n    - Explorer les différents types d'actes juridiques publiés au JORF\n"
+    }
+  ]
+}

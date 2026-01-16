@@ -1,0 +1,12 @@
+{
+  "id": "@nextlw/pipedrive-mcp",
+  "displayName": "pipedrive-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:47.272Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nextlw/pipedrive-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

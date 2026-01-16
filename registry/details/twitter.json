@@ -1,0 +1,317 @@
+{
+  "id": "twitter",
+  "displayName": "Twitter",
+  "description": "Twitter, Inc. was an American social media company based in San Francisco, California, which operated and was named for named for its flagship social media network prior to its rebrand as X.",
+  "createdAt": "2026-01-16T07:19:15.190Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/twitter"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TWITTER_ADD_A_LIST_MEMBER",
+      "description": "Adds a user to a specified Twitter List; the list must be owned by the authenticated user."
+    },
+    {
+      "name": "TWITTER_ADD_POST_TO_BOOKMARKS",
+      "description": "Adds a specified, existing, and accessible Tweet to a user's bookmarks, with success indicated by the 'bookmarked' field in the response."
+    },
+    {
+      "name": "TWITTER_BOOKMARKS_BY_USER",
+      "description": "Retrieves Tweets bookmarked by the authenticated user, where the provided User ID must match the authenticated user's ID."
+    },
+    {
+      "name": "TWITTER_CREATE_A_NEW_DM_CONVERSATION",
+      "description": "Creates a new group Direct Message (DM) conversation on Twitter with specified participant IDs and an initial message, which can include text and media attachments."
+    },
+    {
+      "name": "TWITTER_CREATE_COMPLIANCE_JOB_REQUEST",
+      "description": "Creates a new compliance job to check the status of Tweet or user IDs; upload IDs as a plain text file (one ID per line) to the `upload_url` received in the response."
+    },
+    {
+      "name": "TWITTER_CREATE_LIST",
+      "description": "Creates a new, empty List on X (formerly Twitter), for which the provided name must be unique for the authenticated user; accounts are added separately."
+    },
+    {
+      "name": "TWITTER_CREATION_OF_A_POST",
+      "description": "Creates a Tweet on Twitter; `text` is required unless `card_uri`, `media_media_ids`, `poll_options`, or `quote_tweet_id` is provided. Example - Creating a tweet with media and location: { \"text\": \"Check out our latest product update! 🚀\", \"media_media_ids\": [\"1455952740635586573\"], \"geo_place_id\": \"df51dec6f4ee2b2c\" } Example - Quote tweet with commentary: { \"text\": \"This is a game-changer for the industry! Here's why... 🧵\", \"quote_tweet_id\": \"1453828617121234945\" } Example - Reply to a tweet: { \"text\": \"Great point! Here's my take on this...\", \"reply_in_reply_to_tweet_id\": \"1453828617121234945\" }"
+    },
+    {
+      "name": "TWITTER_DELETE_DM",
+      "description": "Permanently deletes a specific Twitter Direct Message (DM) event using its `event_id` if the authenticated user sent it; this action is irreversible and does not delete entire conversations."
+    },
+    {
+      "name": "TWITTER_DELETE_LIST",
+      "description": "Permanently deletes a specified Twitter List using its ID, which must be owned by the authenticated user; this action is irreversible and the list must already exist."
+    },
+    {
+      "name": "TWITTER_FETCH_LIST_MEMBERS_BY_ID",
+      "description": "Fetches members of a specific Twitter List, identified by its unique ID."
+    },
+    {
+      "name": "TWITTER_FETCH_SPACE_TICKET_BUYERS_LIST",
+      "description": "Retrieves a list of users who purchased tickets for a specific, valid, and ticketed Twitter Space."
+    },
+    {
+      "name": "TWITTER_FOLLOW_A_LIST",
+      "description": "Allows the authenticated user (`id`) to follow a specific Twitter List (`list_id`) they are permitted to access, subscribing them to the list's timeline; this does not automatically follow individual list members."
+    },
+    {
+      "name": "TWITTER_FOLLOWERS_BY_USER_ID",
+      "description": "Retrieves a list of users who follow a specified public Twitter user ID."
+    },
+    {
+      "name": "TWITTER_FOLLOWING_BY_USER_ID",
+      "description": "Retrieves users followed by a specific Twitter user, allowing pagination and customization of returned user and tweet data fields via expansions."
+    },
+    {
+      "name": "TWITTER_FOLLOW_USER",
+      "description": "Allows an authenticated user (path `id`) to follow another user (`target_user_id`), which results in a pending request if the target user's tweets are protected."
+    },
+    {
+      "name": "TWITTER_FULL_ARCHIVE_SEARCH",
+      "description": "Searches the full archive of public Tweets from March 2006 onwards; use 'start_time' and 'end_time' together for a defined time window."
+    },
+    {
+      "name": "TWITTER_FULL_ARCHIVE_SEARCH_COUNTS",
+      "description": "Returns a count of Tweets from the full archive that match a specified query, aggregated by day, hour, or minute; `start_time` must be before `end_time` if both are provided, and `since_id`/`until_id` cannot be used with `start_time`/`end_time`."
+    },
+    {
+      "name": "TWITTER_GET_A_USER_S_LIST_MEMBERSHIPS",
+      "description": "Retrieves all Twitter Lists a specified user is a member of, including public Lists and private Lists the authenticated user is authorized to view."
+    },
+    {
+      "name": "TWITTER_GET_A_USER_S_OWNED_LISTS",
+      "description": "Call this action to retrieve Lists created (owned) by a specific Twitter user, not Lists they follow or are subscribed to."
+    },
+    {
+      "name": "TWITTER_GET_A_USER_S_PINNED_LISTS",
+      "description": "Retrieves the Lists a specific, existing Twitter user has pinned to their profile to highlight them."
+    },
+    {
+      "name": "TWITTER_GET_BLOCKED_USERS",
+      "description": "Retrieves user objects for accounts blocked by the specified user ID; this is a read-only view of a user's block list."
+    },
+    {
+      "name": "TWITTER_GET_DM_EVENTS_BY_ID",
+      "description": "Fetches a specific Direct Message (DM) event by its unique ID, allowing optional expansion of related data like users or tweets; ensure the `event_id` refers to an existing DM event accessible to the authenticated user."
+    },
+    {
+      "name": "TWITTER_GET_DM_EVENTS_FOR_A_DM_CONVERSATION",
+      "description": "Fetches Direct Message (DM) events for a one-on-one conversation with a specified participant ID, ordered chronologically newest to oldest; does not support group DMs."
+    },
+    {
+      "name": "TWITTER_GET_LIST_FOLLOWERS",
+      "description": "Fetches a list of users who follow a specific Twitter List, identified by its ID; ensure the authenticated user has access if the list is private."
+    },
+    {
+      "name": "TWITTER_GET_MEDIA_UPLOAD_STATUS",
+      "description": "Get the status of a media upload for X/Twitter. Use this to check the processing status of uploaded media, especially for videos and GIFs. Only needed if the FINALIZE command returned processing_info."
+    },
+    {
+      "name": "TWITTER_GET_MUTED_USERS",
+      "description": "Returns user objects muted by the X user identified by the `id` path parameter."
+    },
+    {
+      "name": "TWITTER_GET_POST_RETWEETERS_ACTION",
+      "description": "Retrieves users who publicly retweeted a specified public Post ID, excluding Quote Tweets and retweets from private accounts."
+    },
+    {
+      "name": "TWITTER_GET_RECENT_DM_EVENTS",
+      "description": "Returns recent Direct Message events for the authenticated user, such as new messages or changes in conversation participants."
+    },
+    {
+      "name": "TWITTER_GET_USER_S_FOLLOWED_LISTS",
+      "description": "Returns metadata (not Tweets) for lists a specific Twitter user follows, optionally including expanded owner details."
+    },
+    {
+      "name": "TWITTER_HIDE_REPLIES",
+      "description": "Hides or unhides an existing reply Tweet."
+    },
+    {
+      "name": "TWITTER_LIST_LOOKUP_BY_LIST_ID",
+      "description": "Returns metadata for a specific Twitter List, identified by its ID; does not return list members but can expand the owner's User object via the `expansions` parameter."
+    },
+    {
+      "name": "TWITTER_LIST_POST_LIKERS",
+      "description": "Retrieves users who have liked the Post (Tweet) identified by the provided ID."
+    },
+    {
+      "name": "TWITTER_LIST_POSTS_TIMELINE_BY_LIST_ID",
+      "description": "Fetches the most recent Tweets posted by members of a specified Twitter List."
+    },
+    {
+      "name": "TWITTER_MUTE_USER_BY_USER_ID",
+      "description": "Mutes a target user on behalf of an authenticated user, preventing the target's Tweets and Retweets from appearing in the authenticated user's home timeline without notifying the target."
+    },
+    {
+      "name": "TWITTER_PIN_A_LIST",
+      "description": "Pins a specified List to the authenticated user's profile, provided the List exists, the user has access rights, and the pin limit (typically 5 Lists) is not exceeded."
+    },
+    {
+      "name": "TWITTER_POST_DELETE_BY_POST_ID",
+      "description": "Irreversibly deletes a specific Tweet by its ID; the Tweet may persist in third-party caches after deletion."
+    },
+    {
+      "name": "TWITTER_POST_LOOKUP_BY_POST_ID",
+      "description": "Fetches comprehensive details for a single Tweet by its unique ID, provided the Tweet exists and is accessible."
+    },
+    {
+      "name": "TWITTER_POST_LOOKUP_BY_POST_IDS",
+      "description": "Retrieves detailed information for one or more Posts (Tweets) identified by their unique IDs, allowing selection of specific fields and expansions."
+    },
+    {
+      "name": "TWITTER_POSTS_LABEL_STREAM",
+      "description": "Establishes a persistent stream of real-time events for when Tweet labels are applied or removed, offering insights into content categorization."
+    },
+    {
+      "name": "TWITTER_POST_USAGE",
+      "description": "Fetches Tweet usage statistics for a Project (e.g., consumption, caps, daily breakdowns for Project & Client Apps) to monitor API limits; data can be retrieved for 1 to 90 days."
+    },
+    {
+      "name": "TWITTER_RECENT_SEARCH",
+      "description": "Searches Tweets from the last 7 days matching a query (using X's search syntax), ideal for real-time analysis, trend monitoring, or retrieving posts from specific users (e.g., `from:username`) Example - Get original tweets from Elon Musk since Sept 20, 2025: { \"query\": \"from:elonmusk -is:retweet -is:reply\", \"start_time\": \"2025-09-20T00:00:00Z\", \"max_results\": 50, \"tweet_fields\": [\"created_at\",\"public_metrics\",\"text\"], \"expansions\": [\"author_id\",\"attachments.media_keys\",\"referenced_tweets.id\"] }"
+    },
+    {
+      "name": "TWITTER_RECENT_SEARCH_COUNTS",
+      "description": "Retrieves the count of Tweets matching a specified search query within the last 7 days, aggregated by 'minute', 'hour', or 'day'."
+    },
+    {
+      "name": "TWITTER_REMOVE_A_BOOKMARKED_POST",
+      "description": "Removes a Tweet, specified by `tweet_id`, from the authenticated user's bookmarks; the Tweet must have been previously bookmarked by the user for the action to have an effect."
+    },
+    {
+      "name": "TWITTER_REMOVE_A_LIST_MEMBER",
+      "description": "Removes a user from a Twitter List; the response `is_member` field will be `false` if removal was successful or the user was not a member, and the updated list of members is not returned."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_COMPLIANCE_JOB_BY_ID",
+      "description": "Retrieves status, download/upload URLs, and other details for an existing Twitter compliance job specified by its unique ID."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_COMPLIANCE_JOBS",
+      "description": "Returns a list of recent compliance jobs, filtered by type (tweets or users) and optionally by status."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_DM_CONVERSATION_EVENTS",
+      "description": "Retrieves Direct Message (DM) events for a specific conversation ID on Twitter, useful for analyzing messages and participant activities."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_POSTS_FROM_A_SPACE",
+      "description": "Retrieves Tweets from a specified Twitter Space ID; the Space must be accessible and results are batched (not streamed)."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_POSTS_THAT_QUOTE_A_POST",
+      "description": "Retrieves Tweets that quote a specified Tweet, requiring a valid Tweet ID."
+    },
+    {
+      "name": "TWITTER_RETRIEVE_POSTS_THAT_REPOST_A_POST",
+      "description": "Retrieves Tweets that Retweeted a specified public or authenticated-user-accessible Tweet ID, optionally customizing the response with fields and expansions."
+    },
+    {
+      "name": "TWITTER_RETURNS_POST_OBJECTS_LIKED_BY_THE_PROVIDED_USER_ID",
+      "description": "Retrieves Tweets liked by a specified Twitter user, provided their liked tweets are public or accessible."
+    },
+    {
+      "name": "TWITTER_RETURNS_THE_OPEN_API_SPECIFICATION_DOCUMENT",
+      "description": "Fetches the OpenAPI specification (JSON) for Twitter's API v2, used to programmatically understand the API's structure for developing client libraries or tools."
+    },
+    {
+      "name": "TWITTER_RETWEET_POST",
+      "description": "Retweets a Tweet (`tweet_id`) for a given user (`id`), provided the Tweet is public (or user follows if protected), not already retweeted by the user, and its author has not blocked the user."
+    },
+    {
+      "name": "TWITTER_SEARCH_FOR_SPACES",
+      "description": "Searches for Twitter Spaces by a textual query, optionally filtering by state (live, scheduled, all) to discover audio conversations."
+    },
+    {
+      "name": "TWITTER_SEND_A_NEW_MESSAGE_TO_A_DM_CONVERSATION",
+      "description": "Sends a message, with optional text and/or media attachments (using pre-uploaded `media_id`s), to a specified Twitter Direct Message conversation."
+    },
+    {
+      "name": "TWITTER_SEND_A_NEW_MESSAGE_TO_A_USER",
+      "description": "Sends a new Direct Message with text and/or media (media_id for attachments must be pre-uploaded) to a specified Twitter user; this creates a new DM and does not modify existing messages."
+    },
+    {
+      "name": "TWITTER_SPACE_LOOKUP_BY_SPACE_ID",
+      "description": "Retrieves details for a Twitter Space by its ID, allowing for customization and expansion of related data, provided the Space ID is valid and accessible."
+    },
+    {
+      "name": "TWITTER_SPACE_LOOKUP_BY_THEIR_CREATORS",
+      "description": "Retrieves Twitter Spaces created by a list of specified User IDs, with options to customize returned data fields."
+    },
+    {
+      "name": "TWITTER_SPACE_LOOKUP_UP_SPACE_IDS",
+      "description": "Fetches detailed information for one or more Twitter Spaces (live, scheduled, or ended) by their unique IDs; at least one Space ID must be provided."
+    },
+    {
+      "name": "TWITTER_UNFOLLOW_A_LIST",
+      "description": "Enables a user (via `id`) to unfollow a specific Twitter List (via `list_id`), which removes its tweets from their timeline and stops related notifications; the action reports `following: false` on success, even if the user was not initially following the list."
+    },
+    {
+      "name": "TWITTER_UNFOLLOW_USER",
+      "description": "Allows the authenticated `source_user_id` to unfollow an existing Twitter user (`target_user_id`), which removes the follow relationship."
+    },
+    {
+      "name": "TWITTER_UNLIKE_POST",
+      "description": "Allows an authenticated user (`id`) to remove their like from a specific post (`tweet_id`); the action is idempotent and completes successfully even if the post was not liked."
+    },
+    {
+      "name": "TWITTER_UNMUTE_USER_BY_USER_ID",
+      "description": "Unmutes a `target_user_id` for the `source_user_id` (authenticated user), allowing the source user to see Tweets and notifications from the target user again."
+    },
+    {
+      "name": "TWITTER_UNPIN_A_LIST",
+      "description": "Unpins a List (specified by list_id) from a user's profile (specified by id), provided the List is currently pinned by that user."
+    },
+    {
+      "name": "TWITTER_UNRETWEET_POST",
+      "description": "Removes a user's retweet of a specified Post, if the user had previously retweeted it."
+    },
+    {
+      "name": "TWITTER_UPDATE_LIST",
+      "description": "Updates an existing Twitter List's name, description, or privacy status, requiring the List ID and at least one mutable property."
+    },
+    {
+      "name": "TWITTER_UPLOAD_LARGE_MEDIA",
+      "description": "Use this to upload GIFs/videos and for any file larger than 5 MB to X/Twitter."
+    },
+    {
+      "name": "TWITTER_UPLOAD_MEDIA",
+      "description": "Upload media (images, GIFs, videos) to X/Twitter using the v2 API. Use 'Upload Large Media' for GIFs/videos or any file larger than ~5 MiB; this action is intended for small images and small files only."
+    },
+    {
+      "name": "TWITTER_USER_HOME_TIMELINE_BY_USER_ID",
+      "description": "Retrieves the home timeline/feed for a specified Twitter user, showing Tweets from accounts they follow - not their own posts - in reverse chronological order; useful for displaying their personalized feed without algorithmic sorting."
+    },
+    {
+      "name": "TWITTER_USER_LIKE_POST",
+      "description": "Allows the authenticated user (`id`) to like a specific, accessible Tweet (`tweet_id`), provided neither user has blocked the other and the authenticated user is not restricted from liking."
+    },
+    {
+      "name": "TWITTER_USER_LOOKUP_BY_ID",
+      "description": "Retrieves detailed public information for a Twitter user by their ID, optionally expanding related data (e.g., pinned tweets) and specifying particular user or tweet fields to return."
+    },
+    {
+      "name": "TWITTER_USER_LOOKUP_BY_IDS",
+      "description": "Retrieves detailed information for specified X (formerly Twitter) user IDs, optionally customizing returned fields and expanding related entities."
+    },
+    {
+      "name": "TWITTER_USER_LOOKUP_BY_USERNAME",
+      "description": "Fetches public profile information for a valid and existing Twitter user by their username, optionally expanding related data like pinned Tweets; results may be limited for protected profiles not followed by the authenticated user."
+    },
+    {
+      "name": "TWITTER_USER_LOOKUP_BY_USERNAMES",
+      "description": "Retrieves detailed information for 1 to 100 Twitter users by their usernames (each 1-15 alphanumeric characters/underscores), allowing customizable user/tweet fields and expansion of related data like pinned tweets."
+    },
+    {
+      "name": "TWITTER_USER_LOOKUP_ME",
+      "description": "Returns profile information for the currently authenticated X user, customizable via request fields."
+    }
+  ]
+}

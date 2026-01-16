@@ -1,0 +1,44 @@
+{
+  "id": "@PV-Bhat/gemsuite-mcp",
+  "displayName": "GemSuite",
+  "description": "Leverage the power of Gemini API for intelligent model selection and advanced file handling. Optimize your AI operations with seamless integration and efficient processing across various file types. Enhance your productivity by utilizing the right tools for your specific tasks effortlessly.",
+  "createdAt": "2026-01-16T07:30:56.871Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@PV-Bhat/gemsuite-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "geminiApiKey"
+      ],
+      "properties": {
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Your Google Gemini API key for accessing Gemini models."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "gem_search",
+      "description": "Generates responses based on the latest information using Gemini 2.0 Flash and Google Search. Best for general knowledge questions, fact-checking, and information retrieval."
+    },
+    {
+      "name": "gem_reason",
+      "description": "Solves complex problems with step-by-step reasoning using Gemini 2.0 Flash Thinking. Best for math and science problems, coding challenges, and tasks requiring transparent reasoning process."
+    },
+    {
+      "name": "gem_process",
+      "description": "Performs fast, cost-efficient content processing using Gemini 2.0 Flash-Lite. Best for high-volume operations requiring speed and efficiency."
+    },
+    {
+      "name": "gem_analyze",
+      "description": "Analyzes files using the appropriate Gemini model. Automatically selects the best model based on file type and analysis needs."
+    }
+  ]
+}

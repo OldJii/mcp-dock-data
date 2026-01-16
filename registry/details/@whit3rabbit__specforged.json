@@ -1,0 +1,146 @@
+{
+  "id": "@whit3rabbit/specforged",
+  "displayName": "SpecForged",
+  "description": "Create and evolve clear software specifications from requirements and design to implementation planning and execution. Use a guided wizard to progress through phases, generate actionable task plans, and track progress and dependencies. Integrate with your project files to keep requirements, designs, and tasks aligned.",
+  "createdAt": "2026-01-16T07:22:55.679Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@whit3rabbit/specforged"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "spec_folder": {
+          "type": "string",
+          "description": "Specifications folder name within project",
+          "default": ".specifications"
+        },
+        "project_path": {
+          "type": "string",
+          "description": "Project root path relative to deployment environment",
+          "default": "."
+        },
+        "enable_filesystem_tools": {
+          "type": "boolean",
+          "description": "Enable filesystem modification tools (disabled for cloud deployment)",
+          "default": false
+        },
+        "mode_classification_enabled": {
+          "type": "boolean",
+          "description": "Enable intelligent mode classification for user requests",
+          "default": true
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "classify_mode",
+      "description": "\nClassify user input to determine routing mode.\nReturns confidence scores for chat, do, and spec modes.\n"
+    },
+    {
+      "name": "create_spec",
+      "description": "\nCreate a new specification with requirements, design, and tasks files.\nAutomatically sets it as the current specification.\n\nArgs:\n    name: A descriptive name for the specification.\n    description: A brief description of the specification's purpose.\n    spec_id: A short, unique identifier (e.g., 'frontend', 'refactor-api').\n             If not provided, it will be generated from the name.\n"
+    },
+    {
+      "name": "set_current_spec",
+      "description": "\nSet the active specification for subsequent commands.\n\nArgs:\n    spec_id: The identifier of the specification to make active.\n"
+    },
+    {
+      "name": "add_requirement",
+      "description": "\nAdd a user story with EARS-formatted acceptance criteria to the\nspecification. Uses the current spec if spec_id is omitted.\n\nArgs:\n    as_a: The user role (for user story)\n    i_want: The desired functionality (for user story)\n    so_that: The benefit/reason (for user story)\n    spec_id: The specification identifier. If omitted, uses the current spec.\n    ears_requirements: List of EARS requirements with 'condition'\n        and 'system_response'\n"
+    },
+    {
+      "name": "update_design",
+      "description": "\nUpdate the technical design documentation for a specification.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    spec_id: The specification identifier. If omitted, uses the current spec.\n    architecture: System architecture description\n    components: List of components with name and description\n    data_models: TypeScript/interface definitions\n    sequence_diagrams: List of diagrams with title and mermaid\n        content\n"
+    },
+    {
+      "name": "list_specifications",
+      "description": "\nList all available specifications with their current status and phase,\nhighlighting the current one.\n"
+    },
+    {
+      "name": "check_initialization_status",
+      "description": "\nCheck if SpecForge is initialized and provide guidance for next steps.\nDetects missing .specifications folder, empty specifications, or incomplete\nphases.\n"
+    },
+    {
+      "name": "get_specification_details",
+      "description": "\nGet detailed information about a specific specification.\n\nArgs:\n    spec_id: The specification identifier\n    include_content: Whether to include full content of requirements,\n        design, and tasks\n"
+    },
+    {
+      "name": "start_wizard_mode",
+      "description": "\nStart the SpecForge project wizard for comprehensive specification creation.\n\nThis wizard guides you through Requirements → Design → Planning phases\nvia conversation, using MCP tools to build your specification.\n\nArgs:\n    project_name: Name of the project/feature to create\n    description: Brief description of what you're building\n    auto_detect_folder: Whether to check for existing specifications folder\n"
+    },
+    {
+      "name": "wizard_next_step",
+      "description": "\nGet guidance for the next step in the wizard for a specification.\n\nArgs:\n    spec_id: The specification identifier\n"
+    },
+    {
+      "name": "wizard_complete_phase",
+      "description": "\nMark a wizard phase as complete and get guidance for the next phase.\n\nArgs:\n    spec_id: The specification identifier\n    phase: Phase to mark complete ('requirements', 'design', 'planning')\n"
+    },
+    {
+      "name": "add_implementation_task",
+      "description": "\nAdd an implementation task to the specification's task list.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    title: Task title\n    description: Detailed task description\n    spec_id: The specification identifier. If omitted, uses the\n        current spec.\n    dependencies: List of task IDs this task depends on\n    subtasks: List of subtask descriptions\n    linked_requirements: List of requirement IDs this task\n        implements\n    estimated_hours: Estimated hours for completion\n"
+    },
+    {
+      "name": "execute_task",
+      "description": "\nExecute a specific task from the specification.\n\nIMPORTANT: Loads requirements.md and design.md context before\nexecution. Updates task status and provides execution details with\nproper context. Uses the current spec if spec_id is omitted.\n\nArgs:\n    task_id: The task identifier to execute\n    spec_id: The specification identifier. If omitted, uses the\n        current spec.\n"
+    },
+    {
+      "name": "transition_workflow_phase",
+      "description": "\nTransition the specification to a new workflow phase.\nUses the current spec if spec_id is omitted.\n\nValid phases: requirements, design, implementation_planning,\nexecution, review, completed\n\nArgs:\n    target_phase: The target workflow phase\n    spec_id: The specification identifier. If omitted, uses the\n        current spec.\n"
+    },
+    {
+      "name": "get_next_available_tasks",
+      "description": "\nGet tasks that are ready to be worked on (all dependencies\ncompleted). Uses the current spec if spec_id is omitted.\n\nArgs:\n    spec_id: The specification identifier. If omitted, uses the\n        current spec.\n"
+    },
+    {
+      "name": "generate_implementation_plan",
+      "description": "\nGenerate a comprehensive implementation plan from requirements and design.\nCreates a hierarchical task structure with checkbox format.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    spec_id: The specification identifier. If omitted, uses the current spec.\n"
+    },
+    {
+      "name": "update_implementation_plan",
+      "description": "\nUpdate existing implementation plan based on changes to requirements or design.\nPreserves completion status of existing tasks.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    spec_id: The specification identifier. If omitted, uses the current spec.\n"
+    },
+    {
+      "name": "check_task",
+      "description": "\nMark a task as completed (check the checkbox).\nAutomatically updates parent task status if all subtasks are complete.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    task_number: The hierarchical task number (e.g., \"1\", \"2.1\", \"3.2.1\")\n    spec_id: The specification identifier. If omitted, uses the current spec.\n"
+    },
+    {
+      "name": "uncheck_task",
+      "description": "\nMark a task as pending (uncheck the checkbox).\nUpdates parent task status accordingly.\nUses the current spec if spec_id is omitted.\n\nArgs:\n    task_number: The hierarchical task number (e.g., \"1\", \"2.1\", \"3.2.1\")\n    spec_id: The specification identifier. If omitted, uses the current spec.\n"
+    },
+    {
+      "name": "get_task_details",
+      "description": "\nGet detailed information about a specific task.\n\nArgs:\n    spec_id: The specification identifier\n    task_number: The hierarchical task number (e.g., \"1\", \"2.1\", \"3.2.1\")\n"
+    },
+    {
+      "name": "get_task_status_summary",
+      "description": "\nSummarize task statuses for a spec, grouped by completed,\nin_progress, and pending.\n"
+    },
+    {
+      "name": "bulk_check_tasks",
+      "description": "\nMark multiple tasks as completed.\nRequires either an explicit list of task_numbers or all_tasks=True.\n\nArgs:\n    spec_id: The specification identifier\n    task_numbers: List like [\"1\", \"2.1\", \"3.2.1\"]\n    all_tasks: If True, completes all tasks in the spec\n"
+    },
+    {
+      "name": "read_file",
+      "description": "\nRead the content of a file within the project directory.\n\nArgs:\n    path: Relative or absolute path to the file (must resolve\n        under project root).\n"
+    },
+    {
+      "name": "create_directory",
+      "description": "\nCreate a directory within the project directory (recursively).\n\nArgs:\n    path: Relative or absolute directory path (must resolve\n        under project root).\n    exist_ok: If True (default), do not error if directory already exists.\n"
+    },
+    {
+      "name": "write_file",
+      "description": "\nWrite or append UTF-8 text to a file within the project directory.\nCreates the file and parent directories if they don't exist.\n\nArgs:\n    path: Relative or absolute path to the file (must resolve\n        under project root).\n    content: Text to write.\n    mode: 'rewrite' (default) to overwrite, 'append' to append.\n"
+    },
+    {
+      "name": "edit_block",
+      "description": "\nReplace a specific block of text in a file within the project directory.\n\nArgs:\n    file_path: Path to the file to edit (must resolve under project\n        root).\n    old_string: Exact string to be replaced.\n    new_string: Replacement string.\n    expected_replacements: Expected number of occurrences to replace\n        (default: 1).\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@brwse/claude-tools-mcp",
+  "displayName": "claude-tools-mcp",
+  "description": "An MCP-version of Claude Code's tools",
+  "createdAt": "2026-01-16T07:35:19.962Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brwse/claude-tools-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

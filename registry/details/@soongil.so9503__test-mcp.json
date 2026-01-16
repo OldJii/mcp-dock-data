@@ -1,0 +1,31 @@
+{
+  "id": "@soongil.so9503/test-mcp",
+  "displayName": "test-mcp",
+  "description": "Greet anyone instantly by name. Discover the origin of 'Hello, World' via a handy reference. Simplify demos and onboarding with quick, friendly messages.",
+  "createdAt": "2026-01-16T07:32:27.485Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@soongil.so9503/test-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

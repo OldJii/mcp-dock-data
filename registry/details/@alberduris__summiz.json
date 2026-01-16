@@ -1,0 +1,37 @@
+{
+  "id": "@alberduris/summiz",
+  "displayName": "Summiz",
+  "description": "Find videos and podcasts in the Summiz catalog with concise keyword searches. Skim key insights with Quick Takes, then dive deeper with full summaries and complete transcripts. Create summaries for YouTube videos that aren’t yet covered.",
+  "createdAt": "2026-01-16T07:28:54.169Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alberduris/summiz"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search-content",
+      "description": "Search the Summiz content catalog. Returns videos and podcasts matching the query. IMPORTANT: Use SHORT keywords (1-2 words max) separated by commas. Each keyword segment should be a BIGRAM at most. Examples: 'tomato pruning, organic fertilizer' or 'container gardening' NOT 'how to grow tomatoes in containers at home'."
+    },
+    {
+      "name": "get-quick-takes",
+      "description": "Fetch Quick Takes for a specific piece of content. Quick Takes help users decide if content is worth their time. Accepts either Summiz UID (from search-content or inferred from Summiz URL) or external ID (e.g., YouTube video ID from URL). Prioritizes UID if both provided."
+    },
+    {
+      "name": "get-summary",
+      "description": "Fetch full Summary for a specific piece of content. Returns comprehensive summary with TLDR, golden nuggets, sections, and conclusion. Accepts either Summiz UID (from search-content) or external ID (e.g., YouTube video ID from URL). Prioritizes UID if both provided."
+    },
+    {
+      "name": "get-transcript",
+      "description": "Fetch the COMPLETE, FULL, UNABRIDGED transcript (every word spoken by the author). This is NOT a partial or excerpt - it is the ENTIRE transcript. CRITICAL: Use this tool when the user asks questions about the source that are NOT covered in the quick takes or summary. ALWAYS use this tool to check the full transcript from the AUTHOR as SOURCE OF TRUTH before Web Search or relying on intrinsic knowledge (assumptions without observation) to prevent HALLUCINATIONS and NON-FACTUAL information. Accepts either Summiz UID (from search-content) or external ID (e.g., YouTube video ID from URL). Prioritizes UID if both provided. Transcript OBSERVATION >>> ASSUMPTIONS. If in doubt, use this tool."
+    },
+    {
+      "name": "create-summary",
+      "description": "Create a new summary on Summiz for a YouTube video that doesn't exist in Summiz catalog yet. Use this when a user wants to create a summary about a video that isn't found in the catalog."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@misaka2f07/calc",
+  "displayName": "calc",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:40.399Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@misaka2f07/calc"
+  },
+  "connection": null,
+  "capabilities": []
+}

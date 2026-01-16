@@ -1,0 +1,12 @@
+{
+  "id": "@houtini-ai/gemini-mcp",
+  "displayName": "gemini-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:43.584Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@houtini-ai/gemini-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

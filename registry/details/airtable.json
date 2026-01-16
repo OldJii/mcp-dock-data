@@ -1,0 +1,85 @@
+{
+  "id": "airtable",
+  "displayName": "Airtable",
+  "description": "Airtable merges spreadsheet functionality with database power, enabling teams to organize projects, track tasks, and collaborate through customizable views, automation, and integrations for data management",
+  "createdAt": "2026-01-16T07:19:11.810Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/airtable"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "AIRTABLE_CREATE_BASE",
+      "description": "Creates a new Airtable base with specified tables and fields within a workspace."
+    },
+    {
+      "name": "AIRTABLE_CREATE_COMMENT",
+      "description": "Creates a new comment on a specific record within an Airtable base and table."
+    },
+    {
+      "name": "AIRTABLE_CREATE_FIELD",
+      "description": "Creates a new field within a specified table in an Airtable base."
+    },
+    {
+      "name": "AIRTABLE_CREATE_MULTIPLE_RECORDS",
+      "description": "Creates multiple new records in a specified Airtable table."
+    },
+    {
+      "name": "AIRTABLE_CREATE_RECORD",
+      "description": "Creates a new record in a specified Airtable table; field values must conform to the table's column types."
+    },
+    {
+      "name": "AIRTABLE_CREATE_TABLE",
+      "description": "Creates a new table within a specified existing Airtable base, allowing definition of its name, description, and field structure."
+    },
+    {
+      "name": "AIRTABLE_DELETE_COMMENT",
+      "description": "Deletes an existing comment from a specified record in an Airtable table."
+    },
+    {
+      "name": "AIRTABLE_DELETE_MULTIPLE_RECORDS",
+      "description": "Deletes up to 10 specified records from a table within an Airtable base."
+    },
+    {
+      "name": "AIRTABLE_DELETE_RECORD",
+      "description": "Permanently deletes a specific record from an existing table within an existing Airtable base."
+    },
+    {
+      "name": "AIRTABLE_GET_BASE_SCHEMA",
+      "description": "Retrieves the detailed schema for a specified Airtable base, including its tables, fields, field types, and configurations, using the `baseId`."
+    },
+    {
+      "name": "AIRTABLE_GET_RECORD",
+      "description": "Retrieves a specific record from a table within an Airtable base."
+    },
+    {
+      "name": "AIRTABLE_GET_USER_INFO",
+      "description": "Retrieves information, such as ID and permission scopes, for the currently authenticated Airtable user from the `/meta/whoami` endpoint."
+    },
+    {
+      "name": "AIRTABLE_LIST_BASES",
+      "description": "Retrieves all Airtable bases accessible to the authenticated user, which may include an 'offset' for pagination."
+    },
+    {
+      "name": "AIRTABLE_LIST_COMMENTS",
+      "description": "Retrieves all comments for a specific record in an Airtable table, requiring existing `baseId`, `tableIdOrName`, and `recordId`."
+    },
+    {
+      "name": "AIRTABLE_LIST_RECORDS",
+      "description": "Retrieves records from an Airtable table, with options for filtering, sorting, pagination, and specifying returned fields. Common 422 Errors and Solutions: - INVALID_FILTER_BY_FORMULA: Check field names are case-sensitive and enclosed in {}. Escape single quotes by doubling them (''). - UNKNOWN_FIELD_NAME: Verify field names exist in the table. Use Get Base Schema action to discover correct field names. Best Practices: 1. Always verify field names using Get Base Schema before using them in filters or field lists 2. Test formulas in Airtable's web interface before using them in API calls 3. Use table IDs instead of names when possible for better reliability"
+    },
+    {
+      "name": "AIRTABLE_UPDATE_MULTIPLE_RECORDS",
+      "description": "Updates multiple existing records in a specified Airtable table; these updates are not performed atomically."
+    },
+    {
+      "name": "AIRTABLE_UPDATE_RECORD",
+      "description": "Modifies specified fields of an existing record in an Airtable base and table; the base, table, and record must exist."
+    }
+  ]
+}

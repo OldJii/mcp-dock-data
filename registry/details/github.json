@@ -1,0 +1,817 @@
+{
+  "id": "github",
+  "displayName": "GitHub",
+  "description": "GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features",
+  "createdAt": "2026-01-16T07:19:06.936Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/github"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GITHUB_ACCEPT_A_REPOSITORY_INVITATION",
+      "description": "Accepts a PENDING repository invitation that has been issued to the authenticated user."
+    },
+    {
+      "name": "GITHUB_ACTIVITY_LIST_REPO_S_STARRED_BY_AUTHENTICATED_USER",
+      "description": "DEPRECATED: Lists repositories starred by the authenticated user, including star creation timestamps; use 'list_repositories_starred_by_the_authenticated_user' instead."
+    },
+    {
+      "name": "GITHUB_ACTIVITY_LIST_STARGAZERS_FOR_REPO",
+      "description": "DEPRECATED: Lists users who have starred a repository; use `list_stargazers` instead."
+    },
+    {
+      "name": "GITHUB_ACTIVITY_STAR_REPO_FOR_AUTHENTICATED_USER",
+      "description": "DEPRECATED: Stars a repository for the authenticated user; use `star_a_repository_for_the_authenticated_user` instead."
+    },
+    {
+      "name": "GITHUB_ADD_AN_EMAIL_ADDRESS_FOR_THE_AUTHENTICATED_USER",
+      "description": "Adds one or more email addresses (which will be initially unverified) to the authenticated user's GitHub account; use this to associate new emails, noting an email verified for another account will error, while an existing email for the current user is accepted."
+    },
+    {
+      "name": "GITHUB_ADD_APP_ACCESS_RESTRICTIONS",
+      "description": "Replaces GitHub App access restrictions for an existing protected branch; requires a JSON array of app slugs in the request body, where apps must be installed and have 'contents' write permissions."
+    },
+    {
+      "name": "GITHUB_ADD_A_REPOSITORY_COLLABORATOR",
+      "description": "Adds a GitHub user as a repository collaborator, or updates their permission if already a collaborator; `permission` applies to organization-owned repositories (personal ones default to 'push' and ignore this field), and an invitation may be created or permissions updated directly."
+    },
+    {
+      "name": "GITHUB_ADD_A_REPOSITORY_TO_AN_APP_INSTALLATION",
+      "description": "Adds a repository to a GitHub App installation, granting the app access; requires authenticated user to have admin rights for the repository and access to the installation."
+    },
+    {
+      "name": "GITHUB_ADD_A_SELECTED_REPOSITORY_TO_A_USER_SECRET",
+      "description": "Grants a specified repository access to an authenticated user's existing Codespaces secret, enabling Codespaces created for that repository to use the secret."
+    },
+    {
+      "name": "GITHUB_ADD_ASSIGNEES_TO_AN_ISSUE",
+      "description": "Adds or removes assignees for a GitHub issue; changes are silently ignored if the authenticated user lacks push access to the repository."
+    },
+    {
+      "name": "GITHUB_ADD_LABELS_TO_AN_ISSUE",
+      "description": "Adds labels (provided in the request body) to a repository issue; labels that do not already exist are created."
+    },
+    {
+      "name": "GITHUB_ADD_ORG_RUNNER_LABELS",
+      "description": "Adds new custom labels to an existing self-hosted runner for an organization; existing labels are not removed, and duplicates are not added."
+    },
+    {
+      "name": "GITHUB_ADD_OR_UPDATE_TEAM_MEMBERSHIP_FOR_A_USER",
+      "description": "Adds a GitHub user to a team or updates their role (member or maintainer), inviting them to the organization if not already a member; idempotent, returning current details if no change is made."
+    },
+    {
+      "name": "GITHUB_ADD_OR_UPDATE_TEAM_PROJECT_PERMISSIONS",
+      "description": "Grants or updates a team's permissions ('read', 'write', or 'admin') for a specific project, which must exist within the specified organization and be linked to it."
+    },
+    {
+      "name": "GITHUB_ADD_OR_UPDATE_TEAM_REPOSITORY_PERMISSIONS",
+      "description": "Sets or updates a team's permission level for a repository within an organization; the team must be a member of the organization."
+    },
+    {
+      "name": "GITHUB_ADD_PROJECT_COLLABORATOR",
+      "description": "Adds a specified GitHub user as a collaborator to an existing organization project with a given permission level."
+    },
+    {
+      "name": "GITHUB_ADD_REPO_TO_ORG_SECRET_WITH_SELECTED_ACCESS",
+      "description": "Adds a repository to an existing organization-level GitHub Actions secret that is configured for 'selected' repository access."
+    },
+    {
+      "name": "GITHUB_ADD_REPO_TO_ORG_SECRET_WITH_SELECTED_VISIBILITY",
+      "description": "Grants an existing repository access to an existing organization-level Dependabot secret; the repository must belong to the organization, and the call succeeds without change if access already exists."
+    },
+    {
+      "name": "GITHUB_ADD_RUNNER_LABELS",
+      "description": "Adds and appends custom labels to a self-hosted repository runner, which must be registered and active."
+    },
+    {
+      "name": "GITHUB_ADD_SELECTED_REPOSITORY_TO_AN_ORGANIZATION_SECRET",
+      "description": "Adds a repository to an organization secret's access list when the secret's visibility is 'selected'; this operation is idempotent."
+    },
+    {
+      "name": "GITHUB_ADD_SELECTED_REPOSITORY_TO_AN_ORGANIZATION_VARIABLE",
+      "description": "Grants a repository access to an organization-level GitHub Actions variable, if that variable's visibility is set to 'selected_repositories'."
+    },
+    {
+      "name": "GITHUB_ADD_SOCIAL_ACCOUNTS_FOR_THE_AUTHENTICATED_USER",
+      "description": "Adds one or more social media links (which must be valid, full URLs for platforms supported by GitHub) to the authenticated user's public GitHub profile."
+    },
+    {
+      "name": "GITHUB_ADD_STATUS_CHECK_CONTEXTS",
+      "description": "Adds status check contexts (provided in the request body, e.g., `{\"contexts\": [\"new-context\"]}`) to a protected branch, requiring these contexts to have been previously reported."
+    },
+    {
+      "name": "GITHUB_ADD_TEAM_ACCESS_RESTRICTIONS",
+      "description": "Overwrites the list of teams (and their child teams) granted push access to a protected branch; the list of team slugs must be provided in the HTTP POST request body."
+    },
+    {
+      "name": "GITHUB_ADD_USER_ACCESS_RESTRICTIONS",
+      "description": "Sets/replaces list of users allowed to push to a protected branch; usernames (e.g., `[\"user1\"]`) must be a JSON array in request body (not schema parameters), an empty array `[]` removes all restrictions. This action modifies the user access restrictions on a specific branch of a repository. Users specified in the request will be allowed to push to the branch, while an empty array will remove all restrictions."
+    },
+    {
+      "name": "GITHUB_ADD_USERS_TO_CODESPACES_ACCESS_FOR_AN_ORGANIZATION",
+      "description": "Sets or replaces the list of organization members granted Codespaces access billed to the organization; ensure the organization's billing settings allow access for selected members."
+    },
+    {
+      "name": "GITHUB_API_ROOT",
+      "description": "Retrieves a map of all top-level GitHub REST API resource URLs and their templates."
+    },
+    {
+      "name": "GITHUB_APPROVE_A_WORKFLOW_RUN_FOR_A_FORK_PULL_REQUEST",
+      "description": "Approves a workflow run from a forked repository's pull request; call this when such a run requires manual approval due to workflow configuration."
+    },
+    {
+      "name": "GITHUB_ASSIGN_AN_ORGANIZATION_ROLE_TO_A_TEAM",
+      "description": "Assigns an existing organization-level role (identified by `role_id`) to a team (identified by `team_slug`) within a GitHub organization (`org`), provided the organization, team, and role already exist."
+    },
+    {
+      "name": "GITHUB_ASSIGN_AN_ORGANIZATION_ROLE_TO_A_USER",
+      "description": "Assigns a specific organization role to a user who is a member or an outside collaborator in a GitHub organization, using a valid role ID."
+    },
+    {
+      "name": "GITHUB_AUTH_USER_DOCKER_CONFLICT_PACKAGES_LIST",
+      "description": "Lists Docker packages for the authenticated user that encountered conflicts during the Docker migration process."
+    },
+    {
+      "name": "GITHUB_BLOCK_A_USER",
+      "description": "Blocks an existing individual GitHub user (not an organization or your own account), preventing them from interacting with your account and repositories."
+    },
+    {
+      "name": "GITHUB_BLOCK_A_USER_FROM_AN_ORGANIZATION",
+      "description": "Blocks an existing GitHub user from an existing organization, preventing their contributions, collaboration, and forking of the organization's repositories."
+    },
+    {
+      "name": "GITHUB_CANCEL_A_GITHUB_PAGES_DEPLOYMENT",
+      "description": "Cancels an existing, ongoing or queued GitHub Pages deployment for a repository using its `pages_deployment_id`."
+    },
+    {
+      "name": "GITHUB_CANCEL_A_WORKFLOW_RUN",
+      "description": "Cancels a workflow run in a GitHub repository if it is in a cancellable state (e.g., 'in_progress' or 'queued')."
+    },
+    {
+      "name": "GITHUB_CHECK_A_TOKEN",
+      "description": "Checks if a GitHub App or OAuth access_token is valid for the specified client_id and retrieves its details, typically to verify its active status and grants."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_GIST_IS_STARRED",
+      "description": "Checks if a Gist, identified by `gist_id`, is starred by the authenticated user, returning an empty response (204) if starred, or a 404 error if not starred or not found."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_PERSON_IS_FOLLOWED_BY_THE_AUTHENTICATED_USER",
+      "description": "Checks if the authenticated GitHub user follows a target GitHub user; an HTTP 204 status indicates the user is followed, while an HTTP 404 status indicates the user is not followed or the target user does not exist."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_PULL_REQUEST_HAS_BEEN_MERGED",
+      "description": "Checks if a specified GitHub pull request has been merged, indicated by a 204 HTTP status (merged) or 404 (not merged/found)."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_REPOSITORY_IS_STARRED_BY_THE_AUTHENTICATED_USER",
+      "description": "DEPRECATED: Use `GITHUB_CHECK_IF_A_REPOSITORY_IS_STARRED_BY_THE_USER` instead."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_CAN_BE_ASSIGNED",
+      "description": "Verifies if a GitHub user can be assigned to issues in a repository; assignability is confirmed by an HTTP 204 (No Content) response, resulting in an empty 'data' field in the response."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_CAN_BE_ASSIGNED_TO_A_ISSUE",
+      "description": "Checks if a specified GitHub user can be assigned to a given issue within a repository."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_FOLLOWS_ANOTHER_USER",
+      "description": "Checks if a GitHub user `username` follows `target_user`; returns a 204 HTTP status if true, 404 if not or if users are invalid."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_IS_A_REPOSITORY_COLLABORATOR",
+      "description": "Checks if a user is a collaborator on a specified GitHub repository, returning a 204 status if they are, or a 404 status if they are not or if the repository/user does not exist."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_IS_BLOCKED_BY_AN_ORGANIZATION",
+      "description": "Checks if a GitHub user is blocked by an organization; a successful response (204 No Content) indicates the user IS blocked, while a 404 Not Found error indicates the user IS NOT blocked."
+    },
+    {
+      "name": "GITHUB_CHECK_IF_A_USER_IS_BLOCKED_BY_THE_AUTHENTICATED_USER",
+      "description": "Checks if the specified GitHub user is blocked by the authenticated user; a 204 No Content response indicates the user is blocked, while a 404 Not Found indicates they are not."
+    },
+    {
+      "name": "GITHUB_CHECK_PRIVATE_VULNERABILITY_REPORTING_STATUS",
+      "description": "Checks if private vulnerability reporting is enabled for the specified repository."
+    },
+    {
+      "name": "GITHUB_CHECK_TEAM_PERMISSIONS_FOR_A_PROJECT",
+      "description": "Checks if a team has 'read', 'write', or 'admin' permissions for an organization's specific classic project, returning the project's details if access is confirmed."
+    },
+    {
+      "name": "GITHUB_CHECK_TEAM_PERMISSIONS_FOR_A_REPOSITORY",
+      "description": "Checks a team's permissions for a specific repository within an organization, including permissions inherited from parent teams."
+    },
+    {
+      "name": "GITHUB_CLEAR_REPOSITORY_CACHE_BY_KEY",
+      "description": "Deletes GitHub Actions caches from a repository matching a specific `key` and an optional Git `ref`, used to manage storage or clear outdated/corrupted caches; the action succeeds even if no matching caches are found to delete."
+    },
+    {
+      "name": "GITHUB_CLEAR_SELF_HOSTED_RUNNER_ORG_LABELS",
+      "description": "Removes all custom labels from a self-hosted runner for an organization; default labels (e.g., 'self-hosted', 'linux', 'x64') will remain."
+    },
+    {
+      "name": "GITHUB_COMPARE_TWO_COMMITS",
+      "description": "Compares two commit points (commits, branches, tags, or SHAs) within a repository or across forks, using `BASE...HEAD` or `OWNER:REF...OWNER:REF` format for the `basehead` parameter."
+    },
+    {
+      "name": "GITHUB_CONFIGURE_JITRUNNER_FOR_ORG",
+      "description": "Generates a JIT configuration for a GitHub organization's new self-hosted runner to run a single job then unregister; the runner_group_id must exist."
+    },
+    {
+      "name": "GITHUB_CONFIGURE_OIDCSUBJECT_CLAIM_TEMPLATE",
+      "description": "Sets or updates the OIDC subject claim customization template for an existing GitHub organization by specifying which claims (e.g., 'repo', 'actor') form the OIDC token's subject (`sub`). This action customizes which claim keys are included in the OIDC subject claim for the specified organization. It allows for fine-tuning the content of the subject claim based on organizational needs."
+    },
+    {
+      "name": "GITHUB_CONVERT_AN_ORGANIZATION_MEMBER_TO_OUTSIDE_COLLABORATOR",
+      "description": "Converts an existing organization member, who is not an owner, to an outside collaborator, restricting their access to explicitly granted repositories."
+    },
+    {
+      "name": "GITHUB_CREATE_A_BLOB",
+      "description": "Creates a Git blob in a repository, requiring content and encoding ('utf-8' or 'base64')."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CHECK_RUN",
+      "description": "Creates a new check run for a specific commit in a repository, used by external services to report status, detailed feedback, annotations, and images directly within the GitHub UI."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CHECK_SUITE",
+      "description": "Creates a new check suite for a specific commit (`head_sha`) in an original repository (not a fork); GitHub dispatches a `check_suite` webhook event with the `requested` action upon success."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CODESPACE_FOR_THE_AUTHENTICATED_USER",
+      "description": "Creates a GitHub Codespace for the authenticated user, requiring a JSON request body with either `repository_id` (integer) or a `pull_request` object (containing `pull_request_number` (integer) and `repository_id` (integer)). This action allows users to set up a development environment quickly by creating a codespace from a specified repository or pull request."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CODESPACE_FROM_A_PULL_REQUEST",
+      "description": "Creates a GitHub Codespace for an open pull request in a Codespaces-enabled repository, with options to customize its configuration."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CODESPACE_IN_A_REPOSITORY",
+      "description": "Creates a GitHub Codespace for the authenticated user in a specified repository, which must be accessible and use a valid `devcontainer.json` if `devcontainer_path` is specified."
+    },
+    {
+      "name": "GITHUB_CREATE_A_COMMIT",
+      "description": "Creates a new commit in a GitHub repository; the `tree` SHA and any `parents` SHAs must already exist in the repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_COMMIT_COMMENT",
+      "description": "Creates a comment on a specific commit, or on a specific line if `path` and `position` are provided."
+    },
+    {
+      "name": "GITHUB_CREATE_A_COMMIT_STATUS",
+      "description": "Sets a commit's status (e.g., error, failure, pending, success from CI/CD) for a given SHA; max 1000 statuses per SHA/context."
+    },
+    {
+      "name": "GITHUB_CREATE_A_CUSTOM_ORGANIZATION_ROLE",
+      "description": "Creates a custom role with defined permissions within a GitHub organization."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DEPLOY_KEY",
+      "description": "Creates a deploy key for a repository; the repository must exist and be accessible, and the provided key must be a valid public SSH key."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DEPLOYMENT",
+      "description": "Creates a GitHub deployment for an existing repository, targeting a specific ref (branch, tag, or SHA) that must also exist within the repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DEPLOYMENT_BRANCH_POLICY",
+      "description": "Creates a deployment branch or tag policy for an existing environment in a GitHub repository, using a Ruby File.fnmatch pattern (where `*` doesn't match `/`) to specify which branches or tags are deployable."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DEPLOYMENT_STATUS",
+      "description": "Creates a status for an existing deployment, updating its operational state, associated URLs, and description."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DISCUSSION",
+      "description": "Creates a new discussion post on a specific team's page within an organization."
+    },
+    {
+      "name": "GITHUB_CREATE_A_DISCUSSION_COMMENT",
+      "description": "Creates a new comment on an existing team discussion within a GitHub organization."
+    },
+    {
+      "name": "GITHUB_CREATE_A_FORK",
+      "description": "Creates a fork of an accessible repository, optionally into a specific organization, with a new name, or copying only the default branch."
+    },
+    {
+      "name": "GITHUB_CREATE_A_GIST",
+      "description": "Creates a new gist on GitHub with provided files, an optional description, and public/secret visibility."
+    },
+    {
+      "name": "GITHUB_CREATE_A_GIST_COMMENT",
+      "description": "Creates a new comment on a specified GitHub gist."
+    },
+    {
+      "name": "GITHUB_CREATE_A_GITHUB_APP_FROM_A_MANIFEST",
+      "description": "Use this action to finalize a GitHub App's creation by exchanging the temporary `code` (received as a URL parameter during the app manifest setup redirection) for the app's full configuration details."
+    },
+    {
+      "name": "GITHUB_CREATE_A_GITHUB_PAGES_DEPLOYMENT",
+      "description": "Creates a GitHub Pages deployment for a repository using a specified artifact and OIDC token, provided GitHub Pages is enabled and the artifact (containing static assets) is accessible."
+    },
+    {
+      "name": "GITHUB_CREATE_A_GITHUB_PAGES_SITE",
+      "description": "Configures or updates GitHub Pages for a repository, setting build type and source; ensure a Pages workflow exists for 'workflow' `build_type`, or `source_branch` exists for 'legacy' or unspecified `build_type`. This action allows users to effectively manage their GitHub Pages site settings, specifying how the site is built and where the source files are located."
+    },
+    {
+      "name": "GITHUB_CREATE_A_LABEL",
+      "description": "Creates a new label in a specified GitHub repository, provided the repository exists and the user has write permissions."
+    },
+    {
+      "name": "GITHUB_CREATE_A_MILESTONE",
+      "description": "Creates a milestone in a GitHub repository for tracking progress on issues or pull requests; requires repository existence and user write permissions."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_AUTOLINK_REFERENCE_FOR_A_REPOSITORY",
+      "description": "Creates a repository autolink to automatically convert text references (e.g., 'TICKET-123') into hyperlinks, using a unique `key_prefix` and a `url_template` that includes `<num>`."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ENVIRONMENT_VARIABLE",
+      "description": "Creates an encrypted environment variable for a pre-existing environment within a GitHub repository; will fail if the variable name already exists."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ISSUE",
+      "description": "Creates a new issue in a GitHub repository, requiring the repository to exist and have issues enabled; specific fields like assignees, milestone, or labels may require push access."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ISSUE_COMMENT",
+      "description": "Creates a new comment on an existing GitHub issue or pull request within the specified repository."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ORGANIZATION_PROJECT",
+      "description": "Creates a new classic project board within a specified GitHub organization."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ORGANIZATION_REPOSITORY",
+      "description": "Creates a new repository within a specified GitHub organization, with options for detailed configuration including visibility, features, merge strategies, initial commit, and templates."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ORGANIZATION_VARIABLE",
+      "description": "Creates a new, uniquely named GitHub Actions variable for an organization, with configurable repository access visibility (all, private, or selected)."
+    },
+    {
+      "name": "GITHUB_CREATE_AN_ORGANIZATION_WEBHOOK",
+      "description": "Creates a webhook for a GitHub organization to deliver event notifications to a configured URL."
+    },
+    {
+      "name": "GITHUB_CREATE_A_PROJECT_CARD",
+      "description": "Creates a project card in a GitHub project column; the request body must contain either a `note` for a note-only card, or both `content_id` (ID of an issue or pull request) and `content_type` (e.g., 'Issue', 'PullRequest'). This action facilitates the organization of tasks and issues in a project management context within GitHub."
+    },
+    {
+      "name": "GITHUB_CREATE_A_PROJECT_COLUMN",
+      "description": "Creates a new column in a GitHub project (classic)."
+    },
+    {
+      "name": "GITHUB_CREATE_A_PULL_REQUEST",
+      "description": "Creates a pull request in a GitHub repository, requiring existing `base` and `head` branches; `title` or `issue` must be provided."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REFERENCE",
+      "description": "Creates a Git reference (e.g., a branch or tag) in a repository; the repository must not be empty prior to this operation."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REGISTRATION_TOKEN_FOR_AN_ORGANIZATION",
+      "description": "Generates a temporary (one-hour) registration token to add a new self-hosted runner to an organization for GitHub Actions."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REGISTRATION_TOKEN_FOR_A_REPOSITORY",
+      "description": "Generates a time-limited token required to register a new self-hosted runner with a specific repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_RELEASE",
+      "description": "Creates a release in a GitHub repository for a specified tag; the tag must be unique for published releases, and if a `discussion_category_name` is given, it must already exist."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REMOVE_TOKEN_FOR_AN_ORGANIZATION",
+      "description": "Generates a token, valid for one hour, to authenticate removing a self-hosted runner from an organization."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REMOVE_TOKEN_FOR_A_REPOSITORY",
+      "description": "Generates a temporary (one-hour validity) token required to unregister and remove a self-hosted runner from a repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPLY_FOR_A_REVIEW_COMMENT",
+      "description": "Posts a reply to a specific review comment on a GitHub pull request, requiring the repository, pull request, and original comment to exist, and a non-empty reply body."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_DISPATCH_EVENT",
+      "description": "Triggers a GitHub Actions workflow or a webhook on a repository by creating a repository dispatch event, allowing programmatic triggering of workflows based on events outside of GitHub."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER",
+      "description": "Creates a new repository for the authenticated user, optionally within an organization if `team_id` is specified."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_FROM_AN_UNPUBLISHED_CODESPACE",
+      "description": "Publishes the specified codespace to a new repository, using the codespace's current state as the initial commit."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_PROJECT",
+      "description": "Creates a new classic project board within a specified repository; classic projects must be enabled for the target repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_RULESET",
+      "description": "Creates a uniquely named ruleset for a repository, defining rules for branches or tags with specified enforcement, conditions, and bypass actors."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_USING_A_TEMPLATE",
+      "description": "Creates a new repository from an existing template repository; the authenticated user must have access to the template and, if creating in an organization, repository creation permissions within it."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_VARIABLE",
+      "description": "Creates a new, unencrypted variable in a repository for GitHub Actions workflows; fails if a variable with the same name already exists."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REPOSITORY_WEBHOOK",
+      "description": "Creates a webhook for a specified repository; requires admin permissions on the repository."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REVIEW_COMMENT_FOR_A_PULL_REQUEST",
+      "description": "Creates a review comment on a pull request's diff, targeting a specific line, range of lines, an entire file, or replying to an existing comment."
+    },
+    {
+      "name": "GITHUB_CREATE_A_REVIEW_FOR_A_PULL_REQUEST",
+      "description": "Creates a pull request review, allowing approval, change requests, or comments; `body` is required if `event` is `REQUEST_CHANGES` or `COMMENT`, and omitting `event` makes the review `PENDING`."
+    },
+    {
+      "name": "GITHUB_CREATE_A_SCOPED_ACCESS_TOKEN",
+      "description": "Exchanges a user-to-server token for a new, fine-grained scoped access token for a GitHub App, requiring `client_id`, `access_token`, either `target` or `target_id`, and at least one permission; for repository-specific scoping, provide either `repositories` (names) or `repository_ids` (IDs), but not both."
+    },
+    {
+      "name": "GITHUB_CREATE_A_SNAPSHOT_OF_DEPENDENCIES_FOR_A_REPOSITORY",
+      "description": "Creates a snapshot of a repository's dependencies to populate the GitHub dependency graph and enable security alerts; `sha` must be a 40-character commit ID, `ref` a fully qualified Git reference (e.g., `refs/heads/main`), and `scanned` an ISO 8601 timestamp."
+    },
+    {
+      "name": "GITHUB_CREATE_A_TAG_OBJECT",
+      "description": "Creates an annotated Git tag object in a repository, pointing to an existing Git object (commit, tree, or blob) defined by its SHA and ensuring the `type` field correctly specifies the object's type."
+    },
+    {
+      "name": "GITHUB_CREATE_A_TAG_PROTECTION_STATE_FOR_A_REPOSITORY",
+      "description": "Creates a tag protection rule for a repository using a glob pattern; note: tag protections are deprecated (sunset August 30, 2024), migrate to repository rulesets."
+    },
+    {
+      "name": "GITHUB_CREATE_A_TEAM",
+      "description": "Creates a new team in an organization, optionally with maintainers, repositories, specific privacy, notification settings, or a parent team; if `parent_team_id` is given, `privacy` must be 'closed'."
+    },
+    {
+      "name": "GITHUB_CREATE_A_TEMPORARY_PRIVATE_FORK",
+      "description": "Creates a temporary private fork of the specified repository to address a security vulnerability, linking the fork to a GHSA ID that must be specifically associated with this repository; the fork may take up to 5 minutes to become accessible."
+    },
+    {
+      "name": "GITHUB_CREATE_A_TREE",
+      "description": "Creates a new Git tree object in a repository, defining file/directory structure by specifying tree entries, optionally building on a `base_tree` SHA; all provided SHAs must be valid."
+    },
+    {
+      "name": "GITHUB_CREATE_A_USER_PROJECT",
+      "description": "Creates a new GitHub project board for the authenticated user to organize and track issues, pull requests, and notes."
+    },
+    {
+      "name": "GITHUB_CREATE_A_WORKFLOW_DISPATCH_EVENT",
+      "description": "Manually triggers a GitHub Actions workflow identified by `workflow_id` at a given `ref`, if the workflow is configured to accept `workflow_dispatch` events."
+    },
+    {
+      "name": "GITHUB_CREATE_COMMIT_SIGNATURE_PROTECTION",
+      "description": "Enables commit signature protection for a specified branch, requiring all new commits to be signed."
+    },
+    {
+      "name": "GITHUB_CREATE_DEPLOYMENT_PROTECTION_RULE",
+      "description": "Enables a custom deployment protection rule for an existing environment in a repository by linking a configured GitHub App (via `integration_id`) to control deployments."
+    },
+    {
+      "name": "GITHUB_CREATE_JIT_RUNNER_CONFIG",
+      "description": "Generates a temporary Just-In-Time (JIT) configuration for a new self-hosted GitHub Actions runner for a repository; any specified non-default `runner_group_id` must be an existing runner group accessible by the repository."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_A_CUSTOM_PROPERTY_FOR_AN_ORGANIZATION",
+      "description": "Creates a new custom property (name must be unique for creation) or updates an existing one for an organization to define metadata for its repositories."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_AN_ENVIRONMENT",
+      "description": "Creates a new environment or updates an existing one in a GitHub repository, allowing configuration of deployment protection rules such as wait timers and reviewers; ensure `environment_name` is URL-encoded if it contains special characters."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_AN_ENVIRONMENT_SECRET",
+      "description": "Creates or updates an environment secret with an `encrypted_value` that was encrypted using the public key identified by `key_id` for the specified environment."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_AN_ORGANIZATION_SECRET",
+      "description": "Creates or updates an organization secret for GitHub Actions, requiring its value to be pre-encrypted via LibSodium using the organization's public key."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_A_REPOSITORY_SECRET",
+      "description": "Creates or updates a GitHub Actions secret within a specific repository; use `encrypted_value` and `key_id` to set or change its value."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_A_SECRET_FOR_THE_AUTHENTICATED_USER",
+      "description": "Creates or updates a Codespaces secret for the authenticated user; `encrypted_value` must be encrypted with the public key (ID: `key_id`) from GitHub's 'Get public key for the authenticated user' endpoint."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_CUSTOM_PROPERTIES_FOR_AN_ORGANIZATION",
+      "description": "Creates new custom property schemas or updates existing ones in bulk for a specified organization; each property definition must include `property_name` and `value_type`."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_CUSTOM_PROPERTY_VALUES_FOR_A_REPOSITORY",
+      "description": "Creates or updates up to 30 custom property values for a repository; custom properties must be predefined at the organization or repository level, and setting a property's value to `null` removes it."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_FILE_CONTENTS",
+      "description": "Creates a new file or updates an existing file in a GitHub repository; SHA can be provided to validate file updates, automatically fetched if not provided."
+    },
+    {
+      "name": "GITHUB_CREATE_OR_UPDATE_REPO_SECRET_WITH_ENCRYPTED_VALUE",
+      "description": "Creates or updates a Dependabot secret in a repository using an `encrypted_value` (pre-encrypted with LibSodium using the repository's Dependabot public key) and its corresponding `key_id`. This action allows you to securely manage secrets for a given repository, ensuring that sensitive data remains protected during the update process. By providing the encrypted value alongside the key ID, you can seamlessly maintain the necessary credentials for your repository's operations."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_A_COMMIT_COMMENT",
+      "description": "Creates an emoji reaction for a commit comment; if the user has already reacted with the same content, details of the existing reaction are returned."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_AN_ISSUE",
+      "description": "Creates a reaction for a specified issue within a GitHub repository."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_AN_ISSUE_COMMENT",
+      "description": "Creates a reaction for a specific comment on an issue within a GitHub repository."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_A_PULL_REQUEST_REVIEW_COMMENT",
+      "description": "Adds a specified reaction to a pull request review comment within a GitHub repository."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_A_RELEASE",
+      "description": "Creates an emoji reaction for a specific, existing release in a GitHub repository."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_A_TEAM_DISCUSSION",
+      "description": "Creates a reaction for a team discussion within a GitHub organization."
+    },
+    {
+      "name": "GITHUB_CREATE_REACTION_FOR_A_TEAM_DISCUSSION_COMMENT",
+      "description": "Adds a reaction to a team discussion comment, requiring the specified organization, team, discussion, and comment to exist."
+    },
+    {
+      "name": "GITHUB_CREATE_UPDATE_ORG_SECRET_WITH_LIB_SODIUM",
+      "description": "Creates or updates a Dependabot organization secret, requiring the secret value to be pre-encrypted with LibSodium using the organization's public key obtained from the 'Get an organization public key' endpoint."
+    },
+    {
+      "name": "GITHUB_CUSTOMIZE_OIDC_SUBJECT_CLAIM_TEMPLATE",
+      "description": "Retrieves the OpenID Connect (OIDC) subject claim customization template for a repository, which defines the `sub` claim structure in OIDC tokens for GitHub Actions workflows; returns the default configuration if no customization is applied."
+    },
+    {
+      "name": "GITHUB_CUSTOM_OIDCSUBJECT_CLAIM_TEMPLATE",
+      "description": "Retrieves the OpenID Connect (OIDC) subject claim customization template for a GitHub organization, which defines how the `sub` claim in OIDC tokens for workflows is constructed."
+    },
+    {
+      "name": "GITHUB_CUSTOM_OIDCSUBJECT_CLAIM_TEMPLATE_SETTER",
+      "description": "Sets the OpenID Connect (OIDC) subject claim template for a GitHub repository, allowing use of the default template or a custom one defined by `include_claim_keys` if `use_default` is `false`."
+    },
+    {
+      "name": "GITHUB_DECLINE_A_REPOSITORY_INVITATION",
+      "description": "Declines a specific, pending repository invitation for the authenticated user, identified by its `invitation_id`."
+    },
+    {
+      "name": "GITHUB_DELETE_ACCESS_RESTRICTIONS",
+      "description": "Removes all user, team, and app-based access restrictions from a protected branch."
+    },
+    {
+      "name": "GITHUB_DELETE_A_CODE_SCANNING_ANALYSIS_FROM_A_REPOSITORY",
+      "description": "Deletes a specific code scanning analysis by its ID from a repository; `confirm_delete` must be `true` if it's the last analysis of its type for a given tool and reference to prevent data loss."
+    },
+    {
+      "name": "GITHUB_DELETE_A_CODESPACE_FOR_THE_AUTHENTICATED_USER",
+      "description": "Deletes a specific codespace owned by the authenticated user; this is a destructive action and the codespace must exist."
+    },
+    {
+      "name": "GITHUB_DELETE_A_CODESPACE_FROM_THE_ORGANIZATION",
+      "description": "Permanently deletes a specific codespace belonging to a member of the specified organization."
+    },
+    {
+      "name": "GITHUB_DELETE_A_COMMIT_COMMENT",
+      "description": "Deletes a specific commit comment, identified by its `comment_id`, from the specified repository; the comment must exist."
+    },
+    {
+      "name": "GITHUB_DELETE_A_COMMIT_COMMENT_REACTION",
+      "description": "Deletes a reaction from a commit comment in a GitHub repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_CUSTOM_ORGANIZATION_ROLE",
+      "description": "Deletes a custom organization role (which should not be actively assigned) by its ID; a 204 No Content response indicates success."
+    },
+    {
+      "name": "GITHUB_DELETE_A_DEPLOY_KEY",
+      "description": "Deletes a specific deploy key from a repository; to change a key's properties or access scope, the existing key must be deleted and a new one created."
+    },
+    {
+      "name": "GITHUB_DELETE_A_DEPLOYMENT",
+      "description": "Permanently deletes a specified *inactive* deployment from a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_DEPLOYMENT_BRANCH_POLICY",
+      "description": "Deletes a specific deployment branch or tag policy, identified by its ID, from a given environment within a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_DISCUSSION",
+      "description": "Deletes a specific team discussion, identified by its number, from an organization's team."
+    },
+    {
+      "name": "GITHUB_DELETE_A_DISCUSSION_COMMENT",
+      "description": "Deletes a specific comment from an existing team discussion within an organization, provided the specified organization, team, discussion, and comment all exist."
+    },
+    {
+      "name": "GITHUB_DELETE_ADMIN_BRANCH_PROTECTION",
+      "description": "Removes admin enforcement from a protected branch (branch name cannot contain wildcard characters) in a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_FILE",
+      "description": "Deletes a file by path from a GitHub repository, requiring a commit message and the file's current blob SHA to confirm the deletion."
+    },
+    {
+      "name": "GITHUB_DELETE_A_GIST",
+      "description": "Permanently deletes an existing GitHub gist, specified by its `gist_id`; this action is destructive and cannot be undone."
+    },
+    {
+      "name": "GITHUB_DELETE_A_GIST_COMMENT",
+      "description": "Deletes a specific comment from a GitHub Gist using its `gist_id` and `comment_id`."
+    },
+    {
+      "name": "GITHUB_DELETE_A_GITHUB_PAGES_SITE",
+      "description": "Deletes the GitHub Pages site for the specified repository; completes without error if no site is currently enabled."
+    },
+    {
+      "name": "GITHUB_DELETE_A_LABEL",
+      "description": "Permanently removes an existing label from a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_MILESTONE",
+      "description": "Deletes the specified milestone if it exists; this operation is idempotent, typically returning a 404 if the milestone is not found or already deleted."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_APP_AUTHORIZATION",
+      "description": "Revokes a single, specific OAuth access token for an OAuth App, not all authorizations for the app."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_APP_TOKEN",
+      "description": "Revokes an OAuth access token for a GitHub App, if the app exists and the token was issued to it."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ARTIFACT",
+      "description": "Deletes a GitHub artifact by its ID within a repository, typically resulting in an empty response (HTTP 204 No Content) on success."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_AUTOLINK_REFERENCE_FROM_A_REPOSITORY",
+      "description": "Deletes a specific autolink reference (which automatically links external resource IDs like JIRA-123 to URLs) from the specified repository."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_EMAIL_ADDRESS_FOR_THE_AUTHENTICATED_USER",
+      "description": "Sends an empty request body to `DELETE /user/emails` to attempt deletion of user email addresses; the API typically requires specific emails, so outcome may vary."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ENVIRONMENT",
+      "description": "Deletes an existing deployment environment from an existing repository."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ENVIRONMENT_SECRET",
+      "description": "Deletes an existing and accessible secret from a specified environment within a GitHub repository, returning an empty dictionary on success or error details otherwise."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ENVIRONMENT_VARIABLE",
+      "description": "Deletes a named environment variable from a specified, existing environment within a GitHub repository."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ISSUE_COMMENT",
+      "description": "Permanently deletes a specific comment by its ID from an issue or pull request, if the repository exists and the comment ID is valid."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ISSUE_COMMENT_REACTION",
+      "description": "Deletes a reaction from an issue comment in a repository; the repository, comment, and reaction must exist."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ISSUE_REACTION",
+      "description": "Permanently removes a specific reaction from an issue in a GitHub repository."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ORGANIZATION",
+      "description": "Deletes a GitHub organization and its repositories; this is a destructive action and the organization name will be unavailable for reuse for approximately 90 days."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ORGANIZATION_SECRET",
+      "description": "Permanently deletes a secret from a GitHub organization, making it inaccessible to GitHub Actions workflows or other tools."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ORGANIZATION_VARIABLE",
+      "description": "Deletes a named GitHub Actions variable from a specified organization."
+    },
+    {
+      "name": "GITHUB_DELETE_AN_ORGANIZATION_WEBHOOK",
+      "description": "Deletes a specific webhook, identified by `hook_id`, from an existing organization."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PACKAGE_FOR_AN_ORGANIZATION",
+      "description": "Deletes a specific package in an organization; cannot delete public packages with over 5,000 downloads."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PACKAGE_FOR_A_USER",
+      "description": "Deletes a package owned by the specified user, requiring admin permissions for the authenticated user; deletion of public packages with over 5,000 downloads may require GitHub support."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PACKAGE_FOR_THE_AUTHENTICATED_USER",
+      "description": "Permanently deletes a specific package owned by the authenticated user; public packages downloaded over 5,000 times cannot be deleted via this API."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PACKAGE_VERSION_FOR_THE_AUTHENTICATED_USER",
+      "description": "Deletes an existing package version associated with the authenticated user."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PENDING_REVIEW_FOR_A_PULL_REQUEST",
+      "description": "Deletes a pending (unsubmitted) review from a pull request; this is only possible if the review has not yet been submitted."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PROJECT",
+      "description": "Deletes the GitHub project specified by `project_id` if the project exists and the projects feature is enabled for its repository or organization; a successful deletion results in a 204 No Content response."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PROJECT_CARD",
+      "description": "Deletes a project card from a GitHub 'Project (classic)'; this operation is idempotent."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PROJECT_COLUMN",
+      "description": "Deletes a project column by its ID from a GitHub project (classic); this is a destructive operation."
+    },
+    {
+      "name": "GITHUB_DELETE_A_PULL_REQUEST_COMMENT_REACTION",
+      "description": "Deletes a specific reaction from a pull request review comment, provided the comment and reaction exist on that comment within the specified repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REFERENCE",
+      "description": "Deletes a Git reference from a repository; 'ref' must be fully qualified (e.g., 'refs/heads/branch' or 'refs/tags/tag')."
+    },
+    {
+      "name": "GITHUB_DELETE_A_RELEASE",
+      "description": "Permanently deletes a specific release, its assets, and potentially its associated Git tag from a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_RELEASE_ASSET",
+      "description": "Deletes a specific release asset from a GitHub repository; this action is idempotent."
+    },
+    {
+      "name": "GITHUB_DELETE_A_RELEASE_REACTION",
+      "description": "Deletes a reaction from a GitHub release, provided the repository, release, and reaction exist."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY",
+      "description": "Permanently deletes the specified repository; this is a destructive, irreversible action that requires admin privileges for the repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_INVITATION",
+      "description": "Deletes an active repository invitation, permanently revoking a user's access to collaborate on the specified repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_RULESET",
+      "description": "Permanently deletes a repository ruleset."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_SECRET",
+      "description": "Deletes a named GitHub Actions secret from a specified repository; this operation is destructive and idempotent, and requires the repository to exist."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_SUBSCRIPTION",
+      "description": "Deletes the authenticated user's subscription to a specified repository if it exists, effectively 'unwatching' it."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_VARIABLE",
+      "description": "Deletes a named variable (e.g., for GitHub Actions workflows) from a repository; the repository and the variable must already exist."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REPOSITORY_WEBHOOK",
+      "description": "Deletes a specific webhook from a repository."
+    },
+    {
+      "name": "GITHUB_DELETE_A_REVIEW_COMMENT_FOR_A_PULL_REQUEST",
+      "description": "Deletes a specific pull request review comment."
+    },
+    {
+      "name": "GITHUB_DELETE_A_SECRET_FOR_THE_AUTHENTICATED_USER",
+      "description": "Deletes an existing Codespaces secret for the authenticated user by `secret_name`; this is a destructive, irreversible, and idempotent operation."
+    },
+    {
+      "name": "GITHUB_DELETE_A_SELF_HOSTED_RUNNER_FROM_AN_ORGANIZATION",
+      "description": "Deletes an existing and registered self-hosted runner from an organization, typically returning 204 No Content on success."
+    },
+    {
+      "name": "GITHUB_DELETE_A_SELF_HOSTED_RUNNER_FROM_A_REPOSITORY",
+      "description": "Removes a specific self-hosted runner (by `runner_id`) from a repository, if registered there; this is idempotent."
+    },
+    {
+      "name": "GITHUB_DELETE_A_TAG_PROTECTION_STATE_FOR_A_REPOSITORY",
+      "description": "Permanently deletes a specific tag protection rule, identified by its ID, from the given repository."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "@superseoworld/mcp-spotify",
+  "displayName": "Spotify Server",
+  "description": "Access Spotify's music catalog and interact with tracks, albums, and artists.",
+  "createdAt": "2026-01-16T07:29:57.658Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@superseoworld/mcp-spotify"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "spotifyClientId",
+        "spotifyClientSecret"
+      ],
+      "properties": {
+        "spotifyClientId": {
+          "type": "string",
+          "description": "Spotify API Client ID"
+        },
+        "spotifyClientSecret": {
+          "type": "string",
+          "description": "Spotify API Client Secret"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_access_token",
+      "description": "Get a valid Spotify access token for API requests"
+    },
+    {
+      "name": "search",
+      "description": "Search for tracks, albums, artists, or playlists"
+    },
+    {
+      "name": "get_artist",
+      "description": "Get Spotify catalog information for an artist"
+    },
+    {
+      "name": "get_multiple_artists",
+      "description": "Get Spotify catalog information for multiple artists"
+    },
+    {
+      "name": "get_artist_top_tracks",
+      "description": "Get Spotify catalog information about an artist's top tracks"
+    },
+    {
+      "name": "get_artist_related_artists",
+      "description": "Get Spotify catalog information about artists similar to a given artist"
+    },
+    {
+      "name": "get_artist_albums",
+      "description": "Get Spotify catalog information about an artist's albums"
+    },
+    {
+      "name": "get_album",
+      "description": "Get Spotify catalog information for an album"
+    },
+    {
+      "name": "get_album_tracks",
+      "description": "Get Spotify catalog information for an album's tracks"
+    },
+    {
+      "name": "get_multiple_albums",
+      "description": "Get Spotify catalog information for multiple albums"
+    },
+    {
+      "name": "get_track",
+      "description": "Get Spotify catalog information for a track"
+    },
+    {
+      "name": "get_available_genres",
+      "description": "Get a list of available genres for recommendations"
+    },
+    {
+      "name": "get_new_releases",
+      "description": "Get a list of new album releases featured in Spotify"
+    },
+    {
+      "name": "get_recommendations",
+      "description": "Get track recommendations based on seed tracks, artists, or genres"
+    },
+    {
+      "name": "get_audiobook",
+      "description": "Get Spotify catalog information for an audiobook"
+    },
+    {
+      "name": "get_multiple_audiobooks",
+      "description": "Get Spotify catalog information for multiple audiobooks"
+    },
+    {
+      "name": "get_audiobook_chapters",
+      "description": "Get Spotify catalog information about an audiobook's chapters"
+    },
+    {
+      "name": "get_playlist",
+      "description": "Get a playlist owned by a Spotify user"
+    },
+    {
+      "name": "get_playlist_tracks",
+      "description": "Get full details of the tracks of a playlist"
+    },
+    {
+      "name": "get_playlist_items",
+      "description": "Get full details of the items of a playlist"
+    },
+    {
+      "name": "modify_playlist",
+      "description": "Change a playlist's name and public/private state"
+    },
+    {
+      "name": "add_tracks_to_playlist",
+      "description": "Add one or more tracks to a playlist"
+    },
+    {
+      "name": "remove_tracks_from_playlist",
+      "description": "Remove one or more tracks from a playlist"
+    },
+    {
+      "name": "get_current_user_playlists",
+      "description": "Get a list of the playlists owned or followed by the current Spotify user"
+    },
+    {
+      "name": "get_featured_playlists",
+      "description": "Get a list of Spotify featured playlists"
+    },
+    {
+      "name": "get_category_playlists",
+      "description": "Get a list of Spotify playlists tagged with a particular category"
+    }
+  ]
+}

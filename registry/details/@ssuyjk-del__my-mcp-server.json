@@ -1,0 +1,42 @@
+{
+  "id": "@ssuyjk-del/my-mcp-server",
+  "displayName": "my-mcp-server",
+  "description": "Jumpstart your workflow with a ready-to-run TypeScript starter featuring examples for math, greetings, time queries, image generation, and code review. Customize actions, resources, and prompts to fit your needs. Speed up prototyping by extending the included patterns.",
+  "createdAt": "2026-01-16T07:20:43.015Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ssuyjk-del/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "hfToken": {
+          "type": "string",
+          "description": "Hugging Face API token for image generation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "Returns a greeting message in the specified language"
+    },
+    {
+      "name": "calc",
+      "description": "Performs basic arithmetic operations on two numbers"
+    },
+    {
+      "name": "time",
+      "description": "Returns the current system date and time"
+    },
+    {
+      "name": "generate_image",
+      "description": "Generates an image from a text prompt using FLUX.1-schnell model"
+    }
+  ]
+}

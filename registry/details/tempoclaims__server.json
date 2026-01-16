@@ -1,0 +1,12 @@
+{
+  "id": "tempoclaims/server",
+  "displayName": "server",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:10.525Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/tempoclaims/server"
+  },
+  "connection": null,
+  "capabilities": []
+}

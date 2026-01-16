@@ -1,0 +1,12 @@
+{
+  "id": "@dankniight/api-football-mcp-server",
+  "displayName": "api-football",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:33.423Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dankniight/api-football-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

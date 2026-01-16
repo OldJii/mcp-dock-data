@@ -1,0 +1,39 @@
+{
+  "id": "@kamath/mention-mcp",
+  "displayName": "#docs",
+  "description": "A documentation MCP server, such that you can ask a question like:\n\n- \"How do I use #stagehand to create a computer use agent?\"\n- \"How do I write a client component using #aisdk and the useChat hook?\"",
+  "createdAt": "2026-01-16T07:22:35.150Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/mention-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hashtag_mention",
+      "description": "If a user says something like #{page}, like #aisdk, call this tool with the #'d value"
+    },
+    {
+      "name": "list_docs_servers",
+      "description": "List all available documentation servers and their corresponding URLs, if a user asks for what documentation servers are available, call this tool"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@datacool/mcp_server",
+  "displayName": "mcp_server",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:37.937Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@datacool/mcp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

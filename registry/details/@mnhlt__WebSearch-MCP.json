@@ -1,0 +1,36 @@
+{
+  "id": "@mnhlt/WebSearch-MCP",
+  "displayName": "WebSearch",
+  "description": "Enable your AI assistants to perform real-time web searches and retrieve the latest information on any topic. Integrate seamlessly with the WebSearch Crawler API for efficient and accurate search results. Enhance your applications with up-to-date knowledge and insights from the web. This is self-hosted service, free\nYou will need to selfhost web api on local or vps. follow [guide here](https://github.com/mnhlt/WebSearch-MCP/blob/main/README.md)",
+  "createdAt": "2026-01-16T07:25:23.991Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mnhlt/WebSearch-MCP"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "apiUrl": {
+          "type": "string",
+          "description": "The URL of the WebSearch Crawler API.",
+          "default": "http://localhost:3001"
+        },
+        "maxSearchResult": {
+          "type": "number",
+          "description": "Maximum number of search results to return.",
+          "default": 5
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "web_search",
+      "description": "Search the web for information.\nUse this tool when you need to search the web for information.\nYou can use this tool to search for news, blogs, or all types of information.\nYou can also use this tool to search for information about a specific company or product.\nYou can also use this tool to search for information about a specific person.\nYou can also use this tool to search for information about a specific product.\nYou can also use this tool to search for information about a specific company.\nYou can also use this tool to search for information about a specific event.\nYou can also use this tool to search for information about a specific location.\nYou can also use this tool to search for information about a specific thing.\nIf you request search with 1 result number and failed, retry with bigger results number."
+    }
+  ]
+}

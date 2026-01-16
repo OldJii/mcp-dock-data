@@ -1,0 +1,25 @@
+{
+  "id": "@aixsignal/aix-smithly",
+  "displayName": "Hello",
+  "description": "Generate friendly, personalized greetings instantly. Validate your setup quickly or liven up demos with a simple hello. Add a warm, human touch to interactions with minimal effort.",
+  "createdAt": "2026-01-16T07:31:06.598Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aixsignal/aix-smithly"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

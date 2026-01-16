@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/wikimedia-search-images",
+  "displayName": "wikimedia-search-images",
+  "description": "Find relevant images from Wikimedia Commons with direct download links. Quickly compare options to choose the best visual. Retrieve full-resolution files for your projects.",
+  "createdAt": "2026-01-16T07:31:52.634Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/wikimedia-search-images"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "wikimedia_search_images",
+      "description": "Search for images on Wikimedia Commons with metadata including download URLs and optional thumbnail composite image for visual comparison. Use results to e.g. fetch full images that are relevant for your task."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "@Streen9/react-mcp",
+  "displayName": "React MCP",
+  "description": "Enable Claude AI to manage and interact with React applications seamlessly.",
+  "createdAt": "2026-01-16T07:24:42.463Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Streen9/react-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create-react-app",
+      "description": "Create a new React application"
+    },
+    {
+      "name": "run-react-app",
+      "description": "Run a React application in development mode"
+    },
+    {
+      "name": "run-command",
+      "description": "Run a terminal command"
+    },
+    {
+      "name": "get-process-output",
+      "description": "Get the output from a running or completed process"
+    },
+    {
+      "name": "stop-process",
+      "description": "Stop a running process"
+    },
+    {
+      "name": "list-processes",
+      "description": "List all running processes"
+    },
+    {
+      "name": "edit-file",
+      "description": "Create or edit a file"
+    },
+    {
+      "name": "read-file",
+      "description": "Read the contents of a file"
+    },
+    {
+      "name": "install-package",
+      "description": "Install a npm package in a project"
+    }
+  ]
+}

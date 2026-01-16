@@ -1,0 +1,12 @@
+{
+  "id": "@shin902/mcp-video-understanding",
+  "displayName": "mcp-video-understanding",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:37.402Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shin902/mcp-video-understanding"
+  },
+  "connection": null,
+  "capabilities": []
+}

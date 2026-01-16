@@ -1,0 +1,188 @@
+{
+  "id": "xiaobenyang-com/philippine-geocoding",
+  "displayName": "philippine-geocoding",
+  "description": "Explore the Philippines’ administrative hierarchy from island groups to barangays. Search places by name, validate official codes, and retrieve parent-child relationships for accurate data and workflows. Power location pickers, address validation, and regional insights with reliable coverage.",
+  "createdAt": "2026-01-16T07:27:14.760Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/philippine-geocoding"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_island_groups",
+      "description": "List all island groups in the Philippines"
+    },
+    {
+      "name": "get_island_group",
+      "description": "Get specific island group by code"
+    },
+    {
+      "name": "get_island_group_regions",
+      "description": "Get all regions within a specific island group"
+    },
+    {
+      "name": "get_island_group_provinces",
+      "description": "Get all provinces within a specific island group"
+    },
+    {
+      "name": "get_island_group_cities",
+      "description": "Get all cities within a specific island group"
+    },
+    {
+      "name": "get_island_group_municipalities",
+      "description": "Get all municipalities within a specific island group"
+    },
+    {
+      "name": "get_island_group_barangays",
+      "description": "Get all barangays within a specific island group"
+    },
+    {
+      "name": "get_regions",
+      "description": "List all regions in the Philippines"
+    },
+    {
+      "name": "get_region",
+      "description": "Get specific region by code"
+    },
+    {
+      "name": "get_region_provinces",
+      "description": "Get all provinces within a specific region"
+    },
+    {
+      "name": "get_region_districts",
+      "description": "Get all districts within a specific region"
+    },
+    {
+      "name": "get_region_cities",
+      "description": "Get all cities within a specific region"
+    },
+    {
+      "name": "get_region_municipalities",
+      "description": "Get all municipalities within a specific region"
+    },
+    {
+      "name": "get_region_cities_municipalities",
+      "description": "Get all cities and municipalities within a specific region"
+    },
+    {
+      "name": "get_region_sub_municipalities",
+      "description": "Get all sub-municipalities within a specific region"
+    },
+    {
+      "name": "get_region_barangays",
+      "description": "Get all barangays within a specific region"
+    },
+    {
+      "name": "get_provinces",
+      "description": "List all provinces in the Philippines"
+    },
+    {
+      "name": "get_province",
+      "description": "Get specific province by code"
+    },
+    {
+      "name": "get_province_cities",
+      "description": "Get all cities within a specific province"
+    },
+    {
+      "name": "get_province_municipalities",
+      "description": "Get all municipalities within a specific province"
+    },
+    {
+      "name": "get_province_cities_municipalities",
+      "description": "Get all cities and municipalities within a specific province"
+    },
+    {
+      "name": "get_province_sub_municipalities",
+      "description": "Get all sub-municipalities within a specific province"
+    },
+    {
+      "name": "get_province_barangays",
+      "description": "Get all barangays within a specific province"
+    },
+    {
+      "name": "get_cities",
+      "description": "List all cities in the Philippines"
+    },
+    {
+      "name": "get_city",
+      "description": "Get specific city by code"
+    },
+    {
+      "name": "get_city_barangays",
+      "description": "Get all barangays within a specific city"
+    },
+    {
+      "name": "get_municipalities",
+      "description": "List all municipalities in the Philippines"
+    },
+    {
+      "name": "get_municipality",
+      "description": "Get specific municipality by code"
+    },
+    {
+      "name": "get_municipality_barangays",
+      "description": "Get all barangays within a specific municipality"
+    },
+    {
+      "name": "get_barangays",
+      "description": "List all barangays in the Philippines"
+    },
+    {
+      "name": "get_barangay",
+      "description": "Get specific barangay by code"
+    },
+    {
+      "name": "get_districts",
+      "description": "List all districts in the Philippines"
+    },
+    {
+      "name": "get_district",
+      "description": "Get specific district by code"
+    },
+    {
+      "name": "get_district_cities",
+      "description": "Get all cities within a specific district"
+    },
+    {
+      "name": "get_district_municipalities",
+      "description": "Get all municipalities within a specific district"
+    },
+    {
+      "name": "get_district_cities_municipalities",
+      "description": "Get all cities and municipalities within a specific district"
+    },
+    {
+      "name": "get_district_sub_municipalities",
+      "description": "Get all sub-municipalities within a specific district"
+    },
+    {
+      "name": "get_district_barangays",
+      "description": "Get all barangays within a specific district"
+    },
+    {
+      "name": "search_by_name",
+      "description": "Search for geographic entities by name across all levels (regions, provinces, cities, municipalities, barangays)"
+    },
+    {
+      "name": "get_hierarchy",
+      "description": "Get complete geographic hierarchy for a specific code (shows parent entities)"
+    },
+    {
+      "name": "validate_code",
+      "description": "Validate if a geographic code exists and return its type"
+    }
+  ]
+}

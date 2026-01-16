@@ -1,0 +1,41 @@
+{
+  "id": "@cindyloo/dropbox-mcp-server",
+  "displayName": "Dropbox Explorer",
+  "description": "Search, browse, and read your Dropbox files. Find documents by name or content, list folders, and pull detailed file info. Search within selected files and get contextual snippets to speed up research.",
+  "createdAt": "2026-01-16T07:31:45.934Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cindyloo/dropbox-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_files",
+      "description": "\n    Search for files in Dropbox by name or content.\n    \n    Args:\n        query: Search query (searches file names and content)\n        file_types: File types to search (\"all\", \"pdf\", \"docx\", \"txt\", or comma-separated list)\n        max_results: Maximum number of results to return\n    "
+    },
+    {
+      "name": "list_files",
+      "description": "\n    List files and folders in a Dropbox directory.\n    \n    Args:\n        folder_path: Path to the folder (empty string for root)\n        max_files: Maximum number of items to return\n    "
+    },
+    {
+      "name": "read_file",
+      "description": "\n    Read and return the full content of a file.\n    \n    Args:\n        file_path: Full path to the file in Dropbox\n        max_length: Maximum characters to return (0 for no limit)\n    "
+    },
+    {
+      "name": "get_file_info",
+      "description": "\n    Get detailed information about a specific file.\n    \n    Args:\n        file_path: Full path to the file in Dropbox\n    "
+    },
+    {
+      "name": "search_file_content",
+      "description": "\n    Search for text within specific files.\n    \n    Args:\n        file_paths: List of file paths to search in\n        query: Text to search for\n        context_chars: Number of characters of context around matches\n    "
+    }
+  ]
+}

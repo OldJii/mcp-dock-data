@@ -1,0 +1,32 @@
+{
+  "id": "@ibraheem4/linear-mcp",
+  "displayName": "Linear",
+  "description": "Interact with Linear's API for managing issues, projects, and teams.",
+  "createdAt": "2026-01-16T07:25:57.427Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ibraheem4/linear-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "linearApiKey",
+        "githubToken"
+      ],
+      "properties": {
+        "githubToken": {
+          "type": "string",
+          "description": "Your GitHub Personal Access Token"
+        },
+        "linearApiKey": {
+          "type": "string",
+          "description": "Your Linear API key"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

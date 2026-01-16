@@ -1,0 +1,12 @@
+{
+  "id": "@Guepard-Corp/guepard-mcp-server",
+  "displayName": "guepard-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:51.936Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Guepard-Corp/guepard-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "@ttpears/mcp-mysql",
+  "displayName": "MySQL Explorer",
+  "description": "An intelligent MySQL MCP Server with expert data analytics capabilities and comprehensive caching. Goes beyond basic querying to provide in-depth database analysis, relationship mapping, and user behavior insights with high-performance caching system.",
+  "createdAt": "2026-01-16T07:22:32.025Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ttpears/mcp-mysql"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "MYSQL_PASSWORD"
+      ],
+      "properties": {
+        "MYSQL_SSL": {
+          "type": "boolean",
+          "description": "Enable SSL connection (default host)",
+          "default": false
+        },
+        "MYSQL_HOST": {
+          "type": "string",
+          "description": "MySQL server hostname (default host)",
+          "default": "localhost"
+        },
+        "MYSQL_PORT": {
+          "type": "number",
+          "description": "MySQL server port (default host)",
+          "default": 3306
+        },
+        "MYSQL_USER": {
+          "type": "string",
+          "description": "MySQL username (default host)",
+          "default": "root"
+        },
+        "MYSQL_DATABASE": {
+          "type": "string",
+          "description": "Default database name (optional)"
+        },
+        "MYSQL_PASSWORD": {
+          "type": "string",
+          "description": "MySQL password (required for default host)"
+        },
+        "MCP_MYSQL_CACHE_ENABLED": {
+          "type": "boolean",
+          "description": "Enable intelligent caching system",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mysql_query",
+      "description": "Execute a read-only SQL query against MySQL databases. Supports SELECT, SHOW, DESCRIBE, and EXPLAIN statements."
+    },
+    {
+      "name": "mysql_schema",
+      "description": "Get comprehensive schema information including tables, relationships, constraints, and data patterns."
+    },
+    {
+      "name": "mysql_analyze_tables",
+      "description": "Analyze table relationships and suggest optimal query patterns for user behavior analysis."
+    },
+    {
+      "name": "mysql_inventory",
+      "description": "Get comprehensive inventory of all configured MySQL hosts and their accessible databases."
+    },
+    {
+      "name": "mysql_cross_host_query",
+      "description": "Execute queries across multiple MySQL hosts and combine results for comprehensive analysis."
+    },
+    {
+      "name": "mysql_discover_analytics",
+      "description": "Intelligently discover and analyze database structure with expert data analytics insights. Use summary mode first for large servers."
+    }
+  ]
+}

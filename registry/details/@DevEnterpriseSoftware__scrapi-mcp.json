@@ -1,0 +1,12 @@
+{
+  "id": "@DevEnterpriseSoftware/scrapi-mcp",
+  "displayName": "scrapi-mcp",
+  "description": "Web scraping using ScrAPI. Extract website content that is difficult to access because of bot detection, captchas or even geolocation restrictions.",
+  "createdAt": "2026-01-16T07:35:31.169Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DevEnterpriseSoftware/scrapi-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

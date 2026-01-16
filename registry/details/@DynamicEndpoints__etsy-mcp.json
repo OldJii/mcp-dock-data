@@ -1,0 +1,113 @@
+{
+  "id": "@DynamicEndpoints/etsy-mcp",
+  "displayName": "etsy-mcp",
+  "description": "Search Etsy listings, fetch shop details, and explore trending products. Create and update listings, manage inventory, images, and shop sections when authorized. Streamline product research and shop operations directly from your workspace.",
+  "createdAt": "2026-01-16T07:26:11.645Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/etsy-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Etsy API key (Keystring) from the Etsy Developer Portal. Falls back to ETSY_API_KEY environment variable."
+        },
+        "shopId": {
+          "type": "string",
+          "description": "Your Etsy shop ID (optional, for faster shop operations). Falls back to ETSY_SHOP_ID environment variable."
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "OAuth access token for shop management features (optional, required for write operations). Falls back to ETSY_ACCESS_TOKEN environment variable."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_listings",
+      "description": "Search for active Etsy listings. Supports keyword search with various filters."
+    },
+    {
+      "name": "get_listing",
+      "description": "Get detailed information about a specific Etsy listing by its ID."
+    },
+    {
+      "name": "get_shop",
+      "description": "Get information about an Etsy shop by shop ID."
+    },
+    {
+      "name": "get_shop_listings",
+      "description": "Get all active listings from a specific shop."
+    },
+    {
+      "name": "search_shops",
+      "description": "Search for Etsy shops by shop name."
+    },
+    {
+      "name": "get_listing_inventory",
+      "description": "Get inventory information for a listing, including available quantities and variations."
+    },
+    {
+      "name": "get_listing_images",
+      "description": "Get all images associated with a specific listing."
+    },
+    {
+      "name": "get_shop_sections",
+      "description": "Get all sections/categories for a specific shop."
+    },
+    {
+      "name": "get_trending_listings",
+      "description": "Get current trending listings on Etsy."
+    },
+    {
+      "name": "find_shops",
+      "description": "Find shops by location or other criteria."
+    },
+    {
+      "name": "create_listing",
+      "description": "Create a new listing in your Etsy shop. Requires OAuth access token."
+    },
+    {
+      "name": "update_listing",
+      "description": "Update an existing listing. Requires OAuth access token."
+    },
+    {
+      "name": "delete_listing",
+      "description": "Delete a listing from your shop. Requires OAuth access token."
+    },
+    {
+      "name": "update_listing_inventory",
+      "description": "Update inventory for a listing (quantities, prices, SKUs). Requires OAuth access token."
+    },
+    {
+      "name": "upload_listing_image",
+      "description": "Upload an image to a listing. Requires OAuth access token and image file."
+    },
+    {
+      "name": "create_shop_section",
+      "description": "Create a new shop section/category. Requires OAuth access token."
+    },
+    {
+      "name": "update_shop_section",
+      "description": "Update a shop section. Requires OAuth access token."
+    },
+    {
+      "name": "delete_shop_section",
+      "description": "Delete a shop section. Requires OAuth access token."
+    },
+    {
+      "name": "update_shop",
+      "description": "Update shop information (title, announcement, etc.). Requires OAuth access token."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multicam/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:41.071Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/multicam/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

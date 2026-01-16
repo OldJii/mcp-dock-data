@@ -1,0 +1,73 @@
+{
+  "id": "@BigVik193/reddit-ads-mcp-api",
+  "displayName": "Reddit Ads",
+  "description": "Manage Reddit advertising end to end across accounts, funding methods, campaigns, ad groups, and ads. Create and launch campaigns from new or existing posts with precise targeting and bidding. Generate on-brand images from text prompts and explore profiles and posts to inform creative.",
+  "createdAt": "2026-01-16T07:29:51.052Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BigVik193/reddit-ads-mcp-api"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "REDDABLE_API_KEY"
+      ],
+      "properties": {
+        "REDDABLE_API_KEY": {
+          "type": "string",
+          "description": "Long-term API key for Reddable MCP access"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getAdAccounts",
+      "description": "Get all available Reddit ad accounts for a business"
+    },
+    {
+      "name": "getFundingInstruments",
+      "description": "Get all payment methods/funding instruments for an ad account"
+    },
+    {
+      "name": "getCampaigns",
+      "description": "Get all campaigns for an ad account"
+    },
+    {
+      "name": "getAdGroups",
+      "description": "Get all ad groups for an ad account"
+    },
+    {
+      "name": "getProfiles",
+      "description": "Get all Reddit profiles/accounts available for an ad account"
+    },
+    {
+      "name": "createCampaign",
+      "description": "Create a new Reddit advertising campaign"
+    },
+    {
+      "name": "createAdGroup",
+      "description": "Create a new Reddit ad group with targeting and bidding options"
+    },
+    {
+      "name": "createPost",
+      "description": "Create a new Reddit post for advertising"
+    },
+    {
+      "name": "createAd",
+      "description": "Create a Reddit ad using the official Reddit Ads API"
+    },
+    {
+      "name": "getAds",
+      "description": "Get all ads from a Reddit ad account"
+    },
+    {
+      "name": "generateImage",
+      "description": "Generate an image from a text description using Google's Gemini Flash Image Preview"
+    }
+  ]
+}

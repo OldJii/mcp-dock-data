@@ -1,0 +1,44 @@
+{
+  "id": "@mazah81-gif/my-mcp-server-2025_01",
+  "displayName": "Greetings & Utilities",
+  "description": "Greet people in multiple languages and perform quick math. Generate images from text prompts to visualize ideas fast. Create focused code review prompts to streamline development.",
+  "createdAt": "2026-01-16T07:29:03.519Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mazah81-gif/my-mcp-server-2025_01"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "HF_TOKEN"
+      ],
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API token for image generation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "Greet a user in their specified language"
+    },
+    {
+      "name": "calculator",
+      "description": "Perform basic arithmetic operations"
+    },
+    {
+      "name": "image_generation",
+      "description": "Generate an image from a text prompt using AI"
+    }
+  ]
+}

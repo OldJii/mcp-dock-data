@@ -1,0 +1,12 @@
+{
+  "id": "@seecretly/beeeeper",
+  "displayName": "beeeeper",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:18.550Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@seecretly/beeeeper"
+  },
+  "connection": null,
+  "capabilities": []
+}

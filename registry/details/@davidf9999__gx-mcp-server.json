@@ -1,0 +1,48 @@
+{
+  "id": "@davidf9999/gx-mcp-server",
+  "displayName": "Great Expectations Data Quality Server",
+  "description": "Expose Great Expectations data-quality checks as callable tools for LLM agents. Load datasets, define validation rules, and run data quality checks programmatically to integrate robust data validation into automated workflows. Support multiple data sources, authentication methods, and transport modes for flexible deployment.",
+  "createdAt": "2026-01-16T07:32:22.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@davidf9999/gx-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "description": "No configuration necessary"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "load_dataset",
+      "description": "Load data (CSV string, URL, or local file) into memory and return a handle.\n\nArgs:\n    source: Path to file, URL, or inline CSV string\n    source_type: Type of source - \"file\", \"url\", or \"inline\"\n\nArgs:\n    source: Path to file, URL, or inline CSV string\n    source_type: Type of source - \"file\", \"url\", or \"inline\"\n    max_rows: Maximum rows to read (None for all)\n    use_polars: Use ``polars.scan_csv`` for reading if available\n\nReturns:\n    DatasetHandle: Handle to the loaded dataset for use in other tools\n\nExamples:\n    - File: load_dataset(\"/path/to/data.csv\", \"file\")\n    - URL: load_dataset(\"https://example.com/data.csv\", \"url\")\n    - Inline: load_dataset(\"x,y\\n1,2\\n3,4\", \"inline\")"
+    },
+    {
+      "name": "create_suite",
+      "description": "Create a named ExpectationSuite, optionally profiled from a dataset.\n\nArgs:\n    suite_name: Name for the new expectation suite\n    dataset_handle: Handle to dataset (currently unused, for future profiling)\n    profiler: Whether to auto-generate expectations via profiling (deprecated)\n\nReturns:\n    SuiteHandle: Handle to the created suite\n\nNote:\n    Profiler functionality is deprecated in Great Expectations 1.5+.\n    Create empty suites and add expectations manually using add_expectation.\n\nDeprecated:\n    The 'profiler' argument is deprecated and will be removed in a future release."
+    },
+    {
+      "name": "add_expectation",
+      "description": "Add a single expectation to an existing suite (or create it).\n\nArgs:\n    suite_name: Name of the expectation suite\n    expectation_type: Type of expectation (e.g., \"expect_column_values_to_be_in_set\")\n    kwargs: Parameters for the expectation (e.g., {\"column\": \"status\", \"value_set\": [\"active\", \"inactive\"]})\n\nReturns:\n    ToolResponse: Success/failure status and message\n\nExamples:\n    - Column values in set: add_expectation(\"my_suite\", \"expect_column_values_to_be_in_set\", {\"column\": \"status\", \"value_set\": [\"A\", \"B\"]})\n    - Column not null: add_expectation(\"my_suite\", \"expect_column_values_to_not_be_null\", {\"column\": \"id\"})\n    - Table row count: add_expectation(\"my_suite\", \"expect_table_row_count_to_be_between\", {\"min_value\": 1, \"max_value\": 1000})"
+    },
+    {
+      "name": "get_version",
+      "description": "Return the API version for MCP server."
+    },
+    {
+      "name": "run_checkpoint",
+      "description": "Run a validation checkpoint against a dataset using an expectation suite.\n\nArgs:\n    suite_name: Name of the expectation suite to validate against\n    dataset_handle: Handle to the dataset to validate\n    checkpoint_name: Optional name for the checkpoint (unused currently)\n\nReturns:\n    ValidationResult: Contains validation_id for retrieving detailed results\n\nNote:\n    Use get_validation_result() with the returned validation_id to get detailed results."
+    },
+    {
+      "name": "get_validation_result",
+      "description": "Fetch detailed validation results for a prior validation run.\n\nArgs:\n    validation_id: ID returned from run_checkpoint()\n\nReturns:\n    ValidationResultDetail: Detailed validation results including statistics and individual expectation results"
+    },
+    {
+      "name": "ping",
+      "description": "Return basic health status."
+    }
+  ]
+}

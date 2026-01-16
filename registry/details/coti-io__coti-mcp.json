@@ -1,0 +1,12 @@
+{
+  "id": "coti-io/coti-mcp",
+  "displayName": "coti-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:35.355Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/coti-io/coti-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

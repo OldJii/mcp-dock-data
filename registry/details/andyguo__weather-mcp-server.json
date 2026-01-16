@@ -1,0 +1,12 @@
+{
+  "id": "andyguo/weather-mcp-server",
+  "displayName": "weather-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:05.443Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/andyguo/weather-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

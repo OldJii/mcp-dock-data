@@ -1,0 +1,84 @@
+{
+  "id": "@alexcz-a11y/tessie-mcp-fixx",
+  "displayName": "Tessie Insights （fork from keithah/tessie-mcp）",
+  "description": "🚗 Transform your Tesla ownership with intelligent analytics, cost optimization, and predictive insights through the Tessie API. Get smart charging reminders, efficiency trends, and comprehensive vehicle intelligence.",
+  "createdAt": "2026-01-16T07:27:41.912Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alexcz-a11y/tessie-mcp-fixx"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "TESSIE_API_KEY"
+      ],
+      "properties": {
+        "TESSIE_API_KEY": {
+          "type": "string",
+          "description": "Your Tessie API token from https://my.tessie.com/settings/api"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_vehicle_current_state",
+      "description": "Get the current state of a vehicle including location, battery level, odometer reading"
+    },
+    {
+      "name": "get_driving_history",
+      "description": "Get driving history for a vehicle within a date range"
+    },
+    {
+      "name": "get_weekly_mileage",
+      "description": "Calculate total miles driven in a specific week or time period"
+    },
+    {
+      "name": "analyze_latest_drive",
+      "description": "Analyze the most recent drive with comprehensive metrics including duration, battery consumption, FSD usage, and drive merging for stops <7 minutes"
+    },
+    {
+      "name": "analyze_charging_costs",
+      "description": "Analyze charging sessions and costs from driving history, with recommendations to save money"
+    },
+    {
+      "name": "calculate_trip_cost",
+      "description": "Calculate the cost and environmental impact of completed trips with gas comparison and optimization tips"
+    },
+    {
+      "name": "estimate_future_trip",
+      "description": "Estimate cost and charging strategy for a planned trip based on distance and current battery level"
+    },
+    {
+      "name": "analyze_commute_patterns",
+      "description": "Detect regular commute routes and analyze efficiency trends, time patterns, and costs"
+    },
+    {
+      "name": "analyze_efficiency_trends",
+      "description": "Analyze driving efficiency trends over time with weather, speed, and time pattern insights"
+    },
+    {
+      "name": "get_smart_charging_reminders",
+      "description": "Get intelligent charging reminders and optimization strategy based on current vehicle state, usage patterns, and conditions"
+    },
+    {
+      "name": "get_vehicles",
+      "description": "List all vehicles in the Tessie account"
+    },
+    {
+      "name": "get_tire_pressure",
+      "description": "Get current tire pressure readings for all four tires with status indicators"
+    },
+    {
+      "name": "natural_language_query",
+      "description": "Process natural language queries about your vehicle data (e.g., \"How many miles did I drive last week?\")"
+    }
+  ]
+}

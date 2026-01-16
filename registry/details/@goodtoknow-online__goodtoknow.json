@@ -1,0 +1,12 @@
+{
+  "id": "@goodtoknow-online/goodtoknow",
+  "displayName": "goodtoknow",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:17.426Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@goodtoknow-online/goodtoknow"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "@Junwoo-Seo-1998/ssafy-bob-mcp",
+  "displayName": "SSAFY Lunch Menu",
+  "description": "Check daily SSAFY cafeteria menus by date. Get floor-specific lunch options to plan meals at your location. Set a default floor for faster access.",
+  "createdAt": "2026-01-16T07:21:45.436Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Junwoo-Seo-1998/ssafy-bob-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "default_floor": {
+          "type": "string",
+          "description": "자주 이용하는 식당 층을 설정합니다. (예: '10F', '20F')",
+          "default": null
+        }
+      },
+      "description": "SSAFY 식단 정보 서비스의 사용자 세션 설정을 정의합니다.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_meal_menu",
+      "description": "지정된 날짜(YYYY-MM-DD)의 SSAFY 식단 정보를 요일과 함께 포장하여 반환합니다."
+    }
+  ]
+}

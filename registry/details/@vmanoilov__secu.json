@@ -1,0 +1,12 @@
+{
+  "id": "@vmanoilov/secu",
+  "displayName": "secu",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:27.008Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vmanoilov/secu"
+  },
+  "connection": null,
+  "capabilities": []
+}

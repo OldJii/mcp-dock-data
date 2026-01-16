@@ -1,0 +1,12 @@
+{
+  "id": "@chipsan/prueba1",
+  "displayName": "prueba1",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:37.405Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chipsan/prueba1"
+  },
+  "connection": null,
+  "capabilities": []
+}

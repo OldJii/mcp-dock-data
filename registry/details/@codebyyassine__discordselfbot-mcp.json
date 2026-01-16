@@ -1,0 +1,157 @@
+{
+  "id": "@codebyyassine/discordselfbot-mcp",
+  "displayName": "Discord Selfbot MCP Server",
+  "description": "Enable your agents to interact with Discord through a selfbot interface using the Model Context Protocol. Automate and extend Discord functionalities by integrating MCP tools and resources seamlessly. Enhance your Discord automation workflows with this MCP server implementation.",
+  "createdAt": "2026-01-16T07:25:21.541Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@codebyyassine/discordselfbot-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "token"
+      ],
+      "properties": {
+        "botId": {
+          "type": "string",
+          "description": "Default bot ID for slash commands (optional)"
+        },
+        "token": {
+          "type": "string",
+          "description": "Discord bot token for authentication"
+        },
+        "guildId": {
+          "type": "string",
+          "description": "Default Discord server ID (optional)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_server_info",
+      "description": "Get detailed discord server information"
+    },
+    {
+      "name": "get_user_id_by_name",
+      "description": "Get a Discord user's ID by username in a guild for ping usage <@id>."
+    },
+    {
+      "name": "list_channels",
+      "description": "List of all channels"
+    },
+    {
+      "name": "create_text_channel",
+      "description": "Create a new text channel"
+    },
+    {
+      "name": "delete_channel",
+      "description": "Delete a channel"
+    },
+    {
+      "name": "send_message",
+      "description": "Send a message to a specific channel"
+    },
+    {
+      "name": "read_messages",
+      "description": "Read recent message history from a specific channel"
+    },
+    {
+      "name": "edit_message",
+      "description": "Edit a message from a specific channel"
+    },
+    {
+      "name": "delete_message",
+      "description": "Delete a message from a specific channel"
+    },
+    {
+      "name": "send_private_message",
+      "description": "Send a private message to a specific user"
+    },
+    {
+      "name": "read_private_messages",
+      "description": "Read recent message history from a specific user"
+    },
+    {
+      "name": "add_reaction",
+      "description": "Add a reaction (emoji) to a specific message"
+    },
+    {
+      "name": "remove_reaction",
+      "description": "Remove a specified reaction (emoji) from a message"
+    },
+    {
+      "name": "list_roles",
+      "description": "List all roles in a Discord server"
+    },
+    {
+      "name": "create_role",
+      "description": "Create a new role in a Discord server"
+    },
+    {
+      "name": "delete_role",
+      "description": "Delete a role from a Discord server"
+    },
+    {
+      "name": "add_role_to_member",
+      "description": "Add a role to a guild member"
+    },
+    {
+      "name": "remove_role_from_member",
+      "description": "Remove a role from a guild member"
+    },
+    {
+      "name": "create_category",
+      "description": "Create a new category for channels"
+    },
+    {
+      "name": "delete_category",
+      "description": "Delete a category"
+    },
+    {
+      "name": "find_category",
+      "description": "Find a category ID using name and server ID"
+    },
+    {
+      "name": "list_channels_in_category",
+      "description": "List of channels in a specific category"
+    },
+    {
+      "name": "create_webhook",
+      "description": "Create a new webhook on a specific channel"
+    },
+    {
+      "name": "delete_webhook",
+      "description": "Delete a webhook"
+    },
+    {
+      "name": "list_webhooks",
+      "description": "List of webhooks on a specific channel"
+    },
+    {
+      "name": "send_webhook_message",
+      "description": "Send a message via webhook"
+    },
+    {
+      "name": "send_slash_command",
+      "description": "Send a slash command to a bot in a channel. Returns the complete raw message object with all embeds, attachments, and metadata. Bot ID is optional if configured as default."
+    },
+    {
+      "name": "get_bot_commands",
+      "description": "Get available slash commands for a specific bot (experimental)"
+    },
+    {
+      "name": "find_channel",
+      "description": "Find a channel type and ID using name and server ID"
+    }
+  ]
+}

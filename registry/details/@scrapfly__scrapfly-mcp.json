@@ -1,0 +1,55 @@
+{
+  "id": "@scrapfly/scrapfly-mcp",
+  "displayName": "scrapfly-mcp",
+  "description": "Scrapes a web page given its URL for HTML or Text and Markdown (LLM accessible), powered by smart residential prox rotation and anti-bot bypass capabilities.",
+  "createdAt": "2026-01-16T07:26:12.194Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@scrapfly/scrapfly-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Scrapfly API key from https://scrapfly.io/dashboard"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "info_account",
+      "description": "Get subscription, usage, limits. Use for quotas/billing/concurrency. Avoid for content scraping."
+    },
+    {
+      "name": "info_api_key",
+      "description": "Return the Users' ScrapFly API key"
+    },
+    {
+      "name": "scraping_instruction_enhanced",
+      "description": "Return critical instructions for scraping tools"
+    },
+    {
+      "name": "screenshot",
+      "description": "Screenshot a URL."
+    },
+    {
+      "name": "web_get_page",
+      "description": "Quick page fetch with sane defaults. Use tool scraping_instruction_enhanced before using this tool. Use when you just need the content fast."
+    },
+    {
+      "name": "web_scrape",
+      "description": "Scrape a URL with full control. Use tool scraping_instruction_enhanced before using this tool. Prefer web_get_page for quick fetch"
+    }
+  ]
+}

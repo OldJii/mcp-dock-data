@@ -1,0 +1,12 @@
+{
+  "id": "keap",
+  "displayName": "Keap",
+  "description": "Keap (formerly Infusionsoft) combines CRM, marketing automation, and e-commerce, helping small businesses manage leads, automate campaigns, and boost sales",
+  "createdAt": "2026-01-16T07:33:10.847Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/keap"
+  },
+  "connection": null,
+  "capabilities": []
+}

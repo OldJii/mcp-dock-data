@@ -1,0 +1,48 @@
+{
+  "id": "@yjqian19/personal-mcp-exif",
+  "displayName": "EXIF Extractor",
+  "description": "Extract EXIF metadata from JPG and PNG images. Reveal camera details, exposure settings, dimensions, and optional GPS data. Streamline photo audits, provenance checks, and technical reviews.",
+  "createdAt": "2026-01-16T07:22:28.575Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yjqian19/personal-mcp-exif"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ExifConfig",
+      "properties": {
+        "timeout": {
+          "type": "integer",
+          "description": "Request timeout in seconds",
+          "default": 30
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes, default 50MB",
+          "default": 52428800
+        },
+        "include_location": {
+          "type": "boolean",
+          "description": "Include location information (GPS)",
+          "default": false
+        },
+        "include_technical": {
+          "type": "boolean",
+          "description": "Include technical parameters (aperture, shutter, etc.)",
+          "default": true
+        }
+      },
+      "description": "EXIF extractor configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_exif",
+      "description": "Extract EXIF information from image URL or Base64 data"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "@skymoore/grokipedia-mcp",
+  "displayName": "grokipedia-mcp",
+  "description": "Search and retrieve Grokipedia articles with filters, full content, and citations. Explore related pages and extract sections to quickly gather relevant knowledge. Run guided workflows to research topics, find sources, and compare subjects.",
+  "createdAt": "2026-01-16T07:20:38.481Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skymoore/grokipedia-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "Host for the server to bind to",
+          "default": "0.0.0.0"
+        },
+        "port": {
+          "type": "number",
+          "description": "Port to run the server on",
+          "default": 8888
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Search for articles in Grokipedia with optional filtering and sorting."
+    },
+    {
+      "name": "get_page",
+      "description": "Get complete page information including metadata, content preview, and citations summary."
+    },
+    {
+      "name": "get_page_content",
+      "description": "Get only the article content without citations or metadata."
+    },
+    {
+      "name": "get_page_citations",
+      "description": "Get the citations list for a specific page."
+    },
+    {
+      "name": "get_related_pages",
+      "description": "Get pages that are linked from the specified page."
+    },
+    {
+      "name": "get_page_section",
+      "description": "Extract a specific section from an article by header name."
+    },
+    {
+      "name": "get_page_sections",
+      "description": "Get a list of all section headers in an article."
+    }
+  ]
+}

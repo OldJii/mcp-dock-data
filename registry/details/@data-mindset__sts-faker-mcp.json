@@ -1,0 +1,944 @@
+{
+  "id": "@data-mindset/sts-faker-mcp",
+  "displayName": "sts-faker-mcp",
+  "description": "Generate realistic fake data across 23 categories, from people and finance to internet, images, and more. Accelerate testing, prototyping, seeding, and demos with hundreds of ready-made generators. Customize formats like names, addresses, dates, colors, and IDs to match your scenarios.",
+  "createdAt": "2026-01-16T07:20:04.045Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@data-mindset/sts-faker-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "airline-airline-iataCode",
+      "description": "Generates a random airline IATA code."
+    },
+    {
+      "name": "airline-airline-name",
+      "description": "Generates a random airline name."
+    },
+    {
+      "name": "airline-airport-iataCode",
+      "description": "Generates a random airport IATA code."
+    },
+    {
+      "name": "airline-airport-name",
+      "description": "Generates a random airport name."
+    },
+    {
+      "name": "airline-airplane-iataTypeCode",
+      "description": "Generates a random airplane IATA type code."
+    },
+    {
+      "name": "airline-airplane-name",
+      "description": "Generates a random airplane model name."
+    },
+    {
+      "name": "airline-recordLocator",
+      "description": "Generates a random record locator (booking reference number)."
+    },
+    {
+      "name": "airline-seat",
+      "description": "Generates a random seat number."
+    },
+    {
+      "name": "airline-aircraftType",
+      "description": "Returns a random aircraft type."
+    },
+    {
+      "name": "airline-flightNumber",
+      "description": "Returns a random flight number."
+    },
+    {
+      "name": "animal-dog",
+      "description": "Returns a random dog breed."
+    },
+    {
+      "name": "animal-cat",
+      "description": "Returns a random cat breed."
+    },
+    {
+      "name": "animal-snake",
+      "description": "Returns a random snake species."
+    },
+    {
+      "name": "animal-bear",
+      "description": "Returns a random bear species."
+    },
+    {
+      "name": "animal-lion",
+      "description": "Returns a random lion species."
+    },
+    {
+      "name": "animal-cetacean",
+      "description": "Returns a random cetacean species."
+    },
+    {
+      "name": "animal-horse",
+      "description": "Returns a random horse breed."
+    },
+    {
+      "name": "animal-bird",
+      "description": "Returns a random bird species."
+    },
+    {
+      "name": "animal-cow",
+      "description": "Returns a random cow species."
+    },
+    {
+      "name": "animal-fish",
+      "description": "Returns a random fish species."
+    },
+    {
+      "name": "animal-crocodilia",
+      "description": "Returns a random crocodilian species."
+    },
+    {
+      "name": "animal-insect",
+      "description": "Returns a random insect species."
+    },
+    {
+      "name": "animal-rabbit",
+      "description": "Returns a random rabbit species."
+    },
+    {
+      "name": "animal-rodent",
+      "description": "Returns a random rodent breed."
+    },
+    {
+      "name": "animal-type",
+      "description": "Returns a random animal type."
+    },
+    {
+      "name": "animal-petName",
+      "description": "Returns a random pet name."
+    },
+    {
+      "name": "book-author",
+      "description": "Returns a random author name."
+    },
+    {
+      "name": "book-format",
+      "description": "Returns a random book format."
+    },
+    {
+      "name": "book-genre",
+      "description": "Returns a random genre."
+    },
+    {
+      "name": "book-publisher",
+      "description": "Returns a random publisher."
+    },
+    {
+      "name": "book-series",
+      "description": "Returns a random series."
+    },
+    {
+      "name": "book-title",
+      "description": "Returns a random title."
+    },
+    {
+      "name": "color-human",
+      "description": "Returns a random human-readable color name."
+    },
+    {
+      "name": "color-space",
+      "description": "Returns a random color space name from the worldwide accepted color spaces."
+    },
+    {
+      "name": "color-cssSupportedFunction",
+      "description": "Returns a random css supported color function name."
+    },
+    {
+      "name": "color-cssSupportedSpace",
+      "description": "Returns a random css supported color space name."
+    },
+    {
+      "name": "color-rgb",
+      "description": "Returns an RGB color."
+    },
+    {
+      "name": "color-cmyk",
+      "description": "Returns a CMYK color."
+    },
+    {
+      "name": "color-hsl",
+      "description": "Returns an HSL color."
+    },
+    {
+      "name": "color-hwb",
+      "description": "Returns an HWB color."
+    },
+    {
+      "name": "color-lab",
+      "description": "Returns a LAB (CIELAB) color."
+    },
+    {
+      "name": "color-lch",
+      "description": "Returns an LCH color."
+    },
+    {
+      "name": "color-colorByCSSColorSpace",
+      "description": "Returns a random color based on CSS color space specified."
+    },
+    {
+      "name": "commerce-department",
+      "description": "Returns a department inside a shop."
+    },
+    {
+      "name": "commerce-productName",
+      "description": "Generates a random descriptive product name."
+    },
+    {
+      "name": "commerce-price",
+      "description": "Generates a price between min and max (inclusive)."
+    },
+    {
+      "name": "commerce-productAdjective",
+      "description": "Returns an adjective describing a product."
+    },
+    {
+      "name": "commerce-productMaterial",
+      "description": "Returns a material of a product."
+    },
+    {
+      "name": "commerce-product",
+      "description": "Returns a short product name."
+    },
+    {
+      "name": "commerce-productDescription",
+      "description": "Returns a product description."
+    },
+    {
+      "name": "commerce-isbn",
+      "description": "Returns a random ISBN identifier."
+    },
+    {
+      "name": "company-name",
+      "description": "Generates a random company name."
+    },
+    {
+      "name": "company-catchPhrase",
+      "description": "Generates a random catch phrase that can be displayed to an end user."
+    },
+    {
+      "name": "company-buzzPhrase",
+      "description": "Generates a random buzz phrase that can be used to demonstrate data being viewed by a manager."
+    },
+    {
+      "name": "company-catchPhraseAdjective",
+      "description": "Returns a random catch phrase adjective that can be displayed to an end user."
+    },
+    {
+      "name": "company-catchPhraseDescriptor",
+      "description": "Returns a random catch phrase descriptor that can be displayed to an end user."
+    },
+    {
+      "name": "company-catchPhraseNoun",
+      "description": "Returns a random catch phrase noun that can be displayed to an end user."
+    },
+    {
+      "name": "company-buzzAdjective",
+      "description": "Returns a random buzz adjective that can be used to demonstrate data being viewed by a manager."
+    },
+    {
+      "name": "company-buzzVerb",
+      "description": "Returns a random buzz verb that can be used to demonstrate data being viewed by a manager."
+    },
+    {
+      "name": "company-buzzNoun",
+      "description": "Returns a random buzz noun that can be used to demonstrate data being viewed by a manager."
+    },
+    {
+      "name": "database-column",
+      "description": "Returns a random database column name."
+    },
+    {
+      "name": "database-type",
+      "description": "Returns a random database column type."
+    },
+    {
+      "name": "database-collation",
+      "description": "Returns a random database collation."
+    },
+    {
+      "name": "database-engine",
+      "description": "Returns a random database engine."
+    },
+    {
+      "name": "database-mongodbObjectId",
+      "description": "Returns a MongoDB ObjectId string."
+    },
+    {
+      "name": "date-anytime",
+      "description": "Generates a random date that can be either in the past or in the future."
+    },
+    {
+      "name": "date-past",
+      "description": "Generates a random date in the past."
+    },
+    {
+      "name": "date-future",
+      "description": "Generates a random date in the future."
+    },
+    {
+      "name": "date-between",
+      "description": "Generates a random date between the given boundaries."
+    },
+    {
+      "name": "date-betweens",
+      "description": "Generates random dates between the given boundaries. The dates will be returned in an array sorted in chronological order."
+    },
+    {
+      "name": "date-recent",
+      "description": "Generates a random date in the recent past."
+    },
+    {
+      "name": "date-soon",
+      "description": "Generates a random date in the near future."
+    },
+    {
+      "name": "date-month",
+      "description": "Returns a random name of a month."
+    },
+    {
+      "name": "date-weekday",
+      "description": "Returns a random day of the week."
+    },
+    {
+      "name": "date-timeZone",
+      "description": "Returns a random IANA time zone name."
+    },
+    {
+      "name": "date-birthdate",
+      "description": "Returns a random birthdate. By default, the birthdate is generated for an adult between 18 and 80 years old. But you can customize the 'age' range or the 'year' range to generate a more specific birthdate."
+    },
+    {
+      "name": "finance-accountName",
+      "description": "Generates a random account name."
+    },
+    {
+      "name": "finance-accountNumber",
+      "description": "Generates a random account number."
+    },
+    {
+      "name": "finance-amount",
+      "description": "Generates a random amount between the given bounds (inclusive)."
+    },
+    {
+      "name": "finance-bic",
+      "description": "Generates a random SWIFT/BIC code based on the ISO-9362 format."
+    },
+    {
+      "name": "finance-bitcoinAddress",
+      "description": "Generates a random Bitcoin address."
+    },
+    {
+      "name": "finance-creditCardCVV",
+      "description": "Generates a random credit card CVV."
+    },
+    {
+      "name": "finance-creditCardIssuer",
+      "description": "Returns a random credit card issuer."
+    },
+    {
+      "name": "finance-creditCardNumber",
+      "description": "Generates a random credit card number."
+    },
+    {
+      "name": "finance-currency",
+      "description": "Returns a random currency object, containing code, name, symbol, and numericCode properties."
+    },
+    {
+      "name": "finance-currencyCode",
+      "description": "Returns a random currency code."
+    },
+    {
+      "name": "finance-currencyName",
+      "description": "Returns a random currency name."
+    },
+    {
+      "name": "finance-currencyNumericCode",
+      "description": "Returns a random currency numeric code."
+    },
+    {
+      "name": "finance-currencySymbol",
+      "description": "Returns a random currency symbol."
+    },
+    {
+      "name": "finance-ethereumAddress",
+      "description": "Creates a random, non-checksum Ethereum address."
+    },
+    {
+      "name": "finance-iban",
+      "description": "Generates a random IBAN."
+    },
+    {
+      "name": "finance-litecoinAddress",
+      "description": "Generates a random Litecoin address."
+    },
+    {
+      "name": "finance-maskedNumber",
+      "description": "Generates a random masked number."
+    },
+    {
+      "name": "finance-pin",
+      "description": "Generates a random PIN."
+    },
+    {
+      "name": "finance-routingNumber",
+      "description": "Generates a random routing number."
+    },
+    {
+      "name": "finance-transactionDescription",
+      "description": "Generates a random transaction description."
+    },
+    {
+      "name": "finance-transactionType",
+      "description": "Returns a random transaction type."
+    },
+    {
+      "name": "food-adjective",
+      "description": "Generates a random dish adjective."
+    },
+    {
+      "name": "food-description",
+      "description": "Generates a random dish description."
+    },
+    {
+      "name": "food-dish",
+      "description": "Generates a random dish name."
+    },
+    {
+      "name": "food-ethnicCategory",
+      "description": "Generates a random food's ethnic category."
+    },
+    {
+      "name": "food-fruit",
+      "description": "Generates a random fruit name."
+    },
+    {
+      "name": "food-ingredient",
+      "description": "Generates a random ingredient name."
+    },
+    {
+      "name": "food-meat",
+      "description": "Generates a random meat."
+    },
+    {
+      "name": "food-spice",
+      "description": "Generates a random spice name."
+    },
+    {
+      "name": "food-vegetable",
+      "description": "Generates a random vegetable name."
+    },
+    {
+      "name": "git-branch",
+      "description": "Generates a random branch name."
+    },
+    {
+      "name": "git-commitEntry",
+      "description": "Generates a random commit entry as printed by `git log`."
+    },
+    {
+      "name": "git-commitMessage",
+      "description": "Generates a random commit message."
+    },
+    {
+      "name": "git-commitDate",
+      "description": "Generates a date string for a git commit using the same format as `git log`."
+    },
+    {
+      "name": "git-commitSha",
+      "description": "Generates a random commit sha."
+    },
+    {
+      "name": "hacker-abbreviation",
+      "description": "Returns a random hacker/IT abbreviation."
+    },
+    {
+      "name": "hacker-adjective",
+      "description": "Returns a random hacker/IT adjective."
+    },
+    {
+      "name": "hacker-noun",
+      "description": "Returns a random hacker/IT noun."
+    },
+    {
+      "name": "hacker-verb",
+      "description": "Returns a random hacker/IT verb."
+    },
+    {
+      "name": "hacker-ingverb",
+      "description": "Returns a random hacker/IT verb for continuous actions (en: ing suffix; e.g. hacking)."
+    },
+    {
+      "name": "hacker-phrase",
+      "description": "Generates a random hacker/IT phrase."
+    },
+    {
+      "name": "image-avatar",
+      "description": "Generates a random avatar image url."
+    },
+    {
+      "name": "image-avatarGitHub",
+      "description": "Generates a random avatar from GitHub."
+    },
+    {
+      "name": "image-personPortrait",
+      "description": "Generates a random square portrait (avatar) of a person. These are static images of fictional people created by an AI, Stable Diffusion 3."
+    },
+    {
+      "name": "image-avatarLegacy",
+      "description": "Generates a random avatar from `https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar`. (Deprecated: The links are no longer working. Use `avatar()` instead.)"
+    },
+    {
+      "name": "image-url",
+      "description": "Generates a random image url."
+    },
+    {
+      "name": "image-urlLoremFlickr",
+      "description": "Generates a random image url provided via https://loremflickr.com."
+    },
+    {
+      "name": "image-urlPicsumPhotos",
+      "description": "Generates a random image url provided via https://picsum.photos."
+    },
+    {
+      "name": "image-urlPlaceholder",
+      "description": "Generates a random image url provided via https://via.placeholder.com/. (Deprecated: The service has bad uptime. Use `faker.image.url()` or `faker.image.dataUri()` instead.)"
+    },
+    {
+      "name": "image-dataUri",
+      "description": "Generates a random data uri containing an URL-encoded SVG image or a Base64-encoded SVG image."
+    },
+    {
+      "name": "internet-email",
+      "description": "Generates an email address using the given person's name as base."
+    },
+    {
+      "name": "internet-exampleEmail",
+      "description": "Generates an email address using an example mail provider using the given person's name as base."
+    },
+    {
+      "name": "internet-userName",
+      "description": "Generates a username using the given person's name as base. (Deprecated: Use `faker.internet.username()` instead.)"
+    },
+    {
+      "name": "internet-username",
+      "description": "Generates a username using the given person's name as base."
+    },
+    {
+      "name": "internet-displayName",
+      "description": "Generates a display name using the given person's name as base."
+    },
+    {
+      "name": "internet-protocol",
+      "description": "Returns a random web protocol. Either `http` or `https`."
+    },
+    {
+      "name": "internet-httpMethod",
+      "description": "Returns a random http method."
+    },
+    {
+      "name": "internet-httpStatusCode",
+      "description": "Generates a random HTTP status code."
+    },
+    {
+      "name": "internet-url",
+      "description": "Generates a random http(s) url."
+    },
+    {
+      "name": "internet-domainName",
+      "description": "Generates a random domain name."
+    },
+    {
+      "name": "internet-domainSuffix",
+      "description": "Returns a random domain suffix."
+    },
+    {
+      "name": "internet-domainWord",
+      "description": "Generates a random domain word."
+    },
+    {
+      "name": "internet-ip",
+      "description": "Generates a random IPv4 or IPv6 address."
+    },
+    {
+      "name": "internet-ipv4",
+      "description": "Generates a random IPv4 address."
+    },
+    {
+      "name": "internet-ipv6",
+      "description": "Generates a random IPv6 address."
+    },
+    {
+      "name": "internet-port",
+      "description": "Generates a random port number."
+    },
+    {
+      "name": "internet-userAgent",
+      "description": "Generates a random user agent string."
+    },
+    {
+      "name": "internet-color",
+      "description": "Generates a random css hex color code in aesthetically pleasing color palette. (Deprecated: Please use faker.color.rgb() or any of the other color methods instead.)"
+    },
+    {
+      "name": "internet-mac",
+      "description": "Generates a random mac address."
+    },
+    {
+      "name": "internet-password",
+      "description": "Generates a random password-like string."
+    },
+    {
+      "name": "internet-emoji",
+      "description": "Generates a random emoji."
+    },
+    {
+      "name": "internet-jwtAlgorithm",
+      "description": "Generates a random JWT (JSON Web Token) Algorithm."
+    },
+    {
+      "name": "internet-jwt",
+      "description": "Generates a random JWT (JSON Web Token)."
+    },
+    {
+      "name": "location-buildingNumber",
+      "description": "Generates a random building number."
+    },
+    {
+      "name": "location-cardinalDirection",
+      "description": "Returns a random cardinal direction (north, east, south, west)."
+    },
+    {
+      "name": "location-city",
+      "description": "Generates a random localized city name."
+    },
+    {
+      "name": "location-continent",
+      "description": "Returns a random continent name."
+    },
+    {
+      "name": "location-country",
+      "description": "Returns a random country name."
+    },
+    {
+      "name": "location-countryCode",
+      "description": "Returns a random ISO_3166-1 country code."
+    },
+    {
+      "name": "location-county",
+      "description": "Returns a random localized county, or other equivalent second-level administrative entity for the locale's country such as a district or department."
+    },
+    {
+      "name": "location-direction",
+      "description": "Returns a random direction (cardinal and ordinal; northwest, east, etc)."
+    },
+    {
+      "name": "location-language",
+      "description": "Returns a random spoken language."
+    },
+    {
+      "name": "location-latitude",
+      "description": "Generates a random latitude."
+    },
+    {
+      "name": "location-longitude",
+      "description": "Generates a random longitude."
+    },
+    {
+      "name": "location-nearbyGPSCoordinate",
+      "description": "Generates a random GPS coordinate within the specified radius from the given coordinate."
+    },
+    {
+      "name": "location-ordinalDirection",
+      "description": "Returns a random ordinal direction (northwest, southeast, etc)."
+    },
+    {
+      "name": "location-secondaryAddress",
+      "description": "Generates a random localized secondary address. This refers to a specific location at a given address such as an apartment or room number."
+    },
+    {
+      "name": "location-state",
+      "description": "Returns a random state, or other equivalent first-level administrative entity for the locale's country such as a province, region, or prefecture."
+    },
+    {
+      "name": "location-street",
+      "description": "Returns a random street name."
+    },
+    {
+      "name": "location-streetAddress",
+      "description": "Generates a random localized street address."
+    },
+    {
+      "name": "location-timeZone",
+      "description": "Returns a random time zone."
+    },
+    {
+      "name": "location-zipCode",
+      "description": "Generates a random localized zip code."
+    },
+    {
+      "name": "lorem-word",
+      "description": "Generates a word of a specified length."
+    },
+    {
+      "name": "lorem-words",
+      "description": "Generates a space separated list of words."
+    },
+    {
+      "name": "lorem-sentence",
+      "description": "Generates a space separated list of words beginning with a capital letter and ending with a period."
+    },
+    {
+      "name": "lorem-slug",
+      "description": "Generates a slugified text consisting of the given number of hyphen separated words."
+    },
+    {
+      "name": "lorem-sentences",
+      "description": "Generates the given number of sentences."
+    },
+    {
+      "name": "lorem-paragraph",
+      "description": "Generates a paragraph with the given number of sentences."
+    },
+    {
+      "name": "lorem-paragraphs",
+      "description": "Generates the given number of paragraphs."
+    },
+    {
+      "name": "lorem-text",
+      "description": "Generates a random text based on a random lorem method."
+    },
+    {
+      "name": "lorem-lines",
+      "description": "Generates the given number lines of lorem separated by '\\n'."
+    },
+    {
+      "name": "music-album",
+      "description": "Returns a random album name."
+    },
+    {
+      "name": "music-artist",
+      "description": "Returns a random artist name."
+    },
+    {
+      "name": "music-genre",
+      "description": "Returns a random music genre."
+    },
+    {
+      "name": "music-songName",
+      "description": "Returns a random song name."
+    },
+    {
+      "name": "person-firstName",
+      "description": "Returns a random first name."
+    },
+    {
+      "name": "person-lastName",
+      "description": "Returns a random last name."
+    },
+    {
+      "name": "person-middleName",
+      "description": "Returns a random middle name."
+    },
+    {
+      "name": "person-fullName",
+      "description": "Generates a random full name."
+    },
+    {
+      "name": "person-gender",
+      "description": "Returns a random gender."
+    },
+    {
+      "name": "person-sex",
+      "description": "Returns a random sex."
+    },
+    {
+      "name": "person-sexType",
+      "description": "Returns a random sex type. The `SexType` is intended to be used in parameters and conditions."
+    },
+    {
+      "name": "person-bio",
+      "description": "Returns a random short biography."
+    },
+    {
+      "name": "person-prefix",
+      "description": "Returns a random person prefix."
+    },
+    {
+      "name": "person-suffix",
+      "description": "Returns a random person suffix."
+    },
+    {
+      "name": "person-jobTitle",
+      "description": "Generates a random job title."
+    },
+    {
+      "name": "person-jobDescriptor",
+      "description": "Generates a random job descriptor."
+    },
+    {
+      "name": "person-jobArea",
+      "description": "Generates a random job area."
+    },
+    {
+      "name": "person-jobType",
+      "description": "Generates a random job type."
+    },
+    {
+      "name": "person-zodiacSign",
+      "description": "Returns a random zodiac sign."
+    },
+    {
+      "name": "phone-imei",
+      "description": "Generates IMEI number."
+    },
+    {
+      "name": "phone-number",
+      "description": "Generates a random phone number."
+    },
+    {
+      "name": "science-chemicalElement",
+      "description": "Returns a random periodic table element."
+    },
+    {
+      "name": "science-unit",
+      "description": "Returns a random scientific unit."
+    },
+    {
+      "name": "system-fileName",
+      "description": "Returns a random file name with extension."
+    },
+    {
+      "name": "system-commonFileName",
+      "description": "Returns a random file name with a given extension or a commonly used extension."
+    },
+    {
+      "name": "system-mimeType",
+      "description": "Returns a mime-type."
+    },
+    {
+      "name": "system-commonFileType",
+      "description": "Returns a commonly used file type."
+    },
+    {
+      "name": "system-commonFileExt",
+      "description": "Returns a commonly used file extension."
+    },
+    {
+      "name": "system-fileType",
+      "description": "Returns a file type."
+    },
+    {
+      "name": "system-fileExt",
+      "description": "Returns a file extension."
+    },
+    {
+      "name": "system-directoryPath",
+      "description": "Returns a directory path."
+    },
+    {
+      "name": "system-filePath",
+      "description": "Returns a file path."
+    },
+    {
+      "name": "system-semver",
+      "description": "Returns a semantic version."
+    },
+    {
+      "name": "system-networkInterface",
+      "description": "Returns a random network interface."
+    },
+    {
+      "name": "system-cron",
+      "description": "Returns a random cron expression."
+    },
+    {
+      "name": "vehicle-vehicle",
+      "description": "Returns a random vehicle."
+    },
+    {
+      "name": "vehicle-manufacturer",
+      "description": "Returns a manufacturer name."
+    },
+    {
+      "name": "vehicle-model",
+      "description": "Returns a vehicle model."
+    },
+    {
+      "name": "vehicle-type",
+      "description": "Returns a vehicle type."
+    },
+    {
+      "name": "vehicle-fuel",
+      "description": "Returns a fuel type."
+    },
+    {
+      "name": "vehicle-vin",
+      "description": "Returns a vehicle identification number (VIN)."
+    },
+    {
+      "name": "vehicle-color",
+      "description": "Returns a vehicle color."
+    },
+    {
+      "name": "vehicle-vrm",
+      "description": "Returns a vehicle registration number (Vehicle Registration Mark - VRM)."
+    },
+    {
+      "name": "vehicle-bicycle",
+      "description": "Returns a type of bicycle."
+    },
+    {
+      "name": "word-adjective",
+      "description": "Returns a random adjective."
+    },
+    {
+      "name": "word-adverb",
+      "description": "Returns a random adverb."
+    },
+    {
+      "name": "word-conjunction",
+      "description": "Returns a random conjunction."
+    },
+    {
+      "name": "word-interjection",
+      "description": "Returns a random interjection."
+    },
+    {
+      "name": "word-noun",
+      "description": "Returns a random noun."
+    },
+    {
+      "name": "word-preposition",
+      "description": "Returns a random preposition."
+    },
+    {
+      "name": "word-verb",
+      "description": "Returns a random verb."
+    },
+    {
+      "name": "word-sample",
+      "description": "Returns a random word, that can be an adjective, adverb, conjunction, interjection, noun, preposition, or verb."
+    },
+    {
+      "name": "word-words",
+      "description": "Returns a random string containing some words separated by spaces."
+    }
+  ]
+}

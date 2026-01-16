@@ -1,0 +1,12 @@
+{
+  "id": "@analytics/analytics",
+  "displayName": "analytics",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:06.524Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@analytics/analytics"
+  },
+  "connection": null,
+  "capabilities": []
+}

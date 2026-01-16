@@ -1,0 +1,12 @@
+{
+  "id": "@faithk7/tavily-mcp",
+  "displayName": "tavily-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:39.874Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@faithk7/tavily-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

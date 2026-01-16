@@ -1,0 +1,114 @@
+{
+  "id": "@dragonkhoi/mixpanel-mcp",
+  "displayName": "Mixpanel Integration",
+  "description": "Talk to your Mixpanel analytics events data seamlessly! Query retention number, event data, funnels and more from any MCP client. Great for on-demand look ups like: \"What's the weekly retention for users in the Feb 1 cohort?\"\n\nI am adding more coverage of the Mixpanel API over time, let me know which tools you need or just open a PR.\n\nMake sure you go to your Mixpanel Organization Settings and create a service account. Then get your project ID from your project settings.",
+  "createdAt": "2026-01-16T07:30:54.536Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dragonkhoi/mixpanel-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "username",
+        "password",
+        "projectId"
+      ],
+      "properties": {
+        "password": {
+          "type": "string",
+          "description": "Mixpanel Service Account password."
+        },
+        "username": {
+          "type": "string",
+          "description": "Mixpanel Service Account username."
+        },
+        "projectId": {
+          "type": "string",
+          "description": "Mixpanel Project ID."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_today_top_events",
+      "description": "Get today's top events from Mixpanel. Useful for quickly identifying the most active events happening today, spotting trends, and monitoring real-time user activity."
+    },
+    {
+      "name": "profile_event_activity",
+      "description": "Get data for a profile's event activity. Useful for understanding individual user journeys, troubleshooting user-specific issues, and analyzing behavior patterns of specific users."
+    },
+    {
+      "name": "get_top_events",
+      "description": "Get a list of the most common events over the last 31 days. Useful for identifying key user actions, prioritizing feature development, and understanding overall platform usage patterns."
+    },
+    {
+      "name": "aggregate_event_counts",
+      "description": "Get unique, general, or average data for a set of events over N days, weeks, or months. Useful for trend analysis, comparing event performance over time, and creating time-series visualizations."
+    },
+    {
+      "name": "aggregated_event_property_values",
+      "description": "Get unique, general, or average data for a single event and property over days, weeks, or months. Useful for analyzing how specific properties affect event performance, segmenting users, and identifying valuable user attributes."
+    },
+    {
+      "name": "query_insights_report",
+      "description": "Get data from your Insights reports. Useful for accessing saved analyses, sharing standardized metrics across teams, and retrieving complex pre-configured visualizations."
+    },
+    {
+      "name": "query_funnel_report",
+      "description": "Get data for a funnel based on a funnel_id. Useful for analyzing user conversion paths, identifying drop-off points in user journeys, and optimizing multi-step processes. Funnel IDs should be retrieved using the list_saved_funnels tool. "
+    },
+    {
+      "name": "list_saved_funnels",
+      "description": "Get the names and IDs of your saved funnels. Useful for discovering available funnels for analysis and retrieving funnel IDs needed for the query_funnel_report tool."
+    },
+    {
+      "name": "list_saved_cohorts",
+      "description": "Get all cohorts in a given project. Useful for discovering user segments, planning targeted analyses, and retrieving cohort IDs for filtering in other reports."
+    },
+    {
+      "name": "query_retention_report",
+      "description": "Get data from your Retention reports. Useful for analyzing user engagement over time, measuring product stickiness, and understanding how well your product retains users after specific actions. Only use params interval or unit, not both."
+    },
+    {
+      "name": "custom_jql",
+      "description": "Run a custom JQL (JSON Query Language) script against your Mixpanel data. Useful for complex custom analyses, advanced data transformations, and queries that can't be handled by standard report types."
+    },
+    {
+      "name": "query_segmentation_sum",
+      "description": "Sum a numeric expression for events over time. Useful for calculating revenue metrics, aggregating quantitative values, and tracking cumulative totals across different time periods."
+    },
+    {
+      "name": "query_profiles",
+      "description": "Query Mixpanel user profiles with filtering options. Useful for retrieving detailed user profiles, filtering by specific properties, and analyzing user behavior across different dimensions."
+    },
+    {
+      "name": "query_frequency_report",
+      "description": "Get data for frequency of actions over time. Useful for analyzing how often users perform specific actions, identifying patterns of behavior, and tracking user engagement over time."
+    },
+    {
+      "name": "query_segmentation_report",
+      "description": "Get data for an event, segmented and filtered by properties. Useful for breaking down event data by user attributes, comparing performance across segments, and identifying which user groups perform specific actions."
+    },
+    {
+      "name": "query_segmentation_bucket",
+      "description": "Get data for an event, segmented and filtered by properties, with values placed into numeric buckets. Useful for analyzing distributions of numeric values, creating histograms, and understanding the range of quantitative metrics."
+    },
+    {
+      "name": "query_segmentation_average",
+      "description": "Averages an expression for events per unit time. Useful for calculating average values like purchase amounts, session durations, or any numeric metric, and tracking how these averages change over time."
+    },
+    {
+      "name": "top_event_properties",
+      "description": "Get the top property names for an event. Useful for discovering which properties are most commonly associated with an event, prioritizing which dimensions to analyze, and understanding event structure."
+    },
+    {
+      "name": "top_event_property_values",
+      "description": "Get the top values for a property. Useful for understanding the distribution of values for a specific property, identifying the most common categories or segments, and planning further targeted analyses."
+    }
+  ]
+}

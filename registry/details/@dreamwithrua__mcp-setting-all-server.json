@@ -1,0 +1,38 @@
+{
+  "id": "@dreamwithrua/mcp-setting-all-server",
+  "displayName": "mcp-setting-all-server",
+  "description": "Jumpstart building custom TypeScript capabilities with a ready-to-extend template. Try built-in examples—calculator, greeting, and system info—to learn the pattern fast. Customize and ship a working setup in minutes.",
+  "createdAt": "2026-01-16T07:22:46.658Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dreamwithrua/mcp-setting-all-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "hfToken": {
+          "type": "string",
+          "description": "Hugging Face API Token (이미지 생성에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": ""
+    },
+    {
+      "name": "calculator",
+      "description": ""
+    },
+    {
+      "name": "get_time",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@haalo-cpu/mcp_test",
+  "displayName": "mcp_test",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:52.058Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@haalo-cpu/mcp_test"
+  },
+  "connection": null,
+  "capabilities": []
+}

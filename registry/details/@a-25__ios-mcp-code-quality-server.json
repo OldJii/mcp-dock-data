@@ -1,0 +1,12 @@
+{
+  "id": "@a-25/ios-mcp-code-quality-server",
+  "displayName": "ios-mcp-code-quality-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:48.831Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@a-25/ios-mcp-code-quality-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "@kamath/cli-mcp",
+  "displayName": "Local Terminal",
+  "description": "Run terminal commands on your machine and get immediate output. Automate system tasks, inspect files, and manage processes from one place. Streamline command-line workflows without leaving your current context.",
+  "createdAt": "2026-01-16T07:22:12.607Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/cli-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "run_terminal_command",
+      "description": "Execute a terminal command and return the output"
+    }
+  ]
+}

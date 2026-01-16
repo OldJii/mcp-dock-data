@@ -1,0 +1,12 @@
+{
+  "id": "@ReduceMyIns/skyvern",
+  "displayName": "skyvern",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:56.438Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ReduceMyIns/skyvern"
+  },
+  "connection": null,
+  "capabilities": []
+}

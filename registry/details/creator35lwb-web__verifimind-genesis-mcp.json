@@ -1,0 +1,33 @@
+{
+  "id": "creator35lwb-web/verifimind-genesis-mcp",
+  "displayName": "verifimind-genesis-mcp",
+  "description": "Evaluate ideas, products, or plans through a triad review of strategy, ethics, and security. Uncover market opportunities, flag compliance risks, and expose vulnerabilities before launch. Get a clear score, go/no-go recommendation, and prioritized strengths and concerns.",
+  "createdAt": "2026-01-16T07:29:23.644Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/creator35lwb-web/verifimind-genesis-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "consult_agent_x",
+      "description": "Consult X Intelligent agent for innovation and strategy analysis.\n\nX Intelligent specializes in:\n- Innovation potential assessment\n- Strategic value analysis\n- Market opportunity identification\n- Competitive positioning\n- Growth potential evaluation\n\nArgs:\n  concept_name: Short name or title of the concept\n  concept_description: Detailed description of the concept\n  context: Optional additional context or background\n\nReturns: Structured analysis with reasoning chain, scores, and recommendations"
+    },
+    {
+      "name": "consult_agent_z",
+      "description": "Consult Z Guardian agent for ethical review and Z-Protocol enforcement.\n\nZ Guardian specializes in:\n- Ethical implications assessment\n- Privacy and data protection review\n- Bias and fairness analysis\n- Social impact evaluation\n- Z-Protocol compliance verification\n\nZ Guardian has VETO POWER. If veto_triggered is True, the concept should not proceed as it crosses ethical red lines.\n\nArgs:\n  concept_name: Short name or title of the concept\n  concept_description: Detailed description of the concept\n  context: Optional additional context or background\n  prior_reasoning: Optional reasoning from X agent to consider\n\nReturns: Structured analysis with reasoning chain, ethics score, and veto status"
+    },
+    {
+      "name": "consult_agent_cs",
+      "description": "Consult CS Security agent for security validation and Socratic interrogation.\n\nCS Security specializes in:\n- Security vulnerability assessment\n- Attack vector identification\n- Data security review\n- System integrity analysis\n- Socratic questioning (challenging assumptions)\n\nArgs:\n  concept_name: Short name or title of the concept\n  concept_description: Detailed description of the concept\n  context: Optional additional context or background\n  prior_reasoning: Optional reasoning from X and Z agents to consider\n\nReturns: Structured analysis with security score, vulnerabilities, and Socratic questions"
+    },
+    {
+      "name": "run_full_trinity",
+      "description": "Run complete X → Z → CS Trinity validation with Chain of Thought.\n\nThis tool orchestrates all three agents in sequence:\n1. X Intelligent analyzes innovation and strategy\n2. Z Guardian reviews ethics (sees X's reasoning)\n3. CS Security validates security (sees X and Z reasoning)\n4. Results are synthesized into a unified assessment\n\nEach agent sees the reasoning of previous agents, enabling true collaborative analysis with full transparency.\n\nArgs:\n  concept_name: Short name or title of the concept\n  concept_description: Detailed description of the concept\n  context: Optional additional context or background\n  save_to_history: Whether to save result to validation history (default: True)\n\nReturns: Complete Trinity validation result with all agent analyses and synthesis"
+    }
+  ]
+}

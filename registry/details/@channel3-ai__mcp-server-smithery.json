@@ -1,0 +1,49 @@
+{
+  "id": "@channel3-ai/mcp-server-smithery",
+  "displayName": "Channel3 MCP Server",
+  "description": "Let your agent discovery any product on the internet. Earn commissions when your agent drives sales.\n\nSign up for free at trychannel3.com\n\n",
+  "createdAt": "2026-01-16T07:31:06.068Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@channel3-ai/mcp-server-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Required API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Search for products that match a query with optional filters"
+    },
+    {
+      "name": "get_product_detail",
+      "description": "Get detailed information about a specific product by its ID"
+    },
+    {
+      "name": "get_brands",
+      "description": "Get all brands that the vendor currently sells with optional query"
+    },
+    {
+      "name": "get_brand_detail",
+      "description": "Get detailed information for a specific brand by its ID"
+    }
+  ]
+}

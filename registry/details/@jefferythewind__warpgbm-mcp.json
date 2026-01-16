@@ -1,0 +1,41 @@
+{
+  "id": "@jefferythewind/warpgbm-mcp",
+  "displayName": "WarpGBM",
+  "description": "Train gradient boosting models quickly and export portable artifacts for smooth deployment. Run fast predictions from newly trained models or existing artifacts. Upload datasets, browse available backends, and access a practical guide with best practices and troubleshooting. ",
+  "createdAt": "2026-01-16T07:27:29.108Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jefferythewind/warpgbm-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "list_models",
+      "description": "List all available ML model backends (warpgbm, lightgbm)"
+    },
+    {
+      "name": "train",
+      "description": "Train a gradient boosting model and return portable artifacts (joblib and/or ONNX)"
+    },
+    {
+      "name": "predict_from_artifact",
+      "description": "Run inference using a trained model artifact or artifact_id. Use artifact_id for fast predictions right after training (valid for 5 minutes)."
+    },
+    {
+      "name": "get_agent_guide",
+      "description": "Get the comprehensive agent guide with examples, best practices, and troubleshooting tips for using this service"
+    },
+    {
+      "name": "upload_data",
+      "description": "Upload CSV or Parquet files for training. Parses files and returns structured X and y arrays ready for training."
+    },
+    {
+      "name": "submit_feedback",
+      "description": "Submit feedback about the service. Agents can report bugs, request features, or provide general feedback."
+    }
+  ]
+}

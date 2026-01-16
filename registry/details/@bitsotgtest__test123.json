@@ -1,0 +1,12 @@
+{
+  "id": "@bitsotgtest/test123",
+  "displayName": "test123",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:11.046Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bitsotgtest/test123"
+  },
+  "connection": null,
+  "capabilities": []
+}

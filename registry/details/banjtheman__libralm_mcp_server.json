@@ -1,0 +1,56 @@
+{
+  "id": "banjtheman/libralm_mcp_server",
+  "displayName": "libralm_mcp_server",
+  "description": "Browse available books and quickly access summaries, details, and tables of contents. Get concise chapter summaries and analyze themes and content deeply. Compare titles side by side to surface differences and insights.",
+  "createdAt": "2026-01-16T07:24:11.596Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/banjtheman/libralm_mcp_server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your LibraLM API key"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "Optional base URL for the LibraLM API service",
+          "default": "https://yjv5auah93.execute-api.us-east-1.amazonaws.com/prod"
+        }
+      },
+      "description": "Configuration for LibraLM MCP Server",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_books",
+      "description": "List all available books with their basic information"
+    },
+    {
+      "name": "get_book_summary",
+      "description": "Get the main summary for a book"
+    },
+    {
+      "name": "get_book_details",
+      "description": "Get detailed information about a specific book"
+    },
+    {
+      "name": "get_table_of_contents",
+      "description": "Get the table of contents for a book with chapter descriptions"
+    },
+    {
+      "name": "get_chapter_summary",
+      "description": "Get the summary for a specific chapter of a book"
+    }
+  ]
+}

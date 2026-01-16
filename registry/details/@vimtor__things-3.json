@@ -1,0 +1,108 @@
+{
+  "id": "@vimtor/things-3",
+  "displayName": "Things 3",
+  "description": "Manage Things 3 todos and projects.",
+  "createdAt": "2026-01-16T07:23:55.095Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vimtor/things-3"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "token"
+      ],
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "Things URL authentication token. Can be found in the Things 3 settings."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_today",
+      "description": "Get today's todos and projects."
+    },
+    {
+      "name": "get_inbox",
+      "description": "Get inbox contents."
+    },
+    {
+      "name": "get_trash",
+      "description": "Get trash contents."
+    },
+    {
+      "name": "get_logbook",
+      "description": "Get logbook contents."
+    },
+    {
+      "name": "get_completed",
+      "description": "Get completed todos and projects.\n\n    Args:\n        last: Limit returned tasks to tasks created within the last X days, weeks, or years. For example: '3d', '5w', or '1y'.\n    "
+    },
+    {
+      "name": "get_deadlines",
+      "description": "Get deadlines."
+    },
+    {
+      "name": "get_anytime",
+      "description": "Get anytime todos and projects."
+    },
+    {
+      "name": "get_someday",
+      "description": "Get someday todos and projects."
+    },
+    {
+      "name": "get_upcoming",
+      "description": "Get upcoming todos and projects."
+    },
+    {
+      "name": "get_projects",
+      "description": "Get all projects."
+    },
+    {
+      "name": "get_areas",
+      "description": "Get all areas."
+    },
+    {
+      "name": "get_tags",
+      "description": "Get all tags."
+    },
+    {
+      "name": "get_project_todos",
+      "description": "Get all todos for a project."
+    },
+    {
+      "name": "get_area_todos",
+      "description": "Get all todos for an area."
+    },
+    {
+      "name": "search",
+      "description": "Search for todos, projects, areas, and tags.\n\n    Args:\n        query: Only pass the necessary keywords as if you were doing a Google search. If you didn't get a result, try a different query.\n    "
+    },
+    {
+      "name": "get_task",
+      "description": "Get a task by ID."
+    },
+    {
+      "name": "update_todo",
+      "description": "Update a todo.\n\n    Args:\n        id: The ID of the todo to update.\n        title: The new title of the todo.\n        completed: Whether the todo is completed.\n        notes: The new notes of the todo.\n        when: When should the todo be completed. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n        deadline: The deadline of the todo. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n    "
+    },
+    {
+      "name": "update_project",
+      "description": "Update a project.\n\n    Args:\n        id: The ID of the project to update.\n        title: The new title of the project.\n        completed: Whether the project is completed.\n        notes: The new notes of the project.\n        when: When should the project be completed. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n        deadline: The deadline of the project. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n    "
+    },
+    {
+      "name": "create_todo",
+      "description": "Create a todo.\n\n    Args:\n        title: The title of the todo.\n        list: The title of a project or area to add to.\n        notes: The notes of the todo.\n        when: When should the todo be completed. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n        deadline: The deadline of the todo. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n    "
+    },
+    {
+      "name": "create_project",
+      "description": "Create a project.\n\n    Args:\n        title: The title of the project.\n        area: The title of an area to add the project to.\n        notes: The notes of the project.\n        when: When should the project be completed. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n        deadline: The deadline of the project. Can be a date following the format YYYY-MM-DD or a string like \"tomorrow\", \"in 3 days\", etc.\n    "
+    }
+  ]
+}

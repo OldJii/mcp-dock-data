@@ -1,0 +1,29 @@
+{
+  "id": "@deltafantazulu/recon",
+  "displayName": "recon",
+  "description": "Search leaked databases for email addresses, phone numbers, usernames, domains, and other identifiers. View categorized results across multiple sources to pinpoint relevant exposures. Speed investigations with targeted lookups and streamlined retrieval of findings.",
+  "createdAt": "2026-01-16T07:25:50.502Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deltafantazulu/recon"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "osint_search",
+      "description": "Search leaked databases for email addresses, phone numbers, usernames, domains, or other identifiers. Returns results from multiple databases with categorized information. Note: Large searches may take 4-5 seconds. Use lower limit values for faster responses."
+    },
+    {
+      "name": "osint_get_results",
+      "description": "Get paginated results from a previous OSINT search by search ID. Returns entries from a specific database and page."
+    },
+    {
+      "name": "osint_list_databases",
+      "description": "List all databases found in a previous OSINT search by search ID."
+    }
+  ]
+}

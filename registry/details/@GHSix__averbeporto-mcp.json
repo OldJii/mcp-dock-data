@@ -1,0 +1,53 @@
+{
+  "id": "@GHSix/averbeporto-mcp",
+  "displayName": "AverbePorto",
+  "description": "Integrate with AverbePorto to streamline authentication and document submission using AI tools. Effortlessly manage your cargo insurance endorsements and access essential services through a secure API. Enhance your workflow with automated document handling and protocol consultations.",
+  "createdAt": "2026-01-16T07:30:29.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GHSix/averbeporto-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "averbeportoUser",
+        "averbeportoPass"
+      ],
+      "properties": {
+        "averbeportoPass": {
+          "type": "string",
+          "description": "AverbePorto API Password"
+        },
+        "averbeportoUser": {
+          "type": "string",
+          "description": "AverbePorto API Username"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "login",
+      "description": "Authenticates a user with the AverbePorto API using their username and password. Establishes a session and returns a unique `sessionId` required for subsequent API calls."
+    },
+    {
+      "name": "upload",
+      "description": "Uploads a specified file to the AverbePorto API for processing. Requires an active `sessionId` obtained from the `login` tool. Returns the processing status, including counts of processed/duplicated/rejected/denied items, generated protocol numbers, and any errors encountered."
+    },
+    {
+      "name": "consultProtocol",
+      "description": "Consults the AverbePorto API to retrieve details associated with one or more document access keys (44 digits) or protocol numbers (40 digits). Requires an active `sessionId`."
+    },
+    {
+      "name": "decomposeKey",
+      "description": "Parses a 44-digit (infCte/Id) Brazilian electronic fiscal document access key (like NF-e, CT-e, MDF-e) into its individual components. Provides details such as state code, emission date, emitter CNPJ, document model, series, number, and emission type. This operation is performed locally without calling an external API."
+    },
+    {
+      "name": "retrieveDocument",
+      "description": "Retrieves a list of electronic fiscal documents (NF-e, CT-e, MDF-e, Minuta CT-e) from the AverbePorto API based on specified filter criteria. Filters include document type, date range, date type (emission, update, send), document number (9 char max), involved parties (CNPJs), status, and more. Supports pagination. Requires an active `sessionId`."
+    }
+  ]
+}

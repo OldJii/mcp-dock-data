@@ -1,0 +1,16 @@
+{
+  "id": "mcp-starter",
+  "displayName": "MCP Starter",
+  "description": "A starter server template for building AI assistant tools.",
+  "createdAt": "2026-01-16T07:26:13.489Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-starter"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

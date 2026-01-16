@@ -1,0 +1,132 @@
+{
+  "id": "@antonioevans/runpod-mcp-ts",
+  "displayName": "RunPod Server Manager",
+  "description": "Manage your RunPod resources seamlessly through an MCP-compatible client. Create, list, update, and delete pods, serverless endpoints, templates, network volumes, and container registry authentications with ease. Streamline your RunPod operations directly from your preferred LLM interface.",
+  "createdAt": "2026-01-16T07:32:50.971Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antonioevans/runpod-mcp-ts"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "runpodApiKey"
+      ],
+      "properties": {
+        "runpodApiKey": {
+          "type": "string",
+          "description": "Your RunPod API key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-pods",
+      "description": ""
+    },
+    {
+      "name": "get-pod",
+      "description": ""
+    },
+    {
+      "name": "create-pod",
+      "description": ""
+    },
+    {
+      "name": "update-pod",
+      "description": ""
+    },
+    {
+      "name": "start-pod",
+      "description": ""
+    },
+    {
+      "name": "stop-pod",
+      "description": ""
+    },
+    {
+      "name": "delete-pod",
+      "description": ""
+    },
+    {
+      "name": "list-endpoints",
+      "description": ""
+    },
+    {
+      "name": "get-endpoint",
+      "description": ""
+    },
+    {
+      "name": "create-endpoint",
+      "description": ""
+    },
+    {
+      "name": "update-endpoint",
+      "description": ""
+    },
+    {
+      "name": "delete-endpoint",
+      "description": ""
+    },
+    {
+      "name": "list-templates",
+      "description": ""
+    },
+    {
+      "name": "get-template",
+      "description": ""
+    },
+    {
+      "name": "create-template",
+      "description": ""
+    },
+    {
+      "name": "update-template",
+      "description": ""
+    },
+    {
+      "name": "delete-template",
+      "description": ""
+    },
+    {
+      "name": "list-network-volumes",
+      "description": ""
+    },
+    {
+      "name": "get-network-volume",
+      "description": ""
+    },
+    {
+      "name": "create-network-volume",
+      "description": ""
+    },
+    {
+      "name": "update-network-volume",
+      "description": ""
+    },
+    {
+      "name": "delete-network-volume",
+      "description": ""
+    },
+    {
+      "name": "list-container-registry-auths",
+      "description": ""
+    },
+    {
+      "name": "get-container-registry-auth",
+      "description": ""
+    },
+    {
+      "name": "create-container-registry-auth",
+      "description": ""
+    },
+    {
+      "name": "delete-container-registry-auth",
+      "description": ""
+    }
+  ]
+}

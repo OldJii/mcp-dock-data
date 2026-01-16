@@ -1,0 +1,40 @@
+{
+  "id": "@clarenous/veyrax-mcp",
+  "displayName": "VeyraX MCP",
+  "description": "Provide seamless access to all your integrated tools across multiple MCP-compatible environments with a single authentication. Connect once to the VeyraX platform and instantly use your tools in editors and AI assistants like Claude, Cursor, VS Code, and Windsurf. Simplify your workflow with a quick setup and unified tool management.",
+  "createdAt": "2026-01-16T07:26:59.884Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@clarenous/veyrax-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "VEYRAX_API_KEY"
+      ],
+      "properties": {
+        "VEYRAX_API_KEY": {
+          "type": "string",
+          "description": "The VEYRAX API key from https://veyrax.com/agent"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_tools",
+      "description": "\n\"Use this tool to retrieve a list of available tools from the Veyrax API.\nThis will return dynamic tools that user has access to.\nYou can use this tool to get the list of tools, method names and parameters, and then use tool_call tool to call the tool with the provided parameters.\nThis method also returns all flows with name and id that user has access to (if any).\n\"\n"
+    },
+    {
+      "name": "tool_call",
+      "description": "\n\"Use this tool to execute a specific method of another tool with the provided parameters based on get-tools tool response.\nYou need to specify the tool name, method name, and any required parameters for that method.\"\n"
+    },
+    {
+      "name": "get_flow",
+      "description": "\n\"Use this tool to retrieve a specific workflow by its ID.\n\nWorkflow is sequence of steps that are executed in order to get some result. Flow comes with description, steps and input schema of all methods to call.\n\nYou can call this tool once you have a flowId which usually you can get from: user directly OR using get-tools method.\"\n"
+    }
+  ]
+}

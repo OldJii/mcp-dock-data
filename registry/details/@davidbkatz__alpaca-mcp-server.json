@@ -1,0 +1,12 @@
+{
+  "id": "@davidbkatz/alpaca-mcp-server",
+  "displayName": "alpaca-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:44.524Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@davidbkatz/alpaca-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

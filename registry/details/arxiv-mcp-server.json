@@ -1,0 +1,27 @@
+{
+  "id": "arxiv-mcp-server",
+  "displayName": "ArXiv Server",
+  "description": "Enable AI assistants to search and access arXiv papers through a simple MCP interface.",
+  "createdAt": "2026-01-16T07:24:05.038Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/arxiv-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "storagePath"
+      ],
+      "properties": {
+        "storagePath": {
+          "type": "string",
+          "description": "Path to store the papers locally."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

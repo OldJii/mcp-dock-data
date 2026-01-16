@@ -1,0 +1,12 @@
+{
+  "id": "nickthelegend/bch-mcp",
+  "displayName": "bch-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:51.354Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/nickthelegend/bch-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

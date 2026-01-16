@@ -1,0 +1,45 @@
+{
+  "id": "mcp-nmap-server",
+  "displayName": "NMAP Server",
+  "description": "Perform network scanning operations using NMAP.",
+  "createdAt": "2026-01-16T07:31:36.481Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-nmap-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "target"
+      ],
+      "properties": {
+        "ports": {
+          "type": "string",
+          "description": "Optional port specification."
+        },
+        "target": {
+          "type": "string",
+          "description": "Host or network to scan."
+        },
+        "timing": {
+          "type": "number",
+          "description": "NMAP timing template.",
+          "default": 3
+        },
+        "scanType": {
+          "type": "string",
+          "description": "Scan type.",
+          "default": "quick"
+        },
+        "additionalFlags": {
+          "type": "string",
+          "description": "Optional additional NMAP flags."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

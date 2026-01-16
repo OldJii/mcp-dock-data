@@ -1,0 +1,89 @@
+{
+  "id": "@multiversx/mx-mcp",
+  "displayName": "MultiversX MCP Server",
+  "description": "Create and manage PEM wallets for the MultiversX blockchain. Effortlessly retrieve wallet addresses, check balances, and send various token types including EGLD and NFTs. Enhance your blockchain interactions with secure and efficient wallet management capabilities.",
+  "createdAt": "2026-01-16T07:25:57.960Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@multiversx/mx-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mvxNetwork"
+      ],
+      "properties": {
+        "mvxWallet": {
+          "type": "string",
+          "description": "The absolute path to a PEM wallet. Will be used for signing transactions."
+        },
+        "mvxNetwork": {
+          "type": "string",
+          "description": "The MultiversX network to interact with, e.g., 'devnet', 'mainnet'.",
+          "default": "devnet"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-balance-of-address",
+      "description": "Get the balance for a MultiversX address"
+    },
+    {
+      "name": "get-wallet-address",
+      "description": "Get the bech32 address of the wallet set in the environment config"
+    },
+    {
+      "name": "create-wallet",
+      "description": "Create a new wallet and save it as a PEM file. PEM file ARE NOT SECURE. If a wallet already exists, will abort operation."
+    },
+    {
+      "name": "send-egld",
+      "description": "Create a move balance transaction and send it. Will send EGLD using the wallet set in the env to the specified receiver."
+    },
+    {
+      "name": "send-fungible-tokens",
+      "description": "Create a fungible token transfer transaction and send it. Will send the specified token using the wallet set in the env to the specified receiver."
+    },
+    {
+      "name": "send-sft-nft-meta-tokens",
+      "description": "Create a nft, sft or meta esdt transfer transaction and send it. Will send the specified token using the wallet set in the env to the specified receiver."
+    },
+    {
+      "name": "issue-fungible-token",
+      "description": "Create a transaction to issue a fungible token and send it. Will issue the token with the specified arguments. All the properties will be set to true."
+    },
+    {
+      "name": "issue-semi-fungible-collection",
+      "description": "Create a transaction to issue a semi-fungible collection (SFT) and send it. Will issue the collection with the specified arguments. All the properties will be set to true."
+    },
+    {
+      "name": "issue-nft-collection",
+      "description": "Create a transaction to issue a non-fungible token collection (NFT) and send it. Will issue the collection with the specified arguments. All the properties will be set to true."
+    },
+    {
+      "name": "issue-meta-esdt-collection",
+      "description": "Create a transaction to issue a MetaESDT token collection (MESDT) and send it. Will issue the collection with the specified arguments. All the properties will be set to true."
+    },
+    {
+      "name": "create-sft-nft-mesdt-tokens",
+      "description": "Create a transaction to issue a semi-fungible token (SFT), or a non-fungible token (NFT), or a MetaESDT token for a collection and send it.\nPlease also specify the initial quantity and the royalties."
+    },
+    {
+      "name": "get-tokens-of-address",
+      "description": "Get the tokens of an address. Returns the first 25 fungible tokens and the first 25 NFTs, SFTs and MetaESDT. To get more tokens, specify the number of tokens you want to get. Will return the specified number of fungible tokens and the same number of non-fungible. The returned list will contain twice the number of tokens specified, if tokens are available."
+    },
+    {
+      "name": "send-egld-to-multiple-receivers",
+      "description": "Create move balance transactions and send them. Will send EGLD using the wallet set in the env to each specified receiver."
+    },
+    {
+      "name": "get-network",
+      "description": "Get the network set in the environment config"
+    }
+  ]
+}

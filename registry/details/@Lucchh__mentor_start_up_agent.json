@@ -1,0 +1,12 @@
+{
+  "id": "@Lucchh/mentor_start_up_agent",
+  "displayName": "mentor_start_up_agent",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:45.591Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Lucchh/mentor_start_up_agent"
+  },
+  "connection": null,
+  "capabilities": []
+}

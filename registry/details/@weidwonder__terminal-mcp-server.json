@@ -1,0 +1,46 @@
+{
+  "id": "@weidwonder/terminal-mcp-server",
+  "displayName": "Terminal MCP Server",
+  "description": "Execute commands on local or remote hosts seamlessly. Leverage a powerful interface to run system commands, manage sessions, and set environment variables effortlessly. Enhance your AI models and applications with robust command execution capabilities.",
+  "createdAt": "2026-01-16T07:22:19.397Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@weidwonder/terminal-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "sse": {
+          "type": "boolean",
+          "description": "If true, run the server in SSE mode instead of default stdio mode.",
+          "default": false
+        },
+        "host": {
+          "type": "string",
+          "description": "Host to bind to when running in SSE mode.",
+          "default": "localhost"
+        },
+        "port": {
+          "type": "number",
+          "description": "Port to listen on when running in SSE mode.",
+          "default": 8080
+        },
+        "endpoint": {
+          "type": "string",
+          "description": "Endpoint path for SSE connections.",
+          "default": "/sse"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute_command",
+      "description": "Execute commands on remote hosts or locally (This tool can be used for both remote hosts and the current machine)"
+    }
+  ]
+}

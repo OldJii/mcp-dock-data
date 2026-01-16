@@ -1,0 +1,39 @@
+{
+  "id": "@turnono/datacommons-mcp-server",
+  "displayName": "Data Commons",
+  "description": "Discover statistical indicators and topics in Data Commons. Retrieve observations for specific variables and places to power analysis and visualization. Verify valid child place types to refine geographic queries.",
+  "createdAt": "2026-01-16T07:30:58.444Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@turnono/datacommons-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "required": [
+        "dc_api_key"
+      ],
+      "properties": {
+        "dc_api_key": {
+          "type": "string",
+          "description": "Data Commons API key for accessing the Data Commons API"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_observations",
+      "description": "\n        Get observations for a variable and place from Data Commons.\n\n        This tool retrieves statistical observations (data points) for a specific\n        variable (statistical measure) and place (geographic location) from the\n        Data Commons knowledge graph.\n\n        Args:\n            variable_dcid: The DCID of the statistical variable to get data for\n            place_dcid: The DCID of the place to get data for\n            child_place_type: Optional child place type to get data for\n            source_override: Optional source to override the default data source\n            date: Date to get data for (default: latest available). If date_range_start or date_range_end are provided, this is automatically set to 'range'\n            date_range_start: Start date for date range queries (automatically enables range mode)\n            date_range_end: End date for date range queries (automatically enables range mode)\n            ctx: Smithery context for accessing session configuration\n\n        Returns:\n            ObservationToolResponse containing the requested observations\n        "
+    },
+    {
+      "name": "search_indicators",
+      "description": "\n        Search for data indicators and topics in Data Commons.\n\n        This tool searches the Data Commons knowledge graph for statistical\n        variables, topics, and other indicators that match your query.\n\n        Args:\n            query: Search query string\n            places: Optional list of place DCIDs to limit search to\n            per_search_limit: Maximum number of results per search type\n            include_topics: Whether to include topic results\n            maybe_bilateral: Whether to include bilateral indicators\n            ctx: Smithery context for accessing session configuration\n\n        Returns:\n            SearchResponse containing matching indicators and topics\n        "
+    }
+  ]
+}

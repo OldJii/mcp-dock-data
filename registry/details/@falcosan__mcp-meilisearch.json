@@ -1,0 +1,30 @@
+{
+  "id": "@falcosan/mcp-meilisearch",
+  "displayName": "Meilisearch API Server",
+  "description": "Provide AI models with seamless access to Meilisearch's powerful search and indexing capabilities through a comprehensive MCP server implementation. Enable real-time communication and advanced search functionalities including vector search within AI workflows. Simplify integration of Meilisearch APIs as callable tools for enhanced AI-driven data retrieval and management.",
+  "createdAt": "2026-01-16T07:32:39.935Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@falcosan/mcp-meilisearch"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "MEILISEARCH_HOST": {
+          "type": "string",
+          "description": "URL for the Meilisearch instance",
+          "default": "http://localhost:7700"
+        },
+        "MEILISEARCH_API_KEY": {
+          "type": "string",
+          "description": "API key for Meilisearch, if required",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

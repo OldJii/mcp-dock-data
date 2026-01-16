@@ -1,0 +1,34 @@
+{
+  "id": "@deeppath-ai/mcp-chinese-fortune",
+  "displayName": "mcp-chinese-fortune",
+  "description": "Chinese Fortune Analysis System MCP (BaZi Fortune Project)",
+  "createdAt": "2026-01-16T07:24:01.714Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deeppath-ai/mcp-chinese-fortune"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "server": {
+          "type": "object",
+          "description": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fortune-teller",
+      "description": "根据出生年月日小时分析生辰八字和命理信息来进行算命"
+    }
+  ]
+}

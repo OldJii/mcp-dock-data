@@ -1,0 +1,133 @@
+{
+  "id": "@enriquedlh97/playwright-mcp",
+  "displayName": "Playwright",
+  "description": "Automate web browsing with fast, reliable actions driven by structured page snapshots. Click, type, navigate, manage tabs, and extract content without screenshots or vision models. Get deterministic results for testing, research, and routine web tasks.",
+  "createdAt": "2026-01-16T07:21:01.107Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@enriquedlh97/playwright-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "headless": {
+          "type": "boolean",
+          "description": "Run browser in headless mode",
+          "default": true
+        },
+        "outputDir": {
+          "type": "string",
+          "description": "Directory for output files",
+          "default": "/tmp/playwright-output"
+        },
+        "browserName": {
+          "type": "string",
+          "description": "Browser type to use for automation",
+          "default": "chromium"
+        },
+        "capabilities": {
+          "type": "array",
+          "description": "Additional capabilities to enable",
+          "default": []
+        },
+        "imageResponses": {
+          "type": "string",
+          "description": "Whether to send image responses to the client",
+          "default": "allow"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "browser_close",
+      "description": "Close the page"
+    },
+    {
+      "name": "browser_resize",
+      "description": "Resize the browser window"
+    },
+    {
+      "name": "browser_console_messages",
+      "description": "Returns all console messages"
+    },
+    {
+      "name": "browser_handle_dialog",
+      "description": "Handle a dialog"
+    },
+    {
+      "name": "browser_evaluate",
+      "description": "Evaluate JavaScript expression on page or element"
+    },
+    {
+      "name": "browser_file_upload",
+      "description": "Upload one or multiple files"
+    },
+    {
+      "name": "browser_fill_form",
+      "description": "Fill multiple form fields"
+    },
+    {
+      "name": "browser_install",
+      "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed."
+    },
+    {
+      "name": "browser_press_key",
+      "description": "Press a key on the keyboard"
+    },
+    {
+      "name": "browser_type",
+      "description": "Type text into editable element"
+    },
+    {
+      "name": "browser_navigate",
+      "description": "Navigate to a URL"
+    },
+    {
+      "name": "browser_navigate_back",
+      "description": "Go back to the previous page"
+    },
+    {
+      "name": "browser_network_requests",
+      "description": "Returns all network requests since loading the page"
+    },
+    {
+      "name": "browser_take_screenshot",
+      "description": "Take a screenshot of the current page. You can't perform actions based on the screenshot, use browser_snapshot for actions."
+    },
+    {
+      "name": "browser_snapshot",
+      "description": "Capture accessibility snapshot of the current page, this is better than screenshot"
+    },
+    {
+      "name": "browser_click",
+      "description": "Perform click on a web page"
+    },
+    {
+      "name": "browser_drag",
+      "description": "Perform drag and drop between two elements"
+    },
+    {
+      "name": "browser_hover",
+      "description": "Hover over element on page"
+    },
+    {
+      "name": "browser_select_option",
+      "description": "Select an option in a dropdown"
+    },
+    {
+      "name": "browser_tabs",
+      "description": "List, create, close, or select a browser tab."
+    },
+    {
+      "name": "browser_wait_for",
+      "description": "Wait for text to appear or disappear or a specified time to pass"
+    }
+  ]
+}

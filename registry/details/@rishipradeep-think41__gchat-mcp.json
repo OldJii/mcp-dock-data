@@ -1,0 +1,50 @@
+{
+  "id": "@rishipradeep-think41/gchat-mcp",
+  "displayName": "Google Chat Integration Server",
+  "description": "Post messages to Google Chat spaces effortlessly using webhooks. Simplify your integration without the need for OAuth setup, making it secure and easy to use with MCP-compatible tools.",
+  "createdAt": "2026-01-16T07:28:52.350Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rishipradeep-think41/gchat-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "googleChatSpaceId",
+        "googleChatApiKey",
+        "googleChatToken"
+      ],
+      "properties": {
+        "googleChatToken": {
+          "type": "string",
+          "description": "The authentication token for Google Chat"
+        },
+        "googleChatApiKey": {
+          "type": "string",
+          "description": "The API key for your Google Cloud project"
+        },
+        "googleChatSpaceId": {
+          "type": "string",
+          "description": "The Space ID of your Google Chat space"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "post_text_message",
+      "description": "Post a text message to a Google Chat space."
+    },
+    {
+      "name": "send_todo",
+      "description": "Send a formatted todo message to Google Chat space"
+    },
+    {
+      "name": "send_summary",
+      "description": "Send a summary link and title in a card to a Google Chat space."
+    }
+  ]
+}

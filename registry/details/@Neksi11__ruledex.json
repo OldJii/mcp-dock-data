@@ -1,0 +1,12 @@
+{
+  "id": "@Neksi11/ruledex",
+  "displayName": "Ruledex",
+  "description": "MCP Server which can get your AI's to Code in an Production level state.",
+  "createdAt": "2026-01-16T07:35:46.154Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Neksi11/ruledex"
+  },
+  "connection": null,
+  "capabilities": []
+}

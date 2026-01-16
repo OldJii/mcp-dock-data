@@ -1,0 +1,42 @@
+{
+  "id": "@petrsovadina/mcp-atlassian",
+  "displayName": "Atlassian Integration Server",
+  "description": "Integrate your Atlassian products with ease. Access Confluence content and Jira tickets directly through the MCP interface, streamlining your workflow and enhancing productivity.",
+  "createdAt": "2026-01-16T07:29:43.590Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@petrsovadina/mcp-atlassian"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "CONFLUENCE_URL",
+        "CONFLUENCE_USERNAME",
+        "CONFLUENCE_API_TOKEN"
+      ],
+      "properties": {
+        "CONFLUENCE_URL": {
+          "type": "string",
+          "description": "URL of your Confluence instance. Example: https://your-domain.atlassian.net/wiki"
+        },
+        "CONFLUENCE_USERNAME": {
+          "type": "string",
+          "description": "Username or email for Confluence authentication."
+        },
+        "CONFLUENCE_API_TOKEN": {
+          "type": "string",
+          "description": "API token for Confluence."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "confluence_search",
+      "description": "Search Confluence content using CQL"
+    }
+  ]
+}

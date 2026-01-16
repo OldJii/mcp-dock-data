@@ -1,0 +1,25 @@
+{
+  "id": "@parallel/tasks",
+  "displayName": "Parallel Tasks",
+  "description": "Execute Parallel.ai Tasks in Parallel for extremely powerful data enrichment from the web",
+  "createdAt": "2026-01-16T07:29:17.009Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@parallel/tasks"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "createMultitask",
+      "description": "Creates a new task group for batch processing. Responds with a URL in format https://task-mcp.parallel.ai/{taskGroupId} that can immediately be shared with the user for viewing, results will be streamed in here."
+    },
+    {
+      "name": "getTaskGroupResultsMarkdown",
+      "description": "Get Task Group Results as Markdown"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "@kesslerio/attio-mcp-server-beta",
+  "displayName": "Attio CRM",
+  "description": "Streamline your Attio workflows using natural language to search, create, update, and organize companies, people, deals, tasks, lists, and notes. Run advanced filters, relationship lookups, and batch updates to keep data clean and pipelines moving. Accelerate sales and operations with curated prompts for prospecting, meeting prep, pipeline health, and lead qualification.",
+  "createdAt": "2026-01-16T07:20:40.090Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kesslerio/attio-mcp-server-beta"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "ATTIO_API_KEY": {
+          "type": "string",
+          "description": "Your Attio API key"
+        },
+        "ATTIO_WORKSPACE_ID": {
+          "type": "string",
+          "description": "Optional Attio workspace ID"
+        },
+        "ATTIO_MCP_TOOL_MODE": {
+          "type": "string",
+          "description": "Tool mode: \"full\" (all 33 tools, requires ChatGPT Developer Mode) or \"search\" (only search/fetch/health-check for non-Developer Mode users)",
+          "default": "full",
+          "enum": [
+            "full",
+            "search"
+          ]
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "aaa-health-check",
+      "description": "Returns server status without requiring any credentials."
+    },
+    {
+      "name": "records_search",
+      "description": "Search across companies, people, tasks, and records | Does not: create or modify records | Returns max 100 results (default: 10) | If errors occur: use records.discover_attributes to find searchable fields"
+    },
+    {
+      "name": "records_get_details",
+      "description": "Fetch a single record with enriched attribute formatting. | Does not: search or filter result sets; use records.search* tools instead. | Requires resource_type and record_id; optional fields filter output. | If errors occur: Validate record IDs with records.search before retrying."
+    },
+    {
+      "name": "create-record",
+      "description": "Create a new record of any supported type"
+    },
+    {
+      "name": "update-record",
+      "description": "Update an existing record of any supported type"
+    },
+    {
+      "name": "delete-record",
+      "description": "Delete a record of any supported type"
+    },
+    {
+      "name": "records_get_attributes",
+      "description": "Retrieve attribute metadata for a given resource type. | Does not: modify schema definitions or record data. | Requires resource_type; optional categories narrows groups. | If errors occur: Use records.discover_attributes for grouped schema discovery."
+    },
+    {
+      "name": "records_discover_attributes",
+      "description": "Discover available attributes (standard/custom) for a resource. | Does not: alter schema or create fields. | Requires resource_type; optional categories selects subsets. | If errors occur: Follow with records.get_attributes to inspect specific fields."
+    },
+    {
+      "name": "records_get_info",
+      "description": "Retrieve enriched info subsets (contact, business, social) for a record. | Does not: search lists of records or mutate data. | Requires resource_type, record_id, and info_type (contact|business|social). | If errors occur: Use records.get_details if you need the full record payload."
+    },
+    {
+      "name": "create-note",
+      "description": "Create note for companies, people, or deals with optional markdown formatting. | WRITE: requires approval | Does not: update or delete notes; creates only. | Requires resource_type, record_id, title, content. Optional format (plaintext or markdown). | If errors occur: If record not found, use records_search first."
+    },
+    {
+      "name": "list-notes",
+      "description": "Retrieve notes for a record with timestamps. | Does not: create or modify notes; read-only. | Requires resource_type, record_id; sorted by creation date. | If errors occur: If empty, verify record has notes with records_get_details."
+    },
+    {
+      "name": "records_search_advanced",
+      "description": "Run complex searches with nested filters across resource types. | Does not: mutate records; use records.update or records.delete. | Supports filter groups, scoring, pagination, and up to 100 items. | If errors occur: If filters fail, fetch valid attributes via records.discover_attributes."
+    },
+    {
+      "name": "records_search_by_relationship",
+      "description": "Search records using relationship anchors (list, company, people). | Does not: modify memberships; use list tools for writes. | Requires resource_type and related resource identifier. | If errors occur: Use records.search to resolve IDs before calling."
+    },
+    {
+      "name": "records_search_by_content",
+      "description": "Search record content (notes, activity, communications). | Does not: modify note content or attachments. | Requires resource_type and content_query; optional fields array. | If errors occur: Narrow scope with fields or switch to records.search_advanced."
+    },
+    {
+      "name": "records_search_by_timeframe",
+      "description": "Filter records by creation, update, or interaction timeframes. | Does not: modify lifecycle state or scheduling follow-ups. | Requires resource_type; provide timeframe or explicit date boundaries. | If errors occur: Call records.search if timeframe filters are too restrictive."
+    },
+    {
+      "name": "records_batch",
+      "description": "Execute batched record operations (create/update/delete/get/search). | WRITE: requires approval | Does not: ignore approval guardrails; hosts may require confirmation. | operation_type must be specified; enforce per-operation limits. | If errors occur: Run records.search first to stage IDs or payloads for batching."
+    },
+    {
+      "name": "records_search_batch",
+      "description": "Execute multiple searches in parallel and return grouped results. | Does not: mutate or import data; use records.batch for write operations. | Provide queries array (1–10 items recommended) and resource_type. | If errors occur: If queries fail, retry individually using records.search."
+    },
+    {
+      "name": "search",
+      "description": "Simple search by query string across companies, people, lists, and tasks. For advanced filtering, date ranges, or relationships, use records.search instead."
+    },
+    {
+      "name": "fetch",
+      "description": "Retrieve the full record payload for a search result ID."
+    },
+    {
+      "name": "get-lists",
+      "description": "Retrieve all CRM lists (sales pipelines, lead stages, customer segments). | Does not: create or modify lists, only reads existing lists. | Returns all lists visible to the authenticated workspace. | If errors occur: Use get-list-details to inspect individual list schemas."
+    },
+    {
+      "name": "get-record-list-memberships",
+      "description": "Find all lists containing a specific company or person record. | Does not: modify list memberships or retrieve list entries. | Requires recordId; processes 5 lists in parallel by default (max 20). | If errors occur: If record not found, verify recordId with records_search first."
+    },
+    {
+      "name": "get-list-details",
+      "description": "Retrieve schema and configuration for a specific list (stages, fields, attributes). | Does not: modify list structure or retrieve list entries. | Requires valid list UUID or slug; accepts both formats. | If errors occur: Use get-lists to discover available list IDs and slugs first."
+    },
+    {
+      "name": "get-list-entries",
+      "description": "Retrieve all records in a list with pagination (companies, people in pipelines). | Does not: filter entries or modify list memberships. | Requires list UUID (not slug); default limit 20, max per page varies by API. | If errors occur: Use filter-list-entries for attribute-based filtering instead."
+    },
+    {
+      "name": "filter-list-entries",
+      "description": "Filter list entries by single attribute condition. | Does not: combine conditions; use advanced-filter for multi-condition. | Requires listId, attributeSlug, condition, value. | If errors occur: Use get-list-details for valid attribute slugs."
+    },
+    {
+      "name": "advanced-filter-list-entries",
+      "description": "Filter entries with multi-condition queries (AND/OR logic). | Does not: modify entries; read-only. | Requires listId, filters array; matchAny for OR logic. | If errors occur: Use filter-list-entries for single conditions."
+    },
+    {
+      "name": "add-record-to-list",
+      "description": "Add company or person to list with optional initial values. | WRITE: requires approval | Does not: create records; record must exist first. | Requires list UUID, record UUID, object type. | If errors occur: If not found, create record first with create-record."
+    },
+    {
+      "name": "remove-record-from-list",
+      "description": "Remove company or person from list (membership only). | WRITE: requires approval | Does not: delete underlying record; membership only. | Requires list UUID, entry UUID (not record UUID). | If errors occur: Use get-list-entries to find entry UUID."
+    },
+    {
+      "name": "update-list-entry",
+      "description": "Update list entry attributes (stage, status, custom fields). | WRITE: requires approval | Does not: update record attributes; use update-record for that. | Requires list UUID, entry UUID, attributes object. | If errors occur: Use get-list-details for valid attributes and values."
+    },
+    {
+      "name": "filter-list-entries-by-parent",
+      "description": "Filter entries by parent record attributes (industry, role). | Does not: search multiple lists or modify records. | Requires listId, parentObjectType, parentAttributeSlug, condition, value. | If errors occur: Use records_discover_attributes for valid slugs."
+    },
+    {
+      "name": "filter-list-entries-by-parent-id",
+      "description": "Filter entries by exact parent record UUID. | Does not: search multiple lists. | Requires list UUID, record UUID; faster than attribute filtering. | If errors occur: Use get-record-list-memberships for workspace-wide search."
+    },
+    {
+      "name": "list-workspace-members",
+      "description": "List workspace members to plan assignments and access checks. | Does not: change access levels or invite new members; read-only. | Supports optional search, pagination (1-100 per page, default 25). | If errors occur: Use search-workspace-members for targeted lookups."
+    },
+    {
+      "name": "search-workspace-members",
+      "description": "Search workspace members by name, email, or access role. | Does not: modify member profiles or permissions; lookup only. | Requires query string (minimum 2 characters). | If errors occur: If no results, list-workspace-members provides the full roster."
+    },
+    {
+      "name": "get-workspace-member",
+      "description": "Retrieve profile and access details for one workspace member. | Does not: update member information or change permissions. | Requires workspace_member_id from list/search results; read-only. | If errors occur: Use list-workspace-members to confirm the memberId before retrying."
+    }
+  ]
+}

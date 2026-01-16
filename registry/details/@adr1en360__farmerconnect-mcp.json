@@ -1,0 +1,69 @@
+{
+  "id": "@adr1en360/farmerconnect-mcp",
+  "displayName": "Farmerconnect-mcp",
+  "description": "Plan fieldwork with location-based weather insights and quick place lookups. Calculate land area, plant density, yield estimates, and perform unit conversions. Explore crop information and time utilities to support daily farm decisions.",
+  "createdAt": "2026-01-16T07:32:30.861Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@adr1en360/farmerconnect-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "LOCATIONIQ_API_KEY": {
+          "type": "string",
+          "description": "LocationIQ API Key for geocoding functions. Can be set in session configuration.",
+          "default": null
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_crop_info",
+      "description": "\nProvides encyclopedic information about a specific crop in a given location.\n"
+    },
+    {
+      "name": "calculate_agro_metric",
+      "description": "\nPerform basic agricultural calculations and unit conversions.\n"
+    },
+    {
+      "name": "get_weather_now",
+      "description": "\nFetches the current weather from Open-Meteo.\n"
+    },
+    {
+      "name": "get_weather_forecast",
+      "description": "\nFetches the daily weather forecast from Open-Meteo.\n"
+    },
+    {
+      "name": "forward_geocode",
+      "description": "\nConverts a place name into geographic coordinates.\n"
+    },
+    {
+      "name": "reverse_geocode",
+      "description": "\nConverts geographic coordinates into a place name.\n"
+    },
+    {
+      "name": "get_current_datetime",
+      "description": "\nGets the server's current date and time in UTC.\n"
+    },
+    {
+      "name": "relative_time",
+      "description": "\nGets a datetime relative to now (in UTC) by applying an offset.\n"
+    },
+    {
+      "name": "get_timestamp",
+      "description": "\nConverts a datetime string into a Unix timestamp.\n"
+    },
+    {
+      "name": "convert_time",
+      "description": "\nConverts a datetime string from one timezone to another.\n"
+    }
+  ]
+}

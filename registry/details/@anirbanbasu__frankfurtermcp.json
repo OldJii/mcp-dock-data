@@ -1,0 +1,45 @@
+{
+  "id": "@anirbanbasu/frankfurtermcp",
+  "displayName": "FrankfurterMCP",
+  "description": "A MCP server for the Frankfurter API for currency exchange rates.",
+  "createdAt": "2026-01-16T07:20:46.665Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anirbanbasu/frankfurtermcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_supported_currencies",
+      "description": "Returns a list of three-letter currency codes for the supported currencies."
+    },
+    {
+      "name": "get_latest_exchange_rates",
+      "description": "Returns the latest exchange rates for specific currencies.\n\nThe symbols can be used to filter the results to specific currencies.\nIf symbols is not provided, all supported currencies will be returned."
+    },
+    {
+      "name": "convert_currency_latest",
+      "description": "Converts an amount from one currency to another using the latest exchange rates."
+    },
+    {
+      "name": "get_historical_exchange_rates",
+      "description": "Returns historical exchange rates for a specific date or date range.\n\nIf the exchange rates for a specified date is not available, the rates available for\nthe closest date before the specified date will be provided.\nEither a specific date, a start date, or a date range must be provided.\nThe symbols can be used to filter the results to specific currencies.\nIf symbols are not provided, all supported currencies will be returned."
+    },
+    {
+      "name": "convert_currency_specific_date",
+      "description": "Convert an amount from one currency to another using the exchange rates for a specific date.\n\nIf there is no exchange rate available for the specific date, the rate for the closest available date before\nthe specified date will be used."
+    },
+    {
+      "name": "greet",
+      "description": "A simple greeting tool to demonstrate middleware functionality."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@adrian/garmin-mcp",
+  "displayName": "garmin-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:53.871Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@adrian/garmin-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Nutella134/okta_mcp_server",
+  "displayName": "okta_mcp_server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:12.704Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Nutella134/okta_mcp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

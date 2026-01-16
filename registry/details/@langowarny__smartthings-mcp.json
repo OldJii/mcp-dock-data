@@ -1,0 +1,121 @@
+{
+  "id": "@langowarny/smartthings-mcp",
+  "displayName": "SmartThings MCP",
+  "description": "Control SmartThings devices and scenes across your locations. Get live status and history, and send commands instantly. Automate routines by managing rooms, rules, schedules, and event subscriptions with real-time updates.",
+  "createdAt": "2026-01-16T07:29:41.566Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@langowarny/smartthings-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "smartThingsToken"
+      ],
+      "properties": {
+        "stBaseUrl": {
+          "type": "string",
+          "description": "SmartThings API Base URL (optional)"
+        },
+        "smartThingsToken": {
+          "type": "string",
+          "description": "SmartThings Personal Access Token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_room",
+      "description": "Create a new room in a SmartThings location"
+    },
+    {
+      "name": "create_schedule",
+      "description": "Create a cron schedule"
+    },
+    {
+      "name": "create_subscription",
+      "description": "Create a subscription for device events"
+    },
+    {
+      "name": "delete_room",
+      "description": "Delete a room from a SmartThings location"
+    },
+    {
+      "name": "delete_schedule",
+      "description": "Delete a schedule"
+    },
+    {
+      "name": "delete_subscription",
+      "description": "Delete a subscription"
+    },
+    {
+      "name": "execute_scene",
+      "description": "Execute SmartThings scene"
+    },
+    {
+      "name": "get_capability",
+      "description": "Get definition of a SmartThings capability"
+    },
+    {
+      "name": "get_device",
+      "description": "Get SmartThings device metadata"
+    },
+    {
+      "name": "get_device_history",
+      "description": "Get recent event history for a device"
+    },
+    {
+      "name": "get_device_status",
+      "description": "Get SmartThings device status"
+    },
+    {
+      "name": "get_hub_health",
+      "description": "Get health status of a SmartThings hub"
+    },
+    {
+      "name": "list_device_capabilities",
+      "description": "List capabilities supported by a SmartThings device"
+    },
+    {
+      "name": "list_devices",
+      "description": "List SmartThings devices"
+    },
+    {
+      "name": "list_hubs",
+      "description": "List SmartThings hubs"
+    },
+    {
+      "name": "list_locations",
+      "description": "List SmartThings locations"
+    },
+    {
+      "name": "list_rooms",
+      "description": "List rooms in a SmartThings location"
+    },
+    {
+      "name": "list_rules",
+      "description": "List SmartThings automation rules"
+    },
+    {
+      "name": "list_scenes",
+      "description": "List SmartThings scenes"
+    },
+    {
+      "name": "list_schedules",
+      "description": "List schedules for an installed app"
+    },
+    {
+      "name": "list_subscriptions",
+      "description": "List subscriptions for an installed app"
+    },
+    {
+      "name": "send_device_command",
+      "description": "Send command to SmartThings device"
+    }
+  ]
+}

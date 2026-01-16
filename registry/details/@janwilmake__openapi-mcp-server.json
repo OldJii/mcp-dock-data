@@ -1,0 +1,12 @@
+{
+  "id": "@janwilmake/openapi-mcp-server",
+  "displayName": "openapi-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:00.341Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@janwilmake/openapi-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

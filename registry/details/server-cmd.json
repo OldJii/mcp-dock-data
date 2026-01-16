@@ -1,0 +1,31 @@
+{
+  "id": "server-cmd",
+  "displayName": "CMD Server",
+  "description": "MCP server for executing CMD and SSH commands.",
+  "createdAt": "2026-01-16T07:25:52.118Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/server-cmd"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "The host address for the server.",
+          "default": "localhost"
+        },
+        "port": {
+          "type": "number",
+          "description": "The port on which the server runs.",
+          "default": 8080
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

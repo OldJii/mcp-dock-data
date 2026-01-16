@@ -1,0 +1,35 @@
+{
+  "id": "@cyberimaginationsi-gif/mcp-takeoff",
+  "displayName": "mcp-takeoff",
+  "description": "Fetch the latest issue posts and weekly news from Takeoff. Stay current with curated updates in a single request. Speed up research by pulling fresh headlines directly into your workflow.",
+  "createdAt": "2026-01-16T07:32:46.836Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cyberimaginationsi-gif/mcp-takeoff"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "docs_getSpec1",
+      "description": "API Spec 문서 #1 (요약 + docx 위치)를 제공합니다."
+    },
+    {
+      "name": "docs_getSpec2",
+      "description": "OAuth2 토큰 발급 및 MCP API 전체 스펙(Spec-2)을 요약해서 보여줍니다."
+    }
+  ]
+}

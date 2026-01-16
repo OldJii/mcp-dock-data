@@ -1,0 +1,37 @@
+{
+  "id": "@openai-agent-school/mcp-server",
+  "displayName": "Calculator",
+  "description": "Perform quick arithmetic—add, subtract, multiply, and divide. Get instant results for everyday calculations in your workflow. Reduce context switching when handling numbers.",
+  "createdAt": "2026-01-16T07:22:02.984Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@openai-agent-school/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add",
+      "description": "두 숫자의 합을 반환합니다."
+    },
+    {
+      "name": "multiply",
+      "description": "두 숫자의 곱을 반환합니다."
+    },
+    {
+      "name": "subtract",
+      "description": "두 숫자의 차를 반환합니다."
+    },
+    {
+      "name": "divide",
+      "description": "두 숫자의 나눗셈 결과를 반환합니다."
+    }
+  ]
+}

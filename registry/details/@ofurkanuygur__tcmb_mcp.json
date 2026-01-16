@@ -1,0 +1,43 @@
+{
+  "id": "@ofurkanuygur/tcmb_mcp",
+  "displayName": "tcmb_mcp",
+  "description": "Fetch today's and historical exchange rates from the Turkish Central Bank dating back to 1996. Convert between currencies and compare trends with summary statistics. Rely on holiday-aware lookups to always return the latest available data.",
+  "createdAt": "2026-01-16T07:20:55.627Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ofurkanuygur/tcmb_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "tcmb_get_current_rates",
+      "description": "Get current exchange rates from the Turkish Central Bank (TCMB).\n\n    Returns today's official exchange rates including buying/selling rates for forex and banknotes.\n    Data is sourced directly from TCMB's public XML API.\n    "
+    },
+    {
+      "name": "tcmb_get_historical_rates",
+      "description": "Get historical exchange rates from TCMB for a specific date.\n\n    Retrieves archived exchange rates from TCMB. Data available since 1996.\n    Automatically handles Turkish holidays by falling back to the previous business day.\n    "
+    },
+    {
+      "name": "tcmb_list_currencies",
+      "description": "List all available currencies supported by TCMB.\n\n    Returns currency codes, names (in Turkish and English), and optionally current rates.\n    Useful for discovering which currencies can be queried.\n    "
+    },
+    {
+      "name": "tcmb_convert_currency",
+      "description": "Convert between currencies using TCMB rates.\n\n    Supports conversion between any currencies including TRY.\n    Uses official TCMB exchange rates for accurate conversions.\n    "
+    },
+    {
+      "name": "tcmb_get_rate_history",
+      "description": "Get exchange rate history with statistics for a date range.\n\n    Returns daily rates and calculates statistics including min, max, average,\n    and percentage change over the period. Maximum range is 365 days.\n    "
+    },
+    {
+      "name": "tcmb_compare_currencies",
+      "description": "Compare multiple currencies over a time period.\n\n    Shows current rates and historical performance statistics for multiple\n    currencies against a base currency. Useful for analyzing currency trends.\n    "
+    }
+  ]
+}

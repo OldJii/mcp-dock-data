@@ -1,0 +1,21 @@
+{
+  "id": "sap_successfactors",
+  "displayName": "Sap successfactors",
+  "description": "Cloud-based human capital management software covering Employee Central, Recruiting, Performance & Goals, Learning, Compensation, and more.",
+  "createdAt": "2026-01-16T07:19:44.951Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/sap_successfactors"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SAP_SUCCESSFACTORS_GET_CURRENT_USER",
+      "description": "Retrieves the currently authenticated user's information from SAP SuccessFactors."
+    }
+  ]
+}

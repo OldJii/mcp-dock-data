@@ -1,0 +1,43 @@
+{
+  "id": "@flrngel/mcp-painter",
+  "displayName": "Drawing Tool for AI Assistants",
+  "description": "Create and manipulate drawings with a simple canvas interface. Enhance your AI assistants by enabling them to draw filled shapes and export images effortlessly. Utilize this tool to bring visual creativity to your applications.",
+  "createdAt": "2026-01-16T07:20:02.963Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@flrngel/mcp-painter"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "port": {
+          "type": "number",
+          "description": "Port for the MCP server to listen on",
+          "default": 3000
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "drawing_generateCanvas",
+      "description": "Generate a new drawing canvas with specified width and height."
+    },
+    {
+      "name": "drawing_fillRectangle",
+      "description": "Fill a rectangle on the drawing canvas with a specified color and coordinates."
+    },
+    {
+      "name": "drawing_getCanvasPng",
+      "description": "Get the current drawing canvas as a PNG image (base64 encoded)."
+    },
+    {
+      "name": "drawing_getCanvasData",
+      "description": "Get the current pixel data of the drawing canvas as JSON."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "@smithery-ai/fetch",
+  "displayName": "Fetch",
+  "description": "A simple tool that performs a fetch request to a webpage.",
+  "createdAt": "2026-01-16T07:20:32.439Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@smithery-ai/fetch"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "timeout": {
+          "type": "number",
+          "description": "Request timeout in milliseconds",
+          "default": 10000
+        },
+        "userAgent": {
+          "type": "string",
+          "description": "Custom User-Agent header for HTTP requests",
+          "default": "Fetch-MCP-Server/1.0 (https://smithery.ai)"
+        },
+        "followRedirects": {
+          "type": "boolean",
+          "description": "Follow HTTP redirects",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch_url",
+      "description": "Fetch a URL and return basic information about the page."
+    },
+    {
+      "name": "extract_elements",
+      "description": "Extract specific elements from a web page using CSS selectors."
+    },
+    {
+      "name": "get_page_metadata",
+      "description": "Extract comprehensive metadata from a web page including title, description, Open Graph tags, Twitter cards, and other meta information."
+    }
+  ]
+}

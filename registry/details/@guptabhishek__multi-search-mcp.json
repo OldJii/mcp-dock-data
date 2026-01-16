@@ -1,0 +1,51 @@
+{
+  "id": "@guptabhishek/multi-search-mcp",
+  "displayName": "Multi-Provider Web Search Server",
+  "description": "Provide unified web search capabilities by leveraging multiple search providers with automatic fallback to maximize your search quota. Perform searches across Google, Tavily, DuckDuckGo, and Brave with standardized results through a single MCP tool. Easily configure and integrate into your AI workflows to enhance search automation.",
+  "createdAt": "2026-01-16T07:22:40.954Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guptabhishek/multi-search-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "googleCx": {
+          "type": "string",
+          "description": "Google Custom Search Engine ID"
+        },
+        "braveApiKey": {
+          "type": "string",
+          "description": "Brave Search API key"
+        },
+        "googleApiKey": {
+          "type": "string",
+          "description": "Google API key"
+        },
+        "tavilyApiKey": {
+          "type": "string",
+          "description": "Tavily API key"
+        },
+        "searchStrategy": {
+          "type": "string",
+          "description": "Search strategy: priority or random",
+          "default": "random"
+        },
+        "searchProviders": {
+          "type": "string",
+          "description": "Comma-separated list of providers (tavily,google,duckduckgo,brave)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Performs a web search using multiple providers (google, tavily, duckduckgo, brave)."
+    }
+  ]
+}

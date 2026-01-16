@@ -1,0 +1,42 @@
+{
+  "id": "@cdugo/mcp-get-docs",
+  "displayName": "DocsFetcher",
+  "description": "Fetch npm package documentation and present it for LLMs.",
+  "createdAt": "2026-01-16T07:25:30.576Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cdugo/mcp-get-docs"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "cacheDirectory": {
+          "type": "string",
+          "description": "Directory to store cached documentation (optional)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch-url-docs",
+      "description": ""
+    },
+    {
+      "name": "fetch-package-docs",
+      "description": ""
+    },
+    {
+      "name": "fetch-library-docs",
+      "description": ""
+    },
+    {
+      "name": "fetch-multilingual-docs",
+      "description": ""
+    }
+  ]
+}

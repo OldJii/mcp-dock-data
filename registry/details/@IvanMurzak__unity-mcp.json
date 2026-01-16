@@ -1,0 +1,16 @@
+{
+  "id": "@IvanMurzak/unity-mcp",
+  "displayName": "Unity Engine - MCP Server",
+  "description": "Enable seamless integration of AI capabilities within Unity Editor and Unity games by bridging MCP clients with Unity's runtime environment. Facilitate advanced AI interactions through a flexible server that supports multiple transport methods including HTTP and STDIO. Simplify AI-driven development workflows with easy deployment options such as Docker and standalone binaries.",
+  "createdAt": "2026-01-16T07:28:22.644Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@IvanMurzak/unity-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

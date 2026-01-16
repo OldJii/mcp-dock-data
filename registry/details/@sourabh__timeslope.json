@@ -1,0 +1,25 @@
+{
+  "id": "@sourabh/timeslope",
+  "displayName": "timeslope",
+  "description": "### TimeSlope MCP Server\n**Automated Economic analysis via MCP over FRED data**\n\nPlug your agent into FRED and get quick, decision-ready insights. TimeSlope finds the right series and summarizes what matters—no setup details here.\n\n### Tools\n- **Plan Research**: Give it a question; get a tight plan with smart follow-ups.\n- **Quick Analyze**: Ask about a topic (optionally add dates); get a brief series-backed summary.\n\n### Examples\n- “How did unemployment and CPI move from 2018–2024?”\n- “Show mortgage rates and home prices during 2008–2012.”\n- “Compare US GDP growth and CPI from 2000–2010.”\n\n### Notes\n- No forecasting. Not investment advice.",
+  "createdAt": "2026-01-16T07:25:53.999Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sourabh/timeslope"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_research_plan",
+      "description": "Get a research plan for answering a question.\nAlways call this tool before calling the execute_step_from_research_plan tool.\nOnce you have a research plan, you can call the execute_step_from_research_plan tool to answer the question using the research plan that this tool returns."
+    },
+    {
+      "name": "execute_step_from_research_plan",
+      "description": "Query the multiple tools to answer a question about the St. Louis Federal Reserve Economic Database (FRED).\nYou should use the research plan from the get_research_plan tool before issuing calls to this tool.\nOnly issue questions to this tool that are the in service of the research plan given by the get_research_plan tool."
+    }
+  ]
+}

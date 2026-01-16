@@ -1,0 +1,12 @@
+{
+  "id": "@patkretschmer/corviapp",
+  "displayName": "corviapp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:50.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@patkretschmer/corviapp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/bazi",
+  "displayName": "bazi",
+  "description": "生成八字排盘，支持公历或农历输入。根据八字反推可能的公历时间，帮助定位出生时刻。查询指定日期的黄历宜忌与节气，辅助择日与规划。",
+  "createdAt": "2026-01-16T07:26:22.472Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/bazi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getBaziDetail",
+      "description": "根据时间（公历或农历）、性别来获取八字信息。solarDatetime和lunarDatetime必须传且只传其中一个。"
+    },
+    {
+      "name": "getSolarTimes",
+      "description": "根据八字获取公历时间列表。返回的时间格式为：YYYY-MM-DD hh:mm:ss。例如时间1998年7月31日下午2点整表示为：1998-07-31 14:00:00"
+    },
+    {
+      "name": "getChineseCalendar",
+      "description": "获取指定公历时间（默认今天）的黄历信息。"
+    }
+  ]
+}

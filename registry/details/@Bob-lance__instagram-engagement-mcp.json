@@ -1,0 +1,53 @@
+{
+  "id": "@Bob-lance/instagram-engagement-mcp",
+  "displayName": "Instagram Engagement Analysis",
+  "description": "Analyze Instagram engagement metrics, extract demographic insights, and identify potential leads from posts and accounts. Gain actionable insights to enhance your social media strategy and marketing efforts.",
+  "createdAt": "2026-01-16T07:27:09.983Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Bob-lance/instagram-engagement-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "instagramUsername",
+        "instagramPassword"
+      ],
+      "properties": {
+        "instagramPassword": {
+          "type": "string",
+          "description": "Your Instagram password"
+        },
+        "instagramUsername": {
+          "type": "string",
+          "description": "Your Instagram username"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_post_comments",
+      "description": "Analyze comments on an Instagram post to identify sentiment, themes, and potential leads"
+    },
+    {
+      "name": "compare_accounts",
+      "description": "Compare engagement metrics across different Instagram accounts"
+    },
+    {
+      "name": "extract_demographics",
+      "description": "Extract demographic insights from users engaged with a post or account"
+    },
+    {
+      "name": "identify_leads",
+      "description": "Identify potential leads based on engagement patterns"
+    },
+    {
+      "name": "generate_engagement_report",
+      "description": "Generate a comprehensive engagement report for an Instagram account"
+    }
+  ]
+}

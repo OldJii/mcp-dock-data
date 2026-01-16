@@ -1,0 +1,101 @@
+{
+  "id": "@manasp21/oscilloscope_mcp",
+  "displayName": "Oscilloscope and Function Generator Server",
+  "description": "Provide advanced oscilloscope and function generator capabilities to AI agents, enabling multi-channel signal acquisition, real-time analysis, and waveform generation. Automate measurement workflows and protocol decoding with over 40 integrated tools. Seamlessly integrate with AI platforms like Claude Desktop and VS Code extensions for enhanced test and measurement automation.",
+  "createdAt": "2026-01-16T07:32:39.398Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@manasp21/oscilloscope_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "timeout": {
+          "type": "number",
+          "description": "Timeout for operations in seconds",
+          "default": 5
+        },
+        "channels": {
+          "type": "number",
+          "description": "Number of ADC channels",
+          "default": 4
+        },
+        "bufferSize": {
+          "type": "number",
+          "description": "Buffer size for data acquisition",
+          "default": 1000
+        },
+        "sampleRate": {
+          "type": "number",
+          "description": "ADC sample rate in Hz",
+          "default": 1000000
+        },
+        "audioSampleRate": {
+          "type": "number",
+          "description": "Audio sample rate in Hz for microphone",
+          "default": 44100
+        },
+        "microphoneDevice": {
+          "type": "string",
+          "description": "Microphone device for audio capture"
+        },
+        "hardwareInterface": {
+          "type": "string",
+          "description": "Hardware interface type: simulation, usb, ethernet, pcie, microphone",
+          "default": "simulation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_acquisition_status",
+      "description": "Get current acquisition status and available data"
+    },
+    {
+      "name": "acquire_waveform",
+      "description": "Wait for new ADC data acquisition"
+    },
+    {
+      "name": "measure_parameters",
+      "description": "Perform automated measurements on acquired data"
+    },
+    {
+      "name": "analyze_spectrum",
+      "description": "Perform FFT analysis on acquired data"
+    },
+    {
+      "name": "generate_test_signal",
+      "description": "Generate a test signal and inject it as ADC data"
+    },
+    {
+      "name": "decode_protocol",
+      "description": "Decode digital communication protocols from acquired data"
+    },
+    {
+      "name": "list_audio_devices",
+      "description": "List available audio input devices for microphone capture"
+    },
+    {
+      "name": "configure_hardware",
+      "description": "Configure hardware interface and device settings"
+    },
+    {
+      "name": "get_hardware_status",
+      "description": "Get current hardware configuration and status"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "@GeekyRiolu/mcp_insta",
+  "displayName": "Instagram Engagement Analysis Toolkit",
+  "description": "Analyze Instagram engagement to extract insights on post comments, compare account metrics, identify potential leads, and generate detailed engagement reports. Empower your marketing and social media strategies with demographic extraction and comprehensive analytics. Use this toolkit to make data-driven decisions for Instagram growth and engagement optimization.",
+  "createdAt": "2026-01-16T07:30:20.478Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GeekyRiolu/mcp_insta"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "instagramUsername",
+        "instagramPassword"
+      ],
+      "properties": {
+        "instagramPassword": {
+          "type": "string",
+          "description": "Your Instagram password"
+        },
+        "instagramUsername": {
+          "type": "string",
+          "description": "Your Instagram username"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_post_comments",
+      "description": "Analyze comments on an Instagram post to identify sentiment, themes, and potential leads"
+    },
+    {
+      "name": "compare_accounts",
+      "description": "Compare engagement metrics across different Instagram accounts"
+    },
+    {
+      "name": "extract_demographics",
+      "description": "Extract demographic insights from users engaged with a post or account"
+    },
+    {
+      "name": "identify_leads",
+      "description": "Identify potential leads based on engagement patterns"
+    },
+    {
+      "name": "generate_engagement_report",
+      "description": "Generate a comprehensive engagement report for an Instagram account"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "@Magic-Sauce/quickchart-mcp-server",
+  "displayName": "QuickChart Server",
+  "description": "Generate various types of charts effortlessly using QuickChart.io. Create chart images by providing data and styling parameters, and download them directly to your local system. Enhance your data visualization capabilities with customizable chart options and easy integration.",
+  "createdAt": "2026-01-16T07:22:04.540Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Magic-Sauce/quickchart-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_chart",
+      "description": "Generate a chart using QuickChart"
+    },
+    {
+      "name": "download_chart",
+      "description": "Download a chart image to a local file"
+    }
+  ]
+}

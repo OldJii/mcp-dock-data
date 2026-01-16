@@ -1,0 +1,68 @@
+{
+  "id": "@tembo-io/mcp-server-tembo",
+  "displayName": "Tembo Cloud API",
+  "description": "Provide a standardized interface for integrating with the Tembo Cloud platform.",
+  "createdAt": "2026-01-16T07:26:57.755Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tembo-io/mcp-server-tembo"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "temboApiKey"
+      ],
+      "properties": {
+        "temboApiKey": {
+          "type": "string",
+          "description": "The API key for the Tembo Cloud platform."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_all_apps",
+      "description": "Get attributes for all apps"
+    },
+    {
+      "name": "get_app",
+      "description": "Get the attributes of a single App"
+    },
+    {
+      "name": "ask_tembo",
+      "description": "Ask a question to Tembo Docs"
+    },
+    {
+      "name": "get_instance_schema",
+      "description": "Get the json-schema for an instance"
+    },
+    {
+      "name": "get_all_instances",
+      "description": "Get all Tembo instances in an organization"
+    },
+    {
+      "name": "create_instance",
+      "description": "Create a new Tembo instance"
+    },
+    {
+      "name": "get_instance",
+      "description": "Get an existing Tembo instance"
+    },
+    {
+      "name": "delete_instance",
+      "description": "Delete an existing Tembo instance"
+    },
+    {
+      "name": "patch_instance",
+      "description": "Update attributes on an existing Tembo instance"
+    },
+    {
+      "name": "restore_instance",
+      "description": "Restore a Tembo instance"
+    }
+  ]
+}

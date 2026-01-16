@@ -1,0 +1,12 @@
+{
+  "id": "@the-meta-value/quantum_echo",
+  "displayName": "quantum_echo",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:06.090Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@the-meta-value/quantum_echo"
+  },
+  "connection": null,
+  "capabilities": []
+}

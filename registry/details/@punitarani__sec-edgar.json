@@ -1,0 +1,12 @@
+{
+  "id": "@punitarani/sec-edgar",
+  "displayName": "sec-edgar",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:14.379Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@punitarani/sec-edgar"
+  },
+  "connection": null,
+  "capabilities": []
+}

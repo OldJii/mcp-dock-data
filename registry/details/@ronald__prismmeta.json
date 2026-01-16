@@ -1,0 +1,31 @@
+{
+  "id": "@ronald/prismmeta",
+  "displayName": "prismmeta",
+  "description": "Search your data in natural language, analyze datasets, and generate polished reports. Access the user database securely to answer questions fast. Accelerate decisions with reliable insights and automated reporting.",
+  "createdAt": "2026-01-16T07:26:12.731Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ronald/prismmeta"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "PrismMeta production MCP server with trust layer, security, and AI-powered development tools"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_database",
+      "description": "Search the production database with natural language"
+    },
+    {
+      "name": "analyze_data",
+      "description": "Perform data analysis on specified dataset"
+    },
+    {
+      "name": "generate_report",
+      "description": "Generate a formatted report from data"
+    }
+  ]
+}

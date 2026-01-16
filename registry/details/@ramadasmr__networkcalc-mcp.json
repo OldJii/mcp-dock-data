@@ -1,0 +1,37 @@
+{
+  "id": "@ramadasmr/networkcalc-mcp",
+  "displayName": "NetworkCalc",
+  "description": "MCP Server for utilities from networkcalc.com\n\nUtilities Include\n- DNS Lookup\n- WHOIS Lookup\n- SPF Lookup\n- Certificate Lookup\n- Subnet Lookup",
+  "createdAt": "2026-01-16T07:21:27.874Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ramadasmr/networkcalc-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "dns_lookup",
+      "description": "Fetch DNS info for a given domain"
+    },
+    {
+      "name": "whois_lookup",
+      "description": "Fetch WHOIS info for a given domain"
+    },
+    {
+      "name": "spf_lookup",
+      "description": "Fetch SPF info for a given domain or host"
+    },
+    {
+      "name": "certificate_info",
+      "description": "Fetch certificate for a given domain "
+    },
+    {
+      "name": "calculate_subnet",
+      "description": "Fetch Subnet info for a given ipaddress/subnet/CIDR "
+    }
+  ]
+}

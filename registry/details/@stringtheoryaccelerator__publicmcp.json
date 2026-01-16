@@ -1,0 +1,29 @@
+{
+  "id": "@stringtheoryaccelerator/publicmcp",
+  "displayName": "publicmcp",
+  "description": "Check current fire danger by town across Maine. Apply for open burn permits quickly with confirmation details. Stay compliant by verifying conditions before you burn.",
+  "createdAt": "2026-01-16T07:32:38.118Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@stringtheoryaccelerator/publicmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_fire_danger",
+      "description": "Checks the current fire danger rating for a specific town in Maine to see if burning is allowed."
+    },
+    {
+      "name": "apply_for_burn_permit",
+      "description": "Automates the process of applying for a Maine open burn permit."
+    }
+  ]
+}

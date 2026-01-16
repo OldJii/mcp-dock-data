@@ -1,0 +1,12 @@
+{
+  "id": "@ilyazub/serpapi-mcp-server",
+  "displayName": "serpapi-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:56.932Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ilyazub/serpapi-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

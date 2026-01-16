@@ -1,0 +1,46 @@
+{
+  "id": "@seocylucky/githru-vscode-ext",
+  "displayName": "Githru",
+  "description": "Analyze GitHub repositories to uncover contributor impact, PR complexity, and author work patterns. Get recommendations on key contributors and visualize activity storylines across folders and files. Spot long-tail file outliers, coupling, and churn to guide reviews and planning.",
+  "createdAt": "2026-01-16T07:21:57.616Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@seocylucky/githru-vscode-ext"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "contributor_recommender",
+      "description": "Recommends contributors who have contributed most to specific files/branches/PR areas by aggregating recent contribution data."
+    },
+    {
+      "name": "feature_impact_analyzer",
+      "description": "Takes a GitHub repository URL, Pull Request number, and authentication token as input.\n        Analyzes the PR’s commits and changed files to compute impact metrics — scale, dispersion,\n        chaos, isolation, lag, and coupling — and outputs a detailed HTML report highlighting\n        long-tail file path outliers."
+    },
+    {
+      "name": "author_work_pattern",
+      "description": "Analyzes an author’s development activity within a given period to measure workload and commit patterns. Aggregates metrics such as commits, insertions, deletions, and churn, and classifies commit types to reveal focus areas."
+    },
+    {
+      "name": "render_storyline_ui",
+      "description": "Generate storyline visualization using FolderActivityFlow component with CSMDict data"
+    }
+  ]
+}

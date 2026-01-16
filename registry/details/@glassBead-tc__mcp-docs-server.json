@@ -1,0 +1,36 @@
+{
+  "id": "@glassBead-tc/mcp-docs-server",
+  "displayName": "MCP Docs Server",
+  "description": "accurate MCP documentation is just a tool call away",
+  "createdAt": "2026-01-16T07:22:56.967Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@glassBead-tc/mcp-docs-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mcp_docs_guide",
+      "description": "Get comprehensive guides and documentation for Model Context Protocol development. Covers getting started, building servers/clients, core concepts, and best practices."
+    },
+    {
+      "name": "search_docs",
+      "description": "Search through MCP documentation using keywords or phrases. Returns relevant documentation sections with context."
+    },
+    {
+      "name": "get_docs_by_category",
+      "description": "Get documentation organized by category. Returns structured overview of available documentation in each area."
+    }
+  ]
+}

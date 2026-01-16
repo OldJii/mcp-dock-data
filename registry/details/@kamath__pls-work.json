@@ -1,0 +1,35 @@
+{
+  "id": "@kamath/pls-work",
+  "displayName": "Hello from Sentry",
+  "description": "Provide a simple MCP server implementation to demonstrate integration with Sentry. Enable developers to quickly start with MCP by offering a minimal example that can be extended for custom use cases.",
+  "createdAt": "2026-01-16T07:28:56.839Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/pls-work"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

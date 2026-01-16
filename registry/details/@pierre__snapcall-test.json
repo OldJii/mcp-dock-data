@@ -1,0 +1,40 @@
+{
+  "id": "@pierre/snapcall-test",
+  "displayName": "snapcall-test",
+  "description": "Launch instant calls and share links with customers. Start an Assist recording session to capture information and photos for later reference. Streamline customer interactions with quick, shareable call and recording links.",
+  "createdAt": "2026-01-16T07:30:30.466Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pierre/snapcall-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "name": "io.snapcall/mcp",
+      "status": "active",
+      "remotes": [
+        {
+          "url": "https://radgf4vbk6obacx44z4trjol7y0mtscb.lambda-url.eu-west-1.on.aws",
+          "type": "streamable-http"
+        }
+      ],
+      "version": "1.0.0",
+      "repository": {
+        "url": "",
+        "source": ""
+      },
+      "description": "MCP Server for Snapcall integration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "snapcall_call",
+      "description": "Create a Snapcall Call and return the link."
+    },
+    {
+      "name": "snapcall_assist",
+      "description": "Create a Snapcall assist recording stream and return the link. This allow the user to record information or take photos you could exploit later.\n    "
+    }
+  ]
+}

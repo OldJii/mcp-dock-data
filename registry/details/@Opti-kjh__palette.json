@@ -1,0 +1,51 @@
+{
+  "id": "@Opti-kjh/palette",
+  "displayName": "palette",
+  "description": "Figma 디자인을 기존 Design System 컴포넌트를 활용하여 React/Vue 코드로 변환하는 MCP(Model Context Protocol) 서버입니다.\n\n'PALETTE'는 딜리셔스 웹프론트엔드 개발팀 전용 MCP입니다.",
+  "createdAt": "2026-01-16T07:31:31.591Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Opti-kjh/palette"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "GITHUB_TOKEN": {
+          "type": "string",
+          "description": "GitHub Personal Access Token for accessing private design system packages. Required only for private repositories."
+        },
+        "FIGMA_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "Figma Personal Access Token. Required for accessing Figma designs. Get yours at https://www.figma.com/developers/api#access-tokens"
+        },
+        "FIGMA_MCP_SERVER_URL": {
+          "type": "string",
+          "description": "Figma Dev Mode MCP server URL. Only needed for local development with Figma Desktop app.",
+          "default": "http://127.0.0.1:3845/mcp"
+        }
+      },
+      "description": "Configuration options for Palette MCP Server - Figma to Design System converter"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "convert_figma_to_react",
+      "description": "Figma 디자인을 @dealicious/design-system-react 컴포넌트를 사용하여 React 컴포넌트로 변환합니다. Figma 파일 URL과 컴포넌트 이름을 제공하면, 디자인 시스템 컴포넌트(Button, Text, Tag, Check, Chip 등)를 활용한 React TSX 코드를 생성합니다."
+    },
+    {
+      "name": "convert_figma_to_vue",
+      "description": "Figma 디자인을 @dealicious/design-system Vue 컴포넌트를 사용하여 Vue 3 Single File Component로 변환합니다. Figma 파일 URL과 컴포넌트 이름을 제공하면, 디자인 시스템 컴포넌트를 활용한 Vue SFC 코드를 생성합니다."
+    },
+    {
+      "name": "list_design_system_components",
+      "description": "@dealicious/design-system에서 사용 가능한 모든 UI 컴포넌트 목록을 조회합니다. 각 컴포넌트의 이름, 설명, import 경로, 사용 가능한 props를 반환합니다."
+    },
+    {
+      "name": "analyze_figma_file",
+      "description": "Figma 파일의 구조를 분석하여 페이지, 프레임, 컴포넌트 계층을 파악합니다. 변환하기 전에 파일 구조를 이해하는 데 유용합니다."
+    }
+  ]
+}

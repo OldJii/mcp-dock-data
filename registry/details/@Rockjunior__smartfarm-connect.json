@@ -1,0 +1,12 @@
+{
+  "id": "@Rockjunior/smartfarm-connect",
+  "displayName": "smartfarm-connect",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:54.773Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Rockjunior/smartfarm-connect"
+  },
+  "connection": null,
+  "capabilities": []
+}

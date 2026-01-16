@@ -1,0 +1,12 @@
+{
+  "id": "@dbtkd1801/chat",
+  "displayName": "chat",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:17.154Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dbtkd1801/chat"
+  },
+  "connection": null,
+  "capabilities": []
+}

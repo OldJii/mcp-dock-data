@@ -1,0 +1,12 @@
+{
+  "id": "@@intruder-io/intruder-mcp",
+  "displayName": "intruder-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:59.502Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@@intruder-io/intruder-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

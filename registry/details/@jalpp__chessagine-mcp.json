@@ -1,0 +1,177 @@
+{
+  "id": "@jalpp/chessagine-mcp",
+  "displayName": "ChessAgine",
+  "description": "A comprehensive chess analysis (MCP) server that provides advanced chess analysis capabilities by implementing the Chess Context Protocol Server and integrating the Stockfish engine evaluation, positional theme analysis, opening databases, and chess knowledge. Allows LLMs to validate chess moves, visualize chess board via html, and do interactive chess puzzles, this brings the powerful chess analysis ChessAgine powers to your LLM!",
+  "createdAt": "2026-01-16T07:20:22.612Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jalpp/chessagine-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "lichessApiKey": {
+          "type": "string",
+          "description": "Lichess API key to access Lichess Studies"
+        },
+        "lichessUsername": {
+          "type": "string",
+          "description": "Lichess username for mcp user"
+        },
+        "chessboardmagicKey": {
+          "type": "string",
+          "description": "Chessboardmagic Repitore Builder PAT"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-lichess-master-games",
+      "description": "Fetch master-level games and opening statistics from Lichess for a given position"
+    },
+    {
+      "name": "get-lichess-games",
+      "description": "Fetch Lichess user games and opening statistics for a given position"
+    },
+    {
+      "name": "fetch-lichess-games",
+      "description": "Fetch the 20 most recent games for a Lichess user. Returns game details including player information, ratings, speed format, and PGN notation. Useful for analyzing a player's recent performance, openings, and game history."
+    },
+    {
+      "name": "fetch-lichess-game",
+      "description": "Fetch a specific Lichess game in PGN format. Accepts either a full Lichess URL or a game ID. Returns the complete PGN notation with headers and moves, ready for analysis or display."
+    },
+    {
+      "name": "fetch-chess-puzzle",
+      "description": "Fetch a random chess puzzle from Lichess database. Can filter by themes and rating range. Use this to start a puzzle session with the user."
+    },
+    {
+      "name": "get-lichess-username",
+      "description": "Get the lichess username of current mcp user"
+    },
+    {
+      "name": "fetch-lichess-studies",
+      "description": "Fetch all studies for a given Lichess user. Returns a list of studies with their IDs, names, and timestamps. Requires either LICHESS_STUDY_TOKEN environment variable or token parameter."
+    },
+    {
+      "name": "fetch-lichess-study-pgn",
+      "description": "Fetch a specific Lichess study in PGN format. Returns all chapters of the study as PGN. Requires either LICHESS_STUDY_TOKEN environment variable or token parameter."
+    },
+    {
+      "name": "generate-chess-board-view-artificat-html",
+      "description": "get HTML code to render chess board artifact for given FEN and side to move in 2d or 3d view"
+    },
+    {
+      "name": "generate-dynamic-gameview-html",
+      "description": "get HTML code to render chess board for a game with multiple fens to render game view mode"
+    },
+    {
+      "name": "is-legal-move",
+      "description": "Check if a given move is legal for the provided FEN position"
+    },
+    {
+      "name": "get-boardstate-for-move",
+      "description": "Given a FEN and a move, returns a string describing the resulting board state after the move"
+    },
+    {
+      "name": "get-boardstate-for-fen",
+      "description": "Given a FEN, returns a string describing the resulting board state for that FEN"
+    },
+    {
+      "name": "get-chessboardmagic-repertoires",
+      "description": "Fetch user's chess repertoires from the Chessboard Magic Repertoire Builder"
+    },
+    {
+      "name": "get-chessboardmagic-games",
+      "description": "Fetch user's chess games from the Chessboard Magic Repertoire Builder"
+    },
+    {
+      "name": "get-chessboardmagic-game-details",
+      "description": "Fetch user's single game's metadata, moves, tags, variations and comment links"
+    },
+    {
+      "name": "get-chessboardmagic-repertoire-details",
+      "description": "Fetch user's single repertoire metadata, moves, variations and comment links"
+    },
+    {
+      "name": "get-chessboardmagic-tcec-stats",
+      "description": "Fetch TCEC (Top Chess Engine Championship) statistics for a specific chess position"
+    },
+    {
+      "name": "get-chessboardmagic-tcec-games",
+      "description": "Fetch TCEC games that reached a specific chess position"
+    },
+    {
+      "name": "get-chessboardmagic-corr-stats",
+      "description": "Fetch correspondence chess statistics for a specific chess position"
+    },
+    {
+      "name": "get-chessboardmagic-corr-games",
+      "description": "Fetch correspondence chess games that reached a specific chess position"
+    },
+    {
+      "name": "get-stockfish-analysis",
+      "description": "Analyze a chess position using Stockfish 17.1 WASM engine"
+    },
+    {
+      "name": "fen-openingbook-lookup",
+      "description": "Look up a fen in 12k positions of opening book to get name, moves information for fen"
+    },
+    {
+      "name": "get-stockfish-best-move",
+      "description": "Find the best move in a chess position using Stockfish 17.1 WASM engine"
+    },
+    {
+      "name": "get-stockfish-multipv-analysis",
+      "description": "Analyze a chess position and get multiple best move candidates with Stocfish 17.1 WASM engine"
+    },
+    {
+      "name": "get-stockfish-batch-analysis",
+      "description": "Analyze multiple chess positions in batch using Stockfish 17.1 WASM engine"
+    },
+    {
+      "name": "get-chess-knowledgebase",
+      "description": "Returns a comprehensive chess knowledgebase including Silman Imbalances, Fine's 30 chess principles, endgame principles, and practical checklists"
+    },
+    {
+      "name": "get-chessagine-stater-prompts",
+      "description": "List all available chess analysis prompt categories with their example prompts"
+    },
+    {
+      "name": "get-puzzle-themes",
+      "description": "Get a list of all available puzzle themes that can be used to filter puzzles"
+    },
+    {
+      "name": "parse-pgn-into-fens",
+      "description": "Collect a fen list of given game pgn"
+    },
+    {
+      "name": "get-fen-map-lookup",
+      "description": "Lookup fens for mapped SAN move, for given game PGN"
+    },
+    {
+      "name": "get-chessdb-analysis",
+      "description": "Fetch position analysis and candidate moves from ChessDB"
+    },
+    {
+      "name": "get-maia2-analysis",
+      "description": "Analyze chess position using Maia2 neural network trained on human games at specific rating levels. Provides human-like move suggestions and evaluations tailored to player strength (1100-1900 rating)."
+    },
+    {
+      "name": "get-leela-analysis",
+      "description": "Analyze chess position using Leela Chess Zero neural network. Provides strong tactical analysis with neural network evaluation and candidate moves. Uses T1-256x10 neural net, trained on self played games"
+    },
+    {
+      "name": "get-elite-leela-analysis",
+      "description": "Analyze chess position using Elite Leela Chess Zero with enhanced evaluation. Provides top-level computer analysis with deep neural network insights. Trained on 20M games from Lichess Elite Database (2500 - 3000)"
+    }
+  ]
+}

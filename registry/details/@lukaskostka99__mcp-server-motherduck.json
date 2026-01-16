@@ -1,0 +1,12 @@
+{
+  "id": "@lukaskostka99/mcp-server-motherduck",
+  "displayName": "mcp-server-motherduck",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:34.728Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lukaskostka99/mcp-server-motherduck"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,277 @@
+{
+  "id": "@hatif03/algorand-mcp",
+  "displayName": "algorand-mcp",
+  "description": "Build and manage Algorand accounts, assets, transactions, and smart contracts in one place. Search documentation, retrieve on-chain data, and automate advanced flows including atomic groups and swaps. Secure wallets, develop safely on testnet, and switch to mainnet when ready.",
+  "createdAt": "2026-01-16T07:30:36.428Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hatif03/algorand-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "ALGORAND_NETWORK",
+        "ALGORAND_TOKEN",
+        "ALGORAND_ALGOD",
+        "ALGORAND_INDEXER",
+        "NFD_API_URL"
+      ],
+      "properties": {
+        "QDRANT_URL": {
+          "type": "string",
+          "description": "Qdrant endpoint (optional)"
+        },
+        "NFD_API_URL": {
+          "type": "string",
+          "description": "NFD API base URL"
+        },
+        "ALGORAND_ALGOD": {
+          "type": "string",
+          "description": "Algod endpoint URL"
+        },
+        "ALGORAND_TOKEN": {
+          "type": "string",
+          "description": "Algorand API token for algod/indexer"
+        },
+        "OPENAI_API_KEY": {
+          "type": "string",
+          "description": "API key for knowledge search embeddings (optional)"
+        },
+        "QDRANT_API_KEY": {
+          "type": "string",
+          "description": "Qdrant API key (optional)"
+        },
+        "ALGORAND_INDEXER": {
+          "type": "string",
+          "description": "Indexer endpoint URL"
+        },
+        "ALGORAND_NETWORK": {
+          "type": "string",
+          "description": "Network to target (testnet, mainnet, localnet)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "echo",
+      "description": "Echo back the provided message"
+    },
+    {
+      "name": "calculate",
+      "description": "Perform basic mathematical calculations"
+    },
+    {
+      "name": "get_current_time",
+      "description": "Get the current time in a specified timezone"
+    },
+    {
+      "name": "fund_testnet",
+      "description": "Fund an Algorand testnet account using the official faucet"
+    },
+    {
+      "name": "generate_algorand_account",
+      "description": "Generate a new Algorand account with address and mnemonic"
+    },
+    {
+      "name": "get_account_info",
+      "description": "Get account information including balance and assets"
+    },
+    {
+      "name": "send_payment",
+      "description": "Send Algo payment transaction (WARNING: Requires mnemonic phrase)"
+    },
+    {
+      "name": "create_asset",
+      "description": "Create a new Algorand Standard Asset (ASA)"
+    },
+    {
+      "name": "opt_in_to_asset",
+      "description": "Opt into an Algorand Standard Asset"
+    },
+    {
+      "name": "transfer_asset",
+      "description": "Transfer an Algorand Standard Asset"
+    },
+    {
+      "name": "get_asset_info",
+      "description": "Get information about an Algorand Standard Asset"
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get transaction details by transaction ID"
+    },
+    {
+      "name": "store_wallet",
+      "description": "Securely store a wallet with encrypted mnemonic"
+    },
+    {
+      "name": "load_wallet",
+      "description": "Load a stored wallet and return the address"
+    },
+    {
+      "name": "validate_address",
+      "description": "Check if an Algorand address is valid"
+    },
+    {
+      "name": "encode_address",
+      "description": "Encode a public key to an Algorand address"
+    },
+    {
+      "name": "decode_address",
+      "description": "Decode an Algorand address to a public key"
+    },
+    {
+      "name": "get_application_address",
+      "description": "Get the address for a given application ID"
+    },
+    {
+      "name": "verify_bytes",
+      "description": "Verify a signature against bytes with an Algorand address"
+    },
+    {
+      "name": "sign_bytes",
+      "description": "Sign bytes with a secret key"
+    },
+    {
+      "name": "compile_teal",
+      "description": "Compile TEAL source code to bytecode"
+    },
+    {
+      "name": "disassemble_teal",
+      "description": "Disassemble TEAL bytecode into source code"
+    },
+    {
+      "name": "encode_obj",
+      "description": "Encode an object to msgpack format"
+    },
+    {
+      "name": "decode_obj",
+      "description": "Decode msgpack bytes to an object"
+    },
+    {
+      "name": "algod_get_account_info",
+      "description": "Get current account balance, assets, and auth address from algod"
+    },
+    {
+      "name": "algod_get_transaction_info",
+      "description": "Get transaction details by transaction ID from algod"
+    },
+    {
+      "name": "algod_get_asset_info",
+      "description": "Get asset details from algod"
+    },
+    {
+      "name": "algod_get_application_info",
+      "description": "Get application details from algod"
+    },
+    {
+      "name": "algod_get_pending_transactions",
+      "description": "Get pending transactions from algod mempool"
+    },
+    {
+      "name": "indexer_lookup_account_by_id",
+      "description": "Get account information from indexer"
+    },
+    {
+      "name": "indexer_lookup_asset_by_id",
+      "description": "Get asset information from indexer"
+    },
+    {
+      "name": "indexer_lookup_transaction_by_id",
+      "description": "Get transaction details from indexer"
+    },
+    {
+      "name": "indexer_search_for_accounts",
+      "description": "Search for accounts with various criteria"
+    },
+    {
+      "name": "indexer_search_for_transactions",
+      "description": "Search for transactions with various criteria"
+    },
+    {
+      "name": "nfd_get_nfd",
+      "description": "Get NFD domain information by name"
+    },
+    {
+      "name": "nfd_get_nfds_for_address",
+      "description": "Get all NFD domains owned by an address"
+    },
+    {
+      "name": "nfd_search_nfds",
+      "description": "Search for NFD domains"
+    },
+    {
+      "name": "create_atomic_group",
+      "description": "Create an atomic transaction group from multiple transactions"
+    },
+    {
+      "name": "sign_atomic_group",
+      "description": "Sign an atomic transaction group"
+    },
+    {
+      "name": "submit_atomic_group",
+      "description": "Submit a signed atomic transaction group to the network"
+    },
+    {
+      "name": "create_application",
+      "description": "Create a new smart contract application on Algorand"
+    },
+    {
+      "name": "call_application",
+      "description": "Call a smart contract application on Algorand"
+    },
+    {
+      "name": "optin_application",
+      "description": "Opt-in to an Algorand application"
+    },
+    {
+      "name": "closeout_application",
+      "description": "Close out from an Algorand application"
+    },
+    {
+      "name": "create_key_registration_transaction",
+      "description": "Create a key registration transaction for participation"
+    },
+    {
+      "name": "freeze_asset",
+      "description": "Freeze or unfreeze an asset for an account"
+    },
+    {
+      "name": "generate_algorand_uri",
+      "description": "Generate a URI following the Algorand ARC-26 specification to send account address or request payment or asset transfer"
+    },
+    {
+      "name": "generate_algorand_qrcode",
+      "description": "Generate a URI and QRCode following the Algorand ARC-26 specification"
+    },
+    {
+      "name": "search_algorand_docs",
+      "description": "Semantic search through Algorand documentation using AI embeddings"
+    },
+    {
+      "name": "get_swap_quote",
+      "description": "Get a swap quote for exchanging Algorand assets using Pera Swap"
+    },
+    {
+      "name": "execute_swap",
+      "description": "Execute a swap transaction using a quote ID from Pera Swap (WARNING: Requires mnemonic phrase)"
+    },
+    {
+      "name": "search_swap_assets",
+      "description": "Search for assets available for swapping"
+    },
+    {
+      "name": "get_available_swap_assets",
+      "description": "Get assets that can be swapped with a given input asset"
+    },
+    {
+      "name": "get_swap_asset_info",
+      "description": "Get detailed information about an asset for swapping"
+    }
+  ]
+}

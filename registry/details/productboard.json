@@ -1,0 +1,201 @@
+{
+  "id": "productboard",
+  "displayName": "Productboard",
+  "description": "Productboard is a product management platform that gathers feedback, prioritizes features, and aligns roadmaps based on customer insights and strategic goals",
+  "createdAt": "2026-01-16T07:19:45.528Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/productboard"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "PRODUCTBOARD_ADD_NOTE_FOLLOWERS",
+      "description": "Tool to add multiple followers to a Productboard note. Use when you need to bulk-add existing users as followers to a specific note by their email addresses."
+    },
+    {
+      "name": "PRODUCTBOARD_ADD_NOTE_TAG",
+      "description": "Tool to add a tag to a Productboard note. Use when categorizing a note after review; creates the tag if missing."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_COMPANY",
+      "description": "Tool to create a new company in Productboard. Use when you need to add a company record after gathering its details and optional metadata."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_COMPANY_FIELD",
+      "description": "Tool to create a new custom field for companies. Use when you need to define custom company attributes in Productboard after confirming the field schema."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_COMPONENT",
+      "description": "Tool to create a new (sub)component under a product or component. Use after determining the parent component ID."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_NOTE",
+      "description": "Tool to create a new note in Productboard. Use when you need to programmatically add a user or customer note to Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_NOTE_LINK",
+      "description": "Tool to create a link between a note and an entity. Use when associating a note with a productboard entity."
+    },
+    {
+      "name": "PRODUCTBOARD_CREATE_WEBHOOK",
+      "description": "Tool to create a new webhook subscription. Use when you need to register a public endpoint to receive webhooks from Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_COMPANY",
+      "description": "Tool to delete a specific company. Use when you have confirmed the company ID and need to remove it from Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_COMPANY_FIELD",
+      "description": "Tool to delete a specific company custom field. Use after confirming the field ID and ensuring no dependencies remain."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_FEATURE",
+      "description": "Tool to delete a specific feature. Use when you have confirmed the feature ID and deleted its subfeatures before removal."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_NOTE",
+      "description": "Tool to delete a specific note. Use when you have confirmed the note ID and need to remove it from Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_NOTE_TAG",
+      "description": "Tool to remove a tag from a Productboard note. Use when you need to detach a specific tag from a note after tagging."
+    },
+    {
+      "name": "PRODUCTBOARD_DELETE_USER",
+      "description": "Tool to delete a specific user. Use when you have confirmed the user ID and need to remove it from Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_COMPANIES",
+      "description": "Tool to list companies. Use when you need a paginated list of companies with optional filters."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_COMPANY_FIELDS",
+      "description": "Tool to list company custom fields. Use when you need to retrieve all custom field definitions for companies after authentication."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_COMPONENTS",
+      "description": "Tool to list productboard components. Use when you need to retrieve components in a paginated form. Follow 'links.next' for additional pages."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_CUSTOM_FIELDS",
+      "description": "Tool to list custom field definitions for hierarchy entities. Use after determining which field types to filter."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_CUSTOM_FIELD_VALUES",
+      "description": "Tool to list non-empty custom field values. Use when you need to fetch set values across custom fields with optional filtering by type or field ID. Paginate using links.next if more results exist."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEATURE_INITIATIVES",
+      "description": "Tool to list initiatives linked to a given feature. Use when you need to retrieve all initiatives associated with a feature after confirming its ID."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEATURE_OBJECTIVES",
+      "description": "Tool to list objectives linked to a feature. Use when you need to retrieve all objectives connected to a given feature after confirming the feature ID."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEATURE_RELEASE_ASSIGNMENTS",
+      "description": "Tool to list feature–release assignments. Use when you need to retrieve assignments for a specific feature or release with optional state or date filters; paginate using links.next."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEATURES",
+      "description": "Tool to list features and subfeatures. Use when you need a paginated list of all features in Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEATURE_STATUSES",
+      "description": "Tool to list feature statuses. Use when you need to retrieve all feature status records in a paginated form. Follow 'links.next' for additional pages."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_FEEDBACK_FORM_CONFIGURATIONS",
+      "description": "Tool to list feedback form configurations. Use when you need a paginated list of feedback form configurations."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_INITIATIVES",
+      "description": "Tool to list initiatives. Use when you need a paginated list of initiatives with optional filters."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_JIRA_INTEGRATIONS",
+      "description": "Tool to list Jira integrations. Use when you need to retrieve Productboard's connected Jira integrations with optional pagination."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_KEY_RESULTS",
+      "description": "Tool to list key results. Use when you need a paginated list of key results."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_NOTES",
+      "description": "Tool to list notes in Productboard. Use when you need to retrieve notes with optional filters and pagination. Follow links.next for additional pages."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_OBJECTIVES",
+      "description": "Tool to list objectives from Productboard. Use when you need a paginated list of objectives with optional filters; follow 'links.next' to retrieve additional pages."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_PLUGIN_INTEGRATIONS",
+      "description": "Tool to list plugin integrations. Use when you need a paginated list of plugin integrations."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_PRODUCTS",
+      "description": "Tool to list all products in a workspace. Use when you need to retrieve paginated product details."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_RELEASE_GROUPS",
+      "description": "Tool to list release groups. Use when you need a paginated list of release groups. Returns first page of results and link to next page."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_RELEASES",
+      "description": "Tool to list all releases in Productboard. Use when you need a paginated list of releases; follow links.next for more pages."
+    },
+    {
+      "name": "PRODUCTBOARD_LIST_USERS",
+      "description": "Tool to list users. Use when you need a paginated list of all users in Productboard."
+    },
+    {
+      "name": "PRODUCTBOARD_REMOVE_NOTE_FOLLOWER",
+      "description": "Tool to remove a follower from a Productboard note. Use after confirming the note ID and follower email are correct."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_COMPANY",
+      "description": "Tool to retrieve details of a specific company. Use when you have the company ID to fetch its full details."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_COMPANY_FIELD",
+      "description": "Tool to retrieve details of a specific company custom field. Use when you have the custom field ID and need its metadata."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_COMPANY_FIELD_VALUE",
+      "description": "Tool to retrieve a specific company custom field value. Use when you need the current value of a custom field for a given company by its IDs."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_FEATURE",
+      "description": "Tool to retrieve details of a specific feature. Use when you need complete info on one feature."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_NOTE",
+      "description": "Tool to retrieve details of a specific note. Use when you have the note ID to fetch its full details."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_PRODUCT",
+      "description": "Tool to retrieve details of a specific product. Use when you have the product ID to fetch its full details."
+    },
+    {
+      "name": "PRODUCTBOARD_RETRIEVE_USER",
+      "description": "Tool to retrieve details of a specific user. Use when you have the user ID to fetch its full details."
+    },
+    {
+      "name": "PRODUCTBOARD_SCIM_LIST_USERS",
+      "description": "Tool to list users via SCIM. Use when checking for existing users before creation."
+    },
+    {
+      "name": "PRODUCTBOARD_SET_COMPANY_FIELD_VALUE",
+      "description": "Tool to set or replace a specific company custom field's value. Use when you need to update a company's custom field after confirming the field ID and ensuring the new value matches the field type."
+    },
+    {
+      "name": "PRODUCTBOARD_SET_CUSTOM_FIELD_VALUE",
+      "description": "Tool to set a custom field value on a hierarchy entity. Use when you need to update a product, component, or feature field with a specific value after confirming the field and entity IDs."
+    }
+  ]
+}

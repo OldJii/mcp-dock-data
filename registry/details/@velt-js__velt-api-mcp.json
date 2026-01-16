@@ -1,0 +1,221 @@
+{
+  "id": "@velt-js/velt-api-mcp",
+  "displayName": "Velt API Server",
+  "description": "Enable seamless interaction with the Velt API through a dedicated MCP server. Integrate Velt's capabilities directly into your tools to enhance productivity and automation. Simplify API access and management within your development environment.",
+  "createdAt": "2026-01-16T07:27:38.204Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@velt-js/velt-api-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "veltApiKey",
+        "veltAuthToken"
+      ],
+      "properties": {
+        "veltApiKey": {
+          "type": "string",
+          "description": "Your Velt API Key"
+        },
+        "veltAuthToken": {
+          "type": "string",
+          "description": "Your Velt Auth Token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-organizations",
+      "description": "Get organizations from Velt. See velt://docs/organizations/get-organizations for detailed documentation."
+    },
+    {
+      "name": "add-organizations",
+      "description": "Add organizations to Velt. See velt://docs/organizations/add-organizations for detailed documentation."
+    },
+    {
+      "name": "update-organizations",
+      "description": "Update organizations in Velt. See velt://docs/organizations/update-organizations for detailed documentation."
+    },
+    {
+      "name": "delete-organizations",
+      "description": "Delete organizations from Velt. This will permanently remove organizations and all associated data. See velt://docs/organizations/delete-organizations for detailed documentation."
+    },
+    {
+      "name": "execute-delete-organizations",
+      "description": "Execute the deletion of organizations from Velt after confirmation. This should only be called after the user has confirmed they want to proceed with the deletion. See velt://docs/organizations/delete-organizations for detailed documentation."
+    },
+    {
+      "name": "update-disable-state-for-organizations",
+      "description": "Update disable state for organizations in Velt. See velt://docs/organizations/update-organization-disable-state for detailed documentation."
+    },
+    {
+      "name": "add-organization-user-groups",
+      "description": "Add organization user groups to Velt. See velt://docs/organization-user-groups/add-groups for detailed documentation."
+    },
+    {
+      "name": "add-users-to-organization-user-group",
+      "description": "Add users to organization user groups in Velt. See velt://docs/organization-user-groups/add-users-to-group for detailed documentation."
+    },
+    {
+      "name": "delete-users-from-organization-user-group",
+      "description": "Delete users from organization user groups in Velt. When deleteAll is true, this will remove ALL users from the group. See velt://docs/organization-user-groups/delete-users-from-group for detailed documentation."
+    },
+    {
+      "name": "execute-delete-all-users-from-organization-user-group",
+      "description": "Execute the deletion of ALL users from an organization user group after confirmation. This should only be called after the user has confirmed they want to proceed with the deletion. See velt://docs/organization-user-groups/delete-users-from-group for detailed documentation."
+    },
+    {
+      "name": "get-documents",
+      "description": "Get Documents from Velt. See velt://docs/documents/get-documents for detailed documentation."
+    },
+    {
+      "name": "add-documents",
+      "description": "Add documents to Velt. See velt://docs/documents/add-documents for detailed documentation."
+    },
+    {
+      "name": "update-documents",
+      "description": "Update documents in Velt. See velt://docs/documents/update-documents for detailed documentation."
+    },
+    {
+      "name": "delete-documents",
+      "description": "Delete documents from Velt. This will permanently remove documents and all associated collaboration data. See velt://docs/documents/delete-documents for detailed documentation."
+    },
+    {
+      "name": "execute-delete-documents",
+      "description": "Execute the deletion of documents from Velt after confirmation. This should only be called after the user has confirmed they want to proceed with the deletion. See velt://docs/documents/delete-documents for detailed documentation."
+    },
+    {
+      "name": "update-document-access",
+      "description": "Update document access in Velt. See velt://docs/documents/update-document-access for detailed documentation."
+    },
+    {
+      "name": "update-document-disabled-state",
+      "description": "Update document disabled state in Velt. See velt://docs/documents/update-document-disable-state for detailed documentation."
+    },
+    {
+      "name": "get-comment-annotations",
+      "description": "Get comment annotations from Velt. See velt://docs/comments/get-comment-annotations for detailed documentation."
+    },
+    {
+      "name": "get-comment-annotations-count",
+      "description": "Get count of comment annotations from Velt. See velt://docs/comments/get-comment-annotations-count for detailed documentation."
+    },
+    {
+      "name": "add-comment-annotations",
+      "description": "Add comment annotations to Velt. See velt://docs/comments/add-comment-annotations for detailed documentation."
+    },
+    {
+      "name": "update-comment-annotations",
+      "description": "Update comment annotations in Velt. See velt://docs/comments/update-comment-annotations for detailed documentation."
+    },
+    {
+      "name": "delete-comment-annotations",
+      "description": "Delete comment annotations from Velt. See velt://docs/comments/delete-comment-annotations for detailed documentation."
+    },
+    {
+      "name": "add-comments",
+      "description": "Add comments to Velt. See velt://docs/comments/add-comments for detailed documentation."
+    },
+    {
+      "name": "update-comments",
+      "description": "Update comments in Velt. See velt://docs/comments/update-comments for detailed documentation."
+    },
+    {
+      "name": "delete-comments",
+      "description": "Delete comments from Velt. See velt://docs/comments/delete-comments for detailed documentation."
+    },
+    {
+      "name": "get-comments",
+      "description": "Get comments from Velt. See velt://docs/comments/get-comments for detailed documentation."
+    },
+    {
+      "name": "get-users",
+      "description": "Get users from Velt. See velt://docs/users/get-users for detailed documentation."
+    },
+    {
+      "name": "add-users",
+      "description": "Add users to Velt. See velt://docs/users/add-users for detailed documentation."
+    },
+    {
+      "name": "update-users",
+      "description": "Update users in Velt. See velt://docs/users/update-users for detailed documentation."
+    },
+    {
+      "name": "delete-users",
+      "description": "Delete users from Velt. See velt://docs/users/delete-users for detailed documentation."
+    },
+    {
+      "name": "delete-all-user-data-gdpr",
+      "description": "Delete all user data from Velt (GDPR compliance). This will permanently remove all user data including comments, reactions, recordings, and notifications. This action cannot be undone. See velt://docs/users/delete-all-user-data-gdpr for detailed documentation."
+    },
+    {
+      "name": "execute-delete-all-user-data-gdpr",
+      "description": "Execute the deletion of all user data from Velt (GDPR compliance) after confirmation. This should only be called after the user has confirmed they want to proceed with the deletion. See velt://docs/users/delete-all-user-data-gdpr for detailed documentation."
+    },
+    {
+      "name": "get-all-user-data-gdpr",
+      "description": "Get all user data stored in Velt for GDPR compliance. This includes profile data, comments, reactions, notifications, and recordings. See velt://docs/users/get-all-user-data-gdpr for detailed documentation."
+    },
+    {
+      "name": "get-delete-user-data-status-gdpr",
+      "description": "Get the status of a user data deletion process for GDPR compliance. Use the jobId returned from the delete-all-user-data-gdpr API. See velt://docs/users/get-delete-user-data-status-gdpr for detailed documentation."
+    },
+    {
+      "name": "get-folders",
+      "description": "Get folders from Velt. See velt://docs/folders/get-folders for detailed documentation."
+    },
+    {
+      "name": "add-folder",
+      "description": "Add folder to Velt. See velt://docs/folders/add-folder for detailed documentation."
+    },
+    {
+      "name": "update-folder",
+      "description": "Update folder in Velt. See velt://docs/folders/update-folder for detailed documentation."
+    },
+    {
+      "name": "update-folder-access",
+      "description": "Update folder access in Velt. See velt://docs/folders/update-folder-access for detailed documentation."
+    },
+    {
+      "name": "get-notifications",
+      "description": "Get notifications from Velt. See velt://docs/notifications/get-notifications for detailed documentation."
+    },
+    {
+      "name": "add-notification",
+      "description": "Add notification to Velt. See velt://docs/notifications/add-notifications for detailed documentation."
+    },
+    {
+      "name": "update-notification",
+      "description": "Update notification in Velt. See velt://docs/notifications/update-notifications for detailed documentation."
+    },
+    {
+      "name": "delete-notification",
+      "description": "Delete notification from Velt. See velt://docs/notifications/delete-notifications for detailed documentation."
+    },
+    {
+      "name": "get-notification-config",
+      "description": "Get notification configuration for users and documents from Velt. See velt://docs/notifications/get-config for detailed documentation."
+    },
+    {
+      "name": "set-notification-config",
+      "description": "Set notification configuration for users and documents in Velt. See velt://docs/notifications/set-config for detailed documentation."
+    },
+    {
+      "name": "broadcast-livestate-event",
+      "description": "Broadcast a live state event to Velt. See velt://docs/livestate/broadcast-event for detailed documentation."
+    },
+    {
+      "name": "add-domains",
+      "description": "Add domains to workspace allowed domains. See velt://docs/workspace/add-domain for detailed documentation."
+    },
+    {
+      "name": "delete-domains",
+      "description": "Delete domains from workspace allowed domains. See velt://docs/workspace/delete-domain for detailed documentation."
+    }
+  ]
+}

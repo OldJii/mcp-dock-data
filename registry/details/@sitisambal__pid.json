@@ -1,0 +1,12 @@
+{
+  "id": "@sitisambal/pid",
+  "displayName": "pid",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:32.517Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sitisambal/pid"
+  },
+  "connection": null,
+  "capabilities": []
+}

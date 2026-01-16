@@ -1,0 +1,12 @@
+{
+  "id": "@youngsupchoi/playwright-mcp",
+  "displayName": "playwright-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:17.470Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@youngsupchoi/playwright-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

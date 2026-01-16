@@ -1,0 +1,12 @@
+{
+  "id": "@vertexcover-io/linkedin-spider",
+  "displayName": "linkedin-spider",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:12.652Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vertexcover-io/linkedin-spider"
+  },
+  "connection": null,
+  "capabilities": []
+}

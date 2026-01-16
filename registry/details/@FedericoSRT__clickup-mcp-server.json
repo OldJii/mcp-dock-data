@@ -1,0 +1,12 @@
+{
+  "id": "@FedericoSRT/clickup-mcp-server",
+  "displayName": "clickup-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:58.092Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FedericoSRT/clickup-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

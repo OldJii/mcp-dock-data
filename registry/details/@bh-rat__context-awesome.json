@@ -1,0 +1,25 @@
+{
+  "id": "@bh-rat/context-awesome",
+  "displayName": "Context Awesome",
+  "description": "Provide your AI agents with instant access to the best curated resources from over 8,500 awesome lists and more than 1 million items. Discover relevant sections and retrieve high-quality references for deep research, learning, and knowledge work. Enhance your agents' ability to find vetted tools and libraries across a wide range of topics efficiently.",
+  "createdAt": "2026-01-16T07:20:57.462Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bh-rat/context-awesome"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "find_awesome_section",
+      "description": "Discovers sections/categories across awesome lists matching a search query and returns matching sections from awesome lists.\n\nYou MUST call this function before 'get_awesome_items' to discover available sections UNLESS the user explicitly provides a githubRepo or listId.\n\nSelection Process:\n1. Analyze the query to understand what type of resources the user is looking for\n2. Return the most relevant matches based on:\n   - Name similarity to the query and the awesome lists section\n   - Category/section relevance of the awesome lists \n   - Number of items in the section\n   - Confidence score\n\nResponse Format:\n- Returns matching sections of the awesome lists with metadata\n- Includes repository information, item counts, and confidence score\n- Use the githubRepo or listId with relevant sections from results for get_awesome_items\n\nFor ambiguous queries, multiple relevant sections will be returned for the user to choose from."
+    },
+    {
+      "name": "get_awesome_items",
+      "description": "Retrieves items from a specific awesome list or section with token limiting. You must call 'find_awesome_section' first to discover available sections, UNLESS the user explicitly provides a githubRepo or listId."
+    }
+  ]
+}

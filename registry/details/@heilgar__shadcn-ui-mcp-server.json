@@ -1,0 +1,45 @@
+{
+  "id": "@heilgar/shadcn-ui-mcp-server",
+  "displayName": "Shadcn UI Component Reference Server",
+  "description": "Provide seamless access to shadcn/ui component references through a standardized MCP interface. Enable LLMs and applications to query and retrieve UI component details efficiently. Enhance developer workflows by integrating component metadata directly into your tools.",
+  "createdAt": "2026-01-16T07:25:27.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@heilgar/shadcn-ui-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-components",
+      "description": ""
+    },
+    {
+      "name": "get-component-docs",
+      "description": ""
+    },
+    {
+      "name": "install-component",
+      "description": ""
+    },
+    {
+      "name": "list-blocks",
+      "description": ""
+    },
+    {
+      "name": "get-block-docs",
+      "description": ""
+    },
+    {
+      "name": "install-blocks",
+      "description": ""
+    }
+  ]
+}

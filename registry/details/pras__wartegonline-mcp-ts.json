@@ -1,0 +1,12 @@
+{
+  "id": "pras/wartegonline-mcp-ts",
+  "displayName": "wartegonline-mcp-ts",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:17.908Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/pras/wartegonline-mcp-ts"
+  },
+  "connection": null,
+  "capabilities": []
+}

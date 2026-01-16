@@ -1,0 +1,33 @@
+{
+  "id": "@JunoJunHyun/festival-finder-mcp",
+  "displayName": "Festival Finder",
+  "description": "Discover festivals worldwide by location, date, and genre. Compare options with key details like dates, venues, and lineups to plan your trip. Save time finding events that match your interests.",
+  "createdAt": "2026-01-16T07:28:34.724Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JunoJunHyun/festival-finder-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_performance_list",
+      "description": "기간별, 조건별 공연 목록을 조회합니다."
+    },
+    {
+      "name": "get_festival_list",
+      "description": "기간별, 조건별 축제 목록을 조회합니다."
+    },
+    {
+      "name": "get_performance_detail",
+      "description": "특정 공연의 상세 정보를 조회합니다."
+    }
+  ]
+}

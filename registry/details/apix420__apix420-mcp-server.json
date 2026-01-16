@@ -1,0 +1,12 @@
+{
+  "id": "apix420/apix420-mcp-server",
+  "displayName": "apix420-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:54.593Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/apix420/apix420-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

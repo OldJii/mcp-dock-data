@@ -1,0 +1,52 @@
+{
+  "id": "@Vivek-k3/modelsplus",
+  "displayName": "Models Plus",
+  "description": "Discover and compare models and providers with up-to-date pricing, limits, modalities, and capabilities. Search and filter by features like reasoning, tool calling, and context length, then fetch detailed specs to choose the right model fast.",
+  "createdAt": "2026-01-16T07:22:10.457Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Vivek-k3/modelsplus"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "apiTimeout": {
+          "type": "number",
+          "description": "API request timeout in milliseconds",
+          "default": 10000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_models",
+      "description": "Search for AI models by name, provider, or capabilities"
+    },
+    {
+      "name": "get_model",
+      "description": "Get detailed information about a specific AI model"
+    },
+    {
+      "name": "search_providers",
+      "description": "Search for AI model providers by name or environment variables"
+    },
+    {
+      "name": "get_provider",
+      "description": "Get detailed information about a specific AI model provider"
+    }
+  ]
+}

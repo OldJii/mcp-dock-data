@@ -1,0 +1,12 @@
+{
+  "id": "@raylow-x/mcpsmith",
+  "displayName": "mcpsmith",
+  "description": "deposit pour un test n8n",
+  "createdAt": "2026-01-16T07:45:15.014Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@raylow-x/mcpsmith"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Zpankz/logseq-mcp-tools",
+  "displayName": "logseq-mcp-tools",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:55.662Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Zpankz/logseq-mcp-tools"
+  },
+  "connection": null,
+  "capabilities": []
+}

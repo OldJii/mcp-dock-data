@@ -1,0 +1,53 @@
+{
+  "id": "@Decodo/decodo-mcp-server",
+  "displayName": "Decodo MCP Server",
+  "description": "Enable your AI agents to scrape and parse web content dynamically, including geo-restricted sites, by leveraging Decodo's scraping capabilities.\n\nTo use, head on over to https://dashboard.decodo.com, start a free Web Advanced trial and input the generated credentials into your MCP client of choice on the right-hand side of this page.",
+  "createdAt": "2026-01-16T07:24:43.003Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Decodo/decodo-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "scraperApi01Username",
+        "scraperApi02Password"
+      ],
+      "properties": {
+        "scraperApi01Username": {
+          "type": "string",
+          "description": "Username for Decodo Scraper API"
+        },
+        "scraperApi02Password": {
+          "type": "string",
+          "description": "Password for Decodo Scraper API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "scrape_as_markdown",
+      "description": "Scrape the contents of a website and return Markdown-formatted results"
+    },
+    {
+      "name": "google_search_parsed",
+      "description": "Scrape Google Search results with automatic parsing"
+    },
+    {
+      "name": "amazon_search_parsed",
+      "description": "Scrape Amazon Search results with automatic parsing"
+    },
+    {
+      "name": "reddit_post",
+      "description": "Scrape a specific Reddit post"
+    },
+    {
+      "name": "reddit_subreddit",
+      "description": "Scrape Reddit subreddit results with automatic parsing"
+    }
+  ]
+}

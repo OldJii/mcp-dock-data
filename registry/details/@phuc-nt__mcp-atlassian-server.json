@@ -1,0 +1,144 @@
+{
+  "id": "@phuc-nt/mcp-atlassian-server",
+  "displayName": "Atlassian Integration Server",
+  "description": "Connect AI agents to Atlassian Jira and Confluence to query data and perform actions through a standardized interface. Enable seamless management of issues, projects, pages, and comments directly from AI assistants. Simplify workflows and reduce context switching for developers and teams using Atlassian tools.",
+  "createdAt": "2026-01-16T07:31:55.495Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@phuc-nt/mcp-atlassian-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "atlassianSiteName",
+        "atlassianUserEmail",
+        "atlassianApiToken"
+      ],
+      "properties": {
+        "mcpServerName": {
+          "type": "string",
+          "description": "Optional custom name for the MCP server",
+          "default": "mcp-atlassian-integration"
+        },
+        "mcpServerVersion": {
+          "type": "string",
+          "description": "Optional custom version for the MCP server",
+          "default": "1.0.0"
+        },
+        "atlassianApiToken": {
+          "type": "string",
+          "description": "API token for Atlassian authentication"
+        },
+        "atlassianSiteName": {
+          "type": "string",
+          "description": "Your Atlassian site name or URL (e.g., example.atlassian.net or https://example.atlassian.net)"
+        },
+        "atlassianUserEmail": {
+          "type": "string",
+          "description": "Email address associated with your Atlassian account"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "createIssue",
+      "description": "Create a new issue in Jira"
+    },
+    {
+      "name": "updateIssue",
+      "description": "Update information of a Jira issue"
+    },
+    {
+      "name": "transitionIssue",
+      "description": "Transition the status of a Jira issue"
+    },
+    {
+      "name": "assignIssue",
+      "description": "Assign a Jira issue to a user"
+    },
+    {
+      "name": "createFilter",
+      "description": "Create a new filter in Jira"
+    },
+    {
+      "name": "updateFilter",
+      "description": "Update an existing filter in Jira"
+    },
+    {
+      "name": "deleteFilter",
+      "description": "Delete a filter in Jira"
+    },
+    {
+      "name": "createSprint",
+      "description": "Create a new sprint in Jira"
+    },
+    {
+      "name": "startSprint",
+      "description": "Start a Jira sprint"
+    },
+    {
+      "name": "closeSprint",
+      "description": "Close a Jira sprint"
+    },
+    {
+      "name": "addIssuesToBacklog",
+      "description": "Move issue(s) to Jira backlog (POST /rest/agile/1.0/backlog/issue or /rest/agile/1.0/backlog/{boardId}/issue)"
+    },
+    {
+      "name": "rankBacklogIssues",
+      "description": "Rank issues in Jira backlog"
+    },
+    {
+      "name": "createDashboard",
+      "description": "Create a new Jira dashboard"
+    },
+    {
+      "name": "updateDashboard",
+      "description": "Update a Jira dashboard"
+    },
+    {
+      "name": "addGadgetToDashboard",
+      "description": "Add gadget to Jira dashboard (POST /rest/api/3/dashboard/{dashboardId}/gadget)"
+    },
+    {
+      "name": "removeGadgetFromDashboard",
+      "description": "Remove gadget from Jira dashboard"
+    },
+    {
+      "name": "createPage",
+      "description": "Create a new page in Confluence (API v2, chỉ hỗ trợ spaceId)"
+    },
+    {
+      "name": "updatePage",
+      "description": "Update the content and information of a Confluence page"
+    },
+    {
+      "name": "addComment",
+      "description": "Add a comment to a Confluence page"
+    },
+    {
+      "name": "deletePage",
+      "description": "Delete a Confluence page (API v2)"
+    },
+    {
+      "name": "updatePageTitle",
+      "description": "Update the title of a Confluence page (API v2)"
+    },
+    {
+      "name": "updateFooterComment",
+      "description": "Update a footer comment in Confluence (API v2)"
+    },
+    {
+      "name": "deleteFooterComment",
+      "description": "Delete a footer comment in Confluence (API v2)"
+    },
+    {
+      "name": "addIssueToSprint",
+      "description": "Add issues to a Jira sprint (POST /rest/agile/1.0/sprint/{sprintId}/issue)"
+    }
+  ]
+}

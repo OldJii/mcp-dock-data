@@ -1,0 +1,43 @@
+{
+  "id": "@osamah96/ssss",
+  "displayName": "ssss",
+  "description": "",
+  "createdAt": "2026-01-16T07:31:51.580Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@osamah96/ssss"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "name": "brand-guidelines-mcp",
+      "transport": [
+        "streamable-http",
+        "sse",
+        "http"
+      ],
+      "description": "Brand Guidelines MCP Server",
+      "mcp_version": "2025-06-18",
+      "capabilities": [
+        "tools",
+        "resources"
+      ],
+      "authentication_required": true
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_brand_context",
+      "description": "Retrieve comprehensive brand guidelines and rules"
+    },
+    {
+      "name": "get_brand_visuals",
+      "description": "Fetch PDFs and visual assets from brand"
+    },
+    {
+      "name": "analyze_content",
+      "description": "Analyze content against brand guidelines"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@PhilemonChiro/supabase-mcp-cloud-and-selfhosted",
+  "displayName": "supabase-mcp-cloud-and-selfhosted",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:41.554Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@PhilemonChiro/supabase-mcp-cloud-and-selfhosted"
+  },
+  "connection": null,
+  "capabilities": []
+}

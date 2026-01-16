@@ -1,0 +1,12 @@
+{
+  "id": "@Juanvulcano/polymarket-mcp",
+  "displayName": "polymarket-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:13.239Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Juanvulcano/polymarket-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

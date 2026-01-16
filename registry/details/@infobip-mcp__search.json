@@ -1,0 +1,21 @@
+{
+  "id": "@infobip-mcp/search",
+  "displayName": "Infobip Search MCP",
+  "description": "Search Infobip documentation to quickly find guides, use cases, and best practices. Unblock integration and messaging workflows with precise, context-aware answers. Accelerate development with ready-to-use examples and clear guidance for building and troubleshooting requests.",
+  "createdAt": "2026-01-16T07:23:30.872Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@infobip-mcp/search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "post_experience_1_explore",
+      "description": "Explore Infobip Documentation; Use semantic search to explore the Infobip documentation hub, a comprehensive collection of product documentation, practical use cases, and general platform information designed to help both new and advanced users find resources and inspiration for interacting with end-users."
+    }
+  ]
+}

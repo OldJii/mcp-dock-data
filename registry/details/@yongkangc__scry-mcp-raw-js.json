@@ -1,0 +1,170 @@
+{
+  "id": "@yongkangc/scry-mcp-raw-js",
+  "displayName": "Scry MCP Server",
+  "description": "Provide real-time and comprehensive cryptocurrency and DeFi data from multiple trusted Sources. \n\nEnable AI assistants to access market data, trending coins, protocol analytics, and more with intelligent rate limiting and caching for optimal performance. \n\nIntegrate seamlessly with MCP clients to enhance your crypto-related applications and workflows.",
+  "createdAt": "2026-01-16T07:26:40.826Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yongkangc/scry-mcp-raw-js"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "SCRY_API_KEY": {
+          "type": "string",
+          "description": "Your Scry API key (required for Scry endpoints). Get one at https://scry.space/"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "coingecko_get_trending_coins",
+      "description": "Discover trending cryptocurrencies based on real-time search activity from CoinGecko users. Use for identifying market attention, viral projects, and emerging opportunities. Updated every few hours with search volume rankings. This is unique CoinGecko data not available elsewhere."
+    },
+    {
+      "name": "get_top_protocols",
+      "description": "Get top DeFi protocols ranked by TVL with filtering by category and blockchain. Recommended over get_protocols for manageable result sets that won't overwhelm responses. Returns formatted TVL values, 24h changes, and chain distribution data for quick protocol discovery."
+    },
+    {
+      "name": "defillama_get_protocols_paginated",
+      "description": "Browse DeFi protocols with pagination and sorting for comprehensive market analysis. Use for large datasets when get_top_protocols isn't sufficient. Returns structured data with pagination controls and flexible sorting options."
+    },
+    {
+      "name": "defillama_search_protocols",
+      "description": "Search for DeFi protocols by name, symbol, category, or description. Returns matching protocols sorted by TVL."
+    },
+    {
+      "name": "get_historical_tvl",
+      "description": "Get monthly aggregated TVL data for any protocol, returning highest, mean, and lowest TVL for each month. This prevents context window overflow while providing comprehensive historical insights. Data is automatically aggregated from daily values during caching."
+    },
+    {
+      "name": "defillama_get_chain_historical_tvl",
+      "description": "Get historical TVL data for blockchain ecosystems to track capital flows and identify mercenary capital patterns across chains."
+    },
+    {
+      "name": "defillama_get_protocol_fees_history",
+      "description": "Get historical fees and revenue data to analyze protocol sustainability and real value generation beyond TVL incentives."
+    },
+    {
+      "name": "defillama_get_yields_historical",
+      "description": "Get historical yield/APY data for liquidity pools to analyze incentive effectiveness and reward sustainability patterns."
+    },
+    {
+      "name": "defillama_get_stablecoin_historical",
+      "description": "Get historical stablecoin circulation data to track capital flows and identify mercenary capital patterns through stablecoin movement."
+    },
+    {
+      "name": "defillama_compare_protocols_historical",
+      "description": "Compare historical TVL data across multiple protocols to identify relative performance and capital flow patterns."
+    },
+    {
+      "name": "get_dex_volume",
+      "description": "Get comprehensive trading volume data for both spot and perpetuals trading. Automatically searches both DEX and derivatives APIs to provide complete volume analysis. Supports major protocols like Uniswap, Curve (spot) and GMX, Hyperliquid, dYdX (perpetuals). Returns separate data for spot and perpetuals when both are available."
+    },
+    {
+      "name": "get_derivatives_overview",
+      "description": "Get comprehensive derivatives/perpetuals trading volume data for all protocols. Essential for perpetual DEX competitive analysis. Includes GMX, dYdX, Hyperliquid, Jupiter Perps, and other major perpetual trading platforms."
+    },
+    {
+      "name": "get_derivatives_volume",
+      "description": "Get detailed volume data for a specific derivatives/perpetuals protocol with historical analysis. Use for in-depth analysis of individual perpetual DEX protocols like GMX, dYdX, Hyperliquid, etc."
+    },
+    {
+      "name": "get_protocol_revenue_overview",
+      "description": "Get comprehensive revenue and fees data for all DeFi protocols. Shows which protocols generate real revenue vs just TVL. Essential for analyzing protocol sustainability and value generation."
+    },
+    {
+      "name": "debank_get_top_holders",
+      "description": "Get top holders of a token using DeBank API. Returns ranked list of holders with addresses and amounts."
+    },
+    {
+      "name": "debank_get_user_chains",
+      "description": "Get list of chains where a user has activity using DeBank API. Includes wallet birth timestamps."
+    },
+    {
+      "name": "debank_get_user_history",
+      "description": "Get user's transaction history on a specific chain using DeBank API."
+    },
+    {
+      "name": "debank_get_user_tokens",
+      "description": "Get user's token balances on a specific chain using DeBank API."
+    },
+    {
+      "name": "debank_get_user_all_tokens",
+      "description": "Get user's token balances across all chains using DeBank API."
+    },
+    {
+      "name": "debank_get_user_protocols",
+      "description": "Get user's DeFi protocol positions on a specific chain using DeBank API."
+    },
+    {
+      "name": "debank_get_user_authorizations",
+      "description": "Get user's token approvals and authorizations on a specific chain using DeBank API."
+    },
+    {
+      "name": "debank_analyze_token_holders",
+      "description": "Perform comprehensive holder analysis for a token including cross-chain activity and portfolio similarities."
+    },
+    {
+      "name": "get_current_price",
+      "description": "Get current cryptocurrency prices with automatic source selection and intelligent fallbacks. Use for price discovery when you don't know which data source to use. Supports symbols (BTC, ETH), names (Bitcoin, Ethereum), or contract addresses across CoinGecko, CoinMarketCap, and DeFiLlama."
+    },
+    {
+      "name": "compare_prices",
+      "description": "Compare current prices of multiple cryptocurrencies side by side with sorting and ranking. Use for market analysis, portfolio tracking, and relative performance assessment. Maximum 20 assets per request for optimal performance."
+    },
+    {
+      "name": "get_historical_price",
+      "description": "Get historical price data with intelligent multi-source aggregation for comprehensive trend analysis. Use for volatility assessment, pattern recognition, and performance tracking over custom timeframes. Automatically combines data from multiple sources for optimal coverage."
+    },
+    {
+      "name": "get_price_analytics",
+      "description": "Generate comprehensive price analytics including volatility metrics, trend analysis, support/resistance levels, and technical indicators. Use for investment analysis, risk assessment, and trading insights with professional-grade calculations."
+    },
+    {
+      "name": "search_assets",
+      "description": "Search for cryptocurrencies using smart matching. Supports partial names, symbols, categories, and more"
+    },
+    {
+      "name": "get_assets_by_category",
+      "description": "Get all cryptocurrencies in a specific category with current price data"
+    },
+    {
+      "name": "arkham_transfers_query",
+      "description": "🔍 Query Arkham Intelligence for blockchain transfer data with advanced entity and flow filtering. Supports entity-based analysis, exchange identification, and comprehensive transfer tracking across multiple chains."
+    },
+    {
+      "name": "arkham_net_flow_by_wallet",
+      "description": "📊 Calculate net inflow/outflow analysis for wallets or entities with optional token filtering. Provides comprehensive flow analysis by token with USD valuations."
+    },
+    {
+      "name": "arkham_exchange_deposit_activity",
+      "description": "🏦 Track deposits from wallets/entities to exchange addresses with exchange identification and volume analysis. Supports fuzzy matching of exchange names (e.g., 'Binance', 'coinbase pro', 'CB')."
+    },
+    {
+      "name": "arkham_entity_transfer_matrix",
+      "description": "🔄 Analyze bidirectional transfer relationships between entities, creating a comprehensive transfer matrix with volume and frequency analysis. Supports fuzzy matching for exchange names."
+    },
+    {
+      "name": "arkham_wallet_activation_monitor",
+      "description": "🔍 Monitor wallet activation patterns, detecting first activity or post-funding behaviors for security and compliance analysis."
+    },
+    {
+      "name": "arkham_stablecoin_flows",
+      "description": "💰 Analyze stablecoin transfer patterns and flows for entities, providing detailed USD flow analysis for compliance and treasury management."
+    },
+    {
+      "name": "top_tokens_metrics",
+      "description": "🏆 Get comprehensive metrics for the top 10 institutional tokens (BTC, ETH, SOL, HYPE, ENA, SUI, XRP). Includes price data, volume metrics, calculated ratios, and DeFi protocol data in a single unified response. Perfect for institutional trading analysis and market overview."
+    },
+    {
+      "name": "ping",
+      "description": "Simple ping tool for testing the server connection and getting server status"
+    }
+  ]
+}

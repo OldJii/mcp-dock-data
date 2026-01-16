@@ -1,0 +1,53 @@
+{
+  "id": "@sasabasara/where_is_my_train_mcp",
+  "displayName": "Where's my train? MTA Guide",
+  "description": "Real-time NYC subway intel at your fingertips: stations, arrivals, service alerts, and route planning. \n\nWhy Use It\n\nYou’re in your AI-powered IDE, mid-flow, when that little voice in your head goes: “Wait… is my train even running?” Instead of doom-scrolling Twitter or refreshing three different apps, just ask this MCP. Live trains and service alerts, right when you need them.",
+  "createdAt": "2026-01-16T07:20:28.127Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sasabasara/where_is_my_train_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_station",
+      "description": "Advanced station search with fuzzy matching, accessibility info, and nearby amenities"
+    },
+    {
+      "name": "next_trains",
+      "description": "Real-time train arrivals with delay predictions, crowding levels, and service alerts"
+    },
+    {
+      "name": "service_status",
+      "description": "Comprehensive service status with performance metrics, on-time rates, and system-wide health indicators"
+    },
+    {
+      "name": "subway_alerts",
+      "description": "Detailed service alerts with impact analysis, affected stations, and estimated resolution times"
+    },
+    {
+      "name": "station_transfers",
+      "description": "Find all train line transfer options at a specific subway station"
+    },
+    {
+      "name": "nearest_station",
+      "description": "Find closest subway stations with walking directions, accessibility info, and real-time service status"
+    },
+    {
+      "name": "service_disruptions",
+      "description": "Get comprehensive service disruption information with impact analysis, alternative routes, and estimated resolution times"
+    }
+  ]
+}

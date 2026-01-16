@@ -1,0 +1,49 @@
+{
+  "id": "@ngoiyaeric/mapbox-mcp-server",
+  "displayName": "Mapbox MCP Server",
+  "description": "Integrate Mapbox's powerful navigation and search capabilities into your applications. Access directions, travel matrices, and geocoding services seamlessly. Enhance your projects with real-time mapping functionalities using this server.",
+  "createdAt": "2026-01-16T07:25:28.413Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ngoiyaeric/mapbox-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mapboxAccessToken"
+      ],
+      "properties": {
+        "mapboxAccessToken": {
+          "type": "string",
+          "description": "Mapbox API access token",
+          "default": "your_api_key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mapbox_directions",
+      "description": "Get navigation route between two points"
+    },
+    {
+      "name": "mapbox_directions_by_places",
+      "description": "Get navigation route between multiple places using their names"
+    },
+    {
+      "name": "mapbox_matrix",
+      "description": "Calculate travel time and distance matrices between coordinates"
+    },
+    {
+      "name": "mapbox_matrix_by_places",
+      "description": "Calculate travel time and distance matrices between places using their names"
+    },
+    {
+      "name": "mapbox_geocoding",
+      "description": "Search for places and convert addresses into coordinates"
+    }
+  ]
+}

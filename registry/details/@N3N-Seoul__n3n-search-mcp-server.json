@@ -1,0 +1,44 @@
+{
+  "id": "@N3N-Seoul/n3n-search-mcp-server",
+  "displayName": "Tavily",
+  "description": "Search the web for high-quality, up-to-date results, extract clean content, crawl sites, and map topics. Streamline research, competitive analysis, and content gathering with fast, targeted queries. Consolidate findings into actionable insights.",
+  "createdAt": "2026-01-16T07:23:00.104Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@N3N-Seoul/n3n-search-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tavilyApiKey"
+      ],
+      "properties": {
+        "tavilyApiKey": {
+          "type": "string",
+          "description": "API key for accessing the Tavily API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "tavily_search",
+      "description": ""
+    },
+    {
+      "name": "tavily_extract",
+      "description": ""
+    },
+    {
+      "name": "tavily_crawl",
+      "description": ""
+    },
+    {
+      "name": "tavily_map",
+      "description": ""
+    }
+  ]
+}

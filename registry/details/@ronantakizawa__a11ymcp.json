@@ -1,0 +1,45 @@
+{
+  "id": "@ronantakizawa/a11ymcp",
+  "displayName": "A11y MCP",
+  "description": "Run WCAG compliance tests, ARIA attribute tests, and accessible color contrast tests via the axe-core API. Users can upload raw HTML or URLs to run tests.\n\n",
+  "createdAt": "2026-01-16T07:30:35.461Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ronantakizawa/a11ymcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_accessibility",
+      "description": "Test a webpage for accessibility issues using Axe-core"
+    },
+    {
+      "name": "test_html_string",
+      "description": "Test an HTML string for accessibility issues"
+    },
+    {
+      "name": "get_rules",
+      "description": "Get information about available accessibility rules with optional filtering"
+    },
+    {
+      "name": "check_color_contrast",
+      "description": "Check if a foreground and background color combination meets WCAG contrast requirements"
+    },
+    {
+      "name": "check_aria_attributes",
+      "description": "Check if ARIA attributes are used correctly in HTML"
+    },
+    {
+      "name": "check_orientation_lock",
+      "description": "Check if content forces a specific orientation"
+    }
+  ]
+}

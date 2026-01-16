@@ -1,0 +1,304 @@
+{
+  "id": "@devlimelabs/meilisearch-ts-mcp",
+  "displayName": "Meilisearch MCP Server",
+  "description": "Enable AI assistants to interact with Meilisearch through a standardized interface.",
+  "createdAt": "2026-01-16T07:24:52.715Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devlimelabs/meilisearch-ts-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "MEILISEARCH_HOST": {
+          "type": "string",
+          "description": "URL for the Meilisearch instance",
+          "default": "http://localhost:7700"
+        },
+        "MEILISEARCH_API_KEY": {
+          "type": "string",
+          "description": "API key for Meilisearch, if required",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-indexes",
+      "description": "List all indexes in the Meilisearch instance"
+    },
+    {
+      "name": "get-index",
+      "description": "Get information about a specific Meilisearch index"
+    },
+    {
+      "name": "create-index",
+      "description": "Create a new Meilisearch index"
+    },
+    {
+      "name": "update-index",
+      "description": "Update a Meilisearch index (currently only supports updating the primary key)"
+    },
+    {
+      "name": "delete-index",
+      "description": "Delete a Meilisearch index"
+    },
+    {
+      "name": "swap-indexes",
+      "description": "Swap two or more indexes in Meilisearch"
+    },
+    {
+      "name": "get-documents",
+      "description": "Get documents from a Meilisearch index"
+    },
+    {
+      "name": "get-document",
+      "description": "Get a document by its ID from a Meilisearch index"
+    },
+    {
+      "name": "add-documents",
+      "description": "Add documents to a Meilisearch index"
+    },
+    {
+      "name": "update-documents",
+      "description": "Update documents in a Meilisearch index"
+    },
+    {
+      "name": "delete-document",
+      "description": "Delete a document by its ID from a Meilisearch index"
+    },
+    {
+      "name": "delete-documents",
+      "description": "Delete multiple documents by their IDs from a Meilisearch index"
+    },
+    {
+      "name": "delete-all-documents",
+      "description": "Delete all documents in a Meilisearch index"
+    },
+    {
+      "name": "search",
+      "description": "Search for documents in a Meilisearch index"
+    },
+    {
+      "name": "multi-search",
+      "description": "Perform multiple searches in one request"
+    },
+    {
+      "name": "facet-search",
+      "description": "Search for facet values matching specific criteria"
+    },
+    {
+      "name": "get-settings",
+      "description": "Get all settings for a Meilisearch index"
+    },
+    {
+      "name": "update-settings",
+      "description": "Update settings for a Meilisearch index"
+    },
+    {
+      "name": "reset-settings",
+      "description": "Reset all settings for a Meilisearch index to their default values"
+    },
+    {
+      "name": "get-searchable-attributes",
+      "description": "Get the searchable attributes setting"
+    },
+    {
+      "name": "get-displayed-attributes",
+      "description": "Get the displayed attributes setting"
+    },
+    {
+      "name": "get-filterable-attributes",
+      "description": "Get the filterable attributes setting"
+    },
+    {
+      "name": "get-sortable-attributes",
+      "description": "Get the sortable attributes setting"
+    },
+    {
+      "name": "get-ranking-rules",
+      "description": "Get the ranking rules setting"
+    },
+    {
+      "name": "get-stop-words",
+      "description": "Get the stop words setting"
+    },
+    {
+      "name": "get-synonyms",
+      "description": "Get the synonyms setting"
+    },
+    {
+      "name": "get-distinct-attribute",
+      "description": "Get the distinct attribute setting"
+    },
+    {
+      "name": "get-typo-tolerance",
+      "description": "Get the typo tolerance setting"
+    },
+    {
+      "name": "get-faceting",
+      "description": "Get the faceting setting"
+    },
+    {
+      "name": "get-pagination",
+      "description": "Get the pagination setting"
+    },
+    {
+      "name": "update-searchable-attributes",
+      "description": "Update the searchable attributes setting"
+    },
+    {
+      "name": "update-displayed-attributes",
+      "description": "Update the displayed attributes setting"
+    },
+    {
+      "name": "update-filterable-attributes",
+      "description": "Update the filterable attributes setting"
+    },
+    {
+      "name": "update-sortable-attributes",
+      "description": "Update the sortable attributes setting"
+    },
+    {
+      "name": "update-ranking-rules",
+      "description": "Update the ranking rules setting"
+    },
+    {
+      "name": "update-stop-words",
+      "description": "Update the stop words setting"
+    },
+    {
+      "name": "update-synonyms",
+      "description": "Update the synonyms setting"
+    },
+    {
+      "name": "update-distinct-attribute",
+      "description": "Update the distinct attribute setting"
+    },
+    {
+      "name": "update-typo-tolerance",
+      "description": "Update the typo tolerance setting"
+    },
+    {
+      "name": "update-faceting",
+      "description": "Update the faceting setting"
+    },
+    {
+      "name": "update-pagination",
+      "description": "Update the pagination setting"
+    },
+    {
+      "name": "reset-searchable-attributes",
+      "description": "Reset the searchable attributes setting to its default value"
+    },
+    {
+      "name": "reset-displayed-attributes",
+      "description": "Reset the displayed attributes setting to its default value"
+    },
+    {
+      "name": "reset-filterable-attributes",
+      "description": "Reset the filterable attributes setting to its default value"
+    },
+    {
+      "name": "reset-sortable-attributes",
+      "description": "Reset the sortable attributes setting to its default value"
+    },
+    {
+      "name": "reset-ranking-rules",
+      "description": "Reset the ranking rules setting to its default value"
+    },
+    {
+      "name": "reset-stop-words",
+      "description": "Reset the stop words setting to its default value"
+    },
+    {
+      "name": "reset-synonyms",
+      "description": "Reset the synonyms setting to its default value"
+    },
+    {
+      "name": "reset-distinct-attribute",
+      "description": "Reset the distinct attribute setting to its default value"
+    },
+    {
+      "name": "reset-typo-tolerance",
+      "description": "Reset the typo tolerance setting to its default value"
+    },
+    {
+      "name": "reset-faceting",
+      "description": "Reset the faceting setting to its default value"
+    },
+    {
+      "name": "reset-pagination",
+      "description": "Reset the pagination setting to its default value"
+    },
+    {
+      "name": "enable-vector-search",
+      "description": "Enable the vector search experimental feature in Meilisearch"
+    },
+    {
+      "name": "get-experimental-features",
+      "description": "Get the status of experimental features in Meilisearch"
+    },
+    {
+      "name": "update-embedders",
+      "description": "Configure embedders for vector search"
+    },
+    {
+      "name": "get-embedders",
+      "description": "Get the embedders configuration for an index"
+    },
+    {
+      "name": "reset-embedders",
+      "description": "Reset the embedders configuration for an index"
+    },
+    {
+      "name": "vector-search",
+      "description": "Perform a vector search in a Meilisearch index"
+    },
+    {
+      "name": "health",
+      "description": "Check if the Meilisearch server is healthy"
+    },
+    {
+      "name": "version",
+      "description": "Get the version information of the Meilisearch server"
+    },
+    {
+      "name": "info",
+      "description": "Get the system information of the Meilisearch server"
+    },
+    {
+      "name": "stats",
+      "description": "Get statistics about all indexes or a specific index"
+    },
+    {
+      "name": "get-tasks",
+      "description": "Get information about tasks with optional filtering"
+    },
+    {
+      "name": "delete-tasks",
+      "description": "Delete tasks based on provided filters"
+    },
+    {
+      "name": "list-tasks",
+      "description": "List tasks with optional filtering"
+    },
+    {
+      "name": "get-task",
+      "description": "Get information about a specific task"
+    },
+    {
+      "name": "cancel-tasks",
+      "description": "Cancel tasks based on provided filters"
+    },
+    {
+      "name": "wait-for-task",
+      "description": "Wait for a specific task to complete"
+    }
+  ]
+}

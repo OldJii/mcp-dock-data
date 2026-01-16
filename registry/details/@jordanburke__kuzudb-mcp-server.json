@@ -1,0 +1,16 @@
+{
+  "id": "@jordanburke/kuzudb-mcp-server",
+  "displayName": "KuzuDB Server",
+  "description": "Enable LLMs to inspect and query Kuzu graph databases using Cypher. Run read-only or multi-agent coordinated queries safely with file-based locking. Integrate seamlessly with Claude Desktop via Docker or npm for enhanced database interaction.",
+  "createdAt": "2026-01-16T07:30:44.970Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jordanburke/kuzudb-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

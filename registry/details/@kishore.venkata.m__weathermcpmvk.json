@@ -1,0 +1,21 @@
+{
+  "id": "@kishore.venkata.m/weathermcpmvk",
+  "displayName": "weathermcpmvk",
+  "description": "",
+  "createdAt": "2026-01-16T07:30:45.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kishore.venkata.m/weathermcpmvk"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

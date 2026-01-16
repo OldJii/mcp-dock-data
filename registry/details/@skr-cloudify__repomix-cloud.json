@@ -1,0 +1,75 @@
+{
+  "id": "@skr-cloudify/repomix-cloud",
+  "displayName": "Repomix",
+  "description": "Package remote and local repositories into a compact bundle for rapid code comprehension and review. Work with private repos and reopen previously generated outputs with ease. Browse directories and read files directly from your workspace.",
+  "createdAt": "2026-01-16T07:32:47.362Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skr-cloudify/repomix-cloud"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "githubToken": {
+          "type": "string",
+          "description": "GitHub personal access token for private repository access (configured per user)"
+        },
+        "maxFileSize": {
+          "type": [
+            "string",
+            "number"
+          ],
+          "description": "Maximum file size to process (in bytes)",
+          "default": 50000000
+        },
+        "security_check": {
+          "type": [
+            "boolean",
+            "string"
+          ],
+          "description": "Whether to perform security checks on files",
+          "default": true
+        },
+        "defaultCompress": {
+          "type": "boolean",
+          "description": "Default compression setting for output",
+          "default": true
+        },
+        "token_count_encoding": {
+          "type": "string",
+          "description": "Token count encoding used by tiktoken (e.g., 'o200k_base' for GPT-4o)",
+          "default": "o200k_base"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "pack_remote_repository",
+      "description": "Package remote git repository into a consolidated file for AI analysis"
+    },
+    {
+      "name": "pack_codebase",
+      "description": "Package local code directory into a consolidated file for AI analysis"
+    },
+    {
+      "name": "read_repomix_output",
+      "description": "Read the contents of a previously generated repomix output file"
+    },
+    {
+      "name": "file_system_read_file",
+      "description": "Read the contents of a specific file from the file system"
+    },
+    {
+      "name": "file_system_read_directory",
+      "description": "List the contents of a directory"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "deel",
+  "displayName": "Deel",
+  "description": "Deel provides a global payroll and compliance platform for hiring international contractors and employees, automating onboarding, payments, and legal documentation",
+  "createdAt": "2026-01-16T07:33:13.320Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/deel"
+  },
+  "connection": null,
+  "capabilities": []
+}

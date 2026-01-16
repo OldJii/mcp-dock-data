@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/airbnb_search",
+  "displayName": "airbnb_search",
+  "description": "An Airbnb search desktop extension that offers advanced filtering features and detailed listing information, suitable for travel planning and listing research.",
+  "createdAt": "2026-01-16T07:30:04.385Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/airbnb_search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "airbnb_search",
+      "description": "Search for Airbnb listings with various filters and pagination. Provide direct links to the user"
+    },
+    {
+      "name": "airbnb_listing_details",
+      "description": "Get detailed information about a specific Airbnb listing. Provide direct links to the user"
+    }
+  ]
+}

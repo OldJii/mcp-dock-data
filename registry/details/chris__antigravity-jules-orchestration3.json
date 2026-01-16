@@ -1,0 +1,320 @@
+{
+  "id": "chris/antigravity-jules-orchestration3",
+  "displayName": "antigravity-jules-orchestration3",
+  "description": "Automate GitHub development from task discovery to PR merge with session-based workflows, batching, and live monitoring. Generate code and answers locally with Ollama and accelerate changes with code-aware RAG. Strengthen results with semantic memory and keep deployments healthy through Render analysis and auto-fix.",
+  "createdAt": "2026-01-16T07:30:36.972Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/antigravity-jules-orchestration3"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "PORT": {
+          "type": "number",
+          "description": "Server port"
+        },
+        "LOG_LEVEL": {
+          "type": "string",
+          "description": "Logging level (error, warn, info, debug)"
+        },
+        "GITHUB_TOKEN": {
+          "type": "string",
+          "description": "GitHub Personal Access Token"
+        },
+        "JULES_API_KEY": {
+          "type": "string",
+          "description": "Jules API Key for authentication"
+        },
+        "ALLOWED_ORIGINS": {
+          "type": "string",
+          "description": "Comma-separated allowed CORS origins"
+        },
+        "SEMANTIC_MEMORY_URL": {
+          "type": "string",
+          "description": "URL for semantic memory service"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "jules_list_sources",
+      "description": "List all connected GitHub repositories (sources)"
+    },
+    {
+      "name": "jules_create_session",
+      "description": "Create a new Jules coding session for autonomous development"
+    },
+    {
+      "name": "jules_list_sessions",
+      "description": "List all Jules sessions"
+    },
+    {
+      "name": "jules_get_session",
+      "description": "Get details of a specific session"
+    },
+    {
+      "name": "jules_send_message",
+      "description": "Send a message to an existing Jules session"
+    },
+    {
+      "name": "jules_approve_plan",
+      "description": "Approve a session plan to allow execution"
+    },
+    {
+      "name": "jules_get_activities",
+      "description": "Get activities/events for a session"
+    },
+    {
+      "name": "jules_create_from_issue",
+      "description": "Create a Jules session from a GitHub issue with full context"
+    },
+    {
+      "name": "jules_batch_from_labels",
+      "description": "Create sessions for all GitHub issues with a specific label"
+    },
+    {
+      "name": "jules_batch_create",
+      "description": "Create multiple Jules sessions in parallel from a task array"
+    },
+    {
+      "name": "jules_batch_status",
+      "description": "Get status of all sessions in a batch"
+    },
+    {
+      "name": "jules_batch_approve_all",
+      "description": "Approve all pending plans in a batch"
+    },
+    {
+      "name": "jules_monitor_all",
+      "description": "Get real-time status of all active sessions with statistics"
+    },
+    {
+      "name": "jules_session_timeline",
+      "description": "Get detailed activity timeline for a session"
+    },
+    {
+      "name": "ollama_list_models",
+      "description": "List available local Ollama models"
+    },
+    {
+      "name": "ollama_completion",
+      "description": "Generate text using local Ollama models"
+    },
+    {
+      "name": "ollama_code_generation",
+      "description": "Generate code using local Qwen2.5-Coder model"
+    },
+    {
+      "name": "ollama_chat",
+      "description": "Multi-turn chat with local Ollama model"
+    },
+    {
+      "name": "ollama_rag_index",
+      "description": "Index a directory for RAG-powered codebase queries"
+    },
+    {
+      "name": "ollama_rag_query",
+      "description": "Query the indexed codebase with context-aware LLM responses"
+    },
+    {
+      "name": "ollama_rag_status",
+      "description": "Get RAG index status and indexed files"
+    },
+    {
+      "name": "ollama_rag_clear",
+      "description": "Clear the RAG index"
+    },
+    {
+      "name": "jules_cancel_session",
+      "description": "Cancel/abort an active session"
+    },
+    {
+      "name": "jules_retry_session",
+      "description": "Retry a failed session"
+    },
+    {
+      "name": "jules_get_diff",
+      "description": "Get code changes from session"
+    },
+    {
+      "name": "jules_list_batches",
+      "description": "List all batch operations"
+    },
+    {
+      "name": "jules_delete_session",
+      "description": "Delete a session"
+    },
+    {
+      "name": "jules_cache_stats",
+      "description": "Get cache statistics"
+    },
+    {
+      "name": "jules_clear_cache",
+      "description": "Clear API cache"
+    },
+    {
+      "name": "jules_cancel_all_active",
+      "description": "Cancel all active sessions"
+    },
+    {
+      "name": "jules_create_template",
+      "description": "Save session config as template"
+    },
+    {
+      "name": "jules_list_templates",
+      "description": "List saved templates"
+    },
+    {
+      "name": "jules_create_from_template",
+      "description": "Create session from template"
+    },
+    {
+      "name": "jules_delete_template",
+      "description": "Delete a template"
+    },
+    {
+      "name": "jules_clone_session",
+      "description": "Clone a session config"
+    },
+    {
+      "name": "jules_search_sessions",
+      "description": "Search sessions with filters"
+    },
+    {
+      "name": "jules_get_pr_status",
+      "description": "Get PR status from session"
+    },
+    {
+      "name": "jules_merge_pr",
+      "description": "Merge a PR"
+    },
+    {
+      "name": "jules_add_pr_comment",
+      "description": "Add comment to PR"
+    },
+    {
+      "name": "jules_queue_session",
+      "description": "Queue session with priority"
+    },
+    {
+      "name": "jules_get_queue",
+      "description": "Get queue status"
+    },
+    {
+      "name": "jules_process_queue",
+      "description": "Process next queued item"
+    },
+    {
+      "name": "jules_clear_queue",
+      "description": "Clear queue"
+    },
+    {
+      "name": "jules_batch_retry_failed",
+      "description": "Retry failed sessions in batch"
+    },
+    {
+      "name": "jules_get_analytics",
+      "description": "Get session analytics"
+    },
+    {
+      "name": "memory_recall_context",
+      "description": "Recall relevant memories for a task"
+    },
+    {
+      "name": "memory_store",
+      "description": "Store a memory manually"
+    },
+    {
+      "name": "memory_search",
+      "description": "Search memories by query"
+    },
+    {
+      "name": "memory_related",
+      "description": "Get memories related to a specific memory"
+    },
+    {
+      "name": "memory_reinforce",
+      "description": "Reinforce a memory when a pattern proves successful"
+    },
+    {
+      "name": "memory_forget",
+      "description": "Apply decay to old memories or remove them"
+    },
+    {
+      "name": "memory_health",
+      "description": "Check semantic memory service health"
+    },
+    {
+      "name": "memory_maintenance_schedule",
+      "description": "Get memory maintenance schedule for temporal-agent-mcp"
+    },
+    {
+      "name": "render_connect",
+      "description": "Connect Render integration by storing API key"
+    },
+    {
+      "name": "render_disconnect",
+      "description": "Disconnect Render integration"
+    },
+    {
+      "name": "render_status",
+      "description": "Check Render integration status"
+    },
+    {
+      "name": "render_list_services",
+      "description": "List all Render services"
+    },
+    {
+      "name": "render_list_deploys",
+      "description": "List deploys for a service"
+    },
+    {
+      "name": "render_get_build_logs",
+      "description": "Get build logs for a deploy"
+    },
+    {
+      "name": "render_analyze_failure",
+      "description": "Analyze a build failure and get fix suggestions"
+    },
+    {
+      "name": "render_autofix_status",
+      "description": "Get auto-fix status and active operations"
+    },
+    {
+      "name": "render_set_autofix",
+      "description": "Enable or disable auto-fix for Jules PRs"
+    },
+    {
+      "name": "render_add_monitored_service",
+      "description": "Add a service to auto-fix monitoring"
+    },
+    {
+      "name": "render_remove_monitored_service",
+      "description": "Remove a service from auto-fix monitoring"
+    },
+    {
+      "name": "render_trigger_autofix",
+      "description": "Manually trigger auto-fix for a failed deploy"
+    },
+    {
+      "name": "jules_suggested_tasks",
+      "description": "Scan codebase for TODO/FIXME/HACK comments and suggest tasks for Jules"
+    },
+    {
+      "name": "jules_fix_suggested_task",
+      "description": "Create a Jules session to fix a suggested task"
+    },
+    {
+      "name": "jules_clear_suggested_cache",
+      "description": "Clear suggested tasks cache"
+    }
+  ]
+}

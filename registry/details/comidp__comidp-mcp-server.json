@@ -1,0 +1,12 @@
+{
+  "id": "comidp/comidp-mcp-server",
+  "displayName": "comidp-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:47.891Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/comidp/comidp-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

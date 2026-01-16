@@ -1,0 +1,193 @@
+{
+  "id": "@flight505/mcp_dincoder",
+  "displayName": "DinCoder",
+  "description": "Driven Intent Negotiation — Contract-Oriented Deterministic Executable Runtime\n\nIMPORTANT: \n> - **Using Claude Code?** → Install the [Plugin](#-claude-code-plugin-recommended-for-claude-code) (easier, includes slash commands & agents)\n> - **Using VS Code/Codex/Cursor?** → Install [MCP Server Only](#installing-via-smithery) (plugins not supported)\n>\n> ⚠️ **Don't install both!** The plugin automatically installs the MCP server - installing both may cause conflicts.\n\nDinCoder brings the power of GitHub Spec Kit to any AI coding agent through the Model Context Protocol. It transforms the traditional \"prompt-then-code-dump\" workflow into a systematic, specification-driven process where specifications don't serve code—code serves specifications.\n\n🌟 The Power Inversion: A New Development Paradigm\nFor decades, code has been king. Specifications were scaffolding—built, used, then discarded once \"real work\" began. PRDs guided development, design docs informed implementation, but these were always subordinate to code. Code was truth. Everything else was, at best, good intentions.\n\nSpec-Driven Development inverts this power structure: \n\nSpecifications Generate Code: The PRD isn't a guide—it's the source that produces implementation\nExecutable Specifications: Precise, complete specs that eliminate the gap between intent and implementation\nCode as Expression: Code becomes the specification's expression in a particular language/framework\nLiving Documentation: Maintain software by evolving specifications, not manually updating code\nThis transformation is possible because AI can understand complex specifications and implement them systematically. But raw AI generation without structure produces chaos. DinCoder provides that structure through GitHub's proven Spec Kit methodology. \n\nPlugin install :\n**Step 1: Add the DinCoder marketplace**\n```bash\n# In Claude Code\n/plugin marketplace add flight505/dincoder-plugin\n```\n\n**Step 2: Install the plugin**\n```bash\n/plugin install dincoder\n```",
+  "createdAt": "2026-01-16T07:23:15.489Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@flight505/mcp_dincoder"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Optional API key for authentication"
+        },
+        "logLevel": {
+          "type": "string",
+          "description": "Logging level",
+          "default": "info",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        },
+        "transportMode": {
+          "type": "string",
+          "description": "Transport mode",
+          "default": "stateless",
+          "enum": [
+            "stateless",
+            "stateful"
+          ]
+        },
+        "workspacePath": {
+          "type": "string",
+          "description": "Default workspace path for spec operations"
+        },
+        "originWhitelist": {
+          "type": "string",
+          "description": "Comma-separated list of allowed origins"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "constitution_create",
+      "description": "Define project principles, constraints, and preferences that guide all AI-generated artifacts. Use this before specify_start to establish project guardrails."
+    },
+    {
+      "name": "clarify_add",
+      "description": "Flag ambiguities or questions in specifications that need clarification. Creates a tracked clarification with unique ID."
+    },
+    {
+      "name": "clarify_resolve",
+      "description": "Resolve a pending clarification with an answer. Updates spec.md and logs resolution in research.md."
+    },
+    {
+      "name": "clarify_list",
+      "description": "List all clarifications with optional status filter (pending/resolved/all). Useful for tracking progress."
+    },
+    {
+      "name": "spec_validate",
+      "description": "Check specification quality and completeness. Validates required sections, acceptance criteria, clarifications, and checks for premature implementation details."
+    },
+    {
+      "name": "artifacts_analyze",
+      "description": "Analyze consistency across spec, plan, and tasks artifacts. Verifies that all artifacts are aligned and complete."
+    },
+    {
+      "name": "spec_refine",
+      "description": "Refine/update an existing specification. Supports updating specific sections (goals, requirements, acceptance, edge-cases) or the full spec. Changes are logged to research.md."
+    },
+    {
+      "name": "prereqs_check",
+      "description": "Check environment prerequisites before project setup. Verifies Node.js version, npm, git, and custom commands are available."
+    },
+    {
+      "name": "specify_start",
+      "description": "Initialize a new spec-driven project. Creates .dincoder directory with spec.json template. Use this as the first step when starting a new project."
+    },
+    {
+      "name": "specify_describe",
+      "description": "Create or update project specification with detailed requirements, goals, and constraints. Use after specify_start to define what the project should do."
+    },
+    {
+      "name": "plan_create",
+      "description": "Generate technical implementation plan from the project specification. Creates a step-by-step technical approach with milestones and architecture decisions."
+    },
+    {
+      "name": "tasks_generate",
+      "description": "Generate granular, actionable tasks from the technical plan. Creates a task list with specific implementation steps that can be executed sequentially."
+    },
+    {
+      "name": "tasks_tick",
+      "description": "Mark a specific task as complete by its ID. Updates the task status and tracks progress through the implementation."
+    },
+    {
+      "name": "tasks_visualize",
+      "description": "Generate visual dependency graphs from tasks.md. Supports Mermaid flowcharts, Graphviz DOT, and ASCII tree formats. Shows task dependencies, status colors, and optional phase grouping."
+    },
+    {
+      "name": "tasks_filter",
+      "description": "Filter tasks by status, phase, type, priority, blockers, or tags. Includes smart presets (next, frontend, backend, ready, cleanup) for common workflows. Returns markdown-formatted task list."
+    },
+    {
+      "name": "tasks_tick_range",
+      "description": "Mark multiple tasks as complete at once. Supports array format [\"T001\", \"T003\"], range format \"T001-T005\", or mixed format. Includes strict mode for all-or-nothing completion."
+    },
+    {
+      "name": "tasks_search",
+      "description": "Full-text search across task descriptions and metadata. Supports plain text, regex patterns, and fuzzy matching for typo tolerance. Returns ranked results with relevance scores."
+    },
+    {
+      "name": "tasks_stats",
+      "description": "Generate comprehensive task statistics and progress metrics. Provides insights on completion rates, phase/type distribution, priority breakdown, blocker analysis, and ASCII progress charts."
+    },
+    {
+      "name": "contracts_generate",
+      "description": "Generate OpenAPI 3.1, GraphQL, or JSON Schema contracts from specifications. Supports automatic extraction from spec.md or TypeScript code using tsoa."
+    },
+    {
+      "name": "templates_list",
+      "description": "List all available templates (built-in and custom). Filter by category and discover customization points."
+    },
+    {
+      "name": "templates_customize",
+      "description": "Create or update template customization with hooks, variable substitution, and inheritance. Supports before/after/transform/validate hooks."
+    },
+    {
+      "name": "metrics_report",
+      "description": "Generate comprehensive metrics report with DORA and SPACE metrics. Tracks development velocity, cycle time, quality, and trends using Git history for timestamps."
+    },
+    {
+      "name": "metrics_export",
+      "description": "Export metrics to CSV or JSON format for external analysis. Includes DORA metrics, cycle time, quality metrics, and custom date ranges."
+    },
+    {
+      "name": "spec_lint",
+      "description": "Automated spec quality checking with markdownlint, spec-specific rules, and prose quality analysis. Checks for required sections, acceptance criteria format, passive voice, vague language, and more. Supports auto-fix for simple issues."
+    },
+    {
+      "name": "quality_format",
+      "description": "Run Prettier code formatter to ensure consistent code style. Automatically formats JavaScript, TypeScript, JSON, and other supported files."
+    },
+    {
+      "name": "quality_lint",
+      "description": "Run ESLint to check for code quality issues, potential bugs, and style violations. Helps maintain code standards and catch errors early."
+    },
+    {
+      "name": "quality_test",
+      "description": "Run test suite with optional code coverage reporting. Executes all unit and integration tests to ensure code correctness."
+    },
+    {
+      "name": "quality_security_audit",
+      "description": "Run npm/yarn security audit to check for known vulnerabilities in dependencies. Identifies and reports security issues that need attention."
+    },
+    {
+      "name": "quality_deps_update",
+      "description": "Check for available updates to project dependencies. Lists outdated packages and their latest versions for potential upgrades."
+    },
+    {
+      "name": "quality_license_check",
+      "description": "Analyze licenses of all dependencies to ensure compatibility with project requirements. Identifies potential licensing conflicts or restrictions."
+    },
+    {
+      "name": "artifacts_read",
+      "description": "Read and return the current state of spec.json, plan.json, or tasks.json files. Use to retrieve project artifacts in normalized JSON format."
+    },
+    {
+      "name": "research_append",
+      "description": "Append technical decisions, trade-offs, and research findings to the research.md document. Maintains a record of architectural choices and reasoning."
+    },
+    {
+      "name": "git_create_branch",
+      "description": "Create a new Git branch for implementing a specific feature or fix. Follows naming conventions and ensures clean branch creation from main/master."
+    },
+    {
+      "name": "test_echo",
+      "description": "Simple echo tool for testing MCP server connectivity. Returns the input message prefixed with \"Echo:\". Use for debugging and connection verification."
+    }
+  ]
+}

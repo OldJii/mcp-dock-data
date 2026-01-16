@@ -1,0 +1,41 @@
+{
+  "id": "@dazeb/markdown-downloader",
+  "displayName": "Markdown Downloader",
+  "description": "Download webpages as markdown files effortlessly. Convert web content into markdown format with a simple command, and manage your downloads with ease. Enjoy a configurable download directory and automatic date-stamped filenames for organized storage.",
+  "createdAt": "2026-01-16T07:21:12.069Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dazeb/markdown-downloader"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "download_markdown",
+      "description": "Download a webpage as markdown using r.jina.ai"
+    },
+    {
+      "name": "list_downloaded_files",
+      "description": "List all downloaded markdown files"
+    },
+    {
+      "name": "set_download_directory",
+      "description": "Set the main local download folder for markdown files"
+    },
+    {
+      "name": "get_download_directory",
+      "description": "Get the current download directory"
+    },
+    {
+      "name": "create_subdirectory",
+      "description": "Create a new subdirectory in the root download folder"
+    }
+  ]
+}

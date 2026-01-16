@@ -1,0 +1,31 @@
+{
+  "id": "@keremurat/json",
+  "displayName": "JSON Compare",
+  "description": "Compare two JSON files deeply without worrying about key or array order. Detect missing, extra, and mismatched keys and values across nested objects and arrays. Receive a clear summary and a detailed report of all differences.",
+  "createdAt": "2026-01-16T07:20:33.515Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keremurat/json"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "dummy_tool",
+      "description": "\n    Definition of a tool here.\n    "
+    },
+    {
+      "name": "compare_json",
+      "description": "\n    İki JSON'u derinlemesine ve sıra-bağımsız (order-agnostic) şekilde karşılaştırır.\n\n    Bu tool:\n    - Üst seviye objeleri/anahtarları karşılaştırır (sıralama önemli değil)\n    - Her objenin içindeki property'leri derinlemesine kontrol eder\n    - Eksik, fazla veya farklı anahtarları tespit eder\n    - Değer tiplerini ve içeriklerini kontrol eder\n    - Nested array'ler ve objeler için recursive karşılaştırma yapar\n\n    Args:\n        json1: İlk JSON string (örn: '{\"name\": \"John\", \"age\": 30}')\n        json2: İkinci JSON string (örn: '{\"age\": 30, \"name\": \"John\"}')\n\n    Returns:\n        Karşılaştırma sonuçlarını içeren detaylı JSON raporu:\n        - status: \"identical\" veya \"different\"\n        - total_differences: Toplam fark sayısı\n        - differences: Tespit edilen tüm farkların listesi\n        - summary: Fark tiplerinin özet istatistikleri\n\n    Example:\n        compare_json('{\"a\": 1}', '{\"a\": 2}')\n        # Returns: differences showing value mismatch at \"root.a\"\n    "
+    }
+  ]
+}

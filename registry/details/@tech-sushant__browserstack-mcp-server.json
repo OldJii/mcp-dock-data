@@ -1,0 +1,12 @@
+{
+  "id": "@tech-sushant/browserstack-mcp-server",
+  "displayName": "browserstack-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:29.100Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tech-sushant/browserstack-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

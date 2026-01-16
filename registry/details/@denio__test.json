@@ -1,0 +1,12 @@
+{
+  "id": "@denio/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:40.005Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@denio/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

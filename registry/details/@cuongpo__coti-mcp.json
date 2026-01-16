@@ -1,0 +1,192 @@
+{
+  "id": "@cuongpo/coti-mcp",
+  "displayName": "COTI",
+  "description": "Manage COTI accounts, switch networks, and sign or verify messages. Deploy and manage private ERC20 tokens and ERC721 NFTs, including minting, transfers, approvals, and balance or supply checks. Call smart contracts and monitor transactions while keeping token values and metadata private.",
+  "createdAt": "2026-01-16T07:20:01.443Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/coti-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "cotiMcpAesKey": {
+          "type": "string",
+          "description": "COTI MCP AES key for encrypting values."
+        },
+        "cotiMcpNetwork": {
+          "type": "string",
+          "description": "COTI MCP network to connect to.",
+          "default": "testnet"
+        },
+        "cotiMcpPrivateKey": {
+          "type": "string",
+          "description": "COTI MCP private key for signing transactions."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "change_default_account",
+      "description": "Change the default account used for COTI blockchain operations. This allows switching between different accounts configured in the environment. The account must be configured in the environment variables with corresponding private and AES keys. Returns the new default account address upon successful change."
+    },
+    {
+      "name": "create_account",
+      "description": "Create a new COTI account with a randomly generated private key and AES key. Returns the new account address, private key, and AES key."
+    },
+    {
+      "name": "decrypt_value",
+      "description": "Decrypt a value using the COTI AES key. Requires a ciphertext as input. Returns the decrypted value."
+    },
+    {
+      "name": "get_current_network",
+      "description": "Get the currently configured COTI network (testnet or mainnet). Returns the network that all blockchain operations will use."
+    },
+    {
+      "name": "encrypt_value",
+      "description": "Encrypt a value using the COTI AES key. This is used for encrypting values to be sent to another address. Requires a value, contract address, and function selector as input. Returns the signature."
+    },
+    {
+      "name": "export_accounts",
+      "description": "Backup all available COTI accounts and export them as a JSON string for future import. Returns a JSON string that can be copied and used for importing later."
+    },
+    {
+      "name": "generate_aes_key",
+      "description": "Generate a new AES key for the current account. Returns the AES key."
+    },
+    {
+      "name": "import_accounts",
+      "description": "Import COTI accounts from a JSON backup string previously created with the export_accounts tool."
+    },
+    {
+      "name": "list_accounts",
+      "description": "List all available COTI accounts configured in the environment. Returns the account addresses, current default account, and masked versions of the private and AES keys."
+    },
+    {
+      "name": "sign_message",
+      "description": "Sign a message using the COTI private key. This creates a cryptographic signature that proves the message was signed by the owner of the private key. Requires a message to sign as input. Returns the signature."
+    },
+    {
+      "name": "switch_network",
+      "description": "Switch between COTI testnet and mainnet networks. This changes the network for all subsequent blockchain operations. Valid networks are 'testnet' and 'mainnet'. Returns confirmation of the network switch."
+    },
+    {
+      "name": "verify_signature",
+      "description": "Verify a message signature and recover the address that signed it. This is used to determine who signed a specific message. Requires the original message and the signature as input. Returns the address that created the signature."
+    },
+    {
+      "name": "approve_erc20_spender",
+      "description": "Approve another address to spend tokens on behalf of the owner. This is used for allowing another address (like a contract) to transfer your tokens. Requires token contract address, spender address, and amount as input. Returns the transaction hash upon successful approval."
+    },
+    {
+      "name": "deploy_private_erc20_contract",
+      "description": "Deploy a new standard private ERC20 token contract on the COTI blockchain. This creates a new private token with the specified name, symbol, and decimals. Returns the deployed contract address upon successful deployment."
+    },
+    {
+      "name": "get_private_erc20_allowance",
+      "description": "Check how many tokens a spender is allowed to use. This is used for checking the current allowance a spender has for an owner's tokens. Requires token contract address, owner address, and spender address as input. Returns the allowance amount."
+    },
+    {
+      "name": "get_private_erc20_balance",
+      "description": "Get the balance of a private ERC20 token on the COTI blockchain. This is used for checking the current balance of a private token for a COTI account. Requires a COTI account address and token contract address as input. Returns the decrypted token balance."
+    },
+    {
+      "name": "get_private_erc20_decimals",
+      "description": "Get the number of decimals for a private ERC20 token on the COTI blockchain. This is used for checking the number of decimals in this token. Requires token contract address as input. Returns the number of decimals in this contract."
+    },
+    {
+      "name": "get_private_erc20_total_supply",
+      "description": "Get the total supply of tokens for a private ERC20 token on the COTI blockchain. This is used for checking how many tokens have been minted in this token. Requires token contract address as input. Returns the total number of tokens in this contract."
+    },
+    {
+      "name": "mint_private_erc20_token",
+      "description": "Mint additional private ERC20 tokens on the COTI blockchain. This adds new tokens to the specified recipient address. Returns the transaction hash upon successful minting."
+    },
+    {
+      "name": "transfer_private_erc20",
+      "description": "Transfer private ERC20 tokens on the COTI blockchain. This is used for sending private tokens from your wallet to another address. Requires token contract address, recipient address, and amount as input. Returns the transaction hash upon successful transfer."
+    },
+    {
+      "name": "approve_private_erc721",
+      "description": "Approve an address to transfer a specific private ERC721 NFT token on the COTI blockchain. This allows the approved address to transfer the specified NFT on behalf of the owner. Requires token contract address, token ID, and spender address as input. Returns the transaction hash upon successful approval."
+    },
+    {
+      "name": "deploy_private_erc721_contract",
+      "description": "Deploy a new standard private ERC721 NFT contract on the COTI blockchain. This creates a new private NFT collection with the specified name and symbol. Returns the deployed contract address upon successful deployment."
+    },
+    {
+      "name": "get_private_erc721_approved",
+      "description": "Get the approved address for a private ERC721 NFT token on the COTI blockchain. This is used for checking which address is currently approved to transfer a specific NFT. Requires token contract address and token ID as input. Returns the address that is approved to transfer the specified NFT."
+    },
+    {
+      "name": "get_private_erc721_balance",
+      "description": "Get the balance of a private ERC721 NFT collection on the COTI blockchain. This is used for checking how many NFTs an address owns in a collection. Requires token contract address and account address as input. Returns the number of NFTs owned by the specified address."
+    },
+    {
+      "name": "get_private_erc721_is_approved_for_all",
+      "description": "Check if an operator is approved to transfer all private ERC721 NFT tokens on the COTI blockchain. This is used for checking if an operator has been granted approval to manage all NFTs owned by an address. Requires token contract address, owner address, and operator address as input. Returns whether the operator is approved for all NFTs."
+    },
+    {
+      "name": "get_private_erc721_token_owner",
+      "description": "Get the owner address of a private ERC721 NFT token on the COTI blockchain. This is used for checking who currently owns a specific NFT. Requires token contract address and token ID as input. Returns the owner's address of the specified NFT."
+    },
+    {
+      "name": "get_private_erc721_token_uri",
+      "description": "Get the tokenURI for a private ERC721 NFT token on the COTI blockchain. This is used for retrieving the metadata URI of a private NFT. Requires token contract address and token ID as input. Returns the decrypted tokenURI."
+    },
+    {
+      "name": "get_private_erc721_total_supply",
+      "description": "Get the total supply of tokens for a private ERC721 NFT collection on the COTI blockchain. This is used for checking how many NFTs have been minted in a collection. Requires token contract address as input. Returns the total number of tokens in the collection."
+    },
+    {
+      "name": "mint_private_erc721_token",
+      "description": "Mint a new private ERC721 NFT token on the COTI blockchain. This creates a new NFT in the specified collection with the provided token URI. Returns the transaction hash and token ID upon successful minting."
+    },
+    {
+      "name": "set_private_erc721_approval_for_all",
+      "description": "Approve or revoke an operator to transfer all private ERC721 NFT tokens on the COTI blockchain. This allows the operator to transfer any NFT owned by the caller in this collection. Requires token contract address, operator address, and approval status as input. Returns the transaction hash upon successful approval setting."
+    },
+    {
+      "name": "transfer_private_erc721",
+      "description": "Transfer a private ERC721 NFT token on the COTI blockchain. This is used for sending a private NFT from your wallet to another address. Requires token contract address, recipient address, and token ID as input. Returns the transaction hash upon successful transfer."
+    },
+    {
+      "name": "call_contract_function",
+      "description": "Call a read-only function on any smart contract on the COTI blockchain. This allows retrieving data from any contract by specifying the contract address, function name, and parameters. Returns the function result in a human-readable format."
+    },
+    {
+      "name": "decode_event_data",
+      "description": "Decode event data from a transaction log based on the event signature. This helps interpret the raw data in transaction logs by matching the event signature to known event types and decoding the parameters. Requires event signature, topics, and data from a transaction log."
+    },
+    {
+      "name": "get_transaction_status",
+      "description": "Get the status of a transaction on the COTI blockchain. This is used for checking if a transaction has been confirmed, pending, or failed. Requires a transaction hash as input. Returns detailed information about the transaction status."
+    },
+    {
+      "name": "get_transaction_logs",
+      "description": "Get the logs from a transaction on the COTI blockchain. This is used for retrieving event logs emitted during transaction execution. Requires a transaction hash as input. Returns detailed information about the transaction logs including event names, topics, and data."
+    },
+    {
+      "name": "get_native_balance",
+      "description": "Get the native COTI token balance of a COTI blockchain account. This is used for checking the current balance of a COTI account. Requires a COTI account address as input. Returns the account balance in COTI tokens."
+    },
+    {
+      "name": "transfer_native",
+      "description": "Transfer native COTI tokens to another wallet. This is used for sending COTI tokens from your wallet to another address. Requires recipient address and amount in Wei as input. Returns the transaction hash upon successful transfer."
+    }
+  ]
+}

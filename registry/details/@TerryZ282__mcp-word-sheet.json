@@ -1,0 +1,73 @@
+{
+  "id": "@TerryZ282/mcp-word-sheet",
+  "displayName": "Word Memory Tool",
+  "description": "Manage and review vocabulary efficiently using spaced repetition and AI-powered translation. Store your data securely in Google Sheets and enjoy seamless synchronization between a React frontend and AI chat integration. Enhance your language learning with automated reminders and detailed word management features.",
+  "createdAt": "2026-01-16T07:29:42.529Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@TerryZ282/mcp-word-sheet"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "spreadsheetId",
+        "googleServiceAccountEmail",
+        "googlePrivateKey"
+      ],
+      "properties": {
+        "sheetName": {
+          "type": "string",
+          "description": "Sheet name (default: mcp-memory-word)",
+          "default": "mcp-memory-word"
+        },
+        "spreadsheetId": {
+          "type": "string",
+          "description": "Google Sheets Spreadsheet ID"
+        },
+        "googlePrivateKey": {
+          "type": "string",
+          "description": "Google Service Account Private Key"
+        },
+        "enableAutoReviewReminder": {
+          "type": "boolean",
+          "description": "Enable automatic daily review reminder",
+          "default": true
+        },
+        "googleServiceAccountEmail": {
+          "type": "string",
+          "description": "Google Service Account Email"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "word_manager",
+      "description": "统一的单词管理工具，支持以下操作：\n- add：添加单词（支持批量，支持 context/example/translation 字段，若单词已存在则覆盖）\n- remove：移除单词（支持批量）\n- list：分页列出所有单词及其详细信息\n- mark_reviewed：标记单词为已复习\n- get_detail：查询一个或多个单词的详细信息（返回 markdown 卡片，建议直接渲染）"
+    },
+    {
+      "name": "translation_tool",
+      "description": "识别用户是否在翻译一个英文单词（如 'benevolent 是什么意思' 或 'translate regret'），并判断是否需要将其加入词汇记忆"
+    },
+    {
+      "name": "reminder_manager",
+      "description": "提醒管理工具，支持查看和开关自动复习提醒功能"
+    },
+    {
+      "name": "review_words_detail",
+      "description": "获取今日需要复习的单词详细信息，卡片风格"
+    },
+    {
+      "name": "view_history",
+      "description": "查看已移除的单词历史记录"
+    }
+  ]
+}

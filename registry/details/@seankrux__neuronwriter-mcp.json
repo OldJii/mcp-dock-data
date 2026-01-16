@@ -1,0 +1,12 @@
+{
+  "id": "@seankrux/neuronwriter-mcp",
+  "displayName": "neuronwriter-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:09.019Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@seankrux/neuronwriter-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

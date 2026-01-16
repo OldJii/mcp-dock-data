@@ -1,0 +1,21 @@
+{
+  "id": "bench",
+  "displayName": "Bench",
+  "description": "Benchmarking tool",
+  "createdAt": "2026-01-16T07:19:50.452Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/bench"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "BENCH_SLEEP",
+      "description": "Sleep"
+    }
+  ]
+}

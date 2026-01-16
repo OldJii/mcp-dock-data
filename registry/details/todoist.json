@@ -1,0 +1,137 @@
+{
+  "id": "todoist",
+  "displayName": "Todoist",
+  "description": "Todoist is a task management tool allowing users to create to-do lists, set deadlines, and collaborate on projects with reminders and cross-platform syncing",
+  "createdAt": "2026-01-16T07:19:15.747Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/todoist"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TODOIST_ADD_WORKSPACE",
+      "description": "Tool to create a new workspace in Todoist. Use when you need a separate workspace to organize projects. Generates UUID and temp_id automatically."
+    },
+    {
+      "name": "TODOIST_CLOSE_TASK",
+      "description": "This tool marks an existing task as completed in Todoist. It requires the `task_id` of the task to be closed."
+    },
+    {
+      "name": "TODOIST_CREATE_COMMENT",
+      "description": "Tool to create a new comment in Todoist. Use when you need to add a note to a specific task or project after confirming its ID."
+    },
+    {
+      "name": "TODOIST_CREATE_LABEL",
+      "description": "Creates a new label."
+    },
+    {
+      "name": "TODOIST_CREATE_PROJECT",
+      "description": "Creates a new project in Todoist."
+    },
+    {
+      "name": "TODOIST_CREATE_SECTION",
+      "description": "Tool to create a new section within a specific project. Use when you need to group tasks under a new heading in a project."
+    },
+    {
+      "name": "TODOIST_CREATE_TASK",
+      "description": "Create a new task in Todoist. This action allows users to create tasks with various parameters including content, due dates, priority, and more. The task can be created in a specific project, section, or as a subtask of another task."
+    },
+    {
+      "name": "TODOIST_DELETE_LABEL",
+      "description": "Tool to delete a specific label. Use when you need to permanently remove an unused label by its ID after confirming it's not in use. Example: \"Delete label with ID 2298391482\"."
+    },
+    {
+      "name": "TODOIST_DELETE_PROJECT",
+      "description": "Tool to delete a specific Todoist project. Use when you need to permanently remove a project by its ID."
+    },
+    {
+      "name": "TODOIST_DELETE_SECTION",
+      "description": "Tool to delete a specific section. Use when you need to permanently remove unused section by its ID after confirming it's not in use. Example: \"Delete section with ID 82181370\"."
+    },
+    {
+      "name": "TODOIST_DELETE_TASK",
+      "description": "Delete a task from Todoist. This action permanently removes the task and all its subtasks."
+    },
+    {
+      "name": "TODOIST_GET_ALL_COMMENTS",
+      "description": "This tool retrieves all comments associated with a specific task or project in Todoist. It requires either a task_id or a project_id to fetch the comments, and it returns a JSON array of comment objects with details such as id, posted_at, content, and attachment information."
+    },
+    {
+      "name": "TODOIST_GET_ALL_PROJECTS",
+      "description": "Get all projects from a user's Todoist account. This tool retrieves all projects from the authenticated user's Todoist account. The response includes details like project ID, name, color, parent project, sharing status, and other metadata for each project."
+    },
+    {
+      "name": "TODOIST_GET_ALL_SECTIONS",
+      "description": "Tool to retrieve all the sections for a specific project in Todoist. Use when you need to list section structure within a project after selecting the project."
+    },
+    {
+      "name": "TODOIST_GET_ALL_TASKS",
+      "description": "Fetches all INCOMPLETE tasks from Todoist and returns their details. IMPORTANT LIMITATIONS: - This endpoint only returns active (incomplete) tasks - Cannot retrieve completed tasks - use a different endpoint for that - Filter queries using 'completed', '!completed', or 'completed after' will fail - Project references must use existing project names or IDs Common use cases: - Get all tasks: no filter - Get today's tasks: filter=\"today\" - Get overdue tasks: filter=\"overdue\" - Get tasks from specific project: filter=\"#ProjectName\" - Get high priority tasks: filter=\"p1\""
+    },
+    {
+      "name": "TODOIST_GET_BACKUPS",
+      "description": "Tool to list all available backup archives for the user. Use when you need to retrieve and review all existing backups."
+    },
+    {
+      "name": "TODOIST_GET_COMMENT",
+      "description": "Tool to retrieve details of a specific comment by its comment_id. Use when you need full information (content, timestamp, or attachment) about a known comment."
+    },
+    {
+      "name": "TODOIST_GET_LABEL",
+      "description": "Tool to retrieve a specific label by its ID. Use when you need detailed info about a label after you have its ID."
+    },
+    {
+      "name": "TODOIST_GET_PROJECT",
+      "description": "Tool to retrieve a specific project by its ID. Use when you have a project ID and need its metadata before display or update."
+    },
+    {
+      "name": "TODOIST_GET_SECTION",
+      "description": "Tool to retrieve a specific section by its ID. Use when you have a section ID and need its metadata before display or update."
+    },
+    {
+      "name": "TODOIST_GET_SPECIAL_BACKUPS",
+      "description": "Tool to list special backup archives for the user. Use when you need to retrieve all project backups for the authenticated user after creating or managing projects."
+    },
+    {
+      "name": "TODOIST_GET_TASK",
+      "description": "Tool to retrieve a specific task by its ID. Use when you need to fetch all details of an existing task before processing or display."
+    },
+    {
+      "name": "TODOIST_LIST_ARCHIVED_WORKSPACE_PROJECTS",
+      "description": "Tool to list all archived projects in a workspace. Use when you need to retrieve archived workspace projects with optional filters or pagination."
+    },
+    {
+      "name": "TODOIST_LIST_FILTERS",
+      "description": "Tool to list all filters for the authenticated user. Use when you need to retrieve the current set of custom filters."
+    },
+    {
+      "name": "TODOIST_LIST_PENDING_WORKSPACE_INVITATIONS",
+      "description": "Tool to list pending invitation emails in a workspace. Use when you need to check which email invites are still pending acceptance in a workspace."
+    },
+    {
+      "name": "TODOIST_REOPEN_TASK",
+      "description": "This tool reopens previously completed task."
+    },
+    {
+      "name": "TODOIST_UPDATE_COMMENT",
+      "description": "Tool to update a specific comment's content. Use when you need to correct or clarify an existing comment after confirming its ID and the new text."
+    },
+    {
+      "name": "TODOIST_UPDATE_PROJECT",
+      "description": "Tool to update a specific project's attributes such as name, color, indent, and order. Use when you need to rename or reorder a project after reviewing its current settings. Example: \"Update project 2203306141 name to 'Q1 Goals'.\""
+    },
+    {
+      "name": "TODOIST_UPDATE_SECTION",
+      "description": "Tool to update a specific section's attributes such as name and order. Use when you need to rename or reorder a section after confirming its ID."
+    },
+    {
+      "name": "TODOIST_UPDATE_TASK",
+      "description": "Tool to update an existing task's properties. Use when you need to modify a task's details after confirming its ID and new values."
+    }
+  ]
+}

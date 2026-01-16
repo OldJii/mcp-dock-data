@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/calorie-tracking",
+  "displayName": "calorie-tracking",
+  "description": "Log meals and instantly find calorie information for foods. Get a clear daily summary and weekly trends to stay on track. Build healthier habits with simple, accurate tracking.",
+  "createdAt": "2026-01-16T07:31:03.498Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/calorie-tracking"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add_meal",
+      "description": "Log a meal with food items and calories"
+    },
+    {
+      "name": "get_daily_summary",
+      "description": "Get today's calorie intake summary"
+    },
+    {
+      "name": "get_weekly_report",
+      "description": "Get weekly calorie consumption report"
+    },
+    {
+      "name": "search_food",
+      "description": "Search for calorie information of a specific food"
+    }
+  ]
+}

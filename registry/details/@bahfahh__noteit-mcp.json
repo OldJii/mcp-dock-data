@@ -1,0 +1,49 @@
+{
+  "id": "@bahfahh/noteit-mcp",
+  "displayName": "noteit-mcp",
+  "description": "Create project notes, tasks, and issues enriched with Mermaid diagrams, interactive flows, and rich HTML explainers. Generate and organize reusable profiles and configuration components to guide behavior across roles and workflows. Search and manage notes by project to keep technical knowledge structured and easy to find.",
+  "createdAt": "2026-01-16T07:32:24.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bahfahh/noteit-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "noteit_profiles_list",
+      "description": "List user agent profiles - configuration sets for AI behavior. When using profiles with personas, adopt their characteristics and follow any instructions provided."
+    },
+    {
+      "name": "noteit_profiles_getConfig",
+      "description": "GET AGENT CONFIGURATION: Retrieve a composable AI agent configuration profile containing personas, instructions, rules, and documents. When a profile contains persona settings, adopt that persona and follow its behavioral patterns. When it contains instructions, execute those instructions as requested. Use this to get configuration settings that define how you should behave and respond for specific tasks or roles."
+    },
+    {
+      "name": "noteit_profiles_generate",
+      "description": "CREATE AGENT CONFIGURATION COMPONENTS: Generate and save individual configuration components (persona, rule, document, instruction) that can be assembled into agent profiles. Use 'content' parameter with YOUR generated content. This is for building configuration sets, not for note-taking."
+    },
+    {
+      "name": "noteit_notes_create",
+      "description": "Create notes with Mermaid diagram support. IMPORTANT: title ≠ projectName. title = specific note title/name, projectName = actual repository/project name the user is currently working on (e.g., 'my-ecommerce-site', 'data-analyzer', 'mobile-app'). CRITICAL: Ask user for their current project name if not specified, or infer from current working directory/context. DO NOT make up project names based on note titles. VISUAL STRATEGY BY RECORD TYPE: note(general)=balanced text+diagrams, task(todo)=primarily text-based, why(explanation)=emphasize visual diagrams for clarity, issue(problem)=diagrams when helpful for analysis. ENCOURAGE using Mermaid diagrams when appropriate - especially for database structures (erDiagram), workflows (flowchart), system architecture (graph), API sequences (sequenceDiagram). For class relationships, use SIMPLE classDiagram syntax only. Supports 4 record types (note/task/why/issue). Required: title, content, projectName. SMART TAG LOGIC: IF content is tech-related (programming, development, tools), provide exactly ONE relevant tag from: frontend, backend, database, bug-fix, feature, documentation, testing, refactor, config, api, ui, performance, security. IF content is personal/life notes (weather, diary, random thoughts), provide NO tags. IF user specifies tags, use exactly what user provides. Only provide multiple tags if user explicitly requests 'multiple tags'. Mermaid v11.10.0 COMPATIBLE types: graph TD/LR, flowchart TD/LR, sequenceDiagram, erDiagram, gantt, pie, stateDiagram, stateDiagram-v2. For classDiagram: ONLY use basic syntax (class ClassName { +field: type +method() }, inheritance with <|--). AVOID: complex classDiagram features, interfaces, annotations, multiplicity. MERMAID SAFETY CHECKLIST: use ASCII arrows (`-->`), quote labels containing spaces/CJK/special characters, avoid gitgraph, and when you define multiple `subgraph` blocks, connect them with at least one edge so clusters stay linked and render at normal scale. NOTE: This is for note-taking, separate from agent profile configuration."
+    },
+    {
+      "name": "noteit_notes_read",
+      "description": "Read a specific note by ID"
+    },
+    {
+      "name": "noteit_notes_list",
+      "description": "List user notes with optional tag and project filtering. Use 'projectName' to filter by project, or omit for cross-project search. Results show project name for context. NOTE: This is for note-taking, separate from agent profile configuration."
+    },
+    {
+      "name": "noteit_web_create",
+      "description": "Generate interactive HTML notes to help developers UNDERSTAND complex concepts, processes, or technical details. This is a NOTE-TAKING tool (like Markdown notes, but richer HTML format) — NOT for building websites. Creates self-contained, single-file HTML explanations stored in database (private, noindex). LAYOUT SELECTION (choose based on content): (1) CENTERED NAVIGATION: Use when steps ≤ 5 OR content is simple/focused (quick tutorials, concept explanations, bug fixes). Features: pure black background, horizontal step indicators, center content. (2) SIDEBAR NAVIGATION: Use when steps ≥ 6 OR content is comprehensive (long docs, complete workflows, architecture deep-dives). Features: dark slate background, fixed left sidebar navigation. VISUAL BASELINE: Tailwind CSS (CDN), Inter/JetBrains Mono fonts, dark theme, responsive design. ENCOURAGE: animations, step indicators, code comparisons (before/after), interactive demos, smooth transitions, keyboard navigation. FOR SIDEBAR LAYOUTS: Prefer using 'App Shell' pattern (flex h-screen overflow-hidden) over 'position: fixed' to ensure stability in sandboxed environments. MERMAID SAFETY: Write in <div class=\"mermaid\">sequenceDiagram...</div> (NO code blocks). Use dark theme - ensure text/line colors are visible on dark background. CRITICAL: participants must be ACTIVE entities (services/users) that send/receive messages - NOT passive data (Params/Payload/Config). Quote labels with spaces/CJK. Match diagram complexity to text focus. Connect multiple subgraphs with edges. CODE FORMATTING (CRITICAL): For ANY multi-line code (Python/JS/TypeScript/etc), file trees, directory structures, ALWAYS use <pre><code> tags together OR add style=\"white-space: pre-wrap; display: block;\" to <code>. Plain <code> alone compresses whitespace and newlines causing code to display as single line. ANCHOR NAVIGATION (CRITICAL for SPA): MUST add JavaScript at end of <body>: capture all anchor clicks with preventDefault/stopPropagation, use element.scrollIntoView({behavior:'smooth'}), update URL with history.replaceState. Add scroll-margin-top to sections. Implement active state switching on nav links. Use when explaining: OAuth flows, rendering pipelines, architecture, API workflows, algorithm logic. Required: title, html_content (complete <!DOCTYPE html>), projectName. Optional: description, tags, icon_name."
+    },
+    {
+      "name": "noteit_flow_create",
+      "description": "Create visual flow diagrams with NESTED DATA SUPPORT for ANY technical process visualization. Use this for: debugging flows, architecture diagrams, deployment pipelines, API workflows, algorithm steps, system interactions, or any step-by-step process. The flow is rendered as an interactive React Flow diagram with automatic layout and CHILD NODES for nested data. FLEXIBLE STRUCTURE: Design your own JSON structure - just include an array of items (steps/workflow/pipeline/scenarios). NESTED DATA: Each item can include child data (config objects, commands arrays, steps arrays, resources, metrics, etc.) which will be rendered as separate child nodes connected with dashed lines. Common patterns: {steps: [{id, label, type, detail}]} for simple linear flows, {workflow: [{id, label, type, detail, config: {...}, commands: [...], steps: [...], resources: [...]}]} for complex flows with nested metadata. Required: title, template_id (any string for categorization), explanation (detailed context explaining both main flow and nested data), flow_data (your custom JSON with at least one array field). Optional fields per item: 'type' for styling (input/process/output/error/warning/success/source/result), 'detail' for description, plus NESTED DATA FIELDS: 'config' (object), 'commands' (array of {cmd, result}), 'steps' (array of strings), 'resources' (array of objects), 'records' (array), 'metrics' (array), 'summary' (object). The renderer automatically creates child nodes for nested data and connects them with dashed lines to parent nodes. The flow appears in dashboard alongside notes."
+    }
+  ]
+}

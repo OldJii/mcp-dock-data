@@ -1,0 +1,25 @@
+{
+  "id": "@michalis.koutridis/diavgeia-mcp",
+  "displayName": "diavgeia-mcp",
+  "description": "Browse and search decisions published on Greece’s Diavgeia transparency portal. Filter results by multiple criteria to find relevant acts fast. Retrieve full details for a specific decision using its ADA identifier.",
+  "createdAt": "2026-01-16T07:22:16.489Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@michalis.koutridis/diavgeia-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get-decision",
+      "description": "Retrieve detailed information about a specific government decision using its ADA (unique identifier). Returns comprehensive decision metadata including subject, protocol number, issue date, organization, signers, and PDF content when available."
+    },
+    {
+      "name": "search-decisions",
+      "description": "Search for government decisions in the Diavgeia transparency platform based on various criteria including keywords, organizations, decision types, and date ranges. Returns a list of matching decisions with their metadata."
+    }
+  ]
+}

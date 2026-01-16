@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/vocr",
+  "displayName": "JigsawStack vOCR",
+  "description": "OCR + AI = Magic: \nExtract data from any image in a consistent structure with fine-tuned vLLMs for the highest accuracy. Learn more about AI backed OCR here: https://jigsawstack.com/docs/api-reference/ai/vocr Get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "createdAt": "2026-01-16T07:26:09.012Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/vocr"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "vocr",
+      "description": "Extract text from an image"
+    }
+  ]
+}

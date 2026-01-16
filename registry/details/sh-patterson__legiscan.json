@@ -1,0 +1,12 @@
+{
+  "id": "sh-patterson/legiscan",
+  "displayName": "legiscan",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:04.506Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/sh-patterson/legiscan"
+  },
+  "connection": null,
+  "capabilities": []
+}

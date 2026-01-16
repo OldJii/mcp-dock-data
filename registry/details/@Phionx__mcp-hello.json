@@ -1,0 +1,12 @@
+{
+  "id": "@Phionx/mcp-hello",
+  "displayName": "mcp-hello",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:34.577Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Phionx/mcp-hello"
+  },
+  "connection": null,
+  "capabilities": []
+}

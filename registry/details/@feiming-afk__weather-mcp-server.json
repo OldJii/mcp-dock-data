@@ -1,0 +1,12 @@
+{
+  "id": "@feiming-afk/weather-mcp-server",
+  "displayName": "weather-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:20.060Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@feiming-afk/weather-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

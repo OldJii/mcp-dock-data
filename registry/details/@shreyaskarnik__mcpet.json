@@ -1,0 +1,51 @@
+{
+  "id": "@shreyaskarnik/mcpet",
+  "displayName": "MCPet",
+  "description": "Adopt, nurture, and play with your very own digital companion that evolves based on your care. Manage your pet's stats, engage in fun activities, and watch them grow from a baby to an adult. Experience a nostalgic virtual pet simulation powered by modern AI.",
+  "createdAt": "2026-01-16T07:30:40.593Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shreyaskarnik/mcpet"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "petDataDir": {
+          "type": "string",
+          "description": "Directory to store pet data with write permissions. Overrides the built-in default.",
+          "default": "/data"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_pet",
+      "description": "Create a new virtual pet"
+    },
+    {
+      "name": "check_pet",
+      "description": "Check on your virtual pet's status"
+    },
+    {
+      "name": "feed_pet",
+      "description": "Feed your virtual pet"
+    },
+    {
+      "name": "play_with_pet",
+      "description": "Play with your virtual pet"
+    },
+    {
+      "name": "clean_pet",
+      "description": "Clean your virtual pet"
+    },
+    {
+      "name": "put_to_bed",
+      "description": "Put your virtual pet to sleep to restore energy"
+    }
+  ]
+}

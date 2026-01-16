@@ -1,0 +1,12 @@
+{
+  "id": "@ferryzhao-eng/leiga-mcp-server-test",
+  "displayName": "leiga-mcp-server-test",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:42.029Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ferryzhao-eng/leiga-mcp-server-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

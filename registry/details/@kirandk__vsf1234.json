@@ -1,0 +1,21 @@
+{
+  "id": "@kirandk/vsf1234",
+  "displayName": "vsf1234",
+  "description": "",
+  "createdAt": "2026-01-16T07:32:33.951Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kirandk/vsf1234"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

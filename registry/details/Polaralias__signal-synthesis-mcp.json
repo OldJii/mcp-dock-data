@@ -1,0 +1,89 @@
+{
+  "id": "Polaralias/signal-synthesis-mcp",
+  "displayName": "Signal Synthesis",
+  "description": "Access real-time market data and historical financial records from multiple financial data providers. Synthesize market signals to gain deeper insights into stock performance and trends. Streamline financial research with unified access to quotes, intraday bars, and symbol searches.",
+  "createdAt": "2026-01-16T07:29:10.996Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/Polaralias/signal-synthesis-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "debug",
+        "requestTimeoutMs",
+        "providerPreference",
+        "mock",
+        "cache"
+      ],
+      "properties": {
+        "mock": {
+          "type": "object",
+          "description": "",
+          "default": {
+            "enabled": false
+          }
+        },
+        "cache": {
+          "type": "object",
+          "description": "",
+          "default": {
+            "enabled": true,
+            "maxEntries": 1000,
+            "ttlSeconds": {
+              "daily": 300,
+              "quotes": 10,
+              "search": 3600,
+              "intraday": 60
+            }
+          }
+        },
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "fmpApiKey": {
+          "type": "string",
+          "description": "Financial Modeling Prep API Key"
+        },
+        "alpacaKeyId": {
+          "type": "string",
+          "description": "Alpaca API Key ID"
+        },
+        "finnhubApiKey": {
+          "type": "string",
+          "description": "Finnhub API Key"
+        },
+        "polygonApiKey": {
+          "type": "string",
+          "description": "Polygon.io API Key"
+        },
+        "alpacaSecretKey": {
+          "type": "string",
+          "description": "Alpaca Secret Key"
+        },
+        "requestTimeoutMs": {
+          "type": "number",
+          "description": "Global request timeout in milliseconds",
+          "default": 10000
+        },
+        "providerPreference": {
+          "type": "array",
+          "description": "Order of preference for providers",
+          "default": [
+            "finnhub",
+            "polygon",
+            "fmp",
+            "alpaca"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": []
+}

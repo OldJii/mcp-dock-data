@@ -1,0 +1,33 @@
+{
+  "id": "@hydavinci/formula-1-schedule",
+  "displayName": "Formula 1 Schedule",
+  "description": "Provide up-to-date and historical Formula 1 race schedules for any specified year. Retrieve detailed race calendars including dates, circuit details, and session times with reliable data sources and caching for performance. Enable seamless integration of F1 calendar data into your applications via a simple MCP tool.",
+  "createdAt": "2026-01-16T07:21:00.564Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hydavinci/formula-1-schedule"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "fetch_f1_calendar",
+      "description": "\n  Fetches Formula 1 calendar data for a specified year\n  \n  Args:\n    year: The year for which to fetch F1 data (e.g., '2024', '2025')\n    \n  Returns:\n    Dictionary with F1 calendar information\n  "
+    },
+    {
+      "name": "fetch_f1_team_standings",
+      "description": "\n  Fetches Formula 1 team standings data for a specified year\n  \n  Args:\n    year: The year for which to fetch F1 data (e.g., '2024', '2025')\n    \n  Returns:\n    Dictionary with F1 team standings information\n  "
+    },
+    {
+      "name": "fetch_f1_driver_standings",
+      "description": "\n  Fetches Formula 1 driver standings data for a specified year\n  \n  Args:\n    year: The year for which to fetch F1 data (e.g., '2024', '2025')\n    \n  Returns:\n    Dictionary with F1 driver standings information\n  "
+    },
+    {
+      "name": "fetch_f1_race_results",
+      "description": "\n  Fetches Formula 1 race results data for a specified year\n  \n  Args:\n    year: The year for which to fetch F1 data (e.g., '2024', '2025')\n    \n  Returns:\n    Dictionary with F1 race results information\n  "
+    }
+  ]
+}

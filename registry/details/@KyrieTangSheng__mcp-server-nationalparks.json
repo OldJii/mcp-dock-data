@@ -1,0 +1,52 @@
+{
+  "id": "@KyrieTangSheng/mcp-server-nationalparks",
+  "displayName": "National Parks Server",
+  "description": "Access real-time information about U.S. National Parks, including park details, alerts, activities, and visitor center information. Discover parks based on your interests and plan your next adventure with ease.",
+  "createdAt": "2026-01-16T07:29:29.066Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KyrieTangSheng/mcp-server-nationalparks"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "npsApiKey"
+      ],
+      "properties": {
+        "npsApiKey": {
+          "type": "string",
+          "description": "API key for the National Park Service"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "findParks",
+      "description": "Search for national parks based on state, name, activities, or other criteria"
+    },
+    {
+      "name": "getParkDetails",
+      "description": "Get detailed information about a specific national park"
+    },
+    {
+      "name": "getAlerts",
+      "description": "Get current alerts for national parks including closures, hazards, and important information"
+    },
+    {
+      "name": "getVisitorCenters",
+      "description": "Get information about visitor centers and their operating hours"
+    },
+    {
+      "name": "getCampgrounds",
+      "description": "Get information about available campgrounds and their amenities"
+    },
+    {
+      "name": "getEvents",
+      "description": "Find upcoming events at parks"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@BadRooBot/my_test_mcp",
+  "displayName": "my_test",
+  "description": "Get current weather for any city and create images from your prompts. Streamline planning, reports, and storytelling by combining quick data lookups with visual creation. Receive shareable image links for easy use across docs and chats.",
+  "createdAt": "2026-01-16T07:29:24.920Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BadRooBot/my_test_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "generate_image",
+      "description": "Proxy to your existing X.run_session without importing it at startup."
+    }
+  ]
+}

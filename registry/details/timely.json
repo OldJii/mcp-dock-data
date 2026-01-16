@@ -1,0 +1,25 @@
+{
+  "id": "timely",
+  "displayName": "Timely",
+  "description": "Timely is an automatic time-tracking platform capturing activity across applications, calendars, and devices, creating detailed timesheets for billing or productivity insights",
+  "createdAt": "2026-01-16T07:19:51.522Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/timely"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TIMELY_CREATE_WEBHOOK",
+      "description": "Tool to create a new webhook for the specified account. Use after specifying the target URL and event subscriptions. Call only once per configuration."
+    },
+    {
+      "name": "TIMELY_RETRIEVE_ACCOUNT",
+      "description": "Tool to retrieve details of a specific account by its ID. Use when you need to fetch fresh account info after confirming the ID. Example: \"Retrieve account details for account ID 364\""
+    }
+  ]
+}

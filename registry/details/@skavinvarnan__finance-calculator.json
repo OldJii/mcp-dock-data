@@ -1,0 +1,35 @@
+{
+  "id": "@skavinvarnan/finance-calculator",
+  "displayName": "Finance Calculator",
+  "description": "Calculate and analyze financial metrics efficiently with this tool. Simplify complex finance calculations and gain insights quickly. Enhance your financial decision-making with accurate and easy-to-use computations.",
+  "createdAt": "2026-01-16T07:25:12.066Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skavinvarnan/finance-calculator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "emi",
+      "description": "Calculate EMI for a loan"
+    }
+  ]
+}

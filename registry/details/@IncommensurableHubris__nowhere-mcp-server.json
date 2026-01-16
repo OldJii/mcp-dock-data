@@ -1,0 +1,12 @@
+{
+  "id": "@IncommensurableHubris/nowhere-mcp-server",
+  "displayName": "nowhere-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:16.320Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@IncommensurableHubris/nowhere-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

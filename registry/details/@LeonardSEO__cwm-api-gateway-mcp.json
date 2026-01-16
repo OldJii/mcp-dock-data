@@ -1,0 +1,12 @@
+{
+  "id": "@LeonardSEO/cwm-api-gateway-mcp",
+  "displayName": "cwm-api-gateway-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:35.151Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LeonardSEO/cwm-api-gateway-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

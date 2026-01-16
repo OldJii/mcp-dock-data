@@ -1,0 +1,12 @@
+{
+  "id": "mcpia/worksia",
+  "displayName": "worksia",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:49.615Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcpia/worksia"
+  },
+  "connection": null,
+  "capabilities": []
+}

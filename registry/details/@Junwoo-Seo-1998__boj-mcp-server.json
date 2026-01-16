@@ -1,0 +1,31 @@
+{
+  "id": "@Junwoo-Seo-1998/boj-mcp-server",
+  "displayName": "Baekjoon(BOJ) MCP Server",
+  "description": "Search solved.ac problems by difficulty, tags, and keywords to find the right challenges. Check user ratings, tiers, and solved counts to track progress. Convert natural language into precise filters for faster discovery.",
+  "createdAt": "2026-01-16T07:21:11.532Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Junwoo-Seo-1998/boj-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "solvedac_get_user_info",
+      "description": "solved.ac 사용자의 레이팅/티어/푼 문제 수 조회"
+    },
+    {
+      "name": "solvedac_refresh_tag_catalog",
+      "description": "solved.ac 태그 카탈로그를 강제로 다시 로드합니다."
+    },
+    {
+      "name": "solvedac_search_problems",
+      "description": "난이도/태그/키워드 검색 (예: tier:g5..p5 #dp). 공식 태그 정규화(옵션) 후, -@handle/-t@handle + sort=random."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/prediction-examples",
+  "displayName": "prediction-examples",
+  "description": "预测年度GMV，快速评估业务增长趋势。分析评论情感，识别正负面反馈。整合关键洞察，提升营销与产品决策效率。",
+  "createdAt": "2026-01-16T07:31:04.465Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/prediction-examples"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "pred_gmv",
+      "description": "Alink教程第1章5.4节的Pipeline预测。输入年份，预测GMV。"
+    },
+    {
+      "name": "calc",
+      "description": "Alink教程第23章4节的情感预测。输入一段评论，分析其情感色彩（褒义贬义/正向负向）。"
+    }
+  ]
+}

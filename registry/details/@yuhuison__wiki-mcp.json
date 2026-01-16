@@ -1,0 +1,12 @@
+{
+  "id": "@yuhuison/wiki-mcp",
+  "displayName": "wiki-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:03.523Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yuhuison/wiki-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

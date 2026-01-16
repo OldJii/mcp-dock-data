@@ -1,0 +1,41 @@
+{
+  "id": "googleslides",
+  "displayName": "Google Slides",
+  "description": "Google Slides is a cloud-based presentation editor with real-time collaboration, template gallery, and integration with other Google Workspace apps",
+  "createdAt": "2026-01-16T07:19:26.699Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googleslides"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLESLIDES_CREATE_SLIDES_MARKDOWN",
+      "description": "Creates a new Google Slides presentation from Markdown text. Automatically splits content into slides using '---' separators and applies appropriate templates based on content structure."
+    },
+    {
+      "name": "GOOGLESLIDES_PRESENTATIONS_BATCH_UPDATE",
+      "description": "Update Google Slides presentations using markdown content or raw API text. Supports professional themes, auto-formatting, and multiple slide types (title, bullet, table, quote, image, two-column)."
+    },
+    {
+      "name": "GOOGLESLIDES_PRESENTATIONS_CREATE",
+      "description": "Tool to create a blank Google Slides presentation. Use when you need to initialize a new presentation with a specific title."
+    },
+    {
+      "name": "GOOGLESLIDES_PRESENTATIONS_GET",
+      "description": "Tool to retrieve the latest version of a presentation. Use after obtaining the presentation ID."
+    },
+    {
+      "name": "GOOGLESLIDES_PRESENTATIONS_PAGES_GET",
+      "description": "Tool to get the latest version of a specific page in a presentation. Use when you need to inspect slide, layout, master, or notes page details."
+    },
+    {
+      "name": "GOOGLESLIDES_PRESENTATIONS_PAGES_GET_THUMBNAIL",
+      "description": "Tool to generate and return a thumbnail image URL for a specific page. Use when you need a quick preview of a slide page after loading it."
+    }
+  ]
+}

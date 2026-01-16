@@ -1,0 +1,48 @@
+{
+  "id": "@manolaz/emergency-medicare-planner-mcp-server",
+  "displayName": "Emergency Medicare Management",
+  "description": "Find nearby hospitals and clinics that match specific patient needs. Access real-time information about medical facilities and calculate the fastest routes to them. Ensure timely medical assistance with this efficient planning tool.",
+  "createdAt": "2026-01-16T07:29:52.647Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@manolaz/emergency-medicare-planner-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "googleMapsApiKey"
+      ],
+      "properties": {
+        "googleMapsApiKey": {
+          "type": "string",
+          "description": "The API key for accessing Google Maps services."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_nearby_medical_facilities",
+      "description": "Finds hospitals and clinics nearby user location that match specific requirements"
+    },
+    {
+      "name": "check_medicare_coverage",
+      "description": "Checks what treatments and procedures are covered by Medicare"
+    },
+    {
+      "name": "get_emergency_contacts",
+      "description": "Retrieves emergency contact information for a specific location"
+    },
+    {
+      "name": "schedule_emergency_transport",
+      "description": "Arranges emergency medical transportation"
+    },
+    {
+      "name": "sequentialthinking",
+      "description": "A detailed tool for dynamic and reflective medical problem-solving through thoughts.\nThis tool helps analyze medical problems through a flexible thinking process that can adapt and evolve.\nEach thought can build on, question, or revise previous insights as understanding of the medical situation deepens.\n\nWhen to use this tool:\n- Breaking down complex medical problems into steps\n- Planning and designing treatment approaches with room for revision\n- Clinical analysis that might need course correction\n- Medical problems where the full scope might not be clear initially\n- Healthcare decisions that require a multi-step solution\n- Medical evaluations that need to maintain context over multiple steps\n- Situations where irrelevant medical information needs to be filtered out\n\nKey features:\n- You can adjust total_thoughts up or down as the diagnosis progresses\n- You can question or revise previous medical assessments\n- You can add more diagnostic thoughts as new information emerges\n- You can express clinical uncertainty and explore alternative approaches\n- Not every medical assessment needs to build linearly - you can branch or backtrack\n- Generates a clinical hypothesis\n- Verifies the hypothesis based on the Chain of Thought steps\n- Repeats the process until a satisfactory diagnosis or treatment plan is reached\n- Provides a correct medical assessment or recommendation"
+    }
+  ]
+}

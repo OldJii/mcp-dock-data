@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/taiwan-holiday",
+  "displayName": "taiwan-holiday",
+  "description": "查詢指定日期是否為台灣假期。取得任意日期區間的所有假期與名稱，快速安排行程與請假。掌握年度或月份的假期統計，優化排班與專案規劃。",
+  "createdAt": "2026-01-16T07:29:05.553Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/taiwan-holiday"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_holiday",
+      "description": "檢查指定日期是否為台灣假期"
+    },
+    {
+      "name": "get_holidays_in_range",
+      "description": "獲取指定日期範圍內的所有台灣假期"
+    },
+    {
+      "name": "get_holiday_stats",
+      "description": "獲取指定年份或年月的台灣假期統計資訊"
+    }
+  ]
+}

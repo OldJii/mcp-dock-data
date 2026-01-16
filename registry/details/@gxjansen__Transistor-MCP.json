@@ -1,0 +1,27 @@
+{
+  "id": "@gxjansen/Transistor-MCP",
+  "displayName": "Transistor",
+  "description": "Interact with the Transistor.fm API to manage podcasts and episodes.",
+  "createdAt": "2026-01-16T07:26:21.398Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gxjansen/Transistor-MCP"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "transistorApiKey"
+      ],
+      "properties": {
+        "transistorApiKey": {
+          "type": "string",
+          "description": "The API key for the Transistor.fm server."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

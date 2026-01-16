@@ -1,0 +1,1500 @@
+{
+  "id": "@Funding-Machine/ghl-mcp-fundingmachine",
+  "displayName": "GoHighLevel Connect",
+  "description": "Automate GoHighLevel across CRM, messaging, calendars, marketing, e-commerce, and billing. Manage contacts, conversations, opportunities, appointments, invoices, and payments from a single workflow. Accelerate operations with bulk updates, smart upserts, and powerful search.",
+  "createdAt": "2026-01-16T07:28:32.620Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Funding-Machine/ghl-mcp-fundingmachine"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey",
+        "locationId"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Private Integration API key from GoHighLevel. Navigate to Settings > Integrations > Private API Key to create one."
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Override the GoHighLevel API base URL.",
+          "default": "https://services.leadconnectorhq.com"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "GoHighLevel location/sub-account ID. Copy the alphanumeric value from the app URL when the location is selected."
+        },
+        "skipConnectionTest": {
+          "type": "boolean",
+          "description": "Skip the startup API connectivity check.",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_contact",
+      "description": "Create a new contact in GoHighLevel"
+    },
+    {
+      "name": "search_contacts",
+      "description": "Search for contacts with advanced filtering options"
+    },
+    {
+      "name": "get_contact",
+      "description": "Get detailed information about a specific contact"
+    },
+    {
+      "name": "update_contact",
+      "description": "Update contact information"
+    },
+    {
+      "name": "delete_contact",
+      "description": "Delete a contact from GoHighLevel"
+    },
+    {
+      "name": "add_contact_tags",
+      "description": "Add tags to a contact"
+    },
+    {
+      "name": "remove_contact_tags",
+      "description": "Remove tags from a contact"
+    },
+    {
+      "name": "get_contact_tasks",
+      "description": "Get all tasks for a contact"
+    },
+    {
+      "name": "create_contact_task",
+      "description": "Create a new task for a contact"
+    },
+    {
+      "name": "get_contact_task",
+      "description": "Get a specific task for a contact"
+    },
+    {
+      "name": "update_contact_task",
+      "description": "Update a task for a contact"
+    },
+    {
+      "name": "delete_contact_task",
+      "description": "Delete a task for a contact"
+    },
+    {
+      "name": "update_task_completion",
+      "description": "Update task completion status"
+    },
+    {
+      "name": "get_contact_notes",
+      "description": "Get all notes for a contact"
+    },
+    {
+      "name": "create_contact_note",
+      "description": "Create a new note for a contact"
+    },
+    {
+      "name": "get_contact_note",
+      "description": "Get a specific note for a contact"
+    },
+    {
+      "name": "update_contact_note",
+      "description": "Update a note for a contact"
+    },
+    {
+      "name": "delete_contact_note",
+      "description": "Delete a note for a contact"
+    },
+    {
+      "name": "upsert_contact",
+      "description": "Create or update contact based on email/phone (smart merge)"
+    },
+    {
+      "name": "get_duplicate_contact",
+      "description": "Check for duplicate contacts by email or phone"
+    },
+    {
+      "name": "get_contacts_by_business",
+      "description": "Get contacts associated with a specific business"
+    },
+    {
+      "name": "get_contact_appointments",
+      "description": "Get all appointments for a contact"
+    },
+    {
+      "name": "bulk_update_contact_tags",
+      "description": "Bulk add or remove tags from multiple contacts"
+    },
+    {
+      "name": "bulk_update_contact_business",
+      "description": "Bulk update business association for multiple contacts"
+    },
+    {
+      "name": "add_contact_followers",
+      "description": "Add followers to a contact"
+    },
+    {
+      "name": "remove_contact_followers",
+      "description": "Remove followers from a contact"
+    },
+    {
+      "name": "add_contact_to_campaign",
+      "description": "Add contact to a marketing campaign"
+    },
+    {
+      "name": "remove_contact_from_campaign",
+      "description": "Remove contact from a specific campaign"
+    },
+    {
+      "name": "remove_contact_from_all_campaigns",
+      "description": "Remove contact from all campaigns"
+    },
+    {
+      "name": "add_contact_to_workflow",
+      "description": "Add contact to a workflow"
+    },
+    {
+      "name": "remove_contact_from_workflow",
+      "description": "Remove contact from a workflow"
+    },
+    {
+      "name": "send_sms",
+      "description": "Send an SMS message to a contact in GoHighLevel"
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email message to a contact in GoHighLevel"
+    },
+    {
+      "name": "search_conversations",
+      "description": "Search conversations in GoHighLevel with various filters"
+    },
+    {
+      "name": "get_conversation",
+      "description": "Get detailed conversation information including message history"
+    },
+    {
+      "name": "create_conversation",
+      "description": "Create a new conversation with a contact"
+    },
+    {
+      "name": "update_conversation",
+      "description": "Update conversation properties (star, mark read, etc.)"
+    },
+    {
+      "name": "get_recent_messages",
+      "description": "Get recent messages across all conversations for monitoring"
+    },
+    {
+      "name": "delete_conversation",
+      "description": "Delete a conversation permanently"
+    },
+    {
+      "name": "get_email_message",
+      "description": "Get detailed email message information by email message ID"
+    },
+    {
+      "name": "get_message",
+      "description": "Get detailed message information by message ID"
+    },
+    {
+      "name": "upload_message_attachments",
+      "description": "Upload file attachments for use in messages"
+    },
+    {
+      "name": "update_message_status",
+      "description": "Update the delivery status of a message"
+    },
+    {
+      "name": "add_inbound_message",
+      "description": "Manually add an inbound message to a conversation"
+    },
+    {
+      "name": "add_outbound_call",
+      "description": "Manually add an outbound call record to a conversation"
+    },
+    {
+      "name": "get_message_recording",
+      "description": "Get call recording audio for a message"
+    },
+    {
+      "name": "get_message_transcription",
+      "description": "Get call transcription text for a message"
+    },
+    {
+      "name": "download_transcription",
+      "description": "Download call transcription as a text file"
+    },
+    {
+      "name": "cancel_scheduled_message",
+      "description": "Cancel a scheduled message before it is sent"
+    },
+    {
+      "name": "cancel_scheduled_email",
+      "description": "Cancel a scheduled email before it is sent"
+    },
+    {
+      "name": "live_chat_typing",
+      "description": "Send typing indicator for live chat conversations"
+    },
+    {
+      "name": "create_blog_post",
+      "description": "Create a new blog post in GoHighLevel. Requires blog ID, author ID, and category IDs which can be obtained from other blog tools."
+    },
+    {
+      "name": "update_blog_post",
+      "description": "Update an existing blog post in GoHighLevel. All fields except postId and blogId are optional."
+    },
+    {
+      "name": "get_blog_posts",
+      "description": "Get blog posts from a specific blog site. Use this to list and search existing blog posts."
+    },
+    {
+      "name": "get_blog_sites",
+      "description": "Get all blog sites for the current location. Use this to find available blogs before creating or managing posts."
+    },
+    {
+      "name": "get_blog_authors",
+      "description": "Get all available blog authors for the current location. Use this to find author IDs for creating blog posts."
+    },
+    {
+      "name": "get_blog_categories",
+      "description": "Get all available blog categories for the current location. Use this to find category IDs for creating blog posts."
+    },
+    {
+      "name": "check_url_slug",
+      "description": "Check if a URL slug is available for use. Use this before creating or updating blog posts to ensure unique URLs."
+    },
+    {
+      "name": "search_opportunities",
+      "description": "Search for opportunities in GoHighLevel CRM using various filters like pipeline, stage, contact, status, etc."
+    },
+    {
+      "name": "get_pipelines",
+      "description": "Get all sales pipelines configured in GoHighLevel"
+    },
+    {
+      "name": "get_opportunity",
+      "description": "Get detailed information about a specific opportunity by ID"
+    },
+    {
+      "name": "create_opportunity",
+      "description": "Create a new opportunity in GoHighLevel CRM"
+    },
+    {
+      "name": "update_opportunity_status",
+      "description": "Update the status of an opportunity (won, lost, etc.)"
+    },
+    {
+      "name": "delete_opportunity",
+      "description": "Delete an opportunity from GoHighLevel CRM"
+    },
+    {
+      "name": "update_opportunity",
+      "description": "Update an existing opportunity with new details (full update)"
+    },
+    {
+      "name": "upsert_opportunity",
+      "description": "Create or update an opportunity based on contact and pipeline (smart merge)"
+    },
+    {
+      "name": "add_opportunity_followers",
+      "description": "Add followers to an opportunity for notifications and tracking"
+    },
+    {
+      "name": "remove_opportunity_followers",
+      "description": "Remove followers from an opportunity"
+    },
+    {
+      "name": "get_calendar_groups",
+      "description": "Get all calendar groups in the GoHighLevel location"
+    },
+    {
+      "name": "get_calendars",
+      "description": "Get all calendars in the GoHighLevel location with optional filtering"
+    },
+    {
+      "name": "create_calendar",
+      "description": "Create a new calendar in GoHighLevel"
+    },
+    {
+      "name": "get_calendar",
+      "description": "Get detailed information about a specific calendar by ID"
+    },
+    {
+      "name": "update_calendar",
+      "description": "Update an existing calendar in GoHighLevel"
+    },
+    {
+      "name": "delete_calendar",
+      "description": "Delete a calendar from GoHighLevel"
+    },
+    {
+      "name": "get_calendar_events",
+      "description": "Get appointments/events from calendars within a date range"
+    },
+    {
+      "name": "get_free_slots",
+      "description": "Get available time slots for booking appointments on a specific calendar"
+    },
+    {
+      "name": "create_appointment",
+      "description": "Create a new appointment/booking in GoHighLevel"
+    },
+    {
+      "name": "get_appointment",
+      "description": "Get detailed information about a specific appointment by ID"
+    },
+    {
+      "name": "update_appointment",
+      "description": "Update an existing appointment in GoHighLevel"
+    },
+    {
+      "name": "delete_appointment",
+      "description": "Cancel/delete an appointment from GoHighLevel"
+    },
+    {
+      "name": "create_block_slot",
+      "description": "Create a blocked time slot to prevent bookings during specific times"
+    },
+    {
+      "name": "update_block_slot",
+      "description": "Update an existing blocked time slot"
+    },
+    {
+      "name": "create_calendar_group",
+      "description": "Create a new calendar group"
+    },
+    {
+      "name": "validate_group_slug",
+      "description": "Validate if a calendar group slug is available"
+    },
+    {
+      "name": "update_calendar_group",
+      "description": "Update calendar group details"
+    },
+    {
+      "name": "delete_calendar_group",
+      "description": "Delete a calendar group"
+    },
+    {
+      "name": "disable_calendar_group",
+      "description": "Enable or disable a calendar group"
+    },
+    {
+      "name": "get_appointment_notes",
+      "description": "Get notes for an appointment"
+    },
+    {
+      "name": "create_appointment_note",
+      "description": "Create a note for an appointment"
+    },
+    {
+      "name": "update_appointment_note",
+      "description": "Update an appointment note"
+    },
+    {
+      "name": "delete_appointment_note",
+      "description": "Delete an appointment note"
+    },
+    {
+      "name": "get_calendar_resources_equipments",
+      "description": "Get calendar equipment resources"
+    },
+    {
+      "name": "create_calendar_resource_equipment",
+      "description": "Create a calendar equipment resource"
+    },
+    {
+      "name": "get_calendar_resource_equipment",
+      "description": "Get specific equipment resource details"
+    },
+    {
+      "name": "update_calendar_resource_equipment",
+      "description": "Update equipment resource details"
+    },
+    {
+      "name": "delete_calendar_resource_equipment",
+      "description": "Delete an equipment resource"
+    },
+    {
+      "name": "get_calendar_resources_rooms",
+      "description": "Get calendar room resources"
+    },
+    {
+      "name": "create_calendar_resource_room",
+      "description": "Create a calendar room resource"
+    },
+    {
+      "name": "get_calendar_resource_room",
+      "description": "Get specific room resource details"
+    },
+    {
+      "name": "update_calendar_resource_room",
+      "description": "Update room resource details"
+    },
+    {
+      "name": "delete_calendar_resource_room",
+      "description": "Delete a room resource"
+    },
+    {
+      "name": "get_calendar_notifications",
+      "description": "Get calendar notifications"
+    },
+    {
+      "name": "create_calendar_notifications",
+      "description": "Create calendar notifications"
+    },
+    {
+      "name": "get_calendar_notification",
+      "description": "Get specific calendar notification"
+    },
+    {
+      "name": "update_calendar_notification",
+      "description": "Update calendar notification"
+    },
+    {
+      "name": "delete_calendar_notification",
+      "description": "Delete calendar notification"
+    },
+    {
+      "name": "get_blocked_slots",
+      "description": "Get blocked time slots for a location"
+    },
+    {
+      "name": "get_email_campaigns",
+      "description": "Get a list of email campaigns from GoHighLevel."
+    },
+    {
+      "name": "create_email_template",
+      "description": "Create a new email template in GoHighLevel."
+    },
+    {
+      "name": "get_email_templates",
+      "description": "Get a list of email templates from GoHighLevel."
+    },
+    {
+      "name": "update_email_template",
+      "description": "Update an existing email template in GoHighLevel."
+    },
+    {
+      "name": "delete_email_template",
+      "description": "Delete an email template from GoHighLevel."
+    },
+    {
+      "name": "search_locations",
+      "description": "Search for locations/sub-accounts in GoHighLevel with filtering options"
+    },
+    {
+      "name": "get_location",
+      "description": "Get detailed information about a specific location/sub-account by ID"
+    },
+    {
+      "name": "create_location",
+      "description": "Create a new sub-account/location in GoHighLevel (Agency Pro plan required)"
+    },
+    {
+      "name": "update_location",
+      "description": "Update an existing sub-account/location in GoHighLevel"
+    },
+    {
+      "name": "delete_location",
+      "description": "Delete a sub-account/location from GoHighLevel"
+    },
+    {
+      "name": "get_location_tags",
+      "description": "Get all tags for a specific location"
+    },
+    {
+      "name": "create_location_tag",
+      "description": "Create a new tag for a location"
+    },
+    {
+      "name": "get_location_tag",
+      "description": "Get a specific location tag by ID"
+    },
+    {
+      "name": "update_location_tag",
+      "description": "Update an existing location tag"
+    },
+    {
+      "name": "delete_location_tag",
+      "description": "Delete a location tag"
+    },
+    {
+      "name": "search_location_tasks",
+      "description": "Search tasks within a location with advanced filtering"
+    },
+    {
+      "name": "get_location_custom_fields",
+      "description": "Get custom fields for a location, optionally filtered by model type"
+    },
+    {
+      "name": "create_location_custom_field",
+      "description": "Create a new custom field for a location"
+    },
+    {
+      "name": "get_location_custom_field",
+      "description": "Get a specific custom field by ID"
+    },
+    {
+      "name": "update_location_custom_field",
+      "description": "Update an existing custom field"
+    },
+    {
+      "name": "delete_location_custom_field",
+      "description": "Delete a custom field from a location"
+    },
+    {
+      "name": "get_location_custom_values",
+      "description": "Get all custom values for a location"
+    },
+    {
+      "name": "create_location_custom_value",
+      "description": "Create a new custom value for a location"
+    },
+    {
+      "name": "get_location_custom_value",
+      "description": "Get a specific custom value by ID"
+    },
+    {
+      "name": "update_location_custom_value",
+      "description": "Update an existing custom value"
+    },
+    {
+      "name": "delete_location_custom_value",
+      "description": "Delete a custom value from a location"
+    },
+    {
+      "name": "get_location_templates",
+      "description": "Get SMS/Email templates for a location"
+    },
+    {
+      "name": "delete_location_template",
+      "description": "Delete a template from a location"
+    },
+    {
+      "name": "get_timezones",
+      "description": "Get available timezones for location configuration"
+    },
+    {
+      "name": "verify_email",
+      "description": "Verify email address deliverability and get risk assessment. Charges will be deducted from the specified location wallet."
+    },
+    {
+      "name": "search_social_posts",
+      "description": "Search and filter social media posts across all platforms"
+    },
+    {
+      "name": "create_social_post",
+      "description": "Create a new social media post for multiple platforms"
+    },
+    {
+      "name": "get_social_post",
+      "description": "Get details of a specific social media post"
+    },
+    {
+      "name": "update_social_post",
+      "description": "Update an existing social media post"
+    },
+    {
+      "name": "delete_social_post",
+      "description": "Delete a social media post"
+    },
+    {
+      "name": "bulk_delete_social_posts",
+      "description": "Delete multiple social media posts at once (max 50)"
+    },
+    {
+      "name": "get_social_accounts",
+      "description": "Get all connected social media accounts and groups"
+    },
+    {
+      "name": "delete_social_account",
+      "description": "Delete a social media account connection"
+    },
+    {
+      "name": "upload_social_csv",
+      "description": "Upload CSV file for bulk social media posts"
+    },
+    {
+      "name": "get_csv_upload_status",
+      "description": "Get status of CSV uploads"
+    },
+    {
+      "name": "set_csv_accounts",
+      "description": "Set accounts for CSV import processing"
+    },
+    {
+      "name": "get_csv_post",
+      "description": "Get posts from a CSV import"
+    },
+    {
+      "name": "finalize_csv",
+      "description": "Finalize a CSV import process"
+    },
+    {
+      "name": "delete_csv",
+      "description": "Delete a CSV import"
+    },
+    {
+      "name": "delete_csv_post",
+      "description": "Delete a specific post from a CSV import"
+    },
+    {
+      "name": "get_social_categories",
+      "description": "Get social media post categories"
+    },
+    {
+      "name": "get_social_category",
+      "description": "Get a specific social media category by ID"
+    },
+    {
+      "name": "get_social_tags",
+      "description": "Get social media post tags"
+    },
+    {
+      "name": "get_social_tags_by_ids",
+      "description": "Get specific social media tags by their IDs"
+    },
+    {
+      "name": "get_social_statistics",
+      "description": "Get social media statistics for accounts. Provides metrics for the last 7 days with comparison to the previous 7 days."
+    },
+    {
+      "name": "fetch_available_categories_for_queue",
+      "description": "Get available categories that can be used for creating category queues"
+    },
+    {
+      "name": "create_category_queue",
+      "description": "Create a new category queue for automated social media posting"
+    },
+    {
+      "name": "fetch_category_queues",
+      "description": "List all category queues with pagination"
+    },
+    {
+      "name": "fetch_category_queue_by_id",
+      "description": "Get specific category queue details by ID"
+    },
+    {
+      "name": "update_category_queue",
+      "description": "Update category queue settings"
+    },
+    {
+      "name": "fetch_category_queue_items",
+      "description": "Get items in a category queue"
+    },
+    {
+      "name": "delete_category_queue_item",
+      "description": "Delete an item from a category queue"
+    },
+    {
+      "name": "update_category_queue_item",
+      "description": "Update a category queue item"
+    },
+    {
+      "name": "fetch_category_queue_calendar",
+      "description": "Get calendar view of scheduled posts for a category queue"
+    },
+    {
+      "name": "delete_current_active_post_and_schedule_next",
+      "description": "Delete the currently active post and schedule the next item in queue"
+    },
+    {
+      "name": "reset_category_queue_item",
+      "description": "Reset a category queue item to its initial state"
+    },
+    {
+      "name": "create_category_queue_item",
+      "description": "Add a new item to a category queue"
+    },
+    {
+      "name": "start_social_oauth",
+      "description": "Start OAuth process for social media platform"
+    },
+    {
+      "name": "get_platform_accounts",
+      "description": "Get available accounts for a specific platform after OAuth"
+    },
+    {
+      "name": "get_media_files",
+      "description": "Get list of files and folders from the media library with filtering and search capabilities"
+    },
+    {
+      "name": "upload_media_file",
+      "description": "Upload a file to the media library or add a hosted file URL (max 25MB for direct uploads)"
+    },
+    {
+      "name": "delete_media_file",
+      "description": "Delete a specific file or folder from the media library"
+    },
+    {
+      "name": "get_all_objects",
+      "description": "Get all objects (custom and standard) for a location including contact, opportunity, business, and custom objects"
+    },
+    {
+      "name": "create_object_schema",
+      "description": "Create a new custom object schema with labels, key, and primary display property"
+    },
+    {
+      "name": "get_object_schema",
+      "description": "Get object schema details by key including all fields and properties for custom or standard objects"
+    },
+    {
+      "name": "update_object_schema",
+      "description": "Update object schema properties including labels, description, and searchable fields"
+    },
+    {
+      "name": "create_object_record",
+      "description": "Create a new record in a custom or standard object with properties, owner, and followers"
+    },
+    {
+      "name": "get_object_record",
+      "description": "Get a specific record by ID from a custom or standard object"
+    },
+    {
+      "name": "update_object_record",
+      "description": "Update an existing record in a custom or standard object"
+    },
+    {
+      "name": "delete_object_record",
+      "description": "Delete a record from a custom or standard object"
+    },
+    {
+      "name": "search_object_records",
+      "description": "Search records within a custom or standard object using searchable properties"
+    },
+    {
+      "name": "ghl_get_all_associations",
+      "description": "Get all associations for a sub-account/location with pagination. Returns system-defined and user-defined associations."
+    },
+    {
+      "name": "ghl_create_association",
+      "description": "Create a new association that defines relationship types between entities like contacts, custom objects, and opportunities."
+    },
+    {
+      "name": "ghl_get_association_by_id",
+      "description": "Get a specific association by its ID. Works for both system-defined and user-defined associations."
+    },
+    {
+      "name": "ghl_update_association",
+      "description": "Update the labels of an existing association. Only user-defined associations can be updated."
+    },
+    {
+      "name": "ghl_delete_association",
+      "description": "Delete a user-defined association. This will also delete all relations created with this association."
+    },
+    {
+      "name": "ghl_get_association_by_key",
+      "description": "Get an association by its key name. Useful for finding both standard and user-defined associations."
+    },
+    {
+      "name": "ghl_get_association_by_object_key",
+      "description": "Get associations by object keys like contacts, custom objects, and opportunities."
+    },
+    {
+      "name": "ghl_create_relation",
+      "description": "Create a relation between two entities using an existing association. Links specific records together."
+    },
+    {
+      "name": "ghl_get_relations_by_record",
+      "description": "Get all relations for a specific record ID with pagination and optional filtering by association IDs."
+    },
+    {
+      "name": "ghl_delete_relation",
+      "description": "Delete a specific relation between two entities."
+    },
+    {
+      "name": "ghl_get_custom_field_by_id",
+      "description": "Get a custom field or folder by its ID. Supports custom objects and company (business) fields."
+    },
+    {
+      "name": "ghl_create_custom_field",
+      "description": "Create a new custom field for custom objects or company (business). Supports various field types including text, number, options, date, file upload, etc."
+    },
+    {
+      "name": "ghl_update_custom_field",
+      "description": "Update an existing custom field by ID. Can modify name, description, options, and other properties."
+    },
+    {
+      "name": "ghl_delete_custom_field",
+      "description": "Delete a custom field by ID. This will permanently remove the field and its data."
+    },
+    {
+      "name": "ghl_get_custom_fields_by_object_key",
+      "description": "Get all custom fields and folders for a specific object key (e.g., custom object or company)."
+    },
+    {
+      "name": "ghl_create_custom_field_folder",
+      "description": "Create a new custom field folder for organizing fields within an object."
+    },
+    {
+      "name": "ghl_update_custom_field_folder",
+      "description": "Update the name of an existing custom field folder."
+    },
+    {
+      "name": "ghl_delete_custom_field_folder",
+      "description": "Delete a custom field folder. This will also affect any fields within the folder."
+    },
+    {
+      "name": "ghl_get_workflows",
+      "description": "Retrieve all workflows for a location. Workflows represent automation sequences that can be triggered by various events in the system."
+    },
+    {
+      "name": "ghl_get_surveys",
+      "description": "Retrieve all surveys for a location. Surveys are used to collect information from contacts through forms and questionnaires."
+    },
+    {
+      "name": "ghl_get_survey_submissions",
+      "description": "Retrieve survey submissions with advanced filtering and pagination. Get responses from contacts who have completed surveys."
+    },
+    {
+      "name": "ghl_create_shipping_zone",
+      "description": "Create a new shipping zone with specific countries and states"
+    },
+    {
+      "name": "ghl_list_shipping_zones",
+      "description": "List all shipping zones for a location"
+    },
+    {
+      "name": "ghl_get_shipping_zone",
+      "description": "Get details of a specific shipping zone"
+    },
+    {
+      "name": "ghl_update_shipping_zone",
+      "description": "Update a shipping zone's name or countries"
+    },
+    {
+      "name": "ghl_delete_shipping_zone",
+      "description": "Delete a shipping zone and all its associated shipping rates"
+    },
+    {
+      "name": "ghl_get_available_shipping_rates",
+      "description": "Get available shipping rates for an order based on destination and order details"
+    },
+    {
+      "name": "ghl_create_shipping_rate",
+      "description": "Create a new shipping rate for a shipping zone"
+    },
+    {
+      "name": "ghl_list_shipping_rates",
+      "description": "List all shipping rates for a specific shipping zone"
+    },
+    {
+      "name": "ghl_get_shipping_rate",
+      "description": "Get details of a specific shipping rate"
+    },
+    {
+      "name": "ghl_update_shipping_rate",
+      "description": "Update a shipping rate's properties"
+    },
+    {
+      "name": "ghl_delete_shipping_rate",
+      "description": "Delete a shipping rate"
+    },
+    {
+      "name": "ghl_create_shipping_carrier",
+      "description": "Create a new shipping carrier for dynamic rate calculation"
+    },
+    {
+      "name": "ghl_list_shipping_carriers",
+      "description": "List all shipping carriers for a location"
+    },
+    {
+      "name": "ghl_get_shipping_carrier",
+      "description": "Get details of a specific shipping carrier"
+    },
+    {
+      "name": "ghl_update_shipping_carrier",
+      "description": "Update a shipping carrier's properties"
+    },
+    {
+      "name": "ghl_delete_shipping_carrier",
+      "description": "Delete a shipping carrier"
+    },
+    {
+      "name": "ghl_create_store_setting",
+      "description": "Create or update store settings including shipping origin and notifications"
+    },
+    {
+      "name": "ghl_get_store_setting",
+      "description": "Get current store settings"
+    },
+    {
+      "name": "ghl_create_product",
+      "description": "Create a new product in GoHighLevel"
+    },
+    {
+      "name": "ghl_list_products",
+      "description": "List products with optional filtering"
+    },
+    {
+      "name": "ghl_get_product",
+      "description": "Get a specific product by ID"
+    },
+    {
+      "name": "ghl_update_product",
+      "description": "Update an existing product"
+    },
+    {
+      "name": "ghl_delete_product",
+      "description": "Delete a product by ID"
+    },
+    {
+      "name": "ghl_create_price",
+      "description": "Create a price for a product"
+    },
+    {
+      "name": "ghl_list_prices",
+      "description": "List prices for a product"
+    },
+    {
+      "name": "ghl_list_inventory",
+      "description": "List inventory items with stock levels"
+    },
+    {
+      "name": "ghl_create_product_collection",
+      "description": "Create a new product collection"
+    },
+    {
+      "name": "ghl_list_product_collections",
+      "description": "List product collections"
+    },
+    {
+      "name": "create_whitelabel_integration_provider",
+      "description": "Create a white-label integration provider for payments"
+    },
+    {
+      "name": "list_whitelabel_integration_providers",
+      "description": "List white-label integration providers with optional pagination"
+    },
+    {
+      "name": "list_orders",
+      "description": "List orders with optional filtering and pagination"
+    },
+    {
+      "name": "get_order_by_id",
+      "description": "Get a specific order by its ID"
+    },
+    {
+      "name": "create_order_fulfillment",
+      "description": "Create a fulfillment for an order"
+    },
+    {
+      "name": "list_order_fulfillments",
+      "description": "List all fulfillments for an order"
+    },
+    {
+      "name": "list_transactions",
+      "description": "List transactions with optional filtering and pagination"
+    },
+    {
+      "name": "get_transaction_by_id",
+      "description": "Get a specific transaction by its ID"
+    },
+    {
+      "name": "list_subscriptions",
+      "description": "List subscriptions with optional filtering and pagination"
+    },
+    {
+      "name": "get_subscription_by_id",
+      "description": "Get a specific subscription by its ID"
+    },
+    {
+      "name": "list_coupons",
+      "description": "List all coupons for a location with optional filtering"
+    },
+    {
+      "name": "create_coupon",
+      "description": "Create a new promotional coupon"
+    },
+    {
+      "name": "update_coupon",
+      "description": "Update an existing coupon"
+    },
+    {
+      "name": "delete_coupon",
+      "description": "Delete a coupon permanently"
+    },
+    {
+      "name": "get_coupon",
+      "description": "Get coupon details by ID or code"
+    },
+    {
+      "name": "create_custom_provider_integration",
+      "description": "Create a new custom payment provider integration"
+    },
+    {
+      "name": "delete_custom_provider_integration",
+      "description": "Delete an existing custom payment provider integration"
+    },
+    {
+      "name": "get_custom_provider_config",
+      "description": "Fetch existing payment config for a location"
+    },
+    {
+      "name": "create_custom_provider_config",
+      "description": "Create new payment config for a location"
+    },
+    {
+      "name": "disconnect_custom_provider_config",
+      "description": "Disconnect existing payment config for a location"
+    },
+    {
+      "name": "create_invoice_template",
+      "description": "Create a new invoice template"
+    },
+    {
+      "name": "list_invoice_templates",
+      "description": "List all invoice templates"
+    },
+    {
+      "name": "get_invoice_template",
+      "description": "Get invoice template by ID"
+    },
+    {
+      "name": "update_invoice_template",
+      "description": "Update an existing invoice template"
+    },
+    {
+      "name": "delete_invoice_template",
+      "description": "Delete an invoice template"
+    },
+    {
+      "name": "create_invoice_schedule",
+      "description": "Create a new invoice schedule"
+    },
+    {
+      "name": "list_invoice_schedules",
+      "description": "List all invoice schedules"
+    },
+    {
+      "name": "get_invoice_schedule",
+      "description": "Get invoice schedule by ID"
+    },
+    {
+      "name": "update_invoice_schedule",
+      "description": "Update an existing invoice schedule"
+    },
+    {
+      "name": "delete_invoice_schedule",
+      "description": "Delete an invoice schedule"
+    },
+    {
+      "name": "schedule_invoice_schedule",
+      "description": "Start/schedule an invoice schedule"
+    },
+    {
+      "name": "autopayment_invoice_schedule",
+      "description": "Configure autopayment for an invoice schedule"
+    },
+    {
+      "name": "cancel_invoice_schedule",
+      "description": "Cancel an invoice schedule"
+    },
+    {
+      "name": "create_invoice",
+      "description": "Create a new invoice"
+    },
+    {
+      "name": "list_invoices",
+      "description": "List all invoices"
+    },
+    {
+      "name": "get_invoice",
+      "description": "Get invoice by ID"
+    },
+    {
+      "name": "update_invoice",
+      "description": "Update an existing invoice"
+    },
+    {
+      "name": "delete_invoice",
+      "description": "Delete an invoice"
+    },
+    {
+      "name": "void_invoice",
+      "description": "Void an invoice (marks it as cancelled/voided)"
+    },
+    {
+      "name": "send_invoice",
+      "description": "Send an invoice to customer via email, SMS, or both"
+    },
+    {
+      "name": "record_invoice_payment",
+      "description": "Record a manual payment for an invoice"
+    },
+    {
+      "name": "text2pay_invoice",
+      "description": "Create or update text2pay invoice for SMS payment requests"
+    },
+    {
+      "name": "create_estimate",
+      "description": "Create a new estimate"
+    },
+    {
+      "name": "list_estimates",
+      "description": "List all estimates"
+    },
+    {
+      "name": "get_estimate",
+      "description": "Get estimate by ID"
+    },
+    {
+      "name": "update_estimate",
+      "description": "Update an existing estimate"
+    },
+    {
+      "name": "delete_estimate",
+      "description": "Delete an estimate"
+    },
+    {
+      "name": "send_estimate",
+      "description": "Send an estimate to customer via email, SMS, or both"
+    },
+    {
+      "name": "create_invoice_from_estimate",
+      "description": "Create an invoice from an estimate"
+    },
+    {
+      "name": "generate_invoice_number",
+      "description": "Generate a unique invoice number"
+    },
+    {
+      "name": "generate_estimate_number",
+      "description": "Generate a unique estimate number"
+    },
+    {
+      "name": "create_conversation_ai_agent",
+      "description": "Create a new AI agent for automated conversations"
+    },
+    {
+      "name": "search_conversation_ai_agents",
+      "description": "Search and filter AI agents by name and status"
+    },
+    {
+      "name": "get_conversation_ai_agent",
+      "description": "Get detailed information about a specific AI agent"
+    },
+    {
+      "name": "update_conversation_ai_agent",
+      "description": "Update an existing AI agent's configuration"
+    },
+    {
+      "name": "delete_conversation_ai_agent",
+      "description": "Permanently delete an AI agent and all its configurations"
+    },
+    {
+      "name": "attach_action_to_agent",
+      "description": "Creates and attaches a new action for an AI agent. Actions define specific tasks or behaviors that the agent can perform, such as booking appointments, sending follow-ups, or collecting information. NOTE: Only name, type, and details are accepted - enabled, description, and order are NOT valid for this endpoint."
+    },
+    {
+      "name": "list_actions_for_agent",
+      "description": "List all actions attached to an AI agent"
+    },
+    {
+      "name": "get_action_by_id",
+      "description": "Get detailed information about a specific action"
+    },
+    {
+      "name": "update_action",
+      "description": "Update an existing action's configuration. The API accepts type, name, and details as required fields. NOTE: description, order, and enabled fields may be supported by the update endpoint but their acceptance should be verified against the current API version."
+    },
+    {
+      "name": "delete_action",
+      "description": "Remove an action from an AI agent"
+    },
+    {
+      "name": "update_followup_settings",
+      "description": "Update the follow-up settings for an action"
+    },
+    {
+      "name": "get_generation_details",
+      "description": "Get detailed information about an AI-generated response including system prompt, conversation history, and knowledge base chunks used"
+    },
+    {
+      "name": "create_voice_ai_agent",
+      "description": "Create a new Voice AI agent configuration for handling phone calls with AI"
+    },
+    {
+      "name": "list_voice_ai_agents",
+      "description": "Retrieve a paginated list of Voice AI agents for the location"
+    },
+    {
+      "name": "get_voice_ai_agent",
+      "description": "Retrieve detailed configuration and settings for a specific Voice AI agent"
+    },
+    {
+      "name": "update_voice_ai_agent",
+      "description": "Partially update an existing Voice AI agent configuration"
+    },
+    {
+      "name": "delete_voice_ai_agent",
+      "description": "Delete a Voice AI agent and all its configurations"
+    },
+    {
+      "name": "get_company",
+      "description": "Get company details by ID"
+    },
+    {
+      "name": "update_company",
+      "description": "Update company information"
+    },
+    {
+      "name": "get_courses",
+      "description": "Get all courses for a location"
+    },
+    {
+      "name": "get_course",
+      "description": "Get details of a specific course"
+    },
+    {
+      "name": "get_course_import_status",
+      "description": "Get import status of a course"
+    },
+    {
+      "name": "get_forms",
+      "description": "Get all forms for a location"
+    },
+    {
+      "name": "get_form_submissions",
+      "description": "Get submissions for a specific form"
+    },
+    {
+      "name": "upload_custom_files",
+      "description": "Upload custom files to forms"
+    },
+    {
+      "name": "create_link",
+      "description": "Create a new trigger link"
+    },
+    {
+      "name": "update_link",
+      "description": "Update an existing trigger link"
+    },
+    {
+      "name": "get_links",
+      "description": "Get all trigger links for a location"
+    },
+    {
+      "name": "delete_link",
+      "description": "Delete a trigger link"
+    },
+    {
+      "name": "get_funnels",
+      "description": "Get all funnels for a location"
+    },
+    {
+      "name": "get_funnel_pages",
+      "description": "Get all pages for a funnel"
+    },
+    {
+      "name": "get_funnel_page_redirects",
+      "description": "Get redirects for a funnel page"
+    },
+    {
+      "name": "get_snapshots",
+      "description": "Get all available snapshots"
+    },
+    {
+      "name": "push_snapshot_to_location",
+      "description": "Push/deploy a snapshot to a location"
+    },
+    {
+      "name": "get_snapshot_status",
+      "description": "Get the status of a snapshot push operation"
+    },
+    {
+      "name": "get_last_snapshot_push",
+      "description": "Get the last snapshot push for a location"
+    },
+    {
+      "name": "get_user",
+      "description": "Get user details by ID. Returns user information including name, email, phone, permissions, roles, and scopes."
+    },
+    {
+      "name": "get_users_by_location",
+      "description": "Get all users for a specific location/sub-account. Returns list of users assigned to the location."
+    },
+    {
+      "name": "search_users",
+      "description": "Search users across the company/agency with various filters. Supports searching by name, email, phone, role, type, and more."
+    },
+    {
+      "name": "filter_users_by_email",
+      "description": "Filter users by a list of email addresses. Useful for bulk user lookups by email."
+    },
+    {
+      "name": "create_user",
+      "description": "Create a new user in the system. User will be assigned to specified locations with the given permissions and scopes."
+    },
+    {
+      "name": "update_user",
+      "description": "Update user information. Note: Email update is no longer supported due to security reasons."
+    },
+    {
+      "name": "delete_user",
+      "description": "Delete a user. The deletion is queued and will take effect in a few minutes."
+    },
+    {
+      "name": "enable_saas_mode",
+      "description": "Enable SaaS mode for a location"
+    },
+    {
+      "name": "disable_saas_mode",
+      "description": "Disable SaaS mode for a location"
+    },
+    {
+      "name": "pause_saas_subscription",
+      "description": "Pause a SaaS subscription"
+    },
+    {
+      "name": "update_saas_rebilling",
+      "description": "Update SaaS rebilling configuration"
+    },
+    {
+      "name": "get_business",
+      "description": "Get business details by ID"
+    },
+    {
+      "name": "create_business",
+      "description": "Create a new business"
+    },
+    {
+      "name": "update_business",
+      "description": "Update business information"
+    },
+    {
+      "name": "delete_business",
+      "description": "Delete a business"
+    },
+    {
+      "name": "get_installed_apps",
+      "description": "Get all installed marketplace apps for a location"
+    },
+    {
+      "name": "get_app_config",
+      "description": "Get configuration for an installed app"
+    },
+    {
+      "name": "get_custom_menus",
+      "description": "Get all custom menus for a location"
+    },
+    {
+      "name": "create_custom_menu",
+      "description": "Create a new custom menu"
+    },
+    {
+      "name": "update_custom_menu",
+      "description": "Update an existing custom menu"
+    },
+    {
+      "name": "delete_custom_menu",
+      "description": "Delete a custom menu"
+    },
+    {
+      "name": "get_campaigns",
+      "description": "Get all campaigns for a location"
+    },
+    {
+      "name": "list_documents",
+      "description": "List all documents/contracts for a location"
+    },
+    {
+      "name": "send_document",
+      "description": "Send a document/contract to a client"
+    },
+    {
+      "name": "list_templates",
+      "description": "List all document/contract templates for a location"
+    },
+    {
+      "name": "send_template",
+      "description": "Send a document/contract template to a client"
+    },
+    {
+      "name": "create_knowledge_base",
+      "description": "Create a new knowledge base (max 15 per location)"
+    },
+    {
+      "name": "list_knowledge_bases",
+      "description": "Get all knowledge bases for a location with pagination"
+    },
+    {
+      "name": "get_knowledge_base",
+      "description": "Get a knowledge base by ID"
+    },
+    {
+      "name": "update_knowledge_base",
+      "description": "Update an existing knowledge base"
+    },
+    {
+      "name": "delete_knowledge_base",
+      "description": "Delete a knowledge base"
+    },
+    {
+      "name": "discover_website",
+      "description": "Start crawling and discover pages for training"
+    },
+    {
+      "name": "get_crawling_status",
+      "description": "Get the status of the latest crawling operation"
+    },
+    {
+      "name": "get_trained_pages",
+      "description": "Get all trained page links for a knowledge base"
+    },
+    {
+      "name": "train_discovered_urls",
+      "description": "Train discovered website pages and ingest into the knowledge base"
+    },
+    {
+      "name": "delete_trained_pages",
+      "description": "Delete trained pages from a knowledge base"
+    },
+    {
+      "name": "list_faqs",
+      "description": "Get all FAQs for a knowledge base with pagination"
+    },
+    {
+      "name": "create_faq",
+      "description": "Create a new FAQ in a knowledge base"
+    },
+    {
+      "name": "update_faq",
+      "description": "Update an existing FAQ"
+    },
+    {
+      "name": "delete_faq",
+      "description": "Delete an FAQ from a knowledge base"
+    },
+    {
+      "name": "list_active_numbers",
+      "description": "List active phone numbers for a location with pagination"
+    },
+    {
+      "name": "list_number_pools",
+      "description": "Get list of number pools for a location"
+    },
+    {
+      "name": "list_agent_studio_agents",
+      "description": "List all active Agent Studio agents for a location with pagination"
+    },
+    {
+      "name": "get_agent_studio_agent",
+      "description": "Get a specific Agent Studio agent by ID"
+    },
+    {
+      "name": "execute_agent_studio_agent",
+      "description": "Execute an Agent Studio agent and get non-streaming JSON response"
+    }
+  ]
+}

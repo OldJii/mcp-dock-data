@@ -1,0 +1,12 @@
+{
+  "id": "@Ami3466/mcp-n8n-workflow-builder-flowengine",
+  "displayName": "mcp-n8n-workflow-builder-flowengine",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:44.888Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Ami3466/mcp-n8n-workflow-builder-flowengine"
+  },
+  "connection": null,
+  "capabilities": []
+}

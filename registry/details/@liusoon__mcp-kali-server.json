@@ -1,0 +1,12 @@
+{
+  "id": "@liusoon/mcp-kali-server",
+  "displayName": "mcp-kali-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:46.303Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@liusoon/mcp-kali-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

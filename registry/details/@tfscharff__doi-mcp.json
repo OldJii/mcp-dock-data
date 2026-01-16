@@ -1,0 +1,30 @@
+{
+  "id": "@tfscharff/doi-mcp",
+  "displayName": "DOI Citation Verifier",
+  "description": "A Model Context Protocol (MCP) server that prevents citation hallucination by verifying academic citations against multiple authoritative databases. This server enables AI assistants to verify every citation against real publications in CrossRef, OpenAlex, and PubMed before citing them.",
+  "createdAt": "2026-01-16T07:20:39.014Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tfscharff/doi-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "verifyCitation",
+      "description": "CRITICAL: Use this to verify ANY academic citation before mentioning it. Checks multiple databases (CrossRef, OpenAlex, PubMed, zbMATH, ERIC, HAL, INSPIRE-HEP, Semantic Scholar, DBLP) if a paper exists. Returns null if not found."
+    },
+    {
+      "name": "findVerifiedPapers",
+      "description": "Search multiple academic databases (CrossRef, OpenAlex, PubMed, zbMATH, ERIC, HAL, INSPIRE-HEP, Semantic Scholar, DBLP) for papers and return only verified, real citations with DOIs."
+    }
+  ]
+}

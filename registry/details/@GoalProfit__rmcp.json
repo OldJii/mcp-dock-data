@@ -1,0 +1,12 @@
+{
+  "id": "@GoalProfit/rmcp",
+  "displayName": "rmcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:22.318Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GoalProfit/rmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

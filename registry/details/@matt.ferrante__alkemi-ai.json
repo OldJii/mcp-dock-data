@@ -1,0 +1,12 @@
+{
+  "id": "@matt.ferrante/alkemi-ai",
+  "displayName": "alkemi-mcp",
+  "description": "Integrate your Alkemi Data, connected to Snowflake, Google BigQuery, DataBricks and other sources, with your MCP Client.",
+  "createdAt": "2026-01-16T07:45:36.355Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@matt.ferrante/alkemi-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

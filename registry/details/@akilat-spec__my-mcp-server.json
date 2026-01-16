@@ -1,0 +1,12 @@
+{
+  "id": "@akilat-spec/my-mcp-server",
+  "displayName": "my-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:13.630Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@akilat-spec/my-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

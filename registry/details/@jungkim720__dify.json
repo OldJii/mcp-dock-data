@@ -1,0 +1,12 @@
+{
+  "id": "@jungkim720/dify",
+  "displayName": "dify",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:08.466Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jungkim720/dify"
+  },
+  "connection": null,
+  "capabilities": []
+}

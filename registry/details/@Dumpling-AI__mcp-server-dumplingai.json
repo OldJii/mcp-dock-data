@@ -1,0 +1,136 @@
+{
+  "id": "@Dumpling-AI/mcp-server-dumplingai",
+  "displayName": "Dumpling AI MCP Server",
+  "description": "Integrate powerful data scraping, content processing, and AI capabilities into your applications. Leverage a wide range of tools for document conversion, web scraping, and knowledge management to enhance your workflows. Execute code securely and access various data APIs to enrich your projects with real-time information.",
+  "createdAt": "2026-01-16T07:28:46.447Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Dumpling-AI/mcp-server-dumplingai"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "dumplingApiKey"
+      ],
+      "properties": {
+        "dumplingApiKey": {
+          "type": "string",
+          "description": "Your Dumpling AI API key for authentication."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-youtube-transcript",
+      "description": "Extract transcripts from YouTube videos with optional parameters for timestamps and language preferences."
+    },
+    {
+      "name": "search",
+      "description": "Perform Google web searches with customizable parameters."
+    },
+    {
+      "name": "get-autocomplete",
+      "description": "Retrieve Google autocomplete suggestions for a query."
+    },
+    {
+      "name": "search-maps",
+      "description": "Search Google Maps for locations and businesses."
+    },
+    {
+      "name": "search-places",
+      "description": "Search for places with detailed business information."
+    },
+    {
+      "name": "search-news",
+      "description": "Search for news articles across multiple sources."
+    },
+    {
+      "name": "get-google-reviews",
+      "description": "Retrieve Google reviews for businesses or places."
+    },
+    {
+      "name": "scrape",
+      "description": "Extract and parse content from any web page."
+    },
+    {
+      "name": "crawl",
+      "description": "Recursively crawl websites and extract content."
+    },
+    {
+      "name": "extract",
+      "description": "Extract structured data from web pages using AI-powered instructions."
+    },
+    {
+      "name": "screenshot",
+      "description": "Capture screenshots of web pages with customizable settings."
+    },
+    {
+      "name": "doc-to-text",
+      "description": "Convert various document formats to plain text."
+    },
+    {
+      "name": "convert-to-pdf",
+      "description": "Convert various file formats to PDF."
+    },
+    {
+      "name": "merge-pdfs",
+      "description": "Combine multiple PDF files into a single document."
+    },
+    {
+      "name": "trim-video",
+      "description": "Trim videos to a specific duration."
+    },
+    {
+      "name": "extract-document",
+      "description": "Extract structured data from documents based on a prompt."
+    },
+    {
+      "name": "extract-image",
+      "description": "Extract structured data from images based on a prompt."
+    },
+    {
+      "name": "extract-audio",
+      "description": "Extract structured data from audio files based on a prompt."
+    },
+    {
+      "name": "extract-video",
+      "description": "Extract structured data from videos based on a prompt."
+    },
+    {
+      "name": "read-pdf-metadata",
+      "description": "Extract metadata from PDF files."
+    },
+    {
+      "name": "write-pdf-metadata",
+      "description": "Write metadata to PDF files."
+    },
+    {
+      "name": "generate-agent-completion",
+      "description": "Generate AI text completions with customizable parameters."
+    },
+    {
+      "name": "search-knowledge-base",
+      "description": "Search a knowledge base for relevant information."
+    },
+    {
+      "name": "add-to-knowledge-base",
+      "description": "Add new text resources to a knowledge base."
+    },
+    {
+      "name": "generate-ai-image",
+      "description": "Generate AI images from text prompts."
+    },
+    {
+      "name": "run-js-code",
+      "description": "Execute JavaScript code in a sandbox."
+    },
+    {
+      "name": "run-python-code",
+      "description": "Execute Python code in a sandbox."
+    }
+  ]
+}

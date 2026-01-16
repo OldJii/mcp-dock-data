@@ -1,0 +1,163 @@
+{
+  "id": "@harshapalnati/raworc-mcpserver",
+  "displayName": "RemoteAgent",
+  "description": "RemoteAgent MCP Server is a lightweight, containerized runtime designed to bridge Model Context Protocol (MCP) with modern AI platforms. It enables developers to connect large language models (LLMs) like OpenAI, Anthropic, and local models to external tools, APIs, and data sources through a secure, persistent session layer. With built-in RBAC, session isolation, and support for JSON tool-calling, Raworc MCP Server makes it simple to run deep, multi-agent workflows across frameworks such as LangChain, CrewAI, and AutoGen.\n\nBy providing a standardized protocol interface, RemoteAgent MCP Server helps teams integrate, orchestrate, and scale AI agents with minimal DevOps effort — production-ready from day one.",
+  "createdAt": "2026-01-16T07:22:01.696Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@harshapalnati/raworc-mcpserver"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Raworc API token"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "Raworc API base URL",
+          "default": "https://ra-hyp-1.raworc.com"
+        },
+        "timeoutSeconds": {
+          "type": "integer",
+          "description": "Request timeout in seconds",
+          "default": 30
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "version",
+      "description": "Get API version"
+    },
+    {
+      "name": "agents_list",
+      "description": "List/search agents"
+    },
+    {
+      "name": "agents_create",
+      "description": "Create agent"
+    },
+    {
+      "name": "agents_get",
+      "description": "Get agent by name"
+    },
+    {
+      "name": "agents_update",
+      "description": "Update agent"
+    },
+    {
+      "name": "agents_update_state",
+      "description": "Update agent state"
+    },
+    {
+      "name": "agents_busy",
+      "description": "Set agent busy"
+    },
+    {
+      "name": "agents_idle",
+      "description": "Set agent idle"
+    },
+    {
+      "name": "agents_sleep",
+      "description": "Schedule agent sleep"
+    },
+    {
+      "name": "agents_cancel",
+      "description": "Cancel most recent pending/processing"
+    },
+    {
+      "name": "agents_wake",
+      "description": "Wake agent (optional prompt)"
+    },
+    {
+      "name": "agents_runtime",
+      "description": "Get total runtime across sessions"
+    },
+    {
+      "name": "agents_remix",
+      "description": "Remix agent"
+    },
+    {
+      "name": "agents_publish",
+      "description": "Publish agent"
+    },
+    {
+      "name": "agents_unpublish",
+      "description": "Unpublish agent"
+    },
+    {
+      "name": "agents_delete",
+      "description": "Delete agent"
+    },
+    {
+      "name": "responses_list",
+      "description": "List responses for agent"
+    },
+    {
+      "name": "responses_create",
+      "description": "Create a response (user input)"
+    },
+    {
+      "name": "responses_get",
+      "description": "Get response by id"
+    },
+    {
+      "name": "responses_update",
+      "description": "Update response"
+    },
+    {
+      "name": "responses_count",
+      "description": "Get response count"
+    },
+    {
+      "name": "files_list_root",
+      "description": "List /agent root"
+    },
+    {
+      "name": "files_list_path",
+      "description": "List children under relative path"
+    },
+    {
+      "name": "files_metadata",
+      "description": "Get file/directory metadata"
+    },
+    {
+      "name": "files_read",
+      "description": "Read file bytes (base64)"
+    },
+    {
+      "name": "files_delete",
+      "description": "Delete file or empty directory"
+    },
+    {
+      "name": "context_get",
+      "description": "Get context usage"
+    },
+    {
+      "name": "context_clear",
+      "description": "Clear context (set new cutoff)"
+    },
+    {
+      "name": "context_compact",
+      "description": "Compact context via LLM"
+    },
+    {
+      "name": "published_agents_list",
+      "description": "List all published agents"
+    },
+    {
+      "name": "published_agents_get",
+      "description": "Get published agent by name"
+    }
+  ]
+}

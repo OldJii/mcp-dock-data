@@ -1,0 +1,62 @@
+{
+  "id": "@akilat-spec/leave-manager-mcp",
+  "displayName": "Leave Manager",
+  "description": "Track and manage employee time off with quick balance lookups and streamlined applications. Find the right employee fast to review or submit requests. Simplify HR workflows for leave approvals and records.",
+  "createdAt": "2026-01-16T07:27:08.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@akilat-spec/leave-manager-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "DB_HOST",
+        "DB_USER",
+        "DB_PASSWORD",
+        "DB_NAME"
+      ],
+      "properties": {
+        "DB_HOST": {
+          "type": "string",
+          "description": ""
+        },
+        "DB_NAME": {
+          "type": "string",
+          "description": ""
+        },
+        "DB_PORT": {
+          "type": "string",
+          "description": ""
+        },
+        "DB_USER": {
+          "type": "string",
+          "description": ""
+        },
+        "DB_PASSWORD": {
+          "type": "string",
+          "description": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_leave_balance",
+      "description": ""
+    },
+    {
+      "name": "smart_employee_search",
+      "description": ""
+    },
+    {
+      "name": "apply_leave_ai",
+      "description": ""
+    }
+  ]
+}

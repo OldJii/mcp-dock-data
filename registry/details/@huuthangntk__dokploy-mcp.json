@@ -1,0 +1,141 @@
+{
+  "id": "@huuthangntk/dokploy-mcp",
+  "displayName": "Dokploy Deployments",
+  "description": "Manage Dokploy projects, applications, databases, domains, and backups from one place. Deploy from Git repositories, monitor status and logs, and control start/stop/restart actions effortlessly. Streamline workflows with guided prompts for app deployment, database setup, and troubleshooting.",
+  "createdAt": "2026-01-16T07:31:27.460Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@huuthangntk/dokploy-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging for troubleshooting",
+          "default": false
+        },
+        "apiToken": {
+          "type": "string",
+          "description": "Your Dokploy API authentication token",
+          "default": ""
+        },
+        "dokployUrl": {
+          "type": "string",
+          "description": "Your Dokploy instance URL (e.g., https://dok.bish.one)",
+          "default": "https://dok.bish.one"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-projects",
+      "description": "List all projects in your Dokploy instance"
+    },
+    {
+      "name": "create-project",
+      "description": "Create a new project in Dokploy"
+    },
+    {
+      "name": "delete-project",
+      "description": "Delete a project from Dokploy"
+    },
+    {
+      "name": "list-applications",
+      "description": "List all applications in a project"
+    },
+    {
+      "name": "create-application",
+      "description": "Create a new application in Dokploy"
+    },
+    {
+      "name": "deploy-application",
+      "description": "Deploy an application in Dokploy"
+    },
+    {
+      "name": "stop-application",
+      "description": "Stop a running application"
+    },
+    {
+      "name": "start-application",
+      "description": "Start a stopped application"
+    },
+    {
+      "name": "restart-application",
+      "description": "Restart an application"
+    },
+    {
+      "name": "delete-application",
+      "description": "Delete an application from Dokploy"
+    },
+    {
+      "name": "create-database",
+      "description": "Create a new database (PostgreSQL, MySQL, MongoDB, Redis, or MariaDB)"
+    },
+    {
+      "name": "list-databases",
+      "description": "List all databases in a project"
+    },
+    {
+      "name": "list-composes",
+      "description": "List all Docker Compose applications in a project"
+    },
+    {
+      "name": "create-compose",
+      "description": "Create a new Docker Compose application"
+    },
+    {
+      "name": "deploy-compose",
+      "description": "Deploy a Docker Compose application"
+    },
+    {
+      "name": "stop-compose",
+      "description": "Stop a running Docker Compose application"
+    },
+    {
+      "name": "start-compose",
+      "description": "Start a stopped Docker Compose application"
+    },
+    {
+      "name": "restart-compose",
+      "description": "Restart a Docker Compose application"
+    },
+    {
+      "name": "delete-compose",
+      "description": "Delete a Docker Compose application"
+    },
+    {
+      "name": "list-servers",
+      "description": "List all configured servers"
+    },
+    {
+      "name": "create-server",
+      "description": "Create a new server configuration"
+    },
+    {
+      "name": "list-users",
+      "description": "List all users in the Dokploy instance"
+    },
+    {
+      "name": "create-user",
+      "description": "Create a new user account"
+    },
+    {
+      "name": "update-env-vars",
+      "description": "Update environment variables for an application"
+    },
+    {
+      "name": "list-deployments",
+      "description": "List all deployments for an application"
+    },
+    {
+      "name": "cancel-deployment",
+      "description": "Cancel a running deployment"
+    }
+  ]
+}

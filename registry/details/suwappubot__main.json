@@ -1,0 +1,12 @@
+{
+  "id": "suwappubot/main",
+  "displayName": "Suwappu",
+  "description": "High-performance cross-chain liquidity bot. Trade 100+ tokens across 7+ chains (EVM & Solana). Native C++ core for encryption and math.",
+  "createdAt": "2026-01-16T07:33:28.115Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/suwappubot/main"
+  },
+  "connection": null,
+  "capabilities": []
+}

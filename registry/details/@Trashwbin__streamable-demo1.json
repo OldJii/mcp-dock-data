@@ -1,0 +1,33 @@
+{
+  "id": "@Trashwbin/streamable-demo1",
+  "displayName": "Streamable Demo",
+  "description": "Provide a simple notes system with capabilities to create, list, and summarize text notes. Enable easy management of notes as resources and generate summaries using prompts. Facilitate integration with LLMs for note summarization workflows.",
+  "createdAt": "2026-01-16T07:22:29.657Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Trashwbin/streamable-demo1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greet",
+      "description": "一个简单的问候工具"
+    },
+    {
+      "name": "multi-greet",
+      "description": "一个工具，发送不同的问候，并在它们之间有延迟"
+    },
+    {
+      "name": "start-notification-stream",
+      "description": "开始发送周期性通知以测试恢复"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@samihalawa/advanced-tts-mcp",
+  "displayName": "Advanced TTS Server ",
+  "description": "Convert text into natural, expressive speech using high-quality Kokoro neural voices with advanced controls for emotion, pacing, speed, and volume. Stream audio in real-time or process audio batches efficiently with support for multiple output formats and voice management. Manage synthesis requests and audio files seamlessly through a robust MCP interface.",
+  "createdAt": "2026-01-16T07:28:00.439Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/advanced-tts-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

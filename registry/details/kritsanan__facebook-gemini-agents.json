@@ -1,0 +1,12 @@
+{
+  "id": "kritsanan/facebook-gemini-agents",
+  "displayName": "facebook-gemini-agents",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:01.157Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kritsanan/facebook-gemini-agents"
+  },
+  "connection": null,
+  "capabilities": []
+}

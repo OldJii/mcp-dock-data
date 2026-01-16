@@ -1,0 +1,12 @@
+{
+  "id": "@midwest/yt-data-v3-mcp",
+  "displayName": "yt-data-v3-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:12.604Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@midwest/yt-data-v3-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

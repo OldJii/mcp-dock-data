@@ -1,0 +1,46 @@
+{
+  "id": "@datafe/quick-chart-mcp",
+  "displayName": "Quick Chart Server",
+  "description": "Interact with Quick Chart to generate and retrieve chart images seamlessly. Enhance your AI agents with standardized charting capabilities, making data visualization effortless and efficient.",
+  "createdAt": "2026-01-16T07:21:58.152Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@datafe/quick-chart-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "PORT": {
+          "type": "number",
+          "description": "The port for the MCP server",
+          "default": 3000
+        },
+        "NODE_ENV": {
+          "type": "string",
+          "description": "Node environment mode",
+          "default": "production"
+        },
+        "QUICK_CHART_DRAW_URL": {
+          "type": "string",
+          "description": "Optional Quick Chart draw URL override",
+          "default": ""
+        },
+        "NEED_INSTALL_QUICK_CHART": {
+          "type": "boolean",
+          "description": "Flag to indicate if quick chart service installation is required",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "GetChartImgLink",
+      "description": "To draw chart and get chart image link by parameters, and parameter grammar follows Quick Chart API (quickchart.io)."
+    }
+  ]
+}

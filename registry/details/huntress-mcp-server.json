@@ -1,0 +1,75 @@
+{
+  "id": "huntress-mcp-server",
+  "displayName": "Huntress API MCP Server",
+  "description": "A Model Context Protocol server for interacting with the Huntress API.",
+  "createdAt": "2026-01-16T07:30:40.057Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/huntress-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "huntressApiKey",
+        "huntressApiSecret"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "huntressApiKey": {
+          "type": "string",
+          "description": "Your Huntress API Key"
+        },
+        "huntressApiSecret": {
+          "type": "string",
+          "description": "Your Huntress API Secret"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check server status and authentication configuration"
+    },
+    {
+      "name": "get_account_info",
+      "description": "Get information about the current account"
+    },
+    {
+      "name": "list_organizations",
+      "description": "List organizations in the account"
+    },
+    {
+      "name": "get_organization",
+      "description": "Get details of a specific organization"
+    },
+    {
+      "name": "list_agents",
+      "description": "List agents in the account"
+    },
+    {
+      "name": "get_agent",
+      "description": "Get details of a specific agent"
+    },
+    {
+      "name": "list_incidents",
+      "description": "List incidents in the account"
+    },
+    {
+      "name": "get_incident",
+      "description": "Get details of a specific incident"
+    }
+  ]
+}

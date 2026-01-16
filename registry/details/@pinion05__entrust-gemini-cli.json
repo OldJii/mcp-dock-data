@@ -1,0 +1,35 @@
+{
+  "id": "@pinion05/entrust-gemini-cli",
+  "displayName": "Gemini CLI Health Check",
+  "description": "Claude Code can't do everything well.\nThis MCP covers Claude Code's weaknesses with Gemini CLI.",
+  "createdAt": "2026-01-16T07:25:16.905Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pinion05/entrust-gemini-cli"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "health_check",
+      "description": "Check Gemini CLI health by running a simple test"
+    }
+  ]
+}

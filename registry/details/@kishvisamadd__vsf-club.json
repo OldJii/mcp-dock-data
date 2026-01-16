@@ -1,0 +1,21 @@
+{
+  "id": "@kishvisamadd/vsf-club",
+  "displayName": "vsf-club",
+  "description": "",
+  "createdAt": "2026-01-16T07:30:24.330Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kishvisamadd/vsf-club"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

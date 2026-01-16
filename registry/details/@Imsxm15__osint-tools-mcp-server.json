@@ -1,0 +1,12 @@
+{
+  "id": "@Imsxm15/osint-tools-mcp-server",
+  "displayName": "osint-tools-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:14.549Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Imsxm15/osint-tools-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

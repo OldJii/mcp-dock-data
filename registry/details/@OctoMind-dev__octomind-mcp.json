@@ -1,0 +1,104 @@
+{
+  "id": "@OctoMind-dev/octomind-mcp",
+  "displayName": "Octomind MCP Server",
+  "description": "Enable your agents to create, execute, and manage end-to-end tests seamlessly. Leverage Octomind's tools and resources in your local development environment to enhance your testing capabilities. Simplify your testing workflow with automated features and easy integration.",
+  "createdAt": "2026-01-16T07:32:20.573Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@OctoMind-dev/octomind-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apikey"
+      ],
+      "properties": {
+        "apikey": {
+          "type": "string",
+          "description": "The API key used to authenticate with Octomind API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "the search tool can be used to search the octomind documentation for a given query.\n    The search results are returned as a list of links to the documentation."
+    },
+    {
+      "name": "getTestCase",
+      "description": "the getTestCase tool can retrieve a test case for a given test target and test case id.\n    A test case id is unique to the test target. The test case includes a set of interactions and assertions.\n    it is the result of a discovery or a manual creation."
+    },
+    {
+      "name": "executeTests",
+      "description": "the executeTests tool can trigger a set of tests for a given test target.\n    The test target id is unique to the test target. The tests are executed on the provided url.\n    The context object is used to provide information about the source of the test execution."
+    },
+    {
+      "name": "getEnvironments",
+      "description": "the getEnvironments tool can retrieve environments for a given test target.\n   an environment represents a specific setup or deployments for a test target. It include a test account when necsesary\n    to login, a header configuration, a discovery url and a set of variables."
+    },
+    {
+      "name": "createEnvironment",
+      "description": "the createEnvironment tool can create an environment for a given test target.\n    an environment represents a specific setup or deployments for a test target. It include a test account when necsesary\n    to login, a header configuration, a discovery url and a set of variables."
+    },
+    {
+      "name": "updateEnvironment",
+      "description": "the updateEnvironment tool can update an environment for a given test target.\n    An environment represents a specific setup or deployments for a test target. It includes a test account when necessary\n    to login, a header configuration or a discovery url."
+    },
+    {
+      "name": "deleteEnvironment",
+      "description": "deleteEnvironment tool can delete an environment for a given test target.\n    The environment id is unique to the test target. The call is not reversible.\n    an environment represents a specific setup or deployments for a test target. It include a test account when necsesary\n    to login, a header configuration, a discovery url and a set of variables."
+    },
+    {
+      "name": "getTestReports",
+      "description": "the getTestReports tool can retrieve test reports for a given test target.\n    Test reports are generated when set of tests are executed. The test report id is unique to the test target."
+    },
+    {
+      "name": "getTestReport",
+      "description": "the getTestReport tool can retrieve a test report for a given test target and test report id.\n    A test report id is generated when a set of test are executed on\n    a test target. The test report id is unique to the test target."
+    },
+    {
+      "name": "discovery",
+      "description": "the discovery tool can create a test case on a given test target with a test case description or prompt.\n    One can either start from the predefined url for that test case or provide a new entry point url."
+    },
+    {
+      "name": "getPrivateLocations",
+      "description": "the getPrivateLocations tool can retrieve all private locations configured for that org. \n    A private location is a server that can be used to access a test target behind a firewall or VPN."
+    },
+    {
+      "name": "getTestTargets",
+      "description": "the getTestTargets tool can retrieve all test targets or projects.\n    Test targets represent applications or services that can be tested using Octomind."
+    },
+    {
+      "name": "createTestTarget",
+      "description": "the createTestTarget tool can create a new test target or project.\n    A test target represents an application or service that can be tested using Octomind."
+    },
+    {
+      "name": "updateTestTarget",
+      "description": "the updateTestTarget tool can update an existing test target.\n    A test target represents an application or service that can be tested using Octomind."
+    },
+    {
+      "name": "deleteTestTarget",
+      "description": "the deleteTestTarget tool can delete an existing test target.\n    This operation cannot be undone."
+    },
+    {
+      "name": "getVersion",
+      "description": "Returns the current version of the Octomind MCP server"
+    },
+    {
+      "name": "getTestCases",
+      "description": "the getTestCases tool can retrieve test cases for a given test target with optional filtering.\n    Test cases can be filtered by various criteria such as status, description, or tags."
+    },
+    {
+      "name": "updateTestCase",
+      "description": "the updateTestCase tool can update specific properties of a test case.\n    This allows modifying test case details such as description, status, or folderName."
+    },
+    {
+      "name": "updateTestCaseElement",
+      "description": "the updateTestCaseElement tool can update a specific element within a test case.\n    Test case elements represent individual steps in a test case, such as interactions (clicks, text input)\n    or assertions (checking if elements are visible, have text, etc.). Each element has selectors that\n    identify the target element on the page and an action to perform or assertion to verify. You can only update the locatorLine\n    of the element in question, for everything else the user currently needs to use the octomind ui."
+    }
+  ]
+}

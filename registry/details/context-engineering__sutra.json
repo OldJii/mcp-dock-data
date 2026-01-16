@@ -1,0 +1,12 @@
+{
+  "id": "context-engineering/sutra",
+  "displayName": "sutra",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:12.700Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/context-engineering/sutra"
+  },
+  "connection": null,
+  "capabilities": []
+}

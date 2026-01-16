@@ -1,0 +1,37 @@
+{
+  "id": "@Arctusol/mcp-zoho-books",
+  "displayName": "Zoho Books Accounting",
+  "description": "Manage Zoho Books contacts, items, estimates, and invoices directly from your workflow. Create, list, update, and send quotes or invoices while tracking statuses in real time. Accelerate bookkeeping by automating routine tasks and keeping customer and catalog data consistent.",
+  "createdAt": "2026-01-16T07:30:08.006Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Arctusol/mcp-zoho-books"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_server_info",
+      "description": "Get Books MCP server information and status"
+    },
+    {
+      "name": "manage_contacts",
+      "description": "Unified contact management for Zoho Books (customers & vendors)\n\nActions:\n  - list: List contacts (use contact_type to filter)\n  - create_customer: Create new customer (requires contact_name)\n  - create_vendor: Create new vendor (requires contact_name)\n  - get: Get contact details (requires contact_id)\n  - update: Update contact (requires contact_id)"
+    },
+    {
+      "name": "manage_estimates",
+      "description": "Unified estimate/quote management for Zoho Books\n\nActions:\n  - list: List estimates with optional status filter\n  - create: Create new estimate (requires customer_id, line_items)\n  - get: Get estimate details (requires estimate_id)\n  - update: Update estimate (requires estimate_id)\n  - delete: Delete estimate (requires estimate_id)\n  - mark_sent: Mark estimate as sent (requires estimate_id)\n  - mark_accepted: Mark estimate as accepted (requires estimate_id)\n\nLine items format: JSON string like:\n'[{\"item_id\": \"123\", \"quantity\": 2, \"rate\": 100}]'"
+    },
+    {
+      "name": "manage_items",
+      "description": "Unified product/service catalog management for Zoho Books\n\nActions:\n  - list: List items\n  - create: Create new item (requires name, rate)\n  - get: Get item details (requires item_id)\n  - update: Update item (requires item_id)\n  - activate: Activate item (requires item_id)\n  - deactivate: Deactivate item (requires item_id)"
+    },
+    {
+      "name": "manage_invoices",
+      "description": "Unified invoice management for Zoho Books\n\nActions:\n  - list: List invoices with optional status filter\n  - create: Create new invoice (requires customer_id, line_items)\n  - get: Get invoice details (requires invoice_id)\n  - update: Update invoice (requires invoice_id)\n  - delete: Delete invoice (requires invoice_id)\n  - mark_sent: Mark invoice as sent (requires invoice_id)\n  - mark_void: Mark invoice as void (requires invoice_id)\n\nLine items format: JSON string like:\n'[{\"item_id\": \"123\", \"quantity\": 2, \"rate\": 100}]'"
+    }
+  ]
+}

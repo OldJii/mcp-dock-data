@@ -1,0 +1,28 @@
+{
+  "id": "@duvomike/totp",
+  "displayName": "TOTP Generator",
+  "description": "Generate time-based one-time passwords for two-factor authentication. Create codes on demand for accounts and services, ideal for automation and testing. Simplify secure logins and reduce reliance on external authenticator apps.",
+  "createdAt": "2026-01-16T07:22:20.475Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@duvomike/totp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_totp",
+      "description": "Generates a time-based one-time password (TOTP) using the provided or default secret key"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@equinixnetworkedge/equinix-networkedge-mcp-server",
+  "displayName": "Equinix NetworkEdge MCP Server",
+  "description": "Equinix NetworkEdge MCP Server is an AI-powered interface that enables customers to query their network infrastructure using natural language, providing instant access to real-time information about devices, ACL's, metros, Device Linking Groups, etc...",
+  "createdAt": "2026-01-16T07:39:37.996Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@equinixnetworkedge/equinix-networkedge-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

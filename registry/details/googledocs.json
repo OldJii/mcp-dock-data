@@ -1,0 +1,149 @@
+{
+  "id": "googledocs",
+  "displayName": "Google Docs",
+  "description": "Google Docs is a cloud-based word processor with real-time collaboration, version history, and integration with other Google Workspace apps",
+  "createdAt": "2026-01-16T07:19:19.586Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googledocs"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLEDOCS_COPY_DOCUMENT",
+      "description": "Tool to create a copy of an existing Google Document. Use this to duplicate a document, for example, when using an existing document as a template. The copied document will have a default title (e.g., 'Copy of [original title]') if no new title is provided, and will be placed in the user's root Google Drive folder."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_DOCUMENT",
+      "description": "Creates a new Google Docs document using the provided title as filename and inserts the initial text at the beginning if non-empty, returning the document's ID and metadata (excluding body content)."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_DOCUMENT_MARKDOWN",
+      "description": "Creates a new Google Docs document, optionally initializing it with a title and content provided as Markdown text."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_FOOTER",
+      "description": "Tool to create a new footer in a Google Document. Use when you need to add a footer, optionally specifying its type and the section it applies to."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_FOOTNOTE",
+      "description": "Tool to create a new footnote in a Google Document. Use this when you need to add a footnote at a specific location or at the end of the document body."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_HEADER",
+      "description": "Tool to create a new header in a Google Document. Use this tool when you need to add a header to a document, optionally specifying the section it applies to."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_NAMED_RANGE",
+      "description": "Tool to create a new named range in a Google Document. Use this to assign a name to a specific part of the document for easier reference or programmatic manipulation."
+    },
+    {
+      "name": "GOOGLEDOCS_CREATE_PARAGRAPH_BULLETS",
+      "description": "Tool to add bullets to paragraphs within a specified range in a Google Document. Use when you need to format a list or a set of paragraphs as bullet points."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_CONTENT_RANGE",
+      "description": "Tool to delete a range of content from a Google Document. Use when you need to remove a specific portion of text or other structural elements within a document."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_FOOTER",
+      "description": "Tool to delete a footer from a Google Document. Use when you need to remove a footer from a specific section or the default footer."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_HEADER",
+      "description": "Deletes the header from the specified section or the default header if no section is specified. Use this tool to remove a header from a Google Document."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_NAMED_RANGE",
+      "description": "Tool to delete a named range from a Google Document. Use when you need to remove a previously defined named range by its ID or name."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_PARAGRAPH_BULLETS",
+      "description": "Tool to remove bullets from paragraphs within a specified range in a Google Document. Use when you need to clear bullet formatting from a section of a document."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_TABLE",
+      "description": "Tool to delete an entire table from a Google Document. Use when you have the document ID and the specific start and end index of the table element to be removed. The table's range can be found by inspecting the document's content structure."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_TABLE_COLUMN",
+      "description": "Tool to delete a column from a table in a Google Document. Use this tool when you need to remove a specific column from an existing table within a document."
+    },
+    {
+      "name": "GOOGLEDOCS_DELETE_TABLE_ROW",
+      "description": "Tool to delete a row from a table in a Google Document. Use when you need to remove a specific row from an existing table."
+    },
+    {
+      "name": "GOOGLEDOCS_GET_CHARTS_FROM_SPREADSHEET",
+      "description": "Tool to retrieve a list of all charts from a specified Google Sheets spreadsheet. Use when you need to get chart IDs and their specifications for embedding or referencing elsewhere, such as in Google Docs."
+    },
+    {
+      "name": "GOOGLEDOCS_GET_DOCUMENT_BY_ID",
+      "description": "Retrieves an existing Google Document by its ID; will error if the document is not found."
+    },
+    {
+      "name": "GOOGLEDOCS_INSERT_INLINE_IMAGE",
+      "description": "Tool to insert an image from a given URI at a specified location in a Google Document as an inline image. Use when you need to add an image to a document programmatically."
+    },
+    {
+      "name": "GOOGLEDOCS_INSERT_PAGE_BREAK",
+      "description": "Tool to insert a page break into a Google Document. Use when you need to start new content on a fresh page, such as at the end of a chapter or section."
+    },
+    {
+      "name": "GOOGLEDOCS_INSERT_TABLE_ACTION",
+      "description": "Tool to insert a table into a Google Document. Use when you need to add a new table at a specific location or at the end of a segment (like document body, header, or footer) in a document."
+    },
+    {
+      "name": "GOOGLEDOCS_INSERT_TABLE_COLUMN",
+      "description": "Tool to insert a new column into a table in a Google Document. Use this tool when you need to add a column to an existing table at a specific location."
+    },
+    {
+      "name": "GOOGLEDOCS_INSERT_TEXT_ACTION",
+      "description": "Tool to insert a string of text at a specified location within a Google Document. Use when you need to add new text content to an existing document."
+    },
+    {
+      "name": "GOOGLEDOCS_LIST_SPREADSHEET_CHARTS_ACTION",
+      "description": "Tool to retrieve a list of charts with their IDs and metadata from a Google Sheets spreadsheet. Use to identify charts available for embedding into Google Docs."
+    },
+    {
+      "name": "GOOGLEDOCS_REPLACE_ALL_TEXT",
+      "description": "Tool to replace all occurrences of a specified text string with another text string throughout a Google Document. Use when you need to perform a global find and replace operation within a document."
+    },
+    {
+      "name": "GOOGLEDOCS_REPLACE_IMAGE",
+      "description": "Tool to replace a specific image in a document with a new image from a URI. Use when you need to update an existing image within a Google Doc."
+    },
+    {
+      "name": "GOOGLEDOCS_SEARCH_DOCUMENTS",
+      "description": "Search for Google Documents using various filters including name, content, date ranges, and more."
+    },
+    {
+      "name": "GOOGLEDOCS_UNMERGE_TABLE_CELLS",
+      "description": "Tool to unmerge previously merged cells in a table. Use this when you need to revert merged cells in a Google Document table back to their individual cell states."
+    },
+    {
+      "name": "GOOGLEDOCS_UPDATE_DOCUMENT_MARKDOWN",
+      "description": "Replaces the entire content of an existing Google Docs document with new Markdown text; requires edit permissions for the document."
+    },
+    {
+      "name": "GOOGLEDOCS_UPDATE_DOCUMENT_SECTION_MARKDOWN",
+      "description": "Tool to insert or replace a section of a Google Docs document with Markdown content. Use when you need to update only a section of a document by specifying start and optional end indices. Supports full Markdown formatting."
+    },
+    {
+      "name": "GOOGLEDOCS_UPDATE_DOCUMENT_STYLE",
+      "description": "Tool to update the overall document style, such as page size, margins, and default text direction. Use when you need to modify the global style settings of a Google Document."
+    },
+    {
+      "name": "GOOGLEDOCS_UPDATE_EXISTING_DOCUMENT",
+      "description": "Applies programmatic edits, such as text insertion, deletion, or formatting, to a specified Google Doc using the `batchUpdate` API method."
+    },
+    {
+      "name": "GOOGLEDOCS_UPDATE_TABLE_ROW_STYLE",
+      "description": "Tool to update the style of a table row in a Google Document. Use when you need to modify the appearance of specific rows within a table, such as setting minimum row height or marking rows as headers."
+    }
+  ]
+}

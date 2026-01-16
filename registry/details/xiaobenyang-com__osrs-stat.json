@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/osrs-stat",
+  "displayName": "osrs-stat",
+  "description": "Track any player's skills, activities, and boss kills. Explore leaderboards for skills, bosses, minigames, and clue scrolls. Compare multiple players side by side to settle bragging rights or plan progression.",
+  "createdAt": "2026-01-16T07:26:09.552Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/osrs-stat"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_player_stats",
+      "description": "Retrieve comprehensive statistics for a specific OSRS player including skills, activities, and boss kill counts"
+    },
+    {
+      "name": "get_skill_leaderboard",
+      "description": "Get top players for a specific skill"
+    },
+    {
+      "name": "get_activity_leaderboard",
+      "description": "Get top players for activities (bosses, minigames, clues)"
+    },
+    {
+      "name": "compare_players",
+      "description": "Compare statistics between multiple OSRS players"
+    }
+  ]
+}

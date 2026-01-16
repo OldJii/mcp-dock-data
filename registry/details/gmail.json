@@ -1,0 +1,97 @@
+{
+  "id": "gmail",
+  "displayName": "Gmail",
+  "description": "Manage Gmail end-to-end: send, draft, reply, forward, and bulk-modify or delete messages and threads. Organize your inbox with labels, archiving, and trashing, and retrieve messages, attachments, and profile details on demand. Access and search contacts to autofill recipients and keep people data in sync.",
+  "createdAt": "2026-01-16T07:19:05.698Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/gmail"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GMAIL_ADD_LABEL_TO_EMAIL",
+      "description": "Adds and/or removes specified gmail labels for a message; ensure `message id` and all `label ids` are valid (use 'listlabels' for custom label ids)."
+    },
+    {
+      "name": "GMAIL_CREATE_EMAIL_DRAFT",
+      "description": "Creates a gmail email draft, supporting to/cc/bcc, subject, plain/html body (ensure `is html=true` for html), attachments, and threading."
+    },
+    {
+      "name": "GMAIL_CREATE_LABEL",
+      "description": "Creates a new label with a unique name in the specified user's gmail account."
+    },
+    {
+      "name": "GMAIL_DELETE_DRAFT",
+      "description": "Permanently deletes a specific gmail draft using its id; ensure the draft exists and the user has necessary permissions for the given `user id`."
+    },
+    {
+      "name": "GMAIL_DELETE_MESSAGE",
+      "description": "Permanently deletes a specific email message by its id from a gmail mailbox; for `user id`, use 'me' for the authenticated user or an email address to which the authenticated user has delegated access."
+    },
+    {
+      "name": "GMAIL_FETCH_EMAILS",
+      "description": "Fetches a list of email messages from a gmail account, supporting filtering, pagination, and optional full content retrieval."
+    },
+    {
+      "name": "GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID",
+      "description": "Fetches a specific email message by its id, provided the `message id` exists and is accessible to the authenticated `user id`."
+    },
+    {
+      "name": "GMAIL_FETCH_MESSAGE_BY_THREAD_ID",
+      "description": "Retrieves messages from a gmail thread using its `thread id`, where the thread must be accessible by the specified `user id`."
+    },
+    {
+      "name": "GMAIL_GET_ATTACHMENT",
+      "description": "Retrieves a specific attachment by id from a message in a user's gmail mailbox, requiring valid message and attachment ids."
+    },
+    {
+      "name": "GMAIL_GET_CONTACTS",
+      "description": "Fetches contacts (connections) for the authenticated google account, allowing selection of specific data fields and pagination."
+    },
+    {
+      "name": "GMAIL_GET_PEOPLE",
+      "description": "Retrieves either a specific person's details (using `resource name`) or lists 'other contacts' (if `other contacts` is true), with `person fields` specifying the data to return."
+    },
+    {
+      "name": "GMAIL_GET_PROFILE",
+      "description": "Retrieves key gmail profile information (email address, message/thread totals, history id) for a user."
+    },
+    {
+      "name": "GMAIL_LIST_DRAFTS",
+      "description": "Retrieves a paginated list of email drafts from a user's gmail account. use verbose=true to get full draft details including subject, body, sender, and timestamp."
+    },
+    {
+      "name": "GMAIL_LIST_LABELS",
+      "description": "Retrieves a list of all system and user-created labels for the specified gmail account."
+    },
+    {
+      "name": "GMAIL_LIST_THREADS",
+      "description": "Retrieves a list of email threads from a gmail account, identified by `user id` (email address or 'me'), supporting filtering and pagination."
+    },
+    {
+      "name": "GMAIL_MODIFY_THREAD_LABELS",
+      "description": "Adds or removes specified existing label ids from a gmail thread, affecting all its messages; ensure the thread id is valid."
+    },
+    {
+      "name": "GMAIL_MOVE_TO_TRASH",
+      "description": "Moves an existing, non-deleted email message to the trash for the specified user."
+    },
+    {
+      "name": "GMAIL_PATCH_LABEL",
+      "description": "Patches the specified label."
+    },
+    {
+      "name": "GMAIL_REMOVE_LABEL",
+      "description": "Permanently deletes a specific, existing user-created gmail label by its id for a user; cannot delete system labels."
+    },
+    {
+      "name": "GMAIL_REPLY_TO_THREAD",
+      "description": "Sends a reply within a specific gmail thread using the original thread's subject, requiring a valid `thread id` and correctly formatted email addresses. supports attachments via the `attachment` parameter with valid `s3key`, `mimetype`, and `name`."
+    }
+  ]
+}

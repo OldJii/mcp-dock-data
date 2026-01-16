@@ -1,0 +1,33 @@
+{
+  "id": "@shoumikdc/shoumiktest",
+  "displayName": "Say Hello",
+  "description": "Create personalized greetings for anyone by name. Switch on Pirate Mode for fun, swashbuckling salutations. Explore the origin of 'Hello, World' for inspiration.",
+  "createdAt": "2026-01-16T07:32:20.041Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shoumikdc/shoumiktest"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

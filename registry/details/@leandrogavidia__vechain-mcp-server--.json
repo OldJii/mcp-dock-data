@@ -1,0 +1,57 @@
+{
+  "id": "@leandrogavidia/vechain-mcp-server--",
+  "displayName": "VeChain Dev Suite",
+  "description": "Query VeChain accounts, transactions, blocks, and fees, and search official docs for answers. Generate wallets and sign messages, certificates, and transactions to streamline testing and integration. Accelerate development with reliable on-chain data and documentation in one place.",
+  "createdAt": "2026-01-16T07:26:47.977Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@leandrogavidia/vechain-mcp-server--"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "searchDocumentation",
+      "description": "Search across the documentation to find relevant information, code examples, API references, and guides. Use this tool when you need to answer questions about VeChain Docs, find specific documentation, understand how features work, or locate implementation details. The search returns contextual content with titles and direct links to the documentation pages."
+    },
+    {
+      "name": "getAccount",
+      "description": "Get information about a VeChain account/contract by address. Optionally specify a revision (best | justified | finalized | block number | block ID)."
+    },
+    {
+      "name": "getTransaction",
+      "description": "Get a VeChain transaction by its ID. Optionally include pending txs (meta may be null), return raw hex, or pin to a specific head block."
+    },
+    {
+      "name": "getBlock",
+      "description": "Retrieve information about a VeChain block by its revision (block ID, number, or keywords: best | justified | finalized)."
+    },
+    {
+      "name": "getPriorityFee",
+      "description": "Fetch a suggested priority fee for including a transaction in the next blocks from VeChain mainnet."
+    },
+    {
+      "name": "createWallet",
+      "description": "Generate a BIP-39 mnemonic (12/15/18/21/24 words) and derive the account-level secp256k1 key at path m/44'/818'/0'/0 (VET coin type = 818). By default, the private key is REDACTED in the response. Set includeSecret=true to include it (handle with care)."
+    },
+    {
+      "name": "signCertificate",
+      "description": "Create and sign a canonical certificate. Includes purpose, payload, domain, timestamp, nonce, and expiresAt."
+    },
+    {
+      "name": "signMessage",
+      "description": "Sign a message"
+    },
+    {
+      "name": "signTransaction",
+      "description": "Decode and sign a raw transaction."
+    }
+  ]
+}

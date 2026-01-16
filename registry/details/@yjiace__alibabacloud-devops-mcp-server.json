@@ -1,0 +1,549 @@
+{
+  "id": "@yjiace/alibabacloud-devops-mcp-server",
+  "displayName": "alibabacloud-devops-mcp-server",
+  "description": "Manage repositories, projects, work items, and pipelines on Alibaba Cloud Yunxiao. Automate code reviews, create branches and merge requests, and run or monitor CI/CD pipelines and deployments. Streamline collaboration by reducing repetitive tasks across code, packages, and application delivery.",
+  "createdAt": "2026-01-16T07:24:45.069Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yjiace/alibabacloud-devops-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "yunxiaoAccessToken"
+      ],
+      "properties": {
+        "yunxiaoAccessToken": {
+          "type": "string",
+          "description": "Alibaba Cloud Yunxiao personal access token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_organization_info",
+      "description": "Get information about the current user and organization based on the token. In the absence of an explicitly specified organization ID, this result will take precedence."
+    },
+    {
+      "name": "get_user_organizations",
+      "description": "Get the list of organizations the current user belongs to"
+    },
+    {
+      "name": "get_current_user",
+      "description": "Get information about the current user based on the token. In the absence of an explicitly specified user ID, this result will take precedence."
+    },
+    {
+      "name": "create_branch",
+      "description": "[Code Management] Create a new branch in a Codeup repository"
+    },
+    {
+      "name": "get_branch",
+      "description": "[Code Management] Get information about a branch in a Codeup repository"
+    },
+    {
+      "name": "delete_branch",
+      "description": "[Code Management] Delete a branch from a Codeup repository"
+    },
+    {
+      "name": "list_branches",
+      "description": "[Code Management] List branches in a Codeup repository"
+    },
+    {
+      "name": "get_file_blobs",
+      "description": "[Code Management] Get file content from a Codeup repository"
+    },
+    {
+      "name": "create_file",
+      "description": "[Code Management] Create a new file in a Codeup repository"
+    },
+    {
+      "name": "update_file",
+      "description": "[Code Management] Update an existing file in a Codeup repository"
+    },
+    {
+      "name": "delete_file",
+      "description": "[Code Management] Delete a file from a Codeup repository"
+    },
+    {
+      "name": "list_files",
+      "description": "[Code Management] List file tree from a Codeup repository"
+    },
+    {
+      "name": "compare",
+      "description": "[Code Management] Query code to compare content"
+    },
+    {
+      "name": "get_repository",
+      "description": "[Code Management] Get information about a Codeup repository"
+    },
+    {
+      "name": "list_repositories",
+      "description": "[Code Management] Get the CodeUp Repository List.\n\nA Repository serves as a unit for managing source code and is distinct from a Project.\n\nUse Case:\n\nView my repositories"
+    },
+    {
+      "name": "get_change_request",
+      "description": "[Code Management] Get information about a change request"
+    },
+    {
+      "name": "list_change_requests",
+      "description": "[Code Management] List change requests"
+    },
+    {
+      "name": "create_change_request",
+      "description": "[Code Management] Create a new change request"
+    },
+    {
+      "name": "create_change_request_comment",
+      "description": "[Code Management] Create a comment on a change request"
+    },
+    {
+      "name": "list_change_request_comments",
+      "description": "[Code Management] List comments on a change request"
+    },
+    {
+      "name": "list_change_request_patch_sets",
+      "description": "[Code Management] List patch sets for a change request"
+    },
+    {
+      "name": "list_commits",
+      "description": "[Code Management] List commits in a Codeup repository"
+    },
+    {
+      "name": "get_commit",
+      "description": "[Code Management] Get information about a commit"
+    },
+    {
+      "name": "create_commit_comment",
+      "description": "[Code Management] Create a comment on a commit"
+    },
+    {
+      "name": "list_organization_departments",
+      "description": "Get the list of departments in an organization"
+    },
+    {
+      "name": "get_organization_department_info",
+      "description": "Get information about a department in an organization"
+    },
+    {
+      "name": "get_organization_department_ancestors",
+      "description": "Get the ancestors of a department in an organization"
+    },
+    {
+      "name": "list_organization_members",
+      "description": "list user members in an organization"
+    },
+    {
+      "name": "get_organization_member_info",
+      "description": "Get information about a member in an organization"
+    },
+    {
+      "name": "get_organization_member_info_by_user_id",
+      "description": "Get information about a member in an organization by user ID"
+    },
+    {
+      "name": "search_organization_members",
+      "description": "[Organization Management] Search for organization members"
+    },
+    {
+      "name": "list_organization_roles",
+      "description": "[Organization Management] List organization roles"
+    },
+    {
+      "name": "get_organization_role",
+      "description": "[Organization Management] Get information about an organization role"
+    },
+    {
+      "name": "get_project",
+      "description": "[Project Management] Get information about a Yunxiao project"
+    },
+    {
+      "name": "search_projects",
+      "description": "[Project Management] Search for Yunxiao Project List. A Project is a project management unit that includes work items and sprints, and it is different from a code repository (Repository).\n\nUse Cases:\n\nQuery projects I am involved in\nQuery projects I have created"
+    },
+    {
+      "name": "get_sprint",
+      "description": "[Project Management] Get information about a sprint"
+    },
+    {
+      "name": "list_sprints",
+      "description": "[Project Management] List sprints in a project"
+    },
+    {
+      "name": "create_sprint",
+      "description": "[Project Management] Create a new sprint"
+    },
+    {
+      "name": "update_sprint",
+      "description": "[Project Management] Update an existing sprint"
+    },
+    {
+      "name": "get_work_item",
+      "description": "[Project Management] Get information about a work item"
+    },
+    {
+      "name": "create_work_item",
+      "description": "[Project Management] Create a work item"
+    },
+    {
+      "name": "search_workitems",
+      "description": "[Project Management] Search work items with various filter conditions"
+    },
+    {
+      "name": "get_work_item_types",
+      "description": "[Project Management] Get the list of work item types for a project"
+    },
+    {
+      "name": "update_work_item",
+      "description": "[Project Management] Update a work item"
+    },
+    {
+      "name": "list_all_work_item_types",
+      "description": "[Project Management] List all work item types in an organization"
+    },
+    {
+      "name": "list_work_item_types",
+      "description": "[Project Management] List work item types in a project space"
+    },
+    {
+      "name": "get_work_item_type",
+      "description": "[Project Management] Get details of a specific work item type"
+    },
+    {
+      "name": "list_work_item_relation_work_item_types",
+      "description": "[Project Management] List work item types that can be related to a specific work item"
+    },
+    {
+      "name": "get_work_item_type_field_config",
+      "description": "[Project Management] Get field configuration for a specific work item type"
+    },
+    {
+      "name": "get_work_item_workflow",
+      "description": "[Project Management] Get workflow information for a specific work item type"
+    },
+    {
+      "name": "list_work_item_comments",
+      "description": "[Project Management] List comments for a specific work item"
+    },
+    {
+      "name": "create_work_item_comment",
+      "description": "[Project Management] Create a comment for a specific work item"
+    },
+    {
+      "name": "list_current_user_effort_records",
+      "description": "[Project Management] 获取用户的实际工时明细，结束时间和开始时间的间隔不能大于6个月"
+    },
+    {
+      "name": "list_effort_records",
+      "description": "[Project Management] 获取实际工时明细"
+    },
+    {
+      "name": "create_effort_record",
+      "description": "[Project Management] 登记实际工时"
+    },
+    {
+      "name": "list_estimated_efforts",
+      "description": "[Project Management] 获取预计工时明细"
+    },
+    {
+      "name": "create_estimated_effort",
+      "description": "[Project Management] 登记预计工时"
+    },
+    {
+      "name": "update_effort_record",
+      "description": "[Project Management] 更新登记实际工时"
+    },
+    {
+      "name": "update_estimated_effort",
+      "description": "[Project Management] 更新登记预计工时"
+    },
+    {
+      "name": "get_pipeline",
+      "description": "[Pipeline Management] Get details of a specific pipeline in an organization"
+    },
+    {
+      "name": "list_pipelines",
+      "description": "[Pipeline Management] Get a list of pipelines in an organization with filtering options"
+    },
+    {
+      "name": "generate_pipeline_yaml",
+      "description": "[Pipeline Management] Generate only the YAML configuration for a pipeline without creating it.\n\n**📋 Use Cases:**\n- Preview YAML before creating pipeline\n- Generate YAML for manual deployment\n- Debug pipeline configuration\n\n**📖 Recommended Workflow:**\n1. 🎯 Parse user description for explicit parameters\n2. 🔍 If missing context, prefer IDE detection (terminal + file reading) over API calls\n3. 🚀 Call this tool with collected parameters\n\n**💡 Parameter Collection Strategy:**\n- For QUICK pipeline creation: Use IDE detection (git config, file reading)\n- For PRECISE parameter selection: Consider list_repositories, list_service_connections when needed\n- Balance efficiency vs. accuracy based on user intent\n\n**⚡ Built-in capabilities:** Handles default service connections internally, auto-extracts project name from repo URL"
+    },
+    {
+      "name": "create_pipeline_from_description",
+      "description": "[Pipeline Management] Create a pipeline using structured parameters extracted from user descriptions and environment context.\n\n**🔧 Built-in Capabilities:**\n- ✅ Automatically retrieves default service connection IDs when not specified\n- ✅ Handles repository and service connection logic internally\n- ✅ Auto-extracts project name from repository URL (git@host:org/repo.git → repo)\n- ✅ Supports both IDE detection and explicit parameter specification\n\n**📖 Recommended Workflow:**\n1. 🎯 PARSE user description for explicit parameters\n2. 🔍 DETECT missing info from IDE environment FIRST:\n   - Run `git config --get remote.origin.url` → repoUrl\n   - Run `git branch --show-current` → branch\n   - Auto-extract serviceName from repoUrl\n   - Check project files for tech stack:\n     * pom.xml → buildLanguage='java', buildTool='maven'\n     * build.gradle → buildLanguage='java', buildTool='gradle'\n     * package.json + package-lock.json → buildLanguage='nodejs', buildTool='npm'\n     * package.json + yarn.lock → buildLanguage='nodejs', buildTool='yarn'\n     * requirements.txt → buildLanguage='python', buildTool='pip'\n     * go.mod → buildLanguage='go', buildTool='go'\n     * *.csproj → buildLanguage='dotnet', buildTool='dotnet'\n3. 🚀 CALL this tool with collected parameters\n\n**⚠️ Important Guidelines:**\n- DO NOT call list_repositories unless user explicitly asks to choose from available repositories\n- DO NOT call list_service_connections unless user explicitly asks to choose from available connections\n- ALWAYS try IDE detection first before making any API calls\n- If IDE detection fails, THEN consider API calls as fallback\n\n**🎯 Parameter Priority:**\n1. 👤 USER EXPLICIT (highest) - buildLanguage, buildTool, versions, deployTarget\n2. 🔍 IDE DETECTION (preferred) - repoUrl, branch, serviceName, tech stack\n3. 🤖 TOOL DEFAULTS (automatic) - serviceConnectionId, organizationId\n\n**🔍 IDE Detection Rules (MUST TRY FIRST):**\n- 📂 Repository: `git config --get remote.origin.url` → repoUrl\n- 🌿 Branch: `git branch --show-current` → branch\n- 🏷️ Service Name: Auto-extracted from repoUrl (git@host:org/repo.git → repo)\n- ☕ Java Maven: pom.xml exists → buildLanguage='java', buildTool='maven'\n- 🏗️ Java Gradle: build.gradle exists → buildLanguage='java', buildTool='gradle'\n- 🟢 Node npm: package.json + package-lock.json → buildLanguage='nodejs', buildTool='npm'\n- 🧶 Node yarn: package.json + yarn.lock → buildLanguage='nodejs', buildTool='yarn'\n- 🐍 Python: requirements.txt → buildLanguage='python', buildTool='pip'\n- 🐹 Go: go.mod → buildLanguage='go', buildTool='go'\n- 💙 .NET: *.csproj → buildLanguage='dotnet', buildTool='dotnet'\n\n**📝 Version Detection (from project files):**\n- ☕ JDK: Read pom.xml <maven.compiler.source> → jdkVersion\n- 🟢 Node: Read package.json engines.node → nodeVersion\n- 🐍 Python: Read .python-version, pyproject.toml → pythonVersion\n- 🐹 Go: Read go.mod go directive → goVersion\n\n**🎯 Deployment Parsing:**\n- '部署到主机/VM/虚拟机' → deployTarget='vm'\n- '部署到Kubernetes/K8s' → deployTarget='k8s'\n- '只构建/构建制品' → deployTarget='none'\n\n**🔗 Service Connection Strategy (3 scenarios):**\n1. **User specifies ID explicitly** (e.g., '使用服务连接ID abc123')\n   → ✅ Pass serviceConnectionId=abc123 directly, NO list_service_connections call needed\n2. **User doesn't specify any ID** (most common case)\n   → ✅ Pass serviceConnectionId=null, tool will auto-retrieve default ID internally\n3. **User wants to choose from available options** (e.g., '显示可用的服务连接让我选择')\n   → 🔍 Call list_service_connections first, then let user choose, then create pipeline\n\n**🤔 When to Use Other Tools:**\n- User asks to \"select from available repositories\" → use list_repositories first\n- User wants to \"choose from service connections\" → use list_service_connections first\n- User wants to see options before deciding → gather info first, then create\n- For quick creation with current repo → directly use IDE detection\n\n**✅ Required:** organizationId, name, buildLanguage, buildTool"
+    },
+    {
+      "name": "smart_list_pipelines",
+      "description": "[Pipeline Management] Intelligently search pipelines with natural language time references (e.g., 'today', 'this week')"
+    },
+    {
+      "name": "create_pipeline_run",
+      "description": "[Pipeline Management] Run a pipeline with optional parameters"
+    },
+    {
+      "name": "get_latest_pipeline_run",
+      "description": "[Pipeline Management] Get information about the latest pipeline run"
+    },
+    {
+      "name": "get_pipeline_run",
+      "description": "[Pipeline Management] Get details of a specific pipeline run instance"
+    },
+    {
+      "name": "list_pipeline_runs",
+      "description": "[Pipeline Management] Get a list of pipeline run instances with filtering options"
+    },
+    {
+      "name": "list_pipeline_jobs_by_category",
+      "description": "[Pipeline Management] Get pipeline execution tasks by category. Currently only supports DEPLOY category."
+    },
+    {
+      "name": "list_pipeline_job_historys",
+      "description": "[Pipeline Management] Get the execution history of a pipeline task. Retrieve all execution records for a specific task in a pipeline."
+    },
+    {
+      "name": "execute_pipeline_job_run",
+      "description": "[Pipeline Management] Manually run a pipeline task. Start a specific job in a pipeline run instance."
+    },
+    {
+      "name": "get_pipeline_job_run_log",
+      "description": "[Pipeline Management] Get the execution logs of a pipeline job. Retrieve the log content for a specific job in a pipeline run."
+    },
+    {
+      "name": "update_pipeline",
+      "description": "[Pipeline Management] Update an existing pipeline in Yunxiao by pipelineId. Use this to update pipeline YAML, stages, jobs, etc."
+    },
+    {
+      "name": "list_service_connections",
+      "description": "[Service Connection Management] List service connections in an organization with filtering options"
+    },
+    {
+      "name": "delete_resource_member",
+      "description": "[Resource Member Management] Delete a resource member"
+    },
+    {
+      "name": "list_resource_members",
+      "description": "[Resource Member Management] Get a list of resource members"
+    },
+    {
+      "name": "update_resource_member",
+      "description": "[Resource Member Management] Update a resource member"
+    },
+    {
+      "name": "create_resource_member",
+      "description": "[Resource Member Management] Create a resource member"
+    },
+    {
+      "name": "update_resource_owner",
+      "description": "[Resource Member Management] Transfer resource owner"
+    },
+    {
+      "name": "stop_vm_deploy_order",
+      "description": "[VM Deploy Order Management] Stop VM deploy order"
+    },
+    {
+      "name": "skip_vm_deploy_machine",
+      "description": "[VM Deploy Order Management] Skip VM deploy machine"
+    },
+    {
+      "name": "retry_vm_deploy_machine",
+      "description": "[VM Deploy Order Management] Retry VM deploy machine"
+    },
+    {
+      "name": "resume_vm_deploy_order",
+      "description": "[VM Deploy Order Management] Resume VM deploy order"
+    },
+    {
+      "name": "get_vm_deploy_order",
+      "description": "[VM Deploy Order Management] Get VM deploy order details"
+    },
+    {
+      "name": "get_vm_deploy_machine_log",
+      "description": "[VM Deploy Order Management] Get VM deploy machine log"
+    },
+    {
+      "name": "list_package_repositories",
+      "description": "[Packages Management] List package repositories in an organization with filtering options"
+    },
+    {
+      "name": "list_artifacts",
+      "description": "[Packages Management] List artifacts in a package repository with filtering options"
+    },
+    {
+      "name": "get_artifact",
+      "description": "[Packages Management] Get information about a single artifact in a package repository"
+    },
+    {
+      "name": "list_applications",
+      "description": "[application delivery] List applications in an organization with pagination"
+    },
+    {
+      "name": "get_application",
+      "description": "[application delivery] Get application details by name"
+    },
+    {
+      "name": "create_application",
+      "description": "[application delivery] Create a new application"
+    },
+    {
+      "name": "update_application",
+      "description": "[application delivery] Update an existing application"
+    },
+    {
+      "name": "create_app_tag",
+      "description": "[application delivery] Create an application tag"
+    },
+    {
+      "name": "update_app_tag",
+      "description": "[application delivery] Update an application tag"
+    },
+    {
+      "name": "search_app_tags",
+      "description": "[application delivery] Search application tags"
+    },
+    {
+      "name": "update_app_tag_bind",
+      "description": "[application delivery] Update application tag bindings"
+    },
+    {
+      "name": "search_app_templates",
+      "description": "[application delivery] Search application templates"
+    },
+    {
+      "name": "create_global_var",
+      "description": "[application delivery] Create a global variable group"
+    },
+    {
+      "name": "get_global_var",
+      "description": "[application delivery] Get a global variable group"
+    },
+    {
+      "name": "update_global_var",
+      "description": "[application delivery] Update a global variable group"
+    },
+    {
+      "name": "list_global_vars",
+      "description": "[application delivery] List global variable groups"
+    },
+    {
+      "name": "get_env_variable_groups",
+      "description": "[application delivery] Get variable groups for an environment"
+    },
+    {
+      "name": "create_variable_group",
+      "description": "[application delivery] Create a variable group"
+    },
+    {
+      "name": "delete_variable_group",
+      "description": "[application delivery] Delete a variable group"
+    },
+    {
+      "name": "get_variable_group",
+      "description": "[application delivery] Get a variable group"
+    },
+    {
+      "name": "update_variable_group",
+      "description": "[application delivery] Update a variable group"
+    },
+    {
+      "name": "get_app_variable_groups",
+      "description": "[application delivery] Get variable groups for an application"
+    },
+    {
+      "name": "get_app_variable_groups_revision",
+      "description": "[application delivery] Get the revision of variable groups for an application"
+    },
+    {
+      "name": "get_latest_orchestration",
+      "description": "[application delivery] Get the latest orchestration for an environment"
+    },
+    {
+      "name": "list_app_orchestration",
+      "description": "[application delivery] List application orchestrations"
+    },
+    {
+      "name": "create_app_orchestration",
+      "description": "[application delivery] Create an application orchestration"
+    },
+    {
+      "name": "delete_app_orchestration",
+      "description": "[application delivery] Delete an application orchestration"
+    },
+    {
+      "name": "get_app_orchestration",
+      "description": "[application delivery] Get an application orchestration"
+    },
+    {
+      "name": "update_app_orchestration",
+      "description": "[application delivery] Update an application orchestration"
+    },
+    {
+      "name": "create_appstack_change_request",
+      "description": "[application delivery] Create a change request"
+    },
+    {
+      "name": "get_change_request_audit_items",
+      "description": "[application delivery] Get audit items for a change request"
+    },
+    {
+      "name": "list_change_request_executions",
+      "description": "[application delivery] List change request executions"
+    },
+    {
+      "name": "list_change_request_work_items",
+      "description": "[application delivery] List work items for a change request"
+    },
+    {
+      "name": "cancel_change_request",
+      "description": "[application delivery] Cancel a change request"
+    },
+    {
+      "name": "close_change_request",
+      "description": "[application delivery] Close a change request"
+    },
+    {
+      "name": "get_machine_deploy_log",
+      "description": "[application delivery] Get machine deployment log"
+    },
+    {
+      "name": "add_host_list_to_host_group",
+      "description": "[application delivery] Add host list to host group"
+    },
+    {
+      "name": "add_host_list_to_deploy_group",
+      "description": "[application delivery] Add host list to deploy group"
+    },
+    {
+      "name": "create_change_order",
+      "description": "[application delivery] 创建部署单"
+    },
+    {
+      "name": "list_change_order_versions",
+      "description": "[application delivery] 查看部署单版本列表"
+    },
+    {
+      "name": "get_change_order",
+      "description": "[application delivery] 读取部署单使用的物料和工单状态"
+    },
+    {
+      "name": "list_change_order_job_logs",
+      "description": "[application delivery] 查询环境部署单日志"
+    },
+    {
+      "name": "find_task_operation_log",
+      "description": "[application delivery] 查询部署任务执行日志，其中通常包含下游部署引擎的调度细节信息"
+    },
+    {
+      "name": "execute_job_action",
+      "description": "[application delivery] 操作环境部署单"
+    },
+    {
+      "name": "list_change_orders_by_origin",
+      "description": "[application delivery] 根据创建来源查询部署单"
+    }
+  ]
+}

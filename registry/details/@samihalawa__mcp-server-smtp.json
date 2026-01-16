@@ -1,0 +1,82 @@
+{
+  "id": "@samihalawa/mcp-server-smtp",
+  "displayName": "SMTP Email Server",
+  "description": "Send and manage emails effortlessly with our server. Utilize multiple SMTP configurations, create reusable email templates, and send bulk emails with ease. Enhance your communication capabilities with rich HTML support and comprehensive logging. ",
+  "createdAt": "2026-01-16T07:24:37.063Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/mcp-server-smtp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "port"
+      ],
+      "properties": {
+        "port": {
+          "type": "number",
+          "description": "Port number for the MCP server to run on",
+          "default": 8082
+        },
+        "smtp": {
+          "type": "object",
+          "description": ""
+        },
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug mode for additional logging",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "send-email",
+      "description": "Send an email to one or more recipients"
+    },
+    {
+      "name": "send-bulk-emails",
+      "description": "Send emails in bulk to multiple recipients with rate limiting"
+    },
+    {
+      "name": "get-smtp-configs",
+      "description": "Get all SMTP configurations"
+    },
+    {
+      "name": "add-smtp-config",
+      "description": "Add a new SMTP configuration"
+    },
+    {
+      "name": "update-smtp-config",
+      "description": "Update an existing SMTP configuration"
+    },
+    {
+      "name": "delete-smtp-config",
+      "description": "Delete an SMTP configuration"
+    },
+    {
+      "name": "get-email-templates",
+      "description": "Get all email templates"
+    },
+    {
+      "name": "add-email-template",
+      "description": "Add a new email template"
+    },
+    {
+      "name": "update-email-template",
+      "description": "Update an existing email template"
+    },
+    {
+      "name": "delete-email-template",
+      "description": "Delete an email template"
+    },
+    {
+      "name": "get-email-logs",
+      "description": "Get logs of all email sending activity"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "@luizzzvictor/mcp-comexstat",
+  "displayName": "Comexstat Data Server (Brazilian foreign trade statistics)",
+  "description": "Provide direct access to Brazilian foreign trade statistics through a comprehensive MCP server. Query detailed export and import data, municipal statistics, historical records, and auxiliary tables with ease. Empower AI models to interact seamlessly with up-to-date trade data for insightful analysis and decision-making.",
+  "createdAt": "2026-01-16T07:24:46.143Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@luizzzvictor/mcp-comexstat"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getLastUpdate",
+      "description": ""
+    },
+    {
+      "name": "getAvailableYears",
+      "description": ""
+    },
+    {
+      "name": "getAvailableFilters",
+      "description": ""
+    },
+    {
+      "name": "getFilterValues",
+      "description": ""
+    },
+    {
+      "name": "getAvailableFields",
+      "description": ""
+    },
+    {
+      "name": "getAvailableMetrics",
+      "description": ""
+    },
+    {
+      "name": "queryData",
+      "description": ""
+    },
+    {
+      "name": "queryMunicipalitiesData",
+      "description": ""
+    },
+    {
+      "name": "queryHistoricalData",
+      "description": ""
+    },
+    {
+      "name": "getAuxiliaryTable",
+      "description": ""
+    },
+    {
+      "name": "getStates",
+      "description": ""
+    },
+    {
+      "name": "getStateDetails",
+      "description": ""
+    },
+    {
+      "name": "getCities",
+      "description": ""
+    },
+    {
+      "name": "getCityDetails",
+      "description": ""
+    },
+    {
+      "name": "getCountries",
+      "description": ""
+    },
+    {
+      "name": "getCountryDetails",
+      "description": ""
+    },
+    {
+      "name": "getEconomicBlocks",
+      "description": ""
+    },
+    {
+      "name": "getHarmonizedSystem",
+      "description": ""
+    },
+    {
+      "name": "getNBM",
+      "description": ""
+    },
+    {
+      "name": "getNBMDetails",
+      "description": ""
+    }
+  ]
+}

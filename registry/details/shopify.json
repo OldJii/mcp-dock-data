@@ -1,0 +1,161 @@
+{
+  "id": "shopify",
+  "displayName": "Shopify",
+  "description": "Shopify is an e-commerce platform enabling merchants to create online stores, manage products, and process payments with themes, apps, and integrated marketing tools",
+  "createdAt": "2026-01-16T07:19:52.779Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/shopify"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SHOPIFY_ADD_PRODUCT_TO_COLLECTION",
+      "description": "Adds a product to an existing *custom collection*, optionally specifying its `position` if the collection is manually sorted."
+    },
+    {
+      "name": "SHOPIFY_COUNT_PRODUCT_IMAGES",
+      "description": "Retrieves the total count of images for a Shopify product, useful for inventory management or display logic; the provided `product_id` must exist in the store."
+    },
+    {
+      "name": "SHOPIFY_CREATE_CUSTOM_COLLECTION",
+      "description": "Creates a new custom collection in a Shopify store, requiring a unique title for manually curated product groupings (e.g., 'New Arrivals', 'Seasonal Specials')."
+    },
+    {
+      "name": "SHOPIFY_CREATE_CUSTOMER",
+      "description": "Tool to create a new customer in Shopify. Use when you need to add a new customer record to the store."
+    },
+    {
+      "name": "SHOPIFY_CREATE_ORDER",
+      "description": "Creates a new order in Shopify, typically requiring line items; if `customer_id` is provided, it must correspond to an existing customer."
+    },
+    {
+      "name": "SHOPIFY_CREATE_PRODUCT",
+      "description": "Creates a new product in a Shopify store; a product title is generally required."
+    },
+    {
+      "name": "SHOPIFY_CREATE_PRODUCT_IMAGE",
+      "description": "Tool to create a new product image for a given product. Use when you need to add an image to a product by providing the image source URL or attachment."
+    },
+    {
+      "name": "SHOPIFY_CREATE_PRODUCT_METAFIELD",
+      "description": "Creates a new metafield for a specific Shopify product."
+    },
+    {
+      "name": "SHOPIFY_DELETE_CUSTOM_COLLECTION",
+      "description": "Permanently deletes a custom collection from a Shopify store using its `collection_id`; this action is irreversible and requires a valid, existing `collection_id`."
+    },
+    {
+      "name": "SHOPIFY_DELETE_PRODUCT",
+      "description": "Deletes a specific, existing product from a Shopify store using its unique product ID; this action is irreversible."
+    },
+    {
+      "name": "SHOPIFY_DELETE_PRODUCT_IMAGE",
+      "description": "Deletes a specific image from a product in Shopify, requiring the `product_id` of an existing product and the `image_id` of an image currently associated with that product."
+    },
+    {
+      "name": "SHOPIFY_DELETE_PRODUCT_METAFIELD",
+      "description": "Deletes a specific metafield from a Shopify product using the product ID and metafield ID."
+    },
+    {
+      "name": "SHOPIFY_GET_ALL_CUSTOMERS",
+      "description": "Retrieves customer records from a Shopify store, with options for filtering, selecting specific fields, and paginating through the results."
+    },
+    {
+      "name": "SHOPIFY_GET_COLLECTION_BY_ID",
+      "description": "Retrieves a specific Shopify collection by its `collection_id`, optionally filtering returned data to specified `fields`."
+    },
+    {
+      "name": "SHOPIFY_GET_COLLECTS",
+      "description": "Retrieves a list of collects from a Shopify store, where a collect links a product to a custom collection."
+    },
+    {
+      "name": "SHOPIFY_GET_COLLECTS_COUNT",
+      "description": "Retrieves the total count of collects (product-to-collection associations) in a Shopify store."
+    },
+    {
+      "name": "SHOPIFY_GET_CUSTOM_COLLECTIONS",
+      "description": "Retrieves a list of custom collections from a Shopify store, optionally filtered by IDs, product ID, or handle."
+    },
+    {
+      "name": "SHOPIFY_GET_CUSTOM_COLLECTIONS_COUNT",
+      "description": "Retrieves the total number of custom collections in a Shopify store."
+    },
+    {
+      "name": "SHOPIFY_GET_CUSTOMER",
+      "description": "Retrieves detailed information for a specific customer from a Shopify store, provided their valid and existing `customer_id`."
+    },
+    {
+      "name": "SHOPIFY_GET_CUSTOMER_ORDERS",
+      "description": "Retrieves all orders for a specific, existing customer in Shopify using their unique customer ID."
+    },
+    {
+      "name": "SHOPIFY_GET_ORDER_LIST",
+      "description": "Retrieves a list of orders from Shopify with optional filters and pagination."
+    },
+    {
+      "name": "SHOPIFY_GET_ORDERSBY_ID",
+      "description": "Retrieves a specific Shopify order by its unique ID, which must correspond to an existing order."
+    },
+    {
+      "name": "SHOPIFY_GET_ORDERS_WITH_FILTERS",
+      "description": "Retrieves Shopify orders filtered by dates and other filters. Uses server-side filtering."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCT",
+      "description": "Retrieves details for an existing Shopify product using its unique product ID."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCT_IMAGE",
+      "description": "Retrieves detailed information for a specific product image, identified by its ID and its associated product ID, from a Shopify store."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCT_IMAGES",
+      "description": "Retrieves all images for a Shopify product, specified by its `product_id` which must correspond to an existing product."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCT_METAFIELD",
+      "description": "Retrieves a specific metafield for a Shopify product using the product ID and metafield ID."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCT_METAFIELDS",
+      "description": "Retrieves all metafields for a specific Shopify product. Metafields can be filtered by namespace and/or key."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCTS",
+      "description": "Retrieves a list of products from a Shopify store."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCTS_COUNT",
+      "description": "Retrieves the total, unfiltered count of all products in a Shopify store."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCTS_IN_COLLECTION",
+      "description": "Retrieves all products within a specified Shopify collection, requiring a valid `collection_id`."
+    },
+    {
+      "name": "SHOPIFY_GET_PRODUCTS_PAGINATED",
+      "description": "Tool to list products with Shopify cursor-based pagination. Use when iterating over large product catalogs via the Link header."
+    },
+    {
+      "name": "SHOPIFY_GET_SHOP_DETAILS",
+      "description": "Retrieves comprehensive administrative information about the authenticated Shopify store, as defined by the Shopify API."
+    },
+    {
+      "name": "SHOPIFY_GRAPH_QL_QUERY",
+      "description": "Executes a GraphQL query against the Shopify Admin API. This allows for flexible data retrieval and mutations including metafields operations."
+    },
+    {
+      "name": "SHOPIFY_UPDATE_ORDER",
+      "description": "Updates the phone number for an existing Shopify order, identified by its ID; pass `phone=None` to remove the current phone number."
+    },
+    {
+      "name": "SHOPIFY_UPDATE_PRODUCT_METAFIELD",
+      "description": "Updates an existing metafield for a specific Shopify product."
+    }
+  ]
+}

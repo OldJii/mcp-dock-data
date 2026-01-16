@@ -1,0 +1,12 @@
+{
+  "id": "@ReduceMyIns/n8n-nodes-momentum",
+  "displayName": "n8n-nodes-momentum",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:39.948Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ReduceMyIns/n8n-nodes-momentum"
+  },
+  "connection": null,
+  "capabilities": []
+}

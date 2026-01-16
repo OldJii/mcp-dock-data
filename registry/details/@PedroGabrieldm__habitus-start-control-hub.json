@@ -1,0 +1,12 @@
+{
+  "id": "@PedroGabrieldm/habitus-start-control-hub",
+  "displayName": "habitus-start-control-hub",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:19.393Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@PedroGabrieldm/habitus-start-control-hub"
+  },
+  "connection": null,
+  "capabilities": []
+}

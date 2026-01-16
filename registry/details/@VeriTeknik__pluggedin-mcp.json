@@ -1,0 +1,35 @@
+{
+  "id": "@VeriTeknik/pluggedin-mcp",
+  "displayName": "pluggedin-mcp",
+  "description": "Centralize and orchestrate all your connections in one hub. Search across documents with unified, attribution‑aware retrieval and keep long‑lived workspace memory. Discover and run capabilities from every source with a single catalog, notifications, and multi‑workspace support. ",
+  "createdAt": "2026-01-16T07:29:12.055Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@VeriTeknik/pluggedin-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "REQUIRE_API_AUTH": {
+          "type": "string",
+          "description": "Require API key authentication for HTTP requests (true/false)",
+          "default": "false"
+        },
+        "PLUGGEDIN_API_KEY": {
+          "type": "string",
+          "description": "Your Plugged.in API key for authenticated operations (get one at plugged.in/api-keys). Leave empty for tool discovery only."
+        },
+        "PLUGGEDIN_API_BASE_URL": {
+          "type": "string",
+          "description": "Base URL for your Plugged.in instance (optional, defaults to https://plugged.in)",
+          "default": "https://plugged.in"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

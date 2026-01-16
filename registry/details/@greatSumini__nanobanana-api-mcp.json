@@ -1,0 +1,12 @@
+{
+  "id": "@greatSumini/nanobanana-api-mcp",
+  "displayName": "nanobanana-api-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:50.538Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@greatSumini/nanobanana-api-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

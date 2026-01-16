@@ -1,0 +1,47 @@
+{
+  "id": "@V-Sekai-fire/sympy-mcp",
+  "displayName": "V-Sekai-fire's Sympy",
+  "description": "Solve symbolic mathematics problems using SymPy.",
+  "createdAt": "2026-01-16T07:20:28.772Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@V-Sekai-fire/sympy-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "sympy_differentiate",
+      "description": "Computes the derivative of an expression using SymPy"
+    },
+    {
+      "name": "sympy_evaluate",
+      "description": "Evaluates a symbolic expression numerically using SymPy"
+    },
+    {
+      "name": "sympy_expand",
+      "description": "Expands a symbolic expression using SymPy"
+    },
+    {
+      "name": "sympy_factor",
+      "description": "Factors a symbolic expression using SymPy"
+    },
+    {
+      "name": "sympy_integrate",
+      "description": "Computes the integral of an expression using SymPy"
+    },
+    {
+      "name": "sympy_simplify",
+      "description": "Simplifies a symbolic expression using SymPy"
+    },
+    {
+      "name": "sympy_solve",
+      "description": "Solves a symbolic equation for a variable using SymPy"
+    }
+  ]
+}

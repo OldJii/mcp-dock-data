@@ -1,0 +1,60 @@
+{
+  "id": "@marcusbai/caiyun-weather-mcp",
+  "displayName": "彩云天气",
+  "description": "查询实时天气数据、降水预报和天气预警信息。获取准确的天气信息，帮助您做出更好的出行和活动决策。支持多种语言和单位制选择，满足不同用户的需求。",
+  "createdAt": "2026-01-16T07:29:18.064Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@marcusbai/caiyun-weather-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "caiyunApiKey"
+      ],
+      "properties": {
+        "amapApiKey": {
+          "type": "string",
+          "description": "高德地图 API 密钥，可选"
+        },
+        "caiyunApiKey": {
+          "type": "string",
+          "description": "彩云天气 API 密钥"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_weather_by_location",
+      "description": "根据经纬度获取天气信息"
+    },
+    {
+      "name": "get_weather_by_address",
+      "description": "根据地址获取天气信息"
+    },
+    {
+      "name": "get_realtime_weather",
+      "description": "获取实时天气数据"
+    },
+    {
+      "name": "get_minutely_forecast",
+      "description": "获取分钟级降水预报"
+    },
+    {
+      "name": "get_hourly_forecast",
+      "description": "获取小时级天气预报"
+    },
+    {
+      "name": "get_daily_forecast",
+      "description": "获取天级天气预报"
+    },
+    {
+      "name": "get_weather_alert",
+      "description": "获取天气预警信息"
+    }
+  ]
+}

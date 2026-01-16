@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/chess",
+  "displayName": "chess",
+  "description": "Visualize chess positions instantly from FEN. Copy readable text-based boards into chats, docs, and code. Speed up analysis and explanations without leaving your text workflow.",
+  "createdAt": "2026-01-16T07:28:21.587Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/chess"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "visualize_fen",
+      "description": "Convert FEN notation to ASCII chess board visualization"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "@OEvortex/ddg_search",
+  "displayName": "DuckDuckGo & Felo AI Search",
+  "description": "Provide fast, privacy-friendly web and AI-powered search capabilities with integrated content and metadata extraction. Enhance your AI assistants by enabling comprehensive web scraping without requiring API keys. Optimize performance with caching and secure usage through rate limiting and user agent rotation.",
+  "createdAt": "2026-01-16T07:20:16.691Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@OEvortex/ddg_search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "web-search",
+      "description": "Search the web using DuckDuckGo and return comprehensive results with titles, URLs, and snippets"
+    },
+    {
+      "name": "fetch-url",
+      "description": "Fetch and extract the main content from any URL, with customizable extraction options for text, links, and images"
+    },
+    {
+      "name": "url-metadata",
+      "description": "Extract metadata from a URL including title, description, Open Graph data, and favicon information"
+    },
+    {
+      "name": "felo-search",
+      "description": "Advanced AI-powered web search for technical intelligence. Retrieves up-to-date information including software releases, security advisories, migration guides, benchmarks, developer documentation, and community insights. Supports both standard and streaming responses."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "@su-record/hi-ai",
+  "displayName": "Hi-AI",
+  "description": "Simplify AI development with a conversational assistant that remembers your context and helps you manage complex tasks effortlessly. Use natural language to interact with a suite of 29 modular tools for problem analysis, memory management, browser automation, code quality, planning, and time utilities. Start your AI-powered development journey with a simple greeting and let Hi-AI handle the rest.",
+  "createdAt": "2026-01-16T07:23:38.032Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@su-record/hi-ai"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_time",
+      "description": "지금 몇시|현재 시간|몇시야|what time|current time|time now - Get current time"
+    },
+    {
+      "name": "preview_ui_ascii",
+      "description": "UI 만들어|페이지 개발|페이지 만들어|컴포넌트 작성|레이아웃|화면 구성|create page|build UI|design component|make page|develop page - Preview UI before coding"
+    },
+    {
+      "name": "save_memory",
+      "description": "중요한 정보를 장기 메모리에 저장합니다. 프로젝트 결정사항, 아키텍처, 설정 등을 기록하세요.\n\n키워드: 기억해, remember, 저장해, save, memorize, keep\n\n💡 저장 후 link_memories로 관련 메모리를 연결하면 지식 그래프가 구축됩니다."
+    },
+    {
+      "name": "recall_memory",
+      "description": "특정 메모리를 키로 조회합니다.\n\n키워드: 떠올려, recall, 기억나, remember what, what was, remind\n\n💡 전체 컨텍스트가 필요하면 get_session_context를 먼저 사용하세요."
+    },
+    {
+      "name": "update_memory",
+      "description": "수정해|업데이트|바꿔|update|change|modify|edit - Update existing memory"
+    },
+    {
+      "name": "delete_memory",
+      "description": "잊어|삭제해|지워|forget|delete|remove|erase - Delete specific memory"
+    },
+    {
+      "name": "list_memories",
+      "description": "저장된 메모리 목록을 조회합니다. 카테고리별 필터링 가능.\n\n키워드: 뭐 있었지, 저장된 거, 목록, what did I save, list memories, show saved\n\n💡 세션 시작 시 전체 컨텍스트가 필요하면 get_session_context를 사용하세요."
+    },
+    {
+      "name": "prioritize_memory",
+      "description": "중요한 거|우선순위|prioritize|important|what matters|priority - Prioritize memories by importance"
+    },
+    {
+      "name": "link_memories",
+      "description": "메모리 간 관계를 연결합니다 (지식 그래프).\n\n키워드: 연결해, 관계 설정, 링크, connect memories, link, relate\n\n사용 예시:\n- \"project-architecture와 design-patterns를 연결해\"\n- \"이 두 메모리를 related_to로 링크해\""
+    },
+    {
+      "name": "get_memory_graph",
+      "description": "메모리 지식 그래프를 조회합니다.\n\n키워드: 그래프, 관계도, 연결 보기, memory graph, relations, connections\n\n사용 예시:\n- \"project-architecture의 관계 그래프 보여줘\"\n- \"전체 메모리 그래프 조회\""
+    },
+    {
+      "name": "search_memories_advanced",
+      "description": "고급 멀티 전략 메모리 검색을 수행합니다.\n\n키워드: 고급 검색, 찾아, 스마트 검색, advanced search, find memories\n\n**검색 전략:**\n- keyword: 전통적 키워드 검색\n- graph_traversal: 그래프 기반 관련 메모리 탐색\n- temporal: 시간순 정렬\n- priority: 우선순위 기반\n- context_aware: 복합 전략 (키워드 + 우선순위 + 최근성)\n\n사용 예시:\n- \"authentication 관련 메모리 고급 검색\"\n- \"그래프 탐색으로 project-architecture 관련 메모리 찾기\""
+    },
+    {
+      "name": "create_memory_timeline",
+      "description": "메모리 타임라인을 생성합니다.\n\n키워드: 타임라인, 시간순, 히스토리, timeline, history, chronological\n\n사용 예시:\n- \"최근 메모리 타임라인 보여줘\"\n- \"지난 7일간 메모리 히스토리\""
+    },
+    {
+      "name": "get_session_context",
+      "description": "🚀 [새 대화/세션 시작 시 자동 실행 권장] 이전 세션의 메모리, 지식 그래프, 최근 작업 내역을 한 번에 조회합니다.\n\n이 도구는 새로운 대화를 시작할 때 가장 먼저 실행하면 좋습니다. 프로젝트의 컨텍스트를 빠르게 파악할 수 있습니다.\n\n키워드: 세션 시작, 컨텍스트, 이전 작업, session start, context, previous work, what did we do\n\n사용 예시:\n- \"이전에 무슨 작업 했었지?\"\n- \"프로젝트 컨텍스트 알려줘\"\n- \"세션 컨텍스트 조회\""
+    },
+    {
+      "name": "find_symbol",
+      "description": "함수 찾아|클래스 어디|변수 위치|find function|where is|locate - Find symbol definitions"
+    },
+    {
+      "name": "find_references",
+      "description": "어디서 쓰|참조|사용처|find usage|references|where used - Find symbol references"
+    },
+    {
+      "name": "analyze_dependency_graph",
+      "description": "코드 의존성 그래프를 분석합니다.\n\n키워드: 의존성, 관계 분석, 순환 참조, dependency graph, circular dependency\n\n**분석 내용:**\n- 파일 간 import/export 관계\n- 순환 의존성 감지\n- 모듈 클러스터 식별\n- 코드 결합도 분석\n\n사용 예시:\n- \"src 폴더의 의존성 그래프 분석해줘\"\n- \"index.ts의 의존 관계 보여줘\""
+    },
+    {
+      "name": "get_coding_guide",
+      "description": "가이드|규칙|컨벤션|guide|rules|convention|standards|best practices - Get coding guide"
+    },
+    {
+      "name": "apply_quality_rules",
+      "description": "규칙 적용|표준 적용|apply rules|apply standards|follow conventions|적용해 - Apply quality rules"
+    },
+    {
+      "name": "validate_code_quality",
+      "description": "품질|리뷰|검사|quality|review code|check quality|validate|코드 리뷰 - Validate code quality"
+    },
+    {
+      "name": "analyze_complexity",
+      "description": "복잡도|복잡한지|complexity|how complex|난이도 - Analyze code complexity"
+    },
+    {
+      "name": "check_coupling_cohesion",
+      "description": "결합도|응집도|coupling|cohesion|dependencies check|module structure - Check coupling and cohesion"
+    },
+    {
+      "name": "suggest_improvements",
+      "description": "개선|더 좋게|리팩토링|improve|make better|refactor|optimize|enhance code - Suggest improvements"
+    },
+    {
+      "name": "create_thinking_chain",
+      "description": "생각 과정|사고 흐름|연쇄적으로|thinking process|chain of thought|reasoning chain - Create sequential thinking chain"
+    },
+    {
+      "name": "analyze_problem",
+      "description": "문제 분석|어떻게 접근|분석해줘|analyze this|how to approach|break this down - Break down complex problem into structured steps"
+    },
+    {
+      "name": "step_by_step_analysis",
+      "description": "단계별|차근차근|하나씩|step by step|one by one|gradually - Perform detailed step-by-step analysis"
+    },
+    {
+      "name": "format_as_plan",
+      "description": "계획으로|정리해줘|체크리스트|format as plan|make a plan|organize this|checklist - Format content into clear plans"
+    },
+    {
+      "name": "generate_prd",
+      "description": "PRD|요구사항 문서|제품 요구사항|product requirements|requirements document|spec document - Generate Product Requirements Document"
+    },
+    {
+      "name": "create_user_stories",
+      "description": "스토리|사용자 스토리|user story|user stories|as a user - Generate user stories from requirements"
+    },
+    {
+      "name": "analyze_requirements",
+      "description": "요구사항 분석|필요한 것들|requirements analysis|what we need|analyze requirements|필수 기능 - Analyze project requirements"
+    },
+    {
+      "name": "feature_roadmap",
+      "description": "로드맵|일정|계획표|roadmap|timeline|project plan|development schedule - Generate development roadmap"
+    },
+    {
+      "name": "enhance_prompt",
+      "description": "구체적으로|자세히|명확하게|더 구체적으로|be specific|more detail|clarify|elaborate|vague - Transform vague requests"
+    },
+    {
+      "name": "analyze_prompt",
+      "description": "프롬프트 분석|평가|점수|얼마나 좋은지|analyze prompt|rate this|score|how good|prompt quality - Analyze prompt quality"
+    },
+    {
+      "name": "enhance_prompt_gemini",
+      "description": "프롬프트 개선|제미나이 전략|품질 향상|prompt enhancement|gemini strategies|quality improvement - Enhance prompts using Gemini API prompting strategies (Few-Shot, Output Format, Context)"
+    },
+    {
+      "name": "apply_reasoning_framework",
+      "description": "추론 프레임워크|체계적 분석|논리적 사고|reasoning framework|systematic analysis|logical thinking - Apply 9-step reasoning framework to analyze complex problems systematically"
+    },
+    {
+      "name": "get_usage_analytics",
+      "description": "도구 사용 분석 및 통계를 조회합니다.\n\n키워드: 분석, 통계, 사용량, analytics, statistics, usage\n\n**제공 정보:**\n- 메모리 사용 통계\n- 카테고리별 분포\n- 시간별 사용 패턴\n- 그래프 관계 통계\n\n사용 예시:\n- \"사용 통계 보여줘\"\n- \"메모리 분석\""
+    }
+  ]
+}

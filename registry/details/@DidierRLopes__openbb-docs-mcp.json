@@ -1,0 +1,165 @@
+{
+  "id": "@DidierRLopes/openbb-docs-mcp",
+  "displayName": "OpenBB Widgets JSON MCP",
+  "description": "An MCP server that exposes the OpenBB widgets.json specification as structured, callable tools. Instead of parsing long-form documentation, developers (and AI coding assistants like Claude Code) can directly query widget types, inputs, and configuration examples through this server.\n\nEach widget type is mapped to its own tool—making it easy to generate, mix, and match valid JSON specs when building new OpenBB apps. The server is built with FastMCP, programmatically generated from the OpenBB developer docs, and hosted on Smithery.ai for discoverability.",
+  "createdAt": "2026-01-16T07:23:44.482Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DidierRLopes/openbb-docs-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "data_integration",
+      "description": "Documentation for integrating data sources into the OpenBB platform"
+    },
+    {
+      "name": "ai_agents_ai_agents",
+      "description": "Documentation about AI agents in OpenBB"
+    },
+    {
+      "name": "apps_apps",
+      "description": "Documentation about OpenBB applications"
+    },
+    {
+      "name": "json_specs_agents_json_reference",
+      "description": "JSON reference documentation for agents configuration"
+    },
+    {
+      "name": "json_specs_apps_json_reference",
+      "description": "JSON reference documentation for apps configuration"
+    },
+    {
+      "name": "json_specs_widgets_json_reference",
+      "description": "JSON reference documentation for widgets configuration"
+    },
+    {
+      "name": "widget_configuration_category_subcategory",
+      "description": "Documentation for widget category and subcategory configuration"
+    },
+    {
+      "name": "widget_configuration_error_handling",
+      "description": "Documentation for widget error handling"
+    },
+    {
+      "name": "widget_configuration_grid_size",
+      "description": "Documentation for widget grid size configuration"
+    },
+    {
+      "name": "widget_configuration_refetch_interval",
+      "description": "Documentation for widget refetch interval configuration"
+    },
+    {
+      "name": "widget_configuration_render_functions",
+      "description": "Documentation for widget render functions"
+    },
+    {
+      "name": "widget_configuration_run_button",
+      "description": "Documentation for widget run button configuration"
+    },
+    {
+      "name": "widget_configuration_stale_time",
+      "description": "Documentation for widget stale time configuration"
+    },
+    {
+      "name": "widget_parameters_advanced_dropdown",
+      "description": "Documentation for advanced dropdown widget parameters"
+    },
+    {
+      "name": "widget_parameters_boolean_toggle",
+      "description": "Documentation for boolean toggle widget parameters"
+    },
+    {
+      "name": "widget_parameters_cell_click_grouping",
+      "description": "Documentation for cell click grouping in widgets"
+    },
+    {
+      "name": "widget_parameters_date_picker",
+      "description": "Documentation for date picker widget parameters"
+    },
+    {
+      "name": "widget_parameters_dependent_dropdown",
+      "description": "Documentation for dependent dropdown widget parameters"
+    },
+    {
+      "name": "widget_parameters_dropdown",
+      "description": "Documentation for dropdown widget parameters"
+    },
+    {
+      "name": "widget_parameters_input_form",
+      "description": "Documentation for input form widget parameters"
+    },
+    {
+      "name": "widget_parameters_number_input",
+      "description": "Documentation for number input widget parameters"
+    },
+    {
+      "name": "widget_parameters_parameter_grouping",
+      "description": "Documentation for parameter grouping in widgets"
+    },
+    {
+      "name": "widget_parameters_parameter_positioning",
+      "description": "Documentation for parameter positioning in widgets"
+    },
+    {
+      "name": "widget_parameters_text_input",
+      "description": "Documentation for text input widget parameters"
+    },
+    {
+      "name": "widget_types_aggrid_table_charts",
+      "description": "Documentation for AgGrid table charts widget type"
+    },
+    {
+      "name": "widget_types_file_viewer",
+      "description": "Documentation for file viewer widget type"
+    },
+    {
+      "name": "widget_types_highcharts",
+      "description": "Documentation for Highcharts widget type"
+    },
+    {
+      "name": "widget_types_html",
+      "description": "Documentation for HTML widget type"
+    },
+    {
+      "name": "widget_types_live_grid",
+      "description": "Documentation for live grid widget type"
+    },
+    {
+      "name": "widget_types_markdown",
+      "description": "Documentation for markdown widget type"
+    },
+    {
+      "name": "widget_types_metric",
+      "description": "Documentation for metric widget type"
+    },
+    {
+      "name": "widget_types_newsfeed",
+      "description": "Documentation for newsfeed widget type"
+    },
+    {
+      "name": "widget_types_omni",
+      "description": "Documentation for omni widget type"
+    },
+    {
+      "name": "widget_types_plotly_charts",
+      "description": "Documentation for Plotly charts widget type"
+    },
+    {
+      "name": "widget_types_ssrm_mode",
+      "description": "Documentation for SSRM mode in widgets"
+    },
+    {
+      "name": "widget_types_tradingview_charts",
+      "description": "Documentation for TradingView charts widget type"
+    },
+    {
+      "name": "building_widgets_on_openbb",
+      "description": "Essential boilerplate code for building OpenBB Workspace widgets. \n    This provides the foundational FastAPI setup, CORS configuration, widgets.json endpoints, \n    and register_widget decorator pattern. ALWAYS call this first when creating OpenBB widgets \n    to get the required boilerplate structure."
+    }
+  ]
+}

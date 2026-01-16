@@ -1,0 +1,33 @@
+{
+  "id": "@dsharipova/mcp-hw",
+  "displayName": "Say Hello",
+  "description": "Greet people by name with concise, friendly messages. Customize the tone, including a playful nerdy-scientist style, for intros, demos, and onboarding. Draw inspiration from the 'Hello, World' origin story and curated greeting suggestions.",
+  "createdAt": "2026-01-16T07:30:04.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dsharipova/mcp-hw"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a nerdy scientist.",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

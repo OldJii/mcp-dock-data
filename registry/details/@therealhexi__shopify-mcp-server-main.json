@@ -1,0 +1,32 @@
+{
+  "id": "@therealhexi/shopify-mcp-server-main",
+  "displayName": "Shopify MCP Server",
+  "description": "Enable interaction with Shopify store data through a GraphQL API.",
+  "createdAt": "2026-01-16T07:28:14.339Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@therealhexi/shopify-mcp-server-main"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "shopifyAccessToken",
+        "shopifyDomain"
+      ],
+      "properties": {
+        "shopifyDomain": {
+          "type": "string",
+          "description": "The domain of the Shopify store."
+        },
+        "shopifyAccessToken": {
+          "type": "string",
+          "description": "The personal access token for accessing the Shopify API."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@issmirnov/ynab-mcp-server",
+  "displayName": "ynab-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:34.559Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@issmirnov/ynab-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

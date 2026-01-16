@@ -1,0 +1,12 @@
+{
+  "id": "@Ricardo-M-L/mcp-ocr-server",
+  "displayName": "mcp-ocr-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:06.090Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Ricardo-M-L/mcp-ocr-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

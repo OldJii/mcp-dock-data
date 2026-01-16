@@ -1,0 +1,12 @@
+{
+  "id": "lilo-property/vacation-rentals",
+  "displayName": "vacation-rentals",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:45.962Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lilo-property/vacation-rentals"
+  },
+  "connection": null,
+  "capabilities": []
+}

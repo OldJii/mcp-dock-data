@@ -1,0 +1,12 @@
+{
+  "id": "leadfuze/enrichment",
+  "displayName": "enrichment",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:06.103Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/leadfuze/enrichment"
+  },
+  "connection": null,
+  "capabilities": []
+}

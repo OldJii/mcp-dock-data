@@ -1,0 +1,53 @@
+{
+  "id": "@oharkins/weatherxm-mcp-server",
+  "displayName": "WeatherXM Pro Weather Data Server",
+  "description": "Provide real-time and historical weather data, forecasts, alerts, and station information from the WeatherXM decentralized weather network worldwide. Enable detailed weather insights including temperature, wind, precipitation, UV index, and data quality assessments. Discover nearby weather stations and explore network coverage for comprehensive weather analysis.",
+  "createdAt": "2026-01-16T07:26:30.452Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@oharkins/weatherxm-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "WeatherXM Pro API key required for accessing weather data"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_weather",
+      "description": "Get current weather conditions for a specific WeatherXM station by station ID. Use this when you already know the station ID. For location-based queries, use 'get_weather_for_location' or 'search_weather_by_location' instead."
+    },
+    {
+      "name": "get_hourly_forecast",
+      "description": "Get hourly weather forecast for a specific WeatherXM station by station ID. Use this when you already know the station ID. For location-based queries, use 'get_weather_forecast_for_location' instead."
+    },
+    {
+      "name": "get_daily_forecast",
+      "description": "Get daily weather forecast for a specific WeatherXM station by station ID. Use this when you already know the station ID. For location-based queries, use 'get_weather_forecast_for_location' instead."
+    },
+    {
+      "name": "get_stations_near",
+      "description": "Get a list of WeatherXM stations within a specified radius from a location. Uses the stations/near endpoint with radius in meters."
+    },
+    {
+      "name": "get_historical_observations",
+      "description": "Get historical weather observations for a specific WeatherXM station on a specific date. Use this when you already know the station ID and want to see past weather data. Note: Only recent past dates are supported (typically last few days). Future dates are not supported."
+    }
+  ]
+}

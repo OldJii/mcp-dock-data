@@ -1,0 +1,102 @@
+{
+  "id": "@exa-labs/websets-mcp-server",
+  "displayName": "Exa Websets",
+  "description": "Create and manage collections of companies, people, and papers, automatically discovering and verifying relevant entities. Enrich items with custom fields like CEO name, funding amount, or company stage, and inspect detailed results. Schedule recurring searches to keep collections fresh and catch new additions.",
+  "createdAt": "2026-01-16T07:21:04.942Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@exa-labs/websets-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "exaApiKey": {
+          "type": "string",
+          "description": "Exa AI API key for websets operations"
+        },
+        "enabledTools": {
+          "type": "array",
+          "description": "List of tools to enable (if not specified, all tools are enabled)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_webset",
+      "description": "Create a new Webset collection. Websets are collections of web entities (companies, people, papers) that can be automatically searched, verified, and enriched with custom data.\n\nIMPORTANT PARAMETER FORMATS:\n- searchCriteria: MUST be array of objects like [{description: \"...\"}] (NOT array of strings)\n- enrichments: Each must have description field, optional format and options\n- enrichment options: MUST be array of objects like [{label: \"...\"}] (NOT array of strings)\n\nExample call:\n{\n  \"name\": \"AI Startups\",\n  \"searchQuery\": \"AI startups in San Francisco\",\n  \"searchCriteria\": [{\"description\": \"Founded after 2020\"}],\n  \"enrichments\": [\n    {\"description\": \"CEO name\", \"format\": \"text\"},\n    {\"description\": \"Company stage\", \"format\": \"options\", \"options\": [{\"label\": \"Seed\"}, {\"label\": \"Series A\"}]}\n  ]\n}"
+    },
+    {
+      "name": "list_websets",
+      "description": "List all websets in your account. Returns a paginated list of webset collections with their current status and item counts."
+    },
+    {
+      "name": "get_webset",
+      "description": "Get details about a specific webset by ID or externalId. Returns full webset information including status, item count, and metadata."
+    },
+    {
+      "name": "update_webset",
+      "description": "Update a webset's metadata. Use this to add or update custom key-value pairs associated with the webset."
+    },
+    {
+      "name": "delete_webset",
+      "description": "Delete a webset and all its items. This action is permanent and cannot be undone."
+    },
+    {
+      "name": "list_webset_items",
+      "description": "List all items in a webset. Returns entities (companies, people, papers) that have been discovered and verified in the collection."
+    },
+    {
+      "name": "get_item",
+      "description": "Get a specific item from a webset by its ID. Returns detailed information about the item including all enrichment data."
+    },
+    {
+      "name": "create_search",
+      "description": "Create a new search to find and add items to a webset. The search will discover entities matching your query and criteria.\n\nIMPORTANT PARAMETER FORMATS:\n- entity: MUST be an object like {type: \"company\"} (NOT a string)\n- criteria: MUST be array of objects like [{description: \"...\"}] (NOT array of strings)\n\nExample call:\n{\n  \"websetId\": \"webset_123\",\n  \"query\": \"AI startups in San Francisco\",\n  \"entity\": {\"type\": \"company\"},\n  \"criteria\": [{\"description\": \"Founded after 2020\"}],\n  \"count\": 10\n}"
+    },
+    {
+      "name": "get_search",
+      "description": "Get details about a specific search, including its status, progress, and results found."
+    },
+    {
+      "name": "cancel_search",
+      "description": "Cancel a running search operation. This will stop the search from finding more items."
+    },
+    {
+      "name": "create_enrichment",
+      "description": "Create a new enrichment for a webset. Enrichments automatically extract custom data from each item using AI agents (e.g., 'company revenue', 'CEO name', 'funding amount').\n\nIMPORTANT PARAMETER FORMATS:\n- options (when format is \"options\"): MUST be array of objects like [{label: \"...\"}] (NOT array of strings)\n\nExample call (text format):\n{\"websetId\": \"webset_123\", \"description\": \"CEO name\", \"format\": \"text\"}\n\nExample call (options format):\n{\"websetId\": \"webset_123\", \"description\": \"Company stage\", \"format\": \"options\", \"options\": [{\"label\": \"Seed\"}, {\"label\": \"Series A\"}]}"
+    },
+    {
+      "name": "get_enrichment",
+      "description": "Get details about a specific enrichment, including its status and progress."
+    },
+    {
+      "name": "update_enrichment",
+      "description": "Update an enrichment's metadata. You can associate custom key-value pairs with the enrichment."
+    },
+    {
+      "name": "delete_enrichment",
+      "description": "Delete an enrichment from a webset. This will remove all enriched data for this enrichment from all items."
+    },
+    {
+      "name": "cancel_enrichment",
+      "description": "Cancel a running enrichment operation. This will stop the enrichment from processing more items."
+    },
+    {
+      "name": "create_monitor",
+      "description": "Create a monitor to automatically update a webset on a schedule. Monitors run search operations to find new items.\n\nIMPORTANT PARAMETER FORMATS:\n- cron: MUST be 5-field format \"minute hour day month weekday\" (e.g., \"0 9 * * 1\")\n- entity: MUST be an object like {type: \"company\"} (NOT a string)\n- criteria: MUST be array of objects like [{description: \"...\"}] (NOT array of strings)\n\nExample call:\n{\n  \"websetId\": \"webset_123\",\n  \"cron\": \"0 9 * * 1\",\n  \"query\": \"New AI startups\",\n  \"entity\": {\"type\": \"company\"},\n  \"criteria\": [{\"description\": \"Founded in last 30 days\"}],\n  \"count\": 10\n}"
+    }
+  ]
+}

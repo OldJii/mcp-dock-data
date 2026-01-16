@@ -1,0 +1,105 @@
+{
+  "id": "@mfukushim/map-traveler-mcp",
+  "displayName": "Virtual Traveling Bot",
+  "description": "Create immersive travel experiences by instructing an avatar to navigate Google Maps. Report on the journey's progress with real-time updates and photos, enhancing your virtual exploration. Engage with a unique travel narrative that integrates social media interactions seamlessly.\nSmithery Remote Edition now supports image compositing via nano-banana. Enjoy text-based journeys on the map.\nFor more advanced usage, consider building it in a local environment.\nhttps://www.npmjs.com/package/@mfukushim/map-traveler-mcp\n\nIf you connect without making any settings, it will operate in practice mode.\nSet the Google Maps API token, Turso SQLite API token, and Gemini Image API token to travel on real maps with the Smithery version.\nStreamable-http connection is now supported.\n\nNote: If the route cannot be determined, please re-specify the starting point. In rare cases, the coordinates of the starting point may be reset to 0, and we are currently investigating the cause.\n",
+  "createdAt": "2026-01-16T07:21:06.020Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mfukushim/map-traveler-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "MT_BS_ID": {
+          "type": "string",
+          "description": "Bluesky sns registration address"
+        },
+        "MT_BS_PASS": {
+          "type": "string",
+          "description": "bluesky sns password"
+        },
+        "MT_FEED_TAG": {
+          "type": "string",
+          "description": "Specify the feed tag when posting to SNS (#required, 15 characters or more) Default is"
+        },
+        "MT_BS_HANDLE": {
+          "type": "string",
+          "description": "bluesky sns handle name. e.g. xxxxxxxx.bsky.social"
+        },
+        "MT_MOVE_MODE": {
+          "type": "string",
+          "description": "Specify whether the movement mode is realtime or skip. default realtime",
+          "default": "realtime"
+        },
+        "MT_TURSO_URL": {
+          "type": "string",
+          "description": "Turso sqlite API URL"
+        },
+        "MT_TURSO_TOKEN": {
+          "type": "string",
+          "description": "Turso sqlite API access token"
+        },
+        "MT_FILTER_TOOLS": {
+          "type": "string",
+          "description": "Directly filter the tools to be used. All are available if not specified. e.g. tips,set_traveler_location"
+        },
+        "MT_GOOGLE_MAP_KEY": {
+          "type": "string",
+          "description": "Google Map API key"
+        },
+        "MT_AVATAR_IMAGE_URI": {
+          "type": "string",
+          "description": "Character reference image uri. Multiple settings can be made by separating them with the '|'"
+        },
+        "MT_GEMINI_IMAGE_KEY": {
+          "type": "string",
+          "description": "Gemini Image API key"
+        },
+        "MT_MAX_RETRY_GEMINI": {
+          "type": "string",
+          "description": "Gemini Image retry count"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_traveler_view_info",
+      "description": "Get the address of the current traveler's location and information on nearby facilities,view snapshot"
+    },
+    {
+      "name": "get_traveler_location",
+      "description": "Get the address of the current traveler's location"
+    },
+    {
+      "name": "tips",
+      "description": "Inform you of recommended actions for your device"
+    },
+    {
+      "name": "get_setting",
+      "description": "Get current setting"
+    },
+    {
+      "name": "get_traveler_info",
+      "description": "get a traveler's setting.For example, traveler's name, the language traveler speak, Personality and speaking habits, etc."
+    },
+    {
+      "name": "set_traveler_info",
+      "description": "set a traveler's setting.For example, traveler's name, the language traveler speak, Personality and speaking habits, etc."
+    },
+    {
+      "name": "start_traveler_journey",
+      "description": "Start the traveler's journey to destination"
+    },
+    {
+      "name": "stop_traveler_journey",
+      "description": "Stop the traveler's journey"
+    }
+  ]
+}

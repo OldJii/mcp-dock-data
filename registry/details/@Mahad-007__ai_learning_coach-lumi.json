@@ -1,0 +1,54 @@
+{
+  "id": "@Mahad-007/ai_learning_coach-lumi",
+  "displayName": "ai_learning_coach-lumi",
+  "description": "Personalize your study with on‑demand tutoring that generates tailored lessons and adaptive quizzes. Track progress and stay motivated with achievements, streaks, and leaderboards. Collaborate with friends in shared study sessions.",
+  "createdAt": "2026-01-16T07:32:25.986Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Mahad-007/ai_learning_coach-lumi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "geminiModel": {
+          "type": "string",
+          "description": "Default Gemini model to use (defaults to gemini-2.0-flash-exp)"
+        },
+        "supabaseUrl": {
+          "type": "string",
+          "description": "Supabase project URL (defaults to VITE_SUPABASE_URL environment variable)"
+        },
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Google Gemini API key (defaults to VITE_GEMINI_API_KEY env var)"
+        },
+        "supabaseAnonKey": {
+          "type": "string",
+          "description": "Supabase anonymous key used when service role key is not provided"
+        },
+        "supabaseServiceRoleKey": {
+          "type": "string",
+          "description": "Supabase service role key for privileged access (defaults to SUPABASE_SERVICE_ROLE_KEY env var)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_lesson",
+      "description": "Generate and store an AI-powered lesson for a learner. Provide a prompt and the tool will infer missing details automatically."
+    },
+    {
+      "name": "generate_quiz",
+      "description": "Create an adaptive quiz. Provide an existing lesson id or a natural language prompt—the tool will handle the rest."
+    },
+    {
+      "name": "chat_with_student",
+      "description": "Send a tutoring message and get the AI reply while logging chat history"
+    }
+  ]
+}

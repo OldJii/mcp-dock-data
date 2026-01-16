@@ -1,0 +1,182 @@
+{
+  "id": "@DynamicEndpoints/process_mapper_2025",
+  "displayName": "Process Map Server",
+  "description": "Enable AI-powered process analysis, chart generation, and optimization recommendations for your workflows. Upload various file types and receive intelligent insights and visual diagrams to improve efficiency and compliance. Streamline process management with batch processing and cross-analysis capabilities.",
+  "createdAt": "2026-01-16T07:28:26.478Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/process_mapper_2025"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "ANTHROPIC_API_KEY"
+      ],
+      "properties": {
+        "PORT": {
+          "type": "string",
+          "description": "Port for HTTP server",
+          "default": "3000"
+        },
+        "NODE_ENV": {
+          "type": "string",
+          "description": "Node.js environment",
+          "default": "production"
+        },
+        "CUSTOM_API_KEY": {
+          "type": "string",
+          "description": "API key for any additional third-party services (optional)"
+        },
+        "ANTHROPIC_API_KEY": {
+          "type": "string",
+          "description": "Your Anthropic API key for AI analysis features"
+        },
+        "LUCIDCHART_API_KEY": {
+          "type": "string",
+          "description": "API key for Lucidchart integration (optional)"
+        },
+        "LUCIDCHART_TEAM_ID": {
+          "type": "string",
+          "description": "Team ID for Lucidchart integration (optional)"
+        },
+        "LUCIDCHART_API_TOKEN": {
+          "type": "string",
+          "description": "API token for Lucidchart integration (optional)"
+        },
+        "LUCIDCHART_DEFAULT_FOLDER_ID": {
+          "type": "string",
+          "description": "Default folder ID for Lucidchart documents (optional)"
+        },
+        "AZURE_STORAGE_CONNECTION_STRING": {
+          "type": "string",
+          "description": "Connection string for Azure Storage (optional)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "upload_file",
+      "description": "Store files for analysis"
+    },
+    {
+      "name": "analyze_file",
+      "description": "Extract process information using AI"
+    },
+    {
+      "name": "generate_chart",
+      "description": "Create process diagrams"
+    },
+    {
+      "name": "get_insights",
+      "description": "AI-powered recommendations"
+    },
+    {
+      "name": "list_supported_formats",
+      "description": "Show capabilities"
+    },
+    {
+      "name": "download_chart",
+      "description": "Retrieve generated charts"
+    },
+    {
+      "name": "batch_analyze",
+      "description": "Process multiple files"
+    },
+    {
+      "name": "compare_processes",
+      "description": "Cross-analysis comparison"
+    },
+    {
+      "name": "export_process",
+      "description": "Export process data"
+    },
+    {
+      "name": "search_processes",
+      "description": "Search stored processes"
+    },
+    {
+      "name": "validate_process",
+      "description": "Validate process structure"
+    },
+    {
+      "name": "generate_documentation",
+      "description": "Create process documentation"
+    },
+    {
+      "name": "estimate_costs",
+      "description": "Calculate process costs"
+    },
+    {
+      "name": "get_templates",
+      "description": "Get process templates"
+    },
+    {
+      "name": "add_resource",
+      "description": "Add a resource to a process"
+    },
+    {
+      "name": "analyze_resource_utilization",
+      "description": "Analyze how resources are being utilized across processes"
+    },
+    {
+      "name": "analyze_dependencies",
+      "description": "Identify critical resource dependencies and bottlenecks"
+    },
+    {
+      "name": "optimize_allocation",
+      "description": "Generate recommendations for optimal resource allocation"
+    },
+    {
+      "name": "create_prompt",
+      "description": "Create a custom prompt template for specific analysis needs"
+    },
+    {
+      "name": "execute_prompt",
+      "description": "Execute a prompt with specific variables and context"
+    },
+    {
+      "name": "list_prompts",
+      "description": "Get all available prompt templates (built-in and custom)"
+    },
+    {
+      "name": "analyze_process_image",
+      "description": "Extract process information from images using Claude Vision"
+    },
+    {
+      "name": "extract_visual_process",
+      "description": "Extract detailed process elements from images with confidence scoring"
+    },
+    {
+      "name": "lucidchart_create_document",
+      "description": "Create a new document in Lucidchart using the REST API"
+    },
+    {
+      "name": "lucidchart_upload_document",
+      "description": "Upload a CSV document to Lucidchart via REST API"
+    },
+    {
+      "name": "lucidchart_import_csv",
+      "description": "Import CSV data to create shapes in existing Lucidchart document"
+    },
+    {
+      "name": "lucidchart_get_document",
+      "description": "Retrieve document information from Lucidchart"
+    },
+    {
+      "name": "lucidchart_list_documents",
+      "description": "List documents in Lucidchart account"
+    },
+    {
+      "name": "lucidchart_export_document",
+      "description": "Export document in various formats"
+    },
+    {
+      "name": "lucidchart_validate_api_key",
+      "description": "Test API configuration with Lucidchart"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "@ZubeidHendricks/youtube",
+  "displayName": "YouTube Server",
+  "description": "Interact with YouTube to search videos, get details, and manage transcripts.",
+  "createdAt": "2026-01-16T07:30:09.606Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ZubeidHendricks/youtube"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "youtubeApiKey"
+      ],
+      "properties": {
+        "youtubeApiKey": {
+          "type": "string",
+          "description": "Your YouTube Data API key."
+        },
+        "youtubeTranscriptLang": {
+          "type": "string",
+          "description": "Default language for transcripts.",
+          "default": "en"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

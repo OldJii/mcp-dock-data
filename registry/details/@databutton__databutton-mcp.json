@@ -1,0 +1,25 @@
+{
+  "id": "@databutton/databutton-mcp",
+  "displayName": "Databutton",
+  "description": "Build and deploy beautiful business apps effortlessly with our AI agent. Generate initial app plans and create a solid foundation for your projects using React and Python APIs. Streamline your development process and unleash unbounded complexity with ease.",
+  "createdAt": "2026-01-16T07:23:04.534Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@databutton/databutton-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "submit_app_requirements",
+      "description": "Submit app requirements"
+    }
+  ]
+}

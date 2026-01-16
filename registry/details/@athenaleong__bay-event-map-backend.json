@@ -1,0 +1,12 @@
+{
+  "id": "@athenaleong/bay-event-map-backend",
+  "displayName": "bay-event-map-backend",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:51.059Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@athenaleong/bay-event-map-backend"
+  },
+  "connection": null,
+  "capabilities": []
+}

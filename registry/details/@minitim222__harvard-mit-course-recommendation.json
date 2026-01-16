@@ -1,0 +1,46 @@
+{
+  "id": "@minitim222/harvard-mit-course-recommendation",
+  "displayName": "Harvard Course Explorer",
+  "description": "Discover and search Harvard's course catalog by code, title, or instructor. Explore random course picks to spark inspiration and uncover new subjects. View detailed course info and catalog insights to plan your schedule.",
+  "createdAt": "2026-01-16T07:28:48.474Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@minitim222/harvard-mit-course-recommendation"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_courses",
+      "description": "Search the Harvard course catalog. Searches course codes, titles, and instructor names. Returns all matching courses."
+    },
+    {
+      "name": "random_courses",
+      "description": "Get a random selection of courses from the catalog. Useful for exploration."
+    },
+    {
+      "name": "get_course_details",
+      "description": "Get detailed information about a specific course using its class key"
+    },
+    {
+      "name": "catalog_stats",
+      "description": "Get statistics about the Harvard course catalog (total courses, instructors, etc.)"
+    }
+  ]
+}

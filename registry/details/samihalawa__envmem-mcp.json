@@ -1,0 +1,12 @@
+{
+  "id": "samihalawa/envmem-mcp",
+  "displayName": "envmem-mcp",
+  "description": "EnvMem",
+  "createdAt": "2026-01-16T07:39:45.610Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/samihalawa/envmem-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

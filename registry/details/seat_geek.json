@@ -1,0 +1,57 @@
+{
+  "id": "seat_geek",
+  "displayName": "Seat geek",
+  "description": "SeatGeek Platform API provides access to events, venues, and performers data for concerts, sports, theater, and other live entertainment",
+  "createdAt": "2026-01-16T07:19:40.024Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/seat_geek"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SEAT_GEEK_GET_EVENT_DETAILS",
+      "description": "Get comprehensive details about a specific event including venue, performers, date/time, and ticket information."
+    },
+    {
+      "name": "SEAT_GEEK_GET_EVENT_RECOMMENDATIONS",
+      "description": "Get personalized event recommendations based on your favorite performers, events, or location. Discover new events you might enjoy."
+    },
+    {
+      "name": "SEAT_GEEK_GET_EVENT_SEATING",
+      "description": "Get detailed section and row information for an event to understand the venue layout and available seating options. Useful for choosing the best seats."
+    },
+    {
+      "name": "SEAT_GEEK_GET_PERFORMER_DETAILS",
+      "description": "Get detailed information about a specific performer including images, scores, and related metadata."
+    },
+    {
+      "name": "SEAT_GEEK_GET_PERFORMER_RECOMMENDATIONS",
+      "description": "Get recommendations for similar performers based on your interests. Discover new artists, bands, teams, or entertainers you might enjoy."
+    },
+    {
+      "name": "SEAT_GEEK_GET_TAXONOMIES",
+      "description": "Get a list of all available event categories and types (taxonomies) used on SeatGeek. Useful for understanding event classification and filtering options."
+    },
+    {
+      "name": "SEAT_GEEK_GET_VENUE_DETAILS",
+      "description": "Get detailed information about a specific venue including location, address, and other metadata."
+    },
+    {
+      "name": "SEAT_GEEK_SEARCH_EVENTS",
+      "description": "Search for events on SeatGeek by performers, venues, dates, or general queries. Find concerts, sports games, theater shows, and other live entertainment."
+    },
+    {
+      "name": "SEAT_GEEK_SEARCH_PERFORMERS",
+      "description": "Search for performers including artists, bands, sports teams, comedians, and more. Find your favorite entertainers and see their upcoming events."
+    },
+    {
+      "name": "SEAT_GEEK_SEARCH_VENUES",
+      "description": "Search for venues by location, name, or other criteria. Find stadiums, theaters, concert halls, and other entertainment venues."
+    }
+  ]
+}

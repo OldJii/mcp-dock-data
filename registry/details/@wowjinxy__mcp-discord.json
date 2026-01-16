@@ -1,0 +1,166 @@
+{
+  "id": "@wowjinxy/mcp-discord",
+  "displayName": "Discord",
+  "description": "Manage your Discord communities from one place. Browse servers and channels, view members and user details, send or read messages, and add reactions. Create and delete channels, assign roles, and moderate content with message deletion and timeouts.",
+  "createdAt": "2026-01-16T07:23:22.020Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wowjinxy/mcp-discord"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "discordToken": {
+          "type": "string",
+          "description": "Discord bot token with the required privileged intents enabled. Omit this when the DISCORD_TOKEN environment variable is set.",
+          "default": null
+        },
+        "defaultGuildId": {
+          "type": "string",
+          "description": "Optional default Discord server (guild) ID used when a tool call omits server_id.",
+          "default": null
+        }
+      },
+      "description": "Session configuration for the Discord MCP server.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_servers",
+      "description": "List the Discord servers the bot is currently connected to."
+    },
+    {
+      "name": "get_server_info",
+      "description": "Retrieve detailed information about a Discord server."
+    },
+    {
+      "name": "get_channels",
+      "description": "List channels for a Discord server grouped by category."
+    },
+    {
+      "name": "list_roles",
+      "description": "List all roles defined in the Discord server."
+    },
+    {
+      "name": "list_members",
+      "description": "List members of a Discord server."
+    },
+    {
+      "name": "get_user_info",
+      "description": "Fetch information about a specific Discord user."
+    },
+    {
+      "name": "send_message",
+      "description": "Send a message to a Discord text channel or thread."
+    },
+    {
+      "name": "read_messages",
+      "description": "Read recent messages from a channel."
+    },
+    {
+      "name": "add_reaction",
+      "description": "Add a reaction to a specific message."
+    },
+    {
+      "name": "add_multiple_reactions",
+      "description": "Add multiple reactions to a message."
+    },
+    {
+      "name": "remove_reaction",
+      "description": "Remove the bot's reaction from a message."
+    },
+    {
+      "name": "pin_message",
+      "description": "Pin a message in a text channel."
+    },
+    {
+      "name": "unpin_message",
+      "description": "Unpin a message in a text channel."
+    },
+    {
+      "name": "bulk_delete_messages",
+      "description": "Delete multiple recent messages from a channel."
+    },
+    {
+      "name": "create_text_channel",
+      "description": "Create a new text channel in the specified server."
+    },
+    {
+      "name": "create_voice_channel",
+      "description": "Create a new voice channel in the specified server."
+    },
+    {
+      "name": "create_stage_channel",
+      "description": "Create a new stage channel for events and announcements."
+    },
+    {
+      "name": "create_category",
+      "description": "Create a new channel category."
+    },
+    {
+      "name": "update_channel",
+      "description": "Update channel settings such as name, topic, and category."
+    },
+    {
+      "name": "delete_channel",
+      "description": "Delete a Discord channel."
+    },
+    {
+      "name": "create_invite",
+      "description": "Create an invite link for a channel."
+    },
+    {
+      "name": "list_invites",
+      "description": "List active invites for a server."
+    },
+    {
+      "name": "create_role",
+      "description": "Create a new role in the specified server."
+    },
+    {
+      "name": "edit_role",
+      "description": "Update the configuration of an existing role."
+    },
+    {
+      "name": "delete_role",
+      "description": "Delete a role from the server."
+    },
+    {
+      "name": "add_role",
+      "description": "Add a role to a Discord user."
+    },
+    {
+      "name": "remove_role",
+      "description": "Remove a role from a Discord user."
+    },
+    {
+      "name": "kick_member",
+      "description": "Kick a member from the server."
+    },
+    {
+      "name": "ban_member",
+      "description": "Ban a user from the server."
+    },
+    {
+      "name": "unban_member",
+      "description": "Remove a ban for a user."
+    },
+    {
+      "name": "list_bans",
+      "description": "List banned users for the server."
+    },
+    {
+      "name": "timeout_member",
+      "description": "Apply or clear a communication timeout for a member."
+    },
+    {
+      "name": "moderate_message",
+      "description": "Moderate a message by deleting it and optionally timing out the author."
+    }
+  ]
+}

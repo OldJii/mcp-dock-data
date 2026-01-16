@@ -1,0 +1,12 @@
+{
+  "id": "@Safra1976/mcp_trello",
+  "displayName": "mcp_trello",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:13.462Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Safra1976/mcp_trello"
+  },
+  "connection": null,
+  "capabilities": []
+}

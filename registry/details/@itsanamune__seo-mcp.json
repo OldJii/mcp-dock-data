@@ -1,0 +1,54 @@
+{
+  "id": "@itsanamune/seo-mcp",
+  "displayName": "SERP API Server",
+  "description": "Analyze search engine results, conduct keyword research, and perform competitor analysis effortlessly. Leverage powerful tools to gain insights and optimize your online presence. Start making data-driven decisions today with our comprehensive SERP analysis capabilities.",
+  "createdAt": "2026-01-16T07:29:32.485Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itsanamune/seo-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "serpApiKey"
+      ],
+      "properties": {
+        "serpApiKey": {
+          "type": "string",
+          "description": "SerpAPI key for search operations (get from https://serpapi.com)"
+        },
+        "rateLimitRequests": {
+          "type": "number",
+          "description": "Maximum number of requests allowed in the rate limit window",
+          "default": 100
+        },
+        "rateLimitWindowMs": {
+          "type": "number",
+          "description": "Rate limit window in milliseconds",
+          "default": 60000
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "_health",
+      "description": "Health check endpoint"
+    },
+    {
+      "name": "analyze_serp",
+      "description": "Analyze a SERP (Search Engine Results Page) for a given query"
+    },
+    {
+      "name": "research_keywords",
+      "description": "Research keywords related to a given topic or seed keyword"
+    },
+    {
+      "name": "analyze_competitors",
+      "description": "Analyze competitors for a given keyword or domain"
+    }
+  ]
+}

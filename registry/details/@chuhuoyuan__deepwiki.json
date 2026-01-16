@@ -1,0 +1,29 @@
+{
+  "id": "@chuhuoyuan/deepwiki",
+  "displayName": "GitHub Wiki Explorer",
+  "description": "Explore a GitHub repository's wiki to discover topics and read pages effortlessly. Quickly surface the right docs and context without manual digging. Ask focused questions about a repo and get clear answers grounded in its documentation.",
+  "createdAt": "2026-01-16T07:32:15.686Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chuhuoyuan/deepwiki"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "read_wiki_structure",
+      "description": "Get a list of documentation topics for a GitHub repository"
+    },
+    {
+      "name": "read_wiki_contents",
+      "description": "View documentation about a GitHub repository"
+    },
+    {
+      "name": "ask_question",
+      "description": "Ask any question about a GitHub repository"
+    }
+  ]
+}

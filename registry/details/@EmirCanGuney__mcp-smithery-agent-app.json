@@ -1,0 +1,12 @@
+{
+  "id": "@EmirCanGuney/mcp-smithery-agent-app",
+  "displayName": "mcp-smithery-agent-app",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:21.058Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@EmirCanGuney/mcp-smithery-agent-app"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "alzedev/mcp-azure-confluence",
+  "displayName": "mcp-azure-confluence",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:09.006Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/alzedev/mcp-azure-confluence"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@ImRonAI/telnyx-mcp-aws",
+  "displayName": "telnyx-mcp-aws",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:05.035Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ImRonAI/telnyx-mcp-aws"
+  },
+  "connection": null,
+  "capabilities": []
+}

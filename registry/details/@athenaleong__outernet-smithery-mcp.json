@@ -1,0 +1,12 @@
+{
+  "id": "@athenaleong/outernet-smithery-mcp",
+  "displayName": "outernet-smithery-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:25.586Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@athenaleong/outernet-smithery-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

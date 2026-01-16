@@ -1,0 +1,12 @@
+{
+  "id": "@8899you/claude",
+  "displayName": "claude",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:40.582Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@8899you/claude"
+  },
+  "connection": null,
+  "capabilities": []
+}

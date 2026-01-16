@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/pdf-reader",
+  "displayName": "pdf-reader",
+  "description": "Read entire PDFs or specific pages on demand. Search documents for keywords and jump to relevant passages. Retrieve metadata to quickly understand document properties.",
+  "createdAt": "2026-01-16T07:25:25.119Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/pdf-reader"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_pdf",
+      "description": "Read and extract text content from a PDF file. Returns the full text content and metadata."
+    },
+    {
+      "name": "read_pdf_page",
+      "description": "Read a specific page or range of pages from a PDF file."
+    },
+    {
+      "name": "get_pdf_metadata",
+      "description": "Get metadata information from a PDF file without reading all content."
+    },
+    {
+      "name": "search_pdf",
+      "description": "Search for specific text within a PDF file."
+    }
+  ]
+}

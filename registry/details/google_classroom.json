@@ -1,0 +1,141 @@
+{
+  "id": "google_classroom",
+  "displayName": "Google Classroom",
+  "description": "Google Classroom is a free web service developed by Google for schools that aims to simplify creating, distributing, and grading assignments",
+  "createdAt": "2026-01-16T07:19:52.218Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/google_classroom"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLE_CLASSROOM_CLASSROOMS_COURSE_WORK_MATERIALS_LIST",
+      "description": "Tool to list CourseWorkMaterials in a course. Use after confirming a valid courseId; supports pagination and ordering."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_ANNOUNCEMENTS_CREATE",
+      "description": "Tool to create an announcement in a course. Use after confirming the course ID is valid."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_ANNOUNCEMENTS_DELETE",
+      "description": "Tool to delete an announcement. Use after confirming the announcement ID."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_ANNOUNCEMENTS_GET",
+      "description": "Tool to get an announcement. Use when you need to fetch an announcement by course and announcement ID."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_ANNOUNCEMENTS_LIST",
+      "description": "Tool to list announcements in a course. Use after you have the course ID to page through announcements."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_ANNOUNCEMENTS_PATCH",
+      "description": "Tool to update fields of an announcement. Use when you need to modify specific details of an existing announcement after confirming which fields to update."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_CREATE",
+      "description": "Tool to create a new course. Use when a teacher needs to establish a Classroom course before enrollment."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_DELETE",
+      "description": "Tool to delete a course. Use when you need to remove a course after confirming the course ID."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_GET",
+      "description": "Tool to get details for a specific course. Use when you need full course information by ID."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_LIST",
+      "description": "Tool to list all courses accessible to the authenticated user. Use when you need a paginated list of courses."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_PATCH",
+      "description": "Tool to update one or more fields of a Classroom course. Use after retrieving course details and confirming fields to update."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_STUDENTS_GUARDIANS_LIST",
+      "description": "Tool to list guardians of a student in a course. Use when you need to retrieve and paginate guardians for a given student in a course."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_STUDENTS_LIST",
+      "description": "Tool to list students in a course. Use after you have the course ID to page through enrolled students."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TEACHERS_GET",
+      "description": "Tool to get teacher enrollment. Use when you need to retrieve a specific teacher in a course by courseId and userId."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TEACHERS_LIST",
+      "description": "Tool to list teachers in a course. Use after you have the course ID to page through enrolled teachers."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TOPICS_CREATE",
+      "description": "Tool to create a course topic. Use when you need to organize course content into named sections."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TOPICS_DELETE",
+      "description": "Tool to delete a course topic. Use when you need to remove a topic from a course after confirming the course and topic IDs."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TOPICS_GET",
+      "description": "Tool to get a course topic. Use when you need to retrieve details of a specific course topic by ID after confirming the course and topic IDs."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TOPICS_LIST",
+      "description": "Tool to list topics in a course. Use when you have confirmed the courseId and need to retrieve its topics."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSES_TOPICS_PATCH",
+      "description": "Tool to update fields of a course topic. Use when you need to rename a topic after confirming its current details."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_CREATE",
+      "description": "Tool to create a CourseWork item in a course. Use when you need to assign an assignment or question to students immediately or on a schedule."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_DELETE",
+      "description": "Tool to delete a specific CourseWork. Use when you need to remove a coursework item from a course after confirming the IDs."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_GET",
+      "description": "Tool to get details of a specific coursework. Use when detailed information about a particular assignment is needed."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_LIST",
+      "description": "Tool to list coursework in a course. Use after verifying courseId."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_MATERIALS_CREATE",
+      "description": "Tool to create course work material. Use when adding resources or notes to a course."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_MATERIALS_GET",
+      "description": "Tool to get a coursework material. Use when you need to retrieve details of a specific coursework material by course and material ID."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_MATERIALS_LIST",
+      "description": "Tool to list course work materials in a course. Use when you need to retrieve and paginate materials for a given courseId."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_PATCH",
+      "description": "Tool to update fields of a CourseWork. Use when you need to modify specific details of an existing coursework after confirming which fields to update."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_STUDENT_SUBMISSIONS_LIST",
+      "description": "Tool to list student submissions for a specific coursework. Use when you need to fetch or paginate student submissions by course and coursework, optionally filtering by user, state, or timeliness."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_COURSE_WORK_STUDENT_SUBMISSIONS_RECLAIM",
+      "description": "Tool to reclaim a student submission for editing. Use after a student requests to edit their turned-in submission, resetting its state to CREATED."
+    },
+    {
+      "name": "GOOGLE_CLASSROOM_INVITATIONS_CREATE",
+      "description": "Tool to create an invitation for a user to a course. Use after confirming the course ID is valid."
+    }
+  ]
+}

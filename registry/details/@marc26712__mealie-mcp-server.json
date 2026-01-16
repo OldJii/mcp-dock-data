@@ -1,0 +1,12 @@
+{
+  "id": "@marc26712/mealie-mcp-server",
+  "displayName": "mealie-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:25.960Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@marc26712/mealie-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

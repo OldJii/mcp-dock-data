@@ -1,0 +1,52 @@
+{
+  "id": "@MeirKaD/diabetes-mcp",
+  "displayName": "diabetes-mcp",
+  "description": "Check your latest Dexcom glucose and instantly look up carb counts for foods. Combine readings with carb info to plan meals and dosing with more confidence. Save time by keeping glucose and nutrition answers in one place.",
+  "createdAt": "2026-01-16T07:31:33.407Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MeirKaD/diabetes-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "username",
+        "password",
+        "region",
+        "brightdata_api_key"
+      ],
+      "properties": {
+        "region": {
+          "type": "string",
+          "description": "Dexcom region code (\"us\" for US servers, \"ous\" for outside US)"
+        },
+        "password": {
+          "type": "string",
+          "description": "Dexcom password"
+        },
+        "username": {
+          "type": "string",
+          "description": "Dexcom username/email"
+        },
+        "brightdata_api_key": {
+          "type": "string",
+          "description": "Bright Data API key for search"
+        }
+      },
+      "description": "Session-level configuration supplied by Smithery."
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_blood_glucose",
+      "description": "\n        Fetch the latest blood glucose reading from Dexcom.\n\n        Credentials/region are pulled from Smithery session config by default,\n        but can be overridden per-call via arguments.\n        "
+    },
+    {
+      "name": "search_carbs",
+      "description": "\n        Search Google via Bright Data for carb info.\n\n        The query is forced to: \"how many carbs in <food_name>\". Returns cleaned\n        organic results (JSON). Engine is fixed to Google; first page only.\n        "
+    }
+  ]
+}

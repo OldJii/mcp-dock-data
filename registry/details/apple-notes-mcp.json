@@ -1,0 +1,27 @@
+{
+  "id": "apple-notes-mcp",
+  "displayName": "Apple Notes Server",
+  "description": "Access and manage your local Apple Notes database via Claude Desktop.",
+  "createdAt": "2026-01-16T07:28:59.380Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/apple-notes-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "directory"
+      ],
+      "properties": {
+        "directory": {
+          "type": "string",
+          "description": "The directory where the project is located."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

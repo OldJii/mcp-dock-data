@@ -1,0 +1,49 @@
+{
+  "id": "@synaptic-ai-consulting/nouri",
+  "displayName": "nouri",
+  "description": "Plan smarter grocery runs with prioritized lists that learn from your edits. Find the best deals and compare prices across multiple stores to maximize savings. Track and edit lists with insights that keep your family on budget.",
+  "createdAt": "2026-01-16T07:26:31.533Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@synaptic-ai-consulting/nouri"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_list",
+      "description": "Produce prioritized shopping list based on user needs, preferences, and shopping history"
+    },
+    {
+      "name": "add_item",
+      "description": "Append an item to an existing shopping list"
+    },
+    {
+      "name": "remove_item",
+      "description": "Remove an item from a shopping list"
+    },
+    {
+      "name": "get_list",
+      "description": "Retrieve a shopping list for display"
+    },
+    {
+      "name": "search_deals",
+      "description": "Find best deals across multiple stores for specified items"
+    },
+    {
+      "name": "compare_prices",
+      "description": "Get detailed price comparison for a specific item across stores"
+    },
+    {
+      "name": "list_insights",
+      "description": "Provide usage insights and tips for a shopping list"
+    }
+  ]
+}

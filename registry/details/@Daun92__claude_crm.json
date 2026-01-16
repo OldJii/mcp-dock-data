@@ -1,0 +1,12 @@
+{
+  "id": "@Daun92/claude_crm",
+  "displayName": "claude_crm",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:04.790Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Daun92/claude_crm"
+  },
+  "connection": null,
+  "capabilities": []
+}

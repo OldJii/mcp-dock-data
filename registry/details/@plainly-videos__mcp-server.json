@@ -1,0 +1,45 @@
+{
+  "id": "@plainly-videos/mcp-server",
+  "displayName": "Plainly Videos MCP Server (Adobe After Effects Automation)",
+  "description": "MCP server for Plainly Videos that lets users browse and render Adobe After Effects projects directly from their favorite LLM clients. It brings video automation to After Effects, making it easy to trigger batch rendering, personalization, and localization while keeping full creative control. Render at scale through API or CSV, making high-volume video production faster and more accessible.",
+  "createdAt": "2026-01-16T07:32:23.439Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@plainly-videos/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Plainly API key."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_renderable_items",
+      "description": "\nReturn all Projects and Designs the authenticated user can render.\nDesigns are pre-made projects with variants available for all users.\nProjects are created and maintained by the user, and may have custom templates.\n\nEach item includes a lightweight preview of its templates/variants (name, aspect ratio, duration) plus a parent-level description and metadata (tags, category, attributes).\n\nFiltering guidance (semantic first):\n- First, determine relevance using: metadata.tags, metadata.category, metadata.attributes, description, and name.\n- Only after a semantic match, consider technical fit (aspectRatio, durationSeconds) to break ties.\n- Do not guess or list unrelated items. If nothing is relevant, respond: \"No suitable templates found.\"\n\nUse when:\n- The user wants to browse, search, or choose a template/variant.\n- Before recommending or starting a render for a targeted campaign, platform, or audience.\n\nFollow-ups:\n- `get_renderable_item_details` — fetch the full parameter schema/defaults for the chosen template/variant before rendering.\n      "
+    },
+    {
+      "name": "get_renderable_items_details",
+      "description": "\nReturn the renderable templates/variants under a specific Project or Design, including the parameters required to render each.\n\nHow to use:\n- Call this after the user selects a candidate from `list_renderable_items`.\n- For each returned template/variant:\n  1) Read its parameters.\n  2) Collect values for all parameters marked mandatory.\n  3) Respect the declared type (e.g., MEDIA (image) vs MEDIA (video)).\n\nGuidance:\n- Prefer `description` to understand the intent of each parameter; fall back to `label`, then `key` if needed.\n- If any mandatory parameter is missing or unclear, ask the user to provide it—do not guess.\n- If the parent has multiple templates/variants, choose the one that best matches the user's stated goals and constraints; otherwise present the options.\n\nUse when:\n- The user wants details/parameters for a chosen template/variant.\n- Immediately before preparing values and calling render_item.\n\nFollow-ups:\n- `render_item` — submit a render for the chosen template/variant with the collected parameter values.\n"
+    },
+    {
+      "name": "render_item",
+      "description": "\nCreate a render for a selected Project template or Design variant with specified parameters.\n\nHow to use:\n- Call this after the user selects a candidate from `get_renderable_items_details`.\n- Call this only once the user approved all parameters for the chosen template/variant.\n\nGuidance:\n- Never submit more than one render with the same parameters, unless the user explicitly requests it.\n- Use parameters to customize the render.\n- All mandatory parameters must be provided.\n- Provide values for optional parameters if it makes sense.\n- Parameter types must be respected:\n      - STRING: text string relevant to the parameter context.\n      - MEDIA: URL to a media file (image, audio, or video). Ensure the URL is publicly accessible and points directly to the media file.\n      - MEDIA (image): URL to an image file (jpg, png, etc.).\n      - MEDIA (audio): URL to an audio file (mp3, wav, etc.).\n      - MEDIA (video): URL to a video file (mp4, mov, etc.).\n      - COLOR: hex color code (e.g. FF5733).\n- If a parameter has a default value and the user does not provide a value, the default will be used.\n- If the user is unsure about a parameter, ask for clarification rather than guessing.\n- When referencing parameters in conversation, use their `label` or `description` for clarity.\n\nUse when:\n- The user wants to create a video from a specific template/variant with defined parameters.\n      "
+    },
+    {
+      "name": "check_render_status",
+      "description": "\nCheck the status of a render job.\n\nAvailable states:\n- PENDING: The render job has been created but not yet added to the queue.\n- THROTTLED: The render job is waiting due to rate limiting. It will be started as soon as a slot opens, no need for manual retries.\n- QUEUED: The render job is in the queue and will start soon.\n- IN_PROGRESS: The render job is currently being processed.\n- DONE: The render job has completed successfully. The output URL will be provided.\n- FAILED: The render job encountered an error and did not complete successfully. Error details will be provided.\n- INVALID: The render job was invalid (e.g., due to incorrect parameters). Error details will be provided.\n- CANCELLED: The render job was cancelled by the user.\n\nResponse format:\n- Always include a link to the render details page.\n- If the render is still in progress (PENDING, THROTTLED, QUEUED, IN_PROGRESS) tell user to check the status again later.\n- If the render is DONE, return the output URL and the render page details.\n- If the render FAILED or is INVALID, return the error message and details.\n\nUse when:\n- You need to check the progress of a render job\n- You want to retrieve the final render output URL\n- You want to retrieve render error details if the job failed\n      "
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "@luthfirizky777/mcp-test",
+  "displayName": "mcp-test",
+  "description": "Track real-time crypto prices, market caps, and trends across any asset. Analyze sentiment, open interest, ETF flows, and macro signals to gauge market conditions. Generate concise research briefs that synthesize key metrics for BTC, ETH, SOL, and more.",
+  "createdAt": "2026-01-16T07:27:21.688Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@luthfirizky777/mcp-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_crypto_asset_info",
+      "description": "Get real-time market information for ANY cryptocurrency from CoinGecko API.\n\nParameters:\n- coingeckoId (required, string): CoinGecko coin ID (e.g., \"bitcoin\", \"ethereum\", \"solana\", \"hyperliquid\", \"ethena\", \"binancecoin\"). Works dynamically with any valid CoinGecko ID!\n- ticker (optional, string): Display ticker symbol (e.g., \"BTC\", \"SOL\"). Defaults to coin's API symbol.\n\nIf you cannot find the id, you can use another tool called search_coins to find coingecko ids before using this tool.\n\nReturns formatted stats: price, 24h change/range/volume, market cap, ATH. Fast (<1s)."
+    },
+    {
+      "name": "get_market_data",
+      "description": "The purpose of this tool is to get data market from database"
+    },
+    {
+      "name": "get_fng_rhodl_oi_vwfr",
+      "description": "The purpose of this tool is to generate information about FnG, RHODL, OI, AND VWFR of the token.\n\n        Parameters:\n        1. ticker could be either BTC, ETH, HYPE, SOL, BNB, ENA and ASTER\n        2. requestedAsset could be either bitcoin, ether, hyperliquid, solana, bnbcoin, ethena and aster\n        3. exchange could be either Binance and Bybit\n\n        The process might take a few minutes, so please be patient until the tool gives a response."
+    },
+    {
+      "name": "search_coins",
+      "description": "Search for cryptocurrencies by name or symbol to find their CoinGecko ID.\n\nParameters:\n- search (optional, string): Search query to filter coins by name or symbol (e.g., \"bitcoin\", \"btc\", \"ethereum\")\n- include_platform (optional, boolean): Include platform information for each coin (default: false)\n- limit (optional, number): Maximum number of results to return (default: 10, max: 100)\n\nThis is useful when you need to find the exact CoinGecko ID before using get_crypto_asset_info tool."
+    },
+    {
+      "name": "generate_article",
+      "description": "\n        The purpose of this tool is to generate an article about the current state of the specific token\n\n        you need to run tool generate_fng_oi_vwfr_rhodl, get_crypto_asset_info, generate_etf_flow and generate_ffr to get their outputs as being used as parameters for this tool\n        \n        Parameters:\n        1. requestedAsset: name of the token e.g., bitcoin, ethereum etc.\n        2. ticker: the symbol of the token e.g., BTC, ETH etc.\n        3. assetInfo: the output from get_crypto_asset_info tool.\n        4. etfOutput: the output from generate_etf_flow tool\n        5. ffrOutput: the output from generate_ffr tool\n        6. fng: the output from generate_fng_oi_vwfr_rhodl tool\n        7. oi_vwfr: the output from generate_fng_oi_vwfr_rhodl tool\n        8. rhodl: the output from generate_fng_oi_vwfr_rhodl tool\n\n    The process may take a long time, so please do not submit additional requests for this tool while it is still processing.\n        \n        "
+    },
+    {
+      "name": "generate_etf_flow",
+      "description": "The purpose of this tool is to generate an analysis ETF Flow for the requested asset.\n\n        Parameters:\n        1. ticker could be either BTC, ETH, HYPE, SOL, BNB, ENA and ASTER\n        2. requestedAsset could be either bitcoin, ether, hyperliquid, solana, bnbcoin, ethena and aster\n\n        The process may take a long time, so please do not submit additional requests for this tool while it is still processing.\n\n        "
+    },
+    {
+      "name": "generate_ffr",
+      "description": "\n    The purpose of this tool is to generate analysis of Fed Funds Rate or FFR.\n       The process may take a long time, so please do not submit additional requests for this tool while it is still processing.\n\n    "
+    },
+    {
+      "name": "generate_fng_oi_vwfr_rhodl",
+      "description": "The purpose of this tool is to generate FnG, OI, VWFR and RHODL for specific token\n    Parameters:\n    1. ticker could be either BTC, ETH, HYPE, SOL, BNB, ENA and ASTER\n    2. requestedAsset could be either bitcoin, ether, hyperliquid, solana, bnbcoin, ethena and aster\n\n        The process may take a long time, so please do not submit additional requests for this tool while it is still processing.\n    "
+    }
+  ]
+}

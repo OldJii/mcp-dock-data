@@ -1,0 +1,29 @@
+{
+  "id": "deepwiki",
+  "displayName": "DeepWiki",
+  "description": "Explore GitHub repository documentation by topic to quickly understand any project. Open pages on demand and ask questions to get concise answers. Find what you need faster across complex wikis.",
+  "createdAt": "2026-01-16T07:22:00.619Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/deepwiki"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "read_wiki_structure",
+      "description": "Get a list of documentation topics for a GitHub repository"
+    },
+    {
+      "name": "read_wiki_contents",
+      "description": "View documentation about a GitHub repository"
+    },
+    {
+      "name": "ask_question",
+      "description": "Ask any question about a GitHub repository"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "@rishipradeep-think41/google-drive-mcp",
+  "displayName": "Google Drive",
+  "description": "Enable seamless access and management of Google Drive files through a standardized protocol. Facilitate listing, reading, and interacting with Google Drive resources directly from your LLM applications. Simplify integration with Google Drive by exposing its capabilities as MCP tools and resources.",
+  "createdAt": "2026-01-16T07:23:53.484Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rishipradeep-think41/google-drive-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "REFRESH_TOKEN"
+      ],
+      "properties": {
+        "CLIENT_ID": {
+          "type": "string",
+          "description": "Google client id"
+        },
+        "CLIENT_SECRET": {
+          "type": "string",
+          "description": "Google client secret"
+        },
+        "REFRESH_TOKEN": {
+          "type": "string",
+          "description": "Google refresh token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "drive_changes",
+      "description": "List changes in Drive"
+    },
+    {
+      "name": "drive_file_metadata",
+      "description": "Get metadata of a file"
+    },
+    {
+      "name": "drive_folder_children",
+      "description": "List contents of a folder"
+    },
+    {
+      "name": "drive_search",
+      "description": "Search files in Google Drive"
+    },
+    {
+      "name": "drive_file_content",
+      "description": "Retrieve content of a Google Drive file"
+    },
+    {
+      "name": "drive_create",
+      "description": "Create file or folder"
+    },
+    {
+      "name": "drive_upload",
+      "description": "Upload or update file content"
+    },
+    {
+      "name": "drive_append_text",
+      "description": "Append plain text to an existing text file in Drive"
+    },
+    {
+      "name": "drive_delete",
+      "description": "Trash or delete a file"
+    },
+    {
+      "name": "drive_share",
+      "description": "Manage file permissions"
+    },
+    {
+      "name": "drive_comment",
+      "description": "Add a comment to a file"
+    },
+    {
+      "name": "drive_copy",
+      "description": "Copy a file or folder to a new location"
+    },
+    {
+      "name": "drive_rename",
+      "description": "Rename a file or folder"
+    },
+    {
+      "name": "drive_star",
+      "description": "Star or unstar a file or folder"
+    },
+    {
+      "name": "drive_restore",
+      "description": "Restore a file from the trash"
+    },
+    {
+      "name": "drive_versions_list",
+      "description": "List all versions of a file"
+    },
+    {
+      "name": "drive_versions_delete",
+      "description": "Delete a specific version of a file"
+    },
+    {
+      "name": "drive_file_lock",
+      "description": "Lock or unlock a file to prevent changes (Google Workspace only)"
+    },
+    {
+      "name": "drive_shortcut_create",
+      "description": "Create a shortcut to a file or folder"
+    },
+    {
+      "name": "drive_permissions_list",
+      "description": "List all permissions of a file or folder"
+    },
+    {
+      "name": "drive_permission_update",
+      "description": "Update a user's permission on a file or folder"
+    },
+    {
+      "name": "drive_permission_delete",
+      "description": "Remove a user's access from a file or folder by permission ID"
+    },
+    {
+      "name": "drive_permission_add_domain",
+      "description": "Share file or folder with everyone in a domain"
+    },
+    {
+      "name": "drive_permission_add_anyone",
+      "description": "Allow anyone with the link to access a file or folder"
+    },
+    {
+      "name": "drive_file_list_comments",
+      "description": "List all comments on a file"
+    },
+    {
+      "name": "drive_file_delete_comment",
+      "description": "Delete a comment from a file"
+    },
+    {
+      "name": "drive_file_reply_to_comment",
+      "description": "Reply to a comment on a file"
+    },
+    {
+      "name": "drive_file_list_replies",
+      "description": "List all replies to a comment on a file"
+    },
+    {
+      "name": "drive_file_delete_reply",
+      "description": "Delete a reply to a comment on a file"
+    },
+    {
+      "name": "drive_file_move",
+      "description": "Move a file to different folder(s)"
+    },
+    {
+      "name": "drive_file_empty_trash",
+      "description": "Permanently delete all trashed files"
+    },
+    {
+      "name": "drive_shared_drives_list",
+      "description": "List all accessible Shared Drives"
+    },
+    {
+      "name": "drive_shared_drive_get",
+      "description": "Get metadata for a specific Shared Drive"
+    },
+    {
+      "name": "drive_shared_drive_create",
+      "description": "Create a new Shared Drive"
+    },
+    {
+      "name": "drive_shared_drive_delete",
+      "description": "Delete a Shared Drive"
+    },
+    {
+      "name": "drive_shared_drive_update",
+      "description": "Update a Shared Drive's metadata"
+    },
+    {
+      "name": "drive_shared_drive_files",
+      "description": "List files in a Shared Drive"
+    },
+    {
+      "name": "drive_storage_quota",
+      "description": "Get storage quota information for the user"
+    },
+    {
+      "name": "drive_storage_breakdown",
+      "description": "Get storage usage breakdown by file type"
+    },
+    {
+      "name": "drive_batch_get_metadata",
+      "description": "Get metadata for multiple files in a single request"
+    },
+    {
+      "name": "drive_batch_update_permissions",
+      "description": "Update permissions for multiple files at once"
+    },
+    {
+      "name": "drive_batch_delete",
+      "description": "Delete multiple files or folders at once"
+    },
+    {
+      "name": "drive_batch_copy",
+      "description": "Copy multiple files to a destination folder"
+    },
+    {
+      "name": "drive_batch_move",
+      "description": "Move multiple files to a destination folder"
+    }
+  ]
+}

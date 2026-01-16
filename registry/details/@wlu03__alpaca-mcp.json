@@ -1,0 +1,173 @@
+{
+  "id": "@wlu03/alpaca-mcp",
+  "displayName": "Alpaca Trading Integration",
+  "description": "Enable seamless interaction with Alpaca's trading API through a standardized protocol. Execute trading operations, fetch market data, and manage portfolios efficiently within your LLM applications. Simplify algorithmic trading by integrating real-time financial data and actions.",
+  "createdAt": "2026-01-16T07:25:56.898Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wlu03/alpaca-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "alpacaPaperKey",
+        "alpacaPaperSecret"
+      ],
+      "properties": {
+        "alpacaPaperKey": {
+          "type": "string",
+          "description": "Your Alpaca API paper key"
+        },
+        "alpacaPaperSecret": {
+          "type": "string",
+          "description": "Your Alpaca API paper secret"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-alpaca-account",
+      "description": "Fetches your Alpaca account"
+    },
+    {
+      "name": "alpaca-createOrder",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getOrder",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getOrders",
+      "description": ""
+    },
+    {
+      "name": "alpaca-replaceOrder",
+      "description": ""
+    },
+    {
+      "name": "alpaca-cancelOrder",
+      "description": ""
+    },
+    {
+      "name": "alpaca-cancelOrders",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getPosition",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getPositions",
+      "description": ""
+    },
+    {
+      "name": "alpaca-closePosition",
+      "description": ""
+    },
+    {
+      "name": "alpaca-closePositions",
+      "description": ""
+    },
+    {
+      "name": "alpaca-exerciseOption",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getWatchlist",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getWatchlists",
+      "description": ""
+    },
+    {
+      "name": "alpaca-createWatchlist",
+      "description": ""
+    },
+    {
+      "name": "alpaca-updateWatchlist",
+      "description": ""
+    },
+    {
+      "name": "alpaca-deleteWatchlist",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getPortfolioHistory",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getActivity",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getActivities",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getOptionsContract",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getOptionsContracts",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getCorporateAction",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getCorporateActions",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksCorporateActions",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getNews",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksMostActives",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksMarketMovers",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksQuotes",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksQuotesLatest",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksSnapshots",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksConditions",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksExchangeCodes",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksTrades",
+      "description": ""
+    },
+    {
+      "name": "alpaca-getStocksTradesLatest",
+      "description": ""
+    }
+  ]
+}

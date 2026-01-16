@@ -1,0 +1,144 @@
+{
+  "id": "@rakeshdavid/tavus-mcp",
+  "displayName": "Tavus MCP Server",
+  "description": "Enable AI video generation, replica management, conversational AI, lipsync, and speech synthesis through a comprehensive MCP server for the Tavus API. Manage AI replicas, generate videos, create interactive conversations, synchronize audio, and generate speech seamlessly within MCP-compatible applications. Access full Tavus API v2 capabilities with robust error handling and easy integration.",
+  "createdAt": "2026-01-16T07:27:30.788Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rakeshdavid/tavus-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tavusApiKey"
+      ],
+      "properties": {
+        "tavusApiKey": {
+          "type": "string",
+          "description": "Your Tavus API key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_replica",
+      "description": "Create a new AI replica from a training video"
+    },
+    {
+      "name": "get_replica",
+      "description": "Get details of a specific replica"
+    },
+    {
+      "name": "list_replicas",
+      "description": "List all replicas in your account"
+    },
+    {
+      "name": "delete_replica",
+      "description": "Delete a replica permanently"
+    },
+    {
+      "name": "rename_replica",
+      "description": "Rename an existing replica"
+    },
+    {
+      "name": "generate_video",
+      "description": "Generate a video using a replica and script or audio"
+    },
+    {
+      "name": "get_video",
+      "description": "Get details of a specific video"
+    },
+    {
+      "name": "list_videos",
+      "description": "List all videos in your account"
+    },
+    {
+      "name": "delete_video",
+      "description": "Delete a video permanently"
+    },
+    {
+      "name": "rename_video",
+      "description": "Rename an existing video"
+    },
+    {
+      "name": "create_conversation",
+      "description": "Create a new conversational video interface"
+    },
+    {
+      "name": "get_conversation",
+      "description": "Get details of a specific conversation"
+    },
+    {
+      "name": "list_conversations",
+      "description": "List all conversations in your account"
+    },
+    {
+      "name": "end_conversation",
+      "description": "End an active conversation"
+    },
+    {
+      "name": "delete_conversation",
+      "description": "Delete a conversation permanently"
+    },
+    {
+      "name": "create_persona",
+      "description": "Create a new persona for conversational AI"
+    },
+    {
+      "name": "get_persona",
+      "description": "Get details of a specific persona"
+    },
+    {
+      "name": "list_personas",
+      "description": "List all personas in your account"
+    },
+    {
+      "name": "patch_persona",
+      "description": "Update a persona using JSON patch format"
+    },
+    {
+      "name": "delete_persona",
+      "description": "Delete a persona permanently"
+    },
+    {
+      "name": "create_lipsync",
+      "description": "Create a lipsync video by synchronizing audio with video"
+    },
+    {
+      "name": "get_lipsync",
+      "description": "Get details of a specific lipsync"
+    },
+    {
+      "name": "list_lipsyncs",
+      "description": "List all lipsyncs in your account"
+    },
+    {
+      "name": "delete_lipsync",
+      "description": "Delete a lipsync permanently"
+    },
+    {
+      "name": "generate_speech",
+      "description": "Generate speech audio from text using a replica"
+    },
+    {
+      "name": "get_speech",
+      "description": "Get details of a specific speech"
+    },
+    {
+      "name": "list_speeches",
+      "description": "List all speeches in your account"
+    },
+    {
+      "name": "delete_speech",
+      "description": "Delete a speech permanently"
+    },
+    {
+      "name": "rename_speech",
+      "description": "Rename an existing speech"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@ChengJiale150/jupyter-mcp-server",
+  "displayName": "jupyter-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:52.492Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ChengJiale150/jupyter-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

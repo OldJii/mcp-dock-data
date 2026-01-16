@@ -1,0 +1,49 @@
+{
+  "id": "@KaranThink41/hubspot_private_app",
+  "displayName": "HubSpot MCP Server",
+  "description": "Interact seamlessly with HubSpot CRM to manage your Note engagements. Create, update, delete, and fetch summary records effortlessly, enhancing your workflow and productivity. Streamline your communication by sending records via chat or email directly from the server.",
+  "createdAt": "2026-01-16T07:27:25.412Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KaranThink41/hubspot_private_app"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "HUBSPOT_ACCESS_TOKEN",
+        "SHARED_CONTACT_ID"
+      ],
+      "properties": {
+        "SHARED_CONTACT_ID": {
+          "type": "string",
+          "description": "Shared Contact ID for HubSpot"
+        },
+        "HUBSPOT_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "HubSpot API access token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_shared_summary",
+      "description": "Step 1: Accept a title, summary, and author.\nStep 2: Combine these into a note body.\nStep 3: Create a new HubSpot Note engagement associated with a dedicated contact."
+    },
+    {
+      "name": "get_summaries",
+      "description": "Retrieve summary notes from HubSpot with flexible filters.\nOptional filters:\n  • date: (YYYY-MM-DD) to filter by a specific date.\n  • dayOfWeek: e.g., 'Monday' to filter by day of the week.\n  • limit: Number of most recent summaries to return.\n  • timeRange: { start: 'HH:MM', end: 'HH:MM' } to filter by time of day."
+    },
+    {
+      "name": "update_shared_summary",
+      "description": "Step 1: Provide an explicit Engagement ID OR a search query (query) to locate the note.\nStep 2: Retrieve the current note content.\nStep 3: Merge existing values with any provided updates (title, summary, author).\nStep 4: Update the note while preserving unchanged fields."
+    },
+    {
+      "name": "delete_shared_summary",
+      "description": "Delete a summary note from HubSpot.\nEither provide an explicit Engagement ID (id) or use optional filters (date, dayOfWeek, limit, timeRange) to select a candidate note (e.g., 'delete my last summary')."
+    }
+  ]
+}

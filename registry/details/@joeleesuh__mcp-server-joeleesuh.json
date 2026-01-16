@@ -1,0 +1,12 @@
+{
+  "id": "@joeleesuh/mcp-server-joeleesuh",
+  "displayName": "mcp-server-joeleesuh",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:39.871Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joeleesuh/mcp-server-joeleesuh"
+  },
+  "connection": null,
+  "capabilities": []
+}

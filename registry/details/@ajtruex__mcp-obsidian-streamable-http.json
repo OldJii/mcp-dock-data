@@ -1,0 +1,69 @@
+{
+  "id": "@ajtruex/mcp-obsidian-streamable-http",
+  "displayName": "Obsidian",
+  "description": "Organize and search your Obsidian vault. Browse files, read and edit notes, and run simple or complex searches across your knowledge base. Track recent changes and work with periodic notes to stay on top of your writing.",
+  "createdAt": "2026-01-16T07:32:36.508Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ajtruex/mcp-obsidian-streamable-http"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "obsidian_list_files_in_dir",
+      "description": ""
+    },
+    {
+      "name": "obsidian_list_files_in_vault",
+      "description": ""
+    },
+    {
+      "name": "obsidian_get_file_contents",
+      "description": ""
+    },
+    {
+      "name": "obsidian_simple_search",
+      "description": ""
+    },
+    {
+      "name": "obsidian_patch_content",
+      "description": ""
+    },
+    {
+      "name": "obsidian_append_content",
+      "description": ""
+    },
+    {
+      "name": "obsidian_put_content",
+      "description": ""
+    },
+    {
+      "name": "obsidian_delete_file",
+      "description": ""
+    },
+    {
+      "name": "obsidian_complex_search",
+      "description": ""
+    },
+    {
+      "name": "obsidian_batch_get_file_contents",
+      "description": ""
+    },
+    {
+      "name": "obsidian_get_periodic_note",
+      "description": ""
+    },
+    {
+      "name": "obsidian_get_recent_periodic_notes",
+      "description": ""
+    },
+    {
+      "name": "obsidian_get_recent_changes",
+      "description": ""
+    }
+  ]
+}

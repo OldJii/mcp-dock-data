@@ -1,0 +1,12 @@
+{
+  "id": "rapid/note_mcp",
+  "displayName": "note_mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:09.525Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/rapid/note_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

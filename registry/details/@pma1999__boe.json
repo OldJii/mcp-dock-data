@@ -1,0 +1,16 @@
+{
+  "id": "@pma1999/boe",
+  "displayName": "boe",
+  "description": "Search, read, and analyze consolidated Spanish legislation from the Boletín Oficial del Estado (BOE). Track daily BOE publications and open official PDFs, HTML, and consolidated texts. Filter by department, legal rank, subject, date range, and validity to pinpoint exactly what you need.",
+  "createdAt": "2026-01-16T07:26:25.058Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pma1999/boe"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

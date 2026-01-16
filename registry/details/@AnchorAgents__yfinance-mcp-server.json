@@ -1,0 +1,12 @@
+{
+  "id": "@AnchorAgents/yfinance-mcp-server",
+  "displayName": "yfinance-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:53.420Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AnchorAgents/yfinance-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

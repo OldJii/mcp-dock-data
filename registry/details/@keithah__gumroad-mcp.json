@@ -1,0 +1,55 @@
+{
+  "id": "@keithah/gumroad-mcp",
+  "displayName": "Gumroad",
+  "description": "Connect to your Gumroad account to query sales, subscribers, and products. Filter by date range or email and page through results to answer revenue and customer questions fast. Retrieve individual records to power support, analytics, and automation.",
+  "createdAt": "2026-01-16T07:31:24.880Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/gumroad-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "gumroadAccessToken"
+      ],
+      "properties": {
+        "gumroadAccessToken": {
+          "type": "string",
+          "description": "Your Gumroad API access token from https://gumroad.com/api"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_subscribers",
+      "description": "Get all subscribers for a specific Gumroad product"
+    },
+    {
+      "name": "get_subscriber",
+      "description": "Get details for a specific subscriber"
+    },
+    {
+      "name": "get_sales",
+      "description": "Get all sales with optional filters (date range, email, pagination)"
+    },
+    {
+      "name": "get_sale",
+      "description": "Get details for a specific sale"
+    },
+    {
+      "name": "get_products",
+      "description": "Get all Gumroad products"
+    },
+    {
+      "name": "get_product",
+      "description": "Get details for a specific product"
+    }
+  ]
+}

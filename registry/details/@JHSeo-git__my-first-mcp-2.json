@@ -1,0 +1,33 @@
+{
+  "id": "@JHSeo-git/my-first-mcp-2",
+  "displayName": "My First MCP Server",
+  "description": "Provide a simple and easy-to-run MCP server implementation that supports stdio and SSE transports. Enable seamless integration with MCP clients using Node.js or Docker environments. Facilitate quick startup and testing of MCP capabilities for development and experimentation.",
+  "createdAt": "2026-01-16T07:28:29.354Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JHSeo-git/my-first-mcp-2"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "echo",
+      "description": ""
+    },
+    {
+      "name": "calculate-bmi",
+      "description": ""
+    },
+    {
+      "name": "fetch-weather",
+      "description": ""
+    }
+  ]
+}

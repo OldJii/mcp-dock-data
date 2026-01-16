@@ -1,0 +1,60 @@
+{
+  "id": "@deepwriter-ai/deepwriter-mcp",
+  "displayName": "DeepWriter MCP Server",
+  "description": "Provide seamless integration with DeepWriter's AI content generation and project management capabilities through a standardized MCP interface. Manage projects, generate content, and retrieve project details efficiently using this server. Enhance your AI assistant workflows by connecting to DeepWriter's powerful API via MCP.",
+  "createdAt": "2026-01-16T07:30:57.398Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deepwriter-ai/deepwriter-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "deepwriterApiKey"
+      ],
+      "properties": {
+        "deepwriterApiKey": {
+          "type": "string",
+          "description": "DeepWriter API key for authenticating requests against the DeepWriter API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "listProjects",
+      "description": "List all projects for the authenticated user"
+    },
+    {
+      "name": "getProjectDetails",
+      "description": "Get detailed information about a specific project"
+    },
+    {
+      "name": "createProject",
+      "description": "Create a new project"
+    },
+    {
+      "name": "updateProject",
+      "description": "Update an existing project"
+    },
+    {
+      "name": "deleteProject",
+      "description": "Delete a project"
+    },
+    {
+      "name": "generateWizardWork",
+      "description": "Generate content using the enhanced wizard workflow with comprehensive parameter support"
+    },
+    {
+      "name": "formatPrompt",
+      "description": "Format and enhance prompts using AI to improve clarity and effectiveness"
+    },
+    {
+      "name": "uploadProjectFiles",
+      "description": "Upload multiple files to a project with enhanced support for 20+ file types including PDF, Word, text, code, and data files"
+    }
+  ]
+}

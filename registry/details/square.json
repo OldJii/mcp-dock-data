@@ -1,0 +1,121 @@
+{
+  "id": "square",
+  "displayName": "Square",
+  "description": "Square provides payment processing, POS systems, invoicing, and e-commerce tools, enabling sellers to accept card payments and manage their business",
+  "createdAt": "2026-01-16T07:19:53.864Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/square"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SQUARE_ACCEPT_DISPUTE",
+      "description": "Tool to accept a dispute and mark it as lost. Use after reviewing all evidence and deciding to accept liability."
+    },
+    {
+      "name": "SQUARE_CANCEL_INVOICE",
+      "description": "Tool to cancel an invoice. Use when you need to void an existing invoice; ensure the invoice isn't in DRAFT or a terminal state before cancelling."
+    },
+    {
+      "name": "SQUARE_CANCEL_PAYMENT",
+      "description": "Tool to cancel a payment. Use after confirming the payment is in APPROVED status."
+    },
+    {
+      "name": "SQUARE_CREATE_CARD",
+      "description": "Tool to create a card on file. Use when you need to securely store a customer's card for future payments. Requires a valid nonce or payment ID."
+    },
+    {
+      "name": "SQUARE_CREATE_DISPUTE_EVIDENCE_FILE",
+      "description": "Tool to upload a file as dispute evidence. Use when you need to attach supporting documents (PDF, image, etc.) to an existing dispute. Use after creating or retrieving a dispute."
+    },
+    {
+      "name": "SQUARE_CREATE_DISPUTE_EVIDENCE_TEXT",
+      "description": "Tool to upload text as evidence for a dispute challenge. Endpoint: POST /v2/disputes/{dispute_id}/evidence-text"
+    },
+    {
+      "name": "SQUARE_CREATE_INVOICE_ATTACHMENT",
+      "description": "Tool to upload a file and attach it to a Square invoice. Use when you need to add supplementary documents to an invoice in DRAFT, SCHEDULED, UNPAID, or PARTIALLY_PAID state."
+    },
+    {
+      "name": "SQUARE_DELETE_DISPUTE_EVIDENCE",
+      "description": "Tool to delete specified evidence from a dispute. Use when you need to remove an evidence item that is no longer relevant. Use after verifying dispute_id and evidence_id."
+    },
+    {
+      "name": "SQUARE_DELETE_INVOICE",
+      "description": "Tool to delete a Square invoice (only DRAFT invoices can be deleted)."
+    },
+    {
+      "name": "SQUARE_DELETE_INVOICE_ATTACHMENT",
+      "description": "Tool to delete an attachment from a Square invoice. Endpoint: DELETE /v2/invoices/{invoice_id}/attachments/{attachment_id}"
+    },
+    {
+      "name": "SQUARE_DELETE_WEBHOOK_SUBSCRIPTION",
+      "description": "Tool to delete a Square webhook subscription by ID."
+    },
+    {
+      "name": "SQUARE_GET_DISPUTE_EVIDENCE",
+      "description": "Tool to retrieve a specific evidence item associated with a given dispute. Endpoint: GET /v2/disputes/{dispute_id}/evidence/{evidence_id}"
+    },
+    {
+      "name": "SQUARE_GET_INVOICE",
+      "description": "Tool to retrieve an invoice by ID. Use when you already have an invoice ID and need its details."
+    },
+    {
+      "name": "SQUARE_LIST_DISPUTE_EVIDENCE",
+      "description": "Tool to list evidence items associated with a given dispute. Endpoint: GET /v2/disputes/{dispute_id}/evidence"
+    },
+    {
+      "name": "SQUARE_LIST_INVOICES",
+      "description": "Tool to list invoices for a Square location."
+    },
+    {
+      "name": "SQUARE_LIST_WEBHOOK_EVENT_TYPES",
+      "description": "Tool to list available webhook event types. Use when you need to discover event types before creating or updating a webhook subscription."
+    },
+    {
+      "name": "SQUARE_LIST_WEBHOOK_SUBSCRIPTIONS",
+      "description": "Tool to list webhook subscriptions. Use when you need to retrieve a page of webhook subscriptions for your application; supports pagination."
+    },
+    {
+      "name": "SQUARE_RETRIEVE_DISPUTE",
+      "description": "Tool to retrieve a Square dispute by ID. Endpoint: GET /v2/disputes/{dispute_id}"
+    },
+    {
+      "name": "SQUARE_RETRIEVE_ORDER",
+      "description": "Tool to retrieve an order by its ID. Use when you have an order ID and need to fetch its details."
+    },
+    {
+      "name": "SQUARE_RETRIEVE_PAYMENT_LINK",
+      "description": "Tool to retrieve a payment link by ID. Use when you need to fetch full details of a specific checkout link."
+    },
+    {
+      "name": "SQUARE_RETRIEVE_WEBHOOK_SUBSCRIPTION",
+      "description": "Tool to retrieve a Square webhook subscription by ID."
+    },
+    {
+      "name": "SQUARE_SUBMIT_DISPUTE_EVIDENCE",
+      "description": "Tool to submit evidence for a dispute. Use when you have compiled all supporting documentation and want to send it to the cardholder's bank before the due date."
+    },
+    {
+      "name": "SQUARE_TEST_WEBHOOK_SUBSCRIPTION",
+      "description": "Tool to test a webhook subscription. Use after creating or updating a subscription to verify its endpoint."
+    },
+    {
+      "name": "SQUARE_UPDATE_ORDER",
+      "description": "Tool to update an order. Use when modifying fields on an existing open order; requires the latest version for optimistic concurrency."
+    },
+    {
+      "name": "SQUARE_UPDATE_WEBHOOK_SUBSCRIPTION",
+      "description": "Tool to update a Square webhook subscription. Use when you need to modify subscription settings such as name, enabled state, event types, notification URL, or API version of an existing webhook subscription."
+    },
+    {
+      "name": "SQUARE_UPDATE_WEBHOOK_SUBSCRIPTION_SIGNATURE_KEY",
+      "description": "Tool to rotate the signature key for a webhook subscription. Use when you need to replace the current signature key for security purposes."
+    }
+  ]
+}

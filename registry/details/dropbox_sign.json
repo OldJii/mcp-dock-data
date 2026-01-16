@@ -1,0 +1,141 @@
+{
+  "id": "dropbox_sign",
+  "displayName": "Dropbox sign",
+  "description": "Dropbox Sign (formerly HelloSign) offers electronic signature and document workflow solutions, simplifying how businesses collect legally binding signatures online",
+  "createdAt": "2026-01-16T07:19:55.523Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/dropbox_sign"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "DROPBOX_SIGN_ADD_USER_TO_TEAM",
+      "description": "Tool to invite a user to your Team. Use when you need to add a member by email or account ID."
+    },
+    {
+      "name": "DROPBOX_SIGN_ADD_USER_TO_TEMPLATE",
+      "description": "Tool to grant a specified account access to a template. Use when you need to share a template with another user after confirming template and account identifiers."
+    },
+    {
+      "name": "DROPBOX_SIGN_BULK_SEND_WITH_TEMPLATE",
+      "description": "Tool to create a BulkSendJob for templated signature requests. Use when you need to send up to 250 signature requests at once via one or more templates."
+    },
+    {
+      "name": "DROPBOX_SIGN_CREATE_REPORT",
+      "description": "Tool to request creation of CSV report(s). Use when you need account activity or document status reports for a specific date range."
+    },
+    {
+      "name": "DROPBOX_SIGN_DELETE_TEMPLATE",
+      "description": "Tool to permanently delete a template. Use when you need to remove a template after confirming its ID."
+    },
+    {
+      "name": "DROPBOX_SIGN_DOWNLOAD_SIGNATURE_REQUEST_FILES",
+      "description": "Tool to download documents for a signature request. Use after confirming the request is complete; returns a PDF or ZIP file."
+    },
+    {
+      "name": "DROPBOX_SIGN_EDIT_AND_RESEND_EMBEDDED_SIGNATURE_REQUEST",
+      "description": "Tool to edit and resend an embedded signature request. Use when you need to modify and restart the embedded signing flow for an existing request."
+    },
+    {
+      "name": "DROPBOX_SIGN_EDIT_AND_RESEND_EMBEDDED_SIGNATURE_REQUEST_WITH_TEMPLATE",
+      "description": "Tool to edit and resend an embedded signature request using templates. Use when you need to update request details or recipients and resend within an embedded signing flow."
+    },
+    {
+      "name": "DROPBOX_SIGN_EDIT_AND_RESEND_SIGNATURE_REQUEST",
+      "description": "Tool to edit and resend a signature request. Use when you need to update documents, signers, or metadata and resend an existing non-templated request."
+    },
+    {
+      "name": "DROPBOX_SIGN_EDIT_AND_RESEND_UNCLAIMED_DRAFT",
+      "description": "Tool to edit and resend a previously created unclaimed draft. Use when you have an existing signature_request_id and want to modify the draft before reissuing."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_ACCOUNT",
+      "description": "Tool to retrieve the properties and settings of your Dropbox Sign account. Use when you need to inspect account details. Requires either account_id or email_address."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_BULK_SEND_JOB",
+      "description": "Tool to retrieve the status of a bulk send job. Use when you need up-to-date job progress and request details."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_CURRENT_TEAM",
+      "description": "Tool to get the current team membership status and details. Use when you need to check if the authenticated user is part of a team and retrieve team information. Returns is_on_team False if user is not part of any team (no retries needed for this case)."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_EMBEDDED_SIGN_URL",
+      "description": "Tool to generate an embedded signing URL for a signature. Use after creating a signature request when embedding HelloSign in an iFrame."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_EMBEDDED_TEMPLATE_EDIT_URL",
+      "description": "Tool to generate an edit URL for embedded template editing. Use after selecting or uploading a template to allow users to modify it in an iframe."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_SIGNATURE_REQUEST",
+      "description": "Tool to get the status and details of a signature request. Use when you need to retrieve up-to-date information after sending a request."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_TEAM_INFO",
+      "description": "Tool to get information about a team. Use when you need to retrieve details of a team by its ID."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_TEMPLATE",
+      "description": "Tool to return the specified template. Use when you need to fetch full template details by ID."
+    },
+    {
+      "name": "DROPBOX_SIGN_GET_TEMPLATE_FILES",
+      "description": "Tool to download documents associated with a template. Use after confirming the template is created; returns a PDF or ZIP archive of the documents."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_BULK_SEND_JOBS",
+      "description": "Tool to list bulk send jobs. Use when you need to retrieve all bulk send job summaries the authenticated user can access. Supports pagination via page and page_size."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_FAX_LINES",
+      "description": "Tool to list fax lines and their properties. Use when you need to retrieve available fax lines for an account, optionally paging or including team lines."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_SIGNATURE_REQUESTS",
+      "description": "Tool to list signature requests. Use when you need to retrieve paginated signature requests with optional filters."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_SUB_TEAMS",
+      "description": "Tool to list sub-teams of a parent team. Use when you need to retrieve all sub-teams under a given team with pagination support."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_TEAM_MEMBERS",
+      "description": "Tool to list members and roles for a team. Use after you have a valid team_id to view its members and their roles."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_TEAMS",
+      "description": "Tool to list all teams available to the user. Use after authenticating to retrieve the current team and its sub-teams, returning their team_ids and names for downstream actions."
+    },
+    {
+      "name": "DROPBOX_SIGN_LIST_TEMPLATES",
+      "description": "Tool to list templates. Use when you need to retrieve a paginated list of templates accessible to your account."
+    },
+    {
+      "name": "DROPBOX_SIGN_O_AUTH_AUTHORIZE",
+      "description": "Tool to generate an OAuth authorization URL. Use before directing the user to grant access."
+    },
+    {
+      "name": "DROPBOX_SIGN_RELEASE_SIGNATURE_REQUEST_HOLD",
+      "description": "Tool to release a held signature request. Use when a signature request created from an unclaimed draft is held and you want to send it to signers."
+    },
+    {
+      "name": "DROPBOX_SIGN_REMOVE_USER_FROM_TEMPLATE",
+      "description": "Tool to remove an account's access to a template. Use when you need to revoke a user's permission on a template after confirming template ID and target account."
+    },
+    {
+      "name": "DROPBOX_SIGN_SEND_SIGNATURE_REQUEST_REMINDER",
+      "description": "Tool to send an email reminder to a signer. Use when you need to remind a signer about an outstanding signature request at least 1 hour after the last reminder."
+    },
+    {
+      "name": "DROPBOX_SIGN_VERIFY_ACCOUNT",
+      "description": "Tool to verify whether a Dropbox Sign account exists for the given email. Use when you need to check account existence before sending signature requests."
+    }
+  ]
+}

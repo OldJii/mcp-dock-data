@@ -1,0 +1,817 @@
+{
+  "id": "pipedrive",
+  "displayName": "Pipedrive",
+  "description": "Pipedrive is a sales management tool built around pipeline visualization, lead tracking, activity reminders, and automation to keep deals progressing",
+  "createdAt": "2026-01-16T07:19:41.700Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/pipedrive"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "PIPEDRIVE_ADD_A_CALL_LOG",
+      "description": "Adds a new call log."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_CHANNEL",
+      "description": "New messaging channel added; registration limited to admins. Utilizes getConversations endpoint for data retrieval. Requires Messengers integration OAuth scope and a prepared Messaging app extension manifest."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_COMMENT_TO_A_NOTE",
+      "description": "Adds a new comment to a note."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_DEAL",
+      "description": "Add a new deal to Pipedrive with any custom fields, which vary by account and are identified by long hash keys. Check dealFields for existing custom fields. For details, visit the tutorial on adding a deal."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_FOLLOWER_TO_A_DEAL",
+      "description": "Adds a follower to a deal."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_FOLLOWER_TO_AN_ORGANIZATION",
+      "description": "Adds a follower to an organization."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_FOLLOWER_TO_A_PERSON",
+      "description": "Adds a follower to a person."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_FOLLOWER_TO_A_PRODUCT",
+      "description": "Adds a follower to a product."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_LEAD",
+      "description": "Pipedrive API lets you add leads linked to people or organizations and tags them with 'API' source. Custom fields from deals apply to leads and appear in responses if set. Details are in the tutorials for adding and updating leads."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_LEAD_LABEL",
+      "description": "Creates a lead label."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_AN_ACTIVITY",
+      "description": "New activity added. Response includes `more_activities_scheduled_in_context` to show if more are planned with the same entity. See tutorial on adding activities [here](https://pipedrive.readme.io/docs/adding-an-activity)."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_DEAL_FIELD",
+      "description": "Adds a new deal field. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-new-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">adding a new custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_FILTER",
+      "description": "New filter creation returns an ID. Only one primary condition group with 'AND' and two secondary groups (one 'AND', one 'OR') are supported. Future syntax expansion possible. See tutorial for details."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_GOAL",
+      "description": "Adds a new goal. Along with adding a new goal, a report is created to track the progress of your goal."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_ORGANIZATION_FIELD",
+      "description": "Adds a new organization field. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-new-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">adding a new custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_PERSON_FIELD",
+      "description": "Adds a new person field. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-new-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">adding a new custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_PIPELINE",
+      "description": "Adds a new pipeline (v2)."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_PRODUCT_FIELD",
+      "description": "Adds a new product field. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-new-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">adding a new custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_STAGE",
+      "description": "Adds a new stage, returns the ID upon success."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_TEAM",
+      "description": "Adds a new team to the company and returns the created object."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NEW_USER",
+      "description": "Adds a new user to the company, returns the ID upon success."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_AN_INSTALLMENT_SUBSCRIPTION",
+      "description": "Adds a new installment subscription. Note: Subscriptions endpoints may not be available on the company-specific base URL. To avoid 404s, this action overrides the default request behavior and uses the public API host (api.pipedrive.com) explicitly."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_AN_ORGANIZATION",
+      "description": "Set up a new Pipedrive organization using custom fields with unique key hashes. Retrieve `organizationFields` for configuration. Check the linked tutorial for guidance."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_NOTE",
+      "description": "Add a note to a deal, person, organization, lead, or project in Pipedrive. At least one of deal_id, person_id, org_id, lead_id, or project_id must be provided."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_PARTICIPANT_TO_A_DEAL",
+      "description": "Adds a participant to a deal."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_PERSON",
+      "description": "Add a new contact in Pipedrive with optional custom fields unique to each account found using the `personFields` endpoint. The endpoint also handles `data.marketing_status` for Campaigns product users."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_PRODUCT",
+      "description": "Adds a new product to the Products inventory. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-product\" target=\"_blank\" rel=\"noopener noreferrer\">adding a product</a>."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_PRODUCT_TO_A_DEAL",
+      "description": "Adds a product to a deal, creating a new item called a deal-product."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_PROJECT",
+      "description": "Adds a new project. Note that you can supply additional custom fields along with the request that are not described here. These custom fields are different for each Pipedrive account and can be recognized by long hashes as keys."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_RECURRING_SUBSCRIPTION",
+      "description": "Adds a new recurring subscription."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_ROLE",
+      "description": "Adds a new role. Note: - Roles endpoints require the `admin` scope. - For OAuth tokens, Pipedrive expects the company domain base URL with `/api/v1` path. Example: https://{COMPANY}.pipedrive.com/api/v1/roles - This action normalizes the base_url provided by metadata to ensure `/api/v1` is used."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_A_TASK",
+      "description": "Adds a new task."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_FILE",
+      "description": "Upload and link files to deals, people, organizations, activities, products, or leads in Pipedrive. See the \"adding a file\" tutorial for details."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_NEW_ACTIVITY_TYPE",
+      "description": "Adds a new activity type."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_OR_UPDATE_ROLE_SETTING",
+      "description": "Adds or updates the visibility setting for a role. Notes: - Roles endpoints require the `admin` OAuth scope. - OAuth calls must target the company domain with `/api/v1` path, e.g., https://{COMPANY}.pipedrive.com/api/v1/roles/{id}/settings - This action normalizes the base URL accordingly."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_PERSON_PICTURE",
+      "description": "This service allows adding a photo to a person's profile, replacing any existing one. Images must be square with a minimum size of 128 pixels and in GIF, JPG, or PNG formats. They will be resized to 128 and 512 pixels."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_ROLE_ASSIGNMENT",
+      "description": "Assigns a user to a role. Notes: - Roles endpoints require the `admin` OAuth scope. - OAuth calls must target the company domain with `/api/v1` path, e.g., https://{COMPANY}.pipedrive.com/api/v1/roles/{id}/assignments - This action normalizes the base URL accordingly and ensures JSON body is sent."
+    },
+    {
+      "name": "PIPEDRIVE_ADD_USERS_TO_A_TEAM",
+      "description": "Adds users to an existing team."
+    },
+    {
+      "name": "PIPEDRIVE_ARCHIVE_A_PROJECT",
+      "description": "Archives a project."
+    },
+    {
+      "name": "PIPEDRIVE_ATTACH_AN_AUDIO_FILE_TO_THE_CALL_LOG",
+      "description": "Adds an audio recording to the call log. That audio can be played by those who have access to the call log object."
+    },
+    {
+      "name": "PIPEDRIVE_CANCEL_A_RECURRING_SUBSCRIPTION",
+      "description": "Cancels a recurring subscription. This action attempts to cancel a recurring subscription via Subscriptions API. If Subscriptions endpoints are unavailable (404), it gracefully falls back to disabling all product attachments on the given deal (interpreting `id` as `deal_id`) to mimic cancellation behavior."
+    },
+    {
+      "name": "PIPEDRIVE_CREATE_A_NEW_WEBHOOK",
+      "description": "Creates and returns details of a new Webhook. Trigger events combine `event_action` and `event_object`, like `*.*` for all events or `added.deal`, `deleted.persons` for specific actions. More info in the Webhooks guide."
+    },
+    {
+      "name": "PIPEDRIVE_CREATE_AN_ORGANIZATION_RELATIONSHIP",
+      "description": "Creates and returns an organization relationship."
+    },
+    {
+      "name": "PIPEDRIVE_CREATE_A_REMOTE_FILE_AND_LINK_IT_TO_AN_ITEM",
+      "description": "Creates an empty file on Google Drive linked to an item. For details, refer to the Pipedrive remote file adding tutorial."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_CALL_LOG",
+      "description": "Deletes a call log. If there is an audio recording attached to it, it will also be deleted. The related activity will not be removed by this request. If you want to remove the related activities, please use the endpoint which is specific for activities."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_CHANNEL",
+      "description": "The endpoint removes a messenger channel along with conversations and messages. Requires Messengers integration OAuth and Messaging app extension manifest."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_COMMENT_RELATED_TO_A_NOTE",
+      "description": "Deletes a comment."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_CONVERSATION",
+      "description": "Deletes an existing conversation. To use the endpoint, you need to have **Messengers integration** OAuth scope enabled and the Messaging manifest ready for the [Messaging app extension](https://pipedrive.readme.io/docs/messaging-app-extension)."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_DEAL",
+      "description": "Marks a deal as deleted. After 30 days, the deal will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_DEAL_FIELD",
+      "description": "Marks a field as deleted. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/deleting-a-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">deleting a custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FILE",
+      "description": "Marks a file as deleted. After 30 days, the file will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FILTER",
+      "description": "Marks a filter as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FOLLOWER_FROM_A_DEAL",
+      "description": "Deletes a follower from a deal."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FOLLOWER_FROM_AN_ORGANIZATION",
+      "description": "Deletes a follower from an organization. You can retrieve the `follower_id` from the <a href=\"https://developers.pipedrive.com/docs/api/v1/Organizations#getOrganizationFollowers\">List followers of an organization</a> endpoint."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FOLLOWER_FROM_A_PERSON",
+      "description": "Deletes a follower from a person."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_FOLLOWER_FROM_A_PRODUCT",
+      "description": "Deletes a follower from a product."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_LEAD",
+      "description": "Deletes a specific lead."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_LEAD_LABEL",
+      "description": "Deletes a specific lead label."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ACTIVITY",
+      "description": "Marks an activity as deleted. After 30 days, the activity will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ACTIVITY_TYPE",
+      "description": "Marks an activity type as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ATTACHED_PRODUCT_FROM_A_DEAL",
+      "description": "Deletes a product attachment from a deal, using the `product_attachment_id`."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ORGANIZATION",
+      "description": "Marks an organization as deleted. After 30 days, the organization will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ORGANIZATION_FIELD",
+      "description": "Marks a field as deleted. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/deleting-a-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">deleting a custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_AN_ORGANIZATION_RELATIONSHIP",
+      "description": "Deletes an organization relationship and returns the deleted ID."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_NOTE",
+      "description": "Deletes a specific note."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PARTICIPANT_FROM_A_DEAL",
+      "description": "Deletes a participant from a deal."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PERSON",
+      "description": "Marks a person as deleted. After 30 days, the person will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PERSON_FIELD",
+      "description": "Marks a field as deleted. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/deleting-a-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">deleting a custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PIPELINE",
+      "description": "Marks a pipeline as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PRODUCT",
+      "description": "Marks a product as deleted. After 30 days, the product will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PRODUCT_FIELD",
+      "description": "Marks a product field as deleted. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/deleting-a-custom-field\" target=\"_blank\" rel=\"noopener noreferrer\">deleting a custom field</a>."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_PROJECT",
+      "description": "Marks a project as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_ROLE",
+      "description": "Marks a role as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_ROLE_ASSIGNMENT",
+      "description": "Removes the assigned user from a role and adds to the default role."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_STAGE",
+      "description": "Marks a stage as deleted. Uses the company-domain v2 endpoint."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_SUBSCRIPTION",
+      "description": "Marks an installment or a recurring subscription as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_A_TASK",
+      "description": "Marks a task as deleted. If the task has subtasks then those will also be deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_EXISTING_GOAL",
+      "description": "Marks a goal as deleted. Notes: - Pipedrive Goals endpoints for OAuth live under `{companydomain}/api/v1`. The default base_url is usually `{companydomain}/v1`, which would yield 404. We therefore normalize the base URL to `/api/v1` before issuing the DELETE."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_EXISTING_WEBHOOK",
+      "description": "Deletes the specified Webhook."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MAIL_THREAD",
+      "description": "Marks a mail thread as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_ACTIVITIES_IN_BULK",
+      "description": "Marks multiple activities as deleted. After 30 days, the activities will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_ACTIVITY_TYPES_IN_BULK",
+      "description": "Marks multiple activity types as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_DEAL_FIELDS_IN_BULK",
+      "description": "Marks multiple deal fields as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_DEALS_IN_BULK",
+      "description": "Marks multiple deals as deleted. After 30 days, the deals will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_FILTERS_IN_BULK",
+      "description": "Marks multiple filters as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_ORGANIZATION_FIELDS_IN_BULK",
+      "description": "Marks multiple fields as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_ORGANIZATIONS_IN_BULK",
+      "description": "Marks multiple organizations as deleted. After 30 days, the organizations will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_PERSON_FIELDS_IN_BULK",
+      "description": "Marks multiple fields as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_PERSONS_IN_BULK",
+      "description": "Marks multiple persons as deleted. After 30 days, the persons will be permanently deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_PRODUCT_FIELDS_IN_BULK",
+      "description": "Marks multiple fields as deleted."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_MULTIPLE_STAGES_IN_BULK",
+      "description": "Marks multiple stages as deleted (v1). Note: This endpoint may be deprecated; we keep compatibility and avoid raising to surface API errors in response."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_PERSON_PICTURE",
+      "description": "Deletes a person’s picture. Note: Pipedrive may return a 400 with error \"Item not found\" when the person has no picture set. Since delete is idempotent, we treat this specific case as a successful no-op and return a normalized response rather than raising."
+    },
+    {
+      "name": "PIPEDRIVE_DELETE_USERS_FROM_A_TEAM",
+      "description": "Deletes users from an existing team."
+    },
+    {
+      "name": "PIPEDRIVE_DOWNLOAD_ONE_FILE",
+      "description": "Initializes a file download."
+    },
+    {
+      "name": "PIPEDRIVE_DUPLICATE_DEAL",
+      "description": "Duplicates a deal."
+    },
+    {
+      "name": "PIPEDRIVE_ENUMERATE_ACCESSIBLE_USERS_FOR_LEAD",
+      "description": "Lists the users permitted to access a lead."
+    },
+    {
+      "name": "PIPEDRIVE_FIND_GOALS",
+      "description": "Query goal data by appending `{searchField}={searchValue}` to the URL with dot-notation fields and values. Include `is_active` to filter by goal status and specify both `period.start` and `period.end` for time-based searches."
+    },
+    {
+      "name": "PIPEDRIVE_FIND_SUBSCRIPTION_BY_DEAL",
+      "description": "Returns details of an installment or a recurring subscription by the deal ID. Note: Subscriptions endpoints may not be available on company-specific hosts or may be deprecated. This action attempts multiple hosts and gracefully falls back to Installments (v2) or Deal Products (v1) to provide a useful response based on live API data."
+    },
+    {
+      "name": "PIPEDRIVE_FIND_USERS_BY_NAME",
+      "description": "Finds users by their name."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ACTIVITIES_ASSIGNED_TO_A_PARTICULAR_USER",
+      "description": "Returns all activities assigned to a particular user."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ACTIVITIES_BETA",
+      "description": "This BETA cursor-paginated endpoint returns all activities, accessible only to global admins, not regular users who get a 403 error. Refer to Pipedrive's documentation for pagination and global permissions."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ACTIVITY_FIELDS",
+      "description": "Returns all activity fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ACTIVITY_TYPES",
+      "description": "Returns all activity types."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ADD_ONS_FOR_A_SINGLE_COMPANY",
+      "description": "Returns the add-ons for a single company."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_CALL_LOGS_ASSIGNED_TO_A_PARTICULAR_USER",
+      "description": "Returns all call logs assigned to a particular user."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_COMMENTS_FOR_A_NOTE",
+      "description": "Returns all comments associated with a note."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_DEAL_FIELDS",
+      "description": "Returns data about all deal fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_DEALS",
+      "description": "Returns all deals. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/getting-all-deals\" target=\"_blank\" rel=\"noopener noreferrer\">getting all deals</a>."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_DEALS_BETA",
+      "description": "This endpoint returns all deals with cursor pagination (in BETA). Only global admins can access it; others get a 403 error. More info on pagination and permissions is available online."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_FILES",
+      "description": "Returns data about all files."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_FILTER_HELPERS",
+      "description": "The text provides links to documentation for adding or updating filters, and information on all supported filter helpers in an API. It encourages consulting a tutorial for more details on adding a filter."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_FILTERS",
+      "description": "Returns data about all filters."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_LEAD_LABELS",
+      "description": "Returns details of all lead labels. This endpoint does not support pagination and all labels are always returned."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_LEADS",
+      "description": "The API returns sorted leads by creation time, supporting pagination via `limit` and `start`. Custom field values are included if set, mimicking the `Deals` endpoint structure; unset fields are omitted. Leads share custom fields with deals."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_LEAD_SOURCES",
+      "description": "Returns all lead sources. Please note that the list of lead sources is fixed, it cannot be modified. All leads created through the Pipedrive API will have a lead source `API` assigned."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_MAIL_MESSAGES_OF_MAIL_THREAD",
+      "description": "Returns all the mail messages inside a specified mail thread."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_NOTE_FIELDS",
+      "description": "Returns data about all note fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_NOTES",
+      "description": "Returns all notes."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ORGANIZATION_FIELDS",
+      "description": "Returns data about all organization fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ORGANIZATIONS",
+      "description": "Returns all organizations."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ORGANIZATIONS_BETA",
+      "description": "This BETA API endpoint lists all organizations with cursor pagination. Only global admins have access; others get a 403 error. See docs for pagination and global permissions."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PAYMENTS_OF_A_SUBSCRIPTION",
+      "description": "Returns all payments of an installment or recurring subscription."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PERMISSION_SETS",
+      "description": "Returns data about all permission sets."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PERSON_FIELDS",
+      "description": "Returns data about all person fields.<br>If a company uses the [Campaigns product](https://pipedrive.readme.io/docs/campaigns-in-pipedrive-api), then this endpoint will also return the `data.marketing_status` field."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PERSONS",
+      "description": "Returns all persons."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PERSONS_BETA",
+      "description": "This BETA endpoint returns all persons, using cursor pagination. Only global admins have access; others get a 403 error. Info on pagination and permissions is in the linked docs."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PIPELINES",
+      "description": "Returns data about all pipelines."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PRODUCT_FIELDS",
+      "description": "Returns data about all product fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PRODUCTS",
+      "description": "Returns data about all products."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PROJECT_BOARDS",
+      "description": "Returns all projects boards that are not deleted."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PROJECTS",
+      "description": "Returns all projects. This is a cursor-paginated endpoint. For more information, please refer to our documentation on <a href=\"https://pipedrive.readme.io/docs/core-api-concepts-pagination\" target=\"_blank\" rel=\"noopener noreferrer\">pagination</a>."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_PROJECT_TEMPLATES",
+      "description": "The endpoint retrieves all non-deleted project templates with cursor-based pagination. Refer to the provided documentation link for more details on pagination."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_RELATIONSHIPS_FOR_ORGANIZATION",
+      "description": "Gets all of the relationships for a supplied organization ID."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_ROLES",
+      "description": "Returns all the roles within the company. Note: - Roles endpoints require the `admin` scope. - For OAuth tokens, Pipedrive expects the company domain base URL with `/api/v1` path. Example: https://{COMPANY}.pipedrive.com/api/v1/roles - This action normalizes the base_url provided by metadata to ensure `/api/v1` is used."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_STAGES",
+      "description": "Returns data about all stages."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_SUPPORTED_CURRENCIES",
+      "description": "Returns all supported currencies in given account which should be used when saving monetary values with other objects. The `code` parameter of the returning objects is the currency code according to ISO 4217 for all non-custom currencies."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_TASKS",
+      "description": "Returns all tasks. This is a cursor-paginated endpoint. For more information, please refer to our documentation on <a href=\"https://pipedrive.readme.io/docs/core-api-concepts-pagination\" target=\"_blank\" rel=\"noopener noreferrer\">pagination</a>."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_TEAMS",
+      "description": "Returns data about teams within the company."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_TEAMS_OF_A_USER",
+      "description": "Returns data about all teams which have the specified user as a member."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_USER_CONNECTIONS",
+      "description": "Returns data about all connections for the authorized user."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_USERS",
+      "description": "Returns data about all users within the company."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_USERS_IN_A_TEAM",
+      "description": "Returns a list of all user IDs within a team."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ALL_WEBHOOKS",
+      "description": "Returns data about all the Webhooks of a company."
+    },
+    {
+      "name": "PIPEDRIVE_GET_A_SINGLE_TEAM",
+      "description": "Returns data about a specific team."
+    },
+    {
+      "name": "PIPEDRIVE_GET_CONVERSATIONS",
+      "description": "Tool to retrieve messaging conversations. Use after channel registration to sync conversations."
+    },
+    {
+      "name": "PIPEDRIVE_GET_CURRENT_USER_DATA",
+      "description": "Returns data about an authorized user within the company with bound company data: company ID, company name, and domain. Note that the `locale` property means 'Date/number format' in the Pipedrive account settings, not the chosen language."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_CONVERSION_RATES_IN_PIPELINE",
+      "description": "Returns all stage-to-stage conversion and pipeline-to-close rates for the given time period."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_IN_A_PIPELINE",
+      "description": "Lists deals in a specific pipeline across all its stages."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_IN_A_STAGE",
+      "description": "Lists deals in a specific stage."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_MOVEMENTS_IN_PIPELINE",
+      "description": "Returns statistics for deals movements for the given time period."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_SUMMARY",
+      "description": "Returns a summary of all the deals."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_TIMELINE",
+      "description": "Returns opened and won deals in time-based groups according to a specified dealField, with examples of deals grouped by month over a 3-month period starting January 2012."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DEALS_WHERE_A_PRODUCT_IS_ATTACHED_TO",
+      "description": "Returns data about deals that have a product attached to it."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_BOARD",
+      "description": "Returns the details of a specific project board."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_CALL_LOG",
+      "description": "Returns details of a specific call log."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_DEAL",
+      "description": "Fetches specific deal details, including exclusive fields like deal age and pipeline stage duration. Custom fields show up as hashes, which can be matched using the 'key' from dealFields. See the deal details tutorial for more."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_AN_ACTIVITY",
+      "description": "Returns the details of a specific activity."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_AN_ORGANIZATION",
+      "description": "Provides detailed information about an organization, including additional fields not shown when listing all organizations, and maps custom fields as long hashes to the 'key' value in organizationFields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_PERSON",
+      "description": "The text describes an API endpoint that returns detailed person information, including extra fields and custom fields as hashes. It also provides `data.marketing_status` if the Campaigns product is used."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_PHASE",
+      "description": "Returns the details of a specific project phase."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_PROJECT",
+      "description": "Returns the details of a specific project. Also note that custom fields appear as long hashes in the resulting data. These hashes can be mapped against the `key` value of project fields."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_SUBSCRIPTION",
+      "description": "Returns details of an installment or a recurring subscription. Note: Subscriptions endpoints may not be available on the company-specific base URL. To avoid 404s, this action tries multiple hosts and gracefully falls back to Installments (v2) and Deal Products (v1)."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_TASK",
+      "description": "Returns the details of a specific task."
+    },
+    {
+      "name": "PIPEDRIVE_GET_DETAILS_OF_A_TEMPLATE",
+      "description": "Returns the details of a specific project template."
+    },
+    {
+      "name": "PIPEDRIVE_GET_MAIL_THREADS",
+      "description": "Returns mail threads in a specified folder ordered by the most recent message within."
+    },
+    {
+      "name": "PIPEDRIVE_GET_MARKETPLACE_CLIENT_ID",
+      "description": "Tool to retrieve marketplace_client_id of an installed video integration. Use when you need the client ID for an installed integration."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_COMMENT",
+      "description": "Returns the details of a comment."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_DEAL_FIELD",
+      "description": "Returns data about a specific deal field."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_FILE",
+      "description": "Returns data about a specific file."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_FILTER",
+      "description": "Returns data about a specific filter. Note that this also returns the condition lines of the filter."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_LEAD",
+      "description": "API returns specific lead details with custom field values in the Deals format. Unset custom fields are omitted. Leads share custom fields with deals, not having a unique set."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_MAIL_MESSAGE",
+      "description": "Returns data about a specific mail message."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_MAIL_THREAD",
+      "description": "Returns a specific mail thread."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_NOTE",
+      "description": "Returns details about a specific note."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_ORGANIZATION_FIELD",
+      "description": "Returns data about a specific organization field."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_ORGANIZATION_RELATIONSHIP",
+      "description": "Finds and returns an organization relationship from its ID."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_PERMISSION_SET",
+      "description": "Returns data about a specific permission set."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_PERSON_FIELD",
+      "description": "Returns data about a specific person field."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_PIPELINE",
+      "description": "Returns data about a specific pipeline. Also returns the summary of the deals in this pipeline across its stages."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_PRODUCT",
+      "description": "Returns data about a specific product."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_PRODUCT_FIELD",
+      "description": "Returns data about a specific product field."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_ROLE",
+      "description": "Returns the details of a specific role. Note: - Roles endpoints require the `admin` scope. - For OAuth tokens, Pipedrive expects the company domain base URL with `/api/v1` path. Example: https://{COMPANY}.pipedrive.com/api/v1/roles/{id} - This action normalizes the provided base_url to use `/api/v1` to avoid host/path mismatches."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_STAGE",
+      "description": "Returns data about a specific stage."
+    },
+    {
+      "name": "PIPEDRIVE_GET_ONE_USER",
+      "description": "Returns data about a specific user within the company."
+    },
+    {
+      "name": "PIPEDRIVE_GET_PROJECT_PHASES",
+      "description": "Returns all active project phases under a specific board."
+    },
+    {
+      "name": "PIPEDRIVE_GET_RECENTS",
+      "description": "Returns data about all recent changes occurred after the given timestamp."
+    },
+    {
+      "name": "PIPEDRIVE_GET_RESULT_OF_A_GOAL",
+      "description": "Gets the progress of a goal for the specified period."
+    },
+    {
+      "name": "PIPEDRIVE_GET_TEMPLATES",
+      "description": "Tool to retrieve message templates for a channel. Use when template support is enabled."
+    },
+    {
+      "name": "PIPEDRIVE_LINK_A_REMOTE_FILE_TO_AN_ITEM",
+      "description": "Links an existing remote file (`googledrive`) to the item you supply. For more information, see the tutorial for <a href=\"https://pipedrive.readme.io/docs/adding-a-remote-file\" target=\"_blank\" rel=\"noopener noreferrer\">adding a remote file</a>."
+    },
+    {
+      "name": "PIPEDRIVE_LINK_USER_VIDEO_INTEGRATION",
+      "description": "A video calling provider must call this endpoint after a user has installed the video calling app so that the new user's information is sent."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_ACTIVITIES_ASSOCIATED_WITH_A_DEAL",
+      "description": "Lists activities associated with a deal."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_ACTIVITIES_ASSOCIATED_WITH_AN_ORGANIZATION",
+      "description": "Lists activities associated with an organization."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_ACTIVITIES_ASSOCIATED_WITH_A_PERSON",
+      "description": "Lists activities associated with a person."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_ALL_PERSONS_ASSOCIATED_WITH_A_DEAL",
+      "description": "The endpoint lists every person linked to a deal, including primary contacts and participants, and provides a `data.marketing_status` field for users of the Campaigns product."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_DEALS_ASSOCIATED_WITH_AN_ORGANIZATION",
+      "description": "Lists deals associated with an organization."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_DEALS_ASSOCIATED_WITH_A_PERSON",
+      "description": "Lists deals associated with a person."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_FILES_ATTACHED_TO_A_DEAL",
+      "description": "Lists files associated with a deal."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_FILES_ATTACHED_TO_AN_ORGANIZATION",
+      "description": "Lists files associated with an organization."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_FILES_ATTACHED_TO_A_PERSON",
+      "description": "Lists files associated with a person."
+    },
+    {
+      "name": "PIPEDRIVE_LIST_FILES_ATTACHED_TO_A_PRODUCT",
+      "description": "Lists files associated with a product."
+    }
+  ]
+}

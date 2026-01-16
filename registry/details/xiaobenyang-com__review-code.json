@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/review-code",
+  "displayName": "review-code",
+  "description": "生成统一的代码评审提示，覆盖整体、单文件与差异审查场景。解析审查文本中的总分，输出标准化评分。帮助团队规范评审流程、提升代码质量与一致性。",
+  "createdAt": "2026-01-16T07:29:43.062Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/review-code"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "review_code",
+      "description": "构建用于代码整体审查与打分的 LLM 提示词（不直接调用 LLM）"
+    },
+    {
+      "name": "review_diff",
+      "description": "构建用于 Git diff 变更审查与打分的 LLM 提示词（不直接调用 LLM）"
+    },
+    {
+      "name": "review_file",
+      "description": "构建用于单文件审查与打分的 LLM 提示词（不直接调用 LLM）"
+    },
+    {
+      "name": "parse_review_score",
+      "description": "从审查文本中解析评分（提取 '总分:XX分' 格式）"
+    }
+  ]
+}

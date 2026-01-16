@@ -1,0 +1,142 @@
+{
+  "id": "@BowenXU0126/aistudio_hw3",
+  "displayName": "Say Hello",
+  "description": "Create personalized greetings instantly. Switch to pirate mode for playful, swashbuckling salutations. Start conversations with ready-made prompts and classic Hello, World inspiration.",
+  "createdAt": "2026-01-16T07:28:23.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BowenXU0126/aistudio_hw3"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "$defs": {
+        "Priority": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "urgent"
+          ],
+          "type": "string",
+          "title": "Priority"
+        },
+        "TaskCategory": {
+          "enum": [
+            "work",
+            "personal",
+            "learning",
+            "health",
+            "finance",
+            "other"
+          ],
+          "type": "string",
+          "title": "TaskCategory"
+        }
+      },
+      "title": "ConfigSchema",
+      "properties": {
+        "timezone": {
+          "type": "string",
+          "description": "Your timezone (e.g., 'America/New_York')",
+          "default": "UTC"
+        },
+        "focus_mode": {
+          "type": "boolean",
+          "description": "Enable focus mode (fewer notifications)",
+          "default": false
+        },
+        "slack_webhook": {
+          "type": "string",
+          "description": "Slack webhook URL for notifications",
+          "default": null
+        },
+        "weekly_reports": {
+          "type": "boolean",
+          "description": "Generate weekly productivity reports",
+          "default": true
+        },
+        "auto_track_time": {
+          "type": "boolean",
+          "description": "Automatically track time for tasks",
+          "default": true
+        },
+        "default_category": {
+          "type": "string",
+          "description": "Default category for new tasks",
+          "default": "other"
+        },
+        "default_priority": {
+          "type": "string",
+          "description": "Default priority for new tasks",
+          "default": "medium"
+        },
+        "detailed_analytics": {
+          "type": "boolean",
+          "description": "Enable detailed time tracking analytics",
+          "default": false
+        },
+        "work_hours_per_day": {
+          "type": "number",
+          "description": "Expected work hours per day",
+          "default": 8
+        },
+        "calendar_integration": {
+          "type": "boolean",
+          "description": "Enable calendar integration",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_task",
+      "description": "Create a new task with comprehensive details."
+    },
+    {
+      "name": "update_task",
+      "description": "Update an existing task with new information."
+    },
+    {
+      "name": "delete_task",
+      "description": "Delete a task permanently."
+    },
+    {
+      "name": "list_tasks",
+      "description": "List tasks with filtering options."
+    },
+    {
+      "name": "get_task_details",
+      "description": "Get detailed information about a specific task."
+    },
+    {
+      "name": "start_timer",
+      "description": "Start tracking time for a specific task."
+    },
+    {
+      "name": "stop_timer",
+      "description": "Stop an active timer and calculate duration."
+    },
+    {
+      "name": "log_time",
+      "description": "Log time manually for a task without using timer."
+    },
+    {
+      "name": "get_time_analytics",
+      "description": "Get detailed time tracking analytics and insights."
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new project with team and timeline."
+    },
+    {
+      "name": "get_project_status",
+      "description": "Get comprehensive project status and progress."
+    }
+  ]
+}

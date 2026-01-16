@@ -1,0 +1,97 @@
+{
+  "id": "@clay-inc/clay-mcp",
+  "displayName": "Clay MCP",
+  "description": "Access your network seamlessly with a simple and efficient server. Leverage a variety of tools to enhance your applications and workflows. Start integrating with your existing systems effortlessly.",
+  "createdAt": "2026-01-16T07:22:36.674Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@clay-inc/clay-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_user_information",
+      "description": "Get information about the current user"
+    },
+    {
+      "name": "searchContacts",
+      "description": "Search for contacts and return matching people. Use for questions about specific contacts or \"who\" questions (e.g. \"Who did I meet most?\" or \"who works as an engineer?\"). Returns actual contact records for queries needing specific people. Note: interaction counts represent total accumulated interactions and cannot be filtered by date ranges."
+    },
+    {
+      "name": "getContact",
+      "description": "Get full details for a contact by id, including emails, social links, phone numbers, and notes."
+    },
+    {
+      "name": "createContact",
+      "description": "Create a new contact record in Clay. This endpoint should only be used when you need to create a completely new contact, not for adding contacts to groups."
+    },
+    {
+      "name": "updateContact",
+      "description": "Update a contact record in Clay. This endpoint should only be used when you need to update a contact, not for adding contacts to groups."
+    },
+    {
+      "name": "archive_contact",
+      "description": "Archive a contact record in Clay. This endpoint should only be used when you need to archive a contact."
+    },
+    {
+      "name": "restore_contact",
+      "description": "Restore a archived contact record in Clay. This endpoint should only be used when you need to restore a contact."
+    },
+    {
+      "name": "createNote",
+      "description": "Create a note for a contact. Only use this when the user explicitly asks to create, add, or save a note."
+    },
+    {
+      "name": "getGroups",
+      "description": "Get all groups or lists for the user."
+    },
+    {
+      "name": "createGroup",
+      "description": "Create a group or list for the user. If a group with the same name already exists, it will not create a duplicate unless explicitly requested to ignore the check."
+    },
+    {
+      "name": "updateGroup",
+      "description": "Update a group or list. Use this to update the group title and/or modify its members. When adding or removing contacts, provide ALL contact IDs to add/remove in a single call - do not make multiple calls for individual contacts."
+    },
+    {
+      "name": "getNotes",
+      "description": "Use ONLY when the user explicitly mentions \"note\" or \"notes\" to retrieve notes between two dates (e.g. \"what notes from last week?\"). Returns notes by creation date only - does NOT search note content or filter by other criteria. NEVER use this tool for finding contacts or any other purpose besides retrieving notes. This tool is strictly prohibited from being used unless \"note\" or \"notes\" are explicitly mentioned in the query."
+    },
+    {
+      "name": "getEvents",
+      "description": "Use this tool ONLY to fetch meetings/events in a date range (e.g. \"what meetings next week?\", \"show calendar for tomorrow\"). DO NOT use for counting meetings, analyzing patterns, or finding frequent participants."
+    },
+    {
+      "name": "getUpcomingEvents",
+      "description": "Use this tool ONLY to fetch upcoming/next meetings/events when the user does not explicitly mention a range, and asks for upcoming or next meetings/events."
+    },
+    {
+      "name": "getEmails",
+      "description": "Use this tool ONLY to fetch emails in a date range (e.g. \"what emails did I recieve last week?\", \"show emails from yesterday\")"
+    },
+    {
+      "name": "getRecentEmails",
+      "description": "Use this tool ONLY to fetch recent email interactions when the user does not explicitly mention a range, and asks for past email interactions."
+    },
+    {
+      "name": "getRecentReminders",
+      "description": "Use this tool to find recent reminders that have already occured. This tool is strictly prohibited from being used unless \"reminder\" or \"reminders\" are explicitly mentioned in the query."
+    },
+    {
+      "name": "getUpcomingReminders",
+      "description": "Use this tool to find recent reminders that have already occured. This tool is strictly prohibited from being used unless \"reminder\" or \"reminders\" are explicitly mentioned in the query."
+    },
+    {
+      "name": "find_duplicates",
+      "description": "Find potential duplicate contacts."
+    },
+    {
+      "name": "merge_contacts",
+      "description": "Merge all contact ids into one contact, this is a destructive action and can not be undone. Only run one contact group at a time and only with the users explicit permission."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "@asumollo/symfp-gen",
+  "displayName": "CAD Model Automation Bridge Server",
+  "description": "Enable AI-driven creation and validation of Eagle CAD components by bridging Claude Desktop with the CAD Model Automation web API. Facilitate seamless interaction with CAD design tools through a clean and efficient MCP interface. Simplify CAD model workflows by providing tools for validation, generation, and previewing of components.",
+  "createdAt": "2026-01-16T07:25:00.111Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@asumollo/symfp-gen"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_server_info",
+      "description": "Get information about the bridge server and API connection status"
+    },
+    {
+      "name": "get_cache_status",
+      "description": "Get current status of the symbol documentation cache including age, version, and TTL settings"
+    },
+    {
+      "name": "refresh_symbol_documentation",
+      "description": "Manually refresh the symbol documentation cache from the API"
+    },
+    {
+      "name": "validate_library",
+      "description": "Validate a complete Eagle library file (requires uploading the file first)"
+    },
+    {
+      "name": "upload_library",
+      "description": "Upload Eagle library XML content for validation and preview. This tool provides the preview URL for viewing your component."
+    },
+    {
+      "name": "generate_connector_symbol",
+      "description": "Generate a connector symbol using static templates or dynamic generation"
+    },
+    {
+      "name": "get_symbol_documentation",
+      "description": "Get Eagle symbol format documentation and templates for direct XML generation. NOTE: Documentation is also available as MCP resource 'eagle://symbol-documentation'"
+    },
+    {
+      "name": "get_ic_pin_placement_rules",
+      "description": "Get IC-specific pin placement rules for optimal symbol layout when generating IC symbols"
+    },
+    {
+      "name": "get_ic_templates",
+      "description": "Get list of all available IC templates. START HERE to browse templates before using other IC template tools. ANY template can be used as a starting point for customization"
+    },
+    {
+      "name": "get_ic_template_by_category",
+      "description": "Get IC templates for a specific category with complete metadata including file paths for downloading"
+    },
+    {
+      "name": "get_ic_categories",
+      "description": "Get available IC template categories with template counts and descriptions"
+    },
+    {
+      "name": "download_ic_template",
+      "description": "Download an Eagle .lbr library file for a specific IC template"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@heliocosta/cardapiofc-mcp-server",
+  "displayName": "cardapiofc-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:52.594Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@heliocosta/cardapiofc-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

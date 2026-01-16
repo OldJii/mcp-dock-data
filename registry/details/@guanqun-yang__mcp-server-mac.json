@@ -1,0 +1,21 @@
+{
+  "id": "@guanqun-yang/mcp-server-mac",
+  "displayName": "MAC Address",
+  "description": "Retrieve the current device's MAC address instantly. Use it to identify a device, verify network access, or populate inventory records. Simplify workflows that need a stable hardware identifier.",
+  "createdAt": "2026-01-16T07:24:49.992Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-mac"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_mac_address",
+      "description": "Return the MAC address of the current machine."
+    }
+  ]
+}

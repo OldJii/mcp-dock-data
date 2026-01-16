@@ -1,0 +1,26 @@
+{
+  "id": "@ScrapeGraphAI/scrapegraph-mcp-test-official",
+  "displayName": "ScrapeGraph",
+  "description": "Extract structured data and clean content from websites. Convert pages to readable markdown, run multi-page crawls, and perform targeted web searches with references. Accelerate research, monitoring, and data collection across the web.",
+  "createdAt": "2026-01-16T07:28:22.121Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ScrapeGraphAI/scrapegraph-mcp-test-official"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "scrapegraphApiKey": {
+          "type": "string",
+          "description": "Your Scrapegraph API key (optional - can also be set via SGAI_API_KEY environment variable)",
+          "default": null
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "@BigVik193/reddit-user-mcp",
+  "displayName": "Reddable Reddit",
+  "description": "Browse and manage Reddit posts, comments, and threads. Fetch user activity, explore hot/new/rising subreddit feeds, and retrieve full comment threads. Reply, post, and hide comments to streamline engagement and moderation.",
+  "createdAt": "2026-01-16T07:25:31.684Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BigVik193/reddit-user-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "REDDABLE_API_KEY"
+      ],
+      "properties": {
+        "REDDABLE_API_KEY": {
+          "type": "string",
+          "description": "Long-term API key for Reddable MCP access"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_user_posts",
+      "description": "Fetch posts from a Reddit user"
+    },
+    {
+      "name": "get_user_comments",
+      "description": "Fetch comments from a Reddit user"
+    },
+    {
+      "name": "get_post_comments",
+      "description": "Fetch comments for a specific Reddit post"
+    },
+    {
+      "name": "hide_comment",
+      "description": "Report a Reddit comment as spam (also hides it from your view)"
+    },
+    {
+      "name": "reply_to_comment",
+      "description": "Reply to a Reddit comment"
+    },
+    {
+      "name": "post_comment",
+      "description": "Post a comment directly on a Reddit post"
+    },
+    {
+      "name": "get_hot_posts",
+      "description": "Fetch hot posts from a subreddit"
+    },
+    {
+      "name": "get_new_posts",
+      "description": "Fetch new posts from a subreddit"
+    },
+    {
+      "name": "get_rising_posts",
+      "description": "Fetch rising posts from a subreddit"
+    }
+  ]
+}

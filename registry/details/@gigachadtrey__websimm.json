@@ -1,0 +1,68 @@
+{
+  "id": "@gigachadtrey/websimm",
+  "displayName": "WebSim Explorer",
+  "description": "Discover WebSim projects, creators, and trending content with powerful search and filters. Inspect project details, screenshots, comments, and engagement stats to guide research and curation. Track user profiles and activity to surface influential creators and relevant assets.",
+  "createdAt": "2026-01-16T07:28:28.605Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gigachadtrey/websimm"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_project",
+      "description": "Get detailed information about a WebSim project by its ID. Perfect for 'Show me project [ID]' or 'Tell me about project [ID]' questions."
+    },
+    {
+      "name": "get_project_by_slug",
+      "description": "Get detailed information about a WebSim project using the owner's username and project slug. Perfect for 'Show me @username/project-slug' or 'Tell me about [username]/[slug]' questions."
+    },
+    {
+      "name": "list_trending_projects",
+      "description": "Get a list of trending WebSim projects. Perfect for 'Show me trending projects' or 'What are the popular projects?' questions. Supports pagination and filtering by time range."
+    },
+    {
+      "name": "get_user",
+      "description": "Get detailed information about a WebSim user profile. Perfect for 'Tell me about user [username]' or 'Show me @[username]' questions."
+    },
+    {
+      "name": "get_user_projects",
+      "description": "Get a list of projects created by a specific WebSim user. Perfect for 'Show me [username]'s projects' or 'List projects by @[username]' questions. Supports sorting and pagination."
+    },
+    {
+      "name": "get_user_stats",
+      "description": "Get detailed statistics for a WebSim user. Perfect for 'Show me [username]'s statistics' or 'What are @[username]'s stats?' questions."
+    },
+    {
+      "name": "search_projects",
+      "description": "Search for WebSim projects by keywords, tags, or descriptions. Perfect for 'Find projects about [topic]' or 'Search for [keyword] projects' questions. Supports sorting and pagination."
+    },
+    {
+      "name": "search_assets",
+      "description": "Search for assets (images, files, resources) in WebSim projects. Perfect for 'Find assets about [topic]' or 'Search for [keyword] files' questions. Supports MIME type filtering."
+    },
+    {
+      "name": "list_project_comments",
+      "description": "Get comments on a WebSim project. Perfect for 'Show me comments on project [ID]' or 'What are people saying about [project]?' questions. Supports pagination and different sorting orders."
+    },
+    {
+      "name": "get_related_keywords",
+      "description": "Get related keywords and search suggestions based on a query. Perfect for 'What keywords are related to [topic]?' or 'Show me suggestions for [keyword]' questions. Helps discover related content and trending topics."
+    },
+    {
+      "name": "list_project_screenshots",
+      "description": "Get screenshots of a WebSim project revision. Perfect for 'Show me screenshots of project [ID]' or 'What does [project] version [X] look like?' questions."
+    }
+  ]
+}

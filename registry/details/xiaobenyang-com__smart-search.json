@@ -1,0 +1,80 @@
+{
+  "id": "xiaobenyang-com/smart-search",
+  "displayName": "smart-search",
+  "description": "搜索GitHub、StackOverflow、NPM、官方文档与中文技术社区，快速定位权威答案。聚合跨站结果，直达React、Vue、Node.js、微信与云厂商资料。加速排障与技术调研，减少切换成本，节省开发时间。",
+  "createdAt": "2026-01-16T07:31:29.031Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/smart-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ai_search_web",
+      "description": "🔍 网络搜索 - 通用网络搜索（Google/Bing/百度/搜狗）\n\n【重要】此工具会返回搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_github",
+      "description": "🐙 GitHub搜索 - 搜索GitHub仓库、代码、问题和用户\n\n【重要】此工具会返回GitHub搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_stackoverflow",
+      "description": "💬 StackOverflow搜索 - 搜索技术问题和解决方案\n\n【重要】此工具会返回StackOverflow搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_npm",
+      "description": "📦 NPM包搜索 - 搜索NPM包和相关文档\n\n【重要】此工具会返回NPM搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_docs",
+      "description": "📚 技术文档搜索 - 搜索常见框架和工具的官方文档（React、Vue、Node.js等）\n\n【重要】此工具会返回文档搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_api_reference",
+      "description": "🔗 API参考搜索 - 快速查找API文档和使用示例\n\n【重要】此工具会返回API文档搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_wechat_docs",
+      "description": "📱 微信开发者文档搜索 - 搜索微信小程序、公众号、开放平台文档\n\n【重要】此工具会返回微信文档搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_csdn",
+      "description": "📝 CSDN搜索 - 搜索CSDN技术博客和问答\n\n【重要】此工具会返回CSDN搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_juejin",
+      "description": "💎 掘金搜索 - 搜索掘金技术社区文章\n\n【重要】此工具会返回掘金搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_segmentfault",
+      "description": "🔧 SegmentFault搜索 - 搜索思否技术问答和文章\n\n【重要】此工具会返回SegmentFault搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_cnblogs",
+      "description": "📚 博客园搜索 - 搜索博客园技术博客\n\n【重要】此工具会返回博客园搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_oschina",
+      "description": "🌐 开源中国搜索 - 搜索开源中国技术资讯和项目\n\n【重要】此工具会返回开源中国搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_aliyun_docs",
+      "description": "☁️ 阿里云文档搜索 - 搜索阿里云产品文档和API\n\n【重要】此工具会返回阿里云文档搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    },
+    {
+      "name": "ai_search_tencent_docs",
+      "description": "☁️ 腾讯云文档搜索 - 搜索腾讯云产品文档和API\n\n【重要】此工具会返回腾讯云文档搜索URL，Claude Code应该使用WebFetch工具访问该URL以获取真实搜索结果。"
+    }
+  ]
+}

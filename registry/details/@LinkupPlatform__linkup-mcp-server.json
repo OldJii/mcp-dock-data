@@ -1,0 +1,37 @@
+{
+  "id": "@LinkupPlatform/linkup-mcp-server",
+  "displayName": "Linkup",
+  "description": "Search the web in real time to get trustworthy, source-backed answers. Find the latest news and comprehensive results from the most relevant sources. Use natural language queries to quickly gather facts, citations, and context.",
+  "createdAt": "2026-01-16T07:19:06.233Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LinkupPlatform/linkup-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for the Linkup API. Get one from [here](https://app.linkup.so/home)"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "linkup-search",
+      "description": "Search the web in real time using Linkup to retrieve current information, facts, and news from trusted sources. Use this tool for: real-time data (weather, stocks, sports scores, events), breaking news, current events, recent research, product information, up-to-date prices, schedules, and any information not available in your knowledge base. Returns comprehensive content from the most relevant sources."
+    },
+    {
+      "name": "linkup-fetch",
+      "description": "Fetch a URL and return the content of the page. If you are unable to fetch the page content, might be worth trying to render the JavaScript content."
+    }
+  ]
+}

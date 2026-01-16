@@ -1,0 +1,33 @@
+{
+  "id": "@yushuqiu1/ai_agent_new",
+  "displayName": "Simple Utilities",
+  "description": "Greet people, add numbers, and discover song recommendations. Save time on small tasks with a compact set of everyday utilities.",
+  "createdAt": "2026-01-16T07:21:18.156Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yushuqiu1/ai_agent_new"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_greeting",
+      "description": ""
+    },
+    {
+      "name": "add_numbers",
+      "description": ""
+    },
+    {
+      "name": "recommend_song",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@glowyardlighting/aihubmix-gpt-image-1",
+  "displayName": "aihubmix-gpt-image-1",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:59.361Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@glowyardlighting/aihubmix-gpt-image-1"
+  },
+  "connection": null,
+  "capabilities": []
+}

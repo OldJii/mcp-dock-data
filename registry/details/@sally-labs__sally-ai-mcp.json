@@ -1,0 +1,30 @@
+{
+  "id": "@sally-labs/sally-ai-mcp",
+  "displayName": "sally-ai-mcp",
+  "description": "Chat with Sally about metabolic health and pay per interaction using x402 with your own wallet. Keep your private key on-device while enjoying transparent, verifiable micropayments. Use it from your preferred compatible client for a seamless experience.",
+  "createdAt": "2026-01-16T07:25:20.015Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sally-labs/sally-ai-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "privateKey": {
+          "type": "string",
+          "description": "Your dedicated wallet's private key for x402 payments (with 0x prefix). Optional for browsing tools, required when invoking them."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "chat-with-sally",
+      "description": "Chat with Sally to talk about metabolic health (requires privateKey configuration)"
+    }
+  ]
+}

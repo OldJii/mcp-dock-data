@@ -1,0 +1,140 @@
+{
+  "id": "@rafaljanicki/x-twitter-mcp-server",
+  "displayName": "X Twitter Server",
+  "description": "Enable natural language interaction with Twitter to fetch profiles, post tweets, search trends, and manage followers and bookmarks. Simplify Twitter API v2 usage with built-in rate limit handling and secure authentication. Integrate seamlessly with AI tools for enhanced social media management.",
+  "createdAt": "2026-01-16T07:23:41.682Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rafaljanicki/x-twitter-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "twitterApiKey",
+        "twitterApiSecret",
+        "twitterAccessToken",
+        "twitterAccessTokenSecret",
+        "twitterBearerToken"
+      ],
+      "properties": {
+        "twitterApiKey": {
+          "type": "string",
+          "description": "Twitter API Key"
+        },
+        "twitterApiSecret": {
+          "type": "string",
+          "description": "Twitter API Secret"
+        },
+        "twitterAccessToken": {
+          "type": "string",
+          "description": "Twitter Access Token"
+        },
+        "twitterBearerToken": {
+          "type": "string",
+          "description": "Twitter Bearer Token"
+        },
+        "twitterAccessTokenSecret": {
+          "type": "string",
+          "description": "Twitter Access Token Secret"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_user_profile",
+      "description": "Get detailed profile information for a user"
+    },
+    {
+      "name": "get_user_by_screen_name",
+      "description": "Fetches a user by screen name"
+    },
+    {
+      "name": "get_user_by_id",
+      "description": "Fetches a user by ID"
+    },
+    {
+      "name": "get_user_followers",
+      "description": "Retrieves a list of followers for a given user"
+    },
+    {
+      "name": "get_user_following",
+      "description": "Retrieves users the given user is following"
+    },
+    {
+      "name": "get_user_followers_you_know",
+      "description": "Retrieves a list of common followers (simulated)"
+    },
+    {
+      "name": "get_user_subscriptions",
+      "description": "Retrieves a list of users to which the specified user is subscribed (uses following as proxy)"
+    },
+    {
+      "name": "post_tweet",
+      "description": "Post a tweet with optional media, reply, and tags"
+    },
+    {
+      "name": "delete_tweet",
+      "description": "Delete a tweet by its ID"
+    },
+    {
+      "name": "get_tweet_details",
+      "description": "Get detailed information about a specific tweet"
+    },
+    {
+      "name": "create_poll_tweet",
+      "description": "Create a tweet with a poll"
+    },
+    {
+      "name": "vote_on_poll",
+      "description": "Vote on a poll (mocked)"
+    },
+    {
+      "name": "favorite_tweet",
+      "description": "Favorites a tweet"
+    },
+    {
+      "name": "unfavorite_tweet",
+      "description": "Unfavorites a tweet"
+    },
+    {
+      "name": "bookmark_tweet",
+      "description": "Adds the tweet to bookmarks"
+    },
+    {
+      "name": "delete_bookmark",
+      "description": "Removes the tweet from bookmarks"
+    },
+    {
+      "name": "delete_all_bookmarks",
+      "description": "Deletes all bookmarks (simulated)"
+    },
+    {
+      "name": "get_timeline",
+      "description": "Get tweets from your home timeline (For You)"
+    },
+    {
+      "name": "get_latest_timeline",
+      "description": "Get tweets from your home timeline (Following)"
+    },
+    {
+      "name": "search_twitter",
+      "description": "Search Twitter with a query"
+    },
+    {
+      "name": "get_trends",
+      "description": "Retrieves trending topics on Twitter"
+    },
+    {
+      "name": "get_highlights_tweets",
+      "description": "Retrieves highlighted tweets from a user's timeline (simulated)"
+    },
+    {
+      "name": "get_user_mentions",
+      "description": "Get tweets mentioning a specific user"
+    }
+  ]
+}

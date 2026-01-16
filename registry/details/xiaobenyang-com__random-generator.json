@@ -1,0 +1,52 @@
+{
+  "id": "xiaobenyang-com/random-generator",
+  "displayName": "random-generator",
+  "description": "Generate cryptographically secure integers, floats, bytes, UUIDs, strings, booleans, and list selections. Ensure unpredictable, unbiased results for security-sensitive workflows, simulations, testing, and fair draws. Save time by accessing high-quality randomness without custom implementations.",
+  "createdAt": "2026-01-16T07:25:47.055Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/random-generator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_random_integer",
+      "description": "Generate cryptographically secure random integers within a specified range"
+    },
+    {
+      "name": "generate_random_float",
+      "description": "Generate cryptographically secure random floating-point numbers"
+    },
+    {
+      "name": "generate_random_bytes",
+      "description": "Generate cryptographically secure random bytes"
+    },
+    {
+      "name": "generate_uuid",
+      "description": "Generate a cryptographically secure UUID (v4)"
+    },
+    {
+      "name": "generate_random_string",
+      "description": "Generate a cryptographically secure random string"
+    },
+    {
+      "name": "generate_random_choice",
+      "description": "Randomly select items from a given list using cryptographically secure randomness"
+    },
+    {
+      "name": "generate_random_boolean",
+      "description": "Generate cryptographically secure random boolean values"
+    }
+  ]
+}

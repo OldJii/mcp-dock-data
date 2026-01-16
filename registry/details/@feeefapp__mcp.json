@@ -1,0 +1,118 @@
+{
+  "id": "@feeefapp/mcp",
+  "displayName": "Feeef E-commerce API Server",
+  "description": "Enable AI assistants to interact seamlessly with Feeef e-commerce stores, products, and orders using powerful filtering and management tools. Authenticate securely to access user-specific data and perform advanced queries on stores, products, and orders. Simplify e-commerce operations by integrating comprehensive Feeef API capabilities into your AI workflows.",
+  "createdAt": "2026-01-16T07:28:15.915Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@feeefapp/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "token"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "token": {
+          "type": "string",
+          "description": "Feeef API authentication token (required)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "users_auth_me",
+      "description": "Retrieve complete profile information for the currently authenticated user. Returns user identity, contact details, verification status, and custom metadata. Essential for session validation and profile display."
+    },
+    {
+      "name": "users_auth_update",
+      "description": "Update authenticated user profile with comprehensive validation. Supports name, email, phone, avatar, and custom metadata changes. Includes uniqueness checking and format validation for business compliance."
+    },
+    {
+      "name": "stores_list",
+      "description": "List stores with comprehensive filtering options for merchant management. Requires user authentication. Mirrors backend store listing schema."
+    },
+    {
+      "name": "stores_create",
+      "description": "Create a new store with comprehensive configuration options matching backend CreateStoreSchema. Requires name, slug, and userId."
+    },
+    {
+      "name": "stores_update",
+      "description": "Update a store by ID. Supports core fields and the full 'integrations' object (UpdateStoreSchema subset)."
+    },
+    {
+      "name": "stores_i10s_meta_pixel_set",
+      "description": "Set or modify the Meta Pixel integration on a store. Replace / merge / remove metaPixel subtree (objective, draft_objective, active, pixels)."
+    },
+    {
+      "name": "stores_i10s_tiktok_pixel_set",
+      "description": "Set or modify the TikTok Pixel integration on a store. Replace / merge / remove tiktokPixel subtree (objective, draft_objective, active, pixels)."
+    },
+    {
+      "name": "products_list",
+      "description": "Retrieve products from a store with advanced filtering. Supports full-text search across names/descriptions/SKUs, exact field matching, price ranges, and pagination. Essential for inventory management and customer product discovery."
+    },
+    {
+      "name": "products_create",
+      "description": "Create a new product with comprehensive e-commerce features. Supports variants, pricing tiers, rich content, inventory tracking, and advanced catalog management. Essential for building complete product listings."
+    },
+    {
+      "name": "products_update",
+      "description": "Update an existing product by ID (UpdateProductSchema)."
+    },
+    {
+      "name": "orders_list",
+      "description": "List orders with rich filters. Requires store_id. Supports status/payment_status/delivery_status/custom_status arrays, date ranges, tags, products, confirmer, sort."
+    },
+    {
+      "name": "orders_show",
+      "description": "Show a single order by ID."
+    },
+    {
+      "name": "orders_create",
+      "description": "Create a new order as store owner (CreateOrderSchema). Provide items[]. All inputs snake_case; nested item keys mapped."
+    },
+    {
+      "name": "orders_update",
+      "description": "Update an order by ID (UpdateOrderSchema). Provide only changed fields."
+    },
+    {
+      "name": "orders_destroy",
+      "description": "Delete an order by ID."
+    },
+    {
+      "name": "orders_assign",
+      "description": "Assign a single order to a member (confirmer)."
+    },
+    {
+      "name": "orders_assign_many",
+      "description": "Assign multiple orders to a member (confirmer)."
+    },
+    {
+      "name": "orders_send",
+      "description": "Send a guest order (public). Follows SendOrderSchema subset."
+    },
+    {
+      "name": "orders_track",
+      "description": "Track an order by ID (public)."
+    },
+    {
+      "name": "orders_calculate",
+      "description": "Calculate order totals without creating an order (public)."
+    }
+  ]
+}

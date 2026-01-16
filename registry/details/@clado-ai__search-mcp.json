@@ -1,0 +1,53 @@
+{
+  "id": "@clado-ai/search-mcp",
+  "displayName": "Clado",
+  "description": "Find and qualify prospects from LinkedIn using powerful search and filters. Enrich profiles and retrieve emails and phone numbers to build outreach lists. Analyze posts and reactions to understand engagement and prioritize leads.",
+  "createdAt": "2026-01-16T07:28:51.051Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@clado-ai/search-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "cladoApiKey"
+      ],
+      "properties": {
+        "cladoApiKey": {
+          "type": "string",
+          "description": "Clado API key for authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_for_users",
+      "description": "Search for users on Clado using filters like query, school, and match threshold."
+    },
+    {
+      "name": "enrich_linkedin",
+      "description": "Retrieves detailed profile information for a specific LinkedIn URL. Each successful lookup costs 1 credit."
+    },
+    {
+      "name": "retrieve_contacts",
+      "description": "Retrieves email addresses and phone numbers for LinkedIn profiles. Supports reverse lookup via email or phone. Email enrichment costs 4 credits if found, phone enrichment costs 10 credits if found."
+    },
+    {
+      "name": "scrape_linkedin",
+      "description": "Retrieves detailed profile data and posts with comments from a LinkedIn profile URL using RapidAPI. Each request costs 2 credits."
+    },
+    {
+      "name": "linkedin_post_reactions",
+      "description": "Retrieves reactions and engagement data for a specific LinkedIn post URL."
+    }
+  ]
+}

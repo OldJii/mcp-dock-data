@@ -1,0 +1,12 @@
+{
+  "id": "@mrkevindam/google-ads-mcp",
+  "displayName": "google-ads-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:19.685Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mrkevindam/google-ads-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

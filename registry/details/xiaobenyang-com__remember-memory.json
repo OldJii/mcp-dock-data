@@ -1,0 +1,40 @@
+{
+  "id": "xiaobenyang-com/remember-memory",
+  "displayName": "remember-memory",
+  "description": "Organize and recall important context across projects. Save key details, retrieve them instantly, and remove outdated or irrelevant entries. Keep your workspace tidy with selective or bulk cleanup.",
+  "createdAt": "2026-01-16T07:29:10.449Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/remember-memory"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "remember_memory",
+      "description": "Stores a memory with optional tags in a specified category"
+    },
+    {
+      "name": "retrieve_memories",
+      "description": "Retrieves all memories from a specified category"
+    },
+    {
+      "name": "remove_memory_category",
+      "description": "Removes all memories within a specified category"
+    },
+    {
+      "name": "remove_specific_memory",
+      "description": "Removes a specific memory within a specified category"
+    }
+  ]
+}

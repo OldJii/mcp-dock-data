@@ -1,0 +1,12 @@
+{
+  "id": "@NOVA-3951/supermemory",
+  "displayName": "Supermemory",
+  "description": "A recreation of the Supermemory MCP with all features of the Supermemory API",
+  "createdAt": "2026-01-16T07:45:14.495Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/supermemory"
+  },
+  "connection": null,
+  "capabilities": []
+}

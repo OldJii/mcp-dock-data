@@ -1,0 +1,20 @@
+{
+  "id": "wcgw",
+  "displayName": "wcgw",
+  "description": "Shell and coding agent on Claude and ChatGPT.",
+  "createdAt": "2026-01-16T07:29:05.028Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/wcgw"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": []
+}

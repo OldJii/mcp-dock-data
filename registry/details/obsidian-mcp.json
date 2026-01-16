@@ -1,0 +1,27 @@
+{
+  "id": "obsidian-mcp",
+  "displayName": "Obsidian",
+  "description": "MCP server for AI assistants to interact with Obsidian vaults.",
+  "createdAt": "2026-01-16T07:23:45.016Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/obsidian-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "vaultPath"
+      ],
+      "properties": {
+        "vaultPath": {
+          "type": "string",
+          "description": "The absolute path to your Obsidian vault."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

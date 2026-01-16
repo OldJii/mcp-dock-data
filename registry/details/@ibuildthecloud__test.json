@@ -1,0 +1,29 @@
+{
+  "id": "@ibuildthecloud/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-16T07:26:58.281Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ibuildthecloud/test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "read_wiki_structure",
+      "description": "Get a list of documentation topics for a GitHub repository"
+    },
+    {
+      "name": "read_wiki_contents",
+      "description": "View documentation about a GitHub repository"
+    },
+    {
+      "name": "ask_question",
+      "description": "Ask any question about a GitHub repository"
+    }
+  ]
+}

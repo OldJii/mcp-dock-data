@@ -1,0 +1,45 @@
+{
+  "id": "@AIM-Intelligence/aim-mcp",
+  "displayName": "AIM Guard",
+  "description": "Provide AI-powered security analysis and safety instruction tools to protect AI agents during MCP interactions. Analyze text content for harmful or inappropriate material and enhance user prompts with security instructions. Ensure safer AI interactions with contextual security guidelines and real-time threat detection.",
+  "createdAt": "2026-01-16T07:21:49.119Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AIM-Intelligence/aim-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ai-safety-guard",
+      "description": "AI Safety Guard - MCP Caution Instructions for AI Agents"
+    },
+    {
+      "name": "aim-text-guard",
+      "description": "AIM-Intelligence Text Guard Tool"
+    },
+    {
+      "name": "aim-security-prompt-tool",
+      "description": "Security Prompt Enhancement Tool"
+    },
+    {
+      "name": "prompt-injection-detector",
+      "description": "Detect prompt injection attempts based on OWASP LLM01:2025 patterns"
+    },
+    {
+      "name": "credential-scanner",
+      "description": "Scan text for exposed credentials (API keys, passwords, tokens, SSH keys)"
+    },
+    {
+      "name": "url-security-validator",
+      "description": "Validate URL safety (phishing, malware, HTTPS enforcement)"
+    }
+  ]
+}

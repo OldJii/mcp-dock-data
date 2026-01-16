@@ -1,0 +1,42 @@
+{
+  "id": "@chug2k/gemini-imagen4",
+  "displayName": "Gemini Imagen4",
+  "description": "Generate stunning images from text descriptions using Google's cutting-edge Imagen 4.0 models. Customize image generation with multiple model variants, aspect ratios, and output formats. Browse and manage generated images locally through the MCP protocol with built-in safety filtering.",
+  "createdAt": "2026-01-16T07:24:07.399Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chug2k/gemini-imagen4"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "geminiApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Your Google Gemini API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_image_from_text",
+      "description": "Generate an image from a text description using Google Imagen 4.0 models"
+    }
+  ]
+}

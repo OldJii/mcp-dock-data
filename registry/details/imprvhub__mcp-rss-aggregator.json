@@ -1,0 +1,12 @@
+{
+  "id": "imprvhub/mcp-rss-aggregator",
+  "displayName": "mcp-rss-aggregator",
+  "description": "",
+  "createdAt": "2026-01-16T07:46:01.591Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/imprvhub/mcp-rss-aggregator"
+  },
+  "connection": null,
+  "capabilities": []
+}

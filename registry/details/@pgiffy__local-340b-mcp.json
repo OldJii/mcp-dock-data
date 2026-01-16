@@ -1,0 +1,16 @@
+{
+  "id": "@pgiffy/local-340b-mcp",
+  "displayName": "340B Drugs Server",
+  "description": "Provide comprehensive 340B drug information and RxNorm API access to enhance drug data retrieval and eligibility checking. Enable users to find related National Drug Codes, check 340B pricing eligibility, and perform approximate drug matching with batch processing capabilities. Keep drug data automatically refreshed daily for accurate and up-to-date results.",
+  "createdAt": "2026-01-16T07:31:12.032Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pgiffy/local-340b-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

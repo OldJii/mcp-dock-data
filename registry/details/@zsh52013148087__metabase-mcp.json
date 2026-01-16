@@ -1,0 +1,104 @@
+{
+  "id": "@zsh52013148087/metabase-mcp",
+  "displayName": "Metabase Analytics Integration Server",
+  "description": "Enable AI assistants to seamlessly interact with your Metabase analytics platform. Access dashboards, cards, databases, and execute queries directly through conversational AI. Manage and manipulate your analytics data with comprehensive tools and secure authentication methods.",
+  "createdAt": "2026-01-16T07:26:00.027Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zsh52013148087/metabase-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "metabaseUrl"
+      ],
+      "properties": {
+        "metabaseUrl": {
+          "type": "string",
+          "description": "URL of the Metabase instance (e.g. https://your-metabase-instance.com)"
+        },
+        "metabaseApiKey": {
+          "type": "string",
+          "description": "API Key for authenticating with Metabase (alternative to email/password)"
+        },
+        "metabasePassword": {
+          "type": "string",
+          "description": "Password for authenticating with Metabase (required if not using API key)"
+        },
+        "metabaseUserEmail": {
+          "type": "string",
+          "description": "Email address for authenticating with Metabase (required if not using API key)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_dashboards",
+      "description": "List all dashboards in Metabase"
+    },
+    {
+      "name": "list_cards",
+      "description": "List all questions/cards in Metabase"
+    },
+    {
+      "name": "list_databases",
+      "description": "List all databases in Metabase"
+    },
+    {
+      "name": "execute_card",
+      "description": "Execute a Metabase question/card and get results"
+    },
+    {
+      "name": "get_dashboard_cards",
+      "description": "Get all cards in a dashboard"
+    },
+    {
+      "name": "execute_query",
+      "description": "Execute a SQL query against a Metabase database"
+    },
+    {
+      "name": "create_card",
+      "description": "Create a new question/card in Metabase"
+    },
+    {
+      "name": "update_card_visualization",
+      "description": "Update visualization settings for a card"
+    },
+    {
+      "name": "add_card_to_dashboard",
+      "description": "Add a card to a dashboard"
+    },
+    {
+      "name": "create_dashboard",
+      "description": "Create a new dashboard in Metabase"
+    },
+    {
+      "name": "list_collections",
+      "description": "List all collections in Metabase"
+    },
+    {
+      "name": "create_collection",
+      "description": "Create a new collection in Metabase"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in a database"
+    },
+    {
+      "name": "get_table_fields",
+      "description": "Get all fields/columns in a table"
+    },
+    {
+      "name": "update_dashboard",
+      "description": "Update an existing dashboard"
+    },
+    {
+      "name": "delete_dashboard",
+      "description": "Delete a dashboard"
+    }
+  ]
+}

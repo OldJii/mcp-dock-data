@@ -1,0 +1,12 @@
+{
+  "id": "@oskar/peek-mcp",
+  "displayName": "peek-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:06.824Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@oskar/peek-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

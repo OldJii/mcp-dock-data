@@ -1,0 +1,34 @@
+{
+  "id": "@Auxin-io/java-code-generator",
+  "displayName": "Java Code Generator",
+  "description": "Generate secure Java code for common tasks and patterns. Apply best practices to reduce vulnerabilities and unsafe constructs. Accelerate development with ready-to-use examples tailored to your needs.",
+  "createdAt": "2026-01-16T07:30:12.492Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/java-code-generator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generateJavaCode",
+      "description": "I give you secure java code"
+    }
+  ]
+}

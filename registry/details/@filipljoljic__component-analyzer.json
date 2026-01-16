@@ -1,0 +1,34 @@
+{
+  "id": "@filipljoljic/component-analyzer",
+  "displayName": "component-analyzer",
+  "description": "Discover and map React components across your codebase to clarify architecture. Identify refactor hotspots and complex components to prioritize improvements. Inspect props, hooks, structure, and relationships to guide safer refactors.",
+  "createdAt": "2026-01-16T07:21:27.334Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@filipljoljic/component-analyzer"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "compo_analyze",
+      "description": "Show props, hooks, structure and children for a single component"
+    },
+    {
+      "name": "compo_map",
+      "description": "List all components grouped by role with refactor hotspots"
+    },
+    {
+      "name": "compo_tree",
+      "description": "Show parents and children for a component (one level up and down)"
+    }
+  ]
+}

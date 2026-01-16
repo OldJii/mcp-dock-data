@@ -1,0 +1,92 @@
+{
+  "id": "xiaobenyang-com/realtime-news",
+  "displayName": "realtime-news",
+  "description": "Track real-time hotlists across Weibo, Baidu, Zhihu, Douyin, Bilibili, Tencent, Toutiao, 36Kr, Hupu, Pengpai, Huxiu, Tieba, and Juejin. Compare platform trends to spot breaking stories and niche buzz fast. Monitor headlines for research, brand watch, and content planning.",
+  "createdAt": "2026-01-16T07:28:40.488Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/realtime-news"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "weibo_news",
+      "description": "实时数据/微博热搜"
+    },
+    {
+      "name": "baidu_news",
+      "description": "实时数据/百度热榜"
+    },
+    {
+      "name": "zhihu_news",
+      "description": "实时数据/知乎热榜"
+    },
+    {
+      "name": "toutiao_news",
+      "description": "实时数据/今日头条热榜"
+    },
+    {
+      "name": "36ke_news",
+      "description": "实时数据/36氪热榜"
+    },
+    {
+      "name": "tx_news",
+      "description": "实时数据/腾讯新闻热榜"
+    },
+    {
+      "name": "bli_news",
+      "description": "实时数据/B站热榜"
+    },
+    {
+      "name": "sougou_news",
+      "description": "实时数据/搜狗热榜"
+    },
+    {
+      "name": "sougou_a_news",
+      "description": "实时数据/搜狗热榜A"
+    },
+    {
+      "name": "pengpai_news",
+      "description": "实时数据/澎湃新闻热榜"
+    },
+    {
+      "name": "hupu_news",
+      "description": "实时数据/虎扑步行街热榜"
+    },
+    {
+      "name": "hupu_a_news",
+      "description": "实时数据/虎扑步行街热榜A"
+    },
+    {
+      "name": "douyin_news",
+      "description": "实时数据/抖音热榜"
+    },
+    {
+      "name": "it_news",
+      "description": "实时数据/IT资讯热榜"
+    },
+    {
+      "name": "huxiu_news",
+      "description": "实时数据/虎嗅热榜"
+    },
+    {
+      "name": "baidu_tieba_news",
+      "description": "实时数据/百度贴吧热榜"
+    },
+    {
+      "name": "xitu_news",
+      "description": "实时数据/稀土掘金热榜"
+    }
+  ]
+}

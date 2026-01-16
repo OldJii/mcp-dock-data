@@ -1,0 +1,25 @@
+{
+  "id": "@MR901/mcp-plots",
+  "displayName": "Plots",
+  "description": "Visualize tabular data as polished charts in seconds. Personalize themes and layout, then render bar, line, pie, and more—with smart suggestions for field mapping. Follow a guided workflow to optimize results and produce share-ready outputs.",
+  "createdAt": "2026-01-16T07:22:13.360Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MR901/mcp-plots"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "configure_preferences",
+      "description": "\n        Interactive configuration tool for setting user preferences.\n        \n        Parameters:\n        - output_format: \"mermaid\", \"mcp_image\", or \"mcp_text\"\n        - theme: \"default\", \"dark\", \"seaborn\", \"minimal\", etc.\n        - chart_width: Chart width in pixels\n        - chart_height: Chart height in pixels  \n        - reset_to_defaults: Reset all preferences to system defaults\n        \n        If no parameters provided, shows current configuration with sample.\n        "
+    },
+    {
+      "name": "render_chart",
+      "description": "\n        Render a chart from tabular data and return MCP-compatible content.\n        \n        Special modes:\n        - chart_type=\"help\": Returns available chart types, themes, and field suggestions\n        - chart_type=\"suggest\": Analyzes your data and suggests field mappings (requires data)\n\n        Parameters:\n        - chart_type: chart type (\"line\", \"bar\", \"pie\", etc.) or \"help\"/\"suggest\"\n        - data: list of objects (rows) - optional for help mode\n        - field_map: keys like x_field, y_field, category_field, value_field, group_field, size_field\n        - config_overrides: subset of ChartConfig as dict (width, height, title, theme, dpi, etc.)\n        - options: generator-specific options (e.g., smooth, stack)\n        - output_format: MCP_IMAGE (PNG), MCP_TEXT (SVG), or MERMAID\n        "
+    }
+  ]
+}

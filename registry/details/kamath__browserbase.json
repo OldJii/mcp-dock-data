@@ -1,0 +1,12 @@
+{
+  "id": "kamath/browserbase",
+  "displayName": "browserbase",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:45.906Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kamath/browserbase"
+  },
+  "connection": null,
+  "capabilities": []
+}

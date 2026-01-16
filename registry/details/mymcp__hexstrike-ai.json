@@ -1,0 +1,12 @@
+{
+  "id": "mymcp/hexstrike-ai",
+  "displayName": "hexstrike-ai",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:43.446Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mymcp/hexstrike-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

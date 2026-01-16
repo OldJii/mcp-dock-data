@@ -1,0 +1,12 @@
+{
+  "id": "@E-ditital1000/kolokwa_connect",
+  "displayName": "kolokwa_connect",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:23.145Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@E-ditital1000/kolokwa_connect"
+  },
+  "connection": null,
+  "capabilities": []
+}

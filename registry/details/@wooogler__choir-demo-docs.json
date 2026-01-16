@@ -1,0 +1,12 @@
+{
+  "id": "@wooogler/choir-demo-docs",
+  "displayName": "choir-demo-docs",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:42.026Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wooogler/choir-demo-docs"
+  },
+  "connection": null,
+  "capabilities": []
+}

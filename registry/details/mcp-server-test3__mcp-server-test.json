@@ -1,0 +1,12 @@
+{
+  "id": "mcp-server-test3/mcp-server-test",
+  "displayName": "mcp-server-test",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:36.722Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-server-test3/mcp-server-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

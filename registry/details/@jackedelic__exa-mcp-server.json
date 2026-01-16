@@ -1,0 +1,58 @@
+{
+  "id": "@jackedelic/exa-mcp-server",
+  "displayName": "Exa AI Search Server",
+  "description": "Enable AI assistants to perform real-time web searches, academic paper searches, and social media queries with optimized and relevant results. Access comprehensive company research, competitor analysis, and content extraction from URLs to enhance AI-driven insights. Customize tool selection to tailor search capabilities for your specific needs.",
+  "createdAt": "2026-01-16T07:25:29.500Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jackedelic/exa-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "exaApiKey": {
+          "type": "string",
+          "description": "The API key for accessing the Exa Search API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "web_search_exa",
+      "description": "Search the web using Exa AI - performs real-time web searches and can scrape content from specific URLs. Supports configurable result counts and returns the content from the most relevant websites."
+    },
+    {
+      "name": "research_paper_search",
+      "description": "Search across 100M+ research papers with full text access using Exa AI - performs targeted academic paper searches with deep research content coverage. Returns detailed information about relevant academic papers including titles, authors, publication dates, and full text excerpts. Control the number of results and character counts returned to balance comprehensiveness with conciseness based on your task requirements."
+    },
+    {
+      "name": "company_research",
+      "description": "Research companies using Exa AI - performs targeted searches of company websites to gather comprehensive information about businesses. Returns detailed information from company websites including about pages, pricing, FAQs, blogs, and other relevant content. Specify the company URL and optionally target specific sections of their website."
+    },
+    {
+      "name": "crawling",
+      "description": "Extract content from specific URLs using Exa AI - performs targeted crawling of web pages to retrieve their full content. Useful for reading articles, PDFs, or any web page when you have the exact URL. Returns the complete text content of the specified URL."
+    },
+    {
+      "name": "competitor_finder",
+      "description": "Find competitors of a company using Exa AI - performs targeted searches to identify businesses that offer similar products or services. Describe what the company does (without mentioning its name) and optionally provide the company's website to exclude it from results."
+    },
+    {
+      "name": "linkedin_search",
+      "description": "Search LinkedIn for companies using Exa AI. Simply include company URL, or company name, with 'company page' appended in your query."
+    },
+    {
+      "name": "wikipedia_search_exa",
+      "description": "Search Wikipedia using Exa AI - performs searches specifically within Wikipedia.org and returns relevant content from Wikipedia pages."
+    },
+    {
+      "name": "github_search",
+      "description": "Search GitHub repositories using Exa AI - performs real-time searches on GitHub.com to find relevant repositories and GitHub accounts."
+    }
+  ]
+}

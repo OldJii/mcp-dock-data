@@ -1,0 +1,153 @@
+{
+  "id": "@Calel33/ordiscan-mcp-v1",
+  "displayName": "Ordiscan MCP Server",
+  "description": "Access real-time blockchain data with a set of 29 tools integrated with the Ordiscan API. Perform authenticated queries on Bitcoin addresses, inscriptions, transactions, collections, runes, BRC-20 tokens, and sats.",
+  "createdAt": "2026-01-16T07:23:46.086Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Calel33/ordiscan-mcp-v1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "port": {
+          "type": "number",
+          "description": "The port number for the MCP server to listen on",
+          "default": 1337
+        },
+        "endpoint": {
+          "type": "string",
+          "description": "The endpoint path for MCP requests",
+          "default": "/mcp"
+        },
+        "responseMode": {
+          "type": "string",
+          "description": "The response mode for the server",
+          "default": "stream"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ordiscan_address_brc20_activity",
+      "description": "Get all BRC-20 token transaction activity for a Bitcoin address"
+    },
+    {
+      "name": "ordiscan_address_brc20",
+      "description": "Get all BRC-20 token balances for a Bitcoin address"
+    },
+    {
+      "name": "ordiscan_brc20_info",
+      "description": "Get detailed information about a specific BRC-20 token"
+    },
+    {
+      "name": "ordiscan_brc20_list",
+      "description": "Get a paginated list of BRC-20 tokens"
+    },
+    {
+      "name": "ordiscan_collection_info",
+      "description": "Get detailed information about a specific collection"
+    },
+    {
+      "name": "ordiscan_collection_inscriptions",
+      "description": "Get inscriptions in a collection"
+    },
+    {
+      "name": "ordiscan_collections_list",
+      "description": "Get a paginated list of indexed collections"
+    },
+    {
+      "name": "ordiscan_inscription_info",
+      "description": "Get detailed information about a specific inscription"
+    },
+    {
+      "name": "ordiscan_inscription_traits",
+      "description": "Get traits for a specific inscription"
+    },
+    {
+      "name": "ordiscan_inscription_transfers",
+      "description": "Get transfer history for an inscription"
+    },
+    {
+      "name": "ordiscan_inscriptions_activity",
+      "description": "Get inscription transfer activity for an address"
+    },
+    {
+      "name": "ordiscan_inscriptions_detail",
+      "description": "Get detailed information about an inscription by number or ID"
+    },
+    {
+      "name": "ordiscan_inscriptions_list",
+      "description": "Get a paginated list of all inscriptions"
+    },
+    {
+      "name": "ordiscan_address_inscriptions",
+      "description": "Get all inscription IDs owned by a Bitcoin address"
+    },
+    {
+      "name": "ordiscan_address_rare_sats",
+      "description": "Get all rare sats owned by a Bitcoin address"
+    },
+    {
+      "name": "ordiscan_rune_market",
+      "description": "Get the latest price and market cap for a rune"
+    },
+    {
+      "name": "ordiscan_rune_name_unlock",
+      "description": "Check when a specific rune name becomes available to etch"
+    },
+    {
+      "name": "ordiscan_runes_activity",
+      "description": "Get rune transfer activity for an address"
+    },
+    {
+      "name": "ordiscan_address_runes",
+      "description": "Get all rune balances for a Bitcoin address"
+    },
+    {
+      "name": "ordiscan_runes_list",
+      "description": "Get a paginated list of all runes"
+    },
+    {
+      "name": "ordiscan_sat_info",
+      "description": "Get information about a specific satoshi"
+    },
+    {
+      "name": "ordiscan_tx_info",
+      "description": "Get information about a Bitcoin transaction"
+    },
+    {
+      "name": "ordiscan_tx_inscription_transfers",
+      "description": "Get a list of all inscriptions transferred in the transaction"
+    },
+    {
+      "name": "ordiscan_tx_inscriptions",
+      "description": "Get all new inscriptions created in a Bitcoin transaction"
+    },
+    {
+      "name": "ordiscan_tx_runes",
+      "description": "Get a list of all minted and transferred runes in the transaction"
+    },
+    {
+      "name": "ordiscan_utxo_rare_sats",
+      "description": "Get all the rare sats for a specific UTXO"
+    },
+    {
+      "name": "ordiscan_utxo_sat_ranges",
+      "description": "Get all the sat ranges for a specific UTXO"
+    },
+    {
+      "name": "ordiscan_address_utxos",
+      "description": "Get all UTXOs owned by a Bitcoin address and their associated inscriptions and runes"
+    },
+    {
+      "name": "ordiscan_main",
+      "description": "Main Ordiscan API tool for general rune information and status"
+    }
+  ]
+}

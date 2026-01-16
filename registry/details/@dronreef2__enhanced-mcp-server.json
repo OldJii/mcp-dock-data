@@ -1,0 +1,58 @@
+{
+  "id": "@dronreef2/enhanced-mcp-server",
+  "displayName": "Search, Translate & Optimize",
+  "description": "Search the web with full-page retrieval and contextual results. Translate text across languages, including Portuguese and English. Optimize your prompts with professional templates for clearer, more effective outputs.",
+  "createdAt": "2026-01-16T07:25:33.288Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dronreef2/enhanced-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "required": [
+        "jina_api_key"
+      ],
+      "properties": {
+        "log_level": {
+          "type": "string",
+          "description": "Logging level",
+          "default": "INFO"
+        },
+        "redis_url": {
+          "type": "string",
+          "description": "Redis URL for caching (optional)",
+          "default": ""
+        },
+        "jina_api_key": {
+          "type": "string",
+          "description": "Jina API key for web content fetching and search"
+        },
+        "deepl_api_key": {
+          "type": "string",
+          "description": "DeepL API key for advanced translations",
+          "default": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch",
+      "description": "Busca conteúdo completo de páginas web usando Jina AI com validação de segurança"
+    },
+    {
+      "name": "search",
+      "description": "Pesquisa inteligente na web usando Jina AI com resultados contextualizados"
+    },
+    {
+      "name": "translate_deepl",
+      "description": "Tradução avançada entre múltiplos idiomas usando DeepL API"
+    }
+  ]
+}

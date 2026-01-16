@@ -1,0 +1,29 @@
+{
+  "id": "@asaficontact/mcp-time",
+  "displayName": "World Time",
+  "description": "Get the current time anywhere and convert times across time zones. Plan meetings with confidence by comparing regions instantly. Automatically use your local timezone when needed.",
+  "createdAt": "2026-01-16T07:22:47.414Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@asaficontact/mcp-time"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_time",
+      "description": "Get current time in a specific timezones"
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time between timezones"
+    }
+  ]
+}

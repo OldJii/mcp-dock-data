@@ -1,0 +1,12 @@
+{
+  "id": "@Moiuid/image",
+  "displayName": "image",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:08.329Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Moiuid/image"
+  },
+  "connection": null,
+  "capabilities": []
+}

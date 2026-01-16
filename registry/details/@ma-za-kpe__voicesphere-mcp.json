@@ -1,0 +1,69 @@
+{
+  "id": "@ma-za-kpe/voicesphere-mcp",
+  "displayName": "voicesphere-mcp",
+  "description": "Launch voice collection campaigns for feature phones, list active tasks, and monitor campaign stats. Validate and transcribe audio samples automatically to ensure high-quality datasets. Credit mobile data rewards instantly to drive participant engagement.",
+  "createdAt": "2026-01-16T07:26:25.595Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ma-za-kpe/voicesphere-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_campaign",
+      "description": "Create new voice collection campaign\n\nRequires API key for authentication and credit deduction.\nCost: $0.40 per sample (target_samples * $0.40)"
+    },
+    {
+      "name": "get_campaigns",
+      "description": "Get active campaigns"
+    },
+    {
+      "name": "get_campaign_stats",
+      "description": "Get campaign statistics"
+    },
+    {
+      "name": "validate_audio",
+      "description": "Validate audio (duration, language, quality)"
+    },
+    {
+      "name": "transcribe_audio",
+      "description": "Transcribe audio to text"
+    },
+    {
+      "name": "calculate_campaign_cost",
+      "description": "Calculate cost before creating campaign\n\nReturns total cost, reward cost, platform margin, and credits required.\nPricing: $0.40/sample total ($0.25 contributor reward + $0.15 platform margin)"
+    },
+    {
+      "name": "get_billing_usage",
+      "description": "Check credit balance and usage for an API customer\n\nReturns customer info, credits balance, total spent, and plan details.\nRequires valid API key for authentication."
+    },
+    {
+      "name": "purchase_credits",
+      "description": "Purchase credits for campaign creation\n\nCredits are used at $0.40 per credit (1 credit = 1 sample).\nAccepts 'stripe' or 'paypal' as payment methods."
+    },
+    {
+      "name": "get_billing_transactions",
+      "description": "Get billing transaction history for an API customer\n\nReturns recent credit purchases and campaign charges.\nShows transaction type, credits delta, amount in USD, and timestamps."
+    },
+    {
+      "name": "credit_data_reward",
+      "description": "Credit mobile data reward to contributor's phone"
+    },
+    {
+      "name": "get_user_earnings",
+      "description": "Get earnings for a contributor by phone number\n\nReturns total data earned (MB), total samples submitted, and valid samples."
+    },
+    {
+      "name": "list_reward_transactions",
+      "description": "List reward transactions with optional filters\n\nFilter by phone number, campaign ID, or status (pending/completed/failed).\nReturns transaction details including reward amount, telco, and timestamps."
+    }
+  ]
+}

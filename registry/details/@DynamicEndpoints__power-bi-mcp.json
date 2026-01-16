@@ -1,0 +1,192 @@
+{
+  "id": "@DynamicEndpoints/power-bi-mcp",
+  "displayName": "Power BI REST API Integration Server",
+  "description": "Enable AI assistants to manage and interact with Microsoft Power BI resources such as workspaces, reports, dashboards, datasets, and more through a unified interface. Perform advanced operations including exporting reports, executing DAX queries, and generating embed tokens. Access any Power BI or Microsoft Graph API endpoint dynamically for complete API flexibility.",
+  "createdAt": "2026-01-16T07:25:10.446Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/power-bi-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "GRAPH_CLIENT_ID": {
+          "type": "string",
+          "description": "Microsoft Graph API OAuth 2.0 client ID (optional, for OAuth authentication)"
+        },
+        "GRAPH_TENANT_ID": {
+          "type": "string",
+          "description": "Microsoft Graph API OAuth 2.0 tenant ID (optional, for OAuth authentication)"
+        },
+        "GRAPH_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "Microsoft Graph API access token (optional, for Graph API operations)"
+        },
+        "GRAPH_CLIENT_SECRET": {
+          "type": "string",
+          "description": "Microsoft Graph API OAuth 2.0 client secret (optional, for OAuth authentication)"
+        },
+        "POWERBI_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "Power BI access token for API authentication"
+        },
+        "POWERBI_API_BASE_URL": {
+          "type": "string",
+          "description": "Power BI API base URL",
+          "default": "https://api.powerbi.com/v1.0/myorg"
+        },
+        "POWERBI_DEFAULT_WORKSPACE_ID": {
+          "type": "string",
+          "description": "Default workspace ID (optional)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_workspaces",
+      "description": "Get all available Power BI workspaces"
+    },
+    {
+      "name": "create_workspace",
+      "description": "Create a new Power BI workspace"
+    },
+    {
+      "name": "update_workspace",
+      "description": "Update a Power BI workspace"
+    },
+    {
+      "name": "delete_workspace",
+      "description": "Delete a Power BI workspace"
+    },
+    {
+      "name": "add_workspace_user",
+      "description": "Add a user to a Power BI workspace"
+    },
+    {
+      "name": "update_workspace_user",
+      "description": "Update a user's access in a Power BI workspace"
+    },
+    {
+      "name": "delete_workspace_user",
+      "description": "Remove a user from a Power BI workspace"
+    },
+    {
+      "name": "get_reports",
+      "description": "Get reports from a Power BI workspace"
+    },
+    {
+      "name": "get_report",
+      "description": "Get details of a specific Power BI report"
+    },
+    {
+      "name": "export_report",
+      "description": "Export a Power BI report to various formats"
+    },
+    {
+      "name": "get_dashboards",
+      "description": "Get dashboards from a Power BI workspace"
+    },
+    {
+      "name": "get_dashboard",
+      "description": "Get details of a specific Power BI dashboard"
+    },
+    {
+      "name": "get_dashboard_tiles",
+      "description": "Get tiles from a Power BI dashboard"
+    },
+    {
+      "name": "get_datasets",
+      "description": "Get datasets from a Power BI workspace"
+    },
+    {
+      "name": "execute_dax",
+      "description": "Execute a DAX query against a Power BI dataset"
+    },
+    {
+      "name": "refresh_dataset",
+      "description": "Trigger a refresh of a Power BI dataset"
+    },
+    {
+      "name": "get_dataset",
+      "description": "Get details of a specific Power BI dataset"
+    },
+    {
+      "name": "get_data_sources",
+      "description": "Get data sources for a Power BI dataset"
+    },
+    {
+      "name": "get_refresh_history",
+      "description": "Get refresh history for a Power BI dataset"
+    },
+    {
+      "name": "get_apps",
+      "description": "Get all Power BI apps"
+    },
+    {
+      "name": "get_app",
+      "description": "Get details of a specific Power BI app"
+    },
+    {
+      "name": "get_capacities",
+      "description": "Get all Power BI capacities"
+    },
+    {
+      "name": "get_gateways",
+      "description": "Get all data gateways"
+    },
+    {
+      "name": "get_gateway",
+      "description": "Get details of a specific data gateway"
+    },
+    {
+      "name": "get_dataflows",
+      "description": "Get dataflows from a workspace"
+    },
+    {
+      "name": "get_imports",
+      "description": "Get imports from a workspace"
+    },
+    {
+      "name": "get_embed_token",
+      "description": "Generate an embed token for Power BI content"
+    },
+    {
+      "name": "clone_report",
+      "description": "Clone a Power BI report to a different workspace"
+    },
+    {
+      "name": "configure_graph_oauth",
+      "description": "Configure OAuth 2.0 authentication for Microsoft Graph API using client credentials flow. This enables automatic token management and refresh for Graph API operations."
+    },
+    {
+      "name": "get_graph_oauth_token",
+      "description": "Manually obtain a new OAuth 2.0 access token for Microsoft Graph API. Useful for testing authentication or refreshing tokens."
+    },
+    {
+      "name": "set_graph_token",
+      "description": "Set a static Microsoft Graph API access token manually. This is an alternative to OAuth 2.0 configuration."
+    },
+    {
+      "name": "set_powerbi_token",
+      "description": "Set a static Power BI API access token manually."
+    },
+    {
+      "name": "dynamic_endpoints_power_bi_assistant",
+      "description": "Universal tool to interact with any Power BI REST API endpoint or Microsoft Graph API. Supports all HTTP methods, custom headers, query parameters, and request bodies. Perfect for advanced operations not covered by specific tools."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "@gilberth/mcp-cloudflare",
+  "displayName": "Cloudflare DNS Manager",
+  "description": "Manage your Cloudflare DNS records seamlessly through AI agents. List, create, update, and delete DNS records with full support for various record types and Cloudflare API features. Securely control your domain's DNS settings with scoped API tokens and easy integration.",
+  "createdAt": "2026-01-16T07:25:01.964Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gilberth/mcp-cloudflare"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "cloudflareApiToken",
+        "cloudflareZoneId"
+      ],
+      "properties": {
+        "cloudflareEmail": {
+          "type": "string",
+          "description": "Your Cloudflare account email (only needed for legacy API keys)"
+        },
+        "cloudflareZoneId": {
+          "type": "string",
+          "description": "The Zone ID of your domain in Cloudflare"
+        },
+        "cloudflareApiToken": {
+          "type": "string",
+          "description": "Your Cloudflare API Token with Zone:Edit permissions"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_dns_records",
+      "description": "List all DNS records for the configured zone"
+    },
+    {
+      "name": "get_dns_record",
+      "description": "Get a specific DNS record by ID"
+    },
+    {
+      "name": "create_dns_record",
+      "description": "Create a new DNS record"
+    },
+    {
+      "name": "update_dns_record",
+      "description": "Update an existing DNS record"
+    },
+    {
+      "name": "delete_dns_record",
+      "description": "Delete a DNS record"
+    }
+  ]
+}

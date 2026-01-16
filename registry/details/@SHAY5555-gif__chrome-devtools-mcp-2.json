@@ -1,0 +1,125 @@
+{
+  "id": "@SHAY5555-gif/chrome-devtools-mcp-2",
+  "displayName": "Chrome DevTools Automation",
+  "description": "Automate Chrome pages with clicks, form fills, navigation, and in-page scripting. Inspect console and network activity, take screenshots or text snapshots, and manage multiple pages. Analyze performance with trace recordings, throttling, and Core Web Vitals insights",
+  "createdAt": "2026-01-16T07:21:14.995Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SHAY5555-gif/chrome-devtools-mcp-2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_console_messages",
+      "description": "List all console messages for the currently selected page since the last navigation."
+    },
+    {
+      "name": "emulate_cpu",
+      "description": "Emulates CPU throttling by slowing down the selected page's execution."
+    },
+    {
+      "name": "emulate_network",
+      "description": "Emulates network conditions such as throttling or offline mode on the selected page."
+    },
+    {
+      "name": "click",
+      "description": "Clicks on the provided element"
+    },
+    {
+      "name": "drag",
+      "description": "Drag an element onto another element"
+    },
+    {
+      "name": "fill",
+      "description": "Type text into a input, text area or select an option from a <select> element."
+    },
+    {
+      "name": "fill_form",
+      "description": "Fill out multiple form elements at once"
+    },
+    {
+      "name": "hover",
+      "description": "Hover over the provided element"
+    },
+    {
+      "name": "upload_file",
+      "description": "Upload a file through a provided element."
+    },
+    {
+      "name": "get_network_request",
+      "description": "Gets a network request by URL. You can get all requests by calling list_network_requests."
+    },
+    {
+      "name": "list_network_requests",
+      "description": "List all requests for the currently selected page since the last navigation."
+    },
+    {
+      "name": "close_page",
+      "description": "Closes the page by its index. The last open page cannot be closed."
+    },
+    {
+      "name": "handle_dialog",
+      "description": "If a browser dialog was opened, use this command to handle it"
+    },
+    {
+      "name": "list_pages",
+      "description": "Get a list of pages open in the browser."
+    },
+    {
+      "name": "navigate_page",
+      "description": "Navigates the currently selected page to a URL."
+    },
+    {
+      "name": "navigate_page_history",
+      "description": "Navigates the currently selected page."
+    },
+    {
+      "name": "new_page",
+      "description": "Creates a new page"
+    },
+    {
+      "name": "resize_page",
+      "description": "Resizes the selected page's window so that the page has specified dimension"
+    },
+    {
+      "name": "select_page",
+      "description": "Select a page as a context for future tool calls."
+    },
+    {
+      "name": "performance_analyze_insight",
+      "description": "Provides more detailed information on a specific Performance Insight that was highlighted in the results of a trace recording."
+    },
+    {
+      "name": "performance_start_trace",
+      "description": "Starts a performance trace recording on the selected page. This can be used to look for performance problems and insights to improve the performance of the page. It will also report Core Web Vital (CWV) scores for the page."
+    },
+    {
+      "name": "performance_stop_trace",
+      "description": "Stops the active performance trace recording on the selected page."
+    },
+    {
+      "name": "take_screenshot",
+      "description": "Take a screenshot of the page or element."
+    },
+    {
+      "name": "evaluate_script",
+      "description": "Evaluate a JavaScript function inside the currently selected page. Returns the response as JSON\nso returned values have to JSON-serializable."
+    },
+    {
+      "name": "take_snapshot",
+      "description": "Take a text snapshot of the currently selected page. The snapshot lists page elements along with a unique\nidentifier (uid). Always use the latest snapshot. Prefer taking a snapshot over taking a screenshot."
+    },
+    {
+      "name": "wait_for",
+      "description": "Wait for the specified text to appear on the selected page."
+    }
+  ]
+}

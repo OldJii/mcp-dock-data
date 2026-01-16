@@ -1,0 +1,48 @@
+{
+  "id": "@jangsubong78/my-mcp-server",
+  "displayName": "TypeScript Starter",
+  "description": "Kickstart a TypeScript project with ready-to-use features for calculations, greetings, time queries, and image generation. Customize and extend the examples to match your workflow. Spin up a working baseline in minutes for rapid experimentation.",
+  "createdAt": "2026-01-16T07:32:01.455Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jangsubong78/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "HF_TOKEN"
+      ],
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API token for image generation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": ""
+    },
+    {
+      "name": "calculator",
+      "description": ""
+    },
+    {
+      "name": "get_time",
+      "description": ""
+    },
+    {
+      "name": "generate_image",
+      "description": ""
+    }
+  ]
+}

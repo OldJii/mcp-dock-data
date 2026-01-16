@@ -1,0 +1,12 @@
+{
+  "id": "@gott150/obsidian-mcp",
+  "displayName": "obsidian-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:21.486Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gott150/obsidian-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

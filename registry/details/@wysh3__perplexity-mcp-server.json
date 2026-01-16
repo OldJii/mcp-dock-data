@@ -1,0 +1,20 @@
+{
+  "id": "@wysh3/perplexity-mcp-server",
+  "displayName": "Perplexity Server",
+  "description": "Integrate AI-powered research capabilities seamlessly. Perform web searches, retrieve documentation, and analyze code with ease.",
+  "createdAt": "2026-01-16T07:26:01.655Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wysh3/perplexity-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@ygaoau97/arxiv-retrive",
+  "displayName": "arxiv-retrive",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:11.121Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ygaoau97/arxiv-retrive"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "thib/mcp-wayback-machine",
+  "displayName": "mcp-wayback-machine",
+  "description": "Save any URL to the Internet Archive and retrieve archived snapshots on demand. Search captures by date and get capture counts and history for any site. Preserve and audit web content without managing API keys.",
+  "createdAt": "2026-01-16T07:23:22.560Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/thib/mcp-wayback-machine"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "save_url",
+      "description": "Save a URL to the Wayback Machine"
+    },
+    {
+      "name": "get_archived_url",
+      "description": "Retrieve an archived version of a URL"
+    },
+    {
+      "name": "search_archives",
+      "description": "Search the Wayback Machine archives for a URL"
+    },
+    {
+      "name": "check_archive_status",
+      "description": "Check if a URL has been archived"
+    }
+  ]
+}

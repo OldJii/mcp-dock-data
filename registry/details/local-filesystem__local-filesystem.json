@@ -1,0 +1,102 @@
+{
+  "id": "local-filesystem/local-filesystem",
+  "displayName": "local-filesystem",
+  "description": "Explore and organize files and folders across your workspace. Read, write, move, and delete items while inspecting detailed metadata. Find anything fast with name, glob, regex, and in-file text search.",
+  "createdAt": "2026-01-16T07:23:41.137Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/local-filesystem/local-filesystem"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "LocalFSConfig",
+      "properties": {
+        "max_file_size_mb": {
+          "type": "integer",
+          "description": "Maximum file size for read/write operations in MB",
+          "default": 100
+        },
+        "max_search_depth": {
+          "type": "integer",
+          "description": "Maximum recursion depth for directory searches",
+          "default": 10
+        }
+      },
+      "description": "Session-scoped configuration for filesystem operations.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_directories",
+      "description": "List all subdirectories in a given path with metadata (name, size, item count, timestamps)"
+    },
+    {
+      "name": "create_directory",
+      "description": "Create a new directory with optional parent directory creation"
+    },
+    {
+      "name": "delete_directory",
+      "description": "Delete a directory, optionally with all its contents (recursive delete)"
+    },
+    {
+      "name": "move_directory",
+      "description": "Move or rename a directory from source to destination path"
+    },
+    {
+      "name": "get_directory_metadata",
+      "description": "Get detailed metadata about a directory (size, item counts, timestamps, permissions)"
+    },
+    {
+      "name": "list_files",
+      "description": "List all files in a directory with optional glob pattern filtering"
+    },
+    {
+      "name": "read_file",
+      "description": "Read file content with chunking support (returns text or base64 for binary files)"
+    },
+    {
+      "name": "write_file",
+      "description": "Write or overwrite a file (supports text and base64-encoded binary content). REQUIRES USER CONFIRMATION before execution if file exists."
+    },
+    {
+      "name": "append_file",
+      "description": "Append text content to an existing file"
+    },
+    {
+      "name": "delete_file",
+      "description": "Delete a file permanently. REQUIRES USER CONFIRMATION before execution. This is a destructive operation."
+    },
+    {
+      "name": "move_file",
+      "description": "Move or rename a file from source to destination path. REQUIRES USER CONFIRMATION before execution."
+    },
+    {
+      "name": "get_file_metadata",
+      "description": "Get detailed metadata about a file (size, MIME type, timestamps, permissions)"
+    },
+    {
+      "name": "search_by_name",
+      "description": "Search for files and directories by exact name match"
+    },
+    {
+      "name": "search_by_glob",
+      "description": "Search using glob patterns (*.txt, **/*.py) with wildcard support"
+    },
+    {
+      "name": "search_by_filename_regex",
+      "description": "Search for files and directories using regex pattern on filenames"
+    },
+    {
+      "name": "search_by_content_text",
+      "description": "Search for text files containing specific text with context preview"
+    },
+    {
+      "name": "search_by_content_regex",
+      "description": "Search for text files using regex pattern on content with context preview"
+    }
+  ]
+}

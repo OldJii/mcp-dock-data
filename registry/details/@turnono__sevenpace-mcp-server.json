@@ -1,0 +1,49 @@
+{
+  "id": "@turnono/sevenpace-mcp-server",
+  "displayName": "7pace Timetracker Integration Server",
+  "description": "Enable seamless time tracking and reporting for Azure DevOps work items by integrating with 7pace Timetracker. Log, retrieve, update, and delete time entries, and generate detailed reports to streamline your project management and billing workflows. Simplify time management with direct access to 7pace activity types and Azure DevOps data through a standardized MCP interface.",
+  "createdAt": "2026-01-16T07:23:32.474Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@turnono/sevenpace-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "health",
+      "description": "Simple health check for deployment scanners"
+    },
+    {
+      "name": "configure_sevenpace",
+      "description": "Configure 7pace credentials at runtime (organization and token)"
+    },
+    {
+      "name": "log_time",
+      "description": "Log time entry to 7pace Timetracker for a specific work item"
+    },
+    {
+      "name": "list_activity_types",
+      "description": "List available 7pace activity types (name and id)"
+    },
+    {
+      "name": "get_worklogs",
+      "description": "Retrieve time logs from 7pace Timetracker"
+    },
+    {
+      "name": "update_worklog",
+      "description": "Update an existing time log entry"
+    },
+    {
+      "name": "delete_worklog",
+      "description": "Delete a time log entry"
+    },
+    {
+      "name": "generate_time_report",
+      "description": "Generate time tracking report for a date range"
+    }
+  ]
+}

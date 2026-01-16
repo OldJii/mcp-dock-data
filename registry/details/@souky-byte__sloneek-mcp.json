@@ -1,0 +1,86 @@
+{
+  "id": "@souky-byte/sloneek-mcp",
+  "displayName": "Sloneek MCP Server",
+  "description": "Integrate seamlessly with the Sloneek API to manage users, absences, and personal information. Empower your LLM applications to interact with real-time data through a standardized interface. Enhance your workflows with advanced querying and user management capabilities.",
+  "createdAt": "2026-01-16T07:27:35.545Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@souky-byte/sloneek-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "sloneekApiUrl",
+        "sloneekClientId",
+        "sloneekClientSecret"
+      ],
+      "properties": {
+        "sloneekApiUrl": {
+          "type": "string",
+          "description": "URL for Sloneek API (e.g., https://api.sloneek.com)"
+        },
+        "sloneekClientId": {
+          "type": "string",
+          "description": "Client ID for Sloneek API authentication"
+        },
+        "sloneekClientSecret": {
+          "type": "string",
+          "description": "Client Secret for Sloneek API authentication"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_sloneek_users",
+      "description": ""
+    },
+    {
+      "name": "get_sloneek_user_personal_information",
+      "description": ""
+    },
+    {
+      "name": "query_sloneek_users",
+      "description": ""
+    },
+    {
+      "name": "get_sloneek_birthdays",
+      "description": ""
+    },
+    {
+      "name": "get_sloneek_salary_history",
+      "description": ""
+    },
+    {
+      "name": "get_sloneek_user_timeline",
+      "description": ""
+    },
+    {
+      "name": "get_users_per_team",
+      "description": ""
+    },
+    {
+      "name": "add_bonus_to_employees",
+      "description": ""
+    },
+    {
+      "name": "get_sloneek_absence_options",
+      "description": ""
+    },
+    {
+      "name": "create_sloneek_absence",
+      "description": ""
+    },
+    {
+      "name": "create_sloneek_survey",
+      "description": ""
+    },
+    {
+      "name": "process_natural_language_request",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "github-mapper-mcp-server",
+  "displayName": "GitHub Mapper",
+  "description": "An MCP server that maps and analyzes GitHub repository structures, providing summary statistics and detailed file structures.",
+  "createdAt": "2026-01-16T07:27:33.422Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/github-mapper-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "githubToken"
+      ],
+      "properties": {
+        "githubToken": {
+          "type": "string",
+          "description": "The GitHub Personal Access Token with repo scope."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "set-github-token",
+      "description": "Set the GitHub Personal Access Token for authentication"
+    },
+    {
+      "name": "map-github-repo",
+      "description": "Map a GitHub repository structure and provide summary information"
+    }
+  ]
+}

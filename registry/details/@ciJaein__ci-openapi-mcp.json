@@ -1,0 +1,49 @@
+{
+  "id": "@ciJaein/ci-openapi-mcp",
+  "displayName": "ci-openapi-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:25:53.462Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ciJaein/ci-openapi-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "authKey": {
+          "type": "string",
+          "description": "요청 헤더 AUTH_KEY 값 (필요 없으면 비워도 됨)",
+          "default": "19295064DEBE4954B259E16A49D2F15711540431"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "API base URL (예: https://demo-api.cyber-i.com)",
+          "default": "https://demo-api.cyber-i.com"
+        },
+        "timeoutMs": {
+          "type": "number",
+          "description": "HTTP timeout (ms)",
+          "default": 5000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getUserInfo",
+      "description": "clientId로 사용자 정보를 조회합니다."
+    },
+    {
+      "name": "getClient",
+      "description": "등록된 클라이언트 목록을 조회합니다. [BUILD-TEST-001]"
+    },
+    {
+      "name": "getApiPath",
+      "description": "API Path(메뉴/경로) 목록을 조회합니다."
+    }
+  ]
+}

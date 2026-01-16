@@ -1,0 +1,12 @@
+{
+  "id": "twitch",
+  "displayName": "Twitch",
+  "description": "Twitch is a live streaming platform popular with gamers, creators, and communities, offering real-time interaction and monetization through subscriptions and donations",
+  "createdAt": "2026-01-16T07:33:09.056Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/twitch"
+  },
+  "connection": null,
+  "capabilities": []
+}

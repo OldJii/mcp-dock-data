@@ -1,0 +1,45 @@
+{
+  "id": "@antunesgabriel/logaflow-mcp-server",
+  "displayName": "Logaflow",
+  "description": "Enhance your applications with real-time logging and monitoring capabilities. Streamline your data flow and gain insights effortlessly with our powerful tools. Integrate seamlessly and elevate your development experience.",
+  "createdAt": "2026-01-16T07:30:33.857Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antunesgabriel/logaflow-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Logaflow API key for authentication"
+        },
+        "apiUrl": {
+          "type": "string",
+          "description": "Optional custom Logaflow API URL",
+          "default": "https://api.logaflow.com/v1"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_user_projects",
+      "description": ""
+    },
+    {
+      "name": "list_project_feedbacks",
+      "description": ""
+    },
+    {
+      "name": "reply_to_feedback",
+      "description": ""
+    }
+  ]
+}

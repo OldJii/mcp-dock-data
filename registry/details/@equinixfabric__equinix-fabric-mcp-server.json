@@ -1,0 +1,12 @@
+{
+  "id": "@equinixfabric/equinix-fabric-mcp-server",
+  "displayName": "Equinix Fabric MCP Server",
+  "description": "Equinix Fabric MCP Server is an AI-powered interface that enables customers to query their network infrastructure using natural language, providing instant access to real-time information about ports, connections, routers, metros, and other Fabric components.",
+  "createdAt": "2026-01-16T07:43:46.214Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@equinixfabric/equinix-fabric-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

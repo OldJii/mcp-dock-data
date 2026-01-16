@@ -1,0 +1,74 @@
+{
+  "id": "@kodey-ai/salesforce-mcp",
+  "displayName": "Salesforce Query",
+  "description": "Run SOQL queries to explore and retrieve Salesforce data. Inspect records, fields, and relationships from your workflow. Speed up reporting, auditing, and troubleshooting with fast, targeted results.",
+  "createdAt": "2026-01-16T07:29:52.118Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "clientId": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Client ID (Connected App Consumer Key)"
+        },
+        "loginUrl": {
+          "type": "string",
+          "description": "Salesforce login URL (use https://test.salesforce.com for sandboxes)",
+          "default": "https://login.salesforce.com"
+        },
+        "password": {
+          "type": "string",
+          "description": "Salesforce password"
+        },
+        "username": {
+          "type": "string",
+          "description": "Salesforce username"
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Salesforce access token (if already authenticated)"
+        },
+        "instanceUrl": {
+          "type": "string",
+          "description": "Salesforce instance URL (e.g., https://yourinstance.my.salesforce.com)"
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Client Secret (Connected App Consumer Secret)"
+        },
+        "refreshToken": {
+          "type": "string",
+          "description": "Salesforce OAuth2 Refresh Token"
+        },
+        "securityToken": {
+          "type": "string",
+          "description": "Salesforce security token (if required)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "soql_query",
+      "description": "Execute SOQL queries on Salesforce and return results"
+    },
+    {
+      "name": "get_sobject_describe",
+      "description": "Get metadata about a Salesforce object (fields, relationships, etc.)"
+    },
+    {
+      "name": "insert_record",
+      "description": "Insert a new record into a Salesforce object. Provide the sobjectType and all field values directly as parameters (not wrapped in recordData)."
+    }
+  ]
+}

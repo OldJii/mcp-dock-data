@@ -1,0 +1,12 @@
+{
+  "id": "@fuko2935/gemini-mcp-local",
+  "displayName": "gemini-mcp-local",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:23.670Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fuko2935/gemini-mcp-local"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "mcp_snowflake_server",
+  "displayName": "Snowflake Server",
+  "description": "A Model Context Protocol server implementation that provides database interaction with Snowflake, allowing SQL queries and data insights.",
+  "createdAt": "2026-01-16T07:32:12.648Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp_snowflake_server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "snowflakeWarehouse",
+        "snowflakeDatabase",
+        "snowflakeAccount",
+        "snowflakeUser",
+        "snowflakeRole",
+        "snowflakeSchema",
+        "snowflakePassword"
+      ],
+      "properties": {
+        "snowflakeRole": {
+          "type": "string",
+          "description": "The Snowflake role."
+        },
+        "snowflakeUser": {
+          "type": "string",
+          "description": "The Snowflake username."
+        },
+        "snowflakeSchema": {
+          "type": "string",
+          "description": "The Snowflake schema."
+        },
+        "snowflakeAccount": {
+          "type": "string",
+          "description": "The Snowflake account identifier."
+        },
+        "snowflakeDatabase": {
+          "type": "string",
+          "description": "The Snowflake database to use."
+        },
+        "snowflakePassword": {
+          "type": "string",
+          "description": "The Snowflake password."
+        },
+        "snowflakeWarehouse": {
+          "type": "string",
+          "description": "The Snowflake warehouse to connect to."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

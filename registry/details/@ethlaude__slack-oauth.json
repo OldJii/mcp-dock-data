@@ -1,0 +1,19 @@
+{
+  "id": "@ethlaude/slack-oauth",
+  "displayName": "Slack Server with OAuth",
+  "description": "",
+  "createdAt": "2026-01-16T07:32:34.488Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ethlaude/slack-oauth"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "description": "Empty object"
+    }
+  },
+  "capabilities": []
+}

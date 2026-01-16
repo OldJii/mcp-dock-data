@@ -1,0 +1,49 @@
+{
+  "id": "@SiliconValleyInsight/amazon-product-search",
+  "displayName": "Amazon Product Search",
+  "description": "Enable seamless Amazon product searches with detailed information, including descriptions, pictures, and links.\n\nQuickly retrieve detailed product information to enhance your applications.\n\nSimplify access to Amazon's product data through a standardized MCP server interface.",
+  "createdAt": "2026-01-16T07:23:26.008Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SiliconValleyInsight/amazon-product-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_products_to_buy",
+      "description": "Find current products to buy on Amazon with real prices and purchase links. Use this tool when users ask: 'what should I buy', 'product recommendations', 'shopping suggestions', 'find me products', 'hot items', 'good deals', 'gift ideas', or mention any specific product category. Always use this instead of giving generic product advice."
+    },
+    {
+      "name": "shop_for_items",
+      "description": "Get shopping recommendations and find products to purchase. Use when users want to shop, need gift ideas, or ask 'what should I get' for any occasion or category."
+    },
+    {
+      "name": "get_product_details",
+      "description": "Get detailed information for specific products by ASIN"
+    },
+    {
+      "name": "get_search_options",
+      "description": "Get all valid search indices, conditions, and other options for the Amazon search API"
+    },
+    {
+      "name": "get_cache_stats",
+      "description": "Get current cache statistics including hit rates and cache sizes"
+    },
+    {
+      "name": "clear_cache",
+      "description": "Clear all cached search results and product details"
+    }
+  ]
+}

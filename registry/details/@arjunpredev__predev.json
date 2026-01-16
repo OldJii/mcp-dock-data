@@ -1,0 +1,12 @@
+{
+  "id": "@arjunpredev/predev",
+  "displayName": "pre.dev",
+  "description": "Better than Cursor Plan Mode. Generate full architected specifications given any prompt. ",
+  "createdAt": "2026-01-16T07:43:07.938Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arjunpredev/predev"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "mcp-server-ticketmaster",
+  "displayName": "Ticketmaster",
+  "description": "Discover events, venues, and attractions through the Ticketmaster Discovery API.",
+  "createdAt": "2026-01-16T07:28:02.914Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-server-ticketmaster"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "ticketmasterApiKey"
+      ],
+      "properties": {
+        "ticketmasterApiKey": {
+          "type": "string",
+          "description": "The API key for accessing Ticketmaster's Discovery API."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@pawanpanpan/serv",
+  "displayName": "serv",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:50.424Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pawanpanpan/serv"
+  },
+  "connection": null,
+  "capabilities": []
+}

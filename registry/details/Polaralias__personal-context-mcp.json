@@ -1,0 +1,94 @@
+{
+  "id": "Polaralias/personal-context-mcp",
+  "displayName": "Personal Context",
+  "description": "Manage your daily status, work availability, and location history to provide relevant situational context. Integrate with Home Assistant and holiday calendars to automatically track presence and local events. Maintain a centralized record of your current environment and upcoming schedules.",
+  "createdAt": "2026-01-16T07:26:19.886Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/Polaralias/personal-context-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "holidayRegion",
+        "locationStaleHours",
+        "requestTimeoutMs"
+      ],
+      "properties": {
+        "store": {
+          "type": "object",
+          "description": ""
+        },
+        "holidayRegion": {
+          "type": "string",
+          "description": "",
+          "default": "england-and-wales"
+        },
+        "homeAssistant": {
+          "type": "object",
+          "description": ""
+        },
+        "requestTimeoutMs": {
+          "type": "number",
+          "description": "",
+          "default": 5000
+        },
+        "locationStaleHours": {
+          "type": "number",
+          "description": "",
+          "default": 6
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "status_get",
+      "description": ""
+    },
+    {
+      "name": "status_set_override",
+      "description": ""
+    },
+    {
+      "name": "status_get_work",
+      "description": ""
+    },
+    {
+      "name": "status_set_work",
+      "description": ""
+    },
+    {
+      "name": "status_get_location",
+      "description": ""
+    },
+    {
+      "name": "status_set_location",
+      "description": ""
+    },
+    {
+      "name": "status_get_location_history",
+      "description": ""
+    },
+    {
+      "name": "status_schedule_set",
+      "description": ""
+    },
+    {
+      "name": "status_schedule_list",
+      "description": ""
+    },
+    {
+      "name": "status_schedule_delete",
+      "description": ""
+    },
+    {
+      "name": "holidays_list",
+      "description": ""
+    }
+  ]
+}

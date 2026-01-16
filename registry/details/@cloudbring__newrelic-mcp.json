@@ -1,0 +1,16 @@
+{
+  "id": "@cloudbring/newrelic-mcp",
+  "displayName": "New Relic Observability Integration Server",
+  "description": "Enable seamless interaction with New Relic's observability platform through a unified interface. Query metrics, monitor applications, manage alerts, and explore infrastructure entities effortlessly. Empower your agents to analyze and manage your observability data with ease.",
+  "createdAt": "2026-01-16T07:30:52.502Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cloudbring/newrelic-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "@wfyi-joy/pdf-reader-mcp",
+  "displayName": "PDF Text Reader",
+  "description": "Extract text from local or online PDFs. Capture quotes and key sections for quick search, summarization, and citation. Speed up research and writing by eliminating manual copy-paste.",
+  "createdAt": "2026-01-16T07:22:11.530Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wfyi-joy/pdf-reader-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_local_pdf",
+      "description": "Read text content from a local PDF file."
+    },
+    {
+      "name": "read_pdf_url",
+      "description": "Read text content from a PDF URL."
+    }
+  ]
+}

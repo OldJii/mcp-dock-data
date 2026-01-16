@@ -1,0 +1,12 @@
+{
+  "id": "@valk-ryx/imap-mcp",
+  "displayName": "imap-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:50.994Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@valk-ryx/imap-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

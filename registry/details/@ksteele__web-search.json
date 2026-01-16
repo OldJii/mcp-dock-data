@@ -1,0 +1,12 @@
+{
+  "id": "@ksteele/web-search",
+  "displayName": "web-search",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:42.509Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ksteele/web-search"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "googlephotos",
+  "displayName": "Googlephotos",
+  "description": "Google Photos is a cloud-based photo storage and organization service offering automatic backups, AI-assisted search, and shared albums for personal and collaborative media management",
+  "createdAt": "2026-01-16T07:19:25.076Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googlephotos"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLEPHOTOS_ADD_ENRICHMENT",
+      "description": "Adds an enrichment at a specified position in a defined album."
+    },
+    {
+      "name": "GOOGLEPHOTOS_BATCH_ADD_MEDIA_ITEMS",
+      "description": "Adds one or more media items to an album in Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_BATCH_CREATE_MEDIA_ITEMS",
+      "description": "Unified action to upload media files and create them as items in Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_BATCH_GET_MEDIA_ITEMS",
+      "description": "Returns the list of media items for the specified media item identifiers."
+    },
+    {
+      "name": "GOOGLEPHOTOS_CREATE_ALBUM",
+      "description": "Creates a new album in Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_GET_ALBUM",
+      "description": "Returns the album based on the specified albumId."
+    },
+    {
+      "name": "GOOGLEPHOTOS_GET_MEDIA_ITEM_DOWNLOAD",
+      "description": "Downloads a media item from Google Photos and returns it as a file."
+    },
+    {
+      "name": "GOOGLEPHOTOS_LIST_ALBUMS",
+      "description": "Lists all albums shown to a user in the Albums tab of Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_LIST_MEDIA_ITEMS",
+      "description": "Lists all media items from a user's Google Photos library."
+    },
+    {
+      "name": "GOOGLEPHOTOS_SEARCH_MEDIA_ITEMS",
+      "description": "Searches for media items in a user's Google Photos library."
+    },
+    {
+      "name": "GOOGLEPHOTOS_UPDATE_ALBUM",
+      "description": "Updates an album's title or cover photo in Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_UPDATE_MEDIA_ITEM",
+      "description": "Updates a media item's description in Google Photos."
+    },
+    {
+      "name": "GOOGLEPHOTOS_UPLOAD_MEDIA",
+      "description": "Upload a media file to Google Photos. Supports images (up to 200MB) and videos (up to 20GB)."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "my_namespace/server_id",
+  "displayName": "server_id",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:23.465Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/my_namespace/server_id"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@dongorae/openai-api-agent-project",
+  "displayName": "openai-api-agent-project",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:44.902Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dongorae/openai-api-agent-project"
+  },
+  "connection": null,
+  "capabilities": []
+}

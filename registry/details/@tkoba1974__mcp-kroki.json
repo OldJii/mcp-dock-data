@@ -1,0 +1,29 @@
+{
+  "id": "@tkoba1974/mcp-kroki",
+  "displayName": "Kroki Server",
+  "description": "Generate and download diagrams in various formats using Kroki.io. Convert your Mermaid, PlantUML, and Graphviz diagrams to SVG, PNG, PDF, or JPEG files effortlessly.",
+  "createdAt": "2026-01-16T07:22:05.074Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tkoba1974/mcp-kroki"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_diagram_url",
+      "description": "Generate a URL for a diagram using Kroki.io. This tool takes Mermaid diagram code or other supported diagram formats and returns a URL to the rendered diagram. The URL can be used to display the diagram in web browsers or embedded in documents."
+    },
+    {
+      "name": "download_diagram",
+      "description": "Download a diagram image to a local file. This tool converts diagram code (such as Mermaid) into an image file and saves it to the specified location. Useful for generating diagrams for presentations, documentation, or other offline use. Includes an option to scale SVG output."
+    }
+  ]
+}

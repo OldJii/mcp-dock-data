@@ -1,0 +1,147 @@
+{
+  "id": "fhl/fhl-mcp-server",
+  "displayName": "FHL Bible MCP",
+  "description": "Quickly access any Bible verse or passage on the FHL site with a clean, readable interface. Dive deep into original word meanings, Strong’s numbers, commentaries, and topical studies. The platform also includes the Apocrypha, Apostolic Fathers, various Bible versions, audio resources, and premium articles. It is perfectly designed for AI text analysis, cross-referencing, sermon preparation, and teaching material development.\n\n查找信望愛站的任意經文、章節與範圍，快速獲得清晰可讀的內容。探索原文字義、Strong 編號、註釋、主題查經，以及次經與使徒教父文獻。發現合適的聖經版本與有聲朗讀，並搜尋優質文章資源。提供給AI做文本分析、經文串珠、講道指引及教材製作。\n\n---\n\n - Home : https://www.fhl.net\n\n - Bible : https://bible.fhl.net\n\n - Github : https://github.com/ytssamuel/FHL-MCP-Server",
+  "createdAt": "2026-01-16T07:21:45.974Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/fhl/fhl-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "transport": {
+        "path": "/",
+        "type": "streamable-http"
+      },
+      "config_schema": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "use_simplified": {
+            "type": "boolean",
+            "title": "使用簡體中文",
+            "default": false,
+            "description": "是否使用簡體中文輸出（預設：繁體中文）"
+          }
+        }
+      },
+      "schema_version": "1.0"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_bible_verse",
+      "description": "查詢指定的聖經經文。支援單節、多節、節範圍查詢。\n    \n    Args:\n        book: 經卷名稱（中文或英文縮寫，如：約、John、創世記、Genesis）\n        chapter: 章數\n        verse: 節數（支援格式：'1', '1-5', '1,3,5', '1-2,5,8-10'）。若不提供則返回整章\n        version: 聖經版本代碼（預設：unv）\n        include_strong: 是否包含 Strong's Number（預設：false）\n        use_simplified: 是否使用簡體中文（預設：false）\n    "
+    },
+    {
+      "name": "get_bible_chapter",
+      "description": "查詢整章聖經經文。\n    \n    Args:\n        book: 經卷名稱\n        chapter: 章數\n        version: 聖經版本代碼（預設：unv）\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "query_verse_citation",
+      "description": "解析並查詢經文引用字串（如：'約 3:16', '太 5:3-10'）。\n    \n    Args:\n        citation: 經文引用字串\n        version: 聖經版本代碼\n        include_strong: 是否包含 Strong's Number\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "search_bible",
+      "description": "在聖經中搜尋關鍵字或原文編號。\n    \n    Args:\n        query: 搜尋內容\n        search_type: 搜尋類型（keyword=關鍵字, greek_number=希臘文編號, hebrew_number=希伯來文編號）\n        scope: 搜尋範圍（all=全部, ot=舊約, nt=新約）\n        version: 聖經版本代碼\n        limit: 最多返回筆數\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "search_bible_advanced",
+      "description": "進階聖經搜尋，支援自訂書卷範圍。\n    \n    Args:\n        query: 搜尋內容\n        search_type: 搜尋類型（keyword/greek_number/hebrew_number）\n        range_start: 起始書卷編號 (1-66)\n        range_end: 結束書卷編號 (1-66)\n        version: 聖經版本代碼\n        limit: 最多返回筆數\n        offset: 跳過筆數\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "get_word_analysis",
+      "description": "取得經文的原文字彙分析（希臘文/希伯來文）。\n    \n    Args:\n        book: 經卷名稱\n        chapter: 章數\n        verse: 節數\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "lookup_strongs",
+      "description": "查詢 Strong's 原文字典。支援多種格式：整數+testament (3056, 'NT')、G前綴 ('G3056')、H前綴 ('H430')。\n    \n    Args:\n        number: Strong's Number (整數、字串數字、或帶 G/H 前綴，如 'G3056' 或 'H430')\n        testament: 約別（OT=舊約, NT=新約）。當 number 包含 G/H 前綴時可省略。\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "search_strongs_occurrences",
+      "description": "搜尋 Strong's Number 在聖經中的出現位置。\n    \n    Args:\n        number: Strong's Number（如 'G1344' 或 'H430'）\n        testament: 約別（當 number 包含 G/H 前綴時可省略）\n        limit: 最多返回筆數\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "get_commentary",
+      "description": "查詢經文註釋。\n    \n    Args:\n        book: 書卷名稱\n        chapter: 章數\n        verse: 節數（可選）\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "list_commentaries",
+      "description": "列出所有可用的註釋書。\n    \n    Args:\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "search_commentary",
+      "description": "在註釋書中搜尋關鍵字。\n    \n    Args:\n        keyword: 搜尋關鍵字\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "get_topic_study",
+      "description": "查詢主題查經資料（Torrey, Naves）。\n    \n    Args:\n        keyword: 主題關鍵字\n        source: 資料來源（all/torrey_en/naves_en/torrey_zh/naves_zh）\n        count_only: 是否只返回總數\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "list_bible_versions",
+      "description": "列出所有可用的聖經版本。\n    \n    Args:\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "search_available_versions",
+      "description": "搜尋符合條件的聖經版本。\n    \n    Args:\n        testament: 約別（OT/NT/both）\n        has_strongs: 是否包含 Strong's Number\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "get_book_list",
+      "description": "取得聖經書卷列表。\n    \n    Args:\n        testament: 約別（all/OT/NT）\n    "
+    },
+    {
+      "name": "get_book_info",
+      "description": "取得特定書卷的詳細資訊。\n    \n    Args:\n        book: 書卷名稱\n    "
+    },
+    {
+      "name": "get_audio_bible",
+      "description": "取得有聲聖經連結。\n    \n    Args:\n        book: 書卷名稱\n        chapter: 章數\n        audio_version: 有聲聖經版本代碼（預設 unv 和合本）\n            可用版本：unv, taiwanese, hakka, cantonese, tcv, hebrew, greek 等\n    "
+    },
+    {
+      "name": "get_audio_chapter_with_text",
+      "description": "取得整章有聲聖經連結與經文。\n    \n    Args:\n        book: 書卷名稱\n        chapter: 章數\n        audio_version: 有聲聖經版本代碼（預設 unv 和合本）\n        text_version: 經文版本代碼（預設 unv 和合本）\n        use_simplified: 是否使用簡體中文\n    "
+    },
+    {
+      "name": "list_audio_versions",
+      "description": "列出所有可用的有聲聖經版本。"
+    },
+    {
+      "name": "get_apocrypha_verse",
+      "description": "查詢次經 (Apocrypha) 經文內容。支援書卷 101-115。\n    包含：多俾亞傳、友弟德傳、瑪加伯上下、智慧篇、德訓篇(便西拉智訓)、巴錄書等。\n    \n    Args:\n        book: 次經書卷名稱（支援多種格式）。\n              中文縮寫：'多', '友', '加上', '加下', '智', '德', '巴', '耶信', '但補'\n              中文全名：'多俾亞傳', '友弟德傳', '瑪加伯上', '瑪加伯下', '智慧篇', '德訓篇', '便西拉智訓', '巴錄書' 等\n              英文：'Tob', 'Jdt', '1Mac', '2Mac', 'Wis', 'Sir', 'Bar', 'Tobit', 'Judith', 'Sirach' 等\n        chapter: 章數\n        verse: 節數（可選）。支援多種格式：\n              - 單節：'1'\n              - 範圍：'1-5'\n              - 多節：'1,3,5'\n              - 混合：'1-2,5,8-10'\n              若不提供則返回整章\n    "
+    },
+    {
+      "name": "search_apocrypha",
+      "description": "在次經中搜尋關鍵字。\n    \n    Args:\n        query: 搜尋關鍵字\n        limit: 返回結果數量上限\n        offset: 跳過的結果數量（用於分頁）\n    "
+    },
+    {
+      "name": "list_apocrypha_books",
+      "description": "列出所有可用的次經書卷及其資訊。"
+    },
+    {
+      "name": "get_apostolic_fathers_verse",
+      "description": "查詢使徒教父文獻經文內容。\n    \n    Args:\n        book: 使徒教父書卷名稱\n        chapter: 章數\n        verse: 節數（可選）\n    "
+    },
+    {
+      "name": "search_apostolic_fathers",
+      "description": "在使徒教父文獻中搜尋關鍵字。\n    \n    Args:\n        query: 搜尋關鍵字\n        limit: 返回結果數量上限\n        offset: 跳過的結果數量（用於分頁）\n    "
+    },
+    {
+      "name": "list_apostolic_fathers_books",
+      "description": "列出所有可用的使徒教父書卷及其資訊。"
+    },
+    {
+      "name": "get_bible_footnote",
+      "description": "查詢聖經經文註腳（僅限 TCV 現代中文譯本）。\n    註腳提供原文翻譯的不同選擇、古卷差異說明、或其他重要補充資訊。\n\n    **重要提示**: 僅台灣聖經公會現代中文譯本 (TCV) 有註腳功能。\n    \n    Args:\n        book_id: 書卷編號 (1-66)。例如：1=創世記, 19=詩篇, 43=約翰福音, 45=羅馬書\n        footnote_id: 註腳編號（每個書卷有自己的編號系統）。從 1 開始遞增。若編號不存在，會返回空結果。\n        use_simplified: 是否使用簡體中文（預設：否）\n    "
+    },
+    {
+      "name": "search_fhl_articles",
+      "description": "搜尋信望愛站的文章。\n\n    可以依據標題、作者、內容、摘要、專欄、發表日期等條件搜尋。\n    **至少需要提供一個搜尋條件**。\n\n    **回傳內容**：\n    - 預設模式 (include_content=false): 返回摘要和內容預覽（約 200 字）\n    - 完整模式 (include_content=true): 返回完整 HTML 內容\n\n    回傳文章列表，包含：\n    - 標題 (title)\n    - 作者 (author)\n    - 發表日期 (pubtime)\n    - 專欄 (column)\n    - 摘要 (abst)\n    - 內容預覽 (content_preview) 或完整內容 (content, HTML 格式)\n\n    ⚠️ **注意**: FHL API 不支援通過 ID 直接獲取文章，因此若需要完整內容，\n    請在搜尋時設定 include_content=true。\n    \n    Args:\n        title: 標題關鍵字\n        author: 作者名稱\n        content: 內文關鍵字\n        abstract: 摘要關鍵字\n        column: 專欄英文代碼（如 women3）。使用 list_fhl_article_columns 工具查看可用專欄\n        pub_date: 發表日期，格式為 YYYY.MM.DD（如 2025.10.19）\n        limit: 最多回傳結果數（預設：50，範圍：1-200）\n        include_content: 是否包含完整 HTML 內容（預設：false，只返回預覽）。設為 true 會返回完整文章內容，但輸出較大。\n        use_simplified: 是否使用簡體中文（預設：false，使用繁體）\n    "
+    },
+    {
+      "name": "list_fhl_article_columns",
+      "description": "列出信望愛站可用的文章專欄。\n\n    回傳所有可搜尋的專欄，包含：\n    - 專欄代碼 (code): 用於 search_fhl_articles 的 column 參數\n    - 專欄名稱 (name): 中文名稱\n    - 專欄說明 (description): 專欄內容簡介\n\n    使用專欄代碼可以精確搜尋特定專欄的文章。\n\n    範例：\n    - 查看所有專欄：list_fhl_article_columns()\n    - 然後使用代碼搜尋：search_fhl_articles(column=\"women3\")\n    "
+    }
+  ]
+}

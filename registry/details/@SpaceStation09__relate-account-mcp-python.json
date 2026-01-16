@@ -1,0 +1,24 @@
+{
+  "id": "@SpaceStation09/relate-account-mcp-python",
+  "displayName": "Relate Account Python Server",
+  "description": "Provide identity linkage and analysis by querying user-related information across platforms using web3.bio's GraphQL API. Enable clients to retrieve and analyze user identity bindings efficiently. Facilitate integration via a streamable HTTP MCP server interface.",
+  "createdAt": "2026-01-16T07:22:51.085Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SpaceStation09/relate-account-mcp-python"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-related-address",
+      "description": "Retrieves all related identities associated with a specific platform identity. This tool helps discover cross-platform connections for the same person or entity. Use cases include: 1) Finding all accounts (Lens, Farcaster, ENS, etc.) belonging to the same person, 2) Resolving domain names to their underlying addresses (ENS domains, Lens handles, etc.)"
+    }
+  ]
+}

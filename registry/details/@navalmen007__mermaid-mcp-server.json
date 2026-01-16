@@ -1,0 +1,12 @@
+{
+  "id": "@navalmen007/mermaid-mcp-server",
+  "displayName": "mermaid-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:53.687Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@navalmen007/mermaid-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

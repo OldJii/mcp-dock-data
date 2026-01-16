@@ -1,0 +1,55 @@
+{
+  "id": "@lebrackyt/playlistable",
+  "displayName": "Playlistable",
+  "description": "Generate and manage Spotify playlists with AI. Search songs, edit lists, and refine music to fit any vibe or request.",
+  "createdAt": "2026-01-16T07:25:08.833Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lebrackyt/playlistable"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "No client configuration required. Authenticate via OAuth when prompted.",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_playlist",
+      "description": "Create a playlist and return a playlistable URL immediately (async generation)."
+    },
+    {
+      "name": "get_playlist",
+      "description": "Get a playlist details by ID."
+    },
+    {
+      "name": "get_playlists",
+      "description": "List the user's playlists (paginated)."
+    },
+    {
+      "name": "playlist_suggestions",
+      "description": "Get 6 AI-generated playlist mood suggestions for the current user."
+    },
+    {
+      "name": "edit_playlist",
+      "description": "Add or remove songs in a playlist by Spotify track IDs."
+    },
+    {
+      "name": "delete_playlist",
+      "description": "Delete a playlist by ID."
+    },
+    {
+      "name": "search_songs",
+      "description": "Search Spotify tracks by query. Returns id, name, artist, image, url."
+    },
+    {
+      "name": "search_artists",
+      "description": "Search Spotify artists by query. Returns id, name, image, url, genres."
+    }
+  ]
+}

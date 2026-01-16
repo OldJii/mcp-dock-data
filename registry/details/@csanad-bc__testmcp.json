@@ -1,0 +1,12 @@
+{
+  "id": "@csanad-bc/testmcp",
+  "displayName": "testmcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:22.385Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@csanad-bc/testmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

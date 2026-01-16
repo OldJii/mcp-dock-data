@@ -1,0 +1,32 @@
+{
+  "id": "kodeyai/kodey-pdf-mcp",
+  "displayName": "kodey-pdf-mcp",
+  "description": "Detect and list form fields in any PDF. Fill forms with your data and receive the completed PDF in seconds. Get a secure download link for easy sharing.",
+  "createdAt": "2026-01-16T07:23:23.654Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kodeyai/kodey-pdf-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "detect_form_fields",
+      "description": "Detect and list all form fields in a PDF file. Accepts file path or URL."
+    },
+    {
+      "name": "fill_form_fields",
+      "description": "Fill form fields in a PDF and upload to S3. Returns a pre-signed URL to download the filled PDF."
+    }
+  ]
+}

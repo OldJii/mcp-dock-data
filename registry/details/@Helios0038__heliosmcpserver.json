@@ -1,0 +1,12 @@
+{
+  "id": "@Helios0038/heliosmcpserver",
+  "displayName": "heliosmcpserver",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:19.602Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Helios0038/heliosmcpserver"
+  },
+  "connection": null,
+  "capabilities": []
+}

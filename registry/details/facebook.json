@@ -1,0 +1,193 @@
+{
+  "id": "facebook",
+  "displayName": "Facebook",
+  "description": "Facebook is a social media and advertising platform used by individuals and businesses to connect, share content, and promote products or services. Only supports Facebook Pages, not Facebook Personal accounts.",
+  "createdAt": "2026-01-16T07:19:29.734Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/facebook"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "FACEBOOK_ADD_PHOTOS_TO_ALBUM",
+      "description": "Adds photos to an existing Facebook album. Note: Currently adds one photo at a time. For true batch upload, use Facebook's batch API endpoint directly."
+    },
+    {
+      "name": "FACEBOOK_ADD_REACTION",
+      "description": "Adds a reaction to a Facebook post or comment. Note: Due to API limitations, only LIKE reactions can be added programmatically."
+    },
+    {
+      "name": "FACEBOOK_ASSIGN_PAGE_TASK",
+      "description": "Assigns tasks/roles to a user for a specific Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_CREATE_COMMENT",
+      "description": "Creates a comment on a Facebook post or replies to an existing comment."
+    },
+    {
+      "name": "FACEBOOK_CREATE_PHOTO_ALBUM",
+      "description": "Creates a new photo album on a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_CREATE_PHOTO_POST",
+      "description": "Creates a photo post on a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_CREATE_POST",
+      "description": "Creates a new post on a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_CREATE_VIDEO_POST",
+      "description": "Creates a video post on a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_DELETE_COMMENT",
+      "description": "Deletes a Facebook comment."
+    },
+    {
+      "name": "FACEBOOK_DELETE_POST",
+      "description": "Deletes a Facebook Page post."
+    },
+    {
+      "name": "FACEBOOK_GET_COMMENT",
+      "description": "Retrieves details of a specific Facebook comment."
+    },
+    {
+      "name": "FACEBOOK_GET_COMMENTS",
+      "description": "Retrieves comments from a Facebook post or comment (for replies)."
+    },
+    {
+      "name": "FACEBOOK_GET_CONVERSATION_MESSAGES",
+      "description": "Retrieves messages from a specific conversation."
+    },
+    {
+      "name": "FACEBOOK_GET_CURRENT_USER",
+      "description": "Validates the access token and retrieves the current user's profile via /me."
+    },
+    {
+      "name": "FACEBOOK_GET_MESSAGE_DETAILS",
+      "description": "Retrieves details of a specific message sent or received by the Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_CONVERSATIONS",
+      "description": "Retrieves a list of conversations between users and the Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_DETAILS",
+      "description": "Fetches details about a specific Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_INSIGHTS",
+      "description": "Retrieves analytics and insights for a Facebook Page. Returns metrics like impressions, page views, fan counts, and engagement data."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_PHOTOS",
+      "description": "Retrieves photos from a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_POSTS",
+      "description": "Retrieves posts from a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_ROLES",
+      "description": "Retrieves a list of people and their tasks/roles on a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_PAGE_VIDEOS",
+      "description": "Retrieves videos from a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_POST",
+      "description": "Retrieves details of a specific Facebook post."
+    },
+    {
+      "name": "FACEBOOK_GET_POST_INSIGHTS",
+      "description": "Retrieves analytics and insights for a specific Facebook post. Returns metrics like impressions, clicks, and engagement data."
+    },
+    {
+      "name": "FACEBOOK_GET_POST_REACTIONS",
+      "description": "Retrieves reactions (like, love, wow, etc.) for a Facebook post."
+    },
+    {
+      "name": "FACEBOOK_GET_SCHEDULED_POSTS",
+      "description": "Retrieves scheduled and unpublished posts for a Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_GET_USER_PAGES",
+      "description": "Retrieves a list of Pages the user manages, including tasks and access tokens."
+    },
+    {
+      "name": "FACEBOOK_LIKE_POST_OR_COMMENT",
+      "description": "Likes a Facebook post or comment."
+    },
+    {
+      "name": "FACEBOOK_LIST_MANAGED_PAGES",
+      "description": "Retrieves a list of Facebook Pages that the user manages, including page details, access tokens, and tasks."
+    },
+    {
+      "name": "FACEBOOK_MARK_MESSAGE_SEEN",
+      "description": "Marks a user's message as seen by the Page."
+    },
+    {
+      "name": "FACEBOOK_PUBLISH_SCHEDULED_POST",
+      "description": "Publishes a previously scheduled or unpublished Facebook post immediately."
+    },
+    {
+      "name": "FACEBOOK_REMOVE_PAGE_TASK",
+      "description": "Removes a user's tasks/access from a specific Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_RESCHEDULE_POST",
+      "description": "Changes the scheduled publish time of an unpublished Facebook post."
+    },
+    {
+      "name": "FACEBOOK_SEARCH_PAGES",
+      "description": "Searches for Facebook Pages based on a query string. Returns pages matching the search criteria with requested fields. IMPORTANT: This endpoint requires App Review approval for one of: - 'Page Public Content Access' feature - 'Page Public Metadata Access' feature Without App Review approval, this endpoint will return Error #10. To search pages, submit your app for review with the required feature."
+    },
+    {
+      "name": "FACEBOOK_SEND_MEDIA_MESSAGE",
+      "description": "Sends a media message (image, video, audio, or file) from the Page to a user."
+    },
+    {
+      "name": "FACEBOOK_SEND_MESSAGE",
+      "description": "Sends a text message from the Page to a user via Messenger."
+    },
+    {
+      "name": "FACEBOOK_TOGGLE_TYPING_INDICATOR",
+      "description": "Shows or hides the typing indicator for a user in Messenger."
+    },
+    {
+      "name": "FACEBOOK_UNLIKE_POST_OR_COMMENT",
+      "description": "Removes a like from a Facebook post or comment."
+    },
+    {
+      "name": "FACEBOOK_UPDATE_COMMENT",
+      "description": "Updates an existing Facebook comment."
+    },
+    {
+      "name": "FACEBOOK_UPDATE_PAGE_SETTINGS",
+      "description": "Updates settings for a specific Facebook Page."
+    },
+    {
+      "name": "FACEBOOK_UPDATE_POST",
+      "description": "Updates an existing Facebook Page post."
+    },
+    {
+      "name": "FACEBOOK_UPLOAD_PHOTO",
+      "description": "Uploads a photo file directly to a Facebook Page. Supports local file upload up to 10MB."
+    },
+    {
+      "name": "FACEBOOK_UPLOAD_PHOTOS_BATCH",
+      "description": "Uploads multiple photo files in batch to a Facebook Page or Album. Uses Facebook's batch API for efficient multi-photo upload. Maximum 50 photos per batch."
+    },
+    {
+      "name": "FACEBOOK_UPLOAD_VIDEO",
+      "description": "Uploads a video file directly to a Facebook Page. Supports local file upload. For large videos (>100MB), uses resumable upload."
+    }
+  ]
+}

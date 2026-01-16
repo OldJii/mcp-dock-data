@@ -1,0 +1,97 @@
+{
+  "id": "@michelle/caffeinated-wardrobe",
+  "displayName": "Caffeinated Wardrobe",
+  "description": "Caffeinated Wardrobe is like an API for your closet. This MCP server brings programmatic wardrobe management to any MCP-compatible AI client - track clothing items, compose (and remember) outfits, analyze wear patterns, and get AI-powered styling recommendations. Combine with filesystem, calendar, or browser MCP servers for context-aware outfit suggestions based on your schedule, weather, or recent purchases.",
+  "createdAt": "2026-01-16T07:29:28.544Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@michelle/caffeinated-wardrobe"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "list_tags",
+      "description": "Get all unique tags used by the current user for their items."
+    },
+    {
+      "name": "create_item",
+      "description": "Create a new wardrobe item.\n\nFor brands, colors, and stores, you can provide either the name or ID:\n- brand: \"Nike\" (auto-creates if not found) OR brand_id: UUID\n- color: \"Blue\" (auto-creates if not found) OR color_id: UUID\n- store: \"Amazon\" (auto-creates if not found) OR store_id: UUID\n\nYou can also provide image_urls to upload images from publicly accessible URLs.\nImages will be uploaded after the item is created. If any image URLs fail to upload,\nthe item will still be created successfully.\n\nNo need to check if brands/colors/stores exist first - the system handles this automatically."
+    },
+    {
+      "name": "list_items",
+      "description": "Get a list of all wardrobe items with reduced details for MCP efficiency."
+    },
+    {
+      "name": "get_item_details",
+      "description": "Get details of a specific wardrobe item."
+    },
+    {
+      "name": "update_existing_item",
+      "description": "Update an existing wardrobe item.\n\nFor brands, colors, and stores, you can provide either the name or ID:\n- brand: \"Nike\" (auto-creates if not found) OR brand_id: UUID\n- color: \"Blue\" (auto-creates if not found) OR color_id: UUID\n- store: \"Amazon\" (auto-creates if not found) OR store_id: UUID\n\nYou can also provide image_urls to upload images from publicly accessible URLs.\nImages will be uploaded after the item is updated. If any image URLs fail to upload,\nthe item will still be updated successfully.\n\nNo need to check if brands/colors/stores exist first - the system handles this automatically."
+    },
+    {
+      "name": "delete_item",
+      "description": "Delete a wardrobe item."
+    },
+    {
+      "name": "upload_images_from_urls",
+      "description": "Upload images for a specific wardrobe item from URLs. Designed for MCP tools to avoid base64 encoding overhead."
+    },
+    {
+      "name": "delete_image",
+      "description": "Delete an image associated with a specific wardrobe item."
+    },
+    {
+      "name": "set_default_image",
+      "description": "Set a specific image as the default for a wardrobe item."
+    },
+    {
+      "name": "get_related_items",
+      "description": "Get all items that are related to the specified item."
+    },
+    {
+      "name": "create_item_relationship",
+      "description": "Create a new relationship between two items."
+    },
+    {
+      "name": "delete_item_relationship",
+      "description": "Delete a relationship between two items."
+    },
+    {
+      "name": "get_item_wear_history",
+      "description": "Get wear history for a specific item."
+    },
+    {
+      "name": "list_outfits",
+      "description": "Get a list of all outfits."
+    },
+    {
+      "name": "create_outfit",
+      "description": "Create a new outfit."
+    },
+    {
+      "name": "get_outfit_details",
+      "description": "Get details of a specific outfit."
+    },
+    {
+      "name": "update_outfit",
+      "description": "Update an existing outfit.\n\nWhen modifying the item composition of an outfit that has been worn, a new outfit\nwill be automatically created with the updated composition. The original outfit\nand its wear history will be preserved. The response will include the new outfit\nID and a flag indicating whether a new outfit was created.\n\nExamples:\n- Updating unworn outfit composition: Returns updated outfit with new_outfit_created=False\n- Updating worn outfit composition: Returns new outfit with new_outfit_created=True\n- Updating outfit metadata only: Returns updated outfit with new_outfit_created=False"
+    },
+    {
+      "name": "delete_outfit",
+      "description": "Delete an existing outfit."
+    },
+    {
+      "name": "get_outfit_wear_history",
+      "description": "Get wear history for a specific outfit."
+    },
+    {
+      "name": "record_wear",
+      "description": "Record that an item or outfit was worn at a specific date/time. Will default to now if not provided."
+    }
+  ]
+}

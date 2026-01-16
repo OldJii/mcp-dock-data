@@ -1,0 +1,27 @@
+{
+  "id": "@alperenkocyigit/authorprofilemcp",
+  "displayName": "authorprofilemcp",
+  "description": "Discover co-authors and collaboration networks for any researcher. Extract research interests and keywords from scholar profiles to understand expertise. Accelerate literature review and team scouting with unified author insights.",
+  "createdAt": "2026-01-16T07:21:34.514Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alperenkocyigit/authorprofilemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_coauthors",
+      "description": "\n    Get all co-authors for a given author.\n    \n    Args:\n        name: Author's first name\n        surname: Author's last name\n        institution: Optional institution affiliation\n        field: Optional research field\n    \n    Returns:\n        Dictionary containing co-authors list with their information\n    "
+    },
+    {
+      "name": "get_author_keywords",
+      "description": "\n    Get research keywords/areas for a given author from Google Scholar.\n    \n    Args:\n        name: Author's first name\n        surname: Author's last name\n        institution: Optional institution affiliation\n    \n    Returns:\n        Dictionary containing keywords extracted from Google Scholar\n    "
+    }
+  ]
+}

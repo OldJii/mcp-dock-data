@@ -1,0 +1,12 @@
+{
+  "id": "@cameron.gibson/server-curl",
+  "displayName": "server-curl",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:40.019Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cameron.gibson/server-curl"
+  },
+  "connection": null,
+  "capabilities": []
+}

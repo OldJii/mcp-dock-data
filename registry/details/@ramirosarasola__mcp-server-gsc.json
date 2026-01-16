@@ -1,0 +1,12 @@
+{
+  "id": "@ramirosarasola/mcp-server-gsc",
+  "displayName": "mcp-server-gsc",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:43.567Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ramirosarasola/mcp-server-gsc"
+  },
+  "connection": null,
+  "capabilities": []
+}

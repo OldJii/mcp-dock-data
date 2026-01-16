@@ -1,0 +1,90 @@
+{
+  "id": "@uvidswqkscr89/leiga_mcp_smithery",
+  "displayName": "Leiga",
+  "description": "Manage Leiga projects and issues from your workspace. Search across projects with flexible filters, view detailed issue info, and create new issues with priorities, statuses, and sprints. Retrieve your assigned tasks and list available projects to stay organized.",
+  "createdAt": "2026-01-16T07:31:17.999Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@uvidswqkscr89/leiga_mcp_smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "clientId",
+        "secret"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "secret": {
+          "type": "string",
+          "description": "Your Leiga API secret for authentication"
+        },
+        "clientId": {
+          "type": "string",
+          "description": "Your Leiga API client ID for authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_all_issues",
+      "description": "Searches Leiga issues using flexible criteria. Supports filtering by any combination of: title text, project name, status(2=ToDo, 3=In Progress, 4=Done), assignee, label, priority name, work type, start date range, due date range, and create date range. Returns up to 10 issues by default (configurable via pageSize)."
+    },
+    {
+      "name": "get_issue_detail",
+      "description": "Get issue detail by using issue ID or issue number."
+    },
+    {
+      "name": "my_assigned_issues",
+      "description": "Retrieves my issues, specifically those assigned to the authenticated user. This tool is activated only when first-person singular pronouns (e.g., me, my, mine, or myself) are explicitly used in the query."
+    },
+    {
+      "name": "create_issue",
+      "description": "Creates a new Leiga issue. Required fields: summary (issue title) and projectName. Optional fields: description (issue details), priority (0-4, where 0 is no priority and 1 is urgent), statusName (issue status, e.g., 'Not Started', 'In Progress', 'Done'), sprint (sprint name), and workType (e.g., 'Story', 'Chore', 'Bug'). Returns the created issue's identifier and URL."
+    },
+    {
+      "name": "list_project",
+      "description": "Show project list"
+    },
+    {
+      "name": "current_date",
+      "description": "Get current date (local timezone)"
+    },
+    {
+      "name": "list_issue_comments",
+      "description": "List comments of an issue by ID or issue number with pagination."
+    },
+    {
+      "name": "create_comment",
+      "description": "Create a comment for an issue. Can be a new comment or a reply to an existing comment."
+    },
+    {
+      "name": "list_project_members",
+      "description": "List members of a specific project with optional search and pagination."
+    },
+    {
+      "name": "list_org_members",
+      "description": "List all organization members with optional search and pagination."
+    },
+    {
+      "name": "get_issue_options",
+      "description": "Get selectable option fields for an issue by ID or issue number."
+    },
+    {
+      "name": "update_issue",
+      "description": "Update an issue by ID or issue number. If names are provided for fields (e.g., statusName, priorityName, assigneeName, labels), they will be resolved to IDs via get_issue_options before updating."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "@darekrossman/contentstack-mcp",
+  "displayName": "Contentstack CMS Integration Server",
+  "description": "Enable AI assistants to interact seamlessly with your Contentstack CMS by accessing and managing content types, entries, assets, and global fields through a standardized protocol. Perform CRUD operations and content publishing directly via AI-driven commands to streamline content management workflows. Enhance your content operations with AI-powered automation and real-time content manipulation capabilities.",
+  "createdAt": "2026-01-16T07:31:22.568Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@darekrossman/contentstack-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "contentstackApiKey",
+        "contentstackManagementToken"
+      ],
+      "properties": {
+        "contentstackApiKey": {
+          "type": "string",
+          "description": "Contentstack API Key"
+        },
+        "contentstackBranch": {
+          "type": "string",
+          "description": "Contentstack branch name to use (optional)",
+          "default": ""
+        },
+        "contentstackManagementToken": {
+          "type": "string",
+          "description": "Contentstack Management Token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_content_type",
+      "description": "Creates a new content type with the specified schema, options, field rules, and taxonomies."
+    },
+    {
+      "name": "update_content_type",
+      "description": "Updates an existing content type identified by its UID. Allows modification of title, schema, options, and field rules."
+    },
+    {
+      "name": "delete_content_type",
+      "description": "Deletes a content type identified by its UID."
+    },
+    {
+      "name": "create_entry",
+      "description": "Creates a new entry for a specified content type."
+    },
+    {
+      "name": "update_entry",
+      "description": "Updates an existing entry identified by its UID and content type UID."
+    },
+    {
+      "name": "delete_entry",
+      "description": "Deletes an entry identified by its UID and content type UID."
+    },
+    {
+      "name": "get_content_type",
+      "description": "Retrieves a specific content type by its UID, optionally including the global field schema."
+    },
+    {
+      "name": "get_all_content_types",
+      "description": "Retrieves a list of all content types, with options for pagination and including additional details like global field schema and counts."
+    },
+    {
+      "name": "get_entry",
+      "description": "Retrieves a specific entry by its content type UID and entry UID, with options for locale and including references."
+    },
+    {
+      "name": "get_entries",
+      "description": "Retrieves entries for a specified content type, with extensive options for filtering, sorting, pagination, and including related data."
+    },
+    {
+      "name": "publish_entry",
+      "description": "Publishes an entry to a specified environment and locale."
+    },
+    {
+      "name": "unpublish_entry",
+      "description": "Unpublishes an entry from a specified environment and locale."
+    },
+    {
+      "name": "create_global_field",
+      "description": "Creates a new global field with the specified title, UID, and schema."
+    },
+    {
+      "name": "update_global_field",
+      "description": "Updates an existing global field identified by its UID. Allows modification of title and schema."
+    },
+    {
+      "name": "get_all_global_fields",
+      "description": "Retrieves a list of all global fields, with options for pagination and including branch information."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "@faalantir/mcp-agent-identity",
+  "displayName": "mcp-agent-identity",
+  "description": "Establish a durable identity for your automations so downstream systems know who acted. Sign payloads to produce tamper-evident, verifiable actions across services. Verify signatures to confirm authorship and integrity for audits and approvals.",
+  "createdAt": "2026-01-16T07:20:41.937Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@faalantir/mcp-agent-identity"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_identity",
+      "description": ""
+    },
+    {
+      "name": "get_identity",
+      "description": ""
+    },
+    {
+      "name": "sign_message",
+      "description": ""
+    },
+    {
+      "name": "verify_signature",
+      "description": ""
+    },
+    {
+      "name": "revoke_identity",
+      "description": ""
+    }
+  ]
+}

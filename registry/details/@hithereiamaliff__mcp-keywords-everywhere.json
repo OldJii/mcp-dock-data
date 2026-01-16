@@ -1,0 +1,73 @@
+{
+  "id": "@hithereiamaliff/mcp-keywords-everywhere",
+  "displayName": "Keywords Everywhere MCP Server",
+  "description": "Provide AI assistants with powerful SEO research capabilities by accessing keyword data, domain analysis, backlink information, and traffic metrics. Enable comprehensive keyword research and competitive analysis across multiple countries and currencies. Simplify SEO data retrieval and analysis for enhanced decision-making.\n\nNote: this is NOT an official MCP server by Keywords Everywhere.",
+  "createdAt": "2026-01-16T07:24:15.611Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-keywords-everywhere"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_credits",
+      "description": "Get your account's credit balance"
+    },
+    {
+      "name": "get_countries",
+      "description": "Get list of supported countries"
+    },
+    {
+      "name": "get_currencies",
+      "description": "Get list of supported currencies"
+    },
+    {
+      "name": "get_keyword_data",
+      "description": "Get Volume, CPC and competition for a set of keywords"
+    },
+    {
+      "name": "get_related_keywords",
+      "description": "Get related keywords based on a seed keyword"
+    },
+    {
+      "name": "get_pasf_keywords",
+      "description": "Get 'People Also Search For' keywords based on a seed keyword"
+    },
+    {
+      "name": "get_domain_keywords",
+      "description": "Get keywords that a domain ranks for"
+    },
+    {
+      "name": "get_url_keywords",
+      "description": "Get keywords that a URL ranks for"
+    },
+    {
+      "name": "get_domain_traffic",
+      "description": "Get traffic metrics for a domain"
+    },
+    {
+      "name": "get_url_traffic",
+      "description": "Get traffic metrics for a URL"
+    },
+    {
+      "name": "get_domain_backlinks",
+      "description": "Get backlinks for a domain"
+    },
+    {
+      "name": "get_unique_domain_backlinks",
+      "description": "Get unique domain backlinks"
+    },
+    {
+      "name": "get_page_backlinks",
+      "description": "Get backlinks for a specific URL"
+    },
+    {
+      "name": "get_unique_page_backlinks",
+      "description": "Get unique backlinks for a specific URL"
+    }
+  ]
+}

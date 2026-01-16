@@ -1,0 +1,61 @@
+{
+  "id": "@isdaniel/mcp_weather_server",
+  "displayName": "Weather MCP Server",
+  "description": "Retrieve real-time weather information effortlessly for any city. Get accurate weather updates using a simple command or API call without needing an API key. Enhance your applications with reliable weather data from the Open-Meteo API.",
+  "createdAt": "2026-01-16T07:20:41.401Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@isdaniel/mcp_weather_server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_weather",
+      "description": "Get current weather information for a specified city.\n            It extracts the current hour's temperature and weather code, maps\n            the weather code to a human-readable description, and returns a formatted summary."
+    },
+    {
+      "name": "get_weather_byDateTimeRange",
+      "description": "Get weather information for a specified city between start and end dates."
+    },
+    {
+      "name": "get_weather_details",
+      "description": "Get detailed weather information for a specified city as structured JSON data.\n            This tool provides raw weather data for programmatic analysis and processing."
+    },
+    {
+      "name": "get_current_datetime",
+      "description": "Get current time in specified timezone."
+    },
+    {
+      "name": "get_timezone_info",
+      "description": "Get information about a specific timezone including current time and UTC offset."
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time from one timezone to another."
+    },
+    {
+      "name": "get_air_quality",
+      "description": "Get air quality information for a specified city including PM2.5, PM10,\n            ozone, nitrogen dioxide, carbon monoxide, and other pollutants. Provides health\n            advisories based on current air quality levels."
+    },
+    {
+      "name": "get_air_quality_details",
+      "description": "Get detailed air quality information for a specified city as structured JSON data.\n            This tool provides raw air quality data for programmatic analysis and processing."
+    }
+  ]
+}

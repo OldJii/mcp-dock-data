@@ -1,0 +1,128 @@
+{
+  "id": "@OutreachToday/cold-outreach",
+  "displayName": "Outreach Today MCP",
+  "description": "Set up and manage cold outreach email accounts and domains. Build powerful AI sales agents effortlessly. Trusted by 2000+ B2B companies",
+  "createdAt": "2026-01-16T07:27:22.214Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@OutreachToday/cold-outreach"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "OUTREACH_API_KEY"
+      ],
+      "properties": {
+        "OUTREACH_API_KEY": {
+          "type": "string",
+          "description": "The API key from https://app.outreach2day.com/"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "profile",
+      "description": "Get the profile for the current user"
+    },
+    {
+      "name": "current-user-domains",
+      "description": "Get the domains for the current user"
+    },
+    {
+      "name": "check-available-domains",
+      "description": "Check if a domain is available"
+    },
+    {
+      "name": "save-domains-choice",
+      "description": "Save the domains choice"
+    },
+    {
+      "name": "purchase-dns-hosting",
+      "description": "Purchase DNS hosting"
+    },
+    {
+      "name": "change-domains-redirects",
+      "description": "Change the redirects for a domain"
+    },
+    {
+      "name": "set-domain-dns-records",
+      "description": "Set the DNS records for a domain"
+    },
+    {
+      "name": "replace-restricted-domains",
+      "description": "Replace the restricted domains with the new domains"
+    },
+    {
+      "name": "current-user-mailboxes",
+      "description": "Get the mailboxes for the current user"
+    },
+    {
+      "name": "save-mailbox-choice",
+      "description": "Save the mailbox choice"
+    },
+    {
+      "name": "update-mailboxes",
+      "description": "Update the mailboxes"
+    },
+    {
+      "name": "upgrade-subscription",
+      "description": "Upgrade the subscription"
+    },
+    {
+      "name": "api-keys",
+      "description": "Get the API keys for the current user"
+    },
+    {
+      "name": "workspace-credits",
+      "description": "Get the credits for the workspace"
+    },
+    {
+      "name": "workspace-subscription-status",
+      "description": "Get the subscription status for the workspace"
+    },
+    {
+      "name": "workspace-invoices",
+      "description": "Get the invoices for the workspace"
+    },
+    {
+      "name": "workspace-payment-method",
+      "description": "Get the payment method for the workspace"
+    },
+    {
+      "name": "workspace-add-user",
+      "description": "Add a user to the workspace"
+    },
+    {
+      "name": "workspace-delete-user",
+      "description": "Delete a user from the workspace"
+    },
+    {
+      "name": "workspace-update",
+      "description": "Update a workspace"
+    },
+    {
+      "name": "workspace-users",
+      "description": "Get the users for a workspace"
+    },
+    {
+      "name": "workspace-create",
+      "description": "Create a workspace"
+    },
+    {
+      "name": "health-tests",
+      "description": "Get the health tests for the workspace"
+    },
+    {
+      "name": "domains-health",
+      "description": "Get the health of the domains"
+    },
+    {
+      "name": "domains-dns-records",
+      "description": "Get the DNS records for the domains"
+    }
+  ]
+}

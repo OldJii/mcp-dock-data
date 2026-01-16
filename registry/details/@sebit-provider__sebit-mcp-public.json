@@ -1,0 +1,12 @@
+{
+  "id": "@sebit-provider/sebit-mcp-public",
+  "displayName": "sebit-mcp-public",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:40.797Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sebit-provider/sebit-mcp-public"
+  },
+  "connection": null,
+  "capabilities": []
+}

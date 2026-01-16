@@ -1,0 +1,87 @@
+{
+  "id": "@leandrogavidia/solx402-mcp-server",
+  "displayName": "SOLx402 MCP Server",
+  "description": "SOLx402 MCP Server is a Model Context Protocol (MCP) server that enables AI assistants to interact with the x402 payment protocol on Solana. It provides tools for discovering and consuming x402-enabled services, managing USDC payments, querying protocol documentation, and accessing Solana development resources through integrated MCP clients.",
+  "createdAt": "2026-01-16T07:23:59.537Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@leandrogavidia/solx402-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "privateKey",
+        "mainnetRpcUrl"
+      ],
+      "properties": {
+        "maxPrice": {
+          "type": "number",
+          "description": "Maximum price to pay for services in USDC. e.g 10000 = 0.01 USDC",
+          "default": 0
+        },
+        "isMainnet": {
+          "type": "boolean",
+          "description": "Set to true for mainnet, false for devnet",
+          "default": false
+        },
+        "privateKey": {
+          "type": "string",
+          "description": "Private key in Bs58 format"
+        },
+        "devnetRpcUrl": {
+          "type": "string",
+          "description": "RPC URL for Solana devnet",
+          "default": "https://api.devnet.solana.com"
+        },
+        "mainnetRpcUrl": {
+          "type": "string",
+          "description": "RPC URL for Solana mainnet"
+        },
+        "facilitatorUrl": {
+          "type": "string",
+          "description": "URL of the x402 facilitator",
+          "default": "https://facilitator.payai.network"
+        },
+        "useSolanaMcpServer": {
+          "type": "boolean",
+          "description": "Set to true to use Solana MCP Server. Default false",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "x402_protocol_flow",
+      "description": "Visual diagram showing the x402 protocol flow and architecture"
+    },
+    {
+      "name": "search_x402_documentation",
+      "description": "Search across the documentation to find relevant information, code examples, API references, and guides. Use this tool when you need to answer questions about x402, find specific documentation, understand how features work, or locate implementation details. The search returns contextual content with titles and direct links to the documentation pages."
+    },
+    {
+      "name": "get_x402_services",
+      "description": "Retrieve a list of available X402 services from the facilitator."
+    },
+    {
+      "name": "get_wallet_public_key",
+      "description": "Retrieve the public key of the configured wallet."
+    },
+    {
+      "name": "get_wallet_usdc_balance",
+      "description": "Retrieve the USDC balance of the configured wallet."
+    },
+    {
+      "name": "consume_x402_service",
+      "description": "Consume a specific X402 service."
+    },
+    {
+      "name": "get_facilitators",
+      "description": "Retrieve a list of known Solana facilitators."
+    }
+  ]
+}

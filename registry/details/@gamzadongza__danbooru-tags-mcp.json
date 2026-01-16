@@ -1,0 +1,37 @@
+{
+  "id": "@gamzadongza/danbooru-tags-mcp",
+  "displayName": "Danbooru Tags",
+  "description": "Extract tags from any Danbooru post and explore categories at a glance. Analyze character-specific tag frequencies to surface top traits and clothing patterns. Look up tag and character details from the Danbooru Wiki to add context.",
+  "createdAt": "2026-01-16T07:22:24.383Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gamzadongza/danbooru-tags-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_post_tags",
+      "description": "**[REAL-TIME API]** Extract all tags from a specific Danbooru post by ID or URL by querying Danbooru API directly.\n\nUse this when:\n- You want to get ALL tags from a single post in real-time\n- You need tag categories and counts for a specific post\n\nFor analyzing tag statistics across multiple posts, use 'get_character_tags'."
+    },
+    {
+      "name": "get_character_tags",
+      "description": "**[REAL-TIME API]** Analyze frequently used tags for a character by querying Danbooru API directly in real-time with advanced filtering options.\n\nUse this when:\n- You need the LATEST, most up-to-date tag statistics\n- The character data is NOT yet saved in the database\n- You want quick exploration without saving data\n- You need filtered analysis (clothing only, specific categories, include/exclude tags)\n\nFor analyzing SAVED data, use Turso SQL tools instead.\nFor bulk data collection to save, use 'collect_and_save' from Danbooru Turso Sync."
+    },
+    {
+      "name": "get_wiki_info",
+      "description": "**[REAL-TIME API]** Search Danbooru Wiki for tag/character information in real-time.\n\nUse this when:\n- You need information about what a tag means\n- You want to understand tag relationships or aliases\n- You need character background or copyright info"
+    },
+    {
+      "name": "get_post_count",
+      "description": "**[REAL-TIME API]** Get the total number of posts for a specific tag.\n\nUse this when:\n- You want to know how many posts exist for a character/tag BEFORE collecting data\n- You need to estimate collection time and resources\n- You want to verify data completeness after collection\n\nReturns only the post count. Use danbooru-turso-mcp.collect_and_save for actual data collection."
+    }
+  ]
+}

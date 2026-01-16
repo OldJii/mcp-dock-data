@@ -1,0 +1,33 @@
+{
+  "id": "@ThierryThevenet/talao",
+  "displayName": "Data Wallet Verification",
+  "description": "Discover supported verification scopes and the claims they provide. Initiate and monitor data wallet verification flows to securely receive redacted wallet data. Clean up completed sessions to keep workflows organized.",
+  "createdAt": "2026-01-16T07:27:39.788Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ThierryThevenet/talao"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_supported_scopes",
+      "description": "Return supported scopes, the claims each scope returns, and available verifier profiles."
+    },
+    {
+      "name": "start_wallet_verification",
+      "description": "Create a wallet request as a QR code image or deeplink."
+    },
+    {
+      "name": "poll_wallet_verification",
+      "description": "Poll current status for a session; returns structured status and redacted wallet_data."
+    },
+    {
+      "name": "revoke_wallet_flow",
+      "description": "Acknowledge cleanup for a session id (back-end TTL handles actual expiration)."
+    }
+  ]
+}

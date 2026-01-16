@@ -1,0 +1,50 @@
+{
+  "id": "@pinion05/supabase-mcp-lite",
+  "displayName": "supabase-mcp-lite",
+  "description": "Same functionality while using only 1/20 of the context window tokens.\nNever suffer from the supabase_mcp disconnected error again!\nMCP initialization is now over 20× faster!\n\nAdditionally, use execution queries to access your database in a strictly linear, one-dimensional manner!",
+  "createdAt": "2026-01-16T07:20:43.553Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pinion05/supabase-mcp-lite"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "supabase_Access_Token"
+      ],
+      "properties": {
+        "enableLogging": {
+          "type": "boolean",
+          "description": "Enable logging",
+          "default": false
+        },
+        "supabase_Access_Token": {
+          "type": "string",
+          "description": "Enter API key"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_api_keys",
+      "description": "Get Supabase personal key, Project anon key, and Project service role key"
+    },
+    {
+      "name": "get_project_list",
+      "description": "Get project list from supabase"
+    },
+    {
+      "name": "get_table_list",
+      "description": "Get table list from a specific project"
+    },
+    {
+      "name": "execute_query",
+      "description": "Execute a SQL query on a specific project"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@wende/cicada",
+  "displayName": "cicada",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:53.151Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wende/cicada"
+  },
+  "connection": null,
+  "capabilities": []
+}

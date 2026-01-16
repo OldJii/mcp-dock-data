@@ -1,0 +1,41 @@
+{
+  "id": "@InstantMCP/linkedinadsmcpserverv1",
+  "displayName": "LinkedIn Ads Library",
+  "description": "Search and retrieve LinkedIn ads effortlessly. Utilize powerful tools to find ads based on keywords, countries, and date ranges, or get detailed information about specific ads. Enhance your marketing insights with seamless integration into your workflow.",
+  "createdAt": "2026-01-16T07:29:07.362Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@InstantMCP/linkedinadsmcpserverv1"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "InstantMCP API key.",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_linkedin_ads",
+      "description": "Search for LinkedIn ads based on keywords, countries, and date range"
+    },
+    {
+      "name": "get_details_of_ad",
+      "description": "Get details of a specific LinkedIn ad"
+    },
+    {
+      "name": "search_linkedin_ads_with_url",
+      "description": "Search for LinkedIn ads based on a URL"
+    }
+  ]
+}

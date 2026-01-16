@@ -1,0 +1,73 @@
+{
+  "id": "@kopfrechner/gitlab-mr-mcp",
+  "displayName": "GitLab Merge Request Integration",
+  "description": "Interact seamlessly with GitLab repositories to manage merge requests and issues. Fetch details, add comments, and streamline your code review process with ease.",
+  "createdAt": "2026-01-16T07:25:03.033Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kopfrechner/gitlab-mr-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "gitlabMrMcpToken",
+        "gitlabMrMcpHost"
+      ],
+      "properties": {
+        "gitlabMrMcpHost": {
+          "type": "string",
+          "description": "GitLab Instance Host (e.g. gitlab.com)"
+        },
+        "gitlabMrMcpToken": {
+          "type": "string",
+          "description": "GitLab Access Token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_projects",
+      "description": "Get a list of projects with id, name, description, web_url and other useful information."
+    },
+    {
+      "name": "list_open_merge_requests",
+      "description": "Lists all open merge requests in the project"
+    },
+    {
+      "name": "get_merge_request_details",
+      "description": "Get details about a specific merge request of a project like title, source-branch, target-branch, web_url, ..."
+    },
+    {
+      "name": "get_merge_request_comments",
+      "description": "Get general and file diff comments of a certain merge request"
+    },
+    {
+      "name": "add_merge_request_comment",
+      "description": "Add a general comment to a merge request"
+    },
+    {
+      "name": "add_merge_request_diff_comment",
+      "description": "Add a comment of a merge request at a specific line in a file diff"
+    },
+    {
+      "name": "get_merge_request_diff",
+      "description": "Get the file diffs of a certain merge request"
+    },
+    {
+      "name": "get_issue_details",
+      "description": "Get details of an issue within a certain project"
+    },
+    {
+      "name": "set_merge_request_description",
+      "description": "Set the description of a merge request"
+    },
+    {
+      "name": "set_merge_request_title",
+      "description": "Set the title of a merge request"
+    }
+  ]
+}

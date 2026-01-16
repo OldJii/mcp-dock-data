@@ -1,0 +1,41 @@
+{
+  "id": "@baranwang/mcp-deep-research",
+  "displayName": "Deep Research",
+  "description": "Search the web for information effortlessly. Leverage the power of the Tavily API to enhance your research capabilities with maximum efficiency. Configure your search parameters and get started quickly with this intuitive tool.",
+  "createdAt": "2026-01-16T07:25:15.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@baranwang/mcp-deep-research"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "tavilyApiKey": {
+          "type": "string",
+          "description": "Configuration for Tavily Api Key",
+          "default": ""
+        },
+        "maxPlanningRounds": {
+          "type": "number",
+          "description": "Configuration for Max Planning Rounds",
+          "default": 5
+        },
+        "maxSearchKeywords": {
+          "type": "number",
+          "description": "Configuration for Max Search Keywords",
+          "default": 5
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "deep-research",
+      "description": "Deep web information search tool that can conduct multi-round in-depth research based on keywords and topics"
+    }
+  ]
+}

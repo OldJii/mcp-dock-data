@@ -1,0 +1,56 @@
+{
+  "id": "xiaobenyang-com/text-transformer",
+  "displayName": "text-transformer",
+  "description": "Transform and analyze text in one place. Convert case, trim whitespace, reverse text, check palindromes, capitalize words, and instantly get word and character counts.",
+  "createdAt": "2026-01-16T07:28:42.515Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/text-transformer"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "lowercase",
+      "description": "Convert text to lowercase"
+    },
+    {
+      "name": "uppercase",
+      "description": "Convert text to uppercase"
+    },
+    {
+      "name": "reverse",
+      "description": "Reverse the order of characters in text"
+    },
+    {
+      "name": "isPalindrome",
+      "description": "Check if text is a palindrome (reads the same forwards and backwards)"
+    },
+    {
+      "name": "countWords",
+      "description": "Count the number of words in text"
+    },
+    {
+      "name": "countCharacters",
+      "description": "Count the number of characters in text"
+    },
+    {
+      "name": "trim",
+      "description": "Remove leading and trailing whitespace from text"
+    },
+    {
+      "name": "capitalize",
+      "description": "Capitalize the first letter of each word"
+    }
+  ]
+}

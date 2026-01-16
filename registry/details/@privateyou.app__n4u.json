@@ -1,0 +1,12 @@
+{
+  "id": "@privateyou.app/n4u",
+  "displayName": "n4u",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:12.342Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@privateyou.app/n4u"
+  },
+  "connection": null,
+  "capabilities": []
+}

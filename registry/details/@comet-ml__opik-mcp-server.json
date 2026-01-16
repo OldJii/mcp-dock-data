@@ -1,0 +1,73 @@
+{
+  "id": "@comet-ml/opik-mcp-server",
+  "displayName": "Opik MCP Server",
+  "description": "Integrate seamlessly with your IDE and access all Opik features through a standardized protocol. Manage prompts, projects, and metrics efficiently with a unified interface. Leverage multiple transport options for flexible integration into various environments.",
+  "createdAt": "2026-01-16T07:23:20.486Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@comet-ml/opik-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "opik-integration-docs",
+      "description": "Provides detailed documentation on how to integrate Opik with your LLM application"
+    },
+    {
+      "name": "get-prompts",
+      "description": "Get a list of prompts with optional filtering"
+    },
+    {
+      "name": "create-prompt",
+      "description": "Create a new prompt"
+    },
+    {
+      "name": "get-prompt-version",
+      "description": "Retrieve a specific version of a prompt"
+    },
+    {
+      "name": "save-prompt-version",
+      "description": "Save a new version of a prompt"
+    },
+    {
+      "name": "list-projects",
+      "description": "Get a list of projects with optional filtering"
+    },
+    {
+      "name": "create-project",
+      "description": "Create a new project"
+    },
+    {
+      "name": "list-traces",
+      "description": "Get a list of traces from a project. Use this for basic trace retrieval and overview"
+    },
+    {
+      "name": "get-trace-by-id",
+      "description": "Get detailed information about a specific trace including input, output, metadata, and timing information"
+    },
+    {
+      "name": "get-trace-stats",
+      "description": "Get aggregated statistics for traces including counts, costs, token usage, and performance metrics over time"
+    },
+    {
+      "name": "search-traces",
+      "description": "Advanced search for traces with complex filtering and query capabilities"
+    },
+    {
+      "name": "get-trace-threads",
+      "description": "Get trace threads (conversation groupings) to view related traces that belong to the same conversation or session"
+    },
+    {
+      "name": "add-trace-feedback",
+      "description": "Add feedback scores to a trace for quality evaluation and monitoring. Useful for rating trace quality, relevance, or custom metrics"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@beycom/code-index-mcp",
+  "displayName": "code-index-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:31.979Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@beycom/code-index-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

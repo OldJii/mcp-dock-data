@@ -1,0 +1,73 @@
+{
+  "id": "googletasks",
+  "displayName": "Google Tasks",
+  "description": "Google Tasks provides a simple to-do list and task management system integrated into Gmail and Google Calendar for quick and easy tracking",
+  "createdAt": "2026-01-16T07:19:17.959Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googletasks"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLETASKS_CLEAR_TASKS",
+      "description": "Permanently clears all completed tasks from a specified Google Tasks list; this action is destructive and idempotent."
+    },
+    {
+      "name": "GOOGLETASKS_CREATE_TASK_LIST",
+      "description": "Creates a new task list with the specified title."
+    },
+    {
+      "name": "GOOGLETASKS_DELETE_TASK",
+      "description": "Deletes a specified task from a given task list in Google Tasks."
+    },
+    {
+      "name": "GOOGLETASKS_DELETE_TASK_LIST",
+      "description": "Permanently deletes an existing Google Task list, identified by `tasklist_id`, along with all its tasks; this operation is irreversible."
+    },
+    {
+      "name": "GOOGLETASKS_GET_TASK",
+      "description": "Use to retrieve a specific Google Task if its `task_id` and parent `tasklist_id` are known."
+    },
+    {
+      "name": "GOOGLETASKS_GET_TASK_LIST",
+      "description": "Retrieves a specific task list from the user's Google Tasks if the `tasklist_id` exists for the authenticated user."
+    },
+    {
+      "name": "GOOGLETASKS_INSERT_TASK",
+      "description": "Creates a new task in a given `tasklist_id`, optionally as a subtask of an existing `task_parent` or positioned after an existing `task_previous` sibling, where both `task_parent` and `task_previous` must belong to the same `tasklist_id` if specified. IMPORTANT: Date fields (due, completed) accept various formats like '28 Sep 2025', '11:59 PM, 22 Sep 2025', or ISO format '2025-09-21T15:30:00Z' and will automatically convert them to RFC3339 format required by the API."
+    },
+    {
+      "name": "GOOGLETASKS_LIST_TASK_LISTS",
+      "description": "Fetches the authenticated user's task lists from Google Tasks; results may be paginated."
+    },
+    {
+      "name": "GOOGLETASKS_LIST_TASKS",
+      "description": "Retrieves tasks from a Google Tasks list; all date/time strings must be RFC3339 UTC, and `showCompleted` must be true if `completedMin` or `completedMax` are specified."
+    },
+    {
+      "name": "GOOGLETASKS_MOVE_TASK",
+      "description": "Moves the specified task to another position in the destination task list."
+    },
+    {
+      "name": "GOOGLETASKS_PATCH_TASK",
+      "description": "Partially updates an existing task (identified by `task_id`) within a specific Google Task list (identified by `tasklist_id`), modifying only the provided attributes from `TaskInput` (e.g., `title`, `notes`, `due` date, `status`) and requiring both the task and list to exist."
+    },
+    {
+      "name": "GOOGLETASKS_PATCH_TASK_LIST",
+      "description": "Updates the title of an existing Google Tasks task list."
+    },
+    {
+      "name": "GOOGLETASKS_UPDATE_TASK",
+      "description": "Updates the specified task."
+    },
+    {
+      "name": "GOOGLETASKS_UPDATE_TASK_LIST",
+      "description": "Updates the authenticated user's specified task list."
+    }
+  ]
+}

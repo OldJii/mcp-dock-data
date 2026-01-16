@@ -1,0 +1,48 @@
+{
+  "id": "@Seojiyoung/my-mcp-server-251027",
+  "displayName": "Greetings & Utilities",
+  "description": "Send personalized greetings in your chosen language. Perform quick calculations and get the current time for any timezone. Create images from text prompts and generate detailed code review prompts.",
+  "createdAt": "2026-01-16T07:26:50.876Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Seojiyoung/my-mcp-server-251027"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "HF_TOKEN"
+      ],
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API Token for image generation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자의 이름과 원하는 언어를 받아서 해당 언어로 인사합니다"
+    },
+    {
+      "name": "calculator",
+      "description": "두 개의 숫자를 입력받아 사칙연산(+, -, *, /)을 수행합니다"
+    },
+    {
+      "name": "current-time",
+      "description": "지정된 타임존의 현재 시간을 반환합니다. 타임존을 지정하지 않으면 한국 시간을 반환합니다."
+    },
+    {
+      "name": "generate-image",
+      "description": "텍스트 프롬프트를 입력받아 AI 이미지를 생성합니다"
+    }
+  ]
+}

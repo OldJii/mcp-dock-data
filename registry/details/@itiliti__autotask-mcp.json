@@ -1,0 +1,12 @@
+{
+  "id": "@itiliti/autotask-mcp",
+  "displayName": "autotask-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:31.465Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itiliti/autotask-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

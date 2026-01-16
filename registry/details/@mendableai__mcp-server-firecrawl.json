@@ -1,0 +1,27 @@
+{
+  "id": "@mendableai/mcp-server-firecrawl",
+  "displayName": "FireCrawl",
+  "description": "MCP server for FireCrawl web scraping integration",
+  "createdAt": "2026-01-16T07:22:49.033Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mendableai/mcp-server-firecrawl"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fireCrawlApiKey"
+      ],
+      "properties": {
+        "fireCrawlApiKey": {
+          "type": "string",
+          "description": "The API key for the FireCrawl server."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

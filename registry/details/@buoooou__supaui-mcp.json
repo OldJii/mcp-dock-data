@@ -1,0 +1,40 @@
+{
+  "id": "@buoooou/supaui-mcp",
+  "displayName": "SupaUI MCP",
+  "description": "Automatically generate a variety of UI components to improve development efficiency. Seamlessly integrate with Claude and Windsurf AI assistants to support custom component query and generation.",
+  "createdAt": "2026-01-16T07:28:57.881Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@buoooou/supaui-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "BUOU_API_KEY"
+      ],
+      "properties": {
+        "BUOU_API_KEY": {
+          "type": "string",
+          "description": "The API key from https://buouui.com/dashboard/key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch-ui",
+      "description": "\n\"Use this tool when the user wants to see component, get inspiration, or /buou or /ui fetch data and previews from buouui.com. \nThis tool ONLY returns the text snippet for that UI component. \nAfter calling this tool, you must edit or add files to integrate the snippet into the codebase.\"\n"
+    },
+    {
+      "name": "list-ui",
+      "description": "\n\"Use this tool when the user wants to see buouui.com component, or /buou fetch data and previews from buouui.com. \nThis tool returns the JSON data of matching components without generating new code. This tool ONLY returns the text snippet for that UI component. \nAfter calling this tool, you need to display the data in the UI, and finally you need to show the website page of the buouui.com.\"\n"
+    },
+    {
+      "name": "create-image",
+      "description": "\n\"Use this tool when the user requests a new image, mentions /buou /image or asks for a image.\nIf the customer provides the picture editing operation of the attachment, please send it to the corresponding tool.\nThis tool ONLY returns the url of the image. \nAfter calling this tool, Please show the image returned by this tool and provide it for download.\n"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "@brandonbosco/sigao-scf-mcp",
+  "displayName": "See Click Fix MCP Server",
+  "description": "Provides access to Civic Plus - See Click Fix,  allowing you to interact with your data via an LLM. \n\nDeveloped and maintained by Sigao. ",
+  "createdAt": "2026-01-16T07:24:58.532Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brandonbosco/sigao-scf-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "serviceUserName",
+        "serviceUserPassword",
+        "orgId",
+        "debug"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug mode. If TRUE, the server will use the 'crm-int' subdomain for See Click Fix API requests."
+        },
+        "orgId": {
+          "type": "number",
+          "description": "The organization ID for See Click Fix. Note: if debug is TRUE, this should be the ID for your Sandbox instance."
+        },
+        "serviceUserName": {
+          "type": "string",
+          "description": "The email address/username of the service account that will make changes in See Click Fix"
+        },
+        "serviceUserPassword": {
+          "type": "string",
+          "description": "The password of the service account that will make changes in See Click Fix"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getIssue",
+      "description": "Get a single issue by its ID from SeeClickFix"
+    },
+    {
+      "name": "getIssues",
+      "description": "Get a list of issues from SeeClickFix with optional date filtering"
+    },
+    {
+      "name": "getRequestTypes",
+      "description": "Step 1 of 3 when creating a new issue. The user must provide a location to get the request types available in that area."
+    },
+    {
+      "name": "getRequestTypeDetails",
+      "description": "Step 2 of 3 when creating a new issue. Use the information requirements that are returned to prompt the user for that information."
+    },
+    {
+      "name": "createIssueWithDetails",
+      "description": "Step 3 of 3 when creating a new issue. Use the information collected from the user to create the issue."
+    },
+    {
+      "name": "flagIssue",
+      "description": "Flag an issue as inappropriate or problematic in SeeClickFix"
+    },
+    {
+      "name": "followIssue",
+      "description": "Follow an issue to receive notifications about updates in SeeClickFix"
+    },
+    {
+      "name": "updateIssue",
+      "description": "Update an existing issue in SeeClickFix"
+    },
+    {
+      "name": "addComment",
+      "description": "Add a comment to an issue in SeeClickFix"
+    },
+    {
+      "name": "getComments",
+      "description": "Get all comments for a specific issue in SeeClickFix"
+    },
+    {
+      "name": "closeIssue",
+      "description": "Close an issue in SeeClickFix with a closing comment"
+    },
+    {
+      "name": "reopenIssue",
+      "description": "Reopen a closed issue in SeeClickFix with a comment"
+    },
+    {
+      "name": "acknowledgeIssue",
+      "description": "Acknowledge an issue in SeeClickFix with a comment"
+    },
+    {
+      "name": "changeLocation",
+      "description": "Change the location of an existing issue in SeeClickFix"
+    },
+    {
+      "name": "getCurrentTime",
+      "description": "Get the current date and time"
+    }
+  ]
+}

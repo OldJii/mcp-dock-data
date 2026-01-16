@@ -1,0 +1,41 @@
+{
+  "id": "@catwhisperingninja/uniswap-trader-mcp",
+  "displayName": "Uniswap Trader",
+  "description": "Get real-time quotes for Uniswap token swaps. Execute trades with optimal routing to improve price and reduce slippage. Receive swap suggestions for your chosen tokens.",
+  "createdAt": "2026-01-16T07:28:30.403Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@catwhisperingninja/uniswap-trader-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "infuraKey",
+        "walletPrivateKey"
+      ],
+      "properties": {
+        "infuraKey": {
+          "type": "string",
+          "description": "Infura API key for RPC endpoints"
+        },
+        "walletPrivateKey": {
+          "type": "string",
+          "description": "Private key of the wallet for executing swaps"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getPrice",
+      "description": "Get a price quote for a Uniswap swap, supporting multi-hop routes"
+    },
+    {
+      "name": "executeSwap",
+      "description": "Execute a swap on Uniswap with optimal multi-hop routing"
+    }
+  ]
+}

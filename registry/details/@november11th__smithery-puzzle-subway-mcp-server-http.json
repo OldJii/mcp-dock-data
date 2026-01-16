@@ -1,0 +1,48 @@
+{
+  "id": "@november11th/smithery-puzzle-subway-mcp-server-http",
+  "displayName": "Puzzle Subway Server",
+  "description": "Provide real-time subway congestion information for Seoul with station and line-based search capabilities. Enable users to query current subway crowding data easily. Enhance transit planning with up-to-date congestion insights.",
+  "createdAt": "2026-01-16T07:33:00.024Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@november11th/smithery-puzzle-subway-mcp-server-http"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_subway_real_time_congestion",
+      "description": "특정 역으로 진입하는 열차의 실시간 혼잡도를 조회합니다.\n\nArgs:\n    station_name: 지하철역 이름"
+    },
+    {
+      "name": "get_subway_station_info",
+      "description": "퍼즐 지하철 API를 사용하여 지하철역 정보를 조회합니다.\n\nArgs:\n    station_name: 지하철역 이름(예: '강남역')"
+    },
+    {
+      "name": "get_subway_train_congestion",
+      "description": "특정 역으로 진입하는 열차의 혼잡도를 제공합니다.\n\nArgs:\n    stationCode: 역 코드 (예: '221'은 역삼역)\n    dow: 검색 기준 요일 (예: 'MON', 'TUE' 등, 미입력 시 현재 요일)\n    hh: 검색 기준 시간 (예: '08'은 8:00-8:59, 미입력 시 현재 시간)"
+    },
+    {
+      "name": "get_subway_car_congestion",
+      "description": "특정 역으로 진입하는 열차의 칸별 혼잡도를 제공합니다.\n\nArgs:\n    stationCode: 역 코드 (예: '133'은 서울역)\n    dow: 검색 기준 요일 (예: 'MON', 'TUE' 등, 미입력 시 현재 요일)\n    hh: 검색 기준 시간 (예: '08'은 8:00-8:59, 미입력 시 현재 시간)"
+    },
+    {
+      "name": "get_subway_car_exit_rate",
+      "description": "특정 역으로 진입하는 열차에서 하차한 인원의 칸별 하차 비율을 제공합니다. \n\nArgs:\n    stationCode: 역 코드 (예: '133'은 서울역)\n    dow: 검색 기준 요일 (예: 'MON', 'TUE' 등, 미입력 시 현재 요일)\n    hh: 검색 기준 시간 (예: '08'은 8:00-8:59, 미입력 시 현재 시간)"
+    },
+    {
+      "name": "get_subway_exit_traffic_by_dow",
+      "description": "최근 3개월 내 해당 지하철역 출구를 이용한 고유한 통행자 수를 제공합니다. \n\nArgs:\n    stationCode: 역 코드 (예: '221'은 역삼역)\n    gender: 성별 필터 ('male', 'female', 'all' - 기본값 'all')\n    ageGrp: 연령대 필터 ('10', '20', '30', '40', '50', '60_over', 'all' - 기본값 'all')\n    dow: 요일 (예: 'MON', 'TUE' 등, 미입력 시 현재 요일)"
+    },
+    {
+      "name": "get_subway_exit_traffic_by_hour",
+      "description": "특정 일자의 해당 지하철역 출구를 이용한 적이 있는 고유한 통행자 수를 시간대로 구분하여 제공합니다.\n\nArgs:\n    stationCode: 역 코드 (예: '221'은 역삼역)\n    gender: 성별 필터 ('male', 'female', 'all' - 기본값 'all')\n    ageGrp: 연령대 필터 ('10', '20', '30', '40', '50', '60_over', 'all' - 기본값 'all')\n    date: 조회할 날짜 (YYYYMMDD 형식 또는 'latest' - 기본값 'latest')"
+    }
+  ]
+}

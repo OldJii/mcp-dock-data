@@ -1,0 +1,96 @@
+{
+  "id": "mercurialsolo/counsel",
+  "displayName": "counsel",
+  "description": "Make confident decisions with multi-perspective analysis, debate, and research. Refine questions, verify claims, and gather evidence to de-risk choices. Personalize guidance and receive clear summaries, recommendations, and trade-off insights.",
+  "createdAt": "2026-01-16T07:32:46.301Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mercurialsolo/counsel"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "Counsel MCP Configuration",
+      "x-mcp": {
+        "sse": {
+          "url": "https://counsel-mcp.getmason.dev/sse"
+        },
+        "version": "1.0.0",
+        "streamableHttp": {
+          "url": "https://counsel-mcp.getmason.dev/mcp"
+        }
+      },
+      "required": [],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "description": "Default mode for new analyses",
+          "default": "standard",
+          "enum": [
+            "quick",
+            "standard",
+            "deep"
+          ]
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Optional Counsel API key (cns_...) for authenticated access with billing. Leave empty for free tier."
+        }
+      },
+      "description": "Configuration options for the Counsel strategic analysis server",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "start_consultation",
+      "description": "Start a new strategic consultation, debate, or research task.\n\n        This is the PRIMARY entry point for any analysis. Use this tool to:\n        - Get a quick second opinion ('quick' mode).\n        - Run a full multi-perspective debate ('standard' mode).\n        - Conduct deep research and analysis ('deep' mode).\n        - Gather evidence on a topic ('research' mode).\n\n        USE THIS WHEN:\n        - User asks for strategic advice, analysis, or a second opinion\n        - User wants pros/cons on a decision or idea\n        - User says \"debate this\", \"analyze this\", \"what do you think about...\"\n        - User needs help evaluating options or trade-offs\n        - User wants research on a topic before making a decision\n\n        DO NOT USE FOR:\n        - Simple factual questions (use your own knowledge)\n        - Non-strategic queries like definitions or explanations\n        - Tasks that don't involve decision-making or evaluation\n\n        Args:\n            question: The strategic question, topic, or claim to analyze.\n            mode: The depth/type of analysis:\n                  - 'quick': fast 30s pros/cons analysis (use for \"quick take\", \"quick check\", or very simple questions).\n                  - 'standard': rigorous debate and detailed analysis (use for \"deliberate\", \"debate\", \"consult\"). This is the DEFAULT for most strategic questions.\n                  - 'deep': full pipeline with web research (use for \"analyze\", \"research project\", \"deep dive\", or when external information is needed).\n                  - 'research': only gather evidence without debate (use for \"find papers\", \"search web\").\n            sources: Optional list of sources (documents, context) to use. If omitted, internal knowledge and context will be used.\n            context: Background context or situation description to inform the analysis.\n            analysis_id: Optional custom ID for tracking.\n            counsel_id: Optional ID of a specific counsel/persona configuration to use.\n            presentation_format: Desired output format (e.g., 'brief', 'memo', 'json').\n\n        Returns:\n            Dict containing the 'analysis_id' needed for status polling and results.\n        "
+    },
+    {
+      "name": "get_consultation_status",
+      "description": "Check the progress/status of a running analysis.\n\n        USE THIS WHEN:\n        - You called start_consultation and need to check if it's done\n        - User asks \"is my analysis ready?\" or \"what's the status?\"\n        - Polling for completion before calling get_consultation_report\n        - Checking if a running analysis needs user input (pauses/steering)\n\n        WORKFLOW: Call this after start_consultation, repeat until status='completed',\n        then call get_consultation_report for final results.\n\n        Args:\n            analysis_id: The ID returned by `start_consultation`.\n            include_intervention_status: If True, checks if user input is needed (pauses/steering).\n            include_transcript: If True, includes full debate transcript (slower).\n                Use False (default) for fast polling, True when user wants progress details.\n\n        Returns:\n            Dict with 'status' (running/completed/failed), 'phase', and 'progress'.\n        "
+    },
+    {
+      "name": "get_consultation_report",
+      "description": "Retrieve the final results, decision card, and artifacts.\n\n        USE THIS WHEN:\n        - get_consultation_status shows status='completed'\n        - User asks \"what's the result?\" or \"show me the analysis\"\n        - You need to present the final recommendation to the user\n        - Fetching the decision card, pros/cons, or executive summary\n\n        DO NOT USE IF:\n        - Analysis is still running (check status first)\n        - Analysis failed (status='failed' - handle error instead)\n\n        Args:\n            analysis_id: The ID of the completed analysis.\n            include_tensions: Whether to include the 'Crux Registry' (key tensions/trade-offs).\n            presentation_format: Format to render results (e.g., 'brief', 'detailed', 'memo').\n            ctx: Request context to read client hints (e.g. locale).\n\n        Returns:\n            The final analysis output, including recommendation, rationale, and key factors.\n        "
+    },
+    {
+      "name": "manage_consultation",
+      "description": "Intervene in or modify a running analysis.\n\n        USE THIS WHEN:\n        - User wants to pause, stop, or cancel a running analysis\n        - User says \"focus more on X\" or \"consider Y\" mid-analysis (use 'steer')\n        - User wants to add new evidence during an ongoing debate\n        - User wants to edit the identified trade-offs or tensions\n\n        DO NOT USE FOR:\n        - Starting a new analysis (use start_consultation)\n        - Checking status (use get_consultation_status)\n        - Getting results (use get_consultation_report)\n\n        Args:\n            analysis_id: The analysis to manage.\n            action: The specific intervention to perform.\n            payload: Data required for the action:\n                     - for 'steer': string guidance (\"Focus more on X\").\n                     - for 'add_sources': list of source objects.\n                     - for 'pause'/'abort': optional reason string.\n\n        Returns:\n            Success status of the intervention.\n        "
+    },
+    {
+      "name": "list_resources",
+      "description": "List available resources (past analyses, configs, sessions).\n\n        USE THIS WHEN:\n        - User asks \"show my past analyses\" or \"list my debates\"\n        - User wants to see available counsel configurations\n        - User needs to find a previous analysis to reference\n        - Browsing available templates or persona configurations\n\n        Args:\n            type: What to list:\n                  - 'consultations': Past debates/analyses.\n                  - 'counsels': Available persona configurations.\n                  - 'advisor_sessions': Active advisor chat sessions.\n                  - 'templates': Pre-built counsel templates.\n            limit: Max items to return.\n            offset: Pagination start index.\n\n        Returns:\n            List of resource items.\n        "
+    },
+    {
+      "name": "sharpen_question",
+      "description": "Refine and clarify a strategic question BEFORE analysis.\n\n        USE THIS WHEN:\n        - User's question is vague, broad, or unclear\n        - Question could mean multiple things\n        - You want to ensure high-quality analysis by improving the question first\n        - User says \"help me frame this\" or \"what's the right question to ask?\"\n\n        DO NOT USE FOR:\n        - Questions that are already specific and well-defined\n        - When user explicitly says \"analyze this exact question\"\n        - Simple queries that don't need refinement\n\n        WORKFLOW: Call this before start_consultation if the question seems unclear.\n        Use the refined question in start_consultation for better results.\n\n        Args:\n            question: The initial (potentially vague) question.\n            context: Context about the user's situation.\n            auto_select: If True, automatically pick the best refinement (good for automation).\n\n        Returns:\n            'selected_question' (the refined version) and 'enhanced_questions' (options).\n        "
+    },
+    {
+      "name": "verify_claim",
+      "description": "Fact-check a specific statement or claim.\n\n        USE THIS WHEN:\n        - User asks \"is this true?\" or \"verify this claim\"\n        - Checking specific facts or statistics for accuracy\n        - Validating assumptions before making decisions\n        - User wants to fact-check something from an analysis\n\n        DO NOT USE FOR:\n        - Strategic analysis (use start_consultation instead)\n        - Opinions or subjective statements that can't be fact-checked\n        - General research questions (use start_consultation with mode='research')\n\n        Args:\n            claim: The specific statement/sentence to verify.\n            context: The surrounding text/context where the claim appears.\n            user_sources: Optional list of sources to check against.\n\n        Returns:\n            Verdict (Supported/Refuted/Ambiguous) and evidence trace.\n        "
+    },
+    {
+      "name": "consult_advisor",
+      "description": "Interact with the AI Advisor for personalized intake/tuning.\n\n        USE THIS WHEN:\n        - User wants to refine their profile or requirements\n        - User wants the system to learn their preferences\n        - Starting a new intake session\n\n        Args:\n            message: The user's message or answer to a question.\n            session_id: Existing session ID. If omitted, starts a new session.\n            action: 'chat' to convert/reply, 'finalize' to complete intake.\n\n        Returns:\n            Session state and Advisor reply.\n        "
+    },
+    {
+      "name": "get_advisor_profile",
+      "description": "Retrieve the learned user profile from an advisor session.\n\n        USE THIS WHEN:\n        - User asks \"what do you know about me?\"\n        - Checking the results of an intake session\n\n        Args:\n            session_id: The advisor session ID.\n\n        Returns:\n            The constructed user profile.\n        "
+    },
+    {
+      "name": "get_pricing",
+      "description": "Get current pricing, token costs, and user balance.\n\n        USE THIS WHEN:\n        - User asks \"how much does this cost?\" or \"what's the pricing?\"\n        - User wants to check their credit balance\n        - User asks about purchasing analysis credits\n\n        Returns:\n            Pricing details and current balance.\n        "
+    },
+    {
+      "name": "create_checkout",
+      "description": "Create a secure checkout session to purchase credits.\n\n        USE THIS WHEN:\n        - User explicitly asks to buy credits (e.g., \"buy starter pack\")\n        - User confirms a purchase\n\n        Args:\n            sku: The product SKU to purchase.\n\n        Returns:\n            Checkout session ID and status.\n        "
+    },
+    {
+      "name": "complete_checkout",
+      "description": "Finalize an Instant Checkout transaction.\n\n        This is NOT called by the user. It is called by the ChatGPT host\n        when a user completes a payment in the Instant Checkout UI.\n\n        Args:\n            checkout_session_id: The session ID we generated.\n            buyer: Information about the buyer.\n            payment_data: Token and payment details from the host.\n\n        Returns:\n            Confirmation object conforming to ACP spec.\n        "
+    }
+  ]
+}

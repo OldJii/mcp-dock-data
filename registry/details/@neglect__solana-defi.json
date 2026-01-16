@@ -1,0 +1,429 @@
+{
+  "id": "@neglect/solana-defi",
+  "displayName": "Solana DeFi MCP Server",
+  "description": "Billions of Solana DeFi TXNs, Decoded at Scale & accessible via LLM\n\nDirect, structured access to the entire Solana DeFi universe. Every launchpad, every token, every trade, every wallet interaction — all decoded and normalized with detail.\n\nFeatures\n\n- Full coverage of Solana launchpads\n- Billions of decoded on-chain events, available in real time\n- Secure bearer authentication for controlled access\n- High-volume, low-latency performance\n\nAvailable Data (& Growing)\n\n- Market and token data\n- Wallet and portfolio lookups\n- Historical transaction ranges\n- Advanced search across DeFi protocols",
+  "createdAt": "2026-01-16T07:25:27.870Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@neglect/solana-defi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "tools": [
+        {
+          "name": "get-token-metadata",
+          "description": "Get metadata for a token address (name, symbol, supply, socials, dev wallet, etc.)",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress"
+            ],
+            "properties": {
+              "tokenAddress": {
+                "type": "string",
+                "description": "Token's address (Solana address)"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-marketdata",
+          "description": "Fetch market-level metrics (price, mcap, txns, holders, buy/sell activity)",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress"
+            ],
+            "properties": {
+              "interval": {
+                "enum": [
+                  "24h"
+                ],
+                "type": "string",
+                "default": "24h"
+              },
+              "tokenAddress": {
+                "type": "string",
+                "description": "Token address"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-holders",
+          "description": "Get top token holders and percentage ownership",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress"
+            ],
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "description": "Limit of holders to return"
+              },
+              "tokenAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-trending-tokens",
+          "description": "List trending tokens ordered by transaction count",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "interval": {
+                "enum": [
+                  "1m",
+                  "5m",
+                  "30m",
+                  "1h"
+                ],
+                "type": "string",
+                "default": "5m"
+              }
+            }
+          }
+        },
+        {
+          "name": "search-tokens",
+          "description": "Search tokens by name, symbol, or address",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 25,
+                "minimum": 1
+              },
+              "sortBy": {
+                "enum": [
+                  "createdAt",
+                  "graduatedAt",
+                  "mcap"
+                ],
+                "type": "string",
+                "default": "mcap"
+              },
+              "sortOrder": {
+                "enum": [
+                  "asc",
+                  "desc"
+                ],
+                "type": "string",
+                "default": "desc"
+              },
+              "symbolOnly": {
+                "type": "boolean",
+                "default": false
+              },
+              "searchQuery": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-latest-graduated-tokens",
+          "description": "Fetch recently graduated tokens",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "default": 25,
+                "maximum": 100,
+                "minimum": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-ath",
+          "description": "Fetch all-time high market cap for a token",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress"
+            ],
+            "properties": {
+              "tokenAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-tokens-by-deployer",
+          "description": "List tokens deployed by a given wallet (devWallet)",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "walletAddress"
+            ],
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100,
+                "minimum": 1
+              },
+              "walletAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-history",
+          "description": "Fetch historical metrics (price, mcap, liquidity) snapshots for a token",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "token"
+            ],
+            "properties": {
+              "token": {
+                "type": "string"
+              },
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "price",
+                    "mcap",
+                    "liquidity"
+                  ],
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-by-pool",
+          "description": "Get token metadata by pool/market address",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "poolAddress"
+            ],
+            "properties": {
+              "poolAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-performance",
+          "description": "Return percentage performance change over time windows",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "token"
+            ],
+            "properties": {
+              "token": {
+                "type": "string"
+              },
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "price",
+                    "mcap",
+                    "liquidity"
+                  ],
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-price",
+          "description": "Get latest price, market cap, and liquidity for a token",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress"
+            ],
+            "properties": {
+              "tokenAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-wallet-holdings",
+          "description": "Get holdings of a wallet (balances, tokens, % owned)",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "walletAddress"
+            ],
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100,
+                "minimum": 1
+              },
+              "walletAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-wallet-token-pnl",
+          "description": "Calculate realized and unrealized PnL for a wallet and token",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "walletAddress",
+              "tokenAddress"
+            ],
+            "properties": {
+              "tokenAddress": {
+                "type": "string"
+              },
+              "walletAddress": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "name": "get-token-history-range",
+          "description": "Return lowest and highest metric values within a time range for a token",
+          "inputSchema": {
+            "type": "object",
+            "required": [
+              "tokenAddress",
+              "time_from",
+              "time_to"
+            ],
+            "properties": {
+              "mode": {
+                "enum": [
+                  "clamp",
+                  "error"
+                ],
+                "type": "string",
+                "default": "clamp"
+              },
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "price",
+                    "mcap",
+                    "liquidity"
+                  ],
+                  "type": "string"
+                }
+              },
+              "time_to": {
+                "type": "number"
+              },
+              "time_from": {
+                "type": "number"
+              },
+              "tokenAddress": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your service API key for authentication. Passed as a query parameter (?apiKey=YOUR_API_KEY)."
+        }
+      },
+      "description": "Configuration for connecting to this MCP server",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-token-metadata",
+      "description": "Returns the metadata for a given token address stored in the database."
+    },
+    {
+      "name": "get-token-marketdata",
+      "description": "Returns current market-level metrics like price, mcap, txns, holder count, and buy/sell activity. Supports optional time window via 'interval'."
+    },
+    {
+      "name": "get-token-holders",
+      "description": "Returns holder wallet addresses and percentage ownership for a given token address."
+    },
+    {
+      "name": "get-trending-tokens",
+      "description": "Returns a list of trending tokens ordered by transaction count for a given interval."
+    },
+    {
+      "name": "search-tokens",
+      "description": "Performs a flexible search for tokens by name, symbol, or address, with optional filters, sorting, and symbol-only mode."
+    },
+    {
+      "name": "get-latest-graduated-tokens",
+      "description": "Fetches the most recently graduated tokens, ordered by graduation time (descending)."
+    },
+    {
+      "name": "get-token-ath",
+      "description": "Fetches the all-time high (ATH) market cap for a token, starting from its graduation time."
+    },
+    {
+      "name": "get-tokens-by-deployer",
+      "description": "Returns a list of tokens where the specified wallet address is the developer (devWallet)."
+    },
+    {
+      "name": "get-token-history",
+      "description": "Fetches historical price, market cap, or liquidity snapshots for a token across multiple time windows."
+    },
+    {
+      "name": "get-token-by-pool",
+      "description": "Fetches token metadata for a given pool (market) address."
+    },
+    {
+      "name": "get-token-performance",
+      "description": "Returns percentage performance change for selected metrics over multiple time windows compared to the current value."
+    },
+    {
+      "name": "get-token-price",
+      "description": "Returns the latest price, market cap, and liquidity for a specific token address."
+    },
+    {
+      "name": "get-wallet-holdings",
+      "description": "Retrieve the token holdings of a given wallet address, including balances and percentage ownership per token."
+    },
+    {
+      "name": "get-wallet-token-pnl",
+      "description": "Calculate realized and unrealized profit and loss (PnL) for a wallet on a specific token."
+    },
+    {
+      "name": "get-token-history-range",
+      "description": "Returns the lowest and highest values of selected metrics (price, market cap, liquidity) within a specified time range for a token."
+    },
+    {
+      "name": "get-mcp-config",
+      "description": "Exposes MCP discovery schema for Smithery and other MCP clients."
+    }
+  ]
+}

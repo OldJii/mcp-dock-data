@@ -1,0 +1,12 @@
+{
+  "id": "@cristianoaredes/mcp-camara",
+  "displayName": "mcp-camara",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:26.574Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cristianoaredes/mcp-camara"
+  },
+  "connection": null,
+  "capabilities": []
+}

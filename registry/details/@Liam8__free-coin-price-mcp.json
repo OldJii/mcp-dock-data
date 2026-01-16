@@ -1,0 +1,41 @@
+{
+  "id": "@Liam8/free-coin-price-mcp",
+  "displayName": "Free Crypto Coin Data",
+  "description": "Free live and historical cryptocurrency prices\n\nProvide real-time cryptocurrency price data to your applications. Enable seamless access to up-to-date coin prices through a standardized protocol. Enhance your agents with reliable financial data integration effortlessly.\n\n\t•\tfree bitcoin price\n\t•\tbitcoin live price\n\t•\tethereum live price\n\t•\taltcoin live prices\n\t•\tdogecoin price today\n\t•\tsolana price live",
+  "createdAt": "2026-01-16T07:21:32.673Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Liam8/free-coin-price-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "getSupportedCurrencies",
+      "description": "Get supported currencies from CoinGecko"
+    },
+    {
+      "name": "getCoinPrice",
+      "description": "Get coin prices"
+    },
+    {
+      "name": "getPublicCompaniesHoldings",
+      "description": "Get public companies Bitcoin or Ethereum holdings"
+    },
+    {
+      "name": "getCoinHistoricalChart",
+      "description": "Get historical chart data for a coin including price, market cap and volume"
+    },
+    {
+      "name": "getCoinOHLCChart",
+      "description": "Get coin OHLC chart (Open, High, Low, Close) data.\n    Data granularity (candle's body) is automatic:\n    1 - 2 days: 30 minutes\n    3 - 30 days: 4 hours\n    31 days and beyond: 4 days"
+    },
+    {
+      "name": "checkApiStatus",
+      "description": "Check API server status"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@EmilienMottet/intervals-mcp-server",
+  "displayName": "intervals-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:40:55.130Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@EmilienMottet/intervals-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

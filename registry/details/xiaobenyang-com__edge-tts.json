@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/edge-tts",
+  "displayName": "edge-tts",
+  "description": "Convert text into natural-sounding speech for fast audio creation. Orchestrate multi-speaker dialogues and merge segments into a single track. Produce ready-to-share audio for podcasts, videos, and demos.",
+  "createdAt": "2026-01-16T07:26:42.989Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/edge-tts"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_speech",
+      "description": "Generate speech audio from text using Microsoft Edge TTS. Supports multi-role conversations and audio merging."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "@c-wenlong/reddit-mcp-smithery",
+  "displayName": "reddit-mcp-smithery",
+  "description": "Create personalized greetings for people or groups in seconds. Toggle a playful pirate mode to change the tone. Explore the origin of 'Hello, World' for fun context.",
+  "createdAt": "2026-01-16T07:22:44.505Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@c-wenlong/reddit-mcp-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "examples": [
+        {
+          "reddit_client_id": "abc123def456",
+          "reddit_user_agent": "MCP Startup Ideator/1.0",
+          "reddit_client_secret": "xyz789_secret_key"
+        }
+      ],
+      "properties": {
+        "reddit_client_id": {
+          "type": "string",
+          "description": "Your Reddit API client ID. Optional - can be set via REDDIT_CLIENT_ID environment variable. Get from https://www.reddit.com/prefs/apps. Type: string, Required: false",
+          "default": null
+        },
+        "reddit_user_agent": {
+          "type": "string",
+          "description": "User agent string for Reddit API requests. Optional - defaults to 'MCP Startup Ideator/1.0'. Can also be set via REDDIT_USER_AGENT environment variable. Type: string, Required: false",
+          "default": "MCP Startup Ideator/1.0"
+        },
+        "reddit_client_secret": {
+          "type": "string",
+          "description": "Your Reddit API client secret. Optional - can be set via REDDIT_CLIENT_SECRET environment variable. Get from https://www.reddit.com/prefs/apps (shown as 'secret' when you create the app). Type: string, Required: false",
+          "default": null
+        }
+      },
+      "description": "Configuration schema for Reddit MCP Server. All fields are optional.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_reddit_problems",
+      "description": "\n        Search Reddit for posts that likely indicate problems or unmet needs. \n        Searches Reddit posts and returns results sorted by problem indicators.\n        "
+    },
+    {
+      "name": "analyze_subreddit_problems",
+      "description": "\n        Analyze a subreddit to identify common problems, pain points, and unmet needs discussed by the community. \n        Returns aggregated insights.\n        "
+    },
+    {
+      "name": "get_trending_problems",
+      "description": "\n        Get trending discussions across Reddit that indicate problems or pain points. \n        Focuses on posts with high engagement.\n        "
+    },
+    {
+      "name": "get_startup_ideas_from_post",
+      "description": "\n        Analyze a specific Reddit post (by URL) to extract potential startup ideas and problem-solution opportunities.\n        "
+    },
+    {
+      "name": "discover_problem_patterns",
+      "description": "\n        Discover recurring problem patterns across multiple subreddits or search queries. \n        Helps identify widespread problems that could be startup opportunities.\n        "
+    }
+  ]
+}

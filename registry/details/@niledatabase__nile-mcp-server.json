@@ -1,0 +1,77 @@
+{
+  "id": "@niledatabase/nile-mcp-server",
+  "displayName": "Nile MCP Server",
+  "description": "Interact with the Nile database platform through a standardized interface. Manage databases, execute SQL queries, and handle credentials seamlessly. Enhance your LLM applications with powerful database capabilities.",
+  "createdAt": "2026-01-16T07:30:03.413Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@niledatabase/nile-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "nileApiKey",
+        "nileWorkspaceSlug"
+      ],
+      "properties": {
+        "nileApiKey": {
+          "type": "string",
+          "description": "Your Nile API key."
+        },
+        "nileWorkspaceSlug": {
+          "type": "string",
+          "description": "Your Nile workspace slug."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-resources",
+      "description": "Lists all tables and their descriptions in the specified database"
+    },
+    {
+      "name": "create-database",
+      "description": "Creates a new Nile database"
+    },
+    {
+      "name": "list-databases",
+      "description": "Lists all databases in the workspace"
+    },
+    {
+      "name": "get-database",
+      "description": "Gets details of a specific database"
+    },
+    {
+      "name": "delete-database",
+      "description": "Deletes a database"
+    },
+    {
+      "name": "get-connection-string",
+      "description": "Gets a PostgreSQL connection string with fresh credentials"
+    },
+    {
+      "name": "execute-sql",
+      "description": "Executes a SQL query on a Nile database"
+    },
+    {
+      "name": "create-tenant",
+      "description": "Creates a new tenant in the specified database"
+    },
+    {
+      "name": "delete-tenant",
+      "description": "Deletes a tenant from the specified database"
+    },
+    {
+      "name": "list-tenants",
+      "description": "Lists all tenants in the specified database"
+    },
+    {
+      "name": "read-resource",
+      "description": "Gets detailed schema information for a specific table"
+    }
+  ]
+}

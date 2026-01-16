@@ -1,0 +1,90 @@
+{
+  "id": "@mbpfws/sentient-brain-smithery",
+  "displayName": "Sentient Brain Multi-Agent System",
+  "description": "Coordinate and manage complex AI-driven software development workflows using a multi-agent architecture. Analyze, design, debug, and improve code projects with intelligent agents leveraging a unified knowledge graph and semantic search. Seamlessly deploy on Smithery.ai platform for scalable and efficient AI code development.",
+  "createdAt": "2026-01-16T07:24:30.379Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mbpfws/sentient-brain-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "GROQ_API_KEY",
+        "SURREAL_URL",
+        "SURREAL_USER",
+        "SURREAL_PASS"
+      ],
+      "properties": {
+        "LOG_LEVEL": {
+          "type": "string",
+          "description": "Logging level",
+          "default": "INFO"
+        },
+        "GROQ_MODEL": {
+          "type": "string",
+          "description": "Groq model to use",
+          "default": "llama-3.1-70b-versatile"
+        },
+        "SURREAL_URL": {
+          "type": "string",
+          "description": "SurrealDB connection URL",
+          "default": "ws://localhost:8000/rpc"
+        },
+        "GROQ_API_KEY": {
+          "type": "string",
+          "description": "Groq API key for LLM inference"
+        },
+        "SURREAL_PASS": {
+          "type": "string",
+          "description": "SurrealDB password",
+          "default": "root"
+        },
+        "SURREAL_USER": {
+          "type": "string",
+          "description": "SurrealDB username",
+          "default": "root"
+        },
+        "GOOGLE_API_KEY": {
+          "type": "string",
+          "description": "Google GenAI API key (optional)"
+        },
+        "SURREAL_DATABASE": {
+          "type": "string",
+          "description": "SurrealDB database name",
+          "default": "multi_agent"
+        },
+        "SURREAL_NAMESPACE": {
+          "type": "string",
+          "description": "SurrealDB namespace",
+          "default": "sentient_brain"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "sentient-brain/orchestrate",
+      "description": "Ultra Orchestrator - Master agent for coordinating multi-agent workflows"
+    },
+    {
+      "name": "sentient-brain/architect",
+      "description": "Architect Agent - Design and plan software projects"
+    },
+    {
+      "name": "sentient-brain/analyze-code",
+      "description": "Code Analysis - Deep code understanding and indexing"
+    },
+    {
+      "name": "sentient-brain/search-knowledge",
+      "description": "Knowledge Graph Search - Semantic search across project knowledge"
+    },
+    {
+      "name": "sentient-brain/debug-assist",
+      "description": "Debug & Refactor Agent - Code debugging and improvement"
+    }
+  ]
+}

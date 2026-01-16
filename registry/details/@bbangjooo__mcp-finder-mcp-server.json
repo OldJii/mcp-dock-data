@@ -1,0 +1,40 @@
+{
+  "id": "@bbangjooo/mcp-finder-mcp-server",
+  "displayName": "MCP Finder and Installer",
+  "description": "Discover and connect to Model Context Protocol servers effortlessly. Installation: https://github.com/bbangjooo/mcp-installer",
+  "createdAt": "2026-01-16T07:32:13.926Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bbangjooo/mcp-finder-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "smitheryApiKey"
+      ],
+      "properties": {
+        "smitheryApiKey": {
+          "type": "string",
+          "description": "The API key for accessing the Smithery API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_mcp",
+      "description": "Find the MCP servers by given name"
+    },
+    {
+      "name": "collect_config",
+      "description": "Collect the config to be used for connection to mcp server"
+    },
+    {
+      "name": "install_mcp",
+      "description": "Install the MCP server on your local machine. You can install the MCP server with configuration."
+    }
+  ]
+}

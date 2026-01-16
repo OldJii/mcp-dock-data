@@ -1,0 +1,60 @@
+{
+  "id": "@perminder-klair/thoth-mcp",
+  "displayName": "Thoth",
+  "description": "Create and manage social posts with platform-specific variations that reflect your brand. Generate on-brand images and schedule or publish across your channels. Retrieve, update, and organize posts and brand styles to keep campaigns consistent.",
+  "createdAt": "2026-01-16T07:30:31.522Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@perminder-klair/thoth-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Thoth API key. Get it at https://app.usethoth.com/settings/api-keys"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Base URL for the Thoth API (optional, defaults to https://www.usethoth.com)",
+          "default": "https://www.usethoth.com"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create-post",
+      "description": "Create a new content post with platform-specific variations. Enhances the content for each platform, optionally generates images, and can schedule or publish to social networks."
+    },
+    {
+      "name": "get-post",
+      "description": "Retrieve a post by its ID. Returns the original content, platform-specific variations, generated images, and metadata."
+    },
+    {
+      "name": "get-all-posts",
+      "description": "Retrieve all posts with pagination and optional filtering by status. Returns a list of posts with their metadata."
+    },
+    {
+      "name": "update-post",
+      "description": "Update an existing post. Can modify title, content, platform-specific variations, and status."
+    },
+    {
+      "name": "get-brand-styles",
+      "description": "Retrieve all brand styles for the authenticated user. Returns a list of brand styles with their basic information."
+    },
+    {
+      "name": "get-brand-style",
+      "description": "Retrieve a specific brand style by ID with full details including colors, tone, and imagery style."
+    }
+  ]
+}

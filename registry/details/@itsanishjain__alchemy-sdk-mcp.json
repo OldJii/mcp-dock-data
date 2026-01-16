@@ -1,0 +1,116 @@
+{
+  "id": "@itsanishjain/alchemy-sdk-mcp",
+  "displayName": "Alchemy Plugin",
+  "description": "Integrate blockchain and NFT operations seamlessly. Retrieve NFTs, their metadata, and the latest block number with ease. Enhance your applications with powerful blockchain capabilities using the Alchemy SDK.",
+  "createdAt": "2026-01-16T07:32:28.537Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@itsanishjain/alchemy-sdk-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "alchemyApiKey"
+      ],
+      "properties": {
+        "alchemyApiKey": {
+          "type": "string",
+          "description": "Your Alchemy API key for accessing the Alchemy SDK services."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_nfts_for_owner",
+      "description": "Get NFTs owned by a specific wallet address"
+    },
+    {
+      "name": "get_nft_metadata",
+      "description": "Get metadata for a specific NFT"
+    },
+    {
+      "name": "get_nft_sales",
+      "description": "Get NFT sales data for a contract or specific NFT"
+    },
+    {
+      "name": "get_contracts_for_owner",
+      "description": "Get NFT contracts owned by an address"
+    },
+    {
+      "name": "get_floor_price",
+      "description": "Get floor price for an NFT collection"
+    },
+    {
+      "name": "get_owners_for_nft",
+      "description": "Get owners of a specific NFT"
+    },
+    {
+      "name": "get_nfts_for_contract",
+      "description": "Get all NFTs for a contract"
+    },
+    {
+      "name": "get_transfers_for_contract",
+      "description": "Get transfers for an NFT contract"
+    },
+    {
+      "name": "get_transfers_for_owner",
+      "description": "Get NFT transfers for an owner"
+    },
+    {
+      "name": "get_token_balances",
+      "description": "Get token balances for a specific address"
+    },
+    {
+      "name": "get_token_metadata",
+      "description": "Get metadata for a token contract"
+    },
+    {
+      "name": "get_tokens_for_owner",
+      "description": "Get tokens owned by an address"
+    },
+    {
+      "name": "get_asset_transfers",
+      "description": "Get asset transfers for a specific address or contract"
+    },
+    {
+      "name": "get_transaction_receipts",
+      "description": "Get transaction receipts for a block"
+    },
+    {
+      "name": "get_block_number",
+      "description": "Get the latest block number"
+    },
+    {
+      "name": "get_block_with_transactions",
+      "description": "Get a block with its transactions"
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get transaction details by hash"
+    },
+    {
+      "name": "resolve_ens",
+      "description": "Resolve an ENS name to an address"
+    },
+    {
+      "name": "lookup_address",
+      "description": "Lookup the ENS name for an address"
+    },
+    {
+      "name": "estimate_gas_price",
+      "description": "Estimate current gas price"
+    },
+    {
+      "name": "subscribe",
+      "description": "Subscribe to blockchain events"
+    },
+    {
+      "name": "unsubscribe",
+      "description": "Unsubscribe from blockchain events"
+    }
+  ]
+}

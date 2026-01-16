@@ -1,0 +1,48 @@
+{
+  "id": "xiaobenyang-com/advertising-analysis",
+  "displayName": "advertising-analysis",
+  "description": "Analyze code to surface issues and improvements, and receive concise developer tips. Generate high-quality completions for coding and writing tasks. Accelerate your workflow with fast, focused guidance.",
+  "createdAt": "2026-01-16T07:32:30.337Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/advertising-analysis"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_completion",
+      "description": "get_completion"
+    },
+    {
+      "name": "analyze_code",
+      "description": "analyze_code"
+    },
+    {
+      "name": "developer_tip",
+      "description": "developer_tip"
+    },
+    {
+      "name": "gc",
+      "description": "gc"
+    },
+    {
+      "name": "ac",
+      "description": "ac"
+    },
+    {
+      "name": "tip",
+      "description": "tip"
+    }
+  ]
+}

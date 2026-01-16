@@ -1,0 +1,53 @@
+{
+  "id": "@paracetamol951/my-smithery-app",
+  "displayName": "my-smithery-app",
+  "description": "Search and navigate local files with flexible glob patterns and precise text queries. Find matching files across codebases and surface relevant lines instantly. Focus on the folders that matter by choosing your working directory.",
+  "createdAt": "2026-01-16T07:27:48.260Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@paracetamol951/my-smithery-app"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "login_with_api_key",
+      "description": "Login using API_KEY"
+    },
+    {
+      "name": "fund_my_wallet",
+      "description": "Get the different ways in order to fund your wallet"
+    },
+    {
+      "name": "get_wallet_and_api_key",
+      "description": "Create wallet for this email and get API_KEY."
+    },
+    {
+      "name": "send_money",
+      "description": "Send money to an email, Solana wallet or phone number."
+    },
+    {
+      "name": "request_payment_link",
+      "description": "Create a payment link in order to request a payment"
+    },
+    {
+      "name": "get_my_wallet_info",
+      "description": "Retrieve the wallet infos about the connected P-Link account (Solana wallet address, wallet balance)"
+    },
+    {
+      "name": "get_transaction_state",
+      "description": "Retrieve the state and details of a transaction using Solana trx ID"
+    },
+    {
+      "name": "get_wallet_history",
+      "description": "Retrieve list of the transactions related to the specified Solana wallet address"
+    },
+    {
+      "name": "pay_and_get_402_protected_url",
+      "description": "Pay a HTTP 402 protected URL using your P-Link managed account, and gets the result"
+    }
+  ]
+}

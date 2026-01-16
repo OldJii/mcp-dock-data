@@ -1,0 +1,72 @@
+{
+  "id": "@DynamicEndpoints/documentation-mcp-using-pocketbase",
+  "displayName": "Pocketbase Document Extractor",
+  "description": "Extract content from Microsoft Learn and GitHub URLs and store it in PocketBase for easy retrieval and search. Manage documents with tools for extraction, listing, searching, retrieval, and deletion. Benefit from real-time server statistics, dynamic tool management, and multi-transport support including STDIO and HTTP.",
+  "createdAt": "2026-01-16T07:25:26.752Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/documentation-mcp-using-pocketbase"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "pocketbaseUrl",
+        "pocketbaseEmail",
+        "pocketbasePassword"
+      ],
+      "properties": {
+        "pocketbaseUrl": {
+          "type": "string",
+          "description": "PocketBase server URL",
+          "default": "https://your-pocketbase.com"
+        },
+        "pocketbaseEmail": {
+          "type": "string",
+          "description": "PocketBase admin email"
+        },
+        "defaultCollection": {
+          "type": "string",
+          "description": "Collection name for documents",
+          "default": "documents"
+        },
+        "pocketbasePassword": {
+          "type": "string",
+          "description": "PocketBase admin password"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_document",
+      "description": "Extract document content from Microsoft Learn or GitHub URL and store in PocketBase"
+    },
+    {
+      "name": "list_documents",
+      "description": "List stored documents from PocketBase with pagination"
+    },
+    {
+      "name": "search_documents",
+      "description": "Search documents by title or content using full-text search"
+    },
+    {
+      "name": "get_document",
+      "description": "Get a specific document by ID with full content"
+    },
+    {
+      "name": "delete_document",
+      "description": "Delete a document from PocketBase by ID"
+    },
+    {
+      "name": "ensure_collection",
+      "description": "Check if the documents collection exists and create it if needed"
+    },
+    {
+      "name": "collection_info",
+      "description": "Get detailed information about the documents collection including statistics"
+    }
+  ]
+}

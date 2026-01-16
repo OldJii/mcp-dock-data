@@ -1,0 +1,137 @@
+{
+  "id": "chris/serena",
+  "displayName": "serena",
+  "description": "Speed up development by navigating and modifying large codebases with IDE-like precision. Find and update the right symbols, references, and files across 30+ languages without scanning entire files. Reduce context usage and errors while implementing features, refactors, and fixes in your existing workflow.",
+  "createdAt": "2026-01-16T07:22:09.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/serena"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_file",
+      "description": "Reads the given file or a chunk of it. Generally, symbolic operations\nlike find_symbol or find_referencing_symbols should be preferred if you know which symbols you are looking for. Returns the full text of the file at the given relative path."
+    },
+    {
+      "name": "create_text_file",
+      "description": "Write a new file or overwrite an existing file. Returns a message indicating success or failure."
+    },
+    {
+      "name": "list_dir",
+      "description": "Lists files and directories in the given directory (optionally with recursion). Returns a JSON object with the names of directories and files within the given directory."
+    },
+    {
+      "name": "find_file",
+      "description": "Finds non-gitignored files matching the given file mask within the given relative path. Returns a JSON object with the list of matching files."
+    },
+    {
+      "name": "replace_content",
+      "description": "Replaces one or more occurrences of a given pattern in a file with new content.\n\nThis is the preferred way to replace content in a file whenever the symbol-level\ntools are not appropriate.\n\nVERY IMPORTANT: The \"regex\" mode allows very large sections of code to be replaced without fully quoting them!\nUse a regex of the form \"beginning.*?end-of-text-to-be-replaced\" to be faster and more economical!\nALWAYS try to use wildcards to avoid specifying the exact content to be replaced,\nespecially if it spans several lines. Note that you cannot make mistakes, because if the regex should match\nmultiple occurrences while you disabled `allow_multiple_occurrences`, an error will be returned, and you can retry\nwith a revised regex.\nTherefore, using regex mode with suitable wildcards is usually the best choice!."
+    },
+    {
+      "name": "search_for_pattern",
+      "description": "Offers a flexible search for arbitrary patterns in the codebase, including the\npossibility to search in non-code files.\nGenerally, symbolic operations like find_symbol or find_referencing_symbols\nshould be preferred if you know which symbols you are looking for.\n\nPattern Matching Logic:\n    For each match, the returned result will contain the full lines where the\n    substring pattern is found, as well as optionally some lines before and after it. The pattern will be compiled with\n    DOTALL, meaning that the dot will match all characters including newlines.\n    This also means that it never makes sense to have .* at the beginning or end of the pattern,\n    but it may make sense to have it in the middle for complex patterns.\n    If a pattern matches multiple lines, all those lines will be part of the match.\n    Be careful to not use greedy quantifiers unnecessarily, it is usually better to use non-greedy quantifiers like .*? to avoid\n    matching too much content.\n\nFile Selection Logic:\n    The files in which the search is performed can be restricted very flexibly.\n    Using `restrict_search_to_code_files` is useful if you are only interested in code symbols (i.e., those\n    symbols that can be manipulated with symbolic tools like find_symbol).\n    You can also restrict the search to a specific file or directory,\n    and provide glob patterns to include or exclude certain files on top of that.\n    The globs are matched against relative file paths from the project root (not to the `relative_path` parameter that\n    is used to further restrict the search).\n    Smartly combining the various restrictions allows you to perform very targeted searches. Returns A mapping of file paths to lists of matched consecutive lines."
+    },
+    {
+      "name": "get_symbols_overview",
+      "description": "Use this tool to get a high-level understanding of the code symbols in a file.\nThis should be the first tool to call when you want to understand a new file, unless you already know\nwhat you are looking for. Returns a JSON object containing info about top-level symbols in the file."
+    },
+    {
+      "name": "find_symbol",
+      "description": "Retrieves information on all symbols/code entities (classes, methods, etc.) based on the given name path pattern.\nThe returned symbol information can be used for edits or further queries.\nSpecify `depth > 0` to also retrieve children/descendants (e.g., methods of a class).\n\nA name path is a path in the symbol tree *within a source file*.\nFor example, the method `my_method` defined in class `MyClass` would have the name path `MyClass/my_method`.\nIf a symbol is overloaded (e.g., in Java), a 0-based index is appended (e.g. \"MyClass/my_method[0]\") to\nuniquely identify it.\n\nTo search for a symbol, you provide a name path pattern that is used to match against name paths.\nIt can be\n * a simple name (e.g. \"method\"), which will match any symbol with that name\n * a relative path like \"class/method\", which will match any symbol with that name path suffix\n * an absolute name path \"/class/method\" (absolute name path), which requires an exact match of the full name path within the source file.\nAppend an index `[i]` to match a specific overload only, e.g. \"MyClass/my_method[1]\". Returns a list of symbols (with locations) matching the name."
+    },
+    {
+      "name": "find_referencing_symbols",
+      "description": "Finds references to the symbol at the given `name_path`. The result will contain metadata about the referencing symbols\nas well as a short code snippet around the reference. Returns a list of JSON objects with the symbols referencing the requested symbol."
+    },
+    {
+      "name": "replace_symbol_body",
+      "description": "Replaces the body of the symbol with the given `name_path`.\n\nThe tool shall be used to replace symbol bodies that have been previously retrieved\n(e.g. via `find_symbol`).\nIMPORTANT: Do not use this tool if you do not know what exactly constitutes the body of the symbol."
+    },
+    {
+      "name": "insert_after_symbol",
+      "description": "Inserts the given body/content after the end of the definition of the given symbol (via the symbol's location).\nA typical use case is to insert a new class, function, method, field or variable assignment."
+    },
+    {
+      "name": "insert_before_symbol",
+      "description": "Inserts the given content before the beginning of the definition of the given symbol (via the symbol's location).\nA typical use case is to insert a new class, function, method, field or variable assignment; or\na new import statement before the first symbol in the file."
+    },
+    {
+      "name": "rename_symbol",
+      "description": "Renames the symbol with the given `name_path` to `new_name` throughout the entire codebase.\nNote: for languages with method overloading, like Java, name_path may have to include a method's\nsignature to uniquely identify a method. Returns result summary indicating success or failure."
+    },
+    {
+      "name": "write_memory",
+      "description": "Write some information (utf-8-encoded) about this project that can be useful for future tasks to a memory in md format.\nThe memory name should be meaningful."
+    },
+    {
+      "name": "read_memory",
+      "description": "Read the content of a memory file. This tool should only be used if the information\nis relevant to the current task. You can infer whether the information\nis relevant from the memory file name.\nYou should not read the same memory file multiple times in the same conversation."
+    },
+    {
+      "name": "list_memories",
+      "description": "List available memories. Any memory can be read using the `read_memory` tool."
+    },
+    {
+      "name": "delete_memory",
+      "description": "Delete a memory file. Should only happen if a user asks for it explicitly,\nfor example by saying that the information retrieved from a memory file is no longer correct\nor no longer relevant for the project."
+    },
+    {
+      "name": "edit_memory",
+      "description": "Replaces content matching a regular expression in a memory."
+    },
+    {
+      "name": "execute_shell_command",
+      "description": "Execute a shell command and return its output. If there is a memory about suggested commands, read that first.\nNever execute unsafe shell commands!\nIMPORTANT: Do not use this tool to start\n  * long-running processes (e.g. servers) that are not intended to terminate quickly,\n  * processes that require user interaction. Returns a JSON object containing the command's stdout and optionally stderr output."
+    },
+    {
+      "name": "activate_project",
+      "description": "Activates the project with the given name or path."
+    },
+    {
+      "name": "switch_modes",
+      "description": "Activates the desired modes, like [\"editing\", \"interactive\"] or [\"planning\", \"one-shot\"]."
+    },
+    {
+      "name": "get_current_config",
+      "description": "Print the current configuration of the agent, including the active and available projects, tools, contexts, and modes."
+    },
+    {
+      "name": "check_onboarding_performed",
+      "description": "Checks whether project onboarding was already performed.\nYou should always call this tool before beginning to actually work on the project/after activating a project."
+    },
+    {
+      "name": "onboarding",
+      "description": "Call this tool if onboarding was not performed yet.\nYou will call this tool at most once per conversation. Returns instructions on how to create the onboarding information."
+    },
+    {
+      "name": "think_about_collected_information",
+      "description": "Think about the collected information and whether it is sufficient and relevant.\nThis tool should ALWAYS be called after you have completed a non-trivial sequence of searching steps like\nfind_symbol, find_referencing_symbols, search_files_for_pattern, read_file, etc."
+    },
+    {
+      "name": "think_about_task_adherence",
+      "description": "Think about the task at hand and whether you are still on track.\nEspecially important if the conversation has been going on for a while and there\nhas been a lot of back and forth.\n\nThis tool should ALWAYS be called before you insert, replace, or delete code."
+    },
+    {
+      "name": "think_about_whether_you_are_done",
+      "description": "Whenever you feel that you are done with what the user has asked for, it is important to call this tool."
+    },
+    {
+      "name": "prepare_for_new_conversation",
+      "description": "Instructions for preparing for a new conversation. This tool should only be called on explicit user request."
+    },
+    {
+      "name": "initial_instructions",
+      "description": "Provides the 'Serena Instructions Manual', which contains essential information on how to use the Serena toolbox.\nIMPORTANT: If you have not yet read the manual, call this tool immediately after you are given your task by the user,\nas it will critically inform you!."
+    }
+  ]
+}

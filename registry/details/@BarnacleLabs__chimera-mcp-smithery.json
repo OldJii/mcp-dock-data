@@ -1,0 +1,37 @@
+{
+  "id": "@BarnacleLabs/chimera-mcp-smithery",
+  "displayName": "Nanci Literature Review Assistant",
+  "description": "Conduct comprehensive literature reviews efficiently by searching research papers, retrieving detailed paper content, and automatically formatting citations with clickable links. Enhance your research workflow with smart references and easy access to relevant academic resources. Integrate seamlessly with your research tools to streamline paper discovery and review.",
+  "createdAt": "2026-01-16T07:20:58.524Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BarnacleLabs/chimera-mcp-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "about_nanci",
+      "description": "Get information about NanciMCP's capabilities for literature review"
+    },
+    {
+      "name": "search_papers",
+      "description": "Search for research papers using the research API"
+    },
+    {
+      "name": "get_paper_details",
+      "description": "Get detailed information about a specific research paper"
+    }
+  ]
+}

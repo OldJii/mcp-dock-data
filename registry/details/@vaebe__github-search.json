@@ -1,0 +1,34 @@
+{
+  "id": "@vaebe/github-search",
+  "displayName": "GitHub Search API Server",
+  "description": "Leverage the GitHub search API to enhance your applications with powerful search capabilities. Integrate seamlessly and retrieve relevant data from GitHub repositories efficiently. Start building smarter applications with enhanced search functionalities today.",
+  "createdAt": "2026-01-16T07:27:52.512Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vaebe/github-search"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "GithubToken": {
+          "type": "string",
+          "description": "The personal access token for accessing the GitHub API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "github_search",
+      "description": "在 GitHub 上搜索仓库、代码、Issues 或用户"
+    },
+    {
+      "name": "get_github_user",
+      "description": "获取指定 GitHub 用户的详细信息"
+    }
+  ]
+}

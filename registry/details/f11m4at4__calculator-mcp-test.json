@@ -1,0 +1,33 @@
+{
+  "id": "f11m4at4/calculator-mcp-test",
+  "displayName": "calculator-mcp-test",
+  "description": "Perform quick addition, subtraction, multiplication, and division. Streamline numeric workflows with fast, reliable results. Reduce errors and save time on everyday calculations.",
+  "createdAt": "2026-01-16T07:24:22.950Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/f11m4at4/calculator-mcp-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "add",
+      "description": "Add two numbers and return the sum."
+    },
+    {
+      "name": "sub",
+      "description": "Subtract the second number from the first."
+    },
+    {
+      "name": "mul",
+      "description": "Multiply two numbers and return the product."
+    },
+    {
+      "name": "div",
+      "description": "Divide two numbers and return floating point division"
+    }
+  ]
+}

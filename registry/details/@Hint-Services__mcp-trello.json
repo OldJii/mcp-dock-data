@@ -1,0 +1,83 @@
+{
+  "id": "@Hint-Services/mcp-trello",
+  "displayName": "Trello",
+  "description": "Covers main interactions with Trello boards. Managing and moving cards, list interactions, and board activities.",
+  "createdAt": "2026-01-16T07:23:56.391Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Hint-Services/mcp-trello"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "default": {},
+      "properties": {
+        "token": {
+          "type": "string",
+          "description": "Trello token generated using your API key (falls back to TRELLO_TOKEN env var)"
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "Trello API key from https://trello.com/app-key (falls back to TRELLO_API_KEY env var)"
+        },
+        "boardId": {
+          "type": "string",
+          "description": "ID of the Trello board to interact with (falls back to TRELLO_BOARD_ID env var). Optional for user-specific operations."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getMyBoards",
+      "description": "Get all boards for the authenticated user (useful for finding board IDs)"
+    },
+    {
+      "name": "getCardsByList",
+      "description": "Get cards by list ID"
+    },
+    {
+      "name": "getLists",
+      "description": "Get all lists from the configured board"
+    },
+    {
+      "name": "getRecentActivity",
+      "description": "Get recent activity from the configured board"
+    },
+    {
+      "name": "addCard",
+      "description": "Add a new card to a list"
+    },
+    {
+      "name": "updateCard",
+      "description": "Update an existing card"
+    },
+    {
+      "name": "moveCard",
+      "description": "Move a card to a different list"
+    },
+    {
+      "name": "changeCardMembers",
+      "description": "Change the members of a card"
+    },
+    {
+      "name": "archiveCard",
+      "description": "Archive a card"
+    },
+    {
+      "name": "addList",
+      "description": "Add a new list to the configured board"
+    },
+    {
+      "name": "archiveList",
+      "description": "Archive a list"
+    },
+    {
+      "name": "getMyCards",
+      "description": "Get cards assigned to the authenticated user"
+    }
+  ]
+}

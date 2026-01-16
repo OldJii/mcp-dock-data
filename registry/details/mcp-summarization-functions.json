@@ -1,0 +1,56 @@
+{
+  "id": "mcp-summarization-functions",
+  "displayName": "Summarization Functions",
+  "description": "Provides summarised output from various actions that could otherwise eat up tokens and cause crashes.",
+  "createdAt": "2026-01-16T07:26:20.418Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-summarization-functions"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "provider",
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for the selected provider."
+        },
+        "modelId": {
+          "type": "string",
+          "description": "Specific model to use."
+        },
+        "provider": {
+          "type": "string",
+          "description": "AI provider to use. Supported values: ANTHROPIC, OPENAI, OPENAI-COMPATIBLE, GOOGLE."
+        },
+        "maxTokens": {
+          "type": "number",
+          "description": "Maximum tokens for model responses."
+        },
+        "mcpWorkingDir": {
+          "type": "string",
+          "description": "Fallback directory for trying to find files with relative paths from."
+        },
+        "providerBaseUrl": {
+          "type": "string",
+          "description": "Custom API endpoint for OpenAI-compatible providers."
+        },
+        "summarizationCacheMaxAge": {
+          "type": "number",
+          "description": "Cache duration in milliseconds."
+        },
+        "summarizationCharThreshold": {
+          "type": "number",
+          "description": "Character count threshold for when to summarize."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

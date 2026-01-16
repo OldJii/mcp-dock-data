@@ -1,0 +1,12 @@
+{
+  "id": "calebl/ynab-mcp-server",
+  "displayName": "ynab-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:01.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/calebl/ynab-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

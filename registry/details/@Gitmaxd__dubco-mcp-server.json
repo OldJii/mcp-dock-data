@@ -1,0 +1,44 @@
+{
+  "id": "@Gitmaxd/dubco-mcp-server",
+  "displayName": "Dub.co Link Shortener Server",
+  "description": "Manage your short links effortlessly with this server. Create, update, and delete links through your Dub.co account, enabling seamless integration for your AI agents.",
+  "createdAt": "2026-01-16T07:31:34.455Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Gitmaxd/dubco-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "dubcoApiKey"
+      ],
+      "properties": {
+        "dubcoApiKey": {
+          "type": "string",
+          "description": "Dub.co API key to authenticate with Dub.co service."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_link",
+      "description": "Create a new short link on dub.co, asking the user which domain to use"
+    },
+    {
+      "name": "update_link",
+      "description": "Update an existing short link on dub.co"
+    },
+    {
+      "name": "upsert_link",
+      "description": "Create or update a short link on dub.co, asking the user which domain to use if creating"
+    },
+    {
+      "name": "delete_link",
+      "description": "Delete a short link on dub.co"
+    }
+  ]
+}

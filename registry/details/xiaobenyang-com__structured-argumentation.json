@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/structured-argumentation",
+  "displayName": "structured-argumentation",
+  "description": "Analyze complex questions by systematically breaking down and comparing arguments. Clarify reasoning, surface objections, and weigh strengths and weaknesses to evaluate competing perspectives. Guide dialectical progress from thesis to synthesis for clearer decisions and insights.",
+  "createdAt": "2026-01-16T07:31:32.654Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/structured-argumentation"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "structuredArgumentation",
+      "description": "A detailed tool for systematic dialectical reasoning and argument analysis.\nThis tool helps analyze complex questions through formal argumentation structures.\nIt facilitates the creation, critique, and synthesis of competing arguments.\n\nWhen to use this tool:\n- Evaluating competing perspectives and claims\n- Analyzing complex ethical dilemmas\n- Assessing policy proposals with multiple stakeholders\n- Exploring scientific hypotheses and counter-arguments\n\nKey features:\n- Break down arguments into claims, premises, and conclusions\n- Track relationships between arguments\n- Represent objections and rebuttals\n- Facilitate dialectical progression through thesis-antithesis-synthesis\n- Evaluate argument strengths and weaknesses\n- Visualize argument structures\n\nParameters explained:\n- claim: The central proposition being argued\n- premises: Supporting evidence or assumptions\n- conclusion: The logical consequence of accepting the claim\n- argumentType: Whether this is a thesis, antithesis, synthesis, objection, or rebuttal\n- confidence: Your confidence level in this argument (0.0-1.0)\n- respondsTo: ID of an argument this directly responds to\n- supports/contradicts: IDs of arguments this supports or contradicts\n- strengths/weaknesses: Notable strong or weak points of the argument\n- nextArgumentNeeded: Whether another argument is needed in the dialectic"
+    }
+  ]
+}

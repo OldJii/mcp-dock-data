@@ -1,0 +1,132 @@
+{
+  "id": "@ThrownLemon/medical-mcp",
+  "displayName": "Medical Information Server",
+  "description": "Provide comprehensive and authoritative medical information by querying multiple trusted sources including FDA, WHO, PubMed, RxNorm, and Google Scholar. Enable detailed drug data retrieval, health statistics access, and medical literature search to support healthcare and research needs. Facilitate seamless integration with MCP-compatible clients for reliable medical data and research insights.",
+  "createdAt": "2026-01-16T07:30:39.533Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ThrownLemon/medical-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "pbsApiBase"
+      ],
+      "properties": {
+        "pbsApiBase": {
+          "type": "string",
+          "description": "Base URL for PBS API"
+        },
+        "serpApiKey": {
+          "type": "string",
+          "description": "SerpAPI key for Google Scholar (optional)"
+        },
+        "defaultCountryIso3": {
+          "type": "string",
+          "description": "Default country ISO3 code for WHO queries (optional)"
+        },
+        "pbsSubscriptionKey": {
+          "type": "string",
+          "description": "PBS subscription key (optional)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search-drugs",
+      "description": "Search for drug information using FDA database"
+    },
+    {
+      "name": "pbs-get-latest-schedule",
+      "description": "Resolve the current latest PBS schedule_code for reuse by other calls."
+    },
+    {
+      "name": "pbs-list-schedules",
+      "description": "List PBS schedules (optionally only the latest schedule)"
+    },
+    {
+      "name": "pbs-list-dispensing-rules",
+      "description": "List PBS dispensing rules optionally filtered by mnemonic/title/reference."
+    },
+    {
+      "name": "pbs-get-restrictions-for-item",
+      "description": "Fetch restriction text (legal instrument + notes/cautions) for a PBS item code; auto-uses the item's schedule if not provided."
+    },
+    {
+      "name": "pbs-get-prescribers-for-item",
+      "description": "List prescriber types allowed for a PBS item across schedules (e.g., Medical Practitioners)."
+    },
+    {
+      "name": "pbs-get-atc-for-item",
+      "description": "Return ATC classification(s) for a PBS item, enriched with ATC descriptions (de-duplicated)."
+    },
+    {
+      "name": "pbs-get-amt-mapping",
+      "description": "Return AMT concept mapping (MP/MPUU/MPP/TPP) for a PBS item (de-duplicated)."
+    },
+    {
+      "name": "pbs-get-organisation-for-item",
+      "description": "Return manufacturer/responsible person info for a PBS item (from /organisations)."
+    },
+    {
+      "name": "pbs-get-copayments",
+      "description": "Return PBS copayment amounts and Safety Net thresholds (latest by default)."
+    },
+    {
+      "name": "pbs-get-price-events-for-item",
+      "description": "Return statutory price reduction events for a PBS item (de-duplicated)."
+    },
+    {
+      "name": "pbs-get-program-details",
+      "description": "Return program info and dispensing rules for a PBS item (de-duplicated rules)."
+    },
+    {
+      "name": "pbs-get-item",
+      "description": "Fetch PBS item(s) by pbs_item_code and optional schedule_code; returns compact summary lines."
+    },
+    {
+      "name": "pbs-search-item-overview",
+      "description": "Search PBS item-overview using simple ODATA-like filters (brand_name/li_drug_name/pbs_code, etc.)."
+    },
+    {
+      "name": "pbs-search",
+      "description": "Query Australia's PBS public API (rate-limited; ~20s between calls)."
+    },
+    {
+      "name": "pbs-summary-of-changes",
+      "description": "Summarize changes between schedules for a given endpoint/table (INSERT/UPDATE/DELETE)."
+    },
+    {
+      "name": "list-who-indicators",
+      "description": "List WHO indicators by searching for a keyword (useful to find exact indicator names/codes)"
+    },
+    {
+      "name": "pbs-get-fees-for-item",
+      "description": "Fetch PBS fees by resolving an item's program_code, optionally for a specific schedule"
+    },
+    {
+      "name": "get-drug-details",
+      "description": "Get detailed information about a specific drug by NDC (National Drug Code)"
+    },
+    {
+      "name": "get-health-statistics",
+      "description": "Get health statistics and indicators from WHO Global Health Observatory"
+    },
+    {
+      "name": "search-medical-literature",
+      "description": "Search for medical research articles in PubMed"
+    },
+    {
+      "name": "search-drug-nomenclature",
+      "description": "Search for drug information using RxNorm (standardized drug nomenclature)"
+    },
+    {
+      "name": "search-google-scholar",
+      "description": "Search for academic research articles using Google Scholar"
+    }
+  ]
+}

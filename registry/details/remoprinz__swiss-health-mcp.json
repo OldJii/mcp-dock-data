@@ -1,0 +1,12 @@
+{
+  "id": "remoprinz/swiss-health-mcp",
+  "displayName": "swiss-health-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:36:56.345Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/remoprinz/swiss-health-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

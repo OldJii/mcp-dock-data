@@ -1,0 +1,33 @@
+{
+  "id": "@SubQuery-Network/subquery-network",
+  "displayName": "SubQuery Network",
+  "description": "Query SubQuery’s indexed blockchain data to get precise answers and insights fast. Accelerate analytics, monitoring, and research with powerful, flexible queries. Integrate results into your workflows to power reports, alerts, and automation.\n\nGet API KEY from: https://asksubquery.xyz/?referrer_code=SUBQUERY",
+  "createdAt": "2026-01-16T07:31:14.068Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SubQuery-Network/subquery-network"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "api_key"
+      ],
+      "properties": {
+        "api_key": {
+          "type": "string",
+          "description": "Ask SubQuery API Key"
+        }
+      },
+      "description": "Configuration for connecting to this MCP server"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "graphql_agent",
+      "description": "Ask questions about SubQuery Network Indexer; the agent will inspect the schema, validate and execute GraphQL queries, then summarize the results.\n\nCapabilities:\n• Project and deployment management\n• Indexer operations and stake tracking\n• Delegator relationships and rewards\n• Service agreements and state channels\n• Era-based reward distribution\n• Token economics and SQT transfers\n• Airdrop campaigns and claims\n• Network governance and voting\n• Consumer query spending and refunds\n• Performance metrics and APY calculations\n• Dispute resolution and slashing\n• Allocation overflow tracking\n• Indexer labor history"
+    }
+  ]
+}

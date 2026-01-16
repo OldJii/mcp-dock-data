@@ -1,0 +1,12 @@
+{
+  "id": "@alan5543/flight-search-mcp",
+  "displayName": "flight-search-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:18.510Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alan5543/flight-search-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

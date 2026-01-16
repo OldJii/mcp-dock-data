@@ -1,0 +1,333 @@
+{
+  "id": "@amalinakurniasari/conduit",
+  "displayName": "Conduit for Figma",
+  "description": "Automate Figma from your workflow to design at the speed of thought. Create, style, and arrange text, shapes, components, images, variables, and layouts—including batch operations and auto layout. Export assets and HTML/CSS, manage pages and selections, and stay in sync with live changes for fast collaboration.",
+  "createdAt": "2026-01-16T07:23:14.415Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@amalinakurniasari/conduit"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "port": {
+          "type": "number",
+          "description": "Figma socket server port",
+          "default": 443
+        },
+        "serverUrl": {
+          "type": "string",
+          "description": "Figma socket server host",
+          "default": "generator.digitaltelkom.id/socket"
+        },
+        "reconnectInterval": {
+          "type": "number",
+          "description": "Base reconnect interval in milliseconds",
+          "default": 2000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "join",
+      "description": "Join a specific channel to communicate with Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the join status message.\n"
+    },
+    {
+      "name": "select_task",
+      "description": "Select and run a design task based on the task number.\n\nReturns:\n  - content: Array of objects with task instructions and prompts for the selected type.\n"
+    },
+    {
+      "name": "get_components",
+      "description": "Get components from the current document, a team library, or remote team libraries.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the components info as JSON.\n"
+    },
+    {
+      "name": "set_variant",
+      "description": "Create, add, rename, delete, organize, or batch create variants/properties in a component set (single or batch).\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "get_variant",
+      "description": "Get info about variants/properties for one or more component sets.\n\nReturns: For single: { componentSetId, variants: [...] }, for batch: Array<{ componentSetId, variants: [...] }>."
+    },
+    {
+      "name": "create_component_instance",
+      "description": "Creates one or more component instances in Figma. Accepts either a single entry (via 'entry') or an array of entries (via 'entries').\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created instance IDs.\n"
+    },
+    {
+      "name": "create_components_from_node",
+      "description": "Converts one or more existing nodes into components in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains:\n      - type: \"text\"\n      - text: JSON string with created component IDs and any errors.\n"
+    },
+    {
+      "name": "set_selection",
+      "description": ""
+    },
+    {
+      "name": "get_selection",
+      "description": "Get information about the current selection in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the selection info as JSON.\n"
+    },
+    {
+      "name": "duplicate_page",
+      "description": "Duplicate a Figma page and all its children as a new page.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the new page info as JSON.\n"
+    },
+    {
+      "name": "get_document_info",
+      "description": "Get detailed information about the current Figma document.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the document info as JSON.\n"
+    },
+    {
+      "name": "get_doc_pages",
+      "description": "Get information about all pages in the current Figma document.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the pages info as JSON.\n"
+    },
+    {
+      "name": "export_node_as_image",
+      "description": "Exports a node as an image from Figma in the specified format and scale.\n\nReturns:\n  - content: Array of objects. Each object contains type: \"image\", data (image data), and mimeType (image mime type).\n"
+    },
+    {
+      "name": "get_html",
+      "description": "Generates HTML structure from Figma nodes.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the generated HTML string.\n"
+    },
+    {
+      "name": "get_css_async",
+      "description": "Get CSS properties from a node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the CSS properties as JSON.\n"
+    },
+    {
+      "name": "set_image",
+      "description": "Sets or inserts one or more images into Figma. Each image can be specified by a remote URL, a local file path, or a base64 data URI. Accepts either a single image config (via 'image') or an array of configs (via 'images'). You can customize size, name, and parent node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the inserted image node ID(s).\n"
+    },
+    {
+      "name": "get_image",
+      "description": ""
+    },
+    {
+      "name": "set_corner_radius",
+      "description": "Sets the corner radius of a node in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the updated node's ID.\n"
+    },
+    {
+      "name": "move_node",
+      "description": "Moves one or more nodes to a new position in Figma. Accepts either a single move config (via 'move') or an array of configs (via 'moves').\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the moved node ID(s) and new position(s).\n"
+    },
+    {
+      "name": "resize_node",
+      "description": "Resize a node in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the resized node's ID and new size.\n"
+    },
+    {
+      "name": "rotate_node",
+      "description": "Rotate a node in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the rotated node's ID, angle, and pivot info.\n"
+    },
+    {
+      "name": "set_auto_layout_resizing",
+      "description": "Sets hug or fill sizing mode on an auto layout frame or child node in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the updated node's ID.\n"
+    },
+    {
+      "name": "detach_instances",
+      "description": "Detaches one or more Figma component instances from their masters.\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the detached instance's ID or error info.\n\n"
+    },
+    {
+      "name": "set_node_prop",
+      "description": "Sets node properties (locked, visible, etc.) for one or more nodes."
+    },
+    {
+      "name": "set_auto_layout",
+      "description": "Set, update, or delete one or more layout grids on Figma nodes (FRAME, COMPONENT, INSTANCE).\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "set_constraint",
+      "description": "Set constraints (left/right/top/bottom/center/scale/stretch) for one or more Figma nodes.\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "get_constraint",
+      "description": "Get constraints for one or more Figma nodes (optionally including children).\n\nReturns: Array of constraint info for each node, including children if requested."
+    },
+    {
+      "name": "subscribe_event",
+      "description": "Subscribe or unsubscribe to a Figma event (e.g., selection_change, document_change).\n\nReturns: { subscriptionId } for subscribe, { success: true } for unsubscribe"
+    },
+    {
+      "name": "create_button",
+      "description": "Creates a complete button with background and text in Figma at the specified coordinates. You can customize size, text, colors, font, corner radius, name, and parent node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created button's frame, background, and text node IDs.\n"
+    },
+    {
+      "name": "set_variable",
+      "description": "Creates, updates, or deletes one or more Figma Variables (design tokens).\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the result or summary.\n"
+    },
+    {
+      "name": "get_annotation",
+      "description": "Get annotation(s) for one or more Figma nodes.\n\nReturns:\n  - For single: { nodeId, annotations }\n  - For batch: Array<{ nodeId, annotations }>\n"
+    },
+    {
+      "name": "set_annotation",
+      "description": "Set, update, or delete annotation(s) for one or more Figma nodes.\n\nReturns:\n  - For single: { nodeId, updated/deleted }\n  - For batch: Array<{ nodeId, updated/deleted }>\n"
+    },
+    {
+      "name": "boolean",
+      "description": "Perform boolean operations (union, subtract, intersect, exclude) on Figma nodes.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the result.\n"
+    },
+    {
+      "name": "group_node",
+      "description": "Groups or ungroups nodes in Figma, depending on the 'group' flag.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the result.\n"
+    },
+    {
+      "name": "delete_node",
+      "description": "Deletes one or more nodes in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the deleted node's ID(s).\n"
+    },
+    {
+      "name": "set_node",
+      "description": "Sets or inserts one or more child nodes into parent nodes at optional index positions in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the parentId, childId, index, success status, and any error message.\n"
+    },
+    {
+      "name": "flatten_node",
+      "description": "Flatten one or more nodes in Figma, or the current selection, merging all child vector layers and shapes into a single vector layer.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the results for each node.\n"
+    },
+    {
+      "name": "duplicate_node",
+      "description": "Clones one or more nodes in Figma. Accepts either a single node config (via 'node') or an array of configs (via 'nodes'). Optionally, you can specify positions, offsets, and parent.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the new node ID(s).\n"
+    },
+    {
+      "name": "rename_layer",
+      "description": "Renames one or more nodes in Figma. Accepts either a single rename config (via 'rename') or an array of configs (via 'renames').\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the original and new name(s).\n"
+    },
+    {
+      "name": "reorder_node",
+      "description": "Reorders one or more nodes in their parents' children arrays. Accepts either a single reorder config (via 'reorder') or an array of configs (via 'reorders'). Optionally, you can provide options such as skip_errors.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the results and any errors.\n"
+    },
+    {
+      "name": "get_node_info",
+      "description": "Get detailed information about one or more nodes in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the node(s) info as JSON.\n"
+    },
+    {
+      "name": "set_matrix_transform",
+      "description": "Set a transformation matrix on one or more Figma nodes (single or batch).\n\nParameters:\n  - entry: { nodeId: string, matrix: number[] } (optional, for single)\n  - entries: Array<{ nodeId: string, matrix: number[] }> (optional, for batch)\n  - options: { skipErrors?: boolean } (optional)\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the result for each node.\n"
+    },
+    {
+      "name": "set_grid",
+      "description": "Create, update, or delete one or more layout grids on Figma nodes (FRAME, COMPONENT, INSTANCE).\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "get_grid",
+      "description": "Get all layout grids for one or more Figma nodes (FRAME, COMPONENT, INSTANCE).\n\nReturns: For single: { nodeId, grids: [...] }, for batch: Array<{ nodeId, grids: [...] }>."
+    },
+    {
+      "name": "set_guide",
+      "description": "Add or delete one or more guides on the current Figma page.\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "get_guide",
+      "description": "Get all guides on the current Figma page.\n\nReturns: Array of guides, each with { axis, offset }"
+    },
+    {
+      "name": "set_page",
+      "description": "Create, delete, rename, or set current page (single or batch).\n\nReturns: Array of result objects for each operation."
+    },
+    {
+      "name": "get_page",
+      "description": "Get info for one, many, or all pages.\n\nReturns: For single: { pageId, name, isActive }, for batch: Array<{ pageId, name, isActive }>."
+    },
+    {
+      "name": "create_rectangle",
+      "description": "Creates one or more rectangle shape nodes in the specified Figma document. Accepts either a single rectangle config (via 'rectangle') or an array of configs (via 'rectangles'). Optionally, you can provide a name, a parent node ID to attach the rectangle(s) to, and a corner radius for rounded corners.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created rectangle node ID(s).\n"
+    },
+    {
+      "name": "create_frame",
+      "description": "Creates one or more frame nodes in the specified Figma document. Accepts either a single frame config (via 'frame') or an array of configs (via 'frames'). Optionally, you can provide a name, a parent node ID, fill color, stroke color, stroke weight, and corner radius.\n\nCorner radius can be:\n- A single number for uniform corners (e.g., 8)\n- An array of 4 numbers for individual corners [topLeft, topRight, bottomRight, bottomLeft] (e.g., [8, 8, 0, 0])\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created frame node ID(s).\n"
+    },
+    {
+      "name": "create_line",
+      "description": "Creates one or more line nodes in the specified Figma document. Accepts either a single line config (via 'line') or an array of configs (via 'lines'). Optionally, you can provide a parent node ID, stroke color, and stroke weight.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created line node ID(s).\n"
+    },
+    {
+      "name": "create_ellipse",
+      "description": "Creates one or more ellipse nodes in the specified Figma document. Accepts either a single ellipse config (via 'ellipse') or an array of configs (via 'ellipses'). Optionally, you can provide a name, a parent node ID, fill color, stroke color, and stroke weight.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created ellipse node ID(s).\n"
+    },
+    {
+      "name": "create_polygon",
+      "description": "Creates one or more polygons in Figma. Accepts either a single polygon config (via 'polygon') or an array of configs (via 'polygons'). Optionally, you can provide a name, a parent node ID, fill color, stroke color, and stroke weight.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created polygon node ID(s).\n"
+    },
+    {
+      "name": "set_mask",
+      "description": "Applies a mask in Figma. Supports single or batch:\n- Single: { targetNodeId, maskNodeId, channelId? }\n- Batch: { operations: [ { targetNodeId, maskNodeId, channelId? }, ... ] }\nReturns an array of result objects."
+    },
+    {
+      "name": "set_fill_and_stroke",
+      "description": "Sets fill and/or stroke color(s) and/or stroke weight for one or more nodes."
+    },
+    {
+      "name": "get_fill_and_stroke",
+      "description": "Gets fill and/or stroke color(s) and stroke weight for one or more nodes."
+    },
+    {
+      "name": "create_gradient_style",
+      "description": "Creates one or more gradient style variables in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created gradient(s) ID(s) or a summary.\n"
+    },
+    {
+      "name": "set_gradient",
+      "description": "Set a gradient on one or more nodes in Figma, either directly or by style variable.\n\nReturns:\n  - content: Array containing a text message with the updated node(s) ID(s) or a summary.\n"
+    },
+    {
+      "name": "set_effect",
+      "description": "Set effect(s) directly or by style variable on one or more nodes in Figma.\n\nReturns:\n  - content: Array containing a text message with the updated node(s) ID(s) or a summary.\n"
+    },
+    {
+      "name": "apply_effect_style",
+      "description": "Applies an effect style to a node in Figma.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the updated node's ID.\n"
+    },
+    {
+      "name": "get_doc_style",
+      "description": "Get all styles from the current Figma document.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the styles info as JSON.\n"
+    },
+    {
+      "name": "get_node_style",
+      "description": "Get all style properties (fills, strokes, effects, text styles, style IDs, etc.) for one or more nodes.\n\nReturns:\n  - Array of { nodeId, styles } objects, one per node.\n"
+    },
+    {
+      "name": "get_text_style",
+      "description": ""
+    },
+    {
+      "name": "load_font_async",
+      "description": "Load a font asynchronously in Figma.\n\nReturns:\n  - content: Array containing a text message with the loaded font.\n    Example: { \"content\": [{ \"type\": \"text\", \"text\": \"Font loaded: Roboto\" }] }\n"
+    },
+    {
+      "name": "get_svg_vector",
+      "description": "Get SVG markup for one or more vector nodes.\n\nReturns:\n  - Array of { nodeId, svg } objects, one per node.\n"
+    },
+    {
+      "name": "set_svg_vector",
+      "description": "Sets or inserts one or more SVG vectors in Figma. Accepts either a single SVG config (via 'svg') or an array of configs (via 'svgs').\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the inserted SVG vector node ID(s).\n"
+    },
+    {
+      "name": "get_styled_text_segments",
+      "description": "Get text segments with specific styling in a text node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the styled text segments as JSON.\n"
+    },
+    {
+      "name": "scan_text_nodes",
+      "description": "Scan all text nodes in the selected Figma node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the scan status and results.\n"
+    },
+    {
+      "name": "set_text_content",
+      "description": "Sets the text content of one or more text nodes in Figma.\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the update result.\n\n"
+    },
+    {
+      "name": "set_text_style",
+      "description": "Sets one or more text style properties (font, size, weight, spacing, case, decoration, etc.) on one or more nodes in Figma.\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the update result.\n\n"
+    },
+    {
+      "name": "set_text",
+      "description": "Creates one or more text elements in Figma. Accepts either a single text config (via 'text') or an array of configs (via 'texts').\nIf 'width' and 'height' are provided, creates a bounded text box; otherwise, creates a regular text node.\n\nReturns:\n  - content: Array of objects. Each object contains a type: \"text\" and a text field with the created text node ID(s).\n"
+    },
+    {
+      "name": "create_vector",
+      "description": "Creates one or more vector nodes in Figma. Use 'vector' for single or 'vectors' for batch."
+    },
+    {
+      "name": "get_vector",
+      "description": "Retrieves one or more vector nodes by ID(s). Accepts 'nodeId' or 'nodeIds'."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "@ybouane/scrptly-ai-video-agent",
+  "displayName": "Scrptly AI Video Agent",
+  "description": "Create videos from text prompts and optional reference images. Track progress and retrieve results as they’re ready. Accelerate content production for marketing, education, and social media.",
+  "createdAt": "2026-01-16T07:24:39.446Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ybouane/scrptly-ai-video-agent"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "generateAiVideo",
+      "description": "Generate a video based on a text prompt and optional context images."
+    },
+    {
+      "name": "getTaskStatus",
+      "description": "Check the status of an AI video generation task."
+    }
+  ]
+}

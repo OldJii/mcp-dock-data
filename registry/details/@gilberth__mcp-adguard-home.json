@@ -1,0 +1,59 @@
+{
+  "id": "@gilberth/mcp-adguard-home",
+  "displayName": "AdGuard Home Server",
+  "description": "Manage and query your AdGuard Home DNS records and filtering rules through AI agents. Simplify DNS management by integrating with AI workflows. Enable seamless control over your AdGuard Home instance via a standardized protocol.",
+  "createdAt": "2026-01-16T07:31:32.120Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gilberth/mcp-adguard-home"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "adguardUsername",
+        "adguardPassword",
+        "adguardUrl"
+      ],
+      "properties": {
+        "adguardUrl": {
+          "type": "string",
+          "description": "Base URL of your AdGuard Home instance"
+        },
+        "adguardPassword": {
+          "type": "string",
+          "description": "Password for AdGuard Home authentication"
+        },
+        "adguardUsername": {
+          "type": "string",
+          "description": "Username for AdGuard Home authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_connection",
+      "description": "Check AdGuard Home connection status"
+    },
+    {
+      "name": "list_dns_records",
+      "description": "List all DNS rewrite records"
+    },
+    {
+      "name": "add_dns_record",
+      "description": "Add a DNS rewrite record"
+    },
+    {
+      "name": "remove_dns_record",
+      "description": "Remove a DNS rewrite record"
+    }
+  ]
+}

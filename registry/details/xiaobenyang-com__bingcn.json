@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/bingcn",
+  "displayName": "bingcn",
+  "description": "使用必应搜索快速发现相关网页。获取完整网页内容以便深入分析与引用。加速调研、整理与引用流程。",
+  "createdAt": "2026-01-16T07:30:01.578Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/bingcn"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "bing_search",
+      "description": "使用必应搜索指定的关键词，并返回搜索结果列表，包括标题、链接、摘要和ID"
+    },
+    {
+      "name": "fetch_webpage",
+      "description": "根据提供的ID获取对应网页的内容"
+    }
+  ]
+}

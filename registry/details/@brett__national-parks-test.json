@@ -1,0 +1,12 @@
+{
+  "id": "@brett/national-parks-test",
+  "displayName": "national-parks-test",
+  "description": "",
+  "createdAt": "2026-01-16T07:35:26.892Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brett/national-parks-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

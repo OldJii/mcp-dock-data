@@ -1,0 +1,104 @@
+{
+  "id": "@InstantMCP/linkedinrealtimesearchserver",
+  "displayName": "LinkedIn Ads Library Server",
+  "description": "Search and retrieve LinkedIn ads effortlessly. Utilize powerful tools to find ads based on keywords, countries, and date ranges, or get detailed information about specific ads. Enhance your marketing insights with real-time access to LinkedIn advertising data.",
+  "createdAt": "2026-01-16T07:32:17.492Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@InstantMCP/linkedinrealtimesearchserver"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for the instantmcp API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_linkedin_profile",
+      "description": "Get details of a specific LinkedIn user profile"
+    },
+    {
+      "name": "get_profile_by_sales_nav_url",
+      "description": "Get LinkedIn profile data using a Sales Navigator URL"
+    },
+    {
+      "name": "detect_activity_time",
+      "description": "Get the time of the latest profile activity. Uses 2 credits per call."
+    },
+    {
+      "name": "google_full_profiles",
+      "description": "Discover LinkedIn profiles via Google using details like job title, company, location, or keywords. Credit Cost: Base cost is 2 credits plus 1 credit per selected profile."
+    },
+    {
+      "name": "get_company_by_linkedin_url",
+      "description": "Retrieve valuable data points using a company's LinkedIn URL. Costs 1 credit per call."
+    },
+    {
+      "name": "get_company_by_domain",
+      "description": "Find a company on LinkedIn using its web domain. Costs 1 credit per call."
+    },
+    {
+      "name": "get_company_by_id",
+      "description": "Retrieve valuable data points using a company's LinkedIn internal ID. Costs 1 credit per call."
+    },
+    {
+      "name": "get_company_insights",
+      "description": "Get company insights from LinkedIn Sales Navigator. Costs 5 credits per call."
+    },
+    {
+      "name": "get_account_iq",
+      "description": "Get company account IQ from LinkedIn Sales Navigator. Costs 5 credits per call."
+    },
+    {
+      "name": "find_custom_headcount",
+      "description": "Discover the count of employees within a specific company who meet designated criteria. Costs 1 credit per call."
+    },
+    {
+      "name": "get_company_jobs_count",
+      "description": "Get the number of job openings a company has posted on LinkedIn. Costs 1 credit per call."
+    },
+    {
+      "name": "search_employees",
+      "description": "Search for LinkedIn employees using Sales Navigator. This is a three-step process that starts with this endpoint. The search costs 50 credits to start, and retrieving each result costs 0.5 credits."
+    },
+    {
+      "name": "search_employees_by_sales_nav_url",
+      "description": "Search for LinkedIn employees using a Sales Navigator URL. Works the same as regular employee search but uses an existing Sales Navigator search URL as input."
+    },
+    {
+      "name": "check_search_status",
+      "description": "Check the status of a LinkedIn employee search using the request_id obtained from the Search Employees endpoint. This endpoint is free of charge."
+    },
+    {
+      "name": "get_search_results",
+      "description": "Get LinkedIn employee search results using the request_id from a completed search. Please ensure search is done before calling. Costs 0.5 credits per result."
+    },
+    {
+      "name": "search_companies",
+      "description": "Search for LinkedIn companies using Sales Navigator. This is a three-step process that starts with this endpoint. The search costs 25 credits to start, and retrieving each result costs 0.3 credits."
+    },
+    {
+      "name": "search_companies_by_sales_nav_url",
+      "description": "Search for LinkedIn companies using a Sales Navigator URL. Works the same as regular company search but uses an existing Sales Navigator search URL as input."
+    },
+    {
+      "name": "check_company_search_status",
+      "description": "Check the status of a LinkedIn company search using the request_id obtained from the Search Companies endpoint. This endpoint is free of charge."
+    },
+    {
+      "name": "get_companies_search_results",
+      "description": "Get LinkedIn company search results using the request_id from a completed search. Please ensure search is done before calling. Costs 0.3 credits per result."
+    }
+  ]
+}

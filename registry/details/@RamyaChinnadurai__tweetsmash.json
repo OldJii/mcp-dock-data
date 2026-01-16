@@ -1,0 +1,48 @@
+{
+  "id": "@RamyaChinnadurai/tweetsmash",
+  "displayName": "Tweetsmash",
+  "description": "Manage and organize your Twitter bookmarks efficiently through AI assistants. List, search, filter, and label bookmarks to enhance your Twitter experience. Integrate seamlessly with AI tools supporting the Model Context Protocol for streamlined bookmark handling.",
+  "createdAt": "2026-01-16T07:24:34.048Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RamyaChinnadurai/tweetsmash"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "TWEETSMASH_API_KEY"
+      ],
+      "properties": {
+        "TWEETSMASH_API_KEY": {
+          "type": "string",
+          "description": "The API key from https://tweetsmash.com/integrations/api"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_bookmarks",
+      "description": "List user's Twitter bookmarks with optional filtering and pagination. Supports filtering by read status, media type, author, tags, date ranges, and sorting options."
+    },
+    {
+      "name": "search_bookmarks",
+      "description": "Search through a user's Twitter bookmarks using either keyword (text) search or semantic (meaning-based) search. Supports all list_bookmarks filters, full-text search via the q field, and semantic search via the vector_search_term field for natural language or topic-based queries."
+    },
+    {
+      "name": "get_bookmark_count",
+      "description": "Get the total count of user's bookmarks with optional filtering. Useful for understanding the size of bookmark collections before listing them."
+    },
+    {
+      "name": "list_labels",
+      "description": "List all user's labels with their usage counts. Useful for discovering existing labels before adding new ones or to understand the current labeling system."
+    },
+    {
+      "name": "add_labels_to_tweets",
+      "description": "Add a label to a list of tweets. Can use an existing label by ID or create a new label by name. This is useful for organizing and categorizing tweets after searching or filtering"
+    }
+  ]
+}

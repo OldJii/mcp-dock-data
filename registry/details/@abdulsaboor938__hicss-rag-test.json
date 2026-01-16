@@ -1,0 +1,37 @@
+{
+  "id": "@abdulsaboor938/hicss-rag-test",
+  "displayName": "hicss-rag-test",
+  "description": "Find HICSS papers by topic, author, or year range. Explore sections and keywords to surface relevant research. Retrieve full document details to speed up literature reviews.",
+  "createdAt": "2026-01-16T07:30:19.422Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@abdulsaboor938/hicss-rag-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_content",
+      "description": "Search papers based on the query."
+    },
+    {
+      "name": "search_by_author",
+      "description": "Search papers based on the author's name (case-insensitive)."
+    },
+    {
+      "name": "get_document",
+      "description": "Retrieve full document details by document ID."
+    },
+    {
+      "name": "search_by_keyword",
+      "description": "Search for sections by keyword similarity."
+    },
+    {
+      "name": "search_attribute",
+      "description": "Search attributes (title, authors, unique_keywords) by year range."
+    }
+  ]
+}

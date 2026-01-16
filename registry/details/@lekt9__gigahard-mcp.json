@@ -1,0 +1,31 @@
+{
+  "id": "@lekt9/gigahard-mcp",
+  "displayName": "gigahard-mcp-server",
+  "description": "Transform your HAR network requests into usable tools for MCPs",
+  "createdAt": "2026-01-16T07:31:23.617Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lekt9/gigahard-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "clarityMcpId": {
+          "type": "string",
+          "description": "Optional MCP ID to specify which MCP to use.",
+          "default": ""
+        },
+        "clarityApiKey": {
+          "type": "string",
+          "description": "API key for authenticating requests forwarded to the Next.js backend.",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

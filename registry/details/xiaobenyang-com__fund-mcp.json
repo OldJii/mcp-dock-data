@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/fund-mcp",
+  "displayName": "fund-mcp",
+  "description": "Search stock information, list knowledge base entries, and echo messages for quick testing. Accelerate financial research with fast lookups and simple validation.",
+  "createdAt": "2026-01-16T07:29:19.874Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/fund-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fund.echo",
+      "description": "Echo back a message. Example interface for scaffold."
+    },
+    {
+      "name": "fund.knoewledge",
+      "description": "获取的知识库列表信息"
+    },
+    {
+      "name": "fund.stock_search",
+      "description": "搜索股票信息，基于东方财富API"
+    }
+  ]
+}

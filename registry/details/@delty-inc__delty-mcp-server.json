@@ -1,0 +1,34 @@
+{
+  "id": "@delty-inc/delty-mcp-server",
+  "displayName": "Exa AI Search Server",
+  "description": "Enable AI assistants to perform real-time web searches, academic paper searches, company research, and more using the Exa AI Search API. Access comprehensive and up-to-date information from multiple sources including web pages, Wikipedia, LinkedIn, GitHub, and research papers. Customize and control which search tools are enabled to tailor the assistant's capabilities to your needs.",
+  "createdAt": "2026-01-16T07:32:04.466Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@delty-inc/delty-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "deltyApiKey": {
+          "type": "string",
+          "description": "The API key for accessing the Delty API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_delty_projects",
+      "description": "Get the list of projects from Delty."
+    },
+    {
+      "name": "get_delty_project_documents",
+      "description": "Get the all the documents of a project from Delty. The projectId is the id of the project you want to get the documents for. If projectId is not available, use the get_delty_projects tool to get the list of projects and corresponding projectIds. Then use get_delty_project_documents tool to get the documents for the projectId."
+    }
+  ]
+}

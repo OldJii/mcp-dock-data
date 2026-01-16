@@ -1,0 +1,133 @@
+{
+  "id": "@dev/justcall-mcp",
+  "displayName": "JustCall",
+  "description": "Manage calls, SMS, contacts, numbers, and campaigns from your JustCall workspace. Track agent, account, and dialer performance with robust analytics. Automate workflows with webhooks and streamline outreach with quick updates and real-time insights.",
+  "createdAt": "2026-01-16T07:28:52.878Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dev/justcall-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "list_calls",
+      "description": "Lists all JustCall calls"
+    },
+    {
+      "name": "get_call",
+      "description": "Get a specific JustCall call by ID"
+    },
+    {
+      "name": "update_call",
+      "description": "Update a JustCall call"
+    },
+    {
+      "name": "get_call_journey",
+      "description": "Get call journey details"
+    },
+    {
+      "name": "get_voice_agent_data",
+      "description": "Get voice agent data"
+    },
+    {
+      "name": "list_users",
+      "description": "List all users/agents in the account"
+    },
+    {
+      "name": "get_user",
+      "description": "Get detailed information for a specific user/agent"
+    },
+    {
+      "name": "send_sms",
+      "description": "Send an SMS/text message to a contact"
+    },
+    {
+      "name": "list_sms",
+      "description": "Retrieve all SMS/text messages"
+    },
+    {
+      "name": "get_sms",
+      "description": "Get detailed information for a specific SMS/text message"
+    },
+    {
+      "name": "check_sms_reply",
+      "description": "Check for the most recent inbound SMS reply from a specific contact"
+    },
+    {
+      "name": "list_sms_tags",
+      "description": "Retrieve all SMS tags used for organizing text messages"
+    },
+    {
+      "name": "get_sms_tag",
+      "description": "Get detailed information for a specific SMS tag"
+    },
+    {
+      "name": "create_sms_tag",
+      "description": "Create a new tag for organizing SMS conversations"
+    },
+    {
+      "name": "delete_sms_tag",
+      "description": "Delete a specific SMS tag"
+    },
+    {
+      "name": "list_contacts",
+      "description": "Retrieve all contacts from the CRM"
+    },
+    {
+      "name": "create_contact",
+      "description": "Create a new contact in the CRM"
+    },
+    {
+      "name": "get_agent_analytics",
+      "description": "Retrieve agent analytics data for specified date range"
+    },
+    {
+      "name": "get_account_analytics",
+      "description": "Retrieve account analytics data for specified date range"
+    },
+    {
+      "name": "get_number_analytics",
+      "description": "Retrieve number analytics data for specified date range"
+    },
+    {
+      "name": "list_webhooks",
+      "description": "Retrieve all configured webhooks"
+    },
+    {
+      "name": "create_webhook",
+      "description": "Create a new webhook endpoint to receive real-time notifications"
+    },
+    {
+      "name": "list_numbers",
+      "description": "Retrieve all JustCall phone numbers"
+    },
+    {
+      "name": "get_number",
+      "description": "Retrieve detailed information for a specific JustCall phone number"
+    },
+    {
+      "name": "list_campaigns",
+      "description": "Retrieve all sales dialer campaigns"
+    },
+    {
+      "name": "get_campaign",
+      "description": "Retrieve detailed information for a specific sales dialer campaign"
+    },
+    {
+      "name": "create_campaign",
+      "description": "Create a new sales dialer campaign"
+    },
+    {
+      "name": "update_campaign",
+      "description": "Update campaign details including name, description, status, and assignments"
+    },
+    {
+      "name": "get_sales_dialer_analytics",
+      "description": "Retrieve comprehensive analytics data for sales dialer campaigns"
+    }
+  ]
+}

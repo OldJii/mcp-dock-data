@@ -1,0 +1,87 @@
+{
+  "id": "@ProfessionalWiki/mediawiki-mcp-server",
+  "displayName": "MediaWiki",
+  "description": "Enable Large Language Model clients to interact seamlessly with any MediaWiki wiki. Perform actions such as creating, updating, and searching wiki pages, as well as retrieving file and page history information. Securely connect using OAuth 2.0 tokens to manage wiki content efficiently.",
+  "createdAt": "2026-01-16T07:20:29.524Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ProfessionalWiki/mediawiki-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-page",
+      "description": "Returns a wiki page. Use metadata=true to retrieve the revision ID required by update-page. Set content=\"none\" to fetch only metadata without content."
+    },
+    {
+      "name": "get-page-history",
+      "description": "Returns information about the latest revisions to a wiki page, in segments of 20 revisions, starting with the latest revision. The response includes API routes for the next oldest, next newest, and latest revision segments."
+    },
+    {
+      "name": "search-page",
+      "description": "Search wiki page titles and contents for the provided search terms, and returns matching pages."
+    },
+    {
+      "name": "set-wiki",
+      "description": "Sets the wiki to use for the current session. You MUST call this tool when interacting with a new wiki."
+    },
+    {
+      "name": "add-wiki",
+      "description": "Adds a new wiki to the MCP resources from a URL."
+    },
+    {
+      "name": "remove-wiki",
+      "description": "Removes a wiki from the MCP resources."
+    },
+    {
+      "name": "update-page",
+      "description": "Updates a wiki page. Replaces the existing content of a page with the provided content"
+    },
+    {
+      "name": "get-file",
+      "description": "Returns information about a file, including links to download the file in thumbnail, preview, and original formats."
+    },
+    {
+      "name": "create-page",
+      "description": "Creates a wiki page with the provided content."
+    },
+    {
+      "name": "upload-file",
+      "description": "Uploads a file to the wiki from the local disk."
+    },
+    {
+      "name": "upload-file-from-url",
+      "description": "Uploads a file to the wiki from a web URL."
+    },
+    {
+      "name": "delete-page",
+      "description": "Deletes a wiki page."
+    },
+    {
+      "name": "get-revision",
+      "description": "Returns a revision of a wiki page."
+    },
+    {
+      "name": "undelete-page",
+      "description": "Undeletes a wiki page."
+    },
+    {
+      "name": "get-category-members",
+      "description": "Gets all members in the category. Returns only page IDs, namespaces, and titles."
+    },
+    {
+      "name": "search-page-by-prefix",
+      "description": "Performs a prefix search for page titles."
+    }
+  ]
+}

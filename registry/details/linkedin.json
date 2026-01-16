@@ -1,0 +1,33 @@
+{
+  "id": "linkedin",
+  "displayName": "Linkedin",
+  "description": "LinkedIn is a professional networking platform enabling job seekers, companies, and thought leaders to connect, share content, and discover business opportunities",
+  "createdAt": "2026-01-16T07:19:21.833Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/linkedin"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "LINKEDIN_CREATE_LINKED_IN_POST",
+      "description": "Creates a new post on LinkedIn for the authenticated user or an organization they manage; ensure the user has necessary permissions if posting for an organization."
+    },
+    {
+      "name": "LINKEDIN_DELETE_LINKED_IN_POST",
+      "description": "Deletes a specific LinkedIn post (share) by its unique `share_id`, which must correspond to an existing share."
+    },
+    {
+      "name": "LINKEDIN_GET_COMPANY_INFO",
+      "description": "Retrieves organizations where the authenticated user has specific roles (ACLs), to determine their management or content posting capabilities for LinkedIn company pages."
+    },
+    {
+      "name": "LINKEDIN_GET_MY_INFO",
+      "description": "Fetches the authenticated LinkedIn user's profile, notably including the 'author_id' required for attributing content such as posts or articles."
+    }
+  ]
+}

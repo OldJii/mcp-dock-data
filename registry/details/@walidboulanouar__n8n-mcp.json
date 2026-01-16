@@ -1,0 +1,12 @@
+{
+  "id": "@walidboulanouar/n8n-mcp",
+  "displayName": "n8n-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:11.577Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@walidboulanouar/n8n-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "@agonzalez/prueba-mcp-seeker",
+  "displayName": "MCP Seeker",
+  "description": "Search hotels by city, state, country, or geolocation and explore detailed property info. Check live availability, compare rates and room types, and review boards and promotions. Create ready-to-book links with preselected rooms, rates, supplements, and optional guest details.",
+  "createdAt": "2026-01-16T07:24:07.942Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@agonzalez/prueba-mcp-seeker"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_availability",
+      "description": "Search hotel room availability and pricing for specific dates and occupancy."
+    },
+    {
+      "name": "get_calendar",
+      "description": "Search hotel calendar availability and pricing.\n\n    **When to use**: When specific dates are not available, use this to suggest closest available dates or alternatives"
+    },
+    {
+      "name": "get_booking_additional_services",
+      "description": "Get additional services available for a booking selection.\n\n    **When to use**: After user selects a booking option from availability search, to get additional services available for that option."
+    },
+    {
+      "name": "get_booking_url",
+      "description": "\n    Generate booking url with preselected room, rate, meal plan, supplements. If no room_preselection is provided, it will generate a booking url showing available options.\n    "
+    },
+    {
+      "name": "search_hotels_by_area",
+      "description": "Search for hotels in a specific area"
+    },
+    {
+      "name": "search_hotels_by_geo_location",
+      "description": "Search for hotels near GPS coordinates within a specified radius, sorted by distance."
+    },
+    {
+      "name": "get_all_hotels",
+      "description": "Get paginated list of all hotels by the System"
+    },
+    {
+      "name": "get_hotel_by_name",
+      "description": "Retrieve hotels based on distance-search algorithms"
+    },
+    {
+      "name": "get_datetime",
+      "description": "Get current date and time"
+    }
+  ]
+}

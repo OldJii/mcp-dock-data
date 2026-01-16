@@ -1,0 +1,41 @@
+{
+  "id": "@llsrrll96/my-mcp-server",
+  "displayName": "Say Hello",
+  "description": "Generate friendly, personalized greetings by name. Toggle Pirate Mode for swashbuckling flair. Delight teammates, customers, or friends with quick, cheerful intros.",
+  "createdAt": "2026-01-16T07:25:35.974Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@llsrrll96/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone.222"
+    },
+    {
+      "name": "get_secret_data",
+      "description": ""
+    },
+    {
+      "name": "get_data",
+      "description": ""
+    }
+  ]
+}

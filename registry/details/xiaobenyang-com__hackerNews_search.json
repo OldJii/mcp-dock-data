@@ -1,0 +1,44 @@
+{
+  "id": "xiaobenyang-com/hackerNews_search",
+  "displayName": "hackerNews_search",
+  "description": "Discover and filter Hacker News content to find the most relevant stories, comments, and polls. Monitor the front page and latest posts to track trends and real-time activity. Dive into full comment threads and user profiles to research discussions and authors in depth.",
+  "createdAt": "2026-01-16T07:31:57.001Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/hackerNews_search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search-posts",
+      "description": "Search HackerNews for stories, comments, and other content by keyword.\n\t\nSupports:\n- Keyword search across titles, text, and authors\n- Tag filtering (story, comment, poll, show_hn, ask_hn, front_page, author_USERNAME)\n- Numeric filters for points, comments, and dates\n- Pagination with customizable results per page\n- Advanced filtering with OR logic and multiple conditions\n\nBasic Examples:\n- Search for AI stories: { \"query\": \"AI\", \"tags\": [\"story\"] }\n- Find popular posts: { \"query\": \"Python\", \"numericFilters\": [\"points>=100\"] }\n- Filter by author: { \"query\": \"startup\", \"tags\": [\"author_pg\"] }\n- Date range: { \"query\": \"startup\", \"numericFilters\": [\"created_at_i>1640000000\"] }\n\nAdvanced Filtering Examples:\n- High engagement posts: { \"query\": \"programming\", \"numericFilters\": [\"points>=100\", \"num_comments>=50\"] }\n- OR logic for tags: { \"query\": \"web\", \"tags\": [\"(story,poll)\"] } - returns stories OR polls\n- Author with filters: { \"query\": \"\", \"tags\": [\"author_pg\", \"story\"], \"numericFilters\": [\"points>=50\"] }\n- Multiple conditions: { \"query\": \"AI\", \"tags\": [\"story\"], \"numericFilters\": [\"points>=200\", \"num_comments>=100\"] }\n\nNumeric Filter Operators: < (less than), <= (less than or equal), = (equal), >= (greater than or equal), > (greater than)\nNumeric Filter Fields: points, num_comments, created_at_i (Unix timestamp)\n\nTag Syntax:\n- Single tag: [\"story\"] - only stories\n- Multiple tags (AND): [\"story\", \"show_hn\"] - stories that are also show_hn\n- OR logic: [\"(story,poll)\"] - stories OR polls\n- Author filter: [\"author_USERNAME\"] - posts by specific author\n\nReturns paginated results with hits, total count, and page information."
+    },
+    {
+      "name": "get-front-page",
+      "description": "Retrieve posts currently on the HackerNews front page.\n\nReturns stories sorted by HackerNews ranking algorithm. The front page typically contains the most popular and trending stories.\n\nSupports:\n- Pagination to view beyond the first page\n- Customizable results per page (default: 30)\n- All posts are tagged with 'front_page'\n\nExamples:\n- Get first page: { }\n- Get with custom page size: { \"hitsPerPage\": 50 }\n- Get second page: { \"page\": 1 }\n\nReturns the same structure as search results with hits, pagination info, and metadata."
+    },
+    {
+      "name": "get-latest-posts",
+      "description": "Retrieve the most recent HackerNews posts sorted by date.\n\nReturns posts in chronological order (newest first), including all types of content unless filtered.\n\nSupports:\n- Filter by content type using tags (story, comment, poll, show_hn, ask_hn, etc.)\n- Pagination to view older posts\n- Customizable results per page (default: 20)\n- Empty query to get all recent posts\n\nExamples:\n- Get latest stories: { \"tags\": [\"story\"] }\n- Get latest comments: { \"tags\": [\"comment\"] }\n- Get all recent activity: { }\n- Get with custom page size: { \"hitsPerPage\": 50 }\n\nUse this to monitor real-time HackerNews activity or find the newest content."
+    },
+    {
+      "name": "get-item",
+      "description": "Retrieve detailed information about a specific HackerNews item by ID.\n\nReturns complete item details including the full nested comment tree. Use this to:\n- View a story with all comments\n- Read a specific comment with its replies\n- Explore discussion threads in depth\n- Get complete metadata for any item\n\nFeatures:\n- Full nested comment tree (all levels)\n- Complete item metadata (title, url, text, points, author, etc.)\n- Works for stories, comments, polls, and poll options\n- Includes creation time and item type\n\nExamples:\n- Get story with comments: { \"itemId\": \"38456789\" }\n- Get specific comment: { \"itemId\": \"38456790\" }\n- Get poll: { \"itemId\": \"126809\" }\n\nNote: Large comment threads (>500 comments) may take 2-3 seconds to load due to nested fetching.\nReturns error if item doesn't exist or has been deleted."
+    },
+    {
+      "name": "get-user",
+      "description": "Retrieve public profile information for a HackerNews user.\n\nReturns user profile including karma, bio, and account creation date. Use this to:\n- Check user reputation (karma score)\n- Read user bio and about information\n- See when account was created\n- Verify user existence before searching their content\n\nFeatures:\n- Username (case-sensitive)\n- Karma score (total upvotes received)\n- About/bio text (may contain HTML)\n- Account creation date (Unix timestamp)\n\nExamples:\n- Get famous user: { \"username\": \"pg\" }\n- Check moderator: { \"username\": \"dang\" }\n- Verify author: { \"username\": \"tptacek\" }\n\nUsername validation:\n- Alphanumeric characters and underscores only\n- Case-sensitive\n- Must exist on HackerNews\n\nReturns error if user doesn't exist or username format is invalid."
+    }
+  ]
+}

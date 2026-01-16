@@ -1,0 +1,12 @@
+{
+  "id": "@petrsovadina/mcp-atlassian-new",
+  "displayName": "mcp-atlassian-new",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:01.391Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@petrsovadina/mcp-atlassian-new"
+  },
+  "connection": null,
+  "capabilities": []
+}

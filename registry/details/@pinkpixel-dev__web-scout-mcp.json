@@ -1,0 +1,32 @@
+{
+  "id": "@pinkpixel-dev/web-scout-mcp",
+  "displayName": "Web Scout",
+  "description": "Search the web and extract clean, readable text from webpages. Process multiple URLs at once to speed up research with reliable throttling and error handling. Quickly compile sources and summaries for briefs, reports, or competitive analysis.",
+  "createdAt": "2026-01-16T07:20:12.064Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pinkpixel-dev/web-scout-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "DuckDuckGoWebSearch",
+      "description": "Initiates a web search query using the DuckDuckGo search engine and returns a well-structured list of findings. Input the keywords, question, or topic you want to search for using DuckDuckGo as your query. Input the maximum number of search entries you'd like to receive using maxResults - defaults to 10 if not provided."
+    },
+    {
+      "name": "UrlContentExtractor",
+      "description": "Fetches and extracts content from a given webpage URL. Input the URL of the webpage you want to extract content from as a string using the url parameter. You can also input an array of URLs to fetch content from multiple pages at once."
+    }
+  ]
+}

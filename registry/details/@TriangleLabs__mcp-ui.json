@@ -1,0 +1,42 @@
+{
+  "id": "@TriangleLabs/mcp-ui",
+  "displayName": "UI Inspiration Search Server",
+  "description": "Search for high-resolution UI design inspirations from Dribbble by simply entering keywords. Quickly get quality web app design references tailored to your needs. Enhance your design workflow with fast, filtered image results powered by Serper API.",
+  "createdAt": "2026-01-16T07:23:47.945Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@TriangleLabs/mcp-ui"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "serperApiKey"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "serperApiKey": {
+          "type": "string",
+          "description": "Serper API key for image search"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_ui_inspiration",
+      "description": "Search for UI design inspiration from Dribbble. Just enter simple keywords like 'stock', 'plant care', 'dashboard', etc. The tool will automatically search for '{your-keyword} web app dribbble' to find the best UI designs."
+    }
+  ]
+}

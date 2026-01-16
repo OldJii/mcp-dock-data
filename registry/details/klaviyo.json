@@ -1,0 +1,817 @@
+{
+  "id": "klaviyo",
+  "displayName": "Klaviyo",
+  "description": "Klaviyo is a data-driven email and SMS marketing platform that allows e-commerce brands to deliver targeted messages, track conversions, and scale customer relationships",
+  "createdAt": "2026-01-16T07:19:58.583Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/klaviyo"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "KLAVIYO_ADD_PROFILE_TO_LIST",
+      "description": "Add profiles to a Klaviyo list by profile IDs or email addresses. This action subscribes profiles to a marketing list, which is ideal for giving marketing consent. You can add up to 1000 profiles per call using either their Klaviyo profile IDs or email addresses. Rate limits: 10/s burst, 150/m steady. Required scopes: `lists:write` and `profiles:write`. Preconditions: - Either profile_ids or emails must be provided (not both) - Maximum 1000 profiles per call - Email addresses must be valid format - The list must exist and be accessible"
+    },
+    {
+      "name": "KLAVIYO_ASSIGN_CAMPAIGN_MESSAGE_TEMPLATE",
+      "description": "Creates a non-reusable version of the template and assigns it to the message.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:write`"
+    },
+    {
+      "name": "KLAVIYO_BULK_CREATE_CLIENT_EVENTS",
+      "description": "Use the client-side endpoint with a public API key to track profile activity. It accepts up to 1000 events/request with rates of 10/s burst and 150/m steady. For server-side, use the bulk create event endpoint."
+    },
+    {
+      "name": "KLAVIYO_BULK_CREATE_EVENTS",
+      "description": "This API endpoint creates or updates profiles by batching up to 1,000 events, with a 5MB payload limit. Minimum required: a profile ID and metric name. It has rate limits of 10 events per second burst and 150 events per minute. Scope is `events:write`."
+    },
+    {
+      "name": "KLAVIYO_CREATE_BACK_IN_STOCK_SUBSCRIPTION",
+      "description": "Use the server-side endpoint to subscribe to restock alerts, following the Back in Stock API guide. For client-side, use the POST endpoint provided. Rate limits: 350/s burst and 3500/m steady. Required scopes: catalogs:write, profiles:write."
+    },
+    {
+      "name": "KLAVIYO_CREATE_CAMPAIGN",
+      "description": "Creates a campaign given a set of parameters, then returns it.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CAMPAIGN_CLONE",
+      "description": "Clones an existing campaign, returning a new campaign based on the original with a new ID and name.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CAMPAIGN_RECIPIENT_ESTIMATION_JOB",
+      "description": "Start an asynchronous task to estimate the number of recipients for a campaign. This action creates a background job that calculates how many profiles would receive the campaign based on its current audience settings. Use the job ID returned to track progress with the 'Get Campaign Recipient Estimation Job' action, and get the final count via 'Get Campaign Recipient Estimation' action. Rate limits: 10/s burst, 150/m steady. Required scope: `campaigns:write`. Preconditions: - Valid API key with campaigns:write scope - Campaign ID must exist and be accessible - Campaign must have audience settings configured"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CAMPAIGN_SEND_JOB",
+      "description": "Trigger a campaign to send asynchronously<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CATALOG_CATEGORY",
+      "description": "Create a new catalog category.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CATALOG_CATEGORY_RELATIONSHIPS_ITEMS",
+      "description": "Create a new item relationship for the given category ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CATALOG_ITEM",
+      "description": "Create a new catalog item.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CATALOG_ITEM_RELATIONSHIPS_CATEGORIES",
+      "description": "Create a new catalog category relationship for the given item ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CATALOG_VARIANT",
+      "description": "Create a new variant for a related catalog item.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CLIENT_BACK_IN_STOCK_SUBSCRIPTION",
+      "description": "Use the endpoint for client-side back in stock notifications with a public API key. For server-side, use POST /api/back-in-stock-subscriptions. Limits are 350 requests per second and 3500 per minute. Requires 'catalogs:write' and 'profiles:write' scopes."
+    },
+    {
+      "name": "KLAVIYO_CREATE_CLIENT_EVENT",
+      "description": "Create a client-side event in Klaviyo to track user interactions. This action creates events using Klaviyo's client-side API, which is designed for tracking user interactions from web browsers or mobile apps. It associates events with profiles and can update profile information at the same time. Rate limits: 350/s, 3500/m. Required scope: `events:write`. Preconditions: - At least one profile identifier (email, phone_number, external_id, or anonymous_id) must be provided - Metric name must be less than 128 characters - Email must be valid format if provided - Phone number must be in E.164 format if provided"
+    },
+    {
+      "name": "KLAVIYO_CREATE_CLIENT_SUBSCRIPTION",
+      "description": "Endpoint manages email/SMS opt-ins using consent and requires public API key for client use. Allows single-channel with details. Rate limit: 100/s burst, 700/m steady, under 'subscriptions:write'."
+    },
+    {
+      "name": "KLAVIYO_CREATE_COUPON",
+      "description": "Creates a new coupon.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `coupons:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_COUPON_CODE",
+      "description": "Synchronously creates a coupon code for the given coupon.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `coupon-codes:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_EVENT",
+      "description": "Create or update a profile event with minimum identifiers and metric name. Success means validation, not completion. Burst limit: 350/s, Steady: 3500/m. Scope required: `events:write`."
+    },
+    {
+      "name": "KLAVIYO_CREATE_LIST",
+      "description": "Create a new list.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m`<br>Daily: `100/d` **Scopes:** `lists:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_OR_UPDATE_CLIENT_PROFILE",
+      "description": "Update user profiles without tracking using a public client-side API; use a private server-side API for identifier changes. Burst rate is 350 requests/sec and 3500 requests/min with 'profiles:write' access."
+    },
+    {
+      "name": "KLAVIYO_CREATE_OR_UPDATE_CLIENT_PUSH_TOKEN",
+      "description": "This endpoint for mobile SDKs (iOS & Android) creates/updates push tokens using a public API key. Push notifications must be enabled. For migrating tokens use the server-side POST endpoint. Rate limits are 3/s burst, 150/m steady."
+    },
+    {
+      "name": "KLAVIYO_CREATE_OR_UPDATE_PROFILE",
+      "description": "Create or update a profile in Klaviyo with the given attributes. This action allows you to create a new profile or update an existing one if it already exists (based on email or other identifiers). Returns 201 for creation, 200 for update. Empty fields are cleared with `null`; omitted fields remain unchanged. Rate limits: 75/s burst, 700/m steady. Required scope: `profiles:write`. Preconditions: - At least one identifier (email, phone_number, external_id, or anonymous_id) must be provided - Email must be in valid format if provided - Phone number must be in E.164 format if provided"
+    },
+    {
+      "name": "KLAVIYO_CREATE_OR_UPDATE_PUSH_TOKEN",
+      "description": "Migrate or create push tokens with Klaviyo's endpoint, utilizing their mobile SDKs for iOS & Android. Rate limits: 75/s burst, 700/m steady. Requires profiles:write and push-tokens:write scopes."
+    },
+    {
+      "name": "KLAVIYO_CREATE_PROFILE",
+      "description": "Create a new profile.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `profiles:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_SEGMENT",
+      "description": "Create a segment.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m`<br>Daily: `100/d` **Scopes:** `segments:write`"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG",
+      "description": "Summary: Instructions on creating a tag within an account's designated tag group with a maximum of 500 tags, with optional tag group specification. Rate limits are 3/s burst and 60/min steady. Tag: #TagCreationLimitAndRate"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG_GROUP",
+      "description": "Create tag groups up to 50 per account, defaulting to non-exclusive unless specified. Related resources can have multiple non-exclusive tags but only one if exclusive. Rate limits: 3/s burst, 60/m steady. Scopes needed: tags:read, tags:write."
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG_RELATIONSHIPS_CAMPAIGNS",
+      "description": "Summary: Link a tag to campaigns, ensuring a limit of 100 tags per campaign. Campaign IDs should be sent via request body. Rate limit: 3/s, 60/m. Required scopes: campaigns:write, tags:write. Tag: #CampaignTaggingLimits"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG_RELATIONSHIPS_FLOWS",
+      "description": "Assign tags to flows using their IDs in the request body, ensuring a flow is not linked to over 100 tags. Rate limits are 3/s burst and 60/m steady. Required scopes: `flows:write` and `tags:write`. Tag: Flow-Tag Association Limits"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG_RELATIONSHIPS_LISTS",
+      "description": "Summary: A tag can be added to one or more lists, with a max of 100 tags per list. Use the request body to link tag and list IDs. Tag: #APIUsageLimits Scopes: lists:write, tags:write"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TAG_RELATIONSHIPS_SEGMENTS",
+      "description": "Summary: Set tag associations with segments using the request body, limited to one tag per segment and up to 100 tags per segment. Rate limits are three requests per second and sixty per minute. Tags: segments:write, tags:write"
+    },
+    {
+      "name": "KLAVIYO_CREATE_TEMPLATE",
+      "description": "Summary: Custom HTML templates can be created unless an account reaches 1,000 template limit. Use sparse fieldsets to request specific fields. Rate limits are 10 per second and 150 per minute. Requires 'templates:write' scope."
+    },
+    {
+      "name": "KLAVIYO_CREATE_TEMPLATE_CLONE",
+      "description": "Clone a template by its ID, but cloning fails if account has 1,000+ templates. API limit: 1,000 templates. Rate limits are 10 per second and 150 per minute. Requires `templates:write` scope."
+    },
+    {
+      "name": "KLAVIYO_CREATE_TEMPLATE_RENDER",
+      "description": "Render an email template with specific context and sparse fieldsets, then get HTML/plain text. Rate limit: 3/s burst, 60/m steady. Scope: templates:read."
+    },
+    {
+      "name": "KLAVIYO_CREATE_WEBHOOK",
+      "description": "Create a new Webhook<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CAMPAIGN",
+      "description": "Delete a campaign with the given campaign ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CATALOG_CATEGORY",
+      "description": "Delete a catalog category using the given category ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CATALOG_CATEGORY_RELATIONSHIPS_ITEMS",
+      "description": "Delete item relationships for the given category ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CATALOG_ITEM",
+      "description": "Delete a catalog item with the given item ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CATALOG_ITEM_RELATIONSHIPS_CATEGORIES",
+      "description": "Delete catalog category relationships for the given item ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_CATALOG_VARIANT",
+      "description": "Delete a catalog item variant with the given variant ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `catalogs:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_COUPON",
+      "description": "Delete the coupon with the given coupon ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `coupons:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_COUPON_CODE",
+      "description": "Deletes a coupon code specified by the given identifier synchronously. If a profile has been assigned to the coupon code, an exception will be raised<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `coupon-codes:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_FLOW",
+      "description": "Delete a flow with the given flow ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_LIST",
+      "description": "Delete a list with the given list ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `lists:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_SEGMENT",
+      "description": "Delete a segment with the given segment ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `segments:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG",
+      "description": "Delete the tag with the given tag ID. Any associations between the tag and other resources will also be removed.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read` `tags:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG_GROUP",
+      "description": "Delete a specified tag group and its contents; associated resource links will be removed. The default group is undeletable. Rate limits: 3/s burst, 60/m steady. Requires tags:read and tags:write permissions."
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG_RELATIONSHIPS_CAMPAIGNS",
+      "description": "Disconnect a tag from campaigns using the campaign ID(s) in the request body. Rate limits: 3 requests/second, 60 requests/minute. Required scopes: campaigns:write, tags:write."
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG_RELATIONSHIPS_FLOWS",
+      "description": "Remove a tag's association with one or more flows. Use the request body to pass in the ID(s) of the flows(s) whose association with the tag will be removed.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:write` `tags:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG_RELATIONSHIPS_LISTS",
+      "description": "Remove a tag's association with one or more lists. Use the request body to pass in the ID(s) of the list(s) whose association with the tag will be removed.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:write` `tags:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_TAG_RELATIONSHIPS_SEGMENTS",
+      "description": "Use the request body to de-associate a tag from specified segment IDs. Rate limits are 3 requests/sec and 60 requests/min. Required scopes are 'segments:write' and 'tags:write'."
+    },
+    {
+      "name": "KLAVIYO_DELETE_TEMPLATE",
+      "description": "Delete a template with the given template ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `templates:write`"
+    },
+    {
+      "name": "KLAVIYO_DELETE_WEBHOOK",
+      "description": "Delete a webhook with the given ID.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:write`"
+    },
+    {
+      "name": "KLAVIYO_GET_ACCOUNT",
+      "description": "Retrieve a single account object by its account ID. You can only request the account by which the private API key was generated.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `accounts:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_ACCOUNTS",
+      "description": "Use a private API key to fetch an associated account's details like contact info, timezone, and currency, as well as validate the key. Rate limit: 1 request/second, 15 requests/minute. Scope required: `accounts:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB",
+      "description": "Get a bulk profile import job with the given job ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `lists:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB_ERRORS",
+      "description": "Get import errors for the bulk profile import job with the given ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB_LISTS",
+      "description": "Get list for the bulk profile import job with the given ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `lists:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB_PROFILES",
+      "description": "Get profiles for the bulk profile import job with the given ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB_RELATIONSHIPS_LISTS",
+      "description": "Get list relationship for the bulk profile import job with the given ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `lists:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOB_RELATIONSHIPS_PROFILES",
+      "description": "Get profile relationships for the bulk profile import job with the given ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_BULK_PROFILE_IMPORT_JOBS",
+      "description": "Get all bulk profile import jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `lists:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN",
+      "description": "Retrieve a specific campaign by its ID from Klaviyo. This action fetches detailed information about a single campaign including its name, status, audience settings, send strategy, and optionally related messages and tags. Rate limits: 10/s burst, 150/m steady. Required scope: `campaigns:read`. Preconditions: - Valid API key with campaigns:read scope - Campaign ID must exist and be accessible"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_CAMPAIGN_MESSAGES",
+      "description": "Return all messages that belong to the given campaign.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_MESSAGE",
+      "description": "Returns a specific message based on a required id.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_MESSAGE_CAMPAIGN",
+      "description": "Return the related campaign<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_MESSAGE_RELATIONSHIPS_CAMPAIGN",
+      "description": "Returns the ID of the related campaign<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_MESSAGE_RELATIONSHIPS_TEMPLATE",
+      "description": "Returns the ID of the related template<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read` `templates:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_MESSAGE_TEMPLATE",
+      "description": "Return the related template<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read` `templates:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_RECIPIENT_ESTIMATION",
+      "description": "Get estimated recipients for a given campaign ID using `Create Campaign Recipient Estimation Job`. Rate limits are 10/s burst and 150/m steady. Required scope: `campaigns:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_RECIPIENT_ESTIMATION_JOB",
+      "description": "Retrieve the status of a recipient estimation job triggered with the `Create Campaign Recipient Estimation Job` endpoint.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_RELATIONSHIPS_CAMPAIGN_MESSAGES",
+      "description": "Returns the IDs of all messages associated with the given campaign.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_RELATIONSHIPS_TAGS",
+      "description": "Returns the IDs of all tags associated with the given campaign.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `campaigns:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGNS",
+      "description": "Retrieve campaigns from your Klaviyo account. This action allows you to fetch campaigns with optional filtering and sorting. Klaviyo requires specifying a channel (email or sms) to list campaigns. You can add additional filters for status, name, creation date, and other attributes. Results are paginated with a default of 10 campaigns per page. Rate limits: 10/s burst, 150/m steady. Required scope: `campaigns:read`. Preconditions: - Valid API key with campaigns:read scope - Channel must be specified (email or sms) - Additional filter syntax must be valid if provided"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_SEND_JOB",
+      "description": "Get a campaign send job<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CAMPAIGN_TAGS",
+      "description": "Return all tags that belong to the given campaign.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `campaigns:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_CATEGORIES",
+      "description": "Retrieve up to 100 account catalog categories, sortable by creation date. Only `$custom` integration and `$default` catalog types supported. Rate limits are 350/s and 3500/m. Requires `catalogs:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_CATEGORY",
+      "description": "Get a catalog category with the given category ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_CATEGORY_ITEMS",
+      "description": "Retrieve up to 100 sorted items per request from a category using the category ID. Sort by 'created' field. Rate limits are 350/s burst and 3500/m steady. Requires 'catalogs:read' scope."
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_CATEGORY_RELATIONSHIPS_ITEMS",
+      "description": "Get all items in the given category ID. Returns a maximum of 100 items per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_ITEM",
+      "description": "Get a specific catalog item with the given item ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_ITEM_CATEGORIES",
+      "description": "Retrieve the catalog categories for an item by ID, sorted by 'created' date, with a 100-category maximum per request. Rate limits: 350/s burst, 3500/m steady. Requires 'catalogs:read' scope."
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_ITEM_RELATIONSHIPS_CATEGORIES",
+      "description": "Get all catalog categories that a particular item is in. Returns a maximum of 100 categories per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_ITEMS",
+      "description": "Retrieve up to 100 sorted catalog items per account, with `$custom` integration and `$default` type. Rate limits: 350/s burst, 3500/m steady. Scope required: `catalogs:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_ITEM_VARIANTS",
+      "description": "Retrieve up to 100 variants per request for a specific item ID, sortable by creation date. Rate limits are 350/s burst and 3500/m steady. Requires 'catalogs:read' scope."
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_VARIANT",
+      "description": "Get a catalog item variant with the given variant ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CATALOG_VARIANTS",
+      "description": "Retrieve up to 100 account variants per request, sortable by creation date. Supports only `$custom` integration and `$default` catalog types. Rate limits are 350/s burst and 3500/m steady. Requires `catalogs:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON",
+      "description": "Get a specific coupon with the given coupon ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupons:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODE",
+      "description": "Returns a Coupon Code specified by the given identifier.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `coupon-codes:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODE_BULK_CREATE_JOB",
+      "description": "Get a coupon code bulk create job with the given job ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupon-codes:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODE_BULK_CREATE_JOBS",
+      "description": "Get all coupon code bulk create jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupon-codes:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODE_RELATIONSHIPS_COUPON",
+      "description": "Gets a list of coupon code relationships associated with the given coupon id<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupon-codes:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODES",
+      "description": "Obtains coupon codes using necessary coupon or profile filters. Rate limits: 350/s, 3500/m. Requires 'coupon-codes:read' scope."
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_CODES_FOR_COUPON",
+      "description": "Gets a list of coupon codes associated with the given coupon id<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupon-codes:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_FOR_COUPON_CODE",
+      "description": "Get the coupon associated with a given coupon code ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupons:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPON_RELATIONSHIPS_COUPON_CODES",
+      "description": "Gets the coupon relationship associated with the given coupon code id<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupons:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_COUPONS",
+      "description": "Get all coupons in an account. To learn more, see our [Coupons API guide](https://developers.klaviyo.com/en/docs/use_klaviyos_coupons_api).<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupons:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_CATEGORIES_JOB",
+      "description": "Get a catalog category bulk create job with the given job ID. An `include` parameter can be provided to get the following related resource data: `categories`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_CATEGORIES_JOBS",
+      "description": "Get all catalog category bulk create jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_ITEMS_JOB",
+      "description": "Get a catalog item bulk create job with the given job ID. An `include` parameter can be provided to get the following related resource data: `items`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_ITEMS_JOBS",
+      "description": "Get all catalog item bulk create jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_VARIANTS_JOB",
+      "description": "Get a catalog variant bulk create job with the given job ID. An `include` parameter can be provided to get the following related resource data: `variants`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_CREATE_VARIANTS_JOBS",
+      "description": "Get all catalog variant bulk create jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_CATEGORIES_JOB",
+      "description": "Get a catalog category bulk delete job with the given job ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_CATEGORIES_JOBS",
+      "description": "Get all catalog category bulk delete jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_ITEMS_JOB",
+      "description": "Get a catalog item bulk delete job with the given job ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_ITEMS_JOBS",
+      "description": "Get all catalog item bulk delete jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_VARIANTS_JOB",
+      "description": "Get a catalog variant bulk delete job with the given job ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_DELETE_VARIANTS_JOBS",
+      "description": "Get all catalog variant bulk delete jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENT",
+      "description": "Get an event with the given event ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `events:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENT_METRIC",
+      "description": "Get the metric for an event with the given event ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `events:read` `metrics:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENT_PROFILE",
+      "description": "Get the profile associated with an event with the given event ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `events:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENT_RELATIONSHIPS_METRIC",
+      "description": "Get a list of related Metrics for an Event<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `events:read` `metrics:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENT_RELATIONSHIPS_PROFILE",
+      "description": "Get profile [relationships](https://developers.klaviyo.com/en/reference/api_overview#relationships) for an event with the given event ID.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `events:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_EVENTS",
+      "description": "Get all events in an account Requests can be sorted by the following fields: `datetime`, `timestamp` Returns a maximum of 200 events per page.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `events:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW",
+      "description": "Get a flow with the given flow ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_ACTION",
+      "description": "Get a flow action from a flow with the given flow action ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_ACTION_FOR_MESSAGE",
+      "description": "Get the flow action for a flow message with the given message ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_ACTION_MESSAGES",
+      "description": "Retrieve up to 50 flow messages per request by action ID, sortable by various fields, with ascending/descending options, and paginated using `page[size]` and `page[number]`. Rate limits: 3/s burst, 60/m steady. Scope required: `flows:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_ACTION_RELATIONSHIPS_FLOW",
+      "description": "Get the flow associated with the given action ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_ACTION_RELATIONSHIPS_MESSAGES",
+      "description": "Retrieves up to 50 flow message relationships per request for a specified flow action ID, with cursor pagination. Rate limits: 3/s burst, 60/min steady. Requires `flows:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_FLOW_ACTIONS",
+      "description": "Get all flow actions associated with the given flow ID. Returns a maximum of 50 flows per request, which can be paginated with cursor-based pagination.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_FOR_FLOW_ACTION",
+      "description": "Get the flow associated with the given action ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_MESSAGE",
+      "description": "Get the flow message of a flow with the given message ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_MESSAGE_RELATIONSHIPS_ACTION",
+      "description": "Get the [relationship](https://developers.klaviyo.com/en/reference/api_overview#relationships) for a flow message's flow action, given the flow ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_MESSAGE_RELATIONSHIPS_TEMPLATE",
+      "description": "Returns the ID of the related template<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `templates:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_MESSAGE_TEMPLATE",
+      "description": "Return the related template<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `templates:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_RELATIONSHIPS_FLOW_ACTIONS",
+      "description": "Retrieve all flow action relationships for a specific flow ID, sortable by `id`, `status`, `created`, `updated`. Refine with filters, max 50 per page, paginated by `page[size]` and `page[number]`. Rate limits: Burst 3/s, Steady 60/m. Scope: `flows:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_RELATIONSHIPS_TAGS",
+      "description": "Return the tag IDs of all tags associated with the given flow.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOWS",
+      "description": "Get all flows in an account. Returns a maximum of 50 flows per request, which can be paginated with cursor-based pagination.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FLOW_TAGS",
+      "description": "Return all tags associated with the given flow ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FORM",
+      "description": "Get the form with the given ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FORM_FOR_FORM_VERSION",
+      "description": "Get the form associated with the given form version.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FORM_ID_FOR_FORM_VERSION",
+      "description": "Get the ID of the form associated with the given form version.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FORMS",
+      "description": "Get all forms in an account.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_FORM_VERSION",
+      "description": "Get the form version with the given ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_IMAGE",
+      "description": "Get the image with the given image ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `images:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_IMAGES",
+      "description": "Get all images in an account.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `images:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_LIST",
+      "description": "API allows 75 req/sec and 700 req/min, but with 'profile_count' param, it's 1 req/sec and 15 req/min. 'lists:read' scope needed. See developer guide for details."
+    },
+    {
+      "name": "KLAVIYO_GET_LIST_PROFILES",
+      "description": "Retrieve profiles in a list by ID, filterable by email/phone/push token/join date, sortable by join date. Regular rate limit: 75/s, 700/m; with predictive analytics: 10/s, 150/m. Details at Klaviyo guide. Scopes required: lists:read, profiles:read."
+    },
+    {
+      "name": "KLAVIYO_GET_LIST_RELATIONSHIPS_PROFILES",
+      "description": "Get profile membership [relationships](https://developers.klaviyo.com/en/reference/api_overview#relationships) for a list with the given list ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `lists:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_LIST_RELATIONSHIPS_TAGS",
+      "description": "Returns the tag IDs of all tags associated with the given list.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_LISTS",
+      "description": "Retrieve marketing lists from your Klaviyo account. This action allows you to fetch lists with optional filtering and sorting. You can filter by name, creation date, and other attributes. Results are paginated with a default of 10 lists per page. Rate limits: 75/s burst, 700/m steady. Required scope: `lists:read`. Preconditions: - Valid API key with lists:read scope - Filter syntax must be valid if provided"
+    },
+    {
+      "name": "KLAVIYO_GET_LIST_TAGS",
+      "description": "Return all tags associated with the given list ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_METRIC",
+      "description": "Get a metric with the given metric ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `metrics:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_METRICS",
+      "description": "Get all metrics in an account. Requests can be filtered by the following fields: integration `name`, integration `category` Returns a maximum of 200 results per page.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `metrics:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILE",
+      "description": "Get the profile with the given profile ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILE_LISTS",
+      "description": "Get list memberships for a profile with the given profile ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILE_RELATIONSHIPS_LISTS",
+      "description": "Get list memberships for a profile with the given profile ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:read` `profiles:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILE_RELATIONSHIPS_SEGMENTS",
+      "description": "Get segment membership relationships for a profile with the given profile ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `profiles:read` `segments:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILES",
+      "description": "Retrieve profiles from your Klaviyo account. This action allows you to fetch profiles with optional filtering and sorting. You can filter by email, external_id, creation date, and other attributes. Results are paginated with a configurable page size. Rate limits: 75/s burst, 700/m steady (lower with predictive_analytics). Required scope: `profiles:read`. Preconditions: - Valid API key with profiles:read scope - Filter syntax must be valid if provided - Page size must be between 1 and 100"
+    },
+    {
+      "name": "KLAVIYO_GET_PROFILE_SEGMENTS",
+      "description": "Get segment memberships for a profile with the given profile ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `profiles:read` `segments:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENT",
+      "description": "Fetch a segment by ID with default rates of 75/s and 700/m, or with `additional-fields` at 1/s and 15/m. For details, visit the provided guide. Required scope: `segments:read`."
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENT_PROFILES",
+      "description": "Retrieve profiles in a segment by ID, filtering by email, phone, token, or join date, and sorting by join date. Rate limit: 75/s burst, 700/m steady. Requires profiles:read and segments:read scopes."
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENT_RELATIONSHIPS_PROFILES",
+      "description": "Get all profile membership [relationships](https://developers.klaviyo.com/en/reference/api_overview#relationships) for the given segment ID.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `profiles:read` `segments:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENT_RELATIONSHIPS_TAGS",
+      "description": "If `related_resource` is `tags`, returns the tag IDs of all tags associated with the given segment ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `segments:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENTS",
+      "description": "Fetch segments from an account with filters like `name`, `created`, and `updated`. Max 10 results/page. Rate limits are 75/s burst, 700/m steady. Requires `segments:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_SEGMENT_TAGS",
+      "description": "Return all tags associated with the given segment ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `segments:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG",
+      "description": "Retrieve the tag with the given tag ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_GROUP",
+      "description": "Retrieve the tag group with the given tag group ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_GROUP_RELATIONSHIPS_TAGS",
+      "description": "Returns the tag IDs of all tags inside the given tag group.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_GROUPS",
+      "description": "Retrieve up to 25 tag groups per account, sortable/filterable by specific attributes. Default group included. Supports cursor pagination and adheres to rate limits of 3 requests per second and 60 per minute. Requires `tags:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_GROUP_TAGS",
+      "description": "Return the tags for a given tag group ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_RELATIONSHIPS_CAMPAIGNS",
+      "description": "Returns the IDs of all campaigns associated with the given tag.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `campaigns:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_RELATIONSHIPS_FLOWS",
+      "description": "Returns the IDs of all flows associated with the given tag.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `flows:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_RELATIONSHIPS_LISTS",
+      "description": "Returns the IDs of all lists associated with the given tag.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `lists:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_RELATIONSHIPS_SEGMENTS",
+      "description": "Returns the IDs of all segments associated with the given tag.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `segments:read` `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_RELATIONSHIPS_TAG_GROUP",
+      "description": "Returns the id of the tag group related to the given tag.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TAGS",
+      "description": "Retrieve up to 50 account tags at once, filterable/sortable by name or id, with cursor pagination. Rate limits: 3/s burst, 60/m steady. Requires `tags:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_TAG_TAG_GROUP",
+      "description": "Returns the tag group resource for a given tag ID.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `tags:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TEMPLATE",
+      "description": "Get a template with the given template ID.<br><br>*Rate limits*:<br>Burst: `10/s`<br>Steady: `150/m` **Scopes:** `templates:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_TEMPLATES",
+      "description": "Retrieve account templates with sorting options (`id`, `name`, `created`, `updated`). Limit of 10 results per page, rate limits at 10/s burst and 150/m steady. Requires `templates:read` scope."
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_CATEGORIES_JOB",
+      "description": "Get a catalog category bulk update job with the given job ID. An `include` parameter can be provided to get the following related resource data: `categories`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_CATEGORIES_JOBS",
+      "description": "Get all catalog category bulk update jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_ITEMS_JOB",
+      "description": "Get a catalog item bulk update job with the given job ID. An `include` parameter can be provided to get the following related resource data: `items`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_ITEMS_JOBS",
+      "description": "Get all catalog item bulk update jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_VARIANTS_JOB",
+      "description": "Get a catalog variate bulk update job with the given job ID. An `include` parameter can be provided to get the following related resource data: `variants`.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_UPDATE_VARIANTS_JOBS",
+      "description": "Get all catalog variant bulk update jobs. Returns a maximum of 100 jobs per request.<br><br>*Rate limits*:<br>Burst: `350/s`<br>Steady: `3500/m` **Scopes:** `catalogs:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_VERSION_IDS_FOR_FORM",
+      "description": "Get the IDs of the form versions for the given form.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_VERSIONS_FOR_FORM",
+      "description": "Get the form versions for the given form.<br><br>*Rate limits*:<br>Burst: `3/s`<br>Steady: `60/m` **Scopes:** `forms:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_WEBHOOK",
+      "description": "Get the webhook with the given ID.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_WEBHOOKS",
+      "description": "Get all webhooks in an account.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_WEBHOOK_TOPIC",
+      "description": "Get the webhook topic with the given ID.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:read`"
+    },
+    {
+      "name": "KLAVIYO_GET_WEBHOOK_TOPICS",
+      "description": "Get all webhook topics in a Klaviyo account.<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `15/m` **Scopes:** `webhooks:read`"
+    },
+    {
+      "name": "KLAVIYO_MERGE_PROFILES",
+      "description": "Queue a task to merge one source profile into a destination profile using their IDs. Deletes the source afterwards. Visit Help Center for details. Rate limits: 10/s burst, 150/m steady. Needs `profiles:write` scope."
+    },
+    {
+      "name": "KLAVIYO_QUERY_CAMPAIGN_VALUES",
+      "description": "Returns the requested campaign analytics values data<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `2/m`<br>Daily: `225/d` **Scopes:** `campaigns:read`"
+    },
+    {
+      "name": "KLAVIYO_QUERY_FLOW_SERIES",
+      "description": "Returns the requested flow analytics series data<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `2/m`<br>Daily: `225/d` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_QUERY_FLOW_VALUES",
+      "description": "Returns the requested flow analytics values data<br><br>*Rate limits*:<br>Burst: `1/s`<br>Steady: `2/m`<br>Daily: `225/d` **Scopes:** `flows:read`"
+    },
+    {
+      "name": "KLAVIYO_QUERY_METRIC_AGGREGATES",
+      "description": "The Klaviyo endpoint fetches metric events, handling JSON requests for custom data queries, sorting, and filtering; offers grouping and time-based filters; requires adherence to rate limits (3 requests per second, 60 per minute) under 'metrics:read'."
+    },
+    {
+      "name": "KLAVIYO_REMOVE_PROFILE_FROM_LIST",
+      "description": "Remove profiles from a Klaviyo list by profile IDs or email addresses. This action removes profiles from a marketing list without affecting their overall consent status. Use the Unsubscribe Profiles action for complete unsubscribing. You can remove up to 1000 profiles per call. Rate limits: 10/s burst, 150/m steady. Required scopes: `lists:write` and `profiles:write`. Preconditions: - Either profile_ids or emails must be provided (not both) - Maximum 1000 profiles per call - Email addresses must be valid format - The list must exist and be accessible"
+    },
+    {
+      "name": "KLAVIYO_REQUEST_PROFILE_DELETION",
+      "description": "To delete a profile, use only one identifier: email, phone number, or ID. Requests are asynchronous and can be tracked. Ensure legal compliance; refer to docs. Rate limits: 3 per second, 60 per minute."
+    },
+    {
+      "name": "KLAVIYO_SPAWN_BULK_PROFILE_IMPORT_JOB",
+      "description": "Initiate a job to create/update a batch of profiles, up to 10,000 with a max size of 5MB per request. Rate limits: 10/s burst, 150/m steady. Requires `lists:write` and `profiles:write` scopes. More info in the Bulk Profile Import API guide."
+    },
+    {
+      "name": "KLAVIYO_SPAWN_COUPON_CODE_BULK_CREATE_JOB",
+      "description": "Create a coupon-code-bulk-create-job to bulk create a list of coupon codes. Max number of jobs queued at once we allow for is 100.<br><br>*Rate limits*:<br>Burst: `75/s`<br>Steady: `700/m` **Scopes:** `coupon-codes:write`"
+    },
+    {
+      "name": "KLAVIYO_SPAWN_CREATE_CATEGORIES_JOB",
+      "description": "Create bulk job for up to 100 catalog categories with a 5MB size limit and a max of 500 concurrent jobs. Rate limits: 75/s burst, 700/m steady. Requires 'catalogs:write' scope."
+    },
+    {
+      "name": "KLAVIYO_SPAWN_CREATE_ITEMS_JOB",
+      "description": "Create batches of up to 100 catalog items with a 5MB size limit using the bulk job, which allows 500 concurrent jobs. Rate limits are 75/s burst and 700/m steady. Requires `catalogs:write` scope."
+    },
+    {
+      "name": "KLAVIYO_SPAWN_CREATE_VARIANTS_JOB",
+      "description": "Initiate a job to bulk create up to 100 catalog variants, with a 5MB payload size limit. A max of 500 jobs can run concurrently. Rate limits are 75/s burst and 700/m steady. Requires 'catalogs:write' scope."
+    },
+    {
+      "name": "KLAVIYO_SPAWN_DELETE_CATEGORIES_JOB",
+      "description": "Delete multiple catalog categories in bulk, with a limit of 100 per request and a 5MB payload size. A maximum of 500 concurrent jobs permitted. Rate limits are 75/s burst and 700/min steady. Requires `catalogs:write` scope."
+    }
+  ]
+}

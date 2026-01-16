@@ -1,0 +1,12 @@
+{
+  "id": "@lattmamb/mcp-use",
+  "displayName": "mcp-use",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:36.935Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lattmamb/mcp-use"
+  },
+  "connection": null,
+  "capabilities": []
+}

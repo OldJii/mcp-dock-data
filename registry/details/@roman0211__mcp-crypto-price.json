@@ -1,0 +1,38 @@
+{
+  "id": "@roman0211/mcp-crypto-price",
+  "displayName": "Crypto Price & Market Analysis 123",
+  "description": "Provide real-time cryptocurrency data and market analysis. Access current prices, historical trends, and detailed market insights through an easy-to-use interface.",
+  "createdAt": "2026-01-16T07:24:54.551Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@roman0211/mcp-crypto-price"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "coincapApiKey": {
+          "type": "string",
+          "description": "Optional API key for CoinCap to increase rate limits."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-crypto-price",
+      "description": "Get current price and 24h stats for a cryptocurrency"
+    },
+    {
+      "name": "get-market-analysis",
+      "description": "Get detailed market analysis including top exchanges and volume distribution"
+    },
+    {
+      "name": "get-historical-analysis",
+      "description": "Get historical price analysis with customizable timeframe"
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "id": "@afarhadi99/wordpress-mcp-full",
+  "displayName": "WordPress & WooCommerce API Server",
+  "description": "Expose WordPress and WooCommerce REST API tools to enable seamless integration and interaction with WordPress sites. Facilitate automated content management and e-commerce operations through standardized tool calls. Enhance your applications by leveraging WordPress data and functionality programmatically.",
+  "createdAt": "2026-01-16T07:29:13.929Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@afarhadi99/wordpress-mcp-full"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "wordpressUrl",
+        "username",
+        "applicationPassword"
+      ],
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "Your WordPress username"
+        },
+        "wordpressUrl": {
+          "type": "string",
+          "description": "Your WordPress site URL (e.g., https://yourdomain.com)"
+        },
+        "applicationPassword": {
+          "type": "string",
+          "description": "WordPress application password (not regular password)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "wp_get_posts",
+      "description": "Get WordPress posts with optional filtering parameters"
+    },
+    {
+      "name": "wp_get_post",
+      "description": "Get a specific WordPress post by ID"
+    },
+    {
+      "name": "wp_create_post",
+      "description": "Create a new WordPress post"
+    },
+    {
+      "name": "wp_update_post",
+      "description": "Update an existing WordPress post"
+    },
+    {
+      "name": "wp_delete_post",
+      "description": "Delete a WordPress post"
+    },
+    {
+      "name": "wp_get_pages",
+      "description": "Get WordPress pages with optional filtering parameters"
+    },
+    {
+      "name": "wp_get_page",
+      "description": "Get a specific WordPress page by ID"
+    },
+    {
+      "name": "wp_create_page",
+      "description": "Create a new WordPress page"
+    },
+    {
+      "name": "wp_update_page",
+      "description": "Update an existing WordPress page"
+    },
+    {
+      "name": "wp_delete_page",
+      "description": "Delete a WordPress page"
+    },
+    {
+      "name": "wp_get_users",
+      "description": "Get WordPress users with optional filtering parameters"
+    },
+    {
+      "name": "wp_get_user",
+      "description": "Get a specific WordPress user by ID"
+    },
+    {
+      "name": "wp_create_user",
+      "description": "Create a new WordPress user"
+    },
+    {
+      "name": "wp_update_user",
+      "description": "Update an existing WordPress user"
+    },
+    {
+      "name": "wp_delete_user",
+      "description": "Delete a WordPress user"
+    },
+    {
+      "name": "wp_get_categories",
+      "description": "Get WordPress categories"
+    },
+    {
+      "name": "wp_get_category",
+      "description": "Get a specific WordPress category by ID"
+    },
+    {
+      "name": "wp_create_category",
+      "description": "Create a new WordPress category"
+    },
+    {
+      "name": "wp_update_category",
+      "description": "Update an existing WordPress category"
+    },
+    {
+      "name": "wp_delete_category",
+      "description": "Delete a WordPress category"
+    },
+    {
+      "name": "wp_get_tags",
+      "description": "Get WordPress tags"
+    },
+    {
+      "name": "wp_get_tag",
+      "description": "Get a specific WordPress tag by ID"
+    },
+    {
+      "name": "wp_create_tag",
+      "description": "Create a new WordPress tag"
+    },
+    {
+      "name": "wp_update_tag",
+      "description": "Update an existing WordPress tag"
+    },
+    {
+      "name": "wp_delete_tag",
+      "description": "Delete a WordPress tag"
+    },
+    {
+      "name": "wp_get_comments",
+      "description": "Get WordPress comments"
+    },
+    {
+      "name": "wp_get_comment",
+      "description": "Get a specific WordPress comment by ID"
+    },
+    {
+      "name": "wp_create_comment",
+      "description": "Create a new WordPress comment"
+    },
+    {
+      "name": "wp_update_comment",
+      "description": "Update an existing WordPress comment"
+    },
+    {
+      "name": "wp_delete_comment",
+      "description": "Delete a WordPress comment"
+    },
+    {
+      "name": "wp_get_media",
+      "description": "Get WordPress media items"
+    },
+    {
+      "name": "wp_get_media_item",
+      "description": "Get a specific WordPress media item by ID"
+    },
+    {
+      "name": "wp_update_media_item",
+      "description": "Update an existing WordPress media item"
+    },
+    {
+      "name": "wp_delete_media_item",
+      "description": "Delete a WordPress media item"
+    },
+    {
+      "name": "wp_upload_media",
+      "description": "Upload a file to WordPress media library"
+    },
+    {
+      "name": "wp_upload_media_from_url",
+      "description": "Download an image from URL and upload it to WordPress media library"
+    },
+    {
+      "name": "wp_get_menus",
+      "description": "Get WordPress menus"
+    },
+    {
+      "name": "wp_get_menu",
+      "description": "Get a specific WordPress menu by ID"
+    },
+    {
+      "name": "wp_get_settings",
+      "description": "Get WordPress settings"
+    },
+    {
+      "name": "wp_update_settings",
+      "description": "Update WordPress settings"
+    },
+    {
+      "name": "wp_search",
+      "description": "Search WordPress content"
+    },
+    {
+      "name": "wc_get_products",
+      "description": "Get WooCommerce products with optional filtering parameters"
+    },
+    {
+      "name": "wc_get_product",
+      "description": "Get a specific WooCommerce product by ID"
+    },
+    {
+      "name": "wc_create_product",
+      "description": "Create a new WooCommerce product"
+    },
+    {
+      "name": "wc_update_product",
+      "description": "Update an existing WooCommerce product"
+    },
+    {
+      "name": "wc_delete_product",
+      "description": "Delete a WooCommerce product"
+    },
+    {
+      "name": "wc_batch_update_products",
+      "description": "Batch update WooCommerce products"
+    },
+    {
+      "name": "wc_get_product_variations",
+      "description": "Get variations for a variable WooCommerce product"
+    },
+    {
+      "name": "wc_get_product_variation",
+      "description": "Get a specific product variation"
+    },
+    {
+      "name": "wc_create_product_variation",
+      "description": "Create a new product variation"
+    },
+    {
+      "name": "wc_update_product_variation",
+      "description": "Update a product variation"
+    },
+    {
+      "name": "wc_delete_product_variation",
+      "description": "Delete a product variation"
+    },
+    {
+      "name": "wc_get_product_categories",
+      "description": "Get WooCommerce product categories"
+    },
+    {
+      "name": "wc_get_product_category",
+      "description": "Get a specific WooCommerce product category by ID"
+    },
+    {
+      "name": "wc_create_product_category",
+      "description": "Create a new WooCommerce product category"
+    },
+    {
+      "name": "wc_update_product_category",
+      "description": "Update an existing WooCommerce product category"
+    },
+    {
+      "name": "wc_delete_product_category",
+      "description": "Delete a WooCommerce product category"
+    },
+    {
+      "name": "wc_get_product_tags",
+      "description": "Get WooCommerce product tags"
+    },
+    {
+      "name": "wc_get_product_tag",
+      "description": "Get a specific WooCommerce product tag by ID"
+    },
+    {
+      "name": "wc_create_product_tag",
+      "description": "Create a new WooCommerce product tag"
+    },
+    {
+      "name": "wc_update_product_tag",
+      "description": "Update an existing WooCommerce product tag"
+    },
+    {
+      "name": "wc_delete_product_tag",
+      "description": "Delete a WooCommerce product tag"
+    },
+    {
+      "name": "wc_get_orders",
+      "description": "Get WooCommerce orders with optional filtering parameters"
+    },
+    {
+      "name": "wc_get_order",
+      "description": "Get a specific WooCommerce order by ID"
+    },
+    {
+      "name": "wc_create_order",
+      "description": "Create a new WooCommerce order"
+    },
+    {
+      "name": "wc_update_order",
+      "description": "Update an existing WooCommerce order"
+    },
+    {
+      "name": "wc_delete_order",
+      "description": "Delete a WooCommerce order"
+    },
+    {
+      "name": "wc_batch_update_orders",
+      "description": "Batch update WooCommerce orders"
+    },
+    {
+      "name": "wc_get_order_notes",
+      "description": "Get notes for a WooCommerce order"
+    },
+    {
+      "name": "wc_get_order_note",
+      "description": "Get a specific order note"
+    },
+    {
+      "name": "wc_create_order_note",
+      "description": "Create a new order note"
+    },
+    {
+      "name": "wc_delete_order_note",
+      "description": "Delete an order note"
+    },
+    {
+      "name": "wc_get_customers",
+      "description": "Get WooCommerce customers with optional filtering parameters"
+    },
+    {
+      "name": "wc_get_customer",
+      "description": "Get a specific WooCommerce customer by ID"
+    },
+    {
+      "name": "wc_create_customer",
+      "description": "Create a new WooCommerce customer"
+    },
+    {
+      "name": "wc_update_customer",
+      "description": "Update an existing WooCommerce customer"
+    },
+    {
+      "name": "wc_delete_customer",
+      "description": "Delete a WooCommerce customer"
+    },
+    {
+      "name": "wc_batch_update_customers",
+      "description": "Batch update WooCommerce customers"
+    },
+    {
+      "name": "wc_get_coupons",
+      "description": "Get WooCommerce coupons with optional filtering parameters"
+    },
+    {
+      "name": "wc_get_coupon",
+      "description": "Get a specific WooCommerce coupon by ID"
+    },
+    {
+      "name": "wc_create_coupon",
+      "description": "Create a new WooCommerce coupon"
+    },
+    {
+      "name": "wc_update_coupon",
+      "description": "Update an existing WooCommerce coupon"
+    },
+    {
+      "name": "wc_delete_coupon",
+      "description": "Delete a WooCommerce coupon"
+    },
+    {
+      "name": "wc_batch_update_coupons",
+      "description": "Batch update WooCommerce coupons"
+    },
+    {
+      "name": "wc_get_sales_report",
+      "description": "Get WooCommerce sales report"
+    },
+    {
+      "name": "wc_get_top_sellers_report",
+      "description": "Get WooCommerce top sellers report"
+    },
+    {
+      "name": "wc_get_coupons_report",
+      "description": "Get WooCommerce coupons totals report"
+    },
+    {
+      "name": "wc_get_customers_report",
+      "description": "Get WooCommerce customers totals report"
+    },
+    {
+      "name": "wc_get_orders_report",
+      "description": "Get WooCommerce orders totals report"
+    },
+    {
+      "name": "wc_get_products_report",
+      "description": "Get WooCommerce products totals report"
+    },
+    {
+      "name": "wc_get_reviews_report",
+      "description": "Get WooCommerce reviews totals report"
+    },
+    {
+      "name": "wc_get_product_reviews",
+      "description": "Get WooCommerce product reviews"
+    },
+    {
+      "name": "wc_get_product_review",
+      "description": "Get a specific WooCommerce product review by ID"
+    },
+    {
+      "name": "wc_create_product_review",
+      "description": "Create a new WooCommerce product review"
+    },
+    {
+      "name": "wc_update_product_review",
+      "description": "Update an existing WooCommerce product review"
+    },
+    {
+      "name": "wc_delete_product_review",
+      "description": "Delete a WooCommerce product review"
+    },
+    {
+      "name": "wc_get_tax_classes",
+      "description": "Get WooCommerce tax classes"
+    },
+    {
+      "name": "wc_create_tax_class",
+      "description": "Create a new WooCommerce tax class"
+    },
+    {
+      "name": "wc_delete_tax_class",
+      "description": "Delete a WooCommerce tax class"
+    },
+    {
+      "name": "wc_get_tax_rates",
+      "description": "Get WooCommerce tax rates"
+    },
+    {
+      "name": "wc_get_tax_rate",
+      "description": "Get a specific WooCommerce tax rate by ID"
+    },
+    {
+      "name": "wc_create_tax_rate",
+      "description": "Create a new WooCommerce tax rate"
+    },
+    {
+      "name": "wc_update_tax_rate",
+      "description": "Update an existing WooCommerce tax rate"
+    },
+    {
+      "name": "wc_delete_tax_rate",
+      "description": "Delete a WooCommerce tax rate"
+    },
+    {
+      "name": "wc_get_shipping_zones",
+      "description": "Get WooCommerce shipping zones"
+    },
+    {
+      "name": "wc_get_shipping_zone",
+      "description": "Get a specific WooCommerce shipping zone by ID"
+    },
+    {
+      "name": "wc_create_shipping_zone",
+      "description": "Create a new WooCommerce shipping zone"
+    },
+    {
+      "name": "wc_update_shipping_zone",
+      "description": "Update an existing WooCommerce shipping zone"
+    },
+    {
+      "name": "wc_delete_shipping_zone",
+      "description": "Delete a WooCommerce shipping zone"
+    },
+    {
+      "name": "wc_get_shipping_zone_methods",
+      "description": "Get shipping methods for a WooCommerce shipping zone"
+    },
+    {
+      "name": "wc_get_shipping_zone_method",
+      "description": "Get a specific shipping zone method"
+    },
+    {
+      "name": "wc_create_shipping_zone_method",
+      "description": "Create a new shipping zone method"
+    },
+    {
+      "name": "wc_update_shipping_zone_method",
+      "description": "Update a shipping zone method"
+    },
+    {
+      "name": "wc_delete_shipping_zone_method",
+      "description": "Delete a shipping zone method"
+    },
+    {
+      "name": "wc_get_payment_gateways",
+      "description": "Get WooCommerce payment gateways"
+    },
+    {
+      "name": "wc_get_payment_gateway",
+      "description": "Get a specific WooCommerce payment gateway by ID"
+    },
+    {
+      "name": "wc_update_payment_gateway",
+      "description": "Update a WooCommerce payment gateway"
+    },
+    {
+      "name": "wc_get_system_status",
+      "description": "Get WooCommerce system status"
+    },
+    {
+      "name": "wc_get_system_status_tools",
+      "description": "Get WooCommerce system status tools"
+    },
+    {
+      "name": "wc_run_system_status_tool",
+      "description": "Run a WooCommerce system status tool"
+    },
+    {
+      "name": "wc_get_settings",
+      "description": "Get WooCommerce settings groups"
+    },
+    {
+      "name": "wc_get_setting_group",
+      "description": "Get a specific WooCommerce settings group"
+    },
+    {
+      "name": "wc_get_setting_option",
+      "description": "Get a specific WooCommerce setting option"
+    },
+    {
+      "name": "wc_update_setting_option",
+      "description": "Update a WooCommerce setting option"
+    },
+    {
+      "name": "wc_batch_update_setting_group",
+      "description": "Batch update WooCommerce settings group"
+    },
+    {
+      "name": "wc_get_webhooks",
+      "description": "Get WooCommerce webhooks"
+    },
+    {
+      "name": "wc_get_webhook",
+      "description": "Get a specific WooCommerce webhook by ID"
+    },
+    {
+      "name": "wc_create_webhook",
+      "description": "Create a new WooCommerce webhook"
+    },
+    {
+      "name": "wc_update_webhook",
+      "description": "Update an existing WooCommerce webhook"
+    },
+    {
+      "name": "wc_delete_webhook",
+      "description": "Delete a WooCommerce webhook"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "id": "harvest",
+  "displayName": "Harvest",
+  "description": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments",
+  "createdAt": "2026-01-16T07:19:32.722Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/harvest"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "HARVEST_CREATE_CLIENT",
+      "description": "Tool to create a new client. Use after gathering client details to register a new client in Harvest."
+    },
+    {
+      "name": "HARVEST_CREATE_CLIENT_CONTACT",
+      "description": "Tool to create a new client contact. Use when you need to add a contact under an existing client. Call after you've retrieved or confirmed the client_id."
+    },
+    {
+      "name": "HARVEST_CREATE_ESTIMATE",
+      "description": "Tool to create a new estimate. Use after gathering client and line item details."
+    },
+    {
+      "name": "HARVEST_CREATE_ESTIMATE_ITEM_CATEGORY",
+      "description": "Tool to create a new estimate item category in Harvest. Use after deciding to categorize line items within an estimate."
+    },
+    {
+      "name": "HARVEST_CREATE_ESTIMATE_MESSAGE",
+      "description": "Tool to create a new message for an estimate. Use when you have an estimate ID and want to send a message or run an event (send, accept, decline, re-open) on the estimate."
+    },
+    {
+      "name": "HARVEST_CREATE_EXPENSE",
+      "description": "Tool to create a new expense entry. Use when recording costs against projects. Ensure either units or total_cost is provided."
+    },
+    {
+      "name": "HARVEST_CREATE_INVOICE",
+      "description": "Tool to create a new invoice. Use when you have gathered all invoice details and need to bill a client in Harvest."
+    },
+    {
+      "name": "HARVEST_CREATE_INVOICE_ITEM_CATEGORY",
+      "description": "Tool to create a new invoice item category. Use after you have decided on the category name to register it in Harvest."
+    },
+    {
+      "name": "HARVEST_CREATE_INVOICE_MESSAGE",
+      "description": "Tool to create a new message for an invoice. Use after confirming the invoice ID when you need to notify a client with invoice details."
+    },
+    {
+      "name": "HARVEST_CREATE_INVOICE_PAYMENT",
+      "description": "Tool to create a new payment on an invoice. Use when recording a payment against an existing invoice."
+    },
+    {
+      "name": "HARVEST_CREATE_PROJECT",
+      "description": "Tool to create a new project. Use after confirming the client exists."
+    },
+    {
+      "name": "HARVEST_CREATE_TASK",
+      "description": "Tool to create a new task. Use after identifying task details to register it in Harvest."
+    },
+    {
+      "name": "HARVEST_CREATE_TIME_ENTRY",
+      "description": "Tool to create a new time entry. Use when logging hours for a project by specifying start/end times or duration."
+    },
+    {
+      "name": "HARVEST_CREATE_USER",
+      "description": "Tool to create a new user. Use after gathering user details to invite them to Harvest."
+    },
+    {
+      "name": "HARVEST_DELETE_CLIENT",
+      "description": "Tool to delete a client. Use when you need to remove a client that has no associated projects, invoices, or estimates. Call after confirming the client_id exists and has no dependent resources."
+    },
+    {
+      "name": "HARVEST_DELETE_CLIENT_CONTACT",
+      "description": "Tool to delete a client contact. Use when you need to remove a contact that is no longer relevant. Call after confirming the contact_id exists."
+    },
+    {
+      "name": "HARVEST_DELETE_ESTIMATE",
+      "description": "Tool to delete an estimate. Use when you need to remove an estimate that is no longer needed. Call after confirming the estimate_id exists and has no dependent resources."
+    },
+    {
+      "name": "HARVEST_DELETE_ESTIMATE_MESSAGE",
+      "description": "Tool to delete an estimate message. Use when you need to remove a message from an estimate. Call after confirming estimate_id and message_id are correct."
+    },
+    {
+      "name": "HARVEST_DELETE_INVOICE",
+      "description": "Tool to delete an invoice. Use when you need to remove an invoice that has no associated payments. Call after confirming the invoice_id exists."
+    },
+    {
+      "name": "HARVEST_DELETE_INVOICE_ITEM_CATEGORY",
+      "description": "Tool to delete an invoice item category. Use when you need to remove an obsolete or incorrect invoice item category. Call after confirming the invoice_item_category_id exists."
+    },
+    {
+      "name": "HARVEST_DELETE_INVOICE_MESSAGE",
+      "description": "Tool to delete a message from an invoice. Use when you need to remove a specific message that is no longer relevant. Call after confirming the invoice_id and message_id."
+    },
+    {
+      "name": "HARVEST_DELETE_INVOICE_PAYMENT",
+      "description": "Tool to delete an invoice payment. Use when you need to remove a payment from an invoice after confirming payment details."
+    },
+    {
+      "name": "HARVEST_DELETE_PROJECT",
+      "description": "Tool to delete a project. Use when you need to remove a project and all its associated time entries and expenses; invoices remain intact. Call after confirming the project_id exists."
+    },
+    {
+      "name": "HARVEST_DELETE_TASK",
+      "description": "Tool to delete a task. Use when you need to remove a task that has no associated time entries. Call after confirming the task_id exists and has no dependent time entries."
+    },
+    {
+      "name": "HARVEST_DELETE_TIME_ENTRY",
+      "description": "Tool to delete a time entry. Use when removing an existing time entry that is deletable (not closed or on archived projects/tasks). Call after confirming the time_entry_id exists."
+    },
+    {
+      "name": "HARVEST_DELETE_USER",
+      "description": "Tool to delete a user. Use when you need to remove a user that has no associated time entries or expenses. Call after confirming the user_id exists and has no dependent time entries or expenses."
+    },
+    {
+      "name": "HARVEST_GET_CLIENT",
+      "description": "Tool to retrieve a specific client by ID. Use when you need details of a client before invoicing or reporting."
+    },
+    {
+      "name": "HARVEST_GET_CLIENT_CONTACT",
+      "description": "Tool to retrieve a specific client contact. Use when you have client_id and contact_id to fetch and verify contact details."
+    },
+    {
+      "name": "HARVEST_GET_COMPANY_INFO",
+      "description": "Tool to retrieve information about the authenticated user's company. Use after authentication to fetch company settings for display or configuration."
+    },
+    {
+      "name": "HARVEST_GET_ESTIMATE",
+      "description": "Tool to retrieve a specific estimate by ID. Use after confirming the estimate ID. Example: \"Get estimate with ID 123456\"."
+    },
+    {
+      "name": "HARVEST_GET_INVOICE",
+      "description": "Tool to retrieve a specific invoice by ID. Use when you need the full details of an invoice after selecting or creating it. Example: 'Get invoice with ID 13150378.'"
+    },
+    {
+      "name": "HARVEST_GET_PROJECT",
+      "description": "Tool to retrieve a specific Harvest project by ID. Use when you have a project ID and need its details."
+    },
+    {
+      "name": "HARVEST_GET_TASK",
+      "description": "Tool to retrieve a specific task by ID. Use when you have a task ID and need its detailed information."
+    },
+    {
+      "name": "HARVEST_GET_TIME_ENTRY",
+      "description": "Tool to retrieve a single time entry by ID. Use when you have a specific time entry ID and need its full details."
+    },
+    {
+      "name": "HARVEST_GET_USER",
+      "description": "Tool to retrieve a specific user by ID. Use after obtaining a valid user ID (for example via List Users). Example: \"Get details of user 3230547\"."
+    },
+    {
+      "name": "HARVEST_LIST_CLIENT_CONTACTS",
+      "description": "Tool to list client contacts. Use when you need to retrieve contacts with optional filtering and pagination."
+    },
+    {
+      "name": "HARVEST_LIST_CLIENTS",
+      "description": "Tool to list clients. Use when you need to retrieve a paginated list of clients from Harvest. Ensure you have a valid access token in metadata before calling."
+    },
+    {
+      "name": "HARVEST_LIST_ESTIMATE_MESSAGES",
+      "description": "Tool to list messages for an estimate. Use after obtaining an estimate ID to retrieve associated messages, supports pagination and filtering by update time."
+    },
+    {
+      "name": "HARVEST_LIST_EXPENSE_CATEGORIES",
+      "description": "Tool to list expense categories. Use when you need to retrieve a paginated list of expense categories, optionally filtering by active status or last update timestamp."
+    },
+    {
+      "name": "HARVEST_LIST_INVOICE_ITEM_CATEGORIES",
+      "description": "Tool to retrieve invoice item categories. Use when you need to fetch a paginated list of invoice item categories in Harvest."
+    },
+    {
+      "name": "HARVEST_LIST_INVOICE_MESSAGES",
+      "description": "Tool to list messages associated with a given invoice. Use when you need to retrieve invoice messages with optional filtering by update time and pagination."
+    },
+    {
+      "name": "HARVEST_LIST_INVOICE_PAYMENTS",
+      "description": "Tool to retrieve payments for a specific invoice. Use when you need to list all payments applied to an invoice after confirming the invoice exists."
+    },
+    {
+      "name": "HARVEST_LIST_INVOICES",
+      "description": "Tool to list invoices. Use when you need to retrieve invoices filtered by client, project, date range, or state. Example: 'List invoices for client 5735776 from 2023-01-01 to 2023-01-31.'"
+    },
+    {
+      "name": "HARVEST_LIST_PROJECTS",
+      "description": "Tool to list projects. Use when you need to retrieve a paginated list of projects from Harvest. Ensure a valid access token is present in metadata before calling."
+    },
+    {
+      "name": "HARVEST_LIST_TASKS",
+      "description": "Tool to list tasks. Use when you need to retrieve a paginated list of tasks from Harvest. Ensure you have a valid access token in metadata before calling."
+    },
+    {
+      "name": "HARVEST_LIST_TIME_ENTRIES",
+      "description": "Tool to retrieve a list of time entries. Use when you need to fetch tracked hours with filters or date ranges for reporting or invoicing. Example: \"List time entries for project 123 between 2023-01-01 and 2023-01-31\"."
+    },
+    {
+      "name": "HARVEST_LIST_USERS",
+      "description": "Tool to list users. Use when you need to retrieve a paginated list of users from Harvest."
+    },
+    {
+      "name": "HARVEST_UPDATE_CLIENT",
+      "description": "Tool to update an existing client. Use after retrieving client details to modify its properties. Supports partial updates; omit fields to leave them unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_CLIENT_CONTACT",
+      "description": "Tool to update a client contact. Use when you have a contact_id and need to modify its details."
+    },
+    {
+      "name": "HARVEST_UPDATE_COMPANY_INFO",
+      "description": "Tool to update information about the company. Use to modify company settings such as name, timezone, or formatting options. Use after obtaining current settings to apply changes."
+    },
+    {
+      "name": "HARVEST_UPDATE_ESTIMATE",
+      "description": "Tool to update an existing estimate. Use when you need to modify specific fields of an estimate; omit parameters to leave other fields unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_ESTIMATE_ITEM_CATEGORY",
+      "description": "Tool to update an estimate item category. Use after retrieving the category to change its name."
+    },
+    {
+      "name": "HARVEST_UPDATE_EXPENSE",
+      "description": "Tool to update an existing expense. Use after retrieving an expense to modify project, category, date, cost, or delete a receipt; omit fields to leave unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_INVOICE",
+      "description": "Tool to update an existing invoice. Use after retrieving invoice details to modify its fields. Supports partial updates; omit fields to leave unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_PROJECT",
+      "description": "Tool to update an existing project. Use when you need to modify one or more fields of a project by its ID. Invoke after confirming the project ID and desired changes."
+    },
+    {
+      "name": "HARVEST_UPDATE_TASK",
+      "description": "Tool to update an existing task. Use after retrieving task details to modify its attributes such as name, billing defaults, or status. Supports partial updates; omit fields to leave them unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_TIME_ENTRY",
+      "description": "Tool to update an existing time entry. Use after retrieving the entry to adjust hours, notes, project, or task details. Supports partial updates; omit fields to leave unchanged."
+    },
+    {
+      "name": "HARVEST_UPDATE_USER",
+      "description": "Tool to update an existing user. Use when you need to modify a user's profile or settings after confirming the user ID."
+    }
+  ]
+}

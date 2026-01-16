@@ -1,0 +1,19 @@
+{
+  "id": "@hustcc/mcp-mermaid",
+  "displayName": "Mermaid Diagram Generator",
+  "description": "Generate dynamic Mermaid diagrams and charts with AI assistance. Customize styles and export diagrams in multiple formats including PNG, SVG, and Mermaid syntax. Ensure valid Mermaid syntax for multi-round AI interactions to produce accurate visualizations.",
+  "createdAt": "2026-01-16T07:30:17.933Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hustcc/mcp-mermaid"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": []
+}

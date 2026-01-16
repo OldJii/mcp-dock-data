@@ -1,0 +1,54 @@
+{
+  "id": "@DynamicEndpoints/m365-bookings-mcp",
+  "displayName": "Microsoft 365 Bookings",
+  "description": "Interact with Microsoft Bookings seamlessly through the Microsoft Graph API. Access and manage your bookings, staff, services, and appointments effortlessly. Enhance your scheduling capabilities with powerful tools designed for efficiency and ease of use.",
+  "createdAt": "2026-01-16T07:25:39.967Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/m365-bookings-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "microsoftGraphClientId",
+        "microsoftGraphClientSecret",
+        "microsoftGraphTenantId"
+      ],
+      "properties": {
+        "microsoftGraphClientId": {
+          "type": "string",
+          "description": "Azure AD Application Client ID"
+        },
+        "microsoftGraphTenantId": {
+          "type": "string",
+          "description": "Azure AD Tenant ID"
+        },
+        "microsoftGraphClientSecret": {
+          "type": "string",
+          "description": "Azure AD Application Client Secret"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_bookings_businesses",
+      "description": "Get list of Bookings businesses"
+    },
+    {
+      "name": "get_business_staff",
+      "description": "Get staff members for a Bookings business"
+    },
+    {
+      "name": "get_business_services",
+      "description": "Get services offered by a Bookings business"
+    },
+    {
+      "name": "get_business_appointments",
+      "description": "Get appointments for a Bookings business"
+    }
+  ]
+}

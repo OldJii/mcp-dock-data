@@ -1,0 +1,295 @@
+{
+  "id": "@HitmanLy007/gmail-mcp",
+  "displayName": "Gmail API Integration Server",
+  "description": "Provide seamless access to Gmail functionalities including email sending, retrieval, label and thread management, and mailbox settings through a standardized interface. Enable secure OAuth2 authentication for personalized user access and support comprehensive Gmail API features. Simplify email management workflows by integrating Gmail capabilities into your applications or agents.",
+  "createdAt": "2026-01-16T07:31:18.533Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@HitmanLy007/gmail-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "REFRESH_TOKEN"
+      ],
+      "properties": {
+        "CLIENT_ID": {
+          "type": "string",
+          "description": "CLIENT_ID - OAuth2 client ID (required for remote server)"
+        },
+        "CLIENT_SECRET": {
+          "type": "string",
+          "description": "CLIENT_SECRET - OAuth2 client Secret (required for remote server)"
+        },
+        "REFRESH_TOKEN": {
+          "type": "string",
+          "description": "REFRESH_TOKEN - OAuth2 refresh token (required for remote server)"
+        }
+      },
+      "description": "The CLIENT_ID, CLIENT_SECRET, and REFRESH_TOKEN are required for remote server usage."
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_draft",
+      "description": "Create a draft email in Gmail. Note the mechanics of the raw parameter."
+    },
+    {
+      "name": "delete_draft",
+      "description": "Delete a draft"
+    },
+    {
+      "name": "get_draft",
+      "description": "Get a specific draft by ID"
+    },
+    {
+      "name": "list_drafts",
+      "description": "List drafts in the user's mailbox"
+    },
+    {
+      "name": "send_draft",
+      "description": "Send an existing draft"
+    },
+    {
+      "name": "create_label",
+      "description": "Create a new label"
+    },
+    {
+      "name": "delete_label",
+      "description": "Delete a label"
+    },
+    {
+      "name": "get_label",
+      "description": "Get a specific label by ID"
+    },
+    {
+      "name": "list_labels",
+      "description": "List all labels in the user's mailbox"
+    },
+    {
+      "name": "patch_label",
+      "description": "Patch an existing label (partial update)"
+    },
+    {
+      "name": "update_label",
+      "description": "Update an existing label"
+    },
+    {
+      "name": "batch_delete_messages",
+      "description": "Delete multiple messages"
+    },
+    {
+      "name": "batch_modify_messages",
+      "description": "Modify the labels on multiple messages"
+    },
+    {
+      "name": "delete_message",
+      "description": "Immediately and permanently delete a message"
+    },
+    {
+      "name": "get_message",
+      "description": "Get a specific message by ID with format options"
+    },
+    {
+      "name": "list_messages",
+      "description": "List messages in the user's mailbox with optional filtering"
+    },
+    {
+      "name": "modify_message",
+      "description": "Modify the labels on a message"
+    },
+    {
+      "name": "send_message",
+      "description": "Send an email message to specified recipients. Note the mechanics of the raw parameter."
+    },
+    {
+      "name": "trash_message",
+      "description": "Move a message to the trash"
+    },
+    {
+      "name": "untrash_message",
+      "description": "Remove a message from the trash"
+    },
+    {
+      "name": "get_attachment",
+      "description": "Get a message attachment"
+    },
+    {
+      "name": "delete_thread",
+      "description": "Delete a thread"
+    },
+    {
+      "name": "get_thread",
+      "description": "Get a specific thread by ID"
+    },
+    {
+      "name": "list_threads",
+      "description": "List threads in the user's mailbox"
+    },
+    {
+      "name": "modify_thread",
+      "description": "Modify the labels applied to a thread"
+    },
+    {
+      "name": "trash_thread",
+      "description": "Move a thread to the trash"
+    },
+    {
+      "name": "untrash_thread",
+      "description": "Remove a thread from the trash"
+    },
+    {
+      "name": "get_auto_forwarding",
+      "description": "Gets auto-forwarding settings"
+    },
+    {
+      "name": "get_imap",
+      "description": "Gets IMAP settings"
+    },
+    {
+      "name": "get_language",
+      "description": "Gets language settings"
+    },
+    {
+      "name": "get_pop",
+      "description": "Gets POP settings"
+    },
+    {
+      "name": "get_vacation",
+      "description": "Get vacation responder settings"
+    },
+    {
+      "name": "update_auto_forwarding",
+      "description": "Updates automatic forwarding settings"
+    },
+    {
+      "name": "update_imap",
+      "description": "Updates IMAP settings"
+    },
+    {
+      "name": "update_language",
+      "description": "Updates language settings"
+    },
+    {
+      "name": "update_pop",
+      "description": "Updates POP settings"
+    },
+    {
+      "name": "update_vacation",
+      "description": "Update vacation responder settings"
+    },
+    {
+      "name": "add_delegate",
+      "description": "Adds a delegate to the specified account"
+    },
+    {
+      "name": "remove_delegate",
+      "description": "Removes the specified delegate"
+    },
+    {
+      "name": "get_delegate",
+      "description": "Gets the specified delegate"
+    },
+    {
+      "name": "list_delegates",
+      "description": "Lists the delegates for the specified account"
+    },
+    {
+      "name": "create_filter",
+      "description": "Creates a filter"
+    },
+    {
+      "name": "delete_filter",
+      "description": "Deletes a filter"
+    },
+    {
+      "name": "get_filter",
+      "description": "Gets a filter"
+    },
+    {
+      "name": "list_filters",
+      "description": "Lists the message filters of a Gmail user"
+    },
+    {
+      "name": "create_forwarding_address",
+      "description": "Creates a forwarding address"
+    },
+    {
+      "name": "delete_forwarding_address",
+      "description": "Deletes the specified forwarding address"
+    },
+    {
+      "name": "get_forwarding_address",
+      "description": "Gets the specified forwarding address"
+    },
+    {
+      "name": "list_forwarding_addresses",
+      "description": "Lists the forwarding addresses for the specified account"
+    },
+    {
+      "name": "create_send_as",
+      "description": "Creates a custom send-as alias"
+    },
+    {
+      "name": "delete_send_as",
+      "description": "Deletes the specified send-as alias"
+    },
+    {
+      "name": "get_send_as",
+      "description": "Gets the specified send-as alias"
+    },
+    {
+      "name": "list_send_as",
+      "description": "Lists the send-as aliases for the specified account"
+    },
+    {
+      "name": "patch_send_as",
+      "description": "Patches the specified send-as alias"
+    },
+    {
+      "name": "update_send_as",
+      "description": "Updates a send-as alias"
+    },
+    {
+      "name": "verify_send_as",
+      "description": "Sends a verification email to the specified send-as alias"
+    },
+    {
+      "name": "delete_smime_info",
+      "description": "Deletes the specified S/MIME config for the specified send-as alias"
+    },
+    {
+      "name": "get_smime_info",
+      "description": "Gets the specified S/MIME config for the specified send-as alias"
+    },
+    {
+      "name": "insert_smime_info",
+      "description": "Insert (upload) the given S/MIME config for the specified send-as alias"
+    },
+    {
+      "name": "list_smime_info",
+      "description": "Lists S/MIME configs for the specified send-as alias"
+    },
+    {
+      "name": "set_default_smime_info",
+      "description": "Sets the default S/MIME config for the specified send-as alias"
+    },
+    {
+      "name": "get_profile",
+      "description": "Get the current user's Gmail profile"
+    },
+    {
+      "name": "watch_mailbox",
+      "description": "Watch for changes to the user's mailbox"
+    },
+    {
+      "name": "stop_mail_watch",
+      "description": "Stop receiving push notifications for the given user mailbox"
+    }
+  ]
+}

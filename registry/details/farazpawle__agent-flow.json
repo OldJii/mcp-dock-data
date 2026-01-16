@@ -1,0 +1,12 @@
+{
+  "id": "farazpawle/agent-flow",
+  "displayName": "agent-flow",
+  "description": "AgentFlow is a next-generation, premium agentic workflow system built on the Model Context Protocol (MCP). It transforms the way AI agents handle complex development tasks by bridging the gap between raw LLM reasoning and structured execution.",
+  "createdAt": "2026-01-16T07:44:55.015Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/farazpawle/agent-flow"
+  },
+  "connection": null,
+  "capabilities": []
+}

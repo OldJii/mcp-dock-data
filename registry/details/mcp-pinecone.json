@@ -1,0 +1,32 @@
+{
+  "id": "mcp-pinecone",
+  "displayName": "Pinecone MCP Server",
+  "description": "Read and write to Pinecone from Claude Desktop using the Model Context Protocol.",
+  "createdAt": "2026-01-16T07:26:07.929Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-pinecone"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "indexName",
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your secret API key for Pinecone."
+        },
+        "indexName": {
+          "type": "string",
+          "description": "The name of the Pinecone index."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

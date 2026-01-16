@@ -1,0 +1,12 @@
+{
+  "id": "@samihalawa/gemini-image-video-mcp",
+  "displayName": "gemini-image-video-mcp",
+  "description": "Gemini Image and Video Generator",
+  "createdAt": "2026-01-16T07:43:17.065Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/gemini-image-video-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

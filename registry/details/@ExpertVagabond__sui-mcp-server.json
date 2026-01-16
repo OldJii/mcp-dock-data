@@ -1,0 +1,12 @@
+{
+  "id": "@ExpertVagabond/sui-mcp-server",
+  "displayName": "sui-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:34:28.484Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ExpertVagabond/sui-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

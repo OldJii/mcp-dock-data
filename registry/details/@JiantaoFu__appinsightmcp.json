@@ -1,0 +1,12 @@
+{
+  "id": "@JiantaoFu/appinsightmcp",
+  "displayName": "appinsightmcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:42:45.258Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JiantaoFu/appinsightmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

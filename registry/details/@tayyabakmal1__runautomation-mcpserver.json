@@ -1,0 +1,12 @@
+{
+  "id": "@tayyabakmal1/runautomation-mcpserver",
+  "displayName": "runautomation-mcpserver",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:09.381Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tayyabakmal1/runautomation-mcpserver"
+  },
+  "connection": null,
+  "capabilities": []
+}

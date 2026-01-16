@@ -1,0 +1,27 @@
+{
+  "id": "@renantrendt/mcp-github",
+  "displayName": "GitHub Integration Server",
+  "description": "Enable your AI assistants to manage GitHub repositories, track issues, and perform file operations seamlessly. Streamline your development workflow by automating GitHub tasks with this powerful MCP server. Enhance collaboration and efficiency in your projects with easy access to GitHub's capabilities.",
+  "createdAt": "2026-01-16T07:28:27.534Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@renantrendt/mcp-github"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "githubPersonalAccessToken"
+      ],
+      "properties": {
+        "githubPersonalAccessToken": {
+          "type": "string",
+          "description": "The personal access token for accessing the GitHub API."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

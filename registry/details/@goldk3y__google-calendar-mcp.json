@@ -1,0 +1,95 @@
+{
+  "id": "@goldk3y/google-calendar-mcp",
+  "displayName": "Google Calendar Integration Server",
+  "description": "Enable seamless interaction with Google Calendar through a secure and comprehensive MCP server. Manage calendars and events with full support for OAuth2 authentication, event details, and search capabilities. Simplify calendar operations and event scheduling within your applications.",
+  "createdAt": "2026-01-16T07:24:21.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@goldk3y/google-calendar-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "clientId",
+        "clientSecret"
+      ],
+      "properties": {
+        "clientId": {
+          "type": "string",
+          "description": "Google OAuth2 Client ID from Google Cloud Console (APIs & Services > Credentials)"
+        },
+        "redirectUri": {
+          "type": "string",
+          "description": "OAuth2 redirect URI (must match the one configured in Google Cloud Console)",
+          "default": "http://localhost:3000/oauth2callback"
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "Google OAuth2 Client Secret from Google Cloud Console"
+        },
+        "refreshToken": {
+          "type": "string",
+          "description": "Optional: Pre-existing refresh token for accessing user's calendar data"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_oauth_url",
+      "description": "Generate OAuth2 authorization URL for user to grant calendar access. User must visit this URL to authorize the application."
+    },
+    {
+      "name": "exchange_auth_code",
+      "description": "Exchange authorization code for access and refresh tokens. Use this after user has authorized via the OAuth URL."
+    },
+    {
+      "name": "check_auth_status",
+      "description": "Check the current authentication status and token information"
+    },
+    {
+      "name": "list_calendars",
+      "description": "List all calendars accessible to the authenticated user"
+    },
+    {
+      "name": "get_calendar",
+      "description": "Get detailed information about a specific calendar"
+    },
+    {
+      "name": "create_calendar",
+      "description": "Create a new calendar"
+    },
+    {
+      "name": "delete_calendar",
+      "description": "Delete a calendar (WARNING: This will delete all events in the calendar)"
+    },
+    {
+      "name": "list_events",
+      "description": "List events from a calendar within a specified time range"
+    },
+    {
+      "name": "get_event",
+      "description": "Get detailed information about a specific event"
+    },
+    {
+      "name": "create_event",
+      "description": "Create a new calendar event"
+    },
+    {
+      "name": "update_event",
+      "description": "Update an existing calendar event"
+    },
+    {
+      "name": "delete_event",
+      "description": "Delete a calendar event"
+    }
+  ]
+}

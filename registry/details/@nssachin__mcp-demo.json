@@ -1,0 +1,21 @@
+{
+  "id": "@nssachin/mcp-demo",
+  "displayName": "mcp-demo",
+  "description": "Provide a simple demonstration of an MCP server implementation. Enable basic interaction with MCP clients to showcase protocol usage. Serve as a starting point for building more complex MCP servers.",
+  "createdAt": "2026-01-16T07:27:45.606Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nssachin/mcp-demo"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

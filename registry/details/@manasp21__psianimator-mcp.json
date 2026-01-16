@@ -1,0 +1,16 @@
+{
+  "id": "@manasp21/psianimator-mcp",
+  "displayName": "PsiAnimator Quantum Simulation Server",
+  "description": "Simulate and visualize quantum physics phenomena with high precision and publication-quality animations. Leverage advanced quantum state management, time evolution, and measurement tools integrated seamlessly with mathematical animations. Empower education and research with interactive quantum computing workflows and visualizations.",
+  "createdAt": "2026-01-16T07:30:18.457Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@manasp21/psianimator-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

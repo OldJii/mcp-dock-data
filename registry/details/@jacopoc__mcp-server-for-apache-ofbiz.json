@@ -1,0 +1,12 @@
+{
+  "id": "@jacopoc/mcp-server-for-apache-ofbiz",
+  "displayName": "mcp-server-for-apache-ofbiz",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:00.077Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jacopoc/mcp-server-for-apache-ofbiz"
+  },
+  "connection": null,
+  "capabilities": []
+}

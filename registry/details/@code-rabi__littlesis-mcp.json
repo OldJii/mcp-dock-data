@@ -1,0 +1,63 @@
+{
+  "id": "@code-rabi/littlesis-mcp",
+  "displayName": "LittleSis API Server",
+  "description": "Provide access to the LittleSis API to track corporate power and accountability. Enable querying and exploring relationships and entities related to corporate influence. Facilitate integration of corporate data into LLM applications for enhanced context and insights.",
+  "createdAt": "2026-01-16T07:21:39.427Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@code-rabi/littlesis-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_entity",
+      "description": "Get detailed information about a specific entity (person or organization) from LittleSis by ID"
+    },
+    {
+      "name": "get_entities",
+      "description": "Get information about multiple entities at once (up to 300 entities per request)"
+    },
+    {
+      "name": "search_entities",
+      "description": "Search for entities by name. Results are ranked by number of relationships."
+    },
+    {
+      "name": "get_entity_extensions",
+      "description": "Get the types/extensions associated with an entity (Person, Organization, Business, etc.)"
+    },
+    {
+      "name": "get_entity_relationships",
+      "description": "Get all relationships this entity has with other entities"
+    },
+    {
+      "name": "get_entity_connections",
+      "description": "Get other entities that this entity has relationships with"
+    },
+    {
+      "name": "get_entity_lists",
+      "description": "Get the lists that an entity appears on (e.g., Fortune 1000, lobbying lists)"
+    },
+    {
+      "name": "get_relationship",
+      "description": "Get detailed information about a specific relationship between two entities"
+    }
+  ]
+}

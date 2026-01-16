@@ -1,0 +1,12 @@
+{
+  "id": "@emiliosalvadorp/gcal-mcp",
+  "displayName": "gcal-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:45:23.519Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@emiliosalvadorp/gcal-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

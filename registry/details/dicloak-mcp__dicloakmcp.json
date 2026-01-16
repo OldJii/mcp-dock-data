@@ -1,0 +1,12 @@
+{
+  "id": "dicloak-mcp/dicloakmcp",
+  "displayName": "dicloakmcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:40.536Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/dicloak-mcp/dicloakmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

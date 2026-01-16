@@ -1,0 +1,30 @@
+{
+  "id": "@Vooster-AI/github-fetcher-mcp",
+  "displayName": "GitHub Fetcher",
+  "description": "Fetch file contents and browse directory trees from GitHub repositories. Locate exact files quickly and understand project structure at a glance. Accelerate research, code review, and documentation by pulling only what you need.",
+  "createdAt": "2026-01-16T07:26:42.452Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Vooster-AI/github-fetcher-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "description": "No configuration required",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fetch-file",
+      "description": "Fetches file content from a GitHub repository"
+    },
+    {
+      "name": "fetch-subdir-tree",
+      "description": "Fetches directory tree from a GitHub repository"
+    }
+  ]
+}

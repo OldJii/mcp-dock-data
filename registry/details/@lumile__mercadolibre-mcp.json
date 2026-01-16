@@ -1,0 +1,50 @@
+{
+  "id": "@lumile/mercadolibre-mcp",
+  "displayName": "MercadoLibre MCP Server",
+  "description": "Access MercadoLibre's API to search products, retrieve reviews, and check seller reputations.",
+  "createdAt": "2026-01-16T07:27:31.315Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lumile/mercadolibre-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "clientId",
+        "clientSecret",
+        "siteId"
+      ],
+      "properties": {
+        "siteId": {
+          "type": "string",
+          "description": "MercadoLibre Site ID (e.g., MLA, MLB, MCO, MEX, MLU, MLC)."
+        },
+        "clientId": {
+          "type": "string",
+          "description": "MercadoLibre Client ID."
+        },
+        "clientSecret": {
+          "type": "string",
+          "description": "MercadoLibre Client Secret."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "seller_reputation",
+      "description": "Obtiene la reputación de un vendedor"
+    },
+    {
+      "name": "product_reviews",
+      "description": "Obtiene las reseñas de un producto"
+    },
+    {
+      "name": "product_description",
+      "description": "Obtiene la descripción de un producto"
+    }
+  ]
+}

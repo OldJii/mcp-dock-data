@@ -1,0 +1,12 @@
+{
+  "id": "@iamarunbrahma/mediallm",
+  "displayName": "mediallm",
+  "description": "",
+  "createdAt": "2026-01-16T07:44:24.973Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@iamarunbrahma/mediallm"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "@https-eduardo/clockify-mcp-server",
+  "displayName": "Clockify Time Entry Manager",
+  "description": "Manage your Clockify time entries effortlessly by sending prompts to an LLM. Add, view, and control your time tracking directly through AI-powered interactions. Simplify your time management workflow with seamless integration to Clockify.",
+  "createdAt": "2026-01-16T07:24:52.167Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@https-eduardo/clockify-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "clockifyApiToken"
+      ],
+      "properties": {
+        "clockifyApiToken": {
+          "type": "string",
+          "description": "Clockify API Token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": []
+}

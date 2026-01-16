@@ -1,0 +1,169 @@
+{
+  "id": "wrike",
+  "displayName": "Wrike",
+  "description": "Wrike is a project management and collaboration tool offering customizable workflows, Gantt charts, reporting, and resource management to boost team productivity",
+  "createdAt": "2026-01-16T07:19:35.572Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/wrike"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "WRIKE_BULK_MODIFY_GROUPS",
+      "description": "Adds or removes members for multiple Wrike groups in a single request; all specified user IDs must correspond to existing Wrike users."
+    },
+    {
+      "name": "WRIKE_CREATE_FOLDER",
+      "description": "Creates a new Wrike subfolder within the specified `folderId`, optionally as a project if `customItemTypeId` is given; the folder is auto-shared with its creator."
+    },
+    {
+      "name": "WRIKE_CREATE_GROUP",
+      "description": "Creates a new user group in Wrike with a specified title, optionally setting members, parent group, avatar, and custom metadata."
+    },
+    {
+      "name": "WRIKE_CREATE_INVITATION",
+      "description": "Invites a user to a Wrike workspace by email, optionally with name, specifying EITHER `userTypeId` OR a combination of `role`/`external`; custom email subject/message available for paid accounts."
+    },
+    {
+      "name": "WRIKE_CREATE_TASK",
+      "description": "Creates a new task in a specified Wrike folder; if setting priority with `priorityBefore` or `priorityAfter`, the referenced task must be in the same folder or project."
+    },
+    {
+      "name": "WRIKE_DELETE_CUSTOM_FIELD",
+      "description": "Permanently deletes a custom field by its ID; this action is irreversible and requires a valid, existing custom field ID."
+    },
+    {
+      "name": "WRIKE_DELETE_FOLDER",
+      "description": "Permanently deletes the folder specified by `folderId` and all its contents (e.g., tasks, documents, subfolders) from the Wrike workspace; this irreversible action is for when the folder is no longer needed and has no active tasks or dependencies that would block deletion."
+    },
+    {
+      "name": "WRIKE_DELETE_GROUP",
+      "description": "Permanently deletes a group by its `groupId`; this action is irreversible and does not affect user accounts that were members of the group."
+    },
+    {
+      "name": "WRIKE_DELETE_INIVTATION",
+      "description": "Permanently deletes an existing invitation, specified by its unique `invitationId`; this action cannot be undone."
+    },
+    {
+      "name": "WRIKE_DELETE_TASK",
+      "description": "Permanently deletes a Wrike task and all its associated data by its ID; this action is irreversible and the task must exist."
+    },
+    {
+      "name": "WRIKE_FETCH_ALL_TASKS",
+      "description": "Fetches tasks from a Wrike account, allowing filtering by status, due date, and subfolder inclusion, with customizable response fields and pagination."
+    },
+    {
+      "name": "WRIKE_GET_ACCOUNT_INFORMATION",
+      "description": "Retrieves detailed Wrike account information, where the response content is influenced by selected fields, account subscription, and user permissions."
+    },
+    {
+      "name": "WRIKE_GET_ALL_CUSTOM_FIELDS",
+      "description": "Retrieves all custom field definitions (including ID, name, type, and settings) from the Wrike account; this returns the definitions themselves, not their specific values on Wrike items, and is useful for obtaining custom field IDs."
+    },
+    {
+      "name": "WRIKE_GET_CONTACTS",
+      "description": "Retrieves a list of Wrike contacts (e.g., team members, clients, collaborators); response includes contact details but not their detailed task or project involvement."
+    },
+    {
+      "name": "WRIKE_GET_FOLDERS",
+      "description": "Retrieves folders and/or projects from Wrike, with filters; when using `nextPageToken`, all other filter parameters must match the initial request."
+    },
+    {
+      "name": "WRIKE_GET_INFORMATION_ABOUT_SPECIFIC_CONTACT",
+      "description": "Retrieves detailed information for a specific Wrike contact using their unique `contactId`, optionally including `metadata` and `customFields` if specified in the `fields` parameter."
+    },
+    {
+      "name": "WRIKE_GET_SPECIFIC_USER",
+      "description": "Retrieves detailed information about a specific user in Wrike using their unique user ID."
+    },
+    {
+      "name": "WRIKE_GET_TASK_BY_ID",
+      "description": "Retrieves read-only detailed information for a specific Wrike task by its unique ID, optionally allowing specification of fields to include in the response."
+    },
+    {
+      "name": "WRIKE_LAUNCH_FOLDER_BLUEPRINT_ASYNC",
+      "description": "Asynchronously launches a new project or folder structure in Wrike from a specified Folder Blueprint, typically returning a task ID to track progress."
+    },
+    {
+      "name": "WRIKE_LAUNCH_TASK_BLUEPRINT_ASYNC",
+      "description": "Asynchronously launches a Wrike Task Blueprint to create tasks/projects, requiring either `super_task_id` (parent task) or `parent_id` (parent folder/project) for placement."
+    },
+    {
+      "name": "WRIKE_LIST_FOLDER_BLUEPRINTS",
+      "description": "Retrieves all account-level Folder Blueprints, which are templates for standardizing folder/project creation with predefined structures, custom fields, and workflows."
+    },
+    {
+      "name": "WRIKE_LIST_SPACE_FOLDER_BLUEPRINTS",
+      "description": "Lists all folder blueprints (templates for new folders/projects) within a specified Wrike space, requiring a valid and accessible space ID."
+    },
+    {
+      "name": "WRIKE_LIST_SPACE_TASK_BLUEPRINTS",
+      "description": "Lists task blueprints (templates for creating tasks with consistent structures) available in a specific, accessible Wrike space."
+    },
+    {
+      "name": "WRIKE_LIST_SUBFOLDERS_BY_FOLDER_ID",
+      "description": "Lists subfolders (metadata only, not their contents) for an existing Wrike folder specified by `folderId`, supporting recursive descent, filtering, and pagination."
+    },
+    {
+      "name": "WRIKE_LIST_TASK_BLUEPRINTS",
+      "description": "Retrieves a list of defined Task Blueprints (predefined task templates) from the Wrike account, supporting pagination."
+    },
+    {
+      "name": "WRIKE_MODIFY_ACCOUNT",
+      "description": "Updates or adds custom key-value metadata to the Wrike account, useful for integrations, storing app-specific data, or mapping external system identifiers."
+    },
+    {
+      "name": "WRIKE_MODIFY_FOLDER",
+      "description": "Modifies an existing Wrike folder: updates title, description, parents (not root/recycle bin), sharing, metadata, custom fields/columns; restores, converts to project, or manages access roles."
+    },
+    {
+      "name": "WRIKE_MODIFY_GROUP",
+      "description": "Updates an existing Wrike user group's attributes like title, members, parent, avatar, or metadata, using its `groupId` and specifying only the fields to change."
+    },
+    {
+      "name": "WRIKE_MODIFY_TASK",
+      "description": "Modifies an existing Wrike task by its ID, allowing updates to attributes such as title, status, dates, assignees, and custom fields; `priorityBefore` and `priorityAfter` are mutually exclusive, and parent folder IDs for `addParents`/`removeParents` cannot be the Recycle Bin."
+    },
+    {
+      "name": "WRIKE_QUERY_CUSTOMFIELDS",
+      "description": "Retrieves a Wrike custom field's detailed information (e.g., type, possible values for dropdowns), properties, and metadata; the `customFieldId` must correspond to an existing custom field."
+    },
+    {
+      "name": "WRIKE_QUERY_INVITATIONS",
+      "description": "Retrieves all active invitations in Wrike, useful for viewing and auditing pending invitations or managing user onboarding."
+    },
+    {
+      "name": "WRIKE_QUERY_SPECIFIC_GROUP",
+      "description": "Retrieves detailed information for a specific Wrike group using its `groupId`, optionally including 'metadata'."
+    },
+    {
+      "name": "WRIKE_QUERY_WORKFLOWS",
+      "description": "Fetches a list of all workflows with their detailed information from the Wrike account; this is a read-only action and does not support pagination or filtering through its parameters."
+    },
+    {
+      "name": "WRIKE_RETRIEVE_LIST_OF_GROUPS",
+      "description": "Retrieves a list of user groups from the Wrike account, supporting metadata filtering, pagination, and inclusion of specific fields; this is a read-only operation."
+    },
+    {
+      "name": "WRIKE_UPDATE_CUSTOM_FIELD_BY_ID",
+      "description": "Updates properties of an existing Wrike custom field by its ID, such as its title, type, scope, or sharing settings."
+    },
+    {
+      "name": "WRIKE_UPDATE_INVITATION",
+      "description": "Updates a pending Wrike invitation (`invitationId`) to resend it or change user's role/type (use `userTypeId` over deprecated `role`/`external`)."
+    },
+    {
+      "name": "WRIKE_UPDATE_METADATA_ON_SPECIFIC_CONTACT",
+      "description": "Updates metadata, job role, or custom fields for an existing Wrike contact specified by `contactId`; if `jobRoleId` is provided, it must be a valid ID."
+    },
+    {
+      "name": "WRIKE_UPDATE_SPECIFIC_USER",
+      "description": "Updates specified profile attributes (e.g., account ID, role, external status) for an existing Wrike user; unspecified fields remain unchanged."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@senseihaiku/atlas-mcp-server",
+  "displayName": "atlas-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:07.948Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@senseihaiku/atlas-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

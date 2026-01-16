@@ -1,0 +1,49 @@
+{
+  "id": "survey_monkey",
+  "displayName": "Survey monkey",
+  "description": "SurveyMonkey is an online survey development platform that enables users to create, distribute, and analyze surveys for various purposes.",
+  "createdAt": "2026-01-16T07:19:47.214Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/survey_monkey"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SURVEY_MONKEY_CREATE_SURVEY",
+      "description": "Tool to create a new survey. Use when you have a survey title and need an ID for follow-up operations. Example: \"Create a survey titled 'Customer Satisfaction'\""
+    },
+    {
+      "name": "SURVEY_MONKEY_DELETE_SURVEY",
+      "description": "Tool to delete a specific survey. Use when the survey ID is confirmed correct. Deletion is irreversible. Example prompt: \"Delete survey '123456789'.\""
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_COLLECTORS",
+      "description": "Tool to retrieve a list of collectors for a specific survey. Use when you need collector URLs, counts, and statuses."
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_CONTACTS",
+      "description": "Tool to retrieve a list of contacts. Use after authenticating with SurveyMonkey. Call this to fetch all contacts associated with your account."
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_GROUPS",
+      "description": "Tool to retrieve a list of groups. Use after authentication when you need to enumerate or paginate through all groups in your SurveyMonkey account."
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_RESPONSES",
+      "description": "Tool to retrieve a list of responses for a specific survey. Use when you need to browse or filter responses after confirming the survey ID."
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_SURVEY_DETAILS",
+      "description": "Tool to retrieve metadata and counts for a specific survey. Use after confirming the survey ID."
+    },
+    {
+      "name": "SURVEY_MONKEY_GET_SURVEYS",
+      "description": "Tool to retrieve a list of surveys. Use when you need to enumerate or paginate through all surveys."
+    }
+  ]
+}

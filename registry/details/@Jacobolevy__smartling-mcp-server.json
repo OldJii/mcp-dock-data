@@ -1,0 +1,340 @@
+{
+  "id": "@Jacobolevy/smartling-mcp-server",
+  "displayName": "Smartling",
+  "description": "Provide seamless integration with Smartling translation services to manage projects, files, jobs, and translation strings efficiently. Enhance your localization workflows with AI-powered insights, cost optimization, and auto-debugging features. Enable reliable and secure translation management directly from your MCP-compatible applications.",
+  "createdAt": "2026-01-16T07:24:02.666Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Jacobolevy/smartling-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "SMARTLING_USER_IDENTIFIER",
+        "SMARTLING_USER_SECRET",
+        "SMARTLING_MCP_TOKEN"
+      ],
+      "properties": {
+        "OPENAI_API_KEY": {
+          "type": "string",
+          "description": "OpenAI API key for AI-powered features (optional but recommended)"
+        },
+        "SMARTLING_BASE_URL": {
+          "type": "string",
+          "description": "Smartling API base URL",
+          "default": "https://api.smartling.com"
+        },
+        "SMARTLING_MCP_TOKEN": {
+          "type": "string",
+          "description": "Smartling MCP Server token for premium features (machine translation, translation memory, style guides)"
+        },
+        "SMARTLING_ACCOUNT_ID": {
+          "type": "string",
+          "description": "Default Smartling Account ID (optional but recommended)"
+        },
+        "SMARTLING_USER_SECRET": {
+          "type": "string",
+          "description": "Smartling User Secret for API authentication"
+        },
+        "SMARTLING_USER_IDENTIFIER": {
+          "type": "string",
+          "description": "Smartling User Identifier for API authentication"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "smartling_get_projects",
+      "description": "Get all projects for a Smartling account"
+    },
+    {
+      "name": "smartling_upload_file",
+      "description": "Upload a file to Smartling for translation"
+    },
+    {
+      "name": "smartling_get_file_status",
+      "description": "Get the translation status of a file"
+    },
+    {
+      "name": "smartling_download_file",
+      "description": "Download a translated file from Smartling"
+    },
+    {
+      "name": "smartling_delete_file",
+      "description": "Delete a file from Smartling"
+    },
+    {
+      "name": "smartling_file_search_strings",
+      "description": "Search for strings in translation files"
+    },
+    {
+      "name": "smartling_get_translations_by_locale",
+      "description": "Get translations for a string by locale"
+    },
+    {
+      "name": "smartling_get_recently_localized",
+      "description": "Get recently localized strings for a specific locale"
+    },
+    {
+      "name": "smartling_get_project_files",
+      "description": "Get list of all files in a Smartling project"
+    },
+    {
+      "name": "smartling_get_file_source_strings",
+      "description": "Get all source strings from a specific file in a Smartling project"
+    },
+    {
+      "name": "smartling_get_file_strings_list",
+      "description": "List file strings via Files API (preferred for source keys)"
+    },
+    {
+      "name": "smartling_create_job",
+      "description": "Create a new translation job in Smartling"
+    },
+    {
+      "name": "smartling_get_jobs",
+      "description": "Get all jobs for a project"
+    },
+    {
+      "name": "smartling_get_job",
+      "description": "Get details for a specific job"
+    },
+    {
+      "name": "smartling_add_files_to_job",
+      "description": "Add files to an existing job"
+    },
+    {
+      "name": "smartling_remove_files_from_job",
+      "description": "Remove files from an existing job"
+    },
+    {
+      "name": "smartling_authorize_job",
+      "description": "Authorize a job for translation"
+    },
+    {
+      "name": "smartling_cancel_job",
+      "description": "Cancel a job"
+    },
+    {
+      "name": "smartling_get_job_progress",
+      "description": "Get detailed translation progress for a specific job, including progress by locale"
+    },
+    {
+      "name": "smartling_run_quality_check",
+      "description": "Run quality checks on translation content"
+    },
+    {
+      "name": "smartling_get_quality_results",
+      "description": "Get quality check results for a specific file and locale"
+    },
+    {
+      "name": "smartling_get_quality_check_types",
+      "description": "Get available quality check types"
+    },
+    {
+      "name": "smartling_get_available_tags",
+      "description": "Get all available tags in a project"
+    },
+    {
+      "name": "smartling_add_string_tags",
+      "description": "Add tags to specific strings in a file"
+    },
+    {
+      "name": "smartling_remove_string_tags",
+      "description": "Remove tags from specific strings in a file"
+    },
+    {
+      "name": "smartling_get_strings_by_tag",
+      "description": "Get all strings that have specific tags"
+    },
+    {
+      "name": "smartling_debug_tags_search",
+      "description": "Debug tool for tag searching - provides detailed information about tags and string filtering"
+    },
+    {
+      "name": "smartling_get_glossaries",
+      "description": "Get all glossaries for an account"
+    },
+    {
+      "name": "smartling_create_glossary",
+      "description": "Create a new glossary"
+    },
+    {
+      "name": "smartling_get_glossary_terms",
+      "description": "Get terms from a specific glossary"
+    },
+    {
+      "name": "smartling_add_glossary_term",
+      "description": "Add a term to a glossary"
+    },
+    {
+      "name": "smartling_delete_glossary_term",
+      "description": "Delete a term from a glossary"
+    },
+    {
+      "name": "smartling_get_webhooks",
+      "description": "Get all webhooks for a project"
+    },
+    {
+      "name": "smartling_create_webhook",
+      "description": "Create a new webhook for a project"
+    },
+    {
+      "name": "smartling_delete_webhook",
+      "description": "Delete a webhook from a project"
+    },
+    {
+      "name": "smartling_search_strings",
+      "description": "Search strings by text with optional filters. If no specific fileUri provided, searches across all files in the project."
+    },
+    {
+      "name": "smartling_get_string_details",
+      "description": "Get string details by hashcode"
+    },
+    {
+      "name": "smartling_get_workflow_steps",
+      "description": "Get workflow steps for a job and locale"
+    },
+    {
+      "name": "smartling_assign_workflow_step",
+      "description": "Assign a workflow step to a specific user"
+    },
+    {
+      "name": "smartling_get_string_translations",
+      "description": "Get translations for a specific string across multiple locales"
+    },
+    {
+      "name": "smartling_search_strings_advanced",
+      "description": "Advanced search for strings with multiple filters and sorting options. If no specific fileUri provided, searches across all files in the project."
+    },
+    {
+      "name": "smartling_get_translation_progress",
+      "description": "Get translation progress summary for a project or specific files"
+    },
+    {
+      "name": "smartling_find_hashcodes_for_keys",
+      "description": "Find hashcodes for a list of key names using exact Apps Script logic - searches across all files in the project"
+    },
+    {
+      "name": "smartling_get_strings_by_translation_status",
+      "description": "Get strings by translation status (e.g., PENDING, AWAITING_AUTHORIZATION)"
+    },
+    {
+      "name": "smartling_upload_context",
+      "description": "Upload visual context (image/screenshot) to help translators. Use imageUrl for URLs (Figma, etc), filePath for local files up to 20MB (images), 512MB (videos), or fileContent for base64 (limited by MCP)."
+    },
+    {
+      "name": "smartling_get_context",
+      "description": "Get details of a specific context"
+    },
+    {
+      "name": "smartling_list_contexts",
+      "description": "List all contexts in the project"
+    },
+    {
+      "name": "smartling_bind_context_to_string",
+      "description": "Associate visual context with specific translation strings"
+    },
+    {
+      "name": "smartling_delete_context",
+      "description": "Delete a context from the project"
+    },
+    {
+      "name": "smartling_get_project_locales",
+      "description": "Get all locales configured in the project"
+    },
+    {
+      "name": "smartling_add_locale_to_project",
+      "description": "Add a new locale to the project"
+    },
+    {
+      "name": "smartling_get_locale_details",
+      "description": "Get details of a specific locale in the project"
+    },
+    {
+      "name": "smartling_remove_locale_from_project",
+      "description": "Remove a locale from the project"
+    },
+    {
+      "name": "smartling_get_supported_locales",
+      "description": "Get list of all locales supported by Smartling"
+    },
+    {
+      "name": "smartling_get_project_summary_report",
+      "description": "Get project summary report with general metrics"
+    },
+    {
+      "name": "smartling_get_job_progress_report",
+      "description": "Get detailed progress report for a specific job"
+    },
+    {
+      "name": "smartling_get_cost_estimate",
+      "description": "Get cost estimate for translation content"
+    },
+    {
+      "name": "smartling_get_translation_velocity_report",
+      "description": "Get translation velocity report by period"
+    },
+    {
+      "name": "smartling_get_word_count_report",
+      "description": "Get detailed word count report"
+    },
+    {
+      "name": "smartling_get_quality_score_report",
+      "description": "Get quality score report for translations"
+    },
+    {
+      "name": "smartling_machine_translate_text",
+      "description": "Translate text content using machine translation. Split long text into sentence-based chunks to preserve meaning and context - avoid breaking mid-sentence or splitting related content."
+    },
+    {
+      "name": "smartling_machine_translate_file",
+      "description": "Translate file content using machine translation. Auto-detects source language if source_locale not provided."
+    },
+    {
+      "name": "smartling_search_translation_memory",
+      "description": "Search translation memory for similar translations in a Smartling project. Useful for finding existing translations that match or are similar to source text."
+    },
+    {
+      "name": "smartling_list_style_guides",
+      "description": "List style guides from the current Smartling account. Style guides are collections of rules about content formatting, writing tone, and style to ensure consistent translations."
+    },
+    {
+      "name": "smartling_get_style_guide",
+      "description": "Get specific style guide by its unique identifier. Style guides contain rules about content formatting, writing tone, and style preferences."
+    },
+    {
+      "name": "smartling_list_linguistic_packages",
+      "description": "List all linguistic packages from the current Smartling account. Linguistic packages are collections of translation resources including glossaries and style guides."
+    },
+    {
+      "name": "smartling_get_linguistic_package",
+      "description": "Get specific linguistic package by its unique identifier. Linguistic packages contain settings that determine which linguistic assets (glossaries, style guides) are provided to translators."
+    },
+    {
+      "name": "smartling_add_strings_to_job",
+      "description": "Add strings to an existing Smartling job by their hashcodes. Provides granular string-level control over job content."
+    },
+    {
+      "name": "smartling_remove_strings_from_job",
+      "description": "Remove strings from an existing Smartling job by their hashcodes. Useful for cleaning up job content before authorization."
+    },
+    {
+      "name": "smartling_list_projects_advanced",
+      "description": "List projects from the current Smartling account with advanced filtering. Supports filtering by name, project type, and archived status."
+    },
+    {
+      "name": "smartling_get_project_details",
+      "description": "Get detailed information about a specific project by its UID. Includes comprehensive project configuration and metadata."
+    },
+    {
+      "name": "smartling_match_glossary_terms",
+      "description": "Match terms within specific glossaries against source and translation text. Useful for finding specific terms in source and translated strings for quality assurance."
+    }
+  ]
+}

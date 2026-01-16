@@ -1,0 +1,49 @@
+{
+  "id": "@dravidsajinraj-iex/file-extractor-mcp",
+  "displayName": "File Extractor Service",
+  "description": "Extract content and metadata from various file formats including PDF, DOC, DOCX, PPTX, CSV, and XLSX. Support both URL downloads and direct file uploads with integrated search and pagination for spreadsheets. Automatically handle Google Drive and other supported cloud storage URLs for seamless file access.",
+  "createdAt": "2026-01-16T07:22:23.085Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dravidsajinraj-iex/file-extractor-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "maxFileSize": {
+          "type": "number",
+          "description": "Maximum file size in bytes (5MB)",
+          "default": 5242880
+        },
+        "networkTimeout": {
+          "type": "number",
+          "description": "Network timeout in milliseconds",
+          "default": 30000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_metadata",
+      "description": "Extract metadata information from a file by URL including source, file_url, file_name, format, size, and other file properties"
+    },
+    {
+      "name": "extract_file_content",
+      "description": "Extract content from PDF, DOC, DOCX, CSV, or XLSX files with optional pagination and search for spreadsheets"
+    }
+  ]
+}

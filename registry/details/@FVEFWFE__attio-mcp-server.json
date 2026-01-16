@@ -1,0 +1,154 @@
+{
+  "id": "@FVEFWFE/attio-mcp-server",
+  "displayName": "Attio CRM",
+  "description": "Streamline CRM workflows in Attio using natural language. Quickly search, create, update, and organize companies, people, deals, lists, tasks, and notes with advanced filtering and batch operations. Accelerate sales, marketing, and customer success by managing pipelines, relationships, and activity from one place.",
+  "createdAt": "2026-01-16T07:26:46.119Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FVEFWFE/attio-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "ATTIO_API_KEY": {
+          "type": "string",
+          "description": "Your Attio API key"
+        },
+        "ATTIO_WORKSPACE_ID": {
+          "type": "string",
+          "description": "Optional Attio workspace ID"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "aaa-health-check",
+      "description": "Returns server status without requiring any credentials."
+    },
+    {
+      "name": "health-check",
+      "description": "Returns server status without requiring any credentials."
+    },
+    {
+      "name": "search-records",
+      "description": "Universal search across all resource types (companies, people, records, tasks)"
+    },
+    {
+      "name": "get-record-details",
+      "description": "Get detailed information for any record type"
+    },
+    {
+      "name": "create-record",
+      "description": "Create a new record of any supported type"
+    },
+    {
+      "name": "update-record",
+      "description": "Update an existing record of any supported type"
+    },
+    {
+      "name": "delete-record",
+      "description": "Delete a record of any supported type"
+    },
+    {
+      "name": "get-attributes",
+      "description": "Get attributes for any resource type (companies, people, lists, records, tasks, deals, notes)"
+    },
+    {
+      "name": "discover-attributes",
+      "description": "Discover available attributes for any resource type"
+    },
+    {
+      "name": "get-detailed-info",
+      "description": "Get specific types of detailed information (contact, business, social)"
+    },
+    {
+      "name": "create-note",
+      "description": "Create a note for any record type (companies, people, deals)"
+    },
+    {
+      "name": "list-notes",
+      "description": "Get notes for any record type (companies, people, deals)"
+    },
+    {
+      "name": "advanced-search",
+      "description": "Advanced search with complex filtering across all resource types"
+    },
+    {
+      "name": "search-by-relationship",
+      "description": "Search records by their relationships to other entities"
+    },
+    {
+      "name": "search-by-content",
+      "description": "Search within notes, activity, and interaction content"
+    },
+    {
+      "name": "search-by-timeframe",
+      "description": "Search records by temporal criteria (creation, modification, interaction dates)"
+    },
+    {
+      "name": "batch-operations",
+      "description": "Perform bulk operations (create, update, delete, get, search)"
+    },
+    {
+      "name": "batch-search",
+      "description": "Perform batch search operations with multiple queries in parallel"
+    },
+    {
+      "name": "get-lists",
+      "description": "Get all CRM lists from Attio (sales pipelines, lead stages, customer segments, etc.)"
+    },
+    {
+      "name": "get-record-list-memberships",
+      "description": "Find all CRM lists that a specific record (company, person, etc.) belongs to"
+    },
+    {
+      "name": "get-list-details",
+      "description": "Get details for a specific CRM list (pipeline stages, field configuration, etc.)"
+    },
+    {
+      "name": "get-list-entries",
+      "description": "Get entries for a specific CRM list (companies, people, etc. in sales pipelines)"
+    },
+    {
+      "name": "filter-list-entries",
+      "description": "Filter entries in a CRM list by a specific attribute (e.g., stage, status)"
+    },
+    {
+      "name": "advanced-filter-list-entries",
+      "description": "Filter entries in a CRM list with advanced multiple conditions (complex sales pipeline queries)"
+    },
+    {
+      "name": "add-record-to-list",
+      "description": "Add a company or person to a CRM list (sales pipeline, lead list, etc.)"
+    },
+    {
+      "name": "remove-record-from-list",
+      "description": "Remove a company or person from a CRM list (sales pipeline, lead list, etc.)"
+    },
+    {
+      "name": "update-list-entry",
+      "description": "Update a list entry (e.g., change stage from 'Interested' to 'Demo Scheduling')"
+    },
+    {
+      "name": "filter-list-entries-by-parent",
+      "description": "Filter CRM list entries based on parent record properties (find companies by industry, people by role, etc.)"
+    },
+    {
+      "name": "filter-list-entries-by-parent-id",
+      "description": "Filter CRM list entries by parent record ID (find all lists containing a specific company or person)"
+    }
+  ]
+}

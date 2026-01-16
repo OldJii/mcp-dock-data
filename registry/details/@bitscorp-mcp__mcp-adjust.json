@@ -1,0 +1,36 @@
+{
+  "id": "@bitscorp-mcp/mcp-adjust",
+  "displayName": "Adjust Reporting Server",
+  "description": "Access your Adjust data seamlessly from any MCP client. Query reports, metrics, and performance data on-demand to gain insights into your campaigns. Perfect for quick lookups like install numbers for specific campaigns.",
+  "createdAt": "2026-01-16T07:29:25.450Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bitscorp-mcp/mcp-adjust"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Adjust API Key."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "adjust-reporting",
+      "description": "Adjust reporting"
+    },
+    {
+      "name": "adjust-standard-report",
+      "description": "Get a standard Adjust report with common metrics"
+    }
+  ]
+}

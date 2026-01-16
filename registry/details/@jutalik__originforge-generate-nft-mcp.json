@@ -1,0 +1,49 @@
+{
+  "id": "@jutalik/originforge-generate-nft-mcp",
+  "displayName": "originforge-dNFT-Generator",
+  "description": "Fetch and display NFT data from the Origin Forge API. Easily save SVG images and JSON metadata, while leveraging powerful tools to enhance your NFT viewing experience.\n\ngive me chocolate!\n0x00000000ae9bA88F1f29286CB6f652a74dA99770",
+  "createdAt": "2026-01-16T07:28:44.871Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jutalik/originforge-generate-nft-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-nft-data",
+      "description": "Get basic NFT information"
+    },
+    {
+      "name": "get-nft-image",
+      "description": "Get NFT image data"
+    },
+    {
+      "name": "get-nft-attributes",
+      "description": "Get detailed NFT attributes"
+    },
+    {
+      "name": "get-color-palette",
+      "description": "Get NFT color palette"
+    },
+    {
+      "name": "get-enhanced-nft-view",
+      "description": "Get enhanced NFT view with formatted display"
+    },
+    {
+      "name": "save-nft-files",
+      "description": "Save NFT image and JSON data to files"
+    },
+    {
+      "name": "get-random-nfts",
+      "description": "Get multiple random NFTs"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "@sasabasara/where_is_my_bus_mcp",
+  "displayName": "Where's my bus? NYC MTA Bus",
+  "description": "Get real-time NYC bus arrivals, live vehicle locations, and service alerts. Plan trips between any two locations and explore nearby stops and routes. Check system status and current time to stay on schedule.",
+  "createdAt": "2026-01-16T07:27:50.930Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sasabasara/where_is_my_bus_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "MTA_KEY"
+      ],
+      "properties": {
+        "HOST": {
+          "type": "string",
+          "description": "Server host",
+          "default": "0.0.0.0"
+        },
+        "PORT": {
+          "type": "number",
+          "description": "Server port",
+          "default": 3000
+        },
+        "MTA_KEY": {
+          "type": "string",
+          "description": "Your MTA Bus Time API key"
+        },
+        "GEOCODE_KEY": {
+          "type": "string",
+          "description": "Optional geocoding service API key for address resolution"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_my_bus",
+      "description": "Find real-time bus arrivals near any location in NYC. Returns next buses with walking times, minutes until arrival, and active service alerts. Use this for 'when is my bus coming?' queries."
+    },
+    {
+      "name": "plan_trip",
+      "description": "Plan optimal bus routes between two NYC locations. Returns step-by-step directions, travel times, and transfer points. Use for 'how do I get from A to B?' queries."
+    },
+    {
+      "name": "track_bus",
+      "description": "Track live GPS positions of buses on a specific NYC route. Shows vehicle locations, directions, operational status, and any active service alerts. Use for 'where are the X buses right now?' queries."
+    },
+    {
+      "name": "nearby_transit",
+      "description": "Discover all bus stops and routes near a location with optional real-time arrivals and service alerts. Great for exploring transit options in an area."
+    },
+    {
+      "name": "transit_status",
+      "description": "Check MTA system time and overall service status. Useful for debugging and system health."
+    }
+  ]
+}

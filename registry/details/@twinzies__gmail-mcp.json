@@ -1,0 +1,12 @@
+{
+  "id": "@twinzies/gmail-mcp",
+  "displayName": "gmail-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:37:41.534Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@twinzies/gmail-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

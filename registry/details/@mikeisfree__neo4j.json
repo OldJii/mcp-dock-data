@@ -1,0 +1,12 @@
+{
+  "id": "@mikeisfree/neo4j",
+  "displayName": "neo4j",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:55.036Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mikeisfree/neo4j"
+  },
+  "connection": null,
+  "capabilities": []
+}

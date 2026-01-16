@@ -1,0 +1,31 @@
+{
+  "id": "@mcp-fortress/mcp-fortress-server",
+  "displayName": "mcp-fortress-server",
+  "description": "Scan your connected services for vulnerabilities and malicious code. Monitor runtime behavior with real-time alerts to stop threats before they spread. Get clear remediation guidance and an auditable trail to harden your setup.",
+  "createdAt": "2026-01-16T07:27:44.544Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mcp-fortress/mcp-fortress-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "scan_mcp_server",
+      "description": "Scan an MCP server package for security vulnerabilities, threats, and malicious code patterns"
+    },
+    {
+      "name": "analyze_prompt_injection",
+      "description": "Analyze tool descriptions and prompts for prompt injection vulnerabilities"
+    },
+    {
+      "name": "detect_tool_poisoning",
+      "description": "Detect if a tool name or description appears malicious, misleading, or designed to shadow legitimate tools"
+    }
+  ]
+}

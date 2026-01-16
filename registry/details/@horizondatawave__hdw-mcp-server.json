@@ -1,0 +1,152 @@
+{
+  "id": "@horizondatawave/hdw-mcp-server",
+  "displayName": "AnySite Social Media Data",
+  "description": "Find and research people across LinkedIn, Instagram, and the open web. Search with rich filters and retrieve detailed profile insights in seconds.",
+  "createdAt": "2026-01-16T07:31:47.435Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@horizondatawave/hdw-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "ANYSITE_ACCESS_TOKEN"
+      ],
+      "properties": {
+        "ANYSITE_ACCOUNT_ID": {
+          "type": "string",
+          "description": "AnySite account ID (required for management operations)"
+        },
+        "ANYSITE_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "AnySite API access token"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_linkedin_users",
+      "description": "Search for LinkedIn users with various filters"
+    },
+    {
+      "name": "get_linkedin_profile",
+      "description": "Get detailed information about a LinkedIn user profile"
+    },
+    {
+      "name": "google_search",
+      "description": "Perform Google search"
+    },
+    {
+      "name": "get_instagram_user",
+      "description": "Get Instagram user information"
+    },
+    {
+      "name": "get_linkedin_email_user",
+      "description": "Get LinkedIn user details by email"
+    },
+    {
+      "name": "get_linkedin_user_posts",
+      "description": "Get LinkedIn posts for a user by URN (must include prefix, example: fsd_profile:ACoAAEWn01Q...)"
+    },
+    {
+      "name": "get_linkedin_user_reactions",
+      "description": "Get LinkedIn reactions for a user by URN"
+    },
+    {
+      "name": "get_linkedin_user_comments",
+      "description": "Get LinkedIn comments for a user by URN"
+    },
+    {
+      "name": "search_linkedin_posts",
+      "description": "Search LinkedIn posts with keywords and filters"
+    },
+    {
+      "name": "get_linkedin_post_comments",
+      "description": "Get LinkedIn post comments"
+    },
+    {
+      "name": "get_linkedin_post_reactions",
+      "description": "Get LinkedIn post reactions"
+    },
+    {
+      "name": "get_linkedin_post_reposts",
+      "description": "Get LinkedIn post reposts"
+    },
+    {
+      "name": "get_linkedin_company",
+      "description": "Get LinkedIn company information"
+    },
+    {
+      "name": "get_linkedin_company_employees",
+      "description": "Get LinkedIn company employees"
+    },
+    {
+      "name": "get_linkedin_company_posts",
+      "description": "Get LinkedIn company posts"
+    },
+    {
+      "name": "get_linkedin_google_company",
+      "description": "Search company via Google"
+    },
+    {
+      "name": "get_instagram_user_posts",
+      "description": "Get Instagram user posts"
+    },
+    {
+      "name": "get_instagram_post_comments",
+      "description": "Get Instagram post comments"
+    },
+    {
+      "name": "search_reddit_posts",
+      "description": "Search Reddit posts"
+    },
+    {
+      "name": "get_reddit_posts",
+      "description": "Get Reddit post details by post URL"
+    },
+    {
+      "name": "get_reddit_post_comments",
+      "description": "Get comments for a Reddit post by post URL"
+    },
+    {
+      "name": "get_linkedin_chat_messages",
+      "description": "Get LinkedIn chat messages (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "send_linkedin_chat_message",
+      "description": "Send LinkedIn chat message (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "send_linkedin_connection_request",
+      "description": "Send LinkedIn connection request (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "send_linkedin_post_comment",
+      "description": "Comment on LinkedIn post (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "send_linkedin_post",
+      "description": "Create LinkedIn post (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "get_linkedin_user_connections",
+      "description": "Get user's LinkedIn connections (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "get_linkedin_conversations",
+      "description": "Get LinkedIn conversations (requires ACCOUNT_ID)"
+    },
+    {
+      "name": "linkedin_sales_navigator_search_users",
+      "description": "Advanced LinkedIn Sales Navigator user search"
+    }
+  ]
+}

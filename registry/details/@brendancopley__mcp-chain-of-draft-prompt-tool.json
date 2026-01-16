@@ -1,0 +1,122 @@
+{
+  "id": "@brendancopley/mcp-chain-of-draft-prompt-tool",
+  "displayName": "MCP Chain of Draft (CoD) Prompt Tool",
+  "description": "MCP Chain of Draft (CoD) Prompt Tool is a BYOLLM MCP (Model Context Protocol) tool that transforms your prompt using another LLM, applying CoD or CoT reasoning techniques, before delivering the final result. CoD is a novel paradigm that allows LLMs to generate minimalistic yet informative intermediate reasoning outputs while solving tasks, significantly reducing token usage while maintaining accuracy. For fast setup -> scroll ↓  click \"Connect\"! --------------------------------------------------------------------------------------------- DO NOT be daunted by all the configurations—you can simply scroll down and hit “Connect” to get started effortlessly.\n",
+  "createdAt": "2026-01-16T07:25:42.109Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brendancopley/mcp-chain-of-draft-prompt-tool"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "LLM_MODEL": {
+          "type": "string",
+          "description": "Default model to use (provider-specific)",
+          "default": "claude-3-7-sonnet-latest"
+        },
+        "COD_DB_URL": {
+          "type": "string",
+          "description": "URL for Chain of Draft analytics database",
+          "default": "sqlite:///cod_analytics.db"
+        },
+        "LLM_PROVIDER": {
+          "type": "string",
+          "description": "Choose which provider to use - 'anthropic', 'openai', 'mistral', or 'ollama'",
+          "default": "anthropic"
+        },
+        "COD_MAX_TOKENS": {
+          "type": "string",
+          "description": "Maximum tokens for Chain of Draft",
+          "default": "500"
+        },
+        "ENFORCE_FORMAT": {
+          "type": "string",
+          "description": "Whether to enforce format in Chain of Draft",
+          "default": "true"
+        },
+        "OPENAI_API_KEY": {
+          "type": "string",
+          "description": "API key for OpenAI models"
+        },
+        "COD_EXAMPLES_DB": {
+          "type": "string",
+          "description": "Path to Chain of Draft examples database",
+          "default": "cod_examples.db"
+        },
+        "MISTRAL_API_KEY": {
+          "type": "string",
+          "description": "API key for Mistral AI models"
+        },
+        "OLLAMA_BASE_URL": {
+          "type": "string",
+          "description": "Base URL for Ollama local deployment",
+          "default": "http://localhost:11434"
+        },
+        "OPENAI_BASE_URL": {
+          "type": "string",
+          "description": "Base URL for OpenAI API",
+          "default": "https://api.openai.com"
+        },
+        "ANTHROPIC_API_KEY": {
+          "type": "string",
+          "description": "API key for Anthropic Claude models"
+        },
+        "COD_DEFAULT_MODEL": {
+          "type": "string",
+          "description": "Default model for Chain of Draft",
+          "default": "claude-3-7-sonnet-latest"
+        },
+        "ANTHROPIC_BASE_URL": {
+          "type": "string",
+          "description": "Base URL for Anthropic API",
+          "default": "https://api.anthropic.com"
+        },
+        "ADAPTIVE_WORD_LIMIT": {
+          "type": "string",
+          "description": "Whether to use adaptive word limit in Chain of Draft",
+          "default": "true"
+        },
+        "COD_MAX_WORDS_PER_STEP": {
+          "type": "string",
+          "description": "Maximum words per step in Chain of Draft",
+          "default": "5"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "chain_of_draft_solve",
+      "description": "Solve a reasoning problem using Chain of Draft approach"
+    },
+    {
+      "name": "math_solve",
+      "description": "Solve a math problem using Chain of Draft reasoning"
+    },
+    {
+      "name": "code_solve",
+      "description": "Solve a coding problem using Chain of Draft reasoning"
+    },
+    {
+      "name": "logic_solve",
+      "description": "Solve a logic problem using Chain of Draft reasoning"
+    },
+    {
+      "name": "get_performance_stats",
+      "description": "Get performance statistics for CoD vs CoT approaches"
+    },
+    {
+      "name": "get_token_reduction",
+      "description": "Get token reduction statistics for CoD vs CoT"
+    },
+    {
+      "name": "analyze_problem_complexity",
+      "description": "Analyze the complexity of a problem"
+    }
+  ]
+}

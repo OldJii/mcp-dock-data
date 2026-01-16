@@ -1,0 +1,64 @@
+{
+  "id": "@SauravPahadia/oura-mcp",
+  "displayName": "oura-mcp",
+  "description": "Connect to your Oura Ring data to retrieve sleep, activity, readiness, heart rate, stress, and workout metrics. Analyze recent sleep patterns, summarize activity, and check recovery status with clear, actionable insights. Track trends over time and bring your wellness metrics into your workflows.",
+  "createdAt": "2026-01-16T07:22:18.643Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SauravPahadia/oura-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "accessToken"
+      ],
+      "properties": {
+        "accessToken": {
+          "type": "string",
+          "description": "Your Oura Personal Access Token from https://cloud.ouraring.com/personal-access-tokens"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-personal-info",
+      "description": "Retrieve your personal information from Oura Ring including age, weight, height, and biological sex"
+    },
+    {
+      "name": "get-daily-sleep",
+      "description": "Retrieve daily sleep data including total sleep time, sleep stages, efficiency, and sleep score"
+    },
+    {
+      "name": "get-daily-activity",
+      "description": "Retrieve daily activity data including steps, calories, distance, and activity score"
+    },
+    {
+      "name": "get-daily-readiness",
+      "description": "Retrieve daily readiness data including readiness score, temperature deviation, and recovery indicators"
+    },
+    {
+      "name": "get-heart-rate",
+      "description": "Retrieve heart rate measurements including resting heart rate and heart rate variability"
+    },
+    {
+      "name": "get-workouts",
+      "description": "Retrieve workout sessions including type, duration, intensity, and calories burned"
+    },
+    {
+      "name": "get-sleep-sessions",
+      "description": "Retrieve detailed sleep session data including individual sleep periods with stages and metrics"
+    },
+    {
+      "name": "get-daily-stress",
+      "description": "Retrieve daily stress measurements and recovery indicators"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Raroford32/debank-mcp-server",
+  "displayName": "debank-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:01.694Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Raroford32/debank-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

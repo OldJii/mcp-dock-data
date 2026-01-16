@@ -1,0 +1,12 @@
+{
+  "id": "@ae14watanabe/huggingface-cloth-segmentation",
+  "displayName": "huggingface-cloth-segmentation",
+  "description": "",
+  "createdAt": "2026-01-16T07:39:08.471Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ae14watanabe/huggingface-cloth-segmentation"
+  },
+  "connection": null,
+  "capabilities": []
+}

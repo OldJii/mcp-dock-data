@@ -1,0 +1,63 @@
+{
+  "id": "@falcosan/mcp-siex",
+  "displayName": "SIEX",
+  "description": "Connect to Spain’s SIEX platform to retrieve farm data, register phytosanitary treatments, and export the CUE digital farm record book. Automate regulatory compliance and keep farm records accurate and up to date. Start by configuring your API and SID keys for secure access.",
+  "createdAt": "2026-01-16T07:31:00.994Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@falcosan/mcp-siex"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey",
+        "sidKey"
+      ],
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "SIEX API host URL",
+          "default": "https://api.plataformatierra.es"
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "SIEX API Subscription Key (Ocp-Apim-Subscription-Key) - Required for authentication"
+        },
+        "sidKey": {
+          "type": "string",
+          "description": "SIEX SID Key (Ocp-Apim-Sid-Key) - Required for authentication"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Environment mode: dev or pro",
+          "default": "pro",
+          "enum": [
+            "dev",
+            "pro"
+          ]
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "siex_export_cue",
+      "description": "Export CUE (Cuaderno de Explotación - Digital Farm Record Book) for specific phytosanitary applications. Submits treatments to the Spanish Agriculture Administration (SIEX) for official registration. An email confirmation will be sent upon successful completion."
+    },
+    {
+      "name": "siex_get_farm_data",
+      "description": "Retrieve farm exploitation data from SIEX for a specific REA (Registro de Explotaciones Agrarias) and year. This provides complete farm information including parcels, crops, and regional attributes."
+    },
+    {
+      "name": "siex_register_phytosanitary",
+      "description": "Register a phytosanitary (pesticide/herbicide/fungicide) application for a farm. Records treatments applied to specific crop-location parcels."
+    }
+  ]
+}

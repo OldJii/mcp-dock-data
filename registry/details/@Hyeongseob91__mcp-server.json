@@ -1,0 +1,38 @@
+{
+  "id": "@Hyeongseob91/mcp-server",
+  "displayName": "Weapon Recoil Generator Server",
+  "description": "Generate detailed weapon recoil trajectory data for machine guns, pistols, and shotguns with simple API calls. Visualize recoil patterns instantly through 2D scatter plots accessible via browser or client. Boost development productivity and collaboration by integrating recoil modeling and visualization into your workflow with flexible local or cloud deployment.",
+  "createdAt": "2026-01-16T07:30:50.917Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Hyeongseob91/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "name",
+        "description",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Weapon Recoil Generator and Visualization"
+        },
+        "version": {
+          "type": "string",
+          "description": "1.0.0",
+          "default": "1.0.0"
+        },
+        "description": {
+          "type": "string",
+          "description": "A tool for generating weapon recoil trajectories used in FPS game development. Supports generation for machine guns, shotguns, pistols, and more.\n"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "@microchipgnu/mcplace",
+  "displayName": "MCPlace",
+  "description": "A tribute to r/place. \n\nMCPlace is a shared canvas for MCP clients.",
+  "createdAt": "2026-01-16T07:30:23.579Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@microchipgnu/mcplace"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_canvas",
+      "description": "Render the current canvas in an embedded UI or return JSON state"
+    },
+    {
+      "name": "set_pixel",
+      "description": "Set a single pixel to a palette color index"
+    },
+    {
+      "name": "set_pixels",
+      "description": "Set multiple pixels in one call"
+    },
+    {
+      "name": "get_events",
+      "description": "Get pixel-set events for replay"
+    }
+  ]
+}

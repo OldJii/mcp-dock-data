@@ -1,0 +1,61 @@
+{
+  "id": "@M1Vision/fal-ai-mcp",
+  "displayName": "fal-ai-mcp",
+  "description": "Explore and search fal models to find the right fit for your tasks. Generate content with any model and manage queued runs by checking status, fetching results, and cancelling when needed. Upload files and get shareable URLs for use in your runs.",
+  "createdAt": "2026-01-16T07:21:35.588Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@M1Vision/fal-ai-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your fal.ai API key (get one at https://fal.ai)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "models",
+      "description": "List available models on fal.ai. Use pagination to avoid listing all models at once."
+    },
+    {
+      "name": "search",
+      "description": "Search for models on fal.ai based on keywords"
+    },
+    {
+      "name": "schema",
+      "description": "Get the OpenAPI schema for a specific fal.ai model"
+    },
+    {
+      "name": "generate",
+      "description": "Generate content using a fal.ai model. Supports both direct and queued execution."
+    },
+    {
+      "name": "result",
+      "description": "Get the result of a queued request using the response_url"
+    },
+    {
+      "name": "status",
+      "description": "Check the status of a queued request using the status_url"
+    },
+    {
+      "name": "cancel",
+      "description": "Cancel a queued request using the cancel_url"
+    },
+    {
+      "name": "upload",
+      "description": "Upload a file to fal.ai storage and get a CDN URL"
+    }
+  ]
+}

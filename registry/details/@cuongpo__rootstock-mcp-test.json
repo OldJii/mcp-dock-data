@@ -1,0 +1,132 @@
+{
+  "id": "@cuongpo/rootstock-mcp-test",
+  "displayName": "Rootstock Blockchain Interaction Server",
+  "description": "Enable seamless interaction with the Rootstock blockchain through a standardized MCP interface. Manage wallets, perform transactions, deploy and manage ERC20 tokens, and query blockchain data easily. Simplify building and integrating Rootstock-based applications with comprehensive developer tools and APIs.",
+  "createdAt": "2026-01-16T07:25:12.608Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuongpo/rootstock-mcp-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "rpcUrl": {
+          "type": "string",
+          "description": "Rootstock RPC URL",
+          "default": "https://public-node.testnet.rsk.co"
+        },
+        "chainId": {
+          "type": "number",
+          "description": "Rootstock Chain ID",
+          "default": 31
+        },
+        "privateKey": {
+          "type": "string",
+          "description": "Your funded private key for Rootstock testnet"
+        },
+        "explorerUrl": {
+          "type": "string",
+          "description": "Block explorer URL",
+          "default": "https://explorer.testnet.rootstock.io"
+        },
+        "networkName": {
+          "type": "string",
+          "description": "Network name",
+          "default": "Rootstock Testnet"
+        },
+        "currencySymbol": {
+          "type": "string",
+          "description": "Currency symbol",
+          "default": "tRBTC"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_wallet",
+      "description": "Create a new Rootstock wallet with a generated mnemonic phrase"
+    },
+    {
+      "name": "import_wallet",
+      "description": "Import an existing wallet using private key or mnemonic phrase"
+    },
+    {
+      "name": "list_wallets",
+      "description": "List all available wallets"
+    },
+    {
+      "name": "get_balance",
+      "description": "Get the balance of a wallet address (native tokens or ERC20 tokens)"
+    },
+    {
+      "name": "get_native_balance",
+      "description": "Get the native tRBTC balance of a wallet address on Rootstock testnet"
+    },
+    {
+      "name": "send_transaction",
+      "description": "Send native tokens or ERC20 tokens to another address"
+    },
+    {
+      "name": "get_network_info",
+      "description": "Get current network information and status"
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get details of a transaction by hash"
+    },
+    {
+      "name": "get_block",
+      "description": "Get block information by number or hash"
+    },
+    {
+      "name": "estimate_gas",
+      "description": "Estimate gas cost for a transaction"
+    },
+    {
+      "name": "set_current_wallet",
+      "description": "Set the current active wallet for transactions"
+    },
+    {
+      "name": "get_current_wallet",
+      "description": "Get the current active wallet information"
+    },
+    {
+      "name": "deploy_erc20_token",
+      "description": "Deploy a new ERC20 token contract"
+    },
+    {
+      "name": "get_token_info",
+      "description": "Get comprehensive ERC20 token information including name, symbol, decimals, supply, and owner"
+    },
+    {
+      "name": "mint_tokens",
+      "description": "Mint additional tokens for mintable ERC20 contracts (owner only)"
+    },
+    {
+      "name": "deploy_erc721_token",
+      "description": "Deploy a new ERC721 (NFT) token contract"
+    },
+    {
+      "name": "get_nft_info",
+      "description": "Get comprehensive ERC721 NFT information including collection details and specific token info"
+    },
+    {
+      "name": "mint_nft",
+      "description": "Mint a new NFT for mintable ERC721 contracts (owner only)"
+    }
+  ]
+}

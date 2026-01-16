@@ -1,0 +1,16 @@
+{
+  "id": "@skyDuanXianBing/arcgisonlinemcp",
+  "displayName": "ArcGIS Online Integration Server",
+  "description": "Enable AI assistants and applications to seamlessly interact with ArcGIS Online FeatureLayers with full CRUD operations for spatial data. Query, add, update, and delete spatial features including points, lines, and polygons with flexible spatial reference support. Simplify geospatial data management through a standardized AI-integrated interface.",
+  "createdAt": "2026-01-16T07:31:59.342Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skyDuanXianBing/arcgisonlinemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Shentia/mcp-generate-unit-testing-server",
+  "displayName": "mcp-generate-unit-testing-server",
+  "description": "",
+  "createdAt": "2026-01-16T07:33:36.450Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Shentia/mcp-generate-unit-testing-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

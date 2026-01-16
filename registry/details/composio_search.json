@@ -1,0 +1,93 @@
+{
+  "id": "composio_search",
+  "displayName": "Composio search",
+  "description": "Composio Search provides comprehensive web search across travel (flights, hotels, events), e-commerce (Amazon, Walmart, shopping), financial markets, news, academic research, images, and location services.",
+  "createdAt": "2026-01-16T07:19:48.292Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/composio_search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "COMPOSIO_SEARCH_AMAZON",
+      "description": "Search Amazon for products across different country marketplaces. This tool searches Amazon's product catalog with support for multiple international Amazon domains/marketplaces. Each domain serves a different country with local pricing, currency, shipping options, and product availability. Perfect for product research, international price comparison, and finding products available in specific countries. Returns product details, pricing in local currency, ratings, reviews, and seller information. Examples: query=\"gaming laptop\" + amazon_domain=\"amazon.com\" for US marketplace query=\"coffee maker\" + amazon_domain=\"amazon.de\" for German marketplace query=\"iPhone 15\" + amazon_domain=\"amazon.co.uk\" for UK marketplace with GBP pricing"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_DUCK_DUCK_GO",
+      "description": "The DuckDuckGoSearch class utilizes the Composio DuckDuckGo Search API to perform searches, focusing on web information and details. It leverages the DuckDuckGo search engine via the Composio DuckDuckGo Search API to retrieve relevant web data based on the provided query."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_EVENT",
+      "description": "Search for upcoming events, concerts, festivals, conferences, and other activities. This tool finds local and global events with powerful filtering options. Supports location-based search (city, neighborhood, address), date filtering (today, tomorrow, weekend, next week/month), virtual event discovery, international search with 100+ languages and countries, and pagination for comprehensive results. Perfect for discovering entertainment events, business conferences, sports games, cultural festivals, workshops, meetups, and scheduled activities. Examples: \"Tech conferences\" in \"San Francisco, CA\" with gl=\"us\" and hl=\"en\" \"Virtual networking events\" with htichips=\"event_type:Virtual-Event,date:next_week\" \"Music festivals\" in \"London, UK\" with gl=\"uk\" and hl=\"en\""
+    },
+    {
+      "name": "COMPOSIO_SEARCH_EXA_ANSWER",
+      "description": "Get answers with citations using the Exa API. DEPRECATED: Use COMPOSIO_SEARCH_WEB instead."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_EXA_SIMILARLINK",
+      "description": "Perform a search to find similar links and retrieve a list of relevant results. The search can optionally return contents."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_FINANCE",
+      "description": "Get real-time stock prices, market data, financial news, and company information with historical analysis. This tool retrieves comprehensive financial data including stock quotes, market indices, cryptocurrency prices, exchange rates, and financial news. Supports multiple time ranges (1D to MAX history) for charts and historical analysis. Returns detailed graph data, summary information, and key events (for 6M+ windows). Perfect for tracking investments, analyzing market trends, and research. Examples: query=\"AAPL:NASDAQ\" + window=\"1Y\" for Apple's 1-year chart with key events query=\"BTC-USD\" + window=\"YTD\" for Bitcoin year-to-date performance query=\"GOOGL:NASDAQ\" + window=\"6M\" + hl=\"en\" for Alphabet with news events timeline query=\"WMT:NYSE\" + window=\"MAX\" for Walmart's complete historical data since 1983"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_FLIGHTS",
+      "description": "Search for flights with comprehensive pricing, schedule, and airline information. This tool finds available flights between cities/airports with detailed pricing, multiple airlines, departure/arrival times, flight duration, and booking options. Supports round-trip and one-way searches, multiple passenger types (adults, children, infants), different travel classes, and international pricing in various currencies. Perfect for travel planning, price comparison, and finding the best flight options. Examples: departure_id=\"JFK\" + arrival_id=\"LAX\" + outbound_date=\"2025-12-25\" + return_date=\"2025-12-30\" departure_id=\"LGA\" + arrival_id=\"LHR\" + outbound_date=\"2025-06-01\" + adults=2 departure_id=\"LAX\" + arrival_id=\"NRT\" + outbound_date=\"2025-03-15\" + travel_class=3 + currency=\"USD\""
+    },
+    {
+      "name": "COMPOSIO_SEARCH_GOOGLE_MAPS",
+      "description": "The GoogleMapsSearch class performs a location-specific search using the Composio Goolge Maps Search API. This class extends the functionality of the base Action class to specifically target locations related to the given query. By utilizing the Google Maps search engine through the Composio Goolge Maps Search API, it fetches the most relevant location data based on the input query. The `GoogleMapsSearch` class is particularly useful for applications that need to retrieve and display location information about a specific area. It leverages the powerful search capabilities of Google's maps search engine, ensuring that the returned results are accurate and relevant."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_GROQ_CHAT",
+      "description": "Execute fast LLM inference using Groq's optimized hardware and API. Groq provides ultra-fast inference for various open-source models including LLaMA 3, Mixtral, and Gemma. This action enables chat completions with OpenAI-compatible API format, offering exceptional speed and performance for AI-powered applications. Use cases: - Real-time chat applications requiring low latency - Content generation and text analysis - Question answering and information extraction - Code generation and explanation - Summarization and translation tasks"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_HOTELS",
+      "description": "Search for hotels and vacation rentals with comprehensive filtering and pricing. This tool finds available accommodations with detailed information including pricing, ratings, amenities, photos, and booking options. Supports price range filtering, star rating selection, sorting by various criteria (price, rating, distance), free cancellation options, and vacation rental inclusion. Perfect for travel planning, accommodation comparison, and finding the best lodging options for any destination. Examples: q=\"New York\" + check_in_date=\"2025-06-01\" + check_out_date=\"2025-06-05\" + adults=2 q=\"Paris\" + check_in_date=\"2025-03-15\" + check_out_date=\"2025-03-18\" + min_price=100 + max_price=300 q=\"Tokyo\" + check_in_date=\"2025-12-20\" + check_out_date=\"2025-12-25\" + hotel_class=\"4,5\" + sort_by=13"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_IMAGE",
+      "description": "The ImageSearch class performs an image search using the Composio Image Search API, to target image data and information. It uses the Google Images search engine through the Composio Image Search API to fetch relevant image information based on the input query. The number of results can be controlled using the 'num' parameter (1-100). If not specified, it defaults to 20 results."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_NEWS",
+      "description": "Search for the latest news articles and current events with smart filtering. This tool searches for news articles with time constraints and international support. Supports 100+ languages and countries. Use advanced operators like 'site:' for publisher filtering directly in your query. Examples: query=\"artificial intelligence\" + when=\"w\" for past week's AI news query=\"climate change\" + gl=\"us\" + hl=\"en\" for US climate news query=\"business news\" + when=\"d\" for today's business news query=\"site:bbc.com tesla\" + when=\"d\" for today's BBC Tesla news"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_SCHOLAR",
+      "description": "Scholar API allows you to scrape results from a Google Scholar search query. The ScholarSearch class performs an academic search using the Composio Scholar Search API, academic papers and scholarly articles. It uses the Google Scholar search engine through the SERP API to fetch relevant academic information based on the input query."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_SHOPPING",
+      "description": "Search for products with advanced price filtering, location targeting, and deal discovery. This tool provides comprehensive product search with price range filtering, geographic targeting for local retailers, sorting by price (low to high, high to low), and filtering for free shipping or sale items. Perfect for product research, price comparison, finding deals, and discovering where to buy items. Returns product details, prices, availability, seller information, and reviews. Examples: query=\"gaming laptop\" + min_price=800 + max_price=1500 + sort_by=1 query=\"running shoes\" + location=\"Seattle, WA\" + free_shipping=True query=\"coffee maker\" + on_sale=True + gl=\"us\""
+    },
+    {
+      "name": "COMPOSIO_SEARCH_TAVILY",
+      "description": "The Composio LLM Search class serves as a gateway to the Composio LLM Search API, allowing users to perform searches across a broad range of content with multiple filtering options. It accommodates complex queries, including both keyword and phrase searches, with additional parameters to fine-tune the search results. This class enables a tailored search experience by allowing users to specify the search depth, include images and direct answers, apply domain-specific filters, and control the number of results returned. It is designed to meet various search requirements, from quick lookups to in-depth research."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_TRENDS",
+      "description": "Discover trending topics, search patterns, and popularity data. This tool analyzes search interest over time, compares multiple topics, and identifies rising trends. Ideal for market research, content planning, SEO analysis, and understanding public interest patterns. Returns data on search volume trends, regional interest breakdowns, related topics, and suggested queries."
+    },
+    {
+      "name": "COMPOSIO_SEARCH_TRIP_ADVISOR",
+      "description": "Search TripAdvisor for travel recommendations and itinerary planning. This tool searches TripAdvisor's comprehensive travel database for attractions, restaurants, hotels, tours, and activities. Perfect for creating travel itineraries, finding top-rated experiences, discovering local recommendations, and planning trips. Returns detailed information including ratings, reviews, photos, and traveler recommendations to help create amazing travel experiences and comprehensive itineraries. Examples: query=\"things to do in Paris\" + ssrc=\"A\" for attractions only query=\"best restaurants in Tokyo\" + ssrc=\"r\" for restaurants only query=\"hotels in Bali\" + ssrc=\"h\" + tripadvisor_domain=\"tripadvisor.com\""
+    },
+    {
+      "name": "COMPOSIO_SEARCH_WALMART",
+      "description": "Search Walmart for products with price filtering. This tool searches Walmart's product catalog including groceries, electronics, clothing, home goods, pharmacy, and auto services. Supports basic price range filtering for finding products within budget. Perfect for finding everyday essentials, comparing Walmart prices, and discovering Walmart's full range of products and services. Examples: query=\"wireless headphones\" + min_price=50 + max_price=200 query=\"gaming laptop\" + max_price=800 query=\"organic coffee\" + min_price=10"
+    },
+    {
+      "name": "COMPOSIO_SEARCH_WEB",
+      "description": "Perform general web searches and find relevant information. This tool searches the web for information on any topic. Perfect for research, fact-checking, finding websites, and gathering general information. Returns search results with titles, snippets, URLs, and relevant web pages."
+    }
+  ]
+}

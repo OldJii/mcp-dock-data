@@ -1,0 +1,12 @@
+{
+  "id": "@jessicayanwang/mcp-open-library",
+  "displayName": "mcp-open-library",
+  "description": "",
+  "createdAt": "2026-01-16T07:41:47.469Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jessicayanwang/mcp-open-library"
+  },
+  "connection": null,
+  "capabilities": []
+}

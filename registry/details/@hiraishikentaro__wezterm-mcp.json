@@ -1,0 +1,45 @@
+{
+  "id": "@hiraishikentaro/wezterm-mcp",
+  "displayName": "WezTerm MCP Server",
+  "description": "Enable integration of WezTerm terminal emulator with external tools and resources through the Model Context Protocol. Enhance your terminal experience by allowing dynamic access to data and actions via MCP. Simplify automation and context-aware workflows within WezTerm.",
+  "createdAt": "2026-01-16T07:28:39.960Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hiraishikentaro/wezterm-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "write_to_terminal",
+      "description": "Writes text to the active WezTerm pane - often used to run commands"
+    },
+    {
+      "name": "read_terminal_output",
+      "description": "Reads output from the active WezTerm pane"
+    },
+    {
+      "name": "send_control_character",
+      "description": "Sends control characters to the active WezTerm pane"
+    },
+    {
+      "name": "list_panes",
+      "description": "Lists all panes in the current WezTerm window"
+    },
+    {
+      "name": "switch_pane",
+      "description": "Switches to a specific pane in WezTerm"
+    },
+    {
+      "name": "write_to_specific_pane",
+      "description": "Writes text to a specific WezTerm pane by pane ID"
+    }
+  ]
+}

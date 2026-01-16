@@ -1,0 +1,29 @@
+{
+  "id": "@cyberimaginationsi-gif/mcp-smithery",
+  "displayName": "mcp-smithery",
+  "description": "Find user details by client ID, browse registered clients, and discover available API paths. Accelerate audits and integrations by centralizing identity, client, and route lookups. Reduce errors and save time with quick, searchable access to your client and API directories.",
+  "createdAt": "2026-01-16T07:29:01.500Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cyberimaginationsi-gif/mcp-smithery"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "getUserInfo",
+      "description": "clientId로 사용자 정보를 조회합니다."
+    },
+    {
+      "name": "getClient",
+      "description": "등록된 클라이언트 목록을 조회합니다. [BUILD-TEST-001]"
+    },
+    {
+      "name": "getApiPath",
+      "description": "API Path(메뉴/경로) 목록을 조회합니다."
+    }
+  ]
+}

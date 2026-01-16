@@ -1,0 +1,273 @@
+{
+  "id": "contextstream/mcp-server",
+  "displayName": "ContextStream",
+  "description": "Unify workspace memory, project context, and code intelligence to deliver the right details instantly. Index repos, track decisions, and explore dependency relationships to speed up onboarding and change impact analysis. Stay organized with recall and reminders that capture and surface what matters when you need it.",
+  "createdAt": "2026-01-16T07:26:23.026Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/contextstream/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ContextStream MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Optional ContextStream API key or JWT (required for authenticated tool calls)."
+        },
+        "projectId": {
+          "type": "string",
+          "description": "Optional project ID to scope requests."
+        },
+        "workspaceId": {
+          "type": "string",
+          "description": "Optional workspace ID to scope requests."
+        }
+      },
+      "description": "Configuration for connecting to the ContextStream MCP HTTP gateway.",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mcp_server_version",
+      "description": "Return the running ContextStream MCP server package version\n\nAccess: Free"
+    },
+    {
+      "name": "auth_me",
+      "description": "Fetch authenticated user profile\n\nAccess: Free"
+    },
+    {
+      "name": "workspaces_list",
+      "description": "List accessible workspaces (paginated list: items, total, page, per_page, has_next, has_prev).\n\nAccess: Free"
+    },
+    {
+      "name": "projects_list",
+      "description": "List projects (optionally by workspace; paginated list: items, total, page, per_page, has_next, has_prev).\n\nAccess: Free"
+    },
+    {
+      "name": "projects_create",
+      "description": "Create a new project within a workspace.\nUse this when you need to create a project for a specific folder/codebase.\nIf workspace_id is not provided, uses the current session's workspace.\nOptionally associates a local folder and generates AI editor rules.\n\nAccess: Free\n\nAccess: Free"
+    },
+    {
+      "name": "projects_update",
+      "description": "Update a project (rename or change description)\n\nAccess: Free"
+    },
+    {
+      "name": "projects_index",
+      "description": "Trigger indexing for a project\n\nAccess: Free"
+    },
+    {
+      "name": "search_semantic",
+      "description": "Semantic vector search\n\nAccess: Free"
+    },
+    {
+      "name": "search_hybrid",
+      "description": "Hybrid search (semantic + keyword)\n\nAccess: Free"
+    },
+    {
+      "name": "search_keyword",
+      "description": "Keyword search\n\nAccess: Free"
+    },
+    {
+      "name": "memory_create_event",
+      "description": "Create a memory event for a workspace/project\n\nAccess: Free"
+    },
+    {
+      "name": "memory_list_events",
+      "description": "List memory events (optionally scoped)\n\nAccess: Free"
+    },
+    {
+      "name": "memory_create_node",
+      "description": "Create a knowledge node with optional relations\n\nAccess: Free"
+    },
+    {
+      "name": "memory_list_nodes",
+      "description": "List knowledge graph nodes\n\nAccess: Free"
+    },
+    {
+      "name": "memory_search",
+      "description": "Search memory events/notes\n\nAccess: Free"
+    },
+    {
+      "name": "memory_decisions",
+      "description": "List decision summaries from workspace memory\n\nAccess: Free"
+    },
+    {
+      "name": "graph_related",
+      "description": "Find related nodes in the knowledge graph\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_path",
+      "description": "Find path between two nodes\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_decisions",
+      "description": "Decision history in the knowledge graph\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_dependencies",
+      "description": "Dependency graph query\n\nAccess: Pro (Graph-Lite) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_call_path",
+      "description": "Find call path between two targets\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_impact",
+      "description": "Analyze impact of a target node\n\nAccess: Pro (Graph-Lite) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_ingest",
+      "description": "Build and persist the dependency graph for a project. Runs async by default (wait=false) and can take a few minutes for larger repos.\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "projects_get",
+      "description": "Get project details by ID\n\nAccess: Free"
+    },
+    {
+      "name": "projects_overview",
+      "description": "Get project overview with summary information\n\nAccess: Free"
+    },
+    {
+      "name": "projects_statistics",
+      "description": "Get project statistics (files, lines, complexity)\n\nAccess: Free"
+    },
+    {
+      "name": "projects_files",
+      "description": "List all indexed files in a project\n\nAccess: Free"
+    },
+    {
+      "name": "projects_index_status",
+      "description": "Get project indexing status\n\nAccess: Free"
+    },
+    {
+      "name": "projects_ingest_local",
+      "description": "Read ALL files from a local directory and ingest them for indexing.\nThis indexes your entire project by reading files in batches.\nAutomatically detects code files and skips ignored directories like node_modules, target, dist, etc.\n\nAccess: Free"
+    },
+    {
+      "name": "workspaces_get",
+      "description": "Get workspace details by ID\n\nAccess: Free"
+    },
+    {
+      "name": "memory_get_event",
+      "description": "Get a specific memory event by ID with FULL content (not truncated). Use this when you need the complete content of a memory event, not just the preview returned by search/recall.\n\nAccess: Free"
+    },
+    {
+      "name": "memory_update_event",
+      "description": "Update a memory event\n\nAccess: Free"
+    },
+    {
+      "name": "memory_delete_event",
+      "description": "Delete a memory event\n\nAccess: Free"
+    },
+    {
+      "name": "memory_timeline",
+      "description": "Get chronological timeline of memory events for a workspace\n\nAccess: Free"
+    },
+    {
+      "name": "memory_summary",
+      "description": "Get condensed summary of workspace memory\n\nAccess: Free"
+    },
+    {
+      "name": "graph_circular_dependencies",
+      "description": "Detect circular dependencies in project code\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "graph_unused_code",
+      "description": "Detect unused code in project\n\nAccess: Elite/Team (Full Graph) (upgrade: https://contextstream.io/pricing)"
+    },
+    {
+      "name": "session_init",
+      "description": "Initialize a new conversation session and automatically retrieve relevant context.\nThis is the FIRST tool AI assistants should call when starting a conversation.\nReturns: workspace info, project info, recent memory, recent decisions, relevant context, and high-priority lessons.\nAutomatically detects the IDE workspace/project path and can auto-index code.\n\nIMPORTANT: Pass the user's FIRST MESSAGE as context_hint to get semantically relevant context!\nExample: session_init(folder_path=\"/path/to/project\", context_hint=\"how do I implement auth?\")\n\nThis does semantic search on the first message. You only need context_smart on subsequent messages.\n\nAccess: Free"
+    },
+    {
+      "name": "session_tools",
+      "description": "Get an ultra-compact list of all available ContextStream MCP tools.\nUse this when you need to know what tools are available without reading full descriptions.\n\nReturns a token-efficient tool catalog (~120 tokens) organized by category.\n\nFormat options:\n- 'grouped' (default): Category: tool(hint) tool(hint) - best for quick reference\n- 'minimal': Category:tool|tool|tool - most compact\n- 'full': Detailed list with descriptions\n\nExample output (grouped):\nSession: init(start-conv) smart(each-msg) capture(save) recall(find) remember(quick)\nSearch: semantic(meaning) hybrid(combo) keyword(exact)\nMemory: events(crud) nodes(knowledge) search(find) decisions(choices)\n\nAccess: Free"
+    },
+    {
+      "name": "session_get_user_context",
+      "description": "Retrieve user preferences, coding style, and persona from memory.\nUse this to understand how the user likes to work and adapt your responses accordingly.\n\nAccess: Free"
+    },
+    {
+      "name": "workspace_associate",
+      "description": "Associate a folder/repo with a workspace after user selection.\nCall this after session_init returns status='requires_workspace_selection' and the user has chosen a workspace.\nThis persists the selection to .contextstream/config.json so future sessions auto-connect.\nOptionally creates a parent folder mapping (e.g., all repos under /dev/company/* map to the same workspace).\nOptionally generates AI editor rules for automatic ContextStream usage.\n\nAccess: Free"
+    },
+    {
+      "name": "workspace_bootstrap",
+      "description": "Create a new workspace (user-provided name) and onboard the current folder as a project.\nThis is useful when session_init returns status='requires_workspace_name' (no workspaces exist yet) or when you want to create a new workspace for a repo.\n\nBehavior:\n- Creates a workspace with the given name\n- Associates the folder to that workspace (writes .contextstream/config.json)\n- Initializes a session for the folder, which creates the project (folder name) and starts indexing (if enabled)\n\nAccess: Free"
+    },
+    {
+      "name": "session_capture",
+      "description": "Automatically capture and store important context from the conversation.\nUse this to persist decisions, insights, preferences, or important information.\n\nAccess: Free"
+    },
+    {
+      "name": "session_capture_lesson",
+      "description": "Capture a lesson learned from a mistake or correction.\nUse this when the user corrects you, expresses frustration, or points out an error.\nThese lessons are surfaced in future sessions to prevent repeating the same mistakes.\n\nExample triggers:\n- User says \"No, you should...\" or \"That's wrong\"\n- User expresses frustration (caps, \"COME ON\", \"WTF\")\n- Code breaks due to a preventable mistake\n\nThe lesson will be tagged with 'lesson' and stored with structured metadata for easy retrieval.\n\nAccess: Free"
+    },
+    {
+      "name": "session_get_lessons",
+      "description": "Retrieve lessons learned from past mistakes and corrections.\nUse this to check for relevant warnings before taking actions that have caused problems before.\n\nReturns lessons filtered by:\n- Query: semantic search for relevant lessons\n- Category: workflow, code_quality, verification, communication, project_specific\n- Severity: low, medium, high, critical\n\nAccess: Free"
+    },
+    {
+      "name": "session_smart_search",
+      "description": "Search memory with automatic context enrichment.\nReturns memory matches, relevant code, and related decisions in one call.\n\nAccess: Free"
+    },
+    {
+      "name": "session_remember",
+      "description": "Quick way to store something in memory. Use natural language.\nExample: \"Remember that I prefer TypeScript strict mode\" or \"Remember we decided to use PostgreSQL\"\n\nAccess: Free"
+    },
+    {
+      "name": "session_recall",
+      "description": "Quick way to recall relevant context. Use natural language.\nExample: \"What were the auth decisions?\" or \"What are my TypeScript preferences?\"\n\nAccess: Free"
+    },
+    {
+      "name": "generate_editor_rules",
+      "description": "Generate AI rule files for editors (Windsurf, Cursor, Cline, Kilo Code, Roo Code, Claude Code, Aider).\nThese rules instruct the AI to automatically use ContextStream for memory and context.\nSupported editors: codex, windsurf, cursor, cline, kilo, roo, claude, aider\n\nAccess: Free"
+    },
+    {
+      "name": "session_summary",
+      "description": "Get a compact, token-efficient summary of workspace context (~500 tokens).\nThis is designed to replace loading full chat history in AI prompts.\nReturns: workspace/project info, top decisions (titles only), preferences, memory count.\nUse this at conversation start instead of loading everything.\nFor specific details, use session_recall or session_smart_search.\n\nAccess: Free"
+    },
+    {
+      "name": "session_compress",
+      "description": "Extract and store key information from chat history as memory events.\nThis allows clearing chat history while preserving important context.\nUse at conversation end or when context window is getting full.\n\nExtracts:\n- Decisions made\n- User preferences learned\n- Insights discovered\n- Tasks/action items\n- Code patterns established\n\nAfter compression, the AI can use session_recall to retrieve this context in future conversations.\n\nAccess: Free"
+    },
+    {
+      "name": "session_delta",
+      "description": "Get new context added since a specific timestamp.\nUseful for efficient context synchronization without reloading everything.\n\nReturns:\n- Count of new decisions and memory events\n- List of new items with titles and timestamps\n\nUse case: AI can track what's new since last session_init.\n\nAccess: Free"
+    },
+    {
+      "name": "context_smart",
+      "description": "**CALL THIS BEFORE EVERY AI RESPONSE** to get relevant context.\n\nThis is the KEY tool for token-efficient AI interactions. It:\n1. Analyzes the user's message to understand what context is needed\n2. Retrieves only relevant context in a minified, token-efficient format\n3. Replaces the need to include full chat history in prompts\n\nFormat options:\n- 'minified': Ultra-compact D:decision|P:preference|M:memory (default, ~200 tokens)\n- 'readable': Line-separated with labels\n- 'structured': JSON-like grouped format\n\nType codes: W=Workspace, P=Project, D=Decision, M=Memory, I=Insight, T=Task, L=Lesson\n\nExample usage:\n1. User asks \"how should I implement auth?\"\n2. AI calls context_smart(user_message=\"how should I implement auth?\")\n3. Gets: \"W:Maker|P:contextstream|D:Use JWT for auth|D:No session cookies|M:Auth API at /auth/...\"\n4. AI responds with relevant context already loaded\n\nThis saves ~80% tokens compared to including full chat history.\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_list",
+      "description": "List all reminders for the current user.\nReturns: reminders with title, content, remind_at, priority, status, and keywords.\nCan filter by status (pending, completed, dismissed, snoozed) and priority (low, normal, high, urgent).\n\nUse this to see what reminders you have set.\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_active",
+      "description": "Get active reminders that are pending, overdue, or due soon.\nReturns: reminders with urgency levels (overdue, due_soon, today, upcoming).\nOptionally provide context (e.g., current task description) to get contextually relevant reminders.\n\nUse this to see what reminders need attention now.\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_create",
+      "description": "Create a new reminder for a specific date/time.\nSet reminders to be notified about tasks, follow-ups, or important dates.\n\nPriority levels: low, normal, high, urgent\nRecurrence: daily, weekly, monthly (optional)\n\nExample: Create a reminder to \"Review PR #123\" for tomorrow at 10am with high priority.\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_snooze",
+      "description": "Snooze a reminder until a later time.\nUse this to postpone a reminder without dismissing it.\n\nCommon snooze durations:\n- 1 hour: add 1 hour to current time\n- 4 hours: add 4 hours\n- Tomorrow: next day at 9am\n- Next week: 7 days from now\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_complete",
+      "description": "Mark a reminder as completed.\nUse this when the task or action associated with the reminder is done.\n\nAccess: Free"
+    },
+    {
+      "name": "reminders_dismiss",
+      "description": "Dismiss a reminder without completing it.\nUse this to remove a reminder that is no longer relevant.\n\nAccess: Free"
+    }
+  ]
+}

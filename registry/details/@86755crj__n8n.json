@@ -1,0 +1,12 @@
+{
+  "id": "@86755crj/n8n",
+  "displayName": "n8n",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:38.840Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@86755crj/n8n"
+  },
+  "connection": null,
+  "capabilities": []
+}

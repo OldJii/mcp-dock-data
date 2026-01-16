@@ -1,0 +1,12 @@
+{
+  "id": "@check3D/canvas-mcp",
+  "displayName": "canvas-mcp",
+  "description": "",
+  "createdAt": "2026-01-16T07:38:34.495Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@check3D/canvas-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

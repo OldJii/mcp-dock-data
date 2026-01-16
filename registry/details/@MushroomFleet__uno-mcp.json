@@ -1,0 +1,33 @@
+{
+  "id": "@MushroomFleet/uno-mcp",
+  "displayName": "Unified Narrative Operator",
+  "description": "Transform your ordinary story content into rich, detailed narratives. Enhance your writing with advanced literary techniques that analyze, expand, and enrich your text while preserving your unique voice. Experience a personal narrative assistant that helps you craft compelling stories effortlessly.",
+  "createdAt": "2026-01-16T07:24:51.106Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MushroomFleet/uno-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_text",
+      "description": "Analyzes a story page and generates a report with insights"
+    },
+    {
+      "name": "enhance_text",
+      "description": "Enhances a story page using all techniques to meet expansion target"
+    },
+    {
+      "name": "custom_enhance_text",
+      "description": "Enhances a story page using selected techniques"
+    }
+  ]
+}

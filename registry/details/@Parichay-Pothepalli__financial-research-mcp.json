@@ -1,0 +1,78 @@
+{
+  "id": "@Parichay-Pothepalli/financial-research-mcp",
+  "displayName": "Financial Data",
+  "description": "Access company financial statements, current and historical stock prices, crypto data, news, and SEC filings in one place. Track prices over custom ranges and intervals to power analysis and monitoring. Speed up research with quick retrieval of fundamentals, headlines, and filings.",
+  "createdAt": "2026-01-16T07:20:34.059Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Parichay-Pothepalli/financial-research-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "api_key": {
+          "type": "string",
+          "description": "Your Financial Datasets API key (optional)",
+          "default": ""
+        },
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate (for fun)",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_income_statements",
+      "description": "Get income statements for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            period: Period of the income statement (e.g. annual, quarterly, ttm)\n            limit: Number of income statements to return (default: 4)\n        "
+    },
+    {
+      "name": "get_balance_sheets",
+      "description": "Get balance sheets for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            period: Period of the balance sheet (e.g. annual, quarterly, ttm)\n            limit: Number of balance sheets to return (default: 4)\n        "
+    },
+    {
+      "name": "get_cash_flow_statements",
+      "description": "Get cash flow statements for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            period: Period of the cash flow statement (e.g. annual, quarterly, ttm)\n            limit: Number of cash flow statements to return (default: 4)\n        "
+    },
+    {
+      "name": "get_current_stock_price",
+      "description": "Get the current / latest price of a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n        "
+    },
+    {
+      "name": "get_historical_stock_prices",
+      "description": "Gets historical stock prices for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            start_date: Start date of the price data (e.g. 2020-01-01)\n            end_date: End date of the price data (e.g. 2020-12-31)\n            interval: Interval of the price data (e.g. minute, hour, day, week, month)\n            interval_multiplier: Multiplier of the interval (e.g. 1, 2, 3)\n        "
+    },
+    {
+      "name": "get_company_news",
+      "description": "Get news for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n        "
+    },
+    {
+      "name": "get_available_crypto_tickers",
+      "description": "\n        Gets all available crypto tickers.\n        "
+    },
+    {
+      "name": "get_historical_crypto_prices",
+      "description": "Gets historical prices for a crypto currency.\n\n        Args:\n            ticker: Ticker symbol of the crypto currency (e.g. BTC-USD). The list of available crypto tickers can be retrieved via the get_available_crypto_tickers tool.\n            start_date: Start date of the price data (e.g. 2020-01-01)\n            end_date: End date of the price data (e.g. 2020-12-31)\n            interval: Interval of the price data (e.g. minute, hour, day, week, month)\n            interval_multiplier: Multiplier of the interval (e.g. 1, 2, 3)\n        "
+    },
+    {
+      "name": "get_current_crypto_price",
+      "description": "Get the current / latest price of a crypto currency.\n\n        Args:\n            ticker: Ticker symbol of the crypto currency (e.g. BTC-USD). The list of available crypto tickers can be retrieved via the get_available_crypto_tickers tool.\n        "
+    },
+    {
+      "name": "get_sec_filings",
+      "description": "Get all SEC filings for a company.\n\n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            limit: Number of SEC filings to return (default: 10)\n            filing_type: Type of SEC filing (e.g. 10-K, 10-Q, 8-K)\n        "
+    },
+    {
+      "name": "analyze_financial_ratios",
+      "description": "Analyze financial ratios for a company.\n        \n        Args:\n            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)\n            time_period: Time period for analysis (latest, quarterly, annual, 5y)\n            ratio_types: Types of ratios to include (all, profitability, valuation, liquidity, solvency)\n        "
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@xue20010808/threatnews",
+  "displayName": "threatnews",
+  "description": "",
+  "createdAt": "2026-01-16T07:43:14.424Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xue20010808/threatnews"
+  },
+  "connection": null,
+  "capabilities": []
+}

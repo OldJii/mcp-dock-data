@@ -1,0 +1,21 @@
+{
+  "id": "@swamy.fwd/av-weatheropen-api-secure",
+  "displayName": "av-weatheropen-api-secure",
+  "description": "",
+  "createdAt": "2026-01-16T07:29:53.930Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@swamy.fwd/av-weatheropen-api-secure"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}
