@@ -165,6 +165,19 @@ function transformDetail(item) {
     })).filter(arg => arg.name)
   }));
   
+  // 转换 remotes（远程服务器，不需要本地安装）
+  const remotes = (server.remotes || []).map(remote => ({
+    type: remote.type || 'streamable-http',
+    url: remote.url || '',
+    headers: (remote.headers || []).map(header => ({
+      name: header.name || '',
+      description: header.description || undefined,
+      isRequired: header.isRequired || false,
+      isSecret: header.isSecret || false,
+      default: header.default || undefined
+    })).filter(h => h.name)
+  })).filter(r => r.url);
+  
   return {
     id: server.name || '',
     displayName: server.title || server.name || '',
@@ -181,7 +194,9 @@ function transformDetail(item) {
       subfolder: server.repository.subfolder || undefined
     } : null,
     // README 由客户端实时获取，这里只存储仓库信息
-    packages: packages
+    packages: packages,
+    // 远程服务器配置
+    remotes: remotes
   };
 }
 
