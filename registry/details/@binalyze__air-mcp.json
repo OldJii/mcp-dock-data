@@ -2,7 +2,7 @@
   "id": "@binalyze/air-mcp",
   "displayName": "Binalyze AIR MCP Server",
   "description": "Enable natural language interaction with your Binalyze AIR system to manage assets, acquisition profiles, and organizations seamlessly. Use this server to list and query your AIR data through any MCP client, enhancing your workflow with AI-driven context access. Requires an API token for secure access to your AIR environment.",
-  "createdAt": "2026-01-16T12:44:06.307Z",
+  "createdAt": "2026-01-17T02:11:32.298Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@binalyze/air-mcp"

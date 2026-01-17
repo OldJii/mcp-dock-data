@@ -2,7 +2,7 @@
   "id": "@calvernaz/alphavantage",
   "displayName": "Alphavantage MCP Server",
   "description": "Access real-time and historical stock market data effortlessly. Integrate stock market insights into your applications using the Alphavantage API with this MCP server. Get started quickly by configuring your API key and running the server to fetch market data.",
-  "createdAt": "2026-01-16T12:35:23.038Z",
+  "createdAt": "2026-01-17T02:02:45.810Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@calvernaz/alphavantage"

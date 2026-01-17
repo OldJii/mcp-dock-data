@@ -2,7 +2,7 @@
   "id": "@mrseanchow/cowsay-mcp",
   "displayName": "Cowsay",
   "description": "Cowsay MCP Server, providing ASCII art cow capabilities for LLMs. This implementation allows language models to generate fun ASCII art cows with custom messages.",
-  "createdAt": "2026-01-16T12:36:30.613Z",
+  "createdAt": "2026-01-17T02:03:42.994Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mrseanchow/cowsay-mcp"

@@ -2,7 +2,7 @@
   "id": "@Vooster-AI/github-fetcher-mcp",
   "displayName": "GitHub Fetcher",
   "description": "Fetch file contents and browse directory trees from GitHub repositories. Locate exact files quickly and understand project structure at a glance. Accelerate research, code review, and documentation by pulling only what you need.",
-  "createdAt": "2026-01-16T12:44:38.914Z",
+  "createdAt": "2026-01-17T02:12:05.788Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Vooster-AI/github-fetcher-mcp"

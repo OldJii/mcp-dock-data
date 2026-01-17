@@ -2,7 +2,7 @@
   "id": "@feeefapp/mcp",
   "displayName": "Feeef E-commerce API Server",
   "description": "Enable AI assistants to interact seamlessly with Feeef e-commerce stores, products, and orders using powerful filtering and management tools. Authenticate securely to access user-specific data and perform advanced queries on stores, products, and orders. Simplify e-commerce operations by integrating comprehensive Feeef API capabilities into your AI workflows.",
-  "createdAt": "2026-01-16T12:46:51.356Z",
+  "createdAt": "2026-01-17T02:14:22.066Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@feeefapp/mcp"

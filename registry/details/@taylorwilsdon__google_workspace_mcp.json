@@ -2,7 +2,7 @@
   "id": "@taylorwilsdon/google_workspace_mcp",
   "displayName": "Google Workspace MCP Server",
   "description": "Connect MCP Clients, AI assistants and developer tools to Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive through the Model Context Protocol!\n\nThe most feature-complete Google Workspace / G Suite MCP server, now with Remote OAuth2.1 multi-user support and 1-click Claude installation!",
-  "createdAt": "2026-01-16T12:52:46.212Z",
+  "createdAt": "2026-01-17T02:20:28.372Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@taylorwilsdon/google_workspace_mcp"

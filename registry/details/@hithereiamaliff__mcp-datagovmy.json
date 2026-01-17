@@ -2,7 +2,7 @@
   "id": "@hithereiamaliff/mcp-datagovmy",
   "displayName": "Malaysia Open Data MCP Server",
   "description": "This MCP server provides seamless access to Malaysia's government open data, including datasets, weather forecasts, and public transportation information. Enable efficient querying and retrieval of real-time and historical data with built-in rate limiting and error handling. Empower applications to integrate comprehensive Malaysian public data effortlessly.\n\nNote: this is NOT an official MCP server by the Government of Malaysia or anyone from Malaysia's Open Data/Jabatan Digital Negara/Ministry of Digital team.",
-  "createdAt": "2026-01-16T12:40:22.551Z",
+  "createdAt": "2026-01-17T02:07:44.991Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-datagovmy"

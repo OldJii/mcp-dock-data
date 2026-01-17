@@ -2,7 +2,7 @@
   "id": "@mario-andreschak/mcp-abap-abap-adt-api",
   "displayName": "ABAP-ADT-API MCP-Server",
   "description": "1:1 wrapping of abap-adt-api into a MCP server.",
-  "createdAt": "2026-01-16T12:48:07.418Z",
+  "createdAt": "2026-01-17T02:15:40.623Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mario-andreschak/mcp-abap-abap-adt-api"

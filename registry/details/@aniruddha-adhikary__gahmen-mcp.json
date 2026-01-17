@@ -2,7 +2,7 @@
   "id": "@aniruddha-adhikary/gahmen-mcp",
   "displayName": "MCP Server for Singapore Government Open Data",
   "description": "Provide seamless access to open datasets and collections from data.gov.sg. Enable searching, metadata retrieval, and filtered dataset downloads for analysis.",
-  "createdAt": "2026-01-16T12:35:36.035Z",
+  "createdAt": "2026-01-17T02:02:57.220Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aniruddha-adhikary/gahmen-mcp"

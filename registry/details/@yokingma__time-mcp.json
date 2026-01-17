@@ -2,7 +2,7 @@
   "id": "@yokingma/time-mcp",
   "displayName": "Time MCP Server",
   "description": "Empower your LLMs with time awareness capabilities. Access current time, convert between timezones, and get timestamps effortlessly. Enhance your applications with precise time-related functionalities.\nusage: `npx time-mcp`",
-  "createdAt": "2026-01-16T12:37:53.099Z",
+  "createdAt": "2026-01-17T02:05:14.845Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yokingma/time-mcp"

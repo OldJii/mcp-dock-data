@@ -2,7 +2,7 @@
   "id": "@amankale376/profile-researcher",
   "displayName": "LinkedIn Profile Data Mining Server",
   "description": "Enable advanced LinkedIn profile search, extraction, and contact information enrichment through a powerful MCP server. Leverage AI-powered query expansion, smart filtering, and multiple data sources to obtain comprehensive and validated professional profiles. Export and manage data efficiently with built-in CSV support and persistent storage.",
-  "createdAt": "2026-01-16T12:50:44.053Z",
+  "createdAt": "2026-01-17T02:18:17.300Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@amankale376/profile-researcher"

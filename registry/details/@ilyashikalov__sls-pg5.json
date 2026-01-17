@@ -2,7 +2,7 @@
   "id": "@ilyashikalov/sls-pg5",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with integrated schema validation and development tooling. Accelerate the creation of MCP-compliant servers by leveraging this scaffold's structure and dependencies. Simplify development with built-in support for the Model Context Protocol SDK and schema validation.",
-  "createdAt": "2026-01-16T12:47:47.698Z",
+  "createdAt": "2026-01-17T02:15:20.128Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ilyashikalov/sls-pg5"

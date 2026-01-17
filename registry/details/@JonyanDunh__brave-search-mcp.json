@@ -2,7 +2,7 @@
   "id": "@JonyanDunh/brave-search-mcp",
   "displayName": "Brave Search",
   "description": "Enable comprehensive web search capabilities including web, image, news, video, and local points of interest searches using Brave's API. Enhance your applications with rich, up-to-date search results tailored to your queries. Access diverse search results as resources for seamless integration.",
-  "createdAt": "2026-01-16T12:46:16.426Z",
+  "createdAt": "2026-01-17T02:13:46.183Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@JonyanDunh/brave-search-mcp"

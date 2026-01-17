@@ -2,7 +2,7 @@
   "id": "@mikesol/autodock",
   "displayName": "autodock",
   "description": "Launch and manage on-demand cloud development environments with preserved storage. Expose services securely, sync code safely, and get ready-to-run SSH and logging workflows. Capture browser logs and screenshots, receive environment emails, and run ephemeral GitHub Actions runners when needed.",
-  "createdAt": "2026-01-16T12:50:47.969Z",
+  "createdAt": "2026-01-17T02:18:21.570Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mikesol/autodock"

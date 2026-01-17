@@ -2,7 +2,7 @@
   "id": "@NOVA-3951/fastmail",
   "displayName": "Fastmail",
   "description": "Search your Fastmail account by keyword or mailbox and retrieve full message content with attachments. List mailboxes with counts while maintaining secure, read-only access.",
-  "createdAt": "2026-01-16T12:43:03.196Z",
+  "createdAt": "2026-01-17T02:10:28.842Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@NOVA-3951/fastmail"

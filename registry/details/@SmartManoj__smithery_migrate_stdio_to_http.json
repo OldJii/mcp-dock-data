@@ -2,7 +2,7 @@
   "id": "@SmartManoj/smithery_migrate_stdio_to_http",
   "displayName": "smithery_migrate_stdio_to_http",
   "description": "Count occurrences of any character in your text instantly. Toggle case sensitivity to refine matches. Use it for validation, parsing, and quick text analysis.",
-  "createdAt": "2026-01-16T12:39:22.746Z",
+  "createdAt": "2026-01-17T02:06:35.149Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SmartManoj/smithery_migrate_stdio_to_http"

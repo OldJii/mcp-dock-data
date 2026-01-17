@@ -2,7 +2,7 @@
   "id": "@GoPlausible/vestige-mcp",
   "displayName": "Vestige MCP",
   "description": "Provide comprehensive access to Vestige API data and analytics through a standardized protocol interface. Query networks, protocols, assets, pools, trades, balances, notes, and vaults with flexible filtering and pagination. Enable seamless integration of Vestige's DeFi insights into LLM applications and workflows.",
-  "createdAt": "2026-01-16T12:52:18.199Z",
+  "createdAt": "2026-01-17T02:19:59.550Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GoPlausible/vestige-mcp"

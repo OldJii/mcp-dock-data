@@ -2,7 +2,7 @@
   "id": "@Kyoungwoong/githru-vscode-ext",
   "displayName": "Githru Insights",
   "description": "Discover top contributors by file, branch, or PR area to route reviews and clarify ownership. Assess pull requests with impact metrics to surface risky changes and long-tail hotspots. Visualize repository storylines and author work patterns to plan refactors and improve collaboration.",
-  "createdAt": "2026-01-16T12:37:50.434Z",
+  "createdAt": "2026-01-17T02:05:02.768Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kyoungwoong/githru-vscode-ext"

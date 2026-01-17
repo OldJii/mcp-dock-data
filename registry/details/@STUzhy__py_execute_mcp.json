@@ -2,7 +2,7 @@
   "id": "@STUzhy/py_execute_mcp",
   "displayName": "Python execute",
   "description": "Run Python code in a secure sandbox without local setup. Declare inline dependencies and execute snippets instantly. Prototype, test, and share reproducible results with ease.",
-  "createdAt": "2026-01-16T12:36:46.020Z",
+  "createdAt": "2026-01-17T02:05:09.579Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@STUzhy/py_execute_mcp"

@@ -2,7 +2,7 @@
   "id": "@coastli/bazi-mcp",
   "displayName": "Bazi",
   "description": "Generate precise Bazi (八字) charts from solar or lunar date-times for personality insights and destiny forecasting. Retrieve Chinese calendar (Huangli) details for any date and discover possible Gregorian times for a given Bazi. Rely on accurate calculations to avoid common charting errors.",
-  "createdAt": "2026-01-16T12:36:41.330Z",
+  "createdAt": "2026-01-17T02:03:54.035Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@coastli/bazi-mcp"

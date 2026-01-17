@@ -2,7 +2,7 @@
   "id": "@zeta-chain/cli",
   "displayName": "Universal Blockchain",
   "description": "An MCP server that connects ZetaChain CLI into your editor. Query balances, send cross-chain transactions, and manage universal contracts directly through MCP.",
-  "createdAt": "2026-01-16T12:41:36.334Z",
+  "createdAt": "2026-01-17T02:09:03.510Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zeta-chain/cli"

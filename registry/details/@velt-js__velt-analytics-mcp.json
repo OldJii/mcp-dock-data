@@ -2,7 +2,7 @@
   "id": "@velt-js/velt-analytics-mcp",
   "displayName": "Velt Analytics Server",
   "description": "Provide AI assistants and MCP clients with detailed analytics data about organizations, users, documents, features, attachments, and events from the Velt platform. Enable comprehensive insights into activity metrics, user engagement, document collaboration, feature usage, attachment storage, and event tracking with flexible filtering and pagination. Empower data-driven decision making through easy integration with Velt's analytics API.",
-  "createdAt": "2026-01-16T12:52:57.423Z",
+  "createdAt": "2026-01-17T02:20:39.894Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@velt-js/velt-analytics-mcp"

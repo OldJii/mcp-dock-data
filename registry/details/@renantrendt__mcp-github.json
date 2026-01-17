@@ -2,7 +2,7 @@
   "id": "@renantrendt/mcp-github",
   "displayName": "GitHub Integration Server",
   "description": "Enable your AI assistants to manage GitHub repositories, track issues, and perform file operations seamlessly. Streamline your development workflow by automating GitHub tasks with this powerful MCP server. Enhance collaboration and efficiency in your projects with easy access to GitHub's capabilities.",
-  "createdAt": "2026-01-16T12:47:08.492Z",
+  "createdAt": "2026-01-17T02:14:39.399Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@renantrendt/mcp-github"

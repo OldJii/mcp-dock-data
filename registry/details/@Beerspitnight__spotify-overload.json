@@ -2,7 +2,7 @@
   "id": "@Beerspitnight/spotify-overload",
   "displayName": "Spotify Overload - More Tools (18) | More Functions | More Rocking Out",
   "description": "Enables Claude Code CLI or Desktop to interact with Spotify for playlist curation and management, among other goodies.\nRock Out with The Following Features:\n- 🧠 Smart playlist curation \n- 🛤️ Deep track identification \n- 🕺 Song analysis (bpm, danceability, etc.)\n- 🚀 Discovery & Recommendation (w/ seed validation)",
-  "createdAt": "2026-01-16T13:10:05.735Z",
+  "createdAt": "2026-01-17T02:36:55.797Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Beerspitnight/spotify-overload"

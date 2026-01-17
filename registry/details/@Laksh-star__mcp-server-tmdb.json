@@ -2,7 +2,7 @@
   "id": "@Laksh-star/mcp-server-tmdb",
   "displayName": "TMDB Server",
   "description": "This server integrates with The Movie Database (TMDB) API to provide movie information, search capabilities, and recommendations.",
-  "createdAt": "2026-01-16T12:45:34.430Z",
+  "createdAt": "2026-01-17T02:13:02.620Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Laksh-star/mcp-server-tmdb"

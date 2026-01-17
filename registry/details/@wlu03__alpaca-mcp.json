@@ -2,7 +2,7 @@
   "id": "@wlu03/alpaca-mcp",
   "displayName": "Alpaca Trading Integration",
   "description": "Enable seamless interaction with Alpaca's trading API through a standardized protocol. Execute trading operations, fetch market data, and manage portfolios efficiently within your LLM applications. Simplify algorithmic trading by integrating real-time financial data and actions.",
-  "createdAt": "2026-01-16T12:43:34.408Z",
+  "createdAt": "2026-01-17T02:11:00.642Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@wlu03/alpaca-mcp"

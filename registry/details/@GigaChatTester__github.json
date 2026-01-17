@@ -2,7 +2,7 @@
   "id": "@GigaChatTester/github",
   "displayName": "GitHub Integration Server",
   "description": "Enable seamless interaction with GitHub repositories, issues, pull requests, and user data through a unified interface. Manage repository content, search code and users, and handle issues and pull requests efficiently. Streamline your GitHub workflows by integrating these capabilities directly into your applications.",
-  "createdAt": "2026-01-16T12:39:45.526Z",
+  "createdAt": "2026-01-17T02:07:00.265Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@GigaChatTester/github"

@@ -2,7 +2,7 @@
   "id": "kodustech/kodus-osv",
   "displayName": "Kodus OSV",
   "description": "HTTP server exposing OSV (v1) for open source vulnerability lookup via osv_query/osv_query_batch tools.",
-  "createdAt": "2026-01-16T12:54:45.337Z",
+  "createdAt": "2026-01-17T02:21:42.247Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/kodustech/kodus-osv"

@@ -2,7 +2,7 @@
   "id": "@demomagic/duckchain-mcp",
   "displayName": "DuckChain",
   "description": "Explore blockchain data across addresses, tokens, blocks, and transactions. Investigate any transaction end-to-end with transfers, internal calls, logs, traces, and summaries to audit activity and trace fund flows. Monitor wallets, balances, holders, NFTs, and market trends with charts and stats to research projects and stay informed.",
-  "createdAt": "2026-01-16T12:35:27.755Z",
+  "createdAt": "2026-01-17T02:02:50.571Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@demomagic/duckchain-mcp"

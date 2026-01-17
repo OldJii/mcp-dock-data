@@ -2,7 +2,7 @@
   "id": "@snjyor/binance-mcp-data",
   "displayName": "Binance Cryptocurrency Market Data Service",
   "description": "Provide real-time cryptocurrency market data from Binance directly to AI agents. Access current prices, order books, candlestick charts, trading history, and price statistics seamlessly. Enable AI-driven queries about the latest market trends without visiting external sites.",
-  "createdAt": "2026-01-16T12:42:32.466Z",
+  "createdAt": "2026-01-17T02:09:59.352Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@snjyor/binance-mcp-data"

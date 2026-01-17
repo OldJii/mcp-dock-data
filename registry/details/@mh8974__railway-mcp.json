@@ -2,7 +2,7 @@
   "id": "@mh8974/railway-mcp",
   "displayName": "Railway MCP Server",
   "description": "Manage your Railway.app infrastructure effortlessly. Deploy services, manage variables, and monitor deployments using natural language commands. Streamline your development workflow with AI-driven interactions.",
-  "createdAt": "2026-01-16T12:48:13.276Z",
+  "createdAt": "2026-01-17T02:15:46.624Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mh8974/railway-mcp"

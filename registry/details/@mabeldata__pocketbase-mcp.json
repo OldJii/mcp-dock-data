@@ -2,7 +2,7 @@
   "id": "@mabeldata/pocketbase-mcp",
   "displayName": "PocketBase MCP Server",
   "description": "Manage your PocketBase collections effortlessly. Fetch, create, update, and delete records with ease, while also handling file uploads and downloads. Streamline your database operations and enhance your application's capabilities with this powerful server.",
-  "createdAt": "2026-01-16T12:42:05.498Z",
+  "createdAt": "2026-01-17T02:09:32.099Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mabeldata/pocketbase-mcp"

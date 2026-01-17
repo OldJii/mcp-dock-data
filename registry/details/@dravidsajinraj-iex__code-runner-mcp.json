@@ -2,7 +2,7 @@
   "id": "@dravidsajinraj-iex/code-runner-mcp",
   "displayName": "Code Runner",
   "description": "Execute JavaScript and Python code securely in isolated environments with comprehensive security restrictions. Pass dynamic input variables and receive detailed execution results including output, errors, and resource usage. Benefit from a security-first design that blocks dangerous operations and enforces execution timeouts to protect your system.",
-  "createdAt": "2026-01-16T12:35:44.035Z",
+  "createdAt": "2026-01-17T02:03:56.019Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dravidsajinraj-iex/code-runner-mcp"

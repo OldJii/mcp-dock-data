@@ -2,7 +2,7 @@
   "id": "@kamath/sample-python-mcp",
   "displayName": "Sample Python MCP Server",
   "description": "Provide a Python-based MCP server implementation to enable integration of LLMs with external tools and resources. Facilitate dynamic interaction with data and actions through a standardized protocol. Simplify building MCP-compliant servers with Python tooling and CLI support.",
-  "createdAt": "2026-01-16T12:39:23.416Z",
+  "createdAt": "2026-01-17T02:07:10.786Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/sample-python-mcp"

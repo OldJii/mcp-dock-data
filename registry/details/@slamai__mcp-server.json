@@ -2,7 +2,7 @@
   "id": "@slamai/mcp-server",
   "displayName": "SLAMai MCP Server (Base & Ethereum DeFi)",
   "description": "A unified DeFi data server for Ethereum and Base, delivering real-time token prices, market analytics, and historical on-chain activity. Built for traders, analysts, and developers, it powers dashboards, monitoring, and automation with reliable access to token dynamics and blockchain insights.",
-  "createdAt": "2026-01-16T12:45:10.212Z",
+  "createdAt": "2026-01-17T02:12:37.104Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@slamai/mcp-server"

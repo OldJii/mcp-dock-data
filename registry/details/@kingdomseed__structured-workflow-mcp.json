@@ -2,7 +2,7 @@
   "id": "@kingdomseed/structured-workflow-mcp",
   "displayName": "Structured Workflow Server",
   "description": "Enforce disciplined AI-assisted programming workflows by requiring systematic auditing, analysis, and verified outputs at each development phase. Guide AI through structured phases like refactoring, feature development, and testing to ensure thorough understanding and quality results. Prevent skipping steps and maintain session state to uphold workflow integrity.\n\n## Manual Installation\n### Clone the repository\n- git clone https://github.com/kingdomseed/structured-workflow-mcp\n- cd structured-workflow-mcp\n\n### Install dependencies and build\n- npm install\n- npm run build\n\nThen add this to your MCP.json\n```\n\"structured-workflow\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"/path/to/your/structured-workflow-mcp/dist/index.js\"\n      ],\n      \"env\": {}\n    }\n```",
-  "createdAt": "2026-01-16T12:51:03.050Z",
+  "createdAt": "2026-01-17T02:18:37.356Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kingdomseed/structured-workflow-mcp"

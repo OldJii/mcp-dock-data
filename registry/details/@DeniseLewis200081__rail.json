@@ -2,7 +2,7 @@
   "id": "@DeniseLewis200081/rail",
   "displayName": "12306 Ticket Search Server",
   "description": "Provide a simple API interface to search and filter 12306 train tickets, including direct, transfer, and stopover queries. Enable large language models to access real-time 12306 ticket information efficiently. Enhance user experience by integrating comprehensive train ticket search capabilities.",
-  "createdAt": "2026-01-16T12:38:12.670Z",
+  "createdAt": "2026-01-17T02:05:25.726Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DeniseLewis200081/rail"

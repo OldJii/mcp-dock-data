@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/cloudflare-github-backup-mcp",
   "displayName": "Cloudflare to GitHub Backup",
   "description": "Automate the backup of your Cloudflare projects to a GitHub repository. Ensure your projects are securely stored and easily retrievable with this seamless integration. Start safeguarding your Cloudflare data today with minimal setup required.",
-  "createdAt": "2026-01-16T12:44:30.961Z",
+  "createdAt": "2026-01-17T02:11:57.280Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/cloudflare-github-backup-mcp"

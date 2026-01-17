@@ -2,7 +2,7 @@
   "id": "@leandrogavidia/marinade-finance-mcp-server",
   "displayName": "Marinade Finance MCP Server",
   "description": "Explore Marinade documentation and get quick answers with direct links to official guides. Monitor real-time protocol state on Solana, including prices, rewards, and staking metrics. Manage liquid staking with mSOL, check balances, and send tokens between wallets.",
-  "createdAt": "2026-01-16T12:38:06.426Z",
+  "createdAt": "2026-01-17T02:06:06.609Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@leandrogavidia/marinade-finance-mcp-server"

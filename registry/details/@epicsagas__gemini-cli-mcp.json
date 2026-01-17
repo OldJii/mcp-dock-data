@@ -2,7 +2,7 @@
   "id": "@epicsagas/gemini-cli-mcp",
   "displayName": "Gemini CLI MCP Server",
   "description": "Expose Gemini CLI functionalities as MCP-compliant tools to enable AI agents to interact with Gemini models and Git operations seamlessly. Run the server in HTTP or STDIO mode to integrate with various MCP clients, providing capabilities like asking questions, running agents, and managing Git commits and pull requests. Simplify AI-driven development workflows by leveraging Gemini's powerful CLI commands through a standardized MCP interface.",
-  "createdAt": "2026-01-16T12:48:43.048Z",
+  "createdAt": "2026-01-17T02:16:16.872Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@epicsagas/gemini-cli-mcp"

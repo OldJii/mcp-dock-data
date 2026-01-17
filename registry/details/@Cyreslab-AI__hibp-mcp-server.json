@@ -2,7 +2,7 @@
   "id": "@Cyreslab-AI/hibp-mcp-server",
   "displayName": "Have I Been Pwned Integration Server",
   "description": "Check if your accounts or passwords have been compromised in data breaches. Utilize powerful tools to verify email addresses, passwords, and get detailed breach information seamlessly.",
-  "createdAt": "2026-01-16T12:52:05.808Z",
+  "createdAt": "2026-01-17T02:19:46.900Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Cyreslab-AI/hibp-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@cuongpo/neo-defi-mcp",
   "displayName": "neo-defi-mcp",
   "description": "Swap tokens on the NEO blockchain with slippage and deadline controls. View balances and account details for your wallet. Use your own wallet and RPC endpoint for secure, direct execution.",
-  "createdAt": "2026-01-16T12:51:37.745Z",
+  "createdAt": "2026-01-17T02:19:17.522Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/neo-defi-mcp"

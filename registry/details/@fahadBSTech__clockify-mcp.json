@@ -2,7 +2,7 @@
   "id": "@fahadBSTech/clockify-mcp",
   "displayName": "Clockify Time Tracking Integration Server",
   "description": "Provide seamless integration with Clockify's time tracking API through a comprehensive set of MCP tools. Manage workspaces, users, projects, tasks, time entries, tags, reports, user groups, and custom fields efficiently. Enable AI assistants and automation workflows to interact with Clockify data securely and effectively.",
-  "createdAt": "2026-01-16T12:39:43.533Z",
+  "createdAt": "2026-01-17T02:06:55.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@fahadBSTech/clockify-mcp"

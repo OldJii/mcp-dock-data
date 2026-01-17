@@ -2,7 +2,7 @@
   "id": "@irresi/bl-view-mcp",
   "displayName": "Finance Portfolio Optimizer",
   "description": "Optimize finance portfolios with Black-Litterman using your return views and confidence levels. Backtest strategies, benchmark performance, and analyze risk with correlations, drawdowns, and VaR. Use stock, ETF, and crypto datasets or upload custom assets to generate clear dashboards.",
-  "createdAt": "2026-01-16T12:49:51.801Z",
+  "createdAt": "2026-01-17T02:17:26.016Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@irresi/bl-view-mcp"

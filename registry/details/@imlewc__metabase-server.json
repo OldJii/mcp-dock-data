@@ -2,7 +2,7 @@
   "id": "@imlewc/metabase-server",
   "displayName": "Metabase Integration Server",
   "description": "Interact with Metabase seamlessly. Access dashboards, execute queries, and retrieve data directly from your Metabase instance, enhancing your AI assistant's capabilities.",
-  "createdAt": "2026-01-16T12:40:17.160Z",
+  "createdAt": "2026-01-17T02:07:34.436Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@imlewc/metabase-server"

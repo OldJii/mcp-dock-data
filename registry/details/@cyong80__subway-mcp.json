@@ -2,7 +2,7 @@
   "id": "@cyong80/subway-mcp",
   "displayName": "Subway MCP Server",
   "description": "Provide a scalable and efficient server-side application framework to implement the Model Context Protocol (MCP) using Node.js and NestJS. Enable seamless integration of LLMs with external data and tools through a robust and maintainable server architecture. Facilitate rapid development and deployment of MCP servers with modern TypeScript tooling and best practices.",
-  "createdAt": "2026-01-16T12:38:47.090Z",
+  "createdAt": "2026-01-17T02:05:54.335Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cyong80/subway-mcp"

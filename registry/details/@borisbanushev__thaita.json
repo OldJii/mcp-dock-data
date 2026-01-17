@@ -2,7 +2,7 @@
   "id": "@borisbanushev/thaita",
   "displayName": "thaita",
   "description": "Analyze covered calls to pinpoint optimal strikes and expiration dates. Visualize probability of assignment and profit/loss to compare scenarios quickly. Understand recommendations with clear, multi-factor explanations and interactive breakdowns.",
-  "createdAt": "2026-01-16T12:51:49.489Z",
+  "createdAt": "2026-01-17T02:19:30.236Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@borisbanushev/thaita"

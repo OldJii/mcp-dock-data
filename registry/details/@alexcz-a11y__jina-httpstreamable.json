@@ -2,7 +2,7 @@
   "id": "@alexcz-a11y/jina-httpstreamable",
   "displayName": "jina-httpstreamable",
   "description": "Discover current information across the web and arXiv with powerful search, query expansion, and parallel exploration. Extract clean page content, capture screenshots, and find images to enrich your analysis. Rerank and deduplicate results and estimate page update times to keep insights relevant.",
-  "createdAt": "2026-01-16T12:37:10.797Z",
+  "createdAt": "2026-01-17T02:04:20.973Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alexcz-a11y/jina-httpstreamable"

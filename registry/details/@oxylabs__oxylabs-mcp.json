@@ -2,7 +2,7 @@
   "id": "@oxylabs/oxylabs-mcp",
   "displayName": "Oxylabs MCP",
   "description": "Fetch and process content from specified URLs using the Oxylabs Web Scraper API.",
-  "createdAt": "2026-01-16T12:42:28.254Z",
+  "createdAt": "2026-01-17T02:09:55.314Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@oxylabs/oxylabs-mcp"

@@ -2,7 +2,7 @@
   "id": "@INSIDE-HAIR/mcp-google-meet-and-calendar",
   "displayName": "Google Calendar and Meet",
   "description": "Manage and automate your Google Meet workflows with enterprise-grade tools for calendar event management, meeting moderation, attendance tracking, and smart notes. Deploy easily via Docker, Smithery, or manual setup with secure token authentication and team-friendly features. Enhance productivity with advanced Google Meet space management and AI-powered meeting summaries.",
-  "createdAt": "2026-01-16T12:37:14.416Z",
+  "createdAt": "2026-01-17T02:04:27.685Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@INSIDE-HAIR/mcp-google-meet-and-calendar"

@@ -2,7 +2,7 @@
   "id": "@Travis3699/neo4jmcp",
   "displayName": "neo4jmcp",
   "description": "Explore and query Neo4j graphs with Cypher. Discover schema, run read operations, and optionally execute writes. Toggle read-only mode for safer experimentation.",
-  "createdAt": "2026-01-16T12:41:09.523Z",
+  "createdAt": "2026-01-17T02:08:34.551Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Travis3699/neo4jmcp"

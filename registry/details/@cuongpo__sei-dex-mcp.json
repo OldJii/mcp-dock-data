@@ -2,7 +2,7 @@
   "id": "@cuongpo/sei-dex-mcp",
   "displayName": "DragonSwap",
   "description": "Swap tokens on Sei with instant quotes and streamlined execution. Explore available liquidity pools to find optimal trading opportunities. Wrap SEI and manage approvals to complete trades securely.",
-  "createdAt": "2026-01-16T12:39:32.732Z",
+  "createdAt": "2026-01-17T02:06:54.678Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/sei-dex-mcp"

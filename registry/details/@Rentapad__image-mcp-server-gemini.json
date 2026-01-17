@@ -2,7 +2,7 @@
   "id": "@Rentapad/image-mcp-server-gemini",
   "displayName": "Image Analysis Server",
   "description": "Analyze images and videos by providing URLs or local file paths. Gain insights and detailed descriptions of image content using advanced AI models. Enhance your applications with high-precision image recognition and video analysis capabilities.",
-  "createdAt": "2026-01-16T12:50:04.169Z",
+  "createdAt": "2026-01-17T02:17:38.910Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Rentapad/image-mcp-server-gemini"

@@ -2,7 +2,7 @@
   "id": "@KaranThink41/hubspot_private_app",
   "displayName": "HubSpot MCP Server",
   "description": "Interact seamlessly with HubSpot CRM to manage your Note engagements. Create, update, delete, and fetch summary records effortlessly, enhancing your workflow and productivity. Streamline your communication by sending records via chat or email directly from the server.",
-  "createdAt": "2026-01-16T12:45:33.132Z",
+  "createdAt": "2026-01-17T02:13:00.626Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@KaranThink41/hubspot_private_app"

@@ -2,7 +2,7 @@
   "id": "x-mcp",
   "displayName": "X(Twitter) MCP Server",
   "description": "A server to create drafts of X(Twitter) posts, threads using LLMs and post directly from the chat.",
-  "createdAt": "2026-01-16T12:51:52.741Z",
+  "createdAt": "2026-01-17T02:19:33.547Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/x-mcp"

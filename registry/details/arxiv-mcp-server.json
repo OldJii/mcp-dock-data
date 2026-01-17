@@ -2,7 +2,7 @@
   "id": "arxiv-mcp-server",
   "displayName": "ArXiv Server",
   "description": "Enable AI assistants to search and access arXiv papers through a simple MCP interface.",
-  "createdAt": "2026-01-16T12:41:06.868Z",
+  "createdAt": "2026-01-17T02:08:54.688Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/arxiv-mcp-server"

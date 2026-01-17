@@ -2,7 +2,7 @@
   "id": "@isdaniel/mcp_weather_server",
   "displayName": "Weather MCP Server",
   "description": "Retrieve real-time weather information effortlessly for any city. Get accurate weather updates using a simple command or API call without needing an API key. Enhance your applications with reliable weather data from the Open-Meteo API.",
-  "createdAt": "2026-01-16T12:36:14.162Z",
+  "createdAt": "2026-01-17T02:03:38.349Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@isdaniel/mcp_weather_server"

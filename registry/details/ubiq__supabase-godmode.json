@@ -2,7 +2,7 @@
   "id": "ubiq/supabase-godmode",
   "displayName": "supabase-godmode",
   "description": "Manage projects, databases, and Edge Functions across your Supabase organizations. Create environments and branches with cost-aware confirmation, run migrations safely, and deploy updates with confidence. Search up-to-date docs, inspect logs and recommendations, and fetch endpoints, keys, and client types to accelerate development.",
-  "createdAt": "2026-01-16T12:42:20.888Z",
+  "createdAt": "2026-01-17T02:09:47.568Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/ubiq/supabase-godmode"

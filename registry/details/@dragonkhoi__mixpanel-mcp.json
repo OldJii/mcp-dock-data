@@ -2,7 +2,7 @@
   "id": "@dragonkhoi/mixpanel-mcp",
   "displayName": "Mixpanel Integration",
   "description": "Talk to your Mixpanel analytics events data seamlessly! Query retention number, event data, funnels and more from any MCP client. Great for on-demand look ups like: \"What's the weekly retention for users in the Feb 1 cohort?\"\n\nI am adding more coverage of the Mixpanel API over time, let me know which tools you need or just open a PR.\n\nMake sure you go to your Mixpanel Organization Settings and create a service account. Then get your project ID from your project settings.",
-  "createdAt": "2026-01-16T12:50:42.103Z",
+  "createdAt": "2026-01-17T02:18:15.311Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dragonkhoi/mixpanel-mcp"

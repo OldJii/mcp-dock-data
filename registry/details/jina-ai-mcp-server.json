@@ -2,7 +2,7 @@
   "id": "jina-ai-mcp-server",
   "displayName": "Jina AI",
   "description": "Provides access to Jina AI's web services through Claude, including web page reading, web search, and fact checking.",
-  "createdAt": "2026-01-16T12:41:40.482Z",
+  "createdAt": "2026-01-17T02:08:56.018Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/jina-ai-mcp-server"

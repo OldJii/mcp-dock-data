@@ -2,7 +2,7 @@
   "id": "@samihalawa/manus-mcp",
   "displayName": "Manus",
   "description": "Work inside the Manus sandbox to build, test, and debug faster. Automate the browser, manage files, edit code, and control terminals from one place. Initialize environments with secrets and package projects for deployment.",
-  "createdAt": "2026-01-16T12:49:01.961Z",
+  "createdAt": "2026-01-17T02:16:36.212Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/manus-mcp"

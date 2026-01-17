@@ -2,7 +2,7 @@
   "id": "hex",
   "displayName": "Hex",
   "description": "Search your Hex projects and ask questions about your data with threaded analyses. Start a new thread, then monitor progress and retrieve results as they’re ready. Continue the conversation to refine answers and dive deeper into insights.",
-  "createdAt": "2026-01-16T12:45:29.867Z",
+  "createdAt": "2026-01-17T02:12:57.165Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/hex"

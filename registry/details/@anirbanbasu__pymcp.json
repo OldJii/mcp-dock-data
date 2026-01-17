@@ -2,7 +2,7 @@
   "id": "@anirbanbasu/pymcp",
   "displayName": "PyMCP",
   "description": "Primarily to be used as a template repository for developing MCP servers with FastMCP in Python, PyMCP is somewhat inspired by the official everything MCP server in Typescript.",
-  "createdAt": "2026-01-16T12:36:50.724Z",
+  "createdAt": "2026-01-17T02:04:03.385Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@anirbanbasu/pymcp"

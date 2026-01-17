@@ -2,7 +2,7 @@
   "id": "@emmanuel/weathernws",
   "displayName": "weathernws",
   "description": "Get real-time U.S. weather alerts, forecasts, radar, and station observations from the National Weather Service. Access aviation products like TAFs and SIGMET/AIRMETs along with zone and point metadata for location-aware features. Build safety notifications and dashboards with fast access to active alerts and the latest conditions.",
-  "createdAt": "2026-01-16T12:48:02.874Z",
+  "createdAt": "2026-01-17T02:15:35.929Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmanuel/weathernws"

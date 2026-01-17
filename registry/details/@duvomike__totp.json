@@ -2,7 +2,7 @@
   "id": "@duvomike/totp",
   "displayName": "TOTP Generator",
   "description": "Generate time-based one-time passwords for two-factor authentication. Create codes on demand for accounts and services, ideal for automation and testing. Simplify secure logins and reduce reliance on external authenticator apps.",
-  "createdAt": "2026-01-16T12:38:34.223Z",
+  "createdAt": "2026-01-17T02:05:45.061Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@duvomike/totp"

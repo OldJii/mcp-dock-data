@@ -2,7 +2,7 @@
   "id": "@boma086/mcp-open-project",
   "displayName": "OpenProject",
   "description": "Check the current status of the OpenProject integration. Monitor health to ensure reliable workflows. Use status checks to troubleshoot issues quickly.",
-  "createdAt": "2026-01-16T12:40:53.979Z",
+  "createdAt": "2026-01-17T02:08:17.115Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@boma086/mcp-open-project"

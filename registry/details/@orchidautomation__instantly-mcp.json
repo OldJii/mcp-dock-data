@@ -2,7 +2,7 @@
   "id": "@orchidautomation/instantly-mcp",
   "displayName": "Instantly",
   "description": "This Model Context Protocol (MCP) server acts as a bridge between AI agents and the Instantly.ai platform. It exposes tools allowing automated systems to fetch campaign lists, retrieve specific campaign details, and access various performance analytics (overview, daily, and step-based) for cold email outreach.",
-  "createdAt": "2026-01-16T12:49:22.970Z",
+  "createdAt": "2026-01-17T02:16:57.939Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@orchidautomation/instantly-mcp"

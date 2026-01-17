@@ -2,7 +2,7 @@
   "id": "refund-decide/notary",
   "displayName": "Subscription Refunds",
   "description": "Determine refund eligibility for popular US consumer subscriptions including Apple, Netflix, and Adobe. Simplify the process of reclaiming funds by providing clear approval status based on vendor policies. Check status for individual plans across major digital service providers within the United States.",
-  "createdAt": "2026-01-16T12:43:12.998Z",
+  "createdAt": "2026-01-17T02:10:38.747Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/refund-decide/notary"

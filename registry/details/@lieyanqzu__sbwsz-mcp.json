@@ -2,7 +2,7 @@
   "id": "@lieyanqzu/sbwsz-mcp",
   "displayName": "MTG Chinese Card Database - 大学院废墟(sbwsz.com)",
   "description": "Provide seamless access to Magic: The Gathering Chinese card data through a set of powerful query tools. Search cards by complex criteria, retrieve card sets, and get detailed card information to enhance your applications or workflows. Easily integrate via stdio or Streamable HTTP modes for flexible usage.",
-  "createdAt": "2026-01-16T12:37:57.744Z",
+  "createdAt": "2026-01-17T02:05:06.893Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lieyanqzu/sbwsz-mcp"

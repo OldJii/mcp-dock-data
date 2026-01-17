@@ -2,7 +2,7 @@
   "id": "@ThirdGuard/mcp-etherscan-server",
   "displayName": "Etherscan Tools",
   "description": "Access Ethereum blockchain data effortlessly. Check balances, view transaction history, track token transfers, and fetch contract ABIs with ease. Enhance your Ethereum interactions with real-time gas prices and ENS name resolution.",
-  "createdAt": "2026-01-16T12:40:15.137Z",
+  "createdAt": "2026-01-17T02:07:35.757Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ThirdGuard/mcp-etherscan-server"

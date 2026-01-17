@@ -2,7 +2,7 @@
   "id": "@csrdltte/mcp-smooth",
   "displayName": "Smooth MCP Server",
   "description": "Provide a streamlined and extensible MCP server implementation that enables seamless integration of LLMs with external tools, resources, and prompts. Facilitate dynamic context enrichment and tool invocation to enhance AI applications. Simplify building and deploying MCP-compliant servers with modern TypeScript tooling.",
-  "createdAt": "2026-01-16T12:48:15.243Z",
+  "createdAt": "2026-01-17T02:15:48.638Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@csrdltte/mcp-smooth"

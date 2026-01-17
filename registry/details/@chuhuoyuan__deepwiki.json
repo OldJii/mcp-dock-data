@@ -2,7 +2,7 @@
   "id": "@chuhuoyuan/deepwiki",
   "displayName": "GitHub Wiki Explorer",
   "description": "Explore a GitHub repository's wiki to discover topics and read pages effortlessly. Quickly surface the right docs and context without manual digging. Ask focused questions about a repo and get clear answers grounded in its documentation.",
-  "createdAt": "2026-01-16T12:52:37.766Z",
+  "createdAt": "2026-01-17T02:20:19.695Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@chuhuoyuan/deepwiki"

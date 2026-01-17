@@ -2,7 +2,7 @@
   "id": "@LorhanSohaky/trello-mcp",
   "displayName": "Trello Integration Server",
   "description": "Enable AI assistants to seamlessly retrieve detailed Trello card information using a standardized interface. Access card data by ID or public link with robust type validation and optional read-only mode for safe operations. Integrate Trello project management data into your AI workflows effortlessly.",
-  "createdAt": "2026-01-16T12:49:14.502Z",
+  "createdAt": "2026-01-17T02:16:49.284Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@LorhanSohaky/trello-mcp"

@@ -2,7 +2,7 @@
   "id": "@kwp-lab/rss-reader-mcp",
   "displayName": "RSS Reader",
   "description": "Track and browse RSS feeds with ease. Fetch the latest entries from any feed URL and extract full article content for clean, distraction-free reading. Save or analyze articles in a consistent, structured format.",
-  "createdAt": "2026-01-16T12:36:35.994Z",
+  "createdAt": "2026-01-17T02:04:01.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kwp-lab/rss-reader-mcp"

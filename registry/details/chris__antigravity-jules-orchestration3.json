@@ -2,7 +2,7 @@
   "id": "chris/antigravity-jules-orchestration3",
   "displayName": "antigravity-jules-orchestration3",
   "description": "Automate GitHub development from task discovery to PR merge with session-based workflows, batching, and live monitoring. Generate code and answers locally with Ollama and accelerate changes with code-aware RAG. Strengthen results with semantic memory and keep deployments healthy through Render analysis and auto-fix.",
-  "createdAt": "2026-01-16T12:50:14.426Z",
+  "createdAt": "2026-01-17T02:17:48.935Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/chris/antigravity-jules-orchestration3"

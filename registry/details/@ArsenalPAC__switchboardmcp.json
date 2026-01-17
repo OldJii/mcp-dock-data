@@ -2,7 +2,7 @@
   "id": "@ArsenalPAC/switchboardmcp",
   "displayName": "Switchboard API Integration Server",
   "description": "Enable AI assistants to manage broadcast messaging, email campaigns, and contacts through the Switchboard API. Access tools for campaign management, contact organization, CSV exports, and job monitoring seamlessly. Simplify outreach and communication workflows by integrating Switchboard's capabilities directly into your AI environment.\n\nBuilt, maintained & paid for by Arsenal PAC and not endorsed by any candidate or candidate's committee. This project is neither endorsed nor supported by Switchboard Public Benefit Corp.",
-  "createdAt": "2026-01-16T12:48:17.864Z",
+  "createdAt": "2026-01-17T02:15:51.333Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ArsenalPAC/switchboardmcp"

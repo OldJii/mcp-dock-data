@@ -2,7 +2,7 @@
   "id": "@Gorav22/terminusai",
   "displayName": "TerminusAI",
   "description": "Execute terminal commands locally or remotely via SSH with session persistence and environment variable support. Manage terminal sessions that maintain state for up to 20 minutes, enabling efficient command execution workflows. Connect using stdio or SSE for flexible integration with AI models and applications.",
-  "createdAt": "2026-01-16T12:50:48.617Z",
+  "createdAt": "2026-01-17T02:18:22.235Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Gorav22/terminusai"

@@ -2,7 +2,7 @@
   "id": "@IoanaCristescu15/arxiv-latex-mcp",
   "displayName": "arXiv LaTeX",
   "description": "Retrieve the LaTeX of arXiv papers to preserve precise mathematical notation. Analyze and extract equations, proofs, and symbols with high fidelity. Speed up literature review and code generation from formal notation.",
-  "createdAt": "2026-01-16T12:40:43.304Z",
+  "createdAt": "2026-01-17T02:08:11.776Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@IoanaCristescu15/arxiv-latex-mcp"

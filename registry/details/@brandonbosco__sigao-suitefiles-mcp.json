@@ -2,7 +2,7 @@
   "id": "@brandonbosco/sigao-suitefiles-mcp",
   "displayName": "MCP Server Boilerplate",
   "description": "Build custom API integrations quickly with this ready-to-use MCP server template. Extend and configure tools, authentication, and API endpoints to suit your needs. Benefit from TypeScript support, unit tests, and built-in pagination and filtering capabilities.",
-  "createdAt": "2026-01-16T12:46:57.864Z",
+  "createdAt": "2026-01-17T02:14:28.723Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brandonbosco/sigao-suitefiles-mcp"

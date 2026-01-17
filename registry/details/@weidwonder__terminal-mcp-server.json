@@ -2,7 +2,7 @@
   "id": "@weidwonder/terminal-mcp-server",
   "displayName": "Terminal MCP Server",
   "description": "Execute commands on local or remote hosts seamlessly. Leverage a powerful interface to run system commands, manage sessions, and set environment variables effortlessly. Enhance your AI models and applications with robust command execution capabilities.",
-  "createdAt": "2026-01-16T12:38:32.599Z",
+  "createdAt": "2026-01-17T02:05:40.407Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@weidwonder/terminal-mcp-server"

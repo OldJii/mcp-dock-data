@@ -2,7 +2,7 @@
   "id": "@kemalersin/fonparam-mcp",
   "displayName": "FonParam Investment Funds Data Server",
   "description": "Provide real-time and historical data on Turkish investment funds, including fund listings, performance analysis, company details, and inflation statistics. Enable detailed fund comparisons and investment analysis to support informed financial decisions. Access daily market statistics and inflation rates to stay updated with the latest economic indicators.",
-  "createdAt": "2026-01-16T12:47:10.437Z",
+  "createdAt": "2026-01-17T02:14:41.396Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kemalersin/fonparam-mcp"

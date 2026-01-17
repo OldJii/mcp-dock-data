@@ -2,7 +2,7 @@
   "id": "@ctaylor86/rendi-mcp-server",
   "displayName": "rendi-ffmpeg-mcp-server",
   "description": "Run FFmpeg commands in the cloud for fast video and audio conversions, edits, and workflows—no local install required. Chain multiple commands efficiently, monitor progress, and fetch results with direct download links and metadata. Clean up output files when finished to control storage.",
-  "createdAt": "2026-01-16T12:46:11.855Z",
+  "createdAt": "2026-01-17T02:13:40.834Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ctaylor86/rendi-mcp-server"

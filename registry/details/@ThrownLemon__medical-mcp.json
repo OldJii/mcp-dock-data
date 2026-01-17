@@ -2,7 +2,7 @@
   "id": "@ThrownLemon/medical-mcp",
   "displayName": "Medical Information Server",
   "description": "Provide comprehensive and authoritative medical information by querying multiple trusted sources including FDA, WHO, PubMed, RxNorm, and Google Scholar. Enable detailed drug data retrieval, health statistics access, and medical literature search to support healthcare and research needs. Facilitate seamless integration with MCP-compatible clients for reliable medical data and research insights.",
-  "createdAt": "2026-01-16T12:50:18.343Z",
+  "createdAt": "2026-01-17T02:17:52.939Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ThrownLemon/medical-mcp"

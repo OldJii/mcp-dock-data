@@ -2,7 +2,7 @@
   "id": "@mfukushim/map-traveler-mcp",
   "displayName": "Virtual Traveling Bot",
   "description": "Create immersive travel experiences by instructing an avatar to navigate Google Maps. Report on the journey's progress with real-time updates and photos, enhancing your virtual exploration. Engage with a unique travel narrative that integrates social media interactions seamlessly.\nSmithery Remote Edition now supports image compositing via nano-banana. Enjoy text-based journeys on the map.\nFor more advanced usage, consider building it in a local environment.\nhttps://www.npmjs.com/package/@mfukushim/map-traveler-mcp\n\nIf you connect without making any settings, it will operate in practice mode.\nSet the Google Maps API token, Turso SQLite API token, and Gemini Image API token to travel on real maps with the Smithery version.\nStreamable-http connection is now supported.\n\nNote: If the route cannot be determined, please re-specify the starting point. In rare cases, the coordinates of the starting point may be reset to 0, and we are currently investigating the cause.\n",
-  "createdAt": "2026-01-16T12:36:49.402Z",
+  "createdAt": "2026-01-17T02:04:04.754Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mfukushim/map-traveler-mcp"

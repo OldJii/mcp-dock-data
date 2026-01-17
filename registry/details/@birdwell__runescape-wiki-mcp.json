@@ -2,7 +2,7 @@
   "id": "@birdwell/runescape-wiki-mcp",
   "displayName": "RuneScape Wiki RS3",
   "description": "This MCP server provides AI assistants with real-time access to RuneScape 3 game data through the RuneScape Wiki APIs. It enables AI systems to retrieve current Grand Exchange prices, detailed item information (including stats, examine text, and alchemy values), historical price trends with configurable time intervals, and player statistics from the official hiscores across different game modes (normal, ironman, hardcore ironman). The server acts as a bridge between AI applications and RuneScape's extensive database, allowing for dynamic queries about items, market analysis, player progression tracking, and game-related assistance without requiring direct API knowledge or authentication from the end user.",
-  "createdAt": "2026-01-16T12:41:47.259Z",
+  "createdAt": "2026-01-17T02:09:02.838Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@birdwell/runescape-wiki-mcp"

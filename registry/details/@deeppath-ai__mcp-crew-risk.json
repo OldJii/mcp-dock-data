@@ -2,7 +2,7 @@
   "id": "@deeppath-ai/mcp-crew-risk",
   "displayName": "mcp-crew-risk",
   "description": "This framework aims to provide crawler developers and operators with a comprehensive automated compliance detection toolset to evaluate the crawler-friendliness and potential risks of target websites. It covers three major dimensions: legal, social ethics, and technical aspects. Through multi-level risk warnings and specific recommendations, it helps plan crawler strategies reasonably to avoid legal disputes and negative social impacts while improving technical stability and efficiency.",
-  "createdAt": "2026-01-16T12:42:51.825Z",
+  "createdAt": "2026-01-17T02:10:17.393Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@deeppath-ai/mcp-crew-risk"

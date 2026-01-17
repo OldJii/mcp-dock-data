@@ -2,7 +2,7 @@
   "id": "@ahmed2real/thinkzone",
   "displayName": "NWS Weather & Aviation",
   "description": "Access real-time US weather forecasts, alerts, radar, and station observations from the National Weather Service. Retrieve aviation products including TAFs and SIGMETs for flight planning. Build location-aware features with point metadata, grid forecasts, and zone products.",
-  "createdAt": "2026-01-16T12:50:23.902Z",
+  "createdAt": "2026-01-17T02:17:56.953Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ahmed2real/thinkzone"

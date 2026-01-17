@@ -2,7 +2,7 @@
   "id": "@byronwade/memoria",
   "displayName": "memoria",
   "description": "Prevents your AI from breaking code by revealing hidden file dependencies through git forensics.",
-  "createdAt": "2026-01-16T12:51:41.655Z",
+  "createdAt": "2026-01-17T02:19:22.172Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@byronwade/memoria"

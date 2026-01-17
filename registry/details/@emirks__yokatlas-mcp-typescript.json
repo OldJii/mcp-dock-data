@@ -2,7 +2,7 @@
   "id": "@emirks/yokatlas-mcp-typescript",
   "displayName": "YOKATLAS MCP Server",
   "description": "Provide access to Turkish higher education data through a standardized protocol. Enable seamless integration of university and education-related information into applications. Facilitate data retrieval and interaction using the Model Context Protocol.",
-  "createdAt": "2026-01-16T12:37:25.745Z",
+  "createdAt": "2026-01-17T02:04:39.405Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emirks/yokatlas-mcp-typescript"

@@ -2,7 +2,7 @@
   "id": "gitlab",
   "displayName": "Gitlab",
   "description": "A web-based DevOps lifecycle tool that provides a Git repository manager providing wiki, issue-tracking, and CI/CD pipeline features.",
-  "createdAt": "2026-01-16T12:34:33.570Z",
+  "createdAt": "2026-01-17T02:01:56.628Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/gitlab"

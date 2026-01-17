@@ -2,7 +2,7 @@
   "id": "@AnkitDigitalsherpa/weather_mcp",
   "displayName": "Echo",
   "description": "Echo your input to test workflows and integrations. Validate formatting, prompts, and round-trip behavior without side effects. Use it for quick debugging and connectivity checks.",
-  "createdAt": "2026-01-16T12:35:52.086Z",
+  "createdAt": "2026-01-17T02:04:14.149Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AnkitDigitalsherpa/weather_mcp"

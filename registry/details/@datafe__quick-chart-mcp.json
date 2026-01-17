@@ -2,7 +2,7 @@
   "id": "@datafe/quick-chart-mcp",
   "displayName": "Quick Chart Server",
   "description": "Interact with Quick Chart to generate and retrieve chart images seamlessly. Enhance your AI agents with standardized charting capabilities, making data visualization effortless and efficient.",
-  "createdAt": "2026-01-16T12:38:03.753Z",
+  "createdAt": "2026-01-17T02:05:16.871Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@datafe/quick-chart-mcp"

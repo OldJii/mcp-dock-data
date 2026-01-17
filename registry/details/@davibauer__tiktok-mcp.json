@@ -2,7 +2,7 @@
   "id": "@davibauer/tiktok-mcp",
   "displayName": "TikTok Integration Server",
   "description": "Enable your applications to analyze TikTok videos for virality factors, retrieve video content and subtitles, and interact conversationally with TikTok videos. Access detailed metadata about TikTok posts including creator info, hashtags, and engagement metrics. Seamlessly integrate TikTok data into AI workflows to enhance content understanding and interaction.",
-  "createdAt": "2026-01-16T12:45:46.187Z",
+  "createdAt": "2026-01-17T02:13:14.622Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@davibauer/tiktok-mcp"

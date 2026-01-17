@@ -2,7 +2,7 @@
   "id": "@mem0ai/mem0-memory-mcp",
   "displayName": "Memory Tool",
   "description": "Save, search, and manage long-term memories across users and apps. Quickly recall facts, preferences, and past conversations with semantic search and structured filters. Update or delete specific entries, or bulk-clear a scope to keep context accurate and tidy.",
-  "createdAt": "2026-01-16T12:37:08.138Z",
+  "createdAt": "2026-01-17T02:04:22.306Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mem0ai/mem0-memory-mcp"

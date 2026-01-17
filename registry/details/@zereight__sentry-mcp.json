@@ -2,7 +2,7 @@
   "id": "@zereight/sentry-mcp",
   "displayName": "Sentry Server",
   "description": "Fetch and manage Sentry issue and event details seamlessly. Integrate with your Sentry projects to retrieve insights and streamline your debugging process. Enhance your workflow by leveraging Sentry's powerful API through a standardized interface.",
-  "createdAt": "2026-01-16T12:41:23.508Z",
+  "createdAt": "2026-01-17T02:08:48.705Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zereight/sentry-mcp"

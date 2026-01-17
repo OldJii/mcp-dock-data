@@ -2,7 +2,7 @@
   "id": "@kiyoung8/simulation_by_simpy_mcp",
   "displayName": "simulation_by_simpy_mcp",
   "description": "Simulate M/M/1, M/M/c, and manufacturing (MPS) systems to forecast wait times, utilization, and makespan. Compare separate versus pooled queues and get parameter recommendations to meet service targets. Analyze results with theory-backed metrics, schedule insights, and clear stability checks.",
-  "createdAt": "2026-01-16T12:37:44.429Z",
+  "createdAt": "2026-01-17T02:04:57.438Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kiyoung8/simulation_by_simpy_mcp"

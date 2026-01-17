@@ -2,7 +2,7 @@
   "id": "@team/binadox_mcp_server",
   "displayName": "Binadox MCP Server",
   "description": "MCP server for Terraform — automatically validates, secures, and estimates cloud costs for Terraform configurations. Developed by Binadox, it integrates with any Model Context Protocol (MCP) client (e.g. Claude Desktop or other MCP-compatible AI assistants).",
-  "createdAt": "2026-01-16T12:55:26.609Z",
+  "createdAt": "2026-01-17T02:22:24.615Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@team/binadox_mcp_server"

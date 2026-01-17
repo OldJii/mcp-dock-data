@@ -2,7 +2,7 @@
   "id": "@aicastle-school/stock-price",
   "displayName": "Stock Price",
   "description": "Fetch current stock quotes by ticker symbol across global markets. Integrate up-to-date pricing into research, dashboards, and alerts. Use tickers like AAPL or 005930.KS to quickly retrieve quote details.",
-  "createdAt": "2026-01-16T12:38:25.951Z",
+  "createdAt": "2026-01-17T02:05:35.733Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aicastle-school/stock-price"

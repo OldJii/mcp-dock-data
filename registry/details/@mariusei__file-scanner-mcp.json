@@ -2,7 +2,7 @@
   "id": "@mariusei/file-scanner-mcp",
   "displayName": "Scantool - File Structure Explorer",
   "description": "Scan files and directories to map code structure and navigate large codebases faster. See a compact overview of key elements to decide what to read next. Search for specific structures—like tests, async methods, or dataclasses—to target exploration and refactoring.",
-  "createdAt": "2026-01-16T12:36:53.424Z",
+  "createdAt": "2026-01-17T02:04:06.758Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mariusei/file-scanner-mcp"

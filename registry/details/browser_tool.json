@@ -2,7 +2,7 @@
   "id": "browser_tool",
   "displayName": "Browser tool",
   "description": "Composio enables AI Agents and LLMs to authenticate and integrate with various tools via function calling.",
-  "createdAt": "2026-01-16T12:35:09.999Z",
+  "createdAt": "2026-01-17T02:02:33.066Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/browser_tool"

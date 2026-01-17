@@ -2,7 +2,7 @@
   "id": "@Kanta-Inc/kanta-mcp-server",
   "displayName": "Kanta MCP Server",
   "description": "Enable AI assistants to interact seamlessly with Kanta data by managing clients, users, persons, and organizational structures. Facilitate operations such as creating, updating, searching, and downloading reports or files through a standardized protocol. Streamline access to Kanta's comprehensive data for enhanced automation and insights.",
-  "createdAt": "2026-01-16T12:50:08.293Z",
+  "createdAt": "2026-01-17T02:17:42.916Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kanta-Inc/kanta-mcp-server"

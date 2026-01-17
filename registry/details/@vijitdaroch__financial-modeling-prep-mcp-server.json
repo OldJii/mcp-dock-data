@@ -2,7 +2,7 @@
   "id": "@vijitdaroch/financial-modeling-prep-mcp-server",
   "displayName": "Financial Modeling Prep MCP Server",
   "description": "Provide AI assistants with access to comprehensive financial data, stock information, company fundamentals, and market insights through a rich set of over 250 tools. Enable dynamic or static tool loading to optimize performance and flexibility for financial analysis tasks. Facilitate real-time market data retrieval, financial statement access, and advanced financial metrics for enhanced decision-making.",
-  "createdAt": "2026-01-16T12:35:23.726Z",
+  "createdAt": "2026-01-17T02:02:47.212Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@vijitdaroch/financial-modeling-prep-mcp-server"

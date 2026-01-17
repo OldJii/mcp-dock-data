@@ -2,7 +2,7 @@
   "id": "@sendmarc/sendmarc-read-mcp",
   "displayName": "Sendmarc Read-Only Reporting Server",
   "description": "Provide secure, read-only access to Sendmarc account and domain reporting data for dashboards and insights. Enable users to list accounts, domains, users, and retrieve detailed domain and DMARC-related settings without risk of modification. Facilitate easy integration with Smithery for scalable and safe data consumption.",
-  "createdAt": "2026-01-16T12:48:44.358Z",
+  "createdAt": "2026-01-17T02:16:18.203Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sendmarc/sendmarc-read-mcp"

@@ -2,7 +2,7 @@
   "id": "@andylee20014/mcp-replicate-flux",
   "displayName": "Replicate FLUX Image Generator",
   "description": "Generate images using advanced AI models and store them securely in the cloud. Easily create custom prompts and retrieve accessible image URLs for your projects.",
-  "createdAt": "2026-01-16T12:48:23.744Z",
+  "createdAt": "2026-01-17T02:15:57.333Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@andylee20014/mcp-replicate-flux"

@@ -2,7 +2,7 @@
   "id": "@imprvhub/mcp-status-observer",
   "displayName": "Status Observer",
   "description": "Monitor and query the operational status of major digital platforms in real-time. Get detailed status information for specific services and components with a simple query interface. Stay informed about platform health to quickly respond to service disruptions.",
-  "createdAt": "2026-01-16T12:38:43.121Z",
+  "createdAt": "2026-01-17T02:05:51.693Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@imprvhub/mcp-status-observer"

@@ -2,7 +2,7 @@
   "id": "@Danielmelody/enhanced-fetch-mcp",
   "displayName": "enhanced-fetch-mcp",
   "description": "Fetch web pages and extract clean, structured content as Markdown. Render JavaScript-heavy sites, capture screenshots or PDFs, and automate browsing safely in isolated sandboxes.",
-  "createdAt": "2026-01-16T12:45:54.011Z",
+  "createdAt": "2026-01-17T02:13:22.637Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Danielmelody/enhanced-fetch-mcp"

@@ -2,7 +2,7 @@
   "id": "@rishipradeep-think41/google-drive-mcp",
   "displayName": "Google Drive",
   "description": "Enable seamless access and management of Google Drive files through a standardized protocol. Facilitate listing, reading, and interacting with Google Drive resources directly from your LLM applications. Simplify integration with Google Drive by exposing its capabilities as MCP tools and resources.",
-  "createdAt": "2026-01-16T12:40:50.661Z",
+  "createdAt": "2026-01-17T02:07:08.102Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rishipradeep-think41/google-drive-mcp"

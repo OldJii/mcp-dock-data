@@ -2,7 +2,7 @@
   "id": "@devassistantai/github-projects",
   "displayName": "GitHub Projects",
   "description": "Manage GitHub Projects V2 efficiently by interacting with the GitHub Projects API through a set of powerful tools. Perform project, item, task, field, and view management operations seamlessly from your language model or client. Enhance your workflow with tested, production-ready capabilities for project automation and organization.",
-  "createdAt": "2026-01-16T12:45:16.742Z",
+  "createdAt": "2026-01-17T02:12:43.832Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@devassistantai/github-projects"

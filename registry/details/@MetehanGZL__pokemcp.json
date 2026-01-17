@@ -2,7 +2,7 @@
   "id": "@MetehanGZL/pokemcp",
   "displayName": "Pokémon Information Server",
   "description": "Provide detailed Pokémon data and information through a standardized MCP interface. Enable LLMs and applications to query and retrieve Pokémon-related content efficiently. Enhance your agents with rich, structured Pokémon knowledge.",
-  "createdAt": "2026-01-16T12:37:41.063Z",
+  "createdAt": "2026-01-17T02:04:54.086Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@MetehanGZL/pokemcp"

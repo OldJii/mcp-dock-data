@@ -2,7 +2,7 @@
   "id": "@maayanyosef/mcp-explorium",
   "displayName": "Explorium B2B Data",
   "description": "The Explorium Business Data Hub provides AI tools with access to:\n\nCompany Search & Enrichment: Find companies by name, domain, or attributes with detailed firmographics\nContact Discovery: Locate and enrich professional contact information\nBusiness Intelligence: Access technology stack, funding history, growth signals, and business events\nReal-Time Data: Up-to-date information from dozens of trusted external data sources\nWorkflow Integration: Seamlessly integrate business data into AI-powered workflows\nSearch any company or professional for everything from emails and phone numbers to roles, growth signals, tech stack, business events, website changes, and more. Find qualified leads, research prospects, identify talent, or craft personalized outreach—all without leaving your AI tool.",
-  "createdAt": "2026-01-16T12:46:11.203Z",
+  "createdAt": "2026-01-17T02:13:40.169Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@maayanyosef/mcp-explorium"

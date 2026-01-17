@@ -2,7 +2,7 @@
   "id": "@demomagic/mineru-mcp-server",
   "displayName": "Mineru Document Parsing Server",
   "description": "Provide powerful document parsing capabilities by integrating with the Mineru API. Enable single and batch file parsing with support for multiple formats, OCR, formula, and table recognition. Monitor parsing task status in real-time to efficiently process documents in various languages.",
-  "createdAt": "2026-01-16T12:41:08.194Z",
+  "createdAt": "2026-01-17T02:08:33.151Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@demomagic/mineru-mcp-server"

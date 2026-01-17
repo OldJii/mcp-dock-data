@@ -2,7 +2,7 @@
   "id": "mcp_snowflake_server",
   "displayName": "Snowflake Server",
   "description": "A Model Context Protocol server implementation that provides database interaction with Snowflake, allowing SQL queries and data insights.",
-  "createdAt": "2026-01-16T12:52:33.857Z",
+  "createdAt": "2026-01-17T02:20:15.686Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp_snowflake_server"

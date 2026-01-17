@@ -2,7 +2,7 @@
   "id": "@geobio/mcp-server-nationalparks",
   "displayName": "National Parks Information Server",
   "description": "Provide real-time, detailed information about U.S. National Parks including park details, alerts, visitor centers, campgrounds, and events. Enable users to search parks by location, activities, and other criteria to plan visits effectively. Access up-to-date alerts and operational information to enhance trip planning and safety.",
-  "createdAt": "2026-01-16T12:43:57.913Z",
+  "createdAt": "2026-01-17T02:11:24.200Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@geobio/mcp-server-nationalparks"

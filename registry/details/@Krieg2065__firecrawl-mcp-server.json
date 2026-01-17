@@ -2,7 +2,7 @@
   "id": "@Krieg2065/firecrawl-mcp-server",
   "displayName": "Firecrawl Web Scraping Server",
   "description": "Enable advanced web scraping, crawling, and content extraction with support for JavaScript rendering, batch processing, and smart filtering. Perform deep research and structured data extraction using LLM-powered tools. Monitor credit usage and handle rate limits automatically for efficient and reliable web data integration.",
-  "createdAt": "2026-01-16T12:40:04.452Z",
+  "createdAt": "2026-01-17T02:07:23.830Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Krieg2065/firecrawl-mcp-server"

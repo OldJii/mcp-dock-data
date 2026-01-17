@@ -2,7 +2,7 @@
   "id": "@enescinar/twitter-mcp",
   "displayName": "Twitter Server",
   "description": "A Model Context Protocol server that allows interaction with Twitter, enabling posting tweets and searching Twitter.",
-  "createdAt": "2026-01-16T12:45:02.996Z",
+  "createdAt": "2026-01-17T02:12:29.750Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@enescinar/twitter-mcp"

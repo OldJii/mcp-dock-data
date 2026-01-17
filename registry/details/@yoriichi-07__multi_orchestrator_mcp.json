@@ -2,7 +2,7 @@
   "id": "@yoriichi-07/multi_orchestrator_mcp",
   "displayName": "Multi Orchestrator",
   "description": "Coordinate specialized roles to plan, build, test, and deploy applications end to end. Generate architecture, automatically fix code, and produce comprehensive tests to accelerate delivery and improve quality. Monitor health and analytics to keep projects on track.",
-  "createdAt": "2026-01-16T12:41:31.569Z",
+  "createdAt": "2026-01-17T02:08:57.344Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yoriichi-07/multi_orchestrator_mcp"

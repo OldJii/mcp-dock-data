@@ -2,7 +2,7 @@
   "id": "@marcinwyszynski/pylon-mcp",
   "displayName": "Pylon Server",
   "description": "Integrate your applications with the Pylon API to manage users, contacts, issues, and knowledge base articles seamlessly. Access and manipulate Pylon data through a comprehensive set of tools designed for efficient workflow automation. Enhance your productivity by leveraging this server to interact with Pylon's platform programmatically.",
-  "createdAt": "2026-01-16T12:43:55.242Z",
+  "createdAt": "2026-01-17T02:11:21.501Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@marcinwyszynski/pylon-mcp"

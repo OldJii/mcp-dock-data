@@ -2,7 +2,7 @@
   "id": "@niledatabase/nile-mcp-server",
   "displayName": "Nile MCP Server",
   "description": "Interact with the Nile database platform through a standardized interface. Manage databases, execute SQL queries, and handle credentials seamlessly. Enhance your LLM applications with powerful database capabilities.",
-  "createdAt": "2026-01-16T12:49:24.930Z",
+  "createdAt": "2026-01-17T02:16:59.954Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@niledatabase/nile-mcp-server"

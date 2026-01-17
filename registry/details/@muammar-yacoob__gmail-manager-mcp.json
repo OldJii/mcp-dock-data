@@ -2,7 +2,7 @@
   "id": "@muammar-yacoob/gmail-manager-mcp",
   "displayName": "Gmail Manager",
   "description": "Gmail Manager MCP gives Claude Desktop direct access to your Gmail inbox, allowing you to:\n\n🔍 Search & Filter - Find emails by sender, subject, date, or any Gmail query\n🏷️ Smart Organization - Create and apply labels to categorize emails automatically\n🗑️ Bulk Operations - Delete multiple emails at once based on your criteria\n📊 Inbox Analytics - Get insights about your email patterns and volume\n🧹 Smart Cleanup - Remove old newsletters, notifications, and spam efficiently\nPerfect for inbox zero enthusiasts and anyone drowning in email overload!",
-  "createdAt": "2026-01-16T12:46:48.096Z",
+  "createdAt": "2026-01-17T02:14:18.728Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@muammar-yacoob/gmail-manager-mcp"

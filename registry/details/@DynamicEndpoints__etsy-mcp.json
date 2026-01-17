@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/etsy-mcp",
   "displayName": "etsy-mcp",
   "description": "Search Etsy listings, fetch shop details, and explore trending products. Create and update listings, manage inventory, images, and shop sections when authorized. Streamline product research and shop operations directly from your workspace.",
-  "createdAt": "2026-01-16T12:43:55.916Z",
+  "createdAt": "2026-01-17T02:11:22.167Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/etsy-mcp"

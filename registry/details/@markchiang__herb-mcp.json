@@ -2,7 +2,7 @@
   "id": "@markchiang/herb-mcp",
   "displayName": "HERB Lookup",
   "description": "Map genes, targets, diseases, herbs, and ingredients within the HERB database. Resolve gene symbols and disease names to HERB IDs, then surface the most significant herb and ingredient associations. Speed up pharmacology and TCM research with quick, curated lookups.",
-  "createdAt": "2026-01-16T12:36:52.058Z",
+  "createdAt": "2026-01-17T02:05:23.024Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@markchiang/herb-mcp"

@@ -2,7 +2,7 @@
   "id": "@vaebe/github-search",
   "displayName": "GitHub Search API Server",
   "description": "Leverage the GitHub search API to enhance your applications with powerful search capabilities. Integrate seamlessly and retrieve relevant data from GitHub repositories efficiently. Start building smarter applications with enhanced search functionalities today.",
-  "createdAt": "2026-01-16T12:46:06.438Z",
+  "createdAt": "2026-01-17T02:13:35.330Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@vaebe/github-search"

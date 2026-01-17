@@ -2,7 +2,7 @@
   "id": "cameroncooke/xcodebuildmcp",
   "displayName": "XcodeBuildMCP",
   "description": "A Model Context Protocol (MCP) server that provides Xcode-related tools for integration with AI assistants and other MCP clients.",
-  "createdAt": "2026-01-16T12:36:04.791Z",
+  "createdAt": "2026-01-17T02:03:21.015Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/cameroncooke/xcodebuildmcp"

@@ -2,7 +2,7 @@
   "id": "@Jeetanshu18/time-mcp",
   "displayName": "Time Awareness Server",
   "description": "Provide LLMs with time awareness capabilities by exposing tools to get current time, relative time, timestamps, days in a month, time zone conversions, and week information. Enhance your AI applications with accurate and flexible time-related data and operations. Easily integrate with popular LLM clients via standard MCP interfaces.",
-  "createdAt": "2026-01-16T12:53:14.709Z",
+  "createdAt": "2026-01-17T02:20:57.431Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Jeetanshu18/time-mcp"

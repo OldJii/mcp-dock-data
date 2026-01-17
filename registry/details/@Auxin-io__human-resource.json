@@ -2,7 +2,7 @@
   "id": "@Auxin-io/human-resource",
   "displayName": "Employee Records",
   "description": "Create employee records to prototype HR onboarding workflows. Validate data flows and automate record setup during development. Iterate quickly without touching production systems.",
-  "createdAt": "2026-01-16T12:48:42.394Z",
+  "createdAt": "2026-01-17T02:16:16.210Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Auxin-io/human-resource"

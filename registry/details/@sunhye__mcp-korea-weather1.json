@@ -2,7 +2,7 @@
   "id": "@sunhye/mcp-korea-weather1",
   "displayName": "Korea Weather",
   "description": "Get real-time weather conditions and short-term forecasts across Korea. Check temperature, precipitation, wind, and humidity for a given location. Plan the next few hours with concise summaries of the next three time slots.",
-  "createdAt": "2026-01-16T12:36:35.324Z",
+  "createdAt": "2026-01-17T02:03:55.362Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sunhye/mcp-korea-weather1"

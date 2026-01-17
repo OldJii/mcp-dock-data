@@ -2,7 +2,7 @@
   "id": "@TanukiMCP/taskmaster",
   "displayName": "Taskmaster",
   "description": "Manage and validate tasks intelligently with a single gateway tool that ensures strict validation, environment awareness, and anti-hallucination. Track progress, evidence, and environment capabilities seamlessly within sessions. Enhance task management with dynamic validation rules and comprehensive session lifecycle handling.",
-  "createdAt": "2026-01-16T12:38:40.156Z",
+  "createdAt": "2026-01-17T02:05:52.349Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@TanukiMCP/taskmaster"

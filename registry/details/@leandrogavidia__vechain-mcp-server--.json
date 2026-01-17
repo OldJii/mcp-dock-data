@@ -2,7 +2,7 @@
   "id": "@leandrogavidia/vechain-mcp-server--",
   "displayName": "VeChain Dev Suite",
   "description": "Query VeChain accounts, transactions, blocks, and fees, and search official docs for answers. Generate wallets and sign messages, certificates, and transactions to streamline testing and integration. Accelerate development with reliable on-chain data and documentation in one place.",
-  "createdAt": "2026-01-16T12:44:47.202Z",
+  "createdAt": "2026-01-17T02:12:13.832Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@leandrogavidia/vechain-mcp-server--"

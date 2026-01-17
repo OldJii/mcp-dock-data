@@ -2,7 +2,7 @@
   "id": "@santiago.blanco.vilchez/cpa-esteban",
   "displayName": "Tenant Launchpad",
   "description": "Create and launch new tenants with admin setup and starter templates. Authenticate to securely access APIs and orchestrate external requests. Add document templates to existing tenants to standardize and scale your workflows.",
-  "createdAt": "2026-01-16T12:46:12.507Z",
+  "createdAt": "2026-01-17T02:13:42.179Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/cpa-esteban"

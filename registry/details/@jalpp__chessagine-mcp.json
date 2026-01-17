@@ -2,7 +2,7 @@
   "id": "@jalpp/chessagine-mcp",
   "displayName": "ChessAgine",
   "description": "A comprehensive chess analysis (MCP) server that provides advanced chess analysis capabilities by implementing the Chess Context Protocol Server and integrating the Stockfish engine evaluation, positional theme analysis, opening databases, and chess knowledge. Allows LLMs to validate chess moves, visualize chess board via html, and do interactive chess puzzles, this brings the powerful chess analysis ChessAgine powers to your LLM!",
-  "createdAt": "2026-01-16T12:35:47.416Z",
+  "createdAt": "2026-01-17T02:03:08.118Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jalpp/chessagine-mcp"

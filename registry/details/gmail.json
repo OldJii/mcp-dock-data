@@ -2,7 +2,7 @@
   "id": "gmail",
   "displayName": "Gmail",
   "description": "Manage Gmail end-to-end: send, draft, reply, forward, and bulk-modify or delete messages and threads. Organize your inbox with labels, archiving, and trashing, and retrieve messages, attachments, and profile details on demand. Access and search contacts to autofill recipients and keep people data in sync.",
-  "createdAt": "2026-01-16T12:33:59.530Z",
+  "createdAt": "2026-01-17T02:01:21.907Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/gmail"

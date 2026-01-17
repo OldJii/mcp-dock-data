@@ -2,7 +2,7 @@
   "id": "@DidierRLopes/openbb-docs-mcp",
   "displayName": "OpenBB Widgets JSON MCP",
   "description": "An MCP server that exposes the OpenBB widgets.json specification as structured, callable tools. Instead of parsing long-form documentation, developers (and AI coding assistants like Claude Code) can directly query widget types, inputs, and configuration examples through this server.\n\nEach widget type is mapped to its own tool—making it easy to generate, mix, and match valid JSON specs when building new OpenBB apps. The server is built with FastMCP, programmatically generated from the OpenBB developer docs, and hosted on Smithery.ai for discoverability.",
-  "createdAt": "2026-01-16T12:40:37.998Z",
+  "createdAt": "2026-01-17T02:08:01.065Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DidierRLopes/openbb-docs-mcp"

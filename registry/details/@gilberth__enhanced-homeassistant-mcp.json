@@ -2,7 +2,7 @@
   "id": "@gilberth/enhanced-homeassistant-mcp",
   "displayName": "Enhanced Home Assistant Integration",
   "description": "Enable AI assistants to seamlessly interact with your Home Assistant smart home environment. Manage devices, automations, scenes, and system settings through a comprehensive set of tools. Monitor history, control climate, media, lights, and more with ease and reliability.",
-  "createdAt": "2026-01-16T12:48:38.484Z",
+  "createdAt": "2026-01-17T02:16:12.228Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gilberth/enhanced-homeassistant-mcp"

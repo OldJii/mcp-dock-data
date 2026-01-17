@@ -2,7 +2,7 @@
   "id": "@Kashyap-AI-ML-Solutions/webex-messaging-mcp-server",
   "displayName": "Webex Messaging Server",
   "description": "Enable AI assistants to fully interact with Cisco Webex messaging by sending messages, managing rooms, teams, users, webhooks, and enterprise features. Access a comprehensive set of 52 tools covering all major messaging operations with secure, production-ready deployment options including Docker and dual transport modes. Simplify collaboration automation and integration with centralized configuration and enterprise authentication support.",
-  "createdAt": "2026-01-16T12:42:15.506Z",
+  "createdAt": "2026-01-17T02:09:42.188Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kashyap-AI-ML-Solutions/webex-messaging-mcp-server"

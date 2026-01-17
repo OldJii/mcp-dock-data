@@ -2,7 +2,7 @@
   "id": "@hydavinci/formula-1-schedule",
   "displayName": "Formula 1 Schedule",
   "description": "Provide up-to-date and historical Formula 1 race schedules for any specified year. Retrieve detailed race calendars including dates, circuit details, and session times with reliable data sources and caching for performance. Enable seamless integration of F1 calendar data into your applications via a simple MCP tool.",
-  "createdAt": "2026-01-16T12:36:42.003Z",
+  "createdAt": "2026-01-17T02:03:54.698Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hydavinci/formula-1-schedule"

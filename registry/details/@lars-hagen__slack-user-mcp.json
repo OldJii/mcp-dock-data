@@ -2,7 +2,7 @@
   "id": "@lars-hagen/slack-user-mcp",
   "displayName": "Slack User MCP Server",
   "description": "Enable interaction with Slack workspaces as a user.",
-  "createdAt": "2026-01-16T12:46:36.264Z",
+  "createdAt": "2026-01-17T02:14:06.531Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lars-hagen/slack-user-mcp"

@@ -2,7 +2,7 @@
   "id": "cyranob/duckduckgo-mcp",
   "displayName": "DuckDuckGo Search",
   "description": "Search the web using DuckDuckGo and fetch/convert web content using Jina Reader. \nPrivacy-focused search with no API key required.",
-  "createdAt": "2026-01-16T13:09:42.705Z",
+  "createdAt": "2026-01-17T02:36:31.524Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/cyranob/duckduckgo-mcp"

@@ -2,7 +2,7 @@
   "id": "@arjunkmrm/time-server",
   "displayName": "World Clock",
   "description": "Get the current time in any timezone. Set a default timezone for fast lookups. Switch timezones on demand to compare across regions.",
-  "createdAt": "2026-01-16T12:46:39.637Z",
+  "createdAt": "2026-01-17T02:14:10.042Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@arjunkmrm/time-server"

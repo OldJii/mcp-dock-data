@@ -2,7 +2,7 @@
   "id": "king-of-the-grackles/discourse-mcp",
   "displayName": "discourse-mcp",
   "description": "Connect to any Discourse site to search and read topics, posts, users, categories, tags, and chat channels. Draft and publish posts and topics, and manage categories and users with opt-in, safeguarded writes when authorized. Filter precisely with a concise query language and receive permission-aware results.",
-  "createdAt": "2026-01-16T12:39:26.118Z",
+  "createdAt": "2026-01-17T02:06:37.849Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/king-of-the-grackles/discourse-mcp"

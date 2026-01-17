@@ -2,7 +2,7 @@
   "id": "@kmnis/smithery",
   "displayName": "Smithery",
   "description": "Enable dynamic integration of language models with external data and tools through a standardized protocol. Facilitate seamless access to files, APIs, and custom operations to enhance AI capabilities. Simplify the development of intelligent applications by providing a unified interface for context and action.",
-  "createdAt": "2026-01-16T12:45:07.585Z",
+  "createdAt": "2026-01-17T02:12:34.439Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kmnis/smithery"

@@ -2,7 +2,7 @@
   "id": "@miottid/todoist-mcp",
   "displayName": "Todoist Integration",
   "description": "Connect your LLM to interact with Todoist tasks and projects. Access all the Todoist API right from your LLM.",
-  "createdAt": "2026-01-16T12:40:23.218Z",
+  "createdAt": "2026-01-17T02:07:45.677Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@miottid/todoist-mcp"

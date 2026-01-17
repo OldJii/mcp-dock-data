@@ -2,7 +2,7 @@
   "id": "@upstash/context7-mcp",
   "displayName": "Context7",
   "description": "Fetch up-to-date, version-specific documentation and code examples directly into your prompts. Enhance your coding experience by eliminating outdated information and hallucinated APIs. Simply add `use context7` to your questions for accurate and relevant answers.",
-  "createdAt": "2026-01-16T12:35:30.693Z",
+  "createdAt": "2026-01-17T02:02:53.895Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@upstash/context7-mcp"

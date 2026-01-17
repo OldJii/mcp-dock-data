@@ -2,7 +2,7 @@
   "id": "@fletton/cut_text",
   "displayName": "Cut Text",
   "description": "Provide a minimal MCP server scaffold to help developers quickly build and test MCP servers. Enable rapid prototyping of MCP tools and resources with a simple setup. Facilitate integration of custom MCP capabilities in your applications.",
-  "createdAt": "2026-01-16T12:35:56.795Z",
+  "createdAt": "2026-01-17T02:04:21.637Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@fletton/cut_text"

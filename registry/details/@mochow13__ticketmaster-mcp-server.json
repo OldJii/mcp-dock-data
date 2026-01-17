@@ -2,7 +2,7 @@
   "id": "@mochow13/ticketmaster-mcp-server",
   "displayName": "Ticketmaster MCP Server",
   "description": "Enable seamless integration of Ticketmaster data and services into your applications. Access event information, ticket availability, and venue details through standardized MCP tools and resources. Enhance your user experience by leveraging real-time ticketing context and actions.",
-  "createdAt": "2026-01-16T12:50:51.871Z",
+  "createdAt": "2026-01-17T02:18:25.575Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mochow13/ticketmaster-mcp-server"

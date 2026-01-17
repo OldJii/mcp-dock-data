@@ -2,7 +2,7 @@
   "id": "@Chaeyun06/naver-maps-mcp",
   "displayName": "Naver Maps Directions Server",
   "description": "Provide route finding and navigation capabilities using the Naver Maps API. Enable agents to access detailed directions and map data for locations in Korea. Enhance location-based applications with accurate and up-to-date navigation information.",
-  "createdAt": "2026-01-16T12:41:34.913Z",
+  "createdAt": "2026-01-17T02:09:01.344Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Chaeyun06/naver-maps-mcp"

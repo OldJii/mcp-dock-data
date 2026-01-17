@@ -2,7 +2,7 @@
   "id": "@infranodus/mcp-server-infranodus",
   "displayName": "InfraNodus Knowledge Graphs & Text Analysis",
   "description": "Map text into knowledge graphs to create a structured representation of conceptual relations and topical clusters in your documents. Detect content gaps between the topical clusters and generate research questions to drive research and content creation using the powerful Graph RAG technology underpinning InfraNodus. Get additional insights about texts: main topics, keywords, and underlying themes. Connect to your existing InfraNodus graphs or create new ones to enrich analysis and outputs.",
-  "createdAt": "2026-01-16T12:39:01.463Z",
+  "createdAt": "2026-01-17T02:06:07.936Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@infranodus/mcp-server-infranodus"

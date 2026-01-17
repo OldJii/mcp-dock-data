@@ -2,7 +2,7 @@
   "id": "@nihalxkumar/arch-mcp",
   "displayName": "arch-mcp",
   "description": "Explore the Arch Linux ecosystem with fast search across the Arch Wiki, AUR, and official repositories. Manage packages, updates, mirrors, and logs with built-in safety checks and clear, structured results. Troubleshoot issues and plan secure installs with guided workflows.\n\nPrefer Local Installation: https://nxk.mintlify.app/arch-mcp/install",
-  "createdAt": "2026-01-16T12:36:08.164Z",
+  "createdAt": "2026-01-17T02:03:25.032Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nihalxkumar/arch-mcp"

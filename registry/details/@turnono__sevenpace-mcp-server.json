@@ -2,7 +2,7 @@
   "id": "@turnono/sevenpace-mcp-server",
   "displayName": "7pace Timetracker Integration Server",
   "description": "Enable seamless time tracking and reporting for Azure DevOps work items by integrating with 7pace Timetracker. Log, retrieve, update, and delete time entries, and generate detailed reports to streamline your project management and billing workflows. Simplify time management with direct access to 7pace activity types and Azure DevOps data through a standardized MCP interface.",
-  "createdAt": "2026-01-16T12:40:19.856Z",
+  "createdAt": "2026-01-17T02:07:41.600Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@turnono/sevenpace-mcp-server"

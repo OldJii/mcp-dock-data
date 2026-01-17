@@ -2,7 +2,7 @@
   "id": "@theclarityproject/mcp-server",
   "displayName": "Clarity MCP - Generative MCPs based on your network!",
   "description": "Transform your browser traffic into powerful tools for AI using Clarity MCP. Capture network requests and convert them into Model Context Protocols that enhance AI capabilities with real-time data access. \n\nWebsite: https://mcp.theclarityproject.net",
-  "createdAt": "2026-01-16T12:50:30.982Z",
+  "createdAt": "2026-01-17T02:18:03.609Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@theclarityproject/mcp-server"

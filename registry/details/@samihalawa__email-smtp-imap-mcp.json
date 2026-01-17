@@ -2,7 +2,7 @@
   "id": "@samihalawa/email-smtp-imap-mcp",
   "displayName": "email-smtp-imap-mcp",
   "description": "    A clean, simple MCP server for email operations that supports both SMTP (sending) and IMAP (reading).\n",
-  "createdAt": "2026-01-16T12:58:27.828Z",
+  "createdAt": "2026-01-17T02:25:19.334Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/email-smtp-imap-mcp"

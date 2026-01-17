@@ -2,7 +2,7 @@
   "id": "@pinkpixel-dev/mem0-mcp-server",
   "displayName": "Mem0 Memory Server",
   "description": "Enable AI agents to store, search, and delete persistent memories across sessions to enhance context retention and recall. Integrate seamlessly with Mem0.ai's cloud or self-hosted Supabase storage for scalable and reliable memory management. Optimize your LLM applications with advanced filtering, semantic search, and flexible storage modes tailored to your needs.",
-  "createdAt": "2026-01-16T12:43:24.382Z",
+  "createdAt": "2026-01-17T02:10:50.236Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pinkpixel-dev/mem0-mcp-server"

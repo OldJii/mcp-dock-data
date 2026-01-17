@@ -2,7 +2,7 @@
   "id": "@beom-trading/heytraders_mcp",
   "displayName": "HeyTraders MCP",
   "description": "Run and backtest quantitative trading strategies using natural language descriptions. Validate and fetch results for spot, perpetual, and cross-sectional strategies with comprehensive guidelines and function specifications. Simplify complex trading strategy testing through AI-powered automation.",
-  "createdAt": "2026-01-16T13:08:41.753Z",
+  "createdAt": "2026-01-17T02:35:25.817Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@beom-trading/heytraders_mcp"

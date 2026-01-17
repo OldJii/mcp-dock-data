@@ -2,7 +2,7 @@
   "id": "@JoelRevLai/prova",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with ease. Enable rapid development and testing of MCP tools and resources using a modern TypeScript setup. Simplify integration with the Model Context Protocol ecosystem.",
-  "createdAt": "2026-01-16T12:45:58.581Z",
+  "createdAt": "2026-01-17T02:13:27.325Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@JoelRevLai/prova"

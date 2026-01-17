@@ -2,7 +2,7 @@
   "id": "@pdv/hot100",
   "displayName": "Billboard Hot 100",
   "description": "Explore the Billboard Hot 100 by week, artist, or track to see who’s charting. Look up a song’s chart history and weekly peak positions.",
-  "createdAt": "2026-01-16T12:40:29.906Z",
+  "createdAt": "2026-01-17T02:07:53.711Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pdv/hot100"

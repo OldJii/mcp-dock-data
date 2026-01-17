@@ -2,7 +2,7 @@
   "id": "Polaralias/personal-context-mcp",
   "displayName": "Personal Context",
   "description": "Manage your daily status, work availability, and location history to provide relevant situational context. Integrate with Home Assistant and holiday calendars to automatically track presence and local events. Maintain a centralized record of your current environment and upcoming schedules.",
-  "createdAt": "2026-01-16T12:44:07.637Z",
+  "createdAt": "2026-01-17T02:11:33.625Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/Polaralias/personal-context-mcp"

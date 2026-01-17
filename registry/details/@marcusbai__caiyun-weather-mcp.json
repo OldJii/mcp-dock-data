@@ -2,7 +2,7 @@
   "id": "@marcusbai/caiyun-weather-mcp",
   "displayName": "彩云天气",
   "description": "查询实时天气数据、降水预报和天气预警信息。获取准确的天气信息，帮助您做出更好的出行和活动决策。支持多种语言和单位制选择，满足不同用户的需求。",
-  "createdAt": "2026-01-16T12:48:19.827Z",
+  "createdAt": "2026-01-17T02:15:53.338Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@marcusbai/caiyun-weather-mcp"

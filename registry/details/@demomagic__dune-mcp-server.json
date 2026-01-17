@@ -2,7 +2,7 @@
   "id": "@demomagic/dune-mcp-server",
   "displayName": "Dune MCP Server",
   "description": "Provide a server implementation that integrates with the Model Context Protocol to expose tools, resources, and prompts for LLM applications. Enable dynamic interaction with external data and actions through a standardized JSON-RPC interface. Facilitate seamless extension of LLM capabilities by serving as a bridge to external context and operations.",
-  "createdAt": "2026-01-16T12:41:32.895Z",
+  "createdAt": "2026-01-17T02:08:59.344Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@demomagic/dune-mcp-server"

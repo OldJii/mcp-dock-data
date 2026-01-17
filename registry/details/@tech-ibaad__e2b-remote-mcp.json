@@ -2,7 +2,7 @@
   "id": "@tech-ibaad/e2b-remote-mcp",
   "displayName": "E2B Remote Server",
   "description": "Manage sandboxes, run commands, host websites, and read or write files remotely. Enable flexible and secure execution environments for diverse use cases. Simplify remote code execution and file management with sandbox isolation.",
-  "createdAt": "2026-01-16T12:39:58.869Z",
+  "createdAt": "2026-01-17T02:07:17.125Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tech-ibaad/e2b-remote-mcp"

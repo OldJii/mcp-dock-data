@@ -2,7 +2,7 @@
   "id": "@burakdirin/opsgenie-mcp-server",
   "displayName": "Opsgenie Alert Management Server",
   "description": "Manage Opsgenie alerts efficiently by listing, creating, acknowledging, and closing alerts. Add notes, view activity logs, and customize alert details seamlessly. Integrate with various transports including stdio, HTTP, and SSE for flexible deployment and usage.",
-  "createdAt": "2026-01-16T12:49:52.451Z",
+  "createdAt": "2026-01-17T02:17:26.682Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@burakdirin/opsgenie-mcp-server"

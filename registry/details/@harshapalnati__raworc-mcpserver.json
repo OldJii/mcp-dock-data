@@ -2,7 +2,7 @@
   "id": "@harshapalnati/raworc-mcpserver",
   "displayName": "RemoteAgent",
   "description": "RemoteAgent MCP Server is a lightweight, containerized runtime designed to bridge Model Context Protocol (MCP) with modern AI platforms. It enables developers to connect large language models (LLMs) like OpenAI, Anthropic, and local models to external tools, APIs, and data sources through a secure, persistent session layer. With built-in RBAC, session isolation, and support for JSON tool-calling, Raworc MCP Server makes it simple to run deep, multi-agent workflows across frameworks such as LangChain, CrewAI, and AutoGen.\n\nBy providing a standardized protocol interface, RemoteAgent MCP Server helps teams integrate, orchestrate, and scale AI agents with minimal DevOps effort — production-ready from day one.",
-  "createdAt": "2026-01-16T12:38:08.684Z",
+  "createdAt": "2026-01-17T02:05:20.328Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@harshapalnati/raworc-mcpserver"

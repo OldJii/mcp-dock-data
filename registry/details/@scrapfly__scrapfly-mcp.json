@@ -2,7 +2,7 @@
   "id": "@scrapfly/scrapfly-mcp",
   "displayName": "scrapfly-mcp",
   "description": "Scrapes a web page given its URL for HTML or Text and Markdown (LLM accessible), powered by smart residential prox rotation and anti-bot bypass capabilities.",
-  "createdAt": "2026-01-16T12:43:56.590Z",
+  "createdAt": "2026-01-17T02:11:22.833Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@scrapfly/scrapfly-mcp"

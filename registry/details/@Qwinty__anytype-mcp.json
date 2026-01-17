@@ -2,7 +2,7 @@
   "id": "@Qwinty/anytype-mcp",
   "displayName": "Anytype MCP Server",
   "description": "Access your Anytype data seamlessly with this server. Interact with spaces, objects, and templates to enhance your AI assistant's capabilities. Manage your data efficiently and optimize token usage for better performance.\n\nFor more info refer to: https://github.com/Qwinty/anytype-mcp",
-  "createdAt": "2026-01-16T12:49:37.003Z",
+  "createdAt": "2026-01-17T02:17:11.298Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Qwinty/anytype-mcp"

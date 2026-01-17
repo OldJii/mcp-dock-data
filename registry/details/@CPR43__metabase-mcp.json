@@ -2,7 +2,7 @@
   "id": "@CPR43/metabase-mcp",
   "displayName": "Metabase Analytics Integration Server",
   "description": "Enable AI assistants to seamlessly interact with your Metabase analytics platform. Access dashboards, cards, databases, and execute queries directly through conversational AI. Manage and organize your analytics resources with ease and secure authentication options.",
-  "createdAt": "2026-01-16T12:45:12.167Z",
+  "createdAt": "2026-01-17T02:12:39.101Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@CPR43/metabase-mcp"

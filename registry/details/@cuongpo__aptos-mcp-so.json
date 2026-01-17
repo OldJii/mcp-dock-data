@@ -2,7 +2,7 @@
   "id": "@cuongpo/aptos-mcp-so",
   "displayName": "Aptos Blockchain Server",
   "description": "Enable AI assistants to interact with the Aptos blockchain testnet by managing accounts, performing transactions, querying blockchain data, and handling tokens and NFTs. Facilitate seamless blockchain operations such as generating accounts, transferring tokens, and executing smart contract functions. Empower users to integrate blockchain capabilities into their AI workflows with ease and security.",
-  "createdAt": "2026-01-16T12:41:18.194Z",
+  "createdAt": "2026-01-17T02:08:42.543Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/aptos-mcp-so"

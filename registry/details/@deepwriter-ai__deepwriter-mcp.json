@@ -2,7 +2,7 @@
   "id": "@deepwriter-ai/deepwriter-mcp",
   "displayName": "DeepWriter MCP Server",
   "description": "Provide seamless integration with DeepWriter's AI content generation and project management capabilities through a standardized MCP interface. Manage projects, generate content, and retrieve project details efficiently using this server. Enhance your AI assistant workflows by connecting to DeepWriter's powerful API via MCP.",
-  "createdAt": "2026-01-16T12:50:46.020Z",
+  "createdAt": "2026-01-17T02:18:19.290Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@deepwriter-ai/deepwriter-mcp"

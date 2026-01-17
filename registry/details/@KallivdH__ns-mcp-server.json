@@ -2,7 +2,7 @@
   "id": "@KallivdH/ns-mcp-server",
   "displayName": "NS Travel",
   "description": "Plan Dutch rail journeys with real-time routes, transfers, platforms, and crowding insights. Check live departures and arrivals, and get alerts for current and planned disruptions with travel advice. Look up station details, OV-fiets availability, and ticket prices to optimize your trip.",
-  "createdAt": "2026-01-16T12:40:51.321Z",
+  "createdAt": "2026-01-17T02:08:15.799Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@KallivdH/ns-mcp-server"

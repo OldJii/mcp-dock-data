@@ -2,7 +2,7 @@
   "id": "@emmanuel/aic",
   "displayName": "NWS Weather",
   "description": "Get real-time U.S. alerts, forecasts, radar, and observations from the National Weather Service. Build location-aware experiences with station, zone, and text product data. Track aviation weather with TAFs and SIGMET/AIRMETs and monitor active hazards.",
-  "createdAt": "2026-01-16T12:49:47.886Z",
+  "createdAt": "2026-01-17T02:17:22.016Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmanuel/aic"

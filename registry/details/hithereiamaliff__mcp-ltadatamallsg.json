@@ -2,7 +2,7 @@
   "id": "hithereiamaliff/mcp-ltadatamallsg",
   "displayName": "Singapore LTA DataMall MCP Server",
   "description": "Access real-time public transit information including bus arrivals, train service alerts, and station crowding levels in Singapore. Check live parking availability and monitor expressway travel times or traffic incidents for smoother commutes. Plan journeys more effectively using forecasted crowd levels and up-to-the-minute road updates.\n\nThis MCP is an enhanced fork of arjunkmrm/lta-mcp, rebuilt for self-hosted VPS deployment with zero-friction onboarding.",
-  "createdAt": "2026-01-16T12:49:43.527Z",
+  "createdAt": "2026-01-17T02:17:17.997Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/hithereiamaliff/mcp-ltadatamallsg"

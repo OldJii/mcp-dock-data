@@ -2,7 +2,7 @@
   "id": "@jango-blockchained/advanced-homeassistant-mcp",
   "displayName": "advanced-homeassistant-mcp",
   "description": "Control Home Assistant lights, climate, media, locks, and scenes using natural language. Discover devices, trigger automations, send notifications, and check home status from one place. Sync lights to music with Aurora effects and get smart maintenance insights for energy and device health.",
-  "createdAt": "2026-01-16T12:41:13.514Z",
+  "createdAt": "2026-01-17T02:08:37.884Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jango-blockchained/advanced-homeassistant-mcp"

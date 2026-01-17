@@ -2,7 +2,7 @@
   "id": "@EthanHenrickson/math-mcp",
   "displayName": "Math-MCP",
   "description": "Enable your LLMs to perform accurate numerical calculations with a simple API. Leverage basic arithmetic and statistical functions to enhance your applications. Simplify complex mathematical tasks effortlessly and improve your model's capabilities.",
-  "createdAt": "2026-01-16T12:35:16.995Z",
+  "createdAt": "2026-01-17T02:02:40.423Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@EthanHenrickson/math-mcp"

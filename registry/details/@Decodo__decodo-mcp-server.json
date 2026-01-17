@@ -2,7 +2,7 @@
   "id": "@Decodo/decodo-mcp-server",
   "displayName": "Decodo MCP Server",
   "description": "Enable your AI agents to scrape and parse web content dynamically, including geo-restricted sites, by leveraging Decodo's scraping capabilities.\n\nTo use, head on over to https://dashboard.decodo.com, start a free Web Advanced trial and input the generated credentials into your MCP client of choice on the right-hand side of this page.",
-  "createdAt": "2026-01-16T12:41:59.290Z",
+  "createdAt": "2026-01-17T02:09:25.992Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Decodo/decodo-mcp-server"

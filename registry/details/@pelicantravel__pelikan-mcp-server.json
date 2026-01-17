@@ -2,7 +2,7 @@
   "id": "@pelicantravel/pelikan-mcp-server",
   "displayName": "Pelikan Flight Search Server",
   "description": "Provide flight search and detailed flight information retrieval capabilities through a server backend. Enable users to start unique sessions, search for flights between airports, and access detailed flight data seamlessly. Integrate easily with client applications to enhance travel planning workflows.",
-  "createdAt": "2026-01-16T12:52:07.763Z",
+  "createdAt": "2026-01-17T02:19:48.889Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pelicantravel/pelikan-mcp-server"

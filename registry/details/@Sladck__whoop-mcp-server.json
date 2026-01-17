@@ -2,7 +2,7 @@
   "id": "@Sladck/whoop-mcp-server",
   "displayName": "WHOOP",
   "description": "Get fast answers about your workouts, recovery, sleep, and daily cycles from your WHOOP data. Explore trends and compare time ranges to surface insights like HRV, strain, and sleep performance. Keep your data private and under your control.",
-  "createdAt": "2026-01-16T12:46:27.129Z",
+  "createdAt": "2026-01-17T02:13:57.113Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Sladck/whoop-mcp-server"

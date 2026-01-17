@@ -2,7 +2,7 @@
   "id": "@SubQuery-Network/graphql-agent",
   "displayName": "GraphQL Agent",
   "description": "Ask SubQuery is an AI-powered GraphQL Agent for exploring SubQuery projects and Subgraphs. Ask questions in natural language about indexed blockchain data. The agent performs schema introspection and generates accurate GraphQL queries automatically. Streamline your dApp integration - no need to manually craft complex queries.\n\nGet API Key: https://asksubquery.xyz/?referrer_code=SMITHERY",
-  "createdAt": "2026-01-16T12:45:09.547Z",
+  "createdAt": "2026-01-17T02:12:36.435Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SubQuery-Network/graphql-agent"

@@ -2,7 +2,7 @@
   "id": "@PixdataOrg/coderide",
   "displayName": "CodeRide",
   "description": "CodeRide eliminates the context reset cycle once and for all. Through MCP integration, it seamlessly connects to your existing AI coding workflow, enhancing how you vibe code. Once connected, CodeRide transforms your development tasks into a structured Kanban, where each task preserves complete context and instructions your AI needs to work autonomously. Compatible with all major AI code editors including Cursor, Cline, and Windsurf, plus any MCP client like Claude.ai.",
-  "createdAt": "2026-01-16T12:45:04.318Z",
+  "createdAt": "2026-01-17T02:12:31.098Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@PixdataOrg/coderide"

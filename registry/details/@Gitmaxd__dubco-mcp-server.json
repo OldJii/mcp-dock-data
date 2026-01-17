@@ -2,7 +2,7 @@
   "id": "@Gitmaxd/dubco-mcp-server",
   "displayName": "Dub.co Link Shortener Server",
   "description": "Manage your short links effortlessly with this server. Create, update, and delete links through your Dub.co account, enabling seamless integration for your AI agents.",
-  "createdAt": "2026-01-16T12:51:39.697Z",
+  "createdAt": "2026-01-17T02:19:19.532Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Gitmaxd/dubco-mcp-server"

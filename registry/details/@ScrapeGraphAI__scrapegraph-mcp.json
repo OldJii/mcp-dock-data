@@ -2,7 +2,7 @@
   "id": "@ScrapeGraphAI/scrapegraph-mcp",
   "displayName": "ScrapeGraph AI Integration Server",
   "description": "Enable language models to perform advanced AI-powered web scraping with enterprise-grade reliability. Transform webpages into structured markdown, extract data using AI, and execute AI-powered web searches seamlessly. Enhance your applications with powerful web data extraction capabilities through this integration.\n\nIt could also make web search, browser automation and markdownification",
-  "createdAt": "2026-01-16T12:39:40.858Z",
+  "createdAt": "2026-01-17T02:06:50.724Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ScrapeGraphAI/scrapegraph-mcp"

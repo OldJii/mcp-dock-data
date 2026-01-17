@@ -2,7 +2,7 @@
   "id": "@SongJiangzhou/cpp_guidelines",
   "displayName": "cpp_guidelines",
   "description": "Enforce consistent C++ style and best practices across your codebase. Analyze naming, memory safety, and const correctness, and get actionable modernization suggestions up to C++23. Accelerate reviews with ready-made prompts and quick access to curated guidelines.",
-  "createdAt": "2026-01-16T12:36:18.161Z",
+  "createdAt": "2026-01-17T02:03:33.020Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SongJiangzhou/cpp_guidelines"

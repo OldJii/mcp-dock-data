@@ -2,7 +2,7 @@
   "id": "@Hzzy2O/flux-cloudfare-mcp",
   "displayName": "Flux Cloudflare MCP",
   "description": "Generate high-quality images using AI with seamless integration into your applications. Leverage customizable parameters for image generation and enjoy secure processing through Cloudflare Workers. Enhance your AI assistants with powerful image capabilities effortlessly.",
-  "createdAt": "2026-01-16T12:52:58.733Z",
+  "createdAt": "2026-01-17T02:20:41.226Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Hzzy2O/flux-cloudfare-mcp"

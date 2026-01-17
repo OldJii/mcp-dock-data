@@ -2,7 +2,7 @@
   "id": "@openSVM/dflow-mcp",
   "displayName": "dflow-mcp",
   "description": "Access real-time and historical https://kalshi.com prediction market data across events, markets, and trades. Analyze forecasts and candlestick time series to track sentiment and price action. Search and filter by tickers, mints, categories, and sports to quickly find the data you need. ",
-  "createdAt": "2026-01-16T12:51:16.764Z",
+  "createdAt": "2026-01-17T02:18:53.166Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@openSVM/dflow-mcp"

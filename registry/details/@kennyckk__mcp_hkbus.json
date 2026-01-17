@@ -2,7 +2,7 @@
   "id": "@kennyckk/mcp_hkbus",
   "displayName": "KMB Bus",
   "description": "Access real-time bus arrival information and comprehensive route details for Hong Kong's KMB and Long Win Bus services. Query bus routes, stops, and estimated arrival times effortlessly to enhance user experience. Utilize bilingual support for both English and Traditional Chinese to cater to a wider audience.",
-  "createdAt": "2026-01-16T12:36:27.458Z",
+  "createdAt": "2026-01-17T02:03:42.337Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kennyckk/mcp_hkbus"

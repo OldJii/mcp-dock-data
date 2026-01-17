@@ -2,7 +2,7 @@
   "id": "@mirinda-cmd/reference-servers-check",
   "displayName": "Reference Servers",
   "description": "Explore a variety of implementations that enhance Large Language Models with secure access to tools and data sources. Leverage these reference servers to integrate advanced functionalities into your applications effortlessly. Start building your own MCP server or utilize existing ones to unlock new capabilities for your LLMs.",
-  "createdAt": "2026-01-16T12:36:33.989Z",
+  "createdAt": "2026-01-17T02:03:48.322Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mirinda-cmd/reference-servers-check"

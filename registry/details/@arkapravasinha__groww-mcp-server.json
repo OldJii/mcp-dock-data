@@ -2,7 +2,7 @@
   "id": "@arkapravasinha/groww-mcp-server",
   "displayName": "Groww MCP Server",
   "description": "Enable seamless integration of Groww platform data and tools with language models to enhance financial decision-making and automation. Provide access to Groww-specific resources, execute financial operations, and utilize predefined prompts for investment workflows. Simplify interaction with Groww services through a standardized protocol for LLM applications.",
-  "createdAt": "2026-01-16T12:41:42.494Z",
+  "createdAt": "2026-01-17T02:09:08.225Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@arkapravasinha/groww-mcp-server"

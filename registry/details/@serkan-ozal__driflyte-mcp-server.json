@@ -2,7 +2,7 @@
   "id": "@serkan-ozal/driflyte-mcp-server",
   "displayName": "Driflyte",
   "description": "Discover available topics and explore up-to-date, topic-tagged web content. Search to surface the most relevant documents for your questions. Stay current with timely, real-world sources for grounded insights.\n\nThe Driflyte MCP Server exposes tools that allow AI assistants to query and retrieve topic-specific knowledge from recursively crawled and indexed web pages. With this MCP server, Driflyte acts as a bridge between diverse, topic-aware content sources (web, GitHub, and more) and AI-powered reasoning, enabling richer, more accurate answers.",
-  "createdAt": "2026-01-16T12:40:48.645Z",
+  "createdAt": "2026-01-17T02:08:13.805Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@serkan-ozal/driflyte-mcp-server"

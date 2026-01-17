@@ -2,7 +2,7 @@
   "id": "@MeirKaD/mcp-sse-test3",
   "displayName": "Bright Data Search & Scrape",
   "description": "Find current information across major search engines and extract web pages into clean, structured output. Run single or batch searches and scrapes to speed up research and monitoring. Receive JSON or Markdown results with URLs, titles, and summaries for easy analysis.",
-  "createdAt": "2026-01-16T12:49:58.961Z",
+  "createdAt": "2026-01-17T02:17:33.332Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@MeirKaD/mcp-sse-test3"

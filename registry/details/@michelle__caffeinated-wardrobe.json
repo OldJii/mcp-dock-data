@@ -2,7 +2,7 @@
   "id": "@michelle/caffeinated-wardrobe",
   "displayName": "Caffeinated Wardrobe",
   "description": "Caffeinated Wardrobe is like an API for your closet. This MCP server brings programmatic wardrobe management to any MCP-compatible AI client - track clothing items, compose (and remember) outfits, analyze wear patterns, and get AI-powered styling recommendations. Combine with filesystem, calendar, or browser MCP servers for context-aware outfit suggestions based on your schedule, weather, or recent purchases.",
-  "createdAt": "2026-01-16T12:48:35.190Z",
+  "createdAt": "2026-01-17T02:16:08.707Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@michelle/caffeinated-wardrobe"

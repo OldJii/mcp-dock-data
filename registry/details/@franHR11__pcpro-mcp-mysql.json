@@ -2,7 +2,7 @@
   "id": "@franHR11/pcpro-mcp-mysql",
   "displayName": "pcpro-mcp-mysql",
   "description": "Explore and query your MySQL database with ease. List tables, inspect table structures, and run SELECT queries to fetch results fast. Streamline debugging and analysis by getting schema details and data in one place.",
-  "createdAt": "2026-01-16T12:51:04.994Z",
+  "createdAt": "2026-01-17T02:18:39.365Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@franHR11/pcpro-mcp-mysql"

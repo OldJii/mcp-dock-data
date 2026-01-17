@@ -2,7 +2,7 @@
   "id": "@greirson/mcp-todoist",
   "displayName": "Todoist Task Manager",
   "description": "Manage your Todoist tasks, projects, and comments seamlessly using natural language commands. Create, update, complete, and organize tasks and projects efficiently with support for bulk operations and rich task attributes. Enhance productivity by integrating Todoist task management directly into your workflow.",
-  "createdAt": "2026-01-16T12:47:14.333Z",
+  "createdAt": "2026-01-17T02:14:45.388Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@greirson/mcp-todoist"

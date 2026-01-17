@@ -2,7 +2,7 @@
   "id": "@ai-zerolab/mcp-figma",
   "displayName": "Figma API Integration",
   "description": "Access Figma's powerful API to manage files, comments, and components seamlessly. Enhance your AI assistant's capabilities by integrating Figma functionalities directly into your workflows. Simplify your design collaboration and project management with easy API access.",
-  "createdAt": "2026-01-16T12:38:31.940Z",
+  "createdAt": "2026-01-17T02:05:41.075Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ai-zerolab/mcp-figma"

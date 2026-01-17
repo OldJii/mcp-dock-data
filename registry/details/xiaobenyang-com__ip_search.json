@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/ip_search",
   "displayName": "ip_search",
   "description": "查询任意 IP 的威胁情报，快速识别风险与信誉。获取地理位置、ASN 与历史恶意行为等关键信息，辅助溯源、封禁与处置。加速告警研判与日常安全排查，提升响应效率。",
-  "createdAt": "2026-01-16T12:49:53.103Z",
+  "createdAt": "2026-01-17T02:17:27.343Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/ip_search"

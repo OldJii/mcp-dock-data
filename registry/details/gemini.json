@@ -2,7 +2,7 @@
   "id": "gemini",
   "displayName": "Gemini",
   "description": "Comprehensive Gemini integration supporting Veo 3 video generation, Gemini Flash text generation (Nano Banana), chat completions, and multimodal AI capabilities via the Google Gemini API.",
-  "createdAt": "2026-01-16T12:35:05.327Z",
+  "createdAt": "2026-01-17T02:02:28.418Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/gemini"

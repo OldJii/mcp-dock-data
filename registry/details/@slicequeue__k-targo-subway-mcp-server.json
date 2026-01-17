@@ -2,7 +2,7 @@
   "id": "@slicequeue/k-targo-subway-mcp-server",
   "displayName": "K-Targo Subway Server",
   "description": "Provide real-time and comprehensive subway information for South Korea, including station search and train timetables. Access up-to-date data via the national Tago API to enhance transportation-related applications. Seamlessly integrate with MCP clients to query subway details efficiently.",
-  "createdAt": "2026-01-16T12:45:24.585Z",
+  "createdAt": "2026-01-17T02:12:51.833Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@slicequeue/k-targo-subway-mcp-server"

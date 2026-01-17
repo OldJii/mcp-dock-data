@@ -2,7 +2,7 @@
   "id": "@DanWahlin/marvel-mcp",
   "displayName": "Marvel MCP Server",
   "description": "Interact with Marvel characters and comics data seamlessly. Fetch character details, comics, and more using the Marvel Developer API. Enhance your applications with rich Marvel content effortlessly.",
-  "createdAt": "2026-01-16T12:44:01.620Z",
+  "createdAt": "2026-01-17T02:11:27.566Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DanWahlin/marvel-mcp"

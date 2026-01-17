@@ -2,7 +2,7 @@
   "id": "@alphago2580/naramarketmcp",
   "displayName": "NaraMarketMCP",
   "description": "Access Korea’s G2B procurement and Nara Market data for bid notices, awards, contracts, statistics, and shopping-mall products. Search recent bids, explore product catalogs, and retrieve yearly or business-type stats with simple queries. \n\n대한민국 조달청의 OPEN API를 활용해 공공조달관련 정보를 얻을 수 있는 MCP서버입니다.",
-  "createdAt": "2026-01-16T12:47:39.426Z",
+  "createdAt": "2026-01-17T02:15:11.798Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alphago2580/naramarketmcp"

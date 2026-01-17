@@ -2,7 +2,7 @@
   "id": "@aigodot/unreal-mcp",
   "displayName": "Unreal Engine Natural Language Controller",
   "description": "Control and automate Unreal Engine workflows using natural language commands through AI assistants. Manage actors, Blueprints, UI, data tables, and project settings seamlessly with comprehensive tools. Enhance productivity by integrating AI-driven control directly into your Unreal Engine environment.",
-  "createdAt": "2026-01-16T12:48:24.392Z",
+  "createdAt": "2026-01-17T02:15:58.001Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aigodot/unreal-mcp"

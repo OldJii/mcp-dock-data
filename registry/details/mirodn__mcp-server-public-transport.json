@@ -2,7 +2,7 @@
   "id": "mirodn/mcp-server-public-transport",
   "displayName": "mcp-server-public-transport",
   "description": "Access real-time public transport across Europe with live departures, connections, and vehicle details. Plan door-to-door trips, search stations and places, and find nearby stops with up-to-the-minute results. Benefit from coverage in the UK, Switzerland, Belgium, and Norway.",
-  "createdAt": "2026-01-16T12:41:15.517Z",
+  "createdAt": "2026-01-17T02:08:39.877Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mirodn/mcp-server-public-transport"

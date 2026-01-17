@@ -2,7 +2,7 @@
   "id": "@protocoldaemon-sec/goplus-security-mcp-server",
   "displayName": "GoPlus Security",
   "description": "Assess web3 threats by analyzing tokens, NFTs, and wallet addresses. Detect potential rug pulls, flag known phishing sites, and evaluate address reputation across supported chains. Leverage built-in docs and chain coverage to streamline due diligence.",
-  "createdAt": "2026-01-16T12:47:19.624Z",
+  "createdAt": "2026-01-17T02:14:50.987Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@protocoldaemon-sec/goplus-security-mcp-server"

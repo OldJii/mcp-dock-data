@@ -2,7 +2,7 @@
   "id": "@CHIBOLAR/jira_mcp_sprinthealth",
   "displayName": "Jira Sprint Dashboard",
   "description": "Transform your Jira sprint data into actionable insights with interactive dashboards that track burndown charts, team velocity, sprint goal progress, and blocked issues. Generate executive-ready health dashboards to improve sprint management and team performance. Enhance decision-making with predictive analytics and comprehensive sprint health scoring.",
-  "createdAt": "2026-01-16T12:46:23.590Z",
+  "createdAt": "2026-01-17T02:13:53.481Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@CHIBOLAR/jira_mcp_sprinthealth"

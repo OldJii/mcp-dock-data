@@ -2,7 +2,7 @@
   "id": "@PuroDelphi/mcpfirebird",
   "displayName": "MCPFirebird",
   "description": "Connect to Firebird databases to query data, explore schemas, and understand table relationships. Generate, execute, and explain SQL while analyzing performance, execution plans, and missing indexes. Backup, restore, and validate databases, run health checks, and manage batch operations.",
-  "createdAt": "2026-01-16T12:40:36.666Z",
+  "createdAt": "2026-01-17T02:07:38.893Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@PuroDelphi/mcpfirebird"

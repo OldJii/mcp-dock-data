@@ -2,7 +2,7 @@
   "id": "@RamyaChinnadurai/linkedmash",
   "displayName": "Linkedmash",
   "description": "Enable AI assistants to manage LinkedIn bookmarks with advanced filtering, searching, and pagination capabilities. Access bookmark counts and details filtered by read status, media type, author, tags, and date ranges. Seamlessly integrate Linkedmash bookmark management into your AI workflows using this MCP service.",
-  "createdAt": "2026-01-16T12:52:14.298Z",
+  "createdAt": "2026-01-17T02:19:55.562Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@RamyaChinnadurai/linkedmash"

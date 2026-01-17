@@ -2,7 +2,7 @@
   "id": "@ilil1/simple-mcp-server",
   "displayName": "Simple MCP Server",
   "description": "Provide a minimal MCP server implementation that enables LLM clients to connect and access example tools via HTTP or stdio transports. Facilitate integration with AI systems like Windsurf IDE and Claude by offering simple authentication and example tools such as greeting, version info, and system info. Extend the server easily by adding custom tools to enhance AI capabilities.",
-  "createdAt": "2026-01-16T12:47:17.680Z",
+  "createdAt": "2026-01-17T02:14:48.992Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ilil1/simple-mcp-server"

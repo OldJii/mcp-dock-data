@@ -2,7 +2,7 @@
   "id": "@Vaibahv1306Rapid/sample_mcp",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffolded environment to develop and run MCP servers with ease. Enable rapid prototyping and integration of tools, resources, and prompts for LLM applications. Simplify MCP server setup and development workflows.",
-  "createdAt": "2026-01-16T12:46:48.742Z",
+  "createdAt": "2026-01-17T02:14:19.391Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Vaibahv1306Rapid/sample_mcp"

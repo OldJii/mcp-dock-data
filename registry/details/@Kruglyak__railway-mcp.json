@@ -2,7 +2,7 @@
   "id": "@Kruglyak/railway-mcp",
   "displayName": "Railway Infrastructure Manager",
   "description": "Manage your Railway.app infrastructure effortlessly through natural language commands. Deploy services, manage environment variables, and monitor deployments seamlessly. Enhance your productivity by integrating Railway operations directly into your AI workflows.",
-  "createdAt": "2026-01-16T12:47:20.937Z",
+  "createdAt": "2026-01-17T02:14:52.330Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Kruglyak/railway-mcp"

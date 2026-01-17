@@ -2,7 +2,7 @@
   "id": "mcp-trader",
   "displayName": "MCP Trader Server",
   "description": "A Model Context Protocol (MCP) server for stock traders.",
-  "createdAt": "2026-01-16T12:44:06.968Z",
+  "createdAt": "2026-01-17T02:11:32.963Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-trader"

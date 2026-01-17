@@ -2,7 +2,7 @@
   "id": "@antvis/mcp-server-chart",
   "displayName": "Visualization Charts Server",
   "description": "A Model Context Protocol server for generating charts using AntV, This is a TypeScript-based MCP server that provides chart generation capabilities. It allows you to create various types of charts through MCP tools.",
-  "createdAt": "2026-01-16T12:48:26.992Z",
+  "createdAt": "2026-01-17T02:16:00.659Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@antvis/mcp-server-chart"

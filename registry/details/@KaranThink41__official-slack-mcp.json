@@ -2,7 +2,7 @@
   "id": "@KaranThink41/official-slack-mcp",
   "displayName": "Slack Workspace Automation Server",
   "description": "Automate your Slack workspace interactions by posting messages, replying to threads, adding reactions, and fetching channel or user information. Streamline Slack communication and management with easy-to-use tools accessible via the Model Context Protocol. Enhance productivity by integrating Slack API capabilities directly into your workflows.",
-  "createdAt": "2026-01-16T12:52:46.859Z",
+  "createdAt": "2026-01-17T02:20:29.040Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@KaranThink41/official-slack-mcp"

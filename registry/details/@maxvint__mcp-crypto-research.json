@@ -2,7 +2,7 @@
   "id": "@maxvint/mcp-crypto-research",
   "displayName": "Crypto Research Server",
   "description": "Provide a specialized MCP server that enables integration with cryptocurrency research data and tools. Facilitate access to crypto-related resources and operations to enhance LLM applications with up-to-date blockchain and crypto insights. Empower users to leverage crypto data seamlessly within their AI workflows.",
-  "createdAt": "2026-01-16T12:36:28.784Z",
+  "createdAt": "2026-01-17T02:03:46.996Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@maxvint/mcp-crypto-research"

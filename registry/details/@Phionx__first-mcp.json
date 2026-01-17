@@ -2,7 +2,7 @@
   "id": "@Phionx/first-mcp",
   "displayName": "Say Hello",
   "description": "Send personalized greetings by name and quickly test simple interactions. Toggle Pirate Mode to speak like a pirate. Explore the origin of 'Hello, World' and generate greeting prompts for different tones.",
-  "createdAt": "2026-01-16T12:44:00.283Z",
+  "createdAt": "2026-01-17T02:11:26.220Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Phionx/first-mcp"

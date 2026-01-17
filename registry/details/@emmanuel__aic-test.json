@@ -2,7 +2,7 @@
   "id": "@emmanuel/aic-test",
   "displayName": "Zuplo Weather",
   "description": "Get real-time US weather alerts, forecasts, radar data, and aviation reports from the National Weather Service. Query alerts by area or zone, retrieve gridpoint forecasts and observations, and access TAFs, SIGMETs/AIRMETs, products, and station details. Build automations and dashboards that monitor conditions and deliver timely updates.",
-  "createdAt": "2026-01-16T12:43:09.695Z",
+  "createdAt": "2026-01-17T02:10:35.419Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmanuel/aic-test"

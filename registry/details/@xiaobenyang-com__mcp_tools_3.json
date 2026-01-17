@@ -2,7 +2,7 @@
   "id": "@xiaobenyang-com/mcp_tools_3",
   "displayName": "mcp_tools_3",
   "description": "Find files by glob pattern and search within them using grep. Quickly locate filenames and content matches across your workspace. Focus searches to a chosen directory for precise results.",
-  "createdAt": "2026-01-16T12:46:03.803Z",
+  "createdAt": "2026-01-17T02:13:32.682Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@xiaobenyang-com/mcp_tools_3"

@@ -2,7 +2,7 @@
   "id": "@kohasummons/paystack-mcp",
   "displayName": "Paystack",
   "description": "The Paystack Model Context Protocol (MCP) server allows AI agents to interact with Paystack through standardized MCP clients via tool calling. This protocol supports various tools to interact with different Paystack services.",
-  "createdAt": "2026-01-16T12:48:48.908Z",
+  "createdAt": "2026-01-17T02:16:22.858Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kohasummons/paystack-mcp"

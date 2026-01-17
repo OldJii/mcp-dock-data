@@ -2,7 +2,7 @@
   "id": "@call518/mcp-ambari-api",
   "displayName": "MCP-Ambari-API",
   "description": "Manage Apache Ambari clusters effortlessly. Start, stop, and restart services; monitor health and alerts; and query Ambari Metrics with exact identifiers. Inspect and update configurations, track requests, and fetch host and user details to speed troubleshooting.",
-  "createdAt": "2026-01-16T12:44:35.598Z",
+  "createdAt": "2026-01-17T02:12:01.997Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@call518/mcp-ambari-api"

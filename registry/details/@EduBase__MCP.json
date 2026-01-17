@@ -2,7 +2,7 @@
   "id": "@EduBase/MCP",
   "displayName": "EduBase",
   "description": "Interact with EduBase through our MCP server. Create dynamic quizzes, manage secure exams, and automate comprehensive assessment workflows. This seamless integration empowers educators to create personalized learning experiences, conduct secure online examinations, and scale assessment solutions with enterprise-grade security and compliance. Ideal for educational institutions, corporate training departments, and certification providers seeking to transform their digital learning infrastructure with AI-powered capabilities. Integrate with your existing systems through our secure API.\n\nCheck out our GitHub page for more details and setup instructions!",
-  "createdAt": "2026-01-16T12:39:24.772Z",
+  "createdAt": "2026-01-17T02:06:36.513Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@EduBase/MCP"

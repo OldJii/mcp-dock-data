@@ -2,7 +2,7 @@
   "id": "@knowall-ai/mcp-neo4j-agent-memory",
   "displayName": "Neo4j Agent Memory Server",
   "description": "Neo4j Agent Memory enables AI assistants to build and query persistent knowledge graphs. Store information as nodes, create meaningful relationships between them, and search across your connected data. Unlike simple key-value stores, this graph-based approach captures how information relates, providing rich context for more intelligent responses.\n\n### Key Features:\n* **Store facts as nodes** - people, places, organizations, projects, events\n* **Connect with semantic relationships** - KNOWS, WORKS_AT, CREATED, MANAGES\n* **Word-tokenized search** - finds \"John\" OR \"Smith\" when searching \"John Smith\"\n* **Date filtering** - find memories created after specific dates\n* **Multi-hop traversal** - explore connections up to 3 levels deep\n* **Automatic timestamps** - track when memories were created\n* **Flexible schema** - use any label or property you need\n* **Relationship properties** - add context like \"since: 2023\" to connections\n* **10 specialized tools** - search, create, update, delete memories and connections\n* **LLM-friendly design** - simple atomic operations, AI handles the intelligence\n\nBuild persistent, queryable knowledge graphs that grow smarter over time.",
-  "createdAt": "2026-01-16T12:41:36.995Z",
+  "createdAt": "2026-01-17T02:09:04.169Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@knowall-ai/mcp-neo4j-agent-memory"

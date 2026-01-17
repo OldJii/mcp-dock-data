@@ -2,7 +2,7 @@
   "id": "@advenimus/jw-mcp",
   "displayName": "JW.org Content Tools",
   "description": "Provide seamless access to JW.org content including NWT Bible Content (verses, study notes), Christian Life and Ministry workbooks, Watchtower articles, and video captions. Automatically handle current and past issues for accurate content retrieval. Enable easy downloading of text content and video subtitles to enhance study and research workflows by use of AI LLM models. ",
-  "createdAt": "2026-01-16T12:38:01.060Z",
+  "createdAt": "2026-01-17T02:05:10.929Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@advenimus/jw-mcp"

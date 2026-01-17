@@ -1,12 +1,70 @@
 {
   "id": "aleatoric/causal-mcp",
-  "displayName": "causal-mcp",
-  "description": "Test against millions of unseen market regimes, not just the one historical path that happened to occur. Ensure capital preservation where traditional models collapse.",
-  "createdAt": "2026-01-16T12:58:52.411Z",
+  "displayName": "Aleatoric",
+  "description": "Aleatoric Engine is deterministic market simulation infrastructure for generating reproducible, schema-stable synthetic market data used in financial research, validation, and systems testing. It prioritizes explicit configuration, reproducibility, and operational clarity over statistical novelty or predictive modeling. Given the same SimulationManifest and seed, the engine produces identical outputs, enforces strict versioned schemas at boundaries, and emits provenance metadata with every run. Outputs include L2 order books, trade events, and funding events in Parquet, JSONL, or streaming form. Aleatoric Engine is infrastructure—not a predictive system—and it does not generate trading signals, optimize strategies, or forecast prices.",
+  "createdAt": "2026-01-17T02:13:41.499Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/aleatoric/causal-mcp"
   },
-  "connection": null,
-  "capabilities": []
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "examples": [
+        {},
+        {
+          "apiKey": "ak_live_your_key_here"
+        }
+      ],
+      "required": [],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Aleatoric API key from www.aleatoric.systems. Required for data generation, optional for discovery endpoints.",
+          "default": ""
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_health",
+      "description": "Check server health status. Returns OK if the server is running correctly."
+    },
+    {
+      "name": "get_presets",
+      "description": "List available market simulation presets. Returns preset names and configurations for common scenarios like high-volatility BTC or stable ETH markets."
+    },
+    {
+      "name": "get_config_schema",
+      "description": "Get the JSON Schema for SimulationManifest configuration. Use this to understand all available configuration options."
+    },
+    {
+      "name": "validate_config",
+      "description": "Validate a simulation configuration and get its deterministic hash. The hash ensures reproducibility - same config always produces same data."
+    },
+    {
+      "name": "generate_dataset",
+      "description": "Generate synthetic L2 order book market data. Returns a download URL for a Parquet file containing trades and book updates."
+    },
+    {
+      "name": "normalize_events",
+      "description": "Normalize raw exchange data to a canonical format. Converts exchange-specific payloads to unified event schema."
+    },
+    {
+      "name": "simulate_funding_regime",
+      "description": "Simulate perpetual futures funding rates over multiple periods. Calculates expected funding payments based on spot-mark price divergence."
+    },
+    {
+      "name": "get_venue_details",
+      "description": "Get exchange adapter capabilities including supported symbols, tick sizes, trading hours, and fee structures."
+    },
+    {
+      "name": "get_cache_stats",
+      "description": "Get statistics about cached datasets including count, total size, and compression ratios."
+    }
+  ]
 }

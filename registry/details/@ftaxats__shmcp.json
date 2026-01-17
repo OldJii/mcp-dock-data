@@ -2,7 +2,7 @@
   "id": "@ftaxats/shmcp",
   "displayName": "SalesHandy API Integration Server",
   "description": "Provide seamless access to SalesHandy API features including user profiles, campaigns, templates, contacts, analytics, and sequences. Enable efficient management and analytics of email campaigns and sequences through a standardized MCP interface. Simplify integration with SalesHandy by validating API keys and exposing comprehensive tools for campaign and contact management.",
-  "createdAt": "2026-01-16T12:53:03.371Z",
+  "createdAt": "2026-01-17T02:20:45.878Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ftaxats/shmcp"

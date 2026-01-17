@@ -2,7 +2,7 @@
   "id": "@tembo-io/mcp-server-tembo",
   "displayName": "Tembo Cloud API",
   "description": "Provide a standardized interface for integrating with the Tembo Cloud platform.",
-  "createdAt": "2026-01-16T12:44:58.959Z",
+  "createdAt": "2026-01-17T02:12:25.731Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tembo-io/mcp-server-tembo"

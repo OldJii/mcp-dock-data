@@ -2,7 +2,7 @@
   "id": "@sjhangiani12/citibike_mcp",
   "displayName": "Citi Bike Nearby",
   "description": "Find nearby Citi Bike stations with distance and e-bike/classic availability. Choose optimal pickup or drop-off spots in seconds. Plan rides more efficiently across the Citi Bike network.",
-  "createdAt": "2026-01-16T12:41:57.276Z",
+  "createdAt": "2026-01-17T02:09:24.422Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sjhangiani12/citibike_mcp"

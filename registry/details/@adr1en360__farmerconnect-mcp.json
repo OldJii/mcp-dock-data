@@ -2,7 +2,7 @@
   "id": "@adr1en360/farmerconnect-mcp",
   "displayName": "Farmerconnect-mcp",
   "description": "Plan fieldwork with location-based weather insights and quick place lookups. Calculate land area, plant density, yield estimates, and perform unit conversions. Explore crop information and time utilities to support daily farm decisions.",
-  "createdAt": "2026-01-16T12:53:00.074Z",
+  "createdAt": "2026-01-17T02:20:42.564Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@adr1en360/farmerconnect-mcp"

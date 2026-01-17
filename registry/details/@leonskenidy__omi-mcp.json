@@ -2,7 +2,7 @@
   "id": "@leonskenidy/omi-mcp",
   "displayName": "Omi API Server",
   "description": "Provide seamless access to Omi conversations and memories through a standardized MCP interface. Enable users to read, create, and manage conversations and memories efficiently within their LLM workflows. Integrate easily with Claude, Cursor, and other MCP-compatible clients to enhance contextual understanding and interaction.",
-  "createdAt": "2026-01-16T12:51:04.346Z",
+  "createdAt": "2026-01-17T02:18:38.699Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@leonskenidy/omi-mcp"

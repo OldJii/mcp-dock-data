@@ -2,7 +2,7 @@
   "id": "@Artin0123/gemini-image-mcp-server",
   "displayName": "Gemini Vision",
   "description": "Analyze images and videos with Gemini to get fast, reliable visual insights. Handle content from URLs and YouTube links. Summarize scenes, identify objects, and extract key details for reports or automation. This is remote version, check local branch in github to use local tools.",
-  "createdAt": "2026-01-16T12:41:28.917Z",
+  "createdAt": "2026-01-17T02:08:53.369Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Artin0123/gemini-image-mcp-server"

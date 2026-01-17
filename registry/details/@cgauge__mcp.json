@@ -2,7 +2,7 @@
   "id": "@cgauge/mcp",
   "displayName": "MCP Server POC",
   "description": "Validate and experiment with Model Context Protocol server implementations supporting multiple transport mechanisms. Run the server locally, with STDIO transport, or deploy it to AWS Lambda for scalable MCP integrations. Use the MCP Inspector for easy testing and debugging of MCP tools and workflows.",
-  "createdAt": "2026-01-16T12:49:38.978Z",
+  "createdAt": "2026-01-17T02:17:13.316Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cgauge/mcp"

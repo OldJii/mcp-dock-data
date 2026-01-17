@@ -2,7 +2,7 @@
   "id": "@jason-tan-swe/railway-mcp",
   "displayName": "Railway MCP Server",
   "description": "Manage your Railway infrastructure effortlessly using natural language. Deploy, configure, and monitor your services autonomously and securely with the help of Claude and other MCP clients.",
-  "createdAt": "2026-01-16T12:38:33.557Z",
+  "createdAt": "2026-01-17T02:05:43.066Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jason-tan-swe/railway-mcp"

@@ -2,7 +2,7 @@
   "id": "@deeppath-ai/mcp-system-infra",
   "displayName": "Intelligent Architecture Recommendation Engine",
   "description": "Generate tailored system architecture recommendations based on your business parameters such as QPS, concurrent users, database type, and AI model size. Automatically receive optimal resource allocation, middleware combinations, deployment strategies, and exportable architecture diagrams. Simplify infrastructure planning and ensure scalable, reliable system design with minimal effort.",
-  "createdAt": "2026-01-16T12:39:36.842Z",
+  "createdAt": "2026-01-17T02:06:47.815Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@deeppath-ai/mcp-system-infra"

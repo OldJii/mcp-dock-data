@@ -2,7 +2,7 @@
   "id": "@akilat-spec/tt-leave-manager-mcp",
   "displayName": "Leave Manager",
   "description": "Track and manage employee leave with instant access to balances and history. Retrieve comprehensive employee profiles and recent activity, and generate work reports for selected timeframes. Search by name, designation, email, or employee number to find the right person fast.",
-  "createdAt": "2026-01-16T12:39:52.871Z",
+  "createdAt": "2026-01-17T02:07:11.453Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@akilat-spec/tt-leave-manager-mcp"

@@ -2,7 +2,7 @@
   "id": "@paolaalim/testemcp",
   "displayName": "TesteServidorMCP",
   "description": "Provide a Python-based MCP server that offers tools for word frequency counting, URL extraction, AI site recommendation, and internal log registration. Enable integration with LLM applications to perform these specific actions dynamically. Facilitate enhanced interaction with external data and operations through a simple MCP interface.",
-  "createdAt": "2026-01-16T12:53:05.975Z",
+  "createdAt": "2026-01-17T02:20:48.533Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@paolaalim/testemcp"

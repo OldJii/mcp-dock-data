@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/bazi",
   "displayName": "bazi",
   "description": "生成八字排盘，支持公历或农历输入。根据八字反推可能的公历时间，帮助定位出生时刻。查询指定日期的黄历宜忌与节气，辅助择日与规划。",
-  "createdAt": "2026-01-16T12:44:11.634Z",
+  "createdAt": "2026-01-17T02:11:37.598Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/bazi"

@@ -2,7 +2,7 @@
   "id": "orchestrator-server",
   "displayName": "Orchestrator Server",
   "description": "Provides task management and coordination capabilities for distributed systems.",
-  "createdAt": "2026-01-16T12:43:06.530Z",
+  "createdAt": "2026-01-17T02:10:32.464Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/orchestrator-server"

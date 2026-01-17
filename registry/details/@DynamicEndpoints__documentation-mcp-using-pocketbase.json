@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/documentation-mcp-using-pocketbase",
   "displayName": "Pocketbase Document Extractor",
   "description": "Extract content from Microsoft Learn and GitHub URLs and store it in PocketBase for easy retrieval and search. Manage documents with tools for extraction, listing, searching, retrieval, and deletion. Benefit from real-time server statistics, dynamic tool management, and multi-transport support including STDIO and HTTP.",
-  "createdAt": "2026-01-16T12:42:55.838Z",
+  "createdAt": "2026-01-17T02:10:21.445Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/documentation-mcp-using-pocketbase"

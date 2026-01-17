@@ -2,7 +2,7 @@
   "id": "polymarket_mcp",
   "displayName": "PolyMarket Predictions",
   "description": "Fetch prediction market data from PolyMarket, including market info, prices, and history.",
-  "createdAt": "2026-01-16T12:51:33.712Z",
+  "createdAt": "2026-01-17T02:19:12.855Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/polymarket_mcp"

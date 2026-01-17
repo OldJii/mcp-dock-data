@@ -2,7 +2,7 @@
   "id": "btcpay_server",
   "displayName": "Btcpay server",
   "description": "BTCPay Server is a free, open-source, self-hosted Bitcoin payment processor that enables merchants to accept Bitcoin payments without intermediaries.",
-  "createdAt": "2026-01-16T12:35:07.997Z",
+  "createdAt": "2026-01-17T02:02:31.077Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/btcpay_server"

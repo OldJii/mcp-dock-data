@@ -2,7 +2,7 @@
   "id": "@emmanuel/apiworld",
   "displayName": "Zuplo Weather",
   "description": "Access U.S. National Weather Service alerts, forecasts, radar, and aviation advisories. Query active alerts by area, get gridpoint and zone forecasts, TAFs plus SIGMETs/AIRMETs, and retrieve station observations. Build weather-aware apps with comprehensive nationwide coverage.",
-  "createdAt": "2026-01-16T12:48:23.098Z",
+  "createdAt": "2026-01-17T02:15:56.669Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmanuel/apiworld"

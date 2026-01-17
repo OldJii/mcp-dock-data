@@ -2,7 +2,7 @@
   "id": "@sfiorini/youtube-mcp",
   "displayName": "youtube-mcp",
   "description": "Search and browse videos, channels, and playlists to fetch titles, descriptions, stats, and durations.\n\nRetrieve multilingual, timestamped transcripts and search within captions for precise context.\n\nSurface channel and playlist insights quickly by listing items and details.",
-  "createdAt": "2026-01-16T12:36:59.410Z",
+  "createdAt": "2026-01-17T02:04:11.459Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sfiorini/youtube-mcp"

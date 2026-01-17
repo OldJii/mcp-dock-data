@@ -2,7 +2,7 @@
   "id": "@souky-byte/sloneek-mcp",
   "displayName": "Sloneek MCP Server",
   "description": "Integrate seamlessly with the Sloneek API to manage users, absences, and personal information. Empower your LLM applications to interact with real-time data through a standardized interface. Enhance your workflows with advanced querying and user management capabilities.",
-  "createdAt": "2026-01-16T12:45:45.539Z",
+  "createdAt": "2026-01-17T02:13:13.956Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@souky-byte/sloneek-mcp"

@@ -2,7 +2,7 @@
   "id": "mcp-text-editor",
   "displayName": "Text Editor Server",
   "description": "Provides line-oriented text file editing capabilities through a standardized API, optimized for LLM tools.",
-  "createdAt": "2026-01-16T12:41:39.821Z",
+  "createdAt": "2026-01-17T02:13:01.286Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-text-editor"

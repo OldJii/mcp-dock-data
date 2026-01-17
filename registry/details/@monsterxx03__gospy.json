@@ -2,7 +2,7 @@
   "id": "@monsterxx03/gospy",
   "displayName": "Go Process Inspector",
   "description": "Inspect and analyze running Go processes with detailed goroutine states, memory statistics, and binary information. Use an interactive terminal UI or HTTP API for programmatic access. Enable the MCP server to interact with Go process data via a Server-Sent Events endpoint and available tools for goroutines, memory stats, runtime info, and process lookup.",
-  "createdAt": "2026-01-16T12:39:12.117Z",
+  "createdAt": "2026-01-17T02:06:27.802Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@monsterxx03/gospy"

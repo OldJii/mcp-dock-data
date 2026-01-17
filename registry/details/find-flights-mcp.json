@@ -2,7 +2,7 @@
   "id": "find-flights-mcp",
   "displayName": "Find Flights",
   "description": "Search and retrieve flight information using Duffel API.",
-  "createdAt": "2026-01-16T12:46:09.898Z",
+  "createdAt": "2026-01-17T02:13:38.682Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/find-flights-mcp"

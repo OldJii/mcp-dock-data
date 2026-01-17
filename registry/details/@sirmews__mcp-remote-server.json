@@ -2,7 +2,7 @@
   "id": "@sirmews/mcp-remote-server",
   "displayName": "Remote Server",
   "description": "Bridge between MCP clients and remote APIs.",
-  "createdAt": "2026-01-16T12:49:15.147Z",
+  "createdAt": "2026-01-17T02:16:49.952Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sirmews/mcp-remote-server"

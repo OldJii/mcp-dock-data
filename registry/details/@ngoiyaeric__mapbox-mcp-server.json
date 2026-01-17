@@ -2,7 +2,7 @@
   "id": "@ngoiyaeric/mapbox-mcp-server",
   "displayName": "Mapbox MCP Server",
   "description": "Integrate Mapbox's powerful navigation and search capabilities into your applications. Access directions, travel matrices, and geocoding services seamlessly. Enhance your projects with real-time mapping functionalities using this server.",
-  "createdAt": "2026-01-16T12:42:57.838Z",
+  "createdAt": "2026-01-17T02:10:23.464Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ngoiyaeric/mapbox-mcp-server"

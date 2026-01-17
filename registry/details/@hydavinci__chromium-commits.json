@@ -2,7 +2,7 @@
   "id": "@hydavinci/chromium-commits",
   "displayName": "Chromium Latest Commit",
   "description": "Query the latest commit information for any file in the Chromium repository with detailed commit data including hash, author, timestamp, message, modified files, and diffs. Integrate seamlessly with MCP-compatible tools via the provided MCP server to enable programmatic access and automation. Utilize multiple interfaces including CLI, Python API, and Docker for flexible deployment and usage.",
-  "createdAt": "2026-01-16T12:37:31.132Z",
+  "createdAt": "2026-01-17T02:04:45.418Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hydavinci/chromium-commits"

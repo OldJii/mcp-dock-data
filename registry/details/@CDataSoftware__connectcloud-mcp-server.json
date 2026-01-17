@@ -2,7 +2,7 @@
   "id": "@CDataSoftware/connectcloud-mcp-server",
   "displayName": "CData Connect Cloud MCP Server",
   "description": "Enable AI agents to query and manage cloud-connected data sources using SQL, metadata introspection, and stored procedures. Integrate with AI workflows to enhance data-driven decision making.",
-  "createdAt": "2026-01-16T12:52:42.309Z",
+  "createdAt": "2026-01-17T02:20:24.391Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@CDataSoftware/connectcloud-mcp-server"

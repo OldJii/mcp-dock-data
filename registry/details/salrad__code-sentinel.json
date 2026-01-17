@@ -2,7 +2,7 @@
   "id": "salrad/code-sentinel",
   "displayName": "Code Sentinel",
   "description": "Expose security vulnerabilities, deceptive constructs, and unfinished code before they reach production. Reveal architectural and design pattern usage with clear, actionable guidance to improve consistency and maintainability. Generate concise visual reports that highlight strengths and prioritize issues to speed up reviews and refactoring.",
-  "createdAt": "2026-01-16T12:41:34.243Z",
+  "createdAt": "2026-01-17T02:09:00.674Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/salrad/code-sentinel"

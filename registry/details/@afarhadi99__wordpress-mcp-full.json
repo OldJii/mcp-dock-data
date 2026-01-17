@@ -2,7 +2,7 @@
   "id": "@afarhadi99/wordpress-mcp-full",
   "displayName": "WordPress & WooCommerce API Server",
   "description": "Expose WordPress and WooCommerce REST API tools to enable seamless integration and interaction with WordPress sites. Facilitate automated content management and e-commerce operations through standardized tool calls. Enhance your applications by leveraging WordPress data and functionality programmatically.",
-  "createdAt": "2026-01-16T12:48:13.940Z",
+  "createdAt": "2026-01-17T02:15:47.299Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@afarhadi99/wordpress-mcp-full"

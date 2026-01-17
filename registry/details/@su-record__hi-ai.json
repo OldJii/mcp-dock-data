@@ -2,7 +2,7 @@
   "id": "@su-record/hi-ai",
   "displayName": "Hi-AI",
   "description": "Simplify AI development with a conversational assistant that remembers your context and helps you manage complex tasks effortlessly. Use natural language to interact with a suite of 29 modular tools for problem analysis, memory management, browser automation, code quality, planning, and time utilities. Start your AI-powered development journey with a simple greeting and let Hi-AI handle the rest.",
-  "createdAt": "2026-01-16T12:40:27.907Z",
+  "createdAt": "2026-01-17T02:07:53.035Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@su-record/hi-ai"

@@ -2,7 +2,7 @@
   "id": "@khromov/svelte-llm-mcp",
   "displayName": "svelte-llm-mcp",
   "description": "Connect your AI coding assistant directly to up-to-date Svelte 5 and SvelteKit documentation via this MCP server.",
-  "createdAt": "2026-01-16T12:40:43.967Z",
+  "createdAt": "2026-01-17T02:08:07.768Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@khromov/svelte-llm-mcp"

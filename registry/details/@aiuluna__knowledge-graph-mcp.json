@@ -2,7 +2,7 @@
   "id": "@aiuluna/knowledge-graph-mcp",
   "displayName": "Knowledge Graph Server",
   "description": "Manage, analyze, and visualize knowledge graphs with support for multiple graph types including topologies, timelines, and ontologies. Seamlessly integrate with MCP-compatible AI assistants to query and manipulate knowledge graph data. Benefit from comprehensive resource management and version status tracking to enhance your knowledge workflows.",
-  "createdAt": "2026-01-16T12:43:37.742Z",
+  "createdAt": "2026-01-17T02:11:03.991Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aiuluna/knowledge-graph-mcp"

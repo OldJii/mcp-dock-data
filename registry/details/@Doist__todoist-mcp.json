@@ -2,7 +2,7 @@
   "id": "@Doist/todoist-mcp",
   "displayName": "Todoist Integration Server",
   "description": "Enable your LLM to interact seamlessly with Todoist by connecting to this server. Manage tasks, projects, and more using the full Todoist API through natural language commands. Simplify productivity workflows by integrating Todoist capabilities directly into your AI assistant.",
-  "createdAt": "2026-01-16T12:40:24.554Z",
+  "createdAt": "2026-01-17T02:07:49.006Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Doist/todoist-mcp"

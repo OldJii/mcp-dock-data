@@ -2,7 +2,7 @@
   "id": "@brianellin/bsky-mcp-server",
   "displayName": "Bluesky MCP Server",
   "description": "Connect to Bluesky and interact with the ATProtocol using natural language. Fetch, analyze, and post content seamlessly within your LLM applications. Enhance your experience by leveraging Bluesky's features directly in your context window.",
-  "createdAt": "2026-01-16T12:47:25.021Z",
+  "createdAt": "2026-01-17T02:14:56.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@brianellin/bsky-mcp-server"

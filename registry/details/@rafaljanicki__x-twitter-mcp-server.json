@@ -2,7 +2,7 @@
   "id": "@rafaljanicki/x-twitter-mcp-server",
   "displayName": "X Twitter Server",
   "description": "Enable natural language interaction with Twitter to fetch profiles, post tweets, search trends, and manage followers and bookmarks. Simplify Twitter API v2 usage with built-in rate limit handling and secure authentication. Integrate seamlessly with AI tools for enhanced social media management.",
-  "createdAt": "2026-01-16T12:40:33.336Z",
+  "createdAt": "2026-01-17T02:07:57.023Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rafaljanicki/x-twitter-mcp-server"

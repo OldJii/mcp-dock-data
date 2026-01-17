@@ -2,7 +2,7 @@
   "id": "@deep-ai-kr/dev-mcp",
   "displayName": "dev-mcp",
   "description": "Browse directories and read files within a safe, configurable root. Pull accurate context from local projects and docs without leaving your workflow. Limit access to a chosen root to keep your environment secure.",
-  "createdAt": "2026-01-16T12:35:32.024Z",
+  "createdAt": "2026-01-17T02:02:54.564Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@deep-ai-kr/dev-mcp"

@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/powershell-exec-mcp-server",
   "displayName": "PowerShell Exec Server",
   "description": "Execute PowerShell commands securely with controlled timeouts and input validation. Retrieve system information, manage services, monitor processes, and generate scripts dynamically using templates. Benefit from built-in security features that block dangerous commands and ensure consistent JSON-formatted outputs for automation workflows.",
-  "createdAt": "2026-01-16T12:37:28.477Z",
+  "createdAt": "2026-01-17T02:04:44.084Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/powershell-exec-mcp-server"

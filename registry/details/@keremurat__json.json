@@ -2,7 +2,7 @@
   "id": "@keremurat/json",
   "displayName": "JSON Compare",
   "description": "Compare two JSON files deeply without worrying about key or array order. Detect missing, extra, and mismatched keys and values across nested objects and arrays. Receive a clear summary and a detailed report of all differences.",
-  "createdAt": "2026-01-16T12:36:02.791Z",
+  "createdAt": "2026-01-17T02:04:41.391Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keremurat/json"

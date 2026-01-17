@@ -2,7 +2,7 @@
   "id": "@gannonh/memento-mcp",
   "displayName": "Memento",
   "description": "Enhance your LLM applications with a scalable knowledge graph memory system. Utilize semantic search and temporal awareness to manage and retrieve information effectively, ensuring your agents have persistent and contextual memory capabilities.",
-  "createdAt": "2026-01-16T12:52:10.362Z",
+  "createdAt": "2026-01-17T02:19:51.562Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gannonh/memento-mcp"

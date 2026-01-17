@@ -2,7 +2,7 @@
   "id": "@magemaclean/azure-devops-mcp",
   "displayName": "azure-devops-mcp",
   "description": "Manage Azure DevOps projects, work items, repos, pipelines, wikis, search, and test plans from your coding workflow. Create and update work items, branches, pull requests, and wiki pages; run pipelines; and fetch build statuses, logs, and results on demand. Select only the capabilities you need to keep your workspace focused and fast.",
-  "createdAt": "2026-01-16T12:40:29.249Z",
+  "createdAt": "2026-01-17T02:07:42.945Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@magemaclean/azure-devops-mcp"

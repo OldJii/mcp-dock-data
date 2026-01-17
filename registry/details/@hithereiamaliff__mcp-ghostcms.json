@@ -2,7 +2,7 @@
   "id": "@hithereiamaliff/mcp-ghostcms",
   "displayName": "Ghost CMS MCP Server",
   "description": "This MCP server provides seamless access to your Ghost instance, featuring a rich set of MCP tools for managing posts, users, members, tiers, offers, and newsletters.\n\nNote: this is NOT an official MCP server by Ghost.org, and is a direct fork of MFYDev's ghost-mcp.",
-  "createdAt": "2026-01-16T12:52:38.413Z",
+  "createdAt": "2026-01-17T02:20:20.372Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-ghostcms"

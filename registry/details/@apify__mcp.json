@@ -2,7 +2,7 @@
   "id": "@apify/mcp",
   "displayName": "Apify",
   "description": "Apify is the world's largest marketplace of tools for web scraping, data extraction, and web automation. You can extract structured data from social media (Instagram, TikTok, Twitter, Facebook), e-commerce (Amazon, eBay, Shopify), search engines (Google, Bing), maps, travel sites, or any other website.",
-  "createdAt": "2026-01-16T12:45:44.235Z",
+  "createdAt": "2026-01-17T02:13:12.621Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@apify/mcp"

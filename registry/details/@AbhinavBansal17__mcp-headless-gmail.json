@@ -2,7 +2,7 @@
   "id": "@AbhinavBansal17/mcp-headless-gmail",
   "displayName": "mcp-headless-gmail",
   "description": "Read recent Gmail messages, retrieve full bodies in chunks, and send emails. Operate headlessly with runtime-provided credentials to avoid local setup. Automatically refresh tokens to keep workflows uninterrupted.",
-  "createdAt": "2026-01-16T12:42:09.509Z",
+  "createdAt": "2026-01-17T02:09:36.153Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AbhinavBansal17/mcp-headless-gmail"

@@ -2,7 +2,7 @@
   "id": "@wgong/sqlite-mcp-server",
   "displayName": "SQLite Explorer",
   "description": "Explore, query, and inspect SQLite databases with ease. List tables, preview results, and view detailed schema metadata to understand structure quickly. Verify connectivity and readiness with a quick health check.",
-  "createdAt": "2026-01-16T12:36:24.790Z",
+  "createdAt": "2026-01-17T02:03:49.661Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@wgong/sqlite-mcp-server"

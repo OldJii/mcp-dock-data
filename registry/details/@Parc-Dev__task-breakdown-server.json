@@ -2,7 +2,7 @@
   "id": "@Parc-Dev/task-breakdown-server",
   "displayName": "Task Breakdown",
   "description": "Break down complex problems into clear, actionable steps. Adapt on the fly by iterating, revising, and branching your plan. Produce a focused to-do list and validate your approach before execution.",
-  "createdAt": "2026-01-16T12:37:18.413Z",
+  "createdAt": "2026-01-17T02:04:31.682Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Parc-Dev/task-breakdown-server"

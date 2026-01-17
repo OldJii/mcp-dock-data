@@ -2,7 +2,7 @@
   "id": "@meowrain/mcp-server-cambridge-dict",
   "displayName": "Dictionary Server",
   "description": "Retrieve word meanings seamlessly from the Cambridge Dictionary. Enhance your AI assistants with robust dictionary query tools through the MCP protocol. Integrate effortlessly into your command line for quick access to definitions and examples.",
-  "createdAt": "2026-01-16T12:42:42.273Z",
+  "createdAt": "2026-01-17T02:10:08.759Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@meowrain/mcp-server-cambridge-dict"

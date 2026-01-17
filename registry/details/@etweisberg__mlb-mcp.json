@@ -2,7 +2,7 @@
   "id": "@etweisberg/mlb-mcp",
   "displayName": "MLB Stats Server",
   "description": "Provide structured access to Major League Baseball statistics through an MCP server. Query and retrieve detailed baseball data including statcast, fangraphs, and baseball reference stats. Generate visualizations and integrate seamlessly with MCP-compatible clients for enhanced baseball analytics.",
-  "createdAt": "2026-01-16T12:36:32.656Z",
+  "createdAt": "2026-01-17T02:03:45.668Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@etweisberg/mlb-mcp"

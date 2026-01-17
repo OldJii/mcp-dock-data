@@ -2,7 +2,7 @@
   "id": "@ttpears/mcp-mysql",
   "displayName": "MySQL Explorer",
   "description": "An intelligent MySQL MCP Server with expert data analytics capabilities and comprehensive caching. Goes beyond basic querying to provide in-depth database analysis, relationship mapping, and user behavior insights with high-performance caching system.",
-  "createdAt": "2026-01-16T12:38:55.483Z",
+  "createdAt": "2026-01-17T02:05:51.031Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ttpears/mcp-mysql"

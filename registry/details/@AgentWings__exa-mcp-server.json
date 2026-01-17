@@ -2,7 +2,7 @@
   "id": "@AgentWings/exa-mcp-server",
   "displayName": "exa-mcp-server",
   "description": "Search the web and codebases to get precise, up-to-date context for programming and research. Find examples, API usage, and documentation from real repositories and sites to ship faster with fewer mistakes. Extend investigations with deep search, crawling, and business or profile lookups when needed.",
-  "createdAt": "2026-01-16T12:40:57.967Z",
+  "createdAt": "2026-01-17T02:08:23.080Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AgentWings/exa-mcp-server"

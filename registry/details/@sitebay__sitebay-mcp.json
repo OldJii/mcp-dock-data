@@ -2,7 +2,7 @@
   "id": "@sitebay/sitebay-mcp",
   "displayName": "SiteBay WordPress Hosting Manager",
   "description": "Manage your WordPress hosting on SiteBay through natural language commands. Create, update, and delete sites, execute server commands, edit files, and view logs seamlessly. Access hosting regions, templates, and proxy configurations to streamline your SiteBay cloud infrastructure management.",
-  "createdAt": "2026-01-16T12:41:51.265Z",
+  "createdAt": "2026-01-17T02:09:16.998Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sitebay/sitebay-mcp"

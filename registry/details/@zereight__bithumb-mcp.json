@@ -2,7 +2,7 @@
   "id": "@zereight/bithumb-mcp",
   "displayName": "Bithumb MCP Server",
   "description": "Interact with the Bithumb API to fetch cryptocurrency information and manage transactions. Access real-time data and execute trades seamlessly through a standardized interface.",
-  "createdAt": "2026-01-16T12:44:34.932Z",
+  "createdAt": "2026-01-17T02:12:01.315Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zereight/bithumb-mcp"

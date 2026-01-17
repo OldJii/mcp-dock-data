@@ -2,7 +2,7 @@
   "id": "@webforj.io/webfor-mcp",
   "displayName": "webforj-mcp",
   "description": "The official Model Context Protocol server for webforJ - providing AI assistants with Java web development tools, project generation, and comprehensive documentation access. Works with Claude, VS Code, Cursor, and all MCP-enabled environments.",
-  "createdAt": "2026-01-16T12:47:05.887Z",
+  "createdAt": "2026-01-17T02:14:36.733Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@webforj.io/webfor-mcp"

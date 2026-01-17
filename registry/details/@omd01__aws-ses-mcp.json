@@ -2,7 +2,7 @@
   "id": "@omd01/aws-ses-mcp",
   "displayName": "AWS SES Email Sender",
   "description": "Send emails directly from your applications using AWS SES. Integrate seamlessly with Cursor or Claude Desktop to compose and dispatch emails without manual copy-pasting. Enjoy features like CC, BCC, and customizable sender addresses for enhanced email management.",
-  "createdAt": "2026-01-16T12:43:02.523Z",
+  "createdAt": "2026-01-17T02:10:28.172Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@omd01/aws-ses-mcp"

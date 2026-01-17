@@ -2,7 +2,7 @@
   "id": "@jessicayanwang/test",
   "displayName": "Frankfurter Exchange Rates",
   "description": "Fetch latest and historical currency exchange rates from Frankfurter. Convert amounts between currencies using current or date-specific rates, and list supported currency codes. Filter results by base and symbols to focus on the rates you need.",
-  "createdAt": "2026-01-16T12:39:34.175Z",
+  "createdAt": "2026-01-17T02:06:46.498Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jessicayanwang/test"

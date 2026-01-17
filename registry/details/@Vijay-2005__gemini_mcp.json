@@ -2,7 +2,7 @@
   "id": "@Vijay-2005/gemini_mcp",
   "displayName": "Gemini MCP Server",
   "description": "Enable seamless integration of language models with external data sources and tools through a standardized protocol. Facilitate dynamic access to files, APIs, and custom operations to enhance AI capabilities. Simplify the development of intelligent applications by providing a robust bridge between models and real-world context.",
-  "createdAt": "2026-01-16T12:46:50.042Z",
+  "createdAt": "2026-01-17T02:14:20.729Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Vijay-2005/gemini_mcp"

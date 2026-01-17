@@ -2,7 +2,7 @@
   "id": "@seocylucky/githru-vscode-ext",
   "displayName": "Githru",
   "description": "Analyze GitHub repositories to uncover contributor impact, PR complexity, and author work patterns. Get recommendations on key contributors and visualize activity storylines across folders and files. Spot long-tail file outliers, coupling, and churn to guide reviews and planning.",
-  "createdAt": "2026-01-16T12:38:03.058Z",
+  "createdAt": "2026-01-17T02:05:16.214Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@seocylucky/githru-vscode-ext"

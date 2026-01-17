@@ -2,7 +2,7 @@
   "id": "@danilonovaisv/n8n-workflow-builder-gpt2",
   "displayName": "n8n Workflow Builder",
   "description": "Manage n8n workflows with ease. Create, update, activate or deactivate, execute, and inspect workflows, organize with tags, and generate security audits. Accelerate automation by turning plain descriptions into working workflows.",
-  "createdAt": "2026-01-16T12:42:06.841Z",
+  "createdAt": "2026-01-17T02:09:33.483Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@danilonovaisv/n8n-workflow-builder-gpt2"

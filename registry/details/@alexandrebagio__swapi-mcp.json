@@ -2,7 +2,7 @@
   "id": "@alexandrebagio/swapi-mcp",
   "displayName": "SWAPI Server",
   "description": "Provide seamless access to Star Wars API data for your applications. Fetch, manipulate, and integrate Star Wars universe information effortlessly. Enhance your projects with rich, structured data from the iconic franchise.",
-  "createdAt": "2026-01-16T12:42:01.949Z",
+  "createdAt": "2026-01-17T02:09:28.705Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alexandrebagio/swapi-mcp"

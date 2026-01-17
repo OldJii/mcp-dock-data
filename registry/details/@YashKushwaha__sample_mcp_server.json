@@ -2,7 +2,7 @@
   "id": "@YashKushwaha/sample_mcp_server",
   "displayName": "Sample MCP Server",
   "description": "Provide a simple and minimal MCP server implementation to help developers get started quickly with the Model Context Protocol. Enable basic MCP server capabilities using the official Python SDK as a foundation. Facilitate easy deployment and experimentation with MCP features.",
-  "createdAt": "2026-01-16T12:49:01.309Z",
+  "createdAt": "2026-01-17T02:16:35.543Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@YashKushwaha/sample_mcp_server"

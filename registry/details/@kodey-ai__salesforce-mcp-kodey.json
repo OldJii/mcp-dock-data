@@ -2,7 +2,7 @@
   "id": "@kodey-ai/salesforce-mcp-kodey",
   "displayName": "Salesforce SOQL",
   "description": "Run SOQL queries against your Salesforce org to explore and retrieve data. Quickly iterate on filters and fields to answer questions fast. Streamline reporting, troubleshooting, and data validation across objects and relationships.",
-  "createdAt": "2026-01-16T12:45:16.086Z",
+  "createdAt": "2026-01-17T02:12:43.164Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp-kodey"

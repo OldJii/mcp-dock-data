@@ -2,7 +2,7 @@
   "id": "@RomanEvstigneev/whoop-mcp-server",
   "displayName": "WHOOP Fitness Data Server",
   "description": " Get you WHOOP accessToken here:\n 👉 https://personal-integrations-462307.uc.r.appspot.com/\n\nConnect your WHOOP fitness data to Claude Desktop and transform it into actionable insights through natural language queries. Securely access your workouts, recovery, sleep, cycles, and profile information with smart caching and seamless OAuth integration. Keep your data private and local while enjoying an optimized and interactive fitness data experience.\n\n",
-  "createdAt": "2026-01-16T12:47:53.695Z",
+  "createdAt": "2026-01-17T02:15:26.572Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@RomanEvstigneev/whoop-mcp-server"

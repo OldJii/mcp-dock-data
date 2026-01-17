@@ -2,7 +2,7 @@
   "id": "@emmett-deen/linear-mcp-server",
   "displayName": "Linear MCP Server",
   "description": "Connect Claude to Linear project management systems. Retrieve, create, and manage issues and projects seamlessly.",
-  "createdAt": "2026-01-16T12:42:00.619Z",
+  "createdAt": "2026-01-17T02:09:27.344Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@emmett-deen/linear-mcp-server"

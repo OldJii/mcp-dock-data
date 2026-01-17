@@ -2,7 +2,7 @@
   "id": "@guangxiangdebizi/youtube-subtitle-mcp",
   "displayName": "youtube-subtitle-mcp",
   "description": "Fetch subtitles and transcripts from public YouTube videos. Choose your preferred format (SRT, VTT, TXT, or JSON) and language. Use full timestamps for easy editing, search, and analysis.",
-  "createdAt": "2026-01-16T12:41:02.611Z",
+  "createdAt": "2026-01-17T02:08:28.186Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@guangxiangdebizi/youtube-subtitle-mcp"

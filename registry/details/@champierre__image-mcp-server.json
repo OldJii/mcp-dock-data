@@ -2,7 +2,7 @@
   "id": "@champierre/image-mcp-server",
   "displayName": "Image Analysis Server",
   "description": "Analyze images by providing their URLs and receive detailed insights using advanced image recognition. Leverage the power of the GPT-4o-mini model for high-accuracy image analysis and validation of image URLs.",
-  "createdAt": "2026-01-16T12:50:27.706Z",
+  "createdAt": "2026-01-17T02:18:00.284Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@champierre/image-mcp-server"

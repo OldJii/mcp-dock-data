@@ -2,7 +2,7 @@
   "id": "@Stopera/solx402-mcp-server",
   "displayName": "solx402-mcp-server",
   "description": "Discover and consume x402-enabled services on Solana with seamless USDC payments. Check your wallet and USDC balance, browse facilitators and available services, and view the protocol flow. Search x402 documentation and get guidance for Solana development when needed.",
-  "createdAt": "2026-01-16T12:42:31.807Z",
+  "createdAt": "2026-01-17T02:09:58.686Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Stopera/solx402-mcp-server"

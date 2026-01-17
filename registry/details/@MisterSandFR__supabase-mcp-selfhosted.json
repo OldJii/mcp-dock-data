@@ -2,7 +2,7 @@
   "id": "@MisterSandFR/supabase-mcp-selfhosted",
   "displayName": "Supabase Admin Self-Hosted",
   "description": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Monitor performance with real-time metrics and logs, and strengthen security with audits and RLS policy helpers. Automate backups, schema sync, CRUD generation, and safe SQL execution from one place.",
-  "createdAt": "2026-01-16T12:35:19.001Z",
+  "createdAt": "2026-01-17T02:02:42.431Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@MisterSandFR/supabase-mcp-selfhosted"

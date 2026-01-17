@@ -2,7 +2,7 @@
   "id": "@inventech-solution/facebook-ads-mcp-server",
   "displayName": "Facebook Ads Data",
   "description": "Analyze performance across accounts, campaigns, ad sets, and ads with comprehensive insights. Retrieve account details, ads, ad sets, campaigns, and creatives in one place. Track changes with activity logs and streamline reporting over custom date ranges.",
-  "createdAt": "2026-01-16T12:39:24.098Z",
+  "createdAt": "2026-01-17T02:06:33.829Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@inventech-solution/facebook-ads-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@kodey-ai/salesforce-mcp-minimal",
   "displayName": "Salesforce Query",
   "description": "Run SOQL queries to explore and retrieve Salesforce data. Access accounts, contacts, opportunities, and custom object records on demand to power workflows and reporting. Accelerate troubleshooting and analysis with quick, precise CRM insights.",
-  "createdAt": "2026-01-16T12:52:42.958Z",
+  "createdAt": "2026-01-17T02:20:25.054Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kodey-ai/salesforce-mcp-minimal"

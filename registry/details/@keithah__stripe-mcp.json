@@ -2,7 +2,7 @@
   "id": "@keithah/stripe-mcp",
   "displayName": "Stripe Fraud Control",
   "description": "Investigate suspicious payments with Radar risk signals, early fraud warnings, disputes, and refund history. Mitigate losses by issuing full or partial refunds fast. Go beyond the basics by tapping any Stripe API resource when you need custom actions.",
-  "createdAt": "2026-01-16T12:49:19.080Z",
+  "createdAt": "2026-01-17T02:16:53.951Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keithah/stripe-mcp"

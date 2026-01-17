@@ -2,7 +2,7 @@
   "id": "@shayonpal/mcp-todoist",
   "displayName": "mcp-todoist",
   "description": "A MCP server for the Todoist task tracking app, using their unified v1 APIs",
-  "createdAt": "2026-01-16T12:55:23.976Z",
+  "createdAt": "2026-01-17T02:22:21.979Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@shayonpal/mcp-todoist"

@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/m365-core-mcp",
   "displayName": "Microsoft 365 Core Server",
   "description": "*Updated December 9th 2025**\nManage your Microsoft 365 services effortlessly. Create and manage distribution lists, security groups, and user settings with ease, ensuring streamlined operations and enhanced collaboration. Automate offboarding processes to maintain security and compliance effortlessly.",
-  "createdAt": "2026-01-16T12:40:01.790Z",
+  "createdAt": "2026-01-17T02:07:18.484Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/m365-core-mcp"

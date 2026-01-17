@@ -2,7 +2,7 @@
   "id": "@santiago.blanco.vilchez/aaa",
   "displayName": "Tenant Builder",
   "description": "Provision new tenants with admin setup and initial document templates. Add document templates to existing tenants to expand your workspace. Authenticate and connect to external APIs to perform secure operations.",
-  "createdAt": "2026-01-16T12:52:33.201Z",
+  "createdAt": "2026-01-17T02:20:15.018Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@santiago.blanco.vilchez/aaa"

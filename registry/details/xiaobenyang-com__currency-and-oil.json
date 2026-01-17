@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/currency-and-oil",
   "displayName": "currency-and-oil",
   "description": "Track live USD/RUB and EUR/RUB exchange rates and Brent crude prices in USD and RUB. Calculate how many barrels you can purchase for any amount in RUB, USD, or EUR. Streamline budgeting, pricing, and trading decisions with quick, reliable figures.",
-  "createdAt": "2026-01-16T12:48:54.784Z",
+  "createdAt": "2026-01-17T02:16:28.871Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/currency-and-oil"

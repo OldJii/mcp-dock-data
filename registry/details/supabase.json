@@ -2,7 +2,7 @@
   "id": "supabase",
   "displayName": "Supabase",
   "description": "Search the Supabase docs for up-to-date guidance and troubleshoot errors quickly. Manage organizations, projects, databases, and Edge Functions, including migrations, SQL, logs, advisors, keys, and type generation, in one flow. Create and manage development branches to iterate safely, confirm costs up front, and merge changes to production with confidence.",
-  "createdAt": "2026-01-16T12:35:40.696Z",
+  "createdAt": "2026-01-17T02:03:01.310Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/supabase"

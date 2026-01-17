@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/text-toolkit",
   "displayName": "text-toolkit",
   "description": "Transform and format text quickly to keep content clean, consistent, and readable. Encode, decode, and escape strings for reliable sharing across apps and the web. Analyze readability, count metrics, work with regex, and generate UUIDs, hashes, and filler text on demand.",
-  "createdAt": "2026-01-16T12:51:27.838Z",
+  "createdAt": "2026-01-17T02:19:06.770Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/text-toolkit"

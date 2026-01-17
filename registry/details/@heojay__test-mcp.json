@@ -2,7 +2,7 @@
   "id": "@heojay/test-mcp",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with ease. Enable rapid development and testing of MCP tools and resources using a modern TypeScript setup. Simplify MCP server creation with integrated SDK and schema validation.",
-  "createdAt": "2026-01-16T12:50:08.944Z",
+  "createdAt": "2026-01-17T02:17:43.579Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@heojay/test-mcp"

@@ -2,7 +2,7 @@
   "id": "@YounggheeJang/lmtd",
   "displayName": "lmtd",
   "description": "Compute log mean temperature difference for heat exchanger analysis. Choose Celsius or Fahrenheit to match your standards. Accelerate design, sizing, and troubleshooting with fast, reliable results.",
-  "createdAt": "2026-01-16T12:39:44.858Z",
+  "createdAt": "2026-01-17T02:06:59.604Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@YounggheeJang/lmtd"

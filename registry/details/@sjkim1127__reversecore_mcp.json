@@ -2,7 +2,7 @@
   "id": "@sjkim1127/reversecore_mcp",
   "displayName": "reversecore_mcp",
   "description": "This PR adds Reversecore MCP, a Python-based reverse engineering server, to the community servers list. It integrates industry-standard tools like Radare2, Ghidra, YARA, and Capstone to enable secure binary analysis via LLMs.",
-  "createdAt": "2026-01-16T13:06:31.205Z",
+  "createdAt": "2026-01-17T02:33:15.815Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sjkim1127/reversecore_mcp"

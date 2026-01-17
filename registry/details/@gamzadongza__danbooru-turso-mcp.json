@@ -2,7 +2,7 @@
   "id": "@gamzadongza/danbooru-turso-mcp",
   "displayName": "Danbooru Turso Sync",
   "description": "Sync Danbooru character data to your Turso database. Keep your dataset complete and up to date automatically. Power search, analytics, or app features with fresh data.",
-  "createdAt": "2026-01-16T12:44:17.650Z",
+  "createdAt": "2026-01-17T02:11:43.863Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@gamzadongza/danbooru-turso-mcp"

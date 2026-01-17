@@ -2,7 +2,7 @@
   "id": "@vuvuvu/streamersonglist-mcp",
   "displayName": "StreamerSongList Server",
   "description": "Enable AI assistants to manage and monitor song requests and queues for streamers seamlessly. Interact with StreamerSongList APIs to fetch streamer info, queue stats, and control song requests. Simplify music request management for streaming platforms without requiring authentication.",
-  "createdAt": "2026-01-16T12:36:39.340Z",
+  "createdAt": "2026-01-17T02:04:04.070Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@vuvuvu/streamersonglist-mcp"

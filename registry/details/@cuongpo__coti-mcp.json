@@ -2,7 +2,7 @@
   "id": "@cuongpo/coti-mcp",
   "displayName": "COTI",
   "description": "Manage COTI accounts, switch networks, and sign or verify messages. Deploy and manage private ERC20 tokens and ERC721 NFTs, including minting, transfers, approvals, and balance or supply checks. Call smart contracts and monitor transactions while keeping token values and metadata private.",
-  "createdAt": "2026-01-16T12:35:17.667Z",
+  "createdAt": "2026-01-17T02:02:41.091Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cuongpo/coti-mcp"

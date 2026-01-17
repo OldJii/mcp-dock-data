@@ -2,7 +2,7 @@
   "id": "codeinterpreter",
   "displayName": "Codeinterpreter",
   "description": "CodeInterpreter extends Python-based coding environments with integrated data analysis, enabling developers to run scripts, visualize results, and prototype solutions inside supported platforms",
-  "createdAt": "2026-01-16T12:34:48.701Z",
+  "createdAt": "2026-01-17T02:02:12.085Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/codeinterpreter"

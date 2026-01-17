@@ -2,7 +2,7 @@
   "id": "@garfield-bb/hap_paas2025",
   "displayName": "FlowSheets",
   "description": "Trigger workflows, manage worksheets, and collaborate on record discussions. Create, update, and delete records in bulk, generate share links, and get instant pivot summaries for insights. Administer roles, departments, and optionsets to control access and standardize data across your apps.",
-  "createdAt": "2026-01-16T12:43:17.710Z",
+  "createdAt": "2026-01-17T02:10:43.451Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@garfield-bb/hap_paas2025"

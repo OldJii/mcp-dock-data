@@ -2,7 +2,7 @@
   "id": "@Opti-kjh/palette",
   "displayName": "palette",
   "description": "Figma 디자인을 기존 Design System 컴포넌트를 활용하여 React/Vue 코드로 변환하는 MCP(Model Context Protocol) 서버입니다.\n\n'PALETTE'는 딜리셔스 웹프론트엔드 개발팀 전용 MCP입니다.",
-  "createdAt": "2026-01-16T12:51:35.781Z",
+  "createdAt": "2026-01-17T02:19:15.513Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Opti-kjh/palette"

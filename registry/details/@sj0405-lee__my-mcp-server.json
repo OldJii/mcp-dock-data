@@ -2,7 +2,7 @@
   "id": "@sj0405-lee/my-mcp-server",
   "displayName": "my-mcp-server",
   "description": "Kickstart development with a ready-to-run TypeScript starter that includes example tools for greetings, calculations, time lookup, and image generation. Customize and extend it to fit your workflows. Accelerate prototyping and testing with a clean structure for tools, resources, and prompts.",
-  "createdAt": "2026-01-16T12:48:16.559Z",
+  "createdAt": "2026-01-17T02:15:49.981Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sj0405-lee/my-mcp-server"

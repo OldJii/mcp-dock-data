@@ -2,7 +2,7 @@
   "id": "@sasabasara/where_is_my_bus_mcp",
   "displayName": "Where's my bus? NYC MTA Bus",
   "description": "Get real-time NYC bus arrivals, live vehicle locations, and service alerts. Plan trips between any two locations and explore nearby stops and routes. Check system status and current time to stay on schedule.",
-  "createdAt": "2026-01-16T12:46:04.458Z",
+  "createdAt": "2026-01-17T02:13:33.346Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@sasabasara/where_is_my_bus_mcp"

@@ -2,7 +2,7 @@
   "id": "@mort-lab/excel-mcp",
   "displayName": "excel-mcp",
   "description": "A fully featured **Model Context Protocol (MCP)** server that allows AI assistants to work with **Excel (.xlsx)** files programmatically — without requiring Microsoft Excel or platform-specific dependencies.\n\nThis server provides reliable, type-safe spreadsheet operations using **openpyxl**, including:\n\n- Creating and managing workbooks and worksheets\n- Reading and writing cells and ranges\n- Applying formulas\n- Styling and formatting (fonts, fills, borders, alignment, number formats)\n- Safe structured I/O validated with **Pydantic** models\n\nDesigned for **AI agents, workflow automation, and data processing systems**, the server works consistently across **macOS, Linux, and Windows**, including remote cloud environments.\n\n### Ideal Use Cases\n- Automated reporting pipelines  \n- Data transformation workflows  \n- Financial model generation  \n- Invoicing systems  \n- Agent-powered productivity tools  \n\nNo Excel installation required.  \nNo COM automation.  \nFully cross-platform.  \n**MCP-native.**\n",
-  "createdAt": "2026-01-16T12:57:55.922Z",
+  "createdAt": "2026-01-17T02:24:47.502Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mort-lab/excel-mcp"

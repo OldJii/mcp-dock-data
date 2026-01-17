@@ -2,7 +2,7 @@
   "id": "@imbenrabi/financial-modeling-prep-mcp-server",
   "displayName": "Financial Modeling Prep (FMP) Server ",
   "description": "Complete financial market access for AI assistants - Real-time stocks, crypto, forex, and comprehensive market data integration - access FMP free and paid API tiers.\n\n250+ financial tools covering stock analysis, cryptocurrency trading, market intelligence, and portfolio management. Configure specific tool subsets for streamlined workflows.\n\n(BETA) Dynamic Tool Management: For improved efficiency and a lower cognitive load on the AI, our server now supports dynamic tool discovery.\nThis ensures the AI has access to the right tools at the right time without being overwhelmed by the full list of 250+ functions.\n\nThe server also support static toolsets activation via configuration for improved performance.\n\n- Usage Guide: https://github.com/imbenrabi/Financial-Modeling-Prep-MCP-Server/blob/main/README.md#smitheryai\n- System Prompts Suggestions: https://github.com/imbenrabi/Financial-Modeling-Prep-MCP-Server/blob/main/README.md#example-system-prompts\n\nMarkets: Real-time stocks, crypto, forex, global exchanges (NYSE, NASDAQ)\nAnalysis: Company fundamentals, technical indicators, financial ratios\nIntelligence: News sentiment, analyst ratings, economic indicators\nTrading: Portfolio tracking, risk metrics, backtesting tools\n\nCategories: Finance, Trading, Cryptocurrency, Investment, Market Data\n\nAPI Documentation: https://site.financialmodelingprep.com/developer/docs",
-  "createdAt": "2026-01-16T12:37:27.143Z",
+  "createdAt": "2026-01-17T02:04:36.729Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@imbenrabi/financial-modeling-prep-mcp-server"

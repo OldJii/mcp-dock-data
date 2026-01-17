@@ -2,7 +2,7 @@
   "id": "@TakoData/tako-mcp",
   "displayName": "Tako",
   "description": "Provide real-time data querying and visualization by integrating Tako with your agents. Generate optimized search queries and embed interactive reports seamlessly. Enhance your workflows with live data insights and visualizations from Tako.",
-  "createdAt": "2026-01-16T12:51:28.488Z",
+  "createdAt": "2026-01-17T02:19:07.435Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@TakoData/tako-mcp"

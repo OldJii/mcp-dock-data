@@ -2,7 +2,7 @@
   "id": "@hollaugo/fin-server",
   "displayName": "Financial Research",
   "description": "Analyze stocks with concise summaries, recent SEC filings, analyst targets, and recommendations. Track dividends, splits, institutional holders, insider transactions, sector and industry data, and full financial statements. Summarize filings to speed due diligence and make smarter investment decisions.",
-  "createdAt": "2026-01-16T12:36:06.803Z",
+  "createdAt": "2026-01-17T02:03:23.014Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hollaugo/fin-server"

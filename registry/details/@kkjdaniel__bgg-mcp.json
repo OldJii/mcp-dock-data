@@ -2,7 +2,7 @@
   "id": "@kkjdaniel/bgg-mcp",
   "displayName": "BoardGameGeek",
   "description": "BGG MCP provides access to BoardGameGeek and a variety of board game related data through the Model Context Protocol. Enabling retrieval and filtering of board game data, user collections, and profiles.",
-  "createdAt": "2026-01-16T12:36:09.497Z",
+  "createdAt": "2026-01-17T02:03:26.356Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kkjdaniel/bgg-mcp"

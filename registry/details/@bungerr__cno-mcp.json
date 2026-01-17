@@ -2,7 +2,7 @@
   "id": "@bungerr/cno-mcp",
   "displayName": "CrazyNinja Odds Devigger",
   "description": "Calculate conservative and alternative sports betting odds with expected value and optimal bet sizing. Support profit and all-stake boosts, correlation adjustments, and deploy easily on Smithery or run locally. Optimize your betting strategy with reliable devig calculations and integration with the CrazyNinja Odds API.",
-  "createdAt": "2026-01-16T12:47:49.798Z",
+  "createdAt": "2026-01-17T02:15:22.140Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@bungerr/cno-mcp"

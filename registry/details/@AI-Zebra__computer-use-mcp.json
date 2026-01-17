@@ -2,7 +2,7 @@
   "id": "@AI-Zebra/computer-use-mcp",
   "displayName": "Computer Use Virtual Desktop Server",
   "description": "Control virtual computers through a cloud-based desktop environment. Enable agents to perform mouse, keyboard, and terminal actions programmatically. Facilitate seamless interaction with virtual machines for automation and testing purposes.",
-  "createdAt": "2026-01-16T12:50:55.821Z",
+  "createdAt": "2026-01-17T02:18:29.851Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AI-Zebra/computer-use-mcp"

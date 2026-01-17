@@ -2,7 +2,7 @@
   "id": "@tanwenxin/mail-126-mcp",
   "displayName": "126 Email SMTP Server",
   "description": "Send emails securely using the 126 email service with SMTP support. Enable sending plain text and HTML emails with CC and BCC options. Verify SMTP connections easily to ensure reliable email delivery.",
-  "createdAt": "2026-01-16T12:46:58.730Z",
+  "createdAt": "2026-01-17T02:14:29.390Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tanwenxin/mail-126-mcp"

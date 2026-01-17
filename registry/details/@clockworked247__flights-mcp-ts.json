@@ -2,7 +2,7 @@
   "id": "@clockworked247/flights-mcp-ts",
   "displayName": "Flight & Stay Search Server (Duffel API)",
   "description": "A TypeScript implementation of a flight & stay search MCP server that uses the Duffel API to search for flights. This MCP server provides tools to search for one-way, round-trip, and multi-city flights.",
-  "createdAt": "2026-01-16T12:51:31.090Z",
+  "createdAt": "2026-01-17T02:19:10.124Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@clockworked247/flights-mcp-ts"

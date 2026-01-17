@@ -2,7 +2,7 @@
   "id": "mcp-pagespeed-server",
   "displayName": "PageSpeed Server",
   "description": "A Model Context Protocol (MCP) server that extends AI assistant capabilities with PageSpeed Insights functionality.",
-  "createdAt": "2026-01-16T12:53:14.057Z",
+  "createdAt": "2026-01-17T02:20:56.772Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-pagespeed-server"

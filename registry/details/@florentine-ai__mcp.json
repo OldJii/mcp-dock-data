@@ -2,7 +2,7 @@
   "id": "@florentine-ai/mcp",
   "displayName": "Florentine.ai - Talk to your MongoDB data",
   "description": "Natural language to MongoDB aggregations and aggregation results that actually work.\n\nHas a couple of extra features under the hood besides \"only\" providing natural language to aggregation conversion:\n- secure data separation for multi-tenant usage\n- semantic vector search/RAG support with automated embedding creation\n- advanced lookup support\n- exclusion of keys\n- and more...",
-  "createdAt": "2026-01-16T12:50:12.864Z",
+  "createdAt": "2026-01-17T02:17:47.592Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@florentine-ai/mcp"

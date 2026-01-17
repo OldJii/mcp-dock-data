@@ -2,7 +2,7 @@
   "id": "@Auxin-io/java",
   "displayName": "Java Code Generator",
   "description": "Generate secure Java code snippets and starter projects for common tasks. Learn best practices by contrasting secure patterns with intentionally insecure examples.",
-  "createdAt": "2026-01-16T12:52:52.201Z",
+  "createdAt": "2026-01-17T02:20:34.568Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Auxin-io/java"

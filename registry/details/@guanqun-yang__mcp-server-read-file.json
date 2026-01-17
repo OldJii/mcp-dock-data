@@ -2,7 +2,7 @@
   "id": "@guanqun-yang/mcp-server-read-file",
   "displayName": "Local File Reader",
   "description": "Read the contents of local files on demand. Quickly preview, copy, or analyze file text without leaving your workflow. Save time by pulling exact file content when you need it.",
-  "createdAt": "2026-01-16T12:37:38.372Z",
+  "createdAt": "2026-01-17T02:06:34.496Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-read-file"

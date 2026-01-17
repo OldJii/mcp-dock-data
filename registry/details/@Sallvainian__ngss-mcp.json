@@ -2,7 +2,7 @@
   "id": "@Sallvainian/ngss-mcp",
   "displayName": "NGSS Standards Explorer",
   "description": "Search and retrieve NGSS standards by code, domain, or topic. Explore three-dimensional components (SEPs, DCIs, and CCCs) and discover related standards by shared practices, concepts, or core ideas. Plan cohesive curriculum units with suggestions for compatible standards.",
-  "createdAt": "2026-01-16T12:35:44.712Z",
+  "createdAt": "2026-01-17T02:03:05.421Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Sallvainian/ngss-mcp"

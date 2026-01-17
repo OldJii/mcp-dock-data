@@ -2,7 +2,7 @@
   "id": "master/mastergo-magic-mcp-smithery",
   "displayName": "mastergo-magic-mcp-smithery",
   "description": "Extract DSL from MasterGo design files to analyze structure and generate accurate frontend code. Fetch component documentation, site metadata, and rules to guide implementation. Accelerate delivery with a structured component workflow integrated into your workspace.",
-  "createdAt": "2026-01-16T12:42:19.547Z",
+  "createdAt": "2026-01-17T02:09:46.219Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/master/mastergo-magic-mcp-smithery"

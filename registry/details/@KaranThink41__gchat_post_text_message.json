@@ -2,7 +2,7 @@
   "id": "@KaranThink41/gchat_post_text_message",
   "displayName": "Google Chat MCP Server",
   "description": "Post messages to Google Chat spaces effortlessly using webhooks. Integrate seamlessly without the need for OAuth setup, making it simple and secure. Enhance your MCP-compatible tools with this easy-to-use server for Google Chat.",
-  "createdAt": "2026-01-16T12:43:33.750Z",
+  "createdAt": "2026-01-17T02:10:59.977Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@KaranThink41/gchat_post_text_message"

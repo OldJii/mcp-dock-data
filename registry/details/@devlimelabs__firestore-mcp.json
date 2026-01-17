@@ -2,7 +2,7 @@
   "id": "@devlimelabs/firestore-mcp",
   "displayName": "Firestore Server",
   "description": "Provide secure, permission-controlled access to Firebase Firestore databases through a standardized MCP interface. Enable AI assistants and other clients to perform full CRUD operations, advanced queries, batch operations, and transactional updates with granular collection and operation-level permissions. Ensure data consistency and security with default deny rules and fine-grained access control.",
-  "createdAt": "2026-01-16T12:37:42.412Z",
+  "createdAt": "2026-01-17T02:04:55.425Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@devlimelabs/firestore-mcp"

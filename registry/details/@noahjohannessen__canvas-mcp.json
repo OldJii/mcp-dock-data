@@ -2,7 +2,7 @@
   "id": "@noahjohannessen/canvas-mcp",
   "displayName": "canvas-mcp",
   "description": "Manage coursework across Canvas and Gradescope: find relevant resources, browse courses and modules, and retrieve direct file links. Track upcoming assignments and submission status, and surface details by course name or natural-language query.",
-  "createdAt": "2026-01-16T12:42:41.611Z",
+  "createdAt": "2026-01-17T02:10:08.077Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@noahjohannessen/canvas-mcp"

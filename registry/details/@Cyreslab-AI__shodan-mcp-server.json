@@ -2,7 +2,7 @@
   "id": "@Cyreslab-AI/shodan-mcp-server",
   "displayName": "Shodan MCP Server",
   "description": "Access Shodan's API to enhance your AI assistant's capabilities. Query detailed information about internet-connected devices and services to bolster cybersecurity research and threat intelligence. Simplify your data retrieval with advanced search functionalities and result summarization.",
-  "createdAt": "2026-01-16T12:43:29.084Z",
+  "createdAt": "2026-01-17T02:10:55.006Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Cyreslab-AI/shodan-mcp-server"

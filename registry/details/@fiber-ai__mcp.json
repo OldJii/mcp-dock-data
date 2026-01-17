@@ -2,7 +2,7 @@
   "id": "@fiber-ai/mcp",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with ease. Enable rapid development and testing of MCP tools, resources, and prompts. Simplify integration with the Model Context Protocol ecosystem.",
-  "createdAt": "2026-01-16T12:46:40.932Z",
+  "createdAt": "2026-01-17T02:14:11.373Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@fiber-ai/mcp"

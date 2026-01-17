@@ -2,7 +2,7 @@
   "id": "pocketbase-server",
   "displayName": "Advanced PocketBase Server",
   "description": "(Tools Fixed July 28th includes Stripe integration for full SAAS support) An MCP server for interacting with PocketBase databases, offering advanced database operations and schema management.",
-  "createdAt": "2026-01-16T12:40:19.192Z",
+  "createdAt": "2026-01-17T02:07:22.476Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/pocketbase-server"

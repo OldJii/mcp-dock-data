@@ -2,7 +2,7 @@
   "id": "@arturwyroslak/mcp-agent",
   "displayName": "Session Control",
   "description": "Manage session settings, health checks, and security safeguards in one place. Configure limits, logging, and sandboxing to fit your workflows. Monitor status and adjust behavior without leaving your workspace.",
-  "createdAt": "2026-01-16T12:51:19.364Z",
+  "createdAt": "2026-01-17T02:18:58.059Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@arturwyroslak/mcp-agent"

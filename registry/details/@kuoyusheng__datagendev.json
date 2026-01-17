@@ -2,7 +2,7 @@
   "id": "@kuoyusheng/datagendev",
   "displayName": "DataGen",
   "description": "Run and orchestrate DataGen deployments from validation through execution and monitoring. Generate copy-ready curl commands, input/output schemas, and accessible Mermaid flowcharts to integrate and explain workflows. Build, test, and deploy Python automations, then schedule and track them with ease.",
-  "createdAt": "2026-01-16T12:43:05.873Z",
+  "createdAt": "2026-01-17T02:10:31.803Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kuoyusheng/datagendev"

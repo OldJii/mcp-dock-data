@@ -2,7 +2,7 @@
   "id": "@ShadowSethcpu/mcp-starwars",
   "displayName": "Star Wars",
   "description": "Explore the Star Wars universe with fast search across characters, planets, films, species, vehicles, and starships. Retrieve detailed entries by ID to power answers, apps, or research. Save time with automatic pagination and smart caching.",
-  "createdAt": "2026-01-16T12:51:46.860Z",
+  "createdAt": "2026-01-17T02:19:27.566Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ShadowSethcpu/mcp-starwars"

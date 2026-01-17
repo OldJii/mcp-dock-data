@@ -2,7 +2,7 @@
   "id": "@msathiyakeerthi/google-cloud-healthcare-api-mcp",
   "displayName": "Google Cloud Healthcare API Server",
   "description": "Provide healthcare data access and querying capabilities by integrating with Google Cloud Healthcare FHIR APIs and public medical research databases. Enable seamless retrieval of patient records, clinical data, and research articles through a secure and authenticated MCP interface. Enhance healthcare applications with real-time clinical insights and research information.",
-  "createdAt": "2026-01-16T12:45:05.630Z",
+  "createdAt": "2026-01-17T02:12:32.436Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@msathiyakeerthi/google-cloud-healthcare-api-mcp"

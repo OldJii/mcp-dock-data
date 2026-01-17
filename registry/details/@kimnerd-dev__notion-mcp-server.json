@@ -2,7 +2,7 @@
   "id": "@kimnerd-dev/notion-mcp-server",
   "displayName": "Notion Integration Server",
   "description": "Enable seamless integration of Notion data with your LLM applications by exposing Notion pages and databases as MCP resources and tools. Enhance your agents with the ability to query, read, and manipulate Notion content dynamically. Simplify workflows by bridging Notion's rich data with conversational AI capabilities.",
-  "createdAt": "2026-01-16T12:50:52.543Z",
+  "createdAt": "2026-01-17T02:18:26.246Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kimnerd-dev/notion-mcp-server"

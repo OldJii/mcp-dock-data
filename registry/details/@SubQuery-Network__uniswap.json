@@ -2,7 +2,7 @@
   "id": "@SubQuery-Network/uniswap",
   "displayName": "Uniswap",
   "description": "Explore Uniswap v4 data to analyze pools, tokens, swaps, and positions. Track TVL, volume, fees, prices, and liquidity with daily or hourly snapshots. Find top pools, drill into transaction histories, and view protocol-wide metrics and hook contract details.\n\nGet the API Key from: https://asksubquery.xyz/?referrer_code=UNISWAP",
-  "createdAt": "2026-01-16T12:45:08.896Z",
+  "createdAt": "2026-01-17T02:12:35.768Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SubQuery-Network/uniswap"

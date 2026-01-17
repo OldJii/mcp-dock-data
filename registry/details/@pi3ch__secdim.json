@@ -2,7 +2,7 @@
   "id": "@pi3ch/secdim",
   "displayName": "SecDim Secure Coding Labs",
   "description": "Find hands-on secure coding labs for vulnerabilities like XSS, SQL Injection, and OWASP Top 10 topics. Get a personalized learning pathway based on your GitHub or SecDim profile to accelerate your remediation skills. Access curated resources and practice exercises tailored to your languages, frameworks, and experience level.",
-  "createdAt": "2026-01-16T12:38:27.284Z",
+  "createdAt": "2026-01-17T02:05:36.406Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pi3ch/secdim"

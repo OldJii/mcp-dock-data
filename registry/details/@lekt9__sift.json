@@ -2,7 +2,7 @@
   "id": "@lekt9/sift",
   "displayName": "SiftDB",
   "description": "Search codebases for patterns and references with fast, precise results. Open files on demand to inspect context without leaving your workflow. Browse available collections to quickly target the right code and accelerate understanding.",
-  "createdAt": "2026-01-16T12:45:35.738Z",
+  "createdAt": "2026-01-17T02:13:03.954Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lekt9/sift"

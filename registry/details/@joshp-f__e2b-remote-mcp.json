@@ -2,7 +2,7 @@
   "id": "@joshp-f/e2b-remote-mcp",
   "displayName": "E2B Remote Server",
   "description": "Enable secure sandboxed command execution and file operations remotely. Manage sandboxes with tools to create, run commands, read/write files, list files, run code, and terminate sandboxes. Enhance your agent's capabilities with robust remote execution and file management.",
-  "createdAt": "2026-01-16T12:41:24.250Z",
+  "createdAt": "2026-01-17T02:08:49.375Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@joshp-f/e2b-remote-mcp"

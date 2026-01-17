@@ -1,8 +1,8 @@
 {
   "id": "@docfork/mcp",
   "displayName": "Docfork",
-  "description": "Up-to-date documentation for AI Agents. Just add `use docfork` to your prompt for accurate and relevant answers.",
-  "createdAt": "2026-01-16T12:35:58.121Z",
+  "description": "Up-to-date docs for AI Agents. Sign up for free API key at https://docfork.com",
+  "createdAt": "2026-01-17T02:03:17.687Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@docfork/mcp"

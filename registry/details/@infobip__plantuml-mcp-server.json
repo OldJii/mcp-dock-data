@@ -2,7 +2,7 @@
   "id": "@infobip/plantuml-mcp-server",
   "displayName": "PlantUML Diagrams",
   "description": "Create PlantUML diagrams with automatic syntax validation and auto-fix suggestions. Get embeddable image URLs for valid diagrams and structured feedback to resolve issues. Encode or decode PlantUML code for easy URL sharing.",
-  "createdAt": "2026-01-16T12:39:39.500Z",
+  "createdAt": "2026-01-17T02:06:51.384Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@infobip/plantuml-mcp-server"

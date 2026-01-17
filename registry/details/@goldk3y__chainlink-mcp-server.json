@@ -2,7 +2,7 @@
   "id": "@goldk3y/chainlink-mcp-server",
   "displayName": "Chainlink",
   "description": "Provide seamless access to Chainlink's decentralized oracle network services including real-time price feeds, verifiable randomness, cross-chain interoperability, automation, and proof of reserve. Enable AI developers to integrate reliable blockchain data and execute custom off-chain functions effortlessly. Simplify building decentralized finance, gaming, and cross-chain applications with comprehensive Chainlink ecosystem tools.",
-  "createdAt": "2026-01-16T12:52:07.108Z",
+  "createdAt": "2026-01-17T02:19:48.225Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@goldk3y/chainlink-mcp-server"

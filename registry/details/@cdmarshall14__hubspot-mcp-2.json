@@ -2,7 +2,7 @@
   "id": "@cdmarshall14/hubspot-mcp-2",
   "displayName": "HubSpot CRM API Server",
   "description": "Provide standardized access and management of HubSpot CRM data through a comprehensive MCP server. Enable efficient CRM operations including object management, advanced search, batch processing, and association handling. Simplify integration with HubSpot's API using type-safe validation and extensive endpoint coverage.",
-  "createdAt": "2026-01-16T12:51:33.053Z",
+  "createdAt": "2026-01-17T02:19:12.192Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cdmarshall14/hubspot-mcp-2"

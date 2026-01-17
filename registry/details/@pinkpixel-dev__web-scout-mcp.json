@@ -2,7 +2,7 @@
   "id": "@pinkpixel-dev/web-scout-mcp",
   "displayName": "Web Scout",
   "description": "Search the web and extract clean, readable text from webpages. Process multiple URLs at once to speed up research with reliable throttling and error handling. Quickly compile sources and summaries for briefs, reports, or competitive analysis.",
-  "createdAt": "2026-01-16T12:35:33.357Z",
+  "createdAt": "2026-01-17T02:03:28.362Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pinkpixel-dev/web-scout-mcp"

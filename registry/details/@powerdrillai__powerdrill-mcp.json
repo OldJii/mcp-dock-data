@@ -2,7 +2,7 @@
   "id": "@powerdrillai/powerdrill-mcp",
   "displayName": "Powerdrill MCP Server",
   "description": "Authenticate and interact with your Powerdrill datasets effortlessly. List datasets, get detailed information, and create jobs using natural language questions. Enhance your data analysis capabilities with seamless integration into your existing tools.",
-  "createdAt": "2026-01-16T12:46:19.687Z",
+  "createdAt": "2026-01-17T02:13:49.491Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@powerdrillai/powerdrill-mcp"

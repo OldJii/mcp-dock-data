@@ -2,7 +2,7 @@
   "id": "@samihalawa/mcp-server-smtp",
   "displayName": "SMTP Email Server",
   "description": "Send and manage emails effortlessly with our server. Utilize multiple SMTP configurations, create reusable email templates, and send bulk emails with ease. Enhance your communication capabilities with rich HTML support and comprehensive logging. ",
-  "createdAt": "2026-01-16T12:41:51.950Z",
+  "createdAt": "2026-01-17T02:09:18.365Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/mcp-server-smtp"

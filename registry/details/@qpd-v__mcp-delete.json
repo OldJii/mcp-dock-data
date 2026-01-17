@@ -2,7 +2,7 @@
   "id": "@qpd-v/mcp-delete",
   "displayName": "File Deletion",
   "description": "A Model Context Protocol (MCP) server that provides file deletion capabilities, allowing AI assistants to safely delete files with support for both relative and absolute paths.",
-  "createdAt": "2026-01-16T12:52:30.584Z",
+  "createdAt": "2026-01-17T02:20:12.327Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@qpd-v/mcp-delete"

@@ -2,7 +2,7 @@
   "id": "@FaresYoussef94/aws-knowledge-mcp",
   "displayName": "AWS Docs and Regions",
   "description": "A fully managed remote MCP server that provides up-to-date documentation, code samples, knowledge about the regional availability of AWS APIs and CloudFormation resources, and other official AWS content.",
-  "createdAt": "2026-01-16T12:35:48.089Z",
+  "createdAt": "2026-01-17T02:03:12.116Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@FaresYoussef94/aws-knowledge-mcp"

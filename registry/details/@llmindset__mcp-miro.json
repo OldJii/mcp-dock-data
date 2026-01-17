@@ -2,7 +2,7 @@
   "id": "@llmindset/mcp-miro",
   "displayName": "MIRO Whiteboard Connector",
   "description": "Connects to the MIRO Whiteboard Application for board manipulation and sticky creation.",
-  "createdAt": "2026-01-16T12:51:45.565Z",
+  "createdAt": "2026-01-17T02:19:26.207Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@llmindset/mcp-miro"

@@ -2,7 +2,7 @@
   "id": "@ethanke/salad_mcp",
   "displayName": "salad_mcp",
   "description": "Manage GPU workloads on SaladCloud, including container groups and inference endpoints. Operate queues, jobs, logs, and quotas to run and monitor deployments. Check CPU/GPU availability to plan capacity and scale efficiently.",
-  "createdAt": "2026-01-16T12:49:59.614Z",
+  "createdAt": "2026-01-17T02:17:34.001Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ethanke/salad_mcp"

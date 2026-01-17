@@ -2,7 +2,7 @@
   "id": "@Phionx/mcp-hello-server",
   "displayName": "Say Hello",
   "description": "Send personalized greetings to anyone. Enable Pirate Mode for swashbuckling salutations. Explore the origin of Hello, World and generate custom greeting prompts.",
-  "createdAt": "2026-01-16T12:44:43.880Z",
+  "createdAt": "2026-01-17T02:12:10.476Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Phionx/mcp-hello-server"

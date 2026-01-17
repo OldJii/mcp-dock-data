@@ -2,7 +2,7 @@
   "id": "@steadwing/mcp",
   "displayName": "Steadwing MCP",
   "description": "Your autonomous 24/7 on-call engineer!\n\nGet a detailed RCA along with the solutions for your alerts, incidents or errors. Effortlessly correlates evidence across your observability, code, and incident management tools for debugging.\n\n\n\n\n\n\n\n",
-  "createdAt": "2026-01-16T12:48:14.596Z",
+  "createdAt": "2026-01-17T02:15:47.975Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@steadwing/mcp"

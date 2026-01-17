@@ -2,7 +2,7 @@
   "id": "@bielacki/igdb-mcp-server",
   "displayName": "IGDB",
   "description": "Explore and discover video games from the Internet Game Database. Search titles, view detailed info on platforms, ratings, studios, and media, and track trending or upcoming releases. Run advanced queries to surface exactly what you need.",
-  "createdAt": "2026-01-16T12:46:19.029Z",
+  "createdAt": "2026-01-17T02:13:48.833Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@bielacki/igdb-mcp-server"

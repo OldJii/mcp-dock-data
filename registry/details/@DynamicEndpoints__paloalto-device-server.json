@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/paloalto-device-server",
   "displayName": "Palo Alto Device Server",
   "description": "Manage your Palo Alto firewalls effortlessly through their REST API. Retrieve system information, perform upgrades, and manage certificates with ease. Streamline your firewall operations and ensure your systems are always up-to-date and secure.",
-  "createdAt": "2026-01-16T12:45:47.481Z",
+  "createdAt": "2026-01-17T02:13:15.960Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/paloalto-device-server"

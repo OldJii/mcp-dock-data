@@ -2,7 +2,7 @@
   "id": "@cristianoaredes/mcp-mobile-server",
   "displayName": "Flutter Mobile Workbench",
   "description": "Accelerate Flutter mobile development with guided setup, smart device management, and streamlined run/build/test workflows. Handle Android and iOS simulators and emulators, capture logs and screenshots, and resolve common issues automatically. Ship confidently with release builds and built-in health checks.",
-  "createdAt": "2026-01-16T12:35:36.704Z",
+  "createdAt": "2026-01-17T02:02:57.888Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cristianoaredes/mcp-mobile-server"

@@ -2,7 +2,7 @@
   "id": "@tjhop/prometheus-mcp-server",
   "displayName": "prometheus-mcp-server",
   "description": "An API-complete MCP server to manage Prometheus-compatible backends.",
-  "createdAt": "2026-01-16T13:07:32.005Z",
+  "createdAt": "2026-01-17T02:34:17.451Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tjhop/prometheus-mcp-server"

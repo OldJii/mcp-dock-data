@@ -2,7 +2,7 @@
   "id": "@yusufsenyer/augment-agent",
   "displayName": "Augment Weather Agent",
   "description": "Provide natural language weather information and forecasts for any city worldwide. Answer user queries about current weather and 7-day forecasts with full Turkish language support. Integrate easily via REST API endpoints for chat and direct weather data access.",
-  "createdAt": "2026-01-16T12:36:40.661Z",
+  "createdAt": "2026-01-17T02:03:59.338Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yusufsenyer/augment-agent"

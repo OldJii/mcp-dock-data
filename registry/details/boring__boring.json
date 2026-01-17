@@ -2,7 +2,7 @@
   "id": "boring/boring",
   "displayName": "boring",
   "description": "Automate planning, implementation, and verification of code across your projects. Ensure reliable outcomes with spec-driven workflows, rigorous checks, and iterative auto-fix. Work seamlessly inside Cursor, VS Code, and Claude Desktop with a consistent, privacy-first experience.",
-  "createdAt": "2026-01-16T12:39:50.223Z",
+  "createdAt": "2026-01-17T02:07:06.766Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/boring/boring"

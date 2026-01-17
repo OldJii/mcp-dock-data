@@ -2,7 +2,7 @@
   "id": "@byPawel/tachibot-mcp",
   "displayName": "tachibot-mcp",
   "description": "Stop AI Hallucinations Before They Start\nRun models from OpenAI, Google, Anthropic, xAI, Perplexity, and OpenRouter in parallel. They check each other's work, debate solutions, and catch errors before you see them.\n\ntachibot.com\ntachibot.com/docs",
-  "createdAt": "2026-01-16T13:04:57.626Z",
+  "createdAt": "2026-01-17T02:31:43.194Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@byPawel/tachibot-mcp"

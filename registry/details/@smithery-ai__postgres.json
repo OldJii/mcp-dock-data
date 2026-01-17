@@ -2,7 +2,7 @@
   "id": "@smithery-ai/postgres",
   "displayName": "PostgreSQL MCP Server",
   "description": "A Model Context Protocol server that provides read-only access to PostgreSQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.",
-  "createdAt": "2026-01-16T12:40:39.336Z",
+  "createdAt": "2026-01-17T02:08:07.096Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@smithery-ai/postgres"

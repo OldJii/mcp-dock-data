@@ -2,7 +2,7 @@
   "id": "stripe",
   "displayName": "Stripe",
   "description": "Search Stripe documentation for answers, then manage customers, products, prices, invoices, payment links, subscriptions, and refunds. Retrieve account details, balances, and payment activity to speed support and finance tasks. Submit evidence and handle disputes to protect revenue.",
-  "createdAt": "2026-01-16T12:34:50.771Z",
+  "createdAt": "2026-01-17T02:02:14.188Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/stripe"

@@ -2,7 +2,7 @@
   "id": "@kamath/hello-from-sentry",
   "displayName": "Hello from Sentry",
   "description": "Provide a simple MCP server implementation to demonstrate integration with Sentry. Enable developers to quickly start using MCP with error monitoring and logging capabilities. Facilitate rapid development and debugging of MCP-based applications.",
-  "createdAt": "2026-01-16T12:52:53.498Z",
+  "createdAt": "2026-01-17T02:20:35.900Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/hello-from-sentry"

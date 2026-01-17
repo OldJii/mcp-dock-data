@@ -2,7 +2,7 @@
   "id": "@kopfrechner/gitlab-mr-mcp",
   "displayName": "GitLab Merge Request Integration",
   "description": "Interact seamlessly with GitLab repositories to manage merge requests and issues. Fetch details, add comments, and streamline your code review process with ease.",
-  "createdAt": "2026-01-16T12:42:26.230Z",
+  "createdAt": "2026-01-17T02:09:53.312Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kopfrechner/gitlab-mr-mcp"

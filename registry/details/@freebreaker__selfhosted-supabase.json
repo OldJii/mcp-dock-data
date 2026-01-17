@@ -2,7 +2,7 @@
   "id": "@freebreaker/selfhosted-supabase",
   "displayName": "selfhosted-supabase",
   "description": "Control your self-hosted Supabase from your development environment. Browse schemas, run SQL, manage migrations and auth users, inspect stats, and work with storage and realtime. Generate TypeScript types to keep your code in sync.",
-  "createdAt": "2026-01-16T12:40:21.857Z",
+  "createdAt": "2026-01-17T02:07:44.298Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@freebreaker/selfhosted-supabase"

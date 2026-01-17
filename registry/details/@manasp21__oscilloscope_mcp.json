@@ -2,7 +2,7 @@
   "id": "@manasp21/oscilloscope_mcp",
   "displayName": "Oscilloscope and Function Generator Server",
   "description": "Provide advanced oscilloscope and function generator capabilities to AI agents, enabling multi-channel signal acquisition, real-time analysis, and waveform generation. Automate measurement workflows and protocol decoding with over 40 integrated tools. Seamlessly integrate with AI platforms like Claude Desktop and VS Code extensions for enhanced test and measurement automation.",
-  "createdAt": "2026-01-16T12:53:12.754Z",
+  "createdAt": "2026-01-17T02:20:55.456Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@manasp21/oscilloscope_mcp"

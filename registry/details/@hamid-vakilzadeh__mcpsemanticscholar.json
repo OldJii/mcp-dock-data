@@ -2,7 +2,7 @@
   "id": "@hamid-vakilzadeh/mcpsemanticscholar",
   "displayName": "AI Research Assistant",
   "description": "The server provides immediate access to millions of academic papers through Semantic Scholar and arXiv, enabling AI-powered research with comprehensive search, citation analysis, and full-text PDF extraction from multiple sources (arXiv and Wiley open-access).\n\n - No API key is required.\n",
-  "createdAt": "2026-01-16T12:35:25.087Z",
+  "createdAt": "2026-01-17T02:02:48.543Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hamid-vakilzadeh/mcpsemanticscholar"

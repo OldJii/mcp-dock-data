@@ -2,7 +2,7 @@
   "id": "@AlexKissiJr/unreal-mcp-server",
   "displayName": "Model Context Protocol Server for Smithery",
   "description": "Provide a simple and effective way to demonstrate Model Context Protocol functionality. Easily deployable on Smithery, it allows you to echo text and retrieve the current time in various formats. Enhance your applications with seamless integration of real-time data and tools.",
-  "createdAt": "2026-01-16T12:43:25.042Z",
+  "createdAt": "2026-01-17T02:10:50.915Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AlexKissiJr/unreal-mcp-server"

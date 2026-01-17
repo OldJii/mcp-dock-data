@@ -2,7 +2,7 @@
   "id": "yelp",
   "displayName": "Yelp",
   "description": "Yelp Fusion API provides access to business search, reviews, ratings, and local business information with rich data for location-based services",
-  "createdAt": "2026-01-16T12:35:09.331Z",
+  "createdAt": "2026-01-17T02:02:32.391Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/yelp"

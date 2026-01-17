@@ -2,7 +2,7 @@
   "id": "@keremurat/jsonmcp",
   "displayName": "JSON Diff",
   "description": "Compare two JSON files deeply, ignoring order, to surface every difference. Get a clear, structured report with summaries and precise change locations. Validate configs, API responses, and data migrations with confidence.",
-  "createdAt": "2026-01-16T12:36:11.490Z",
+  "createdAt": "2026-01-17T02:04:32.340Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@keremurat/jsonmcp"

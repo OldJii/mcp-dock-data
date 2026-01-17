@@ -2,7 +2,7 @@
   "id": "@NOVA-3951/parcel-api-mcp",
   "displayName": "Parcel API",
   "description": "Allows users to see their upcoming and active deliveries, or add new deliveries directly to Parcel via MCP\n\n(Requires Parcel Premium)",
-  "createdAt": "2026-01-16T12:41:39.160Z",
+  "createdAt": "2026-01-17T02:09:05.523Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@NOVA-3951/parcel-api-mcp"

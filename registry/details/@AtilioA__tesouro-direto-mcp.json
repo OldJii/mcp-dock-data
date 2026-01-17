@@ -2,7 +2,7 @@
   "id": "@AtilioA/tesouro-direto-mcp",
   "displayName": "Tesouro Direto MCP Server",
   "description": "Enable natural language access to Brazilian treasury bond data through MCP-compatible clients. Query market data, bond details, and search/filter bonds using everyday language. Benefit from smart caching to reduce API calls while ensuring data freshness.",
-  "createdAt": "2026-01-16T12:40:13.148Z",
+  "createdAt": "2026-01-17T02:07:30.973Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@AtilioA/tesouro-direto-mcp"

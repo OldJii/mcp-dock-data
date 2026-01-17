@@ -2,7 +2,7 @@
   "id": "@Vijay-2005/gemini_mcp2",
   "displayName": "Gemini API Server",
   "description": "Enable direct access to Google's Gemini API from Claude Desktop for advanced conversational AI interactions. Manage conversation history for context-aware responses and customize model parameters for tailored outputs. Enhance your AI experience with integrated web search capabilities and multiple Gemini model options.",
-  "createdAt": "2026-01-16T12:46:14.459Z",
+  "createdAt": "2026-01-17T02:13:44.174Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Vijay-2005/gemini_mcp2"

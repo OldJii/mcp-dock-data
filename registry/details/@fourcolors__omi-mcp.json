@@ -2,7 +2,7 @@
   "id": "@fourcolors/omi-mcp",
   "displayName": "Omi MCP Server",
   "description": "Interact with the Omi API to manage conversations and memories seamlessly. Retrieve, create, and manipulate user data effortlessly, enhancing your applications with rich conversational capabilities.",
-  "createdAt": "2026-01-16T12:51:41.004Z",
+  "createdAt": "2026-01-17T02:19:20.865Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@fourcolors/omi-mcp"

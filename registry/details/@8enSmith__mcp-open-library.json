@@ -2,7 +2,7 @@
   "id": "@8enSmith/mcp-open-library",
   "displayName": "Open Library MCP Server",
   "description": "Enable AI assistants to search and retrieve detailed book and author information from the Open Library. Provide structured, consistent JSON responses for book titles, author details, and cover images. Enhance AI capabilities with comprehensive book and author data access via a standardized protocol.",
-  "createdAt": "2026-01-16T12:37:00.766Z",
+  "createdAt": "2026-01-17T02:04:16.203Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@8enSmith/mcp-open-library"

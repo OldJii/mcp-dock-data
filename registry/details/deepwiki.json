@@ -2,7 +2,7 @@
   "id": "deepwiki",
   "displayName": "DeepWiki",
   "description": "Explore GitHub repository documentation by topic to quickly understand any project. Open pages on demand and ask questions to get concise answers. Find what you need faster across complex wikis.",
-  "createdAt": "2026-01-16T12:38:07.107Z",
+  "createdAt": "2026-01-17T02:05:18.974Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/deepwiki"

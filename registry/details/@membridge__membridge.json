@@ -2,7 +2,7 @@
   "id": "@membridge/membridge",
   "displayName": "Memory MCP Server",
   "description": "MemBridge Memory MCP Server allows you to share your memory across multiple AI tools like Claude, ChatGPT, Cursor, and more. You save information once, and it becomes accessible from any AI tool you use. This eliminates the need to repeat the same context every time you switch tools.",
-  "createdAt": "2026-01-16T12:52:18.856Z",
+  "createdAt": "2026-01-17T02:20:00.215Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@membridge/membridge"

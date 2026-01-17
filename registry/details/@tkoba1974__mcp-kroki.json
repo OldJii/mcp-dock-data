@@ -2,7 +2,7 @@
   "id": "@tkoba1974/mcp-kroki",
   "displayName": "Kroki Server",
   "description": "Generate and download diagrams in various formats using Kroki.io. Convert your Mermaid, PlantUML, and Graphviz diagrams to SVG, PNG, PDF, or JPEG files effortlessly.",
-  "createdAt": "2026-01-16T12:38:13.997Z",
+  "createdAt": "2026-01-17T02:05:27.730Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@tkoba1974/mcp-kroki"

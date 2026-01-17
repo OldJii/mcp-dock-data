@@ -2,7 +2,7 @@
   "id": "@kamath/graphing-calculator",
   "displayName": "Graphing Calculator",
   "description": "Provide interactive graphing calculator capabilities to your agents, enabling them to plot and analyze mathematical functions visually. Enhance your applications with dynamic graphing tools that support complex calculations and visual data representation. Empower users to explore mathematical concepts through intuitive graphical interfaces.",
-  "createdAt": "2026-01-16T12:40:03.123Z",
+  "createdAt": "2026-01-17T02:07:29.288Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/graphing-calculator"

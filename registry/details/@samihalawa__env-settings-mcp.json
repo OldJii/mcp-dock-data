@@ -2,7 +2,7 @@
   "id": "@samihalawa/env-settings-mcp",
   "displayName": "Environment Settings Manager",
   "description": "Manage environment variables and application settings securely through a hosted MCP server. Simplify configuration and secret management for your applications with centralized control. Enhance security and ease of use by leveraging Smithery.ai hosting.",
-  "createdAt": "2026-01-16T12:49:57.661Z",
+  "createdAt": "2026-01-17T02:17:32.001Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samihalawa/env-settings-mcp"

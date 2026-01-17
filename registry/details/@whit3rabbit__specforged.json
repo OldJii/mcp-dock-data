@@ -2,7 +2,7 @@
   "id": "@whit3rabbit/specforged",
   "displayName": "SpecForged",
   "description": "Create and evolve clear software specifications from requirements and design to implementation planning and execution. Use a guided wizard to progress through phases, generate actionable task plans, and track progress and dependencies. Integrate with your project files to keep requirements, designs, and tasks aligned.",
-  "createdAt": "2026-01-16T12:39:28.103Z",
+  "createdAt": "2026-01-17T02:06:39.856Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@whit3rabbit/specforged"

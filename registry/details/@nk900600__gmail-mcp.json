@@ -2,7 +2,7 @@
   "id": "@nk900600/gmail-mcp",
   "displayName": "Gmail Email Management Server",
   "description": "Manage your Gmail emails, threads, labels, drafts, and settings through a standardized interface. Send, draft, and organize emails efficiently with full Gmail API coverage. Securely authenticate using OAuth2 for seamless mailbox operations.",
-  "createdAt": "2026-01-16T12:51:06.317Z",
+  "createdAt": "2026-01-17T02:18:41.210Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nk900600/gmail-mcp"

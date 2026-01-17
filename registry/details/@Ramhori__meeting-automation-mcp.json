@@ -2,7 +2,7 @@
   "id": "@Ramhori/meeting-automation-mcp",
   "displayName": "meeting-automation-mcp",
   "description": "회의 자동화: Fireflies 회의록을 Asana 태스크와 Notion 문서로 자동 변환. 회의 요약, 액션아이템, 참석자 추적 통합.",
-  "createdAt": "2026-01-16T13:04:40.509Z",
+  "createdAt": "2026-01-17T02:31:29.113Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Ramhori/meeting-automation-mcp"

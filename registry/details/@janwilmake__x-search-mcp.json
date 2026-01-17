@@ -2,7 +2,7 @@
   "id": "@janwilmake/x-search-mcp",
   "displayName": "Tweet Search",
   "description": "Search Twitter using advanced operators to find relevant tweets, media, and links. Filter by users, hashtags, dates, sentiment, and more, then paginate through results to explore deeper. Discover timely conversations and gather insights fast.",
-  "createdAt": "2026-01-16T12:40:05.787Z",
+  "createdAt": "2026-01-17T02:07:48.341Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@janwilmake/x-search-mcp"

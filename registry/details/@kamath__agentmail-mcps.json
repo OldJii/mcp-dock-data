@@ -2,7 +2,7 @@
   "id": "@kamath/agentmail-mcps",
   "displayName": "AgentMail",
   "description": "Create inboxes and send emails. Manage threads, labels, and replies to keep conversations organized and surface messages that need attention. Automate workflows to find unreplied threads, respond, and update labels in one pass.",
-  "createdAt": "2026-01-16T12:48:26.339Z",
+  "createdAt": "2026-01-17T02:15:59.995Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/agentmail-mcps"

@@ -2,7 +2,7 @@
   "id": "@chuhuoyuan/cloudflare",
   "displayName": "Cloudflare Docs",
   "description": "Search Cloudflare documentation across Workers, Pages, R2, Zero Trust, and more. Generate best-practice Workers code and accelerate troubleshooting with relevant guidance. Follow clear steps to migrate Pages projects to Workers with fewer pitfalls.",
-  "createdAt": "2026-01-16T12:37:17.739Z",
+  "createdAt": "2026-01-17T02:06:26.485Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@chuhuoyuan/cloudflare"

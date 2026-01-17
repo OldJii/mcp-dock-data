@@ -2,7 +2,7 @@
   "id": "@Nekzus/npm-sentinel-mcp",
   "displayName": "NPM Sentinel MCP",
   "description": "Provide AI-powered real-time analysis and intelligence on NPM packages, including security, dependencies, performance, and quality metrics. Enable faster and safer package management decisions by integrating with Claude and Anthropic AI. Deliver comprehensive insights such as vulnerability scanning, download trends, and maintenance status to optimize your npm ecosystem.",
-  "createdAt": "2026-01-16T12:36:22.146Z",
+  "createdAt": "2026-01-17T02:03:40.337Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Nekzus/npm-sentinel-mcp"

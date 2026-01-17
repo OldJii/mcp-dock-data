@@ -2,7 +2,7 @@
   "id": "@rakeshdavid/tavus-mcp",
   "displayName": "Tavus MCP Server",
   "description": "Enable AI video generation, replica management, conversational AI, lipsync, and speech synthesis through a comprehensive MCP server for the Tavus API. Manage AI replicas, generate videos, create interactive conversations, synchronize audio, and generate speech seamlessly within MCP-compatible applications. Access full Tavus API v2 capabilities with robust error handling and easy integration.",
-  "createdAt": "2026-01-16T12:45:39.684Z",
+  "createdAt": "2026-01-17T02:13:07.959Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@rakeshdavid/tavus-mcp"

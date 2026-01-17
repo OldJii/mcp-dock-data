@@ -2,7 +2,7 @@
   "id": "@danilonovaisv/n8n-workflow-builder-gpt",
   "displayName": "n8n Workflow Builder",
   "description": "Enable AI assistants to seamlessly manage, create, execute, and monitor n8n workflows through natural language commands. Automate workflow lifecycle operations and gain comprehensive control over your n8n automation platform. Integrate effortlessly with AI tools like Claude Desktop and ChatGPT for enhanced productivity.",
-  "createdAt": "2026-01-16T12:44:29.618Z",
+  "createdAt": "2026-01-17T02:11:55.957Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@danilonovaisv/n8n-workflow-builder-gpt"

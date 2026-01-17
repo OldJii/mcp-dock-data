@@ -2,7 +2,7 @@
   "id": "@cgize/claude-mcp-think-tool",
   "displayName": "Think Tool Server",
   "description": "Enhance Claude's reasoning capabilities with a dedicated tool for structured thinking. Use this tool to navigate complex problem-solving tasks effectively, ensuring adherence to policies and improving decision-making processes. Optimize your interactions with Claude by leveraging the think tool for better outcomes in multi-step analyses.",
-  "createdAt": "2026-01-16T12:41:11.517Z",
+  "createdAt": "2026-01-17T02:08:35.891Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cgize/claude-mcp-think-tool"

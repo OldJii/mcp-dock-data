@@ -2,7 +2,7 @@
   "id": "@eliu243/oura-mcp-server-2",
   "displayName": "Oura Ring Connect",
   "description": "Connect your Oura Ring account for secure access to your data. Generate an authorization link and complete the sign-in flow to link your account. Streamline authentication for workflows that use Oura insights.",
-  "createdAt": "2026-01-16T12:43:53.921Z",
+  "createdAt": "2026-01-17T02:11:20.166Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@eliu243/oura-mcp-server-2"

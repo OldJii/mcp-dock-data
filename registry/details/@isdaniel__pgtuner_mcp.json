@@ -2,7 +2,7 @@
   "id": "@isdaniel/pgtuner_mcp",
   "displayName": "pgtuner_mcp",
   "description": "provides AI-powered PostgreSQL performance tuning capabilities.  https://github.com/isdaniel/pgtuner_mcp",
-  "createdAt": "2026-01-16T12:43:51.027Z",
+  "createdAt": "2026-01-17T02:11:17.466Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@isdaniel/pgtuner_mcp"

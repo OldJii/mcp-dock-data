@@ -2,7 +2,7 @@
   "id": "@Auxin-io/python-code-generator",
   "displayName": "Python Code Generator",
   "description": "Generate a ready-to-run Python 'Hello, World!' script with streamable output. Quickly validate integrations or demo code execution. Learn secure patterns by contrasting with insecure examples.",
-  "createdAt": "2026-01-16T12:50:17.672Z",
+  "createdAt": "2026-01-17T02:17:52.270Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Auxin-io/python-code-generator"

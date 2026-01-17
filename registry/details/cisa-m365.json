@@ -2,7 +2,7 @@
   "id": "cisa-m365",
   "displayName": "CISA M365",
   "description": "Implements CISA BOD 25-01 security controls for Microsoft 365 (Azure AD/Entra ID).",
-  "createdAt": "2026-01-16T12:49:17.754Z",
+  "createdAt": "2026-01-17T02:16:52.605Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/cisa-m365"

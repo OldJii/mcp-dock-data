@@ -2,7 +2,7 @@
   "id": "@OctoMind-dev/octomind-mcp",
   "displayName": "Octomind MCP Server",
   "description": "Enable your agents to create, execute, and manage end-to-end tests seamlessly. Leverage Octomind's tools and resources in your local development environment to enhance your testing capabilities. Simplify your testing workflow with automated features and easy integration.",
-  "createdAt": "2026-01-16T12:52:44.913Z",
+  "createdAt": "2026-01-17T02:20:27.048Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@OctoMind-dev/octomind-mcp"

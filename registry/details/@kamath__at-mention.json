@@ -2,7 +2,7 @@
   "id": "@kamath/at-mention",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with integrated AI and environment configuration support. Enable rapid development and deployment of MCP-compliant services using modern TypeScript tooling. Simplify the creation of MCP tools, resources, and prompts with built-in validation and runtime support.",
-  "createdAt": "2026-01-16T12:36:26.116Z",
+  "createdAt": "2026-01-17T02:03:39.016Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/at-mention"

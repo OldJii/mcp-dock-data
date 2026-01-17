@@ -2,7 +2,7 @@
   "id": "@chirag127/stochastic-thinking-mcp-server",
   "displayName": "Stochastic Thinking Server",
   "description": "Provide advanced stochastic algorithms and probabilistic decision-making capabilities to enhance AI assistants' decision-making processes. Enable exploration of multiple future scenarios and strategic alternatives beyond immediate next steps. Improve AI's ability to balance exploration and exploitation in uncertain environments for better long-term outcomes.",
-  "createdAt": "2026-01-16T12:40:21.187Z",
+  "createdAt": "2026-01-17T02:07:43.626Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@chirag127/stochastic-thinking-mcp-server"

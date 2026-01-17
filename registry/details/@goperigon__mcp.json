@@ -2,7 +2,7 @@
   "id": "@goperigon/mcp",
   "displayName": "Perigon News API Server",
   "description": "Provide real-time access to comprehensive news data including articles, stories, journalists, sources, people, companies, and topics. Enable advanced search and filtering capabilities to discover relevant news content and metadata efficiently. Integrate seamlessly with your applications to stay informed on current events and trends.",
-  "createdAt": "2026-01-16T12:47:18.979Z",
+  "createdAt": "2026-01-17T02:14:50.319Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@goperigon/mcp"

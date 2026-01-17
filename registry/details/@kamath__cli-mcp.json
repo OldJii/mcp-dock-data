@@ -2,7 +2,7 @@
   "id": "@kamath/cli-mcp",
   "displayName": "Local Terminal",
   "description": "Run terminal commands on your machine and get immediate output. Automate system tasks, inspect files, and manage processes from one place. Streamline command-line workflows without leaving your current context.",
-  "createdAt": "2026-01-16T12:38:22.255Z",
+  "createdAt": "2026-01-17T02:06:11.257Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/cli-mcp"

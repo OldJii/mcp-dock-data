@@ -2,7 +2,7 @@
   "id": "@punitarani/fli",
   "displayName": "Search Google Flights",
   "description": "Search for Flights on Google Flights.\n\nYou can search for the cheapest days to fly and also the specific flight information.",
-  "createdAt": "2026-01-16T12:38:29.947Z",
+  "createdAt": "2026-01-17T02:05:39.744Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@punitarani/fli"

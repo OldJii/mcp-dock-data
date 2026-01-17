@@ -2,7 +2,7 @@
   "id": "@jelle/cirra-ai",
   "displayName": "Cirra AI Salesforce Admin",
   "description": "The Cirra AI MCP server provides comprehensive Salesforce administration and data management capabilities. \n\nThis server allows you to configure connections with multiple Salesforce organizations via OAuth , organize them by teams, and set access controls.\n \nThe robust set of tools covers all major Salesforce APIs -- both for data and metadata, and supports use cases like:\n✅ Documenting orgs and cleaning up technical debt\n✅ Creating custom objects, fields, and page layouts\n✅ Provisioning users, assigning permission sets and managing queues and groups\n✅ Building or updating flows\n\nAnd much more...\n\n",
-  "createdAt": "2026-01-16T12:41:05.540Z",
+  "createdAt": "2026-01-17T02:08:30.850Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jelle/cirra-ai"

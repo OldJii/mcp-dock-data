@@ -2,7 +2,7 @@
   "id": "@demomagic/lifi-mcp-server",
   "displayName": "LI.FI Cross-Chain Integration Server",
   "description": "Enable AI assistants and applications to seamlessly interact with cross-chain blockchain infrastructure. Access comprehensive token data, bridging tools, transaction tracking, and gas price information through a standardized protocol. Simplify cross-chain operations and enhance blockchain interoperability within your AI workflows.",
-  "createdAt": "2026-01-16T12:49:53.751Z",
+  "createdAt": "2026-01-17T02:17:28.006Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@demomagic/lifi-mcp-server"

@@ -2,7 +2,7 @@
   "id": "@lekt9/unbrowse-mcp",
   "displayName": "Unbrowse",
   "description": "Connect to any website's backend directly by indexing it with our chrome extension. \nWrite API-level scraping code simply by asking for unbrowse RAG mode, where any indexed api's documentation is added to context, easily vibeable to be integrated into your codebase.\n\nExecute queries and actions at the network level without browser overhead. Pull competitor analytics, post content, extract reviews, and automate a plethora of workflows indexed by the public - using your existing credentials - up to 50x faster than browser automation.\n\nGrab your API key and set your encryption key at https://www.unbrowse.ai\n\nExamples:\nHelp me RAG unbrowse to fetch yahoo finance stock data in my codebase -> unbrowse provides a route that will be inserted to your python script to fetch live stock data.",
-  "createdAt": "2026-01-16T12:43:14.331Z",
+  "createdAt": "2026-01-17T02:10:40.094Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@lekt9/unbrowse-mcp"

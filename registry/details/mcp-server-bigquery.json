@@ -2,7 +2,7 @@
   "id": "mcp-server-bigquery",
   "displayName": "BigQuery Server",
   "description": "A Model Context Protocol server that provides access to BigQuery, enabling LLMs to inspect database schemas and execute queries.",
-  "createdAt": "2026-01-16T12:39:11.455Z",
+  "createdAt": "2026-01-17T02:06:30.463Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-server-bigquery"

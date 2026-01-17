@@ -2,7 +2,7 @@
   "id": "@alxspiker/mcp-server-ftp",
   "displayName": "FTP Access Server",
   "description": "Interact with FTP servers seamlessly. List directories, upload and download files, and manage your FTP resources effortlessly using natural language commands.",
-  "createdAt": "2026-01-16T12:41:26.909Z",
+  "createdAt": "2026-01-17T02:09:12.940Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@alxspiker/mcp-server-ftp"

@@ -2,7 +2,7 @@
   "id": "@cdugo/mcp-get-docs",
   "displayName": "DocsFetcher",
   "description": "Fetch npm package documentation and present it for LLMs.",
-  "createdAt": "2026-01-16T12:43:00.514Z",
+  "createdAt": "2026-01-17T02:10:26.150Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@cdugo/mcp-get-docs"

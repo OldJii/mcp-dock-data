@@ -2,7 +2,7 @@
   "id": "@leandrogavidia/solx402-mcp-server",
   "displayName": "SOLx402 MCP Server",
   "description": "SOLx402 MCP Server is a Model Context Protocol (MCP) server that enables AI assistants to interact with the x402 payment protocol on Solana. It provides tools for discovering and consuming x402-enabled services, managing USDC payments, querying protocol documentation, and accessing Solana development resources through integrated MCP clients.",
-  "createdAt": "2026-01-16T12:40:59.296Z",
+  "createdAt": "2026-01-17T02:08:24.587Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@leandrogavidia/solx402-mcp-server"

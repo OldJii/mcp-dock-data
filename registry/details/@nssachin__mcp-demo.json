@@ -2,7 +2,7 @@
   "id": "@nssachin/mcp-demo",
   "displayName": "mcp-demo",
   "description": "Provide a simple demonstration of an MCP server implementation. Enable basic interaction with MCP clients to showcase protocol usage. Serve as a starting point for building more complex MCP servers.",
-  "createdAt": "2026-01-16T12:45:57.926Z",
+  "createdAt": "2026-01-17T02:13:26.642Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@nssachin/mcp-demo"

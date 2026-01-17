@@ -2,7 +2,7 @@
   "id": "@yjqian19/personal-mcp-exif",
   "displayName": "EXIF Extractor",
   "description": "Extract EXIF metadata from JPG and PNG images. Reveal camera details, exposure settings, dimensions, and optional GPS data. Streamline photo audits, provenance checks, and technical reviews.",
-  "createdAt": "2026-01-16T12:38:50.124Z",
+  "createdAt": "2026-01-17T02:07:10.115Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yjqian19/personal-mcp-exif"

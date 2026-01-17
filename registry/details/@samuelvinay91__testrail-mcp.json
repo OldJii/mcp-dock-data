@@ -2,7 +2,7 @@
   "id": "@samuelvinay91/testrail-mcp",
   "displayName": "TestRail",
   "description": "Connect to your TestRail instance to view and manage projects, test cases, and test runs. Generate project dashboards with metrics and analytics to track quality and progress. Streamline QA workflows by creating and organizing cases and runs directly from one place.",
-  "createdAt": "2026-01-16T12:46:44.193Z",
+  "createdAt": "2026-01-17T02:14:14.707Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@samuelvinay91/testrail-mcp"

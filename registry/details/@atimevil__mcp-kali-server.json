@@ -2,7 +2,7 @@
   "id": "@atimevil/mcp-kali-server",
   "displayName": "CTF Solver MCP: 50+ Security Tools via AI Interface",
   "description": "Bridge AI assistants to 50+ Kali Linux security tools. Solve CTF challenges, perform penetration testing, and automate offensive security workflows across Pwnable, Crypto, Forensics, Cloud, and Web3.",
-  "createdAt": "2026-01-16T12:39:40.170Z",
+  "createdAt": "2026-01-17T02:06:49.173Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@atimevil/mcp-kali-server"

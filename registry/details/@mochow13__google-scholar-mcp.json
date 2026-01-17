@@ -2,7 +2,7 @@
   "id": "@mochow13/google-scholar-mcp",
   "displayName": "Google Scholar Search Server",
   "description": "Provide academic paper search capabilities by querying Google Scholar through a standardized MCP interface. Enable real-time streaming of search results and support multi-session interactions for seamless integration with AI models. Enhance research workflows by delivering structured scholarly data on demand.",
-  "createdAt": "2026-01-16T12:37:00.103Z",
+  "createdAt": "2026-01-17T02:04:15.524Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mochow13/google-scholar-mcp"

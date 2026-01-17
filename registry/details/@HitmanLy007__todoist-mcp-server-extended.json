@@ -2,7 +2,7 @@
   "id": "@HitmanLy007/todoist-mcp-server-extended",
   "displayName": "Todoist Extended Task Manager",
   "description": "Enable natural language task and project management by integrating your Todoist account with an LLM via MCP tools. Create, update, organize, and search tasks, projects, labels, and sections effortlessly using everyday language. Optimize your workflow with batch operations and flexible filtering designed for AI interaction.",
-  "createdAt": "2026-01-16T12:49:11.109Z",
+  "createdAt": "2026-01-17T02:16:45.946Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@HitmanLy007/todoist-mcp-server-extended"

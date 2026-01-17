@@ -2,7 +2,7 @@
   "id": "@blockscout/mcp-server",
   "displayName": "Blockscout MCP Server",
   "description": "Provide AI agents and automation tools with contextual access to blockchain data including balances, tokens, NFTs, and contract metadata. Enable multi-chain support and deliver enhanced user experience with progress notifications for long-running queries. Facilitate seamless integration with AI hosts like Claude Desktop for blockchain data analysis.",
-  "createdAt": "2026-01-16T12:35:34.029Z",
+  "createdAt": "2026-01-17T02:02:55.228Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@blockscout/mcp-server"

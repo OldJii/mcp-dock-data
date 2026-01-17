@@ -2,7 +2,7 @@
   "id": "@kirha-ai/kirha-crypto",
   "displayName": "Kirha Crypto",
   "description": "Connect your LLM to real-time crypto data.\nTrack Ethereum wallet portfolios and P&L, Bitcoin Ordinals, whales' movements, market trends, news sentiment, and more.\nPerfect for building a crypto-omniscient AI agent:\nFrom investment co-pilot to on-chain investigation assistant.",
-  "createdAt": "2026-01-16T12:41:45.842Z",
+  "createdAt": "2026-01-17T02:09:11.573Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kirha-ai/kirha-crypto"

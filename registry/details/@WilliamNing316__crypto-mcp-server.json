@@ -2,7 +2,7 @@
   "id": "@WilliamNing316/crypto-mcp-server",
   "displayName": "crypto-mcp-server",
   "description": "Get real-time crypto prices, 24h stats, OHLCV, and order book depth. Ask for quick quotes or a synthesized overview with trend and volume insights. Monitor markets and inform trading decisions with up-to-date data.",
-  "createdAt": "2026-01-16T12:50:57.152Z",
+  "createdAt": "2026-01-17T02:18:31.183Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@WilliamNing316/crypto-mcp-server"

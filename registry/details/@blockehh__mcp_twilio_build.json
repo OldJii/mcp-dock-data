@@ -2,7 +2,7 @@
   "id": "@blockehh/mcp_twilio_build",
   "displayName": "Twilio API MCP Server",
   "description": "Expose Twilio's APIs to AI assistants and tools supporting the Model Context Protocol. Enable seamless integration of Twilio's communication capabilities into AI workflows. Simplify access to Twilio services through a standardized protocol interface.",
-  "createdAt": "2026-01-16T12:47:30.300Z",
+  "createdAt": "2026-01-17T02:15:01.691Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@blockehh/mcp_twilio_build"

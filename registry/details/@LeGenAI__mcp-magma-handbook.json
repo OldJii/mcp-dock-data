@@ -2,7 +2,7 @@
   "id": "@LeGenAI/mcp-magma-handbook",
   "displayName": "MAGMA Handbook AI Assistant",
   "description": "Provide AI assistants with comprehensive, semantic search and contextual understanding of the MAGMA computational algebra system handbook. Enable users to retrieve categorized code examples, detailed code explanations, and filtered documentation efficiently. Enhance research, learning, and development workflows with fast, vector-powered similarity search tailored for MAGMA syntax and concepts.",
-  "createdAt": "2026-01-16T12:46:20.982Z",
+  "createdAt": "2026-01-17T02:13:50.819Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@LeGenAI/mcp-magma-handbook"

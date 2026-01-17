@@ -2,7 +2,7 @@
   "id": "sentry",
   "displayName": "Sentry",
   "description": "Manage and investigate Sentry issues, events, traces, releases, and organizations from one place. Search for errors, run counts and performance queries, fetch attachments and DSNs, and navigate projects and teams. Analyze specific issues with root cause insights and pull relevant Sentry documentation on demand.",
-  "createdAt": "2026-01-16T12:39:25.454Z",
+  "createdAt": "2026-01-17T02:06:37.179Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/sentry"

@@ -2,7 +2,7 @@
   "id": "@aerialcombat/say-hello-smithery-sample",
   "displayName": "Smithery Scaffold",
   "description": "Provide a scaffold for building MCP servers with tools and resources integration. Enable rapid development and testing of MCP capabilities using a modular and type-safe approach. Simplify the creation of MCP-compliant servers with built-in support for common patterns.",
-  "createdAt": "2026-01-16T12:47:11.732Z",
+  "createdAt": "2026-01-17T02:14:42.723Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aerialcombat/say-hello-smithery-sample"

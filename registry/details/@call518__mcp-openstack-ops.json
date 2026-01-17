@@ -2,7 +2,7 @@
   "id": "@call518/mcp-openstack-ops",
   "displayName": "MCP-OpenStack-Ops",
   "description": "Manage and monitor a single OpenStack project with bulk operations, consolidated queries, and real-time health reports. Filter and act across compute, networks, storage, images, orchestration, and load balancers with instant status verification. Protect tenants with strict project scoping and configurable modify permissions.",
-  "createdAt": "2026-01-16T12:51:23.263Z",
+  "createdAt": "2026-01-17T02:19:02.081Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@call518/mcp-openstack-ops"

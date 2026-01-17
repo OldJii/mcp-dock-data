@@ -2,7 +2,7 @@
   "id": "@devlimelabs/lulu-print-mcp",
   "displayName": "Lulu Print",
   "description": "Integrate print-on-demand services with your applications by managing print jobs, validating files, calculating costs, and handling shipping through Lulu Print API. Streamline book printing workflows and track order statuses seamlessly. Enable webhook subscriptions for real-time print job updates.",
-  "createdAt": "2026-01-16T12:39:08.805Z",
+  "createdAt": "2026-01-17T02:06:19.845Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@devlimelabs/lulu-print-mcp"

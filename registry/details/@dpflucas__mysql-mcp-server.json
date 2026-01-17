@@ -2,7 +2,7 @@
   "id": "@dpflucas/mysql-mcp-server",
   "displayName": "MySQL Database Access",
   "description": "Access your MySQL databases securely and efficiently. List databases, tables, and execute read-only SQL queries without the risk of data modification. Simplify your database interactions with a robust, read-only interface.",
-  "createdAt": "2026-01-16T12:41:22.180Z",
+  "createdAt": "2026-01-17T02:08:46.709Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dpflucas/mysql-mcp-server"

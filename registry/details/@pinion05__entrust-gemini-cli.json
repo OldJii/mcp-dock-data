@@ -2,7 +2,7 @@
   "id": "@pinion05/entrust-gemini-cli",
   "displayName": "Gemini CLI Health Check",
   "description": "Claude Code can't do everything well.\nThis MCP covers Claude Code's weaknesses with Gemini CLI.",
-  "createdAt": "2026-01-16T12:42:44.934Z",
+  "createdAt": "2026-01-17T02:10:10.745Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@pinion05/entrust-gemini-cli"

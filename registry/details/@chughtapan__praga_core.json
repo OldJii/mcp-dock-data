@@ -2,7 +2,7 @@
   "id": "@chughtapan/praga_core",
   "displayName": "Pragmatic RAG Agents Core",
   "description": "Build and deploy pragmatic retrieval-augmented generation (RAG) agents efficiently. Integrate various data sources and APIs to enhance your AI agents' capabilities. Streamline agent development with a robust core library designed for practical applications.",
-  "createdAt": "2026-01-16T12:49:07.188Z",
+  "createdAt": "2026-01-17T02:16:41.601Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@chughtapan/praga_core"

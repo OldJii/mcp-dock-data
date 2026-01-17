@@ -2,7 +2,7 @@
   "id": "@bitscorp-mcp/mcp-adjust",
   "displayName": "Adjust Reporting Server",
   "description": "Access your Adjust data seamlessly from any MCP client. Query reports, metrics, and performance data on-demand to gain insights into your campaigns. Perfect for quick lookups like install numbers for specific campaigns.",
-  "createdAt": "2026-01-16T12:48:30.271Z",
+  "createdAt": "2026-01-17T02:16:04.021Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@bitscorp-mcp/mcp-adjust"

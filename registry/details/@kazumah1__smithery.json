@@ -2,7 +2,7 @@
   "id": "@kazumah1/smithery",
   "displayName": "Smithery",
   "description": "Enable seamless integration of AI agents with external data sources and tools through a flexible and extensible protocol. Facilitate dynamic access to files, APIs, and custom operations to enhance AI capabilities. Streamline the connection between language models and real-world resources for improved automation and interaction.",
-  "createdAt": "2026-01-16T12:50:15.078Z",
+  "createdAt": "2026-01-17T02:17:49.599Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kazumah1/smithery"

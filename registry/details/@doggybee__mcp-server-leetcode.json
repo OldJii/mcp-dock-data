@@ -2,7 +2,7 @@
   "id": "@doggybee/mcp-server-leetcode",
   "displayName": "LeetCode MCP Server",
   "description": "Access LeetCode problems, user information, and contest data seamlessly. Enhance your AI assistants with fast and efficient queries to LeetCode's extensive resources. Utilize both CLI and programmable API for flexible integration.",
-  "createdAt": "2026-01-16T12:42:14.172Z",
+  "createdAt": "2026-01-17T02:09:40.832Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@doggybee/mcp-server-leetcode"

@@ -2,7 +2,7 @@
   "id": "@olasupoolalekanazeez222/agrictech-ai",
   "displayName": "agrictech-ai",
   "description": "This server powers an AI-driven agricultural assistant built with FastAPI. It enables farmers and agricultural users to interact in their native languages, get intelligent responses from OpenAI’s GPT models, and receive both text and voice feedback. The system automatically detects language, translates queries, generates context-aware AI answers, and converts the replies into speech for accessibility.",
-  "createdAt": "2026-01-16T13:01:09.261Z",
+  "createdAt": "2026-01-17T02:27:58.904Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@olasupoolalekanazeez222/agrictech-ai"

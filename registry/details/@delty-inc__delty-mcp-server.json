@@ -2,7 +2,7 @@
   "id": "@delty-inc/delty-mcp-server",
   "displayName": "Exa AI Search Server",
   "description": "Enable AI assistants to perform real-time web searches, academic paper searches, company research, and more using the Exa AI Search API. Access comprehensive and up-to-date information from multiple sources including web pages, Wikipedia, LinkedIn, GitHub, and research papers. Customize and control which search tools are enabled to tailor the assistant's capabilities to your needs.",
-  "createdAt": "2026-01-16T12:52:22.754Z",
+  "createdAt": "2026-01-17T02:20:04.225Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@delty-inc/delty-mcp-server"

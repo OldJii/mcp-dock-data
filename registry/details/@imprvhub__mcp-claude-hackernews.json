@@ -2,7 +2,7 @@
   "id": "@imprvhub/mcp-claude-hackernews",
   "displayName": "Hacker News MCP",
   "description": "Enable seamless interaction with Hacker News directly from Claude Desktop. Browse latest, top, and best stories, view detailed story information, and read comments with clean formatting for enhanced readability. Access Hacker News content effortlessly using natural language or commands.",
-  "createdAt": "2026-01-16T12:46:52.653Z",
+  "createdAt": "2026-01-17T02:14:23.385Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@imprvhub/mcp-claude-hackernews"

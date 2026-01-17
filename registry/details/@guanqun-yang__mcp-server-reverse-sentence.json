@@ -2,7 +2,7 @@
   "id": "@guanqun-yang/mcp-server-reverse-sentence",
   "displayName": "Sentence Reverser",
   "description": "Reverse any sentence instantly to see words in the opposite order. Generate playful phrasing, test palindromes, or analyze sentence structure. Speed up text manipulation for editing, education, or fun.",
-  "createdAt": "2026-01-16T12:39:42.199Z",
+  "createdAt": "2026-01-17T02:06:53.359Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-reverse-sentence"

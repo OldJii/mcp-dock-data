@@ -2,7 +2,7 @@
   "id": "@big-omega/mem0-mcp",
   "displayName": "Mem0 Memory Server",
   "description": "Store and search user-specific memories to maintain context and enable informed decision-making based on past interactions. Seamlessly integrate memory capabilities into your AI tools with a simple and intuitive API. Enhance your agents with relevance-scored memory retrieval for improved contextual awareness.",
-  "createdAt": "2026-01-16T12:39:48.893Z",
+  "createdAt": "2026-01-17T02:07:05.625Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@big-omega/mem0-mcp"

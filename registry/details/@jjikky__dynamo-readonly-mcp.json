@@ -2,7 +2,7 @@
   "id": "@jjikky/dynamo-readonly-mcp",
   "displayName": "DynamoDB Read-Only Server",
   "description": "Query AWS DynamoDB databases using natural language requests. Access and manage your DynamoDB data effortlessly through a user-friendly interface. Simplify your data interactions and enhance your LLM capabilities with seamless integration.",
-  "createdAt": "2026-01-16T12:48:57.405Z",
+  "createdAt": "2026-01-17T02:16:31.550Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jjikky/dynamo-readonly-mcp"

@@ -2,7 +2,7 @@
   "id": "@aliemregencer/jama-abstract-mcp-v2",
   "displayName": "Jama Abstract MCP Server",
   "description": "Provide a flexible MCP server implementation that integrates with external tools and resources to enhance LLM applications. Enable dynamic interaction with data and actions through a standardized protocol, improving the capabilities of AI agents. Simplify the connection between language models and real-world context for more effective automation and assistance.",
-  "createdAt": "2026-01-16T12:53:01.413Z",
+  "createdAt": "2026-01-17T02:20:43.893Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@aliemregencer/jama-abstract-mcp-v2"

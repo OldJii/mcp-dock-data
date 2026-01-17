@@ -2,7 +2,7 @@
   "id": "@faalantir/mcp-agent-identity",
   "displayName": "mcp-agent-identity",
   "description": "Establish a durable identity for your automations so downstream systems know who acted. Sign payloads to produce tamper-evident, verifiable actions across services. Verify signatures to confirm authorship and integrity for audits and approvals.",
-  "createdAt": "2026-01-16T12:36:14.843Z",
+  "createdAt": "2026-01-17T02:03:30.366Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@faalantir/mcp-agent-identity"

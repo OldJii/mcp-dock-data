@@ -2,7 +2,7 @@
   "id": "@khairulimran-97/bayarcash-mcp-server",
   "displayName": "bayarcash-mcp-server",
   "description": "Manage Bayarcash payments and transactions. Create and track payment intents, list portals, channels and FPX banks, and enroll FPX Direct Debit. Monitor revenue and filter results across sandbox or production.",
-  "createdAt": "2026-01-16T12:51:07.626Z",
+  "createdAt": "2026-01-17T02:18:42.618Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@khairulimran-97/bayarcash-mcp-server"

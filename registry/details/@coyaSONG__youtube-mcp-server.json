@@ -2,7 +2,7 @@
   "id": "@coyaSONG/youtube-mcp-server",
   "displayName": "Advanced YouTube",
   "description": "A Model Context Protocol (MCP) server for interacting with YouTube data. This server provides resources and tools to query YouTube videos, channels, comments, and transcripts through a stdio interface.",
-  "createdAt": "2026-01-16T12:51:01.084Z",
+  "createdAt": "2026-01-17T02:18:35.191Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@coyaSONG/youtube-mcp-server"

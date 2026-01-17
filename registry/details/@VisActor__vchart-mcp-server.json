@@ -2,7 +2,7 @@
   "id": "@VisActor/vchart-mcp-server",
   "displayName": "VChart Visualization Server",
   "description": "Generate interactive charts and visualizations through AI assistants using a variety of chart types and output formats. Easily create images, HTML, or specification objects for programmatic use to enhance data presentation and analysis. Support a wide range of chart types including Cartesian, polar, hierarchical, progress, word cloud, and more for versatile visualization needs.",
-  "createdAt": "2026-01-16T12:48:28.327Z",
+  "createdAt": "2026-01-17T02:16:02.009Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@VisActor/vchart-mcp-server"

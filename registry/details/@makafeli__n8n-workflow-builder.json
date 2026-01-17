@@ -2,7 +2,7 @@
   "id": "@makafeli/n8n-workflow-builder",
   "displayName": "n8n Workflow Builder",
   "description": "Enable AI assistants to seamlessly manage and automate your n8n workflows. Create, execute, update, and monitor workflows directly through AI integration, enhancing your automation capabilities. Simplify workflow lifecycle management with secure, high-performance tools designed for AI-first environments.",
-  "createdAt": "2026-01-16T12:39:14.132Z",
+  "createdAt": "2026-01-17T02:06:24.487Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@makafeli/n8n-workflow-builder"

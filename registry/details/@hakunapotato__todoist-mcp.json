@@ -2,7 +2,7 @@
   "id": "@hakunapotato/todoist-mcp",
   "displayName": "Todoist Integration Server",
   "description": "Enable your LLM to manage tasks, projects, sections, comments, labels, and collaborators in Todoist seamlessly. Create, update, retrieve, and delete Todoist entities using natural language or structured commands. Boost your productivity by integrating Todoist task management directly into your AI workflows.",
-  "createdAt": "2026-01-16T12:52:12.354Z",
+  "createdAt": "2026-01-17T02:19:53.566Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hakunapotato/todoist-mcp"

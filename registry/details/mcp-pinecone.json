@@ -2,7 +2,7 @@
   "id": "mcp-pinecone",
   "displayName": "Pinecone MCP Server",
   "description": "Read and write to Pinecone from Claude Desktop using the Model Context Protocol.",
-  "createdAt": "2026-01-16T12:43:50.358Z",
+  "createdAt": "2026-01-17T02:11:16.765Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-pinecone"

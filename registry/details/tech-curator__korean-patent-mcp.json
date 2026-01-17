@@ -2,7 +2,7 @@
   "id": "tech-curator/korean-patent-mcp",
   "displayName": "korean-patent-mcp",
   "description": "Search Korean patents by applicant, retrieve detailed records by application number, and analyze forward citations. Filter results by status and paginate to quickly surface relevant filings. Accelerate prior art searches, portfolio tracking, and competitive analysis for the Korean market.",
-  "createdAt": "2026-01-16T12:47:06.536Z",
+  "createdAt": "2026-01-17T02:14:37.404Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/tech-curator/korean-patent-mcp"

@@ -2,7 +2,7 @@
   "id": "@ProfessionalWiki/mediawiki-mcp-server",
   "displayName": "MediaWiki",
   "description": "Enable Large Language Model clients to interact seamlessly with any MediaWiki wiki. Perform actions such as creating, updating, and searching wiki pages, as well as retrieving file and page history information. Securely connect using OAuth 2.0 tokens to manage wiki content efficiently.",
-  "createdAt": "2026-01-16T12:35:57.459Z",
+  "createdAt": "2026-01-17T02:03:15.689Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ProfessionalWiki/mediawiki-mcp-server"

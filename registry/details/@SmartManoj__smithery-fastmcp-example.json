@@ -2,7 +2,7 @@
   "id": "@SmartManoj/smithery-fastmcp-example",
   "displayName": "Smithery FastMCP Example",
   "description": "Demonstrate how to quickly implement an MCP server with minimal setup. Enable seamless integration of LLMs with external tools and resources through a straightforward example. Facilitate rapid prototyping of MCP capabilities for development and testing.",
-  "createdAt": "2026-01-16T12:39:26.775Z",
+  "createdAt": "2026-01-17T02:06:38.508Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@SmartManoj/smithery-fastmcp-example"

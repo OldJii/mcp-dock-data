@@ -2,7 +2,7 @@
   "id": "@eliu243/oura-mcp-server",
   "displayName": "Oura Ring Connect",
   "description": "Connect your Oura Ring account and enable access to your wellness data in apps and automations. Initiate sign-in and complete authorization seamlessly to link accounts.",
-  "createdAt": "2026-01-16T12:46:45.490Z",
+  "createdAt": "2026-01-17T02:14:16.055Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@eliu243/oura-mcp-server"

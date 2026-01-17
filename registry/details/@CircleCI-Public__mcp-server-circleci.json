@@ -2,7 +2,7 @@
   "id": "@CircleCI-Public/mcp-server-circleci",
   "displayName": "CircleCI MCP Server",
   "description": "Enable natural language interactions with CircleCI functionality through MCP-enabled clients. Use this server to retrieve build logs, analyze failures, and manage your CI/CD processes seamlessly from your IDE. Simplify your workflow by integrating CircleCI commands directly into your development environment.",
-  "createdAt": "2026-01-16T12:49:51.150Z",
+  "createdAt": "2026-01-17T02:17:25.348Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@CircleCI-Public/mcp-server-circleci"

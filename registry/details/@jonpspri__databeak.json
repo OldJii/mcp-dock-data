@@ -2,7 +2,7 @@
   "id": "@jonpspri/databeak",
   "displayName": "DataBeak",
   "description": "Load and profile tabular data to quickly understand structure, quality, and trends. Explore columns with statistics, correlations, value distributions, and outlier detection to surface insights. Clean, transform, and export datasets with flexible filtering, grouping, and column operations.",
-  "createdAt": "2026-01-16T12:52:54.824Z",
+  "createdAt": "2026-01-17T02:20:37.250Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jonpspri/databeak"

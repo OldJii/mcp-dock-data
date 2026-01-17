@@ -2,7 +2,7 @@
   "id": "mcp-server-stability-ai",
   "displayName": "Stability AI",
   "description": "Image generation, editing, and upscaling using Stability AI's API.",
-  "createdAt": "2026-01-16T12:43:43.049Z",
+  "createdAt": "2026-01-17T02:11:09.415Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-server-stability-ai"

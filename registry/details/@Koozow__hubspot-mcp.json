@@ -2,7 +2,7 @@
   "id": "@Koozow/hubspot-mcp",
   "displayName": "HubSpot CRM",
   "description": "Manage HubSpot CRM data from your workflows. Create, search, update, and batch-process contacts, companies, deals, products, engagements, emails, calls, meetings, notes, tasks, and associations. Automate sales and marketing operations by managing communication preferences and keeping records accurate at scale.",
-  "createdAt": "2026-01-16T12:42:07.520Z",
+  "createdAt": "2026-01-17T02:09:34.162Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Koozow/hubspot-mcp"

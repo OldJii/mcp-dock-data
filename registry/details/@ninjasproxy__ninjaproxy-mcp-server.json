@@ -2,7 +2,7 @@
   "id": "@ninjasproxy/ninjaproxy-mcp-server",
   "displayName": "NinjaProxy MCP Server",
   "description": "Manage and access your static proxy IPs from NinjaProxy. Retrieve your proxy IPs, get specific proxies by index, and obtain ready-to-use proxy configurations for HTTP requests. Simplify proxy management and integration for your applications.",
-  "createdAt": "2026-01-16T12:49:28.236Z",
+  "createdAt": "2026-01-17T02:17:03.292Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@ninjasproxy/ninjaproxy-mcp-server"

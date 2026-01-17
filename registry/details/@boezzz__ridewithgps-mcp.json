@@ -2,7 +2,7 @@
   "id": "@boezzz/ridewithgps-mcp",
   "displayName": "RideWithGPS MCP Server",
   "description": "Provide seamless access to your RideWithGPS cycling data including routes, trips, events, and user profile through an AI-powered interface. Manage and retrieve detailed cycling adventure information effortlessly. Synchronize your cycling data and stay updated with your activities and events.\n\nYou can get your RideWithGPS API credentials from:\n- API Key: Visit the developer settings page in your RideWithGPS account and create an API client\n- Authentication Token: Select the API Client you created and go to its edit page. Click on 'Create new Auth Token' to obtain a new authentication token.\n\nOAuth coming soon.",
-  "createdAt": "2026-01-16T12:43:41.719Z",
+  "createdAt": "2026-01-17T02:11:08.069Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@boezzz/ridewithgps-mcp"

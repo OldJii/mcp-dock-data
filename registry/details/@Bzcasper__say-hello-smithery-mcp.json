@@ -2,7 +2,7 @@
   "id": "@Bzcasper/say-hello-smithery-mcp",
   "displayName": "Say Hello Smithery MCP Server",
   "description": "Enable AI-assisted development with integrated workflow automation, Python hosting management, and cloud deployment monitoring. Simplify your development process by leveraging pre-configured MCP servers for n8n, PythonAnywhere, and Render. Enhance productivity with specialized tools and secure API credential handling.",
-  "createdAt": "2026-01-16T12:43:37.064Z",
+  "createdAt": "2026-01-17T02:11:03.317Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@Bzcasper/say-hello-smithery-mcp"

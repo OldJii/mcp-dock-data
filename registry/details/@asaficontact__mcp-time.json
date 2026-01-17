@@ -2,7 +2,7 @@
   "id": "@asaficontact/mcp-time",
   "displayName": "World Time",
   "description": "Get the current time anywhere and convert times across time zones. Plan meetings with confidence by comparing regions instantly. Automatically use your local timezone when needed.",
-  "createdAt": "2026-01-16T12:39:16.780Z",
+  "createdAt": "2026-01-17T02:06:25.821Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@asaficontact/mcp-time"

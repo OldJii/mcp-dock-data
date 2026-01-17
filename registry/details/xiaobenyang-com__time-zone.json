@@ -2,7 +2,7 @@
   "id": "xiaobenyang-com/time-zone",
   "displayName": "time-zone",
   "description": "查询任意时区的当前时间，并在不同时区之间快速转换。轻松规划跨地域会议与行程。避免时差换算失误，提升协作效率。",
-  "createdAt": "2026-01-16T12:49:00.004Z",
+  "createdAt": "2026-01-17T02:16:34.201Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/xiaobenyang-com/time-zone"

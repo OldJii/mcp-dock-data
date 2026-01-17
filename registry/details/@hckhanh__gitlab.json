@@ -2,7 +2,7 @@
   "id": "@hckhanh/gitlab",
   "displayName": "Gitlab Utils",
   "description": "Extend your GitLab workflows with additional utilities to enhance productivity and automation. Seamlessly integrate GitLab data and operations into your applications using this server. Simplify complex GitLab tasks with ready-to-use tools and resources.",
-  "createdAt": "2026-01-16T12:50:35.573Z",
+  "createdAt": "2026-01-17T02:18:08.278Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@hckhanh/gitlab"

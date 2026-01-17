@@ -2,7 +2,7 @@
   "id": "@filipljoljic/component-analyzer",
   "displayName": "component-analyzer",
   "description": "Discover and map React components across your codebase to clarify architecture. Identify refactor hotspots and complex components to prioritize improvements. Inspect props, hooks, structure, and relationships to guide safer refactors.",
-  "createdAt": "2026-01-16T12:37:20.417Z",
+  "createdAt": "2026-01-17T02:04:35.014Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@filipljoljic/component-analyzer"

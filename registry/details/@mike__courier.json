@@ -2,7 +2,7 @@
   "id": "@mike/courier",
   "displayName": "Courier MCP",
   "description": "Send and orchestrate cross-channel notifications with templates or custom messages. Manage audiences, lists, brands, user profiles, subscriptions, and push tokens, and trigger automations. Track delivery, statuses, and rendered message content.",
-  "createdAt": "2026-01-16T12:47:52.401Z",
+  "createdAt": "2026-01-17T02:15:25.226Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@mike/courier"

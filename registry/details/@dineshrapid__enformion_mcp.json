@@ -2,7 +2,7 @@
   "id": "@dineshrapid/enformion_mcp",
   "displayName": "Enformion Contact Enrichment",
   "description": "Enrich contact records with phone, email, and address details from Enformion. Validate and complete missing fields to improve data quality and match rates. Accelerate lead scoring, outreach, and onboarding with cleaner, more reliable profiles.",
-  "createdAt": "2026-01-16T12:38:34.884Z",
+  "createdAt": "2026-01-17T02:05:44.397Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@dineshrapid/enformion_mcp"

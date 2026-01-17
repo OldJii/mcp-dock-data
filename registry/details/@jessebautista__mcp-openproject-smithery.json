@@ -2,7 +2,7 @@
   "id": "@jessebautista/mcp-openproject-smithery",
   "displayName": "OpenProject Integration Server",
   "description": "Enable AI agents to interact seamlessly with your self-hosted OpenProject instance by creating, retrieving, updating, and deleting projects and tasks. Facilitate project management automation through a serverless MCP interface deployed on Netlify. Connect remote clients securely using SSE bridging tools for real-time operations.",
-  "createdAt": "2026-01-16T12:39:10.792Z",
+  "createdAt": "2026-01-17T02:06:21.163Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@jessebautista/mcp-openproject-smithery"

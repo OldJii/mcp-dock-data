@@ -2,7 +2,7 @@
   "id": "@yzsshen/mcp-demo",
   "displayName": "NWS Weather",
   "description": "Get real-time U.S. weather alerts, forecasts, radar, and observations from the National Weather Service. Query aviation data including TAFs, SIGMETs/AIRMETs, and Center Weather Advisories. Explore zones, offices, and text products to power weather-aware features.",
-  "createdAt": "2026-01-16T12:45:50.098Z",
+  "createdAt": "2026-01-17T02:13:18.640Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@yzsshen/mcp-demo"

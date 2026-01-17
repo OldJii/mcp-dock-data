@@ -2,7 +2,7 @@
   "id": "contextstream/mcp-server",
   "displayName": "ContextStream",
   "description": "Unify workspace memory, project context, and code intelligence to deliver the right details instantly. Index repos, track decisions, and explore dependency relationships to speed up onboarding and change impact analysis. Stay organized with recall and reminders that capture and surface what matters when you need it.",
-  "createdAt": "2026-01-16T12:44:12.305Z",
+  "createdAt": "2026-01-17T02:11:38.297Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/contextstream/mcp-server"

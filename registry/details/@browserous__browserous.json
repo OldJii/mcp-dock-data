@@ -2,7 +2,7 @@
   "id": "@browserous/browserous",
   "displayName": "Browserous - Instant Browser for Your Agent",
   "description": "Zero-configuration on-demand cloud browser for your agent. Navigate web pages, fill forms, and capture screenshots effortlessly with pay-as-you-go pricing at just $0.10 per hour. Exposes Chrome Devtools MCP interface.",
-  "createdAt": "2026-01-16T12:47:36.160Z",
+  "createdAt": "2026-01-17T02:15:07.736Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@browserous/browserous"

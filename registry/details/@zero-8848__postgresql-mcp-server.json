@@ -2,7 +2,7 @@
   "id": "@zero-8848/postgresql-mcp-server",
   "displayName": "PostgreSQL Database Management Server",
   "description": "Provide AI assistants with comprehensive PostgreSQL database management capabilities including schema management, user permissions, query performance analysis, and real-time monitoring. Execute complex SQL queries and mutations securely with transaction support and prevent SQL injection. Manage database comments and perform cross-database data transfers to enhance AI-driven database operations.",
-  "createdAt": "2026-01-16T12:47:02.634Z",
+  "createdAt": "2026-01-17T02:14:33.390Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@zero-8848/postgresql-mcp-server"

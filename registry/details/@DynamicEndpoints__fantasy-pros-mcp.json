@@ -2,7 +2,7 @@
   "id": "@DynamicEndpoints/fantasy-pros-mcp",
   "displayName": "FantasyPros API Server",
   "description": "Access sports data, news, rankings, and projections seamlessly. Retrieve the latest updates and player information for NFL, MLB, NBA, and NHL with ease. Enhance your applications with real-time sports insights and analytics.",
-  "createdAt": "2026-01-16T12:48:54.136Z",
+  "createdAt": "2026-01-17T02:16:28.213Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@DynamicEndpoints/fantasy-pros-mcp"

@@ -2,7 +2,7 @@
   "id": "@subbu3012/kognamcp",
   "displayName": "Kogna MCP Server",
   "description": "Provide seamless interaction with Kogna's multi-agent AI avatar system through a set of tools for managing conversations, avatars, rooms, and system information. Enable users to start conversations, send messages, switch avatars or rooms, and retrieve conversation history effortlessly. Enhance your AI experience by integrating Kogna's capabilities into your MCP client.",
-  "createdAt": "2026-01-16T12:47:28.337Z",
+  "createdAt": "2026-01-17T02:14:59.647Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@subbu3012/kognamcp"

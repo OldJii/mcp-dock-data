@@ -2,7 +2,7 @@
   "id": "@therealhexi/shopify-mcp-server-main",
   "displayName": "Shopify MCP Server",
   "description": "Enable interaction with Shopify store data through a GraphQL API.",
-  "createdAt": "2026-01-16T12:46:49.392Z",
+  "createdAt": "2026-01-17T02:14:20.061Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@therealhexi/shopify-mcp-server-main"

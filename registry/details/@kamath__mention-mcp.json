@@ -2,7 +2,7 @@
   "id": "@kamath/mention-mcp",
   "displayName": "#docs",
   "description": "A documentation MCP server, such that you can ask a question like:\n\n- \"How do I use #stagehand to create a computer use agent?\"\n- \"How do I write a client component using #aisdk and the useChat hook?\"",
-  "createdAt": "2026-01-16T12:39:00.135Z",
+  "createdAt": "2026-01-17T02:06:07.271Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@kamath/mention-mcp"

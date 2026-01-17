@@ -2,7 +2,7 @@
   "id": "@anusha5191/aicollectivetest",
   "displayName": "Zuplo Weather",
   "description": "Access U.S. National Weather Service alerts, forecasts, observations, radar, and aviation data. Query by coordinates, zones, stations, or product types to retrieve precise local information. Monitor active alerts, get hourly and zone forecasts, and fetch TAF/SIGMET and text products for planning and analysis.",
-  "createdAt": "2026-01-16T12:49:24.285Z",
+  "createdAt": "2026-01-17T02:16:59.285Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@anusha5191/aicollectivetest"

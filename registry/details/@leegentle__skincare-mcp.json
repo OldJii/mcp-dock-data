@@ -2,7 +2,7 @@
   "id": "@leegentle/skincare-mcp",
   "displayName": "Skincare",
   "description": "Provide a specialized MCP server that integrates with skincare-related data and tools, enabling enhanced context and actions for LLM applications focused on skincare. Facilitate dynamic access to skincare resources and operations to improve user interactions and workflows. Simplify the integration of skincare knowledge into AI-driven environments.",
-  "createdAt": "2026-01-16T12:39:46.858Z",
+  "createdAt": "2026-01-17T02:07:04.288Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@leegentle/skincare-mcp"

@@ -2,7 +2,7 @@
   "id": "@concavegit/app-store-connect-mcp-server",
   "displayName": "app-store-connect-mcp-server",
   "description": "Manage apps, metadata, and localizations across App Store Connect. Streamline beta testing, user/device administration, and bundle ID capabilities. Access analytics and finance reports, and monitor CI workflows with build logs, issues, and test results.",
-  "createdAt": "2026-01-16T12:45:01.030Z",
+  "createdAt": "2026-01-17T02:12:27.749Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@concavegit/app-store-connect-mcp-server"

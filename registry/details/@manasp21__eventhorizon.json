@@ -2,7 +2,7 @@
   "id": "@manasp21/eventhorizon",
   "displayName": "Event Horizon Evolutionary Solution Server",
   "description": "Evolve and optimize solutions across multiple generations using genetic algorithm principles and consistency checks. Monitor progress and receive crossover recommendations to iteratively improve solutions until convergence. Customize configurations to tailor the evolutionary process to your problem-solving needs.",
-  "createdAt": "2026-01-16T12:35:42.014Z",
+  "createdAt": "2026-01-17T02:03:03.335Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/@manasp21/eventhorizon"

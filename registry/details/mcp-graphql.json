@@ -2,7 +2,7 @@
   "id": "mcp-graphql",
   "displayName": "GraphQL MCP Server",
   "description": "MCP server for interfacing with GraphQL servers.",
-  "createdAt": "2026-01-16T12:51:24.566Z",
+  "createdAt": "2026-01-17T02:19:03.437Z",
   "links": {
     "homepage": "",
     "registry": "https://smithery.ai/server/mcp-graphql"
