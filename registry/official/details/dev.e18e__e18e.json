@@ -1,0 +1,29 @@
+{
+  "id": "dev.e18e/e18e",
+  "displayName": "e18e",
+  "description": "The official e18e MCP server keeping your agent in check from installing bloated dependencies.",
+  "version": "0.0.5",
+  "status": "active",
+  "publishedAt": "2025-12-03T09:16:40.656214Z",
+  "updatedAt": "2025-12-03T09:16:40.656214Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/e18e/mcp",
+    "source": "github",
+    "subfolder": "packages/stdio"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@e18e/mcp",
+      "version": "0.0.5",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

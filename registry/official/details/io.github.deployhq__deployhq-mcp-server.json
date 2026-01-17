@@ -1,0 +1,52 @@
+{
+  "id": "io.github.deployhq/deployhq-mcp-server",
+  "displayName": "io.github.deployhq/deployhq-mcp-server",
+  "description": "Model Context Protocol (MCP) server for DeployHQ API integration",
+  "version": "1.2.1",
+  "status": "active",
+  "publishedAt": "2025-11-18T07:03:35.872088Z",
+  "updatedAt": "2025-11-18T07:03:35.872088Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/deployhq/deployhq-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "deployhq-mcp-server",
+      "version": "1.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DEPLOYHQ_EMAIL",
+          "description": "Your DeployHQ login email address",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DEPLOYHQ_API_KEY",
+          "description": "Your DeployHQ password or API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DEPLOYHQ_ACCOUNT",
+          "description": "Your DeployHQ account name (from URL: https://ACCOUNT.deployhq.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Log verbosity level (ERROR, INFO, or DEBUG)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

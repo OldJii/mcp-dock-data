@@ -1,0 +1,13 @@
+{
+  "id": "co.okahu.mcp-registry/okahu",
+  "displayName": "co.okahu.mcp-registry/okahu",
+  "description": "Cloud hosted Okahu MCP server that helps you manage genAI trace data",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-29T21:18:47.587908Z",
+  "updatedAt": "2025-12-29T21:18:47.587908Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

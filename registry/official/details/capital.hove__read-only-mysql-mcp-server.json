@@ -1,0 +1,13 @@
+{
+  "id": "capital.hove/read-only-mysql-mcp-server",
+  "displayName": "capital.hove/read-only-mysql-mcp-server",
+  "description": "MCP server for read-only MySQL database queries in Claude Desktop",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-03T10:20:41.823143Z",
+  "updatedAt": "2025-11-03T10:20:41.823143Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "dev.storage/mcp",
+  "displayName": "Tigris MCP Server",
+  "description": "Tigris MCP Server seamlessly connects AI agents to Tigris bucket and object management.",
+  "version": "1.9.2",
+  "status": "active",
+  "publishedAt": "2025-12-12T09:45:21.827846Z",
+  "updatedAt": "2025-12-12T09:45:21.827846Z",
+  "iconUrl": "https://mcp.storage.dev/favicon.jpg",
+  "websiteUrl": "https://mcp.storage.dev",
+  "repository": {
+    "url": "https://github.com/tigrisdata/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

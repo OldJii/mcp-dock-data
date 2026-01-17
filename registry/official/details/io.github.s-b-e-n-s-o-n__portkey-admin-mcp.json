@@ -1,0 +1,34 @@
+{
+  "id": "io.github.s-b-e-n-s-o-n/portkey-admin-mcp",
+  "displayName": "io.github.s-b-e-n-s-o-n/portkey-admin-mcp",
+  "description": "Full Portkey Admin API MCP server with 116 tools for prompts, analytics, governance, and more",
+  "version": "0.1.0-beta.2",
+  "status": "active",
+  "publishedAt": "2026-01-01T02:05:36.792025Z",
+  "updatedAt": "2026-01-01T02:05:36.792025Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/s-b-e-n-s-o-n/portkey-admin-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "portkey-admin-mcp",
+      "version": "0.1.0-beta.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PORTKEY_API_KEY",
+          "description": "Your Portkey API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

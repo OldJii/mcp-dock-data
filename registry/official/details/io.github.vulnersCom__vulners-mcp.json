@@ -1,0 +1,27 @@
+{
+  "id": "io.github.vulnersCom/vulners-mcp",
+  "displayName": "io.github.vulnersCom/vulners-mcp",
+  "description": "MCP server for the Vulners.com API",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-16T14:30:43.443853Z",
+  "updatedAt": "2025-10-16T14:30:43.443853Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vulnersCom/vulners-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "vulners-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

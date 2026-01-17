@@ -1,0 +1,41 @@
+{
+  "id": "io.github.KSAklfszf921/riksdag-regering-mcp",
+  "displayName": "Riksdag & Regering MCP",
+  "description": "Svenska Riksdagens och Regeringskansliets öppna data - 27 verktyg för politik, dokument och analys",
+  "version": "2.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-19T23:39:28.034707Z",
+  "updatedAt": "2025-11-19T23:39:28.034707Z",
+  "iconUrl": "https://mb.cision.com/Public/20518/3733746/9c8944283144c24f_800x800ar.png",
+  "websiteUrl": "https://riksdag-regering-ai.onrender.com",
+  "repository": {
+    "url": "https://github.com/KSAklfszf921/Riksdag-Regering-MCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "riksdag-regering-mcp",
+      "version": "2.0.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SUPABASE_URL",
+          "description": "Supabase project URL (optional - defaults to public instance)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SUPABASE_ANON_KEY",
+          "description": "Supabase anonymous key (optional - defaults to public instance)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

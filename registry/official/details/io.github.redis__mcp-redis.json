@@ -1,0 +1,33 @@
+{
+  "id": "io.github.redis/mcp-redis",
+  "displayName": "Redis MCP Server",
+  "description": "Natural language interface designed for agentic applications to manage and search data in Redis.",
+  "version": "0.4.1",
+  "status": "active",
+  "publishedAt": "2025-11-26T15:54:29.65331Z",
+  "updatedAt": "2025-11-26T15:54:29.65331Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "redis-mcp-server",
+      "version": "0.4.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/mcp/redis:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "io.github.verygoodplugins/mcp-freescout",
+  "displayName": "MCP FreeScout",
+  "description": "FreeScout ticket management with AI-powered analysis, search filters, and structured outputs.",
+  "version": "2.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T02:55:24.090711Z",
+  "updatedAt": "2026-01-05T02:55:24.090711Z",
+  "iconUrl": null,
+  "websiteUrl": "https://verygoodplugins.com/?utm_source=mcp-registry",
+  "repository": {
+    "url": "https://github.com/verygoodplugins/mcp-freescout",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@verygoodplugins/mcp-freescout",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FREESCOUT_URL",
+          "description": "Your FreeScout instance URL (e.g., https://support.example.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "FREESCOUT_API_KEY",
+          "description": "FreeScout API key with read/write permissions",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "FREESCOUT_DEFAULT_USER_ID",
+          "description": "Default user ID for ticket operations",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

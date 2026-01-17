@@ -1,0 +1,27 @@
+{
+  "id": "io.github.RoleModel/optics-mcp",
+  "displayName": "io.github.RoleModel/optics-mcp",
+  "description": "MCP Server for Optics Design System documentation and token usage.",
+  "version": "0.2.6",
+  "status": "active",
+  "publishedAt": "2025-12-05T23:07:51.354595Z",
+  "updatedAt": "2025-12-05T23:07:51.354595Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/RoleModel/optics-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "optics-mcp",
+      "version": "0.2.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

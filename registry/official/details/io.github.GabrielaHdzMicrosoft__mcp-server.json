@@ -1,0 +1,40 @@
+{
+  "id": "io.github.GabrielaHdzMicrosoft/mcp-server",
+  "displayName": "io.github.GabrielaHdzMicrosoft/mcp-server",
+  "description": "An MCP server that provides visual memory and context storage with knowledge graph capabilities",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-20T03:14:43.524547Z",
+  "updatedAt": "2025-09-20T03:14:43.524547Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/testing9384/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "visual-memory-context-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MEMORY_FILE_PATH",
+          "description": "Path to the memory.json file for knowledge graph storage",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ALLOWED_DIRECTORIES",
+          "description": "Comma-separated list of directories the server can access, or JSON array format",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

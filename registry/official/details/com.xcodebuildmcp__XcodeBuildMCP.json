@@ -1,0 +1,81 @@
+{
+  "id": "com.xcodebuildmcp/XcodeBuildMCP",
+  "displayName": "com.xcodebuildmcp/XcodeBuildMCP",
+  "description": "XcodeBuildMCP provides tools for Xcode project management, simulator management, and app utilities.",
+  "version": "1.14.1",
+  "status": "active",
+  "publishedAt": "2025-09-22T20:19:27.621247Z",
+  "updatedAt": "2025-09-22T20:19:27.621247Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cameroncooke/XcodeBuildMCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "xcodebuildmcp",
+      "version": "1.14.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "INCREMENTAL_BUILDS_ENABLED",
+          "description": "Enable experimental xcodemake incremental builds (true/false or 1/0).",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "name": "XCODEBUILDMCP_DYNAMIC_TOOLS",
+          "description": "Enable AI-powered dynamic tool discovery to load only relevant workflows.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        },
+        {
+          "name": "XCODEBUILDMCP_ENABLED_WORKFLOWS",
+          "description": "Comma-separated list of workflows to load in Static Mode (e.g., 'simulator,device,project-discovery').",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "XCODEBUILDMCP_SENTRY_DISABLED",
+          "description": "Disable Sentry error reporting (preferred flag).",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        },
+        {
+          "name": "XCODEBUILDMCP_DEBUG",
+          "description": "Enable verbose debug logging from the server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

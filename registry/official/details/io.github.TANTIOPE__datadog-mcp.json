@@ -1,0 +1,46 @@
+{
+  "id": "io.github.TANTIOPE/datadog-mcp",
+  "displayName": "io.github.TANTIOPE/datadog-mcp",
+  "description": "Full Datadog API access: monitors, logs, metrics, traces, dashboards, and observability tools",
+  "version": "1.0.9",
+  "status": "active",
+  "publishedAt": "2025-12-18T23:29:16.020787Z",
+  "updatedAt": "2025-12-18T23:29:16.020787Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/tantiope/datadog-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "datadog-mcp",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DD_API_KEY",
+          "description": "Datadog API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DD_APP_KEY",
+          "description": "Datadog Application key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DD_SITE",
+          "description": "Datadog site (e.g., datadoghq.com, datadoghq.eu, us3.datadoghq.com)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

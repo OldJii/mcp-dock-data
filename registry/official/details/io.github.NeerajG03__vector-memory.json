@@ -1,0 +1,24 @@
+{
+  "id": "io.github.NeerajG03/vector-memory",
+  "displayName": "io.github.NeerajG03/vector-memory",
+  "description": "Semantic document memory using Redis vector store. Save and recall files with natural language.",
+  "version": "0.4.4",
+  "status": "active",
+  "publishedAt": "2025-11-05T11:31:58.471835Z",
+  "updatedAt": "2025-11-05T11:31:58.471835Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-server-vector-memory",
+      "version": "0.4.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.KatoMato65/time-mcp",
+  "displayName": "io.github.KatoMato65/time-mcp",
+  "description": "Simple MCP server that tells the time",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2026-01-08T13:28:59.883398Z",
+  "updatedAt": "2026-01-08T13:28:59.883398Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/KatoMato65/time-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@katomato65/time-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

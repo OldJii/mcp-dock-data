@@ -1,0 +1,61 @@
+{
+  "id": "io.github.domdomegg/airtable-mcp-server",
+  "displayName": "Airtable",
+  "description": "Read and write access to Airtable database schemas, tables, and records.",
+  "version": "1.9.6",
+  "status": "active",
+  "publishedAt": "2025-12-08T13:22:16.268159Z",
+  "updatedAt": "2025-12-08T13:22:16.268159Z",
+  "iconUrl": "https://raw.githubusercontent.com/domdomegg/airtable-mcp-server/refs/heads/master/icon.png",
+  "websiteUrl": "https://github.com/domdomegg/airtable-mcp-server#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/airtable-mcp-server.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "airtable-mcp-server",
+      "version": "1.9.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AIRTABLE_API_KEY",
+          "description": "Airtable personal access token (e.g., pat123.abc123). Create at https://airtable.com/create/tokens/new with scopes: schema.bases:read, data.records:read, and optionally schema.bases:write and data.records:write.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/domdomegg/airtable-mcp-server:1.9.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AIRTABLE_API_KEY",
+          "description": "Airtable personal access token (e.g., pat123.abc123). Create at https://airtable.com/create/tokens/new with scopes: schema.bases:read, data.records:read, and optionally schema.bases:write and data.records:write.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/domdomegg/airtable-mcp-server/releases/download/v1.9.6/airtable-mcp-server.mcpb",
+      "version": "1.9.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

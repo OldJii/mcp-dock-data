@@ -1,0 +1,34 @@
+{
+  "id": "io.github.Berckan/bugherd-mcp",
+  "displayName": "io.github.Berckan/bugherd-mcp",
+  "description": "BugHerd bug tracking integration. List projects, tasks, comments with filtering.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-13T16:00:20.604022Z",
+  "updatedAt": "2026-01-13T16:00:20.604022Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Berckan/bugherd-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bugherd-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BUGHERD_API_KEY",
+          "description": "BugHerd API key from Settings > General Settings",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

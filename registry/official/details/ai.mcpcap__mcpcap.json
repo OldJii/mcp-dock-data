@@ -1,0 +1,27 @@
+{
+  "id": "ai.mcpcap/mcpcap",
+  "displayName": "ai.mcpcap/mcpcap",
+  "description": "An MCP server for analyzing PCAP files.",
+  "version": "0.6.0",
+  "status": "active",
+  "publishedAt": "2025-09-18T00:54:48.998145Z",
+  "updatedAt": "2025-09-18T00:54:48.998145Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mcpcap/mcpcap",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcpcap",
+      "version": "0.4.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "com.mcpbundles/hub",
+  "displayName": "MCPBundles Hub",
+  "description": "Access all your MCPBundles tools in one place. Unified hub for all enabled bundles.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-19T19:54:50.655856Z",
+  "updatedAt": "2025-11-19T19:54:50.655856Z",
+  "iconUrl": null,
+  "websiteUrl": "https://mcpbundles.com",
+  "repository": {
+    "url": "https://github.com/thinkchainai/mcpbundles",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/hub-v1.0.0+build.8da55d55/hub.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

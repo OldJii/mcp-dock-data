@@ -1,0 +1,47 @@
+{
+  "id": "io.github.IvanMurzak/Unity-MCP",
+  "displayName": "io.github.IvanMurzak/Unity-MCP",
+  "description": "Make 3D games in Unity Engine with AI. MCP Server + Plugin for Unity Editor and Unity games.",
+  "version": "0.17.1",
+  "status": "active",
+  "publishedAt": "2025-09-12T11:41:26.282067Z",
+  "updatedAt": "2025-09-12T11:41:26.282067Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/IvanMurzak/Unity-MCP",
+    "source": "github",
+    "subfolder": "Unity-MCP-Server"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/ivanmurzakdev/unity-mcp-server:0.17.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "UNITY_MCP_PORT",
+          "description": "Client -> Server <- Plugin connection port (default: 8080)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UNITY_MCP_PLUGIN_TIMEOUT",
+          "description": "Plugin -> Server connection timeout (ms) (default: 10000)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UNITY_MCP_CLIENT_TRANSPORT",
+          "description": "Client -> Server transport type: stdio or http (default: http)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "stdio"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

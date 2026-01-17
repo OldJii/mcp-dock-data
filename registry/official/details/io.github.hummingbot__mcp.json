@@ -1,0 +1,45 @@
+{
+  "id": "io.github.hummingbot/mcp",
+  "displayName": "io.github.hummingbot/mcp",
+  "description": "MCP server exposing Hummingbot API for automated multi-exchange trading",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-06T15:05:42.521939Z",
+  "updatedAt": "2025-10-06T15:05:42.521939Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/hummingbot/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/hummingbot/hummingbot-mcp:0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HUMMINGBOT_API_URL",
+          "description": "Base URL of the Hummingbot API (e.g., http://host.docker.internal:8820 or http://localhost:8000)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "HUMMINGBOT_USERNAME",
+          "description": "Hummingbot API username",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "HUMMINGBOT_PASSWORD",
+          "description": "Hummingbot API password",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

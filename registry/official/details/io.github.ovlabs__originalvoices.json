@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ovlabs/originalvoices",
+  "displayName": "io.github.ovlabs/originalvoices",
+  "description": "MCP server for OriginalVoices - Ask AI twins questions about any audience",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-14T16:48:02.19998Z",
+  "updatedAt": "2026-01-14T16:48:02.19998Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ovlabs/mcp-server-originalvoices",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@originalvoices/mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

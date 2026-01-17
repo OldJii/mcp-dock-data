@@ -1,0 +1,34 @@
+{
+  "id": "io.github.ooples/mcp-console-automation",
+  "displayName": "io.github.ooples/mcp-console-automation",
+  "description": "MCP server for AI-driven console application automation and monitoring",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-10-05T02:30:04.484325Z",
+  "updatedAt": "2025-10-05T02:30:04.484325Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ooples/mcp-console-automation",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-console-automation",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level for console output (error, warn, info, debug, trace)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

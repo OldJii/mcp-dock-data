@@ -1,0 +1,34 @@
+{
+  "id": "io.github.dba-i/mssql-dba",
+  "displayName": "io.github.dba-i/mssql-dba",
+  "description": "An MCP server that provides [describe what your server does]",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-16T16:43:44.243434Z",
+  "updatedAt": "2025-09-16T16:43:44.243434Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dba-i/mssql-dba",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mssql-dba",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

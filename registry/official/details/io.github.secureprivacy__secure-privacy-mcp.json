@@ -1,0 +1,27 @@
+{
+  "id": "io.github.secureprivacy/secure-privacy-mcp",
+  "displayName": "io.github.secureprivacy/secure-privacy-mcp",
+  "description": "An MCP server that automatically integrate GDPR-compliant cookie consent banners into websites",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-05T00:26:13.990197Z",
+  "updatedAt": "2025-12-05T00:26:13.990197Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/secureprivacy/secure-privacy-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "secure-privacy-mcp",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

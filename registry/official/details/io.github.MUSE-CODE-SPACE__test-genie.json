@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MUSE-CODE-SPACE/test-genie",
+  "displayName": "io.github.MUSE-CODE-SPACE/test-genie",
+  "description": "AI-powered app test automation for iOS, Android, Flutter, React Native, Web",
+  "version": "2.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-27T19:50:59.015159Z",
+  "updatedAt": "2025-12-27T19:50:59.015159Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MUSE-CODE-SPACE/test-genie-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "test-genie-mcp",
+      "version": "2.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

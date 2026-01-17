@@ -1,0 +1,27 @@
+{
+  "id": "io.github.tech-sushant/calculator-mcp",
+  "displayName": "io.github.tech-sushant/calculator-mcp",
+  "description": "A simple Model Context Protocol calculator server",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-28T10:11:16.657015Z",
+  "updatedAt": "2025-10-28T10:11:16.657015Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/tech-sushant/calculator-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@tech-sushant/calculator-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

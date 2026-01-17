@@ -1,0 +1,27 @@
+{
+  "id": "io.github.yokingma/time-mcp",
+  "displayName": "io.github.yokingma/time-mcp",
+  "description": "Time MCP Server, giving LLMs time awareness capabilities.",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2025-10-12T08:47:25.767731Z",
+  "updatedAt": "2025-10-12T08:47:25.767731Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/yokingma/time-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "time-mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/ramadasmr-networkcalc-mcp",
+  "displayName": "ai.smithery/ramadasmr-networkcalc-mcp",
+  "description": "Look up DNS information for any domain to troubleshoot issues and gather insights. Get fast, relia…",
+  "version": "1.13.0",
+  "status": "active",
+  "publishedAt": "2025-09-20T10:10:47.321873Z",
+  "updatedAt": "2025-09-20T10:10:47.321873Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ramadasmr/networkcalc-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

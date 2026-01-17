@@ -1,0 +1,27 @@
+{
+  "id": "io.github.byrness/weather",
+  "displayName": "io.github.byrness/weather",
+  "description": "An MCP server for weather information.",
+  "version": "1.0.8",
+  "status": "active",
+  "publishedAt": "2025-11-22T03:56:44.823606Z",
+  "updatedAt": "2025-11-22T03:56:44.823606Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/byrness/mcp-weather-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@byrness/mcp-weather-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

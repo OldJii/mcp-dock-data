@@ -1,0 +1,27 @@
+{
+  "id": "io.github.martymarkenson/postgres-connector",
+  "displayName": "io.github.martymarkenson/postgres-connector",
+  "description": "MCP server for querying PostgreSQL databases",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-09-25T21:59:51.445715Z",
+  "updatedAt": "2025-09-25T21:59:51.445715Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "postgres-connector",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

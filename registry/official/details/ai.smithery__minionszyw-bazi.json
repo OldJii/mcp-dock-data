@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/minionszyw-bazi",
+  "displayName": "ai.smithery/minionszyw-bazi",
+  "description": "Generate BaZi charts from birth details. Explore Four Pillars, solar terms, and Luck Pillars for d…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-18T08:13:10.601278Z",
+  "updatedAt": "2025-09-18T08:13:10.601278Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/minionszyw/bazi",
+    "source": "github"
+  },
+  "packages": []
+}

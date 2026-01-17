@@ -1,0 +1,34 @@
+{
+  "id": "io.github.SamMorrowDrums/remarkable",
+  "displayName": "reMarkable MCP Server",
+  "description": "Access your reMarkable tablet - read documents, browse files, extract text and OCR",
+  "version": "0.7.0",
+  "status": "active",
+  "publishedAt": "2025-12-02T13:50:27.098707Z",
+  "updatedAt": "2025-12-02T13:50:27.098707Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SamMorrowDrums/remarkable-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "remarkable-mcp",
+      "version": "0.7.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "REMARKABLE_TOKEN",
+          "description": "Authentication token for reMarkable Cloud API. Get one by registering at https://my.remarkable.com/device/browser/connect",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

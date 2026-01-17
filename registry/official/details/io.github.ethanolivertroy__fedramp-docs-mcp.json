@@ -1,0 +1,46 @@
+{
+  "id": "io.github.ethanolivertroy/fedramp-docs-mcp",
+  "displayName": "io.github.ethanolivertroy/fedramp-docs-mcp",
+  "description": "Query FedRAMP 20x KSIs, NIST controls, and compliance docs via 20 MCP tools.",
+  "version": "0.2.2",
+  "status": "active",
+  "publishedAt": "2026-01-06T17:18:39.101633Z",
+  "updatedAt": "2026-01-06T17:18:39.101633Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ethanolivertroy/fedramp-docs-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "fedramp-docs-mcp",
+      "version": "0.2.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FEDRAMP_DOCS_PATH",
+          "description": "Path to an existing FedRAMP/docs checkout (default: ~/.cache/fedramp-docs)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FEDRAMP_DOCS_AUTO_UPDATE",
+          "description": "Automatically check for and fetch repository updates (default: true)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FEDRAMP_DOCS_UPDATE_CHECK_HOURS",
+          "description": "Hours between automatic update checks (default: 24)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

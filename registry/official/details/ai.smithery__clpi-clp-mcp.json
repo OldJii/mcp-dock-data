@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/clpi-clp-mcp",
+  "displayName": "ai.smithery/clpi-clp-mcp",
+  "description": "Manage simple context workflows with quick init and add actions. Access the 'Hello, World' origin…",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-08T00:23:04.174735Z",
+  "updatedAt": "2025-10-08T00:23:04.174735Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/clpi/clp-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

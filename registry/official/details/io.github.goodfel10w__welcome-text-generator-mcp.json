@@ -1,0 +1,34 @@
+{
+  "id": "io.github.goodfel10w/welcome-text-generator-mcp",
+  "displayName": "io.github.goodfel10w/welcome-text-generator-mcp",
+  "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-15T09:54:50.774705Z",
+  "updatedAt": "2025-10-15T09:54:50.774705Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/goodfel10w/WelcomeTextGenerator",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "welcome-text-generator-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

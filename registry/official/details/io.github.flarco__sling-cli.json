@@ -1,0 +1,16 @@
+{
+  "id": "io.github.flarco/sling-cli",
+  "displayName": "io.github.flarco/sling-cli",
+  "description": "Sling CLI MCP server for data pipeline and replication management",
+  "version": "1.4.24",
+  "status": "active",
+  "publishedAt": "2025-09-28T21:44:03.912575Z",
+  "updatedAt": "2025-09-28T21:44:03.912575Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

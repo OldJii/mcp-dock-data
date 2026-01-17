@@ -1,0 +1,41 @@
+{
+  "id": "io.github.wmarceau/youtube-creator",
+  "displayName": "io.github.wmarceau/youtube-creator",
+  "description": "YouTube automation: upload videos, Shorts, manage playlists, get analytics",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-16T02:35:33.286301Z",
+  "updatedAt": "2026-01-16T02:35:33.286301Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MarceauSolutions/dev-sandbox",
+    "source": "github",
+    "subfolder": "projects/youtube-creator"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "youtube-creator-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUTUBE_CREDENTIALS_PATH",
+          "description": "Path to OAuth client secrets JSON from Google Cloud Console",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "YOUTUBE_TOKEN_PATH",
+          "description": "Path to store OAuth token (defaults to ~/.google/youtube_token.pickle)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

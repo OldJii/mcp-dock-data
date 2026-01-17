@@ -1,0 +1,34 @@
+{
+  "id": "io.github.ewalid/rosetta-mcp",
+  "displayName": "io.github.ewalid/rosetta-mcp",
+  "description": "AI-powered Excel translation preserving formatting, formulas, and data integrity.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-16T22:13:26.433528Z",
+  "updatedAt": "2026-01-16T22:13:26.433528Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ewalid/rosetta",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ewalid/rosetta-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Your Anthropic API key from console.anthropic.com. Required to perform translations using Claude AI.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

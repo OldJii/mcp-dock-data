@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ShingWong/node-server-orchestrator",
+  "displayName": "io.github.ShingWong/node-server-orchestrator",
+  "description": "MCP server for orchestrating Node.js development servers (backend, frontend, databases, etc.)",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-13T00:22:52.73379Z",
+  "updatedAt": "2025-10-13T00:22:52.73379Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "node-server-orchestrator",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

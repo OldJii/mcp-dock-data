@@ -1,0 +1,84 @@
+{
+  "id": "io.github.florentine-ai/mcp",
+  "displayName": "io.github.florentine-ai/mcp",
+  "description": "MCP server for Florentine.ai - Natural language to MongoDB aggregations",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-10-07T12:53:53.745395Z",
+  "updatedAt": "2025-10-07T12:53:53.745395Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/florentine-ai/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@florentine-ai/mcp",
+      "version": "0.2.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FLORENTINE_TOKEN",
+          "description": "Your Florentine.ai API key, get it from https://florentine.ai/dashboard",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "LLM_SERVICE",
+          "description": "The LLM service to use, one of 'openai', 'anthropic', 'google' or 'deepseek' (must only be provided if you did not set it in your Florentine.ai account)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LLM_KEY",
+          "description": "Your API key for the LLM service (must only be provided if you did not set it in your Florentine.ai account)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SESSION_ID",
+          "description": "Session ID for maintaining server-side context across requests",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RETURN_TYPES",
+          "description": "Stringified JSON array of return types for the response",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "REQUIRED_INPUTS",
+          "description": "Stringified JSON array of values for required inputs keys",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--mode",
+          "description": "The mode to run the MCP server in ('static' or 'dynamic')",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "--debug",
+          "description": "Set to true to enable debug logging",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--logpath",
+          "description": "The path to the log file, must be provided if debug is true",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

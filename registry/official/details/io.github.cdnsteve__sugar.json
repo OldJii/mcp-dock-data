@@ -1,0 +1,46 @@
+{
+  "id": "io.github.cdnsteve/sugar",
+  "displayName": "Sugar",
+  "description": "Autonomous AI development system with persistent task queue and background execution",
+  "version": "3.4.2",
+  "status": "active",
+  "publishedAt": "2026-01-09T00:00:45.31636Z",
+  "updatedAt": "2026-01-09T00:00:45.31636Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/roboticforce/sugar",
+  "repository": {
+    "url": "https://github.com/roboticforce/sugar",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sugarai",
+      "version": "3.4.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude model access",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "GitHub token for repository access",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SUGAR_DEFAULT_REPO",
+          "description": "Default repository in owner/repo format",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

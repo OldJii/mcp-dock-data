@@ -1,0 +1,27 @@
+{
+  "id": "io.github.billychl1/footballbin-mcp-server",
+  "displayName": "io.github.billychl1/footballbin-mcp-server",
+  "description": "AI match predictions for Premier League & Champions League - scores, goals, corners",
+  "version": "1.0.4",
+  "status": "active",
+  "publishedAt": "2026-01-10T02:17:18.10794Z",
+  "updatedAt": "2026-01-10T02:17:18.10794Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/billychl1/footballbin-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "footballbin-mcp-server",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

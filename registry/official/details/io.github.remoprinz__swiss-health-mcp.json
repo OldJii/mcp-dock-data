@@ -1,0 +1,40 @@
+{
+  "id": "io.github.remoprinz/swiss-health-mcp",
+  "displayName": "io.github.remoprinz/swiss-health-mcp",
+  "description": "Swiss health insurance premiums (Krankenkassen-Prämien) 2016-2026. 1.6M records from BAG.",
+  "version": "1.0.8",
+  "status": "active",
+  "publishedAt": "2025-12-27T12:05:59.028809Z",
+  "updatedAt": "2025-12-27T12:05:59.028809Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/remoprinz/swiss-health-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@prinz_esox/swiss-health-mcp",
+      "version": "1.0.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SUPABASE_URL",
+          "description": "Supabase Project URL (e.g. https://xxx.supabase.co)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "SUPABASE_SERVICE_ROLE_KEY",
+          "description": "Supabase Service Role Key for database access",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

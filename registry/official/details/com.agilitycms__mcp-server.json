@@ -1,0 +1,16 @@
+{
+  "id": "com.agilitycms/mcp-server",
+  "displayName": "com.agilitycms/mcp-server",
+  "description": "An MCP server that provides access to Agility CMS.  See https://mcp.agilitycms.com for more details.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-15T21:00:43.34878Z",
+  "updatedAt": "2025-09-15T21:00:43.34878Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/agility/agility-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

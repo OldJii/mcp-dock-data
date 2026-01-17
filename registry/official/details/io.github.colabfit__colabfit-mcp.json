@@ -1,0 +1,27 @@
+{
+  "id": "io.github.colabfit/colabfit-mcp",
+  "displayName": "io.github.colabfit/colabfit-mcp",
+  "description": "An MCP server that provides access to the ColabFit database",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-16T16:55:46.847116Z",
+  "updatedAt": "2025-10-16T16:55:46.847116Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/colabfit/colabfit-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "colabfit-mcp",
+      "version": "0.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

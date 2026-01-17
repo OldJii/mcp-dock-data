@@ -1,0 +1,38 @@
+{
+  "id": "io.github.domdomegg/downdetector-mcp",
+  "displayName": "Downdetector",
+  "description": "Check service status and outage information via Downdetector.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-05T17:32:34.374644Z",
+  "updatedAt": "2025-12-05T17:32:34.374644Z",
+  "iconUrl": "https://raw.githubusercontent.com/domdomegg/downdetector-mcp/refs/heads/master/icon.png",
+  "websiteUrl": "https://github.com/domdomegg/downdetector-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/downdetector-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "downdetector-mcp",
+      "version": "1.0.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/domdomegg/downdetector-mcp/releases/download/v1.0.1/downdetector-mcp.mcpb",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

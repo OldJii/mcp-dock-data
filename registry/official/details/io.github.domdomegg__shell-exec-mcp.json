@@ -1,0 +1,46 @@
+{
+  "id": "io.github.domdomegg/shell-exec-mcp",
+  "displayName": "Shell Exec",
+  "description": "Execute bash commands with background job support.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:26:01.420647Z",
+  "updatedAt": "2025-12-28T06:26:01.420647Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/shell-exec-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/shell-exec-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "shell-exec-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "shell-exec-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

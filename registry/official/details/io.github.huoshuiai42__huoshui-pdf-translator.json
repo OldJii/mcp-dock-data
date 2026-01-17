@@ -1,0 +1,27 @@
+{
+  "id": "io.github.huoshuiai42/huoshui-pdf-translator",
+  "displayName": "io.github.huoshuiai42/huoshui-pdf-translator",
+  "description": "An MCP server that provides PDF translation service",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-11T01:31:51.354566Z",
+  "updatedAt": "2025-09-11T01:31:51.354566Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/huoshuiai42/huoshui-pdf-translator",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "huoshui-pdf-translator",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

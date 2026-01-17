@@ -1,0 +1,31 @@
+{
+  "id": "me.speedof/speed-test",
+  "displayName": "me.speedof/speed-test",
+  "description": "Official SpeedOf.Me server - Accurate speed tests via 129 global edge servers with analytics.",
+  "version": "1.0.13",
+  "status": "active",
+  "publishedAt": "2026-01-09T10:44:06.24453Z",
+  "updatedAt": "2026-01-09T10:44:06.24453Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@speedofme/mcp",
+      "version": "1.0.13",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SOM_API_SECRET",
+          "description": "Your SpeedOf.Me API secret from https://speedof.me/api/portal/settings.php",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

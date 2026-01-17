@@ -1,0 +1,62 @@
+{
+  "id": "io.github.timescale/tiger-skills",
+  "displayName": "io.github.timescale/tiger-skills",
+  "description": "Provider agnostic skills implementation, with skills sourced from local paths or GitHub repositories",
+  "version": "0.1.4",
+  "status": "active",
+  "publishedAt": "2025-12-10T18:54:41.43134Z",
+  "updatedAt": "2025-12-10T18:54:41.43134Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/timescale/tiger-skills-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@tigerdata/tiger-skills-mcp-server",
+      "version": "0.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "Token to access (private) GitHub repos",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SKILLS_FILE",
+          "description": "Location of configuration file for skills",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/timescale/tiger-skills-mcp-server:0.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "Token to access (private) GitHub repos",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SKILLS_FILE",
+          "description": "Location of configuration file for skills",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

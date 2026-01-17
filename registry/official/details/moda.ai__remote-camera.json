@@ -1,0 +1,16 @@
+{
+  "id": "moda.ai/remote-camera",
+  "displayName": "Remote Camera",
+  "description": "Capture photos remotely from mobile devices via S3-backed upload URLs",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-27T19:16:27.548449Z",
+  "updatedAt": "2025-10-27T19:16:27.548449Z",
+  "iconUrl": "https://remote-camera-mcp.email.ai.moda/bimi/logo.svg",
+  "websiteUrl": "https://www.ai.moda/mcp-servers/remote-camera/",
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

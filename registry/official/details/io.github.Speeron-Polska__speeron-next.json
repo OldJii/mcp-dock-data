@@ -1,0 +1,16 @@
+{
+  "id": "io.github.Speeron-Polska/speeron-next",
+  "displayName": "io.github.Speeron-Polska/speeron-next",
+  "description": "Speeron NEXT Digital Guest Journey MCP server (remote HTTP endpoint).",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-28T13:00:30.881779Z",
+  "updatedAt": "2025-11-28T13:00:30.881779Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

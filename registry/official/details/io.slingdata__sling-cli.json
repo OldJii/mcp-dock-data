@@ -1,0 +1,27 @@
+{
+  "id": "io.slingdata/sling-cli",
+  "displayName": "io.slingdata/sling-cli",
+  "description": "Sling CLI MCP server for querying any database, running data pipelines and managing replications",
+  "version": "1.4.25",
+  "status": "active",
+  "publishedAt": "2025-09-28T22:25:06.471641Z",
+  "updatedAt": "2025-09-28T22:25:06.471641Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sling",
+      "version": "1.4.23.post1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

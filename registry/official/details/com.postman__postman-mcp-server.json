@@ -1,0 +1,82 @@
+{
+  "id": "com.postman/postman-mcp-server",
+  "displayName": "com.postman/postman-mcp-server",
+  "description": "A basic MCP server to operate on the Postman API.",
+  "version": "2.5.4",
+  "status": "active",
+  "publishedAt": "2026-01-09T14:53:04.557455Z",
+  "updatedAt": "2026-01-09T14:53:04.557455Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/postmanlabs/postman-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@postman/postman-mcp-server",
+      "version": "2.5.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTMAN_API_KEY",
+          "description": "A valid Postman API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.5.4/postman-mcp-server-minimal.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTMAN_API_KEY",
+          "description": "A valid Postman API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.5.4/postman-mcp-server-full.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTMAN_API_KEY",
+          "description": "A valid Postman API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/postmanlabs/postman-mcp-server/releases/download/v2.5.4/postman-mcp-server-code.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTMAN_API_KEY",
+          "description": "A valid Postman API key.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

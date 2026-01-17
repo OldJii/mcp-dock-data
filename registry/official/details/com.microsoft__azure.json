@@ -1,0 +1,38 @@
+{
+  "id": "com.microsoft/azure",
+  "displayName": "Azure MCP Server",
+  "description": "All Azure MCP tools to create a seamless connection between AI agents and Azure services.",
+  "version": "2.0.0-beta.6",
+  "status": "active",
+  "publishedAt": "2025-11-24T16:17:02.938828Z",
+  "updatedAt": "2025-11-24T16:17:02.938828Z",
+  "iconUrl": null,
+  "websiteUrl": "https://azure.microsoft.com/",
+  "repository": {
+    "url": "https://github.com/microsoft/mcp",
+    "source": "github",
+    "subfolder": "servers/Azure.Mcp.Server"
+  },
+  "packages": [
+    {
+      "registryType": "nuget",
+      "identifier": "Azure.Mcp",
+      "version": "2.0.0-beta.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@azure/mcp",
+      "version": "2.0.0-beta.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

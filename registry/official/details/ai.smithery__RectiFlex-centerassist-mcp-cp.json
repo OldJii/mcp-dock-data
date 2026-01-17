@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/RectiFlex-centerassist-mcp-cp",
+  "displayName": "ai.smithery/RectiFlex-centerassist-mcp-cp",
+  "description": "Streamline property management, construction, and service workflows with CenterPoint Connect. Sear…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T03:31:56.911791Z",
+  "updatedAt": "2025-10-07T03:31:56.911791Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

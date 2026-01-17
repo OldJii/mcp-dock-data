@@ -1,0 +1,95 @@
+{
+  "id": "io.github.cyanheads/pubmed-mcp-server",
+  "displayName": "io.github.cyanheads/pubmed-mcp-server",
+  "description": "Comprehensive PubMed MCP Server to search, retrieve, and analyze biomedical literature from NCBI.",
+  "version": "1.4.5",
+  "status": "active",
+  "publishedAt": "2025-10-02T23:33:18.616247Z",
+  "updatedAt": "2025-10-02T23:33:18.616247Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cyanheads/pubmed-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@cyanheads/pubmed-mcp-server",
+      "version": "1.4.5",
+      "runtimeHint": "bun",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_LOG_LEVEL",
+          "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        },
+        {
+          "name": "NCBI_API_KEY",
+          "description": "Your NCBI API key for higher rate limits.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@cyanheads/pubmed-mcp-server",
+      "version": "1.4.5",
+      "runtimeHint": "bun",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_HTTP_HOST",
+          "description": "The host for the HTTP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "localhost"
+        },
+        {
+          "name": "MCP_HTTP_PORT",
+          "description": "The port for the HTTP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3017"
+        },
+        {
+          "name": "MCP_HTTP_ENDPOINT_PATH",
+          "description": "The endpoint path for MCP requests.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/mcp"
+        },
+        {
+          "name": "MCP_AUTH_MODE",
+          "description": "Authentication mode: 'none', 'jwt', or 'oauth'.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "none"
+        },
+        {
+          "name": "MCP_LOG_LEVEL",
+          "description": "Sets the minimum log level (e.g., 'debug', 'info', 'warn').",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        },
+        {
+          "name": "NCBI_API_KEY",
+          "description": "Your NCBI API key for higher rate limits.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

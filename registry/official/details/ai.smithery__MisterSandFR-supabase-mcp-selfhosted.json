@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+  "displayName": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+  "description": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Moni…",
+  "version": "1.14.1",
+  "status": "active",
+  "publishedAt": "2025-09-18T14:42:06.197815Z",
+  "updatedAt": "2025-09-18T14:42:06.197815Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
+    "source": "github"
+  },
+  "packages": []
+}

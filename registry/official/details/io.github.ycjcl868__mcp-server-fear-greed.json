@@ -1,0 +1,65 @@
+{
+  "id": "io.github.ycjcl868/mcp-server-fear-greed",
+  "displayName": "io.github.ycjcl868/mcp-server-fear-greed",
+  "description": "An MCP server for mcp-server-fear-greed",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-09-09T04:08:35.601638Z",
+  "updatedAt": "2025-09-09T04:08:35.601638Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ycjcl868/mcp-server-fear-greed",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-fear-greed",
+      "version": "latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-fear-greed",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-fear-greed",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    }
+  ]
+}

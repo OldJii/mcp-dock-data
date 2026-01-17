@@ -1,0 +1,16 @@
+{
+  "id": "io.github.microsoft/EnterpriseMCP",
+  "displayName": "Microsoft MCP Server for Enterprise",
+  "description": "Official Microsoft MCP Server to query Microsoft Entra data using natural language",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-18T00:01:16.627197Z",
+  "updatedAt": "2025-11-18T00:01:16.627197Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/microsoft/EnterpriseMCP",
+    "source": "github"
+  },
+  "packages": []
+}

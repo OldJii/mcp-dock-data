@@ -1,0 +1,34 @@
+{
+  "id": "io.github.creis-ai/mcp-property-valuation-server",
+  "displayName": "io.github.creis-ai/mcp-property-valuation-server",
+  "description": "MCP服务器，提供房产小区评级和评估功能",
+  "version": "0.0.23",
+  "status": "active",
+  "publishedAt": "2025-11-24T09:43:43.515542Z",
+  "updatedAt": "2025-11-24T09:43:43.515542Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/creis-ai/mcp-property-valuation-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-property-valuation-server",
+      "version": "0.0.23",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP-INDUSTRY-APPID",
+          "description": "Industry app ID for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

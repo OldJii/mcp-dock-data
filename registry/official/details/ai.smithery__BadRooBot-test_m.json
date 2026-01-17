@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/BadRooBot-test_m",
+  "displayName": "ai.smithery/BadRooBot-test_m",
+  "description": "Send quick greetings, scrape website content, and generate text or images on demand. Perform web s…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-20T14:41:53.772797Z",
+  "updatedAt": "2025-09-20T14:41:53.772797Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BadRooBot/test_m",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/google-contacts-mcp",
+  "displayName": "Google Contacts",
+  "description": "Allow AI systems to list, search, and manage contacts via Google Contacts.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:25:51.773496Z",
+  "updatedAt": "2025-12-28T06:25:51.773496Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/google-contacts-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/google-contacts-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-contacts-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "google-contacts-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

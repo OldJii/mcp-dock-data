@@ -1,0 +1,220 @@
+{
+  "id": "io.github.Snowflake-Labs/mcp",
+  "displayName": "OSS Snowflake MCP Server",
+  "description": "MCP Server for Snowflake from Snowflake Labs",
+  "version": "1.3.5",
+  "status": "active",
+  "publishedAt": "2025-10-28T15:19:33.176334Z",
+  "updatedAt": "2025-10-28T15:19:33.176334Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Snowflake-Labs/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "snowflake-labs-mcp",
+      "version": "1.3.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SNOWFLAKE_ACCOUNT",
+          "description": "Account identifier (e.g. xy12345.us-east-1)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_HOST",
+          "description": "Snowflake host URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_USER",
+          "description": "Username for authentication",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_PASSWORD",
+          "description": "Password or programmatic access token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SNOWFLAKE_ROLE",
+          "description": "Role to use for connection",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_WAREHOUSE",
+          "description": "Warehouse to use for queries",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_PASSCODE",
+          "description": "MFA passcode for authentication",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_PRIVATE_KEY",
+          "description": "Private key for key pair authentication",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SNOWFLAKE_PRIVATE_KEY_FILE",
+          "description": "Path to private key file",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_PRIVATE_KEY_FILE_PWD",
+          "description": "Password for encrypted private key",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_MCP_HOST",
+          "description": "Host address to bind the server to (default: 0.0.0.0)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_MCP_PORT",
+          "description": "Port number for the server to listen on (default: 9000)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SNOWFLAKE_MCP_ENDPOINT",
+          "description": "Endpoint path for the MCP server (default: /mcp)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--service-config-file",
+          "description": "Path to service specification file",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "--account",
+          "description": "Account identifier (e.g. xy12345.us-east-1)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--host",
+          "description": "Snowflake host URL",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--user",
+          "description": "Username for authentication",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--password",
+          "description": "Password or programmatic access token",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--role",
+          "description": "Role to use for connection",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--warehouse",
+          "description": "Warehouse to use for queries",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--passcode-in-password",
+          "description": "Whether passcode is embedded in password",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--passcode",
+          "description": "MFA passcode for authentication",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--private-key",
+          "description": "Private key for key pair authentication",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--private-key-file",
+          "description": "Path to private key file",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--private-key-file-pwd",
+          "description": "Password for encrypted private key",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--authenticator",
+          "description": "Authentication type",
+          "type": "named",
+          "isRequired": false,
+          "default": "snowflake"
+        },
+        {
+          "name": "--connection-name",
+          "description": "Name of connection from connections.toml (or config.toml) file",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--transport",
+          "description": "Transport for the MCP server",
+          "type": "named",
+          "isRequired": false,
+          "default": "stdio"
+        },
+        {
+          "name": "--server-host",
+          "description": "Host address to bind the server to (default: 0.0.0.0)",
+          "type": "named",
+          "isRequired": false,
+          "default": "0.0.0.0"
+        },
+        {
+          "name": "--port",
+          "description": "Port number for the server to listen on (default: 9000)",
+          "type": "named",
+          "isRequired": false,
+          "default": "9000"
+        },
+        {
+          "name": "--endpoint",
+          "description": "Custom endpoint path for HTTP transports",
+          "type": "named",
+          "isRequired": false,
+          "default": "/mcp"
+        }
+      ]
+    }
+  ]
+}

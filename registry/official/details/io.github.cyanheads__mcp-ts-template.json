@@ -1,0 +1,83 @@
+{
+  "id": "io.github.cyanheads/mcp-ts-template",
+  "displayName": "io.github.cyanheads/mcp-ts-template",
+  "description": "A production-grade TypeScript template for scalable MCP servers with built-in observability.",
+  "version": "2.6.0",
+  "status": "active",
+  "publishedAt": "2025-12-12T14:50:38.073967Z",
+  "updatedAt": "2025-12-12T14:50:38.073967Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cyanheads/mcp-ts-template",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-ts-template",
+      "version": "2.6.0",
+      "runtimeHint": "bun",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_LOG_LEVEL",
+          "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "mcp-ts-template",
+      "version": "2.6.0",
+      "runtimeHint": "bun",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_HTTP_HOST",
+          "description": "The hostname for the HTTP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "127.0.0.1"
+        },
+        {
+          "name": "MCP_HTTP_PORT",
+          "description": "The port to run the HTTP server on.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3010"
+        },
+        {
+          "name": "MCP_HTTP_ENDPOINT_PATH",
+          "description": "The endpoint path for the MCP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/mcp"
+        },
+        {
+          "name": "MCP_AUTH_MODE",
+          "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "none"
+        },
+        {
+          "name": "MCP_LOG_LEVEL",
+          "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.tdnupe3/coinrailz",
+  "displayName": "io.github.tdnupe3/coinrailz",
+  "description": "37+ crypto micropayment services: trading, DEX analytics, prediction markets via x402",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-09T20:04:18.090704Z",
+  "updatedAt": "2025-12-09T20:04:18.090704Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/tdnupe3/mcp-server-coinrailz",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "coinrailz-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "COINRAILZ_API_KEY",
+          "description": "Your Coin Railz API key for authenticated access to paid services",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

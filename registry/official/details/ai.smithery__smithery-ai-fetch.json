@@ -1,0 +1,17 @@
+{
+  "id": "ai.smithery/smithery-ai-fetch",
+  "displayName": "ai.smithery/smithery-ai-fetch",
+  "description": "A simple tool that performs a fetch request to a webpage.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-14T03:19:26.387795Z",
+  "updatedAt": "2025-10-14T03:19:26.387795Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/smithery-ai/mcp-servers",
+    "source": "github",
+    "subfolder": "fetch"
+  },
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.flowzap-xyz/flowzap",
+  "displayName": "FlowZap",
+  "description": "Generates instant beautiful workflow and sequence diagrams via AI assistants and FlowZap Code.",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2026-01-15T14:12:45.74526Z",
+  "updatedAt": "2026-01-15T14:12:45.74526Z",
+  "iconUrl": "https://flowzap.xyz/img/flowzap-logo-favicon.png",
+  "websiteUrl": "https://flowzap.xyz/blog/introducing-the-flowzap-mcp-server",
+  "repository": {
+    "url": "https://github.com/flowzap-xyz/flowzap-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "flowzap-mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.BAM-DevCrew/MAXential-Thinking-MCP",
+  "displayName": "io.github.BAM-DevCrew/MAXential-Thinking-MCP",
+  "description": "11 focused tools for structured thinking, branching, revision, and navigation.",
+  "version": "2.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-23T01:46:42.540616Z",
+  "updatedAt": "2025-12-23T01:46:42.540616Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BAM-DevCrew/MAXential-Thinking-MCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bam-devcrew/maxential-thinking-mcp",
+      "version": "2.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

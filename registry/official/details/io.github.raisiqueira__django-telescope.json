@@ -1,0 +1,34 @@
+{
+  "id": "io.github.raisiqueira/django-telescope",
+  "displayName": "io.github.raisiqueira/django-telescope",
+  "description": "A Model Context Protocol (MCP) server for Django applications, inspired by Laravel Boost",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-11-07T19:19:34.063284Z",
+  "updatedAt": "2025-11-07T19:19:34.063284Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/raisiqueira/django-telescope",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "django-telescope",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DJANGO_SETTINGS_MODULE",
+          "description": "Django settings module path (e.g., 'myproject.settings')",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/infranodus-mcp-server-infranodus",
+  "displayName": "ai.smithery/infranodus-mcp-server-infranodus",
+  "description": "Map text into knowledge graphs to create a structured representation of conceptual relations and t…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-04T08:08:11.981455Z",
+  "updatedAt": "2025-10-04T08:08:11.981455Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/infranodus/mcp-server-infranodus",
+    "source": "github"
+  },
+  "packages": []
+}

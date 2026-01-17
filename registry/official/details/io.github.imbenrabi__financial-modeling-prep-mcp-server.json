@@ -1,0 +1,78 @@
+{
+  "id": "io.github.imbenrabi/financial-modeling-prep-mcp-server",
+  "displayName": "Financial Modeling Prep MCP Server",
+  "description": "MCP server for Financial Modeling Prep API with 250+ financial data tools",
+  "version": "2.6.2",
+  "status": "active",
+  "publishedAt": "2026-01-15T10:40:07.359655Z",
+  "updatedAt": "2026-01-15T10:40:07.359655Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/imbenrabi/Financial-Modeling-Prep-MCP-Server",
+  "repository": {
+    "url": "https://github.com/imbenrabi/Financial-Modeling-Prep-MCP-Server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "financial-modeling-prep-mcp-server",
+      "version": "2.6.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "FMP_ACCESS_TOKEN",
+          "description": "Financial Modeling Prep API access token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PORT",
+          "description": "Port number for HTTP server mode",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DYNAMIC_TOOL_DISCOVERY",
+          "description": "Enable dynamic tool discovery mode",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FMP_TOOL_SETS",
+          "description": "Comma-separated list of tool sets to load",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--fmp-token",
+          "description": "Financial Modeling Prep API access token",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--port",
+          "description": "Port number for HTTP server mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dynamic-tool-discovery",
+          "description": "Enable dynamic tool discovery mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--fmp-tool-sets",
+          "description": "Comma-separated list of tool sets to load",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

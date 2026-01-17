@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-watch2",
+  "displayName": "ai.smithery/arjunkmrm-watch2",
+  "description": "Get the current time in your chosen timezone. Browse available continents and regions to pick the…",
+  "version": "1.14.1",
+  "status": "active",
+  "publishedAt": "2025-09-19T08:31:21.361328Z",
+  "updatedAt": "2025-09-19T08:31:21.361328Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/clock",
+    "source": "github"
+  },
+  "packages": []
+}

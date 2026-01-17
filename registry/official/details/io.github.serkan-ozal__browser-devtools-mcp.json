@@ -1,0 +1,190 @@
+{
+  "id": "io.github.serkan-ozal/browser-devtools-mcp",
+  "displayName": "io.github.serkan-ozal/browser-devtools-mcp",
+  "description": "Playwright-powered MCP server for browser automation, debugging, and observability.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-15T13:07:26.782918Z",
+  "updatedAt": "2026-01-15T13:07:26.782918Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/serkan-ozal/browser-devtools-mcp",
+  "repository": {
+    "url": "https://github.com/serkan-ozal/browser-devtools-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "browser-devtools-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PORT",
+          "description": "Port for HTTP transport.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SESSION_IDLE_SECONDS",
+          "description": "Idle session timeout (seconds).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SESSION_IDLE_CHECK_SECONDS",
+          "description": "Interval for checking idle sessions (seconds).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SESSION_CLOSE_ON_SOCKET_CLOSE",
+          "description": "Close session when socket closes.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CONSOLE_MESSAGES_BUFFER_SIZE",
+          "description": "Maximum console messages to buffer.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HTTP_REQUESTS_BUFFER_SIZE",
+          "description": "Maximum HTTP requests to buffer.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_HEADLESS_ENABLE",
+          "description": "Run browser in headless mode.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_PERSISTENT_ENABLE",
+          "description": "Use persistent browser context (preserves cookies, localStorage, extensions).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_PERSISTENT_USER_DATA_DIR",
+          "description": "Directory for persistent browser context user data.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_USE_INSTALLED_ON_SYSTEM",
+          "description": "Use system-installed Chrome browser instead of Playwright's bundled browser.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_EXECUTABLE_PATH",
+          "description": "Custom browser executable path.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_ENABLE",
+          "description": "Enable OpenTelemetry integration.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_SERVICE_NAME",
+          "description": "OpenTelemetry service name.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_SERVICE_VERSION",
+          "description": "OpenTelemetry service version.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_ASSETS_DIR",
+          "description": "Directory containing OpenTelemetry bundle files.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_INSTRUMENTATION_USER_INTERACTION_EVENTS",
+          "description": "User interaction events to instrument (comma-separated, e.g., \"click,submit\").",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_EXPORTER_TYPE",
+          "description": "OpenTelemetry exporter type: \"otlp/http\", \"console\", or \"none\".",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_EXPORTER_HTTP_URL",
+          "description": "OpenTelemetry collector base URL (e.g., \"http://localhost:4318\").",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OTEL_EXPORTER_HTTP_HEADERS",
+          "description": "OpenTelemetry exporter HTTP headers (comma-separated key=value pairs).",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "AWS_REGION",
+          "description": "AWS region for Bedrock usage.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AWS_PROFILE",
+          "description": "AWS profile name for Bedrock usage.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AMAZON_BEDROCK_ENABLE",
+          "description": "Enable Amazon Bedrock usage.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AMAZON_BEDROCK_IMAGE_EMBED_MODEL_ID",
+          "description": "Amazon Bedrock image embedding model ID.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AMAZON_BEDROCK_TEXT_EMBED_MODEL_ID",
+          "description": "Amazon Bedrock text embedding model ID.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AMAZON_BEDROCK_VISION_MODEL_ID",
+          "description": "Amazon Bedrock vision model ID.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FIGMA_ACCESS_TOKEN",
+          "description": "Figma API access token for design comparison.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "FIGMA_API_BASE_URL",
+          "description": "Figma API base URL.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.qualityclouds/mcp-server-qualityclouds",
+  "displayName": "LiveCheck AI",
+  "description": "Secure MCP runtime server for scanning and autofixing code issues",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-16T09:47:38.486453Z",
+  "updatedAt": "2026-01-16T09:47:38.486453Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/qualityclouds/qualityclouds",
+    "source": "github"
+  },
+  "packages": []
+}

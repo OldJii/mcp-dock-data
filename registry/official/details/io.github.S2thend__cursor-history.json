@@ -1,0 +1,27 @@
+{
+  "id": "io.github.S2thend/cursor-history",
+  "displayName": "io.github.S2thend/cursor-history",
+  "description": "MCP server for browsing, searching, exporting, and backing up your Cursor AI chat history",
+  "version": "0.2.4",
+  "status": "active",
+  "publishedAt": "2026-01-11T04:19:34.77709Z",
+  "updatedAt": "2026-01-11T04:19:34.77709Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/S2thend/cursor-history-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "cursor-history-mcp",
+      "version": "0.2.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

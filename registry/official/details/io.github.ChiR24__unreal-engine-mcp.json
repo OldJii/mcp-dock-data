@@ -1,0 +1,88 @@
+{
+  "id": "io.github.ChiR24/unreal-engine-mcp",
+  "displayName": "io.github.ChiR24/unreal-engine-mcp",
+  "description": "MCP server for Unreal Engine 5 with 17 tools for game development automation.",
+  "version": "0.5.9",
+  "status": "active",
+  "publishedAt": "2026-01-03T16:04:14.776661Z",
+  "updatedAt": "2026-01-03T16:04:14.776661Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ChiR24/Unreal_mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "unreal-engine-mcp-server",
+      "version": "0.5.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level: debug, info, warn, error (default: info)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_ROUTE_STDOUT_LOGS",
+          "description": "Route standard output to standard error to avoid protocol corruption (default: true)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UE_PROJECT_PATH",
+          "description": "Absolute path to your Unreal .uproject file",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UE_EDITOR_EXE",
+          "description": "Path to UnrealEditor-Cmd.exe (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UE_SCREENSHOT_DIR",
+          "description": "Directory to save screenshots (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_AUTOMATION_PORT",
+          "description": "Automation bridge WebSocket port (default: 8091)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_AUTOMATION_HOST",
+          "description": "Automation bridge WebSocket host (default: 127.0.0.1)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_AUTOMATION_CLIENT_MODE",
+          "description": "Run as client connecting to UE (false) or server listening for UE (true) (default: false)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_CONNECTION_TIMEOUT_MS",
+          "description": "Connection timeout in milliseconds (default: 5000)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_REQUEST_TIMEOUT_MS",
+          "description": "Request timeout in milliseconds (default: 30000)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

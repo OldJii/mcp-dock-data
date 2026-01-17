@@ -1,0 +1,28 @@
+{
+  "id": "io.github.Wolfe-Jam/faf-mcp",
+  "displayName": ".FAF Context",
+  "description": "Universal persistent project context server - IANA-registered .FAF format",
+  "version": "1.2.2",
+  "status": "active",
+  "publishedAt": "2025-12-31T19:31:24.638194Z",
+  "updatedAt": "2025-12-31T19:31:24.638194Z",
+  "iconUrl": "https://raw.githubusercontent.com/Wolfe-Jam/faf-mcp/main/assets/icons/faf-icon-48.png",
+  "websiteUrl": "https://faf.one",
+  "repository": {
+    "url": "https://github.com/Wolfe-Jam/faf-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "faf-mcp",
+      "version": "1.2.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

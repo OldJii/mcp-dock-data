@@ -1,0 +1,16 @@
+{
+  "id": "io.github.Synclub-tech/synclub-dxt",
+  "displayName": "io.github.Synclub-tech/synclub-dxt",
+  "description": "SynClub MCP Server for AI-powered comic creation with script generation and image tools",
+  "version": "0.6.0",
+  "status": "active",
+  "publishedAt": "2025-09-20T11:20:51.672216Z",
+  "updatedAt": "2025-09-20T11:20:51.672216Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Synclub-tech/Synclub-dxt",
+    "source": "github"
+  },
+  "packages": []
+}

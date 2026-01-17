@@ -1,0 +1,27 @@
+{
+  "id": "io.github.karanb192/reddit-buddy-mcp",
+  "displayName": "io.github.karanb192/reddit-buddy-mcp",
+  "description": "Reddit MCP server - browse posts, search content, analyze users.",
+  "version": "1.0.6-test.7",
+  "status": "active",
+  "publishedAt": "2025-09-15T07:27:45.798342Z",
+  "updatedAt": "2025-09-15T07:27:45.798342Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@karanb192/reddit-buddy-mcp",
+      "version": "1.0.6-test.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

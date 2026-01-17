@@ -1,0 +1,27 @@
+{
+  "id": "io.github.olgasafonova/miro-mcp-server",
+  "displayName": "io.github.olgasafonova/miro-mcp-server",
+  "description": "Voice-friendly Miro whiteboard control. Create stickies, shapes, frames, mindmaps, and diagrams.",
+  "version": "1.4.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T23:00:01.382543Z",
+  "updatedAt": "2025-12-30T23:00:01.382543Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/olgasafonova/miro-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.4.0/miro-mcp-server-darwin-arm64",
+      "version": "1.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

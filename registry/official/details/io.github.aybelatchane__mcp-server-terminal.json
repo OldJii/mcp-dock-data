@@ -1,0 +1,48 @@
+{
+  "id": "io.github.aybelatchane/mcp-server-terminal",
+  "displayName": "Terminal MCP Server",
+  "description": "MCP server for AI agents to interact with terminal applications. Think Playwright for terminals.",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-09T11:56:07.32197Z",
+  "updatedAt": "2025-12-09T11:56:07.32197Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/aybelatchane/mcp-server-terminal",
+  "repository": {
+    "url": "https://github.com/aybelatchane/mcp-server-terminal",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-terminal",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DISPLAY",
+          "description": "X11 display for visual mode (Linux/WSL). Example: :0",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RUST_LOG",
+          "description": "Logging level: error, warn, info, debug, trace",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--headless",
+          "description": "Run in headless mode without spawning visible terminal windows",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

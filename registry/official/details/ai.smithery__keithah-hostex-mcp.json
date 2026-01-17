@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/keithah-hostex-mcp",
+  "displayName": "ai.smithery/keithah-hostex-mcp",
+  "description": "Manage your Hostex vacation rentals—properties, reservations, availability, listings, and guest me…",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2025-09-30T04:10:38.519183Z",
+  "updatedAt": "2025-09-30T04:10:38.519183Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/keithah/hostex-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

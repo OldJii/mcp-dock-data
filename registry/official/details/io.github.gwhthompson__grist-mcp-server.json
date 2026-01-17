@@ -1,0 +1,41 @@
+{
+  "id": "io.github.gwhthompson/grist-mcp-server",
+  "displayName": "io.github.gwhthompson/grist-mcp-server",
+  "description": "11 tools for managing Grist documents with AI",
+  "version": "2.0.33",
+  "status": "active",
+  "publishedAt": "2025-12-23T16:57:57.457099Z",
+  "updatedAt": "2025-12-23T16:57:57.457099Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gwhthompson/grist-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "grist-mcp-server",
+      "version": "2.0.33",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GRIST_API_KEY",
+          "description": "Your Grist API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GRIST_BASE_URL",
+          "description": "Base URL for Grist instance (default: https://docs.getgrist.com)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "https://docs.getgrist.com"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

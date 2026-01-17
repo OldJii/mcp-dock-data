@@ -1,0 +1,26 @@
+{
+  "id": "com.mcpbundles/agent-interviews",
+  "displayName": "Agent Interviews MCP Server from MCPBundles",
+  "description": "Agent Interviews is an AI-powered research platform designed to conduct qualitative interviews an...",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-19T19:38:38.318359Z",
+  "updatedAt": "2025-11-19T19:38:38.318359Z",
+  "iconUrl": null,
+  "websiteUrl": "https://mcpbundles.com/bundles/agent-interviews",
+  "repository": {
+    "url": "https://github.com/thinkchainai/mcpbundles",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/agent-interviews-v1.0.0+build.fccc0958/agent-interviews.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

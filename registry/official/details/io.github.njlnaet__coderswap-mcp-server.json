@@ -1,0 +1,27 @@
+{
+  "id": "io.github.njlnaet/coderswap-mcp-server",
+  "displayName": "CoderSwap MCP Server",
+  "description": "Build searchable AI research knowledge bases with hybrid vector search directly in Claude Desktop.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-10-27T02:31:39.41927Z",
+  "updatedAt": "2025-10-27T02:31:39.41927Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/njlnaet/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@coderswap/mcp-server",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

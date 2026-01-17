@@ -1,0 +1,27 @@
+{
+  "id": "io.github.shashwatgtm/impact-mcp-server",
+  "displayName": "io.github.shashwatgtm/impact-mcp-server",
+  "description": "IMPACT Framework - B2B Positioning & Messaging Tools by Shashwat Ghosh",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-16T05:37:35.224967Z",
+  "updatedAt": "2026-01-16T05:37:35.224967Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shashwatgtm/impact-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@shashwatgtmalpha/impact-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

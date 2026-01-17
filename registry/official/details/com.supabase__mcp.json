@@ -1,0 +1,36 @@
+{
+  "id": "com.supabase/mcp",
+  "displayName": "Supabase",
+  "description": "MCP server for interacting with the Supabase platform",
+  "version": "0.6.1",
+  "status": "active",
+  "publishedAt": "2026-01-06T20:00:03.066777Z",
+  "updatedAt": "2026-01-06T20:00:03.066777Z",
+  "iconUrl": "https://supabase.com/favicon/favicon-16x16.png",
+  "websiteUrl": "https://supabase.com/mcp",
+  "repository": {
+    "url": "https://github.com/supabase-community/supabase-mcp",
+    "source": "github",
+    "subfolder": "packages/mcp-server-supabase"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@supabase/mcp-server-supabase",
+      "version": "0.6.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SUPABASE_ACCESS_TOKEN",
+          "description": "Personal access token for Supabase API",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

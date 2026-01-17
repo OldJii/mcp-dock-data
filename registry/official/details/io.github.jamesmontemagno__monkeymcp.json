@@ -1,0 +1,26 @@
+{
+  "id": "io.github.jamesmontemagno/monkeymcp",
+  "displayName": "io.github.jamesmontemagno/monkeymcp",
+  "description": "MCP server providing monkey data, journeys, and location services for various monkey species.",
+  "version": "2.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-07T23:03:40.813346Z",
+  "updatedAt": "2025-10-07T23:03:40.813346Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jamesmontemagno/monkeymcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/jamesmontemagno/monkeymcp:2.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

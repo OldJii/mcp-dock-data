@@ -1,0 +1,46 @@
+{
+  "id": "io.github.b1ff/atlassian-dc-mcp-bitbucket",
+  "displayName": "io.github.b1ff/atlassian-dc-mcp-bitbucket",
+  "description": "MCP server for Atlassian Bitbucket Data Center - interact with repositories and code",
+  "version": "0.9.9",
+  "status": "active",
+  "publishedAt": "2025-09-13T13:29:18.888402Z",
+  "updatedAt": "2025-09-13T13:29:18.888402Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/b1ff/atlassian-dc-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@atlassian-dc-mcp/bitbucket",
+      "version": "0.9.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BITBUCKET_HOST",
+          "description": "Bitbucket host domain (e.g. your-instance.atlassian.net)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BITBUCKET_API_BASE_PATH",
+          "description": "Bitbucket API base path (alternative to BITBUCKET_HOST)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BITBUCKET_API_TOKEN",
+          "description": "Bitbucket Personal Access Token or API token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

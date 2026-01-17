@@ -1,0 +1,16 @@
+{
+  "id": "travel.kismet/mcp-server",
+  "displayName": "travel.kismet/mcp-server",
+  "description": "Semantic hotel search with real-time availability and price comparison for Kismet Travel",
+  "version": "0.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T22:00:17.761143Z",
+  "updatedAt": "2025-09-10T22:00:17.761143Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kismet-tech/kismet-travel-mcp-v2",
+    "source": "github"
+  },
+  "packages": []
+}

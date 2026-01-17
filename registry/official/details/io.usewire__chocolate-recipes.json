@@ -1,0 +1,13 @@
+{
+  "id": "io.usewire/chocolate-recipes",
+  "displayName": "Vintage Chocolate Recipes",
+  "description": "Search 146 vintage chocolate recipes from 1914: cakes, candies, mousses, beverages.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-16T19:57:36.213421Z",
+  "updatedAt": "2025-12-16T19:57:36.213421Z",
+  "iconUrl": "https://usewire.io/favicon-512x512.png",
+  "websiteUrl": "https://usewire.io/explore/chocolate-recipes",
+  "repository": null,
+  "packages": []
+}

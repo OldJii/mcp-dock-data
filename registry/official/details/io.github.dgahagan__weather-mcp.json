@@ -1,0 +1,24 @@
+{
+  "id": "io.github.dgahagan/weather-mcp",
+  "displayName": "Weather Data MCP Server",
+  "description": "Weather forecasts, alerts, air quality, marine, radar imagery, lightning. NOAA + Open-Meteo.",
+  "version": "1.6.1",
+  "status": "active",
+  "publishedAt": "2025-11-10T20:04:44.609135Z",
+  "updatedAt": "2025-11-10T20:04:44.609135Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@dangahagan/weather-mcp",
+      "version": "1.6.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

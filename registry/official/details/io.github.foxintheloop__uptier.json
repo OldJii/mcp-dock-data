@@ -1,0 +1,27 @@
+{
+  "id": "io.github.foxintheloop/uptier",
+  "displayName": "io.github.foxintheloop/uptier",
+  "description": "MCP-powered To-Do application with intelligent task prioritization",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-15T19:17:38.481374Z",
+  "updatedAt": "2025-12-15T19:17:38.481374Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/foxintheloop/UpTier",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@foxintheloop/uptier-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.f/prompts.chat-mcp",
+  "displayName": "prompts.chat MCP Server",
+  "description": "Search and retrieve AI prompts from prompts.chat, the social platform for AI prompts.",
+  "version": "1.0.9",
+  "status": "active",
+  "publishedAt": "2025-12-17T20:14:09.438934Z",
+  "updatedAt": "2025-12-17T20:14:09.438934Z",
+  "iconUrl": "https://prompts.chat/logo.svg",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/f/prompts.chat-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fkadev/prompts.chat-mcp",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PROMPTS_API_KEY",
+          "description": "API key for authenticated requests (enables save_prompt tool)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PROMPTS_QUERY",
+          "description": "Query string to filter prompts (e.g., users=a,b&categories=c,d&tags=e,f)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

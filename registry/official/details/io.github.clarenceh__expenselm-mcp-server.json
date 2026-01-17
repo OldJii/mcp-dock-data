@@ -1,0 +1,34 @@
+{
+  "id": "io.github.clarenceh/expenselm-mcp-server",
+  "displayName": "io.github.clarenceh/expenselm-mcp-server",
+  "description": "An MCP server that provides access to your expense data on ExpenseLM.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-11-18T09:59:14.850525Z",
+  "updatedAt": "2025-11-18T09:59:14.850525Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/expenselm/expenselm-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "expenselm-mcp-server",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EXPENSELM_API_KEY",
+          "description": "Your ExpenseLM API key",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

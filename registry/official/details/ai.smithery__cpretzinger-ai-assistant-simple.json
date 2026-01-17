@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/cpretzinger-ai-assistant-simple",
+  "displayName": "ai.smithery/cpretzinger-ai-assistant-simple",
+  "description": "UPDATED 9/1/2025! NEW TOOLS! Use the Redis Stream tools with n8n MCP Client Node for use anywhere!…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-15T00:26:36.144736Z",
+  "updatedAt": "2025-09-15T00:26:36.144736Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

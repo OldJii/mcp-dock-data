@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/keremurat-json",
+  "displayName": "ai.smithery/keremurat-json",
+  "description": "Compare two JSON files deeply without worrying about key or array order. Detect missing, extra, an…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T13:28:40.425657Z",
+  "updatedAt": "2025-10-03T13:28:40.425657Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/keremurat/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

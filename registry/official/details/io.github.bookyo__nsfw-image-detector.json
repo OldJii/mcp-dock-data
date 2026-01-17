@@ -1,0 +1,13 @@
+{
+  "id": "io.github.bookyo/nsfw-image-detector",
+  "displayName": "NSFW Image Detector",
+  "description": "NSFWJS-based image safety detector (GIF/APNG/WebP/JPEG/PNG).",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-12T15:26:27.149886Z",
+  "updatedAt": "2026-01-12T15:26:27.149886Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

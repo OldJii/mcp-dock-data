@@ -1,0 +1,27 @@
+{
+  "id": "io.github.goldbergyoni/test-coverage-mcp",
+  "displayName": "io.github.goldbergyoni/test-coverage-mcp",
+  "description": "Analyze test coverage from LCOV files - makes AI agents coverage-aware without wasting tokens",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T08:31:27.109704Z",
+  "updatedAt": "2025-11-07T08:31:27.109704Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/goldbergyoni/test-coverage-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "test-coverage-mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

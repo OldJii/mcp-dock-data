@@ -1,0 +1,68 @@
+{
+  "id": "io.github.pzep1/mcp-meet",
+  "displayName": "io.github.pzep1/mcp-meet",
+  "description": "One-click Google Meet scheduling and Apple Calendar mirroring with smart availability detection",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-10-09T15:27:11.703854Z",
+  "updatedAt": "2025-10-09T15:27:11.703854Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/znz-systems/mcp-meet",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-meet",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth Client ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth Client Secret",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_REDIRECT_URI",
+          "description": "Google OAuth Redirect URI",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "http://localhost:5173/oauth2/callback"
+        },
+        {
+          "name": "CALENDAR_IDS",
+          "description": "Comma-separated list of calendar IDs to check for availability",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "primary"
+        },
+        {
+          "name": "APPLE_CALENDAR_NAME",
+          "description": "Name of the Apple Calendar to create events in",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "Meetings"
+        },
+        {
+          "name": "TZ",
+          "description": "Timezone for calendar operations",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "Europe/London"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

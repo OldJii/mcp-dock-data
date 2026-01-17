@@ -1,0 +1,16 @@
+{
+  "id": "io.github.elestirelbilinc-sketch/vap-e",
+  "displayName": "io.github.elestirelbilinc-sketch/vap-e",
+  "description": "AI media generation for agents. Images via FLUX 1.1 Pro, videos via Veo 3.1.",
+  "version": "1.6.0",
+  "status": "active",
+  "publishedAt": "2026-01-08T14:19:30.011999Z",
+  "updatedAt": "2026-01-08T14:19:30.011999Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/elestirelbilinc-sketch/VAP",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "io.github.altmetric/altmetric-mcp",
+  "displayName": "io.github.altmetric/altmetric-mcp",
+  "description": "MCP server for Altmetric APIs - track research attention across news, policy, social media, and more",
+  "version": "0.2.3",
+  "status": "active",
+  "publishedAt": "2026-01-13T23:17:03.323999Z",
+  "updatedAt": "2026-01-13T23:17:03.323999Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/altmetric/altmetric-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "altmetric-mcp",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ALTMETRIC_DETAILS_API_KEY",
+          "description": "API key for Altmetric Details Page API. At least one credential set required: either this key OR both Explorer API credentials",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ALTMETRIC_EXPLORER_API_KEY",
+          "description": "API key for Altmetric Explorer API (requires ALTMETRIC_EXPLORER_API_SECRET). At least one credential set required",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ALTMETRIC_EXPLORER_API_SECRET",
+          "description": "API secret for Altmetric Explorer API HMAC authentication (requires ALTMETRIC_EXPLORER_API_KEY)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

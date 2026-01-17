@@ -1,0 +1,27 @@
+{
+  "id": "io.github.kmalakoff/mcp-pdf",
+  "displayName": "io.github.kmalakoff/mcp-pdf",
+  "description": "MCP server for PDF generation using PDFKit",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-04T04:00:20.84347Z",
+  "updatedAt": "2025-10-04T04:00:20.84347Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mcp-z/mcp-pdf",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mcp-z/mcp-pdf",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

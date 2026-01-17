@@ -1,0 +1,16 @@
+{
+  "id": "app.linear/linear",
+  "displayName": "app.linear/linear",
+  "description": "MCP server for Linear project management and issue tracking",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-18T15:51:15.598862Z",
+  "updatedAt": "2025-09-18T15:51:15.598862Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "io.github.SigNoz/signoz-mcp-server",
+  "displayName": "SigNoz MCP Server",
+  "description": "SigNoz MCP server: access metrics, traces, logs, alerts, and dashboards via AI assistants",
+  "version": "0.0.4",
+  "status": "active",
+  "publishedAt": "2025-11-10T11:44:49.046114Z",
+  "updatedAt": "2025-11-10T11:44:49.046114Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "signoz/signoz-mcp-server:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

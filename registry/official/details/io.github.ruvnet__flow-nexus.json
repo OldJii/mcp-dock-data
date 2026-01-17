@@ -1,0 +1,52 @@
+{
+  "id": "io.github.ruvnet/flow-nexus",
+  "displayName": "io.github.ruvnet/flow-nexus",
+  "description": "Cloud-powered AI platform with multi-agent swarms, sandboxes, and workflow automation",
+  "version": "0.1.121",
+  "status": "active",
+  "publishedAt": "2025-09-10T16:22:10.934866Z",
+  "updatedAt": "2025-09-10T16:22:10.934866Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ruvnet/flow-nexus",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "flow-nexus",
+      "version": "0.1.121",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FLOW_NEXUS_API_KEY",
+          "description": "API key for Flow Nexus authentication",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "FLOW_NEXUS_BASE_URL",
+          "description": "Base URL for Flow Nexus API",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "E2B_API_KEY",
+          "description": "E2B API key for sandbox creation",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude integration",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

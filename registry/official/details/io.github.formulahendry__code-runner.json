@@ -1,0 +1,36 @@
+{
+  "id": "io.github.formulahendry/code-runner",
+  "displayName": "io.github.formulahendry/code-runner",
+  "description": "Code Runner MCP Server which can run code in various programming languages.",
+  "version": "0.1.9",
+  "status": "active",
+  "publishedAt": "2025-09-25T12:04:21.598191Z",
+  "updatedAt": "2025-09-25T12:04:21.598191Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/formulahendry/mcp-server-code-runner",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-code-runner",
+      "version": "0.1.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/formulahendry/mcp-server-code-runner:0.1.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

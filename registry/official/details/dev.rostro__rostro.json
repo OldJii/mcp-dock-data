@@ -1,0 +1,16 @@
+{
+  "id": "dev.rostro/rostro",
+  "displayName": "dev.rostro/rostro",
+  "description": "Turn any LLM multimodal; generate images, voices, videos, 3D models, music, and more.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T16:44:28.573989Z",
+  "updatedAt": "2025-09-10T16:44:28.573989Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/francis-ros/rostro-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

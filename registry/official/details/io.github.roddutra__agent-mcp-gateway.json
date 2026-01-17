@@ -1,0 +1,52 @@
+{
+  "id": "io.github.roddutra/agent-mcp-gateway",
+  "displayName": "Agent MCP Gateway",
+  "description": "On-demand tool discovery for all your MCPs and per-subagent MCP controls to preserve context window.",
+  "version": "0.2.5",
+  "status": "active",
+  "publishedAt": "2025-12-02T00:37:35.611685Z",
+  "updatedAt": "2025-12-02T00:37:35.611685Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/roddutra/agent-mcp-gateway",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "agent-mcp-gateway",
+      "version": "0.2.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GATEWAY_MCP_CONFIG",
+          "description": "Path to MCP servers configuration file (default: .mcp.json)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GATEWAY_RULES",
+          "description": "Path to gateway access control rules file (default: .mcp-gateway-rules.json)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GATEWAY_DEFAULT_AGENT",
+          "description": "Default agent ID when not provided in tool calls",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GATEWAY_DEBUG",
+          "description": "Enable debug mode and expose diagnostic tools (default: false)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

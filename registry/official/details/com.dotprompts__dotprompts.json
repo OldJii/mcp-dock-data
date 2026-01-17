@@ -1,0 +1,13 @@
+{
+  "id": "com.dotprompts/dotprompts",
+  "displayName": ".prompts",
+  "description": ".prompts, the home to all your AI prompts, everywhere you need them.",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-22T10:04:21.560532Z",
+  "updatedAt": "2025-11-22T10:04:21.560532Z",
+  "iconUrl": "https://dotprompts.com/logo.svg",
+  "websiteUrl": "https://dotprompts.com",
+  "repository": null,
+  "packages": []
+}

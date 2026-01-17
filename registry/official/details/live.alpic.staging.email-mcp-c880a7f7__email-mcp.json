@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging.email-mcp-c880a7f7/email-mcp",
+  "displayName": "Basic mail server",
+  "description": "Still work in progress",
+  "version": "0.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-02T10:32:47.786946Z",
+  "updatedAt": "2025-12-02T10:32:47.786946Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "io.github.bytedance/mcp-server-commands",
+  "displayName": "io.github.bytedance/mcp-server-commands",
+  "description": "An MCP server to run arbitrary commands",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-09T06:16:30.413724Z",
+  "updatedAt": "2025-09-09T06:16:30.413724Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bytedance/UI-TARS-desktop",
+    "source": "github",
+    "subfolder": "packages/agent-infra/mcp-servers/commands"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-commands",
+      "version": "latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "cwd",
+          "description": "current working directory",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-commands",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "cwd",
+          "description": "current working directory",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-commands",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    }
+  ]
+}

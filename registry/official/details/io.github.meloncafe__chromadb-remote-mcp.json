@@ -1,0 +1,40 @@
+{
+  "id": "io.github.meloncafe/chromadb-remote-mcp",
+  "displayName": "ChromaDB Remote MCP Server",
+  "description": "Remote ChromaDB vector database MCP server with streamable HTTP transport",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-10-31T06:12:13.693488Z",
+  "updatedAt": "2025-10-31T06:12:13.693488Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/meloncafe/chromadb-remote-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "devsaurus/chromadb-remote-mcp:latest",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "CHROMADB_MCP_URL",
+          "description": "URL of your deployed ChromaDB Remote MCP server",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_AUTH_TOKEN",
+          "description": "Authentication token for the MCP server (if enabled)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

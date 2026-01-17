@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/aicastle-school-openai-api-agent-project11",
+  "displayName": "ai.smithery/aicastle-school-openai-api-agent-project11",
+  "description": "Fetch the latest available stock quotes by ticker symbol across international markets. Check price…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-06T11:12:19.115931Z",
+  "updatedAt": "2025-10-06T11:12:19.115931Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aicastle-school/openai-api-agent-project",
+    "source": "github"
+  },
+  "packages": []
+}

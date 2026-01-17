@@ -1,0 +1,13 @@
+{
+  "id": "com.earningsfeed/mcp",
+  "displayName": "Earnings Feed",
+  "description": "SEC filings and insider trades in real-time. 10-K, 10-Q, 8-K, Form 4, and company lookup.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-04T16:52:07.965678Z",
+  "updatedAt": "2026-01-04T16:52:07.965678Z",
+  "iconUrl": "https://earningsfeed.com/icon-48.png",
+  "websiteUrl": "https://earningsfeed.com/mcp",
+  "repository": null,
+  "packages": []
+}

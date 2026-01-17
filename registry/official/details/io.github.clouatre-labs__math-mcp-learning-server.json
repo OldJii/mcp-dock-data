@@ -1,0 +1,27 @@
+{
+  "id": "io.github.clouatre-labs/math-mcp-learning-server",
+  "displayName": "Math MCP Learning",
+  "description": "Educational MCP server with 12 math/stats tools, visualizations, and persistent workspace",
+  "version": "0.9.1",
+  "status": "active",
+  "publishedAt": "2025-12-10T03:53:46.191883Z",
+  "updatedAt": "2025-12-10T03:53:46.191883Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/clouatre-labs/math-mcp-learning-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "math-mcp-learning-server",
+      "version": "0.9.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

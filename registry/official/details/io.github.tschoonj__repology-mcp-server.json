@@ -1,0 +1,36 @@
+{
+  "id": "io.github.tschoonj/repology-mcp-server",
+  "displayName": "io.github.tschoonj/repology-mcp-server",
+  "description": "MCP server that provides access to Repology package repository data",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-09-29T07:26:44.823714Z",
+  "updatedAt": "2025-09-29T07:26:44.823714Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/tschoonj/repology-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "repology-mcp-server",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/tschoonj/repology-mcp-server:0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

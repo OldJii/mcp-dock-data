@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ChengJiale150/jupyter-mcp-server",
+  "displayName": "io.github.ChengJiale150/jupyter-mcp-server",
+  "description": "A powerful MCP server for AI-driven Jupyter Notebook management and execution",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2025-09-17T06:19:21.754937Z",
+  "updatedAt": "2025-09-17T06:19:21.754937Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ChengJiale150/jupyter-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "better-jupyter-mcp-server",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

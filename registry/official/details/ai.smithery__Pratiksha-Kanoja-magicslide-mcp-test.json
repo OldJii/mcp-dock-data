@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/Pratiksha-Kanoja-magicslide-mcp-test",
+  "displayName": "ai.smithery/Pratiksha-Kanoja-magicslide-mcp-test",
+  "description": "Create polished slide decks from text or YouTube links in seconds. Fetch video transcripts to tran…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T10:10:48.100762Z",
+  "updatedAt": "2025-10-07T10:10:48.100762Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Pratiksha-Kanoja/magicslide-mcp-test",
+    "source": "github"
+  },
+  "packages": []
+}

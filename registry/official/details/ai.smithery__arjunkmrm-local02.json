@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-local02",
+  "displayName": "ai.smithery/arjunkmrm-local02",
+  "description": "Get the current time in your chosen timezone and view common timezone information. Simplify schedu…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T09:02:26.911871Z",
+  "updatedAt": "2025-10-03T09:02:26.911871Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/time",
+    "source": "github"
+  },
+  "packages": []
+}

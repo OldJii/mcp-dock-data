@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/zhaoganghao-hellomcp",
+  "displayName": "ai.smithery/zhaoganghao-hellomcp",
+  "description": "Greet people by name with friendly, concise messages. Explore the origin of 'Hello, World' for fun…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-30T10:35:36.775049Z",
+  "updatedAt": "2025-09-30T10:35:36.775049Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/zhaoganghao/hellomcp",
+    "source": "github"
+  },
+  "packages": []
+}

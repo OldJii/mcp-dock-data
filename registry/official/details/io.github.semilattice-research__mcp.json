@@ -1,0 +1,13 @@
+{
+  "id": "io.github.semilattice-research/mcp",
+  "displayName": "Semilattice - audience prediction",
+  "description": "Semilattice lets agents make predictions about audiences for content testing and decision making.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-19T18:55:32.17995Z",
+  "updatedAt": "2025-11-19T18:55:32.17995Z",
+  "iconUrl": null,
+  "websiteUrl": "https://semilattice.ai",
+  "repository": null,
+  "packages": []
+}

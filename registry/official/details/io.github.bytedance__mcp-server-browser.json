@@ -1,0 +1,232 @@
+{
+  "id": "io.github.bytedance/mcp-server-browser",
+  "displayName": "io.github.bytedance/mcp-server-browser",
+  "description": "MCP server for browser use access",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-09T06:16:24.728253Z",
+  "updatedAt": "2025-09-09T06:16:24.728253Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bytedance/UI-TARS-desktop",
+    "source": "github",
+    "subfolder": "packages/agent-infra/mcp-servers/browser"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-browser",
+      "version": "latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DISPLAY",
+          "description": "DISPLAY environment variable for browser rendering",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "browser",
+          "description": "browser or chrome channel to use, possible values: chrome, edge, firefox.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "cdp-endpoint",
+          "description": "Chrome DevTools Protocol endpoint URL",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "ws-endpoint",
+          "description": "WebSocket endpoint to connect to, for example",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "executable-path",
+          "description": "Path to the browser executable",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "output-dir",
+          "description": "Path to the output directory",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-bypass",
+          "description": "Comma-separated list of patterns to bypass the proxy",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-server",
+          "description": "Proxy server address",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "vision",
+          "description": "Run server that uses screenshots (Aria snapshots are used by default)",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-browser",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [
+        {
+          "name": "DISPLAY",
+          "description": "DISPLAY environment variable for browser rendering",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        },
+        {
+          "name": "browser",
+          "description": "browser or chrome channel to use, possible values: chrome, edge, firefox.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "cdp-endpoint",
+          "description": "Chrome DevTools Protocol endpoint URL",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "ws-endpoint",
+          "description": "WebSocket endpoint to connect to, for example",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "executable-path",
+          "description": "Path to the browser executable",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "output-dir",
+          "description": "Path to the output directory",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-bypass",
+          "description": "Comma-separated list of patterns to bypass the proxy",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-server",
+          "description": "Proxy server address",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "vision",
+          "description": "Run server that uses screenshots (Aria snapshots are used by default)",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-browser",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "DISPLAY",
+          "description": "DISPLAY environment variable for browser rendering",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        },
+        {
+          "name": "browser",
+          "description": "browser or chrome channel to use, possible values: chrome, edge, firefox.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "cdp-endpoint",
+          "description": "Chrome DevTools Protocol endpoint URL",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "ws-endpoint",
+          "description": "WebSocket endpoint to connect to, for example",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "executable-path",
+          "description": "Path to the browser executable",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "output-dir",
+          "description": "Path to the output directory",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-bypass",
+          "description": "Comma-separated list of patterns to bypass the proxy",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "proxy-server",
+          "description": "Proxy server address",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "vision",
+          "description": "Run server that uses screenshots (Aria snapshots are used by default)",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

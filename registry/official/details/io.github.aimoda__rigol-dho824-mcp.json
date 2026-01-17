@@ -1,0 +1,93 @@
+{
+  "id": "io.github.aimoda/rigol-dho824-mcp",
+  "displayName": "Rigol DHO824 Oscilloscope",
+  "description": "Control and query Rigol DHO824 oscilloscope for waveform capture and measurements",
+  "version": "0.1.143-main.2b177ae",
+  "status": "active",
+  "publishedAt": "2025-11-02T21:24:26.031162Z",
+  "updatedAt": "2025-11-02T21:24:26.031162Z",
+  "iconUrl": "https://rigol-dho824-mcp.email.ai.moda/bimi/logo.svg",
+  "websiteUrl": "https://aimoda.github.io/rigol-dho824-mcp/",
+  "repository": {
+    "url": "https://github.com/aimoda/rigol-dho824-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/aimoda/rigol-dho824-mcp:0.1.143-main.2b177ae",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RIGOL_RESOURCE",
+          "description": "VISA resource string for connecting to the oscilloscope (e.g., 'TCPIP0::192.168.1.100::inst0::INSTR').",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "VISA_TIMEOUT",
+          "description": "Communication timeout in milliseconds",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "30000"
+        },
+        {
+          "name": "RIGOL_BEEPER_ENABLED",
+          "description": "Enable or disable oscilloscope beeper sounds",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        },
+        {
+          "name": "RIGOL_TEMP_DIR",
+          "description": "Host-side path for returned file paths. The container writes to /tmp/rigol internally and translates paths to this value in responses. Must match the host path in your -v mount. Required for Docker usage.",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "pypi",
+      "identifier": "rigol-dho824-mcp",
+      "version": "0.1.143",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RIGOL_RESOURCE",
+          "description": "VISA resource string for connecting to the oscilloscope (e.g., 'TCPIP0::192.168.1.100::inst0::INSTR').",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "VISA_TIMEOUT",
+          "description": "Communication timeout in milliseconds",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "30000"
+        },
+        {
+          "name": "RIGOL_BEEPER_ENABLED",
+          "description": "Enable or disable oscilloscope beeper sounds",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.mobile-next/mobile-mcp",
+  "displayName": "io.github.mobile-next/mobile-mcp",
+  "description": "MCP server for iOS and Android Mobile Development, Automation and Testing",
+  "version": "0.0.40",
+  "status": "active",
+  "publishedAt": "2026-01-15T19:18:51.239097Z",
+  "updatedAt": "2026-01-15T19:18:51.239097Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mobile-next/mobile-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mobilenext/mobile-mcp",
+      "version": "0.0.40",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

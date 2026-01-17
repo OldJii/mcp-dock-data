@@ -1,0 +1,26 @@
+{
+  "id": "io.github.Stryk91/lsp-mcp-rs",
+  "displayName": "LSP-MCP Bridge",
+  "description": "Universal MCP bridge to LSP servers. One binary, 6 languages, config-driven.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-03T21:57:00.625698Z",
+  "updatedAt": "2026-01-03T21:57:00.625698Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Stryk91/lsp-mcp-rs",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Stryk91/lsp-mcp-rs/releases/download/v0.1.0/lsp-mcp-rs.exe",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.priyankark/lighthouse-mcp",
+  "displayName": "io.github.priyankark/lighthouse-mcp",
+  "description": "MCP server for Google Lighthouse performance metrics",
+  "version": "0.1.9",
+  "status": "active",
+  "publishedAt": "2025-09-09T10:02:57.08666Z",
+  "updatedAt": "2025-09-09T10:02:57.08666Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/priyankark/lighthouse-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "lighthouse-mcp",
+      "version": "0.1.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

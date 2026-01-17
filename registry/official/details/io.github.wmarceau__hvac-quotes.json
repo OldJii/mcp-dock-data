@@ -1,0 +1,64 @@
+{
+  "id": "io.github.wmarceau/hvac-quotes",
+  "displayName": "io.github.wmarceau/hvac-quotes",
+  "description": "HVAC equipment RFQ management - submit quotes to distributors",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-14T13:49:45.343817Z",
+  "updatedAt": "2026-01-14T13:49:45.343817Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/wmarceau/hvac-quotes-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "hvac-quotes-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HVAC_MOCK_EMAIL",
+          "description": "Set to 'false' to send real emails via SMTP (default: 'true' for testing)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SMTP_HOST",
+          "description": "SMTP server hostname (for real email mode)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SMTP_PORT",
+          "description": "SMTP server port (default: 587)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SMTP_USER",
+          "description": "SMTP username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SMTP_PASS",
+          "description": "SMTP password",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SMTP_FROM",
+          "description": "From email address for RFQs",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

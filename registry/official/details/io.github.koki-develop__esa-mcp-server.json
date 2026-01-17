@@ -1,0 +1,40 @@
+{
+  "id": "io.github.koki-develop/esa-mcp-server",
+  "displayName": "io.github.koki-develop/esa-mcp-server",
+  "description": "A Model Context Protocol (MCP) server for esa.io",
+  "version": "0.3.2",
+  "status": "active",
+  "publishedAt": "2025-09-11T00:37:16.035463Z",
+  "updatedAt": "2025-09-11T00:37:16.035463Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/koki-develop/esa-mcp-server.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@koki-develop/esa-mcp-server",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ESA_TEAM",
+          "description": "Your esa team",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ESA_ACCESS_TOKEN",
+          "description": "Your esa personal access token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

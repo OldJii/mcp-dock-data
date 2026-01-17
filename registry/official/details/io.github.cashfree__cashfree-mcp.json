@@ -1,0 +1,82 @@
+{
+  "id": "io.github.cashfree/cashfree-mcp",
+  "displayName": "io.github.cashfree/cashfree-mcp",
+  "description": "Cashfree MCP server for cashfree docs and APIs",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-22T04:58:24.004184Z",
+  "updatedAt": "2025-10-22T04:58:24.004184Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cashfree/cashfree-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@cashfreepayments/cashfree-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PAYMENTS_APP_ID",
+          "description": "Payment Gateway App Id",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PAYMENTS_APP_SECRET",
+          "description": "Payment Gateway App Secret",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PAYOUTS_APP_ID",
+          "description": "Payouts App Id",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PAYOUTS_APP_SECRET",
+          "description": "Payouts App Secret",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "TWO_FA_PUBLIC_KEY_PEM_PATH",
+          "description": "Path to the PEM file containing the public key for verifying 2FA signatures",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SECUREID_APP_ID",
+          "description": "SecureId App Id",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SECUREID_APP_SECRET",
+          "description": "SecureId App Secret",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "TOOLS",
+          "description": "Tools (Comma-separated list of modules to enable. Available options: pg, payouts, secureid)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ENV",
+          "description": "Environment (production/sandbox default: sandbox)",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

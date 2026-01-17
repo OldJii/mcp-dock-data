@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/blacklotusdev8-test_m",
+  "displayName": "ai.smithery/blacklotusdev8-test_m",
+  "description": "Greet anyone by name with a friendly hello. Scrape webpages to extract content for quick reference…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-19T19:12:16.602435Z",
+  "updatedAt": "2025-09-19T19:12:16.602435Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/blacklotusdev8/test_m",
+    "source": "github"
+  },
+  "packages": []
+}

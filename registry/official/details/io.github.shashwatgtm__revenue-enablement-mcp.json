@@ -1,0 +1,27 @@
+{
+  "id": "io.github.shashwatgtm/revenue-enablement-mcp",
+  "displayName": "io.github.shashwatgtm/revenue-enablement-mcp",
+  "description": "Deal Strategy & Sales Enablement - 12 revenue acceleration tools",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T14:30:41.666999Z",
+  "updatedAt": "2026-01-17T14:30:41.666999Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shashwatgtm/revenue-enablement-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@shashwatgtmalpha/revenue-enablement-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/rancher-mcp-server",
+  "displayName": "Rancher",
+  "description": "MCP server for Rancher API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:44.841903Z",
+  "updatedAt": "2025-12-31T01:21:44.841903Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/rancher-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "rancher-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RANCHER_API_KEY",
+          "description": "API Key for RANCHER",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "RANCHER_API_URL",
+          "description": "API URL for RANCHER",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

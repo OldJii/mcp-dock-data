@@ -1,0 +1,27 @@
+{
+  "id": "io.github.lapfelix/xcodemcp",
+  "displayName": "io.github.lapfelix/xcodemcp",
+  "description": "Control Xcode directly via JXA for build, test, debug operations with XCLogParser integration",
+  "version": "2.1.4",
+  "status": "active",
+  "publishedAt": "2025-09-18T03:19:27.884628Z",
+  "updatedAt": "2025-09-18T03:19:27.884628Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/lapfelix/XcodeMCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "xcodemcp",
+      "version": "2.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

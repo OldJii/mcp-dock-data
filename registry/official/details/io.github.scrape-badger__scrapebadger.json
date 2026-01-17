@@ -1,0 +1,34 @@
+{
+  "id": "io.github.scrape-badger/scrapebadger",
+  "displayName": "ScrapeBadger",
+  "description": "Twitter/X scraping API for AI agents. Get profiles, tweets, trends, and more.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-29T18:35:04.265851Z",
+  "updatedAt": "2025-12-29T18:35:04.265851Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/scrape-badger/scrapebadger-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scrapebadger-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SCRAPEBADGER_API_KEY",
+          "description": "Your ScrapeBadger API key from scrapebadger.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

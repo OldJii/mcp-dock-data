@@ -1,0 +1,16 @@
+{
+  "id": "com.epidemicsound/mcp-server",
+  "displayName": "com.epidemicsound/mcp-server",
+  "description": "Cloud-hosted MCP server for Epidemic Sound",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T13:15:06.928079Z",
+  "updatedAt": "2025-10-07T13:15:06.928079Z",
+  "iconUrl": null,
+  "websiteUrl": "https://www.epidemicsound.com",
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

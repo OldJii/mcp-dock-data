@@ -1,0 +1,41 @@
+{
+  "id": "io.github.Crypto-Goatz/rocket-plus-mcp",
+  "displayName": "io.github.Crypto-Goatz/rocket-plus-mcp",
+  "description": "56+ AI tools for CRM, content, workflows, SkillForge & marketing automation.",
+  "version": "2.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-14T01:37:02.802685Z",
+  "updatedAt": "2026-01-14T01:37:02.802685Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Crypto-Goatz/rocket-plus-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "rocket-plus-mcp",
+      "version": "2.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ROCKET_API_KEY",
+          "description": "Your Rocket+ API key. Get one at https://rocketadd.com/settings under API Keys.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "ROCKET_API_URL",
+          "description": "Rocket+ API base URL (default: https://rocketadd.com)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

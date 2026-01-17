@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/miguelgarzons-mcp-cun",
+  "displayName": "ai.smithery/miguelgarzons-mcp-cun",
+  "description": "Greet people by name with friendly, personalized messages. Add a warm touch to onboarding, demos,…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-09-30T03:30:01.02979Z",
+  "updatedAt": "2025-09-30T03:30:01.02979Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/miguelgarzons/mcp-cun",
+    "source": "github"
+  },
+  "packages": []
+}

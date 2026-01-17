@@ -1,0 +1,34 @@
+{
+  "id": "io.github.stefanoamorelli/sec-edgar-mcp",
+  "displayName": "io.github.stefanoamorelli/sec-edgar-mcp",
+  "description": "SEC EDGAR MCP server that provides access to the US public filings through the US SEC EDGAR API",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2025-09-09T07:06:26.344648Z",
+  "updatedAt": "2025-09-09T07:06:26.344648Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/stefanoamorelli/sec-edgar-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sec-edgar-mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SEC_EDGAR_USER_AGENT",
+          "description": "The user agent to access the SEC EDGAR API",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

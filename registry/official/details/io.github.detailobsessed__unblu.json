@@ -1,0 +1,52 @@
+{
+  "id": "io.github.detailobsessed/unblu",
+  "displayName": "io.github.detailobsessed/unblu",
+  "description": "Token-efficient MCP server for 300+ Unblu API endpoints",
+  "version": "0.5.1",
+  "status": "active",
+  "publishedAt": "2025-12-31T15:53:46.618243Z",
+  "updatedAt": "2025-12-31T15:53:46.618243Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/detailobsessed/unblu-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "unblu-mcp",
+      "version": "0.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "UNBLU_BASE_URL",
+          "description": "Unblu API base URL (e.g., https://your-instance.unblu.cloud/app/rest/v4)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "UNBLU_API_KEY",
+          "description": "Unblu API key for authentication",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "UNBLU_USERNAME",
+          "description": "Unblu username for basic auth (alternative to API key)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "UNBLU_PASSWORD",
+          "description": "Unblu password for basic auth (alternative to API key)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

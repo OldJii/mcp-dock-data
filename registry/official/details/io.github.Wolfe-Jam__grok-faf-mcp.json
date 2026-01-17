@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Wolfe-Jam/grok-faf-mcp",
+  "displayName": ".faf for Grok - First MCP Server Built for xAI",
+  "description": "First MCP server for Grok/xAI. URL-based access. 17 tools for .faf project context.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-19T03:23:49.258113Z",
+  "updatedAt": "2025-11-19T03:23:49.258113Z",
+  "iconUrl": "https://raw.githubusercontent.com/Wolfe-Jam/grok-faf-mcp/main/assets/icons/faf-icon-48.png",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Wolfe-Jam/grok-faf-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "grok-faf-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "io.github.idoco2003/vincikit",
+  "displayName": "io.github.idoco2003/vincikit",
+  "description": "AI stack configurator with conversational interviews and intelligent recommendations",
+  "version": "2.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-08T15:30:10.462517Z",
+  "updatedAt": "2026-01-08T15:30:10.462517Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/idoco2003/VinciKit",
+    "source": "github",
+    "subfolder": "mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@vincikit/mcp-server",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude recommendations",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Google API key for Gemini recommendations",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

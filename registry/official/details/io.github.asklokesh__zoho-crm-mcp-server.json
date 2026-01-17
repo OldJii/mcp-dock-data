@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/zoho-crm-mcp-server",
+  "displayName": "Zoho Crm",
+  "description": "MCP server for Zoho CRM API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:45.889446Z",
+  "updatedAt": "2025-12-31T01:21:45.889446Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/zoho-crm-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "zoho-crm-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ZOHO_CRM_API_KEY",
+          "description": "API Key for ZOHO_CRM",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "ZOHO_CRM_API_URL",
+          "description": "API URL for ZOHO_CRM",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

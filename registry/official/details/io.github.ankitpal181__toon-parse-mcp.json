@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ankitpal181/toon-parse-mcp",
+  "displayName": "io.github.ankitpal181/toon-parse-mcp",
+  "description": "MCP server that reduces LLM context by removing code comments and converting data formats to TOON",
+  "version": "1.0.3-beta",
+  "status": "active",
+  "publishedAt": "2026-01-17T13:41:06.399422Z",
+  "updatedAt": "2026-01-17T13:41:06.399422Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ankitpal181/toon-parse-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "toon-parse-mcp",
+      "version": "1.0.4-beta",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

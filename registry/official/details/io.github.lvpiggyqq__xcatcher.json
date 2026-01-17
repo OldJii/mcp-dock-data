@@ -1,0 +1,16 @@
+{
+  "id": "io.github.lvpiggyqq/xcatcher",
+  "displayName": "io.github.lvpiggyqq/xcatcher",
+  "description": "High-throughput X/Twitter crawl via tasks; download XLSX; x402 USDC Base/Solana top-ups.",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-24T01:11:15.46271Z",
+  "updatedAt": "2025-12-24T01:11:15.46271Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/lvpiggyqq/xcatcher-mcp-manifest",
+    "source": "github"
+  },
+  "packages": []
+}

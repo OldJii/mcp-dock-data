@@ -1,0 +1,27 @@
+{
+  "id": "io.github.atarkowska/fastmcp-sqltools",
+  "displayName": "io.github.atarkowska/fastmcp-sqltools",
+  "description": "A MCP server provides SQL database access with support for PostgreSQL, MySQL, and SQLite.",
+  "version": "0.3.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T00:40:54.803039Z",
+  "updatedAt": "2026-01-05T00:40:54.803039Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/atarkowska/fastmcp-sqltools",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "fastmcp-sqltools",
+      "version": "0.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

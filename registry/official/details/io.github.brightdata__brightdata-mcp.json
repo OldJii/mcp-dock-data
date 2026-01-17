@@ -1,0 +1,64 @@
+{
+  "id": "io.github.brightdata/brightdata-mcp",
+  "displayName": "io.github.brightdata/brightdata-mcp",
+  "description": "Bright Data's Web MCP server enabling AI agents to search, extract & navigate the web",
+  "version": "2.7.0",
+  "status": "active",
+  "publishedAt": "2025-12-15T12:00:34.218153Z",
+  "updatedAt": "2025-12-15T12:00:34.218153Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/brightdata/brightdata-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@brightdata/mcp",
+      "version": "2.7.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "API_TOKEN",
+          "description": "Your API key for Bright Data",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "WEB_UNLOCKER_ZONE",
+          "description": "Your unlocker zone name",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSER_ZONE",
+          "description": "Your browser zone name",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PRO_MODE",
+          "description": "To enable PRO_MODE - set to true",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GROUPS",
+          "description": "Comma-separated tool group IDs (e.g., 'ecommerce,browser')",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TOOLS",
+          "description": "Comma-separated tool names to enable",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

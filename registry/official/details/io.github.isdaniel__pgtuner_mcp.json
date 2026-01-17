@@ -1,0 +1,27 @@
+{
+  "id": "io.github.isdaniel/pgtuner_mcp",
+  "displayName": "PostgreSQL performance Tuner MCP Server",
+  "description": "provides AI-powered PostgreSQL performance tuning capabilities.",
+  "version": "0.5.2",
+  "status": "active",
+  "publishedAt": "2025-12-13T13:44:31.670747Z",
+  "updatedAt": "2025-12-13T13:44:31.670747Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/isdaniel/pgtuner_mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "pgtuner-mcp",
+      "version": "0.5.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

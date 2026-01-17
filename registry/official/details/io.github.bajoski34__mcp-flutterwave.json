@@ -1,0 +1,34 @@
+{
+  "id": "io.github.bajoski34/mcp-flutterwave",
+  "displayName": "io.github.bajoski34/mcp-flutterwave",
+  "description": "MCP Server to interact with Flutterwave APIs.",
+  "version": "1.2.0",
+  "status": "active",
+  "publishedAt": "2025-10-06T23:10:09.492919Z",
+  "updatedAt": "2025-10-06T23:10:09.492919Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bajoski34/mcp-flutterwave",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-flutterwave",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FLW_SECRET_KEY",
+          "description": "Your SECRET API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

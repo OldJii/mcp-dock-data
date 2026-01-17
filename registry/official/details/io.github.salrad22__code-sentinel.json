@@ -1,0 +1,27 @@
+{
+  "id": "io.github.salrad22/code-sentinel",
+  "displayName": "io.github.salrad22/code-sentinel",
+  "description": "Code quality analysis MCP server - detects security issues, deceptive patterns, and placeholders",
+  "version": "0.2.6",
+  "status": "active",
+  "publishedAt": "2026-01-03T22:28:30.290161Z",
+  "updatedAt": "2026-01-03T22:28:30.290161Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/salrad22/code-sentinel",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "code-sentinel-mcp",
+      "version": "0.2.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

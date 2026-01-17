@@ -1,0 +1,37 @@
+{
+  "id": "io.github.blueskylineassets/agent-observability",
+  "displayName": "Agent Observability",
+  "description": "Agent observability: structured logging, cost tracking, and compliance audit trails",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T00:18:53.909705Z",
+  "updatedAt": "2026-01-05T00:18:53.909705Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "agent-observability-mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AGENT_OBS_API_KEY",
+          "description": "API key for the Agent Observability service (get one at POST /v1/register)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "AGENT_OBS_API_URL",
+          "description": "URL of the Agent Observability API (defaults to https://api-production-0c55.up.railway.app)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

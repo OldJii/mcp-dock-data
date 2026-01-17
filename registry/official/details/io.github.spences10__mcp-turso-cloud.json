@@ -1,0 +1,58 @@
+{
+  "id": "io.github.spences10/mcp-turso-cloud",
+  "displayName": "io.github.spences10/mcp-turso-cloud",
+  "description": "MCP server for integrating Turso with LLMs",
+  "version": "0.0.9",
+  "status": "active",
+  "publishedAt": "2025-09-26T21:22:07.39904Z",
+  "updatedAt": "2025-09-26T21:22:07.39904Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/spences10/mcp-turso-cloud",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-turso-cloud",
+      "version": "0.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TURSO_API_TOKEN",
+          "description": "Turso Platform API token for authentication",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TURSO_ORGANIZATION",
+          "description": "Turso organization name",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "TURSO_DEFAULT_DATABASE",
+          "description": "Default database name (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TOKEN_EXPIRATION",
+          "description": "Token expiration time (default: 7d)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TOKEN_PERMISSION",
+          "description": "Default token permission level (default: full-access)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

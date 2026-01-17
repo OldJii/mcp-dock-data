@@ -1,0 +1,41 @@
+{
+  "id": "io.github.SocialAPIsHub/social-media-api",
+  "displayName": "io.github.SocialAPIsHub/social-media-api",
+  "description": "Unified social media API for AI agents. Access Facebook, Instagram, TikTok, and more.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-18T19:59:07.1405Z",
+  "updatedAt": "2025-12-18T19:59:07.1405Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SocialAPIsHub/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@socialapis/mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SOCIALAPIS_API_KEY",
+          "description": "Your SocialAPIs API key. Get yours at https://socialapis.io/dashboard",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "MCP_PROXY_URL",
+          "description": "MCP proxy server URL (optional)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "https://mcp.socialapis.io"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "io.github.marcelo-ochoa/oracle",
+  "displayName": "io.github.marcelo-ochoa/oracle",
+  "description": "MCP server for interacting with Oracle databases",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-12T22:13:52.385671Z",
+  "updatedAt": "2025-12-12T22:13:52.385671Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/marcelo-ochoa/servers",
+    "source": "github",
+    "subfolder": "src/oracle"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@marcelo-ochoa/server-oracle",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ORACLE_USER",
+          "description": "Oracle user name",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ORACLE_PASSWORD",
+          "description": "Oracle password",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

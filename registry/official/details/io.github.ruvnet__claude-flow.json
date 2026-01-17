@@ -1,0 +1,70 @@
+{
+  "id": "io.github.ruvnet/claude-flow",
+  "displayName": "io.github.ruvnet/claude-flow",
+  "description": "AI orchestration with hive-mind swarms, neural networks, and 87 MCP tools for enterprise dev.",
+  "version": "2.0.0-alpha.107",
+  "status": "active",
+  "publishedAt": "2025-09-10T16:59:34.218266Z",
+  "updatedAt": "2025-09-10T16:59:34.218266Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ruvnet/claude-flow",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "claude-flow",
+      "version": "2.0.0-alpha.107",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude AI models",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "CLAUDE_FLOW_MODE",
+          "description": "Operation mode: development, production, or test",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CLAUDE_FLOW_MEMORY_PATH",
+          "description": "Path for persistent memory storage",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CLAUDE_FLOW_MAX_AGENTS",
+          "description": "Maximum number of concurrent agents",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CLAUDE_FLOW_PORT",
+          "description": "MCP server port",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "GitHub personal access token for repository operations",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "FLOW_NEXUS_API_KEY",
+          "description": "Flow Nexus cloud platform API key",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

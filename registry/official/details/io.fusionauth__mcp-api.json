@@ -1,0 +1,46 @@
+{
+  "id": "io.fusionauth/mcp-api",
+  "displayName": "io.fusionauth/mcp-api",
+  "description": "Preview release of FusionAuth API MCP server",
+  "version": "0.1.14",
+  "status": "active",
+  "publishedAt": "2025-11-21T21:06:11.121292Z",
+  "updatedAt": "2025-11-21T21:06:11.121292Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/FusionAuth/fusionauth-mcp-api",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fusionauth/mcp-api",
+      "version": "0.1.14",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "API_KEY_APIKEYAUTH",
+          "description": "Your API key for FusionAuth instance",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "API_BASE_URL",
+          "description": "The URL for your FusionAuth instance",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "USE_TOOLS",
+          "description": "Prefixes of APIs to create MCP tools for, if not set defaults to all available tools",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

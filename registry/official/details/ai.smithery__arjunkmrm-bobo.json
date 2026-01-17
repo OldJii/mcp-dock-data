@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-bobo",
+  "displayName": "ai.smithery/arjunkmrm-bobo",
+  "description": "Send friendly, personalized greetings on command. Explore the origin of 'Hello, World' for quick c…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-19T03:28:29.606731Z",
+  "updatedAt": "2025-09-19T03:28:29.606731Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

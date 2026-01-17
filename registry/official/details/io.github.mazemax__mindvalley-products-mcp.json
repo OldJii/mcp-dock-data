@@ -1,0 +1,27 @@
+{
+  "id": "io.github.mazemax/mindvalley-products-mcp",
+  "displayName": "io.github.mazemax/mindvalley-products-mcp",
+  "description": "AI assistant access to Mindvalley products, masterclasses, programs, and certifications.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-12T20:09:53.501562Z",
+  "updatedAt": "2025-10-12T20:09:53.501562Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mazemax/mindvalley-products-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mindvalley-products-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

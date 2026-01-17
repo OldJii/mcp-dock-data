@@ -1,0 +1,34 @@
+{
+  "id": "io.github.oabolade/figma_mcp_server_actor",
+  "displayName": "Figma MCP Server",
+  "description": "MCP server enabling AI assistants to interact with Figma designs via natural language commands",
+  "version": "2.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-16T06:06:33.833733Z",
+  "updatedAt": "2025-12-16T06:06:33.833733Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/oabolade/figma_mcp_server_actor",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@oabolade-pegasus/figma-mcp-server",
+      "version": "2.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FIGMA_ACCESS_TOKEN",
+          "description": "Figma Personal Access Token for API authentication. Get yours at https://www.figma.com/developers/api#access-tokens",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

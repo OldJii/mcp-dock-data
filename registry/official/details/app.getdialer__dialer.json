@@ -1,0 +1,16 @@
+{
+  "id": "app.getdialer/dialer",
+  "displayName": "app.getdialer/dialer",
+  "description": "An MCP server that provides lets you make outbound phone calls using your own phone number",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-09T00:16:49.107843Z",
+  "updatedAt": "2025-09-09T00:16:49.107843Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

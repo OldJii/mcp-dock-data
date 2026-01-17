@@ -1,0 +1,13 @@
+{
+  "id": "fyi.ground/ground",
+  "displayName": "fyi.ground/ground",
+  "description": "Reference data API for classification systems, real-time world data, and unit conversions",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2026-01-13T22:59:46.616373Z",
+  "updatedAt": "2026-01-13T22:59:46.616373Z",
+  "iconUrl": null,
+  "websiteUrl": "https://ground.fyi",
+  "repository": null,
+  "packages": []
+}

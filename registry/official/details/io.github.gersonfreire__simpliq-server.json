@@ -1,0 +1,27 @@
+{
+  "id": "io.github.gersonfreire/simpliq-server",
+  "displayName": "io.github.gersonfreire/simpliq-server",
+  "description": "Simpliq Data Proxy MCP Server - Connects LLMs to SQL Databases via Semantic Mapping",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-07T13:56:03.104023Z",
+  "updatedAt": "2025-12-07T13:56:03.104023Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gersonfreire/simpliq",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "simpliq-mcp-server-dev-test",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

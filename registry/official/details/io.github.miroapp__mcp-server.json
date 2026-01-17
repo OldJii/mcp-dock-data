@@ -1,0 +1,16 @@
+{
+  "id": "io.github.miroapp/mcp-server",
+  "displayName": "io.github.miroapp/mcp-server",
+  "description": "Official Miro MCP server (Beta) - Supports context to code and creating diagrams & visualizations.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-09T11:09:24.963285Z",
+  "updatedAt": "2026-01-09T11:09:24.963285Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/miroapp/miro-ai",
+    "source": "github"
+  },
+  "packages": []
+}

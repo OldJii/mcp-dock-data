@@ -1,0 +1,27 @@
+{
+  "id": "io.github.marianfoo/mcp-sap-docs",
+  "displayName": "io.github.marianfoo/mcp-sap-docs",
+  "description": "Fast MCP server for unified SAP docs search (SAPUI5, CAP, OpenUI5, wdi5) with BM25 full-text search",
+  "version": "0.3.9",
+  "status": "active",
+  "publishedAt": "2025-09-09T05:59:06.222569Z",
+  "updatedAt": "2025-09-09T05:59:06.222569Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/marianfoo/mcp-sap-docs",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-sap-docs",
+      "version": "0.3.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

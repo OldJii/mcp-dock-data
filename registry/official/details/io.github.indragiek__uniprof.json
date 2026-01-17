@@ -1,0 +1,27 @@
+{
+  "id": "io.github.indragiek/uniprof",
+  "displayName": "io.github.indragiek/uniprof",
+  "description": "Universal CPU profiler designed for humans and AI agents",
+  "version": "0.3.4",
+  "status": "active",
+  "publishedAt": "2025-09-11T00:59:36.873368Z",
+  "updatedAt": "2025-09-11T00:59:36.873368Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/indragiek/uniprof",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "uniprof",
+      "version": "0.3.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

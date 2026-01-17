@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/JMoak-chrono-mcp",
+  "displayName": "ai.smithery/JMoak-chrono-mcp",
+  "description": "Convert and compare dates and times across any timezone with flexible, locale-aware formatting. Ad…",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2025-09-17T02:23:35.312972Z",
+  "updatedAt": "2025-09-17T02:23:35.312972Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/JMoak/chrono-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

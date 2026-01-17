@@ -1,0 +1,34 @@
+{
+  "id": "io.github.burningion/video-editing-mcp",
+  "displayName": "io.github.burningion/video-editing-mcp",
+  "description": "MCP Server for Video Jungle - Analyze, Search, Generate, and Edit Videos",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-12T12:58:23.949573Z",
+  "updatedAt": "2025-09-12T12:58:23.949573Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/burningion/video-editing-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "video-editor-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VJ_API_KEY",
+          "description": "Video Jungle API Key (found at https://www.video-jungle.com/user/settings)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

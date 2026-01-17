@@ -1,0 +1,27 @@
+{
+  "id": "io.github.SamYuan1990/i18n-agent-action",
+  "displayName": "io.github.SamYuan1990/i18n-agent-action",
+  "description": "An i18n github action for language translate",
+  "version": "mcp",
+  "status": "active",
+  "publishedAt": "2025-09-24T12:17:46.198378Z",
+  "updatedAt": "2025-09-24T12:17:46.198378Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/SamYuan1990/i18n-agent-action:mcp",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

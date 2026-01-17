@@ -1,0 +1,26 @@
+{
+  "id": "io.github.cmpxchg16/mcp-ethical-hacking",
+  "displayName": "io.github.cmpxchg16/mcp-ethical-hacking",
+  "description": "An MCP server that provides LinkedIn & Reddit data",
+  "version": "1.4.0",
+  "status": "active",
+  "publishedAt": "2025-09-16T04:55:02.185051Z",
+  "updatedAt": "2025-09-16T04:55:02.185051Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cmpxchg16/mcp-ethical-hacking",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cmpxchg16/mcp-ethical-hacking/releases/download/v1.4.0/server.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

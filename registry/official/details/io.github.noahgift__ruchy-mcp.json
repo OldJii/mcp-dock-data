@@ -1,0 +1,16 @@
+{
+  "id": "io.github.noahgift/ruchy-mcp",
+  "displayName": "io.github.noahgift/ruchy-mcp",
+  "description": "MCP server for Ruchy: code analysis, scoring, linting, formatting, and transpilation tools",
+  "version": "3.67.0",
+  "status": "active",
+  "publishedAt": "2025-10-04T14:32:03.692194Z",
+  "updatedAt": "2025-10-04T14:32:03.692194Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

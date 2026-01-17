@@ -1,0 +1,40 @@
+{
+  "id": "com.letta/memory-mcp",
+  "displayName": "com.letta/memory-mcp",
+  "description": "MCP server for AI memory management using Letta - Standard MCP format",
+  "version": "2.0.2",
+  "status": "active",
+  "publishedAt": "2025-09-09T06:28:26.340373Z",
+  "updatedAt": "2025-09-09T06:28:26.340373Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/letta-ai/memory-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@letta-ai/memory-mcp",
+      "version": "2.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LETTA_API_KEY",
+          "description": "Letta API key for memory operations",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "LETTA_USER_ID",
+          "description": "Unique user identifier for associated memories",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

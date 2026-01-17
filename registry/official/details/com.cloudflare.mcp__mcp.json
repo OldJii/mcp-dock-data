@@ -1,0 +1,16 @@
+{
+  "id": "com.cloudflare.mcp/mcp",
+  "displayName": "com.cloudflare.mcp/mcp",
+  "description": "Cloudflare MCP servers",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-16T22:06:29.987729Z",
+  "updatedAt": "2025-09-16T22:06:29.987729Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "source": "github"
+  },
+  "packages": []
+}

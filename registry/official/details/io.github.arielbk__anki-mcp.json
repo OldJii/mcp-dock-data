@@ -1,0 +1,27 @@
+{
+  "id": "io.github.arielbk/anki-mcp",
+  "displayName": "io.github.arielbk/anki-mcp",
+  "description": "MCP server for integrating with Anki flashcards through conversational AI",
+  "version": "0.3.2",
+  "status": "active",
+  "publishedAt": "2025-09-11T12:16:49.682389Z",
+  "updatedAt": "2025-09-11T12:16:49.682389Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arielbk/anki-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@arielbk/anki-mcp",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

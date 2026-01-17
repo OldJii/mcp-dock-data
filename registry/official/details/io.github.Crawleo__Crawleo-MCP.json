@@ -1,0 +1,16 @@
+{
+  "id": "io.github.Crawleo/Crawleo-MCP",
+  "displayName": "io.github.Crawleo/Crawleo-MCP",
+  "description": "Hosted Crawleo MCP (remote streamable HTTP endpoint).",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T16:10:52.706444Z",
+  "updatedAt": "2025-12-31T16:10:52.706444Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Crawleo/Crawleo-MCP",
+    "source": "github"
+  },
+  "packages": []
+}

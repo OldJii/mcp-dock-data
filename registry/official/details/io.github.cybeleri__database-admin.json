@@ -1,0 +1,34 @@
+{
+  "id": "io.github.cybeleri/database-admin",
+  "displayName": "io.github.cybeleri/database-admin",
+  "description": "Database admin MCP: schema inspection, query optimization for PostgreSQL and MySQL",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-27T15:23:00.127232Z",
+  "updatedAt": "2025-12-27T15:23:00.127232Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cybeleri/database-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "database-admin-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DATABASE_URL",
+          "description": "PostgreSQL connection string (e.g., postgresql://user:pass@host:5432/db)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

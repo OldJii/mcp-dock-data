@@ -1,0 +1,59 @@
+{
+  "id": "io.github.eat-pray-ai/yutu",
+  "displayName": "yutu",
+  "description": "A fully functional MCP server and CLI for YouTube",
+  "version": "v0.10.4-dev2",
+  "status": "active",
+  "publishedAt": "2025-10-24T16:04:41.256746Z",
+  "updatedAt": "2025-10-24T16:04:41.256746Z",
+  "iconUrl": "https://raw.githubusercontent.com/eat-pray-ai/yutu/main/assets/yutu-ico.svg",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/eat-pray-ai/yutu",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/eat-pray-ai/yutu:v0.10.4-dev2",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "YUTU_CREDENTIAL",
+          "description": "GCP project credential for yutu, base64 encoded JSON or path to JSON file",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "YUTU_CACHE_TOKEN",
+          "description": "YouTube authentication token, base64 encoded JSON or path to JSON file",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "YUTU_LOG_LEVEL",
+          "description": "Log level",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "INFO",
+          "choices": [
+            "DEBUG",
+            "INFO",
+            "WARNING",
+            "ERROR"
+          ]
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--mode",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

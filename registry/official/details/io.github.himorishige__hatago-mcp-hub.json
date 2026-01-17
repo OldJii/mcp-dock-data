@@ -1,0 +1,28 @@
+{
+  "id": "io.github.himorishige/hatago-mcp-hub",
+  "displayName": "io.github.himorishige/hatago-mcp-hub",
+  "description": "Unified MCP Hub for managing multiple Model Context Protocol servers",
+  "version": "0.0.16",
+  "status": "active",
+  "publishedAt": "2025-09-14T14:57:18.596181Z",
+  "updatedAt": "2025-09-14T14:57:18.596181Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/himorishige/hatago-mcp-hub",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@himorishige/hatago-mcp-hub",
+      "version": "0.0.16",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.zhongweili/nanobanana-mcp-server",
+  "displayName": "io.github.zhongweili/nanobanana-mcp-server",
+  "description": "An MCP server that provides image generation and editing capabilities",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-09T13:45:29.896269Z",
+  "updatedAt": "2025-09-09T13:45:29.896269Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/zhongweili/nanobanana-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "nanobanana-mcp-server",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Your Gemini API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "IMAGE_OUTPUT_DIR",
+          "description": "The image output directory",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

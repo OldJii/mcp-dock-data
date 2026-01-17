@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MauroDruwel/smartschool-mcp",
+  "displayName": "io.github.MauroDruwel/smartschool-mcp",
+  "description": "Access Smartschool courses, grades, assignments, and messages through the Model Context Protocol",
+  "version": "0.1.4",
+  "status": "active",
+  "publishedAt": "2025-10-07T15:57:22.194069Z",
+  "updatedAt": "2025-10-07T15:57:22.194069Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "smartschool-mcp",
+      "version": "0.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

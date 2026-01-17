@@ -1,0 +1,27 @@
+{
+  "id": "io.github.therealtimex/charts-mcp",
+  "displayName": "io.github.therealtimex/charts-mcp",
+  "description": "MCP server for generating charts using AntV. Supports various chart types through MCP tools.",
+  "version": "2.0.6",
+  "status": "active",
+  "publishedAt": "2025-10-06T01:51:10.751716Z",
+  "updatedAt": "2025-10-06T01:51:10.751716Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@realtimex/charts-mcp",
+      "version": "2.0.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

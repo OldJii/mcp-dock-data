@@ -1,0 +1,40 @@
+{
+  "id": "io.github.ryanmat/logicmonitor",
+  "displayName": "io.github.ryanmat/logicmonitor",
+  "description": "LogicMonitor API integration with 120 tools for alerts, devices, metrics, and SDTs.",
+  "version": "0.5.1",
+  "status": "active",
+  "publishedAt": "2025-12-14T19:43:52.46994Z",
+  "updatedAt": "2025-12-14T19:43:52.46994Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ryanmat/mcp-server-logicmonitor",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "lm-mcp",
+      "version": "0.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LM_PORTAL",
+          "description": "LogicMonitor portal hostname (e.g., company.logicmonitor.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "LM_BEARER_TOKEN",
+          "description": "LogicMonitor API Bearer token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

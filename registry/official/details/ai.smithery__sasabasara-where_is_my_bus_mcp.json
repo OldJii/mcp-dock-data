@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/sasabasara-where_is_my_bus_mcp",
+  "displayName": "ai.smithery/sasabasara-where_is_my_bus_mcp",
+  "description": "Get real-time NYC bus arrivals, live vehicle locations, and service alerts. Plan trips between any…",
+  "version": "2.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-11T03:53:53.151653Z",
+  "updatedAt": "2025-09-11T03:53:53.151653Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

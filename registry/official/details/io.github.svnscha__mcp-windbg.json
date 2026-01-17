@@ -1,0 +1,40 @@
+{
+  "id": "io.github.svnscha/mcp-windbg",
+  "displayName": "io.github.svnscha/mcp-windbg",
+  "description": "A Model Context Protocol server for Windows crash dump analysis using WinDBG/CDB",
+  "version": "0.2.5",
+  "status": "active",
+  "publishedAt": "2025-10-11T10:52:33.714231Z",
+  "updatedAt": "2025-10-11T10:52:33.714231Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/svnscha/mcp-windbg",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-windbg",
+      "version": "0.2.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CDB_PATH",
+          "description": "Custom path to cdb.exe (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "_NT_SYMBOL_PATH",
+          "description": "Symbol path for Windows debugging (optional, defaults to Microsoft symbol server)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/cuongpo-coti-mcp",
+  "displayName": "ai.smithery/cuongpo-coti-mcp",
+  "description": "Connect to the COTI blockchain to manage accounts, transfer native tokens, and deploy and operate…",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-10-02T07:26:17.819584Z",
+  "updatedAt": "2025-10-02T07:26:17.819584Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cuongpo/coti-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

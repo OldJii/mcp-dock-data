@@ -1,0 +1,27 @@
+{
+  "id": "io.github.marshally/mcp-refactoring",
+  "displayName": "Refactoring MCP Server",
+  "description": "MCP server exposing Martin Fowler's refactoring catalog to LLMs with 71+ refactorings",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-11-29T21:12:02.462164Z",
+  "updatedAt": "2025-11-29T21:12:02.462164Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/marshally/mcp-refactoring.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-refactoring",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.themesberg/flowbite-mcp",
+  "displayName": "io.github.themesberg/flowbite-mcp",
+  "description": "MCP server to convert Figma designs to Flowbite UI components in Tailwind CSS",
+  "version": "1.1.3",
+  "status": "active",
+  "publishedAt": "2025-12-10T14:58:17.794532Z",
+  "updatedAt": "2025-12-10T14:58:17.794532Z",
+  "iconUrl": null,
+  "websiteUrl": "https://flowbite.com/docs/getting-started/mcp/",
+  "repository": {
+    "url": "https://github.com/themesberg/flowbite-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "flowbite-mcp",
+      "version": "1.1.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FIGMA_ACCESS_TOKEN",
+          "description": "Your personal access token for the Figma API",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

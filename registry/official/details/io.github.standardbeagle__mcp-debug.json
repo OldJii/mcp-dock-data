@@ -1,0 +1,39 @@
+{
+  "id": "io.github.standardbeagle/mcp-debug",
+  "displayName": "io.github.standardbeagle/mcp-debug",
+  "description": "Debug and develop MCP servers with hot-swapping, session recording, and playback testing",
+  "version": "1.1.6",
+  "status": "active",
+  "publishedAt": "2026-01-07T14:58:02.697541Z",
+  "updatedAt": "2026-01-07T14:58:02.697541Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/standardbeagle/mcp-debug",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-debug",
+      "version": "1.1.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@standardbeagle/mcp-debug",
+      "version": "1.1.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

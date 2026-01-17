@@ -1,0 +1,42 @@
+{
+  "id": "io.github.Fannon/u-he-preset-randomizer",
+  "displayName": "u-he Preset Randomizer",
+  "description": "Generate, randomize, explain, and manage u-he synthesizer presets via the Model Context Protocol.",
+  "version": "1.1.2",
+  "status": "active",
+  "publishedAt": "2025-11-08T17:02:29.646134Z",
+  "updatedAt": "2025-11-08T17:02:29.646134Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Fannon/u-he-preset-randomizer",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "u-he-preset-randomizer",
+      "version": "1.1.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "UHE_CUSTOM_FOLDER",
+          "description": "Optional override for preset root discovery when synths are stored outside default locations.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DEBUG",
+          "description": "Enable verbose logging for troubleshooting.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

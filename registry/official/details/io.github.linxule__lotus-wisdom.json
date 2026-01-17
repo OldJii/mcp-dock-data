@@ -1,0 +1,27 @@
+{
+  "id": "io.github.linxule/lotus-wisdom",
+  "displayName": "Lotus Wisdom",
+  "description": "An MCP server for problem-solving using the Lotus Sutra's wisdom framework.",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-10-18T01:58:45.486328Z",
+  "updatedAt": "2025-10-18T01:58:45.486328Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/linxule/lotus-wisdom-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "lotus-wisdom-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

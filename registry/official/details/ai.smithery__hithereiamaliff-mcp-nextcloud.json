@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/hithereiamaliff-mcp-nextcloud",
+  "displayName": "ai.smithery/hithereiamaliff-mcp-nextcloud",
+  "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to interact with yo…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-11T18:40:25.891252Z",
+  "updatedAt": "2025-09-11T18:40:25.891252Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/hithereiamaliff/mcp-nextcloud",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.PiotrAleksander/open-notebook",
+  "displayName": "io.github.PiotrAleksander/open-notebook",
+  "description": "MCP server that wraps the Open Notebook API",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-22T09:47:17.006883Z",
+  "updatedAt": "2025-12-22T09:47:17.006883Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Epochal-dev/open-notebook-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "open-notebook-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPEN_NOTEBOOK_URL",
+          "description": "URL of your Open Notebook instance",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "OPEN_NOTEBOOK_PASSWORD",
+          "description": "Authentication password (if APP_PASSWORD is set in Open Notebook)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

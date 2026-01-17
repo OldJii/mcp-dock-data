@@ -1,0 +1,27 @@
+{
+  "id": "io.github.mcpcentral-io/mcp-time",
+  "displayName": "io.github.mcpcentral-io/mcp-time",
+  "description": "Time MCP server via HTTP",
+  "version": "0.0.3",
+  "status": "active",
+  "publishedAt": "2025-11-20T01:41:20.186202Z",
+  "updatedAt": "2025-11-20T01:41:20.186202Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mcpcentral-io/mcp-time",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mcpcentral/mcp-time",
+      "version": "0.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

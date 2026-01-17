@@ -1,0 +1,27 @@
+{
+  "id": "io.github.brain-bbqs/neuro",
+  "displayName": "io.github.brain-bbqs/neuro",
+  "description": "Neuroscience MCP server (Python)",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-21T17:03:58.773077Z",
+  "updatedAt": "2025-11-21T17:03:58.773077Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/brain-bbqs/NeuroMCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@brain-bbqs/neuro-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

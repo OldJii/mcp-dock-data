@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/feeefapp-mcp",
+  "displayName": "ai.smithery/feeefapp-mcp",
+  "description": "Enable AI assistants to interact seamlessly with Feeef e-commerce stores, products, and orders usi…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T01:55:09.587519Z",
+  "updatedAt": "2025-10-03T01:55:09.587519Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

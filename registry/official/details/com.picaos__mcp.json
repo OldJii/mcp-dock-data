@@ -1,0 +1,34 @@
+{
+  "id": "com.picaos/mcp",
+  "displayName": "com.picaos/mcp",
+  "description": "A Model Context Protocol Server for Pica",
+  "version": "2.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-22T16:32:02.849272Z",
+  "updatedAt": "2025-10-22T16:32:02.849272Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/picahq/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@picahq/mcp",
+      "version": "2.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PICA_SECRET",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

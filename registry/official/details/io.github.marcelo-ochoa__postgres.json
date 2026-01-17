@@ -1,0 +1,41 @@
+{
+  "id": "io.github.marcelo-ochoa/postgres",
+  "displayName": "io.github.marcelo-ochoa/postgres",
+  "description": "MCP server for interacting with PostgreSQL databases",
+  "version": "1.0.4",
+  "status": "active",
+  "publishedAt": "2026-01-08T19:40:21.501392Z",
+  "updatedAt": "2026-01-08T19:40:21.501392Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/marcelo-ochoa/servers",
+    "source": "github",
+    "subfolder": "src/postgres"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@marcelo-ochoa/server-postgres",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTGRES_USER",
+          "description": "PostgreSQL user",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "description": "PostgreSQL password",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

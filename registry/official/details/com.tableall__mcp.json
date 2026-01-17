@@ -1,0 +1,16 @@
+{
+  "id": "com.tableall/mcp",
+  "displayName": "com.tableall/mcp",
+  "description": "Access Japan's finest Michelin-starred restaurants. Search, check availability, and browse menus.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-25T13:06:07.208445Z",
+  "updatedAt": "2025-09-25T13:06:07.208445Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

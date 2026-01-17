@@ -1,0 +1,27 @@
+{
+  "id": "com.monikaskorykow/workshops",
+  "displayName": "com.monikaskorykow/workshops",
+  "description": "MCP server for Monika Skorykow workshops - browse prices and promotions",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-15T15:05:34.352463Z",
+  "updatedAt": "2025-12-15T15:05:34.352463Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/monikaskorykow/mcp-workshops",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@monikaskorykow/mcp-workshops",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

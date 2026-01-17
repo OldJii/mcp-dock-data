@@ -1,0 +1,34 @@
+{
+  "id": "io.github.backspacevenkat/perspectives",
+  "displayName": "io.github.backspacevenkat/perspectives",
+  "description": "Query multiple AI models (GPT-4, Claude, Gemini, Grok) in parallel for diverse perspectives",
+  "version": "1.8.42",
+  "status": "active",
+  "publishedAt": "2026-01-14T07:18:26.066141Z",
+  "updatedAt": "2026-01-14T07:18:26.066141Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/polydev-ai/perspectives-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "polydev-ai",
+      "version": "1.8.42",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POLYDEV_USER_TOKEN",
+          "description": "Your Polydev API token from polydev.ai/dashboard/mcp-tokens",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

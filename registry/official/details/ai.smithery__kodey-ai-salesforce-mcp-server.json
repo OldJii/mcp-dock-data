@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/kodey-ai-salesforce-mcp-server",
+  "displayName": "ai.smithery/kodey-ai-salesforce-mcp-server",
+  "description": "Run SOQL queries against your Salesforce org to retrieve records and insights. Explore objects, fi…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-08T03:10:46.917883Z",
+  "updatedAt": "2025-10-08T03:10:46.917883Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kodey-ai/salesforce-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

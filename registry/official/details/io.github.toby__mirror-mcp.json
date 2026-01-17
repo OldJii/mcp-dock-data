@@ -1,0 +1,28 @@
+{
+  "id": "io.github.toby/mirror-mcp",
+  "displayName": "io.github.toby/mirror-mcp",
+  "description": "Mirror MCP: Introspection for LLMs",
+  "version": "0.0.8",
+  "status": "active",
+  "publishedAt": "2025-10-02T10:35:09.187411Z",
+  "updatedAt": "2025-10-02T10:35:09.187411Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/toby/mirror-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mirror-mcp",
+      "version": "0.0.8",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

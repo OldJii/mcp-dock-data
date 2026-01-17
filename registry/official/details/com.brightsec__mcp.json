@@ -1,0 +1,13 @@
+{
+  "id": "com.brightsec/mcp",
+  "displayName": "Bright Security",
+  "description": "Enables AI agents to access Bright Security tools for app discovery and security testing.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-06T14:23:23.608647Z",
+  "updatedAt": "2026-01-06T14:23:23.608647Z",
+  "iconUrl": "https://avatars.githubusercontent.com/NeuraLegion",
+  "websiteUrl": "https://brightsec.com",
+  "repository": null,
+  "packages": []
+}

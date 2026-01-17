@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/tableau-mcp-server",
+  "displayName": "Tableau",
+  "description": "MCP server for Tableau API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:45.365925Z",
+  "updatedAt": "2025-12-31T01:21:45.365925Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/tableau-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "tableau-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TABLEAU_API_KEY",
+          "description": "API Key for TABLEAU",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TABLEAU_API_URL",
+          "description": "API URL for TABLEAU",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

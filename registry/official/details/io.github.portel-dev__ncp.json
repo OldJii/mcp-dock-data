@@ -1,0 +1,50 @@
+{
+  "id": "io.github.portel-dev/ncp",
+  "displayName": "io.github.portel-dev/ncp",
+  "description": "N-to-1 MCP Orchestration. Unified gateway for multiple MCP servers with intelligent tool discovery.",
+  "version": "1.5.3",
+  "status": "active",
+  "publishedAt": "2025-10-14T08:13:42.561411Z",
+  "updatedAt": "2025-10-14T08:13:42.561411Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/portel-dev/ncp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@portel/ncp",
+      "version": "1.5.3",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NCP_DEBUG",
+          "description": "Enable debug logging for troubleshooting",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "NCP_MODE",
+          "description": "Operating mode: 'mcp' for AI assistant integration or 'cli' for command-line",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "mcp"
+        },
+        {
+          "name": "NO_COLOR",
+          "description": "Disable colored output in logs and CLI",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

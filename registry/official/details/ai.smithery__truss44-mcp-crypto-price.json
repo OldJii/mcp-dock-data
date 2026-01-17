@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/truss44-mcp-crypto-price",
+  "displayName": "ai.smithery/truss44-mcp-crypto-price",
+  "description": "Provide real-time cryptocurrency price data and market analysis.",
+  "version": "2.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T23:25:46.643562Z",
+  "updatedAt": "2025-10-02T23:25:46.643562Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/truss44/mcp-crypto-price",
+    "source": "github"
+  },
+  "packages": []
+}

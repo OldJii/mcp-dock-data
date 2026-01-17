@@ -1,0 +1,27 @@
+{
+  "id": "io.github.SidneyBissoli/bcb-br-mcp",
+  "displayName": "io.github.SidneyBissoli/bcb-br-mcp",
+  "description": "MCP Server for Brazilian Central Bank Time Series (SGS/BCB) - Economic and Financial Data",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-16T21:49:50.213422Z",
+  "updatedAt": "2026-01-16T21:49:50.213422Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SidneyBissoli/bcb-br-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bcb-br-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

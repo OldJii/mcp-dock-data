@@ -1,0 +1,29 @@
+{
+  "id": "io.github.ZohaibCodez/discrete-structures",
+  "displayName": "Discrete Structures",
+  "description": "Comprehensive tools for discrete mathematics: logic, algorithms, number theory, cryptography",
+  "version": "0.1.4",
+  "status": "active",
+  "publishedAt": "2026-01-09T18:59:16.991662Z",
+  "updatedAt": "2026-01-09T18:59:16.991662Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ZohaibCodez/discrete-structures-ai-platform",
+    "source": "github",
+    "subfolder": "mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "discrete-structures-mcp",
+      "version": "0.1.4",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

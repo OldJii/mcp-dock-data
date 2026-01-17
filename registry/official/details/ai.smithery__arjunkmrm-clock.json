@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-clock",
+  "displayName": "ai.smithery/arjunkmrm-clock",
+  "description": "Check the current time instantly and explore world timezones by region. Browse available continent…",
+  "version": "1.14.1",
+  "status": "active",
+  "publishedAt": "2025-09-19T08:00:25.675646Z",
+  "updatedAt": "2025-09-19T08:00:25.675646Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/clock",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-test0",
+  "displayName": "ai.smithery/arjunkmrm-test0",
+  "description": "Get the current time in any timezone and quickly look up common timezone info. Set a default timez…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T08:18:08.952463Z",
+  "updatedAt": "2025-10-03T08:18:08.952463Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/time",
+    "source": "github"
+  },
+  "packages": []
+}

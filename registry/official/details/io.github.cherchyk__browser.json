@@ -1,0 +1,27 @@
+{
+  "id": "io.github.cherchyk/browser",
+  "displayName": "io.github.cherchyk/browser",
+  "description": "MCP server for loading authenticated web pages using Chrome DevTools Protocol",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-12-22T17:24:17.533315Z",
+  "updatedAt": "2025-12-22T17:24:17.533315Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cherchyk/MCPBrowser",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcpbrowser",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

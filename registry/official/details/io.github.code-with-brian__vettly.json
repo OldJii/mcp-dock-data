@@ -1,0 +1,13 @@
+{
+  "id": "io.github.code-with-brian/vettly",
+  "displayName": "io.github.code-with-brian/vettly",
+  "description": "Content moderation for AI applications. Moderate text, images, and video with configurable policies.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-05T03:00:58.74245Z",
+  "updatedAt": "2025-12-05T03:00:58.74245Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

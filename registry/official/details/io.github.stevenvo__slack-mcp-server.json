@@ -1,0 +1,46 @@
+{
+  "id": "io.github.stevenvo/slack-mcp-server",
+  "displayName": "io.github.stevenvo/slack-mcp-server",
+  "description": "Read Slack conversations, threads, user info, and search messages from your MCP client.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T00:44:35.804181Z",
+  "updatedAt": "2025-11-07T00:44:35.804181Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/stevenvo/slack-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "slack-mcp-server-v2",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SLACK_USER_TOKEN",
+          "description": "Slack User OAuth Token (starts with xoxp-). Get from https://api.slack.com/apps",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SLACK_BOT_TOKEN",
+          "description": "Slack Bot User OAuth Token (starts with xoxb-). Alternative to user token.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SLACK_WORKSPACE_URL",
+          "description": "Your Slack workspace URL (e.g., https://your-company.slack.com). Required for generating message links.",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

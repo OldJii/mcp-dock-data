@@ -1,0 +1,26 @@
+{
+  "id": "io.github.neverinfamous/postgres-mcp-server",
+  "displayName": "PostgreSQL MCP Server",
+  "description": "Enterprise PostgreSQL MCP server with 63 tools, 10 resources, 10 prompts for AI-native operations",
+  "version": "1.2.0",
+  "status": "active",
+  "publishedAt": "2025-12-09T00:22:40.072526Z",
+  "updatedAt": "2025-12-09T00:22:40.072526Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/neverinfamous/postgres-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/writenotenow/postgres-mcp-enhanced:v1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

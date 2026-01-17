@@ -1,0 +1,55 @@
+{
+  "id": "io.github.simplemindedbot/mnemex",
+  "displayName": "io.github.simplemindedbot/mnemex",
+  "description": "Temporal memory for AI with decay and reinforcement. Two-layer storage (JSONL + Markdown).",
+  "version": "0.5.2",
+  "status": "active",
+  "publishedAt": "2025-10-20T22:50:49.953818Z",
+  "updatedAt": "2025-10-20T22:50:49.953818Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/simplemindedbot/mnemex",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mnemex",
+      "version": "0.5.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MNEMEX_STORAGE_PATH",
+          "description": "Storage path for short-term memory JSONL files",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "~/.config/mnemex/jsonl"
+        },
+        {
+          "name": "LTM_VAULT_PATH",
+          "description": "Path to Obsidian vault for long-term memory",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MNEMEX_DECAY_MODEL",
+          "description": "Decay model: power_law (default), exponential, or two_component",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "power_law"
+        },
+        {
+          "name": "MNEMEX_PL_HALFLIFE_DAYS",
+          "description": "Half-life in days for power-law decay model",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3.0"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

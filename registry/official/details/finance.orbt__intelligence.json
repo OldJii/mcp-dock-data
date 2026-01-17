@@ -1,0 +1,38 @@
+{
+  "id": "finance.orbt/intelligence",
+  "displayName": "ORBT - The first Bitcoin-native credit rating agency!",
+  "description": "Bitcoin-native credit ratings. ⚡ Lightning pay-per-query (99 sats) or API subscriptions.",
+  "version": "3.3.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-06T02:30:03.099818Z",
+  "updatedAt": "2025-11-06T02:30:03.099818Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@orbt-finance/mcp-server",
+      "version": "3.3.0",
+      "runtimeHint": "node",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ORBT_API_KEY",
+          "description": "OPTIONAL! Use Lightning pay-per-query (99 sats) OR visit https://orbt.finance for API access",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ORBT_API_URL",
+          "description": "ORBT API endpoint (default: https://orbt.finance)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

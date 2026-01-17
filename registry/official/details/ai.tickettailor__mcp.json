@@ -1,0 +1,16 @@
+{
+  "id": "ai.tickettailor/mcp",
+  "displayName": "ai.tickettailor/mcp",
+  "description": "Provides event organisers with tools to interact with a Ticket Tailor box office account.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-12T10:10:54.188764Z",
+  "updatedAt": "2025-09-12T10:10:54.188764Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

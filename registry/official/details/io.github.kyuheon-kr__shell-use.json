@@ -1,0 +1,39 @@
+{
+  "id": "io.github.kyuheon-kr/shell-use",
+  "displayName": "shell-use",
+  "description": "Let agents use the shell like a human.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-13T14:43:28.423401Z",
+  "updatedAt": "2026-01-13T14:43:28.423401Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kyuheon-kr/shell-use",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/kyuheon-kr/shell-use:1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SHELL_USE_SESSIONS",
+          "description": "Comma-separated list of allowed session names",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "SHELL_USE_SOCKET",
+          "description": "Path to tmux socket (default: /tmux/tmux.sock in Docker)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "io.github.aahl/mcp-aktools",
+  "displayName": "AkTools MCP Server",
+  "description": "MCP Server for stock and crypto",
+  "version": "0.1.9",
+  "status": "active",
+  "publishedAt": "2025-10-31T03:37:12.444286Z",
+  "updatedAt": "2025-10-31T03:37:12.444286Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aahl/mcp-aktools",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-aktools",
+      "version": "0.1.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/aahl/mcp-aktools:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

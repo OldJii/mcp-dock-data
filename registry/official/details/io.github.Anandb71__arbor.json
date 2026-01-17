@@ -1,0 +1,16 @@
+{
+  "id": "io.github.Anandb71/arbor",
+  "displayName": "io.github.Anandb71/arbor",
+  "description": "The Graph-Native Intelligence Layer for Code.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-07T10:12:07.461683Z",
+  "updatedAt": "2026-01-07T10:12:07.461683Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Anandb71/arbor",
+    "source": "github"
+  },
+  "packages": []
+}

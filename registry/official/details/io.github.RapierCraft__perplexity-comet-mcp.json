@@ -1,0 +1,40 @@
+{
+  "id": "io.github.RapierCraft/perplexity-comet-mcp",
+  "displayName": "io.github.RapierCraft/perplexity-comet-mcp",
+  "description": "Bridge Claude Code with Perplexity Comet for autonomous browsing and tab management",
+  "version": "2.5.0",
+  "status": "active",
+  "publishedAt": "2026-01-10T10:00:43.525813Z",
+  "updatedAt": "2026-01-10T10:00:43.525813Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/RapierCraft/perplexity-comet-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "perplexity-comet-mcp",
+      "version": "2.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "COMET_PATH",
+          "description": "Custom path to Comet browser executable (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "COMET_PORT",
+          "description": "Chrome DevTools Protocol port (default: 9223)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

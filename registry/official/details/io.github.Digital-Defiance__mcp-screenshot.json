@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Digital-Defiance/mcp-screenshot",
+  "displayName": "io.github.Digital-Defiance/mcp-screenshot",
+  "description": "Screenshot capture with PII masking and cross-platform support for AI agents",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-05T18:41:22.744507Z",
+  "updatedAt": "2025-12-05T18:41:22.744507Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/Digital-Defiance/mcp-screenshot",
+  "repository": {
+    "url": "https://github.com/Digital-Defiance/mcp-screenshot",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ai-capabilities-suite/mcp-screenshot",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

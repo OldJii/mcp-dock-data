@@ -1,0 +1,40 @@
+{
+  "id": "io.github.edrich13/mcp-jira-server",
+  "displayName": "io.github.edrich13/mcp-jira-server",
+  "description": "MCP server for self-hosted Jira instance with Personal Access Token authentication",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-08T11:14:06.312345Z",
+  "updatedAt": "2025-10-08T11:14:06.312345Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-jira-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "JIRA_BASE_URL",
+          "description": "Base URL of your Jira instance (e.g., https://jira.domain.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "JIRA_PAT",
+          "description": "Your Jira Personal Access Token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

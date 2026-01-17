@@ -1,0 +1,27 @@
+{
+  "id": "io.github.bharath-krishna/mcp-test",
+  "displayName": "io.github.bharath-krishna/mcp-test",
+  "description": "A simple MCP server with an echo tool for testing purposes",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T07:29:38.585079Z",
+  "updatedAt": "2025-11-07T07:29:38.585079Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bharath-krishna/mcp-test",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-echo-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

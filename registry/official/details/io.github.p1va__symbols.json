@@ -1,0 +1,27 @@
+{
+  "id": "io.github.p1va/symbols",
+  "displayName": "io.github.p1va/symbols",
+  "description": "MCP server to read, inspect and troubleshoot codebase symbols",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-12T16:29:27.100278Z",
+  "updatedAt": "2025-09-12T16:29:27.100278Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/p1va/symbols",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@p1va/symbols",
+      "version": "0.0.10",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

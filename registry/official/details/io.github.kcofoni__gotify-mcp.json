@@ -1,0 +1,57 @@
+{
+  "id": "io.github.kcofoni/gotify-mcp",
+  "displayName": "io.github.kcofoni/gotify-mcp",
+  "description": "MCP server for Gotify push notifications - send messages and manage apps/clients.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-22T21:35:19.576434Z",
+  "updatedAt": "2025-12-22T21:35:19.576434Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jmagar/gotify-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/kcofoni/gotify-mcp:v1.0.1",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOTIFY_URL",
+          "description": "The full base URL of your Gotify server (e.g., http://localhost:80 or https://gotify.example.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOTIFY_CLIENT_TOKEN",
+          "description": "A client token from your Gotify server with permissions to manage applications, clients, and messages",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOTIFY_APP_TOKEN",
+          "description": "An application token for sending messages via create_message tool",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOTIFY_MCP_PORT",
+          "description": "Port for the MCP SSE server (default: 3020)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GOTIFY_MCP_TRANSPORT",
+          "description": "Transport type: 'sse' or 'stdio' (default: sse)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

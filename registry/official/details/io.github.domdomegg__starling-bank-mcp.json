@@ -1,0 +1,57 @@
+{
+  "id": "io.github.domdomegg/starling-bank-mcp",
+  "displayName": "Starling Bank",
+  "description": "Allow AI systems to view and control your Starling Bank account via MCP.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-08T13:18:28.93661Z",
+  "updatedAt": "2025-12-08T13:18:28.93661Z",
+  "iconUrl": "https://raw.githubusercontent.com/domdomegg/starling-bank-mcp/refs/heads/master/icon.png",
+  "websiteUrl": "https://github.com/domdomegg/starling-bank-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/starling-bank-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "starling-bank-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STARLING_BANK_ACCESS_TOKEN",
+          "description": "Starling Bank personal access token. Sign up for the Starling Developer Portal, link your account, and create a Personal Access Token.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "STARLING_BANK_PRIVATE_KEY_UID",
+          "description": "Optional: Key UID of the signing key for sending payments.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "STARLING_BANK_PRIVATE_KEY_PEM",
+          "description": "Optional: PEM-encoded signing key for sending payments.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/domdomegg/starling-bank-mcp/releases/download/v1.1.1/starling-bank-mcp.mcpb",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

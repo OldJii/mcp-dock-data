@@ -1,0 +1,52 @@
+{
+  "id": "io.github.kesslerio/attio-mcp-server",
+  "displayName": "Attio MCP Server",
+  "description": "AI-powered Attio CRM access. Manage contacts, companies, deals, tasks, notes and workflows.",
+  "version": "1.4.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T05:50:35.490003Z",
+  "updatedAt": "2025-12-30T05:50:35.490003Z",
+  "iconUrl": null,
+  "websiteUrl": "https://kesslerio.github.io/attio-mcp-server",
+  "repository": {
+    "url": "https://github.com/kesslerio/attio-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "attio-mcp",
+      "version": "1.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ATTIO_API_KEY",
+          "description": "Your Attio API key (required for all tools except health-check)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "ATTIO_WORKSPACE_ID",
+          "description": "Optional Attio workspace ID for workspace-specific operations",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ATTIO_MCP_TOOL_MODE",
+          "description": "Tool mode: 'full' (all tools) or 'search' (search tools only). Default: 'full'",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_LOG_LEVEL",
+          "description": "Logging level: 'DEBUG', 'INFO', 'WARN', 'ERROR'. Default: 'INFO'",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

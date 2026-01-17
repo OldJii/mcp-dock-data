@@ -1,0 +1,16 @@
+{
+  "id": "io.github.retailbox-automation/clickup-mcp",
+  "displayName": "ClickUp MCP Server",
+  "description": "Audit ClickUp workspaces: spaces, folders, lists, custom fields, tasks, and views.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-04T23:06:20.120235Z",
+  "updatedAt": "2025-11-04T23:06:20.120235Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/retailbox-automation/clickup-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

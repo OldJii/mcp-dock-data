@@ -1,0 +1,28 @@
+{
+  "id": "io.github.ggozad/haiku-rag",
+  "displayName": "io.github.ggozad/haiku-rag",
+  "description": "Opinionated agentic RAG powered by LanceDB, Pydantic AI, and Docling",
+  "version": "0.26.5",
+  "status": "active",
+  "publishedAt": "2026-01-16T13:29:12.676696Z",
+  "updatedAt": "2026-01-16T13:29:12.676696Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ggozad/haiku.rag",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "haiku-rag",
+      "version": "0.26.5",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

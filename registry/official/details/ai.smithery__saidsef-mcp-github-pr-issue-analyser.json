@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+  "displayName": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+  "description": "A Model Context Protocol (MCP) application for automated GitHub PR analysis and issue management.…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-10-05T14:58:08.898007Z",
+  "updatedAt": "2025-10-05T14:58:08.898007Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/saidsef/mcp-github-pr-issue-analyser",
+    "source": "github"
+  },
+  "packages": []
+}

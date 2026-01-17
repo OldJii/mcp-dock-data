@@ -1,0 +1,52 @@
+{
+  "id": "io.github.vfa-khuongdv/redmine",
+  "displayName": "io.github.vfa-khuongdv/redmine",
+  "description": "MCP server for Redmine API integration with AI agents.",
+  "version": "1.1.3",
+  "status": "active",
+  "publishedAt": "2025-12-15T06:42:11.793283Z",
+  "updatedAt": "2025-12-15T06:42:11.793283Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vfa-khuongdv/mcp_readmine",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@duongkhuong/mcp-redmine",
+      "version": "1.1.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "REDMINE_URL",
+          "description": "Your Redmine instance URL (e.g., https://redmine.example.com)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "REDMINE_API_KEY",
+          "description": "Your Redmine API key from account settings",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "REDMINE_USERNAME",
+          "description": "Your Redmine username for Basic Authentication",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "REDMINE_PASSWORD",
+          "description": "Your Redmine password for Basic Authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

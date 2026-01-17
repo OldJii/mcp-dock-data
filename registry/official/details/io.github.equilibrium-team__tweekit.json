@@ -1,0 +1,16 @@
+{
+  "id": "io.github.equilibrium-team/tweekit",
+  "displayName": "TweekIT MCP Server",
+  "description": "Normalize and convert more than 400 file types via TweekIT's hosted MCP streamable HTTP endpoint.",
+  "version": "1.6.1",
+  "status": "active",
+  "publishedAt": "2025-12-01T22:30:26.318306Z",
+  "updatedAt": "2025-12-01T22:30:26.318306Z",
+  "iconUrl": null,
+  "websiteUrl": "https://www.tweekit.io/",
+  "repository": {
+    "url": "https://github.com/equilibrium-team/tweekit-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

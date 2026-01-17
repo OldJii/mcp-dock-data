@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging/mcp-server-template--de51cc9a",
+  "displayName": "My MCP Serve",
+  "description": "Description of my MCP server",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-20T14:34:33.952358Z",
+  "updatedAt": "2025-11-20T14:34:33.952358Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "io.github.FractionEstate/midnight-nextjs-mcp",
+  "displayName": "Midnight + Next.js MCP",
+  "description": "Unified MCP server for Midnight blockchain development and Next.js dApps.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2026-01-07T03:35:03.547575Z",
+  "updatedAt": "2026-01-07T03:35:03.547575Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/FractionEstate/midnight-nextjs-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "midnight-nextjs-mcp",
+      "version": "0.3.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "GitHub Personal Access Token - increases API rate limits",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging verbosity level",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info"
+        },
+        {
+          "name": "MIDNIGHT_LOCAL",
+          "description": "Enable local mode with ChromaDB for offline semantic search",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

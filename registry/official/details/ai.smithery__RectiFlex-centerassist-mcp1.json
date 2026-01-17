@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/RectiFlex-centerassist-mcp1",
+  "displayName": "ai.smithery/RectiFlex-centerassist-mcp1",
+  "description": "Manage CenterPoint Connect data across properties, companies, employees, invoices, materials, and…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-08T05:13:44.681143Z",
+  "updatedAt": "2025-10-08T05:13:44.681143Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

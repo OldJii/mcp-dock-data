@@ -1,0 +1,27 @@
+{
+  "id": "io.github.olostep/olostep-mcp-server",
+  "displayName": "io.github.olostep/olostep-mcp-server",
+  "description": "Olostep MCP server for web scraping, google search and website urls search.",
+  "version": "1.0.7",
+  "status": "active",
+  "publishedAt": "2025-10-13T01:59:10.580648Z",
+  "updatedAt": "2025-10-13T01:59:10.580648Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "olostep-mcp",
+      "version": "1.0.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

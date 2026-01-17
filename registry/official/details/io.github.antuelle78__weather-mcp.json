@@ -1,0 +1,16 @@
+{
+  "id": "io.github.antuelle78/weather-mcp",
+  "displayName": "io.github.antuelle78/weather-mcp",
+  "description": "A simple MCP server for getting weather information.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-09T23:19:01.125697Z",
+  "updatedAt": "2025-10-09T23:19:01.125697Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

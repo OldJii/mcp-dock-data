@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/BigVik193-reddit-ads-mcp-api",
+  "displayName": "ai.smithery/BigVik193-reddit-ads-mcp-api",
+  "description": "Manage Reddit advertising end to end across accounts, funding methods, campaigns, ad groups, and a…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-14T22:40:30.852738Z",
+  "updatedAt": "2025-09-14T22:40:30.852738Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BigVik193/reddit-ads-mcp-api",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-time",
+  "displayName": "ai.smithery/arjunkmrm-time",
+  "description": "Get the current time anywhere and access concise timezone information. Set your preferred timezone…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T08:35:12.663422Z",
+  "updatedAt": "2025-10-02T08:35:12.663422Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/time",
+    "source": "github"
+  },
+  "packages": []
+}

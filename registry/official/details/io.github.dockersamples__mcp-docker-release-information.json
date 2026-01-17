@@ -1,0 +1,26 @@
+{
+  "id": "io.github.dockersamples/mcp-docker-release-information",
+  "displayName": "io.github.dockersamples/mcp-docker-release-information",
+  "description": "MCP server providing Docker Desktop release notes and security information.",
+  "version": "0.3.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T18:54:52.764339Z",
+  "updatedAt": "2025-09-10T18:54:52.764339Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dockersamples/mcp-docker-release-information",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/dockersamples/mcp-docker-release-information:0.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

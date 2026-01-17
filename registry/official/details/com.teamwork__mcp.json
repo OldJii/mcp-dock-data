@@ -1,0 +1,45 @@
+{
+  "id": "com.teamwork/mcp",
+  "displayName": "com.teamwork/mcp",
+  "description": "The Teamwork.com official MCP server helps teams efficiently manage client projects with AI.",
+  "version": "1.8.5",
+  "status": "active",
+  "publishedAt": "2026-01-17T02:52:35.152207Z",
+  "updatedAt": "2026-01-17T02:52:35.152207Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/teamwork/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/teamwork/mcp:v1.8.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TW_MCP_BEARER_TOKEN",
+          "description": "API key generated from the Teamwork.com OAuth2 process: https://apidocs.teamwork.com/guides/teamwork/app-login-flow",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TW_MCP_LOG_FORMAT",
+          "description": "Choose log output format between 'text' or 'json'. Default is 'text'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TW_MCP_LOG_LEVEL",
+          "description": "Choose log level between 'debug', 'info', 'warn' or 'error'. Default is 'info'.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

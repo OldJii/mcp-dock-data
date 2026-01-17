@@ -1,0 +1,16 @@
+{
+  "id": "ai.com.mcp/contabo",
+  "displayName": "Contabo (VPS) MCP Server",
+  "description": "Contabo API (v1.0.0) as MCP tools for cloud provisioning, and management. Powered by HAPI MCP server",
+  "version": "0.6.0",
+  "status": "active",
+  "publishedAt": "2026-01-08T13:19:46.430479Z",
+  "updatedAt": "2026-01-08T13:19:46.430479Z",
+  "iconUrl": null,
+  "websiteUrl": "https://run.mcp.com.ai",
+  "repository": {
+    "url": "https://github.com/la-rebelion/hapimcp",
+    "source": "github"
+  },
+  "packages": []
+}

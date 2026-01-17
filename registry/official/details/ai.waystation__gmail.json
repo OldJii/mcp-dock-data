@@ -1,0 +1,16 @@
+{
+  "id": "ai.waystation/gmail",
+  "displayName": "ai.waystation/gmail",
+  "description": "Read emails, send messages, and manage labels in your Gmail account.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-09-09T14:46:07.96981Z",
+  "updatedAt": "2025-09-09T14:46:07.96981Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/waystation-ai/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

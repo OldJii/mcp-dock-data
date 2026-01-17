@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/blockscout-mcp-server",
+  "displayName": "ai.smithery/blockscout-mcp-server",
+  "description": "Provide AI agents and automation tools with contextual access to blockchain data including balance…",
+  "version": "1.13.1",
+  "status": "active",
+  "publishedAt": "2025-09-20T00:50:33.619952Z",
+  "updatedAt": "2025-09-20T00:50:33.619952Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/blockscout/mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

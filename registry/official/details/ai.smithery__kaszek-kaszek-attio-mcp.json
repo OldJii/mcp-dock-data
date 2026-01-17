@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/kaszek-kaszek-attio-mcp",
+  "displayName": "ai.smithery/kaszek-kaszek-attio-mcp",
+  "description": "Automate Attio CRM workflows with fast search and bulk operations across companies, people, deals,…",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2025-09-20T23:26:13.627724Z",
+  "updatedAt": "2025-09-20T23:26:13.627724Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

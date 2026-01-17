@@ -1,0 +1,27 @@
+{
+  "id": "io.github.james-see/mcp-drawthings",
+  "displayName": "io.github.james-see/mcp-drawthings",
+  "description": "MCP server for Draw Things - local AI image generation on Mac",
+  "version": "1.1.2",
+  "status": "active",
+  "publishedAt": "2026-01-01T06:08:09.33093Z",
+  "updatedAt": "2026-01-01T06:08:09.33093Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/james-see/mcp-drawthings",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-drawthings",
+      "version": "1.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

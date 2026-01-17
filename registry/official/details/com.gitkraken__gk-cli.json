@@ -1,0 +1,27 @@
+{
+  "id": "com.gitkraken/gk-cli",
+  "displayName": "com.gitkraken/gk-cli",
+  "description": "The GitKraken MCP Server for managing repos, PRs, issues across GitHub, GitLab, Bitbucket and more.",
+  "version": "3.1.48",
+  "status": "active",
+  "publishedAt": "2025-11-17T15:51:23.707989Z",
+  "updatedAt": "2025-11-17T15:51:23.707989Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gitkraken/gk-cli",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@gitkraken/gk",
+      "version": "3.1.48",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

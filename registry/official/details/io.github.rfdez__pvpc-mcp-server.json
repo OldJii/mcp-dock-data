@@ -1,0 +1,66 @@
+{
+  "id": "io.github.rfdez/pvpc-mcp-server",
+  "displayName": "io.github.rfdez/pvpc-mcp-server",
+  "description": "Retrieve daily PVPC electricity tariffs for 2.0 TD consumers, published by Red Eléctrica.",
+  "version": "3.2.3",
+  "status": "active",
+  "publishedAt": "2025-09-10T16:53:23.880648Z",
+  "updatedAt": "2025-09-10T16:53:23.880648Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/rfdez/pvpc-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@rfdez/pvpc-mcp-server",
+      "version": "3.2.3",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "--transport",
+          "description": "Use stdio transport type for MCP server",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--api-key",
+          "description": "ESIOS API key for authentication",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@rfdez/pvpc-mcp-server",
+      "version": "3.2.3",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "--transport",
+          "description": "Use HTTP transport type for MCP server",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--port",
+          "description": "Port for HTTP transport",
+          "type": "named",
+          "isRequired": false,
+          "default": "8080"
+        }
+      ]
+    }
+  ]
+}

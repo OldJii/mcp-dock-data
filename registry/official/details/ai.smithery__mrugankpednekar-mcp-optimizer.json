@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/mrugankpednekar-mcp-optimizer",
+  "displayName": "ai.smithery/mrugankpednekar-mcp-optimizer",
+  "description": "Optimize crew and workforce schedules, resource allocation, and routing with linear and mixed-inte…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T21:15:31.815401Z",
+  "updatedAt": "2025-10-07T21:15:31.815401Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mrugankpednekar/mcp-optimizer",
+    "source": "github"
+  },
+  "packages": []
+}

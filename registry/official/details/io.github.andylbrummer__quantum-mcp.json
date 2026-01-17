@@ -1,0 +1,29 @@
+{
+  "id": "io.github.andylbrummer/quantum-mcp",
+  "displayName": "io.github.andylbrummer/quantum-mcp",
+  "description": "GPU-accelerated MCP server: quantum mechanics, wavefunction evolution, Schrodinger simulations",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2026-01-05T04:52:44.2767Z",
+  "updatedAt": "2026-01-05T04:52:44.2767Z",
+  "iconUrl": null,
+  "websiteUrl": "https://andylbrummer.github.io/math-mcp/api/quantum-mcp",
+  "repository": {
+    "url": "https://github.com/andylbrummer/math-mcp",
+    "source": "github",
+    "subfolder": "servers/quantum-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scicomp-quantum-mcp",
+      "version": "0.1.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

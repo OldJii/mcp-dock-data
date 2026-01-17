@@ -1,0 +1,27 @@
+{
+  "id": "io.github.jwulff/whisper-mcp",
+  "displayName": "io.github.jwulff/whisper-mcp",
+  "description": "Local audio transcription using whisper.cpp. Transcribe with OpenAI Whisper models.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-12T01:33:48.857406Z",
+  "updatedAt": "2026-01-12T01:33:48.857406Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jwulff/whisper-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "whisper-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

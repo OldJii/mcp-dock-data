@@ -1,0 +1,28 @@
+{
+  "id": "com.driflyte/driflyte-mcp-server",
+  "displayName": "com.driflyte/driflyte-mcp-server",
+  "description": "Driflyte MCP server which lets AI assistants query topic-specific knowledge from web and GitHub.",
+  "version": "0.1.8",
+  "status": "active",
+  "publishedAt": "2025-09-29T12:13:56.668952Z",
+  "updatedAt": "2025-09-29T14:12:11.331686Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/serkan-ozal/driflyte-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@driflyte/mcp-server",
+      "version": "0.1.8",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.fkom13/mcp-sftp-orchestrator",
+  "displayName": "io.github.fkom13/mcp-sftp-orchestrator",
+  "description": "Serveur MCP pour l'orchestration de tâches distantes (SSH/SFTP) avec une file d'attente persistante.",
+  "version": "8.0.4",
+  "status": "active",
+  "publishedAt": "2025-11-14T14:02:55.136916Z",
+  "updatedAt": "2025-11-14T14:02:55.136916Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/fkom13/mcp-sftp-orchestrator",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-orchestrator-server",
+      "version": "8.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

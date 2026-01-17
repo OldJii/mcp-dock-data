@@ -1,0 +1,34 @@
+{
+  "id": "io.github.pshivapr/selenium-mcp",
+  "displayName": "io.github.pshivapr/selenium-mcp",
+  "description": "Selenium Tools for MCP",
+  "version": "0.4.6",
+  "status": "active",
+  "publishedAt": "2025-10-12T13:46:03.582393Z",
+  "updatedAt": "2025-10-12T13:46:03.582393Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/pshivapr/selenium-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "selenium-webdriver-mcp",
+      "version": "0.4.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

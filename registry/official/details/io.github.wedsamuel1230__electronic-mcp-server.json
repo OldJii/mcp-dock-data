@@ -1,0 +1,27 @@
+{
+  "id": "io.github.wedsamuel1230/electronic-mcp-server",
+  "displayName": "Electronics MCP Servers",
+  "description": "14 electronics tools: resistor decoder, capacitor calculator, GPIO reference for ESP32/Arduino/STM32",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-05T16:19:40.782041Z",
+  "updatedAt": "2026-01-05T16:19:40.782041Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/wedsamuel1230/electronic-mcp-server.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "electronics-mcp-servers",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

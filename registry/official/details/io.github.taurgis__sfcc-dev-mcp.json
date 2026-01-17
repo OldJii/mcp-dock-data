@@ -1,0 +1,27 @@
+{
+  "id": "io.github.taurgis/sfcc-dev-mcp",
+  "displayName": "io.github.taurgis/sfcc-dev-mcp",
+  "description": "MCP server for Salesforce B2C Commerce Cloud development assistance",
+  "version": "1.0.14",
+  "status": "active",
+  "publishedAt": "2025-09-17T07:22:50.583896Z",
+  "updatedAt": "2025-09-17T07:22:50.583896Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/taurgis/sfcc-dev-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "sfcc-dev-mcp",
+      "version": "1.0.14",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

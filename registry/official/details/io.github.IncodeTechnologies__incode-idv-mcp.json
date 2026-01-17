@@ -1,0 +1,34 @@
+{
+  "id": "io.github.IncodeTechnologies/incode-idv-mcp",
+  "displayName": "io.github.IncodeTechnologies/incode-idv-mcp",
+  "description": "MCP server for Incode IDV, providing identity verification tools for AI assistants.",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2025-11-17T21:37:37.341645Z",
+  "updatedAt": "2025-11-17T21:37:37.341645Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/IncodeTechnologies/incode-idv-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@incodetech/incode-idv-mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

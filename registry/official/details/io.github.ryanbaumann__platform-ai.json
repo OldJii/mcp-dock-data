@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ryanbaumann/platform-ai",
+  "displayName": "io.github.ryanbaumann/platform-ai",
+  "description": "Google Maps Platform Code Assist MCP",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T17:56:34.808006Z",
+  "updatedAt": "2025-09-10T17:56:34.808006Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/googlemaps/platform-ai",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@googlemaps/code-assist-mcp",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

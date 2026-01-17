@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+  "displayName": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+  "description": "Manage your ClickUp workspace by creating, updating, and organizing tasks, lists, folders, and tag…",
+  "version": "0.8.5",
+  "status": "active",
+  "publishedAt": "2025-09-21T11:44:55.497079Z",
+  "updatedAt": "2025-09-21T11:44:55.497079Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/skr-cloudify/clickup-mcp-server-new",
+    "source": "github"
+  },
+  "packages": []
+}

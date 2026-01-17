@@ -1,0 +1,16 @@
+{
+  "id": "ai.explorium/mcp-explorium",
+  "displayName": "ai.explorium/mcp-explorium",
+  "description": "Access live company and contact data from Explorium's AgentSource B2B platform.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-03T13:21:46.054906Z",
+  "updatedAt": "2025-11-03T13:21:46.054906Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/explorium-ai/mcp-explorium",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "io.github.compl-i-agent/csf",
+  "displayName": "io.github.compl-i-agent/csf",
+  "description": "NIST CSF 2.0 - Professional cybersecurity framework with 35 tools and 12 prompts",
+  "version": "2.4.6",
+  "status": "active",
+  "publishedAt": "2025-10-01T04:57:35.783318Z",
+  "updatedAt": "2025-10-01T04:57:35.783318Z",
+  "iconUrl": null,
+  "websiteUrl": "https://compl-i-agent.github.io/csf",
+  "repository": {
+    "url": "https://github.com/compligent/mcp-platform",
+    "source": "github",
+    "subfolder": "platform/servers/clients/csf-cli"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@compligent-mcp/csf",
+      "version": "2.4.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

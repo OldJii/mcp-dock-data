@@ -1,0 +1,34 @@
+{
+  "id": "io.github.SymbioticSec/mcp",
+  "displayName": "io.github.SymbioticSec/mcp",
+  "description": "Symbiotic CLI MCP Server for security scanning and analysis",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-15T09:35:38.927931Z",
+  "updatedAt": "2025-12-15T09:35:38.927931Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SymbioticSec/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@symbioticsec/symbiotic-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SYMBIOTIC_API_TOKEN",
+          "description": "Your Symbiotic Security personal access token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

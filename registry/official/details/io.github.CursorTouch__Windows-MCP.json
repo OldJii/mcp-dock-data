@@ -1,0 +1,28 @@
+{
+  "id": "io.github.CursorTouch/Windows-MCP",
+  "displayName": "io.github.CursorTouch/Windows-MCP",
+  "description": "An MCP Server for computer-use in Windows OS",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-17T13:24:08.52135Z",
+  "updatedAt": "2025-09-17T13:24:08.52135Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/CursorTouch/Windows-MCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "windows_mcp",
+      "version": "0.3.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

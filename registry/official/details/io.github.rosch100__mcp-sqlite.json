@@ -1,0 +1,39 @@
+{
+  "id": "io.github.rosch100/mcp-sqlite",
+  "displayName": "io.github.rosch100/mcp-sqlite",
+  "description": "MCP server for SQLCipher 4 encrypted SQLite databases with full CRUD operations and query support",
+  "version": "0.2.4",
+  "status": "active",
+  "publishedAt": "2025-11-18T07:18:50.55139Z",
+  "updatedAt": "2025-11-18T07:18:50.55139Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/rosch100/mcp-sqlite",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/rosch100/mcp-sqlite:0.2.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DB_PATH",
+          "description": "Path to the encrypted SQLite database file",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DB_PASSPHRASE",
+          "description": "Passphrase for decrypting the database",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

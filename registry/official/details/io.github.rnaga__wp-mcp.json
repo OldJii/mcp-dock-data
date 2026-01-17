@@ -1,0 +1,112 @@
+{
+  "id": "io.github.rnaga/wp-mcp",
+  "displayName": "WordPress MCP Server",
+  "description": "MCP server for WordPress. Manage posts, users, comments, terms, metadata, and settings.",
+  "version": "1.0.6",
+  "status": "active",
+  "publishedAt": "2025-11-08T20:32:52.599216Z",
+  "updatedAt": "2025-11-08T20:32:52.599216Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/rnaga/wp-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@rnaga/wp-mcp",
+      "version": "1.0.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LOCAL_USERNAME",
+          "description": "WordPress username to assume for capability checks",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "WP_DB_HOST",
+          "description": "WordPress database host",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "WP_DB_PORT",
+          "description": "WordPress database port",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3306"
+        },
+        {
+          "name": "WP_DB_NAME",
+          "description": "WordPress database name",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "WP_DB_USER",
+          "description": "WordPress database user",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "WP_DB_PASSWORD",
+          "description": "WordPress database password",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "LOCAL_MULTISITE",
+          "description": "Enable WordPress multisite mode",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "LOCAL_DEFAULT_BLOG_ID",
+          "description": "Default blog ID for multisite",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "1"
+        },
+        {
+          "name": "LOCAL_DEFAULT_SITE_ID",
+          "description": "Default site ID for multisite",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "1"
+        },
+        {
+          "name": "LOCAL_SSL_ENABLED",
+          "description": "Enable SSL for database connection",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "LOCAL_SSL_CA_FILEPATH",
+          "description": "Path to SSL CA certificate file",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOCAL_SSL_CERT_FILEPATH",
+          "description": "Path to SSL certificate file",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOCAL_SSL_KEY_FILEPATH",
+          "description": "Path to SSL key file",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

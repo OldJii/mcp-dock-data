@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/plainyogurt21-sec-edgar-mcp",
+  "displayName": "ai.smithery/plainyogurt21-sec-edgar-mcp",
+  "description": "Provide AI assistants with real-time access to official SEC EDGAR filings and financial data. Enab…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-13T21:20:44.610658Z",
+  "updatedAt": "2025-09-13T21:20:44.610658Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/plainyogurt21/sec-edgar-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

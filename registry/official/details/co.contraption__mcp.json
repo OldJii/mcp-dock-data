@@ -1,0 +1,16 @@
+{
+  "id": "co.contraption/mcp",
+  "displayName": "co.contraption/mcp",
+  "description": "An MCP server that provides [describe what your server does]",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T15:38:37.916768Z",
+  "updatedAt": "2025-10-02T15:38:37.916768Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/contraptionco/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

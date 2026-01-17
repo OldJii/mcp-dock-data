@@ -1,0 +1,46 @@
+{
+  "id": "io.github.domdomegg/filesystem-mcp",
+  "displayName": "Filesystem",
+  "description": "Read, create, and edit files.",
+  "version": "1.2.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:26:01.812562Z",
+  "updatedAt": "2025-12-28T06:26:01.812562Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/filesystem-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/filesystem-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "filesystem-mcp",
+      "version": "1.2.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "filesystem-mcp",
+      "version": "1.2.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

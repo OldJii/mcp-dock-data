@@ -1,0 +1,27 @@
+{
+  "id": "io.github.wei/hn-mcp-server",
+  "displayName": "io.github.wei/hn-mcp-server",
+  "description": "Model Context Protocol server for HackerNews API access.",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-13T20:31:53.02091Z",
+  "updatedAt": "2025-10-13T20:31:53.02091Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "hn-mcp-server",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

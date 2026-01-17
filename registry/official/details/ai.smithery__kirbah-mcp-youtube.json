@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/kirbah-mcp-youtube",
+  "displayName": "ai.smithery/kirbah-mcp-youtube",
+  "description": "Provide token-optimized, structured YouTube data to enhance your LLM applications. Access efficien…",
+  "version": "0.2.6",
+  "status": "active",
+  "publishedAt": "2025-10-04T16:31:58.771823Z",
+  "updatedAt": "2025-10-04T16:31:58.771823Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kirbah/mcp-youtube",
+    "source": "github"
+  },
+  "packages": []
+}

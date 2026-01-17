@@ -1,0 +1,34 @@
+{
+  "id": "io.github.index9-org/mcp",
+  "displayName": "io.github.index9-org/mcp",
+  "description": "Up-to-date model data for AI coding assistants.",
+  "version": "1.0.30",
+  "status": "active",
+  "publishedAt": "2026-01-02T01:44:08.701274Z",
+  "updatedAt": "2026-01-02T01:44:08.701274Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/index9-org/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@index9/mcp",
+      "version": "1.0.30",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENROUTER_API_KEY",
+          "description": "Optional OpenRouter API key for live model testing.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

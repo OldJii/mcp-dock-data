@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/Phionx-mcp-hello-server",
+  "displayName": "ai.smithery/Phionx-mcp-hello-server",
+  "description": "Send personalized greetings to anyone. Enable Pirate Mode for swashbuckling salutations. Explore t…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T06:11:06.81562Z",
+  "updatedAt": "2025-10-03T06:11:06.81562Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Phionx/mcp-hello-server",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Koneisto/no-as-a-service",
+  "displayName": "io.github.Koneisto/no-as-a-service",
+  "description": "1000+ creative ways to say no. Polite, humorous, professional rejection responses.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-08T17:48:48.911581Z",
+  "updatedAt": "2025-12-08T17:48:48.911581Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Koneisto/no-as-a-service",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "no-as-service",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

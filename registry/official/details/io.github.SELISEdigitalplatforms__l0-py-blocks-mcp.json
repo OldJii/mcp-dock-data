@@ -1,0 +1,16 @@
+{
+  "id": "io.github.SELISEdigitalplatforms/l0-py-blocks-mcp",
+  "displayName": "io.github.SELISEdigitalplatforms/l0-py-blocks-mcp",
+  "description": "A Model Context Protocol (MCP) server for Selise Blocks Cloud integration",
+  "version": "1.0.0-beta.4",
+  "status": "active",
+  "publishedAt": "2025-12-29T13:01:12.938213Z",
+  "updatedAt": "2025-12-29T13:01:12.938213Z",
+  "iconUrl": null,
+  "websiteUrl": "https://cloud.seliseblocks.com",
+  "repository": {
+    "url": "https://github.com/SELISEdigitalplatforms/l0-py-blocks-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

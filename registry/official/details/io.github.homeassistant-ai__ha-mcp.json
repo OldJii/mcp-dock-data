@@ -1,0 +1,36 @@
+{
+  "id": "io.github.homeassistant-ai/ha-mcp",
+  "displayName": "io.github.homeassistant-ai/ha-mcp",
+  "description": "Comprehensive Model Context Protocol server for managing Home Assistant through AI assistants.",
+  "version": "6.3.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T11:09:57.247936Z",
+  "updatedAt": "2026-01-17T11:09:57.247936Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/homeassistant-ai/ha-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ha-mcp",
+      "version": "6.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/homeassistant-ai/ha-mcp:6.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

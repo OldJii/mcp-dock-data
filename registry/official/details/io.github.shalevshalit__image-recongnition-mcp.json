@@ -1,0 +1,34 @@
+{
+  "id": "io.github.shalevshalit/image-recongnition-mcp",
+  "displayName": "io.github.shalevshalit/image-recongnition-mcp",
+  "description": "MCP server for AI-powered image recognition and description using OpenAI vision models.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T15:01:36.626716Z",
+  "updatedAt": "2025-09-10T15:01:36.626716Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mcp-s-ai/image-recongnition-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "image-recongnition-mcp",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Your OpenAI API key for image recognition and description services",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

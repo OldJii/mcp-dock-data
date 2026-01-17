@@ -1,0 +1,34 @@
+{
+  "id": "io.github.hoklims/stacksfinder",
+  "displayName": "io.github.hoklims/stacksfinder",
+  "description": "Deterministic tech stack recommendations, audits, and project estimates. No hallucinations.",
+  "version": "1.3.7",
+  "status": "active",
+  "publishedAt": "2026-01-14T02:33:16.600425Z",
+  "updatedAt": "2026-01-14T02:33:16.600425Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/hoklims/stacksfinder-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@stacksfinder/mcp-server",
+      "version": "1.3.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STACKSFINDER_API_KEY",
+          "description": "API key for Pro features (get at stacksfinder.com/pricing). Free tier works without key.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

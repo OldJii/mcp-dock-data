@@ -1,0 +1,27 @@
+{
+  "id": "io.github.GoogleCloudPlatform/gemini-cloud-assist-mcp",
+  "displayName": "io.github.GoogleCloudPlatform/gemini-cloud-assist-mcp",
+  "description": "MCP Server for understanding, managing & troubleshooting your GCP environment.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-09-29T23:42:19.208646Z",
+  "updatedAt": "2025-09-29T23:42:19.208646Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/GoogleCloudPlatform/gemini-cloud-assist-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@google-cloud/gemini-cloud-assist-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

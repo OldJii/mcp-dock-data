@@ -1,0 +1,27 @@
+{
+  "id": "io.github.fkom13/gencodedoc",
+  "displayName": "io.github.fkom13/gencodedoc",
+  "description": "Versioning de code et génération de documentation intelligents. Supporte CLI, API REST, et MCP.",
+  "version": "2.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-15T07:03:37.651233Z",
+  "updatedAt": "2025-11-15T07:03:37.651233Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/fkom13/gencodedoc",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "gencodedoc",
+      "version": "2.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

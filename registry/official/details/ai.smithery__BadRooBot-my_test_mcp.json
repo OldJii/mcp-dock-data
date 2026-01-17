@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/BadRooBot-my_test_mcp",
+  "displayName": "ai.smithery/BadRooBot-my_test_mcp",
+  "description": "Get current weather for any city and create images from your prompts. Streamline planning, reports…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-14T14:25:46.094496Z",
+  "updatedAt": "2025-09-14T14:25:46.094496Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BadRooBot/python_mcp",
+    "source": "github"
+  },
+  "packages": []
+}

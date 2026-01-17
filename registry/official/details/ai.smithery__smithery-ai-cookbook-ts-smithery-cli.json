@@ -1,0 +1,17 @@
+{
+  "id": "ai.smithery/smithery-ai-cookbook-ts-smithery-cli",
+  "displayName": "ai.smithery/smithery-ai-cookbook-ts-smithery-cli",
+  "description": "A simple Typescript MCP server built using the official MCP Typescript SDK and smithery/cli. This…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-13T12:45:28.964188Z",
+  "updatedAt": "2025-09-13T12:45:28.964188Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/smithery-ai/smithery-cookbook",
+    "source": "github",
+    "subfolder": "servers/typescript/migrate_stdio_to_http/server_with_smithery_cli"
+  },
+  "packages": []
+}

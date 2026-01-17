@@ -1,0 +1,27 @@
+{
+  "id": "com.bitsbound/contract-analysis",
+  "displayName": "com.bitsbound/contract-analysis",
+  "description": "AI contract analysis with partner-level redlines, OOXML Track Changes, and risk analysis.",
+  "version": "1.0.6",
+  "status": "active",
+  "publishedAt": "2025-12-22T13:57:28.0431Z",
+  "updatedAt": "2025-12-22T13:57:28.0431Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/taytrom/bitsbound-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bitsbound/mcp-server",
+      "version": "1.0.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

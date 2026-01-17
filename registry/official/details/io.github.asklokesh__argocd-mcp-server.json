@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/argocd-mcp-server",
+  "displayName": "Argocd",
+  "description": "MCP server for ArgoCD GitOps continuous delivery integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T22:06:44.599956Z",
+  "updatedAt": "2025-12-30T22:06:44.599956Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/argocd-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "argocd-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ARGOCD_API_KEY",
+          "description": "API Key for ARGOCD",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "ARGOCD_API_URL",
+          "description": "API URL for ARGOCD",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

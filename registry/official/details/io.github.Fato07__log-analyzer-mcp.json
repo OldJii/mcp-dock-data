@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Fato07/log-analyzer-mcp",
+  "displayName": "io.github.Fato07/log-analyzer-mcp",
+  "description": "AI-powered log analysis - parse, search, extract errors across 9+ formats",
+  "version": "0.4.2",
+  "status": "active",
+  "publishedAt": "2026-01-16T14:56:24.151252Z",
+  "updatedAt": "2026-01-16T14:56:24.151252Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Fato07/log-analyzer-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "codesdevs-log-analyzer",
+      "version": "0.4.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.taytrom/bitsbound-contract-automation",
+  "displayName": "io.github.taytrom/bitsbound-contract-automation",
+  "description": "AI contract automation with partner-level redlines, OOXML Track Changes, and risk analysis.",
+  "version": "1.0.14",
+  "status": "active",
+  "publishedAt": "2025-12-22T22:11:52.537848Z",
+  "updatedAt": "2025-12-22T22:11:52.537848Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/taytrom/bitsbound-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bitsbound/mcp-server",
+      "version": "1.0.14",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

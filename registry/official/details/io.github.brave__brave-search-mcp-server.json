@@ -1,0 +1,34 @@
+{
+  "id": "io.github.brave/brave-search-mcp-server",
+  "displayName": "io.github.brave/brave-search-mcp-server",
+  "description": "Brave Search MCP Server: web results, images, videos, rich results, AI summaries, and more.",
+  "version": "2.0.9",
+  "status": "active",
+  "publishedAt": "2025-09-19T11:51:13.375441Z",
+  "updatedAt": "2025-09-19T13:21:42.772287Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/brave/brave-search-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@brave/brave-search-mcp-server",
+      "version": "2.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BRAVE_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

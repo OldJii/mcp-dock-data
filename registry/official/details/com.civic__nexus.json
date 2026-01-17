@@ -1,0 +1,17 @@
+{
+  "id": "com.civic/nexus",
+  "displayName": "com.civic/nexus",
+  "description": "Zero-setup MCP gateway securely connecting AI to your tools with authentication and workflows",
+  "version": "0.1.59",
+  "status": "active",
+  "publishedAt": "2025-12-12T12:44:11.442296Z",
+  "updatedAt": "2025-12-12T12:44:11.442296Z",
+  "iconUrl": null,
+  "websiteUrl": "https://nexus.civic.com",
+  "repository": {
+    "url": "https://github.com/civicteam/civic-mcp",
+    "source": "github",
+    "subfolder": "apps/hub"
+  },
+  "packages": []
+}

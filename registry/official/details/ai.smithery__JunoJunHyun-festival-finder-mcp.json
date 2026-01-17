@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/JunoJunHyun-festival-finder-mcp",
+  "displayName": "ai.smithery/JunoJunHyun-festival-finder-mcp",
+  "description": "Discover festivals worldwide by location, date, and genre. Compare options with key details like d…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-06T09:40:14.759675Z",
+  "updatedAt": "2025-10-06T09:40:14.759675Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/JunoJunHyun/Festival-Finder-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

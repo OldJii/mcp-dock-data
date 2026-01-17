@@ -1,0 +1,27 @@
+{
+  "id": "io.github.verygoodplugins/mcp-local-wp",
+  "displayName": "MCP Local WP",
+  "description": "WordPress database access via Local by Flywheel. Execute read-only MySQL queries and inspect schema.",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-04T15:47:19.32041Z",
+  "updatedAt": "2026-01-04T15:47:19.32041Z",
+  "iconUrl": null,
+  "websiteUrl": "https://verygoodplugins.com/?utm_source=mcp-registry",
+  "repository": {
+    "url": "https://github.com/verygoodplugins/mcp-local-wp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@verygoodplugins/mcp-local-wp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

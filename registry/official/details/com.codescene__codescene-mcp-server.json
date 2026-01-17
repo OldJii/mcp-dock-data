@@ -1,0 +1,45 @@
+{
+  "id": "com.codescene/codescene-mcp-server",
+  "displayName": "com.codescene/codescene-mcp-server",
+  "description": "An MCP server that provides CodeScene Code Health analysis tools.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-12T12:10:03.180543Z",
+  "updatedAt": "2025-12-12T12:10:03.180543Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/codescene-oss/codescene-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/codescene/codescene-mcp:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CS_ACCESS_TOKEN",
+          "description": "CodeScene API Token",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CS_ACE_ACCESS_TOKEN",
+          "description": "CodeScene ACE API Token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "CS_MOUNT_PATH",
+          "description": "CodeScene Path to code",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

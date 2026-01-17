@@ -1,0 +1,58 @@
+{
+  "id": "io.github.CodeLogicIncEngineering/codelogic-mcp-server",
+  "displayName": "io.github.CodeLogicIncEngineering/codelogic-mcp-server",
+  "description": "An MCP Server to utilize Codelogic's rich software dependency data in your AI programming assistant.",
+  "version": "1.0.11",
+  "status": "active",
+  "publishedAt": "2025-09-24T14:54:45.047401Z",
+  "updatedAt": "2025-09-24T14:54:45.047401Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/CodeLogicIncEngineering/codelogic-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "codelogic-mcp-server",
+      "version": "1.0.11",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CODELOGIC_SERVER_HOST",
+          "description": "url to the CodeLogic server e.g. https://myco.app.codelogic.com",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CODELOGIC_USERNAME",
+          "description": "CodeLogic server username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CODELOGIC_PASSWORD",
+          "description": "CodeLogic server password",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CODELOGIC_WORKSPACE_NAME",
+          "description": "the workspace name that your code is scanned into",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CODELOGIC_DEBUG_MODE",
+          "description": "When enabled, additional debug files such as timing_log.txt and impact_data*.json will be generated. Defaults to false",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

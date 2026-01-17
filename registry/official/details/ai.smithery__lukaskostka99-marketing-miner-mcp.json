@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/lukaskostka99-marketing-miner-mcp",
+  "displayName": "ai.smithery/lukaskostka99-marketing-miner-mcp",
+  "description": "Discover high-impact keyword ideas across Central and Eastern European and English markets. Analyz…",
+  "version": "1.14.0",
+  "status": "active",
+  "publishedAt": "2025-09-16T19:53:18.718565Z",
+  "updatedAt": "2025-09-16T19:53:18.718565Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/lukaskostka99/marketing-miner-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

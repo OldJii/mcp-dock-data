@@ -1,0 +1,26 @@
+{
+  "id": "com.falkordb/QueryWeaver",
+  "displayName": "com.falkordb/QueryWeaver",
+  "description": "An MCP server for Text2SQL: transforms natural language into SQL using graph schema understanding.",
+  "version": "0.0.11",
+  "status": "active",
+  "publishedAt": "2025-09-11T06:54:10.01888Z",
+  "updatedAt": "2025-09-11T06:54:10.01888Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/FalkorDB/QueryWeaver",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/falkordb/queryweaver:0.0.11",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

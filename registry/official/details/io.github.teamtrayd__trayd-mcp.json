@@ -1,0 +1,16 @@
+{
+  "id": "io.github.teamtrayd/trayd-mcp",
+  "displayName": "io.github.teamtrayd/trayd-mcp",
+  "description": "Trade Robinhood through natural language in Claude Code.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T18:23:54.458072Z",
+  "updatedAt": "2025-12-30T18:23:54.458072Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/trayders/trayd-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

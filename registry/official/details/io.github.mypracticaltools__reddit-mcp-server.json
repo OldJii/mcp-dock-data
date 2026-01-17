@@ -1,0 +1,34 @@
+{
+  "id": "io.github.mypracticaltools/reddit-mcp-server",
+  "displayName": "io.github.mypracticaltools/reddit-mcp-server",
+  "description": "Reddit MCP Server via Apify",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2026-01-12T16:59:20.697572Z",
+  "updatedAt": "2026-01-12T16:59:20.697572Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mypracticaltools/Reddit-MCP-Server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@practicaltools/reddit-mcp-server",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_API_TOKEN",
+          "description": "Your Apify API Token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

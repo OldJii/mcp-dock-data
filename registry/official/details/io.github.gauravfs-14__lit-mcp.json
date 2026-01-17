@@ -1,0 +1,27 @@
+{
+  "id": "io.github.gauravfs-14/lit-mcp",
+  "displayName": "io.github.gauravfs-14/lit-mcp",
+  "description": "MCP server for academic literature databases (arXiv, DBLP) to accelerate research using LLMs.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-09T19:50:29.822014Z",
+  "updatedAt": "2025-10-09T19:50:29.822014Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "lit-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

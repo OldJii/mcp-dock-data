@@ -1,0 +1,16 @@
+{
+  "id": "ai.kubit/mcp-server",
+  "displayName": "Kubit",
+  "description": "Bring Kubit into your AI workflow — query your warehouse with natural language",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-09T00:18:46.752966Z",
+  "updatedAt": "2025-12-09T00:18:46.752966Z",
+  "iconUrl": "https://kubit.ai/wp-content/uploads/2025/12/Logo-Blue-Background-Stacked.png",
+  "websiteUrl": "https://docs.kubit.ai/docs/mcp-server",
+  "repository": {
+    "url": "https://github.com/Kubit-AI/mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

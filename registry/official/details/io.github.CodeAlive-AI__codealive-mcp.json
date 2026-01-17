@@ -1,0 +1,34 @@
+{
+  "id": "io.github.CodeAlive-AI/codealive-mcp",
+  "displayName": "io.github.CodeAlive-AI/codealive-mcp",
+  "description": "Semantic code search and analysis from CodeAlive for AI assistants and agents.",
+  "version": "0.4.7",
+  "status": "active",
+  "publishedAt": "2026-01-16T20:07:03.796118Z",
+  "updatedAt": "2026-01-16T20:07:03.796118Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/CodeAlive-AI/codealive-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/codealive-ai/codealive-mcp:0.4.7",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CODEALIVE_API_KEY",
+          "description": "Your CodeAlive API key. Get one at https://app.codealive.ai/ under MCP & API.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

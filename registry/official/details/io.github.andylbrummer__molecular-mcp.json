@@ -1,0 +1,29 @@
+{
+  "id": "io.github.andylbrummer/molecular-mcp",
+  "displayName": "io.github.andylbrummer/molecular-mcp",
+  "description": "GPU-accelerated MCP server for molecular dynamics, N-body simulations, and particle systems",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2026-01-05T04:52:43.6735Z",
+  "updatedAt": "2026-01-05T04:52:43.6735Z",
+  "iconUrl": null,
+  "websiteUrl": "https://andylbrummer.github.io/math-mcp/api/molecular-mcp",
+  "repository": {
+    "url": "https://github.com/andylbrummer/math-mcp",
+    "source": "github",
+    "subfolder": "servers/molecular-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scicomp-molecular-mcp",
+      "version": "0.1.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

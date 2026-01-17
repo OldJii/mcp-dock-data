@@ -1,0 +1,26 @@
+{
+  "id": "io.github.PromptExecution/just-mcp",
+  "displayName": "Just MCP Server",
+  "description": "Expose curated Justfile recipes via MCP for safe deterministic automation.",
+  "version": "0.1.5",
+  "status": "active",
+  "publishedAt": "2025-11-15T10:16:34.699806Z",
+  "updatedAt": "2025-11-15T10:16:34.699806Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/PromptExecution/just-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/promptexecution/just-mcp:0.1.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

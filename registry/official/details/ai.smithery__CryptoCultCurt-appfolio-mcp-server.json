@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/CryptoCultCurt-appfolio-mcp-server",
+  "displayName": "ai.smithery/CryptoCultCurt-appfolio-mcp-server",
+  "description": "Provide seamless access to Appfolio Property Manager Reporting API through a standardized MCP serv…",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-11T00:42:54.555978Z",
+  "updatedAt": "2025-09-11T00:42:54.555978Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/CryptoCultCurt/appfolio-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

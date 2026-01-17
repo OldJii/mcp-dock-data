@@ -1,0 +1,70 @@
+{
+  "id": "com.iunera/druid-mcp-server",
+  "displayName": "com.iunera/druid-mcp-server",
+  "description": "AI-powered MCP server for Apache Druid cluster management and analytic",
+  "version": "1.7.0",
+  "status": "active",
+  "publishedAt": "2025-12-18T15:03:23.916496Z",
+  "updatedAt": "2025-12-18T15:03:23.916496Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/iunera/druid-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/iunera/druid-mcp-server:1.7.0",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DRUID_ROUTER_URL",
+          "description": "Druid router URL for connecting to the Druid cluster",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DRUID_COORDINATOR_URL",
+          "description": "Druid coordinator URL for querying metadata endpoints (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DRUID_AUTH_USERNAME",
+          "description": "Username for Druid authentication (optional)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DRUID_AUTH_PASSWORD",
+          "description": "Password for Druid authentication (optional)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DRUID_SSL_ENABLED",
+          "description": "Enable SSL/TLS support for Druid connections",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DRUID_SSL_SKIP_VERIFICATION",
+          "description": "Skip SSL certificate verification (for development/testing only)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DRUID_MCP_READONLY_ENABLED",
+          "description": "Enable read-only mode (only GET requests and SQL queries allowed)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

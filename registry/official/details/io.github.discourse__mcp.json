@@ -1,0 +1,27 @@
+{
+  "id": "io.github.discourse/mcp",
+  "displayName": "io.github.discourse/mcp",
+  "description": "Discourse MCP CLI server (stdio) exposing Discourse tools via MCP",
+  "version": "0.2.3",
+  "status": "active",
+  "publishedAt": "2026-01-15T04:19:42.767473Z",
+  "updatedAt": "2026-01-15T04:19:42.767473Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/discourse/discourse-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@discourse/mcp",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

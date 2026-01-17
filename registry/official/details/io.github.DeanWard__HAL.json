@@ -1,0 +1,27 @@
+{
+  "id": "io.github.DeanWard/HAL",
+  "displayName": "io.github.DeanWard/HAL",
+  "description": "HAL (HTTP API Layer) - An MCP server that provides HTTP API capabilities to Large Language Models",
+  "version": "1.0.14",
+  "status": "active",
+  "publishedAt": "2025-09-09T13:04:11.86093Z",
+  "updatedAt": "2025-09-09T13:04:11.86093Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/DeanWard/HAL",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "hal-mcp",
+      "version": "1.0.14",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

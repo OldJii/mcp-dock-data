@@ -1,0 +1,27 @@
+{
+  "id": "io.github.josefdc/uniprot-mcp",
+  "displayName": "UniProt MCP",
+  "description": "Read-only UniProtKB via MCP (entries, sequences, features, GO, taxonomy, ID mapping).",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-27T23:22:21.911346Z",
+  "updatedAt": "2025-10-27T23:22:21.911346Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "uniprot-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

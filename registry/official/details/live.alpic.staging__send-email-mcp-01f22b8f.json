@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging/send-email-mcp-01f22b8f",
+  "displayName": "Hey World",
+  "description": "Super description",
+  "version": "0.3.4",
+  "status": "active",
+  "publishedAt": "2025-11-21T16:00:48.262043Z",
+  "updatedAt": "2025-11-21T16:00:48.262043Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

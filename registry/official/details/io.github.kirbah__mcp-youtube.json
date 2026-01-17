@@ -1,0 +1,41 @@
+{
+  "id": "io.github.kirbah/mcp-youtube",
+  "displayName": "YouTube Data",
+  "description": "YouTube MCP server for token-optimized, structured data using the YouTube Data API v3.",
+  "version": "0.3.2",
+  "status": "active",
+  "publishedAt": "2026-01-14T15:51:59.390669Z",
+  "updatedAt": "2026-01-14T15:51:59.390669Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kirbah/mcp-youtube",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@kirbah/mcp-youtube",
+      "version": "0.3.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUTUBE_API_KEY",
+          "description": "YouTube Data API v3 key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_CONNECTION_STRING",
+          "description": "MongoDB connection string for caching",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

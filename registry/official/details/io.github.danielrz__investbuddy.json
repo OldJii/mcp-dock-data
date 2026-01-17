@@ -1,0 +1,31 @@
+{
+  "id": "io.github.danielrz/investbuddy",
+  "displayName": "io.github.danielrz/investbuddy",
+  "description": "AI-powered stock predictions with 79.86% accuracy. 10-day forecasts & portfolio analysis.",
+  "version": "1.0.8",
+  "status": "active",
+  "publishedAt": "2025-12-17T16:24:08.298531Z",
+  "updatedAt": "2025-12-17T16:24:08.298531Z",
+  "iconUrl": null,
+  "websiteUrl": "https://www.investbuddy.ai",
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "investbuddy-mcp-server",
+      "version": "1.0.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "INVESTBUDDY_API_KEY",
+          "description": "Your InvestBuddy API key (get free key at https://www.investbuddy.ai)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

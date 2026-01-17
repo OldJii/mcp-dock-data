@@ -1,0 +1,27 @@
+{
+  "id": "io.github.ozanmutlu/gitlab-docs",
+  "displayName": "io.github.ozanmutlu/gitlab-docs",
+  "description": "GitLab documentation search for AI assistants via Model Context Protocol (MCP)",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-06T23:39:24.755209Z",
+  "updatedAt": "2025-12-06T23:39:24.755209Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ozanmutlu/Gitlab-Docs-MCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "gitlab-docs-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

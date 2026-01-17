@@ -1,0 +1,42 @@
+{
+  "id": "io.github.bethmaloney/rdl-mcp",
+  "displayName": "RDL MCP Server",
+  "description": "Edit SSRS reports using AI - simple tools to read and modify RDL files",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-22T11:00:37.342341Z",
+  "updatedAt": "2025-11-22T11:00:37.342341Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/bethmaloney/rdl-mcp",
+  "repository": {
+    "url": "https://github.com/bethmaloney/rdl-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "rdl-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RDL_MCP_LOG_LEVEL",
+          "description": "Log level for the RDL MCP server (DEBUG, INFO, WARNING, ERROR)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "INFO"
+        },
+        {
+          "name": "RDL_MCP_LOG_FILE",
+          "description": "Path to log file for the RDL MCP server",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

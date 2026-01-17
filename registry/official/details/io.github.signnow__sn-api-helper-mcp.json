@@ -1,0 +1,27 @@
+{
+  "id": "io.github.signnow/sn-api-helper-mcp",
+  "displayName": "SignNow Api Helper MCP",
+  "description": "MCP server for SignNow API helper tools (stdio only).",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-15T15:10:32.963134Z",
+  "updatedAt": "2026-01-15T15:10:32.963134Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/signnow/sn-api-helper-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sn-api-helper-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

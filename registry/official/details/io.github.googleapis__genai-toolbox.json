@@ -1,0 +1,26 @@
+{
+  "id": "io.github.googleapis/genai-toolbox",
+  "displayName": "MCP Toolbox",
+  "description": "MCP Toolbox for Databases enables your agent to connect to your database.",
+  "version": "0.25.0",
+  "status": "active",
+  "publishedAt": "2026-01-08T23:16:04.638795Z",
+  "updatedAt": "2026-01-08T23:16:04.638795Z",
+  "iconUrl": "https://github.com/googleapis/genai-toolbox/blob/main/.hugo/assets/icons/logo.svg",
+  "websiteUrl": "https://github.com/googleapis/genai-toolbox",
+  "repository": {
+    "url": "https://github.com/googleapis/genai-toolbox",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:0.25.0",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

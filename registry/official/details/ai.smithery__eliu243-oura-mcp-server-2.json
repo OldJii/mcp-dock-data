@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/eliu243-oura-mcp-server-2",
+  "displayName": "ai.smithery/eliu243-oura-mcp-server-2",
+  "description": "Connect your Oura Ring account to enable secure, authenticated access in your workflows. Generate…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T18:40:49.71696Z",
+  "updatedAt": "2025-10-02T18:40:49.71696Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/eliu243/oura-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

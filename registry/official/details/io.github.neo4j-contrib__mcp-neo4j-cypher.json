@@ -1,0 +1,83 @@
+{
+  "id": "io.github.neo4j-contrib/mcp-neo4j-cypher",
+  "displayName": "io.github.neo4j-contrib/mcp-neo4j-cypher",
+  "description": "A simple Neo4j MCP server that allows you to run Cypher queries against a Neo4j database.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T17:27:58.219859Z",
+  "updatedAt": "2025-11-07T17:27:58.219859Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "source": "github",
+    "subfolder": "servers/mcp-neo4j-cypher"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-neo4j-cypher",
+      "version": "0.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NEO4J_URI",
+          "description": "Neo4j connection URI",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_USERNAME",
+          "description": "Neo4j username",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_PASSWORD",
+          "description": "Neo4j password",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "NEO4J_DATABASE",
+          "description": "Neo4j database name",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_NAMESPACE",
+          "description": "Tool namespace prefix",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_RESPONSE_TOKEN_LIMIT",
+          "description": "Maximum tokens for read query responses",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_READ_TIMEOUT",
+          "description": "Timeout in seconds for read queries",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_READ_ONLY",
+          "description": "Allow only read-only queries (true/false)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_SCHEMA_SAMPLE_SIZE",
+          "description": "Schema sample size",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

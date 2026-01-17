@@ -1,0 +1,27 @@
+{
+  "id": "io.github.AlexDeMichieli/weather",
+  "displayName": "io.github.AlexDeMichieli/weather",
+  "description": "An MCP server for weather information.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-12T19:37:44.758462Z",
+  "updatedAt": "2026-01-12T19:37:44.758462Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/alexdemichieli/mcp-weather-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@alexdemichieli/mcp-weather-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

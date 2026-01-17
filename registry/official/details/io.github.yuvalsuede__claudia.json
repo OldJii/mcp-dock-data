@@ -1,0 +1,28 @@
+{
+  "id": "io.github.yuvalsuede/claudia",
+  "displayName": "io.github.yuvalsuede/claudia",
+  "description": "Task management for AI agents with hierarchical tasks, dependencies, sprints, and coordination.",
+  "version": "0.1.3",
+  "status": "active",
+  "publishedAt": "2026-01-14T19:45:45.965995Z",
+  "updatedAt": "2026-01-14T19:45:45.965995Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/yuvalsuede/claudia",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "claudia-cli",
+      "version": "0.1.3",
+      "runtimeHint": "bunx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

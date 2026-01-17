@@ -1,0 +1,27 @@
+{
+  "id": "io.github.gattjoe/ACMS",
+  "displayName": "io.github.gattjoe/ACMS",
+  "description": "Apple Container MCP Server (ACMS) provides access to Apple's container CLI tool on macOS",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-22T03:02:39.528792Z",
+  "updatedAt": "2025-12-22T03:02:39.528792Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gattjoe/ACMS",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ACMS",
+      "version": "0.1.0",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

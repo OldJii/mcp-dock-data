@@ -1,0 +1,88 @@
+{
+  "id": "io.github.aplaceforallmystuff/mcp-arr",
+  "displayName": "io.github.aplaceforallmystuff/mcp-arr",
+  "description": "MCP server for *arr media suite - Sonarr, Radarr, Lidarr, Readarr, Prowlarr",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-28T10:41:13.807494Z",
+  "updatedAt": "2025-11-28T10:41:13.807494Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aplaceforallmystuff/mcp-arr",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-arr-server",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SONARR_URL",
+          "description": "Sonarr server URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SONARR_API_KEY",
+          "description": "Sonarr API key",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "RADARR_URL",
+          "description": "Radarr server URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RADARR_API_KEY",
+          "description": "Radarr API key",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "LIDARR_URL",
+          "description": "Lidarr server URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LIDARR_API_KEY",
+          "description": "Lidarr API key",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "READARR_URL",
+          "description": "Readarr server URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "READARR_API_KEY",
+          "description": "Readarr API key",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PROWLARR_URL",
+          "description": "Prowlarr server URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PROWLARR_API_KEY",
+          "description": "Prowlarr API key",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "io.github.wrenchpilot/it-tools-mcp",
+  "displayName": "io.github.wrenchpilot/it-tools-mcp",
+  "description": "MCP server exposing 100+ IT tools and utilities for developers and system administrators.",
+  "version": "5.8.8",
+  "status": "active",
+  "publishedAt": "2026-01-07T18:07:54.896535Z",
+  "updatedAt": "2026-01-07T18:07:54.896535Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/wrenchpilot/it-tools-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "it-tools-mcp",
+      "version": "5.8.8",
+      "runtimeHint": "node",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "io.github.photoxpedia/bolor-brain-mcp",
+  "displayName": "io.github.photoxpedia/bolor-brain-mcp",
+  "description": "Cognitive architecture MCP server with memory, learning, and contextual understanding",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-26T01:01:09.811479Z",
+  "updatedAt": "2025-11-26T01:01:09.811479Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/photoxpedia/bolor-brain-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bolor-brain-mcp",
+      "version": "1.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BRAIN_USE_SQLITE",
+          "description": "Enable SQLite storage (default: true)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BRAIN_LOG_LEVEL",
+          "description": "Log level (default: INFO)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

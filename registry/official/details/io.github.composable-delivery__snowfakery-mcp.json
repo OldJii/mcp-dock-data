@@ -1,0 +1,27 @@
+{
+  "id": "io.github.composable-delivery/snowfakery-mcp",
+  "displayName": "io.github.composable-delivery/snowfakery-mcp",
+  "description": "MCP server for authoring, analyzing, debugging, and running Snowfakery recipes",
+  "version": "0.0.4",
+  "status": "active",
+  "publishedAt": "2026-01-16T16:19:47.149007Z",
+  "updatedAt": "2026-01-16T16:19:47.149007Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/composable-delivery/snowfakery-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "snowfakery-mcp",
+      "version": "0.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

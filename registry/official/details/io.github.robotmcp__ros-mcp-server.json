@@ -1,0 +1,27 @@
+{
+  "id": "io.github.robotmcp/ros-mcp-server",
+  "displayName": "io.github.robotmcp/ros-mcp-server",
+  "description": "Connect AI models like Claude & ChatGPT with ROS robots using MCP",
+  "version": "2.2.1",
+  "status": "active",
+  "publishedAt": "2025-11-06T06:42:34.741306Z",
+  "updatedAt": "2025-11-06T06:42:34.741306Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/robotmcp/ros-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ros-mcp",
+      "version": "2.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

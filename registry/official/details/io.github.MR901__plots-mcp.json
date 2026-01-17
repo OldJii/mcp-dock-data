@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MR901/plots-mcp",
+  "displayName": "io.github.MR901/plots-mcp",
+  "description": "MCP server for data visualization with Mermaid charts.",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-22T19:25:51.84317Z",
+  "updatedAt": "2025-09-22T19:25:51.84317Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MR901/plots-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-plots",
+      "version": "0.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

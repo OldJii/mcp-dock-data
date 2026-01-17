@@ -1,0 +1,34 @@
+{
+  "id": "io.github.mohamedgb00714/autoplans-mcp",
+  "displayName": "io.github.mohamedgb00714/autoplans-mcp",
+  "description": "AI-powered project planning tools for Autoplans.dev with 14+ MCP tools",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-11-19T21:29:34.052615Z",
+  "updatedAt": "2025-11-19T21:29:34.052615Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mohamedgb00714/autoplans-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "autoplans-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AUTOPLANS_API_KEY",
+          "description": "API key for Autoplans.dev service. Get yours at https://autoplans.dev",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "ai.com.mcp/hapi-mcp",
+  "displayName": "HAPI MCP Server",
+  "description": "HAPI MCP server: Dynamically exposes OpenAPI REST APIs as MCP tools for AI assistants",
+  "version": "0.6.0",
+  "status": "active",
+  "publishedAt": "2026-01-07T00:32:01.41626Z",
+  "updatedAt": "2026-01-07T00:32:01.41626Z",
+  "iconUrl": null,
+  "websiteUrl": "https://docs.mcp.com.ai/components/hapi-server/hapi-cli",
+  "repository": {
+    "url": "https://github.com/larebelion/hapimcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/hapimcp/hapi-cli:0.6.0",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "HAPI_FQDN",
+          "description": "Fully Qualified Domain Name for the HAPI server (used in MCP tool URLs)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "localhost"
+        },
+        {
+          "name": "HAPI_HOME",
+          "description": "Directory path for HAPI configuration and specs. Should be mounted as a volume in Docker",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/app/.hapi"
+        },
+        {
+          "name": "PROJECT_NAME",
+          "description": "The name of the project/API (alternative to positional argument)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HAPI_OPENAPI",
+          "description": "OpenAPI spec URL or path (alternative to --openapi flag)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HAPI_URL",
+          "description": "Backend API base URL (alternative to --url flag)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HAPI_PORT",
+          "description": "Server port (alternative to --port flag) - this is the internal container port",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3030"
+        },
+        {
+          "name": "HAPI_HEADLESS",
+          "description": "Enable headless mode (alternative to --headless flag)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        },
+        {
+          "name": "HAPI_MCP",
+          "description": "Enable MCP mode (alternative to --mcp flag)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        },
+        {
+          "name": "HAPI_DEV",
+          "description": "Enable development mode (alternative to --dev flag)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HAPI_CORS",
+          "description": "Comma-separated allowed CORS origins (alternative to --cors flag)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HAPI_CONFIG_FILES",
+          "description": "Comma-separated configuration files (alternative to --filename flag)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NODE_ENV",
+          "description": "Node environment (development, production). 'development' enables verbose logging and debugging features.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "production"
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "serve",
+          "description": "Command to start the HAPI MCP server",
+          "type": "positional",
+          "isRequired": true,
+          "default": "serve"
+        },
+        {
+          "name": "projectName",
+          "description": "The name of the project/API to serve (e.g., 'petstore'). Optional when using HAPI_OPENAPI environment variable",
+          "type": "positional",
+          "isRequired": false
+        },
+        {
+          "name": "--port",
+          "description": "The port to listen on inside the container",
+          "type": "named",
+          "isRequired": false,
+          "default": "3030"
+        },
+        {
+          "name": "--headless",
+          "description": "Run in headless mode (serve MCP-only, no business logic)",
+          "type": "named",
+          "isRequired": false,
+          "default": "true"
+        },
+        {
+          "name": "--mcp",
+          "description": "The server provides REST API's business logic AND also exposes them as MCP tools",
+          "type": "named",
+          "isRequired": false,
+          "default": "true"
+        },
+        {
+          "name": "--dev",
+          "description": "Enable development mode with verbose logging",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--url",
+          "description": "The full URL for the backend API server (overrides OpenAPI spec servers). Uses OAS server URL if not provided",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--openapi",
+          "description": "OpenAPI spec file path or URL to use instead of loading from HAPI_HOME",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--cors",
+          "description": "Comma-separated list of allowed origins for CORS (e.g., 'http://localhost:3000,https://example.com')",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--filename",
+          "description": "Comma-separated list of OAS configuration files to apply (can be URLs)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--cert",
+          "description": "Path to SSL certificate file for HTTPS. Volume mount required if using Docker. https://docs.mcp.com.ai/components/hapi-server/hapi-cli#running-with-tls-https",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--key",
+          "description": "Path to SSL key file for HTTPS. Volume mount required if using Docker",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

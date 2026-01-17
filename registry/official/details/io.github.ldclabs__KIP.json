@@ -1,0 +1,40 @@
+{
+  "id": "io.github.ldclabs/KIP",
+  "displayName": "io.github.ldclabs/KIP",
+  "description": "Knowledge Graphs to enable memory persistence, knowledge evolution, explainable interaction.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-09T13:48:53.753511Z",
+  "updatedAt": "2026-01-09T13:48:53.753511Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ldclabs/KIP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ldclabs/kip-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KIP_BACKEND_URL",
+          "description": "HTTP URL for the KIP backend endpoint",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "KIP_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

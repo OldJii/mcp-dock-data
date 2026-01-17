@@ -1,0 +1,27 @@
+{
+  "id": "io.github.docfork/docfork",
+  "displayName": "io.github.docfork/docfork",
+  "description": "Up-to-date Docs for AI Agents.",
+  "version": "1.3.2",
+  "status": "active",
+  "publishedAt": "2026-01-14T07:46:02.735995Z",
+  "updatedAt": "2026-01-14T07:46:02.735995Z",
+  "iconUrl": "https://mcp.docfork.com/icon.svg",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/docfork/docfork",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "docfork",
+      "version": "1.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

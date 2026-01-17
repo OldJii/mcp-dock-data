@@ -1,0 +1,26 @@
+{
+  "id": "io.github.copyleftdev/fabric-atelier",
+  "displayName": "io.github.copyleftdev/fabric-atelier",
+  "description": "AI-powered content processing with 226 Fabric patterns for writing, analysis, and code generation.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-10-12T05:55:44.267818Z",
+  "updatedAt": "2025-10-12T05:55:44.267818Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/copyleftdev/fabric-atelier.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/copyleftdev/fabric-atelier:0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

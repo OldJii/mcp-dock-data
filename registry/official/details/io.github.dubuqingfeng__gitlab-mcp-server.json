@@ -1,0 +1,64 @@
+{
+  "id": "io.github.dubuqingfeng/gitlab-mcp-server",
+  "displayName": "io.github.dubuqingfeng/gitlab-mcp-server",
+  "description": "GitLab MCP (Model Context Protocol) server for AI agents",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-11T09:41:43.896888Z",
+  "updatedAt": "2025-09-11T09:41:43.896888Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dubuqingfeng/gitlab-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@dubuqingfeng/gitlab-mcp-server",
+      "version": "2.0.12",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITLAB_TOKEN",
+          "description": "Your API key for the gitlab",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GITLAB_URL",
+          "description": "Gitlab URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LARK_WEBHOOK_URL",
+          "description": "Lark 机器人 Webhook URL",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "LARK_SECRET_KEY",
+          "description": "可选：签名密钥（如果机器人启用了签名验证）",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "LARK_ENABLE_NOTIFICATION",
+          "description": "可选：是否启用通知，默认为 true",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GITLAB_NOTE_MODE",
+          "description": "可选：通知模式 - gitlab_only(仅GitLab)、lark_only(仅Lark)、both(两者都发)，默认为 gitlab_only",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

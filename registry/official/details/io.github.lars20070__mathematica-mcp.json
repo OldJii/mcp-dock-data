@@ -1,0 +1,27 @@
+{
+  "id": "io.github.lars20070/mathematica-mcp",
+  "displayName": "io.github.lars20070/mathematica-mcp",
+  "description": "MCP server for WolframScript",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2025-12-24T14:28:13.869439Z",
+  "updatedAt": "2025-12-24T14:28:13.869439Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/lars20070/mathematica-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mathematica_mcp",
+      "version": "0.1.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

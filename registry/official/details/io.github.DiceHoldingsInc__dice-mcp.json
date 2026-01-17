@@ -1,0 +1,13 @@
+{
+  "id": "io.github.DiceHoldingsInc/dice-mcp",
+  "displayName": "Dice MCP",
+  "description": "Dice MCP: Search for tech jobs on Dice.com",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T21:43:49.734328Z",
+  "updatedAt": "2026-01-05T21:43:49.734328Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

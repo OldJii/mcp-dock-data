@@ -1,0 +1,27 @@
+{
+  "id": "io.github.laveeshb/logicapps-mcp",
+  "displayName": "io.github.laveeshb/logicapps-mcp",
+  "description": "MCP server for Azure Logic Apps - debug workflows, manage runs, and authoring",
+  "version": "0.4.3",
+  "status": "active",
+  "publishedAt": "2026-01-11T19:55:36.39295Z",
+  "updatedAt": "2026-01-11T19:55:36.39295Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/laveeshb/logicapps-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "logicapps-mcp",
+      "version": "0.4.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

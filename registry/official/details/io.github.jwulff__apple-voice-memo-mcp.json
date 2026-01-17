@@ -1,0 +1,27 @@
+{
+  "id": "io.github.jwulff/apple-voice-memo-mcp",
+  "displayName": "io.github.jwulff/apple-voice-memo-mcp",
+  "description": "Access Apple Voice Memos on macOS. List, get audio, extract and generate transcripts.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-12T01:33:48.396152Z",
+  "updatedAt": "2026-01-12T01:33:48.396152Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jwulff/apple-voice-memo-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "apple-voice-memo-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

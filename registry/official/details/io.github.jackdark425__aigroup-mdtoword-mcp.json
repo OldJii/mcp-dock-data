@@ -1,0 +1,27 @@
+{
+  "id": "io.github.jackdark425/aigroup-mdtoword-mcp",
+  "displayName": "io.github.jackdark425/aigroup-mdtoword-mcp",
+  "description": "本地 Markdown 到 Word 文档转换工具，支持最新 MCP 协议特性、完整的页眉页脚页码功能、增强的表格功能、数据导入和数学公式支持，修复本地相对路径图片嵌入问题",
+  "version": "4.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-12T12:39:38.593717Z",
+  "updatedAt": "2025-12-12T12:39:38.593717Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jackdark425/aigroup-mdtoword-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "aigroup-mdtoword-mcp",
+      "version": "4.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

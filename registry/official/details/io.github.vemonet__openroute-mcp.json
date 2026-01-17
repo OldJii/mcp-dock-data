@@ -1,0 +1,34 @@
+{
+  "id": "io.github.vemonet/openroute-mcp",
+  "displayName": "io.github.vemonet/openroute-mcp",
+  "description": "Plan routes using OpenRouteService API, for activities such as hiking or mountain biking",
+  "version": "0.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-10T06:03:34.202607Z",
+  "updatedAt": "2025-10-10T06:03:34.202607Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vemonet/openroute-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "openroute-mcp",
+      "version": "0.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENROUTESERVICE_API_KEY",
+          "description": "Your API key for https://api.openrouteservice.org",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

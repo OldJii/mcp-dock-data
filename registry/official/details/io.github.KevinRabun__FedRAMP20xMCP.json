@@ -1,0 +1,27 @@
+{
+  "id": "io.github.KevinRabun/FedRAMP20xMCP",
+  "displayName": "FedRAMP 20x Requirements",
+  "description": "An MCP server that provides access to FedRAMP 20x security requirements and controls.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-13T18:41:39.528858Z",
+  "updatedAt": "2026-01-13T18:41:39.528858Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/KevinRabun/FedRAMP20xMCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "fedramp-20x-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

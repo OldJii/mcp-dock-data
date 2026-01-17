@@ -1,0 +1,16 @@
+{
+  "id": "com.peek/mcp",
+  "displayName": "com.peek/mcp",
+  "description": "Build travel itineraries with Peek's 300k+ experiences. Search, details, and availability.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T18:22:01.353358Z",
+  "updatedAt": "2025-09-10T18:22:01.353358Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

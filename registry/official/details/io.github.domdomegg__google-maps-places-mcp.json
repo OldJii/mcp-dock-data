@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/google-maps-places-mcp",
+  "displayName": "Google Maps Places",
+  "description": "Allow AI systems to search for places and get business info via Google Maps Places API.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:26:18.15301Z",
+  "updatedAt": "2025-12-28T06:26:18.15301Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/google-maps-places-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/google-maps-places-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-maps-places-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token with cloud-platform scope.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "google-maps-places-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

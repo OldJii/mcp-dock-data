@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MervinPraison/praisonai",
+  "displayName": "PraisonAI",
+  "description": "AI Agents Framework with Self Reflection and MCP support",
+  "version": "2.3.42",
+  "status": "active",
+  "publishedAt": "2025-12-18T22:14:22.379891Z",
+  "updatedAt": "2025-12-18T22:14:22.379891Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MervinPraison/PraisonAI",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "praisonai",
+      "version": "2.3.42",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.wmarceau/rideshare-comparison",
+  "displayName": "io.github.wmarceau/rideshare-comparison",
+  "description": "Compare Uber and Lyft prices for any route",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-14T13:36:01.539405Z",
+  "updatedAt": "2026-01-14T13:36:01.539405Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/wmarceau/rideshare-comparison-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "rideshare-comparison-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RIDESHARE_API_URL",
+          "description": "URL of the rideshare comparison API",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RIDESHARE_API_KEY",
+          "description": "API key for rideshare comparison service",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

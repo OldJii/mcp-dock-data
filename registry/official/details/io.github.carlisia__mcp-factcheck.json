@@ -1,0 +1,33 @@
+{
+  "id": "io.github.carlisia/mcp-factcheck",
+  "displayName": "io.github.carlisia/mcp-factcheck",
+  "description": "An MCP server that validates content against MCP specification using semantic search and AI",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T05:23:36.272365Z",
+  "updatedAt": "2025-10-07T05:23:36.272365Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/carlisia/mcp-factcheck",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/carlisia/mcp-factcheck:v1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key for embedding generation and content validation",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

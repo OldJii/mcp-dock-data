@@ -1,0 +1,47 @@
+{
+  "id": "io.github.esrisaudiarabia/arcgis-mcp-server",
+  "displayName": "io.github.esrisaudiarabia/arcgis-mcp-server",
+  "description": "Intelligent ArcGIS content search. Works with Online/Enterprise. Requires user credentials.",
+  "version": "1.1.5",
+  "status": "active",
+  "publishedAt": "2025-10-16T09:55:37.178122Z",
+  "updatedAt": "2025-10-16T09:55:37.178122Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/esrisaudiarabia/esrisaudiarabia-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "arcgis-mcp-server",
+      "version": "1.1.5",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ARCGIS_URL",
+          "description": "Your ArcGIS Portal URL (e.g., https://portal.company.com/portal)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ARCGIS_USERNAME",
+          "description": "Your ArcGIS Portal Username",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ARCGIS_PASSWORD",
+          "description": "Your ArcGIS Portal Password",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

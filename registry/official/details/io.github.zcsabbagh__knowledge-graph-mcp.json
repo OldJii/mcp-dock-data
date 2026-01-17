@@ -1,0 +1,34 @@
+{
+  "id": "io.github.zcsabbagh/knowledge-graph-mcp",
+  "displayName": "io.github.zcsabbagh/knowledge-graph-mcp",
+  "description": "Knowledge graph MCP for student learning with spaced repetition and mastery tracking",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T05:23:45.446989Z",
+  "updatedAt": "2025-12-30T05:23:45.446989Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/zcsabbagh/knowledge-graph-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "knowledge-graph-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KNOWLEDGE_GRAPH_DB_PATH",
+          "description": "Custom path for SQLite database file (optional, defaults to ~/.knowledge_graph/knowledge.db)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

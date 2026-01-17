@@ -1,0 +1,27 @@
+{
+  "id": "io.github.shashwatgtm/icp-intelligence-mcp",
+  "displayName": "io.github.shashwatgtm/icp-intelligence-mcp",
+  "description": "Deep ICP Analysis with Pattern Detection - 9 B2B targeting tools",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T14:23:12.411268Z",
+  "updatedAt": "2026-01-17T14:23:12.411268Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shashwatgtm/icp-intelligence-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@shashwatgtmalpha/icp-intelligence-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

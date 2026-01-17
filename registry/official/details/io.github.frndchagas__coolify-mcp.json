@@ -1,0 +1,60 @@
+{
+  "id": "io.github.frndchagas/coolify-mcp",
+  "displayName": "Coolify MCP",
+  "description": "MCP server for Coolify API operations.",
+  "version": "0.1.4",
+  "status": "active",
+  "publishedAt": "2026-01-07T14:33:45.488501Z",
+  "updatedAt": "2026-01-07T14:33:45.488501Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/frndchagas/coolify-mcp",
+  "repository": {
+    "url": "https://github.com/frndchagas/coolify-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fndchagas/coolify-mcp",
+      "version": "0.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "COOLIFY_BASE_URL",
+          "description": "Coolify API base URL.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "COOLIFY_TOKEN",
+          "description": "Coolify API token.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "COOLIFY_STRICT_VERSION",
+          "description": "Fail on version mismatch.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "COOLIFY_ALLOW_WRITE",
+          "description": "Enable write operations.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        },
+        {
+          "name": "COOLIFY_OPENAPI_REF",
+          "description": "Override OpenAPI version ref (optional).",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

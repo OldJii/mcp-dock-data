@@ -1,0 +1,24 @@
+{
+  "id": "io.github.stepbot/stockfish-mcp",
+  "displayName": "Stockfish MCP",
+  "description": "A Stockfish MCP server to allow an LLM to play chess against Stockfish",
+  "version": "v1.0.2",
+  "status": "active",
+  "publishedAt": "2025-11-10T01:28:47.646677Z",
+  "updatedAt": "2025-11-10T01:28:47.646677Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "stockfish-mcp",
+      "version": "v1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

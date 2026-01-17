@@ -1,0 +1,57 @@
+{
+  "id": "io.github.trondhindenes/code-index-mcp",
+  "displayName": "Code Index",
+  "description": "Fast local source code searching using Zoekt trigram-based indexing",
+  "version": "1.0.9",
+  "status": "active",
+  "publishedAt": "2025-11-30T10:31:13.928413Z",
+  "updatedAt": "2025-11-30T10:31:13.928413Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/trondhindenes/code-index-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/trondhindenes/code-index-mcp/releases/download/1.0.9/code-index-mcp-darwin-amd64.mcpb",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/trondhindenes/code-index-mcp/releases/download/1.0.9/code-index-mcp-darwin-arm64.mcpb",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/trondhindenes/code-index-mcp/releases/download/1.0.9/code-index-mcp-linux-amd64.mcpb",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/trondhindenes/code-index-mcp/releases/download/1.0.9/code-index-mcp-linux-arm64.mcpb",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

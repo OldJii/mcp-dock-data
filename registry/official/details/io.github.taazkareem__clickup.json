@@ -1,0 +1,53 @@
+{
+  "id": "io.github.taazkareem/clickup",
+  "displayName": "io.github.taazkareem/clickup",
+  "description": "Premium AI integration. Tasks, lists, docs, folders, time. 50+ tools. Instant setup.",
+  "version": "0.12.3",
+  "status": "active",
+  "publishedAt": "2026-01-01T06:43:38.43919Z",
+  "updatedAt": "2026-01-01T06:43:38.43919Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/taazkareem/clickup-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@taazkareem/clickup-mcp-server",
+      "version": "0.12.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CLICKUP_MCP_LICENSE_KEY",
+          "description": "Your ClickUp MCP License Key from Polar.sh",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CLICKUP_API_KEY",
+          "description": "Your ClickUp API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CLICKUP_TEAM_ID",
+          "description": "Your ClickUp Team ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DOCUMENT_SUPPORT",
+          "description": "Enable ClickUp Document support",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

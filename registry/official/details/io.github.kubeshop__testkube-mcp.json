@@ -1,0 +1,81 @@
+{
+  "id": "io.github.kubeshop/testkube-mcp",
+  "displayName": "io.github.kubeshop/testkube-mcp",
+  "description": "MCP server for Testkube - Manage test workflows, executions, and artifacts via AI assistants",
+  "version": "2.4.3",
+  "status": "active",
+  "publishedAt": "2025-11-27T11:08:00.697709Z",
+  "updatedAt": "2025-11-27T11:08:00.697709Z",
+  "iconUrl": "https://avatars.githubusercontent.com/u/82541796?v=4",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kubeshop/testkube",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/kubeshop/mcp-server:2.4.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TK_ACCESS_TOKEN",
+          "description": "Testkube access token for authentication",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TK_ORG_ID",
+          "description": "Testkube organization ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "TK_ENV_ID",
+          "description": "Testkube environment ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "TK_CONTROL_PLANE_URL",
+          "description": "Testkube Control Plane URL (default: https://api.testkube.io)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TK_DASHBOARD_URL",
+          "description": "Testkube Dashboard URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TK_DEBUG",
+          "description": "Enable debug mode (default: false)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TK_MCP_TRANSPORT",
+          "description": "MCP transport type: stdio or shttp (default: stdio)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TK_MCP_SHTTP_HOST",
+          "description": "SHTTP host when using shttp transport",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TK_MCP_SHTTP_PORT",
+          "description": "SHTTP port when using shttp transport",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

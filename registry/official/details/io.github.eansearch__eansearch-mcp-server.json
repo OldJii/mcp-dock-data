@@ -1,0 +1,34 @@
+{
+  "id": "io.github.eansearch/eansearch-mcp-server",
+  "displayName": "io.github.eansearch/eansearch-mcp-server",
+  "description": "MCP server for real-time product search by barcode (EAN, UPC, GTIN) or keyword on ean-search.org",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-15T16:46:32.516107Z",
+  "updatedAt": "2026-01-15T16:46:32.516107Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/eansearch/eansearch-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "eansearch-mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EAN_SEARCH_API_TOKEN",
+          "description": "Your EAN-Search.org API key",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

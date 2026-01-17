@@ -1,0 +1,36 @@
+{
+  "id": "io.github.neverinfamous/sqlite-mcp-server",
+  "displayName": "io.github.neverinfamous/sqlite-mcp-server",
+  "description": "SQLite MCP server with 73 tools for JSONB, full-text search, geospatial, and analytics.",
+  "version": "2.6.3",
+  "status": "active",
+  "publishedAt": "2025-10-13T08:08:01.494568Z",
+  "updatedAt": "2025-10-13T08:08:01.494568Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/neverinfamous/sqlite-mcp-server.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sqlite-mcp-server-enhanced",
+      "version": "2.6.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/writenotenow/sqlite-mcp-server:v2.6.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

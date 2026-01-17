@@ -1,0 +1,40 @@
+{
+  "id": "io.github.detailobsessed/efficient-gitlab",
+  "displayName": "io.github.detailobsessed/efficient-gitlab",
+  "description": "GitLab MCP Server with progressive disclosure - 5 meta-tools, 90% token reduction",
+  "version": "0.3.2",
+  "status": "active",
+  "publishedAt": "2025-12-30T10:14:11.562014Z",
+  "updatedAt": "2025-12-30T10:14:11.562014Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/detailobsessed/efficient-gitlab-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "efficient-gitlab-mcp-server",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITLAB_PERSONAL_ACCESS_TOKEN",
+          "description": "GitLab personal access token with API scope",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GITLAB_API_URL",
+          "description": "GitLab API base URL (default: https://gitlab.com)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.verygoodplugins/mcp-automem",
+  "displayName": "MCP AutoMem",
+  "description": "Graph-vector memory for AI assistants using FalkorDB and Qdrant",
+  "version": "0.10.0",
+  "status": "active",
+  "publishedAt": "2026-01-07T00:11:20.377939Z",
+  "updatedAt": "2026-01-07T00:11:20.377939Z",
+  "iconUrl": null,
+  "websiteUrl": "https://automem.ai/?utm_source=mcp-registry",
+  "repository": {
+    "url": "https://github.com/verygoodplugins/mcp-automem",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@verygoodplugins/mcp-automem",
+      "version": "0.10.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

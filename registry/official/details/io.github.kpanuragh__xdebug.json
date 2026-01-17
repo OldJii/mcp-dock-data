@@ -1,0 +1,27 @@
+{
+  "id": "io.github.kpanuragh/xdebug",
+  "displayName": "io.github.kpanuragh/xdebug",
+  "description": "MCP server for PHP Xdebug debugging with breakpoints, stepping, and variable inspection",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-09T18:35:29.734487Z",
+  "updatedAt": "2025-12-09T18:35:29.734487Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kpanuragh/xdebug-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "xdebug-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

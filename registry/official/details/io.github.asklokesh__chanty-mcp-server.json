@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/chanty-mcp-server",
+  "displayName": "Chanty",
+  "description": "MCP server for Chanty API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:43.040595Z",
+  "updatedAt": "2025-12-31T01:21:43.040595Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/chanty-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "chanty-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CHANTY_API_KEY",
+          "description": "API Key for CHANTY",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CHANTY_API_URL",
+          "description": "API URL for CHANTY",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

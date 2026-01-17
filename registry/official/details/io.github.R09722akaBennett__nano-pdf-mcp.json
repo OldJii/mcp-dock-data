@@ -1,0 +1,34 @@
+{
+  "id": "io.github.R09722akaBennett/nano-pdf-mcp",
+  "displayName": "NanoPDF",
+  "description": "AI-powered PDF editing and generation MCP server using Gemini Pro.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-24T08:42:25.151641Z",
+  "updatedAt": "2025-12-24T08:42:25.151641Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/R09722akaBennett/nano-pdf-mcp",
+    "source": "github",
+    "subfolder": "mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/taibennett/nano-pdf-mcp:0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Google AI Studio API key for Gemini Pro",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

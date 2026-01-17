@@ -1,0 +1,27 @@
+{
+  "id": "io.github.zzstoatzz/tangled-mcp",
+  "displayName": "io.github.zzstoatzz/tangled-mcp",
+  "description": "MCP server for Tangled git platform. Manage repositories, branches, and issues on tangled.org.",
+  "version": "0.0.9",
+  "status": "active",
+  "publishedAt": "2025-10-11T06:21:56.321596Z",
+  "updatedAt": "2025-10-11T06:21:56.321596Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "tangled-mcp",
+      "version": "0.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

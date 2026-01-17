@@ -1,0 +1,59 @@
+{
+  "id": "io.github.drhelius/geargrafx",
+  "displayName": "Geargrafx MCP Server",
+  "description": "MCP server for Geargrafx PC Engine / TurboGrafx-16 emulator",
+  "version": "1.6.7",
+  "status": "active",
+  "publishedAt": "2025-12-13T19:08:30.659984Z",
+  "updatedAt": "2025-12-13T19:08:30.659984Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/drhelius/geargrafx/releases/download/1.6.7/Geargrafx-macos-arm64.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/drhelius/geargrafx/releases/download/1.6.7/Geargrafx-macos-x64.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/drhelius/geargrafx/releases/download/1.6.7/Geargrafx-windows-arm64.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/drhelius/geargrafx/releases/download/1.6.7/Geargrafx-windows-x64.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/drhelius/geargrafx/releases/download/1.6.7/Geargrafx-linux-x64.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

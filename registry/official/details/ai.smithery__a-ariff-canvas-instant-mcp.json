@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/a-ariff-canvas-instant-mcp",
+  "displayName": "ai.smithery/a-ariff-canvas-instant-mcp",
+  "description": "Manage your Canvas coursework with quick access to courses, assignments, and grades. Track upcomin…",
+  "version": "2.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-05T00:50:43.815585Z",
+  "updatedAt": "2025-10-05T00:50:43.815585Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/a-ariff/canvas-instant-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

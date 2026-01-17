@@ -1,0 +1,34 @@
+{
+  "id": "io.github.youdotcom-oss/mcp",
+  "displayName": "You.com Web Access & AI",
+  "description": "Web search, AI agent, and content extraction via You.com APIs",
+  "version": "1.3.9",
+  "status": "active",
+  "publishedAt": "2025-12-15T09:29:08.038849Z",
+  "updatedAt": "2025-12-15T09:29:08.038849Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/youdotcom-oss/dx-toolkit",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@youdotcom-oss/mcp",
+      "version": "1.3.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YDC_API_KEY",
+          "description": "You.com API key",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "io.github.MatanYemini/bitbucket-mcp",
+  "displayName": "Bitbucket MCP",
+  "description": "Model Context Protocol (MCP) server for Bitbucket Cloud and Server API integration",
+  "version": "5.0.5",
+  "status": "active",
+  "publishedAt": "2025-11-21T14:37:21.735631Z",
+  "updatedAt": "2025-11-21T14:37:21.735631Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bitbucket-mcp",
+      "version": "5.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

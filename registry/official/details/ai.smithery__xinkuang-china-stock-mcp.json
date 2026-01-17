@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/xinkuang-china-stock-mcp",
+  "displayName": "ai.smithery/xinkuang-china-stock-mcp",
+  "description": "Access real-time and historical market data for China A-shares and Hong Kong stocks, along with ne…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-09-30T01:41:03.405268Z",
+  "updatedAt": "2025-09-30T01:41:03.405268Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/xinkuang/china-stock-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

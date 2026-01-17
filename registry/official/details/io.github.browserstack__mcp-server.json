@@ -1,0 +1,40 @@
+{
+  "id": "io.github.browserstack/mcp-server",
+  "displayName": "io.github.browserstack/mcp-server",
+  "description": "BrowserStack's Official MCP Server",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-28T14:01:41.033363Z",
+  "updatedAt": "2025-10-28T14:01:41.033363Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/browserstack/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@browserstack/mcp-server",
+      "version": "1.2.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BROWSERSTACK_USERNAME",
+          "description": "BrowserStack Username",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "BROWSERSTACK_ACCESS_KEY",
+          "description": "BrowserStack Access Key",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

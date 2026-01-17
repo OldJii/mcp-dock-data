@@ -1,0 +1,26 @@
+{
+  "id": "io.github.tuananh/hyper-mcp",
+  "displayName": "io.github.tuananh/hyper-mcp",
+  "description": "📦️ A fast, secure MCP server that extends its capabilities through WebAssembly plugins",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-18T04:56:15.144633Z",
+  "updatedAt": "2025-09-18T04:56:15.144633Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/tuananh/hyper-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/tuananh/hyper-mcp:v0.1.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

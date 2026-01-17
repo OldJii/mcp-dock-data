@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Kastalien-Research/thoughtbox",
+  "displayName": "io.github.Kastalien-Research/thoughtbox",
+  "description": "Extended reasoning with structured processes, persistence, and workflow guidance",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-11-25T03:56:35.380259Z",
+  "updatedAt": "2025-11-25T03:56:35.380259Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Kastalien-Research/thoughtbox",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@kastalien-research/thoughtbox",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

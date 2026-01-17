@@ -1,0 +1,35 @@
+{
+  "id": "io.github.sumup/mcp",
+  "displayName": "SumUp MCP Server",
+  "description": "Tools to explore SumUp accounts, payments, customers, and payouts.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-11-02T09:23:34.97206Z",
+  "updatedAt": "2025-11-02T09:23:34.97206Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/sumup/sumup-agent-toolkit",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@sumup/mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SUMUP_API_KEY",
+          "description": "SumUp API key with permissions for the requested operations.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

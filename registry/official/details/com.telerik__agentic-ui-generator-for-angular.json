@@ -1,0 +1,13 @@
+{
+  "id": "com.telerik/agentic-ui-generator-for-angular",
+  "displayName": "Agentic UI Generator for Angular",
+  "description": "AI development agent using Kendo UI to rapidly create and style quality web UIs or Pages.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-24T07:57:51.088819Z",
+  "updatedAt": "2025-11-24T07:57:51.088819Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.estruyf/vscode-demo-time",
+  "displayName": "io.github.estruyf/vscode-demo-time",
+  "description": "Enables AI assistants to interact with Demo Time and helps build presentations and demos.",
+  "version": "0.0.55",
+  "status": "active",
+  "publishedAt": "2025-09-19T07:45:12.638193Z",
+  "updatedAt": "2025-09-19T07:45:12.638193Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/estruyf/vscode-demo-time",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@demotime/mcp",
+      "version": "0.0.55",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

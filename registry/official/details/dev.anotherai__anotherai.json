@@ -1,0 +1,16 @@
+{
+  "id": "dev.anotherai/anotherai",
+  "displayName": "dev.anotherai/anotherai",
+  "description": "MCP server for building and testing AI agents with multi-model experimentation and insights.",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T12:06:15.262277Z",
+  "updatedAt": "2025-10-07T12:06:15.262277Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.SidneyBissoli/cid10-br-mcp",
+  "displayName": "io.github.SidneyBissoli/cid10-br-mcp",
+  "description": "MCP Server for Brazilian ICD-10 (DATASUS) - International Classification of Diseases",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-16T14:03:13.92775Z",
+  "updatedAt": "2026-01-16T14:03:13.92775Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SidneyBissoli/cid10-br-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "cid10-br-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

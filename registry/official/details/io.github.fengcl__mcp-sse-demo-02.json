@@ -1,0 +1,26 @@
+{
+  "id": "io.github.fengcl/mcp-sse-demo-02",
+  "displayName": "io.github.fengcl/mcp-sse-demo-02",
+  "description": "Spring Boot MCP 服务器（示例占位描述），通过 GHCR 以 OCI 镜像发布至 MCP Registry。",
+  "version": "0.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-10T06:58:59.102576Z",
+  "updatedAt": "2025-10-10T06:58:59.102576Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/fengcl/mcp-sse-demo-02:0.1.5",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

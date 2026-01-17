@@ -1,0 +1,39 @@
+{
+  "id": "io.github.zenml-io/mcp-zenml",
+  "displayName": "io.github.zenml-io/mcp-zenml",
+  "description": "MCP server for ZenML - browse stacks, pipelines, runs, artifacts & trigger pipeline runs via API",
+  "version": "1.2.0",
+  "status": "active",
+  "publishedAt": "2026-01-16T09:47:04.730427Z",
+  "updatedAt": "2026-01-16T09:47:04.730427Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/zenml-io/mcp-zenml",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/zenmldocker/mcp-zenml:1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ZENML_STORE_URL",
+          "description": "Base URL of your ZenML server (e.g., https://<workspace-id>-zenml.cloudinfra.zenml.io).",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "ZENML_STORE_API_KEY",
+          "description": "API key used to authenticate with your ZenML server (ideally a service account key).",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

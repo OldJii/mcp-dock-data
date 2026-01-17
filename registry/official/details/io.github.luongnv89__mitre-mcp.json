@@ -1,0 +1,27 @@
+{
+  "id": "io.github.luongnv89/mitre-mcp",
+  "displayName": "MITRE ATT&CK",
+  "description": "MCP server exposing the MITRE ATT&CK framework via the official MCP Python SDK.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-11-18T11:35:41.495133Z",
+  "updatedAt": "2025-11-18T11:35:41.495133Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Montimage/mitre-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mitre-mcp",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

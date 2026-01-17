@@ -1,0 +1,34 @@
+{
+  "id": "io.github.ecfaria/todoist-mcp",
+  "displayName": "io.github.ecfaria/todoist-mcp",
+  "description": "MCP server for Todoist task management integration",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-04T14:06:51.089029Z",
+  "updatedAt": "2026-01-04T14:06:51.089029Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ecfaria/todoist-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ecfaria/todoist-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

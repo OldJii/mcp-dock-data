@@ -1,0 +1,76 @@
+{
+  "id": "io.github.frndchagas/expo-android",
+  "displayName": "Expo Android MCP",
+  "description": "MCP server for Android emulator automation via ADB.",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2026-01-08T17:24:23.85024Z",
+  "updatedAt": "2026-01-08T17:24:23.85024Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/frndchagas/expo-android",
+  "repository": {
+    "url": "https://github.com/frndchagas/expo-android",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fndchagas/expo-android",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ADB_PATH",
+          "description": "Path to adb executable.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "adb"
+        },
+        {
+          "name": "ADB_SERIAL",
+          "description": "Device serial to target (optional, use 'auto' to clear and auto-detect).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ADB_TIMEOUT_MS",
+          "description": "Timeout for adb commands in milliseconds.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "15000"
+        },
+        {
+          "name": "ADB_MAX_BUFFER_MB",
+          "description": "Max buffer size for adb output in MB.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "10"
+        },
+        {
+          "name": "ADB_DEBUG",
+          "description": "Enable adb debug logs (set to 1).",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "0"
+        },
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport: stdio, http, or both.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "stdio"
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP port when MCP_TRANSPORT is http or both.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "7332"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

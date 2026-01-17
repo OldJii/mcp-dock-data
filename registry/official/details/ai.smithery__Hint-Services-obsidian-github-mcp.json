@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/Hint-Services-obsidian-github-mcp",
+  "displayName": "ai.smithery/Hint-Services-obsidian-github-mcp",
+  "description": "Connect AI assistants to your GitHub-hosted Obsidian vault to seamlessly access, search, and analy…",
+  "version": "0.4.0",
+  "status": "active",
+  "publishedAt": "2025-09-14T15:20:36.371442Z",
+  "updatedAt": "2025-09-14T15:20:36.371442Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Hint-Services/obsidian-github-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

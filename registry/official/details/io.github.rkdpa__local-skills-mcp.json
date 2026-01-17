@@ -1,0 +1,24 @@
+{
+  "id": "io.github.rkdpa/local-skills-mcp",
+  "displayName": "io.github.rkdpa/local-skills-mcp",
+  "description": "Universal MCP server for local filesystem skills with lazy loading and context-efficient discovery",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-11-08T21:25:50.658274Z",
+  "updatedAt": "2025-11-08T21:25:50.658274Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "local-skills-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

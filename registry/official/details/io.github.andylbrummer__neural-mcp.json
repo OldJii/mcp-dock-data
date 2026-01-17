@@ -1,0 +1,29 @@
+{
+  "id": "io.github.andylbrummer/neural-mcp",
+  "displayName": "io.github.andylbrummer/neural-mcp",
+  "description": "GPU-accelerated MCP server for neural network training, deep learning, and model experimentation",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2026-01-05T04:52:44.551047Z",
+  "updatedAt": "2026-01-05T04:52:44.551047Z",
+  "iconUrl": null,
+  "websiteUrl": "https://andylbrummer.github.io/math-mcp/api/neural-mcp",
+  "repository": {
+    "url": "https://github.com/andylbrummer/math-mcp",
+    "source": "github",
+    "subfolder": "servers/neural-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scicomp-neural-mcp",
+      "version": "0.1.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

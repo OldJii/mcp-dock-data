@@ -1,0 +1,58 @@
+{
+  "id": "io.github.StudiousXiaoYu/oracle-link",
+  "displayName": "io.github.StudiousXiaoYu/oracle-link",
+  "description": "Oracle MCP Query Server (Node.js) - Read-only SELECT via MCP",
+  "version": "0.2.2",
+  "status": "active",
+  "publishedAt": "2025-12-04T12:51:51.721686Z",
+  "updatedAt": "2025-12-04T12:51:51.721686Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/StudiousXiaoYu/oracle-link",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@studious-xiaoyu/oracle-link",
+      "version": "0.2.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ORACLE_USERNAME",
+          "description": "Oracle DB username (optional when using tool url)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ORACLE_PASSWORD",
+          "description": "Oracle DB password (optional when using tool url)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ORACLE_CONNECT_STRING",
+          "description": "Oracle connect string host:port/service (optional when using tool url)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ORACLE_PRIVILEGE",
+          "description": "Admin privilege (SYSDBA or SYSOPER), optional",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DEFAULT_MAX_ROWS",
+          "description": "Default max rows for queries",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

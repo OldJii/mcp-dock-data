@@ -1,0 +1,88 @@
+{
+  "id": "io.github.ryaker/appstore-connect-mcp",
+  "displayName": "io.github.ryaker/appstore-connect-mcp",
+  "description": "MCP server for Apple Store Connect API integration with OAuth authentication support",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T14:59:09.119883Z",
+  "updatedAt": "2025-09-10T14:59:09.119883Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ryaker/appstore-connect-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ryaker/appstore-connect-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APPLE_KEY_ID",
+          "description": "Apple App Store Connect API Key ID",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "APPLE_ISSUER_ID",
+          "description": "Apple App Store Connect Issuer ID",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "APPLE_PRIVATE_KEY",
+          "description": "Apple App Store Connect Private Key (base64 encoded or raw)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "APPLE_BUNDLE_ID",
+          "description": "Optional: Specific Bundle ID to filter apps",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "APPLE_APP_STORE_ID",
+          "description": "Optional: Specific App Store ID",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OAUTH_ENABLED",
+          "description": "Enable OAuth authentication (true/false)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OAUTH_ISSUER",
+          "description": "OAuth issuer URL (e.g., https://your-tenant.auth0.com)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OAUTH_AUDIENCE",
+          "description": "OAuth audience URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "OAUTH_JWKS_URI",
+          "description": "OAuth JWKS URI for token validation",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SERVER_URL",
+          "description": "Server URL for OAuth deployment",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

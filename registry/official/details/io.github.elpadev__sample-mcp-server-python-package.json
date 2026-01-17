@@ -1,0 +1,24 @@
+{
+  "id": "io.github.elpadev/sample-mcp-server-python-package",
+  "displayName": "Elias MCP Sample Server",
+  "description": "A sample MCP server for testing",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-16T22:29:17.754969Z",
+  "updatedAt": "2025-11-16T22:29:17.754969Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "elias-mcp-server-elpadev",
+      "version": "0.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.monday/monday.com",
+  "displayName": "com.monday/monday.com",
+  "description": "MCP server for monday.com integration.",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-23T14:57:35.277178Z",
+  "updatedAt": "2025-10-23T14:57:35.277178Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mondaycom/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

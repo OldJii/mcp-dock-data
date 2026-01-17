@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/keremurat-mcp",
+  "displayName": "ai.smithery/keremurat-mcp",
+  "description": "Compare two JSON files deeply, regardless of order. Get a detailed difference report highlighting…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-03T13:28:45.319778Z",
+  "updatedAt": "2025-10-03T13:28:45.319778Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/keremurat/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

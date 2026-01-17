@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/xero-mcp-server",
+  "displayName": "Xero",
+  "description": "MCP server for Xero API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:45.705665Z",
+  "updatedAt": "2025-12-31T01:21:45.705665Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/xero-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "xero-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "XERO_API_KEY",
+          "description": "API Key for XERO",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "XERO_API_URL",
+          "description": "API URL for XERO",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "io.github.t4dhg/mcp-factorial",
+  "displayName": "MCP FactorialHR",
+  "description": "Full CRUD MCP server for FactorialHR: employees, teams, time off, projects, ATS, payroll.",
+  "version": "7.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-30T19:00:46.730883Z",
+  "updatedAt": "2025-12-30T19:00:46.730883Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/t4dhg/mcp-factorial#readme",
+  "repository": {
+    "url": "https://github.com/t4dhg/mcp-factorial",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@t4dhg/mcp-factorial",
+      "version": "7.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FACTORIAL_API_KEY",
+          "description": "API key from FactorialHR (Settings > API Keys)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "FACTORIAL_API_VERSION",
+          "description": "API version (default: 2025-10-01)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FACTORIAL_TIMEOUT_MS",
+          "description": "Request timeout in milliseconds (default: 30000)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FACTORIAL_MAX_RETRIES",
+          "description": "Maximum retry attempts (default: 3)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DEBUG",
+          "description": "Enable debug logging (default: false)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

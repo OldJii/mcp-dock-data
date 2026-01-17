@@ -1,0 +1,27 @@
+{
+  "id": "io.github.isamu/mulmocast-vision",
+  "displayName": "io.github.isamu/mulmocast-vision",
+  "description": "Easy and stylish presentation slide generator.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-12T21:46:16.168898Z",
+  "updatedAt": "2025-09-12T21:46:16.168898Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/receptron/mulmocast-vision",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mulmocast-vision",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

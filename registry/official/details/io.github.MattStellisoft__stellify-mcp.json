@@ -1,0 +1,40 @@
+{
+  "id": "io.github.MattStellisoft/stellify-mcp",
+  "displayName": "io.github.MattStellisoft/stellify-mcp",
+  "description": "Build Laravel apps through conversation. Code stored as structured JSON for surgical AI edits.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2026-01-09T22:54:51.115519Z",
+  "updatedAt": "2026-01-09T22:54:51.115519Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Stellify-Software-Ltd/stellify-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@stellisoft/stellify-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STELLIFY_API_URL",
+          "description": "Stellify API endpoint URL",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "STELLIFY_API_TOKEN",
+          "description": "Your Stellify API token (get from stellisoft.com/settings/tokens)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

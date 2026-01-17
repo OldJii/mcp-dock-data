@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging.system-prompts-of-ai-987eba72/my-mcp-server",
+  "displayName": "My MCP Serv",
+  "description": "Description of my MCP server",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-21T14:51:56.228247Z",
+  "updatedAt": "2025-11-21T14:51:56.228247Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

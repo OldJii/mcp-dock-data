@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/gmail-mcp",
+  "displayName": "Gmail",
+  "description": "Allow AI systems to read, send, archive, and manage emails via Gmail.",
+  "version": "2.1.2",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:33:21.685026Z",
+  "updatedAt": "2025-12-28T06:33:21.685026Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/gmail-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/gmail-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "gmail-mcp",
+      "version": "2.1.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token with Gmail scopes.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "gmail-mcp",
+      "version": "2.1.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

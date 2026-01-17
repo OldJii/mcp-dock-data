@@ -1,0 +1,27 @@
+{
+  "id": "io.github.antnewman/pm-data",
+  "displayName": "Project Management Data Tools",
+  "description": "Parse and convert project data from 8 formats (MSPDI, P6 XER, NISTA, Jira, Monday, etc.)",
+  "version": "0.3.0",
+  "status": "active",
+  "publishedAt": "2026-01-04T20:50:31.973856Z",
+  "updatedAt": "2026-01-04T20:50:31.973856Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/PDA-Task-Force/pda-platform",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "pm-mcp-servers",
+      "version": "0.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

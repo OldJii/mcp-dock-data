@@ -1,0 +1,52 @@
+{
+  "id": "io.github.umbraco/Umbraco-CMS-MCP-Dev",
+  "displayName": "Umbraco CMS Developer MCP",
+  "description": "A developer focused model context protocol (MCP) server for Umbraco CMS",
+  "version": "17.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-03T18:55:28.175078Z",
+  "updatedAt": "2025-12-03T18:55:28.175078Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/umbraco/Umbraco-CMS-MCP-Dev",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@umbraco-cms/mcp-dev",
+      "version": "17.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "UMBRACO_CLIENT_ID",
+          "description": "Umbraco API user client ID",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "UMBRACO_CLIENT_SECRET",
+          "description": "Umbraco API user client secret",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "UMBRACO_BASE_URL",
+          "description": "Base URL of your Umbraco instance",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "UMBRACO_INCLUDE_TOOL_COLLECTIONS",
+          "description": "Comma-separated list of tool collections to include (e.g., document,media,document-type)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

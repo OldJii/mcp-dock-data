@@ -1,0 +1,34 @@
+{
+  "id": "io.github.aplaceforallmystuff/mcp-kit",
+  "displayName": "io.github.aplaceforallmystuff/mcp-kit",
+  "description": "MCP server for Kit.com (ConvertKit) - manage subscribers, tags, sequences, broadcasts",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-27T16:11:48.684226Z",
+  "updatedAt": "2025-11-27T16:11:48.684226Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aplaceforallmystuff/mcp-kit",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "kit-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KIT_API_KEY",
+          "description": "Your Kit.com API key (v4)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

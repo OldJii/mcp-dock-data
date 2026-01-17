@@ -1,0 +1,27 @@
+{
+  "id": "io.github.fonkychen/nature-vision-mcp",
+  "displayName": "io.github.fonkychen/nature-vision-mcp",
+  "description": "Identifies biological species, returning Latin names with confidence scores.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2026-01-17T01:27:15.094215Z",
+  "updatedAt": "2026-01-17T01:27:15.094215Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/fonkychen/nature-vision-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fonkychen/nature-vision-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

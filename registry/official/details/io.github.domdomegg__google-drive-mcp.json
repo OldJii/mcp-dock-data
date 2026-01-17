@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/google-drive-mcp",
+  "displayName": "Google Drive",
+  "description": "Allow AI systems to list, search, upload, download, and manage files and folders in Google Drive.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:25:57.53457Z",
+  "updatedAt": "2025-12-28T06:25:57.53457Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/google-drive-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/google-drive-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-drive-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token with Drive scopes.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "google-drive-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

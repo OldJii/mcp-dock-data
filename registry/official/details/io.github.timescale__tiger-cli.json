@@ -1,0 +1,39 @@
+{
+  "id": "io.github.timescale/tiger-cli",
+  "displayName": "Tiger MCP",
+  "description": "Provides programmatic access to Tiger Cloud services, databases, and documentation.",
+  "version": "0.19.8",
+  "status": "active",
+  "publishedAt": "2025-12-16T19:41:51.543493Z",
+  "updatedAt": "2025-12-16T19:41:51.543493Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/timescale/tiger-cli",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/timescale/tiger-cli:0.19.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TIGER_PUBLIC_KEY",
+          "description": "Tiger Cloud API public key for authentication",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "TIGER_SECRET_KEY",
+          "description": "Tiger Cloud API secret key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

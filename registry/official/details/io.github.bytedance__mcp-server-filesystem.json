@@ -1,0 +1,85 @@
+{
+  "id": "io.github.bytedance/mcp-server-filesystem",
+  "displayName": "io.github.bytedance/mcp-server-filesystem",
+  "description": "MCP server for filesystem access",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-09T06:16:36.369748Z",
+  "updatedAt": "2025-09-09T06:16:36.369748Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bytedance/UI-TARS-desktop",
+    "source": "github",
+    "subfolder": "packages/agent-infra/mcp-servers/filesystem"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-filesystem",
+      "version": "latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "allowed-directories",
+          "description": "Comma-separated list of allowed directories for file operations",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-filesystem",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "allowed-directories",
+          "description": "Comma-separated list of allowed directories for file operations",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@agent-infra/mcp-server-filesystem",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "allowed-directories",
+          "description": "Comma-separated list of allowed directories for file operations",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "port",
+          "description": "Server port number",
+          "type": "named",
+          "isRequired": true,
+          "default": "8089"
+        }
+      ]
+    }
+  ]
+}

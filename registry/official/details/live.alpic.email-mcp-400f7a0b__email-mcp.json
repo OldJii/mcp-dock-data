@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.email-mcp-400f7a0b/email-mcp",
+  "displayName": "Template",
+  "description": "Description of my MCP server",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-09T19:24:24.500283Z",
+  "updatedAt": "2025-12-09T19:24:24.500283Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

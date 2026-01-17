@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging.template-nodejs-d3cd3099/template-nodejs",
+  "displayName": "Template",
+  "description": "A non functional MCP server (yet)",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-02T09:43:32.655853Z",
+  "updatedAt": "2025-12-02T09:43:32.655853Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

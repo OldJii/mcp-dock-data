@@ -1,0 +1,16 @@
+{
+  "id": "com.enigma/enigma-mcp-server",
+  "displayName": "com.enigma/enigma-mcp-server",
+  "description": "An MCP server that provides access to trusted data about business identity and activity",
+  "version": "1.0.0-build1",
+  "status": "active",
+  "publishedAt": "2025-09-10T19:23:14.035831Z",
+  "updatedAt": "2025-09-10T19:23:14.035831Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

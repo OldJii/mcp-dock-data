@@ -1,0 +1,24 @@
+{
+  "id": "icu.steeped.registry/nodejsmcp",
+  "displayName": "icu.steeped.registry/nodejsmcp",
+  "description": "A Forgejo MCP Server",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-11-18T12:07:56.909433Z",
+  "updatedAt": "2025-11-18T12:07:56.909433Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "nodejsmcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.aplaceforallmystuff/mcp-pickaxe",
+  "displayName": "io.github.aplaceforallmystuff/mcp-pickaxe",
+  "description": "MCP server for Pickaxe API - manage AI agents, knowledge bases, users, and analytics",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-27T16:11:42.324685Z",
+  "updatedAt": "2025-11-27T16:11:42.324685Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aplaceforallmystuff/mcp-pickaxe",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-pickaxe",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PICKAXE_API_KEY",
+          "description": "Your Pickaxe studio API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PICKAXE_STUDIO_ID",
+          "description": "Your Pickaxe studio ID",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

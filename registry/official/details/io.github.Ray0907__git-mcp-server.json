@@ -1,0 +1,52 @@
+{
+  "id": "io.github.Ray0907/git-mcp-server",
+  "displayName": "io.github.Ray0907/git-mcp-server",
+  "description": "MCP server for GitLab and GitHub",
+  "version": "0.2.3",
+  "status": "active",
+  "publishedAt": "2025-12-08T14:38:49.935857Z",
+  "updatedAt": "2025-12-08T14:38:49.935857Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Ray0907/git-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@raytien/git-mcp-server",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GIT_PROVIDER",
+          "description": "Provider type: gitlab or github",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GIT_TOKEN",
+          "description": "Personal Access Token for GitHub or GitLab",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GIT_API_URL",
+          "description": "API URL for self-hosted instances",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GIT_READ_ONLY",
+          "description": "Disable write operations (true/false)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.buildkite/buildkite-mcp-server",
+  "displayName": "io.github.buildkite/buildkite-mcp-server",
+  "description": "MCP server exposing Buildkite API data (pipelines, builds, jobs, tests) to AI tooling and editors.",
+  "version": "0.7.0",
+  "status": "active",
+  "publishedAt": "2025-10-10T05:18:04.942499Z",
+  "updatedAt": "2025-10-10T05:18:04.942499Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/buildkite/buildkite-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/buildkite/buildkite-mcp-server:0.7.0",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BUILDKITE_API_TOKEN",
+          "description": "Buildkite API token for authentication. Get one from https://buildkite.com/user/api-access-tokens",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.isdaniel/mcp_weather_server",
+  "displayName": "Weather MCP Server",
+  "description": "providing weather information, air quality data, and timezone utilities using the Open-Meteo API.",
+  "version": "0.6.1",
+  "status": "active",
+  "publishedAt": "2025-12-13T13:24:59.941971Z",
+  "updatedAt": "2025-12-13T13:24:59.941971Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/isdaniel/mcp_weather_server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-weather-server",
+      "version": "0.6.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

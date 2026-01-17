@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Banana-Prompts/banana-prompts-mcp",
+  "displayName": "io.github.Banana-Prompts/banana-prompts-mcp",
+  "description": "MCP server to search Nano Banana prompts from bananaprompts.fun",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-08T05:36:42.243778Z",
+  "updatedAt": "2026-01-08T05:36:42.243778Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Banana-Prompts/banana-prompts-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bananaprompts/banana-prompts-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

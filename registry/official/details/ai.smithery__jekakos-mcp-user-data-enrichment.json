@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/jekakos-mcp-user-data-enrichment",
+  "displayName": "ai.smithery/jekakos-mcp-user-data-enrichment",
+  "description": "Enrich user data by adding social network links based on provided personal information. Integrate…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T12:50:51.350056Z",
+  "updatedAt": "2025-10-02T12:50:51.350056Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jekakos/mcp-user-data-enrichment",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "io.github.kkjdaniel/bgg-mcp",
+  "displayName": "BoardGameGeek MCP Server",
+  "description": "BoardGameGeek MCP server providing access to BGG API data through standardized tools",
+  "version": "1.5.1",
+  "status": "active",
+  "publishedAt": "2025-11-04T10:48:29.655959Z",
+  "updatedAt": "2025-11-04T10:48:29.655959Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kkjdaniel/bgg-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/kdaniel/bgg-mcp:1.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BGG_API_KEY",
+          "description": "API key for BoardGameGeek authentication (recommended). Obtain from https://boardgamegeek.com/applications",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BGG_COOKIE",
+          "description": "Cookie string for BGG authentication (alternative to API key). Format: 'bggusername=user; bggpassword=pass; SessionID=xyz'",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BGG_USERNAME",
+          "description": "Your BoardGameGeek username for references such as ME or MY in prompts",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

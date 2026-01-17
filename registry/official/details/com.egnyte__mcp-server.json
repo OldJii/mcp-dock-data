@@ -1,0 +1,13 @@
+{
+  "id": "com.egnyte/mcp-server",
+  "displayName": "Egnyte Remote MCP Server",
+  "description": "Egnyte's remote MCP server for secure AI access, search, upload and file management in your account.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T14:32:39.484051Z",
+  "updatedAt": "2025-11-07T14:32:39.484051Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "io.github.RLabs-Inc/gemini-mcp",
+  "displayName": "io.github.RLabs-Inc/gemini-mcp",
+  "description": "Gemini 3 MCP server with 30+ tools: images, video, research, TTS, code exec & CLI",
+  "version": "0.7.1",
+  "status": "active",
+  "publishedAt": "2026-01-05T16:24:45.583234Z",
+  "updatedAt": "2026-01-05T16:24:45.583234Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/RLabs-Inc/gemini-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@rlabs-inc/gemini-mcp",
+      "version": "0.7.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Your Google Gemini API key (get one at https://aistudio.google.com/apikey)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GEMINI_OUTPUT_DIR",
+          "description": "Directory for generated files (images, videos, audio)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

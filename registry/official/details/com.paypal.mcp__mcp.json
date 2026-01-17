@@ -1,0 +1,16 @@
+{
+  "id": "com.paypal.mcp/mcp",
+  "displayName": "com.paypal.mcp/mcp",
+  "description": "PayPal MCP server provides access to PayPal services and operations for AI assistants",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-28T19:34:19.455268Z",
+  "updatedAt": "2025-10-28T19:34:19.455268Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

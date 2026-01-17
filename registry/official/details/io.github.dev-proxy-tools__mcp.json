@@ -1,0 +1,27 @@
+{
+  "id": "io.github.dev-proxy-tools/mcp",
+  "displayName": "io.github.dev-proxy-tools/mcp",
+  "description": "MCP server for Dev Proxy that enables AI assistants to interact with Dev Proxy.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2026-01-06T11:00:50.193457Z",
+  "updatedAt": "2026-01-06T11:00:50.193457Z",
+  "iconUrl": "https://raw.githubusercontent.com/dev-proxy-tools/mcp/main/assets/image.png",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dev-proxy-tools/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@devproxy/mcp",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

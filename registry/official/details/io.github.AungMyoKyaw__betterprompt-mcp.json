@@ -1,0 +1,27 @@
+{
+  "id": "io.github.AungMyoKyaw/betterprompt-mcp",
+  "displayName": "io.github.AungMyoKyaw/betterprompt-mcp",
+  "description": "MCP server for AI-enhanced prompt engineering and request conversion.",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2025-09-17T17:15:50.170627Z",
+  "updatedAt": "2025-09-17T17:15:50.170627Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/AungMyoKyaw/betterprompt-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "betterprompt-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

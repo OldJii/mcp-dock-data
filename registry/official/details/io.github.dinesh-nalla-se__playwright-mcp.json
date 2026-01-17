@@ -1,0 +1,50 @@
+{
+  "id": "io.github.dinesh-nalla-se/playwright-mcp",
+  "displayName": "io.github.dinesh-nalla-se/playwright-mcp",
+  "description": "Playwright Tools for MCP",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-17T10:25:36.916523Z",
+  "updatedAt": "2025-11-17T10:25:36.916523Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dinesh-nalla-se/playwright-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@dinesh-nalla-se/playwright-mcp",
+      "version": "0.0.47",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/dineshn51331/playwright-mcp:1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

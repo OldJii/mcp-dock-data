@@ -1,0 +1,28 @@
+{
+  "id": "io.github.zyntx-lab/periphery-mcp-server",
+  "displayName": "Periphery Code Audit",
+  "description": "Swift code analysis with Periphery - detect unused code and improve code quality",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-17T18:00:01.391035Z",
+  "updatedAt": "2025-11-17T18:00:01.391035Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/zyntx-lab/periphery-mcp-server",
+  "repository": {
+    "url": "https://github.com/zyntx-lab/periphery-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/zyntx-lab/periphery-mcp-server/releases/download/v1.0.0/periphery-mcp-server",
+      "version": "1.0.0",
+      "runtimeHint": "binary",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

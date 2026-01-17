@@ -1,0 +1,760 @@
+{
+  "id": "io.github.mongodb-js/mongodb-mcp-server",
+  "displayName": "io.github.mongodb-js/mongodb-mcp-server",
+  "description": "MongoDB Model Context Protocol Server",
+  "version": "1.5.0",
+  "status": "active",
+  "publishedAt": "2026-01-15T13:13:17.601132Z",
+  "updatedAt": "2026-01-15T13:13:17.601132Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mongodb-mcp-server",
+      "version": "1.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MDB_MCP_ALLOW_REQUEST_OVERRIDES",
+          "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_API_CLIENT_ID",
+          "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_API_CLIENT_SECRET",
+          "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_ATLAS_TEMPORARY_DATABASE_USER_LIFETIME_MS",
+          "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_CONFIRMATION_REQUIRED_TOOLS",
+          "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_CONNECTION_STRING",
+          "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_DISABLED_TOOLS",
+          "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_DRY_RUN",
+          "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EMBEDDINGS_VALIDATION",
+          "description": "When set to false, disables validation of embeddings dimensions.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORT_CLEANUP_INTERVAL_MS",
+          "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORT_TIMEOUT_MS",
+          "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORTS_PATH",
+          "description": "Folder to store exported data files.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_BODY_LIMIT",
+          "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_HEADERS",
+          "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_HOST",
+          "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_PORT",
+          "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_IDLE_TIMEOUT_MS",
+          "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_INDEX_CHECK",
+          "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_LOG_PATH",
+          "description": "Folder to store logs.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_LOGGERS",
+          "description": "Comma separated values of logger types.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_MAX_BYTES_PER_QUERY",
+          "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_MAX_DOCUMENTS_PER_QUERY",
+          "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_NOTIFICATION_TIMEOUT_MS",
+          "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_PREVIEW_FEATURES",
+          "description": "Comma separated values of preview features that are enabled.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_READ_ONLY",
+          "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_TELEMETRY",
+          "description": "When set to disabled, disables telemetry collection.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_TRANSPORT",
+          "description": "Either 'stdio' or 'http'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VECTOR_SEARCH_DIMENSIONS",
+          "description": "Default number of dimensions for vector search embeddings.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VECTOR_SEARCH_SIMILARITY_FUNCTION",
+          "description": "Default similarity function for vector search: 'euclidean', 'cosine', or 'dotProduct'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VOYAGE_API_KEY",
+          "description": "API key for Voyage AI embeddings service (required for vector search operations with text-to-embedding conversion).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--allowRequestOverrides",
+          "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--apiClientId",
+          "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--apiClientSecret",
+          "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--atlasTemporaryDatabaseUserLifetimeMs",
+          "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--confirmationRequiredTools",
+          "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--connectionString",
+          "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--disabledTools",
+          "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dryRun",
+          "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--embeddingsValidation",
+          "description": "When set to false, disables validation of embeddings dimensions.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportCleanupIntervalMs",
+          "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportTimeoutMs",
+          "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportsPath",
+          "description": "Folder to store exported data files.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpBodyLimit",
+          "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpHeaders",
+          "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpHost",
+          "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpPort",
+          "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--idleTimeoutMs",
+          "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--indexCheck",
+          "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--logPath",
+          "description": "Folder to store logs.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--loggers",
+          "description": "Comma separated values of logger types.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--maxBytesPerQuery",
+          "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--maxDocumentsPerQuery",
+          "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--notificationTimeoutMs",
+          "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--previewFeatures",
+          "description": "Comma separated values of preview features that are enabled.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--readOnly",
+          "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--telemetry",
+          "description": "When set to disabled, disables telemetry collection.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--transport",
+          "description": "Either 'stdio' or 'http'.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--vectorSearchDimensions",
+          "description": "Default number of dimensions for vector search embeddings.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--vectorSearchSimilarityFunction",
+          "description": "Default similarity function for vector search: 'euclidean', 'cosine', or 'dotProduct'.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--voyageApiKey",
+          "description": "API key for Voyage AI embeddings service (required for vector search operations with text-to-embedding conversion).",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/mongodb/mongodb-mcp-server:1.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MDB_MCP_ALLOW_REQUEST_OVERRIDES",
+          "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_API_CLIENT_ID",
+          "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_API_CLIENT_SECRET",
+          "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_ATLAS_TEMPORARY_DATABASE_USER_LIFETIME_MS",
+          "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_CONFIRMATION_REQUIRED_TOOLS",
+          "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_CONNECTION_STRING",
+          "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MDB_MCP_DISABLED_TOOLS",
+          "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_DRY_RUN",
+          "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EMBEDDINGS_VALIDATION",
+          "description": "When set to false, disables validation of embeddings dimensions.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORT_CLEANUP_INTERVAL_MS",
+          "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORT_TIMEOUT_MS",
+          "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_EXPORTS_PATH",
+          "description": "Folder to store exported data files.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_BODY_LIMIT",
+          "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_HEADERS",
+          "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_HOST",
+          "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_HTTP_PORT",
+          "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_IDLE_TIMEOUT_MS",
+          "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_INDEX_CHECK",
+          "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_LOG_PATH",
+          "description": "Folder to store logs.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_LOGGERS",
+          "description": "Comma separated values of logger types.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_MAX_BYTES_PER_QUERY",
+          "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_MAX_DOCUMENTS_PER_QUERY",
+          "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_NOTIFICATION_TIMEOUT_MS",
+          "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_PREVIEW_FEATURES",
+          "description": "Comma separated values of preview features that are enabled.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_READ_ONLY",
+          "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_TELEMETRY",
+          "description": "When set to disabled, disables telemetry collection.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_TRANSPORT",
+          "description": "Either 'stdio' or 'http'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VECTOR_SEARCH_DIMENSIONS",
+          "description": "Default number of dimensions for vector search embeddings.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VECTOR_SEARCH_SIMILARITY_FUNCTION",
+          "description": "Default similarity function for vector search: 'euclidean', 'cosine', or 'dotProduct'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MDB_MCP_VOYAGE_API_KEY",
+          "description": "API key for Voyage AI embeddings service (required for vector search operations with text-to-embedding conversion).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--allowRequestOverrides",
+          "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--apiClientId",
+          "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--apiClientSecret",
+          "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--atlasTemporaryDatabaseUserLifetimeMs",
+          "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--confirmationRequiredTools",
+          "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--connectionString",
+          "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--disabledTools",
+          "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dryRun",
+          "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--embeddingsValidation",
+          "description": "When set to false, disables validation of embeddings dimensions.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportCleanupIntervalMs",
+          "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportTimeoutMs",
+          "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--exportsPath",
+          "description": "Folder to store exported data files.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpBodyLimit",
+          "description": "Maximum size of the HTTP request body in bytes (only used when transport is 'http'). This value is passed as the optional limit parameter to the Express.js json() middleware.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpHeaders",
+          "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpHost",
+          "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--httpPort",
+          "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--idleTimeoutMs",
+          "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--indexCheck",
+          "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--logPath",
+          "description": "Folder to store logs.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--loggers",
+          "description": "Comma separated values of logger types.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--maxBytesPerQuery",
+          "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--maxDocumentsPerQuery",
+          "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--notificationTimeoutMs",
+          "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--previewFeatures",
+          "description": "Comma separated values of preview features that are enabled.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--readOnly",
+          "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--telemetry",
+          "description": "When set to disabled, disables telemetry collection.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--transport",
+          "description": "Either 'stdio' or 'http'.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--vectorSearchDimensions",
+          "description": "Default number of dimensions for vector search embeddings.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--vectorSearchSimilarityFunction",
+          "description": "Default similarity function for vector search: 'euclidean', 'cosine', or 'dotProduct'.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--voyageApiKey",
+          "description": "API key for Voyage AI embeddings service (required for vector search operations with text-to-embedding conversion).",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

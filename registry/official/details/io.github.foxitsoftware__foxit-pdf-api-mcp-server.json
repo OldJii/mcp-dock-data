@@ -1,0 +1,46 @@
+{
+  "id": "io.github.foxitsoftware/foxit-pdf-api-mcp-server",
+  "displayName": "Foxit PDF API MCP Server",
+  "description": "MCP server that exposes Foxit PDF API capabilities via stdio.",
+  "version": "0.2.4",
+  "status": "active",
+  "publishedAt": "2025-12-16T06:18:50.500818Z",
+  "updatedAt": "2025-12-16T06:18:50.500818Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/foxitsoftware/foxit-pdf-api-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@foxitsoftware/foxit-pdf-api-mcp-server",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FOXIT_CLOUD_API_HOST",
+          "description": "Foxit PDF Services host, e.g. https://na1.fusion.foxit.com/pdf-services",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "FOXIT_CLOUD_API_CLIENT_ID",
+          "description": "Client ID for Foxit PDF API from foxit developer portal(https://developer-api.foxit.com/)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "FOXIT_CLOUD_API_CLIENT_SECRET",
+          "description": "Client secret for Foxit PDF API from foxit developer portal(https://developer-api.foxit.com/)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

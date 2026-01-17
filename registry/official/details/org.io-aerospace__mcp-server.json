@@ -1,0 +1,16 @@
+{
+  "id": "org.io-aerospace/mcp-server",
+  "displayName": "IO Aerospace MCP Server",
+  "description": "MCP server for aerospace calculations: orbital mechanics, ephemeris, DSN operations, ...",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-19T12:42:23.141647Z",
+  "updatedAt": "2025-10-19T12:42:23.141647Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/IO-Aerospace-software-engineering/mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

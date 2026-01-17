@@ -1,0 +1,16 @@
+{
+  "id": "com.cryptorefills/mcp-server",
+  "displayName": "com.cryptorefills/mcp-server",
+  "description": "Buy gift cards and top-ups from the industry leader. 6000+ brands, 195 countries. 4.7★, 98% CSAT",
+  "version": "1.1",
+  "status": "active",
+  "publishedAt": "2025-11-18T10:59:09.004988Z",
+  "updatedAt": "2025-11-18T10:59:09.004988Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

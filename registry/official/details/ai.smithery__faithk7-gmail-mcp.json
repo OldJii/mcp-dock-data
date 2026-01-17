@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/faithk7-gmail-mcp",
+  "displayName": "ai.smithery/faithk7-gmail-mcp",
+  "description": "Manage Gmail messages, threads, labels, drafts, and settings from your workflows. Send and organiz…",
+  "version": "1.7.4",
+  "status": "active",
+  "publishedAt": "2025-09-14T13:42:20.134258Z",
+  "updatedAt": "2025-09-14T13:42:20.134258Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/faithk7/gmail-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

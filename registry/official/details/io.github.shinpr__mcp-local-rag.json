@@ -1,0 +1,70 @@
+{
+  "id": "io.github.shinpr/mcp-local-rag",
+  "displayName": "io.github.shinpr/mcp-local-rag",
+  "description": "Easy-to-setup local RAG server with minimal configuration",
+  "version": "0.5.3",
+  "status": "active",
+  "publishedAt": "2026-01-08T02:09:53.82602Z",
+  "updatedAt": "2026-01-08T02:09:53.82602Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shinpr/mcp-local-rag",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-local-rag",
+      "version": "0.5.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BASE_DIR",
+          "description": "Base directory for document storage (defaults to current working directory)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DB_PATH",
+          "description": "Path to LanceDB database directory (defaults to ./lancedb/)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CACHE_DIR",
+          "description": "Directory where Transformers.js models are cached (defaults to ./models/)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MODEL_NAME",
+          "description": "Embedding model name (defaults to Xenova/all-MiniLM-L6-v2)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MAX_FILE_SIZE",
+          "description": "Maximum file size in bytes (defaults to 104857600 / 100MB)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RAG_MAX_DISTANCE",
+          "description": "Maximum distance threshold for filtering search results. Results with distance greater than this value will be excluded. Lower values mean stricter filtering (e.g., 0.5 for high relevance only)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RAG_GROUPING",
+          "description": "Grouping mode for quality filtering. 'similar' returns only the most similar group (stops at first distance jump). 'related' includes related groups (stops at second distance jump). Unset means no grouping filter",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

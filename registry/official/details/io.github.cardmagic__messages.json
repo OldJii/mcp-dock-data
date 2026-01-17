@@ -1,0 +1,27 @@
+{
+  "id": "io.github.cardmagic/messages",
+  "displayName": "io.github.cardmagic/messages",
+  "description": "Fuzzy search and browse Apple Messages/iMessage from CLI or MCP server",
+  "version": "1.2.0",
+  "status": "active",
+  "publishedAt": "2026-01-01T17:49:05.434644Z",
+  "updatedAt": "2026-01-01T17:49:05.434644Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cardmagic/messages",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@cardmagic/messages",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

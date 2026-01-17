@@ -1,0 +1,87 @@
+{
+  "id": "io.github.mafzaal/d365fo-client",
+  "displayName": "D365FO MCP Server",
+  "description": "A community-driven Microsoft Dynamics 365 Finance & Operations MCP server",
+  "version": "0.3.6",
+  "status": "active",
+  "publishedAt": "2025-11-23T18:29:22.041486Z",
+  "updatedAt": "2025-11-23T18:29:22.041486Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mafzaal/d365fo-client",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "d365fo-client",
+      "version": "0.3.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "D365FO_CLIENT_ID",
+          "description": "Your D365FO Client ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "D365FO_CLIENT_SECRET",
+          "description": "Your D365FO Client Secret",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "D365FO_TENANT_ID",
+          "description": "Your D365FO Tenant ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "D365FO_BASE_URL",
+          "description": "Your D365FO Base URL",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/mafzaal/d365fo-client:0.3.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "D365FO_CLIENT_ID",
+          "description": "Your D365FO Client ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "D365FO_CLIENT_SECRET",
+          "description": "Your D365FO Client Secret",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "D365FO_TENANT_ID",
+          "description": "Your D365FO Tenant ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "D365FO_BASE_URL",
+          "description": "Your D365FO Base URL",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

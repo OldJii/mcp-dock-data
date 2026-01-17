@@ -1,0 +1,114 @@
+{
+  "id": "com.pulsemcp.servers/pulse-fetch",
+  "displayName": "com.pulsemcp.servers/pulse-fetch",
+  "description": "MCP server that extracts clean, structured content from web pages with anti-bot bypass capabilities.",
+  "version": "0.2.14",
+  "status": "active",
+  "publishedAt": "2025-09-09T00:19:19.119118Z",
+  "updatedAt": "2025-09-09T00:19:19.119118Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/pulsemcp/mcp-servers",
+    "source": "github",
+    "subfolder": "productionized/pulse-fetch"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@pulsemcp/pulse-fetch",
+      "version": "0.2.14",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "description": "API key for Firecrawl service to bypass anti-bot measures",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "BRIGHTDATA_API_KEY",
+          "description": "Bearer token for BrightData Web Unlocker service",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "STRATEGY_CONFIG_PATH",
+          "description": "Path to markdown file containing scraping strategy configuration",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/tmp/pulse-fetch/strategy.md"
+        },
+        {
+          "name": "OPTIMIZE_FOR",
+          "description": "Optimization strategy for scraping: cost or speed",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "cost",
+          "choices": [
+            "cost",
+            "speed"
+          ]
+        },
+        {
+          "name": "MCP_RESOURCE_STORAGE",
+          "description": "Storage backend for saved resources: memory or filesystem",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "memory",
+          "choices": [
+            "memory",
+            "filesystem"
+          ]
+        },
+        {
+          "name": "MCP_RESOURCE_FILESYSTEM_ROOT",
+          "description": "Directory for filesystem storage (only used with filesystem type)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/tmp/pulse-fetch/resources"
+        },
+        {
+          "name": "SKIP_HEALTH_CHECKS",
+          "description": "Skip API authentication health checks at startup",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "LLM_PROVIDER",
+          "description": "LLM provider for extract feature: anthropic, openai, openai-compatible",
+          "isRequired": false,
+          "isSecret": false,
+          "choices": [
+            "anthropic",
+            "openai",
+            "openai-compatible"
+          ]
+        },
+        {
+          "name": "LLM_API_KEY",
+          "description": "API key for the chosen LLM provider",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "LLM_API_BASE_URL",
+          "description": "Base URL for OpenAI-compatible providers",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LLM_MODEL",
+          "description": "Specific model to use for extraction",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

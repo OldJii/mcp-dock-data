@@ -1,0 +1,27 @@
+{
+  "id": "ai.autoblocks/ctxl",
+  "displayName": "ai.autoblocks/ctxl",
+  "description": "Personal context management for AI assistants",
+  "version": "0.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-12T03:52:12.746584Z",
+  "updatedAt": "2026-01-12T03:52:12.746584Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/autoblocksai/ctxl",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ctxl",
+      "version": "0.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

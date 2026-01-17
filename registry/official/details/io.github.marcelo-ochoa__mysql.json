@@ -1,0 +1,41 @@
+{
+  "id": "io.github.marcelo-ochoa/mysql",
+  "displayName": "io.github.marcelo-ochoa/mysql",
+  "description": "An MCP server for MySQL databases.",
+  "version": "1.0.4",
+  "status": "active",
+  "publishedAt": "2026-01-08T18:47:28.477297Z",
+  "updatedAt": "2026-01-08T18:47:28.477297Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/marcelo-ochoa/servers",
+    "source": "github",
+    "subfolder": "src/mysql"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@marcelo-ochoa/server-mysql",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MYSQL_USER",
+          "description": "MySQL username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "description": "MySQL password",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

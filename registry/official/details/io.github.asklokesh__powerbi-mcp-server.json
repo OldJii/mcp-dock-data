@@ -1,0 +1,41 @@
+{
+  "id": "io.github.asklokesh/powerbi-mcp-server",
+  "displayName": "Powerbi",
+  "description": "MCP server for Power BI API integration",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T01:21:44.500869Z",
+  "updatedAt": "2025-12-31T01:21:44.500869Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/asklokesh/powerbi-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "powerbi-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POWERBI_API_KEY",
+          "description": "API Key for POWERBI",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "POWERBI_API_URL",
+          "description": "API URL for POWERBI",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

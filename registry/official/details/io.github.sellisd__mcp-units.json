@@ -1,0 +1,27 @@
+{
+  "id": "io.github.sellisd/mcp-units",
+  "displayName": "io.github.sellisd/mcp-units",
+  "description": "An MCP server that provides some common units conversions for cooking",
+  "version": "0.3.3",
+  "status": "active",
+  "publishedAt": "2025-09-26T19:21:00.556533Z",
+  "updatedAt": "2025-09-26T19:21:00.556533Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/sellisd/mcp-units",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-units",
+      "version": "0.3.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

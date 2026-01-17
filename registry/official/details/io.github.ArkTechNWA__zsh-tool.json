@@ -1,0 +1,35 @@
+{
+  "id": "io.github.ArkTechNWA/zsh-tool",
+  "displayName": "io.github.ArkTechNWA/zsh-tool",
+  "description": "Zsh for Claude Code. PTY mode lets Claude type passwords. NEVERHANG + A.L.A.N.",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2026-01-15T20:02:24.969716Z",
+  "updatedAt": "2026-01-15T20:02:24.969716Z",
+  "iconUrl": "https://raw.githubusercontent.com/ArkTechNWA/zsh-tool/master/logo.png",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ArkTechNWA/zsh-tool",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "zsh-tool-mcp",
+      "version": "0.2.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ALAN_DB_PATH",
+          "description": "Path to A.L.A.N. SQLite database",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

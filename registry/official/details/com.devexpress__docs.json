@@ -1,0 +1,13 @@
+{
+  "id": "com.devexpress/docs",
+  "displayName": "DevExpress Documentation",
+  "description": "Streamable HTTP MCP server for DevExpress documentation search and retrieval.",
+  "version": "0.1.4",
+  "status": "active",
+  "publishedAt": "2025-12-24T10:56:00.388641Z",
+  "updatedAt": "2025-12-24T10:56:00.388641Z",
+  "iconUrl": null,
+  "websiteUrl": "https://docs.devexpress.com/GeneralInformation/405551/help-resources/dev-express-documentation-mcp-server-configure-an-ai-powered-assistant",
+  "repository": null,
+  "packages": []
+}

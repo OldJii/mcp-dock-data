@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-fetch",
+  "displayName": "ai.smithery/arjunkmrm-fetch",
+  "description": "Fetch web pages and extract exactly the content you need. Select elements with CSS and retrieve co…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-08T02:32:40.481877Z",
+  "updatedAt": "2025-10-08T02:32:40.481877Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/fetch",
+    "source": "github"
+  },
+  "packages": []
+}

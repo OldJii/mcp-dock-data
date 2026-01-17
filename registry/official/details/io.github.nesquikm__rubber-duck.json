@@ -1,0 +1,52 @@
+{
+  "id": "io.github.nesquikm/rubber-duck",
+  "displayName": "io.github.nesquikm/rubber-duck",
+  "description": "An MCP server that bridges to multiple OpenAI-compatible LLMs - your AI rubber duck debugging panel",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-09-17T13:24:12.420293Z",
+  "updatedAt": "2025-09-17T13:24:12.420293Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/nesquikm/mcp-rubber-duck",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-rubber-duck",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key (starts with sk-)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Google Gemini API key",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GROQ_API_KEY",
+          "description": "Groq API key (starts with gsk_)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DEFAULT_PROVIDER",
+          "description": "Default LLM provider to use",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

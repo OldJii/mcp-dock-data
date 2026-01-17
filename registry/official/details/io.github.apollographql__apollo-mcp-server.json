@@ -1,0 +1,26 @@
+{
+  "id": "io.github.apollographql/apollo-mcp-server",
+  "displayName": "Apollo MCP Server",
+  "description": "MCP server that exposes GraphQL operations as tools for AI models.",
+  "version": "canary-20260112T145439Z-114c866",
+  "status": "active",
+  "publishedAt": "2026-01-12T15:10:55.775328Z",
+  "updatedAt": "2026-01-12T15:10:55.775328Z",
+  "iconUrl": "https://raw.githubusercontent.com/apollographql/apollo-client-devtools/main/assets/apollo-wordmark.svg",
+  "websiteUrl": "https://www.apollographql.com/docs/apollo-mcp-server/",
+  "repository": {
+    "url": "https://github.com/apollographql/apollo-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/apollographql/apollo-mcp-server:canary-20260112T145439Z-114c866",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

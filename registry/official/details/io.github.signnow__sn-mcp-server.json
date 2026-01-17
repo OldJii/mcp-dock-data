@@ -1,0 +1,27 @@
+{
+  "id": "io.github.signnow/sn-mcp-server",
+  "displayName": "SignNow MCP Server",
+  "description": "A MCP server that gives AI agents access to SignNow eSignature workflows over STDIO.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2026-01-15T14:45:29.945199Z",
+  "updatedAt": "2026-01-15T14:45:29.945199Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/signnow/sn-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "signnow-mcp-server",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

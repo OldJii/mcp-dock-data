@@ -1,0 +1,27 @@
+{
+  "id": "io.github.PyJudge/pdf4vllm",
+  "displayName": "io.github.PyJudge/pdf4vllm",
+  "description": "PDF reader for vision LLMs. Auto-detects text corruption and switches to image mode.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-02T11:30:39.401838Z",
+  "updatedAt": "2025-12-02T11:30:39.401838Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/PyJudge/pdf4vllm-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "pdf4vllm-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

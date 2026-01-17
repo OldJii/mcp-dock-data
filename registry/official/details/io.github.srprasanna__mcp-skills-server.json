@@ -1,0 +1,48 @@
+{
+  "id": "io.github.srprasanna/mcp-skills-server",
+  "displayName": "MCP Skills Server",
+  "description": "MCP server that loads and serves skills from a mounted directory with hot reload.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-25T14:59:09.640181Z",
+  "updatedAt": "2025-10-25T14:59:09.640181Z",
+  "iconUrl": null,
+  "websiteUrl": "https://srprasanna.github.io/mcp-skill-hub",
+  "repository": {
+    "url": "https://github.com/srprasanna/mcp-skill-hub",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/srprasanna/mcp-skills-server:1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_SKILLS_DIR",
+          "description": "Root directory containing skill folders",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "/skills"
+        },
+        {
+          "name": "MCP_SKILLS_HOT_RELOAD",
+          "description": "Enable automatic reloading when SKILL.md files change",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true"
+        },
+        {
+          "name": "MCP_SKILLS_LOG_LEVEL",
+          "description": "Logging verbosity: DEBUG, INFO, WARNING, ERROR, CRITICAL",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "INFO"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

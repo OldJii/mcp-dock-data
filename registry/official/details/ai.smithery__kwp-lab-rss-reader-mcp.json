@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/kwp-lab-rss-reader-mcp",
+  "displayName": "ai.smithery/kwp-lab-rss-reader-mcp",
+  "description": "Track and browse RSS feeds with ease. Fetch the latest entries from any feed URL and extract full…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T17:02:25.896522Z",
+  "updatedAt": "2025-09-10T17:02:25.896522Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kwp-lab/rss-reader-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

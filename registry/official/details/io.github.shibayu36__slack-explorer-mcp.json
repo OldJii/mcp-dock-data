@@ -1,0 +1,26 @@
+{
+  "id": "io.github.shibayu36/slack-explorer-mcp",
+  "displayName": "Slack Explorer MCP",
+  "description": "MCP server specialized in retrieving information from Slack messages and threads",
+  "version": "0.8.1",
+  "status": "active",
+  "publishedAt": "2025-12-30T08:22:20.988619Z",
+  "updatedAt": "2025-12-30T08:22:20.988619Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shibayu36/slack-explorer-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/shibayu36/slack-explorer-mcp:0.8.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

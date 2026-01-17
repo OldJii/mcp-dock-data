@@ -1,0 +1,27 @@
+{
+  "id": "ai.toolprint/hypertool-mcp",
+  "displayName": "ai.toolprint/hypertool-mcp",
+  "description": "Dynamically expose tools from proxied servers based on an Agent Persona",
+  "version": "0.0.42",
+  "status": "active",
+  "publishedAt": "2025-09-10T22:05:20.65584Z",
+  "updatedAt": "2025-09-10T22:05:20.65584Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/toolprint/hypertool-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@toolprint/hypertool-mcp",
+      "version": "0.0.42",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

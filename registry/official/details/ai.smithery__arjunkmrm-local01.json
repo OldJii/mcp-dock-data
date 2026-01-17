@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-local01",
+  "displayName": "ai.smithery/arjunkmrm-local01",
+  "description": "Greet people warmly or roast them with playful banter. Explore the origin of 'Hello, World' for qu…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-02T04:20:15.678667Z",
+  "updatedAt": "2025-10-02T04:20:15.678667Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

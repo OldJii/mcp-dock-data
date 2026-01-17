@@ -1,0 +1,65 @@
+{
+  "id": "io.github.gradion-ai/ipybox",
+  "displayName": "io.github.gradion-ai/ipybox",
+  "description": "An MCP server for sandboxed Python code execution with IPython and Docker, and file transfer.",
+  "version": "auto",
+  "status": "active",
+  "publishedAt": "2025-09-14T08:07:06.940203Z",
+  "updatedAt": "2025-09-14T08:07:06.940203Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gradion-ai/ipybox",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ipybox",
+      "version": "auto",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "--allowed-dir",
+          "description": "Directory allowed for host filesystem operations",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--allowed-domain",
+          "description": "Domain, IP address, or CIDR range allowed for outbound network access",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--container-tag",
+          "description": "Docker image tag to use",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--container-env-var",
+          "description": "Environment variable for container (KEY=VALUE format)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--container-env-file",
+          "description": "Path to file containing container environment variables",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--container-bind",
+          "description": "Bind mount for container (host_path:container_path format)",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

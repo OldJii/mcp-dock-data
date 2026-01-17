@@ -1,0 +1,27 @@
+{
+  "id": "io.github.j0hanz/filesystem-context",
+  "displayName": "io.github.j0hanz/filesystem-context",
+  "description": "🔍 Read-only MCP server for secure filesystem exploration, searching, and analysis",
+  "version": "1.0.9",
+  "status": "active",
+  "publishedAt": "2025-12-12T20:48:28.313318Z",
+  "updatedAt": "2025-12-12T20:48:28.313318Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/j0hanz/filesystem-context-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@j0hanz/filesystem-context-mcp",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

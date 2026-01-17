@@ -1,0 +1,27 @@
+{
+  "id": "io.github.appwrite/mcp-for-api",
+  "displayName": "io.github.appwrite/mcp-for-api",
+  "description": "MCP (Model Context Protocol) server for Appwrite",
+  "version": "0.2.8",
+  "status": "active",
+  "publishedAt": "2025-10-11T10:00:39.909371Z",
+  "updatedAt": "2025-10-11T10:00:39.909371Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/appwrite/mcp-for-api",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-server-appwrite",
+      "version": "0.2.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

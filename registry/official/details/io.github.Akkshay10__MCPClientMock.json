@@ -1,0 +1,40 @@
+{
+  "id": "io.github.Akkshay10/MCPClientMock",
+  "displayName": "io.github.Akkshay10/MCPClientMock",
+  "description": "MCP server for James Bloom MockServer - create expectations, verify requests, and manage mock state",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-16T09:45:36.652059Z",
+  "updatedAt": "2025-12-16T09:45:36.652059Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Akkshay10/MCPClientMock",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mockserver-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MOCKSERVER_HOST",
+          "description": "MockServer hostname",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MOCKSERVER_PORT",
+          "description": "MockServer port",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

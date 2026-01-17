@@ -1,0 +1,33 @@
+{
+  "id": "io.github.clappia-dev/clappia-mcp",
+  "displayName": "io.github.clappia-dev/clappia-mcp",
+  "description": "An MCP server that provides Clappia workspace, forms, workflows, submissions, and analytics",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-07T08:10:55.274271Z",
+  "updatedAt": "2025-10-07T08:10:55.274271Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/clappia-dev/clappia-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/okaru413/clappia-mcp:1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CLAPPIA_API_KEY",
+          "description": "Clappia API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

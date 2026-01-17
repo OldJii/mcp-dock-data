@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/bhushangitfull-file-mcp-smith",
+  "displayName": "ai.smithery/bhushangitfull-file-mcp-smith",
+  "description": "Manage files and folders directly from your workspace. Read and write files, list directories, cre…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T07:58:50.393118Z",
+  "updatedAt": "2025-10-07T07:58:50.393118Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bhushangitfull/file-mcp-smith",
+    "source": "github"
+  },
+  "packages": []
+}

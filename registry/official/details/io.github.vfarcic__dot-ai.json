@@ -1,0 +1,77 @@
+{
+  "id": "io.github.vfarcic/dot-ai",
+  "displayName": "io.github.vfarcic/dot-ai",
+  "description": "AI-powered development platform for Kubernetes deployments and intelligent automation",
+  "version": "0.90.0",
+  "status": "active",
+  "publishedAt": "2025-09-13T10:28:59.278155Z",
+  "updatedAt": "2025-09-13T10:28:59.278155Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vfarcic/dot-ai",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@vfarcic/dot-ai",
+      "version": "0.90.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude AI integration (required for deployments)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key for embeddings (patterns, policies, capabilities)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "QDRANT_URL",
+          "description": "Qdrant Vector DB URL for patterns, policies, and capabilities storage",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "http://localhost:6333"
+        },
+        {
+          "name": "QDRANT_API_KEY",
+          "description": "Qdrant API key for authentication",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "KUBECONFIG",
+          "description": "Path to kubeconfig file for Kubernetes access",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DOT_AI_SESSION_DIR",
+          "description": "Session storage directory for workflow persistence",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DEBUG_DOT_AI",
+          "description": "Enable debug logging",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DOT_AI_DOC_PATTERN",
+          "description": "Documentation file pattern for discovery",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

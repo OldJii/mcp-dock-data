@@ -1,0 +1,49 @@
+{
+  "id": "io.github.Antonytm/mcp-all",
+  "displayName": "io.github.Antonytm/mcp-all",
+  "description": "A Model Context Protocol server to run other MCP servers",
+  "version": "0.1.20",
+  "status": "active",
+  "publishedAt": "2025-09-28T15:38:53.930887Z",
+  "updatedAt": "2025-09-28T15:38:53.930887Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Antonytm/mcp-all",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@antonytm/mcp-all",
+      "version": "0.1.20",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TRANSPORT",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@antonytm/mcp-all",
+      "version": "0.1.20",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "TRANSPORT",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

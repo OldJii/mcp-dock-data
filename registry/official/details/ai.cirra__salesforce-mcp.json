@@ -1,0 +1,16 @@
+{
+  "id": "ai.cirra/salesforce-mcp",
+  "displayName": "Cirra AI Salesforce Admin MCP Server",
+  "description": "Comprehensive Salesforce administration and data management capabilities",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-13T01:53:10.483779Z",
+  "updatedAt": "2025-12-13T01:53:10.483779Z",
+  "iconUrl": "https://cirra.ai/icon-gradient-onwhite.svg",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cirra-ai/mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.variflight/variflight-mcp",
+  "displayName": "io.github.variflight/variflight-mcp",
+  "description": "VariFlight's official MCP server provides tools to query flight, weather, comfort, and fare data.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-09-12T07:06:18.90408Z",
+  "updatedAt": "2025-09-12T07:06:18.90408Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/variflight/variflight-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@variflight-ai/variflight-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VARIFLIGHT_API_KEY",
+          "description": "Your API key for the service",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

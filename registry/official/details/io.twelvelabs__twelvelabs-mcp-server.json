@@ -1,0 +1,13 @@
+{
+  "id": "io.twelvelabs/twelvelabs-mcp-server",
+  "displayName": "io.twelvelabs/twelvelabs-mcp-server",
+  "description": "TwelveLabs MCP: video indexing, search, analysis, and embeddings for AI applications.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-11-17T14:11:53.688463Z",
+  "updatedAt": "2025-11-17T14:11:53.688463Z",
+  "iconUrl": "https://avatars.githubusercontent.com/u/77832019?s=200&v=4",
+  "websiteUrl": "https://twelvelabs.io",
+  "repository": null,
+  "packages": []
+}

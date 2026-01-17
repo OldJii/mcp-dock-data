@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/google-cal-mcp",
+  "displayName": "Google Calendar",
+  "description": "Allow AI systems to list, create, update, and manage Google Calendar events.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:25:56.299954Z",
+  "updatedAt": "2025-12-28T06:25:56.299954Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/google-calendar-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/google-calendar-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-cal-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token with Calendar scopes.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "google-cal-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

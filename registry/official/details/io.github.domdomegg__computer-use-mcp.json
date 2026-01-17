@@ -1,0 +1,38 @@
+{
+  "id": "io.github.domdomegg/computer-use-mcp",
+  "displayName": "Computer Use",
+  "description": "Control your computer with screenshots, mouse, and keyboard automation.",
+  "version": "1.6.2",
+  "status": "active",
+  "publishedAt": "2025-12-29T04:34:03.53933Z",
+  "updatedAt": "2025-12-29T04:34:03.53933Z",
+  "iconUrl": "https://raw.githubusercontent.com/domdomegg/computer-use-mcp/refs/heads/master/icon.png",
+  "websiteUrl": "https://github.com/domdomegg/computer-use-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/computer-use-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "computer-use-mcp",
+      "version": "1.6.2",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/domdomegg/computer-use-mcp/releases/download/v1.6.2/computer-use-mcp.mcpb",
+      "version": "1.6.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

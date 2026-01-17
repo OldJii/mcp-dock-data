@@ -1,0 +1,88 @@
+{
+  "id": "io.github.ProfessionalWiki/mediawiki-mcp-server",
+  "displayName": "MediaWiki MCP Server",
+  "description": "MCP server enabling AI clients to interact with any MediaWiki wiki through standard tools",
+  "version": "0.6.5",
+  "status": "active",
+  "publishedAt": "2026-01-08T13:53:00.463545Z",
+  "updatedAt": "2026-01-08T13:53:00.463545Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ProfessionalWiki/MediaWiki-MCP-Server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/ProfessionalWiki/MediaWiki-MCP-Server/releases/download/v0.6.5/MediaWiki-MCP-Server.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CONFIG",
+          "description": "Path to your configuration file",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "config.json"
+        },
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Type of MCP server transport",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "stdio",
+          "choices": [
+            "stdio",
+            "http"
+          ]
+        },
+        {
+          "name": "PORT",
+          "description": "Port used for StreamableHTTP transport",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3000"
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@professional-wiki/mediawiki-mcp-server",
+      "version": "0.6.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CONFIG",
+          "description": "Path to your configuration file",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "config.json"
+        },
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Type of MCP server transport",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "stdio",
+          "choices": [
+            "stdio",
+            "http"
+          ]
+        },
+        {
+          "name": "PORT",
+          "description": "Port used for StreamableHTTP transport",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "3000"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

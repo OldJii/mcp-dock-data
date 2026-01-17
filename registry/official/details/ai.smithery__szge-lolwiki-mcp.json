@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/szge-lolwiki-mcp",
+  "displayName": "ai.smithery/szge-lolwiki-mcp",
+  "description": "Generate friendly greetings for any audience. Toggle Pirate Mode for a playful, swashbuckling styl…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T01:41:22.282712Z",
+  "updatedAt": "2025-10-07T01:41:22.282712Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/szge/lolwiki-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.AdonaiVera/fiftyone-mcp-server",
+  "displayName": "io.github.AdonaiVera/fiftyone-mcp-server",
+  "description": "Control FiftyOne computer vision datasets through AI assistants using 80+ operators.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-12-20T23:21:32.535887Z",
+  "updatedAt": "2025-12-20T23:21:32.535887Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/AdonaiVera/fiftyone-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "fiftyone-mcp-server",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

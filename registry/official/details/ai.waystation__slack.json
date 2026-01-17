@@ -1,0 +1,16 @@
+{
+  "id": "ai.waystation/slack",
+  "displayName": "ai.waystation/slack",
+  "description": "Send messages, access channels, and manage files in your Slack workspace.",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-09-09T14:32:49.571767Z",
+  "updatedAt": "2025-09-09T14:32:49.571767Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/waystation-ai/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,315 @@
+{
+  "id": "io.github.mcp-z/mcp-gmail",
+  "displayName": "Gmail",
+  "description": "Gmail integration with OAuth authentication, message search, batch operations, and Sheets export",
+  "version": "1.0.10",
+  "status": "active",
+  "publishedAt": "2026-01-10T14:22:18.394377Z",
+  "updatedAt": "2026-01-10T14:22:18.394377Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/mcp-z/mcp-gmail#readme",
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mcp-z/mcp-gmail",
+      "version": "1.0.10",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID (required for OAuth authentication modes)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret (optional for public clients)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_SERVICE_ACCOUNT_KEY_FILE",
+          "description": "Path to service account JSON key file (required for service-account auth mode)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AUTH_MODE",
+          "description": "Authentication mode",
+          "isRequired": false,
+          "isSecret": false,
+          "choices": [
+            "loopback-oauth",
+            "service-account"
+          ]
+        },
+        {
+          "name": "HEADLESS",
+          "description": "Disable browser auto-open, return auth URL instead (true/false)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "REDIRECT_URI",
+          "description": "OAuth redirect URI (optional, default: ephemeral loopback)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RESOURCE_STORE_URI",
+          "description": "Resource store URI for CSV export files (file://)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP server port (overrides --port)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BASE_URL",
+          "description": "Base URL for HTTP transport (used for OAuth/DCR endpoints and file links)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level",
+          "isRequired": false,
+          "isSecret": false,
+          "choices": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--auth",
+          "description": "Authentication mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--headless",
+          "description": "Disable browser auto-open, return auth URL instead",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--redirect-uri",
+          "description": "OAuth redirect URI (default: ephemeral loopback)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--service-account-key-file",
+          "description": "Path to service account JSON key file (overrides GOOGLE_SERVICE_ACCOUNT_KEY_FILE env var)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--resource-store-uri",
+          "description": "Override resource store URI for CSV export files",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--base-url",
+          "description": "Override base URL for HTTP transport (used for OAuth/DCR endpoints and file links)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--log-level",
+          "description": "Override logging level",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@mcp-z/mcp-gmail",
+      "version": "1.0.10",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID (required for OAuth authentication modes)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret (optional for public clients)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_SERVICE_ACCOUNT_KEY_FILE",
+          "description": "Path to service account JSON key file (required for service-account auth mode)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "AUTH_MODE",
+          "description": "Authentication mode",
+          "isRequired": false,
+          "isSecret": false,
+          "choices": [
+            "loopback-oauth",
+            "service-account",
+            "dcr"
+          ]
+        },
+        {
+          "name": "HEADLESS",
+          "description": "Disable browser auto-open, return auth URL instead (true/false)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "REDIRECT_URI",
+          "description": "OAuth redirect URI (optional, default: ephemeral loopback)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DCR_MODE",
+          "description": "Dynamic Client Registration mode",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "self-hosted",
+          "choices": [
+            "self-hosted",
+            "external"
+          ]
+        },
+        {
+          "name": "DCR_VERIFY_URL",
+          "description": "External verification endpoint URL (required for external DCR mode)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DCR_STORE_URI",
+          "description": "DCR client storage URI (for self-hosted DCR mode)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "file://~/.mcp-z/mcp-gmail/dcr.json"
+        },
+        {
+          "name": "RESOURCE_STORE_URI",
+          "description": "Resource store URI for CSV export files (file://)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP server port (overrides --port)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BASE_URL",
+          "description": "Base URL for HTTP transport (used for OAuth/DCR endpoints and file links)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level",
+          "isRequired": false,
+          "isSecret": false,
+          "choices": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--port",
+          "description": "HTTP server port",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--auth",
+          "description": "Authentication mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--headless",
+          "description": "Disable browser auto-open, return auth URL instead",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--redirect-uri",
+          "description": "OAuth redirect URI (default: ephemeral loopback)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--service-account-key-file",
+          "description": "Path to service account JSON key file (overrides GOOGLE_SERVICE_ACCOUNT_KEY_FILE env var)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dcr-mode",
+          "description": "DCR mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dcr-verify-url",
+          "description": "External verification endpoint URL (required for external DCR mode)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--dcr-store-uri",
+          "description": "DCR client storage URI (for self-hosted DCR mode)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--resource-store-uri",
+          "description": "Override resource store URI for CSV export files",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--base-url",
+          "description": "Override base URL for HTTP transport (used for OAuth/DCR endpoints and file links)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--log-level",
+          "description": "Override logging level",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

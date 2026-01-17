@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-perplexity-search",
+  "displayName": "ai.smithery/arjunkmrm-perplexity-search",
+  "description": "Enable AI assistants to perform web searches using Perplexity's Sonar Pro.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-10T13:59:26.758557Z",
+  "updatedAt": "2025-09-10T13:59:26.758557Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/perplexity-search",
+    "source": "github"
+  },
+  "packages": []
+}

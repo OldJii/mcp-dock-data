@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/alex-llm-attack-mcp-server",
+  "displayName": "ai.smithery/alex-llm-attack-mcp-server",
+  "description": "Query and retrieve information about various adversarial tactics and techniques used in cyber atta…",
+  "version": "2.1",
+  "status": "active",
+  "publishedAt": "2025-09-30T17:11:31.060313Z",
+  "updatedAt": "2025-09-30T17:11:31.060313Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/alex-llm/attAck-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

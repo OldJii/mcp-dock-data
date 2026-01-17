@@ -1,0 +1,26 @@
+{
+  "id": "io.github.arvindand/maven-tools-mcp",
+  "displayName": "io.github.arvindand/maven-tools-mcp",
+  "description": "JVM dependency intelligence for AI assistants via Maven Central",
+  "version": "2.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-17T14:05:50.981375Z",
+  "updatedAt": "2026-01-17T14:05:50.981375Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arvindand/maven-tools-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/arvindand/maven-tools-mcp:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "io.github.bunnyf/kicad-mcp-server",
+  "displayName": "io.github.bunnyf/kicad-mcp-server",
+  "description": "MCP server for AI-assisted PCB design with KiCad 9.x",
+  "version": "3.5.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T08:48:11.439395Z",
+  "updatedAt": "2026-01-17T08:48:11.439395Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bunnyf/pcb-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "kicad-mcp-server",
+      "version": "3.5.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

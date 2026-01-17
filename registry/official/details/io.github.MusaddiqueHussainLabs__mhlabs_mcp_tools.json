@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MusaddiqueHussainLabs/mhlabs_mcp_tools",
+  "displayName": "io.github.MusaddiqueHussainLabs/mhlabs_mcp_tools",
+  "description": "An MCP server that provides text preprocessing, NLP components, and document analysis",
+  "version": "3.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-22T18:39:02.259376Z",
+  "updatedAt": "2025-11-22T18:39:02.259376Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MusaddiqueHussainLabs/mhlabs_mcp_tools",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mhlabs-mcp-tools",
+      "version": "0.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

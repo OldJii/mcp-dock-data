@@ -1,0 +1,66 @@
+{
+  "id": "io.github.yuna0x0/anilist-mcp",
+  "displayName": "AniList",
+  "description": "AniList MCP server for accessing AniList API data",
+  "version": "1.4.0",
+  "status": "active",
+  "publishedAt": "2025-11-28T21:38:22.648984Z",
+  "updatedAt": "2025-11-28T21:38:22.648984Z",
+  "iconUrl": "https://anilist.co/img/icons/icon.svg",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/yuna0x0/anilist-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "anilist-mcp",
+      "version": "1.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANILIST_TOKEN",
+          "description": "AniList API token for authenticated requests",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/yuna0x0/anilist-mcp:1.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANILIST_TOKEN",
+          "description": "AniList API token for authenticated requests",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/yuna0x0/anilist-mcp/releases/download/v1.4.0/anilist-mcp-1.4.0.mcpb",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANILIST_TOKEN",
+          "description": "AniList API token for authenticated requests",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

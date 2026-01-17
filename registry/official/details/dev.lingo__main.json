@@ -1,0 +1,16 @@
+{
+  "id": "dev.lingo/main",
+  "displayName": "dev.lingo/main",
+  "description": "Lingo.dev MCP Server - World-class i18n implementation with ICU MessageFormat.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-17T08:32:24.189924Z",
+  "updatedAt": "2025-09-17T08:32:24.189924Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

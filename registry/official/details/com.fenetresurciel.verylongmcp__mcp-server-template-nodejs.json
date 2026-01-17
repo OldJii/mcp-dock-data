@@ -1,0 +1,13 @@
+{
+  "id": "com.fenetresurciel.verylongmcp/mcp-server-template-nodejs",
+  "displayName": "Second serve",
+  "description": "A non functional MCP server (yet)",
+  "version": "0.0.9",
+  "status": "active",
+  "publishedAt": "2025-11-26T18:21:29.633657Z",
+  "updatedAt": "2025-11-26T18:21:29.633657Z",
+  "iconUrl": "https://alpic.ai/logo.png",
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

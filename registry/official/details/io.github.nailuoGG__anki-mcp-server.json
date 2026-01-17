@@ -1,0 +1,27 @@
+{
+  "id": "io.github.nailuoGG/anki-mcp-server",
+  "displayName": "io.github.nailuoGG/anki-mcp-server",
+  "description": "MCP server enabling LLMs to interact with Anki flashcard software through AnkiConnect",
+  "version": "0.1.8",
+  "status": "active",
+  "publishedAt": "2025-09-30T14:21:03.323446Z",
+  "updatedAt": "2025-09-30T14:21:03.323446Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "anki-mcp-server",
+      "version": "0.1.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

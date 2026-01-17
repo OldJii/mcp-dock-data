@@ -1,0 +1,28 @@
+{
+  "id": "io.github.cyberpapiii/imessage-max",
+  "displayName": "io.github.cyberpapiii/imessage-max",
+  "description": "AI-optimized MCP server for iMessage on macOS. Read, search, and send messages.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2026-01-17T02:20:41.078058Z",
+  "updatedAt": "2026-01-17T02:20:41.078058Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cyberpapiii/imessage-max",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "imessage-max",
+      "version": "0.1.2",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

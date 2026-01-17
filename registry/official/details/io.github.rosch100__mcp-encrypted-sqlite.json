@@ -1,0 +1,39 @@
+{
+  "id": "io.github.rosch100/mcp-encrypted-sqlite",
+  "displayName": "io.github.rosch100/mcp-encrypted-sqlite",
+  "description": "MCP server for encrypted SQLite databases (SQLCipher 4) - Works with MoneyMoney, KeePass and more",
+  "version": "0.4.1",
+  "status": "active",
+  "publishedAt": "2025-11-30T17:08:31.836926Z",
+  "updatedAt": "2025-11-30T17:08:31.836926Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/rosch100/mcp-encrypted-sqlite",
+  "repository": {
+    "url": "https://github.com/rosch100/mcp-encrypted-sqlite",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/rosch100/mcp-encrypted-sqlite:0.4.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DB_PATH",
+          "description": "Path to the encrypted SQLite database file (inside container: /data/database.sqlite)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DB_PASSPHRASE",
+          "description": "Passphrase for decrypting the database (or use encrypted: prefix for encrypted passphrases)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

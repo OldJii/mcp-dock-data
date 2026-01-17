@@ -1,0 +1,24 @@
+{
+  "id": "io.github.cornelcroi/context-lens",
+  "displayName": "Context Lens",
+  "description": "Semantic search knowledge base with serverless LanceDB. Zero setup, 100% local, 25+ file types",
+  "version": "0.1.8",
+  "status": "active",
+  "publishedAt": "2025-11-15T15:49:07.580015Z",
+  "updatedAt": "2025-11-15T15:49:07.580015Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "context-lens",
+      "version": "0.1.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

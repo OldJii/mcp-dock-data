@@ -1,0 +1,34 @@
+{
+  "id": "io.github.savhascelik/meta-api-mcp-server",
+  "displayName": "io.github.savhascelik/meta-api-mcp-server",
+  "description": "You can connect any API to LLMs. This enables AI to interact directly with APIs",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-09T04:14:51.983728Z",
+  "updatedAt": "2025-09-09T04:14:51.983728Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/savhascelik/meta-api-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "meta-api-mcp-server",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YOUR_API_KEY",
+          "description": "If the api you are connecting to requires api_key, you can use this variable and you can also define different variables",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

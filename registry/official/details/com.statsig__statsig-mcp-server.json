@@ -1,0 +1,16 @@
+{
+  "id": "com.statsig/statsig-mcp-server",
+  "displayName": "com.statsig/statsig-mcp-server",
+  "description": "MCP server for Statsig API - interact with Statsig's feature flags, experiments, and analytics",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-19T18:53:25.028837Z",
+  "updatedAt": "2025-09-19T18:53:25.028837Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

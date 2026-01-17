@@ -1,0 +1,27 @@
+{
+  "id": "io.github.zwldarren/akshare-one-mcp",
+  "displayName": "io.github.zwldarren/akshare-one-mcp",
+  "description": "MCP server that provides access to Chinese stock market data using akshare-one",
+  "version": "0.3.6",
+  "status": "active",
+  "publishedAt": "2025-10-11T23:19:09.623208Z",
+  "updatedAt": "2025-10-11T23:19:09.623208Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "akshare-one-mcp",
+      "version": "0.3.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

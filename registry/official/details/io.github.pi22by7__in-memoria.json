@@ -1,0 +1,31 @@
+{
+  "id": "io.github.pi22by7/in-memoria",
+  "displayName": "io.github.pi22by7/in-memoria",
+  "description": "Persistent codebase intelligence that gives AI assistants memory across sessions",
+  "version": "0.5.7",
+  "status": "active",
+  "publishedAt": "2025-10-31T07:23:07.83562Z",
+  "updatedAt": "2025-10-31T07:23:07.83562Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "in-memoria",
+      "version": "0.5.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Optional OpenAI API key for embeddings (falls back to local transformers.js)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.SebastianBO/financial-data",
+  "displayName": "io.github.SebastianBO/financial-data",
+  "description": "Stock prices, financials, insider trades, institutional holdings for 141K+ companies",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-17T08:52:16.682252Z",
+  "updatedAt": "2026-01-17T08:52:16.682252Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SebastianBO/quant-platform",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@lician/mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LICIAN_API_KEY",
+          "description": "Optional API key for higher rate limits. Get one at https://lician.com/developers/signup",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

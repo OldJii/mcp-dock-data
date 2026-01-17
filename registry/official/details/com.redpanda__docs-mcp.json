@@ -1,0 +1,17 @@
+{
+  "id": "com.redpanda/docs-mcp",
+  "displayName": "com.redpanda/docs-mcp",
+  "description": "Get authoritative answers to questions about Redpanda.",
+  "version": "2025.11.26+pr150-394827a",
+  "status": "active",
+  "publishedAt": "2025-11-26T17:41:04.130229Z",
+  "updatedAt": "2025-11-26T17:41:04.130229Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/redpanda-data/docs-site",
+    "source": "github",
+    "subfolder": "netlify"
+  },
+  "packages": []
+}

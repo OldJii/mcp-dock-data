@@ -1,0 +1,40 @@
+{
+  "id": "io.github.RedHatInsights/insights-mcp",
+  "displayName": "Red Hat Lightspeed MCP",
+  "description": "Model Context Protocol server for Red Hat Lightspeed - advisor, image builder, inventory, and more",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-14T14:26:43.319771Z",
+  "updatedAt": "2026-01-14T14:26:43.319771Z",
+  "iconUrl": "https://raw.githubusercontent.com/RedHatInsights/insights-mcp/main/claude_desktop/icon.png",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/RedHatInsights/insights-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/redhatinsights/red-hat-lightspeed-mcp",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LIGHTSPEED_CLIENT_ID",
+          "description": "Red Hat Lightspeed Client ID for authentication",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "LIGHTSPEED_CLIENT_SECRET",
+          "description": "Red Hat Lightspeed Client Secret for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

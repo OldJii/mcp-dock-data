@@ -1,0 +1,13 @@
+{
+  "id": "io.github.NeuraLegion/mcp",
+  "displayName": "io.github.NeuraLegion/mcp",
+  "description": "Enables AI agents to access Bright Security tools for app discovery and security testing.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T11:32:18.567561Z",
+  "updatedAt": "2026-01-05T11:32:18.567561Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

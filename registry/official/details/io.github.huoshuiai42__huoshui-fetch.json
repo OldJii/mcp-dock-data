@@ -1,0 +1,27 @@
+{
+  "id": "io.github.huoshuiai42/huoshui-fetch",
+  "displayName": "io.github.huoshuiai42/huoshui-fetch",
+  "description": "An MCP server that provides tools for fetching, converting, and extracting data from web pages.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-11T01:33:53.944849Z",
+  "updatedAt": "2025-09-11T01:33:53.944849Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/huoshuiai42/huoshui-fetch",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "huoshui-fetch",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

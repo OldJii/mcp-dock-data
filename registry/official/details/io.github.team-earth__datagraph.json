@@ -1,0 +1,24 @@
+{
+  "id": "io.github.team-earth/datagraph",
+  "displayName": "DataGraph",
+  "description": "Urban intelligence knowledge graph. Structured locality data for civic problem-solving.",
+  "version": "1.2.5",
+  "status": "active",
+  "publishedAt": "2025-12-30T22:13:37.021292Z",
+  "updatedAt": "2025-12-30T22:13:37.021292Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "datagraph-city-mcp-server",
+      "version": "1.2.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "io.github.domdomegg/google-sheets-mcp",
+  "displayName": "Google Sheets",
+  "description": "Allow AI systems to read, write, and query spreadsheet data via Google Sheets.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-28T06:26:09.149338Z",
+  "updatedAt": "2025-12-28T06:26:09.149338Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/google-sheets-mcp#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/google-sheets-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "google-sheets-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_ACCESS_TOKEN",
+          "description": "Google OAuth access token with Sheets scopes.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "google-sheets-mcp",
+      "version": "1.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "Transport type.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_ID",
+          "description": "Google OAuth client ID.",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GOOGLE_CLIENT_SECRET",
+          "description": "Google OAuth client secret.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

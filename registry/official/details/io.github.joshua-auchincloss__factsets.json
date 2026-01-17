@@ -1,0 +1,28 @@
+{
+  "id": "io.github.joshua-auchincloss/factsets",
+  "displayName": "Factsets MCP Server",
+  "description": "An MCP server that provides a local, persistent, self-maintaining knowledge base for AI agents",
+  "version": "0.2.0",
+  "status": "active",
+  "publishedAt": "2025-12-24T01:34:01.839642Z",
+  "updatedAt": "2025-12-24T01:34:01.839642Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/joshua-auchincloss/factsets",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "factsets",
+      "version": "0.2.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

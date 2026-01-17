@@ -1,0 +1,34 @@
+{
+  "id": "io.github.ubaumann/mkdocs-mcp",
+  "displayName": "io.github.ubaumann/mkdocs-mcp",
+  "description": "An MCP server that provides serves MkDocs as resources.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-09-20T19:14:29.939374Z",
+  "updatedAt": "2025-09-20T19:14:29.939374Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ubaumann/mkdocs-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mkdocs-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MKDOCS_PROJECT_PATH",
+          "description": "Path to the MkDocs project",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.infobip/mcp",
+  "displayName": "com.infobip/mcp",
+  "description": "Infobip MCP server for omnichannel communication and messaging. SMS, RCS, WhatsApp, Viber and more.",
+  "version": "2.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-20T12:15:45.615833Z",
+  "updatedAt": "2025-10-20T12:15:45.615833Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/infobip/mcp",
+    "source": "github"
+  },
+  "packages": []
+}

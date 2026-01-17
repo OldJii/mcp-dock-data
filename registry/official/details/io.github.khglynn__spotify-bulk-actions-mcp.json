@@ -1,0 +1,40 @@
+{
+  "id": "io.github.khglynn/spotify-bulk-actions-mcp",
+  "displayName": "io.github.khglynn/spotify-bulk-actions-mcp",
+  "description": "MCP server for bulk Spotify operations - batch playlist creation, exports, management",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-12T22:34:42.612053Z",
+  "updatedAt": "2025-12-12T22:34:42.612053Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/khglynn/spotify-bulk-actions-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "spotify-bulk-actions-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SPOTIFY_CLIENT_ID",
+          "description": "Spotify API Client ID from developer.spotify.com",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "SPOTIFY_CLIENT_SECRET",
+          "description": "Spotify API Client Secret from developer.spotify.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

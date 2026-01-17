@@ -1,0 +1,16 @@
+{
+  "id": "ch.martinelli/jooq-mcp",
+  "displayName": "ch.martinelli/jooq-mcp",
+  "description": "An MCP server that provides access to the jOOQ documentation",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-12T13:41:08.407071Z",
+  "updatedAt": "2025-09-12T13:41:08.407071Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/martinellich/jooq-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

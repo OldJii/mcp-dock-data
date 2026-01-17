@@ -1,0 +1,59 @@
+{
+  "id": "io.github.neo4j-contrib/mcp-neo4j-memory",
+  "displayName": "io.github.neo4j-contrib/mcp-neo4j-memory",
+  "description": "MCP Neo4j Knowledge Graph Memory Server",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-07T19:54:25.003325Z",
+  "updatedAt": "2025-11-07T19:54:25.003325Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "source": "github",
+    "subfolder": "servers/mcp-neo4j-memory"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-neo4j-memory",
+      "version": "0.4.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NEO4J_URI",
+          "description": "Neo4j connection URI",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_USERNAME",
+          "description": "Neo4j username",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_PASSWORD",
+          "description": "Neo4j password",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "NEO4J_DATABASE",
+          "description": "Neo4j database name",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "NEO4J_NAMESPACE",
+          "description": "Tool namespace prefix",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

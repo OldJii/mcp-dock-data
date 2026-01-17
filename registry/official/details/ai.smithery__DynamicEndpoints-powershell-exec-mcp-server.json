@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/DynamicEndpoints-powershell-exec-mcp-server",
+  "displayName": "ai.smithery/DynamicEndpoints-powershell-exec-mcp-server",
+  "description": "Execute PowerShell commands securely with controlled timeouts and input validation. Retrieve syste…",
+  "version": "1.13.1",
+  "status": "active",
+  "publishedAt": "2025-09-11T13:54:30.703395Z",
+  "updatedAt": "2025-09-11T13:54:30.703395Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/DynamicEndpoints/PowerShell-Exec-MCP-Server",
+    "source": "github"
+  },
+  "packages": []
+}

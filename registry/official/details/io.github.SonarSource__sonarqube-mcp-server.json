@@ -1,0 +1,45 @@
+{
+  "id": "io.github.SonarSource/sonarqube-mcp-server",
+  "displayName": "io.github.SonarSource/sonarqube-mcp-server",
+  "description": "An MCP server that enables integration with SonarQube Server or Cloud for code quality and security.",
+  "version": "1.6.0",
+  "status": "active",
+  "publishedAt": "2026-01-05T15:28:23.181843Z",
+  "updatedAt": "2026-01-05T15:28:23.181843Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/SonarSource/sonarqube-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/mcp/sonarqube:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SONARQUBE_TOKEN",
+          "description": "Your SonarQube USER token",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "SONARQUBE_ORG",
+          "description": "Your SonarQube Cloud organization key (if using SonarQube Cloud)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SONARQUBE_URL",
+          "description": "Your SonarQube Server URL (if using SonarQube Server)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

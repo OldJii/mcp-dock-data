@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+  "displayName": "ai.smithery/kodey-ai-salesforce-mcp-minimal",
+  "description": "Run SOQL queries to explore and retrieve Salesforce data. Access accounts, contacts, opportunities…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-08T03:10:50.179693Z",
+  "updatedAt": "2025-10-08T03:10:50.179693Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kodey-ai/salesforce-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

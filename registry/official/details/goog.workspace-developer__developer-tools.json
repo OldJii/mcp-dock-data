@@ -1,0 +1,16 @@
+{
+  "id": "goog.workspace-developer/developer-tools",
+  "displayName": "goog.workspace-developer/developer-tools",
+  "description": "Provides tools for searching Google Workspace documentation and much more.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-15T15:22:33.648019Z",
+  "updatedAt": "2025-10-15T15:22:33.648019Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

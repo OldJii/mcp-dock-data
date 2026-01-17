@@ -1,0 +1,36 @@
+{
+  "id": "io.github.therealtimex/browser-use",
+  "displayName": "io.github.therealtimex/browser-use",
+  "description": "AI browser automation - navigate, click, type, extract content, and run autonomous web tasks",
+  "version": "0.7.10.dev5",
+  "status": "active",
+  "publishedAt": "2025-10-01T11:18:53.744371Z",
+  "updatedAt": "2025-10-01T11:18:53.744371Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/therealtimex/browser-use",
+    "source": "github",
+    "subfolder": "browser_use/mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "realtimex-browser-use",
+      "version": "0.7.10.dev5",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key for LLM operations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

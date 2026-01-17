@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/akilat-spec-leave-manager-mcp",
+  "displayName": "ai.smithery/akilat-spec-leave-manager-mcp",
+  "description": "Track and manage employee time off with quick balance lookups and streamlined applications. Find t…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-06T10:13:37.506388Z",
+  "updatedAt": "2025-10-06T10:13:37.506388Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/akilat-spec/leave-manager-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

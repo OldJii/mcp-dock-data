@@ -1,0 +1,38 @@
+{
+  "id": "io.github.standardbeagle/devtool-mcp",
+  "displayName": "DevTool MCP",
+  "description": "Development tooling MCP server with process management, proxy, and frontend diagnostics",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-12-08T07:10:45.121987Z",
+  "updatedAt": "2025-12-08T07:10:45.121987Z",
+  "iconUrl": null,
+  "websiteUrl": "https://standardbeagle.github.io/devtool-mcp/",
+  "repository": {
+    "url": "https://github.com/standardbeagle/devtool-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@standardbeagle/devtool-mcp",
+      "version": "0.3.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "pypi",
+      "identifier": "devtool-mcp",
+      "version": "0.3.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

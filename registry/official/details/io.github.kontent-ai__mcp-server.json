@@ -1,0 +1,69 @@
+{
+  "id": "io.github.kontent-ai/mcp-server",
+  "displayName": "io.github.kontent-ai/mcp-server",
+  "description": "Connect to Kontent.ai to manage content, types, taxonomies, and workflows via natural language",
+  "version": "0.26.0",
+  "status": "active",
+  "publishedAt": "2026-01-16T12:36:32.174587Z",
+  "updatedAt": "2026-01-16T12:36:32.174587Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kontent-ai/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@kontent-ai/mcp-server",
+      "version": "0.26.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KONTENT_API_KEY",
+          "description": "Kontent.ai Management API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "KONTENT_ENVIRONMENT_ID",
+          "description": "Kontent.ai environment ID",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@kontent-ai/mcp-server",
+      "version": "0.26.0",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "KONTENT_API_KEY",
+          "description": "Kontent.ai Management API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "KONTENT_ENVIRONMENT_ID",
+          "description": "Kontent.ai environment ID",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "PORT",
+          "description": "Server port for HTTP transport (shttp mode only)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

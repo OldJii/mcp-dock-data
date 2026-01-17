@@ -1,0 +1,16 @@
+{
+  "id": "io.github.vardior9/apiiro",
+  "displayName": "io.github.vardior9/apiiro",
+  "description": "Ship software securely with an AI AppSec Agent",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-10-16T08:50:47.461916Z",
+  "updatedAt": "2025-10-16T08:50:47.461916Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

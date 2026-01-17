@@ -1,0 +1,17 @@
+{
+  "id": "io.github.PostHog/mcp",
+  "displayName": "PostHog MCP Server",
+  "description": "Official PostHog MCP Server for product analytics, feature flags, experiments, and more.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-07T16:34:40.847754Z",
+  "updatedAt": "2026-01-07T16:34:40.847754Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/PostHog/posthog",
+    "source": "github",
+    "subfolder": "services/mcp"
+  },
+  "packages": []
+}

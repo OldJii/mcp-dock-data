@@ -1,0 +1,47 @@
+{
+  "id": "io.github.nirholas/abi-to-mcp",
+  "displayName": "UCAI",
+  "description": "Convert smart contracts to MCP servers. Ethereum, Base, Arbitrum, EVM chains. ABI-to-MCP generator.",
+  "version": "0.1.0-1",
+  "status": "active",
+  "publishedAt": "2026-01-06T03:22:24.442627Z",
+  "updatedAt": "2026-01-06T03:22:24.442627Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/nirholas/UCAI",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "abi-to-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "WEB3_PROVIDER_URL",
+          "description": "Ethereum JSON-RPC endpoint URL",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ETHERSCAN_API_KEY",
+          "description": "Etherscan API key for fetching verified contract ABIs",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PRIVATE_KEY",
+          "description": "Private key for signing transactions (write operations)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

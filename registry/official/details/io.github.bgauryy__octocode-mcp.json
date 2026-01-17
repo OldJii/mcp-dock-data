@@ -1,0 +1,34 @@
+{
+  "id": "io.github.bgauryy/octocode-mcp",
+  "displayName": "Octocode MCP - AI Context Platform",
+  "description": "AI code research platform. Search, analyze, and extract insights from any GitHub repository.",
+  "version": "7.0.9",
+  "status": "active",
+  "publishedAt": "2025-11-10T13:33:37.116251Z",
+  "updatedAt": "2025-11-10T13:33:37.116251Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bgauryy/octocode-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "octocode-mcp",
+      "version": "7.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "GitHub Personal Access Token. Optional - authenticate via GitHub CLI (gh auth login) for automatic token management, or set this token manually for CI/CD environments.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

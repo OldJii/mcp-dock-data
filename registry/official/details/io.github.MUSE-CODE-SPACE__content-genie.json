@@ -1,0 +1,27 @@
+{
+  "id": "io.github.MUSE-CODE-SPACE/content-genie",
+  "displayName": "io.github.MUSE-CODE-SPACE/content-genie",
+  "description": "AI Content Creation Assistant for Korean creators - Trend analysis & SEO",
+  "version": "2.9.4",
+  "status": "active",
+  "publishedAt": "2025-12-27T08:56:49.875628Z",
+  "updatedAt": "2025-12-27T08:56:49.875628Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MUSE-CODE-SPACE/content-genie-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "content-genie-mcp",
+      "version": "2.9.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "capital.hove/read-only-local-mysql-mcp-server",
+  "displayName": "capital.hove/read-only-local-mysql-mcp-server",
+  "description": "MCP server for read-only MySQL database queries in Claude Desktop",
+  "version": "0.0.17",
+  "status": "active",
+  "publishedAt": "2025-11-03T13:04:24.535031Z",
+  "updatedAt": "2025-11-03T13:04:24.535031Z",
+  "iconUrl": null,
+  "websiteUrl": "https://hove.capital",
+  "repository": {
+    "url": "https://github.com/hovecapital/read-only-local-mysql-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@hovecapital/read-only-mysql-mcp-server",
+      "version": "0.0.17",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

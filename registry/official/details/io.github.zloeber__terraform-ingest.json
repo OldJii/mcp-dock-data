@@ -1,0 +1,24 @@
+{
+  "id": "io.github.zloeber/terraform-ingest",
+  "displayName": "Terraform Ingest MCP",
+  "description": "Ingest and analyze Terraform modules from multiple repositories for AI RAG systems",
+  "version": "0.1.21",
+  "status": "active",
+  "publishedAt": "2025-11-03T20:10:47.922193Z",
+  "updatedAt": "2025-11-03T20:10:47.922193Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "terraform-ingest",
+      "version": "0.1.21",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

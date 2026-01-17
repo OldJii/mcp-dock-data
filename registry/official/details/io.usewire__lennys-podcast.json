@@ -1,0 +1,13 @@
+{
+  "id": "io.usewire/lennys-podcast",
+  "displayName": "Lenny's Podcast Transcripts",
+  "description": "Search 286 episodes of product management wisdom from top leaders at Figma, Airbnb, Linear.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-15T17:06:05.890353Z",
+  "updatedAt": "2026-01-15T17:06:05.890353Z",
+  "iconUrl": "https://usewire.io/favicon-512x512.png",
+  "websiteUrl": "https://usewire.io/explore/lennys-podcast",
+  "repository": null,
+  "packages": []
+}

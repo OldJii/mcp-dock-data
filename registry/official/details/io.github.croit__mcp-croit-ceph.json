@@ -1,0 +1,39 @@
+{
+  "id": "io.github.croit/mcp-croit-ceph",
+  "displayName": "io.github.croit/mcp-croit-ceph",
+  "description": "MCP server for Croit Ceph cluster management with dynamic OpenAPI tool generation",
+  "version": "0.2.16",
+  "status": "active",
+  "publishedAt": "2025-09-17T09:30:42.325917Z",
+  "updatedAt": "2025-09-17T09:30:42.325917Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/croit/mcp-croit-ceph",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/croit/mcp-croit-ceph:0.2.16",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CROIT_HOST",
+          "description": "Croit cluster URL (e.g., http://your-cluster.croit.io:8080)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CROIT_API_TOKEN",
+          "description": "API authentication token for Croit cluster",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

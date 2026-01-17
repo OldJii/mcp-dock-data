@@ -1,0 +1,36 @@
+{
+  "id": "io.github.aahl/mcp-okx",
+  "displayName": "OKX MCP Server",
+  "description": "MCP Server for okx.com",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-10T10:08:56.611262Z",
+  "updatedAt": "2025-11-10T10:08:56.611262Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/aahl/mcp-okx",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-okx",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/aahl/mcp-okx:latest",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

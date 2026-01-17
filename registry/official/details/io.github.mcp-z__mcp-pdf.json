@@ -1,0 +1,146 @@
+{
+  "id": "io.github.mcp-z/mcp-pdf",
+  "displayName": "PDF Generator",
+  "description": "MCP server for creative PDF generation with full emoji, Unicode, and offline support",
+  "version": "2.0.6",
+  "status": "active",
+  "publishedAt": "2026-01-10T14:22:18.445302Z",
+  "updatedAt": "2026-01-10T14:22:18.445302Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/mcp-z/mcp-pdf#readme",
+  "repository": null,
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mcp-z/mcp-pdf",
+      "version": "2.0.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RESOURCE_STORE_URI",
+          "description": "Resource store URI for generated PDF files (file://)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "file://~/.mcp-z/mcp-pdf/files"
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP server port (overrides --port)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BASE_URL",
+          "description": "Base URL for HTTP transport (used for file links)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info",
+          "choices": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--resource-store-uri",
+          "description": "Override resource store URI for generated PDF files",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--base-url",
+          "description": "Override base URL for HTTP transport (used for file links)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--log-level",
+          "description": "Override logging level",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@mcp-z/mcp-pdf",
+      "version": "2.0.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
+        {
+          "name": "RESOURCE_STORE_URI",
+          "description": "Resource store URI for generated PDF files (file://)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "file://~/.mcp-z/mcp-pdf/files"
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP server port (overrides --port)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BASE_URL",
+          "description": "Base URL for HTTP transport (used for file links)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info",
+          "choices": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "packageArguments": [
+        {
+          "name": "--port",
+          "description": "HTTP server port",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--resource-store-uri",
+          "description": "Override resource store URI for generated PDF files",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--base-url",
+          "description": "Override base URL for HTTP transport (used for file links)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--log-level",
+          "description": "Override logging level",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

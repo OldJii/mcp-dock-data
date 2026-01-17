@@ -1,0 +1,28 @@
+{
+  "id": "io.github.baixianger/langchain-mcp",
+  "displayName": "io.github.baixianger/langchain-mcp",
+  "description": "LangChain/LangGraph/DeepAgents knowledge + LangGraph agent debugging (Polly-like)",
+  "version": "2.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-08T10:03:41.039609Z",
+  "updatedAt": "2026-01-08T10:03:41.039609Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/baixianger/langchain-MCP",
+    "source": "github",
+    "subfolder": "packages/mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "langchain-mcp",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

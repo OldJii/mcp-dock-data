@@ -1,0 +1,35 @@
+{
+  "id": "io.github.ReGenNow/regennexus-mcp",
+  "displayName": "io.github.ReGenNow/regennexus-mcp",
+  "description": "AI-controlled hardware: GPIO, robotics, sensors, cameras, mesh networking for IoT",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-11T03:43:48.77599Z",
+  "updatedAt": "2026-01-11T03:43:48.77599Z",
+  "iconUrl": "https://raw.githubusercontent.com/ReGenNow/regennexus-mcp/main/icon-48.png",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ReGenNow/regennexus-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "regennexus-mcp",
+      "version": "0.1.1",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "REGENNEXUS_MODE",
+          "description": "Connection mode: auto, local, or remote",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

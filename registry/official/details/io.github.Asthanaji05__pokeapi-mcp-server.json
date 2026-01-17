@@ -1,0 +1,27 @@
+{
+  "id": "io.github.Asthanaji05/pokeapi-mcp-server",
+  "displayName": "io.github.Asthanaji05/pokeapi-mcp-server",
+  "description": "Empower your AI with Pokédex powers! Fetch and explore Pokémon data seamlessly via PokeAPI.",
+  "version": "1.9.0",
+  "status": "active",
+  "publishedAt": "2025-11-02T07:10:33.355751Z",
+  "updatedAt": "2025-11-02T07:10:33.355751Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Asthanaji05/MCP_Pokemon",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "pokeapi-mcp-server",
+      "version": "1.9.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

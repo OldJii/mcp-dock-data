@@ -1,0 +1,28 @@
+{
+  "id": "io.github.MCPower-Security/mcpower-proxy",
+  "displayName": "MCPower Security Proxy",
+  "description": "Security proxy that automatically wraps MCP servers with real-time monitoring and policy enforcement",
+  "version": "0.0.91",
+  "status": "active",
+  "publishedAt": "2025-11-16T07:38:06.013611Z",
+  "updatedAt": "2025-11-16T07:38:06.013611Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MCPower-Security/mcpower-proxy",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcpower-proxy",
+      "version": "0.0.91",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

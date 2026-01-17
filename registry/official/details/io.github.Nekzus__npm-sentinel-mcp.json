@@ -1,0 +1,28 @@
+{
+  "id": "io.github.Nekzus/npm-sentinel-mcp",
+  "displayName": "io.github.Nekzus/npm-sentinel-mcp",
+  "description": "NPM Sentinel MCP - AI-powered NPM package analysis for security, dependencies, and performance.",
+  "version": "1.9.0",
+  "status": "active",
+  "publishedAt": "2025-09-20T19:44:08.651401Z",
+  "updatedAt": "2025-09-20T21:15:29.266179Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Nekzus/npm-sentinel-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@nekzus/mcp-server",
+      "version": "1.9.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

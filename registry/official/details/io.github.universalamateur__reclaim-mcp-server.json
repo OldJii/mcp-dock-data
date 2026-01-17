@@ -1,0 +1,27 @@
+{
+  "id": "io.github.universalamateur/reclaim-mcp-server",
+  "displayName": "io.github.universalamateur/reclaim-mcp-server",
+  "description": "MCP server for Reclaim.ai - calendar, tasks, habits, and focus time management",
+  "version": "0.9.1",
+  "status": "active",
+  "publishedAt": "2026-01-06T16:15:52.798769Z",
+  "updatedAt": "2026-01-06T16:15:52.798769Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/universalamateur/reclaim-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "reclaim-mcp-server",
+      "version": "0.9.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

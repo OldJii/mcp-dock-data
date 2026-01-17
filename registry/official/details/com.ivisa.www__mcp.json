@@ -1,0 +1,13 @@
+{
+  "id": "com.ivisa.www/mcp",
+  "displayName": "iVisa MCP Server",
+  "description": "Check visa requirements and travel documents for international travel destinations.",
+  "version": "0.0.2",
+  "status": "active",
+  "publishedAt": "2025-10-30T18:49:54.925381Z",
+  "updatedAt": "2025-10-30T18:49:54.925381Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

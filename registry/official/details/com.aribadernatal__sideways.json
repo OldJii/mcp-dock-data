@@ -1,0 +1,16 @@
+{
+  "id": "com.aribadernatal/sideways",
+  "displayName": "Sideways",
+  "description": "Unexpected questions and lateral thinking prompts to break through mental blocks. 86 strategies.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-22T06:51:20.015804Z",
+  "updatedAt": "2025-10-22T06:51:20.015804Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

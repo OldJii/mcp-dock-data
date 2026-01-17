@@ -1,0 +1,27 @@
+{
+  "id": "io.github.dinesh-nalla-se/chrome-devtools-mcp",
+  "displayName": "Chrome DevTools MCP",
+  "description": "MCP server for Chrome DevTools",
+  "version": "0.10.2",
+  "status": "active",
+  "publishedAt": "2025-11-26T11:25:39.186522Z",
+  "updatedAt": "2025-11-26T11:25:39.186522Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dinesh-nalla-se/chrome-devtools-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@dinesh-nalla-se/chrome-devtools-mcp",
+      "version": "0.10.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

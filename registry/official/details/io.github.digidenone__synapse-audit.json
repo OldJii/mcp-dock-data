@@ -1,0 +1,28 @@
+{
+  "id": "io.github.digidenone/synapse-audit",
+  "displayName": "io.github.digidenone/synapse-audit",
+  "description": "AI-Powered Security Scanner for LLMs. Detects vulnerabilities and syncs with SynapseAudit.",
+  "version": "3.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-31T18:54:19.749703Z",
+  "updatedAt": "2025-12-31T18:54:19.749703Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/digidenone/SynapseAudit",
+    "source": "github",
+    "subfolder": "mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@digidenone/synapseaudit-mcp",
+      "version": "3.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

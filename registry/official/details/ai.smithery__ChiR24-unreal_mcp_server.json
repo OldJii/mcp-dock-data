@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/ChiR24-unreal_mcp_server",
+  "displayName": "ai.smithery/ChiR24-unreal_mcp_server",
+  "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to control Unreal E…",
+  "version": "0.4.4",
+  "status": "active",
+  "publishedAt": "2025-10-03T07:12:00.299485Z",
+  "updatedAt": "2025-10-03T07:12:00.299485Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ChiR24/Unreal_mcp",
+    "source": "github"
+  },
+  "packages": []
+}

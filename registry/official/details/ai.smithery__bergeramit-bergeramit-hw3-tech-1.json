@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/bergeramit-bergeramit-hw3-tech-1",
+  "displayName": "ai.smithery/bergeramit-bergeramit-hw3-tech-1",
+  "description": "Add two numbers instantly and generate friendly greetings on demand. Speed up quick math and perso…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-09-29T12:45:13.016748Z",
+  "updatedAt": "2025-09-29T12:45:13.016748Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bergeramit/bergeramit-hw3-tech",
+    "source": "github"
+  },
+  "packages": []
+}

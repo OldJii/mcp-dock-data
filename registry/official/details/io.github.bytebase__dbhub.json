@@ -1,0 +1,124 @@
+{
+  "id": "io.github.bytebase/dbhub",
+  "displayName": "DBHub",
+  "description": "Minimal Database MCP Server for PostgreSQL, MySQL, SQL Server, SQLite, MariaDB",
+  "version": "0.13.2",
+  "status": "active",
+  "publishedAt": "2025-12-18T17:05:31.837094Z",
+  "updatedAt": "2025-12-18T17:05:31.837094Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bytebase/dbhub",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bytebase/dbhub",
+      "version": "0.13.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DSN",
+          "description": "Database connection string (e.g., postgres://user:pass@host:5432/db)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DB_TYPE",
+          "description": "Database type: postgres, mysql, mariadb, sqlserver, sqlite",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DB_HOST",
+          "description": "Database hostname",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DB_PORT",
+          "description": "Database port",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DB_USER",
+          "description": "Database username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DB_PASSWORD",
+          "description": "Database password",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DB_NAME",
+          "description": "Database name or SQLite file path",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "TRANSPORT",
+          "description": "Transport mode: stdio or http",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PORT",
+          "description": "HTTP server port (default: 8080)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ID",
+          "description": "Instance identifier for tool names",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SSH_HOST",
+          "description": "SSH server hostname",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SSH_PORT",
+          "description": "SSH server port (default: 22)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SSH_USER",
+          "description": "SSH username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SSH_PASSWORD",
+          "description": "SSH password",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "SSH_KEY",
+          "description": "Path to SSH private key",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "SSH_PASSPHRASE",
+          "description": "SSH key passphrase",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

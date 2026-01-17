@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/cindyloo-dropbox-mcp-server",
+  "displayName": "ai.smithery/cindyloo-dropbox-mcp-server",
+  "description": "Search, browse, and read your Dropbox files. Find documents by name or content, list folders, and…",
+  "version": "1.15.0",
+  "status": "active",
+  "publishedAt": "2025-09-30T02:02:08.583268Z",
+  "updatedAt": "2025-09-30T02:02:08.583268Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/cindyloo/dropbox-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-local-test2",
+  "displayName": "ai.smithery/arjunkmrm-local-test2",
+  "description": "Send friendly greetings instantly. Learn the origin of 'Hello, World' to add a fun fact to your me…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-29T08:52:53.0348Z",
+  "updatedAt": "2025-09-29T08:52:53.0348Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

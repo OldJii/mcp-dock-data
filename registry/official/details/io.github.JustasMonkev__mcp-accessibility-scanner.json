@@ -1,0 +1,27 @@
+{
+  "id": "io.github.JustasMonkev/mcp-accessibility-scanner",
+  "displayName": "io.github.JustasMonkev/mcp-accessibility-scanner",
+  "description": "MCP server for automated web accessibility scanning with Playwright and Axe-core.",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2025-09-10T15:19:19.721715Z",
+  "updatedAt": "2025-09-10T15:19:19.721715Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/JustasMonkev/mcp-accessibility-scanner",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-accessibility-scanner",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

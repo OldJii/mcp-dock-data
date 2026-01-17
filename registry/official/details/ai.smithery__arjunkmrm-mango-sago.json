@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-mango-sago",
+  "displayName": "ai.smithery/arjunkmrm-mango-sago",
+  "description": "Create cheerful, personalized greetings in seconds. Switch to playful pirate-speak for extra flair…",
+  "version": "1.16.0",
+  "status": "active",
+  "publishedAt": "2025-10-04T02:20:25.785458Z",
+  "updatedAt": "2025-10-04T02:20:25.785458Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/mango-sago",
+    "source": "github"
+  },
+  "packages": []
+}

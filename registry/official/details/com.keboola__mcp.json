@@ -1,0 +1,27 @@
+{
+  "id": "com.keboola/mcp",
+  "displayName": "com.keboola/mcp",
+  "description": "Connect your AI assistants to Keboola and expose your data, transformations, SQL queries, ...",
+  "version": "1.36.1",
+  "status": "active",
+  "publishedAt": "2025-12-16T10:31:41.112173Z",
+  "updatedAt": "2025-12-16T10:31:41.112173Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/keboola/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "keboola-mcp-server",
+      "version": "1.36.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

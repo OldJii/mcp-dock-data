@@ -1,0 +1,27 @@
+{
+  "id": "io.github.back1ply/agent-skill-loader",
+  "displayName": "io.github.back1ply/agent-skill-loader",
+  "description": "Dynamically load Claude Code skills into AI agents without copying files.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2026-01-17T01:18:15.418898Z",
+  "updatedAt": "2026-01-17T01:18:15.418898Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/back1ply/agent-skill-loader",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "agent-skill-loader",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

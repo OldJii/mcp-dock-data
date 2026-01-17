@@ -1,0 +1,26 @@
+{
+  "id": "io.github.neverinfamous/mysql-mcp",
+  "displayName": "io.github.neverinfamous/mysql-mcp",
+  "description": "Enterprise-grade MySQL MCP Server with OAuth 2.0, 106 tools, and Docker deployment",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-13T22:09:46.126233Z",
+  "updatedAt": "2025-12-13T22:09:46.126233Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/neverinfamous/mysql-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/writenotenow/mysql-mcp:v1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

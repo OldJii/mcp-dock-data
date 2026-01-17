@@ -1,0 +1,27 @@
+{
+  "id": "io.github.j0hanz/superfetch",
+  "displayName": "io.github.j0hanz/superfetch",
+  "description": "Intelligent web content fetcher MCP server that converts HTML to clean, AI-readable JSONL format",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-10T18:51:53.751638Z",
+  "updatedAt": "2025-12-10T18:51:53.751638Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/j0hanz/super-fetch-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@j0hanz/superfetch",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

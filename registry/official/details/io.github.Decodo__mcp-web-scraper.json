@@ -1,0 +1,40 @@
+{
+  "id": "io.github.Decodo/mcp-web-scraper",
+  "displayName": "io.github.Decodo/mcp-web-scraper",
+  "description": "Enable your AI agents to scrape and parse web content dynamically, including geo-restricted sites",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-09-29T08:00:36.224653Z",
+  "updatedAt": "2025-09-29T08:00:36.224653Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Decodo/mcp-web-scraper",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@decodo/mcp-server",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SCRAPER_API_USERNAME",
+          "description": "Decodo Web Advanced API username",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "SCRAPER_API_PASSWORD",
+          "description": "Decodo Web Advanced API password",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

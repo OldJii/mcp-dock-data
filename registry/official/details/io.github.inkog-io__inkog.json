@@ -1,0 +1,34 @@
+{
+  "id": "io.github.inkog-io/inkog",
+  "displayName": "io.github.inkog-io/inkog",
+  "description": "Scan AI agents for security vulnerabilities. Audit MCP servers before installation.",
+  "version": "1.0.5",
+  "status": "active",
+  "publishedAt": "2026-01-08T00:06:10.505803Z",
+  "updatedAt": "2026-01-08T00:06:10.505803Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/inkog-io/inkog-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@inkog-io/mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "INKOG_API_KEY",
+          "description": "Your Inkog API key from https://app.inkog.io (free tier available)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

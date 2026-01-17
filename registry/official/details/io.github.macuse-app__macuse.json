@@ -1,0 +1,27 @@
+{
+  "id": "io.github.macuse-app/macuse",
+  "displayName": "io.github.macuse-app/macuse",
+  "description": "Bridges AI assistants with native macOS functionality through the Model Context Protocol (MCP).",
+  "version": "1.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-03T04:57:01.19301Z",
+  "updatedAt": "2026-01-03T04:57:01.19301Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/macuse-app/macuse",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/macuse-app/macuse-mcp/releases/download/v1.1.1/macuse-1.1.1.mcpb",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

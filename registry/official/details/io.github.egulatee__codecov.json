@@ -1,0 +1,40 @@
+{
+  "id": "io.github.egulatee/codecov",
+  "displayName": "io.github.egulatee/codecov",
+  "description": "MCP server for querying Codecov coverage data with configurable URL support",
+  "version": "1.1.0",
+  "status": "active",
+  "publishedAt": "2025-12-29T01:15:52.627371Z",
+  "updatedAt": "2025-12-29T01:15:52.627371Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/egulatee/mcp-server-codecov",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-server-codecov",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CODECOV_TOKEN",
+          "description": "Codecov API token for authentication",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CODECOV_BASE_URL",
+          "description": "Base URL for self-hosted Codecov instances (optional, defaults to https://codecov.io)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

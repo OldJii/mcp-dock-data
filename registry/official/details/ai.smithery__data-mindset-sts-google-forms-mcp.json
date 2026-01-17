@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/data-mindset-sts-google-forms-mcp",
+  "displayName": "ai.smithery/data-mindset-sts-google-forms-mcp",
+  "description": "Create and manage Google Forms to run surveys and collect data. Add text and multiple-choice quest…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-05T09:13:16.21757Z",
+  "updatedAt": "2025-10-05T09:13:16.21757Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/data-mindset/sts-google-forms-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.amplitude/mcp-server",
+  "displayName": "Amplitude",
+  "description": "Search, access, and get insights on your Amplitude data",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-16T20:22:46.742037Z",
+  "updatedAt": "2025-10-16T20:22:46.742037Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

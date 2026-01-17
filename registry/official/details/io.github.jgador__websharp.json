@@ -1,0 +1,26 @@
+{
+  "id": "io.github.jgador/websharp",
+  "displayName": "io.github.jgador/websharp",
+  "description": "Search the web and extract article text for LLMs.",
+  "version": "v0.99.0-rc2",
+  "status": "active",
+  "publishedAt": "2025-09-22T09:09:05.052334Z",
+  "updatedAt": "2025-09-22T09:09:05.052334Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jgador/websharp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/jessegador/websharp-mcp:v0.99.0-rc2",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

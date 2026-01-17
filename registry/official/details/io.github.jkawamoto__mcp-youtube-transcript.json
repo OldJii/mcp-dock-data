@@ -1,0 +1,27 @@
+{
+  "id": "io.github.jkawamoto/mcp-youtube-transcript",
+  "displayName": "io.github.jkawamoto/mcp-youtube-transcript",
+  "description": "An MCP server retrieving transcripts of YouTube videos",
+  "version": "0.5.7",
+  "status": "active",
+  "publishedAt": "2026-01-04T07:41:10.525714Z",
+  "updatedAt": "2026-01-04T07:41:10.525714Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/jkawamoto/mcp-youtube-transcript",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/jkawamoto/mcp-youtube-transcript/releases/download/v0.5.7/mcp-youtube-transcript.mcpb",
+      "version": "0.5.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

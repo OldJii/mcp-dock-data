@@ -1,0 +1,16 @@
+{
+  "id": "io.github.noahgift/pmcp",
+  "displayName": "io.github.noahgift/pmcp",
+  "description": "High-quality Rust SDK for Model Context Protocol (MCP) with full TypeScript SDK compatibility",
+  "version": "1.6.1",
+  "status": "active",
+  "publishedAt": "2025-10-04T14:39:36.996079Z",
+  "updatedAt": "2025-10-04T14:39:36.996079Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/noahgift/rust-mcp-sdk",
+    "source": "github"
+  },
+  "packages": []
+}

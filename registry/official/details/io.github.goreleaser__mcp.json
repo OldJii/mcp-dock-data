@@ -1,0 +1,36 @@
+{
+  "id": "io.github.goreleaser/mcp",
+  "displayName": "The MCP server for GoReleaser",
+  "description": "GoReleaser MCP server",
+  "version": "0.3.2",
+  "status": "active",
+  "publishedAt": "2025-12-10T13:57:58.9474Z",
+  "updatedAt": "2025-12-10T13:57:58.9474Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/goreleaser/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/goreleaser/mcp:0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@goreleaser/mcp",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

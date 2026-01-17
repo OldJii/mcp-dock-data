@@ -1,0 +1,29 @@
+{
+  "id": "io.github.andylbrummer/math-mcp",
+  "displayName": "io.github.andylbrummer/math-mcp",
+  "description": "GPU-accelerated MCP server: symbolic algebra, numerical computing, FFT, optimization, linear algebra",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2026-01-05T04:52:46.547792Z",
+  "updatedAt": "2026-01-05T04:52:46.547792Z",
+  "iconUrl": null,
+  "websiteUrl": "https://andylbrummer.github.io/math-mcp/api/math-mcp",
+  "repository": {
+    "url": "https://github.com/andylbrummer/math-mcp",
+    "source": "github",
+    "subfolder": "servers/math-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scicomp-math-mcp",
+      "version": "0.1.6",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

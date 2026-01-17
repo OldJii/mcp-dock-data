@@ -1,0 +1,77 @@
+{
+  "id": "io.github.abhichandra21/promptheus",
+  "displayName": "Promptheus",
+  "description": "AI-powered prompt refinement with adaptive questioning and multi-provider support (6+ LLM backends)",
+  "version": "0.3.1",
+  "status": "active",
+  "publishedAt": "2025-12-10T06:09:02.751578Z",
+  "updatedAt": "2025-12-10T06:09:02.751578Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/abhichandra21/Promptheus",
+  "repository": {
+    "url": "https://github.com/abhichandra21/Promptheus.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "promptheus",
+      "version": "0.3.1",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_API_KEY",
+          "description": "Google Gemini API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic Claude API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GROQ_API_KEY",
+          "description": "Groq API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "QWEN_API_KEY",
+          "description": "Alibaba Qwen API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GLM_API_KEY",
+          "description": "Zhipu GLM API key (optional, at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "PROMPTHEUS_PROVIDER",
+          "description": "Override provider selection (gemini, anthropic, openai, groq, qwen, glm)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "PROMPTHEUS_MODEL",
+          "description": "Override model selection for the chosen provider",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

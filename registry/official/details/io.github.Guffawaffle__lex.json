@@ -1,0 +1,46 @@
+{
+  "id": "io.github.Guffawaffle/lex",
+  "displayName": "Lex",
+  "description": "Episodic memory and architectural policy for AI agents. Frames, Atlas, and Policy.",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-12-31T09:08:03.487716Z",
+  "updatedAt": "2025-12-31T09:08:03.487716Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Guffawaffle/lex",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@smartergpt/lex-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LEX_WORKSPACE_ROOT",
+          "description": "Root directory for the workspace. Defaults to current working directory.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LEX_MEMORY_DB",
+          "description": "Path to SQLite database file. Defaults to .smartergpt/lex/lex.db in workspace root.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LEX_DEBUG",
+          "description": "Set to any value to enable debug logging to stderr.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

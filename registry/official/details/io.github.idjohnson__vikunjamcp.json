@@ -1,0 +1,45 @@
+{
+  "id": "io.github.idjohnson/vikunjamcp",
+  "displayName": "io.github.idjohnson/vikunjamcp",
+  "description": "An MCP server that provides access to Vikunja, a self-hosted task management solution.",
+  "version": "1.0.26",
+  "status": "active",
+  "publishedAt": "2025-10-14T17:59:14.383902Z",
+  "updatedAt": "2025-10-14T17:59:14.383902Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/idjohnson/vikunjamcp:0.26",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VIKUNJA_URL",
+          "description": "URL to the Vikunja Instance",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "VIKUNJA_USERNAME",
+          "description": "Username to use with the Vikunja Instance",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "VIKUNJA_PASSWORD",
+          "description": "Password for user in the Vikunja Instance",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "io.github.dynatrace-oss/dynatrace-managed-mcp",
+  "displayName": "io.github.dynatrace-oss/dynatrace-managed-mcp",
+  "description": "MCP server for Dynatrace Managed to access logs, events, and metrics.",
+  "version": "0.4.0",
+  "status": "active",
+  "publishedAt": "2026-01-15T17:20:40.762479Z",
+  "updatedAt": "2026-01-15T17:20:40.762479Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dynatrace-oss/dynatrace-managed-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@dynatrace-oss/dynatrace-managed-mcp-server",
+      "version": "0.4.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DT_MANAGED_ENVIRONMENT",
+          "description": "id of the managed environment, used for constructing URL for API and dashboards (e.g. of the form `01234567-89ab-cdef-abcd-ef0123456789`)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DT_API_ENDPOINT_URL",
+          "description": "base url for Dynatrace Managed API, to which the environment id will be appended (e.g. `https://abc123.dynatrace-managed.com:9999`)",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "DT_DYNATRACE_URL",
+          "description": "base url for Dynatrace Managed dashboard, to which the environment id will be appended (e.g. `https://dmz123.dynatrace-managed.com`)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DT_MANAGED_API_TOKEN",
+          "description": "API Token with required scopes (e.g. 'dt0s16.SAMPLE.abcd1234')",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level (e.g. debug, info, warning, error)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "HTTP_PROXY",
+          "description": "HTTP Proxy to use",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DT_MCP_DISABLE_TELEMETRY",
+          "description": "Disable telemetry",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.generect/generect-mcp",
+  "displayName": "com.generect/generect-mcp",
+  "description": "B2B lead generation and company search through Generect Live API for sales prospecting.",
+  "version": "0.1.2",
+  "status": "active",
+  "publishedAt": "2025-10-16T10:34:55.182635Z",
+  "updatedAt": "2025-10-16T10:34:55.182635Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/generect/generect_mcp.git",
+    "source": "github"
+  },
+  "packages": []
+}

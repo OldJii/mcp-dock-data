@@ -1,0 +1,27 @@
+{
+  "id": "io.github.vladkarpman/screen-buffer-mcp",
+  "displayName": "io.github.vladkarpman/screen-buffer-mcp",
+  "description": "MCP server for fast Android screenshots via scrcpy frame buffer (~50ms latency).",
+  "version": "2.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-15T06:19:19.208898Z",
+  "updatedAt": "2026-01-15T06:19:19.208898Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vladkarpman/screen-buffer-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "screen-buffer-mcp",
+      "version": "2.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.shashwatgtm/craft-content-mcp",
+  "displayName": "io.github.shashwatgtm/craft-content-mcp",
+  "description": "8 content tools: Case Studies, Newsletters, Webinars, Repurposing, Thought Leadership",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-16T05:36:18.337834Z",
+  "updatedAt": "2026-01-16T05:36:18.337834Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/shashwatgtm/craft-content-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@shashwatgtmalpha/craft-content-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

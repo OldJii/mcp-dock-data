@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/mayla-debug-mcp-google-calendar2",
+  "displayName": "ai.smithery/mayla-debug-mcp-google-calendar2",
+  "description": "Schedule and manage Google Calendar events directly from your workspace. Check availability, view…",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-07T11:08:53.670394Z",
+  "updatedAt": "2025-10-07T11:08:53.670394Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mayla-debug/mcp-google-calendar2",
+    "source": "github"
+  },
+  "packages": []
+}

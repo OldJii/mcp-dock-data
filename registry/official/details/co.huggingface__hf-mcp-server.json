@@ -1,0 +1,16 @@
+{
+  "id": "co.huggingface/hf-mcp-server",
+  "displayName": "Hugging Face",
+  "description": "Connect to Hugging Face Hub and thousands of Gradio AI Applications",
+  "version": "0.2.33",
+  "status": "active",
+  "publishedAt": "2025-10-22T10:55:52.98995Z",
+  "updatedAt": "2025-10-22T10:55:52.98995Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

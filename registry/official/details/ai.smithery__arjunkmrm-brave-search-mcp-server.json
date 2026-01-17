@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/arjunkmrm-brave-search-mcp-server",
+  "displayName": "ai.smithery/arjunkmrm-brave-search-mcp-server",
+  "description": "Search the web, images, videos, news, and local businesses with robust filters, freshness controls…",
+  "version": "2.0.25",
+  "status": "active",
+  "publishedAt": "2025-10-02T06:39:58.418517Z",
+  "updatedAt": "2025-10-02T06:39:58.418517Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/arjunkmrm/brave-search-mcp-server",
+    "source": "github"
+  },
+  "packages": []
+}

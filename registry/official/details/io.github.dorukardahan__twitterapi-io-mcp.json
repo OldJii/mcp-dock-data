@@ -1,0 +1,27 @@
+{
+  "id": "io.github.dorukardahan/twitterapi-io-mcp",
+  "displayName": "io.github.dorukardahan/twitterapi-io-mcp",
+  "description": "Offline access to TwitterAPI.io docs for AI assistants. 54 endpoints, 19 pages, 21 blog posts.",
+  "version": "1.0.9",
+  "status": "active",
+  "publishedAt": "2025-12-23T19:25:54.837811Z",
+  "updatedAt": "2025-12-23T19:25:54.837811Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/dorukardahan/twitterapi-io-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "twitterapi-io-mcp",
+      "version": "1.0.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

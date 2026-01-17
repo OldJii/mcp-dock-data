@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/ChiR24-unreal_mcp",
+  "displayName": "ai.smithery/ChiR24-unreal_mcp",
+  "description": "Control Unreal Engine to browse assets, import content, and manage levels and sequences. Automate…",
+  "version": "0.4.6",
+  "status": "active",
+  "publishedAt": "2025-10-05T05:30:22.169534Z",
+  "updatedAt": "2025-10-05T05:30:22.169534Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ChiR24/Unreal_mcp",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.morinokami/astro-mcp",
+  "displayName": "io.github.morinokami/astro-mcp",
+  "description": "MCP server to support Astro project development",
+  "version": "0.4.2",
+  "status": "active",
+  "publishedAt": "2025-09-11T17:37:51.510706Z",
+  "updatedAt": "2025-09-11T17:37:51.510706Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/morinokami/astro-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "astro-mcp",
+      "version": "0.4.2",
+      "transport": {
+        "type": "sse"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

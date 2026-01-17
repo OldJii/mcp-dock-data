@@ -1,0 +1,13 @@
+{
+  "id": "io.github.bitrix24/bitrix-mcp-rest",
+  "displayName": "Bitrix MCP",
+  "description": "MCP server that delivers up-to-date Bitrix24 REST API documentation.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-26T09:19:44.819819Z",
+  "updatedAt": "2025-11-26T09:19:44.819819Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

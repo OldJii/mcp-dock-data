@@ -1,0 +1,16 @@
+{
+  "id": "tools.ref/ref-tools-mcp",
+  "displayName": "tools.ref/ref-tools-mcp",
+  "description": "Token-efficient search for coding agents over public and private documentation.",
+  "version": "3.0.1",
+  "status": "active",
+  "publishedAt": "2025-10-28T04:00:29.042576Z",
+  "updatedAt": "2025-10-28T04:00:29.042576Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ref-tools/ref-tools-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

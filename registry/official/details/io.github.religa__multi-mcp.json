@@ -1,0 +1,64 @@
+{
+  "id": "io.github.religa/multi-mcp",
+  "displayName": "Multi-MCP",
+  "description": "Multi-model AI orchestration MCP server with code review, compare, and debate tools.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-22T22:36:04.492025Z",
+  "updatedAt": "2025-12-22T22:36:04.492025Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/religa/multi_mcp#readme",
+  "repository": {
+    "url": "https://github.com/religa/multi_mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "multi-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key for GPT models (optional - at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for Claude models (optional - at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Google API key for Gemini models (optional - at least one provider required)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "OPENROUTER_API_KEY",
+          "description": "OpenRouter API key for additional models (optional)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DEFAULT_MODEL",
+          "description": "Default model to use (defaults to gpt-5-mini)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "DEFAULT_MODEL_LIST",
+          "description": "Default models for multi-model comparison (comma-separated, defaults to gpt-5-mini,gemini-3-flash)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

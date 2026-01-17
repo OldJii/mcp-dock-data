@@ -1,0 +1,58 @@
+{
+  "id": "io.github.sns45/better-call-claude",
+  "displayName": "io.github.sns45/better-call-claude",
+  "description": "Voice Calls, SMS, and WhatsApp for Claude Code with cross-channel context sharing.",
+  "version": "2.1.1",
+  "status": "active",
+  "publishedAt": "2026-01-14T18:21:40.097539Z",
+  "updatedAt": "2026-01-14T18:21:40.097539Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/sns45/better-call-claude",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "better-call-claude",
+      "version": "2.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BETTERCALLCLAUDE_PHONE_PROVIDER",
+          "description": "Phone provider: 'twilio' or 'telnyx'",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "BETTERCALLCLAUDE_PHONE_NUMBER",
+          "description": "Your phone number in E.164 format",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "BETTERCALLCLAUDE_PHONE_ACCOUNT_SID",
+          "description": "Twilio Account SID or Telnyx API Key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "BETTERCALLCLAUDE_PHONE_AUTH_TOKEN",
+          "description": "Twilio Auth Token or Telnyx API Secret",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "NGROK_AUTHTOKEN",
+          "description": "ngrok auth token for public URL tunneling",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

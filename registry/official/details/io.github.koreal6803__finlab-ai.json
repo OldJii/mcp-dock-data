@@ -1,0 +1,16 @@
+{
+  "id": "io.github.koreal6803/finlab-ai",
+  "displayName": "io.github.koreal6803/finlab-ai",
+  "description": "Quantitative trading toolkit with 900+ data columns, backtesting, and 60+ strategy examples.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-10T21:47:11.540306Z",
+  "updatedAt": "2026-01-10T21:47:11.540306Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/koreal6803/finlab-ai",
+    "source": "github"
+  },
+  "packages": []
+}

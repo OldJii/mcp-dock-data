@@ -1,0 +1,62 @@
+{
+  "id": "io.github.DiaaAj/a-mem-mcp",
+  "displayName": "io.github.DiaaAj/a-mem-mcp",
+  "description": "Self-evolving memory system for AI agents",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2026-01-09T22:21:31.021803Z",
+  "updatedAt": "2026-01-09T22:21:31.021803Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/DiaaAj/a-mem-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "a-mem",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LLM_BACKEND",
+          "description": "LLM backend to use (openai, ollama, sglang, or openrouter)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "openai"
+        },
+        {
+          "name": "LLM_MODEL",
+          "description": "LLM model name (e.g., gpt-4o-mini, llama2, etc.)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "gpt-4o-mini"
+        },
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "OpenAI API key (required if LLM_BACKEND=openai)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "EMBEDDING_MODEL",
+          "description": "Sentence transformer model for embeddings",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "all-MiniLM-L6-v2"
+        },
+        {
+          "name": "CHROMA_DB_PATH",
+          "description": "ChromaDB storage directory path",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "./chroma_db"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

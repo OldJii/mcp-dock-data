@@ -1,0 +1,27 @@
+{
+  "id": "io.github.brightseth/vibe",
+  "displayName": "io.github.brightseth/vibe",
+  "description": "Social layer for Claude Code - DMs, presence, games between AI-assisted developers",
+  "version": "0.2.1",
+  "status": "active",
+  "publishedAt": "2026-01-06T07:14:56.936447Z",
+  "updatedAt": "2026-01-06T07:14:56.936447Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/brightseth/vibe",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "slashvibe-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

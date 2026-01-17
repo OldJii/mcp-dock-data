@@ -1,0 +1,27 @@
+{
+  "id": "io.github.LinuxSuRen/atest-mcp-server",
+  "displayName": "io.github.LinuxSuRen/atest-mcp-server",
+  "description": "Auto-download & launch https://github.com/LinuxSuRen/atest-mcp-server",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-09-09T07:37:00.342794Z",
+  "updatedAt": "2025-09-09T07:37:00.342794Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/LinuxSuRen/atest-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "atest-mcp-server-launcher",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

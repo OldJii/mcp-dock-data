@@ -1,0 +1,59 @@
+{
+  "id": "io.github.ruvnet/ruv-swarm",
+  "displayName": "io.github.ruvnet/ruv-swarm",
+  "description": "Neural network swarm orchestration with WebAssembly acceleration and MCP integration",
+  "version": "1.0.19",
+  "status": "active",
+  "publishedAt": "2025-09-10T17:21:34.916675Z",
+  "updatedAt": "2025-09-10T17:21:34.916675Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ruvnet/ruv-FANN",
+    "source": "github",
+    "subfolder": "ruv-swarm"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ruv-swarm",
+      "version": "1.0.19",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RUV_SWARM_LOG_LEVEL",
+          "description": "Log level for ruv-swarm operations",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "info",
+          "choices": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ]
+        },
+        {
+          "name": "RUV_SWARM_DB_PATH",
+          "description": "Database path for persistence storage",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "RUV_SWARM_ENABLE_SIMD",
+          "description": "Enable WebAssembly SIMD optimizations",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "true",
+          "choices": [
+            "true",
+            "false"
+          ]
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

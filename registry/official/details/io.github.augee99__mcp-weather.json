@@ -1,0 +1,27 @@
+{
+  "id": "io.github.augee99/mcp-weather",
+  "displayName": "io.github.augee99/mcp-weather",
+  "description": "An MCP server that provides [describe what your server does]",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-12T13:24:44.527457Z",
+  "updatedAt": "2025-09-12T13:24:44.527457Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/augee99/mcp-weather",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-weather-augee99",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

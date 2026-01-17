@@ -1,0 +1,34 @@
+{
+  "id": "io.github.KittyCAD/zoo-mcp",
+  "displayName": "io.github.KittyCAD/zoo-mcp",
+  "description": "An MCP server that provides access to the Zoo API for various CAD operations and tools.",
+  "version": "0.9.1",
+  "status": "active",
+  "publishedAt": "2025-12-19T17:03:05.292992Z",
+  "updatedAt": "2025-12-19T17:03:05.292992Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/KittyCAD/zoo-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "zoo_mcp",
+      "version": "0.9.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ZOO_TOKEN",
+          "description": "Your Zoo API key to access the Zoo services. Get one from https://zoo.dev/account/developer",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "io.github.BlockRunAI/blockrun-mcp",
+  "displayName": "io.github.BlockRunAI/blockrun-mcp",
+  "description": "BlockRun MCP Server - Access 30+ AI models via x402 micropayments. No API keys needed.",
+  "version": "0.2.2",
+  "status": "active",
+  "publishedAt": "2026-01-14T13:54:17.485965Z",
+  "updatedAt": "2026-01-14T13:54:17.485965Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BlockRunAI/blockrun-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@blockrun/mcp",
+      "version": "0.2.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BLOCKRUN_WALLET_KEY",
+          "description": "Optional: Your wallet private key for USDC payments (hex, starts with 0x). If not set, a wallet is auto-generated.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "io.github.omazapa/root-mcp",
+  "displayName": "ROOT MCP Server",
+  "description": "ROOT-based MCP server exposing root_python and root_cpp tools (stdio transport).",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-22T23:34:42.723177Z",
+  "updatedAt": "2025-11-22T23:34:42.723177Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/omazapa/root_mcp_server",
+  "repository": {
+    "url": "https://github.com/omazapa/root_mcp_server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/omazapa/root-mcp:1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

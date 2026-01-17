@@ -1,0 +1,27 @@
+{
+  "id": "io.github.zeiq-co/thoth-mcp",
+  "displayName": "io.github.zeiq-co/thoth-mcp",
+  "description": "MCP server for Thoth with multi-platform AI content generation",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-10-08T16:56:24.838745Z",
+  "updatedAt": "2025-10-08T16:56:24.838745Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/perminder-klair/thoth-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@usethoth/mcp-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

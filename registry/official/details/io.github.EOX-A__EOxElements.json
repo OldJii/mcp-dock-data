@@ -1,0 +1,35 @@
+{
+  "id": "io.github.EOX-A/EOxElements",
+  "displayName": "io.github.EOX-A/EOxElements",
+  "description": "A server to provide information about EOxElements custom elements for coding agents.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-16T12:18:22.066013Z",
+  "updatedAt": "2025-12-16T12:18:22.066013Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/EOX-A/EOxElements",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@eox/elements-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [],
+      "packageArguments": [
+        {
+          "name": "port",
+          "description": "Port for the server to listen on",
+          "type": "named",
+          "isRequired": false,
+          "default": "3000"
+        }
+      ]
+    }
+  ]
+}

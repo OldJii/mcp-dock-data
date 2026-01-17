@@ -1,0 +1,16 @@
+{
+  "id": "ai.com.mcp/lenny-rachitsky-podcast",
+  "displayName": "Lenny Rachitsky Podcast Transcripts MCP Server",
+  "description": "MCP server for structured access to Lenny Rachitsky podcast transcripts. For content creators.",
+  "version": "0.6.0",
+  "status": "active",
+  "publishedAt": "2026-01-16T11:08:36.481149Z",
+  "updatedAt": "2026-01-16T11:08:36.481149Z",
+  "iconUrl": null,
+  "websiteUrl": "https://mcp.com.ai",
+  "repository": {
+    "url": "https://github.com/la-rebelion/hapimcp",
+    "source": "github"
+  },
+  "packages": []
+}

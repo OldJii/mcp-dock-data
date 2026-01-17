@@ -1,0 +1,40 @@
+{
+  "id": "io.github.msenol/gorev",
+  "displayName": "io.github.msenol/gorev",
+  "description": "Task management system for AI assistants with MCP protocol, templates, and bilingual support (TR/EN)",
+  "version": "0.16.1",
+  "status": "active",
+  "publishedAt": "2025-10-04T22:55:59.067517Z",
+  "updatedAt": "2025-10-04T22:55:59.067517Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/msenol/Gorev",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mehmetsenol/gorev-mcp-server",
+      "version": "0.16.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOREV_LANG",
+          "description": "Language preference (en for English, tr for Turkish)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "GOREV_DATA_DIR",
+          "description": "Directory for storing Gorev database and data files",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

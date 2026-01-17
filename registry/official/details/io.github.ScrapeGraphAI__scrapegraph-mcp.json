@@ -1,0 +1,34 @@
+{
+  "id": "io.github.ScrapeGraphAI/scrapegraph-mcp",
+  "displayName": "io.github.ScrapeGraphAI/scrapegraph-mcp",
+  "description": "AI-powered web scraping and data extraction capabilities through ScrapeGraph API",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-03T19:23:33.165955Z",
+  "updatedAt": "2025-11-03T19:23:33.165955Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/ScrapeGraphAI/scrapegraph-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "scrapegraph-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SGAI_API_KEY",
+          "description": "Your ScapeGraph API key (optional - can also be set via MCP config)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.joshmsimpson/exiftool",
+  "displayName": "io.github.joshmsimpson/exiftool",
+  "description": "Read, write, and remove metadata from 150+ file formats using ExifTool",
+  "version": "0.1.6",
+  "status": "active",
+  "publishedAt": "2025-10-02T19:57:51.949845Z",
+  "updatedAt": "2025-10-02T19:57:51.949845Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/joshmsimpson/exiftool_mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "exiftool-mcp",
+      "version": "0.1.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.charo360/statecli",
+  "displayName": "io.github.charo360/statecli",
+  "description": "State replay and self-debugging for AI agents. Track, replay, undo, checkpoint.",
+  "version": "0.5.0",
+  "status": "active",
+  "publishedAt": "2026-01-08T22:14:09.296569Z",
+  "updatedAt": "2026-01-08T22:14:09.296569Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/statecli/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "statecli-mcp-server",
+      "version": "0.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

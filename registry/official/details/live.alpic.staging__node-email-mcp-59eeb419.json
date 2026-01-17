@@ -1,0 +1,13 @@
+{
+  "id": "live.alpic.staging/node-email-mcp-59eeb419",
+  "displayName": "Email Server",
+  "description": "An MCP server that provides email capabilities, hosted on Alpic platform",
+  "version": "0.0.56",
+  "status": "active",
+  "publishedAt": "2025-11-13T16:41:49.659931Z",
+  "updatedAt": "2025-11-13T16:41:49.659931Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

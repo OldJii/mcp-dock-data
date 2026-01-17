@@ -1,0 +1,122 @@
+{
+  "id": "io.github.timescale/pg-aiguide",
+  "displayName": "io.github.timescale/pg-aiguide",
+  "description": "Comprehensive PostgreSQL documentation and best practices, including ecosystem tools",
+  "version": "0.2.4",
+  "status": "active",
+  "publishedAt": "2025-12-10T00:07:09.936477Z",
+  "updatedAt": "2025-12-10T00:07:09.936477Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/timescale/pg-aiguide",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@tigerdata/pg-aiguide",
+      "version": "0.2.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Your API key for text embeddings via OpenAI",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGHOST",
+          "description": "PostgreSQL host to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGPORT",
+          "description": "PostgreSQL port to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGUSER",
+          "description": "PostgreSQL user to connect as",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGPASSWORD",
+          "description": "PostgreSQL password to connect with",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGDATABASE",
+          "description": "PostgreSQL database to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DB_SCHEMA",
+          "description": "PostgreSQL database schema to use",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/timescale/pg-aiguide:0.2.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Your API key for text embeddings via OpenAI",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGHOST",
+          "description": "PostgreSQL host to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGPORT",
+          "description": "PostgreSQL port to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGUSER",
+          "description": "PostgreSQL user to connect as",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGPASSWORD",
+          "description": "PostgreSQL password to connect with",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "PGDATABASE",
+          "description": "PostgreSQL database to connect to",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DB_SCHEMA",
+          "description": "PostgreSQL database schema to use",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

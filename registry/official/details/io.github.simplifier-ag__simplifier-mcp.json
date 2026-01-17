@@ -1,0 +1,62 @@
+{
+  "id": "io.github.simplifier-ag/simplifier-mcp",
+  "displayName": "io.github.simplifier-ag/simplifier-mcp",
+  "description": "MCP Server for Simplifier - manage Connectors, BusinessObjects, Datatypes and logins",
+  "version": "0.9.58",
+  "status": "active",
+  "publishedAt": "2025-12-01T13:49:37.042286Z",
+  "updatedAt": "2025-12-01T13:49:37.042286Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/simplifier-ag/simplifier-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@simplifierag/simplifier-mcp",
+      "version": "0.9.58",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SIMPLIFIER_TOKEN",
+          "description": "Your current Simplifier token",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "SIMPLIFIER_BASE_URL",
+          "description": "The base URL of your Simplifier instance",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/simplifierag/simplifier-mcp:0.9.58",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SIMPLIFIER_TOKEN",
+          "description": "Your current Simplifier token",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "SIMPLIFIER_BASE_URL",
+          "description": "The base URL of your Simplifier instance",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

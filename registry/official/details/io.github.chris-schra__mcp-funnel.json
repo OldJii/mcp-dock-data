@@ -1,0 +1,36 @@
+{
+  "id": "io.github.chris-schra/mcp-funnel",
+  "displayName": "io.github.chris-schra/mcp-funnel",
+  "description": "MCP proxy that aggregates multiple servers with tool filtering and customization",
+  "version": "0.0.7",
+  "status": "active",
+  "publishedAt": "2025-09-17T18:55:31.888644Z",
+  "updatedAt": "2025-09-17T18:55:31.888644Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/chris-schra/mcp-funnel",
+    "source": "github",
+    "subfolder": "packages/mcp"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-funnel",
+      "version": "0.0.6",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_FUNNEL_CONFIG",
+          "description": "Alternative way to specify config file path",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

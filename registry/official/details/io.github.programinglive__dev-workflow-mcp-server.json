@@ -1,0 +1,27 @@
+{
+  "id": "io.github.programinglive/dev-workflow-mcp-server",
+  "displayName": "Dev Workflow MCP Server",
+  "description": "MCP server to enforce development workflow discipline",
+  "version": "1.4.6",
+  "status": "active",
+  "publishedAt": "2025-11-27T17:07:12.126717Z",
+  "updatedAt": "2025-11-27T17:07:12.126717Z",
+  "iconUrl": null,
+  "websiteUrl": "https://devworkflow.programinglive.com/",
+  "repository": {
+    "url": "https://github.com/programinglive/dev-workflow-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@programinglive/dev-workflow-mcp-server",
+      "version": "1.4.6",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.nathishdev-netizen/dida-mcp-server",
+  "displayName": "io.github.nathishdev-netizen/dida-mcp-server",
+  "description": "Hotel search, booking, and review MCP server with 12+ detailed fields per hotel",
+  "version": "1.0.2",
+  "status": "active",
+  "publishedAt": "2025-10-15T10:51:41.994683Z",
+  "updatedAt": "2025-10-15T10:51:41.994683Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/nathishdev-netizen/dida-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "dida-mcp-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

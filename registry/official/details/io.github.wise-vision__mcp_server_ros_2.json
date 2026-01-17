@@ -1,0 +1,52 @@
+{
+  "id": "io.github.wise-vision/mcp_server_ros_2",
+  "displayName": "io.github.wise-vision/mcp_server_ros_2",
+  "description": "View ROS 2 nodes and topics, and call services and actions via MCP",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-11-26T07:59:38.535007Z",
+  "updatedAt": "2025-11-26T07:59:38.535007Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/wise-vision/mcp_server_ros_2",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/mcp/ros2:latest",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_CUSTOM_PROMPTS",
+          "description": "Enable custom prompts",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_PROMPTS_LOCAL",
+          "description": "Use local prompts",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_PROMPTS_PATH",
+          "description": "Path to custom prompts directory",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_PROMPTS_MODULE",
+          "description": "Name of the prompts module",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

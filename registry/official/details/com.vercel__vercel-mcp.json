@@ -1,0 +1,16 @@
+{
+  "id": "com.vercel/vercel-mcp",
+  "displayName": "com.vercel/vercel-mcp",
+  "description": "An MCP server for Vercel",
+  "version": "0.0.3",
+  "status": "active",
+  "publishedAt": "2026-01-14T18:38:33.404454Z",
+  "updatedAt": "2026-01-14T18:38:33.404454Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vercel/vercel-mcp-overview",
+    "source": "github"
+  },
+  "packages": []
+}

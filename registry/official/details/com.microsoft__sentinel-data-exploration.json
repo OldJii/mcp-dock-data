@@ -1,0 +1,16 @@
+{
+  "id": "com.microsoft/sentinel-data-exploration",
+  "displayName": "Microsoft Sentinel Data Exploration",
+  "description": "Find relevant security data from Sentinel data lake for building effective agents. More:aka.ms/s/de",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2026-01-15T20:08:52.881607Z",
+  "updatedAt": "2026-01-15T20:08:52.881607Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/microsoft/sentinel-data-exploration-mcp",
+  "repository": {
+    "url": "https://github.com/microsoft/sentinel-data-exploration-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

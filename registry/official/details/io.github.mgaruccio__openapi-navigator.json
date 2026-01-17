@@ -1,0 +1,27 @@
+{
+  "id": "io.github.mgaruccio/openapi-navigator",
+  "displayName": "io.github.mgaruccio/openapi-navigator",
+  "description": "Navigate and query OpenAPI specs with fuzzy search, pagination, and API testing",
+  "version": "0.5.1",
+  "status": "active",
+  "publishedAt": "2025-11-15T03:29:15.146815Z",
+  "updatedAt": "2025-11-15T03:29:15.146815Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/mikegaruccio/openapi-navigator",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "openapi-navigator",
+      "version": "0.5.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "com.medusajs/medusa-mcp",
+  "displayName": "com.medusajs/medusa-mcp",
+  "description": "Retrieve information from the Medusa documentation to assist you with your Medusa development.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-27T14:16:17.087598Z",
+  "updatedAt": "2025-10-27T14:16:17.087598Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

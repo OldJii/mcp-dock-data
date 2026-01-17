@@ -1,0 +1,16 @@
+{
+  "id": "ai.zine/mcp",
+  "displayName": "ai.zine/mcp",
+  "description": "Your memory, everywhere AI goes. Build knowledge once, access it via MCP anywhere.",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-10T18:02:28.773522Z",
+  "updatedAt": "2025-09-10T18:02:28.773522Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "io.github.domdomegg/defuddle-fetch-mcp-server",
+  "displayName": "Defuddle Fetch",
+  "description": "Fetch content from the web, cleaned up nicely for LLMs (using Defuddle).",
+  "version": "1.0.4",
+  "status": "active",
+  "publishedAt": "2025-12-05T18:19:27.288707Z",
+  "updatedAt": "2025-12-05T18:19:27.288707Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/domdomegg/defuddle-fetch-mcp-server#readme",
+  "repository": {
+    "url": "https://github.com/domdomegg/defuddle-fetch-mcp-server.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "defuddle-fetch-mcp-server",
+      "version": "1.0.4",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/domdomegg/defuddle-fetch-mcp-server/releases/download/v1.0.4/defuddle-fetch-mcp-server.mcpb",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

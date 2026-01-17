@@ -1,0 +1,27 @@
+{
+  "id": "io.github.JustinBeckwith/linkinator-mcp",
+  "displayName": "io.github.JustinBeckwith/linkinator-mcp",
+  "description": "MCP server for link checking using linkinator",
+  "version": "0.2.3",
+  "status": "active",
+  "publishedAt": "2025-12-14T01:31:34.186391Z",
+  "updatedAt": "2025-12-14T01:31:34.186391Z",
+  "iconUrl": "https://raw.githubusercontent.com/JustinBeckwith/linkinator-mcp/main/site/linkinator-mcp.webp",
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/JustinBeckwith/linkinator-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "linkinator-mcp",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

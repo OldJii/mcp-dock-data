@@ -1,0 +1,28 @@
+{
+  "id": "io.github.isakskogstad/kolada-mcp",
+  "displayName": "Kolada MCP Server",
+  "description": "Swedish municipality statistics from Kolada API. 6000+ KPIs for all 290 municipalities.",
+  "version": "2.2.1",
+  "status": "active",
+  "publishedAt": "2025-11-29T02:30:10.318926Z",
+  "updatedAt": "2025-11-29T02:30:10.318926Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/isakskogstad/kolada-mcp",
+  "repository": {
+    "url": "https://github.com/isakskogstad/kolada-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "kolada-mcp-server",
+      "version": "2.2.1",
+      "runtimeHint": "node",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

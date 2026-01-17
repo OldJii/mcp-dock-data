@@ -1,0 +1,27 @@
+{
+  "id": "io.github.vigneshRN52/demo-mcp-server",
+  "displayName": "io.github.vigneshRN52/demo-mcp-server",
+  "description": "Minimal Go MCP Server for high-performance context bridging",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-02T23:17:24.831932Z",
+  "updatedAt": "2026-01-02T23:17:24.831932Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/vigneshRN52/demo-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "demo-server-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

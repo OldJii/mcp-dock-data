@@ -1,0 +1,47 @@
+{
+  "id": "io.github.wmarceau/amazon-seller",
+  "displayName": "io.github.wmarceau/amazon-seller",
+  "description": "Amazon seller tools: FBA fees, inventory optimization, restock recommendations.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-14T02:07:44.987683Z",
+  "updatedAt": "2026-01-14T02:07:44.987683Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/MarceauSolutions/dev-sandbox",
+    "source": "github",
+    "subfolder": "projects/amazon-seller"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "amazon-seller-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AMAZON_REFRESH_TOKEN",
+          "description": "Amazon SP-API refresh token",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "AMAZON_LWA_APP_ID",
+          "description": "Amazon LWA App ID (Client ID)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "AMAZON_LWA_CLIENT_SECRET",
+          "description": "Amazon LWA Client Secret",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

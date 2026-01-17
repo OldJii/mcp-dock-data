@@ -1,0 +1,28 @@
+{
+  "id": "io.github.kayembahamid/cybersim-pro",
+  "displayName": "io.github.kayembahamid/cybersim-pro",
+  "description": "Cybersecurity training, simulation, and incident response MCP server",
+  "version": "1.0.1",
+  "status": "active",
+  "publishedAt": "2025-09-30T16:26:24.948928Z",
+  "updatedAt": "2025-09-30T16:26:24.948928Z",
+  "iconUrl": null,
+  "websiteUrl": "https://kayembahamid.github.io",
+  "repository": {
+    "url": "https://github.com/kayembahamid/cybersim-pro",
+    "source": "github",
+    "subfolder": "cybersim-pro-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/hamcodes/cybersim-pro-mcp:v1.0.1",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

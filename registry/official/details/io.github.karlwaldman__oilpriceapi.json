@@ -1,0 +1,34 @@
+{
+  "id": "io.github.karlwaldman/oilpriceapi",
+  "displayName": "io.github.karlwaldman/oilpriceapi",
+  "description": "Real-time oil, gas, and commodity prices for Brent, WTI, natural gas, and 40+ commodities.",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-12-27T14:26:43.583032Z",
+  "updatedAt": "2025-12-27T14:26:43.583032Z",
+  "iconUrl": null,
+  "websiteUrl": "https://www.oilpriceapi.com",
+  "repository": {
+    "url": "https://github.com/OilpriceAPI/oilpriceapi-api",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "oilpriceapi-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OILPRICEAPI_KEY",
+          "description": "Your OilPriceAPI key from oilpriceapi.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

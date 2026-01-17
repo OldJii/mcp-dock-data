@@ -1,0 +1,34 @@
+{
+  "id": "io.github.team-telnyx/telnyx",
+  "displayName": "io.github.team-telnyx/telnyx",
+  "description": "Official TypeScript library for the Telnyx API",
+  "version": "3.3.3",
+  "status": "active",
+  "publishedAt": "2025-10-01T16:38:17.413677Z",
+  "updatedAt": "2025-10-01T16:38:17.413677Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/team-telnyx/telnyx-node",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "telnyx",
+      "version": "3.3.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TELNYX_API_KEY",
+          "description": "Your Telnyx API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

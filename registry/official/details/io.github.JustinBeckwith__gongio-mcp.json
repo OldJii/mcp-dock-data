@@ -1,0 +1,27 @@
+{
+  "id": "io.github.JustinBeckwith/gongio-mcp",
+  "displayName": "io.github.JustinBeckwith/gongio-mcp",
+  "description": "MCP server for Gong.io - access calls, transcripts, and users",
+  "version": "1.3.0",
+  "status": "active",
+  "publishedAt": "2025-12-15T03:38:52.598225Z",
+  "updatedAt": "2025-12-15T03:38:52.598225Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/JustinBeckwith/gongio-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "gongio-mcp",
+      "version": "1.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

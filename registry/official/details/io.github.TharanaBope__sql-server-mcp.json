@@ -1,0 +1,27 @@
+{
+  "id": "io.github.TharanaBope/sql-server-mcp",
+  "displayName": "SQL Server MCP (Windows)",
+  "description": "SQL Server MCP with RAG capabilities for Windows (native ODBC support)",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2025-10-31T14:52:08.983083Z",
+  "updatedAt": "2025-10-31T14:52:08.983083Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/TharanaBope/SQL-MCP-Mac-Windows",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@tharanabopearachchi/sql-server-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

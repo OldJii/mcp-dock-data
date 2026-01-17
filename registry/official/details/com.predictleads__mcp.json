@@ -1,0 +1,16 @@
+{
+  "id": "com.predictleads/mcp",
+  "displayName": "PredictLeads",
+  "description": "Company Insights: job postings, tech stack, news events, key customers, similar companies...",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-10-21T12:42:58.519645Z",
+  "updatedAt": "2025-10-21T12:42:58.519645Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

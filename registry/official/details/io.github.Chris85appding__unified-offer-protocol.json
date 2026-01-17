@@ -1,0 +1,16 @@
+{
+  "id": "io.github.Chris85appding/unified-offer-protocol",
+  "displayName": "Unified Offer Protocol MCP Server",
+  "description": "AI-powered e-commerce product search, affiliate links, and price negotiation",
+  "version": "2.0.6",
+  "status": "active",
+  "publishedAt": "2025-10-19T13:04:28.249421Z",
+  "updatedAt": "2025-10-19T13:04:28.249421Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/UnifiedOffer/mcp-server-public",
+    "source": "github"
+  },
+  "packages": []
+}

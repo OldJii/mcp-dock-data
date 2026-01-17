@@ -1,0 +1,27 @@
+{
+  "id": "io.github.BenAHammond/code-auditor-mcp",
+  "displayName": "io.github.BenAHammond/code-auditor-mcp",
+  "description": "Code Quality Auditor: Analyze code for SOLID principles, DRY violations, and more",
+  "version": "2.0.2",
+  "status": "active",
+  "publishedAt": "2025-11-02T18:28:45.941423Z",
+  "updatedAt": "2025-11-02T18:28:45.941423Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/BenAHammond/code-auditor-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "code-auditor-mcp",
+      "version": "2.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

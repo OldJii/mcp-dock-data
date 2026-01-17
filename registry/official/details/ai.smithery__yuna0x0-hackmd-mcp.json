@@ -1,0 +1,16 @@
+{
+  "id": "ai.smithery/yuna0x0-hackmd-mcp",
+  "displayName": "ai.smithery/yuna0x0-hackmd-mcp",
+  "description": "Interact with your HackMD notes and teams seamlessly. Manage your notes, view reading history, and…",
+  "version": "1.5.3",
+  "status": "active",
+  "publishedAt": "2025-09-29T12:48:21.84888Z",
+  "updatedAt": "2025-09-29T12:48:21.84888Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/yuna0x0/hackmd-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

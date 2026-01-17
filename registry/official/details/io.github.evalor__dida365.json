@@ -1,0 +1,46 @@
+{
+  "id": "io.github.evalor/dida365",
+  "displayName": "io.github.evalor/dida365",
+  "description": "MCP Server for Dida365 (TickTick) Task Management Integration",
+  "version": "0.2.2",
+  "status": "active",
+  "publishedAt": "2025-11-25T14:03:30.561817Z",
+  "updatedAt": "2025-11-25T14:03:30.561817Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/evalor/Dida365MCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "dida365-mcp-server",
+      "version": "0.2.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DIDA365_CLIENT_ID",
+          "description": "OAuth2 Client ID for Dida365/TickTick API",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DIDA365_CLIENT_SECRET",
+          "description": "OAuth2 Client Secret for Dida365/TickTick API",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "DIDA365_REGION",
+          "description": "Region for the service (china or international)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

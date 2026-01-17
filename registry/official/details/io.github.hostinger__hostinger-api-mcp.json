@@ -1,0 +1,34 @@
+{
+  "id": "io.github.hostinger/hostinger-api-mcp",
+  "displayName": "io.github.hostinger/hostinger-api-mcp",
+  "description": "MCP server for Hostinger API",
+  "version": "0.1.21",
+  "status": "active",
+  "publishedAt": "2025-11-28T09:47:19.696456Z",
+  "updatedAt": "2025-11-28T09:47:19.696456Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/hostinger/api-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "hostinger-api-mcp",
+      "version": "0.1.21",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "API_TOKEN",
+          "description": "Hostinger API token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

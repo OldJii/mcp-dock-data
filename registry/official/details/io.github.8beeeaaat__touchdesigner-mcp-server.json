@@ -1,0 +1,38 @@
+{
+  "id": "io.github.8beeeaaat/touchdesigner-mcp-server",
+  "displayName": "io.github.8beeeaaat/touchdesigner-mcp-server",
+  "description": "MCP server for TouchDesigner - Control and operate TouchDesigner projects through AI agents",
+  "version": "1.2.0",
+  "status": "active",
+  "publishedAt": "2025-11-26T15:06:44.60321Z",
+  "updatedAt": "2025-11-26T15:06:44.60321Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/8beeeaaat/touchdesigner-mcp.git",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "touchdesigner-mcp-server",
+      "version": "1.2.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/8beeeaaat/touchdesigner-mcp/releases/download/v1.2.0/touchdesigner-mcp.mcpb",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "io.snapcall/mcp",
+  "displayName": "io.snapcall/mcp",
+  "description": "MCP Server that generate video call url",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-09-18T08:16:15.41436Z",
+  "updatedAt": "2025-09-18T08:16:15.41436Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": []
+}

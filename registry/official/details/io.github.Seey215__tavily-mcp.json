@@ -1,0 +1,34 @@
+{
+  "id": "io.github.Seey215/tavily-mcp",
+  "displayName": "Tavily MCP Server",
+  "description": "MCP server for advanced web search using Tavily API.",
+  "version": "0.2.9",
+  "status": "active",
+  "publishedAt": "2025-10-31T03:43:52.592661Z",
+  "updatedAt": "2025-10-31T03:43:52.592661Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/Seey215/tavily-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@toolsdk.ai/tavily-mcp",
+      "version": "0.2.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TAVILY_API_KEY",
+          "description": "Your TAVILY_API_KEY",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "io.github.fstubner/npm-run-mcp-server",
+  "displayName": "io.github.fstubner/npm-run-mcp-server",
+  "description": "An MCP server that exposes package.json scripts as tools for agents.",
+  "version": "0.2.13",
+  "status": "active",
+  "publishedAt": "2026-01-05T11:58:53.8045Z",
+  "updatedAt": "2026-01-05T11:58:53.8045Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/fstubner/npm-run-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "npm-run-mcp-server",
+      "version": "0.2.12",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

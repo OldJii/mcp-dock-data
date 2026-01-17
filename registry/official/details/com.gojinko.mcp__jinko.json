@@ -1,0 +1,13 @@
+{
+  "id": "com.gojinko.mcp/jinko",
+  "displayName": "Jinko MCP",
+  "description": "Turn your ChatGPT to a super travel agent",
+  "version": "0.0.1",
+  "status": "active",
+  "publishedAt": "2025-12-05T09:28:09.824211Z",
+  "updatedAt": "2025-12-05T09:28:09.824211Z",
+  "iconUrl": "https://statics.gojinko.com/assets/images/jinko-logo-h6x8s.png",
+  "websiteUrl": "https://gojinko.com",
+  "repository": null,
+  "packages": []
+}

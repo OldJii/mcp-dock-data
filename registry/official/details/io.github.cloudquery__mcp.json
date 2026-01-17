@@ -1,0 +1,67 @@
+{
+  "id": "io.github.cloudquery/mcp",
+  "displayName": "io.github.cloudquery/mcp",
+  "description": "CloudQuery MCP server for asset inventory data. Supports CLI, PostgreSQL, and Platform modes.",
+  "version": "1.6.9",
+  "status": "active",
+  "publishedAt": "2025-09-30T07:07:22.188419Z",
+  "updatedAt": "2025-09-30T07:07:22.188419Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cloudquery/mcp-releases/releases/download/v1.6.9/cq-platform-mcp_1.6.9_darwin_arm64.mcpb",
+      "runtimeHint": "darwin-arm64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cloudquery/mcp-releases/releases/download/v1.6.9/cq-platform-mcp_1.6.9_darwin_amd64.mcpb",
+      "runtimeHint": "darwin-amd64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cloudquery/mcp-releases/releases/download/v1.6.9/cq-platform-mcp_1.6.9_linux_arm64.mcpb",
+      "runtimeHint": "linux-arm64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cloudquery/mcp-releases/releases/download/v1.6.9/cq-platform-mcp_1.6.9_linux_amd64.mcpb",
+      "runtimeHint": "linux-amd64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/cloudquery/mcp-releases/releases/download/v1.6.9/cq-platform-mcp_1.6.9_windows_amd64.mcpb",
+      "runtimeHint": "windows-amd64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

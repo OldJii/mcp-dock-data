@@ -1,0 +1,16 @@
+{
+  "id": "io.github.bahfahh/noteit-mcp",
+  "displayName": "io.github.bahfahh/noteit-mcp",
+  "description": "MCP server for AI agent profiles and smart notes. 60+ coding prompt packs with expert personas.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-11T13:23:30.700177Z",
+  "updatedAt": "2025-12-11T13:23:30.700177Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/bahfahh/noteit-mcp",
+    "source": "github"
+  },
+  "packages": []
+}

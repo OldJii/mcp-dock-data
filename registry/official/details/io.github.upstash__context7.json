@@ -1,0 +1,34 @@
+{
+  "id": "io.github.upstash/context7",
+  "displayName": "Context7",
+  "description": "Up-to-date code docs for any prompt",
+  "version": "1.0.31",
+  "status": "active",
+  "publishedAt": "2025-11-28T12:23:38.345348Z",
+  "updatedAt": "2025-11-28T12:23:38.345348Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/upstash/context7",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@upstash/context7-mcp",
+      "version": "1.0.31",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CONTEXT7_API_KEY",
+          "description": "API key for authentication",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

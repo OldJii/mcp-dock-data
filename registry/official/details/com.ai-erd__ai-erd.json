@@ -1,0 +1,13 @@
+{
+  "id": "com.ai-erd/ai-erd",
+  "displayName": "AI-ERD",
+  "description": "AI-powered ERD design tool. Create and manage database schemas using DBML with real-time canvas.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-29T10:30:10.376598Z",
+  "updatedAt": "2025-12-29T10:30:10.376598Z",
+  "iconUrl": null,
+  "websiteUrl": "https://ai-erd.com",
+  "repository": null,
+  "packages": []
+}

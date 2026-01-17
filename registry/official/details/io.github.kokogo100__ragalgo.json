@@ -1,0 +1,27 @@
+{
+  "id": "io.github.kokogo100/ragalgo",
+  "displayName": "io.github.kokogo100/ragalgo",
+  "description": "Dynamic RAG Engine preventing AI hallucinations in Korean Finance and Crypto markets.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-20T07:58:16.847801Z",
+  "updatedAt": "2025-12-20T07:58:16.847801Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/kokogo100/ragalgo-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ragalgo-mcp-server",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": []
+    }
+  ]
+}

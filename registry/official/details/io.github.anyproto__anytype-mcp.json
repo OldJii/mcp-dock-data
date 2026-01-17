@@ -1,0 +1,34 @@
+{
+  "id": "io.github.anyproto/anytype-mcp",
+  "displayName": "io.github.anyproto/anytype-mcp",
+  "description": "Official MCP server for Anytype API - your encrypted, local and collaborative wiki.",
+  "version": "1.0.7",
+  "status": "active",
+  "publishedAt": "2025-09-17T11:42:47.920301Z",
+  "updatedAt": "2025-09-17T11:42:47.920301Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/anyproto/anytype-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@anyproto/anytype-mcp",
+      "version": "1.0.7",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENAPI_MCP_HEADERS",
+          "description": "JSON string of headers for Anytype API. Example: {\"Authorization\":\"Bearer <YOUR_API_KEY>\", \"Anytype-Version\":\"2025-05-20\"}",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

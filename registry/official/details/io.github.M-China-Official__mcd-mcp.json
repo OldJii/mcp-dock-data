@@ -1,0 +1,13 @@
+{
+  "id": "io.github.M-China-Official/mcd-mcp",
+  "displayName": "mcd-mcp-server",
+  "description": "McDonald's China MCP Server with event calendar, coupon inquiries and redemption features.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-06T08:36:31.118762Z",
+  "updatedAt": "2026-01-06T08:36:31.118762Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

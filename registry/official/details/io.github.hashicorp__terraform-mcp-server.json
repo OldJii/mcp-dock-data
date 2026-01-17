@@ -1,0 +1,52 @@
+{
+  "id": "io.github.hashicorp/terraform-mcp-server",
+  "displayName": "Terraform",
+  "description": "Generate more accurate Terraform and automate workflows for HCP Terraform and Terraform Enterprise",
+  "version": "0.3.3",
+  "status": "active",
+  "publishedAt": "2025-11-21T21:31:28.121089Z",
+  "updatedAt": "2025-11-21T21:31:28.121089Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/hashicorp/terraform-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "docker.io/hashicorp/terraform-mcp-server:0.3.3",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TFE_ADDRESS",
+          "description": "HCP Terraform or Terraform Enterprise base URL.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "https://app.terraform.io"
+        },
+        {
+          "name": "TFE_TOKEN",
+          "description": "HCP Terraform or Terraform Enterprise API token used to authenticate requests.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "ENABLE_TF_OPERATIONS",
+          "description": "Set to true to enable tools that execute Terraform operations requiring explicit approval.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false",
+          "choices": [
+            "true",
+            "false"
+          ]
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ai.seltz/seltz-ai-seltz-mcp",
+  "displayName": "ai.seltz/seltz-ai-seltz-mcp",
+  "description": "Provides AI assistants with access to Seltz's powerful Web Search capabilities.\n",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2025-12-05T09:24:21.447908Z",
+  "updatedAt": "2025-12-05T09:24:21.447908Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": null,
+  "packages": []
+}

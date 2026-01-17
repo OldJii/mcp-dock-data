@@ -1,0 +1,95 @@
+{
+  "id": "io.github.bpamiri/u2-mcp",
+  "displayName": "U2 MCP Server",
+  "description": "Connect AI assistants to Rocket Universe/UniData MultiValue databases via MCP.",
+  "version": "0.1.1",
+  "status": "active",
+  "publishedAt": "2025-12-17T20:22:31.353273Z",
+  "updatedAt": "2025-12-17T20:22:31.353273Z",
+  "iconUrl": null,
+  "websiteUrl": "https://github.com/bpamiri/u2-mcp",
+  "repository": {
+    "url": "https://github.com/bpamiri/u2-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "u2-mcp",
+      "version": "0.1.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "U2_HOST",
+          "description": "Universe/UniData server hostname or IP address",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "U2_USER",
+          "description": "Database username",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "U2_PASSWORD",
+          "description": "Database password",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "U2_ACCOUNT",
+          "description": "Account name to connect to",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "U2_SERVICE",
+          "description": "Service type: 'uvcs' for Universe, 'udcs' for UniData",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "uvcs"
+        },
+        {
+          "name": "U2_PORT",
+          "description": "Server port",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "31438"
+        },
+        {
+          "name": "U2_SSL",
+          "description": "Enable SSL connection",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "U2_READ_ONLY",
+          "description": "Disable write operations for safe exploration",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "U2_MAX_RECORDS",
+          "description": "Maximum records returned from SELECT queries",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "10000"
+        },
+        {
+          "name": "U2_BLOCKED_COMMANDS",
+          "description": "Comma-separated list of blocked TCL commands",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "DELETE.FILE,CLEAR.FILE"
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}

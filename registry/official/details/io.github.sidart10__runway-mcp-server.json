@@ -1,0 +1,34 @@
+{
+  "id": "io.github.sidart10/runway-mcp-server",
+  "displayName": "Runway AI Video Generation",
+  "description": "AI video generation with Gen-4, Veo 3, and Aleph editing. Text-to-video, image-to-video, 4K upscale",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2025-11-11T23:16:56.459044Z",
+  "updatedAt": "2025-11-11T23:16:56.459044Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/sidart10/runway-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "runway-mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RUNWAY_API_KEY",
+          "description": "API key from dev.runwayml.com for authenticating with Runway ML services",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": []
+    }
+  ]
+}
