@@ -162,6 +162,15 @@ function transformDetail(item) {
       type: arg.type || 'positional',
       isRequired: arg.isRequired || false,
       default: arg.default || undefined
+    })).filter(arg => arg.name),
+    // 运行时参数（用于 Docker 等需要额外参数的情况）
+    runtimeArguments: (pkg.runtimeArguments || []).map(arg => ({
+      name: arg.name || '',
+      description: arg.description || undefined,
+      type: arg.type || 'named',
+      isRequired: arg.isRequired || false,
+      default: arg.default || undefined,
+      valueHint: arg.valueHint || undefined
     })).filter(arg => arg.name)
   }));
   
