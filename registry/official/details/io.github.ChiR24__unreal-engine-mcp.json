@@ -2,10 +2,10 @@
   "id": "io.github.ChiR24/unreal-engine-mcp",
   "displayName": "io.github.ChiR24/unreal-engine-mcp",
   "description": "MCP server for Unreal Engine 5 with 17 tools for game development automation.",
-  "version": "0.5.9",
+  "version": "0.5.10",
   "status": "active",
-  "publishedAt": "2026-01-03T16:04:14.776661Z",
-  "updatedAt": "2026-01-03T16:04:14.776661Z",
+  "publishedAt": "2026-01-04T11:19:34.858488Z",
+  "updatedAt": "2026-01-04T11:19:34.858488Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "unreal-engine-mcp-server",
-      "version": "0.5.9",
+      "version": "0.5.10",
       "transport": {
         "type": "stdio"
       },

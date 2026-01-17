@@ -1,11 +1,11 @@
 {
   "id": "io.github.gradion-ai/ipybox",
   "displayName": "io.github.gradion-ai/ipybox",
-  "description": "An MCP server for sandboxed Python code execution with IPython and Docker, and file transfer.",
-  "version": "auto",
+  "description": "Python code execution sandbox with first-class support for programmatic MCP tool calling.",
+  "version": "0.7.2",
   "status": "active",
-  "publishedAt": "2025-09-14T08:07:06.940203Z",
-  "updatedAt": "2025-09-14T08:07:06.940203Z",
+  "publishedAt": "2026-01-05T16:06:03.936525Z",
+  "updatedAt": "2026-01-05T16:06:03.936525Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "pypi",
       "identifier": "ipybox",
-      "version": "auto",
+      "version": "0.7.2",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
@@ -24,38 +24,26 @@
       "environmentVariables": [],
       "packageArguments": [
         {
-          "name": "--allowed-dir",
-          "description": "Directory allowed for host filesystem operations",
+          "name": "--workspace",
+          "description": "Code workspace directory",
           "type": "named",
           "isRequired": false
         },
         {
-          "name": "--allowed-domain",
-          "description": "Domain, IP address, or CIDR range allowed for outbound network access",
+          "name": "--sandbox",
+          "description": "Run kernel gateway in sandbox (macOS only)",
           "type": "named",
           "isRequired": false
         },
         {
-          "name": "--container-tag",
-          "description": "Docker image tag to use",
+          "name": "--sandbox-config",
+          "description": "Sandbox config file path",
           "type": "named",
           "isRequired": false
         },
         {
-          "name": "--container-env-var",
-          "description": "Environment variable for container (KEY=VALUE format)",
-          "type": "named",
-          "isRequired": false
-        },
-        {
-          "name": "--container-env-file",
-          "description": "Path to file containing container environment variables",
-          "type": "named",
-          "isRequired": false
-        },
-        {
-          "name": "--container-bind",
-          "description": "Bind mount for container (host_path:container_path format)",
+          "name": "--log-level",
+          "description": "Logging level",
           "type": "named",
           "isRequired": false
         }

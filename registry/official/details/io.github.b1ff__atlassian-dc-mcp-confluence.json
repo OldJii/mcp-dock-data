@@ -2,10 +2,10 @@
   "id": "io.github.b1ff/atlassian-dc-mcp-confluence",
   "displayName": "io.github.b1ff/atlassian-dc-mcp-confluence",
   "description": "MCP server for Atlassian Confluence Data Center - access and manage content",
-  "version": "0.9.9",
+  "version": "0.9.12",
   "status": "active",
-  "publishedAt": "2025-09-13T13:29:18.540359Z",
-  "updatedAt": "2025-09-13T13:29:18.540359Z",
+  "publishedAt": "2026-01-03T19:05:22.726965Z",
+  "updatedAt": "2026-01-03T19:05:22.726965Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "@atlassian-dc-mcp/confluence",
-      "version": "0.9.9",
+      "version": "0.9.12",
       "transport": {
         "type": "stdio"
       },

@@ -2,10 +2,10 @@
   "id": "io.github.ramalamadingdong/first-agentic-csa",
   "displayName": "io.github.ramalamadingdong/first-agentic-csa",
   "description": "FRC documentation MCP server for WPILib, REV, CTRE, Redux, and PhotonVision.",
-  "version": "0.3.8",
+  "version": "0.3.12",
   "status": "active",
-  "publishedAt": "2025-12-07T05:55:48.015041Z",
-  "updatedAt": "2025-12-07T05:55:48.015041Z",
+  "publishedAt": "2025-12-07T06:36:38.96595Z",
+  "updatedAt": "2025-12-07T06:36:38.96595Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "first-agentic-csa",
-      "version": "0.3.8",
+      "version": "0.3.12",
       "transport": {
         "type": "stdio"
       },

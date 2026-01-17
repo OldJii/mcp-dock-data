@@ -1,11 +1,11 @@
 {
   "id": "io.github.olgasafonova/miro-mcp-server",
-  "displayName": "io.github.olgasafonova/miro-mcp-server",
-  "description": "Voice-friendly Miro whiteboard control. Create stickies, shapes, frames, mindmaps, and diagrams.",
-  "version": "1.4.0",
+  "displayName": "Miro",
+  "description": "Control Miro whiteboards with AI. 77 tools for boards, diagrams, mindmaps.",
+  "version": "1.11.1",
   "status": "active",
-  "publishedAt": "2025-12-30T23:00:01.382543Z",
-  "updatedAt": "2025-12-30T23:00:01.382543Z",
+  "publishedAt": "2026-01-05T21:23:25.759607Z",
+  "updatedAt": "2026-01-05T21:23:25.759607Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -14,13 +14,99 @@
   },
   "packages": [
     {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.4.0/miro-mcp-server-darwin-arm64",
-      "version": "1.4.0",
+      "registryType": "oci",
+      "identifier": "ghcr.io/olgasafonova/miro-mcp-server:1.11.1",
       "transport": {
         "type": "stdio"
       },
-      "environmentVariables": [],
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.11.1/miro-mcp-server-darwin-arm64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.11.1/miro-mcp-server-darwin-amd64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.11.1/miro-mcp-server-linux-amd64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.11.1/miro-mcp-server-linux-arm64",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
+      "packageArguments": []
+    },
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/olgasafonova/miro-mcp-server/releases/download/v1.11.1/miro-mcp-server-windows-amd64.exe",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MIRO_ACCESS_TOKEN",
+          "description": "Miro API access token with boards:read and boards:write permissions",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ],
       "packageArguments": []
     }
   ]

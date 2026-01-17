@@ -2,10 +2,10 @@
   "id": "io.github.b1ff/atlassian-dc-mcp-jira",
   "displayName": "io.github.b1ff/atlassian-dc-mcp-jira",
   "description": "MCP server for Atlassian Jira Data Center - search, view, and create issues",
-  "version": "0.9.9",
+  "version": "0.9.12",
   "status": "active",
-  "publishedAt": "2025-09-13T13:29:18.029023Z",
-  "updatedAt": "2025-09-13T13:29:18.029023Z",
+  "publishedAt": "2026-01-03T19:05:22.307036Z",
+  "updatedAt": "2026-01-03T19:05:22.307036Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "@atlassian-dc-mcp/jira",
-      "version": "0.9.9",
+      "version": "0.9.12",
       "transport": {
         "type": "stdio"
       },

@@ -1,15 +1,15 @@
 {
   "id": "io.github.elestirelbilinc-sketch/vap-e",
   "displayName": "io.github.elestirelbilinc-sketch/vap-e",
-  "description": "AI media generation for agents. Images via FLUX 1.1 Pro, videos via Veo 3.1.",
-  "version": "1.6.0",
+  "description": "Execution Control Layer for AI Agents. Cost limits, retries, ownership for paid APIs.",
+  "version": "1.12.4",
   "status": "active",
-  "publishedAt": "2026-01-08T14:19:30.011999Z",
-  "updatedAt": "2026-01-08T14:19:30.011999Z",
+  "publishedAt": "2026-01-17T09:53:15.436091Z",
+  "updatedAt": "2026-01-17T09:53:15.436091Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
-    "url": "https://github.com/elestirelbilinc-sketch/VAP",
+    "url": "https://github.com/elestirelbilinc-sketch/vap-showcase",
     "source": "github"
   },
   "packages": []

@@ -1,11 +1,11 @@
 {
   "id": "io.github.xorrkaz/cml-mcp",
-  "displayName": "io.github.xorrkaz/cml-mcp",
+  "displayName": "Cisco Modeling Labs (CML)",
   "description": "An MCP server that provides access to common Cisco Modeling Labs (CML) operations.",
-  "version": "0.9.3",
+  "version": "0.23.0",
   "status": "active",
-  "publishedAt": "2025-09-27T19:37:16.175636Z",
-  "updatedAt": "2025-09-27T19:37:16.175636Z",
+  "publishedAt": "2026-01-16T16:44:25.286683Z",
+  "updatedAt": "2026-01-16T16:44:25.286683Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,8 @@
     {
       "registryType": "pypi",
       "identifier": "cml-mcp",
-      "version": "0.9.3",
+      "version": "0.23.0",
+      "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
       },

@@ -2,10 +2,10 @@
   "id": "io.github.b1ff/atlassian-dc-mcp-bitbucket",
   "displayName": "io.github.b1ff/atlassian-dc-mcp-bitbucket",
   "description": "MCP server for Atlassian Bitbucket Data Center - interact with repositories and code",
-  "version": "0.9.9",
+  "version": "0.9.12",
   "status": "active",
-  "publishedAt": "2025-09-13T13:29:18.888402Z",
-  "updatedAt": "2025-09-13T13:29:18.888402Z",
+  "publishedAt": "2026-01-03T19:05:22.96873Z",
+  "updatedAt": "2026-01-03T19:05:22.96873Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "@atlassian-dc-mcp/bitbucket",
-      "version": "0.9.9",
+      "version": "0.9.12",
       "transport": {
         "type": "stdio"
       },

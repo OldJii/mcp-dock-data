@@ -2,10 +2,10 @@
   "id": "io.github.therealtimex/browser-use",
   "displayName": "io.github.therealtimex/browser-use",
   "description": "AI browser automation - navigate, click, type, extract content, and run autonomous web tasks",
-  "version": "0.7.10.dev5",
+  "version": "0.7.10",
   "status": "active",
-  "publishedAt": "2025-10-01T11:18:53.744371Z",
-  "updatedAt": "2025-10-01T11:18:53.744371Z",
+  "publishedAt": "2025-10-01T11:22:24.309888Z",
+  "updatedAt": "2025-10-01T11:22:24.309888Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -17,7 +17,7 @@
     {
       "registryType": "pypi",
       "identifier": "realtimex-browser-use",
-      "version": "0.7.10.dev5",
+      "version": "0.7.10",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

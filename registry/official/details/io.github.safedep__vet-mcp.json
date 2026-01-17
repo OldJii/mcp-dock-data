@@ -2,10 +2,10 @@
   "id": "io.github.safedep/vet-mcp",
   "displayName": "SafeDep Vet MCP",
   "description": "Protect your AI agents and IDEs from malicious open-source packages.",
-  "version": "v1.12.13",
+  "version": "1.12.16",
   "status": "active",
-  "publishedAt": "2025-11-26T12:10:19.022113Z",
-  "updatedAt": "2025-11-26T12:10:19.022113Z",
+  "publishedAt": "2025-12-10T10:58:13.018394Z",
+  "updatedAt": "2025-12-10T10:58:13.018394Z",
   "iconUrl": "https://raw.githubusercontent.com/safedep/.github/9275c7d1b59f718d73e47cecd93df92e7bfbea25/assets/logo/safedep-logo-darkshade.svg",
   "websiteUrl": "https://safedep.io",
   "repository": {
@@ -15,7 +15,7 @@
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/safedep/vet:v1.12.13",
+      "identifier": "ghcr.io/safedep/vet:v1.12.16",
       "runtimeHint": "docker",
       "transport": {
         "type": "stdio"

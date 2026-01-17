@@ -1,12 +1,12 @@
 {
   "id": "dev.svelte/mcp",
-  "displayName": "dev.svelte/mcp",
+  "displayName": "Svelte MCP",
   "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
-  "version": "0.1.9",
+  "version": "0.1.18",
   "status": "active",
-  "publishedAt": "2025-10-22T15:24:45.50308Z",
-  "updatedAt": "2025-10-22T15:24:45.50308Z",
-  "iconUrl": null,
+  "publishedAt": "2026-01-16T18:29:49.596826Z",
+  "updatedAt": "2026-01-16T18:29:49.596826Z",
+  "iconUrl": "https://mcp.svelte.dev/logo.svg",
   "websiteUrl": "https://svelte.dev/docs/mcp/overview",
   "repository": {
     "url": "https://github.com/sveltejs/mcp",
@@ -17,7 +17,7 @@
     {
       "registryType": "npm",
       "identifier": "@sveltejs/mcp",
-      "version": "0.1.9",
+      "version": "0.1.18",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"

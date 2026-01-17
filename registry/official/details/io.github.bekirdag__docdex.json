@@ -2,10 +2,10 @@
   "id": "io.github.bekirdag/docdex",
   "displayName": "io.github.bekirdag/docdex",
   "description": "Fast per-repo documentation indexer and full-text search MCP server for codebases.",
-  "version": "0.2.9",
+  "version": "0.2.22",
   "status": "active",
-  "publishedAt": "2026-01-02T19:42:52.457948Z",
-  "updatedAt": "2026-01-02T19:42:52.457948Z",
+  "publishedAt": "2026-01-08T18:32:44.761373Z",
+  "updatedAt": "2026-01-08T18:32:44.761373Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "docdex",
-      "version": "0.2.9",
+      "version": "0.2.22",
       "transport": {
         "type": "stdio"
       },

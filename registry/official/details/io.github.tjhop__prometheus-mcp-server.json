@@ -1,13 +1,13 @@
 {
   "id": "io.github.tjhop/prometheus-mcp-server",
-  "displayName": "io.github.tjhop/prometheus-mcp-server",
-  "description": "An API-complete MCP server to manage Prometheus-compatible backends via comprehensive tools.",
-  "version": "v0.7.1",
+  "displayName": "Prometheus MCP Server",
+  "description": "An API-complete MCP server to manage Prometheus-compatible backends.",
+  "version": "0.14.0",
   "status": "active",
-  "publishedAt": "2025-10-05T05:29:36.683234Z",
-  "updatedAt": "2025-10-05T05:29:36.683234Z",
+  "publishedAt": "2026-01-02T04:28:40.58997Z",
+  "updatedAt": "2026-01-02T04:28:40.58997Z",
   "iconUrl": null,
-  "websiteUrl": null,
+  "websiteUrl": "https://github.com/tjhop/prometheus-mcp-server",
   "repository": {
     "url": "https://github.com/tjhop/prometheus-mcp-server",
     "source": "github"
@@ -15,20 +15,12 @@
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/tjhop/prometheus-mcp-server:v0.7.1",
+      "identifier": "ghcr.io/tjhop/prometheus-mcp-server:0.14.0",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": [
-        {
-          "name": "--prometheus.url",
-          "description": "URL of the Prometheus instance to connect to",
-          "type": "named",
-          "isRequired": true,
-          "default": "http://127.0.0.1:9090"
-        }
-      ]
+      "packageArguments": []
     }
   ]
 }

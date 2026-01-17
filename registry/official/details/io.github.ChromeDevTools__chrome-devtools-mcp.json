@@ -1,11 +1,11 @@
 {
   "id": "io.github.ChromeDevTools/chrome-devtools-mcp",
-  "displayName": "io.github.ChromeDevTools/chrome-devtools-mcp",
+  "displayName": "Chrome DevTools MCP",
   "description": "MCP server for Chrome DevTools",
-  "version": "0.9.0",
+  "version": "0.13.0",
   "status": "active",
-  "publishedAt": "2025-10-22T11:49:06.571748Z",
-  "updatedAt": "2025-10-22T11:49:06.571748Z",
+  "publishedAt": "2026-01-15T07:28:03.752714Z",
+  "updatedAt": "2026-01-15T07:28:03.752714Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "chrome-devtools-mcp",
-      "version": "0.9.0",
+      "version": "0.13.0",
       "transport": {
         "type": "stdio"
       },
