@@ -186,6 +186,46 @@ function transformDetail(item) {
 }
 
 /**
+ * 去重：只保留每个服务器的最新版本
+ * 根据 isLatest 标志或 publishedAt 时间判断
+ */
+function deduplicateServers(servers) {
+  const serverMap = new Map();
+  
+  for (const item of servers) {
+    const server = item.server || {};
+    const meta = item._meta?.['io.modelcontextprotocol.registry/official'] || {};
+    const name = server.name;
+    
+    if (!name) continue;
+    
+    const existing = serverMap.get(name);
+    
+    if (!existing) {
+      serverMap.set(name, item);
+      continue;
+    }
+    
+    // 如果当前项标记为 isLatest，使用它
+    if (meta.isLatest) {
+      serverMap.set(name, item);
+      continue;
+    }
+    
+    // 比较发布时间，保留较新的
+    const existingMeta = existing._meta?.['io.modelcontextprotocol.registry/official'] || {};
+    const existingDate = new Date(existingMeta.publishedAt || 0);
+    const currentDate = new Date(meta.publishedAt || 0);
+    
+    if (currentDate > existingDate) {
+      serverMap.set(name, item);
+    }
+  }
+  
+  return Array.from(serverMap.values());
+}
+
+/**
  * 主同步函数
  */
 async function sync() {
@@ -195,15 +235,19 @@ async function sync() {
   await fs.mkdir(DETAILS_DIR, { recursive: true });
   
   // 1. 获取服务器列表
-  const serverList = await fetchServerList();
+  const rawServerList = await fetchServerList();
   
-  // 2. 转换并保存列表索引
+  // 2. 去重：只保留每个服务器的最新版本
+  const serverList = deduplicateServers(rawServerList);
+  console.log(`  📦 After deduplication: ${serverList.length} unique servers (from ${rawServerList.length} total)`);
+  
+  // 3. 转换并保存列表索引
   const indexData = serverList.map(transformListItem);
   const indexPath = path.join(REGISTRY_DIR, 'index.json');
   await fs.writeFile(indexPath, JSON.stringify(indexData, null, 2));
   console.log(`\n📝 Saved index.json with ${indexData.length} entries`);
   
-  // 3. 保存每个服务器的详情
+  // 4. 保存每个服务器的详情
   console.log('\n📥 Saving server details...');
   let successCount = 0;
   let failCount = 0;
@@ -236,7 +280,7 @@ async function sync() {
     }
   }
   
-  // 4. 输出统计
+  // 5. 输出统计
   console.log('\n📊 Sync completed!');
   console.log(`   ✅ Success: ${successCount}`);
   console.log(`   ❌ Failed: ${failCount}`);
