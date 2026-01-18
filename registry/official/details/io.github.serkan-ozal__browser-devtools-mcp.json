@@ -194,5 +194,6 @@
       "url": "https://{your_mcp_server_host}/mcp",
       "headers": []
     }
-  ]
+  ],
+  "stars": 0
 }

@@ -204,5 +204,6 @@
       "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
       "headers": []
     }
-  ]
+  ],
+  "stars": 0
 }
