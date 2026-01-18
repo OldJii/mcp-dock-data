@@ -29,7 +29,9 @@
           "isRequired": false,
           "default": "3000"
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

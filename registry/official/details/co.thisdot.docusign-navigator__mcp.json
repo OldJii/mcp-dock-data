@@ -12,5 +12,12 @@
     "url": "https://github.com/thisdot/docusign-navigator-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docusign-navigator.thisdot.co/mcp",
+      "headers": []
+    }
+  ]
 }

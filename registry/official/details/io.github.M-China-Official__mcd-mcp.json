@@ -9,5 +9,18 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mcd.cn/mcp-servers/mcd-mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

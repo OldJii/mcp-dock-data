@@ -9,5 +9,17 @@
   "iconUrl": "https://statics.gojinko.com/assets/images/jinko-logo-h6x8s.png",
   "websiteUrl": "https://gojinko.com",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gojinko.com",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.gojinko.com",
+      "headers": []
+    }
+  ]
 }

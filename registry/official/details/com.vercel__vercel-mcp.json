@@ -12,5 +12,12 @@
     "url": "https://github.com/vercel/vercel-mcp-overview",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.vercel.com",
+      "headers": []
+    }
+  ]
 }

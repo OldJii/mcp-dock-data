@@ -21,7 +21,15 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp-workshops.jani-828.workers.dev/sse",
+      "headers": []
     }
   ]
 }

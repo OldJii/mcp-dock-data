@@ -13,5 +13,17 @@
     "source": "github",
     "subfolder": "apps/mcp"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.axiom.co/sse",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.axiom.co/mcp",
+      "headers": []
+    }
+  ]
 }

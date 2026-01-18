@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://ai-erd.com",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai-erd.com/mcp",
+      "headers": []
+    }
+  ]
 }

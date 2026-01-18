@@ -9,5 +9,19 @@
   "iconUrl": "https://avatars.githubusercontent.com/NeuraLegion",
   "websiteUrl": "https://brightsec.com",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{instance}.brightsec.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bright Security API key for authentication.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

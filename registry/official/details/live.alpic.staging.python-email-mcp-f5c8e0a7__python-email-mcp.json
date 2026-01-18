@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://python-email-mcp-f5c8e0a7.staging.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://python-email-mcp-f5c8e0a7.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

@@ -383,7 +383,8 @@
           "type": "named",
           "isRequired": false
         }
-      ]
+      ],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -754,7 +755,9 @@
           "type": "named",
           "isRequired": false
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

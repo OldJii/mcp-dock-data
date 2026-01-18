@@ -13,5 +13,12 @@
     "source": "github",
     "subfolder": "netlify"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docs.redpanda.com/mcp",
+      "headers": []
+    }
+  ]
 }

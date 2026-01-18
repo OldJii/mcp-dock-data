@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://www.appsflyer.com/",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.appsflyer.com/auth/mcp",
+      "headers": []
+    }
+  ]
 }

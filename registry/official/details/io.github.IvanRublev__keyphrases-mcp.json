@@ -22,7 +22,17 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--allowed-dir",
+          "description": "Directory containing documents to process",
+          "type": "named",
+          "isRequired": true,
+          "valueHint": "documents_directory"
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

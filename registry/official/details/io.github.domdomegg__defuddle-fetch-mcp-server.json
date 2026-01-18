@@ -22,17 +22,9 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/domdomegg/defuddle-fetch-mcp-server/releases/download/v1.0.4/defuddle-fetch-mcp-server.mcpb",
-      "version": "1.0.4",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -29,7 +29,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

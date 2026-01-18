@@ -21,7 +21,47 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-i",
+          "description": "Run container in interactive mode",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "--rm",
+          "description": "Automatically remove the container when it exits",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set the MIA_PLATFORM_CLIENT_ID environment variable in the runtime, which is the client ID of the Service Account of the Mia-Platform Company you want to access.",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "-e",
+          "description": "Set the MIA_PLATFORM_CLIENT_ID environment variable in the runtime, which is the client secret of the Service Account of the Mia-Platform Company you want to access.",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://console.cloud.mia-platform.eu/console-mcp-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Authentication token (PAT or App token)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

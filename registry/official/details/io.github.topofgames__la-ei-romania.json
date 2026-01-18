@@ -12,5 +12,12 @@
     "url": "https://github.com/topofgames/la-ei-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://laei.ro/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -12,15 +12,19 @@
     "url": "https://github.com/thinkchainai/mcpbundles",
     "source": "github"
   },
-  "packages": [
+  "packages": [],
+  "remotes": [
     {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/hub-v1.0.0+build.8da55d55/hub.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "type": "streamable-http",
+      "url": "https://mcp.mcpbundles.com/hub/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth2 Bearer token or API key. Use 'Bearer <token>' for OAuth or 'Api-Key <key>' for API key authentication.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

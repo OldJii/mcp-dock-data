@@ -12,5 +12,25 @@
     "url": "https://github.com/la-rebelion/hapimcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contabo.run.mcp.com.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authenticating with the Contabo API. Obtain via the documented token endpoint.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "x-request-id",
+          "description": "Optional request ID for tracing (recommended for support/debugging)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

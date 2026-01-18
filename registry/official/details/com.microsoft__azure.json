@@ -15,16 +15,6 @@
   },
   "packages": [
     {
-      "registryType": "nuget",
-      "identifier": "Azure.Mcp",
-      "version": "2.0.0-beta.6",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
-    },
-    {
       "registryType": "npm",
       "identifier": "@azure/mcp",
       "version": "2.0.0-beta.6",
@@ -32,7 +22,9 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -12,5 +12,17 @@
     "url": "https://github.com/Mermaid-Chart/mermaid-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mermaidchart.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.mermaidchart.com/sse",
+      "headers": []
+    }
+  ]
 }

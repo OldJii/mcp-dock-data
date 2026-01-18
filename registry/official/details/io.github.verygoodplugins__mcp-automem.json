@@ -21,7 +21,34 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{endpoint}/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authentication (optional if using URL-based auth with ?api_token=...)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://{endpoint}/mcp/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authentication (optional if using URL-based auth with ?api_token=...)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

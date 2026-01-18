@@ -2,10 +2,10 @@
   "id": "io.github.backspacevenkat/perspectives",
   "displayName": "io.github.backspacevenkat/perspectives",
   "description": "Query multiple AI models (GPT-4, Claude, Gemini, Grok) in parallel for diverse perspectives",
-  "version": "1.8.42",
+  "version": "1.8.59",
   "status": "active",
-  "publishedAt": "2026-01-14T07:18:26.066141Z",
-  "updatedAt": "2026-01-14T07:18:26.066141Z",
+  "publishedAt": "2026-01-17T20:46:31.782059Z",
+  "updatedAt": "2026-01-17T20:46:31.782059Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "polydev-ai",
-      "version": "1.8.42",
+      "version": "1.8.59",
       "transport": {
         "type": "stdio"
       },
@@ -28,7 +28,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

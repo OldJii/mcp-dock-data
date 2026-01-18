@@ -12,5 +12,19 @@
     "url": "https://github.com/FelixYifeiWang/felix-mcp-smithery",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@FelixYifeiWang/felix-mcp-smithery/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server.egnyte.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth 2.0 Bearer token for Egnyte authentication. Obtain via OAuth flow at https://mcp-oauth.egnyte.com/domain_picker.html",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

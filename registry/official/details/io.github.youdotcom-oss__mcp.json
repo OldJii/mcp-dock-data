@@ -28,7 +28,22 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.you.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer (You.com API key)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

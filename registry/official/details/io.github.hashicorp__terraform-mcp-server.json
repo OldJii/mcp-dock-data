@@ -46,7 +46,38 @@
           ]
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--rm",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-i",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

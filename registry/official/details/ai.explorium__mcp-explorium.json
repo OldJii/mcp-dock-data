@@ -12,5 +12,12 @@
     "url": "https://github.com/explorium-ai/mcp-explorium",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-github-registry.explorium.ai/mcp",
+      "headers": []
+    }
+  ]
 }

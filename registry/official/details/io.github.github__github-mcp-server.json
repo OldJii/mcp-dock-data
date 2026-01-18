@@ -20,7 +20,29 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Authorization header with authentication token (PAT or App token)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

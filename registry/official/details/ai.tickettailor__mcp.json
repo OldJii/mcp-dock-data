@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tickettailor.ai/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.tickettailor.ai/sse",
+      "headers": []
+    }
+  ]
 }

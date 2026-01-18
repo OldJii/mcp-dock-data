@@ -12,5 +12,31 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.paypal.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth Bearer token for API authentication (format: Bearer <token>)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.paypal.com/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth Bearer token for API authentication (format: Bearer <token>)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

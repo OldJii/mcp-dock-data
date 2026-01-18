@@ -36,7 +36,8 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -89,7 +90,9 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

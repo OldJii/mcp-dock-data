@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.platform.uno/v1",
+      "headers": []
+    }
+  ]
 }

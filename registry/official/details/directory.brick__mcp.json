@@ -9,5 +9,12 @@
   "iconUrl": "https://brick.directory/assets/logo.svg",
   "websiteUrl": "https://brick.directory",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.brick.directory/connect",
+      "headers": []
+    }
+  ]
 }

@@ -12,5 +12,17 @@
     "url": "https://github.com/saaslabsco/justcall-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.justcall.host/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.justcall.host/sse",
+      "headers": []
+    }
+  ]
 }

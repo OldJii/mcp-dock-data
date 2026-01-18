@@ -12,5 +12,19 @@
     "url": "https://github.com/neverinfamous/memory-journal-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@neverinfamous/memory-journal-mcp/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

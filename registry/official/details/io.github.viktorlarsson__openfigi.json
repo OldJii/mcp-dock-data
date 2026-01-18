@@ -1,0 +1,37 @@
+{
+  "id": "io.github.viktorlarsson/openfigi",
+  "displayName": "io.github.viktorlarsson/openfigi",
+  "description": "Map financial identifiers (ISIN, CUSIP, SEDOL, Ticker) to FIGIs via OpenFIGI API",
+  "version": "0.2.4",
+  "status": "active",
+  "publishedAt": "2026-01-17T15:45:22.168861Z",
+  "updatedAt": "2026-01-17T15:45:22.168861Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/viktorlarsson/openfigi",
+    "source": "github",
+    "subfolder": "packages/mcp"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "openfigi-mcp",
+      "version": "0.2.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPENFIGI_API_KEY",
+          "description": "OpenFIGI API key (optional but recommended for higher rate limits)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": []
+}

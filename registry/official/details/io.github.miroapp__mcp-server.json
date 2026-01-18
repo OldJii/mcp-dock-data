@@ -12,5 +12,12 @@
     "url": "https://github.com/miroapp/miro-ai",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.miro.com/",
+      "headers": []
+    }
+  ]
 }

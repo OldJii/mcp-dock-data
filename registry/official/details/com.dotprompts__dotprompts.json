@@ -9,5 +9,12 @@
   "iconUrl": "https://dotprompts.com/logo.svg",
   "websiteUrl": "https://dotprompts.com",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dotprompts.com/mcp",
+      "headers": []
+    }
+  ]
 }

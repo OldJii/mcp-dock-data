@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://deva.dillilabs.com/mcp",
+      "headers": [
+        {
+          "name": "X-DEVA-API-Key",
+          "description": "API key for authentication. Can be obtained from https://deva.dillilabs.com/register",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

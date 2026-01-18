@@ -37,7 +37,8 @@
           "default": "in-memory"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -91,7 +92,9 @@
           "default": "in-memory"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

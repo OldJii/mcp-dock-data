@@ -565,7 +565,8 @@
           "type": "named",
           "isRequired": false
         }
-      ]
+      ],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -1091,7 +1092,40 @@
           "isRequired": false,
           "default": "streamable-http"
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "--rm",
+          "description": "Automatically remove container when it exits",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-v",
+          "description": "Mount workspace directory as read-only",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set repository path inside container",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-p",
+          "description": "Port mapping for MCP server",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--network",
+          "description": "Docker network for Qdrant connectivity",
+          "type": "named",
+          "isRequired": false
+        }
       ]
     }
-  ]
+  ],
+  "remotes": []
 }

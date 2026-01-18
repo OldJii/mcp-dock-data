@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://node-email-mcp-731b03b7.staging.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://node-email-mcp-731b03b7.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

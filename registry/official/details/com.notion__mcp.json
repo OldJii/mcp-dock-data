@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.notion.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.notion.com/sse",
+      "headers": []
+    }
+  ]
 }

@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dexpaprika.com/streamable-http",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.dexpaprika.com/sse",
+      "headers": []
+    }
+  ]
 }

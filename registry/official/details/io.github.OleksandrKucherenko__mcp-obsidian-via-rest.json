@@ -1,0 +1,84 @@
+{
+  "id": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
+  "displayName": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
+  "description": "MCP Server for Obsidian Vault Access via Local REST API",
+  "version": "1.0.3",
+  "status": "active",
+  "publishedAt": "2026-01-17T17:12:15.353554Z",
+  "updatedAt": "2026-01-17T17:12:15.353554Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@oleksandrkucherenko/mcp-obsidian",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "API_KEY",
+          "description": "Obsidian Local REST API key",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "API_URLS",
+          "description": "JSON array or semicolon-separated list of Obsidian REST API URLs for failover",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "API_HOST",
+          "description": "Obsidian REST API host (legacy single-URL config)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "API_PORT",
+          "description": "Obsidian REST API port (legacy single-URL config)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_TRANSPORTS",
+          "description": "Enabled MCP transports (comma-separated, e.g. \"stdio,http\")",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_HTTP_PORT",
+          "description": "HTTP transport bind port",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_HTTP_HOST",
+          "description": "HTTP transport bind host",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_HTTP_PATH",
+          "description": "HTTP transport path (default: /mcp)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MCP_HTTP_TOKEN",
+          "description": "Bearer token for HTTP transport auth",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": []
+}

@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sideways.aribadernatal.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://sideways.aribadernatal.com/sse",
+      "headers": []
+    }
+  ]
 }

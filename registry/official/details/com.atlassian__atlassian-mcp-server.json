@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "headers": []
+    }
+  ]
 }

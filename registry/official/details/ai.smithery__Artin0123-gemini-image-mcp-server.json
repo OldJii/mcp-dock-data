@@ -12,5 +12,19 @@
     "url": "https://github.com/Artin0123/gemini-vision-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Artin0123/gemini-image-mcp-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

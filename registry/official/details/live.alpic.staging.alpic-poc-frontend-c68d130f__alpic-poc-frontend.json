@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://alpic-poc-frontend-c68d130f.staging.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://alpic-poc-frontend-c68d130f.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

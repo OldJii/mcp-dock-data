@@ -12,5 +12,12 @@
     "url": "https://github.com/alphavantage/alpha_vantage_mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.alphavantage.co/mcp",
+      "headers": []
+    }
+  ]
 }

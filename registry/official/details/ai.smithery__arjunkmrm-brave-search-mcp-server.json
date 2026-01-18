@@ -12,5 +12,19 @@
     "url": "https://github.com/arjunkmrm/brave-search-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/brave-search-mcp-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

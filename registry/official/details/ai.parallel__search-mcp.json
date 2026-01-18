@@ -12,5 +12,12 @@
     "url": "https://github.com/parallel-web/search-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://search-mcp.parallel.ai/mcp",
+      "headers": []
+    }
+  ]
 }

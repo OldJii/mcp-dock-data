@@ -9,5 +9,22 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.ivisa.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://www.ivisa.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://www.ivisa.com/mcp/chatgpt",
+      "headers": []
+    }
+  ]
 }

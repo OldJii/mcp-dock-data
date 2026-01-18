@@ -18,7 +18,15 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://blogcaster-mcp.rrpb2580.workers.dev/mcp",
+      "headers": []
     }
   ]
 }

@@ -12,5 +12,29 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.enigma.com/http",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.enigma.com/http-key",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Token of Enigma API key. Used to enable authentication without presenting the user with an oAuth login.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.enigma.com/sse",
+      "headers": []
+    }
+  ]
 }

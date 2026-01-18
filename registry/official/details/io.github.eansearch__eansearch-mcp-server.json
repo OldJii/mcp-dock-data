@@ -28,7 +28,15 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.ean-search.org/mcp",
+      "headers": []
     }
   ]
 }

@@ -12,5 +12,12 @@
     "url": "https://github.com/francis-ros/rostro-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://proto.rostro.dev/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -20,7 +20,28 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--mount",
+          "description": "Mount your config file into the container",
+          "type": "named",
+          "isRequired": true
+        },
+        {
+          "name": "--mount",
+          "description": "Mount your project data directory into the container (for local schema and operations)",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-p",
+          "description": "Expose the HTTP Streamable transport port",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -52,7 +52,51 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-i",
+          "description": "Run container in interactive mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--rm",
+          "description": "Automatically remove the container when it exits",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-v",
+          "description": "Bind mount a host directory into the container",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     },
     {
       "registryType": "pypi",
@@ -87,7 +131,9 @@
           ]
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

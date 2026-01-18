@@ -12,5 +12,19 @@
     "url": "https://github.com/exa-labs/exa-code-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@exa-labs/exa-code-mcp/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

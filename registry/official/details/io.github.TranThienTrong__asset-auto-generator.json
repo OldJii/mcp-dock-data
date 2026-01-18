@@ -12,5 +12,12 @@
     "url": "https://github.com/TranThienTrong/asset-auto-generator.git",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://TranThienTrong.github.io/mcp/asset-auto-generator",
+      "headers": []
+    }
+  ]
 }

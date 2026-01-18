@@ -12,5 +12,19 @@
     "url": "https://github.com/truss44/mcp-crypto-price",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@truss44/mcp-crypto-price/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

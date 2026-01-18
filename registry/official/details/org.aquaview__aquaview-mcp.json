@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aquaview.org/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.aquaview.org/sse",
+      "headers": []
+    }
+  ]
 }

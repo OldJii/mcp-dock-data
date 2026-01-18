@@ -9,5 +9,31 @@
   "iconUrl": "https://arca.build/arca_logo_200x200.png",
   "websiteUrl": "https://arca.build",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.arca.build",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Supports Bearer Token or oAuth. Get API Key on arca.build",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.arca.build",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Supports Bearer Token or oAuth. Get API Key on arca.build",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

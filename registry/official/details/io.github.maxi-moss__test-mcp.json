@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-registry-test-server-513943347567.europe-west1.run.app/mcp",
+      "headers": []
+    }
+  ]
 }

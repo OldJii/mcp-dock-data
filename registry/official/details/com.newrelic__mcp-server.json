@@ -12,5 +12,19 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.newrelic.com/mcp",
+      "headers": [
+        {
+          "name": "api-key",
+          "description": "New Relic API Key (User Key starting with NRAK-)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

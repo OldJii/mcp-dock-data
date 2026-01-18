@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://system-prompts-of-ai-987eba72.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

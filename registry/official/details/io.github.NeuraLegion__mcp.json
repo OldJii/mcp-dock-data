@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{tenant_id}.brightsec.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bright Security API key for authentication.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

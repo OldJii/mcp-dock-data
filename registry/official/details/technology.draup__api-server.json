@@ -12,5 +12,19 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.draup.technology/mcp/",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Get the API key from Draup Support (support@draup.com)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

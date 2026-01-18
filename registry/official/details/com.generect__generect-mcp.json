@@ -12,5 +12,19 @@
     "url": "https://github.com/generect/generect_mcp.git",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.generect.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer Token YOUR_GENERECT_API_KEY from https://beta.generect.com",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

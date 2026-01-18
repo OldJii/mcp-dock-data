@@ -72,7 +72,9 @@
           "type": "named",
           "isRequired": false
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

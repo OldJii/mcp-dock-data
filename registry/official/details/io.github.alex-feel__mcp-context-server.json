@@ -700,7 +700,8 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -1389,7 +1390,9 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

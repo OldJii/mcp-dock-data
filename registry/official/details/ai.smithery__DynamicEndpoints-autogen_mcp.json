@@ -12,5 +12,19 @@
     "url": "https://github.com/DynamicEndpoints/Autogen_MCP",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@DynamicEndpoints/autogen_mcp/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

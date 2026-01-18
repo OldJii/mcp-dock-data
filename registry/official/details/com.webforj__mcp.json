@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.webforj.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.webforj.com/sse",
+      "headers": []
+    }
+  ]
 }

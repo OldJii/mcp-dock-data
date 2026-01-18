@@ -2,10 +2,10 @@
   "id": "io.github.aikts/yandex-tracker-mcp",
   "displayName": "io.github.aikts/yandex-tracker-mcp",
   "description": "MCP server for Yandex Tracker API.",
-  "version": "0.5.2",
+  "version": "0.6.1",
   "status": "active",
-  "publishedAt": "2026-01-17T15:29:46.649372Z",
-  "updatedAt": "2026-01-17T15:29:46.649372Z",
+  "publishedAt": "2026-01-17T19:54:21.685519Z",
+  "updatedAt": "2026-01-17T19:54:21.685519Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
@@ -13,21 +13,24 @@
     {
       "registryType": "pypi",
       "identifier": "yandex-tracker-mcp",
-      "version": "0.5.2",
+      "version": "0.6.1",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/aikts/yandex-tracker-mcp:0.5.2",
+      "identifier": "ghcr.io/aikts/yandex-tracker-mcp:0.6.1",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

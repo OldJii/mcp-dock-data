@@ -12,5 +12,19 @@
     "url": "https://github.com/MindscapeHQ/mcp-server-raygun",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.raygun.com/v3/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Raygun Personal Access Token (PAT) in Bearer format. Get yours at https://app.raygun.com/user/tokens",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

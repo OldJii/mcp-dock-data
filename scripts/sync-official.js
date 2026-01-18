@@ -6,7 +6,13 @@
  * 流程：
  * 1. Extract: 从 Official Registry API 获取服务器列表
  * 2. Transform: 转换数据格式
- * 3. Load: 生成 JSON 文件
+ * 3. Filter: 过滤掉无法安装的 MCP
+ * 4. Load: 生成 JSON 文件
+ * 
+ * 过滤规则：
+ * - 必须有可用的安装方式（packages 或 remotes）
+ * - packages 中只保留支持的 registryType: npm, pypi, oci
+ * - 过滤掉不支持的 registryType: mcpb, nuget 等
  * 
  * 注意：README 不在此处获取，由客户端实时从 GitHub 获取
  */
@@ -21,6 +27,12 @@ const DETAILS_DIR = path.join(REGISTRY_DIR, 'details');
 
 const API_BASE = 'https://registry.modelcontextprotocol.io/v0.1';
 const RATE_LIMIT_DELAY = 200; // ms between requests
+
+// 支持的 registryType 列表
+// npm: 通过 npx 安装
+// pypi: 通过 uvx 安装
+// oci: 通过 docker 安装
+const SUPPORTED_REGISTRY_TYPES = ['npm', 'pypi', 'oci'];
 
 /**
  * 延迟函数
@@ -132,15 +144,10 @@ function transformListItem(item) {
 }
 
 /**
- * 转换详情为完整格式
- * 注意：不包含 README，由客户端实时获取
+ * 转换单个 package 为标准格式
  */
-function transformDetail(item) {
-  const server = item.server || {};
-  const meta = item._meta?.['io.modelcontextprotocol.registry/official'] || {};
-  
-  // 转换 packages
-  const packages = (server.packages || []).map(pkg => ({
+function transformPackage(pkg) {
+  return {
     registryType: pkg.registryType || 'npm',
     identifier: pkg.identifier || '',
     version: pkg.version || undefined,
@@ -172,7 +179,21 @@ function transformDetail(item) {
       default: arg.default || undefined,
       valueHint: arg.valueHint || undefined
     })).filter(arg => arg.name)
-  }));
+  };
+}
+
+/**
+ * 转换详情为完整格式
+ * 注意：不包含 README，由客户端实时获取
+ */
+function transformDetail(item) {
+  const server = item.server || {};
+  const meta = item._meta?.['io.modelcontextprotocol.registry/official'] || {};
+  
+  // 转换 packages，只保留支持的 registryType
+  const packages = (server.packages || [])
+    .filter(pkg => SUPPORTED_REGISTRY_TYPES.includes(pkg.registryType))
+    .map(transformPackage);
   
   // 转换 remotes（远程服务器，不需要本地安装）
   const remotes = (server.remotes || []).map(remote => ({
@@ -250,6 +271,101 @@ function deduplicateServers(servers) {
 }
 
 /**
+ * 检查服务器是否有可用的安装方式
+ * @param {Object} item - 原始服务器数据
+ * @returns {boolean} - 是否可安装
+ */
+function hasInstallableMethod(item) {
+  const server = item.server || {};
+  
+  // 检查是否有支持的 packages
+  const packages = server.packages || [];
+  const supportedPackages = packages.filter(pkg => 
+    SUPPORTED_REGISTRY_TYPES.includes(pkg.registryType)
+  );
+  
+  if (supportedPackages.length > 0) {
+    return true;
+  }
+  
+  // 检查是否有 remotes
+  const remotes = server.remotes || [];
+  const validRemotes = remotes.filter(r => r.url);
+  
+  if (validRemotes.length > 0) {
+    return true;
+  }
+  
+  return false;
+}
+
+/**
+ * 过滤服务器列表，只保留可安装的
+ * @param {Array} servers - 服务器列表
+ * @returns {Object} - { filtered: 过滤后的列表, stats: 统计信息 }
+ */
+function filterInstallableServers(servers) {
+  const stats = {
+    total: servers.length,
+    installable: 0,
+    filtered: {
+      noInstallMethod: 0,
+      unsupportedRegistryType: 0,
+    },
+    registryTypes: {},
+  };
+  
+  const filtered = servers.filter(item => {
+    const server = item.server || {};
+    const packages = server.packages || [];
+    const remotes = server.remotes || [];
+    
+    // 统计 registryType
+    packages.forEach(pkg => {
+      const type = pkg.registryType || 'unknown';
+      stats.registryTypes[type] = (stats.registryTypes[type] || 0) + 1;
+    });
+    
+    // 检查是否可安装
+    if (hasInstallableMethod(item)) {
+      stats.installable++;
+      return true;
+    }
+    
+    // 统计过滤原因
+    if (packages.length === 0 && remotes.length === 0) {
+      stats.filtered.noInstallMethod++;
+    } else if (packages.length > 0) {
+      // 有 packages 但都是不支持的类型
+      stats.filtered.unsupportedRegistryType++;
+    } else {
+      stats.filtered.noInstallMethod++;
+    }
+    
+    return false;
+  });
+  
+  return { filtered, stats };
+}
+
+/**
+ * 清理旧的详情文件
+ */
+async function cleanOldDetails() {
+  try {
+    const files = await fs.readdir(DETAILS_DIR);
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        await fs.unlink(path.join(DETAILS_DIR, file));
+      }
+    }
+    console.log(`  🧹 Cleaned ${files.length} old detail files`);
+  } catch (error) {
+    // 目录可能不存在，忽略错误
+  }
+}
+
+/**
  * 主同步函数
  */
 async function sync() {
@@ -258,20 +374,38 @@ async function sync() {
   // 确保目录存在
   await fs.mkdir(DETAILS_DIR, { recursive: true });
   
+  // 清理旧文件
+  await cleanOldDetails();
+  
   // 1. 获取服务器列表
   const rawServerList = await fetchServerList();
   
   // 2. 去重：只保留每个服务器的最新版本
-  const serverList = deduplicateServers(rawServerList);
-  console.log(`  📦 After deduplication: ${serverList.length} unique servers (from ${rawServerList.length} total)`);
+  const deduplicatedList = deduplicateServers(rawServerList);
+  console.log(`  📦 After deduplication: ${deduplicatedList.length} unique servers (from ${rawServerList.length} total)`);
   
-  // 3. 转换并保存列表索引
+  // 3. 过滤：只保留可安装的服务器
+  const { filtered: serverList, stats } = filterInstallableServers(deduplicatedList);
+  
+  console.log(`\n📊 Filter Statistics:`);
+  console.log(`   Total servers: ${stats.total}`);
+  console.log(`   Installable: ${stats.installable}`);
+  console.log(`   Filtered out:`);
+  console.log(`     - No install method: ${stats.filtered.noInstallMethod}`);
+  console.log(`     - Unsupported registry type: ${stats.filtered.unsupportedRegistryType}`);
+  console.log(`   Registry types found:`);
+  Object.entries(stats.registryTypes).sort((a, b) => b[1] - a[1]).forEach(([type, count]) => {
+    const supported = SUPPORTED_REGISTRY_TYPES.includes(type) ? '✅' : '❌';
+    console.log(`     - ${type}: ${count} ${supported}`);
+  });
+  
+  // 4. 转换并保存列表索引
   const indexData = serverList.map(transformListItem);
   const indexPath = path.join(REGISTRY_DIR, 'index.json');
   await fs.writeFile(indexPath, JSON.stringify(indexData, null, 2));
   console.log(`\n📝 Saved index.json with ${indexData.length} entries`);
   
-  // 4. 保存每个服务器的详情
+  // 5. 保存每个服务器的详情
   console.log('\n📥 Saving server details...');
   let successCount = 0;
   let failCount = 0;
@@ -304,11 +438,12 @@ async function sync() {
     }
   }
   
-  // 5. 输出统计
+  // 6. 输出统计
   console.log('\n📊 Sync completed!');
   console.log(`   ✅ Success: ${successCount}`);
   console.log(`   ❌ Failed: ${failCount}`);
   console.log(`   📁 Total files: ${successCount + 1} (index + details)`);
+  console.log(`\n💡 Supported registry types: ${SUPPORTED_REGISTRY_TYPES.join(', ')}`);
 }
 
 // 运行同步

@@ -39,7 +39,16 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--mount",
+          "description": "Mount the path to code to be analysed by CodeScene",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

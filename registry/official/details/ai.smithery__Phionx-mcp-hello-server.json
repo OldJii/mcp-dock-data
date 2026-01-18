@@ -12,5 +12,19 @@
     "url": "https://github.com/Phionx/mcp-hello-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Phionx/mcp-hello-server/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

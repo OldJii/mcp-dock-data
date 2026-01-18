@@ -35,7 +35,8 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "pypi",
@@ -59,7 +60,23 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--transport",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--port",
+          "description": "Port for HTTP transport",
+          "type": "named",
+          "isRequired": false,
+          "default": "8000",
+          "valueHint": "port"
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://send-email-49a8d7ee.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://send-email-49a8d7ee.alpic.live",
+      "headers": []
+    }
+  ]
 }

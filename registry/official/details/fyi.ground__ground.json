@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://ground.fyi",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ground.fyi/mcp",
+      "headers": []
+    }
+  ]
 }

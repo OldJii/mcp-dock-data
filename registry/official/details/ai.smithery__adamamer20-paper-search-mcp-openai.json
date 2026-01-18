@@ -12,5 +12,19 @@
     "url": "https://github.com/adamamer20/paper-search-mcp-openai",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@adamamer20/paper-search-mcp-openai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

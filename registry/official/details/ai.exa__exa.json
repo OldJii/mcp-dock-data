@@ -12,5 +12,12 @@
     "url": "https://github.com/exa-labs/exa-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp",
+      "headers": []
+    }
+  ]
 }

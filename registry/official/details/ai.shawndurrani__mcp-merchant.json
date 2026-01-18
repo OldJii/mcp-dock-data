@@ -43,7 +43,15 @@
           "default": "600"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.shawndurrani.ai/sse",
+      "headers": []
     }
   ]
 }

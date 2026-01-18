@@ -12,5 +12,19 @@
     "url": "https://github.com/morosss/sdfsdf",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@morosss/sdfsdf/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

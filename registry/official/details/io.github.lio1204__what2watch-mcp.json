@@ -12,5 +12,12 @@
     "url": "https://github.com/lio1204/what2watch-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://what2watch.live/sse",
+      "headers": []
+    }
+  ]
 }

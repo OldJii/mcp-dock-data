@@ -21,7 +21,16 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-v",
+          "description": "Mount a local directory into the container for the MCP server to access",
+          "type": "named",
+          "isRequired": true
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

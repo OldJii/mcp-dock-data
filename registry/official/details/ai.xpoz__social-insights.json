@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://www.xpoz.ai",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.xpoz.ai/mcp",
+      "headers": []
+    }
+  ]
 }

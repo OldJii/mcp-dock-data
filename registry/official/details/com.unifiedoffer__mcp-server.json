@@ -21,7 +21,8 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "pypi",
@@ -31,7 +32,8 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -40,7 +42,22 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.unifiedoffer.com/functions/v1/mcp-http-wrapper",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "API key for authentication. Get your free API key at https://unifiedoffer.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

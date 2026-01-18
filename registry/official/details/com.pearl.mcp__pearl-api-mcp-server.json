@@ -12,5 +12,31 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.pearl.com/sse",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Pearl API key for authenticated tool access.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pearl.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Pearl API key for authenticated tool access.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

@@ -12,5 +12,19 @@
     "url": "https://github.com/ref-tools/ref-tools-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ref.tools/mcp",
+      "headers": [
+        {
+          "name": "X-Ref-Api-Key",
+          "description": "API key for authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

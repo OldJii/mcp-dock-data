@@ -13,5 +13,12 @@
     "source": "github",
     "subfolder": "src/go_agents/agents/ip"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://agent-ip.biodnd.com/sse",
+      "headers": []
+    }
+  ]
 }

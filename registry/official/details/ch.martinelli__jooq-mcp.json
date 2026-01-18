@@ -12,5 +12,12 @@
     "url": "https://github.com/martinellich/jooq-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://jooq-mcp.martinelli.ch/sse",
+      "headers": []
+    }
+  ]
 }

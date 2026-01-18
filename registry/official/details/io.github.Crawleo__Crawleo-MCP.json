@@ -12,5 +12,19 @@
     "url": "https://github.com/Crawleo/Crawleo-MCP",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.crawleo.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Crawleo API token for authentication. Example: 'Bearer <CRAWLEO_API_KEY>'",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

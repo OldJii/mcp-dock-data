@@ -1,0 +1,29 @@
+{
+  "id": "io.github.labarilem/brainfaq-mcp",
+  "displayName": "io.github.labarilem/brainfaq-mcp",
+  "description": "MCP server for the BrainFuck programming language",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T21:52:36.198212Z",
+  "updatedAt": "2026-01-17T21:52:36.198212Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/labarilem/brainfaq-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "brainfaq-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": []
+}

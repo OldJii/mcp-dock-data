@@ -30,7 +30,9 @@
           "default": "~/.claude/memory"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

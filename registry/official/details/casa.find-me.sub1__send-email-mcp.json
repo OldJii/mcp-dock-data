@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": "https://alpic.ai/",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sub1.find-me.casa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Put your property search API key with suffix \"Bearer {x-api-key}\"",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

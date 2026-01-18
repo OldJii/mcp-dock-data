@@ -2,10 +2,10 @@
   "id": "io.github.deugene/connect-iq-mcp",
   "displayName": "ConnectIQ MCP Server",
   "description": "MCP server for Garmin ConnectIQ SDK documentation and resources",
-  "version": "1.0.3",
+  "version": "1.1.2",
   "status": "active",
-  "publishedAt": "2026-01-16T09:32:42.621639Z",
-  "updatedAt": "2026-01-16T09:32:42.621639Z",
+  "publishedAt": "2026-01-17T18:57:06.386346Z",
+  "updatedAt": "2026-01-17T18:57:06.386346Z",
   "iconUrl": null,
   "websiteUrl": "https://github.com/deugene/connect-iq-mcp",
   "repository": {
@@ -16,12 +16,14 @@
     {
       "registryType": "npm",
       "identifier": "connectiq-mcp-server",
-      "version": "1.0.3",
+      "version": "1.1.2",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

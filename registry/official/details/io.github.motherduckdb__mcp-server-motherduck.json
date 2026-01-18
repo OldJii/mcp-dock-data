@@ -138,7 +138,9 @@
           "isRequired": false,
           "default": "-1"
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -47,7 +47,22 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mux.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional basic authorization header you can include, combining your Access Token and Secret using HTTP Basic Auth. If not provided, authorization will be handled via OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

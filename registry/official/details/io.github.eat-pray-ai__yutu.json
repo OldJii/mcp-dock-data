@@ -53,7 +53,28 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "--user",
+          "description": "UID and GID in the container to match host user",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--mount",
+          "description": "Mount host directory containing credentials and token",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-p",
+          "description": "Publish MCP server port",
+          "type": "named",
+          "isRequired": true
+        }
       ]
     }
-  ]
+  ],
+  "remotes": []
 }

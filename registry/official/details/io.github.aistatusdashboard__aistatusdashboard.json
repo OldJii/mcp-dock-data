@@ -12,5 +12,12 @@
     "url": "https://github.com/aistatusdashboard/aistatusdashboard",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aistatusdashboard.com/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -2,10 +2,10 @@
   "id": "io.github.jztan/redmine-mcp-server",
   "displayName": "io.github.jztan/redmine-mcp-server",
   "description": "Production-ready MCP server for Redmine with security, pagination, and enterprise features",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "status": "active",
-  "publishedAt": "2026-01-04T11:37:30.859622Z",
-  "updatedAt": "2026-01-04T11:37:30.859622Z",
+  "publishedAt": "2026-01-18T08:13:34.54596Z",
+  "updatedAt": "2026-01-18T08:13:34.54596Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "pypi",
       "identifier": "redmine-mcp-server",
-      "version": "0.9.1",
+      "version": "0.10.0",
       "transport": {
         "type": "stdio"
       },
@@ -102,7 +102,9 @@
           "default": "60"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

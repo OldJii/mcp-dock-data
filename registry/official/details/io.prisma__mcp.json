@@ -12,5 +12,31 @@
     "url": "https://github.com/prisma/mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.prisma.io/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Prisma platform authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.prisma.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Prisma platform authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

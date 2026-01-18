@@ -1,0 +1,29 @@
+{
+  "id": "io.github.drivenrajat/f1",
+  "displayName": "F1 Data Server",
+  "description": "Access Formula 1 race data, telemetry, lap times, standings, and analytics powered by FastF1",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-17T21:05:24.555422Z",
+  "updatedAt": "2026-01-17T21:05:24.555422Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/drivenrajat/f1",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "f1-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": []
+}

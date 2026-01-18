@@ -12,5 +12,19 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://abhijitjavelin.github.io/javelin-guardrails-mcp-server/mcp",
+      "headers": [
+        {
+          "name": "x-javelin-apikey",
+          "description": "Javelin API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

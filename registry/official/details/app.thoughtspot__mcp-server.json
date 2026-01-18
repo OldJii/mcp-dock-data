@@ -12,5 +12,53 @@
     "url": "https://github.com/thoughtspot/mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent.thoughtspot.app/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://agent.thoughtspot.app/sse",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://agent.thoughtspot.app/bearer/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authentication, have the ts-host as 'token@ts-host' or as a separate 'x-ts-host' header",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-TS-Host",
+          "description": "ThoughtSpot instance URL, if not provided in the authorization header",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://agent.thoughtspot.app/bearer/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authentication, have the ts-host as 'token@ts-host' or as a separate 'x-ts-host' header",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "X-TS-Host",
+          "description": "ThoughtSpot instance URL, if not provided in the authorization header",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

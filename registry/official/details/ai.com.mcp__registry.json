@@ -12,5 +12,12 @@
     "url": "https://github.com/modelcontextprotocol/registry",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://registry.run.mcp.com.ai/mcp",
+      "headers": []
+    }
+  ]
 }

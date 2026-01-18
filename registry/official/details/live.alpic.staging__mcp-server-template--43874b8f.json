@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server-template--43874b8f.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

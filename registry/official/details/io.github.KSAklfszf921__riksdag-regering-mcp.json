@@ -35,7 +35,15 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://riksdag-regering-ai.onrender.com/mcp",
+      "headers": []
     }
   ]
 }

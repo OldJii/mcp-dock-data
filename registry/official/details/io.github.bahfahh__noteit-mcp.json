@@ -12,5 +12,12 @@
     "url": "https://github.com/bahfahh/noteit-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.noteit-mcp.com/api/mcp",
+      "headers": []
+    }
+  ]
 }

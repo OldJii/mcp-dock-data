@@ -89,7 +89,9 @@
           "default": "DELETE.FILE,CLEAR.FILE"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

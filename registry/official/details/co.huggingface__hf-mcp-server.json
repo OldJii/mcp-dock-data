@@ -12,5 +12,29 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://huggingface.co/mcp?login",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://huggingface.co/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Hugging Face API token for authentication",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://huggingface.co/mcp",
+      "headers": []
+    }
+  ]
 }

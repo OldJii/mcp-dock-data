@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getdialer.app/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://getdialer.app/sse",
+      "headers": []
+    }
+  ]
 }

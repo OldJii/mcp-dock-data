@@ -1,0 +1,36 @@
+{
+  "id": "io.github.gridinsoft/inspector",
+  "displayName": "io.github.gridinsoft/inspector",
+  "description": "Domain and URL security analysis by GridinSoft. Detect phishing and malware threats.",
+  "version": "1.0.0",
+  "status": "active",
+  "publishedAt": "2026-01-18T06:01:35.862941Z",
+  "updatedAt": "2026-01-18T06:01:35.862941Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/gridinsoft/mcp-inspector",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@gridinsoft/mcp-inspector",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GRIDINSOFT_API_KEY",
+          "description": "API key from inspector.gridinsoft.com/profile (100 free credits on signup)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": []
+}

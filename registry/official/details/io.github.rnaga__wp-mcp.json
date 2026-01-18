@@ -106,7 +106,16 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-y",
+          "description": "Automatically confirm npx package installation",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -12,5 +12,12 @@
     "url": "https://github.com/sachin-shetty/egnyte-ai-samples",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ptyagiegnyte.github.io/egnyte-remote/mcp",
+      "headers": []
+    }
+  ]
 }

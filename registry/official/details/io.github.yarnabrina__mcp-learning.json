@@ -22,7 +22,23 @@
         "type": "streamable-http"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--from",
+          "description": "Resolve console scripts from the published package.",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--log_level",
+          "description": "Log level for server output.",
+          "type": "named",
+          "isRequired": false,
+          "default": "WARNING"
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

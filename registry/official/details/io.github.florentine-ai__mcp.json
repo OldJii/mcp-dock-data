@@ -78,7 +78,15 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "-y",
+          "type": "named",
+          "isRequired": true
+        }
       ]
     }
-  ]
+  ],
+  "remotes": []
 }

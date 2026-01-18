@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://github.com/elankeeran/Companies-House-MCP-Server",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://companies-house-mcp-server.onrender.com",
+      "headers": []
+    }
+  ]
 }

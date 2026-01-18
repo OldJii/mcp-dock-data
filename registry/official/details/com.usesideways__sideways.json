@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://usesideways.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://usesideways.com/sse",
+      "headers": []
+    }
+  ]
 }

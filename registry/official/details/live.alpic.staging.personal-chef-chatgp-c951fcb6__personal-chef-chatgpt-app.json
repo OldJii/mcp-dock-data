@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://personal-chef-chatgp-c951fcb6.staging.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://personal-chef-chatgp-c951fcb6.staging.alpic.live",
+      "headers": []
+    }
+  ]
 }

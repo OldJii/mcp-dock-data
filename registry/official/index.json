@@ -3440,16 +3440,6 @@
     }
   },
   {
-    "id": "capital.hove/read-only-mysql-mcp-server",
-    "displayName": "capital.hove/read-only-mysql-mcp-server",
-    "description": "MCP server for read-only MySQL database queries in Claude Desktop",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-11-03T10:20:41.823143Z",
-    "repository": null
-  },
-  {
     "id": "casa.find-me.sub1/send-email-mcp",
     "displayName": "Cool property search server!",
     "description": "Non functional server (yet)",
@@ -4308,19 +4298,6 @@
     }
   },
   {
-    "id": "com.joelverhagen.mcp/Knapcode.SampleMcpServer",
-    "displayName": "com.joelverhagen.mcp/Knapcode.SampleMcpServer",
-    "description": "A sample MCP server using the MCP C# SDK. Generates random numbers and random weather.",
-    "iconUrl": null,
-    "version": "0.10.0-beta.10",
-    "status": "active",
-    "publishedAt": "2025-10-27T21:07:31.921876Z",
-    "repository": {
-      "url": "https://github.com/joelverhagen/Knapcode.SampleMcpServer",
-      "source": "github"
-    }
-  },
-  {
     "id": "com.jotform/mcp",
     "displayName": "com.jotform/mcp",
     "description": "Jotform MCP",
@@ -4532,16 +4509,6 @@
       "url": "https://github.com/MicrosoftDocs/mcp",
       "source": "github"
     }
-  },
-  {
-    "id": "com.microsoft/nuget",
-    "displayName": "com.microsoft/nuget",
-    "description": "A Model Context Protocol (MCP) server for NuGet.",
-    "iconUrl": null,
-    "version": "1.1.12",
-    "status": "active",
-    "publishedAt": "2025-12-05T18:52:57.78574Z",
-    "repository": null
   },
   {
     "id": "com.microsoft/sentinel-data-exploration",
@@ -5238,6 +5205,19 @@
     }
   },
   {
+    "id": "com.zeltser/website-search",
+    "displayName": "com.zeltser/website-search",
+    "description": "Write better incident response and other reports, get guidance on security best practices.",
+    "iconUrl": null,
+    "version": "5.5.0",
+    "status": "active",
+    "publishedAt": "2026-01-17T16:46:02.521798Z",
+    "repository": {
+      "url": "https://github.com/lennyzeltser/zeltser-website-mcp-server",
+      "source": "github"
+    }
+  },
+  {
     "id": "com.zomato/mcp",
     "displayName": "com.zomato/mcp",
     "description": "An MCP server that exposes functionalities to use Zomato's services.",
@@ -5688,32 +5668,6 @@
     }
   },
   {
-    "id": "io.github.Abraxas1010/agent-payment-mcp",
-    "displayName": "io.github.Abraxas1010/agent-payment-mcp",
-    "description": "Secure USDC payments for AI agents on Base blockchain with budget controls and instant settlement.",
-    "iconUrl": null,
-    "version": "1.0.1",
-    "status": "active",
-    "publishedAt": "2025-10-16T21:14:59.912521Z",
-    "repository": {
-      "url": "https://github.com/Abraxas1010/agent-payment-mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.Adessoadesso/panoramic-ireland-booking",
-    "displayName": "io.github.Adessoadesso/panoramic-ireland-booking",
-    "description": "MCP server for Panoramic Ireland tours. Discover, check availability, and create bookings.",
-    "iconUrl": null,
-    "version": "1.0.1",
-    "status": "active",
-    "publishedAt": "2025-11-15T00:09:48.212746Z",
-    "repository": {
-      "url": "https://github.com/Adessoadesso/paypal-ai-booking-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.AdonaiVera/fiftyone-mcp-server",
     "displayName": "io.github.AdonaiVera/fiftyone-mcp-server",
     "description": "Control FiftyOne computer vision datasets through AI assistants using 80+ operators.",
@@ -5766,19 +5720,6 @@
     }
   },
   {
-    "id": "io.github.Anandb71/arbor",
-    "displayName": "io.github.Anandb71/arbor",
-    "description": "The Graph-Native Intelligence Layer for Code.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2026-01-07T10:12:07.461683Z",
-    "repository": {
-      "url": "https://github.com/Anandb71/arbor",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.Anarkitty1/semantic-frame",
     "displayName": "io.github.Anarkitty1/semantic-frame",
     "description": "Token-efficient semantic compression for numerical data. 95%+ token reduction.",
@@ -5814,19 +5755,6 @@
     "publishedAt": "2025-09-17T16:49:19.073212Z",
     "repository": {
       "url": "https://github.com/Antonytm/mcp-sitecore-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.Apoth3osis-ai/agent-payment-mcp",
-    "displayName": "io.github.Apoth3osis-ai/agent-payment-mcp",
-    "description": "Secure MCP router providing access to AgentPMT's pay-per-use AI tools marketplace.",
-    "iconUrl": null,
-    "version": "1.1.0",
-    "status": "active",
-    "publishedAt": "2025-10-22T23:35:22.309115Z",
-    "repository": {
-      "url": "https://github.com/Apoth3osis-ai/agent-payment-mcp",
       "source": "github"
     }
   },
@@ -5980,19 +5908,6 @@
     "publishedAt": "2026-01-04T11:19:34.858488Z",
     "repository": {
       "url": "https://github.com/ChiR24/Unreal_mcp.git",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.Chris85appding/unified-offer-protocol",
-    "displayName": "Unified Offer Protocol MCP Server",
-    "description": "AI-powered e-commerce product search, affiliate links, and price negotiation",
-    "iconUrl": null,
-    "version": "2.0.6",
-    "status": "active",
-    "publishedAt": "2025-10-19T13:04:28.249421Z",
-    "repository": {
-      "url": "https://github.com/UnifiedOffer/mcp-server-public",
       "source": "github"
     }
   },
@@ -6451,45 +6366,6 @@
     }
   },
   {
-    "id": "io.github.GitHub30/note-mcp-server",
-    "displayName": "io.github.GitHub30/note-mcp-server",
-    "description": "MCP server for note.com: create, edit and retrieve posts.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-09-23T09:07:31.81627Z",
-    "repository": {
-      "url": "https://github.com/GitHub30/note-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.GitHub30/qiita-mcp-server",
-    "displayName": "io.github.GitHub30/qiita-mcp-server",
-    "description": "Publish articles to Qiita via MCP tools. Minimal, fast, and focused on Qiita authoring.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-09-23T08:59:51.414173Z",
-    "repository": {
-      "url": "https://github.com/GitHub30/qiita-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.GitHub30/zenn-mcp-server",
-    "displayName": "io.github.GitHub30/zenn-mcp-server",
-    "description": "MCP server that posts to Zenn.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-09-23T09:04:05.123481Z",
-    "repository": {
-      "url": "https://github.com/GitHub30/zenn-mcp-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.GoneTone/mcp-server-taiwan-weather",
     "displayName": "io.github.GoneTone/mcp-server-taiwan-weather",
     "description": "用於取得臺灣中央氣象署 API 資料的 Model Context Protocol (MCP) Server",
@@ -6551,19 +6427,6 @@
     "publishedAt": "2025-10-12T21:44:12.300272Z",
     "repository": {
       "url": "https://github.com/HzaCode/OneCite",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.IPv6/mcp-transcribe",
-    "displayName": "io.github.IPv6/mcp-transcribe",
-    "description": "MCP-Transcribe server allows LLMs to interact with the text content of audio/video files",
-    "iconUrl": null,
-    "version": "1.0.4",
-    "status": "active",
-    "publishedAt": "2025-10-08T14:44:05.256925Z",
-    "repository": {
-      "url": "https://github.com/transcribe-app/mcp-transcribe",
       "source": "github"
     }
   },
@@ -6842,19 +6705,6 @@
     }
   },
   {
-    "id": "io.github.Lungshot/ninjaone",
-    "displayName": "io.github.Lungshot/ninjaone",
-    "description": "MCP server for NinjaONE RMM with device management, monitoring, and automation",
-    "iconUrl": null,
-    "version": "1.2.9",
-    "status": "active",
-    "publishedAt": "2025-09-22T17:51:28.941427Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.Lyellr88/marm-mcp-server",
     "displayName": "io.github.Lyellr88/marm-mcp-server",
     "description": "Universal MCP Server with advanced AI memory capabilities and semantic search.",
@@ -6992,19 +6842,6 @@
     }
   },
   {
-    "id": "io.github.MauriceIsrael/SmartMemory",
-    "displayName": "io.github.MauriceIsrael/SmartMemory",
-    "description": "Neuro-symbolic memory for LLMs (POC)",
-    "iconUrl": null,
-    "version": "1.0.1",
-    "status": "active",
-    "publishedAt": "2025-12-06T14:28:58.636996Z",
-    "repository": {
-      "url": "https://github.com/MauriceIsrael/SmartMemory",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.MauroDruwel/smartschool-mcp",
     "displayName": "io.github.MauroDruwel/smartschool-mcp",
     "description": "Access Smartschool courses, grades, assignments, and messages through the Model Context Protocol",
@@ -7083,19 +6920,6 @@
     }
   },
   {
-    "id": "io.github.NacoSolutions/modern-cli-mcp",
-    "displayName": "Modern CLI MCP Server",
-    "description": "MCP server exposing 104+ modern CLI tools for AI agents with JSON output.",
-    "iconUrl": null,
-    "version": "0.6.7",
-    "status": "active",
-    "publishedAt": "2025-12-17T13:30:11.749093Z",
-    "repository": {
-      "url": "https://github.com/NacoSolutions/modern-cli-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.NeerajG03/vector-memory",
     "displayName": "io.github.NeerajG03/vector-memory",
     "description": "Semantic document memory using Redis vector store. Save and recall files with natural language.",
@@ -7151,6 +6975,19 @@
     "publishedAt": "2025-11-28T09:21:31.261779Z",
     "repository": {
       "url": "https://github.com/ONLYOFFICE/docspace-mcp",
+      "source": "github"
+    }
+  },
+  {
+    "id": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
+    "displayName": "io.github.OleksandrKucherenko/mcp-obsidian-via-rest",
+    "description": "MCP Server for Obsidian Vault Access via Local REST API",
+    "iconUrl": null,
+    "version": "1.0.3",
+    "status": "active",
+    "publishedAt": "2026-01-17T17:12:15.353554Z",
+    "repository": {
+      "url": "https://github.com/OleksandrKucherenko/mcp-obsidian-via-rest",
       "source": "github"
     }
   },
@@ -7257,19 +7094,6 @@
       "url": "https://github.com/PostHog/posthog",
       "source": "github",
       "subfolder": "services/mcp"
-    }
-  },
-  {
-    "id": "io.github.Pranavj17/mcp-server-graylog",
-    "displayName": "io.github.Pranavj17/mcp-server-graylog",
-    "description": "Search Graylog logs by timestamps, filter by streams, and debug production issues.",
-    "iconUrl": null,
-    "version": "1.0.2",
-    "status": "active",
-    "publishedAt": "2025-10-23T18:25:27.499311Z",
-    "repository": {
-      "url": "",
-      "source": "github"
     }
   },
   {
@@ -7700,19 +7524,6 @@
     }
   },
   {
-    "id": "io.github.Stryk91/lsp-mcp-rs",
-    "displayName": "LSP-MCP Bridge",
-    "description": "Universal MCP bridge to LSP servers. One binary, 6 languages, config-driven.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2026-01-03T21:57:00.625698Z",
-    "repository": {
-      "url": "https://github.com/Stryk91/lsp-mcp-rs",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.StudiousXiaoYu/oracle-link",
     "displayName": "io.github.StudiousXiaoYu/oracle-link",
     "description": "Oracle MCP Query Server (Node.js) - Read-only SELECT via MCP",
@@ -7726,19 +7537,6 @@
     }
   },
   {
-    "id": "io.github.Swathi-MuraliSrinivasan/tavily-mcp-server",
-    "displayName": "Payx Tavily Search",
-    "description": "FastMCP server for Tavily search API with web search and content extraction",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-11-17T22:04:42.751174Z",
-    "repository": {
-      "url": "https://github.com/paychex/tavily-mcp-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.SymbioticSec/mcp",
     "displayName": "io.github.SymbioticSec/mcp",
     "description": "Symbiotic CLI MCP Server for security scanning and analysis",
@@ -7748,19 +7546,6 @@
     "publishedAt": "2025-12-15T09:35:38.927931Z",
     "repository": {
       "url": "https://github.com/SymbioticSec/mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.Synclub-tech/synclub-dxt",
-    "displayName": "io.github.Synclub-tech/synclub-dxt",
-    "description": "SynClub MCP Server for AI-powered comic creation with script generation and image tools",
-    "iconUrl": null,
-    "version": "0.6.0",
-    "status": "active",
-    "publishedAt": "2025-09-20T11:20:51.672216Z",
-    "repository": {
-      "url": "https://github.com/Synclub-tech/Synclub-dxt",
       "source": "github"
     }
   },
@@ -7810,19 +7595,6 @@
     "publishedAt": "2025-10-31T14:52:24.602908Z",
     "repository": {
       "url": "https://github.com/TharanaBope/SQL-MCP-Mac-Windows",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.TiM00R/remote-terminal",
-    "displayName": "io.github.TiM00R/remote-terminal",
-    "description": "Complete SSH terminal for Linux with AI/user control and dual-stream visibility",
-    "iconUrl": null,
-    "version": "1.1.0",
-    "status": "active",
-    "publishedAt": "2025-12-17T04:11:01.194537Z",
-    "repository": {
-      "url": "",
       "source": "github"
     }
   },
@@ -8150,19 +7922,6 @@
     }
   },
   {
-    "id": "io.github.abhishek2432001/deeprepo",
-    "displayName": "io.github.abhishek2432001/deeprepo",
-    "description": "Productivity-boosting RAG engine for codebases with multi-provider AI support and semantic search.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-12-30T17:57:00.105485Z",
-    "repository": {
-      "url": "https://github.com/abhishek2432001/deeprepo",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.abhishekbhakat/airflow-mcp-server",
     "displayName": "io.github.abhishekbhakat/airflow-mcp-server",
     "description": "An MCP server for Apache Airflow ",
@@ -8216,9 +7975,9 @@
     "displayName": "io.github.aikts/yandex-tracker-mcp",
     "description": "MCP server for Yandex Tracker API.",
     "iconUrl": null,
-    "version": "0.5.2",
+    "version": "0.6.1",
     "status": "active",
-    "publishedAt": "2026-01-17T15:29:46.649372Z",
+    "publishedAt": "2026-01-17T19:54:21.685519Z",
     "repository": null
   },
   {
@@ -8434,19 +8193,6 @@
     }
   },
   {
-    "id": "io.github.antuelle78/weather-mcp",
-    "displayName": "io.github.antuelle78/weather-mcp",
-    "description": "A simple MCP server for getting weather information.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-10-09T23:19:01.125697Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.antvis/mcp-server-chart",
     "displayName": "io.github.antvis/mcp-server-chart",
     "description": "A Model Context Protocol server for generating charts using AntV.",
@@ -8555,9 +8301,9 @@
     "displayName": "MCP Appium - Mobile Development and Automation Server",
     "description": "MCP server for Appium mobile automation on iOS and Android devices with test creation tools.",
     "iconUrl": null,
-    "version": "1.8.1",
+    "version": "1.8.4",
     "status": "active",
-    "publishedAt": "2026-01-17T04:31:35.679405Z",
+    "publishedAt": "2026-01-18T09:59:32.598109Z",
     "repository": null
   },
   {
@@ -9004,9 +8750,9 @@
     "displayName": "io.github.backspacevenkat/perspectives",
     "description": "Query multiple AI models (GPT-4, Claude, Gemini, Grok) in parallel for diverse perspectives",
     "iconUrl": null,
-    "version": "1.8.42",
+    "version": "1.8.59",
     "status": "active",
-    "publishedAt": "2026-01-14T07:18:26.066141Z",
+    "publishedAt": "2026-01-17T20:46:31.782059Z",
     "repository": {
       "url": "https://github.com/polydev-ai/perspectives-mcp",
       "source": "github"
@@ -9152,19 +8898,6 @@
     "status": "active",
     "publishedAt": "2025-11-26T09:19:44.819819Z",
     "repository": null
-  },
-  {
-    "id": "io.github.bkalafat/diffpilot",
-    "displayName": "io.github.bkalafat/diffpilot",
-    "description": "MCP server for PR code review, commit messages, changelogs, and secret detection.",
-    "iconUrl": null,
-    "version": "1.0.7",
-    "status": "active",
-    "publishedAt": "2025-12-07T08:56:56.708744Z",
-    "repository": {
-      "url": "https://github.com/bkalafat/DiffPilot",
-      "source": "github"
-    }
   },
   {
     "id": "io.github.blueskylineassets/agent-observability",
@@ -9605,19 +9338,6 @@
     }
   },
   {
-    "id": "io.github.cloudquery/mcp",
-    "displayName": "io.github.cloudquery/mcp",
-    "description": "CloudQuery MCP server for asset inventory data. Supports CLI, PostgreSQL, and Platform modes.",
-    "iconUrl": null,
-    "version": "1.6.9",
-    "status": "active",
-    "publishedAt": "2025-09-30T07:07:22.188419Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.cmd8/excalidraw-mcp",
     "displayName": "io.github.cmd8/excalidraw-mcp",
     "description": "Model Context Protocol server for Excalidraw diagrams.",
@@ -9629,29 +9349,6 @@
       "url": "https://github.com/cmd8/excalidraw-mcp",
       "source": "github"
     }
-  },
-  {
-    "id": "io.github.cmpxchg16/mcp-ethical-hacking",
-    "displayName": "io.github.cmpxchg16/mcp-ethical-hacking",
-    "description": "An MCP server that provides LinkedIn & Reddit data",
-    "iconUrl": null,
-    "version": "1.4.0",
-    "status": "active",
-    "publishedAt": "2025-09-16T04:55:02.185051Z",
-    "repository": {
-      "url": "https://github.com/cmpxchg16/mcp-ethical-hacking",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.code-with-brian/vettly",
-    "displayName": "io.github.code-with-brian/vettly",
-    "description": "Content moderation for AI applications. Moderate text, images, and video with configurable policies.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-12-05T03:00:58.74245Z",
-    "repository": null
   },
   {
     "id": "io.github.colabfit/colabfit-mcp",
@@ -9716,19 +9413,6 @@
     "publishedAt": "2025-10-21T13:01:53.585129Z",
     "repository": {
       "url": "https://github.com/configcat/mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.containers/kubernetes-mcp-server",
-    "displayName": "io.github.containers/kubernetes-mcp-server",
-    "description": "An MCP server that provides [describe what your server does]",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-09-16T13:06:55.74293Z",
-    "repository": {
-      "url": "https://github.com/containers/kubernetes-mcp-server",
       "source": "github"
     }
   },
@@ -9984,19 +9668,6 @@
     "repository": null
   },
   {
-    "id": "io.github.danpeig/plutocalcdesigner-mcp",
-    "displayName": "Plutocalc Designer",
-    "description": "Plutocalc Designer is a software suite for water and wastewater treatment plants design",
-    "iconUrl": null,
-    "version": "1.3.0",
-    "status": "active",
-    "publishedAt": "2026-01-16T22:34:14.74988Z",
-    "repository": {
-      "url": "https://github.com/danpeig/plutocalcdesigner-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.davidalbertonogueira/redshift-mcp-server",
     "displayName": "Redshift MCP Server",
     "description": "Secure, read-only access to Amazon Redshift with schema introspection and smart sampling",
@@ -10079,9 +9750,9 @@
     "displayName": "ConnectIQ MCP Server",
     "description": "MCP server for Garmin ConnectIQ SDK documentation and resources",
     "iconUrl": null,
-    "version": "1.0.3",
+    "version": "1.1.2",
     "status": "active",
-    "publishedAt": "2026-01-16T09:32:42.621639Z",
+    "publishedAt": "2026-01-17T18:57:06.386346Z",
     "repository": {
       "url": "https://github.com/deugene/connect-iq-mcp.git",
       "source": "github"
@@ -10097,19 +9768,6 @@
     "publishedAt": "2026-01-06T11:00:50.193457Z",
     "repository": {
       "url": "https://github.com/dev-proxy-tools/mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.dexcom-inc/argocd-mcp",
-    "displayName": "io.github.dexcom-inc/argocd-mcp",
-    "description": "Manage ArgoCD GitOps applications - query status, sync, and troubleshoot deployments.",
-    "iconUrl": null,
-    "version": "0.0.1",
-    "status": "active",
-    "publishedAt": "2025-12-02T17:03:17.681959Z",
-    "repository": {
-      "url": "https://github.com/dexcom-inc/ai-agents",
       "source": "github"
     }
   },
@@ -10385,19 +10043,6 @@
     }
   },
   {
-    "id": "io.github.domdomegg/time-mcp-nuget",
-    "displayName": "Time MCP Server",
-    "description": "Get the current UTC time in RFC 3339 format.",
-    "iconUrl": null,
-    "version": "1.1.1",
-    "status": "active",
-    "publishedAt": "2025-10-26T01:55:24.492663Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.domdomegg/time-mcp-pypi",
     "displayName": "Time MCP Server",
     "description": "Get the current UTC time in RFC 3339 format.",
@@ -10450,14 +10095,17 @@
     }
   },
   {
-    "id": "io.github.drhelius/geargrafx",
-    "displayName": "Geargrafx MCP Server",
-    "description": "MCP server for Geargrafx PC Engine / TurboGrafx-16 emulator",
+    "id": "io.github.drivenrajat/f1",
+    "displayName": "F1 Data Server",
+    "description": "Access Formula 1 race data, telemetry, lap times, standings, and analytics powered by FastF1",
     "iconUrl": null,
-    "version": "1.6.10",
+    "version": "0.1.0",
     "status": "active",
-    "publishedAt": "2025-12-13T21:58:09.910225Z",
-    "repository": null
+    "publishedAt": "2026-01-17T21:05:24.555422Z",
+    "repository": {
+      "url": "https://github.com/drivenrajat/f1",
+      "source": "github"
+    }
   },
   {
     "id": "io.github.dubuqingfeng/gitlab-mcp-server",
@@ -10714,19 +10362,6 @@
     }
   },
   {
-    "id": "io.github.felixgeelhaar/coverctl",
-    "displayName": "io.github.felixgeelhaar/coverctl",
-    "description": "Go code coverage analysis tool with MCP server for AI-powered coverage workflows",
-    "iconUrl": null,
-    "version": "1.12.1",
-    "status": "active",
-    "publishedAt": "2026-01-14T18:52:24.468169Z",
-    "repository": {
-      "url": "https://github.com/felixgeelhaar/coverctl",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.fengcl/mcp-sse-demo-02",
     "displayName": "io.github.fengcl/mcp-sse-demo-02",
     "description": "Spring Boot MCP 服务器（示例占位描述），通过 GHCR 以 OCI 镜像发布至 MCP Registry。",
@@ -10793,19 +10428,6 @@
     }
   },
   {
-    "id": "io.github.flarco/sling-cli",
-    "displayName": "io.github.flarco/sling-cli",
-    "description": "Sling CLI MCP server for data pipeline and replication management",
-    "iconUrl": null,
-    "version": "1.4.24",
-    "status": "active",
-    "publishedAt": "2025-09-28T21:44:03.912575Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.fliptheweb/yazio-mcp",
     "displayName": "io.github.fliptheweb/yazio-mcp",
     "description": "MCP server for accessing Yazio user & nutrition data (unofficial)",
@@ -10836,9 +10458,9 @@
     "displayName": "FlowZap",
     "description": "Generates instant beautiful workflow and sequence diagrams via AI assistants and FlowZap Code.",
     "iconUrl": "https://flowzap.xyz/img/flowzap-logo-favicon.png",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "status": "active",
-    "publishedAt": "2026-01-15T14:12:45.74526Z",
+    "publishedAt": "2026-01-18T03:02:32.5732Z",
     "repository": {
       "url": "https://github.com/flowzap-xyz/flowzap-mcp",
       "source": "github"
@@ -10919,19 +10541,6 @@
     "publishedAt": "2025-12-16T06:18:50.500818Z",
     "repository": {
       "url": "https://github.com/foxitsoftware/foxit-pdf-api-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.francisco-perez-sorrosal/cv",
-    "displayName": "io.github.francisco-perez-sorrosal/cv",
-    "description": "An MCP server that provides access to Francisco Perez-Sorrosal's CV",
-    "iconUrl": null,
-    "version": "0.0.3",
-    "status": "active",
-    "publishedAt": "2025-10-08T19:16:22.808746Z",
-    "repository": {
-      "url": "https://github.com/francisco-perez-sorrosal/cv.git",
       "source": "github"
     }
   },
@@ -11090,19 +10699,6 @@
     }
   },
   {
-    "id": "io.github.glidermcp/glider",
-    "displayName": "io.github.glidermcp/glider",
-    "description": "Roslyn-powered C# code analysis server for LLMs. Supports stdio and HTTP transports.",
-    "iconUrl": null,
-    "version": "3.4.0",
-    "status": "active",
-    "publishedAt": "2026-01-13T22:33:35.127176Z",
-    "repository": {
-      "url": "https://github.com/glidermcp/glidermcp.com",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.goldbergyoni/test-coverage-mcp",
     "displayName": "io.github.goldbergyoni/test-coverage-mcp",
     "description": "Analyze test coverage from LCOV files - makes AI agents coverage-aware without wasting tokens",
@@ -11181,6 +10777,19 @@
     }
   },
   {
+    "id": "io.github.gridinsoft/inspector",
+    "displayName": "io.github.gridinsoft/inspector",
+    "description": "Domain and URL security analysis by GridinSoft. Detect phishing and malware threats.",
+    "iconUrl": null,
+    "version": "1.0.0",
+    "status": "active",
+    "publishedAt": "2026-01-18T06:01:35.862941Z",
+    "repository": {
+      "url": "https://github.com/gridinsoft/mcp-inspector",
+      "source": "github"
+    }
+  },
+  {
     "id": "io.github.growthbook/growthbook-mcp",
     "displayName": "io.github.growthbook/growthbook-mcp",
     "description": "MCP Server for interacting with GrowthBook",
@@ -11190,19 +10799,6 @@
     "publishedAt": "2026-01-14T20:31:20.88727Z",
     "repository": {
       "url": "https://github.com/growthbook/growthbook-mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.grupo-avispa/dsr_mcp_server",
-    "displayName": "io.github.grupo-avispa/dsr_mcp_server",
-    "description": "An MCP server that provides tools for interacting with Deep State Representation (DSR) graphs.",
-    "iconUrl": null,
-    "version": "1.0.1",
-    "status": "active",
-    "publishedAt": "2025-09-17T10:22:23.135623Z",
-    "repository": {
-      "url": "https://github.com/grupo-avispa/dsr_mcp_server",
       "source": "github"
     }
   },
@@ -11334,19 +10930,6 @@
     }
   },
   {
-    "id": "io.github.hjain-perforce/p4mcp-server",
-    "displayName": "io.github.hjain-perforce/p4mcp-server",
-    "description": "Perforce P4 MCP Server is a MCP server that integrates with the Perforce P4 version control system.",
-    "iconUrl": null,
-    "version": "2025.1.2830393",
-    "status": "active",
-    "publishedAt": "2025-12-18T06:58:44.480711Z",
-    "repository": {
-      "url": "https://github.com/perforce/p4mcp-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.hoklims/stacksfinder",
     "displayName": "io.github.hoklims/stacksfinder",
     "description": "Deterministic tech stack recommendations, audits, and project estimates. No hallucinations.",
@@ -11371,16 +10954,6 @@
       "url": "https://github.com/homeassistant-ai/ha-mcp.git",
       "source": "github"
     }
-  },
-  {
-    "id": "io.github.hopx-ai/hopx-mcp",
-    "displayName": "io.github.hopx-ai/hopx-mcp",
-    "description": "Execute code in isolated cloud containers. Supports Python, JavaScript, Bash, and Go.",
-    "iconUrl": null,
-    "version": "0.2.1",
-    "status": "active",
-    "publishedAt": "2025-12-03T19:11:19.714751Z",
-    "repository": null
   },
   {
     "id": "io.github.hostinger/hostinger-api-mcp",
@@ -11837,29 +11410,6 @@
     }
   },
   {
-    "id": "io.github.jcpsimmons/granola-search",
-    "displayName": "io.github.jcpsimmons/granola-search",
-    "description": "Search Granola meeting notes by attendees, dates, content, and workspaces.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-12-16T21:31:06.179615Z",
-    "repository": null
-  },
-  {
-    "id": "io.github.jcucci/dotnet-sherlock-mcp",
-    "displayName": "io.github.jcucci/dotnet-sherlock-mcp",
-    "description": ".NET assembly introspection MCP server with advanced reflection and type analysis capabilities",
-    "iconUrl": null,
-    "version": "2.3.0",
-    "status": "active",
-    "publishedAt": "2025-09-24T21:21:37.075081Z",
-    "repository": {
-      "url": "https://github.com/jcucci/dotnet-sherlock-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.jfrog/jfrog-mcp-server",
     "displayName": "JFrog Remote MCP Server",
     "description": "MCP Server for JFrog, providing tools for development and artifact management.",
@@ -11899,19 +11449,6 @@
     }
   },
   {
-    "id": "io.github.jkakar/cookwith-mcp",
-    "displayName": "io.github.jkakar/cookwith-mcp",
-    "description": "AI-powered recipe generation and transformation tools by Cookwith",
-    "iconUrl": null,
-    "version": "1.0.2",
-    "status": "active",
-    "publishedAt": "2025-09-12T19:27:49.340446Z",
-    "repository": {
-      "url": "https://github.com/blaideinc/cookwith-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.jkakar/recipe-mcp",
     "displayName": "io.github.jkakar/recipe-mcp",
     "description": "Generate and remix recipes using cookwith.co",
@@ -11921,58 +11458,6 @@
     "publishedAt": "2025-09-11T18:33:51.803815Z",
     "repository": {
       "url": "https://github.com/blaideinc/recipe-mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jkawamoto/mcp-bear",
-    "displayName": "io.github.jkawamoto/mcp-bear",
-    "description": "A MCP server for interacting with Bear note-taking software.",
-    "iconUrl": null,
-    "version": "0.5.2",
-    "status": "active",
-    "publishedAt": "2025-11-14T16:28:13.038327Z",
-    "repository": {
-      "url": "https://github.com/jkawamoto/mcp-bear",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jkawamoto/mcp-florence2",
-    "displayName": "io.github.jkawamoto/mcp-florence2",
-    "description": "An MCP server for processing images using Florence-2",
-    "iconUrl": null,
-    "version": "0.3.4",
-    "status": "active",
-    "publishedAt": "2025-10-23T03:06:46.950005Z",
-    "repository": {
-      "url": "https://github.com/jkawamoto/mcp-florence2",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jkawamoto/mcp-memos",
-    "displayName": "io.github.jkawamoto/mcp-memos",
-    "description": "An MCP server for interacting with Memos.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-11-04T16:46:37.385025Z",
-    "repository": {
-      "url": "https://github.com/jkawamoto/mcp-memos",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jkawamoto/mcp-youtube-transcript",
-    "displayName": "io.github.jkawamoto/mcp-youtube-transcript",
-    "description": "An MCP server retrieving transcripts of YouTube videos",
-    "iconUrl": null,
-    "version": "0.5.7",
-    "status": "active",
-    "publishedAt": "2026-01-04T07:41:10.525714Z",
-    "repository": {
-      "url": "https://github.com/jkawamoto/mcp-youtube-transcript",
       "source": "github"
     }
   },
@@ -11990,19 +11475,6 @@
     }
   },
   {
-    "id": "io.github.joelverhagen/Knapcode.SampleMcpServer",
-    "displayName": "io.github.joelverhagen/Knapcode.SampleMcpServer",
-    "description": "A sample MCP server using the MCP C# SDK. Generates random numbers and random weather.",
-    "iconUrl": null,
-    "version": "0.7.0-beta",
-    "status": "active",
-    "publishedAt": "2025-09-12T15:42:35.51239Z",
-    "repository": {
-      "url": "https://github.com/joelverhagen/Knapcode.SampleMcpServer.git",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.jonathanhefner/hello-mcp-registry",
     "displayName": "io.github.jonathanhefner/hello-mcp-registry",
     "description": "A simple MCP server.",
@@ -12012,19 +11484,6 @@
     "publishedAt": "2025-10-21T16:42:43.411081Z",
     "repository": {
       "url": "https://github.com/jonathanhefner/hello-mcp-registry",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jongalloway/dotnet-mcp",
-    "displayName": ".NET MCP Server",
-    "description": "AI assistant access to .NET SDK for projects, packages, building, testing, and development tools.",
-    "iconUrl": null,
-    "version": "1.0.0-rc.1",
-    "status": "active",
-    "publishedAt": "2026-01-14T21:46:00.784385Z",
-    "repository": {
-      "url": "https://github.com/jongalloway/dotnet-mcp",
       "source": "github"
     }
   },
@@ -12064,19 +11523,6 @@
     "publishedAt": "2025-12-24T01:34:01.839642Z",
     "repository": {
       "url": "https://github.com/joshua-auchincloss/factsets",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.jshph/enzyme",
-    "displayName": "Enzyme",
-    "description": "Semantic search and AI context for your Obsidian vault. Surface patterns with catalysts.",
-    "iconUrl": null,
-    "version": "0.22.7",
-    "status": "active",
-    "publishedAt": "2026-01-15T07:41:27.66984Z",
-    "repository": {
-      "url": "https://github.com/jshph/enzyme-public",
       "source": "github"
     }
   },
@@ -12124,9 +11570,9 @@
     "displayName": "io.github.jztan/redmine-mcp-server",
     "description": "Production-ready MCP server for Redmine with security, pagination, and enterprise features",
     "iconUrl": null,
-    "version": "0.9.1",
+    "version": "0.10.0",
     "status": "active",
-    "publishedAt": "2026-01-04T11:37:30.859622Z",
+    "publishedAt": "2026-01-18T08:13:34.54596Z",
     "repository": {
       "url": "https://github.com/jztan/redmine-mcp-server",
       "source": "github"
@@ -12339,19 +11785,6 @@
     }
   },
   {
-    "id": "io.github.kiransth77/aionmcp",
-    "displayName": "AionMCP",
-    "description": "Dynamic API tool generator for OpenAPI, GraphQL, and AsyncAPI specifications",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-11-27T12:01:18.604584Z",
-    "repository": {
-      "url": "https://github.com/kiransth77/aionmcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.kirbah/mcp-youtube",
     "displayName": "YouTube Data",
     "description": "YouTube MCP server for token-optimized, structured data using the YouTube Data API v3.",
@@ -12495,6 +11928,19 @@
     }
   },
   {
+    "id": "io.github.labarilem/brainfaq-mcp",
+    "displayName": "io.github.labarilem/brainfaq-mcp",
+    "description": "MCP server for the BrainFuck programming language",
+    "iconUrl": null,
+    "version": "1.0.0",
+    "status": "active",
+    "publishedAt": "2026-01-17T21:52:36.198212Z",
+    "repository": {
+      "url": "https://github.com/labarilem/brainfaq-mcp",
+      "source": "github"
+    }
+  },
+  {
     "id": "io.github.lapfelix/xcodemcp",
     "displayName": "io.github.lapfelix/xcodemcp",
     "description": "Control Xcode directly via JXA for build, test, debug operations with XCLogParser integration",
@@ -12596,19 +12042,6 @@
     }
   },
   {
-    "id": "io.github.linggen/linggen",
-    "displayName": "Linggen - Local RAG",
-    "description": "Local, privacy-focused RAG service for code search via MCP. https://linggen.dev",
-    "iconUrl": null,
-    "version": "0.1.2",
-    "status": "active",
-    "publishedAt": "2025-12-03T16:03:42.851235Z",
-    "repository": {
-      "url": "https://github.com/linggen/linggen-releases",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.linxule/lotus-wisdom",
     "displayName": "Lotus Wisdom",
     "description": "An MCP server for problem-solving using the Lotus Sutra's wisdom framework.",
@@ -12693,19 +12126,6 @@
     "publishedAt": "2025-12-17T05:04:11.081794Z",
     "repository": {
       "url": "https://github.com/lxchst/weather-server-python",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.macuse-app/macuse",
-    "displayName": "io.github.macuse-app/macuse",
-    "description": "Bridges AI assistants with native macOS functionality through the Model Context Protocol (MCP).",
-    "iconUrl": null,
-    "version": "1.1.1",
-    "status": "active",
-    "publishedAt": "2026-01-03T04:57:01.19301Z",
-    "repository": {
-      "url": "https://github.com/macuse-app/macuse",
       "source": "github"
     }
   },
@@ -13061,9 +12481,9 @@
     "displayName": "io.github.mholzen/workflowy",
     "description": "Create, update, complete nodes, search & replace with regex and dry run, usage reports, transforms",
     "iconUrl": null,
-    "version": "0.7.0",
+    "version": "0.7.1",
     "status": "active",
-    "publishedAt": "2026-01-16T18:39:21.756234Z",
+    "publishedAt": "2026-01-18T06:34:33.440244Z",
     "repository": {
       "url": "https://github.com/mholzen/workflowy",
       "source": "github"
@@ -13183,19 +12603,6 @@
     "publishedAt": "2026-01-15T13:13:17.601132Z",
     "repository": {
       "url": "https://github.com/mongodb-js/mongodb-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.moonolgerd/game-mcp",
-    "displayName": "io.github.moonolgerd/game-mcp",
-    "description": "Discovers and manages installed games on Windows from Steam, Epic, GOG, Xbox, and other platforms.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-09-26T02:51:31.883954Z",
-    "repository": {
-      "url": "https://github.com/moonolgerd/game-mcp",
       "source": "github"
     }
   },
@@ -13422,20 +12829,6 @@
     }
   },
   {
-    "id": "io.github.netdata/mcp-server",
-    "displayName": "io.github.netdata/mcp-server",
-    "description": "AI-powered infrastructure monitoring with real-time metrics, logs, alerts, and ML anomaly detection.",
-    "iconUrl": null,
-    "version": "2.7.1-1",
-    "status": "active",
-    "publishedAt": "2025-10-02T15:17:51.78818Z",
-    "repository": {
-      "url": "https://github.com/netdata/netdata",
-      "source": "github",
-      "subfolder": "docs/netdata-ai/mcp"
-    }
-  },
-  {
     "id": "io.github.neverinfamous/memory-journal-mcp",
     "displayName": "io.github.neverinfamous/memory-journal-mcp",
     "description": "Developer journal with knowledge graphs, relationships, Git context, and semantic search",
@@ -13553,19 +12946,6 @@
     }
   },
   {
-    "id": "io.github.nirholas/sperax-crypto-mcp",
-    "displayName": "SperaxOS",
-    "description": "Sperax Protocol MCP – USDs stablecoin, SPA, veSPA governance & Demeter DeFi on Arbitrum",
-    "iconUrl": null,
-    "version": "0.0.1",
-    "status": "active",
-    "publishedAt": "2026-01-07T06:02:05.573346Z",
-    "repository": {
-      "url": "https://github.com/nirholas/sperax-crypto-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.njlnaet/coderswap-mcp-server",
     "displayName": "CoderSwap MCP Server",
     "description": "Build searchable AI research knowledge bases with hybrid vector search directly in Claude Desktop.",
@@ -13575,45 +12955,6 @@
     "publishedAt": "2025-10-27T02:31:39.41927Z",
     "repository": {
       "url": "https://github.com/njlnaet/mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.noahgift/depyler-mcp",
-    "displayName": "io.github.noahgift/depyler-mcp",
-    "description": "MCP server for Depyler: Python-to-Rust transpiler with analysis and verification tools",
-    "iconUrl": null,
-    "version": "3.4.0",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:37:28.206036Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.noahgift/pmcp",
-    "displayName": "io.github.noahgift/pmcp",
-    "description": "High-quality Rust SDK for Model Context Protocol (MCP) with full TypeScript SDK compatibility",
-    "iconUrl": null,
-    "version": "1.6.1",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:39:36.996079Z",
-    "repository": {
-      "url": "https://github.com/noahgift/rust-mcp-sdk",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.noahgift/ruchy-mcp",
-    "displayName": "io.github.noahgift/ruchy-mcp",
-    "description": "MCP server for Ruchy: code analysis, scoring, linting, formatting, and transpilation tools",
-    "iconUrl": null,
-    "version": "3.67.0",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:32:03.692194Z",
-    "repository": {
-      "url": "",
       "source": "github"
     }
   },
@@ -13683,19 +13024,6 @@
     }
   },
   {
-    "id": "io.github.olgasafonova/gleif-mcp-server",
-    "displayName": "GLEIF MCP Server",
-    "description": "Access the GLEIF LEI database for company verification, KYC, and ownership research.",
-    "iconUrl": null,
-    "version": "0.5.1",
-    "status": "active",
-    "publishedAt": "2026-01-05T20:17:38.017167Z",
-    "repository": {
-      "url": "https://github.com/olgasafonova/gleif-mcp-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.olgasafonova/mediawiki-mcp-server",
     "displayName": "MediaWiki",
     "description": "Search, read, and edit any MediaWiki wiki. Works with Wikipedia, Fandom, and more.",
@@ -13718,19 +13046,6 @@
     "publishedAt": "2026-01-05T21:23:25.759607Z",
     "repository": {
       "url": "https://github.com/olgasafonova/miro-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.olgasafonova/productplan-mcp-server",
-    "displayName": "ProductPlan MCP Server",
-    "description": "Talk to roadmaps with AI. Query and manage bars, OKRs, ideas, and launches.",
-    "iconUrl": null,
-    "version": "4.8.2",
-    "status": "active",
-    "publishedAt": "2026-01-05T20:27:32.643575Z",
-    "repository": {
-      "url": "https://github.com/olgasafonova/productplan-mcp-server",
       "source": "github"
     }
   },
@@ -13861,58 +13176,6 @@
     "publishedAt": "2025-12-17T14:49:47.625508Z",
     "repository": {
       "url": "https://github.com/pab1it0/prometheus-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.paiml/pforge",
-    "displayName": "io.github.paiml/pforge",
-    "description": "Zero-boilerplate MCP server framework with declarative YAML configuration",
-    "iconUrl": null,
-    "version": "0.1.2",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:21:46.420973Z",
-    "repository": {
-      "url": "https://github.com/paiml/pforge",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.paiml/pmat-agent",
-    "displayName": "io.github.paiml/pmat-agent",
-    "description": "Zero-config AI context generation and code quality toolkit with Claude Code Agent Mode support",
-    "iconUrl": null,
-    "version": "2.121.0",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:20:12.497388Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.paiml/pmcp",
-    "displayName": "io.github.paiml/pmcp",
-    "description": "High-quality Rust SDK for Model Context Protocol (MCP) with full TypeScript SDK compatibility",
-    "iconUrl": null,
-    "version": "1.6.1",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:59:47.429719Z",
-    "repository": {
-      "url": "https://github.com/paiml/rust-mcp-sdk",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.paiml/rash",
-    "displayName": "io.github.paiml/rash",
-    "description": "Transpile Rust code to POSIX-compliant shell scripts with formal correctness guarantees",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-10-04T14:02:41.535548Z",
-    "repository": {
-      "url": "",
       "source": "github"
     }
   },
@@ -14194,19 +13457,6 @@
     }
   },
   {
-    "id": "io.github.ptyagiegnyte/egnyte-mcp-server",
-    "displayName": "io.github.ptyagiegnyte/egnyte-mcp-server",
-    "description": "Official Egnyte MCP Server for AI integration with document search, analysis, and collaboration.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-09-23T14:34:56.265623Z",
-    "repository": {
-      "url": "https://github.com/egnyte/mcp-server",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.ptyagiegnyte/egnyte-remote",
     "displayName": "io.github.ptyagiegnyte/egnyte-remote",
     "description": "Secure integration between AI tools and Egnyte content with search, analysis, and workflow tools.",
@@ -14380,19 +13630,6 @@
     "repository": null
   },
   {
-    "id": "io.github.retailbox-automation/clickup-mcp",
-    "displayName": "ClickUp MCP Server",
-    "description": "Audit ClickUp workspaces: spaces, folders, lists, custom fields, tasks, and views.",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-11-04T23:06:20.120235Z",
-    "repository": {
-      "url": "https://github.com/retailbox-automation/clickup-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.rfdez/pvpc-mcp-server",
     "displayName": "io.github.rfdez/pvpc-mcp-server",
     "description": "Retrieve daily PVPC electricity tariffs for 2.0 TD consumers, published by Red Eléctrica.",
@@ -14406,13 +13643,13 @@
     }
   },
   {
-    "id": "io.github.rghsoftware/linux-filesystem",
-    "displayName": "Linux Filesystem",
-    "description": "Enhanced Linux filesystem access with symlinks, permissions, and chmod support",
+    "id": "io.github.richardtkemp/theothers",
+    "displayName": "io.github.richardtkemp/theothers",
+    "description": "Marketplace for AI assistants to find collaborators and build peer-to-peer relationships",
     "iconUrl": null,
-    "version": "1.2.1",
+    "version": "0.1.0",
     "status": "active",
-    "publishedAt": "2025-10-26T04:07:30.533036Z",
+    "publishedAt": "2026-01-18T10:27:14.033753Z",
     "repository": {
       "url": "",
       "source": "github"
@@ -14446,9 +13683,9 @@
     "displayName": "F5 Distributed Cloud Terraform Provider",
     "description": "F5 Distributed Cloud Terraform provider docs, 270+ OpenAPI specs, and subscription info for AI.",
     "iconUrl": null,
-    "version": "3.19.0",
+    "version": "3.20.0",
     "status": "active",
-    "publishedAt": "2026-01-17T10:22:25.68034Z",
+    "publishedAt": "2026-01-18T07:44:01.942487Z",
     "repository": {
       "url": "https://github.com/robinmordasiewicz/terraform-provider-f5xc",
       "source": "github",
@@ -14530,19 +13767,6 @@
     "publishedAt": "2025-11-18T07:18:50.55139Z",
     "repository": {
       "url": "https://github.com/rosch100/mcp-sqlite",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.rsys-vtiwari/weather-mcp",
-    "displayName": "Weather Alerts & Forecast",
-    "description": "US NWS alerts by state and short-term (next 5 periods) point forecasts.",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-11-13T08:42:57.231268Z",
-    "repository": {
-      "url": "https://github.com/rsys-vtiwari/weather-mcp",
       "source": "github"
     }
   },
@@ -14639,19 +13863,6 @@
     }
   },
   {
-    "id": "io.github.sachin-shetty/egnyte-ai-samples",
-    "displayName": "io.github.sachin-shetty/egnyte-ai-samples",
-    "description": "Secure integration between AI tools and Egnyte content with search, analysis, and workflow tools.",
-    "iconUrl": null,
-    "version": "1.0.2",
-    "status": "active",
-    "publishedAt": "2025-10-13T10:16:46.546315Z",
-    "repository": {
-      "url": "",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.safedep/vet-mcp",
     "displayName": "SafeDep Vet MCP",
     "description": "Protect your AI agents and IDEs from malicious open-source packages.",
@@ -14700,19 +13911,6 @@
     "publishedAt": "2025-09-09T04:14:51.983728Z",
     "repository": {
       "url": "https://github.com/savhascelik/meta-api-mcp-server",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.sbroenne/mcp-server-excel",
-    "displayName": "MCP Server for Excel",
-    "description": "Excel automation for AI - Sheets, Power Query, DAX, VBA, Tables, Ranges and more. Windows only.",
-    "iconUrl": null,
-    "version": "1.5.2",
-    "status": "active",
-    "publishedAt": "2026-01-12T07:21:29.183464Z",
-    "repository": {
-      "url": "https://github.com/sbroenne/mcp-server-excel",
       "source": "github"
     }
   },
@@ -15657,19 +14855,6 @@
     }
   },
   {
-    "id": "io.github.timheuer/sampledotnetmcpserver",
-    "displayName": "io.github.timheuer/sampledotnetmcpserver",
-    "description": "Sample .NET MCP Server",
-    "iconUrl": null,
-    "version": "0.1.57-beta",
-    "status": "active",
-    "publishedAt": "2025-09-22T17:04:35.115505Z",
-    "repository": {
-      "url": "https://github.com/timheuer/sampledotnetmcpserver",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.tjhop/prometheus-mcp-server",
     "displayName": "Prometheus MCP Server",
     "description": "An API-complete MCP server to manage Prometheus-compatible backends.",
@@ -15732,19 +14917,6 @@
     }
   },
   {
-    "id": "io.github.tomohiro-owada/devrag",
-    "displayName": "io.github.tomohiro-owada/devrag",
-    "description": "Lightweight local RAG MCP server. 40x token reduction.",
-    "iconUrl": null,
-    "version": "1.2.0",
-    "status": "active",
-    "publishedAt": "2025-12-15T12:06:31.58143Z",
-    "repository": {
-      "url": "https://github.com/tomohiro-owada/devrag",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.tonymaynard97/blockscholes-mcp-server",
     "displayName": "NaN",
     "description": "NaN - DO not use, test.",
@@ -15794,19 +14966,6 @@
     }
   },
   {
-    "id": "io.github.trondhindenes/code-index-mcp",
-    "displayName": "Code Index",
-    "description": "Fast local source code searching using Zoekt trigram-based indexing",
-    "iconUrl": null,
-    "version": "1.0.16",
-    "status": "active",
-    "publishedAt": "2025-11-30T18:33:39.778751Z",
-    "repository": {
-      "url": "https://github.com/trondhindenes/code-index-mcp",
-      "source": "github"
-    }
-  },
-  {
     "id": "io.github.tschoonj/repology-mcp-server",
     "displayName": "io.github.tschoonj/repology-mcp-server",
     "description": "MCP server that provides access to Repology package repository data",
@@ -15829,45 +14988,6 @@
     "publishedAt": "2025-09-18T04:56:15.144633Z",
     "repository": {
       "url": "https://github.com/tuananh/hyper-mcp",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.tuannvm/mcp-trino",
-    "displayName": "io.github.tuannvm/mcp-trino",
-    "description": "MCP server for Trino distributed SQL query engine access",
-    "iconUrl": null,
-    "version": "2.2.1",
-    "status": "active",
-    "publishedAt": "2025-09-09T05:26:17.749412Z",
-    "repository": {
-      "url": "https://github.com/tuannvm/mcp-trino",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.txn2/mcp-datahub",
-    "displayName": "io.github.txn2/mcp-datahub",
-    "description": "MCP server for DataHub data catalogs. Discover datasets, explore lineage, and access metadata.",
-    "iconUrl": null,
-    "version": "0.2.2",
-    "status": "active",
-    "publishedAt": "2026-01-16T18:40:04.165402Z",
-    "repository": {
-      "url": "https://github.com/txn2/mcp-datahub",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.txn2/mcp-trino",
-    "displayName": "io.github.txn2/mcp-trino",
-    "description": "MCP server for Trino data warehouses. Query, analyze plans, and explore schemas.",
-    "iconUrl": null,
-    "version": "0.2.1",
-    "status": "active",
-    "publishedAt": "2026-01-16T17:21:11.317162Z",
-    "repository": {
-      "url": "https://github.com/txn2/mcp-trino",
       "source": "github"
     }
   },
@@ -15933,19 +15053,6 @@
     "publishedAt": "2025-12-10T02:38:27.00477Z",
     "repository": {
       "url": "https://github.com/vandewilly/mcp-dice-roller",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.vardior9/apiiro",
-    "displayName": "io.github.vardior9/apiiro",
-    "description": "Ship software securely with an AI AppSec Agent",
-    "iconUrl": null,
-    "version": "0.1.0",
-    "status": "active",
-    "publishedAt": "2025-10-16T08:50:47.461916Z",
-    "repository": {
-      "url": "",
       "source": "github"
     }
   },
@@ -16120,29 +15227,17 @@
     }
   },
   {
-    "id": "io.github.vinhphatfsg/transform-rules-mcp",
-    "displayName": "Transform Rules MCP Server",
-    "description": "MCP server for CSV/JSON data transformation using YAML rules",
+    "id": "io.github.viktorlarsson/openfigi",
+    "displayName": "io.github.viktorlarsson/openfigi",
+    "description": "Map financial identifiers (ISIN, CUSIP, SEDOL, Ticker) to FIGIs via OpenFIGI API",
     "iconUrl": null,
-    "version": "0.1.4",
+    "version": "0.2.4",
     "status": "active",
-    "publishedAt": "2026-01-17T12:14:00.944767Z",
+    "publishedAt": "2026-01-17T15:45:22.168861Z",
     "repository": {
-      "url": "https://github.com/vinhphatfsg/transform-rules-rs",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.vinur1992/testing_repo",
-    "displayName": "io.github.vinur1992/testing_repo",
-    "description": "An MCP server that created for demo",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-10-22T09:27:46.000897Z",
-    "repository": {
-      "url": "https://github.com/vinur1992/testing_repo",
-      "source": "github"
+      "url": "https://github.com/viktorlarsson/openfigi",
+      "source": "github",
+      "subfolder": "packages/mcp"
     }
   },
   {
@@ -16303,9 +15398,9 @@
     "displayName": "The Blue Alliance",
     "description": "The Blue Alliance MCP Server",
     "iconUrl": null,
-    "version": "1.0.3",
+    "version": "1.1.0",
     "status": "active",
-    "publishedAt": "2025-12-27T01:17:12.008731Z",
+    "publishedAt": "2026-01-17T16:11:09.17281Z",
     "repository": {
       "url": "https://github.com/withinfocus/tba-mcp-server",
       "source": "github"
@@ -16641,19 +15736,6 @@
     "publishedAt": "2025-10-11T23:19:09.623208Z",
     "repository": {
       "url": "",
-      "source": "github"
-    }
-  },
-  {
-    "id": "io.github.zyntx-lab/periphery-mcp-server",
-    "displayName": "Periphery Code Audit",
-    "description": "Swift code analysis with Periphery - detect unused code and improve code quality",
-    "iconUrl": null,
-    "version": "1.0.0",
-    "status": "active",
-    "publishedAt": "2025-11-17T18:00:01.391035Z",
-    "repository": {
-      "url": "https://github.com/zyntx-lab/periphery-mcp-server",
       "source": "github"
     }
   },

@@ -22,7 +22,20 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kolada-mcp-pafn.onrender.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://kolada-mcp-pafn.onrender.com/sse",
+      "headers": []
     }
   ]
 }

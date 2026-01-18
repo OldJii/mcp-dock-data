@@ -2,10 +2,10 @@
   "id": "io.github.withinfocus/tba",
   "displayName": "The Blue Alliance",
   "description": "The Blue Alliance MCP Server",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "status": "active",
-  "publishedAt": "2025-12-27T01:17:12.008731Z",
-  "updatedAt": "2025-12-27T01:17:12.008731Z",
+  "publishedAt": "2026-01-17T16:11:09.17281Z",
+  "updatedAt": "2026-01-17T16:11:09.17281Z",
   "iconUrl": null,
   "websiteUrl": "https://www.thebluealliance.com",
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "npm",
       "identifier": "@withinfocus/tba-mcp-server",
-      "version": "1.0.3",
+      "version": "1.1.0",
       "transport": {
         "type": "stdio"
       },
@@ -28,7 +28,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

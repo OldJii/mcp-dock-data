@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.forex-gpt.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from forex-gpt.ai",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

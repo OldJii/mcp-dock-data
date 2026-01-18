@@ -12,5 +12,19 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.testiny.io/api/v1/mcp-server",
+      "headers": [
+        {
+          "name": "X-Token",
+          "description": "An optional API key, otherwise OAuth2 can be used",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

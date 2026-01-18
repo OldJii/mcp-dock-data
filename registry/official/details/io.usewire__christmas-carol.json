@@ -9,5 +9,12 @@
   "iconUrl": "https://usewire.io/favicon-512x512.png",
   "websiteUrl": "https://usewire.io/explore/christmas-carol",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wire-public.mcp.usewire.io/container/gUeioF26GkeQPHxj/mcp",
+      "headers": []
+    }
+  ]
 }

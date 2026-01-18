@@ -12,5 +12,17 @@
     "url": "https://github.com/qualityclouds/qualityclouds",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.qualityclouds.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.qualityclouds.com/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -12,5 +12,12 @@
     "url": "https://github.com/humanjesse/textarttools-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.textarttools.com/",
+      "headers": []
+    }
+  ]
 }

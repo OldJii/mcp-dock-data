@@ -12,5 +12,12 @@
     "url": "https://github.com/microsoft/sentinel-data-exploration-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sentinel.microsoft.com/mcp/data-exploration",
+      "headers": []
+    }
+  ]
 }

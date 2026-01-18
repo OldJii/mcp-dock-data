@@ -12,5 +12,12 @@
     "url": "https://github.com/609NFT/solana-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.neglect.trade/mcp",
+      "headers": []
+    }
+  ]
 }

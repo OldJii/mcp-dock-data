@@ -12,5 +12,19 @@
     "url": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@MisterSandFR/supabase-mcp-selfhosted/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

@@ -12,5 +12,12 @@
     "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://documentation-mcp.vonage.dev/mcp",
+      "headers": []
+    }
+  ]
 }

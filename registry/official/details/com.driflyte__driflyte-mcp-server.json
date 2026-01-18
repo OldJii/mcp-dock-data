@@ -22,7 +22,20 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.driflyte.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.driflyte.com/openai",
+      "headers": []
     }
   ]
 }

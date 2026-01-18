@@ -20,7 +20,38 @@
         "type": "streamable-http"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--tools-file",
+          "description": "File path specifying the tool configuration.",
+          "type": "named",
+          "isRequired": false,
+          "default": "tools.yaml"
+        },
+        {
+          "name": "--address",
+          "description": "Address of the interface the server will listen on.",
+          "type": "named",
+          "isRequired": false,
+          "valueHint": "host"
+        },
+        {
+          "name": "--port",
+          "description": "Port the server will listen on.",
+          "type": "named",
+          "isRequired": false,
+          "valueHint": "port"
+        },
+        {
+          "name": "--log-level",
+          "description": "Specify the minimum level logged.",
+          "type": "named",
+          "isRequired": false,
+          "default": "info"
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

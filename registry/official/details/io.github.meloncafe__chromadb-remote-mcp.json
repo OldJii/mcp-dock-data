@@ -34,7 +34,26 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-p",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://meloncafe.github.io/chromadb-remote-mcp/mcp",
+      "headers": []
     }
   ]
 }

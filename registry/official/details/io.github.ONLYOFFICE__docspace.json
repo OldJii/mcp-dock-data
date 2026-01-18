@@ -14,29 +14,6 @@
   },
   "packages": [
     {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/ONLYOFFICE/docspace-mcp/releases/download/v3.1.0/onlyoffice-docspace-mcp-3.1.0.mcpb",
-      "version": "3.1.0",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "DOCSPACE_BASE_URL",
-          "description": "The base URL of the DocSpace instance for API requests.",
-          "isRequired": false,
-          "isSecret": false
-        },
-        {
-          "name": "DOCSPACE_API_KEY",
-          "description": "The API key for accessing the API.",
-          "isRequired": false,
-          "isSecret": true
-        }
-      ],
-      "packageArguments": []
-    },
-    {
       "registryType": "npm",
       "identifier": "@onlyoffice/docspace-mcp",
       "version": "3.1.0",
@@ -184,7 +161,8 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -618,7 +596,8 @@
           "default": "x-mcp-"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -1052,7 +1031,8 @@
           "default": "x-mcp-"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -1201,7 +1181,8 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -1634,7 +1615,8 @@
           "default": "x-mcp-"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -2067,7 +2049,134 @@
           "default": "x-mcp-"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.onlyoffice.com/sse",
+      "headers": [
+        {
+          "name": "X-Mcp-Dynamic",
+          "description": "The flag that indicates whether the MCP server should use meta tools.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "X-Mcp-Toolsets",
+          "description": "The list of toolsets to enable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "all"
+        },
+        {
+          "name": "X-Mcp-Enabled-Tools",
+          "description": "The list of tools to enable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Disabled-Tools",
+          "description": "The list of tools to disable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Base-Url",
+          "description": "The base URL of the DocSpace instance for API requests.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Api-Key",
+          "description": "The API key for accessing the API.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X-Mcp-Auth-Token",
+          "description": "The Personal Access Token (PAT) for accessing the API.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X-Mcp-Username",
+          "description": "The username for accessing the API using basic authentication.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Password",
+          "description": "The password for accessing the API using basic authentication.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.onlyoffice.com/mcp",
+      "headers": [
+        {
+          "name": "X-Mcp-Dynamic",
+          "description": "The flag that indicates whether the MCP server should use meta tools.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "false"
+        },
+        {
+          "name": "X-Mcp-Toolsets",
+          "description": "The list of toolsets to enable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "all"
+        },
+        {
+          "name": "X-Mcp-Enabled-Tools",
+          "description": "The list of tools to enable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Disabled-Tools",
+          "description": "The list of tools to disable for the MCP server.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Base-Url",
+          "description": "The base URL of the DocSpace instance for API requests.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Api-Key",
+          "description": "The API key for accessing the API.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X-Mcp-Auth-Token",
+          "description": "The Personal Access Token (PAT) for accessing the API.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X-Mcp-Username",
+          "description": "The username for accessing the API using basic authentication.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "X-Mcp-Password",
+          "description": "The password for accessing the API using basic authentication.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

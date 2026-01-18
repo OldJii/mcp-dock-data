@@ -12,5 +12,19 @@
     "url": "https://github.com/BingoWon/apple-rag-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apple-rag.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "MCP Token for authentication (optional - free tier available without token)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

@@ -33,7 +33,22 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--mount",
+          "description": "Mount the config directory into the volume",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--mount",
+          "description": "Mount the .pgpass file into the volume",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

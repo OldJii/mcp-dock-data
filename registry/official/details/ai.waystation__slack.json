@@ -12,5 +12,17 @@
     "url": "https://github.com/waystation-ai/mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://waystation.ai/slack/mcp",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://waystation.ai/slack/mcp/sse",
+      "headers": []
+    }
+  ]
 }

@@ -184,7 +184,15 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{your_mcp_server_host}/mcp",
+      "headers": []
     }
   ]
 }

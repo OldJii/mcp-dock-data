@@ -12,5 +12,12 @@
     "url": "https://github.com/koreal6803/finlab-ai",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://finlab-ai.koreal6803.workers.dev/mcp",
+      "headers": []
+    }
+  ]
 }

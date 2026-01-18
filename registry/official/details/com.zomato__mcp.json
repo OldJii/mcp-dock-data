@@ -12,5 +12,12 @@
     "url": "https://github.com/Zomato/mcp-server-manifest",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server.zomato.com/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -12,5 +12,12 @@
     "url": "https://gitlab.com/gitlab-org/gitlab",
     "source": "gitlab"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gitlab.com/api/v4/mcp",
+      "headers": []
+    }
+  ]
 }

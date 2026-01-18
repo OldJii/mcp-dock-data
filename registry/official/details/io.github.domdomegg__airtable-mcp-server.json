@@ -29,7 +29,8 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -45,17 +46,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/domdomegg/airtable-mcp-server/releases/download/v1.9.6/airtable-mcp-server.mcpb",
-      "version": "1.9.6",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

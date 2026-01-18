@@ -12,5 +12,12 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getunblocked.com/api/mcpsse",
+      "headers": []
+    }
+  ]
 }

@@ -46,7 +46,16 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-v",
+          "description": "Mount custom messages directory",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

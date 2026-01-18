@@ -12,5 +12,31 @@
     "url": "https://github.com/lvpiggyqq/xcatcher-mcp-manifest",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://xcatcher.top/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer xc_live_... API key (required).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "Accept",
+          "description": "application/json (required).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "Content-Type",
+          "description": "application/json (required for JSON-RPC POST).",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

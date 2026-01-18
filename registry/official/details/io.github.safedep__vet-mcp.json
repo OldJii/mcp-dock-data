@@ -27,7 +27,20 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "--rm",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-i",
+          "type": "named",
+          "isRequired": false
+        }
       ]
     }
-  ]
+  ],
+  "remotes": []
 }

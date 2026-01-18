@@ -12,5 +12,12 @@
     "url": "https://github.com/tigrisdata/mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.storage.dev/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -9,5 +9,31 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gossiper.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "API key for authentication, alternative to OAuth",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.gossiper.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "API key for authentication, alternative to OAuth",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

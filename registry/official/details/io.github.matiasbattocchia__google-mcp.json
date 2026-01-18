@@ -12,5 +12,19 @@
     "url": "https://github.com/matiasbattocchia/google-mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://google-mcp.openbsp.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token with your API key from https://google-mcp.openbsp.dev",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

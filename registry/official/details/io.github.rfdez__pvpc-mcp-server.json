@@ -35,7 +35,8 @@
           "type": "named",
           "isRequired": true
         }
-      ]
+      ],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -60,7 +61,9 @@
           "isRequired": false,
           "default": "8080"
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

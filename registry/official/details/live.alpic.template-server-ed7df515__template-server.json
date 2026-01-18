@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://template-server-ed7df515.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://template-server-ed7df515.alpic.live",
+      "headers": []
+    }
+  ]
 }

@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.flyweel.co/functions/v1/mcp-server/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "API token from Flyweel. Sign up at https://signup.flyweel.co/mcp to get one",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

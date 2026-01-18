@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://semilattice.ai",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.semilattice.ai",
+      "headers": []
+    }
+  ]
 }

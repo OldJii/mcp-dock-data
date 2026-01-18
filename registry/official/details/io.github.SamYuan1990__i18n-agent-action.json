@@ -21,7 +21,46 @@
         "type": "sse"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-p",
+          "description": "Port mapping from host to container",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "API key for the i18n service",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-v",
+          "description": "Volume mount for model files",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Encoder model file path",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Decoder model file path",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Tokens model file path",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -2,10 +2,10 @@
   "id": "io.github.mholzen/workflowy",
   "displayName": "io.github.mholzen/workflowy",
   "description": "Create, update, complete nodes, search & replace with regex and dry run, usage reports, transforms",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "status": "active",
-  "publishedAt": "2026-01-16T18:39:21.756234Z",
-  "updatedAt": "2026-01-16T18:39:21.756234Z",
+  "publishedAt": "2026-01-18T06:34:33.440244Z",
+  "updatedAt": "2026-01-18T06:34:33.440244Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -15,7 +15,7 @@
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/mholzen/workflowy:0.7.0",
+      "identifier": "ghcr.io/mholzen/workflowy:0.7.1",
       "transport": {
         "type": "stdio"
       },
@@ -27,7 +27,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

@@ -22,17 +22,9 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/8beeeaaat/touchdesigner-mcp/releases/download/v1.2.0/touchdesigner-mcp.mcpb",
-      "version": "1.2.0",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

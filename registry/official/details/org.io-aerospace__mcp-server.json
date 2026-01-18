@@ -12,5 +12,12 @@
     "url": "https://github.com/IO-Aerospace-software-engineering/mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.io-aerospace.org",
+      "headers": []
+    }
+  ]
 }

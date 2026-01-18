@@ -12,5 +12,12 @@
     "url": "https://github.com/la-rebelion/hapimcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lenny-rachitsky.run.mcp.com.ai/mcp",
+      "headers": []
+    }
+  ]
 }

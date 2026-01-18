@@ -13,5 +13,19 @@
     "source": "github",
     "subfolder": "servers/typescript/migrate_stdio_to_http/server_with_smithery_cli"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@smithery-ai/cookbook-ts-smithery-cli/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

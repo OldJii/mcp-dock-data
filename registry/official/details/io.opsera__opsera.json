@@ -13,5 +13,19 @@
     "source": "github",
     "subfolder": "agent-authentication-gateway"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://agent.opsera.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for authenticated access",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

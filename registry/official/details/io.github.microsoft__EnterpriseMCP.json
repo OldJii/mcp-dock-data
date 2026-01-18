@@ -12,5 +12,12 @@
     "url": "https://github.com/microsoft/EnterpriseMCP",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.svc.cloud.microsoft/enterprise",
+      "headers": []
+    }
+  ]
 }

@@ -12,5 +12,19 @@
     "url": "https://github.com/jenniferjiang0511/MIT-AI-studio-HW3",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jenniferjiang0511/mit-ai-studio-hw3/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Smithery authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

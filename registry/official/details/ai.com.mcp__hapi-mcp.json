@@ -177,7 +177,32 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "-p",
+          "description": "Port mapping for the host to container (e.g., '3030:3030'). Adjust second port if changing internal container port (HAPI_PORT)",
+          "type": "named",
+          "isRequired": true,
+          "default": "3030:3030",
+          "valueHint": "port"
+        },
+        {
+          "name": "-v",
+          "description": "Volume mapping for HAPI configuration directory",
+          "type": "named",
+          "isRequired": false,
+          "default": "~/.hapi:/app/.hapi",
+          "valueHint": "volume"
+        }
       ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{HAPI_FQDN}:{HAPI_PORT}/mcp",
+      "headers": []
     }
   ]
 }

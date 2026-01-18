@@ -9,5 +9,12 @@
   "iconUrl": "https://earningsfeed.com/icon-48.png",
   "websiteUrl": "https://earningsfeed.com/mcp",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://earningsfeed.com/api/mcp",
+      "headers": []
+    }
+  ]
 }

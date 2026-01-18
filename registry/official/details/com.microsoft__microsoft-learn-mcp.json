@@ -12,5 +12,12 @@
     "url": "https://github.com/MicrosoftDocs/mcp",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "headers": []
+    }
+  ]
 }

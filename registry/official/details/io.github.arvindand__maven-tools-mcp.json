@@ -20,7 +20,22 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--rm",
+          "description": "Remove container after exit",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-i",
+          "description": "Keep STDIN open for MCP stdio transport",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

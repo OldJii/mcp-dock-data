@@ -12,5 +12,12 @@
     "url": "https://github.com/ComposioHQ/Rube",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rube.composio.dev/mcp",
+      "headers": []
+    }
+  ]
 }

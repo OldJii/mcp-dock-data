@@ -12,5 +12,12 @@
     "url": "https://github.com/promplate/hmr",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pyth-on-line.promplate.dev/hmr/mcp",
+      "headers": []
+    }
+  ]
 }

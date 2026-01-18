@@ -39,7 +39,34 @@
           "isSecret": false
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.ai.teamwork.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key generated from the Teamwork.com OAuth2 process: https://apidocs.teamwork.com/guides/teamwork/app-login-flow",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ai.teamwork.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key generated from the Teamwork.com OAuth2 process: https://apidocs.teamwork.com/guides/teamwork/app-login-flow",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

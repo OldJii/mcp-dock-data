@@ -57,7 +57,9 @@
           "default": "The '.ui5' directory in the user's home directory"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

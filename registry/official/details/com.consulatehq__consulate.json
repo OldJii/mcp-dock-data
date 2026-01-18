@@ -9,5 +9,19 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.consulatehq.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token authentication using Consulate API keys (starts with csk_live_ or csk_test_)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

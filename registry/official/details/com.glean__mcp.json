@@ -12,5 +12,12 @@
     "url": "https://github.com/gleanwork/remote-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://acme-be.glean.com/mcp/default",
+      "headers": []
+    }
+  ]
 }

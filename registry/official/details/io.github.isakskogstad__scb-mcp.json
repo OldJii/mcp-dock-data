@@ -12,5 +12,12 @@
     "url": "https://github.com/isakskogstad/SCB-MCP",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://scb-mcp.onrender.com/mcp",
+      "headers": []
+    }
+  ]
 }

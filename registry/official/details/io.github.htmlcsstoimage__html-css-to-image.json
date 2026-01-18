@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://htmlcsstoimage.com/",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hcti.io",
+      "headers": []
+    }
+  ]
 }

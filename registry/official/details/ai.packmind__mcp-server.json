@@ -13,5 +13,19 @@
     "source": "github",
     "subfolder": "apps/mcp-server"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.packmind.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for Packmind authentication",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

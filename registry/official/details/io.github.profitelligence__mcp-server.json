@@ -12,5 +12,12 @@
     "url": "https://github.com/profitelligence/profitelligence-mcp-server",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.profitelligence.com/mcp",
+      "headers": []
+    }
+  ]
 }

@@ -12,15 +12,19 @@
     "url": "https://github.com/thinkchainai/mcpbundles",
     "source": "github"
   },
-  "packages": [
+  "packages": [],
+  "remotes": [
     {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/thinkchainai/mcpbundles/releases/download/agent-interviews-v1.0.0+build.fccc0958/agent-interviews.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "type": "streamable-http",
+      "url": "https://mcp.mcpbundles.com/bundle/agent-interviews/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth2 Bearer token or API key. Use 'Bearer <token>' for OAuth or 'Api-Key <key>' for API key authentication.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
   ]
 }

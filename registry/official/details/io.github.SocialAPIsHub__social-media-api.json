@@ -35,7 +35,9 @@
           "default": "https://mcp.socialapis.io"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

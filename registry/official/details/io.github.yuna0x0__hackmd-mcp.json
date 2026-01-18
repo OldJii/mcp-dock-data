@@ -35,7 +35,8 @@
           "default": "https://api.hackmd.io/v1"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -58,30 +59,9 @@
           "default": "https://api.hackmd.io/v1"
         }
       ],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/yuna0x0/hackmd-mcp/releases/download/v1.5.7/hackmd-mcp-1.5.7.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "HACKMD_API_TOKEN",
-          "description": "Your HackMD API token for API authentication",
-          "isRequired": true,
-          "isSecret": true
-        },
-        {
-          "name": "HACKMD_API_URL",
-          "description": "Optional HackMD API URL, defaults to https://api.hackmd.io/v1",
-          "isRequired": false,
-          "isSecret": false,
-          "default": "https://api.hackmd.io/v1"
-        }
-      ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

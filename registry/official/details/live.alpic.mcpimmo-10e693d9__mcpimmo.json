@@ -9,5 +9,17 @@
   "iconUrl": null,
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpimmo-10e693d9.alpic.live",
+      "headers": []
+    },
+    {
+      "type": "sse",
+      "url": "https://mcpimmo-10e693d9.alpic.live",
+      "headers": []
+    }
+  ]
 }

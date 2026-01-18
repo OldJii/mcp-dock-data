@@ -9,5 +9,12 @@
   "iconUrl": null,
   "websiteUrl": "https://docs.devexpress.com/GeneralInformation/405551/help-resources/dev-express-documentation-mcp-server-configure-an-ai-powered-assistant",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.devexpress.com/mcp/docs",
+      "headers": []
+    }
+  ]
 }

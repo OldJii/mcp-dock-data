@@ -134,6 +134,13 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "-y",
+          "type": "named",
+          "isRequired": false
+        }
       ]
     },
     {
@@ -309,7 +316,15 @@
           "type": "named",
           "isRequired": false
         }
+      ],
+      "runtimeArguments": [
+        {
+          "name": "-y",
+          "type": "named",
+          "isRequired": false
+        }
       ]
     }
-  ]
+  ],
+  "remotes": []
 }

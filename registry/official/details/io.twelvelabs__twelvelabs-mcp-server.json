@@ -9,5 +9,31 @@
   "iconUrl": "https://avatars.githubusercontent.com/u/77832019?s=200&v=4",
   "websiteUrl": "https://twelvelabs.io",
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.twelvelabs.io",
+      "headers": [
+        {
+          "name": "X-api-key",
+          "description": "Twelvelabs API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.twelvelabs.io/mcp",
+      "headers": [
+        {
+          "name": "X-api-key",
+          "description": "Twelvelabs API key for authentication",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

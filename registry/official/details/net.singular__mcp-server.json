@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.singular.net/mcp-server/mcp",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.singular.net/mcp-server/mcp",
+      "headers": []
+    }
+  ]
 }

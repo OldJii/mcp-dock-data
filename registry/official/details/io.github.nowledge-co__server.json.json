@@ -21,16 +21,9 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/nowledge-co/claude-dxt/releases/download/v1.0.0/claude-dxt.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

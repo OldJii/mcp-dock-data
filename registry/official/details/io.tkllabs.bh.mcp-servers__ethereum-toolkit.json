@@ -12,5 +12,31 @@
     "url": "https://github.com/teckel-mcp-servers/ethereum-toolkit",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key for authentication as Bearer token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp-servers.bh.tkllabs.io:9780/ethereum-sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key for authentication as Bearer token",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

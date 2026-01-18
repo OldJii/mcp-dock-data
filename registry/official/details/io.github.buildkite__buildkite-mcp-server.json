@@ -28,7 +28,28 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "-i",
+          "description": "Run container in interactive mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--rm",
+          "description": "Automatically remove the container when it exits",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "-e",
+          "description": "Set an environment variable in the runtime",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
     }
-  ]
+  ],
+  "remotes": []
 }

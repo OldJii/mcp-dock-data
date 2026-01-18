@@ -9,5 +9,19 @@
   "iconUrl": "https://alpic.ai/logo.png",
   "websiteUrl": null,
   "repository": null,
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://verylongmcp.fenetresurciel.com",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Just put your api key",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
 }

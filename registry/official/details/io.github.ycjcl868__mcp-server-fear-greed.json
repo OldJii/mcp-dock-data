@@ -21,7 +21,8 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -40,7 +41,8 @@
           "isRequired": true,
           "default": "8089"
         }
-      ]
+      ],
+      "runtimeArguments": []
     },
     {
       "registryType": "npm",
@@ -59,7 +61,9 @@
           "isRequired": true,
           "default": "8089"
         }
-      ]
+      ],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

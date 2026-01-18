@@ -30,7 +30,40 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": [
+        {
+          "name": "--project-ref",
+          "description": "Supabase project reference ID",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--read-only",
+          "description": "Enable read-only mode",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--features",
+          "description": "Comma-separated list of features to enable",
+          "type": "named",
+          "isRequired": false
+        },
+        {
+          "name": "--api-url",
+          "description": "Custom API URL",
+          "type": "named",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.supabase.com/mcp",
+      "headers": []
     }
   ]
 }

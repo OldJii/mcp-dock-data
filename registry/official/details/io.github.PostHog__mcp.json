@@ -13,5 +13,31 @@
     "source": "github",
     "subfolder": "services/mcp"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.posthog.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token with your PostHog personal API key. Create one at https://us.posthog.com/settings/user-api-keys with the 'MCP Server' preset.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.posthog.com/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token with your PostHog personal API key. Create one at https://us.posthog.com/settings/user-api-keys with the 'MCP Server' preset.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }

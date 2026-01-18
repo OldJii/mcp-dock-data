@@ -28,7 +28,8 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     },
     {
       "registryType": "oci",
@@ -44,23 +45,9 @@
           "isSecret": true
         }
       ],
-      "packageArguments": []
-    },
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/yuna0x0/anilist-mcp/releases/download/v1.4.0/anilist-mcp-1.4.0.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "ANILIST_TOKEN",
-          "description": "AniList API token for authenticated requests",
-          "isRequired": false,
-          "isSecret": true
-        }
-      ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }

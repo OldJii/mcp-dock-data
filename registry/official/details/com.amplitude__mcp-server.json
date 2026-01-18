@@ -12,5 +12,17 @@
     "url": "",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.amplitude.com/mcp",
+      "headers": []
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.eu.amplitude.com/mcp",
+      "headers": []
+    }
+  ]
 }

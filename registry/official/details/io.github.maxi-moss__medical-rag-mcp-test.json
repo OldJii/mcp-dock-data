@@ -12,5 +12,12 @@
     "url": "https://github.com/maxi-moss/medical-rag-mcp-test.git",
     "source": "github"
   },
-  "packages": []
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://medical-rag-mcp-test-513943347567.europe-west1.run.app/mcp",
+      "headers": []
+    }
+  ]
 }

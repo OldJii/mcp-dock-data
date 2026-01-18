@@ -14,41 +14,6 @@
   },
   "packages": [
     {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/ProfessionalWiki/MediaWiki-MCP-Server/releases/download/v0.6.5/MediaWiki-MCP-Server.mcpb",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "CONFIG",
-          "description": "Path to your configuration file",
-          "isRequired": false,
-          "isSecret": false,
-          "default": "config.json"
-        },
-        {
-          "name": "MCP_TRANSPORT",
-          "description": "Type of MCP server transport",
-          "isRequired": false,
-          "isSecret": false,
-          "default": "stdio",
-          "choices": [
-            "stdio",
-            "http"
-          ]
-        },
-        {
-          "name": "PORT",
-          "description": "Port used for StreamableHTTP transport",
-          "isRequired": false,
-          "isSecret": false,
-          "default": "3000"
-        }
-      ],
-      "packageArguments": []
-    },
-    {
       "registryType": "npm",
       "identifier": "@professional-wiki/mediawiki-mcp-server",
       "version": "0.6.5",
@@ -82,7 +47,9 @@
           "default": "3000"
         }
       ],
-      "packageArguments": []
+      "packageArguments": [],
+      "runtimeArguments": []
     }
-  ]
+  ],
+  "remotes": []
 }
