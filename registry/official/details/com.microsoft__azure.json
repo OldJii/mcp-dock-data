@@ -22,7 +22,20 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": [],
+      "packageArguments": [
+        {
+          "name": "server",
+          "type": "positional",
+          "isRequired": true,
+          "default": "server"
+        },
+        {
+          "name": "start",
+          "type": "positional",
+          "isRequired": true,
+          "default": "start"
+        }
+      ],
       "runtimeArguments": []
     }
   ],

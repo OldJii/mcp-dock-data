@@ -41,6 +41,27 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '';
 const SUPPORTED_REGISTRY_TYPES = ['npm', 'pypi', 'oci'];
 
 /**
+ * 已知需要额外参数的包修复列表
+ * 这些包在 Official Registry 中没有正确声明 packageArguments
+ * 格式: { identifier: { args: [...], description: '...' } }
+ */
+const PACKAGE_FIXES = {
+  // Azure MCP 需要 server start 子命令
+  '@azure/mcp': {
+    packageArguments: [
+      { name: 'server', type: 'positional', isRequired: true, default: 'server' },
+      { name: 'start', type: 'positional', isRequired: true, default: 'start' },
+    ],
+  },
+  // GitKraken CLI 需要 mcp 子命令
+  '@gitkraken/gk': {
+    packageArguments: [
+      { name: 'mcp', type: 'positional', isRequired: true, default: 'mcp' },
+    ],
+  },
+};
+
+/**
  * 延迟函数
  */
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -235,9 +256,35 @@ function transformListItem(item) {
  * 转换单个 package 为标准格式
  */
 function transformPackage(pkg) {
+  const identifier = pkg.identifier || '';
+  
+  // 检查是否有已知的修复
+  const fix = PACKAGE_FIXES[identifier];
+  
+  // 合并原始参数和修复参数
+  let packageArguments = (pkg.packageArguments || []).map(arg => ({
+    name: arg.name || '',
+    description: arg.description || undefined,
+    type: arg.type || 'positional',
+    isRequired: arg.isRequired || false,
+    default: arg.default || undefined
+  })).filter(arg => arg.name);
+  
+  // 如果有修复，添加修复的参数（放在前面）
+  if (fix?.packageArguments) {
+    const fixArgs = fix.packageArguments.map(arg => ({
+      name: arg.name || '',
+      description: arg.description || undefined,
+      type: arg.type || 'positional',
+      isRequired: arg.isRequired || false,
+      default: arg.default || undefined
+    }));
+    packageArguments = [...fixArgs, ...packageArguments];
+  }
+  
   return {
     registryType: pkg.registryType || 'npm',
-    identifier: pkg.identifier || '',
+    identifier: identifier,
     version: pkg.version || undefined,
     runtimeHint: pkg.runtimeHint || undefined,
     transport: pkg.transport ? {
@@ -251,13 +298,7 @@ function transformPackage(pkg) {
       default: env.default || undefined,
       choices: env.choices || undefined
     })).filter(env => env.name),
-    packageArguments: (pkg.packageArguments || []).map(arg => ({
-      name: arg.name || '',
-      description: arg.description || undefined,
-      type: arg.type || 'positional',
-      isRequired: arg.isRequired || false,
-      default: arg.default || undefined
-    })).filter(arg => arg.name),
+    packageArguments: packageArguments,
     // 运行时参数（用于 Docker 等需要额外参数的情况）
     runtimeArguments: (pkg.runtimeArguments || []).map(arg => ({
       name: arg.name || '',

@@ -21,7 +21,14 @@
         "type": "stdio"
       },
       "environmentVariables": [],
-      "packageArguments": [],
+      "packageArguments": [
+        {
+          "name": "mcp",
+          "type": "positional",
+          "isRequired": true,
+          "default": "mcp"
+        }
+      ],
       "runtimeArguments": []
     }
   ],

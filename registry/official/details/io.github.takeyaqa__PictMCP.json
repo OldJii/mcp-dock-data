@@ -1,0 +1,30 @@
+{
+  "id": "io.github.takeyaqa/PictMCP",
+  "displayName": "io.github.takeyaqa/PictMCP",
+  "description": "Pairwise Testing for the AI",
+  "version": "0.1.0",
+  "status": "active",
+  "publishedAt": "2026-01-18T11:45:44.963445Z",
+  "updatedAt": "2026-01-18T11:45:44.963445Z",
+  "iconUrl": null,
+  "websiteUrl": null,
+  "repository": {
+    "url": "https://github.com/takeyaqa/PictMCP",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "pictmcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [],
+      "packageArguments": [],
+      "runtimeArguments": []
+    }
+  ],
+  "remotes": [],
+  "stars": 0
+}

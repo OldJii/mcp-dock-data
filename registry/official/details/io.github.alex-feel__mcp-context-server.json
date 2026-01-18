@@ -2,10 +2,10 @@
   "id": "io.github.alex-feel/mcp-context-server",
   "displayName": "io.github.alex-feel/mcp-context-server",
   "description": "An MCP server that provides persistent multimodal context storage for LLM agents.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "status": "active",
-  "publishedAt": "2026-01-17T03:28:03.506995Z",
-  "updatedAt": "2026-01-17T03:28:03.506995Z",
+  "publishedAt": "2026-01-18T11:39:45.505015Z",
+  "updatedAt": "2026-01-18T11:39:45.505015Z",
   "iconUrl": null,
   "websiteUrl": null,
   "repository": {
@@ -16,7 +16,7 @@
     {
       "registryType": "pypi",
       "identifier": "mcp-context-server",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "transport": {
         "type": "stdio"
       },
@@ -705,7 +705,7 @@
     },
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/alex-feel/mcp-context-server:1.2.0",
+      "identifier": "ghcr.io/alex-feel/mcp-context-server:1.2.1",
       "runtimeHint": "docker",
       "transport": {
         "type": "streamable-http"
