@@ -169,7 +169,7 @@
       "source": "github",
       "subfolder": "packages/mcp-stdio"
     },
-    "stars": 144
+    "stars": 145
   },
   {
     "id": "ai.toolprint/hypertool-mcp",
@@ -398,20 +398,6 @@
     "stars": 8
   },
   {
-    "id": "io.github.ChengJiale150/jupyter-mcp-server",
-    "displayName": "io.github.ChengJiale150/jupyter-mcp-server",
-    "description": "A powerful MCP server for AI-driven Jupyter Notebook management and execution",
-    "iconUrl": null,
-    "version": "1.1.0",
-    "status": "active",
-    "publishedAt": "2025-09-17T06:19:21.754937Z",
-    "repository": {
-      "url": "https://github.com/ChengJiale150/jupyter-mcp-server",
-      "source": "github"
-    },
-    "stars": 8
-  },
-  {
     "id": "com.knitli/codeweaver",
     "displayName": "com.knitli/codeweaver",
     "description": "Semantic code search built for AI agents. Hybrid, AST-aware, context for 166 languages.",
@@ -506,20 +492,6 @@
     "publishedAt": "2025-10-24T12:42:02.065355Z",
     "repository": {
       "url": "https://github.com/Files-com/files-mcp",
-      "source": "github"
-    },
-    "stars": 2
-  },
-  {
-    "id": "io.github.BlockRunAI/blockrun-mcp",
-    "displayName": "io.github.BlockRunAI/blockrun-mcp",
-    "description": "BlockRun MCP Server - Access 30+ AI models via x402 micropayments. No API keys needed.",
-    "iconUrl": null,
-    "version": "0.2.2",
-    "status": "active",
-    "publishedAt": "2026-01-14T13:54:17.485965Z",
-    "repository": {
-      "url": "https://github.com/BlockRunAI/blockrun-mcp",
       "source": "github"
     },
     "stars": 2
@@ -1023,6 +995,34 @@
     "publishedAt": "2026-01-13T16:00:20.604022Z",
     "repository": {
       "url": "https://github.com/Berckan/bugherd-mcp",
+      "source": "github"
+    },
+    "stars": 0
+  },
+  {
+    "id": "io.github.BlockRunAI/blockrun-mcp",
+    "displayName": "io.github.BlockRunAI/blockrun-mcp",
+    "description": "BlockRun MCP Server - Access 30+ AI models via x402 micropayments. No API keys needed.",
+    "iconUrl": null,
+    "version": "0.2.2",
+    "status": "active",
+    "publishedAt": "2026-01-14T13:54:17.485965Z",
+    "repository": {
+      "url": "https://github.com/BlockRunAI/blockrun-mcp",
+      "source": "github"
+    },
+    "stars": 0
+  },
+  {
+    "id": "io.github.ChengJiale150/jupyter-mcp-server",
+    "displayName": "io.github.ChengJiale150/jupyter-mcp-server",
+    "description": "A powerful MCP server for AI-driven Jupyter Notebook management and execution",
+    "iconUrl": null,
+    "version": "1.1.0",
+    "status": "active",
+    "publishedAt": "2025-09-17T06:19:21.754937Z",
+    "repository": {
+      "url": "https://github.com/ChengJiale150/jupyter-mcp-server",
       "source": "github"
     },
     "stars": 0
