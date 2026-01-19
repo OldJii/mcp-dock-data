@@ -1,0 +1,817 @@
+{
+  "id": "hubspot",
+  "displayName": "Hubspot",
+  "description": "HubSpot is an inbound marketing, sales, and customer service platform integrating CRM, email automation, and analytics to facilitate lead nurturing and seamless customer experiences",
+  "createdAt": "2026-01-19T02:12:47.140Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hubspot"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "HUBSPOT_ADD_ASSET_ASSOCIATION",
+      "description": "Associates an existing asset ('FORM', 'OBJECT_LIST', or 'EXTERNAL_WEB_URL') with a specified HubSpot marketing campaign."
+    },
+    {
+      "name": "HUBSPOT_ADD_TOKEN_TO_EVENT_TEMPLATE",
+      "description": "Adds a new custom data token to an existing event template for a specified HubSpot application, optionally populating a CRM object property if objectPropertyName is provided."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE",
+      "description": "Archives the HubSpot email specified by `emailId` by moving it to the recycling bin, making it inaccessible unless restored."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_A_BATCH_OF_EMAILS_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_EMAILS' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_A_BATCH_OF_QUOTES_BY_ID",
+      "description": "Archives a batch of existing, non-archived quotes by their IDs; this action is irreversible and useful for managing outdated or irrelevant quotes."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_COMPANIES_BY_ID_BATCH",
+      "description": "DEPRECATED: Please use 'ARCHIVE_COMPANIES' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_CONTACTS_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_CONTACTS' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_DEALS_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_DEALS' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_FEEDBACK_SUBMISSIONS_BY_ID",
+      "description": "Asynchronously archives a batch of HubSpot feedback submissions using their unique IDs, which must correspond to valid and existing submissions; the operation is queued, and submissions are moved from active views without being deleted."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_LINE_ITEMS_BY_ID",
+      "description": "Archives a batch of existing line items by their unique IDs in HubSpot CRM; this operation is irreversible via the API."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_OBJECTS_BY_ID",
+      "description": "Archives a batch of existing, non-archived CRM objects of a specified `objectType` by their IDs, effectively hiding them from active use."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_PROPERTIES",
+      "description": "Archives a batch of properties by their internal names for a specified HubSpot CRM object type; this operation is idempotent and safe to retry."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_OF_TICKETS_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_TICKETS' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_BATCH_PRODUCTS_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_PRODUCTS' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_COMPANIES",
+      "description": "Archives multiple HubSpot companies by their IDs."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_COMPANY",
+      "description": "Archives an existing company in HubSpot CRM by its `companyId`, moving it to a recycling bin from which it can be restored, rather than permanently deleting it."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_CONTACT",
+      "description": "Archives a HubSpot contact by its ID."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_CONTACT_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_CONTACT' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_CONTACTS",
+      "description": "Archives multiple HubSpot contacts by their IDs."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_CRM_OBJECT_BY_ID",
+      "description": "Archives a specific HubSpot CRM object by its type and ID, moving it to the recycling bin; this action is irreversible via the API but objects can often be restored via the HubSpot UI."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_DEALS",
+      "description": "Archives multiple HubSpot deals by their IDs."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_EMAILS",
+      "description": "Archives multiple HubSpot emails by their IDs."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_FEEDBACK_SUBMISSION",
+      "description": "Archives an existing, non-archived Feedback Submission in HubSpot CRM by its ID, moving it to the recycling bin (not permanently deleting it)."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_LINE_ITEM_BY_ID",
+      "description": "Archives a specific HubSpot line item by its ID, moving it to a recoverable state."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_PRODUCT",
+      "description": "Archives a HubSpot product by its ID."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_PRODUCT_BY_PRODUCT_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_PRODUCT' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_PRODUCTS",
+      "description": "Archives multiple HubSpot products by their IDs."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_PROPERTY_BY_OBJECT_TYPE_AND_NAME",
+      "description": "Archives a specified CRM property by its object type and name, moving it to the recycling bin; note that some default HubSpot properties cannot be archived."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_PROPERTY_GROUP",
+      "description": "Archives a HubSpot property group, making it inactive and hidden (not permanently deleted, allowing potential restoration) with immediate effect on its CRM visibility and usability."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_QUOTE_OBJECT_BY_ID",
+      "description": "Archives a HubSpot Quote object by ID to the recycling bin; this is API-irreversible and may need manual restoration."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_TICKET",
+      "description": "Archives a HubSpot ticket by its ID."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_TICKET_BY_ID",
+      "description": "DEPRECATED: Please use 'ARCHIVE_TICKET' instead."
+    },
+    {
+      "name": "HUBSPOT_ARCHIVE_TICKETS",
+      "description": "Archives multiple HubSpot tickets by their IDs."
+    },
+    {
+      "name": "HUBSPOT_AUDIT_PIPELINE_CHANGES_BY_ID",
+      "description": "Retrieves a reverse chronological audit log of all changes for a specific, existing HubSpot CRM pipeline, which is identified by its `pipelineId` and a valid `objectType` that supports pipelines (e.g., 'deals', 'tickets')."
+    },
+    {
+      "name": "HUBSPOT_BATCH_READ_COMPANIES_BY_PROPERTIES",
+      "description": "Batch-retrieves HubSpot company records by their IDs, allowing custom ID properties, specific properties to fetch, and historical data."
+    },
+    {
+      "name": "HUBSPOT_BATCH_UPDATE_QUOTES",
+      "description": "Updates multiple existing HubSpot quotes in a batch; each quote is identified by its object ID or a custom unique property (via `idProperty`), and only writable properties are modified."
+    },
+    {
+      "name": "HUBSPOT_CAMPAIGN_SEARCH",
+      "description": "DEPRECATED: Please use 'SEARCH_CAMPAIGNS' instead."
+    },
+    {
+      "name": "HUBSPOT_CANCEL_ACTIVE_IMPORT",
+      "description": "Cancels an active HubSpot data import job using its `importId`; this action is irreversible, and any data already processed will remain."
+    },
+    {
+      "name": "HUBSPOT_CLONE_MARKETING_EMAIL",
+      "description": "Duplicates an existing HubSpot marketing email, identified by its `id`, into a new draft; an optional `cloneName` can be assigned to this new email copy."
+    },
+    {
+      "name": "HUBSPOT_CONFIGURE_CALLING_EXTENSION_SETTINGS",
+      "description": "Configures or updates settings for a HubSpot app's calling extension, including its name, UI URL, iframe dimensions, `isReady` status, and `supportsCustomObjects` flag, for the specified `appId`."
+    },
+    {
+      "name": "HUBSPOT_CREATE",
+      "description": "DEPRECATED: Please use 'CREATE_EMAIL' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_A_BATCH_OF_CAMPAIGNS",
+      "description": "DEPRECATED: Please use 'CREATE_CAMPAIGNS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_A_BATCH_OF_COMPANIES",
+      "description": "DEPRECATED: Please use 'CREATE_COMPANIES' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_A_BATCH_OF_EMAILS",
+      "description": "DEPRECATED: Please use 'CREATE_EMAILS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_AB_TEST_VARIATION",
+      "description": "Creates a new A/B test variation for an existing HubSpot email, using its `contentId`; this action only creates the variation, it does not start the A/B test or send emails."
+    },
+    {
+      "name": "HUBSPOT_CREATE_A_CAMPAIGN",
+      "description": "DEPRECATED: Please use 'CREATE_CAMPAIGN' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_AND_RETURN_A_NEW_PROPERTY_GROUP",
+      "description": "Creates a new, empty property group for a specified CRM object type in HubSpot, requiring a unique group name for that object type; properties must be added separately."
+    },
+    {
+      "name": "HUBSPOT_CREATE_A_NEW_MARKETING_EMAIL",
+      "description": "Creates a new marketing email in HubSpot, allowing comprehensive configuration of content, recipients, sender details, A/B testing, scheduling, web version, and other settings; the internal `name` for the email is required."
+    },
+    {
+      "name": "HUBSPOT_CREATE_ASSOCIATION_FOR_OBJECT_TYPE",
+      "description": "Creates the *definition* (schema) of a new association in HubSpot, specifying how two CRM object types relate (not an actual link between records); any provided `name` must be unique for the `fromObjectTypeId` and `toObjectTypeId` pair."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_CONTACTS",
+      "description": "DEPRECATED: Please use 'CREATE_CONTACTS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_DEALS",
+      "description": "DEPRECATED: Please use 'CREATE_DEALS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_FEEDBACK_SUBMISSIONS",
+      "description": "Creates a batch of feedback submissions in HubSpot, ideal for bulk imports; all property names, `associationTypeId`s, and association `to_id`s must reference existing entities in HubSpot."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_LINE_ITEMS",
+      "description": "DEPRECATED: Please use 'CREATE_LINE_ITEMS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_OBJECTS",
+      "description": "Creates multiple CRM objects of a specified `objectType` (e.g., contacts, companies, deals) in a single batch operation, where each object can have its own set of properties and associations."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_PROPERTIES",
+      "description": "Efficiently creates multiple CRM properties in a single batch for a specified HubSpot object type (e.g., 'contacts', 'companies', custom object ID), ideal for schema setup or updates."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_QUOTES",
+      "description": "Creates multiple HubSpot CRM quotes in a batch, ideal for bulk operations; provide meaningful quote details in `inputs` as property requirements can vary, and inspect response for individual quote statuses as partial success is possible."
+    },
+    {
+      "name": "HUBSPOT_CREATE_BATCH_OF_TICKET",
+      "description": "DEPRECATED: Please use 'CREATE_TICKETS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CAMPAIGN",
+      "description": "Creates a new HubSpot campaign."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CAMPAIGNS",
+      "description": "Creates multiple HubSpot campaigns in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_COMPANIES",
+      "description": "Creates multiple new HubSpot companies in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_COMPANY",
+      "description": "Creates a new HubSpot company."
+    },
+    {
+      "name": "HUBSPOT_CREATE_COMPANY_OBJECT",
+      "description": "DEPRECATED: Please use 'CREATE_COMPANY' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CONTACT",
+      "description": "Creates a new HubSpot contact."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CONTACT_OBJECT_WITH_PROPERTIES",
+      "description": "DEPRECATED: Please use 'CREATE_CONTACT' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CONTACTS",
+      "description": "Creates multiple new HubSpot contacts in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_CRM_OBJECT_WITH_PROPERTIES",
+      "description": "Creates a new HubSpot CRM object (e.g., contact, company, custom object) with specified `properties` (using valid internal names) and `associations` (to existing objects via valid type IDs)."
+    },
+    {
+      "name": "HUBSPOT_CREATE_DEAL",
+      "description": "Creates a new HubSpot deal."
+    },
+    {
+      "name": "HUBSPOT_CREATE_DEALS",
+      "description": "Creates multiple deals in HubSpot CRM; ensure any associated object IDs, deal stages, and pipeline IDs specified are valid and exist within the HubSpot account."
+    },
+    {
+      "name": "HUBSPOT_CREATE_EMAIL",
+      "description": "Creates a new HubSpot email."
+    },
+    {
+      "name": "HUBSPOT_CREATE_EMAILS",
+      "description": "Creates multiple HubSpot emails in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_EVENT_TEMPLATE_FOR_APP",
+      "description": "Creates a new event template for a HubSpot app, defining structure, custom properties (tokens), and appearance (Markdown with Handlebars) of custom timeline events for CRM objects; this template must exist before logging corresponding events."
+    },
+    {
+      "name": "HUBSPOT_CREATE_FEEDBACK_SUBMISSION",
+      "description": "Creates a new HubSpot feedback submission to record customer feedback (e.g., survey responses, support interactions), optionally associating it with CRM objects."
+    },
+    {
+      "name": "HUBSPOT_CREATE_LINE_ITEM",
+      "description": "Creates a new HubSpot line item."
+    },
+    {
+      "name": "HUBSPOT_CREATE_LINE_ITEM_OBJECT",
+      "description": "DEPRECATED: Please use 'CREATE_LINE_ITEM' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_LINE_ITEMS",
+      "description": "Creates multiple HubSpot line items in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_MULTIPLE_TIMELINE_EVENTS_BATCH",
+      "description": "Creates multiple immutable timeline events in a batch, ideal for bulk data imports or real-time synchronizations, using a valid event template; may update CRM properties if the template is so configured."
+    },
+    {
+      "name": "HUBSPOT_CREATE_NEW_DEAL_OBJECT",
+      "description": "DEPRECATED: Please use 'CREATE_DEAL' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_NEW_OBJECT_SCHEMA_WITH_CUSTOM_PROPERTIES",
+      "description": "Creates a new custom object schema in HubSpot CRM with unique naming for schema and properties, defined display/required/searchable properties within the 'properties' list, provided immutable labels, and correctly configured 'enumeration' type properties (options/referencedObjectType)."
+    },
+    {
+      "name": "HUBSPOT_CREATE_NOTE",
+      "description": "Creates a new HubSpot CRM note. Use when you need to add a timestamped note with optional attachments and associations to contacts, companies, deals, or tickets."
+    },
+    {
+      "name": "HUBSPOT_CREATE_OR_UPDATE_DRAFT_VERSION",
+      "description": "Creates or updates the draft version of a marketing email identified by `emailId`; if no draft exists, a new one is created from the current live version to prepare changes or A/B tests before publishing."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PIPELINE_FOR_OBJECT_TYPE",
+      "description": "Creates a new HubSpot pipeline for a specified CRM `objectType` (e.g., 'deals', 'tickets'), requiring the pipeline `label` be unique for that `objectType` and each stage `label` be unique within the pipeline."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PIPELINE_STAGE",
+      "description": "Creates a new stage in a specified HubSpot CRM pipeline for a given object type, such as 'deals' or 'tickets'."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PRODUCT",
+      "description": "Creates a new HubSpot product."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PRODUCT_BATCH",
+      "description": "DEPRECATED: Please use 'CREATE_PRODUCTS' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PRODUCT_OBJECT",
+      "description": "DEPRECATED: Please use 'CREATE_PRODUCT' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PRODUCTS",
+      "description": "Creates multiple HubSpot products in a single batch operation."
+    },
+    {
+      "name": "HUBSPOT_CREATE_PROPERTY_FOR_SPECIFIED_OBJECT_TYPE",
+      "description": "Creates a new custom property for a specified HubSpot CRM object type; ensure `groupName` refers to an existing property group for the `objectType`."
+    },
+    {
+      "name": "HUBSPOT_CREATE_QUOTE_OBJECT",
+      "description": "Creates a new quote object in HubSpot CRM with specified properties and associations."
+    },
+    {
+      "name": "HUBSPOT_CREATE_TASK",
+      "description": "Creates a new CRM task record. Use when adding a task with properties and optional associations."
+    },
+    {
+      "name": "HUBSPOT_CREATE_TICKET",
+      "description": "Creates a new HubSpot ticket."
+    },
+    {
+      "name": "HUBSPOT_CREATE_TICKET_OBJECT",
+      "description": "DEPRECATED: Please use 'CREATE_TICKET' instead."
+    },
+    {
+      "name": "HUBSPOT_CREATE_TICKETS",
+      "description": "Creates multiple HubSpot tickets in a batch, each with its own properties and associations; `inputs` list must not be empty, each item needs `properties`, and associations/custom properties must be validly defined using internal names for custom fields and ISO 8601 for dates."
+    },
+    {
+      "name": "HUBSPOT_CREATE_TIMELINE_EVENT_BASED_ON_TEMPLATE",
+      "description": "Creates an immutable custom timeline event on a CRM object's record using a specified, existing event template (identified by `eventTemplateId`), optionally updating CRM object properties if defined in the template; requires `email`, `utk`, or `objectId` for association."
+    },
+    {
+      "name": "HUBSPOT_CREATE_WORKFLOW",
+      "description": "Creates a new HubSpot workflow to automate processes; ensure `enrollmentCriteria` and `actions` use properties relevant to the specified `objectTypeId`."
+    },
+    {
+      "name": "HUBSPOT_DELETE_A_BATCH_OF_CAMPAIGNS",
+      "description": "Archives a batch of up to 50 marketing campaigns, hiding them from active views rather than permanently deleting them."
+    },
+    {
+      "name": "HUBSPOT_DELETE_A_MARKETING_EMAIL",
+      "description": "Deletes an existing marketing email, either permanently (default) or by archiving if `archived` is `true`."
+    },
+    {
+      "name": "HUBSPOT_DELETE_CALLING_EXTENSION_SETTINGS",
+      "description": "Permanently deletes the settings for a calling extension app, specified by its `appId`, rendering it unusable for all connected HubSpot accounts; this operation is irreversible."
+    },
+    {
+      "name": "HUBSPOT_DELETE_CAMPAIGN",
+      "description": "Permanently deletes a marketing campaign from HubSpot using its `campaignGuid`; returns a 204 No Content status even if the campaign does not exist."
+    },
+    {
+      "name": "HUBSPOT_DELETE_CONTACT_FOR_GDPR_COMPLIANCE",
+      "description": "Irreversibly deletes a HubSpot contact for GDPR compliance (identified via `objectId` and `idProperty`); an email `objectId` for a non-existent contact may be blocklisted."
+    },
+    {
+      "name": "HUBSPOT_DELETE_PIPELINE_BY_ID",
+      "description": "Permanently deletes a HubSpot pipeline and all its stages by `pipelineId` and `objectType`; this is irreversible, so use validation flags to avoid errors if the pipeline is not empty."
+    },
+    {
+      "name": "HUBSPOT_DELETE_PIPELINE_STAGE_BY_ID",
+      "description": "Permanently deletes a specific pipeline stage for an `objectType` (e.g., 'deals', 'tickets') that supports pipelines; this operation is irreversible, so ensure no active CRM records are associated with the stage to prevent data issues."
+    },
+    {
+      "name": "HUBSPOT_DELETE_SCHEMA_BY_OBJECT_TYPE",
+      "description": "Permanently deletes a HubSpot custom object schema, specified by its `objectType`, after all associated CRM records have been deleted."
+    },
+    {
+      "name": "HUBSPOT_DELETE_TIMELINE_EVENT_TEMPLATE",
+      "description": "Permanently and irreversibly deletes a specific timeline event template, identified by its `eventTemplateId`, from the application `appId`."
+    },
+    {
+      "name": "HUBSPOT_DELETE_VIDEO_CONFERENCING_APP_SETTINGS",
+      "description": "Irreversibly deletes all settings for a video conferencing application identified by its `appId` in HubSpot, removing its configuration and preventing it from functioning until reconfigured; existing meetings and historical data are unaffected."
+    },
+    {
+      "name": "HUBSPOT_DELETE_WORKFLOW",
+      "description": "Permanently deletes a HubSpot workflow by its ID; deleted workflows cannot be restored via the API and the ID must exist."
+    },
+    {
+      "name": "HUBSPOT_FETCH_CONTACT_IDS",
+      "description": "DEPRECATED: Please use 'GET_CONTACT_IDS' instead."
+    },
+    {
+      "name": "HUBSPOT_FETCH_IMPORT_ERROR_DETAILS",
+      "description": "Fetches a paginated list of read-only error details for a specific HubSpot CRM import, requiring a valid `importId` for a processed import."
+    },
+    {
+      "name": "HUBSPOT_FETCH_RECORDING_SETTINGS_BY_APP_ID",
+      "description": "Fetches call recording settings for a specified, existing HubSpot calling extension app."
+    },
+    {
+      "name": "HUBSPOT_FETCH_REVENUE",
+      "description": "Fetches a revenue attribution report for a specified, existing marketing campaign, optionally using a specific attribution model and date range; if both start and end dates are given, `endDate` must not be earlier than `startDate`."
+    },
+    {
+      "name": "HUBSPOT_GDPR_DELETE",
+      "description": "Permanently deletes a contact and associated content for GDPR compliance; an email used for identification via `idProperty`='email' that is not found will be irreversibly blocklisted."
+    },
+    {
+      "name": "HUBSPOT_GET_ACCOUNT_INFO",
+      "description": "Gets current HubSpot account info (email, hubId, user details) using access-token lookup."
+    },
+    {
+      "name": "HUBSPOT_GET_ACTIVE_IMPORTS_LIST",
+      "description": "Retrieves a list of currently active import jobs in HubSpot for monitoring ongoing data operations."
+    },
+    {
+      "name": "HUBSPOT_GET_AGGREGATED_STATISTIC_INTERVALS",
+      "description": "Retrieves aggregated statistics for marketing emails (e.g., send counts), grouped by specified time intervals within a defined time range."
+    },
+    {
+      "name": "HUBSPOT_GET_AGGREGATED_STATISTICS",
+      "description": "Retrieves aggregated statistics for marketing emails, optionally within an ISO8601 formatted time range, by email IDs, or specific email properties."
+    },
+    {
+      "name": "HUBSPOT_GET_ALL_MARKETING_EMAILS_FOR_A_HUB_SPOT_ACCOUNT",
+      "description": "Fetches a list of marketing emails from a HubSpot account, with options for filtering, sorting, pagination, and including performance statistics."
+    },
+    {
+      "name": "HUBSPOT_GET_ALL_WORKFLOWS",
+      "description": "Retrieves a list of workflow summaries (ID, name, type, status) from HubSpot, using the 'limit' parameter for pagination."
+    },
+    {
+      "name": "HUBSPOT_GET_A_REVISION_OF_A_MARKETING_EMAIL",
+      "description": "Retrieves a specific, previously saved revision of a marketing email using its unique email ID and revision ID."
+    },
+    {
+      "name": "HUBSPOT_GET_CAMPAIGN",
+      "description": "Retrieves a HubSpot campaign by its ID."
+    },
+    {
+      "name": "HUBSPOT_GET_CAMPAIGN_METRICS",
+      "description": "Retrieves key attribution metrics for an existing marketing campaign, identified by its `campaignGuid`, within an optional date range."
+    },
+    {
+      "name": "HUBSPOT_GET_CAMPAIGNS",
+      "description": "Retrieves multiple HubSpot campaigns."
+    },
+    {
+      "name": "HUBSPOT_GET_COMPANY",
+      "description": "Retrieves a HubSpot company by its ID."
+    },
+    {
+      "name": "HUBSPOT_GET_CONTACT_IDS",
+      "description": "Gets HubSpot contact IDs for a specified campaign and contact interaction type."
+    },
+    {
+      "name": "HUBSPOT_GET_DEAL",
+      "description": "Retrieves a HubSpot deal by its ID."
+    },
+    {
+      "name": "HUBSPOT_GET_DEALS",
+      "description": "Retrieves multiple HubSpot deals by their IDs."
+    },
+    {
+      "name": "HUBSPOT_GET_DRAFT_VERSION_OF_A_MARKETING_EMAIL",
+      "description": "Retrieves the draft version of a marketing email by its `emailId`; if no draft exists, returns the published version."
+    },
+    {
+      "name": "HUBSPOT_GET_EMAILS",
+      "description": "Retrieves multiple HubSpot emails by their IDs."
+    },
+    {
+      "name": "HUBSPOT_GET_IMPORT_RECORD_INFORMATION",
+      "description": "Retrieves a comprehensive summary of a specific HubSpot CRM import record by its `importId`, including status, progress, updates, results, and errors; useful for monitoring and troubleshooting data imports."
+    },
+    {
+      "name": "HUBSPOT_GET_MARKETING_EMAILS",
+      "description": "Fetches a list of marketing emails from HubSpot, supporting filtering by creation/update timestamps, pagination, and sorting."
+    },
+    {
+      "name": "HUBSPOT_GET_PIPELINE_STAGE_AUDIT",
+      "description": "Retrieves a reverse chronological list of all mutations (changes) for a specific pipeline stage; the associated pipeline ID is inferred from the API path and is not a direct input."
+    },
+    {
+      "name": "HUBSPOT_GET_PRODUCT",
+      "description": "Retrieves a HubSpot product by its ID."
+    },
+    {
+      "name": "HUBSPOT_GET_PRODUCTS",
+      "description": "Retrieves multiple HubSpot products by their IDs."
+    },
+    {
+      "name": "HUBSPOT_GET_QUOTE_BY_ID",
+      "description": "Retrieves a specific HubSpot quote by its unique identifier."
+    },
+    {
+      "name": "HUBSPOT_GET_REVISIONS_OF_A_MARKETING_EMAIL",
+      "description": "Retrieves a paginated list of all historical versions (including full state like content, settings, metadata) for a specified, existing marketing email; revision ID -1 identifies the current version."
+    },
+    {
+      "name": "HUBSPOT_GET_SEGMENT_MEMBERS",
+      "description": "Tool to retrieve segment (list) members ordered by join timestamp. Use when you need to page through list membership data."
+    },
+    {
+      "name": "HUBSPOT_GET_SPECIFIC_EVENT_TEMPLATE_FOR_APP",
+      "description": "Retrieves detailed information about a specific event template for a given application in HubSpot's CRM timeline."
+    },
+    {
+      "name": "HUBSPOT_GET_THE_DETAILS_OF_A_SPECIFIED_MARKETING_EMAIL",
+      "description": "Retrieves detailed information for a specific marketing email in HubSpot using its unique email ID, optionally including performance statistics and specific properties."
+    },
+    {
+      "name": "HUBSPOT_GET_THE_VARIATION_OF_A_AN_AB_MARKETING_EMAIL",
+      "description": "Retrieves the alternate variation of a specified A/B marketing email; the `emailId` must identify an email currently in an A/B test."
+    },
+    {
+      "name": "HUBSPOT_GET_TICKET",
+      "description": "Retrieves a HubSpot ticket by its ID."
+    },
+    {
+      "name": "HUBSPOT_GET_TICKETS",
+      "description": "Retrieves multiple HubSpot tickets by their IDs."
+    },
+    {
+      "name": "HUBSPOT_GET_WORKFLOW_BY_ID",
+      "description": "Retrieves comprehensive details for an existing HubSpot workflow by its unique ID; unsupported actions are designated 'UNSUPPORTED_ACTION' in the response."
+    },
+    {
+      "name": "HUBSPOT_GET_WORKFLOW_EMAIL_CAMPAIGNS",
+      "description": "Retrieves email campaigns associated with a specific HubSpot workflow ID."
+    },
+    {
+      "name": "HUBSPOT_INITIATE_DATA_IMPORT_PROCESS",
+      "description": "Call this action to start an asynchronous data import into HubSpot CRM using uploaded files and a detailed `importRequest` JSON configuration, ensuring this JSON correctly maps file columns to HubSpot properties and files align with these mappings."
+    },
+    {
+      "name": "HUBSPOT_LIST",
+      "description": "Retrieves a paginated list of HubSpot emails, allowing selection of specific properties (with or without history), associated object IDs, and filtering by archive status."
+    },
+    {
+      "name": "HUBSPOT_LIST_ALL_EVENT_TEMPLATES_FOR_APP",
+      "description": "Retrieves all event templates associated with a valid `appId` for an existing application in HubSpot's CRM Timeline."
+    },
+    {
+      "name": "HUBSPOT_LIST_ASSETS",
+      "description": "Lists assets of a specific `assetType` for a given HubSpot marketing `campaignGuid`, optionally including performance metrics for a date range."
+    },
+    {
+      "name": "HUBSPOT_LIST_ASSOCIATION_TYPES",
+      "description": "Lists all valid association types between two specified HubSpot CRM object types."
+    },
+    {
+      "name": "HUBSPOT_LIST_COMPANIES",
+      "description": "Retrieves a paginated list of HubSpot companies."
+    },
+    {
+      "name": "HUBSPOT_LIST_CONTACTS",
+      "description": "Retrieves a paginated list of HubSpot contacts."
+    },
+    {
+      "name": "HUBSPOT_LIST_CONTACTS_PAGE",
+      "description": "DEPRECATED: Please use 'LIST_CONTACTS' instead."
+    },
+    {
+      "name": "HUBSPOT_LIST_DEALS",
+      "description": "Retrieves a paginated list of HubSpot deals."
+    },
+    {
+      "name": "HUBSPOT_LIST_FEEDBACK_SUBMISSIONS_PAGE",
+      "description": "Retrieves a paginated list of feedback submissions from HubSpot, allowing specification of properties (including history), associated object IDs, and filtering by archive status."
+    },
+    {
+      "name": "HUBSPOT_LIST_PAGE_OF_TICKETS",
+      "description": "DEPRECATED: Please use 'LIST_TICKETS' instead."
+    },
+    {
+      "name": "HUBSPOT_LIST_PRODUCTS_WITH_PAGING",
+      "description": "DEPRECATED: Please use 'LIST_PRODUCTS' instead."
+    },
+    {
+      "name": "HUBSPOT_LIST_QUOTES_PAGE",
+      "description": "Retrieves a paginated list of quotes, allowing selection of specific properties, property history, associated object IDs, and filtering by archived status."
+    },
+    {
+      "name": "HUBSPOT_LIST_TICKETS",
+      "description": "Retrieves a paginated list of HubSpot tickets."
+    },
+    {
+      "name": "HUBSPOT_MERGE_CONTACTS",
+      "description": "Merges two HubSpot contacts into one."
+    },
+    {
+      "name": "HUBSPOT_MERGE_DEALS",
+      "description": "Merges two HubSpot deals into one."
+    },
+    {
+      "name": "HUBSPOT_MERGE_EMAILS",
+      "description": "Merges two HubSpot emails into one."
+    },
+    {
+      "name": "HUBSPOT_MERGE_PRODUCTS",
+      "description": "Merges two HubSpot products into one."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TICKETS",
+      "description": "Merges two HubSpot tickets into one."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_COMPANIES_OF_SAME_TYPE",
+      "description": "Merges two existing company records of the same type in HubSpot CRM, where `objectIdToMerge` is absorbed into `primaryObjectId`; this operation is irreversible."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_CONTACTS_OF_SAME_TYPE",
+      "description": "DEPRECATED: Please use 'MERGE_CONTACTS' instead."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_DEALS_OF_SAME_TYPE",
+      "description": "DEPRECATED: Please use 'MERGE_DEALS' instead."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_EMAILS_WITH_SAME_TYPE",
+      "description": "DEPRECATED: Please use 'MERGE_EMAILS' instead."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_FEEDBACK_SUBMISSIONS",
+      "description": "Merges two existing feedback submissions by ID, primarily for consolidating duplicates or related feedback; this operation is irreversible, and `primaryObjectId` values take precedence in conflicts."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_LINE_ITEMS_OF_SAME_TYPE",
+      "description": "Merges two line items, `objectIdToMerge` into `primaryObjectId`, which must be of the same type; `objectIdToMerge` is absorbed and the operation is irreversible."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_OBJECTS_OF_SAME_TYPE",
+      "description": "Merges two distinct HubSpot CRM objects of the same `objectType`, consolidating data into `primaryObjectId` (which is preserved) and deleting `objectIdToMerge`; this operation is permanent and irreversible."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_PRODUCTS_OF_THE_SAME_TYPE",
+      "description": "DEPRECATED: Please use 'MERGE_PRODUCTS' instead."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_QUOTES_OF_SAME_TYPE",
+      "description": "Merges two distinct quotes of the same type by consolidating `objectIdToMerge` into `primaryObjectId` (e.g., for combining information or updating terms); this operation is irreversible."
+    },
+    {
+      "name": "HUBSPOT_MERGE_TWO_TICKETS_OF_SAME_TYPE",
+      "description": "DEPRECATED: Please use 'MERGE_TICKETS' instead."
+    },
+    {
+      "name": "HUBSPOT_MODIFY_CALLING_EXTENSION_SETTINGS",
+      "description": "Updates settings (e.g., display name, UI URL/dimensions, feature flags) for an existing calling extension app, identified by `appId`."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_CONTACT_USING_CONTACT_ID",
+      "description": "DEPRECATED: Please use 'UPDATE_CONTACT' instead."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_CRM_OBJECT_BY_ID",
+      "description": "Partially updates specified properties of a CRM object (e.g., contact, company, deal) identified by its type and ID, or optionally by a unique property value if `idProperty` is specified."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_DEAL_BY_ID",
+      "description": "DEPRECATED: Please use 'UPDATE_DEAL' instead."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_PIPELINE_BY_ID",
+      "description": "Partially updates a CRM pipeline's label, display order, or restores an archived pipeline by setting `archived` to `false`."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_PROPERTY_GROUP",
+      "description": "Partially updates a property group's `displayOrder` or `label` for a specified CRM `objectType` in HubSpot."
+    },
+    {
+      "name": "HUBSPOT_PARTIALLY_UPDATE_TICKET_BY_ID",
+      "description": "DEPRECATED: Please use 'UPDATE_TICKET' instead."
+    },
+    {
+      "name": "HUBSPOT_PARTIAL_UPDATE_COMPANY_OBJECT_BY_ID",
+      "description": "DEPRECATED: Please use 'UPDATE_COMPANY' instead."
+    },
+    {
+      "name": "HUBSPOT_PARTIAL_UPDATE_QUOTE_BY_QUOTE_ID",
+      "description": "Performs a partial update on an existing HubSpot quote's specified properties, identifying the quote by `quoteId` (either its internal ID or a custom unique property value if `idProperty` is provided)."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_COMPANY_FOR_GDPR_COMPLIANCE",
+      "description": "Permanently deletes a company (identified by objectId) and its associated data from HubSpot for GDPR compliance; this action is irreversible and requires the company to exist."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_CONTACT_FOR_GDPR",
+      "description": "Irreversibly deletes a HubSpot contact for GDPR; if deleting by a non-existent email (using idProperty 'email'), the email is blocklisted instead."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_CONTACT_FOR_GDPR_COMPLIANCE",
+      "description": "Irreversibly erases a HubSpot contact and associated data per a GDPR request; if an email is given for a non-existent contact, it's blocklisted."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_CONTACT_GDPR_COMPLIANCE",
+      "description": "Permanently and irreversibly deletes a HubSpot **quote** (not a contact, despite the action's internal naming) to comply with GDPR's 'right to be forgotten'."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_CONTACT_VIA_GDPR",
+      "description": "Permanently deletes a HubSpot contact and all its associated data for GDPR compliance, identifying the contact by its ID or another unique property."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_DEAL_FOR_GDPR_COMPLIANCE",
+      "description": "Permanently deletes a HubSpot deal for GDPR compliance, identified by its unique ID or a specified property value; this action is irreversible and may blocklist the identifier if the deal isn't found when using `idProperty`."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_GDPR_CONTACT_AND_CONTENT",
+      "description": "Permanently and irreversibly deletes an existing HubSpot contact and associated content for GDPR compliance, optionally blocklisting the contact's email."
+    },
+    {
+      "name": "HUBSPOT_PERMANENTLY_DELETE_LINE_ITEMS_FOR_GDPR",
+      "description": "Permanently deletes a specified line item and its associated content for GDPR compliance; this action is irreversible and cannot be undone."
+    },
+    {
+      "name": "HUBSPOT_PUBLISH_MARKETING_EMAIL",
+      "description": "Publishes or sends a specified HubSpot marketing email that is valid and ready for sending; requires Marketing Hub Enterprise or the transactional email add-on."
+    },
+    {
+      "name": "HUBSPOT_PURGE_SCHEMA_BY_OBJECT_TYPE",
+      "description": "Permanently and irreversibly deletes the schema for an existing `objectType` in HubSpot CRM; this deprecated endpoint should be used with extreme caution."
+    },
+    {
+      "name": "HUBSPOT_READ",
+      "description": "Call this to retrieve an existing HubSpot email by its `emailId` or an alternative unique `idProperty`."
+    },
+    {
+      "name": "HUBSPOT_READ_A_BATCH_OF_CAMPAIGNS",
+      "description": "DEPRECATED: Please use 'GET_CAMPAIGNS' instead."
+    },
+    {
+      "name": "HUBSPOT_READ_A_BATCH_OF_CRM_OBJECT_PROPERTIES",
+      "description": "Reads definitions (metadata, not values) for a batch of CRM object properties for a specified `objectType`, supporting partial success."
+    },
+    {
+      "name": "HUBSPOT_READ_A_CAMPAIGN",
+      "description": "DEPRECATED: Please use 'GET_CAMPAIGN' instead."
+    },
+    {
+      "name": "HUBSPOT_READ_A_CRM_PROPERTY_BY_NAME",
+      "description": "Reads a specific CRM property definition for a given HubSpot object type by its internal name."
+    },
+    {
+      "name": "HUBSPOT_READ_ALL_PROPERTIES_FOR_OBJECT_TYPE",
+      "description": "Retrieves definitions and metadata (not actual values) for properties of a specified HubSpot CRM object type (e.g., 'contacts', 'companies', 'deals', or custom objects)."
+    },
+    {
+      "name": "HUBSPOT_READ_A_PAGE_OF_DEALS",
+      "description": "DEPRECATED: Please use 'LIST_DEALS' instead."
+    },
+    {
+      "name": "HUBSPOT_READ_APAGE_OF_OBJECTS_BY_TYPE",
+      "description": "Retrieves a paginated list of objects for a specified and valid HubSpot CRM object type (e.g., 'contacts', 'companies', 'deals', or custom ID)."
+    },
+    {
+      "name": "HUBSPOT_READ_A_PROPERTY_GROUP",
+      "description": "Retrieves metadata for a specific property group of a given CRM object type, detailing its structure and attributes, but not the actual property values of CRM objects."
+    },
+    {
+      "name": "HUBSPOT_READ_BATCH_FEEDBACK_SUBMISSIONS_BY_ID_OR_PROPERTY",
+      "description": "Retrieves up to 100 feedback submissions in a batch using their IDs or a specified unique `idProperty`, optionally including specified properties and their history."
+    },
+    {
+      "name": "HUBSPOT_READ_BATCH_OF_CONTACTS_BY_ID_OR_PROPERTIES",
+      "description": "DEPRECATED: Please use 'GET_CONTACTS' instead."
+    }
+  ]
+}

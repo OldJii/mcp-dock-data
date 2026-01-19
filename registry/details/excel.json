@@ -1,0 +1,213 @@
+{
+  "id": "excel",
+  "displayName": "Excel",
+  "description": "Microsoft Excel is a powerful spreadsheet application for data analysis, calculations, and visualization, enabling users to organize and process data with formulas, charts, and pivot tables",
+  "createdAt": "2026-01-19T02:12:46.693Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/excel"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "EXCEL_ADD_CHART",
+      "description": "Add a chart to a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_ADD_SHAREPOINT_WORKSHEET",
+      "description": "Add a new worksheet to a SharePoint Excel workbook using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_ADD_TABLE",
+      "description": "Create a new table in a worksheet using the Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_ADD_TABLE_COLUMN",
+      "description": "Add a column to a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_ADD_TABLE_ROW",
+      "description": "Add a row to a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_ADD_WORKBOOK_PERMISSION",
+      "description": "Tool to grant access to a workbook via invite. Use when you need to share a specific workbook file with designated recipients and roles."
+    },
+    {
+      "name": "EXCEL_ADD_WORKSHEET",
+      "description": "Add a new worksheet to an Excel workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_APPLY_TABLE_FILTER",
+      "description": "Apply a filter to a table column using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_APPLY_TABLE_SORT",
+      "description": "Apply a sort to a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_CLEAR_RANGE",
+      "description": "Tool to clear values, formats, or contents in a specified worksheet range. Use when you need to reset cells before adding new data."
+    },
+    {
+      "name": "EXCEL_CLEAR_TABLE_FILTER",
+      "description": "Clear a filter from a table column using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_CLOSE_SESSION",
+      "description": "Tool to close an existing Excel workbook session. Use when you need to explicitly end a persistent session to release workbook locks."
+    },
+    {
+      "name": "EXCEL_CONVERT_TABLE_TO_RANGE",
+      "description": "Convert a table to a range using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_CREATE_WORKBOOK",
+      "description": "Tool to create a new Excel workbook file at a specified drive path. Generates a new .xlsx file with specified worksheets and data, then uploads it to OneDrive."
+    },
+    {
+      "name": "EXCEL_DELETE_TABLE_COLUMN",
+      "description": "Delete a column from a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_DELETE_TABLE_ROW",
+      "description": "Delete a row from a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_DELETE_WORKSHEET",
+      "description": "Tool to delete a worksheet from the workbook. Use when cleaning up unused or temporary sheets after verifying no dependencies exist. Example: \"Delete 'Sheet2' after review.\""
+    },
+    {
+      "name": "EXCEL_GET_CHART_AXIS",
+      "description": "Tool to retrieve a specific axis from a chart. Use when you need properties like min, max, interval, and formatting of the chart axis."
+    },
+    {
+      "name": "EXCEL_GET_CHART_DATA_LABELS",
+      "description": "Tool to retrieve the data labels object of a chart. Use when you need to inspect label settings like position, separator, and visibility flags after creating or updating a chart."
+    },
+    {
+      "name": "EXCEL_GET_CHART_LEGEND",
+      "description": "Tool to retrieve the legend object of a chart. Use after creating or updating a chart when you need to inspect legend visibility and formatting."
+    },
+    {
+      "name": "EXCEL_GET_RANGE",
+      "description": "Get a range from a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_GET_SESSION",
+      "description": "Create a session for an Excel workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_GET_SHAREPOINT_RANGE",
+      "description": "Get a range from a worksheet in SharePoint using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_GET_SHAREPOINT_WORKSHEET",
+      "description": "Get a worksheet by name or ID from a SharePoint Excel workbook using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_GET_TABLE_COLUMN",
+      "description": "Tool to retrieve a specific column from a workbook table. Use when you need to fetch column properties and data by its ID or name."
+    },
+    {
+      "name": "EXCEL_GET_WORKBOOK",
+      "description": "Tool to retrieve the properties and relationships of a workbook. Use when you need to inspect comments, names, tables, or worksheets."
+    },
+    {
+      "name": "EXCEL_GET_WORKSHEET",
+      "description": "Get a worksheet by name or ID from an Excel workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_INSERT_RANGE",
+      "description": "Tool to insert a new cell range into a worksheet, shifting existing cells down or right. Use when you need to create space for new content without overwriting."
+    },
+    {
+      "name": "EXCEL_LIST_CHARTS",
+      "description": "List charts in a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_LIST_CHART_SERIES",
+      "description": "Tool to list all data series in a chart. Use when you need to enumerate chart series for further analysis."
+    },
+    {
+      "name": "EXCEL_LIST_COMMENTS",
+      "description": "Tool to list comments in an Excel workbook. Use when you need to retrieve all workbook comments via Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_LIST_FILES",
+      "description": "List files and folders in a drive root or specified path."
+    },
+    {
+      "name": "EXCEL_LIST_NAMED_ITEMS",
+      "description": "List named items in a workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_LIST_SHAREPOINT_TABLES",
+      "description": "List tables in a SharePoint worksheet using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_LIST_SHAREPOINT_WORKSHEETS",
+      "description": "List worksheets in an Excel workbook stored in SharePoint using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_LIST_TABLE_COLUMNS",
+      "description": "List columns in a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_LIST_TABLE_ROWS",
+      "description": "List rows in a table using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_LIST_TABLES",
+      "description": "List tables in a worksheet using Microsoft Graph API. This action retrieves information about all tables present in a specified worksheet of an Excel file. It requires the file ID and worksheet name or ID, and can optionally use a session ID for workbook operations."
+    },
+    {
+      "name": "EXCEL_LIST_WORKBOOK_PERMISSIONS",
+      "description": "Tool to list permissions set on the workbook file. Use when you need to see which users or links have access to a specific Excel file by supplying its drive and item IDs. Example: \"List permissions for workbook with drive_id 'b!abc123' and item_id '0123456789abcdef'.\""
+    },
+    {
+      "name": "EXCEL_LIST_WORKSHEETS",
+      "description": "List worksheets in an Excel workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_MERGE_CELLS",
+      "description": "Merge cells in a worksheet range using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_PROTECT_WORKSHEET",
+      "description": "Tool to protect a worksheet using optional protection options. Use when you need to prevent editing certain parts of a sheet before sharing. Example: \"Protect 'Sheet1' to lock formatting and sorting.\""
+    },
+    {
+      "name": "EXCEL_SORT_RANGE",
+      "description": "Sort a range in a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_UPDATE_CHART",
+      "description": "Update a chart in a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_UPDATE_CHART_LEGEND",
+      "description": "Tool to update formatting or position of a chart legend. Use when adjusting legend settings after confirming chart and worksheet exist."
+    },
+    {
+      "name": "EXCEL_UPDATE_RANGE",
+      "description": "Update a range in a worksheet using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_UPDATE_SHAREPOINT_RANGE",
+      "description": "Update a range in a SharePoint worksheet using Microsoft Graph Sites API."
+    },
+    {
+      "name": "EXCEL_UPDATE_TABLE",
+      "description": "Update a table in a workbook using Microsoft Graph API."
+    },
+    {
+      "name": "EXCEL_UPDATE_WORKSHEET",
+      "description": "Update worksheet properties (name, position) in an Excel workbook using Microsoft Graph API."
+    }
+  ]
+}

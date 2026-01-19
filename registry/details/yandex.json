@@ -1,0 +1,33 @@
+{
+  "id": "yandex",
+  "displayName": "Yandex",
+  "description": "Yandex is a Russian internet services provider offering search, email, navigation, and other web-based solutions, often referred to as “Russia’s Google”",
+  "createdAt": "2026-01-19T02:12:53.544Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/yandex"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "YANDEX_GEOCODER_REVERSE",
+      "description": "Tool to perform reverse geocoding using Yandex Maps HTTP Geocoder API."
+    },
+    {
+      "name": "YANDEX_ORGANIZATION_SEARCH",
+      "description": "Tool to find businesses and organizations by name, address, or TIN. Use when you need to search for companies in a specific region or text query."
+    },
+    {
+      "name": "YANDEX_ROUTE",
+      "description": "Tool to generate detailed route for driving, walking, or public transport. Use when planning a route between specified geographic points."
+    },
+    {
+      "name": "YANDEX_TILES",
+      "description": "Tool to fetch individual map tile images by x/y coordinates and zoom level. Use after calculating tile indices for custom map rendering."
+    }
+  ]
+}

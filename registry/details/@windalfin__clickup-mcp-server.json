@@ -1,0 +1,117 @@
+{
+  "id": "@windalfin/clickup-mcp-server",
+  "displayName": "ClickUp MCP Server",
+  "description": "Integrate ClickUp tasks with AI applications to streamline your project management. Interact with tasks, lists, and folders using natural language for efficient task handling. Enhance your productivity by automating workflows and managing tasks seamlessly within your ClickUp workspace.",
+  "createdAt": "2026-01-19T02:19:25.691Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@windalfin/clickup-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "clickupApiKey",
+        "clickupTeamId"
+      ],
+      "properties": {
+        "clickupApiKey": {
+          "type": "string",
+          "description": "Your ClickUp API key."
+        },
+        "clickupTeamId": {
+          "type": "string",
+          "description": "Your ClickUp Team ID."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_workspace_hierarchy",
+      "description": "Get the complete workspace hierarchy including spaces, folders, and lists."
+    },
+    {
+      "name": "create_task",
+      "description": "Create a single task in a ClickUp list. Use this tool for individual task creation only. For multiple tasks, use create_bulk_tasks instead. Before calling this tool, check if you already have the necessary list ID from previous responses in the conversation history, as this avoids redundant lookups. When creating a task, you must provide either a listId or listName."
+    },
+    {
+      "name": "get_task",
+      "description": "Retrieve detailed information about a specific task. Valid parameter combinations:\n1. Use taskId alone (preferred)\n2. Use taskName + optional listName (to disambiguate if multiple tasks have the same name)"
+    },
+    {
+      "name": "get_tasks",
+      "description": "Retrieve tasks from a list with optional filtering. You MUST provide either:\n1. listId (preferred)\n2. listName\n\nUse filters to narrow down results by status, dates, etc."
+    },
+    {
+      "name": "update_task",
+      "description": "Modify an existing task's properties. Valid parameter combinations:\n1. Use taskId alone (preferred if you have it)\n2. Use taskName + optional listName (to disambiguate if multiple tasks have the same name)\n\nAt least one update field (name, description, status, priority) must be provided. Only specified fields will be updated."
+    },
+    {
+      "name": "move_task",
+      "description": "Move a task to a different list. Valid parameter combinations:\n1. Use taskId + (listId or listName) - preferred\n2. Use taskName + sourceListName + (listId or listName)\n\nWARNING: Task statuses may reset if destination list has different status options."
+    },
+    {
+      "name": "duplicate_task",
+      "description": "Create a copy of a task in the same or different list. Valid parameter combinations:\n1. Use taskId + optional (listId or listName) - preferred\n2. Use taskName + sourceListName + optional (listId or listName)\n\nThe duplicate preserves the original task's properties."
+    },
+    {
+      "name": "delete_task",
+      "description": "⚠️ PERMANENTLY DELETE a task. This action cannot be undone. Valid parameter combinations:\n1. Use taskId alone (preferred and safest)\n2. Use taskName + optional listName (use with caution)"
+    },
+    {
+      "name": "create_bulk_tasks",
+      "description": "Create multiple tasks in a list efficiently. You MUST provide:\n1. An array of tasks with required properties\n2. Either listId or listName to specify the target list\n\nOptional: Configure batch size and concurrency for performance."
+    },
+    {
+      "name": "update_bulk_tasks",
+      "description": "Update multiple tasks efficiently. For each task, you MUST provide either:\n1. taskId alone (preferred)\n2. taskName + listName\n\nOnly specified fields will be updated for each task."
+    },
+    {
+      "name": "move_bulk_tasks",
+      "description": "Move multiple tasks to a different list efficiently. For each task, you MUST provide either:\n1. taskId alone (preferred)\n2. taskName + listName\n\nWARNING: Task statuses may reset if target list has different status options."
+    },
+    {
+      "name": "delete_bulk_tasks",
+      "description": "⚠️ PERMANENTLY DELETE multiple tasks. This action cannot be undone. For each task, you MUST provide either:\n1. taskId alone (preferred and safest)\n2. taskName + listName (use with caution)"
+    },
+    {
+      "name": "create_list",
+      "description": "Create a new list directly in a ClickUp space (not in a folder). You MUST provide either spaceId or spaceName. For creating lists inside folders, use create_list_in_folder instead."
+    },
+    {
+      "name": "create_list_in_folder",
+      "description": "Create a new list within a ClickUp folder. You MUST provide either: 1) folderId alone, or 2) folderName WITH either spaceName or spaceId. Folder names may not be unique across spaces, which is why space information is required when using folderName."
+    },
+    {
+      "name": "get_list",
+      "description": "Retrieve details about a specific ClickUp list. You MUST provide either listId or listName. Using listId is more reliable as list names might not be unique."
+    },
+    {
+      "name": "update_list",
+      "description": "Update an existing ClickUp list's properties. You MUST provide either listId or listName, and at least one field to update (name, content, or status)."
+    },
+    {
+      "name": "delete_list",
+      "description": "Permanently delete a ClickUp list and all its tasks. You MUST provide either listId or listName. WARNING: This action cannot be undone."
+    },
+    {
+      "name": "create_folder",
+      "description": "Create a new folder in a ClickUp space for organizing related lists. You MUST provide:\n1. A folder name\n2. Either spaceId (preferred) or spaceName\n\nAfter creating a folder, you can add lists to it using create_list_in_folder."
+    },
+    {
+      "name": "get_folder",
+      "description": "Retrieve details about a specific folder including name, status, and metadata. Valid parameter combinations:\n1. Use folderId alone (preferred)\n2. Use folderName + (spaceId or spaceName)\n\nHelps you understand folder structure before creating or updating lists."
+    },
+    {
+      "name": "update_folder",
+      "description": "Modify an existing folder's properties. Valid parameter combinations:\n1. Use folderId alone (preferred)\n2. Use folderName + (spaceId or spaceName)\n\nAt least one update field (name or override_statuses) must be provided."
+    },
+    {
+      "name": "delete_folder",
+      "description": "⚠️ PERMANENTLY DELETE a folder and all its contents. This action cannot be undone. Valid parameter combinations:\n1. Use folderId alone (preferred and safest)\n2. Use folderName + (spaceId or spaceName)\n\nWARNING: This will also delete all lists and tasks within the folder."
+    }
+  ]
+}

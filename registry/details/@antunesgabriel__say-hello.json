@@ -1,0 +1,36 @@
+{
+  "id": "@antunesgabriel/say-hello",
+  "displayName": "Hello",
+  "description": "Greet anyone instantly with a simple command. Use a ready-made prompt to craft quick salutations. Explore the origin story of 'Hello, World'.",
+  "createdAt": "2026-01-19T02:14:06.356Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antunesgabriel/say-hello"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Busca por saldo da conta corrente e limite do cartão de credito do usuário no picpay"
+    },
+    {
+      "name": "fetch",
+      "description": ""
+    },
+    {
+      "name": "get-account-balances",
+      "description": "obtem o saldo da conta corrente do usuario"
+    }
+  ]
+}

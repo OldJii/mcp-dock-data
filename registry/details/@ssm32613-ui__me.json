@@ -1,0 +1,12 @@
+{
+  "id": "@ssm32613-ui/me",
+  "displayName": "me",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:11.193Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ssm32613-ui/me"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "@Cyreslab-AI/flightradar-mcp-server",
+  "displayName": "FlightRadar",
+  "description": "Access real-time flight tracking and status information effortlessly. Get detailed flight data, search for flights by various criteria, and receive human-readable status summaries with ease.",
+  "createdAt": "2026-01-19T02:21:23.280Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Cyreslab-AI/flightradar-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "aviationStackApiKey"
+      ],
+      "properties": {
+        "aviationStackApiKey": {
+          "type": "string",
+          "description": "Your AviationStack API key."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_flight_data",
+      "description": "Get real-time data for a specific flight by flight number"
+    },
+    {
+      "name": "search_flights",
+      "description": "Search for flights by various criteria"
+    },
+    {
+      "name": "get_flight_status",
+      "description": "Get the current status of a flight by flight number"
+    }
+  ]
+}

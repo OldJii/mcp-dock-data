@@ -1,0 +1,51 @@
+{
+  "id": "@ctaylor86/rendi-mcp-server",
+  "displayName": "rendi-ffmpeg-mcp-server",
+  "description": "Run FFmpeg commands in the cloud for fast video and audio conversions, edits, and workflows—no local install required. Chain multiple commands efficiently, monitor progress, and fetch results with direct download links and metadata. Clean up output files when finished to control storage.",
+  "createdAt": "2026-01-19T02:18:08.497Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ctaylor86/rendi-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "rendiApiKey"
+      ],
+      "properties": {
+        "rendiApiKey": {
+          "type": "string",
+          "description": "Your Rendi API key for FFmpeg cloud processing. Get your API key at https://rendi.dev"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "test_rendi_connection",
+      "description": "Test connectivity to Rendi FFmpeg API and validate your API key"
+    },
+    {
+      "name": "run_ffmpeg_command",
+      "description": "Submit a single FFmpeg command for cloud processing. Use {{alias}} placeholders for files (e.g., {{in_1}}, {{out_1}}). Input files must start with 'in_' and be publicly accessible URLs. Output files must start with 'out_'."
+    },
+    {
+      "name": "run_chained_ffmpeg_commands",
+      "description": "Submit multiple sequential FFmpeg commands where outputs from earlier commands can be used as inputs in later commands. This is more efficient than running commands separately. Maximum 10 commands per chain."
+    },
+    {
+      "name": "poll_ffmpeg_command",
+      "description": "Check the status of a previously submitted FFmpeg command (single or chained). Returns current status, processing time, and output files with download URLs when complete."
+    },
+    {
+      "name": "delete_command_files",
+      "description": "Delete all output files associated with a completed command. This frees up storage space on Rendi's servers. Note: This action cannot be undone."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@2000gm-beep/quickstart-resources",
+  "displayName": "quickstart-resources",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:51.211Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@2000gm-beep/quickstart-resources"
+  },
+  "connection": null,
+  "capabilities": []
+}

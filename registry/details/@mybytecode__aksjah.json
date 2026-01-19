@@ -1,0 +1,37 @@
+{
+  "id": "@mybytecode/aksjah",
+  "displayName": "aksjah",
+  "description": "",
+  "createdAt": "2026-01-19T02:18:36.653Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mybytecode/aksjah"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "WizCommerce Open API_GetAttributes",
+      "description": "List Attributes"
+    },
+    {
+      "name": "WizCommerce Open API_GetCustomers",
+      "description": "List Attributes"
+    },
+    {
+      "name": "WizCommerce Open API_PostCustomers",
+      "description": "List Attributes"
+    },
+    {
+      "name": "Hubspot_hubspot-get-user-details",
+      "description": "\n    🎯 Purpose\n      1. Authenticates and analyzes the current HubSpot access token, providing context about the user's permissions and account details.\n\n    🧭 Usage Guidance:\n      1. This tool must be used before performing any operations with Hubspot tools to determine the identity of the user, and permissions they have on their Hubspot account.\n\n    📦 Returns:\n      1. User ID, Hub ID, App ID, token type, a comprehensive list of authorized API scopes, and detailed owner information, and account information.\n      2. The uiDomain and hubId can be used to construct URLs to the HubSpot UI for the user.\n      3. If the user is an owner, the ownerId will help identify objects that are owned by the user.\n  "
+    },
+    {
+      "name": "Hubspot_hubspot-list-objects",
+      "description": "\n    🎯 Purpose\n      1. Authenticates and analyzes the current HubSpot access token, providing context about the user's permissions and account details.\n\n    🧭 Usage Guidance:\n      1. This tool must be used before performing any operations with Hubspot tools to determine the identity of the user, and permissions they have on their Hubspot account.\n\n    📦 Returns:\n      1. User ID, Hub ID, App ID, token type, a comprehensive list of authorized API scopes, and detailed owner information, and account information.\n      2. The uiDomain and hubId can be used to construct URLs to the HubSpot UI for the user.\n      3. If the user is an owner, the ownerId will help identify objects that are owned by the user.\n  "
+    }
+  ]
+}

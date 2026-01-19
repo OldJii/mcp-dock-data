@@ -1,0 +1,37 @@
+{
+  "id": "gumroad",
+  "displayName": "Gumroad",
+  "description": "Gumroad simplifies selling digital goods, physical products, and memberships by offering a streamlined checkout, marketing tools, and direct payout options",
+  "createdAt": "2026-01-19T02:12:55.261Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/gumroad"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GUMROAD_GET_RESOURCE_SUBSCRIPTIONS",
+      "description": "Tool to show all active subscriptions of the user for the input resource. Use when you need to review existing webhooks before adding a new one."
+    },
+    {
+      "name": "GUMROAD_GET_SALES",
+      "description": "Tool to retrieve all successful sales by the authenticated user. Use when you need to list your Gumroad sales, optionally filtering by email, date range, product, or pagination."
+    },
+    {
+      "name": "GUMROAD_GET_USER",
+      "description": "Tool to retrieve the authenticated user's data. Use when you need the current user's profile details after authentication."
+    },
+    {
+      "name": "GUMROAD_SUBSCRIBE_TO_RESOURCE",
+      "description": "Tool to subscribe to a resource. Use when you need to receive real-time event webhooks after creating your webhook endpoint."
+    },
+    {
+      "name": "GUMROAD_UNSUBSCRIBE_FROM_RESOURCE",
+      "description": "Tool to unsubscribe from a resource. Use after verifying the subscription ID exists to remove webhook."
+    }
+  ]
+}

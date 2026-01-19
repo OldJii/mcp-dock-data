@@ -1,0 +1,12 @@
+{
+  "id": "jtalk22/slack-mcp-server",
+  "displayName": "slack-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:25.738Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/jtalk22/slack-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

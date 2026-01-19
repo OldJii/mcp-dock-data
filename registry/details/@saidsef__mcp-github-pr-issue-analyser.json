@@ -1,0 +1,28 @@
+{
+  "id": "@saidsef/mcp-github-pr-issue-analyser",
+  "displayName": "GitHub PR and Issue Analyser",
+  "description": "A Model Context Protocol (MCP) application for automated GitHub PR analysis and issue management. Enables LLMs to fetch PR details, analyse diffs, manage issues, and handle releases through a standardised interface",
+  "createdAt": "2026-01-19T02:19:53.260Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@saidsef/mcp-github-pr-issue-analyser"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "githubToken"
+      ],
+      "properties": {
+        "githubToken": {
+          "type": "string",
+          "description": "GitHub token to use for authentication."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

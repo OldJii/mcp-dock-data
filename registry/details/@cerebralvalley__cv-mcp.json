@@ -1,0 +1,34 @@
+{
+  "id": "@cerebralvalley/cv-mcp",
+  "displayName": "Cerebral Valley",
+  "description": "Cerebral Valley is the #1 AI ecosystem bringing together the best builders through events, community, and more.",
+  "createdAt": "2026-01-19T02:14:15.189Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cerebralvalley/cv-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_events",
+      "description": "Search Cerebral Valley events by location, type, and time window"
+    },
+    {
+      "name": "submit_event",
+      "description": "Submit a new event to be listed on Cerebral Valley (pending review). Users can optionally request to be featured on CV or request info about the CV events platform."
+    },
+    {
+      "name": "subscribe_to_newsletter",
+      "description": "Subscribe an email to the Cerebral Valley events/newsletter feed"
+    }
+  ]
+}

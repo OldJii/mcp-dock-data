@@ -1,0 +1,12 @@
+{
+  "id": "@qingmu0v0/mysql_mcp",
+  "displayName": "mysql_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:25.603Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@qingmu0v0/mysql_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

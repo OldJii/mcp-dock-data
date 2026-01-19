@@ -1,0 +1,12 @@
+{
+  "id": "@NickBolles/mcp-googletasks",
+  "displayName": "mcp-googletasks",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:12.198Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NickBolles/mcp-googletasks"
+  },
+  "connection": null,
+  "capabilities": []
+}

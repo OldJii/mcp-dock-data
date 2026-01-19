@@ -1,0 +1,12 @@
+{
+  "id": "@shrey4500/freshrelease-mcp-server",
+  "displayName": "freshrelease-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:25.269Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shrey4500/freshrelease-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

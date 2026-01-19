@@ -1,0 +1,25 @@
+{
+  "id": "@ubn-dev/mcp_calculator",
+  "displayName": "Calculator Service",
+  "description": "Provide precise and efficient calculation capabilities to your agents. Enable seamless arithmetic operations through a standardized interface. Enhance your applications with reliable mathematical computations.",
+  "createdAt": "2026-01-19T02:13:51.297Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ubn-dev/mcp_calculator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "description": "No configuration required"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "multiply",
+      "description": "Multiplies two numbers together."
+    }
+  ]
+}

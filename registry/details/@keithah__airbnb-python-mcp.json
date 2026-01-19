@@ -1,0 +1,12 @@
+{
+  "id": "@keithah/airbnb-python-mcp",
+  "displayName": "airbnb-python-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:48.342Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/airbnb-python-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

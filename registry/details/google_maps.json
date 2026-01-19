@@ -1,0 +1,49 @@
+{
+  "id": "google_maps",
+  "displayName": "Google Maps",
+  "description": "Integrate Google Maps to access location data, geocoding, directions, and mapping services in your application.",
+  "createdAt": "2026-01-19T02:12:33.415Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/google_maps"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLE_MAPS_COMPUTE_ROUTE_MATRIX",
+      "description": "Calculates travel distance and duration matrix between multiple origins and destinations using the modern Routes API; supports OAuth2 authentication and various travel modes."
+    },
+    {
+      "name": "GOOGLE_MAPS_DISTANCE_MATRIX_API",
+      "description": "DEPRECATED: Legacy API that calculates travel distance and time for a matrix of origins and destinations. This API only works with API keys (no OAuth2 support). Use the modern 'Compute Route Matrix' action instead, which supports OAuth2 authentication. Supports different modes of transportation and options like departure/arrival times."
+    },
+    {
+      "name": "GOOGLE_MAPS_GEOCODING_API",
+      "description": "DEPRECATED: Legacy API to convert addresses into geographic coordinates (latitude and longitude) and vice versa (reverse geocoding), or get an address for a Place ID. This API only works with API keys (no OAuth2 support). Consider using the modern Places API (Text Search or Nearby Search) for similar functionality with OAuth2 authentication."
+    },
+    {
+      "name": "GOOGLE_MAPS_GET_DIRECTION",
+      "description": "DEPRECATED: Legacy API that fetches detailed directions between an origin and a destination, supporting intermediate waypoints and various travel modes. This API only works with API keys (no OAuth2 support). Use the modern 'Get Route' action instead, which supports OAuth2 authentication."
+    },
+    {
+      "name": "GOOGLE_MAPS_GET_ROUTE",
+      "description": "Calculates one or more routes between two specified locations. Uses various travel modes and preferences; addresses must be resolvable by Google Maps."
+    },
+    {
+      "name": "GOOGLE_MAPS_MAPS_EMBED_API",
+      "description": "Tool to generate an embeddable Google Map URL and HTML iframe code. Use when you need to display a map (place, view, directions, street view, search) on a webpage without JavaScript. Note: This API only works with API keys (no OAuth2 support). It generates embed URLs and does not make direct API calls."
+    },
+    {
+      "name": "GOOGLE_MAPS_NEARBY_SEARCH",
+      "description": "Searches for places (e.g., restaurants, parks) within a specified circular area, with options to filter by place types and customize the returned fields and number of results."
+    },
+    {
+      "name": "GOOGLE_MAPS_TEXT_SEARCH",
+      "description": "Searches for places on Google Maps using a textual query (e.g., \"restaurants in London\", \"Eiffel Tower\")."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "@kvrancic/persona-mcp",
+  "displayName": "Persona Explorer",
+  "description": "Create personas of real people from their public web content. Ask questions and get answers grounded in their actual statements. Switch between personas and revisit saved profiles anytime.",
+  "createdAt": "2026-01-19T02:18:29.252Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kvrancic/persona-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "required": [
+        "serper_api_key",
+        "anthropic_api_key"
+      ],
+      "properties": {
+        "serper_api_key": {
+          "type": "string",
+          "description": "Serper API key for web search"
+        },
+        "anthropic_api_key": {
+          "type": "string",
+          "description": "Anthropic API key for Claude LLM"
+        }
+      },
+      "description": "Configuration for the Persona MCP Server.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "init_persona",
+      "description": "\n        Initialize a persona by gathering and storing their online content.\n\n        Args:\n            person_name: Full name of the person (e.g., \"Alex Hormozi\")\n            max_urls: Maximum URLs to scrape (default: 3, recommended: 1-5)\n        "
+    },
+    {
+      "name": "ask_persona",
+      "description": "\n        Ask a question to the currently active persona.\n\n        Args:\n            question: The question to ask\n        "
+    },
+    {
+      "name": "get_current_persona",
+      "description": "\n        Get the name of the currently active persona.\n        "
+    },
+    {
+      "name": "switch_persona",
+      "description": "\n        Switch to a different persona that has already been initialized.\n\n        Args:\n            person_name: Name of the persona to switch to\n        "
+    }
+  ]
+}

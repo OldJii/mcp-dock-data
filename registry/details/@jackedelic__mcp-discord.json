@@ -1,0 +1,116 @@
+{
+  "id": "@jackedelic/mcp-discord",
+  "displayName": "Discord Integration Server",
+  "description": "Enable AI assistants to interact seamlessly with Discord by managing servers, channels, messages, reactions, and webhooks. Send and read messages, create and delete channels or forum posts, and handle webhooks to automate Discord workflows. Simplify Discord bot operations through a standardized MCP interface.",
+  "createdAt": "2026-01-19T02:13:38.296Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jackedelic/mcp-discord"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "discordToken"
+      ],
+      "properties": {
+        "discordToken": {
+          "type": "string",
+          "description": "Discord bot token. Obtain this from the Discord Developer Portal."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "discord_create_category",
+      "description": "Creates a new category in a Discord server."
+    },
+    {
+      "name": "discord_edit_category",
+      "description": "Edits an existing Discord category (name and position)."
+    },
+    {
+      "name": "discord_delete_category",
+      "description": "Deletes a Discord category by ID."
+    },
+    {
+      "name": "discord_login",
+      "description": "Logs in to Discord using the configured token"
+    },
+    {
+      "name": "discord_send",
+      "description": "Sends a message to a specified Discord text channel"
+    },
+    {
+      "name": "discord_get_forum_channels",
+      "description": "Lists all forum channels in a specified Discord server (guild)"
+    },
+    {
+      "name": "discord_create_forum_post",
+      "description": "Creates a new post in a Discord forum channel with optional tags"
+    },
+    {
+      "name": "discord_get_forum_post",
+      "description": "Retrieves details about a forum post including its messages"
+    },
+    {
+      "name": "discord_reply_to_forum",
+      "description": "Adds a reply to an existing forum post or thread"
+    },
+    {
+      "name": "discord_create_text_channel",
+      "description": "Creates a new text channel in a Discord server with an optional topic"
+    },
+    {
+      "name": "discord_delete_channel",
+      "description": "Deletes a Discord channel with an optional reason"
+    },
+    {
+      "name": "discord_read_messages",
+      "description": "Retrieves messages from a Discord text channel with a configurable limit"
+    },
+    {
+      "name": "discord_get_server_info",
+      "description": "Retrieves detailed information about a Discord server including channels and member count"
+    },
+    {
+      "name": "discord_add_reaction",
+      "description": "Adds an emoji reaction to a specific Discord message"
+    },
+    {
+      "name": "discord_add_multiple_reactions",
+      "description": "Adds multiple emoji reactions to a Discord message at once"
+    },
+    {
+      "name": "discord_remove_reaction",
+      "description": "Removes a specific emoji reaction from a Discord message"
+    },
+    {
+      "name": "discord_delete_forum_post",
+      "description": "Deletes a forum post or thread with an optional reason"
+    },
+    {
+      "name": "discord_delete_message",
+      "description": "Deletes a specific message from a Discord text channel"
+    },
+    {
+      "name": "discord_create_webhook",
+      "description": "Creates a new webhook for a Discord channel"
+    },
+    {
+      "name": "discord_send_webhook_message",
+      "description": "Sends a message to a Discord channel using a webhook"
+    },
+    {
+      "name": "discord_edit_webhook",
+      "description": "Edits an existing webhook for a Discord channel"
+    },
+    {
+      "name": "discord_delete_webhook",
+      "description": "Deletes an existing webhook for a Discord channel"
+    }
+  ]
+}

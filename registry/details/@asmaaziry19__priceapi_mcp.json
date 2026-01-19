@@ -1,0 +1,41 @@
+{
+  "id": "@asmaaziry19/priceapi_mcp",
+  "displayName": "priceapi_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:29.342Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@asmaaziry19/priceapi_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "debug_env_vars",
+      "description": "Debug tool to check environment variables and current token status.\n\nReturns:\n    dict: Environment variable and token information"
+    },
+    {
+      "name": "get_status_of_job",
+      "description": "Get the status of a job from the PriceAPI service.\n\nArgs:\n    job_id (str): The job ID to check status for\n    token (str | None): Optional PriceAPI token. If not provided, falls back to\n        URL parameters or PRICEAPI_TOKEN environment variable.\n\nReturns:\n    dict: Job status information"
+    },
+    {
+      "name": "get_job_results",
+      "description": "Get the results of a finished PriceAPI job to be processed by the user.\n\nArgs:\n    job_id (str): The job ID to get results for\n    token (str | None): Optional PriceAPI token. If not provided, falls back to\n        URL parameters or PRICEAPI_TOKEN environment variable.\n\nReturns:\n    dict: Job results data"
+    },
+    {
+      "name": "create_job",
+      "description": "Create a new PriceAPI job for data collection.\n\nArgs:\n    source (str): Data source (amazon, ebay, google_shopping, etc.)\n    country (str): Country code (us, uk, de, etc.)\n    topic (str): Search topic or product identifier\n    key (str): Search key or ASIN\n    max_pages (int): Maximum pages to scrape (default: 1)\n    token (str | None): Optional PriceAPI token. If not provided, falls back to\n        URL parameters or PRICEAPI_TOKEN environment variable.\n\nReturns:\n    dict: Job creation result"
+    },
+    {
+      "name": "list_jobs",
+      "description": "List all jobs for the current API token.\n\nArgs:\n    token (str | None): Optional PriceAPI token. If not provided, falls back to\n        URL parameters or PRICEAPI_TOKEN environment variable.\n    limit (int): Maximum number of jobs to return (default: 50)\n    offset (int): Number of jobs to skip (default: 0)\n\nReturns:\n    dict: List of jobs"
+    },
+    {
+      "name": "wait_for_job_completion",
+      "description": "Wait for a job to complete and return results.\n\nArgs:\n    job_id (str): The job ID to wait for\n    token (str | None): Optional PriceAPI token. If not provided, falls back to\n        URL parameters or PRICEAPI_TOKEN environment variable.\n    max_wait_time (int): Maximum time to wait in seconds (default: 300)\n    check_interval (int): Time between status checks in seconds (default: 10)\n\nReturns:\n    dict: Job completion result"
+    }
+  ]
+}

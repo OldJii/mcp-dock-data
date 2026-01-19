@@ -1,0 +1,16 @@
+{
+  "id": "@yurthankiyak/mcp-advice",
+  "displayName": "Advice Server",
+  "description": "Provide tailored advice and recommendations through an MCP interface. Enable seamless integration of advice generation capabilities into your applications. Enhance user interactions with context-aware suggestions and guidance.",
+  "createdAt": "2026-01-19T02:20:12.324Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yurthankiyak/mcp-advice"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

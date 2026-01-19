@@ -1,0 +1,12 @@
+{
+  "id": "@oneTeam-MCP/smithery-ai-mcp2",
+  "displayName": "smithery-ai-mcp2",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:09.125Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@oneTeam-MCP/smithery-ai-mcp2"
+  },
+  "connection": null,
+  "capabilities": []
+}

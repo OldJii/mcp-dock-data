@@ -1,0 +1,21 @@
+{
+  "id": "@mefta.sadat2/ld",
+  "displayName": "test",
+  "description": "test",
+  "createdAt": "2026-01-19T02:17:07.322Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mefta.sadat2/ld"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "catalog_search",
+      "description": "Search the product catalog to find grocery products."
+    }
+  ]
+}

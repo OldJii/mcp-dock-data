@@ -1,0 +1,12 @@
+{
+  "id": "@anderson-0/jira-cloud-mcp",
+  "displayName": "jira-cloud-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:43.563Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anderson-0/jira-cloud-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

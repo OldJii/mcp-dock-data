@@ -1,0 +1,12 @@
+{
+  "id": "@0x3at/tasks",
+  "displayName": "tasks",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:39.300Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@0x3at/tasks"
+  },
+  "connection": null,
+  "capabilities": []
+}

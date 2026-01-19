@@ -1,0 +1,157 @@
+{
+  "id": "one_drive",
+  "displayName": "One drive",
+  "description": "OneDrive is Microsoft’s cloud storage solution enabling users to store, sync, and share files across devices, offering offline access, real-time collaboration, and enterprise-grade security",
+  "createdAt": "2026-01-19T02:12:52.229Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/one_drive"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ONE_DRIVE_COPY_ITEM",
+      "description": "Tool to copy a DriveItem (file or folder) to a new location asynchronously. Use when you need to duplicate an item, optionally renaming it or specifying a different parent folder. The operation is asynchronous; the response provides a URL to monitor the copy progress."
+    },
+    {
+      "name": "ONE_DRIVE_CREATE_LINK",
+      "description": "Tool to create a sharing link for a DriveItem (file or folder) by its unique ID. Use when you need to generate a shareable link for an item in OneDrive or SharePoint."
+    },
+    {
+      "name": "ONE_DRIVE_DELETE_ITEM",
+      "description": "Tool to delete a DriveItem (file or folder) by its unique ID from the authenticated user's OneDrive. Use when you need to remove an item from OneDrive. This action moves the item to the recycle bin, not permanently deleting it."
+    },
+    {
+      "name": "ONE_DRIVE_DOWNLOAD_FILE",
+      "description": "Downloads a file from a user's OneDrive using its item ID, which must refer to a file and not a folder."
+    },
+    {
+      "name": "ONE_DRIVE_GET_DRIVE",
+      "description": "Retrieves the properties and relationships of a Drive resource by its unique ID. Use this action when you need to get details about a specific OneDrive, user's OneDrive, group's document library, or a site's document library."
+    },
+    {
+      "name": "ONE_DRIVE_GET_ITEM",
+      "description": "Retrieves the metadata of a DriveItem by its unique ID. Use this tool to get information about a specific file or folder in OneDrive when you have its ID. If a `drive_id` is not provided, it defaults to the user's main drive."
+    },
+    {
+      "name": "ONE_DRIVE_GET_ITEM_PERMISSIONS",
+      "description": "Retrieves the permissions of a DriveItem by its unique ID or path within a specific Drive. Use when you need to check who has access to a file or folder and what level of access they have."
+    },
+    {
+      "name": "ONE_DRIVE_GET_ITEM_THUMBNAILS",
+      "description": "Tool to retrieve the thumbnails associated with a DriveItem. Use when you need to display visual previews of files."
+    },
+    {
+      "name": "ONE_DRIVE_GET_ITEM_VERSIONS",
+      "description": "Tool to retrieve the version history of a DriveItem by its unique ID. Use when you need to access or list previous versions of a file."
+    },
+    {
+      "name": "ONE_DRIVE_GET_QUOTA",
+      "description": "Tool to retrieve the quota information for the authenticated user's OneDrive. Use this action to check the storage space details like total, used, and remaining space on the user's OneDrive."
+    },
+    {
+      "name": "ONE_DRIVE_GET_RECENT_ITEMS",
+      "description": "Get files and folders recently accessed by the user. Returns items based on activity history (opened, edited, viewed), sorted by most recent first. Use when you need to see what the user worked on recently (e.g., 'Show me files I worked on today'). Different from search - this tracks activity, not content."
+    },
+    {
+      "name": "ONE_DRIVE_GET_SHARED_ITEMS",
+      "description": "Tool to retrieve a list of items that have been shared with the authenticated user. Use this action to get details of files and folders shared with the current user."
+    },
+    {
+      "name": "ONE_DRIVE_GET_SHAREPOINT_LIST_ITEMS",
+      "description": "Tool to get the items (list items) within a specific SharePoint list on a site. Use when you need to retrieve data from a SharePoint list."
+    },
+    {
+      "name": "ONE_DRIVE_GET_SITE_DETAILS",
+      "description": "Retrieves metadata for a specific SharePoint site by its ID. Use this action when you need to get details like display name, web URL, and creation/modification dates for a known SharePoint site."
+    },
+    {
+      "name": "ONE_DRIVE_GET_SITE_PAGE_CONTENT",
+      "description": "Gets the content of a modern SharePoint site page. Use when you need to retrieve the details and content of a specific page within a SharePoint site."
+    },
+    {
+      "name": "ONE_DRIVE_INVITE_USER_TO_DRIVE_ITEM",
+      "description": "Tool to invite users or grant permissions to a specific item in a OneDrive drive. Use when you need to share a file or folder with other users and define their access level (e.g., read or write)."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_DRIVE_ITEM_ACTIVITIES",
+      "description": "Tool to list recent activities for a specific item in a OneDrive drive. Use when you need to track changes or actions performed on a file or folder."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_DRIVES",
+      "description": "Tool to retrieve a list of Drive resources available to the authenticated user, or for a specific user, group, or site. Use when you need to find out what drives are accessible."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_ROOT_DRIVE_CHANGES",
+      "description": "Tool to list changes in the root of the user's primary drive using a delta token. Use when you need to track file and folder modifications, additions, or deletions in the main OneDrive directory."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SHAREPOINT_LIST_ITEMS_DELTA",
+      "description": "Tool to track changes to items in a SharePoint list using a delta query. Use when you need to get newly created, updated, or deleted list items without performing a full read of the entire item collection."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SITE_COLUMNS",
+      "description": "Tool to list all column definitions for a SharePoint site. Use this when you need to retrieve the schema or structure of columns within a specific SharePoint site."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SITE_DRIVE_ITEMS_DELTA",
+      "description": "Tool to track changes to DriveItems in the default document library of a SharePoint site. Use when you need to get a list of items that have been added, modified, or deleted since a previous state or to get an initial enumeration of all items."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SITE_LISTS",
+      "description": "Tool to list all lists under a specific SharePoint site. Use when you need to enumerate lists within a known site."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SITE_SUBSITES",
+      "description": "Tool to list all subsites of a SharePoint site. Use when you need to retrieve a collection of subsites for a given parent site."
+    },
+    {
+      "name": "ONE_DRIVE_LIST_SUBSCRIPTIONS",
+      "description": "Tool to list the current subscriptions for the authenticated user or app. Use this to retrieve details of existing webhook subscriptions."
+    },
+    {
+      "name": "ONE_DRIVE_MOVE_ITEM",
+      "description": "Tool to move a file or folder to a new parent folder in OneDrive. Use when you need to reorganize your files or folders by changing their location. You can optionally rename the item during the move."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_CREATE_FOLDER",
+      "description": "Creates a new folder in the user's OneDrive, automatically renaming on conflict, optionally within a specified parent_folder (by ID or full path from root) which, if not the root, must exist and be accessible."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_CREATE_TEXT_FILE",
+      "description": "Creates a new text file with specified content in a OneDrive folder, using either the folder's unique ID or its absolute path (paths are automatically resolved to IDs); note that OneDrive may rename or create a new version if the filename already exists."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_FIND_FILE",
+      "description": "Non-recursively finds an item (file or folder) in a specified OneDrive folder; if `folder` is provided as a path, it must actually exist."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_FIND_FOLDER",
+      "description": "Finds folders by name within an accessible parent folder in OneDrive, or lists all its direct child folders if no name is specified."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_LIST_ITEMS",
+      "description": "Retrieves all files and folders as `driveItem` resources from the root of a specified user's OneDrive, automatically handling pagination."
+    },
+    {
+      "name": "ONE_DRIVE_ONEDRIVE_UPLOAD_FILE",
+      "description": "Uploads a file to a specified OneDrive folder, automatically renaming on conflict and supporting large files via chunking."
+    },
+    {
+      "name": "ONE_DRIVE_PREVIEW_DRIVE_ITEM",
+      "description": "Generates or retrieves a short-lived embeddable URL for a preview of a specific item. Use when you need to display a temporary preview of a file."
+    },
+    {
+      "name": "ONE_DRIVE_SEARCH_ITEMS",
+      "description": "Search OneDrive for files and folders by keyword. Searches filenames, metadata, and file content to find matching items. Use when you need to find specific files based on keywords, file types, or content (e.g., 'Find all PDFs containing budget'). Supports filtering, sorting, and pagination."
+    },
+    {
+      "name": "ONE_DRIVE_UPDATE_DRIVE_ITEM_METADATA",
+      "description": "Tool to update the metadata of a specific item (file or folder) in OneDrive. Use this to rename items, change descriptions, or move items to a new parent folder."
+    }
+  ]
+}

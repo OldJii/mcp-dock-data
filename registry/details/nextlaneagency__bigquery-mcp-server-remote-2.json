@@ -1,0 +1,12 @@
+{
+  "id": "nextlaneagency/bigquery-mcp-server-remote-2",
+  "displayName": "bigquery-mcp-server-remote-2",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:53.578Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/nextlaneagency/bigquery-mcp-server-remote-2"
+  },
+  "connection": null,
+  "capabilities": []
+}

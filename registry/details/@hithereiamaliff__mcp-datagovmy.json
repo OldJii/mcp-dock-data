@@ -1,0 +1,141 @@
+{
+  "id": "@hithereiamaliff/mcp-datagovmy",
+  "displayName": "Malaysia Open Data MCP Server",
+  "description": "This MCP server provides seamless access to Malaysia's government open data, including datasets, weather forecasts, and public transportation information. Enable efficient querying and retrieval of real-time and historical data with built-in rate limiting and error handling. Empower applications to integrate comprehensive Malaysian public data effortlessly.\n\nNote: this is NOT an official MCP server by the Government of Malaysia or anyone from Malaysia's Open Data/Jabatan Digital Negara/Ministry of Digital team.",
+  "createdAt": "2026-01-19T02:15:19.280Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-datagovmy"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "datagovmy_list_datasets_catalogue",
+      "description": "Lists all datasets from the comprehensive catalogue with rich metadata"
+    },
+    {
+      "name": "datagovmy_search_datasets_catalogue",
+      "description": "⚠️ CONSIDER USING search_all INSTEAD: This only searches datasets. For comprehensive results across datasets and dashboards, use search_all tool. ⚠️"
+    },
+    {
+      "name": "datagovmy_filter_datasets_catalogue",
+      "description": "Filter datasets by various criteria such as frequency, geography, etc."
+    },
+    {
+      "name": "datagovmy_get_dataset_filters",
+      "description": "Get available filter options for datasets"
+    },
+    {
+      "name": "datagovmy_get_dataset_details",
+      "description": "Get comprehensive metadata for a dataset by ID"
+    },
+    {
+      "name": "datagovmy_list_dosm_datasets",
+      "description": "Lists available datasets from the Department of Statistics Malaysia"
+    },
+    {
+      "name": "datagovmy_get_dosm_dataset",
+      "description": "Gets data from a specific DOSM dataset"
+    },
+    {
+      "name": "datagovmy_get_weather_forecast",
+      "description": "Gets weather forecast for Malaysia"
+    },
+    {
+      "name": "datagovmy_get_weather_warnings",
+      "description": "Gets current weather warnings for Malaysia"
+    },
+    {
+      "name": "datagovmy_get_earthquake_warnings",
+      "description": "Gets earthquake warnings for Malaysia"
+    },
+    {
+      "name": "datagovmy_list_dashboards",
+      "description": "Lists all available dashboards from the Malaysia Open Data platform"
+    },
+    {
+      "name": "datagovmy_search_dashboards",
+      "description": "⚠️ CONSIDER USING search_all INSTEAD: This only searches dashboards. For comprehensive results across datasets and dashboards, use search_all tool. ⚠️"
+    },
+    {
+      "name": "datagovmy_get_dashboard_details",
+      "description": "Get comprehensive metadata for a dashboard by name"
+    },
+    {
+      "name": "datagovmy_get_dashboard_charts",
+      "description": "Get chart configurations for a specific dashboard"
+    },
+    {
+      "name": "datagovmy_search_all",
+      "description": "⭐⭐⭐ PRIMARY SEARCH TOOL: Always use this first for any data or visualization queries. Searches across both datasets and dashboards with intelligent fallback. ⭐⭐⭐"
+    },
+    {
+      "name": "datagovmy_parse_parquet_file",
+      "description": "Parse and display data from a Parquet file URL"
+    },
+    {
+      "name": "datagovmy_get_parquet_info",
+      "description": "Get metadata and structure information about a Parquet file"
+    },
+    {
+      "name": "datagovmy_find_dashboard_for_parquet",
+      "description": "Find the corresponding dashboard for a Parquet file"
+    },
+    {
+      "name": "datagovmy_parse_gtfs_static",
+      "description": "Parse GTFS Static data for a specific transport provider. IMPORTANT: For transit queries like \"Show me routes from Rapid Penang\", use get_transit_routes directly with the provider name. This is a low-level tool - prefer using get_transit_routes or get_transit_stops for most user queries."
+    },
+    {
+      "name": "datagovmy_parse_gtfs_realtime",
+      "description": "Parse GTFS Realtime data for a specific transport provider. IMPORTANT: For transit queries like \"Show me bus locations from Rapid Penang\", use this tool directly with the provider name. Common names like \"rapid penang\", \"rapid kuantan\", or \"mybas johor\" are automatically mapped to the correct provider-category pairs."
+    },
+    {
+      "name": "datagovmy_get_transit_routes",
+      "description": "Get transit routes from GTFS data. IMPORTANT: For transit route queries like \"Show me bus routes for Rapid Penang\", use this tool directly with the provider name."
+    },
+    {
+      "name": "datagovmy_get_transit_stops",
+      "description": "Get transit stops from GTFS data. IMPORTANT: For transit stop queries like \"Show me bus stops for Rapid Penang\", use this tool directly with the provider name. The tool supports common names like \"rapid penang\", \"rapid kuantan\", \"ktmb\", or \"mybas johor\" which will be automatically mapped to the correct provider and category. No need to use list_transport_agencies first."
+    },
+    {
+      "name": "datagovmy_get_transit_arrivals",
+      "description": "Get real-time transit arrivals at a specific stop. IMPORTANT: Use this tool directly for queries like \"When will the next bus arrive at my stop?\" or \"Show me arrival times for Rapid Penang buses at stop X\"."
+    },
+    {
+      "name": "datagovmy_search_transit_stops_by_location",
+      "description": "Search for transit stops near a named location. IMPORTANT: Use this tool for queries like \"Show me bus stops near KLCC\" or \"What buses stop at KL Sentral?\" This tool geocodes the location name to coordinates, then finds nearby stops. CRITICAL: For Rapid KL services, ALWAYS use specific terms in the provider parameter like \"rapid kl bus\", \"rapid rail\", \"mrt feeder\", \"lrt\", \"mrt\" instead of using \"prasarana\" with a separate category parameter. DO NOT use provider=\"prasarana\" with category=\"rapid-rail-kl\" as this causes 404 errors. Instead use provider=\"rapid rail\" or provider=\"lrt\" or provider=\"mrt\" or provider=\"mrt feeder\" or provider=\"rapid kl bus\" without a category parameter."
+    },
+    {
+      "name": "datagovmy_find_nearest_transit_stops",
+      "description": "Find the nearest transit stops to a given location. IMPORTANT: Use this tool directly for queries like \"Where is the nearest bus stop to my location?\" or \"How do I get to the nearest Rapid Penang bus stop?\""
+    },
+    {
+      "name": "datagovmy_list_transport_agencies",
+      "description": "Lists available transport agencies with GTFS data"
+    },
+    {
+      "name": "datagovmy_get_transport_data",
+      "description": "Gets GTFS data for a specific transport agency"
+    },
+    {
+      "name": "datagovmy_get_gtfs_static",
+      "description": "Gets GTFS static data for a specific transport provider"
+    },
+    {
+      "name": "datagovmy_get_gtfs_realtime_vehicle_position",
+      "description": "Gets GTFS realtime vehicle position data for a specific transport provider"
+    },
+    {
+      "name": "datagovmy_get_flood_warnings",
+      "description": "Gets current flood warnings for Malaysia"
+    },
+    {
+      "name": "datagovmy_hello",
+      "description": "A simple test tool to verify that the MCP server is working correctly"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "waldium/waldium",
+  "displayName": "waldium",
+  "description": "",
+  "createdAt": "2026-01-19T02:19:25.278Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/waldium/waldium"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "API_KEY"
+      ],
+      "properties": {
+        "API_KEY": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "waldium_batch_create_posts",
+      "description": "Create tasks for batch post generation. Use startDate/endDate for automatic distribution, or specify scheduledFor per post for explicit timing."
+    },
+    {
+      "name": "waldium_generate_post",
+      "description": "Generate a new blog post using AI for the authenticated site with customizable AI model selection."
+    },
+    {
+      "name": "waldium_create_geo_report",
+      "description": "Submit a request for a geographic market analysis report. The report will be generated and emailed to the provided address."
+    },
+    {
+      "name": "waldium_create_post",
+      "description": "Create a new blog post for the authenticated site."
+    },
+    {
+      "name": "waldium_update_post_status",
+      "description": "Set a post's status to DRAFT, UNLISTED, or PUBLISHED using the request body."
+    },
+    {
+      "name": "waldium_delete_knowledge",
+      "description": "Delete a knowledge base item by ID for the authenticated site. This will remove the file from storage and delete the database record."
+    },
+    {
+      "name": "waldium_create_knowledge",
+      "description": "Create a new knowledge base item for the authenticated site by uploading a file."
+    },
+    {
+      "name": "waldium_delete_post",
+      "description": "Delete a blog post by ID for the authenticated site."
+    },
+    {
+      "name": "waldium_get_post",
+      "description": "Retrieve a single blog post by ID for the authenticated site."
+    }
+  ]
+}

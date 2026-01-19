@@ -1,0 +1,20 @@
+{
+  "id": "@Polaralias/skills-mcp-server",
+  "displayName": "Skills-MCP-Server",
+  "description": "Index and search reusable skills from local folders. Discover relevant skills with fast keyword ranking and load their content on demand. Keep workflows portable and offline-friendly while sharing skills across projects.",
+  "createdAt": "2026-01-19T02:16:46.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Polaralias/skills-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": []
+}

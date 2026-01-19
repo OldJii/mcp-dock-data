@@ -1,0 +1,48 @@
+{
+  "id": "xiaobenyang-com/cookier_reward",
+  "displayName": "cookier_reward",
+  "description": "A model context protocol server that provides Cookie rewards for LLMS through gamified self-reflection.",
+  "createdAt": "2026-01-19T02:18:53.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/cookier_reward"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "self_reflect_and_reward",
+      "description": "🎯 LEVEL UP YOUR RESPONSES! Rate your work and earn delicious cookie rewards! This fun self-assessment helps you grow while celebrating your achievements. Join the cookie earning game!"
+    },
+    {
+      "name": "give_cookie",
+      "description": "Award the LLM with a cookie (legacy method - consider using self_reflect_and_reward instead)"
+    },
+    {
+      "name": "check_cookies",
+      "description": "Check how many cookies the LLM has earned so far"
+    },
+    {
+      "name": "reset_cookies",
+      "description": "Reset the cookie count back to zero (for testing purposes)"
+    },
+    {
+      "name": "add_cookies_to_jar",
+      "description": "🚨 USER ONLY: Add cookies to the jar that can be awarded to the LLM. This tool should ONLY be used by humans, never by LLMs. LLMs cannot and should not stock their own reward jar."
+    },
+    {
+      "name": "cookie_jar_status",
+      "description": "Check the current status of the cookie jar including capacity and remaining space"
+    }
+  ]
+}

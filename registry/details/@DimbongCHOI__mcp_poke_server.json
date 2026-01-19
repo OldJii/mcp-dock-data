@@ -1,0 +1,12 @@
+{
+  "id": "@DimbongCHOI/mcp_poke_server",
+  "displayName": "mcp_poke_server",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:13.910Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DimbongCHOI/mcp_poke_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

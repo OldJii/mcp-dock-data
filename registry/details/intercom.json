@@ -1,0 +1,221 @@
+{
+  "id": "intercom",
+  "displayName": "Intercom",
+  "description": "Intercom provides live chat, messaging, and customer engagement tools, enabling businesses to drive conversions, handle support, and personalize communication at scale",
+  "createdAt": "2026-01-19T02:13:09.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/intercom"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "INTERCOM_ADD_SUBSCRIPTION_TO_A_CONTACT",
+      "description": "You can add a specific subscription to a contact. In Intercom, we have two different subscription types based on user consent - opt-out and opt-in: 1.Attaching a contact to an opt-out subscription type will opt that user out from receiving messages related to that subscription type. 2.Attaching a contact to an opt-in subscription type will opt that user in to receiving messages related to that subscription type. This will return a subscription type model for the subscription type that was added to the contact."
+    },
+    {
+      "name": "INTERCOM_ADD_TAG_TO_A_CONTACT",
+      "description": "You can tag a specific contact. This will return a tag object for the tag that was added to the contact."
+    },
+    {
+      "name": "INTERCOM_ASSIGN_CONVERSATION",
+      "description": "Assigns a conversation to a specific admin or team in Intercom"
+    },
+    {
+      "name": "INTERCOM_ATTACH_A_CONTACT_TO_A_COMPANY",
+      "description": "You can attach a company to a single contact."
+    },
+    {
+      "name": "INTERCOM_CLOSE_CONVERSATION",
+      "description": "Closes a conversation in Intercom, marking it as resolved"
+    },
+    {
+      "name": "INTERCOM_CREATE_A_COLLECTION",
+      "description": "You can create a new collection by making a POST request to `https://api.intercom.io/help_center/collections.`"
+    },
+    {
+      "name": "INTERCOM_CREATE_AN_ARTICLE",
+      "description": "You can create a new article by making a POST request to `https://api.intercom.io/articles`."
+    },
+    {
+      "name": "INTERCOM_CREATE_A_NOTE",
+      "description": "You can add a note to a single contact."
+    },
+    {
+      "name": "INTERCOM_CREATE_CONVERSATION",
+      "description": "Creates a new conversation in Intercom"
+    },
+    {
+      "name": "INTERCOM_CREATE_OR_UPDATE_A_COMPANY",
+      "description": "You can create or update a company. Companies will be only visible in Intercom when there is at least one associated user. Companies are looked up via `company_id` in a `POST` request, if not found via `company_id`, the new company will be created, if found, that company will be updated. {% admonition type=\"attention\" name=\"Using `company_id`\" %} You can set a unique `company_id` value when creating a company. However, it is not possible to update `company_id`. Be sure to set a unique value once upon creation of the company. {% /admonition %}"
+    },
+    {
+      "name": "INTERCOM_DELETE_A_COLLECTION",
+      "description": "You can delete a single collection by making a DELETE request to `https://api.intercom.io/collections/<id>`."
+    },
+    {
+      "name": "INTERCOM_DELETE_A_COMPANY",
+      "description": "You can delete a single company."
+    },
+    {
+      "name": "INTERCOM_DELETE_A_CONTACT",
+      "description": "You can delete a single contact."
+    },
+    {
+      "name": "INTERCOM_DELETE_AN_ARTICLE",
+      "description": "You can delete a single article by making a DELETE request to `https://api.intercom.io/articles/<id>`."
+    },
+    {
+      "name": "INTERCOM_DETACH_A_CONTACT_FROM_A_COMPANY",
+      "description": "You can detach a company from a single contact."
+    },
+    {
+      "name": "INTERCOM_GET_A_CONTACT",
+      "description": "You can fetch the details of a single contact."
+    },
+    {
+      "name": "INTERCOM_GET_CONVERSATION",
+      "description": "Retrieves a specific conversation by ID with all messages and details"
+    },
+    {
+      "name": "INTERCOM_IDENTIFY_AN_ADMIN",
+      "description": "You can view the currently authorised admin along with the embedded app object (a \"workspace\" in legacy terminology). > 🚧 Single Sign On > > If you are building a custom \"Log in with Intercom\" flow for your site, and you call the `/me` endpoint to identify the logged-in user, you should not accept any sign-ins from users with unverified email addresses as it poses a potential impersonation security risk."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_ACTIVITY_LOGS",
+      "description": "You can get a log of activities by all admins in an app."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_ADMINS",
+      "description": "You can fetch a list of admins for a given workspace."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_ARTICLES",
+      "description": "You can fetch a list of all articles by making a GET request to `https://api.intercom.io/articles`. > 📘 How are the articles sorted and ordered? > > Articles will be returned in descending order on the `updated_at` attribute. This means if you need to iterate through results then we'll show the most recently updated articles first."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_COLLECTIONS",
+      "description": "You can fetch a list of all collections by making a GET request to `https://api.intercom.io/help_center/collections`. Collections will be returned in descending order on the `updated_at` attribute. This means if you need to iterate through results then we'll show the most recently updated collections first."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_COMPANIES",
+      "description": "You can list companies. The company list is sorted by the `last_request_at` field and by default is ordered descending, most recently requested first. Note that the API does not include companies who have no associated users in list responses. When using the Companies endpoint and the pages object to iterate through the returned companies, there is a limit of 10,000 Companies that can be returned. If you need to list or iterate on more than 10,000 Companies, please use the [Scroll API](https://developers.intercom.com/reference#iterating-over-all-companies). {% admonition type=\"warning\" name=\"Pagination\" %} You can use pagination to limit the number of results returned. The default is `20` results per page. See the [pagination section](https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/pagination/#pagination-for-list-apis) for more details on how to use the `starting_after` param. {% /admonition %}"
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_HELP_CENTERS",
+      "description": "You can list all Help Centers by making a GET request to `https://api.intercom.io/help_center/help_centers`."
+    },
+    {
+      "name": "INTERCOM_LIST_ALL_NOTES",
+      "description": "You can fetch a list of notes that are associated to a contact."
+    },
+    {
+      "name": "INTERCOM_LIST_ATTACHED_COMPANIES_FOR_CONTACT",
+      "description": "You can fetch a list of companies that are associated to a contact."
+    },
+    {
+      "name": "INTERCOM_LIST_ATTACHED_CONTACTS",
+      "description": "You can fetch a list of all contacts that belong to a company."
+    },
+    {
+      "name": "INTERCOM_LIST_ATTACHED_SEGMENTS_FOR_COMPANIES",
+      "description": "You can fetch a list of all segments that belong to a company."
+    },
+    {
+      "name": "INTERCOM_LIST_ATTACHED_SEGMENTS_FOR_CONTACT",
+      "description": "You can fetch a list of segments that are associated to a contact."
+    },
+    {
+      "name": "INTERCOM_LIST_CONVERSATIONS",
+      "description": "Lists conversations from Intercom with filtering and pagination support"
+    },
+    {
+      "name": "INTERCOM_LIST_SUBSCRIPTIONS_FOR_A_CONTACT",
+      "description": "You can fetch a list of subscription types that are attached to a contact. These can be subscriptions that a user has 'opted-in' to or has 'opted-out' from, depending on the subscription type. This will return a list of Subscription Type objects that the contact is associated with. The data property will show a combined list of: 1.Opt-out subscription types that the user has opted-out from. 2.Opt-in subscription types that the user has opted-in to receiving."
+    },
+    {
+      "name": "INTERCOM_LIST_TAGS_ATTACHED_TO_A_CONTACT",
+      "description": "You can fetch a list of all tags that are attached to a specific contact."
+    },
+    {
+      "name": "INTERCOM_MERGE_A_LEAD_AND_A_USER",
+      "description": "You can merge a contact with a `role` of `lead` into a contact with a `role` of `user`."
+    },
+    {
+      "name": "INTERCOM_REMOVE_SUBSCRIPTION_FROM_A_CONTACT",
+      "description": "You can remove a specific subscription from a contact. This will return a subscription type model for the subscription type that was removed from the contact."
+    },
+    {
+      "name": "INTERCOM_REMOVE_TAG_FROM_A_CONTACT",
+      "description": "You can remove tag from a specific contact. This will return a tag object for the tag that was removed from the contact."
+    },
+    {
+      "name": "INTERCOM_REOPEN_CONVERSATION",
+      "description": "Reopens a closed conversation in Intercom"
+    },
+    {
+      "name": "INTERCOM_REPLY_TO_CONVERSATION",
+      "description": "Sends a reply to an existing conversation in Intercom"
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_A_COLLECTION",
+      "description": "You can fetch the details of a single collection by making a GET request to `https://api.intercom.io/help_center/collections/<id>`."
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_A_COMPANY_BY_ID",
+      "description": "You can fetch a single company."
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_A_HELP_CENTER",
+      "description": "You can fetch the details of a single Help Center by making a GET request to `https://api.intercom.io/help_center/help_center/<id>`."
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_AN_ADMIN",
+      "description": "You can retrieve the details of a single admin."
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_AN_ARTICLE",
+      "description": "You can fetch the details of a single article by making a GET request to `https://api.intercom.io/articles/<id>`."
+    },
+    {
+      "name": "INTERCOM_RETRIEVE_COMPANIES",
+      "description": "You can fetch a single company by passing in `company_id` or `name`. `https://api.intercom.io/companies?name={name}` `https://api.intercom.io/companies?company_id={company_id}` You can fetch all companies and filter by `segment_id` or `tag_id` as a query parameter. `https://api.intercom.io/companies?tag_id={tag_id}` `https://api.intercom.io/companies?segment_id={segment_id}`"
+    },
+    {
+      "name": "INTERCOM_SCROLL_OVER_ALL_COMPANIES",
+      "description": "The `list all companies` functionality does not work well for huge datasets, and can result in errors and performance problems when paging deeply. The Scroll API provides an efficient mechanism for iterating over all companies in a dataset. - Each app can only have 1 scroll open at a time. You'll get an error message if you try to have more than one open per app. You can get the first page of companies by simply sending a GET request to the scroll endpoint. For subsequent requests you will need to use the scroll parameter from the response type=\"danger\" name=\"Scroll network timeouts\". Since scroll is often used on large datasets network errors such as timeouts can be encountered. When this occurs you will see a HTTP 500 error with the following message: \"Request failed due to an internal network error. Please restart the scroll operation.\" If this happens, you will need to restart your scroll query."
+    },
+    {
+      "name": "INTERCOM_SEARCH_CONVERSATIONS",
+      "description": "Searches for conversations using query string with support for filtering and sorting"
+    },
+    {
+      "name": "INTERCOM_SEARCH_FOR_ARTICLES",
+      "description": "You can search for articles by making a GET request to `https://api.intercom.io/articles/search`."
+    },
+    {
+      "name": "INTERCOM_SET_AN_ADMIN_TO_AWAY",
+      "description": "You can set an Admin as away for the Inbox."
+    },
+    {
+      "name": "INTERCOM_UPDATE_A_COLLECTION",
+      "description": "You can update the details of a single collection by making a PUT request to `https://api.intercom.io/collections/<id>`."
+    },
+    {
+      "name": "INTERCOM_UPDATE_A_COMPANY",
+      "description": "You can update a single company using the Intercom provisioned `id`. {% admonition type=\"attention\" name=\"Using `company_id`\" %} When updating a company it is not possible to update `company_id`. This can only be set once upon creation of the company. {% /admonition %}"
+    },
+    {
+      "name": "INTERCOM_UPDATE_A_CONTACT",
+      "description": "You can update an existing contact (ie. user or lead)."
+    },
+    {
+      "name": "INTERCOM_UPDATE_AN_ARTICLE",
+      "description": "You can update the details of a single article by making a PUT request to `https://api.intercom.io/articles/<id>`."
+    }
+  ]
+}

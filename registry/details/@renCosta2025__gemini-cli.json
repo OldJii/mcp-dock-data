@@ -1,0 +1,12 @@
+{
+  "id": "@renCosta2025/gemini-cli",
+  "displayName": "gemini-cli",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:05.193Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@renCosta2025/gemini-cli"
+  },
+  "connection": null,
+  "capabilities": []
+}

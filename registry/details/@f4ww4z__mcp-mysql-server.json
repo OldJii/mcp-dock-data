@@ -1,0 +1,63 @@
+{
+  "id": "@f4ww4z/mcp-mysql-server",
+  "displayName": "MySQL Server",
+  "description": "A Model Context Protocol server for MySQL database operations.",
+  "createdAt": "2026-01-19T02:14:08.316Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@f4ww4z/mcp-mysql-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mysqlHost",
+        "mysqlUser",
+        "mysqlPassword",
+        "mysqlDatabase"
+      ],
+      "properties": {
+        "mysqlHost": {
+          "type": "string",
+          "description": "Hostname for the MySQL server"
+        },
+        "mysqlUser": {
+          "type": "string",
+          "description": "MySQL user name"
+        },
+        "mysqlDatabase": {
+          "type": "string",
+          "description": "MySQL database name"
+        },
+        "mysqlPassword": {
+          "type": "string",
+          "description": "MySQL user's password"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "connect_db",
+      "description": "Connect to MySQL database"
+    },
+    {
+      "name": "query",
+      "description": "Execute a SELECT query"
+    },
+    {
+      "name": "execute",
+      "description": "Execute an INSERT, UPDATE, or DELETE query"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get table structure"
+    }
+  ]
+}

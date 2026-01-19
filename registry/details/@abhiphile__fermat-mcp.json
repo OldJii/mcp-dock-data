@@ -1,0 +1,69 @@
+{
+  "id": "@abhiphile/fermat-mcp",
+  "displayName": "Fermat",
+  "description": "Perform advanced mathematical computations including numerical and symbolic calculations, and generate various types of plots. Leverage integrations with NumPy, SymPy, and Matplotlib to handle algebra, calculus, linear algebra, statistics, and data visualization tasks efficiently. Enhance your workflows with a powerful MCP server tailored for mathematical and plotting operations.",
+  "createdAt": "2026-01-19T02:17:48.776Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@abhiphile/fermat-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "description": "No configuration needed for Fermat MCP server"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "mpl_mcp_plot_barchart",
+      "description": "Plots barchart of given datavalues"
+    },
+    {
+      "name": "mpl_mcp_plot_scatter",
+      "description": "Plots scatter chart of given datavalues"
+    },
+    {
+      "name": "mpl_mcp_plot_chart",
+      "description": "Plots line/scatter/bar chart of given datavalues"
+    },
+    {
+      "name": "mpl_mcp_plot_stem",
+      "description": "Plots stem chart of given datavalues"
+    },
+    {
+      "name": "mpl_mcp_plot_stack",
+      "description": "Plots stacked area/bar chart of given datavalues"
+    },
+    {
+      "name": "mpl_mcp_eqn_chart",
+      "description": "Plots mathematical equations"
+    },
+    {
+      "name": "numpy_mcp_numerical_operation",
+      "description": "Do numerical operation like add, sub, mul, div, power, abs, exp, log, sqrt, sin, cos, tan, mean, median, std, var, min, max, argmin, argmax, percentile, dot, matmul, inv, det, eig, solve, svd"
+    },
+    {
+      "name": "numpy_mcp_matlib_operation",
+      "description": "Do matrix operations: rand-mat, zeros, ones, eye, identity, arange, linspace, reshape, flatten, concatenate, transpose, stack"
+    },
+    {
+      "name": "sympy_mcp_algebra_operation",
+      "description": "Do algebraic operations like simplify, expand, factor, collect"
+    },
+    {
+      "name": "sympy_mcp_calculus_operation",
+      "description": "Do calculus operations like diff, integrate, limit, series"
+    },
+    {
+      "name": "sympy_mcp_equation_operation",
+      "description": "Do symbolic equation operations like solve, solveset, linsolve, nonlinsolve"
+    },
+    {
+      "name": "sympy_mcp_matrix_operation",
+      "description": "Do symbolic matrix operations like create, det, inv, rref, eigenvals"
+    }
+  ]
+}

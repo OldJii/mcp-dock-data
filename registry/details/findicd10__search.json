@@ -1,0 +1,12 @@
+{
+  "id": "findicd10/search",
+  "displayName": "search",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:37.250Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/findicd10/search"
+  },
+  "connection": null,
+  "capabilities": []
+}

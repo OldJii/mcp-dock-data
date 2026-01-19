@@ -1,0 +1,12 @@
+{
+  "id": "@bigboss32/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:53.748Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bigboss32/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

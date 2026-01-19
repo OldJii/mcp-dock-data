@@ -1,0 +1,59 @@
+{
+  "id": "@brightdataa/hide-mcp",
+  "displayName": "hide-mcp",
+  "description": "Store and recall user-specific facts across conversations with a structured knowledge graph. Add, relate, and search information about people, organizations, events, and preferences to maintain consistent context. Automatically extract locations and build place hierarchies for richer, more accurate recall.",
+  "createdAt": "2026-01-19T02:19:45.774Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brightdataa/hide-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_entities",
+      "description": "Create multiple new entities in the knowledge graph"
+    },
+    {
+      "name": "create_relations",
+      "description": "Create multiple new relations between entities in the knowledge graph. Relations should be in active voice"
+    },
+    {
+      "name": "add_observations",
+      "description": "Add new observations to existing entities in the knowledge graph"
+    },
+    {
+      "name": "delete_entities",
+      "description": "Delete multiple entities and their associated relations from the knowledge graph"
+    },
+    {
+      "name": "delete_observations",
+      "description": "Delete specific observations from entities in the knowledge graph"
+    },
+    {
+      "name": "delete_relations",
+      "description": "Delete multiple relations from the knowledge graph"
+    },
+    {
+      "name": "read_graph",
+      "description": "Read the entire knowledge graph"
+    },
+    {
+      "name": "search_nodes",
+      "description": "Search for nodes in the knowledge graph based on a query"
+    },
+    {
+      "name": "open_nodes",
+      "description": "Open specific nodes in the knowledge graph by their names"
+    },
+    {
+      "name": "extract_locations",
+      "description": "Extract locations from text and add them to the knowledge graph as entities with geographic relationships"
+    }
+  ]
+}

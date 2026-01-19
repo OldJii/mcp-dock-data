@@ -1,0 +1,12 @@
+{
+  "id": "@M1Vision/n8n-generator",
+  "displayName": "n8n-generator",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:48.199Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@M1Vision/n8n-generator"
+  },
+  "connection": null,
+  "capabilities": []
+}

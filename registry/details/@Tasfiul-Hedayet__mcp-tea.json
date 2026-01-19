@@ -1,0 +1,33 @@
+{
+  "id": "@Tasfiul-Hedayet/mcp-tea",
+  "displayName": "mcp-tea",
+  "description": "Fetch your dataset, ask questions, and get concise summaries in seconds. Analyze JSON structure to uncover fields, patterns, and anomalies without manual digging. Use natural language to get answers grounded in your data.",
+  "createdAt": "2026-01-19T02:19:11.703Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Tasfiul-Hedayet/mcp-tea"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_my_data",
+      "description": "Fetch data from my fixed URL\n\nReturns:\n    Dictionary containing data from my URL"
+    },
+    {
+      "name": "ask_about_my_data",
+      "description": "Ask questions about data from my fixed URL\n\nArgs:\n    question: Your question about the data\n    \nReturns:\n    Answer based on my data"
+    },
+    {
+      "name": "analyze_my_json_data",
+      "description": "Analyze JSON data from my fixed URL\n\nArgs:\n    query: Optional specific query about the JSON structure\n    \nReturns:\n    Analysis of my JSON data"
+    },
+    {
+      "name": "get_my_data_summary",
+      "description": "Get a quick summary of data from my fixed URL\n\nReturns:\n    Summary of my data"
+    }
+  ]
+}

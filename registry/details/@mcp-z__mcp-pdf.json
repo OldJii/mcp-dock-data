@@ -1,0 +1,12 @@
+{
+  "id": "@mcp-z/mcp-pdf",
+  "displayName": "mcp-pdf",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:11.279Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mcp-z/mcp-pdf"
+  },
+  "connection": null,
+  "capabilities": []
+}

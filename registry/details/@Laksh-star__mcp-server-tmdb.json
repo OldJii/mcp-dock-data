@@ -1,0 +1,40 @@
+{
+  "id": "@Laksh-star/mcp-server-tmdb",
+  "displayName": "TMDB Server",
+  "description": "This server integrates with The Movie Database (TMDB) API to provide movie information, search capabilities, and recommendations.",
+  "createdAt": "2026-01-19T02:17:46.007Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Laksh-star/mcp-server-tmdb"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tmdbApiKey"
+      ],
+      "properties": {
+        "tmdbApiKey": {
+          "type": "string",
+          "description": "The TMDB API key from your TMDB account"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_movies",
+      "description": "Search for movies by title or keywords"
+    },
+    {
+      "name": "get_recommendations",
+      "description": "Get movie recommendations based on a movie ID"
+    },
+    {
+      "name": "get_trending",
+      "description": "Get trending movies for a time window"
+    }
+  ]
+}

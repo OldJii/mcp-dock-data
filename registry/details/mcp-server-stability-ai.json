@@ -1,0 +1,32 @@
+{
+  "id": "mcp-server-stability-ai",
+  "displayName": "Stability AI",
+  "description": "Image generation, editing, and upscaling using Stability AI's API.",
+  "createdAt": "2026-01-19T02:16:49.351Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-server-stability-ai"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "stabilityAiApiKey",
+        "imageStorageDirectory"
+      ],
+      "properties": {
+        "stabilityAiApiKey": {
+          "type": "string",
+          "description": "Your Stability AI API key. Get one at https://platform.stability.ai/account/keys"
+        },
+        "imageStorageDirectory": {
+          "type": "string",
+          "description": "Directory where generated images will be saved, e.g., '/Users/admin/Downloads/stability-ai-images'."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

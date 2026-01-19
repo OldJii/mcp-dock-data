@@ -1,0 +1,137 @@
+{
+  "id": "microsoft_teams",
+  "displayName": "Microsoft teams",
+  "description": "Microsoft Teams integrates chat, video meetings, and file storage within Microsoft 365, providing virtual collaboration and communication for distributed teams",
+  "createdAt": "2026-01-19T02:12:42.429Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/microsoft_teams"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MICROSOFT_TEAMS_ADD_MEMBER_TO_TEAM",
+      "description": "Tool to add a user to a Microsoft Teams team. Use when granting or updating membership for a user."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_ARCHIVE_TEAM",
+      "description": "Tool to archive a Microsoft Teams team. Use after confirming the team ID; returns 202 if accepted."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_CHATS_GET_ALL_CHATS",
+      "description": "Retrieves all Microsoft Teams chats a specified user is part of, supporting filtering, property selection, and pagination."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_CHATS_GET_ALL_MESSAGES",
+      "description": "Retrieves all messages from a specified Microsoft Teams chat using the Microsoft Graph API, automatically handling pagination; ensure `chat_id` is valid and OData expressions in `filter` or `select` are correct."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_CREATE_MEETING",
+      "description": "Use to schedule a new standalone Microsoft Teams online meeting, i.e., one not linked to any calendar event."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_CREATE_TEAM",
+      "description": "Tool to create a new Microsoft Teams team. Use when you need to provision a team with optional template, channels, and members."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_DELETE_TEAM",
+      "description": "Tool to delete a Microsoft Teams team. Use after confirming the target team ID."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_GET_CHANNEL",
+      "description": "Tool to get a specific channel in a team. Use after obtaining valid team and channel IDs to fetch channel details."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_GET_CHAT_MESSAGE",
+      "description": "Tool to get a specific chat message. Use after confirming chat_id and message_id."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_GET_TEAM",
+      "description": "Tool to get a specific team. Use when full details of one team by ID are needed."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_LIST_MESSAGE_REPLIES",
+      "description": "Tool to list replies to a channel message. Use after obtaining team, channel, and message IDs."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_LIST_TEAM_MEMBERS",
+      "description": "Tool to list members of a Microsoft Teams team. Use when you need to retrieve the members of a specific team, for auditing or notifications."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_LIST_TEAMS_TEMPLATES",
+      "description": "Tool to list available Microsoft Teams templates. Use when retrieving templates for team creation or customization workflows."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_LIST_USERS",
+      "description": "Tool to list all users in the organization. Use when you need to retrieve directory users with filtering, pagination, and field selection."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_SEARCH_FILES",
+      "description": "Search files in Microsoft Teams using KQL syntax. Find files by name, type, content, author, and modification date across all Teams and channels. Supports boolean logic and date ranges. Examples: 'filetype:pdf AND lastmodifiedtime>=2024-10-01', 'contract AND budget', 'filename:report AND author:user@example.com'"
+    },
+    {
+      "name": "MICROSOFT_TEAMS_SEARCH_MESSAGES",
+      "description": "Search Microsoft Teams messages using powerful KQL syntax. Supports sender (from:), date filters (sent:), attachments, and boolean logic. Works across all Teams chats and channels the user has access to. Examples: 'from:user@example.com AND sent>=2024-10-01', 'punchlist OR termination', 'sent>today-30 AND hasattachment:yes'"
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_CREATE_CHANNEL",
+      "description": "Creates a new 'standard', 'private', or 'shared' channel within a specified Microsoft Teams team."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_CREATE_CHAT",
+      "description": "Creates a new chat; if a 'oneOnOne' chat with the specified members already exists, its details are returned, while 'group' chats are always newly created."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_GET_MESSAGE",
+      "description": "Retrieves a specific message from a Microsoft Teams channel using its Team, Channel, and Message IDs."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_LIST",
+      "description": "Retrieves Microsoft Teams accessible by the authenticated user, allowing filtering, property selection, and pagination."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_LIST_CHANNELS",
+      "description": "Retrieves channels for a specified Microsoft Teams team ID (must be valid and for an existing team), with options to include shared channels, filter results, and select properties."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_LIST_CHAT_MESSAGES",
+      "description": "Retrieves messages (newest first) from an existing and accessible Microsoft Teams one-on-one chat, group chat, or channel thread, specified by `chat_id`."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_LIST_PEOPLE",
+      "description": "Retrieves a list of people relevant to a specified user from Microsoft Graph, noting the `search` parameter is only effective if `user_id` is 'me'."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_POST_CHANNEL_MESSAGE",
+      "description": "Posts a new text or HTML message to a specified channel in a Microsoft Teams team."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_POST_CHAT_MESSAGE",
+      "description": "Sends a non-empty message (text or HTML) to a specified, existing Microsoft Teams chat; content must be valid HTML if `content_type` is 'html'."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_TEAMS_POST_MESSAGE_REPLY",
+      "description": "Sends a reply to an existing message, identified by `message_id`, within a specific `channel_id` of a given `team_id` in Microsoft Teams."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_UNARCHIVE_TEAM",
+      "description": "Tool to unarchive a Microsoft Teams team. Use when you need to restore an archived team to active state."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_UPDATE_CHANNEL_MESSAGE",
+      "description": "Tool to update a message in a channel. Use when you need to modify an existing channel message after confirming channel and message IDs."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_UPDATE_CHAT_MESSAGE",
+      "description": "Tool to update a specific message in a chat. Use when you need to correct or modify a sent chat message."
+    },
+    {
+      "name": "MICROSOFT_TEAMS_UPDATE_TEAM",
+      "description": "Tool to update the properties of a team. Use when you need to modify team settings such as member, messaging, or fun settings."
+    }
+  ]
+}

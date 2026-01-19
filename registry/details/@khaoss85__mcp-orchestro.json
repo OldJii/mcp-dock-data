@@ -1,0 +1,12 @@
+{
+  "id": "@khaoss85/mcp-orchestro",
+  "displayName": "mcp-orchestro",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:45.306Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@khaoss85/mcp-orchestro"
+  },
+  "connection": null,
+  "capabilities": []
+}

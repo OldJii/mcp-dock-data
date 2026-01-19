@@ -1,0 +1,12 @@
+{
+  "id": "@ardyfeb/gitlab-mcp",
+  "displayName": "gitlab-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:08.693Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ardyfeb/gitlab-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

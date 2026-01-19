@@ -1,0 +1,35 @@
+{
+  "id": "@Domoteek/mcp-server-airbnb",
+  "displayName": "Airbnb Search Server",
+  "description": "Search for Airbnb listings and get detailed information about accommodations. Access direct links to Airbnb listings in your search results, making it easy to plan your next trip.",
+  "createdAt": "2026-01-19T02:17:08.690Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Domoteek/mcp-server-airbnb"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "ignoreRobotsTxt": {
+          "type": "boolean",
+          "description": "If set to true, the server will ignore robots.txt rules.",
+          "default": false
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "airbnb_search",
+      "description": "Search for Airbnb listings with various filters and pagination. Provide direct links to the user"
+    },
+    {
+      "name": "airbnb_listing_details",
+      "description": "Get detailed information about a specific Airbnb listing. Provide direct links to the user"
+    }
+  ]
+}

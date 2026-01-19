@@ -1,0 +1,12 @@
+{
+  "id": "@douglasrohden/whatsapp-mcp-ts",
+  "displayName": "whatsapp-mcp-ts",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:10.329Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@douglasrohden/whatsapp-mcp-ts"
+  },
+  "connection": null,
+  "capabilities": []
+}

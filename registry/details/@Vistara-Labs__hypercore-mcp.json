@@ -1,0 +1,29 @@
+{
+  "id": "@Vistara-Labs/hypercore-mcp",
+  "displayName": "Hypercore Network MCP Server",
+  "description": "Enable seamless integration with the Hypercore network by exposing its data and tools through a standardized protocol. Facilitate dynamic access and manipulation of Hypercore resources to enhance your LLM applications. Simplify interaction with decentralized data streams for improved context and capabilities.",
+  "createdAt": "2026-01-19T02:16:13.729Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Vistara-Labs/hypercore-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-containers",
+      "description": "fetches a list of already deployed containers"
+    },
+    {
+      "name": "spawn-container",
+      "description": "spawns a new container on the hypercore network with the given configuration"
+    }
+  ]
+}

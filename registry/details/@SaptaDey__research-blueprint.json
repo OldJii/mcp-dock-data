@@ -1,0 +1,41 @@
+{
+  "id": "@SaptaDey/research-blueprint",
+  "displayName": "Research Blueprint",
+  "description": "Enable systematic scientific research through an 8-stage graph-based framework that supports hypothesis generation, evidence integration, causal inference, and collaborative analysis. Facilitate rigorous, interdisciplinary research with advanced features like Bayesian confidence tracking, bias detection, and temporal pattern analysis. Streamline research workflows with export capabilities and customizable configurations tailored to scientific domains.",
+  "createdAt": "2026-01-19T02:20:05.200Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SaptaDey/research-blueprint"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute_asr_got_analysis",
+      "description": "Execute complete ASR-GoT analysis pipeline on a research query"
+    },
+    {
+      "name": "get_analysis_status",
+      "description": "Get the status of an ongoing or completed analysis"
+    },
+    {
+      "name": "extract_subgraph",
+      "description": "Extract specific subgraph from completed analysis"
+    },
+    {
+      "name": "validate_graph_structure",
+      "description": "Validate the integrity and consistency of graph structures"
+    },
+    {
+      "name": "get_research_insights",
+      "description": "Generate specific research insights and recommendations"
+    }
+  ]
+}

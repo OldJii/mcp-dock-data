@@ -1,0 +1,69 @@
+{
+  "id": "@birdwell/runescape-wiki-mcp",
+  "displayName": "RuneScape Wiki RS3",
+  "description": "This MCP server provides AI assistants with real-time access to RuneScape 3 game data through the RuneScape Wiki APIs. It enables AI systems to retrieve current Grand Exchange prices, detailed item information (including stats, examine text, and alchemy values), historical price trends with configurable time intervals, and player statistics from the official hiscores across different game modes (normal, ironman, hardcore ironman). The server acts as a bridge between AI applications and RuneScape's extensive database, allowing for dynamic queries about items, market analysis, player progression tracking, and game-related assistance without requiring direct API knowledge or authentication from the end user.",
+  "createdAt": "2026-01-19T02:15:48.757Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@birdwell/runescape-wiki-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_item_price",
+      "description": "Get the current Grand Exchange price and details for a specific item"
+    },
+    {
+      "name": "get_ge_info",
+      "description": "Get Grand Exchange Database information including last update date"
+    },
+    {
+      "name": "get_category_info",
+      "description": "Get information about a specific item category"
+    },
+    {
+      "name": "get_all_categories",
+      "description": "Get a list of all item categories with their IDs and names."
+    },
+    {
+      "name": "search_items",
+      "description": "Search for items by name, category, starting letter, price, or membership. Supports full-text search and advanced filters. Category numbers are listed in the README under \"Item Category Mapping\". Use get_all_categories for more details."
+    },
+    {
+      "name": "get_item_detail",
+      "description": "Get detailed item information from the official Grand Exchange API including price trends, examine text, and metadata"
+    },
+    {
+      "name": "get_item_graph",
+      "description": "Get historical price graph data for an item from the official Grand Exchange API (last 180 days)"
+    },
+    {
+      "name": "browse_items_by_category",
+      "description": "Browse items by category from the official Grand Exchange catalogue"
+    },
+    {
+      "name": "get_ge_info",
+      "description": "Get Grand Exchange database information including last update time"
+    },
+    {
+      "name": "get_player_stats",
+      "description": "Get player statistics from RuneScape 3 hiscores"
+    },
+    {
+      "name": "get_wiki_page_content",
+      "description": "Fetch the plain text content of a RuneScape Wiki page (e.g., Mining, Smithing, etc.)"
+    }
+  ]
+}

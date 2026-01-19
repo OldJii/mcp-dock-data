@@ -1,0 +1,81 @@
+{
+  "id": "dynamics365",
+  "displayName": "Dynamics365",
+  "description": "Dynamics 365 from Microsoft combines CRM, ERP, and productivity apps to streamline sales, marketing, customer service, and operations in one integrated platform",
+  "createdAt": "2026-01-19T02:13:07.345Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/dynamics365"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_ACCOUNT",
+      "description": "Creates a new account entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_CASE",
+      "description": "Creates a new case (incident) entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_CONTACT",
+      "description": "Creates a new contact entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_INVOICE",
+      "description": "Creates a new invoice entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_LEAD",
+      "description": "Creates a new lead entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_OPPORTUNITY",
+      "description": "Creates a new opportunity entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_CREATE_SALES_ORDER",
+      "description": "Creates a new sales order entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_GET_A_INVOICE",
+      "description": "Dynamicscrm get a invoice"
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_GET_A_LEAD",
+      "description": "Dynamicscrm get a lead"
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_GET_ALL_LEADS",
+      "description": "Dynamicscrm get all leads"
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_UPDATE_CASE",
+      "description": "Updates an existing case (incident) entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_UPDATE_INVOICE",
+      "description": "Updates an existing invoice entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_UPDATE_LEAD",
+      "description": "Updates an existing lead entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_UPDATE_OPPORTUNITY",
+      "description": "Updates an existing opportunity entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_DYNAMICSCRM_UPDATE_SALES_ORDER",
+      "description": "Updates an existing sales order entity record in Dynamics CRM using the Web API."
+    },
+    {
+      "name": "DYNAMICS365_GET_ALL_INVOICES_ACTION",
+      "description": "Get all invoices action"
+    }
+  ]
+}

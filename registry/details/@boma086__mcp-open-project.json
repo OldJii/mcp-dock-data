@@ -1,0 +1,57 @@
+{
+  "id": "@boma086/mcp-open-project",
+  "displayName": "OpenProject",
+  "description": "Check the current status of the OpenProject integration. Monitor health to ensure reliable workflows. Use status checks to troubleshoot issues quickly.",
+  "createdAt": "2026-01-19T02:15:33.297Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@boma086/mcp-open-project"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "OPENPROJECT_BASE_URL",
+        "OPENPROJECT_API_KEY"
+      ],
+      "properties": {
+        "OPENPROJECT_API_KEY": {
+          "type": "string",
+          "description": "Your OpenProject API key"
+        },
+        "OPENPROJECT_TIMEOUT": {
+          "type": "string",
+          "description": "API request timeout (optional)",
+          "default": "30"
+        },
+        "OPENPROJECT_BASE_URL": {
+          "type": "string",
+          "description": "The base URL of your OpenProject instance"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_projects",
+      "description": "Get all projects from OpenProject"
+    },
+    {
+      "name": "get_project_work_packages",
+      "description": "Get work packages for a specific project with status filtering\n\nArgs:\n    project_id: The ID of the project\n    status_filter: Status filter - 'open' for open work packages, 'all' for all"
+    },
+    {
+      "name": "get_overdue_work_packages",
+      "description": "Get work packages that are due within specified days\n\nArgs:\n    days_ahead: Number of days ahead to check for due work packages"
+    },
+    {
+      "name": "get_user_info",
+      "description": "Get detailed information about a specific user\n\nArgs:\n    user_id: The ID of the user"
+    }
+  ]
+}

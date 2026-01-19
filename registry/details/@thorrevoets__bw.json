@@ -1,0 +1,12 @@
+{
+  "id": "@thorrevoets/bw",
+  "displayName": "bw",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:40.618Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@thorrevoets/bw"
+  },
+  "connection": null,
+  "capabilities": []
+}

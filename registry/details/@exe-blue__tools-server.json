@@ -1,0 +1,12 @@
+{
+  "id": "@exe-blue/tools-server",
+  "displayName": "tools-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:23.924Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@exe-blue/tools-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@KasiL/contentful-mcp-server",
+  "displayName": "contentful-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:59.183Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KasiL/contentful-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

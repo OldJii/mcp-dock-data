@@ -1,0 +1,16 @@
+{
+  "id": "@PewterZz/sequential-thinking-mcp",
+  "displayName": "Pete Thinking Server",
+  "description": "Enable AI agents to perform sequential thinking processes with dynamic thought branching and confidence scoring. Facilitate complex reasoning workflows by exposing tools that manage and evaluate thought branches. Simplify integration with a ready-to-run server supporting local and Docker deployments.",
+  "createdAt": "2026-01-19T02:16:57.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@PewterZz/sequential-thinking-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@vmanoilov/zen-mcp-server",
+  "displayName": "zen-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:00.886Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vmanoilov/zen-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

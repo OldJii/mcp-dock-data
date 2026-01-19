@@ -1,0 +1,12 @@
+{
+  "id": "@LPX55/qwen",
+  "displayName": "qwen",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:23.285Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@LPX55/qwen"
+  },
+  "connection": null,
+  "capabilities": []
+}

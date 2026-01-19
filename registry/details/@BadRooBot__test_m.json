@@ -1,0 +1,29 @@
+{
+  "id": "@BadRooBot/test_m",
+  "displayName": "Hello",
+  "description": "Send quick greetings, scrape website content, and generate text or images on demand. Perform web searches and collect sources to back your results. Streamline outreach, research, and content creation in one place.",
+  "createdAt": "2026-01-19T02:15:04.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@BadRooBot/test_m"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    },
+    {
+      "name": "scrape",
+      "description": "Scrape a website."
+    },
+    {
+      "name": "ai_generate",
+      "description": "\n        Interact with ai for AI model responses.\n        \n        Args:\n            request_type: Type of request - \"text\", \"image\", or \"web_search\"\n            user_message: The prompt or query to send\n            \n        Returns:\n            Dictionary with content, sources, and optionally images\n        "
+    }
+  ]
+}

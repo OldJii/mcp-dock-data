@@ -1,0 +1,161 @@
+{
+  "id": "@garfield-bb/hap_paas2025",
+  "displayName": "FlowSheets",
+  "description": "Trigger workflows, manage worksheets, and collaborate on record discussions. Create, update, and delete records in bulk, generate share links, and get instant pivot summaries for insights. Administer roles, departments, and optionsets to control access and standardize data across your apps.",
+  "createdAt": "2026-01-19T02:16:38.288Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@garfield-bb/hap_paas2025"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "trigger_workflow",
+      "description": "Trigger a workflow. When calling, in addition to providing the `process_id`, you should also pass the input parameters returned by `get_workflow_details`. Use the parameter's `id` as the key and its corresponding value as the value, passed directly as top-level parameters."
+    },
+    {
+      "name": "get_record_relations",
+      "description": "Get a list of related records, including source worksheet information, row record information, detailed row record information, and creator information."
+    },
+    {
+      "name": "get_record_discussions",
+      "description": "Get row record discussions."
+    },
+    {
+      "name": "delete_worksheet",
+      "description": "Delete a worksheet."
+    },
+    {
+      "name": "update_worksheet",
+      "description": "Edit a worksheet."
+    },
+    {
+      "name": "get_time",
+      "description": "获取当前时间"
+    },
+    {
+      "name": "batch_delete_records",
+      "description": "Batch delete row records."
+    },
+    {
+      "name": "create_role",
+      "description": "Create a role. Information includes: role name, description, permission information."
+    },
+    {
+      "name": "get_role_details",
+      "description": "Get role details."
+    },
+    {
+      "name": "get_workflow_details",
+      "description": "Get workflow details, including request and response parameters."
+    },
+    {
+      "name": "create_record",
+      "description": "Create a new row record."
+    },
+    {
+      "name": "batch_create_records",
+      "description": "Batch create new row records."
+    },
+    {
+      "name": "update_record",
+      "description": "Update a row record."
+    },
+    {
+      "name": "get_workflow_list",
+      "description": "Get a list of workflows in the application. Used to trigger specific business processes. Determine the applicable business scenario based on the workflow name and description."
+    },
+    {
+      "name": "get_regions",
+      "description": "Get region information."
+    },
+    {
+      "name": "find_department",
+      "description": "Find a department by name, returning department ID and name."
+    },
+    {
+      "name": "get_record_logs",
+      "description": "Get row record logs."
+    },
+    {
+      "name": "get_app_info",
+      "description": "Get application information, including groups, worksheets, and custom pages under the application. The 'type' field of the items object means: 0-Worksheet, 1-Custom Page, 2-Subgroup."
+    },
+    {
+      "name": "batch_update_records",
+      "description": "Batch update row records."
+    },
+    {
+      "name": "remove_member_from_role",
+      "description": "Remove a member from a role."
+    },
+    {
+      "name": "get_record_share_link",
+      "description": "Get a shareable link for a record."
+    },
+    {
+      "name": "delete_role",
+      "description": "Delete a role."
+    },
+    {
+      "name": "delete_record",
+      "description": "Delete a row record."
+    },
+    {
+      "name": "get_role_list",
+      "description": "Get a list of roles in the application."
+    },
+    {
+      "name": "find_member",
+      "description": "Find a user by name, returning user ID, name, and redacted phone number and email."
+    },
+    {
+      "name": "leave_all_roles",
+      "description": "Remove a specified member from all roles in the application."
+    },
+    {
+      "name": "get_worksheet_structure",
+      "description": "Get worksheet configuration and its control information."
+    },
+    {
+      "name": "delete_optionset",
+      "description": "Delete an optionset."
+    },
+    {
+      "name": "get_record_list",
+      "description": "Get a list of worksheet records."
+    },
+    {
+      "name": "get_record_pivot_data",
+      "description": "Get pivot table summary data for worksheet records. Prioritize using this tool for querying statistics, summaries, and aggregations."
+    },
+    {
+      "name": "create_optionset",
+      "description": "Create an optionset. Data includes: optionset name, optionset information (option value, sort order, color, score)."
+    },
+    {
+      "name": "get_record_details",
+      "description": "Get record details, including creator, owner, control information, and generate example values based on control data types."
+    },
+    {
+      "name": "get_optionset_list",
+      "description": "Get a list of optionsets in the application."
+    },
+    {
+      "name": "create_worksheet",
+      "description": "Create a worksheet. Currently supported field types are Text|Number|SingleSelect|MultipleSelect|Date|DateTime|Collaborator|Relation."
+    },
+    {
+      "name": "add_member_to_role",
+      "description": "Add member information to a role. Data includes: add users, jobs, departments."
+    },
+    {
+      "name": "update_optionset",
+      "description": "Edit an optionset."
+    }
+  ]
+}

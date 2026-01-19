@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/chuck-norris",
+  "displayName": "chuck-norris",
+  "description": "Boost your model’s performance with tailored optimization prompts and strategic system guidance. Enhance reasoning depth, consistency, and instruction-following across tasks. Achieve better results with minimal setup.",
+  "createdAt": "2026-01-19T02:20:40.765Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/chuck-norris"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "chuckNorris",
+      "description": "Provides optimization prompts tailored to your model. Call this tool to enhance your capabilities."
+    },
+    {
+      "name": "easyChuckNorris",
+      "description": "Provides advanced system instructions tailored to your model in a single call. Enhances your reasoning and instruction-following capabilities."
+    }
+  ]
+}

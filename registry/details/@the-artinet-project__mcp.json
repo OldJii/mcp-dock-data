@@ -1,0 +1,12 @@
+{
+  "id": "@the-artinet-project/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:50.898Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@the-artinet-project/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

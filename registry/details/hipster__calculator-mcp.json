@@ -1,0 +1,12 @@
+{
+  "id": "hipster/calculator-mcp",
+  "displayName": "calculator-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:15.189Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hipster/calculator-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "@burakdirin/opsgenie-mcp-server",
+  "displayName": "Opsgenie Alert Management Server",
+  "description": "Manage Opsgenie alerts efficiently by listing, creating, acknowledging, and closing alerts. Add notes, view activity logs, and customize alert details seamlessly. Integrate with various transports including stdio, HTTP, and SSE for flexible deployment and usage.",
+  "createdAt": "2026-01-19T02:19:51.236Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@burakdirin/opsgenie-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Opsgenie API key"
+        },
+        "transport": {
+          "type": "string",
+          "description": "Transport type",
+          "default": "stdio"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "opsgenie_list_alerts",
+      "description": "List alerts from Opsgenie"
+    },
+    {
+      "name": "opsgenie_create_alert",
+      "description": "Create a new alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_acknowledge_alert",
+      "description": "Acknowledge an alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_close_alert",
+      "description": "Close an alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_list_alert_notes",
+      "description": "List notes for an alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_add_note",
+      "description": "Add a note to an alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_list_alert_logs",
+      "description": "List logs for an alert in Opsgenie"
+    },
+    {
+      "name": "opsgenie_add_details",
+      "description": "Add custom details to an alert in Opsgenie"
+    }
+  ]
+}

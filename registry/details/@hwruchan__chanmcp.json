@@ -1,0 +1,91 @@
+{
+  "id": "@hwruchan/chanmcp",
+  "displayName": "SMU Campus Hub",
+  "description": "Find cafeteria menus, campus notices, exam info, and academic schedules for SMU. Search by date or keyword and filter meals by breakfast, lunch, or dinner. Add or delete schedule entries and get the current Korea time when needed.",
+  "createdAt": "2026-01-19T02:21:33.791Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hwruchan/chanmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "DB_PASSWORD"
+      ],
+      "properties": {
+        "DB_HOST": {
+          "type": "string",
+          "description": "MySQL database host",
+          "default": "oneteam-db.chigywqq0qt3.ap-northeast-2.rds.amazonaws.com"
+        },
+        "DB_NAME": {
+          "type": "string",
+          "description": "MySQL database name",
+          "default": "oneteam_DB"
+        },
+        "DB_PORT": {
+          "type": "string",
+          "description": "MySQL database port",
+          "default": "3306"
+        },
+        "DB_USER": {
+          "type": "string",
+          "description": "MySQL database user",
+          "default": "admin"
+        },
+        "DB_PASSWORD": {
+          "type": "string",
+          "description": "MySQL database password (required)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "now_kr",
+      "description": "Return current date/time info in Asia/Seoul (KST, UTC+9)."
+    },
+    {
+      "name": "query_smu_meals_by_date_category",
+      "description": "\n    YYYY-MM-DD 날짜와 카테고리로 smu_meals를 조회한다.\n    Args:\n        date_iso: '2025-08-27' 같은 ISO 날짜 문자열\n        category: 'breakfast' | 'lunch' | 'dinner'\n    Returns:\n        dict: 레코드 리스트\n    "
+    },
+    {
+      "name": "query_smu_meals_by_keyword",
+      "description": "\n    'meal' 텍스트 등에서 키워드 검색 (보조 용도)\n    "
+    },
+    {
+      "name": "query_smu_notices_by_keyword",
+      "description": "\n    'smu_notices' 테이블에서 'title' 컬럼에 특정 키워드를 포함하는 행을 조회하여 결과를 반환하는 도구.\n    \n    Args:\n        keyword (str): 'title' 컬럼에서 찾을 키워드.\n        \n        dict: 키워드가 포함된 'title' 컬럼을 가진 행들 반환.\n    "
+    },
+    {
+      "name": "query_smu_exam",
+      "description": "\n    smu_exam 테이블에서 subject_name, professor 조건을 조합해 검색.\n    - professor 인자가 주어지면 AND 조건으로 subject_name + professor 검색\n    - professor가 없으면 subject_name만 검색\n    - 반환: list[dict]\n    "
+    },
+    {
+      "name": "query_smu_schedule_by_keyword",
+      "description": "\n    'smu_schedule' 테이블에서 'content' 컬럼에 특정 키워드를 포함하는 행을 조회하여 결과를 반환하는 도구.\n    type에 따라 필터링: 'common'은 모든 사용자에게, 'personal'은 해당 user_id에게만 제공.\n    \n    Args:\n        keyword (str): 'content' 컬럼에서 찾을 키워드.\n        user_id (str, optional): student ID (학번). 제공되면 해당 사용자의 개인 일정도 포함.\n        \n    Returns:\n        list[dict]: 키워드가 포함된 일정들 (type='common' + user_id가 일치하는 type='personal')\n    "
+    },
+    {
+      "name": "query_smu_schedule_by_date",
+      "description": "\n    'smu_schedule' 테이블에서 날짜를 키워드로 찾아 해당하는 content를 반환하는 도구.\n    start_date 또는 end_date 컬럼에서 날짜를 검색하여 일치하는 스케줄의 content를 반환합니다.\n    type에 따라 필터링: 'common'은 모든 사용자에게, 'personal'은 해당 user_id에게만 제공.\n    \n    Args:\n        date_keyword (str): 검색할 날짜 키워드 (예: '2025-10-21', '10-21', '10월 21일' 등)\n        user_id (str, optional): student ID (학번). 제공되면 해당 사용자의 개인 일정도 포함.\n        \n    Returns:\n        list[dict]: 날짜와 일치하는 스케줄들 (type='common' + user_id가 일치하는 type='personal')\n    "
+    },
+    {
+      "name": "query_special_keywords",
+      "description": "\n    특정 키워드에 대해 미리 정의된 응답을 반환하는 도구.\n    \n    Args:\n        keyword (str): 사용자가 입력한 키워드.\n    \n    Returns:\n        dict: 미리 정의된 응답.\n    "
+    },
+    {
+      "name": "add_smu_schedule_structured",
+      "description": "\n    Insert a schedule row into `smu_schedule` with structured inputs.\n\n    Args:\n        start_datetime (str): e.g., '2025-10-21', '2025-10-21 13:30', or ISO-like.\n        content (str): schedule text/content.\n        user_id (str): student ID (학번). Required parameter.\n        end_datetime (str, optional): same formats as start. If omitted, equals start.\n\n    Returns:\n        dict: { ok, id, start_date_iso, end_date_iso, content, type, user_id, created_at_iso }\n    "
+    },
+    {
+      "name": "delete_smu_schedule_by_content",
+      "description": "\n    내용 키워드로 개인 일정을 삭제하는 도구. (type='personal'인 일정만 삭제 가능)\n    \n    Args:\n        content_keyword (str): 삭제할 일정의 내용에 포함된 키워드\n        user_id (str): student ID (학번). 해당 사용자의 개인 일정만 삭제 가능\n        \n    Returns:\n        dict: { ok, deleted_count, deleted_ids, message }\n    "
+    }
+  ]
+}

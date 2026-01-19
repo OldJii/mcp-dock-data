@@ -1,0 +1,12 @@
+{
+  "id": "@connect2puneett/smithery-weather",
+  "displayName": "smithery-weather",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:11.973Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@connect2puneett/smithery-weather"
+  },
+  "connection": null,
+  "capabilities": []
+}

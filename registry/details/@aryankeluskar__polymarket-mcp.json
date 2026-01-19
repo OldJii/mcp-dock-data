@@ -1,0 +1,55 @@
+{
+  "id": "@aryankeluskar/polymarket-mcp",
+  "displayName": "Polymarket",
+  "description": "Discover and filter Polymarket prediction markets and events by tags, volume, liquidity, and activity. Analyze individual markets with probabilities, market health, and recent trade insights to inform decisions. Track trends across categories to spot opportunities and compare sentiment over time.",
+  "createdAt": "2026-01-19T02:13:58.634Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aryankeluskar/polymarket-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_markets",
+      "description": "Search Polymarket prediction markets with filters. Find active markets, filter by tags, volume, liquidity, and more. Perfect for market discovery and analysis."
+    },
+    {
+      "name": "get_market",
+      "description": "Get detailed information about a specific market by slug. Returns probabilities, volume, liquidity, outcomes, and full market data."
+    },
+    {
+      "name": "search_events",
+      "description": "Search Polymarket events. Events group related markets together (e.g., 'Presidential Election 2024' contains multiple markets). Great for discovering market clusters."
+    },
+    {
+      "name": "get_event",
+      "description": "Get detailed information about a specific event by slug, including all related markets."
+    },
+    {
+      "name": "list_tags",
+      "description": "List all available tags/categories for filtering markets and events. Use tag IDs with search_markets or search_events."
+    },
+    {
+      "name": "get_trades",
+      "description": "Get recent trade activity from Polymarket's Data API. Analyze trading patterns, volume, and market sentiment."
+    },
+    {
+      "name": "analyze_market",
+      "description": "Get comprehensive market analysis including probabilities, trading activity, and AI-friendly insights. Combines market data with recent trades."
+    }
+  ]
+}

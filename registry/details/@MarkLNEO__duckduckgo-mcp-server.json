@@ -1,0 +1,12 @@
+{
+  "id": "@MarkLNEO/duckduckgo-mcp-server",
+  "displayName": "duckduckgo-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:37.214Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MarkLNEO/duckduckgo-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

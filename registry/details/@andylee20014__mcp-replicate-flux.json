@@ -1,0 +1,57 @@
+{
+  "id": "@andylee20014/mcp-replicate-flux",
+  "displayName": "Replicate FLUX Image Generator",
+  "description": "Generate images using advanced AI models and store them securely in the cloud. Easily create custom prompts and retrieve accessible image URLs for your projects.",
+  "createdAt": "2026-01-19T02:19:08.276Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@andylee20014/mcp-replicate-flux"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "replicateApiToken",
+        "storageEndpoint",
+        "storageAccessKey",
+        "storageSecretKey",
+        "storageBucket",
+        "storageDomain"
+      ],
+      "properties": {
+        "storageBucket": {
+          "type": "string",
+          "description": "Bucket name for storing the generated images"
+        },
+        "storageDomain": {
+          "type": "string",
+          "description": "Domain for accessing images from the storage"
+        },
+        "storageEndpoint": {
+          "type": "string",
+          "description": "Endpoint URL for the S3 compatible storage (e.g., Cloudflare R2)"
+        },
+        "storageAccessKey": {
+          "type": "string",
+          "description": "Access key for S3 storage"
+        },
+        "storageSecretKey": {
+          "type": "string",
+          "description": "Secret key for S3 storage"
+        },
+        "replicateApiToken": {
+          "type": "string",
+          "description": "Token to authenticate with Replicate API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate-image",
+      "description": ""
+    }
+  ]
+}

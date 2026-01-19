@@ -1,0 +1,21 @@
+{
+  "id": "@ZacharyHampton/homeharvest-mcp",
+  "displayName": "HomeHarvest",
+  "description": "Scrape real estate listings with flexible filters for location, property type, date range, and more. Retrieve comprehensive property details to power research, comps, and market analysis. Streamline data collection for investing, valuation, and lead generation.\n\nhttps://github.com/ZacharyHampton/HomeHarvest",
+  "createdAt": "2026-01-19T02:14:52.239Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ZacharyHampton/homeharvest-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "scrape_properties",
+      "description": "Scrape real estate properties using HomeHarvest.\n        \n        This tool provides comprehensive real estate data scraping with flexible\n        filtering options for location, property type, date ranges, and more.\n        "
+    }
+  ]
+}

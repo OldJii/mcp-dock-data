@@ -1,0 +1,70 @@
+{
+  "id": "@KaranThink41/keka_official_mcp",
+  "displayName": "Keka HR Integration Server",
+  "description": "Integrate and automate Keka HR platform features such as employee management, attendance, leave, payslip, and holiday data through a secure MCP server. Utilize OAuth2 authentication for safe access and leverage modular tools to streamline HR workflows. Deploy easily with Docker support for containerized environments.",
+  "createdAt": "2026-01-19T02:17:06.322Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KaranThink41/keka_official_mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "kekaClientId",
+        "kekaClientSecret",
+        "kekaRefreshToken"
+      ],
+      "properties": {
+        "kekaClientId": {
+          "type": "string",
+          "description": "Client ID for your Keka application"
+        },
+        "kekaClientSecret": {
+          "type": "string",
+          "description": "Client Secret for your Keka application"
+        },
+        "kekaRefreshToken": {
+          "type": "string",
+          "description": "Refresh Token for your Keka application"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "keka_get_employee_profile",
+      "description": "Get detailed profile information for a specific employee"
+    },
+    {
+      "name": "keka_get_attendance",
+      "description": "Get attendance records for an employee within a date range"
+    },
+    {
+      "name": "keka_get_leave_types",
+      "description": "Get the list of available leave types"
+    },
+    {
+      "name": "keka_apply_leave",
+      "description": "Apply for leave for an employee"
+    },
+    {
+      "name": "keka_get_leave_balances",
+      "description": "Get a consolidated view of all leave balances for an employee"
+    },
+    {
+      "name": "keka_view_leave_history",
+      "description": "View the leave history for an employee"
+    },
+    {
+      "name": "keka_get_payslip",
+      "description": "Get payslip for an employee for a specific month and year"
+    },
+    {
+      "name": "keka_get_upcoming_holidays",
+      "description": "Get the list of upcoming company holidays"
+    }
+  ]
+}

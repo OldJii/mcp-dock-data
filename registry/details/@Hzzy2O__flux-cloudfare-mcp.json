@@ -1,0 +1,37 @@
+{
+  "id": "@Hzzy2O/flux-cloudfare-mcp",
+  "displayName": "Flux Cloudflare MCP",
+  "description": "Generate high-quality images using AI with seamless integration into your applications. Leverage customizable parameters for image generation and enjoy secure processing through Cloudflare Workers. Enhance your AI assistants with powerful image capabilities effortlessly.",
+  "createdAt": "2026-01-19T02:21:18.267Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Hzzy2O/flux-cloudfare-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fluxApiToken",
+        "fluxApiUrl"
+      ],
+      "properties": {
+        "fluxApiUrl": {
+          "type": "string",
+          "description": "The URL for the Flux API. Default is your deployed flux-api-worker API endpoint."
+        },
+        "fluxApiToken": {
+          "type": "string",
+          "description": "The API token for the Flux API. You can deploy your own API using https://github.com/snakeying/flux-api-worker"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_image",
+      "description": "Generate an image from a text prompt using Flux model"
+    }
+  ]
+}

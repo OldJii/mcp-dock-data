@@ -1,0 +1,12 @@
+{
+  "id": "@walidboulanouar/n8n-mcphj",
+  "displayName": "n8n-mcphj",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:26.344Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@walidboulanouar/n8n-mcphj"
+  },
+  "connection": null,
+  "capabilities": []
+}

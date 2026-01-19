@@ -1,0 +1,69 @@
+{
+  "id": "@muammar-yacoob/gmail-manager-mcp",
+  "displayName": "Gmail Manager",
+  "description": "Gmail Manager MCP gives Claude Desktop direct access to your Gmail inbox, allowing you to:\n\n🔍 Search & Filter - Find emails by sender, subject, date, or any Gmail query\n🏷️ Smart Organization - Create and apply labels to categorize emails automatically\n🗑️ Bulk Operations - Delete multiple emails at once based on your criteria\n📊 Inbox Analytics - Get insights about your email patterns and volume\n🧹 Smart Cleanup - Remove old newsletters, notifications, and spam efficiently\nPerfect for inbox zero enthusiasts and anyone drowning in email overload!",
+  "createdAt": "2026-01-19T02:18:25.203Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@muammar-yacoob/gmail-manager-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "credentialsPath": {
+          "type": "string",
+          "description": "Path to stored credentials (optional, defaults to ~/.gmail-mcp/credentials.json)"
+        },
+        "gcpOauthKeysPath": {
+          "type": "string",
+          "description": "Path to the GCP OAuth keys JSON file (optional, defaults to gcp-oauth.keys.json in project root)"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_emails",
+      "description": "Search emails using Gmail query syntax"
+    },
+    {
+      "name": "read_email",
+      "description": "Read the full content of an email"
+    },
+    {
+      "name": "delete_email",
+      "description": "Permanently delete an email"
+    },
+    {
+      "name": "batch_delete_emails",
+      "description": "Delete multiple emails at once"
+    },
+    {
+      "name": "list_labels",
+      "description": "List all Gmail labels"
+    },
+    {
+      "name": "create_label",
+      "description": "Create a new Gmail label"
+    },
+    {
+      "name": "delete_label",
+      "description": "Delete a Gmail label"
+    },
+    {
+      "name": "apply_label",
+      "description": "Apply a label to an email"
+    },
+    {
+      "name": "remove_label",
+      "description": "Remove a label from an email"
+    },
+    {
+      "name": "batch_apply_labels",
+      "description": "Apply labels to multiple emails at once"
+    }
+  ]
+}

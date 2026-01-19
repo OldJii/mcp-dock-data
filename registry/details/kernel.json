@@ -1,0 +1,57 @@
+{
+  "id": "kernel",
+  "displayName": "Kernel",
+  "description": "Deploy and manage Kernel apps, automate browsers, and search documentation with Kernel. Securely run workflows, monitor deployments, and spin up sandboxed browser sessions, all instantly accessible through a hosted service built for AI-native automation.",
+  "createdAt": "2026-01-19T02:18:02.070Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kernel"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_docs",
+      "description": "Fast vector search through Kernel platform documentation to find relevant information, guides, tutorials, and API references. Returns ranked documentation chunks with titles, URLs, and content snippets. Use this tool when you need to understand how Kernel features work, troubleshoot issues, or provide accurate information about the platform capabilities."
+    },
+    {
+      "name": "list_apps",
+      "description": "List all apps deployed in the Kernel platform. Use this to discover available apps, check their versions, or filter by specific criteria. Helpful for understanding what apps are available before invoking actions."
+    },
+    {
+      "name": "invoke_action",
+      "description": "Execute a specific action within a Kernel app. This is the primary way to interact with deployed apps - use this to trigger workflows, run computations, or perform operations. The action will run asynchronously and you can track its progress with the returned invocation ID."
+    },
+    {
+      "name": "get_browser",
+      "description": "Retrieve detailed information about a specific browser session including its current status, configuration, and metadata. Use this to check if a browser is still active, get its access URLs, or understand its current state before performing operations."
+    },
+    {
+      "name": "create_browser",
+      "description": "Launch a new browser session in the Kernel platform. This creates a managed browser instance that can be used for web automation, testing, or interactive browsing. The browser runs in a secure sandbox environment and can be configured with various options like headless mode, stealth mode, and session recording."
+    },
+    {
+      "name": "delete_browser",
+      "description": "Permanently terminate and clean up a browser session. This will stop the browser instance, free up resources, and remove any associated data. Use this when you no longer need a browser session or want to clean up after completing automation tasks."
+    },
+    {
+      "name": "get_deployment",
+      "description": "Retrieve comprehensive information about a specific deployment including its current status, build logs, configuration, and health metrics. Use this to monitor deployment progress, troubleshoot deployment issues, or verify that an app was deployed successfully."
+    },
+    {
+      "name": "get_invocation",
+      "description": "Retrieve detailed information about a specific action invocation including its execution status, output data, error messages, and runtime metrics. Use this to check if an invoked action completed successfully, get its results, or troubleshoot failed executions."
+    },
+    {
+      "name": "list_browsers",
+      "description": "Retrieve a list of all currently active browser sessions in the Kernel platform. This shows you which browsers are running, their session IDs, creation times, and basic configuration. Use this to discover existing browser sessions before creating new ones or to audit current browser usage."
+    },
+    {
+      "name": "list_deployments",
+      "description": "Retrieve a comprehensive list of all deployments in the Kernel platform, with optional filtering by app name. This provides an overview of deployment history, current status, and allows you to track the deployment lifecycle of your apps. Use this to monitor deployment activity or find specific deployments."
+    }
+  ]
+}

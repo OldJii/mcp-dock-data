@@ -1,0 +1,155 @@
+{
+  "id": "@msathiyakeerthi/google-cloud-healthcare-api-mcp",
+  "displayName": "Google Cloud Healthcare API Server",
+  "description": "Provide healthcare data access and querying capabilities by integrating with Google Cloud Healthcare FHIR APIs and public medical research databases. Enable seamless retrieval of patient records, clinical data, and research articles through a secure and authenticated MCP interface. Enhance healthcare applications with real-time clinical insights and research information.",
+  "createdAt": "2026-01-19T02:17:27.327Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@msathiyakeerthi/google-cloud-healthcare-api-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "FIREBASE_API_KEY",
+        "FIREBASE_AUTH_DOMAIN",
+        "FIREBASE_PROJECT_ID",
+        "FIREBASE_STORAGE_BUCKET",
+        "FIREBASE_MESSAGING_SENDER_ID",
+        "FIREBASE_APP_ID",
+        "FIREBASE_MEASUREMENT_ID",
+        "FIREBASE_AUTH_CALLBACK_PORT",
+        "FHIR_BASE_URL",
+        "PUBMED_API_KEY",
+        "CLINICAL_TRIALS_API_KEY",
+        "FDA_API_KEY"
+      ],
+      "properties": {
+        "FDA_API_KEY": {
+          "type": "string",
+          "description": "FDA API key",
+          "default": "dummy"
+        },
+        "FHIR_BASE_URL": {
+          "type": "string",
+          "description": "FHIR Gateway base URL",
+          "default": "http://localhost:8080/fhir"
+        },
+        "PUBMED_API_KEY": {
+          "type": "string",
+          "description": "PubMed API key",
+          "default": "dummy"
+        },
+        "FIREBASE_APP_ID": {
+          "type": "string",
+          "description": "Firebase App ID",
+          "default": "dummy"
+        },
+        "FIREBASE_API_KEY": {
+          "type": "string",
+          "description": "Firebase API key",
+          "default": "dummy"
+        },
+        "FIREBASE_PROJECT_ID": {
+          "type": "string",
+          "description": "Firebase Project ID",
+          "default": "dummy"
+        },
+        "FIREBASE_AUTH_DOMAIN": {
+          "type": "string",
+          "description": "Firebase Auth Domain",
+          "default": "dummy"
+        },
+        "CLINICAL_TRIALS_API_KEY": {
+          "type": "string",
+          "description": "Clinical Trials API key",
+          "default": "dummy"
+        },
+        "FIREBASE_MEASUREMENT_ID": {
+          "type": "string",
+          "description": "Firebase Measurement ID",
+          "default": "dummy"
+        },
+        "FIREBASE_STORAGE_BUCKET": {
+          "type": "string",
+          "description": "Firebase Storage Bucket",
+          "default": "dummy"
+        },
+        "FIREBASE_AUTH_CALLBACK_PORT": {
+          "type": "string",
+          "description": "Port for Firebase Auth callback",
+          "default": "3456"
+        },
+        "FIREBASE_MESSAGING_SENDER_ID": {
+          "type": "string",
+          "description": "Firebase Messaging Sender ID",
+          "default": "dummy"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find_patient",
+      "description": "Search for a patient by demographics"
+    },
+    {
+      "name": "get_patient_observations",
+      "description": "Get observations (vitals, labs) for a patient"
+    },
+    {
+      "name": "get_patient_conditions",
+      "description": "Get medical conditions/diagnoses for a patient"
+    },
+    {
+      "name": "get_patient_medications",
+      "description": "Get medication orders for a patient"
+    },
+    {
+      "name": "get_patient_encounters",
+      "description": "Get healthcare encounters/visits for a patient"
+    },
+    {
+      "name": "get_patient_allergies",
+      "description": "Get allergies and intolerances for a patient"
+    },
+    {
+      "name": "get_patient_procedures",
+      "description": "Get procedures performed on a patient"
+    },
+    {
+      "name": "get_patient_careplans",
+      "description": "Get care plans for a patient"
+    },
+    {
+      "name": "get_vital_signs",
+      "description": "Get patient's vital signs history"
+    },
+    {
+      "name": "get_lab_results",
+      "description": "Get patient's lab results"
+    },
+    {
+      "name": "get_medications_history",
+      "description": "Get patient's medication history including changes"
+    },
+    {
+      "name": "get_appointments",
+      "description": "Get patient's Appointments"
+    },
+    {
+      "name": "search-pubmed",
+      "description": "Search PubMed for medical literature"
+    },
+    {
+      "name": "search-trials",
+      "description": "Search ClinicalTrials.gov for relevant studies"
+    },
+    {
+      "name": "get-drug-info",
+      "description": "Get Drug details by a generic name"
+    }
+  ]
+}

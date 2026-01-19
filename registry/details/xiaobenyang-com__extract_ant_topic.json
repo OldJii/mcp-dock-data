@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/extract_ant_topic",
+  "displayName": "extract_ant_topic",
+  "description": "Speed up AntV projects by guiding you to the right library and shaping clear steps to deliver results. Retrieve precise documentation, best practices, and examples from official AntV resources across G2, G6, L7, X6, F2, S2, G, Ava, and ADC. Resolve issues and implement charts, maps, and dashboards faster, from quick tweaks to complex workflows.",
+  "createdAt": "2026-01-19T02:17:34.712Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/extract_ant_topic"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_antv_topic",
+      "description": "AntV Intelligent Assistant Preprocessing Tool - Specifically designed to handle any user queries related to AntV visualization libraries.\n  This tool is the first step in processing AntV technology stack issues, responsible for intelligently identifying, parsing, and structuring user visualization requirements.\n\n**MANDATORY: Must be called for ANY new AntV-related queries, including simple questions. Always precedes query_antv_document tool.**\n\nWhen to use this tool:\n- **AntV-related queries**: Questions about g2/g6/l7/x6/f2/s2/g/ava/adc libraries.\n- **Visualization tasks**: Creating charts, graphs, maps, or other visualizations.\n- **Problem solving**: Debugging errors, performance issues, or compatibility problems.\n- **Learning & implementation**: Understanding concepts or requesting code examples.\n\nKey features:\n- **Smart Library Detection**: Scans installed AntV libraries and recommends the best fit based on query and project dependencies.\n- **Topic & Intent Extraction**: Intelligently extracts technical topics and determines user intent (implement/solve).\n- **Task Complexity Handling**: Detects complex tasks and decomposes them into manageable subtasks.\n- **Seamless Integration**: Prepares structured data for the query_antv_document tool to provide precise solutions."
+    },
+    {
+      "name": "query_antv_document",
+      "description": "AntV Context Retrieval Assistant - Fetches relevant documentation, code examples, and best practices from official AntV resources. Supports g2, g6, l7, x6, f2, s2, g, ava, adc libraries, and handles subtasks iterative queries.\n\n**MANDATORY: Must be called for ANY AntV-related query (g2, g6, l7, x6, f2, s2, g, ava, adc), regardless of task complexity. No exceptions for simple tasks.**\n\nWhen to use this tool:\n- **Implementation & Optimization**: To implement new features, modify styles, refactor code, or optimize performance in AntV solutions.\n- **Debugging & Problem Solving**: For troubleshooting errors, unexpected behaviors, or technical challenges in AntV projects.\n- **Learning & Best Practices**: To explore official documentation, code examples, design patterns, or advanced features.\n- **Complex Task Handling**: For multi-step tasks requiring subtask decomposition (e.g., \"Build a dashboard with interactive charts\").\n- **Simple modifications**: Even basic changes like \"Change the chart's color\" or \"Update legend position\" in AntV context."
+    }
+  ]
+}

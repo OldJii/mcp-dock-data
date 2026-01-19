@@ -1,0 +1,56 @@
+{
+  "id": "@osamah96/qqqqw",
+  "displayName": "Brand Me Please",
+  "description": "Ensure your content aligns with your brand’s voice, values, and visuals. Retrieve complete guidelines and assets, then run quick checks or deep analyses for any draft. Get clear scores, examples, and before/after recommendations to boost consistency and compliance.",
+  "createdAt": "2026-01-19T02:18:28.224Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@osamah96/qqqqw"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "name": "brand-guidelines-mcp",
+      "transport": [
+        "streamable-http",
+        "sse",
+        "http"
+      ],
+      "description": "Brand Guidelines MCP Server",
+      "mcp_version": "2025-06-18",
+      "capabilities": {
+        "tools": {
+          "listChanged": true
+        },
+        "prompts": {
+          "listChanged": true
+        },
+        "resources": {
+          "subscribe": false,
+          "listChanged": false
+        },
+        "notifications": true
+      },
+      "authentication_required": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "brand_me_please",
+      "description": "Complete brand analysis workflow - literally \"Brand Me Please!\" Analyzes your content, retrieves brand guidelines, and fetches visual assets all in one go. Use this for comprehensive brand analysis."
+    },
+    {
+      "name": "get_brand_context",
+      "description": "Retrieve comprehensive brand guidelines and rules from BrandMePlease"
+    },
+    {
+      "name": "get_brand_visuals",
+      "description": "Fetch PDFs and visual assets from your brand via BrandMePlease"
+    },
+    {
+      "name": "analyze_content",
+      "description": "Analyze content against your brand guidelines using BrandMePlease"
+    }
+  ]
+}

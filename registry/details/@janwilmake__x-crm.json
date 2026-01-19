@@ -1,0 +1,12 @@
+{
+  "id": "@janwilmake/x-crm",
+  "displayName": "x-crm",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:50.595Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@janwilmake/x-crm"
+  },
+  "connection": null,
+  "capabilities": []
+}

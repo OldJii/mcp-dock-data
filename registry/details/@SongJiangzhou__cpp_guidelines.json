@@ -1,0 +1,39 @@
+{
+  "id": "@SongJiangzhou/cpp_guidelines",
+  "displayName": "cpp_guidelines",
+  "description": "Enforce consistent C++ style and best practices across your codebase. Analyze naming, memory safety, and const correctness, and get actionable modernization suggestions up to C++23. Accelerate reviews with ready-made prompts and quick access to curated guidelines.",
+  "createdAt": "2026-01-19T02:13:34.763Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SongJiangzhou/cpp_guidelines"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_naming",
+      "description": "\n    检查 C++ 标识符命名是否符合规范\n\n    参数:\n        identifier: 要检查的标识符名称\n        category: 标识符类别，可选值:\n                 - variable: 变量\n                 - constant: 常量\n                 - function: 函数\n                 - class: 类\n                 - namespace: 命名空间\n                 - member_variable: 成员变量\n                 - template_parameter: 模板参数\n                 - file_naming: 文件命名\n\n    返回:\n        检查结果，包含是否符合规范、详细说明和建议\n    "
+    },
+    {
+      "name": "check_include_guard",
+      "description": "\n    检查 C++ 头文件的包含保护是否正确\n\n    参数:\n        code: 头文件的完整代码\n        file_path: 可选的文件路径，用于生成建议的保护宏名\n\n    返回:\n        检查结果，包含是否符合规范、详细说明和建议\n    "
+    },
+    {
+      "name": "analyze_memory_safety",
+      "description": "\n    分析 C++ 代码中的内存安全问题\n\n    参数:\n        code: 要分析的 C++ 代码\n\n    返回:\n        内存安全分析报告，包括潜在的内存泄漏、悬空指针、不安全操作等\n    "
+    },
+    {
+      "name": "suggest_modern_cpp",
+      "description": "\n    建议将代码升级为现代 C++ 写法\n\n    参数:\n        code: 要分析的 C++ 代码\n        target_standard: 目标 C++ 标准，可选值:\n                        - cpp11: C++11\n                        - cpp14: C++14\n                        - cpp17: C++17 (默认)\n                        - cpp20: C++20\n                        - cpp23: C++23\n\n    返回:\n        现代化建议报告，包括可以使用的新特性和重写示例\n    "
+    },
+    {
+      "name": "check_const_correctness",
+      "description": "\n    检查 C++ 代码中的 const 正确性\n\n    参数:\n        code: 要检查的 C++ 代码\n\n    返回:\n        const 正确性检查报告，包括缺少 const 的地方和改进建议\n    "
+    }
+  ]
+}

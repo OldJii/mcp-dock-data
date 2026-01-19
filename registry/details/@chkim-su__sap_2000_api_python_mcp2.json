@@ -1,0 +1,12 @@
+{
+  "id": "@chkim-su/sap_2000_api_python_mcp2",
+  "displayName": "sap_2000_api_python_mcp2",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:16.658Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chkim-su/sap_2000_api_python_mcp2"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/bilibili-api",
+  "displayName": "bilibili-api",
+  "description": "# B站API服务器 Bilibili Api\n\n一个为bilibili.com API提供服务的Model Context Protocol (MCP)服务器，支持获取用户信息、视频搜索等功能。\nA Model Context Protocol (MCP) server that provides services for the bilibili.com API, supporting functions such as obtaining user information and video search.## 工具列表 Tool List\n\n本MCP服务封装下列工具，可让模型通过标准化接口调用以下功能。 本MCP服务封装下列工具，可让模型通过标准化接口调用以下功能。\n\n| 工具 Tool   | 描述 Description         |\n|-------|--------------------|\n| get_user_info | Get information about a Bilibili user |\n| get_video_info | Get detailed information about a Bilibili video |\n| search_videos | Search for videos on Bilibili |\n\n\n## 检查服务 ## Inspector\n\n工具在线测试： [https://mcp.xiaobenyang.com/inspector/1777316659451907](https://mcp.xiaobenyang.com/inspector/1777316659451907)\n\nOnline Tool test [https://mcp.xiaobenyang.com/inspector/1777316659451907](https://mcp.xiaobenyang.com/inspector/1777316659451907)\n\n## 服务配置 MCP Server Config\n\n\n> #### 如何获取 XBY-APIKEY ？ How to get XBY-APIKEY ?\n> 访问小笨羊科技网站 [https://xiaobenyang.com](https://xiaobenyang.com)，注册用户即可获得APIKEY\n> Visit XiaoBenYang website [https://xiaobenyang.com](https://xiaobenyang.com), register and get the APIKEY.\n\n### SSE\n```json\n{\n  \"mcpServers\": {\n    \"B站API服务器\": {\n      \"headers\": {\n        \"XBY-APIKEY\": \"<YOUR_XBY_APIKEY>\"\n      },\n      \"type\": \"sse\",\n      \"url\": \"https://mcp.xiaobenyang.com/1777316659451907/sse\"\n    }\n  }\n}\n```\n### STREAMABLE HTTP\n```json\n{\n  \"mcpServers\": {\n    \"B站API服务器\": {\n      \"headers\": {\n        \"XBY-APIKEY\": \"<YOUR_XBY_APIKEY>\"\n      },\n      \"type\": \"streamable_http\",\n      \"url\": \"https://mcp.xiaobenyang.com/1777316659451907/mcp\"\n    }\n  }\n}\n```\n### STDIO\n```json\n{\n    \"mcpServers\": {\n        \"B站API服务器\": {\n          \"command\": \"npx\",\n          \"args\": [\n            \"-y\",\n            \"xiaobenyang-mcp\"\n          ],\n          \"env\": {\n            \"XBY_APIKEY\": \"<YOUR_XBY_APIKEY>\",\n            \"mcpId\": \"1777316659451907\",\n          },\n          \"transport\": \"stdio\"\n        }\n      }\n}\n\n```\n",
+  "createdAt": "2026-01-19T02:17:54.362Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/bilibili-api"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_user_info",
+      "description": "Get information about a Bilibili user"
+    },
+    {
+      "name": "get_video_info",
+      "description": "Get detailed information about a Bilibili video"
+    },
+    {
+      "name": "search_videos",
+      "description": "Search for videos on Bilibili"
+    }
+  ]
+}

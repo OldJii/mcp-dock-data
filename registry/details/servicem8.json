@@ -1,0 +1,129 @@
+{
+  "id": "servicem8",
+  "displayName": "Servicem8",
+  "description": "ServiceM8 helps field service businesses schedule jobs, send quotes, and manage invoices, offering staff mobile apps and real-time job status tracking",
+  "createdAt": "2026-01-19T02:12:44.780Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/servicem8"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SERVICEM8_CREATE_JOB_NOTE",
+      "description": "Tool to create a new job note in ServiceM8. Use when you need to attach additional information to a specific job after obtaining its UUID."
+    },
+    {
+      "name": "SERVICEM8_CREATE_JOB_PAYMENT",
+      "description": "Tool to create a new job payment in ServiceM8. Use when you have collected payment details and need to record payment against a job. Example: \"Create a 100.00 cash payment for job 123e4567-e89b-12d3-a456-426614174000 at 2023-01-01 13:00:00.\""
+    },
+    {
+      "name": "SERVICEM8_CREATE_JOBS",
+      "description": "Tool to create a new Job in ServiceM8. Use when you have gathered all job details and need to push a record. Example: \"Create a Quote job for 123 Main St with PO #1234.\""
+    },
+    {
+      "name": "SERVICEM8_DELETE_JOB_NOTE",
+      "description": "Tool to delete a specific job note. Use when you need to archive a note by its UUID."
+    },
+    {
+      "name": "SERVICEM8_DELETE_JOB_PAYMENT",
+      "description": "Tool to delete (archive) a specific job payment by its UUID. Use when you need to archive a payment record."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_ASSETS",
+      "description": "Tool to list all ServiceM8 assets. Use when you need a comprehensive asset registry, including custom fields, for inventory or reporting."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_CLIENTS",
+      "description": "Tool to list all ServiceM8 clients. Use when you need a complete set of customer records for integrations or reporting."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_DOCUMENT_TEMPLATES",
+      "description": "Tool to list document templates. Use when you need to retrieve available template UUIDs and names before generating job documents."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_FORMS",
+      "description": "Tool to list all ServiceM8 forms. Use when you need to fetch available form templates with optional filters."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_JOB_NOTES",
+      "description": "Tool to list all job notes in ServiceM8. Use when you need to fetch notes, optionally filtered or paginated."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_JOB_QUEUES",
+      "description": "Tool to list all job queues in ServiceM8. Use when you need to fetch configured queues before dispatching jobs."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_JOBS",
+      "description": "Tool to list all jobs. Use when you need to fetch all job records from your ServiceM8 account."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_LOCATIONS",
+      "description": "Tool to list all ServiceM8 locations. Use when you need to fetch every configured location for assignments or mapping."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_MATERIALS",
+      "description": "Tool to list all materials. Use when you need a full inventory dump after authenticating with read_inventory scope."
+    },
+    {
+      "name": "SERVICEM8_LIST_ALL_TASKS",
+      "description": "Tool to list all tasks in a ServiceM8 account. Use when you need to fetch task records, optionally filtered. Requires 'read_tasks' OAuth scope."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_CLIENT",
+      "description": "Tool to retrieve details of a specific client by its UUID. Use after confirming the client's UUID is valid."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_FORM",
+      "description": "Tool to retrieve details of a specific form by its UUID. Use when you need up-to-date form metadata given a known form UUID."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_JOB",
+      "description": "Tool to retrieve details of a specific job by its UUID. Use when you have the Job UUID and need its full record."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_JOB_ACTIVITY",
+      "description": "Tool to retrieve details of a specific job activity by its UUID. Use when you have the job activity UUID and need its full details."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_JOB_NOTE",
+      "description": "Tool to retrieve details of a specific job note by its UUID. Use when you have the note UUID (e.g., after listing notes) and need its full record before processing or display."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_JOB_PAYMENT",
+      "description": "Tool to retrieve details of a specific job payment by its UUID. Use when you have the payment UUID and need its full record and metadata."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_JOB_QUEUE",
+      "description": "Tool to retrieve details of a specific job queue by its UUID. Use when you need full queue metadata before dispatching work."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_LOCATION",
+      "description": "Tool to retrieve details of a specific location by its UUID. Use when you already have the location's UUID and need full location details."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_MATERIAL",
+      "description": "Tool to retrieve details of a specific material by its UUID. Use when you have a material UUID and need current inventory or pricing details."
+    },
+    {
+      "name": "SERVICEM8_RETRIEVE_STAFF_MEMBER",
+      "description": "Tool to retrieve details of a specific staff member by their UUID. Use when you need up-to-date staff information given a known staff UUID."
+    },
+    {
+      "name": "SERVICEM8_SERVICE_M8_CREATE_JOB",
+      "description": "Tool to create a new job in ServiceM8. Use when you have all job details and need to push a record into ServiceM8. Example: \"Create a Quote job for 123 Main St with PO #1234.\""
+    },
+    {
+      "name": "SERVICEM8_UPDATE_JOB_NOTE",
+      "description": "Tool to update details of an existing job note. Use when modifying a note after its creation."
+    },
+    {
+      "name": "SERVICEM8_UPDATE_JOB_PAYMENT",
+      "description": "Tool to update details of an existing job payment. Use after confirming the payment UUID and desired changes."
+    }
+  ]
+}

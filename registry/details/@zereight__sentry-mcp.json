@@ -1,0 +1,59 @@
+{
+  "id": "@zereight/sentry-mcp",
+  "displayName": "Sentry Server",
+  "description": "Fetch and manage Sentry issue and event details seamlessly. Integrate with your Sentry projects to retrieve insights and streamline your debugging process. Enhance your workflow by leveraging Sentry's powerful API through a standardized interface.",
+  "createdAt": "2026-01-19T02:15:50.732Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zereight/sentry-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "sentryAuthToken",
+        "sentryOrgSlug",
+        "sentryProjectNames"
+      ],
+      "properties": {
+        "sentryBaseUrl": {
+          "type": "string",
+          "description": "Optional: The Sentry base URL. Defaults to https://sentry.io",
+          "default": "https://sentry.io"
+        },
+        "sentryOrgSlug": {
+          "type": "string",
+          "description": "The slug of your Sentry organization"
+        },
+        "sentryAuthToken": {
+          "type": "string",
+          "description": "Your Sentry authentication token"
+        },
+        "sentryProjectNames": {
+          "type": "string",
+          "description": "Comma-separated Sentry project slugs"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_sentry_issue",
+      "description": "Get details for a specific Sentry issue using its ID or URL"
+    },
+    {
+      "name": "list_organization_projects",
+      "description": "List all projects for the configured Sentry organization"
+    },
+    {
+      "name": "list_project_issues",
+      "description": "List issues for a specific project, with optional filtering."
+    },
+    {
+      "name": "get_event_details",
+      "description": "Get details for a specific event within a project."
+    }
+  ]
+}

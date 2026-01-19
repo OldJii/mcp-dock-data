@@ -1,0 +1,37 @@
+{
+  "id": "@tbitu/tartunlp-mcp",
+  "displayName": "TartuNLP Translate",
+  "description": "Translate text across supported language pairs, including Estonian, English, and Russian. Discover available languages and pairs on demand. Streamline multilingual workflows with straightforward translation.",
+  "createdAt": "2026-01-19T02:13:47.374Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tbitu/tartunlp-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ServerConfig",
+      "properties": {
+        "timeout": {
+          "type": "integer",
+          "description": "Request timeout in milliseconds",
+          "default": 5000
+        }
+      },
+      "description": "Configuration schema for TartuNLP MCP Server.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "translate_text",
+      "description": "Translate text between supported language pairs using TartuNLP.\n        \n        Args:\n            text: Text to translate\n            source_lang: Source language code (e.g., 'et', 'en', 'ru')\n            target_lang: Target language code (e.g., 'et', 'en', 'ru')\n            model: Optional model/domain specification\n        "
+    },
+    {
+      "name": "get_supported_languages",
+      "description": "Get list of supported language pairs and available languages."
+    }
+  ]
+}

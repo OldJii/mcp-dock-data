@@ -1,0 +1,45 @@
+{
+  "id": "@byronwade/memoria",
+  "displayName": "memoria",
+  "description": "Prevents your AI from breaking code by revealing hidden file dependencies through git forensics.",
+  "createdAt": "2026-01-19T02:20:41.376Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@byronwade/memoria"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "driftDays": {
+          "type": "number",
+          "description": "Days before a coupled file is considered stale",
+          "default": 7
+        },
+        "analysisWindow": {
+          "type": "number",
+          "description": "Number of commits to analyze for coupling",
+          "default": 50
+        },
+        "couplingPercent": {
+          "type": "number",
+          "description": "Minimum coupling percentage to report (0-100)",
+          "default": 15
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_file",
+      "description": "Returns forensic history, hidden dependencies, and risk assessment. USE THIS before modifying files."
+    },
+    {
+      "name": "ask_history",
+      "description": "Search git history for WHY code was written. IMPORTANT: Use SHORT, SPECIFIC KEYWORDS (e.g., 'serialization', 'race condition', 'timeout'). Do NOT use full sentences or long descriptions - they will return 0 results. Use when asking 'why does this exist?' or before removing code."
+    }
+  ]
+}

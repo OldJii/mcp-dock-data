@@ -1,0 +1,35 @@
+{
+  "id": "@michaeldouglas/mcp_cep_service",
+  "displayName": "Busca de Endereço por CEP",
+  "description": "Easily look up Brazilian addresses by CEP (postal code) with clean, concise responses optimized for language models. Get detailed data from the CEP, returned in a clear and structured format — perfect for AI agents. Plug-and-play as a stateless MCP server with built-in validation for reliable results.",
+  "createdAt": "2026-01-19T02:15:16.693Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@michaeldouglas/mcp_cep_service"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "busca_cep",
+      "description": "Busca o cep de um cliente"
+    }
+  ]
+}

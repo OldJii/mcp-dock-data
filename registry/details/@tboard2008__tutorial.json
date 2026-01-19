@@ -1,0 +1,12 @@
+{
+  "id": "@tboard2008/tutorial",
+  "displayName": "tutorial",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:55.375Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tboard2008/tutorial"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@lineex/zotero-mcp",
+  "displayName": "zotero-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:22.334Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lineex/zotero-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

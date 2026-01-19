@@ -1,0 +1,39 @@
+{
+  "id": "@sunhye/mcp-korea-weather",
+  "displayName": "Korea Weather",
+  "description": "Get real-time conditions and ultra-short-term forecasts across South Korea. Check current temperature, precipitation, wind, and humidity for a location, plus a concise summary of the next three time slots. Use reliable national meteorological data to power planning, alerts, and automations.",
+  "createdAt": "2026-01-19T02:14:17.766Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sunhye/mcp-korea-weather"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_korea_weather",
+      "description": "기상청 초단기실황(기온/강수/풍속/습도)"
+    },
+    {
+      "name": "get_korea_forecast",
+      "description": "기상청 초단기예보(향후 3개 타임슬롯 요약)"
+    }
+  ]
+}

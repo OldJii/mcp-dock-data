@@ -1,0 +1,12 @@
+{
+  "id": "@cap5192/merakimcp",
+  "displayName": "merakimcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:57.768Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cap5192/merakimcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

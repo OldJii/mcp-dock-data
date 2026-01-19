@@ -1,0 +1,12 @@
+{
+  "id": "@masflame/afrikure-mcp",
+  "displayName": "afrikure-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:32.381Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@masflame/afrikure-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

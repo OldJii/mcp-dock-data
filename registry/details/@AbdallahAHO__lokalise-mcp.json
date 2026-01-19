@@ -1,0 +1,274 @@
+{
+  "id": "@AbdallahAHO/lokalise-mcp",
+  "displayName": "Lokalise MCP Server",
+  "description": "Connect AI assistants to Lokalise to manage translation projects, keys, and workflows through natural conversation. Automate localization tasks, monitor progress, and collaborate with your team without writing code. Streamline your translation management directly from your chat interface.",
+  "createdAt": "2026-01-19T02:15:13.278Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AbdallahAHO/lokalise-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "LOKALISE_API_KEY"
+      ],
+      "properties": {
+        "debug_mode": {
+          "type": "boolean",
+          "description": "Enable debug_mode mode",
+          "default": false
+        },
+        "LOKALISE_API_KEY": {
+          "type": "string",
+          "description": "Your Lokalise API token"
+        },
+        "LOKALISE_API_HOSTNAME": {
+          "type": "string",
+          "description": "Custom Lokalise API endpoint",
+          "default": "https://api.lokalise.com/api2/"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "lokalise_list_key_comments",
+      "description": "Retrieves all comments for a specific translation key to understand discussion history and context. Required: projectId, keyId. Optional: limit (100), page. Use this to review translator questions, see implementation notes, or audit collaboration on a specific key. Returns: Paginated list of comments with author, timestamp, and content. Pairs with: lokalise_create_comments to continue discussions."
+    },
+    {
+      "name": "lokalise_list_project_comments",
+      "description": "Fetches all comments across an entire project for a comprehensive overview of team collaboration. Required: projectId. Optional: limit (100), page. Use this to identify keys with active discussions, audit communication patterns, or find unresolved questions. Returns: Comments grouped by key with context. Note: Can be data-intensive for large projects."
+    },
+    {
+      "name": "lokalise_get_comment",
+      "description": "Gets full details of a single comment including complete text and metadata. Required: projectId, keyId, commentId. Use when comment text was truncated in list view or to get exact timestamps. Returns: Complete comment data with author details and creation time. Pairs with: lokalise_delete_comment for comment management."
+    },
+    {
+      "name": "lokalise_create_comments",
+      "description": "Adds one or more comments to a translation key for team collaboration. Required: projectId, keyId, comments array with 'comment' text. Use to ask translators questions, provide context, leave implementation notes, or flag issues. Supports bulk creation for efficiency. Returns: Created comments with IDs. Note: Comments are visible to all project members."
+    },
+    {
+      "name": "lokalise_delete_comment",
+      "description": "Permanently removes a specific comment from a translation key. Required: projectId, keyId, commentId. Use to clean up resolved discussions, remove outdated information, or delete accidental comments. Returns: Confirmation of deletion. Warning: This action cannot be undone. Consider archiving important discussions elsewhere first."
+    },
+    {
+      "name": "lokalise_list_contributors",
+      "description": "Lists all team members in a project with their roles and permissions. Required: projectId. Optional: limit (100), page. Use to audit team access, check language assignments, or prepare permission changes. Returns: Contributors with email, role, admin status, and language permissions. Use before adding new members to avoid duplicates."
+    },
+    {
+      "name": "lokalise_get_contributor",
+      "description": "Retrieves detailed information about a specific team member's access and permissions. Required: projectId, contributorId. Use to verify exact permissions before updates, investigate access issues, or get complete language assignments. Returns: Full contributor profile including all language permissions and administrative rights."
+    },
+    {
+      "name": "lokalise_add_contributors",
+      "description": "Onboards one or more new team members to a project. Required: projectId, contributors array with email and permissions (admin_rights, is_reviewer, languages). Use for team expansion, granting translator access, or adding reviewers. Returns: Added contributors with assigned IDs. Note: Sends invitation emails automatically."
+    },
+    {
+      "name": "lokalise_get_current_user",
+      "description": "Checks your own permissions and access level in a project. Required: projectId. Use to verify your administrative capabilities, check language access, or confirm reviewer status before attempting restricted operations. Returns: Your contributor profile with all permissions. Essential before permission-sensitive operations."
+    },
+    {
+      "name": "lokalise_update_contributor",
+      "description": "Modifies a team member's role, permissions, or language access. Required: projectId, contributorId. Optional: admin_rights, is_reviewer, languages array. Use to promote/demote users, adjust language assignments, or fix permission issues. Returns: Updated contributor profile. Note: Cannot modify your own admin rights."
+    },
+    {
+      "name": "lokalise_remove_contributor",
+      "description": "Removes a team member from a project, revoking all access. Required: projectId, contributorId. Use for offboarding, security cleanup, or removing inactive members. Returns: Confirmation of removal. Warning: Immediate effect - contributor loses all project access. Consider permission downgrade instead for temporary changes."
+    },
+    {
+      "name": "lokalise_list_glossary_terms",
+      "description": "Retrieves paginated glossary terms that define translation rules for consistency. Required: projectId. Optional: limit (100), cursor for pagination. Use to discover defined terminology including brand names, technical terms, and forbidden words. Returns: Terms with properties (case-sensitive, translatable, forbidden) and translations. Essential before translating to prevent terminology errors."
+    },
+    {
+      "name": "lokalise_get_glossary_term",
+      "description": "Fetches complete details for a single glossary term by ID. Required: projectId, termId. Use to understand precise translation rules, check case-sensitivity requirements, or view all language translations for a term. Returns: Full term data including definition, properties, and language-specific translations. Critical for translator guidance."
+    },
+    {
+      "name": "lokalise_create_glossary_terms",
+      "description": "Adds new terminology rules to maintain translation consistency. Required: projectId, terms array with {term, definition}. Optional per term: case_sensitive, translatable, forbidden, translations by language. Use for brand names, technical jargon, or untranslatable terms. Returns: Created terms with IDs. Supports bulk creation up to 1000 terms."
+    },
+    {
+      "name": "lokalise_update_glossary_terms",
+      "description": "Modifies existing glossary definitions and properties. Required: projectId, terms array with {term_id} plus changes. Use to refine definitions, add language translations, or adjust rules (case-sensitivity, forbidden status). Returns: Updated terms. Supports bulk updates. Changes apply immediately to all future translations."
+    },
+    {
+      "name": "lokalise_delete_glossary_terms",
+      "description": "Removes obsolete or incorrect glossary entries. Required: projectId, termIds array. Use to clean up outdated terminology, remove duplicates, or fix mistakes. Returns: Deletion confirmation. Warning: Removes all term translations and rules. Supports bulk deletion. Consider updating instead of deleting for audit trail."
+    },
+    {
+      "name": "lokalise_list_keys",
+      "description": "Explores the project's content structure by listing translation keys. Required: projectId. Optional: limit (100), cursor, filterKeys array, filterPlatforms array, includeTranslations. Use to browse content organization, find specific keys, or audit platform coverage. Returns: Keys with metadata and optional translations. Supports cursor pagination for large projects. Start here to understand project content."
+    },
+    {
+      "name": "lokalise_create_keys",
+      "description": "Adds new UI text or content to be translated (up to 1000 keys per request). Required: projectId, keys array with {key_name, platforms}. Optional per key: description, tags, translations. Use for new features, initial setup, or content expansion. Returns: Created keys with IDs and any errors. Tip: Include base language translations to speed up workflow. Pairs with: lokalise_list_keys to verify."
+    },
+    {
+      "name": "lokalise_get_key",
+      "description": "Deep-dives into a single content item to understand its complete state. Required: projectId, keyId. Use to investigate translation status, view all language versions, check metadata, or debug issues. Returns: Full key data including all translations, platforms, tags, comments, and history. Essential for detailed analysis or before making targeted updates."
+    },
+    {
+      "name": "lokalise_update_key",
+      "description": "Modifies key metadata to improve organization and translator context. Required: projectId, keyId. Optional: key_name, description, platforms, tags. Use to clarify meaning for translators, fix platform assignments, or reorganize content. Returns: Updated key. Note: This updates metadata only - use translation tools to modify actual text. Changes apply immediately."
+    },
+    {
+      "name": "lokalise_delete_key",
+      "description": "Permanently removes obsolete content and all its translations. Required: projectId, keyId. Use for removing deprecated features, cleaning typos in key names, or content no longer needed. Returns: Deletion confirmation. Warning: Irreversible - all translations lost. Consider archiving important content first. For multiple keys, use bulk delete."
+    },
+    {
+      "name": "lokalise_bulk_update_keys",
+      "description": "Efficiently modifies metadata for multiple keys in one operation. Required: projectId, keys array with {key_id} plus changes. Use for large-scale reorganization, batch platform updates, or systematic tagging. Returns: Updated keys and any errors. Performance: Processes up to 1000 keys per request. More efficient than individual updates for 3+ keys."
+    },
+    {
+      "name": "lokalise_bulk_delete_keys",
+      "description": "Large-scale cleanup removing multiple obsolete keys permanently. Required: projectId, keyIds array. Use for removing deprecated feature sets, post-refactoring cleanup, or major content pruning. Returns: Deletion results. Critical Warning: Irreversible batch operation - all selected keys and translations permanently deleted. Always verify key list before execution."
+    },
+    {
+      "name": "lokalise_list_system_languages",
+      "description": "Discovers all languages available in Lokalise platform that can be added to projects. Optional: limit (100), page. Use to find supported languages before project setup, verify language codes, or check RTL/plural form support. Returns: Languages with ISO codes, native names, RTL status, plural forms. Essential before adding new target languages."
+    },
+    {
+      "name": "lokalise_list_project_languages",
+      "description": "Shows which languages are currently being translated in a project. Required: projectId. Optional: includeProgress (shows completion %), limit, page. Use to audit translation coverage, identify incomplete languages, or prepare reports. Returns: Active languages with progress stats. Start here to understand project's localization scope."
+    },
+    {
+      "name": "lokalise_add_project_languages",
+      "description": "Starts translating into new languages by adding them to the project. Required: projectId, languages array with {lang_iso}. Optional per language: custom_iso, custom_name, custom_plural_forms. Use when expanding to new markets or adding regional variants. Returns: Added languages with IDs. Tip: Check system languages first for valid ISO codes."
+    },
+    {
+      "name": "lokalise_get_language",
+      "description": "Examines detailed settings for a specific project language. Required: projectId, languageId. Use to verify plural rules, check RTL configuration, or understand custom settings. Returns: Complete language configuration including ISO codes, plural forms, and writing direction. Important for languages with complex grammar rules."
+    },
+    {
+      "name": "lokalise_update_language",
+      "description": "Modifies language settings within a project. Required: projectId, languageId, languageData object. Optional in data: lang_iso, lang_name, plural_forms. Use to fix incorrect configurations, customize language names, or adjust plural rules. Returns: Updated language settings. Changes affect how translations are handled."
+    },
+    {
+      "name": "lokalise_remove_language",
+      "description": "Drops support for a language by removing it from the project. Required: projectId, languageId. Use when discontinuing localization for a market or cleaning up test languages. Returns: Removal confirmation. Critical Warning: Permanently deletes ALL translations for this language. Export translations first if needed."
+    },
+    {
+      "name": "lokalise_list_projects",
+      "description": "Portfolio overview showing all accessible localization projects. Optional: limit (100), page, includeStats (adds progress/QA data). Use as entry point to discover projects, assess translation health, or find specific project IDs. Returns: Projects with names, IDs, base language, stats. Start here before diving into specific projects."
+    },
+    {
+      "name": "lokalise_get_project",
+      "description": "Deep analysis of a single project's health and configuration. Required: projectId. Optional: includeLanguages (completion rates), includeKeysSummary (content stats). Use for project audits, progress reports, or understanding structure. Returns: Complete project metadata, team info, language progress, key statistics. Essential for project status assessment."
+    },
+    {
+      "name": "lokalise_create_project",
+      "description": "Initializes a new localization project for an app or service. Required: name. Optional: description, base_lang_iso (default 'en'). Use when starting localization for new products or creating test environments. Returns: Project ID and access details. Next steps: Add languages, upload keys, invite team members."
+    },
+    {
+      "name": "lokalise_update_project",
+      "description": "Modifies project settings and metadata. Required: projectId, projectData object. Optional in data: name, description. Use to rename projects, update descriptions, or fix project information. Returns: Updated project details. Note: Only changes metadata - use other tools for content/language changes."
+    },
+    {
+      "name": "lokalise_delete_project",
+      "description": "Permanently destroys a project and ALL its data. Required: projectId. Use for removing test projects or discontinued products. Returns: Deletion confirmation. CRITICAL WARNING: Irreversible - deletes all keys, translations, history, and team assignments. Export data first if needed. Consider emptying instead."
+    },
+    {
+      "name": "lokalise_empty_project",
+      "description": "Resets project content while preserving settings and team. Required: projectId. Use for major refactoring, starting fresh, or clearing test data. Returns: Operation confirmation. Effect: Removes all keys and translations but keeps languages, team, and project configuration. Safer alternative to deletion."
+    },
+    {
+      "name": "lokalise_list_queued_processes",
+      "description": "Lists all background/async processes in a Lokalise project with status tracking. Required: projectId. Optional: limit (100), page. Use to monitor file uploads, downloads, bulk operations, or troubleshoot process issues. Returns: Processes with status, progress, and completion estimates."
+    },
+    {
+      "name": "lokalise_get_queued_process",
+      "description": "Gets detailed status and information about a specific async process (upload, download, etc.). Required: projectId, processId. Use to check process completion, diagnose failures, or get detailed progress information. Returns: Complete process details with logs and status history."
+    },
+    {
+      "name": "lokalise_list_tasks",
+      "description": "Monitors ongoing translation work and deadlines across the project. Required: projectId. Optional: filterTitle, filterStatuses array, limit (50), page. Use to track workload, find overdue tasks, or check assignment status. Returns: Tasks with assignees, progress, due dates, and language scope. Essential for project management and workflow monitoring."
+    },
+    {
+      "name": "lokalise_create_task",
+      "description": "Initiates a new batch of translation or review work. Required: projectId, title, languages array. Optional: description, due_date, assignees (applies to all languages), type (translation/review), keys scope. Use to assign work to translators, set deadlines, or organize sprints. Returns: Created task with ID and assignments. Tip: Use assignees for simple same-user-all-languages setup."
+    },
+    {
+      "name": "lokalise_get_task",
+      "description": "Investigates a specific work assignment in detail. Required: projectId, taskId. Use to check task progress, view assignee workload, or debug workflow issues. Returns: Complete task data including all assignments, completion percentages, settings, and history. Pairs with: lokalise_update_task for modifications."
+    },
+    {
+      "name": "lokalise_update_task",
+      "description": "Modifies an active work assignment. Required: projectId, taskId. Optional: title, description, due_date, language assignments, settings. Use to extend deadlines, reassign work, or update scope. Returns: Updated task details. Note: Cannot change task type after creation. Changes notify assignees automatically."
+    },
+    {
+      "name": "lokalise_delete_task",
+      "description": "Cancels a work assignment, removing it from assignee queues. Required: projectId, taskId. Use to cancel mistaken tasks, clean completed work, or remove test assignments. Returns: Deletion confirmation. Note: Only removes the assignment - keys and translations remain unchanged. Cannot be undone."
+    },
+    {
+      "name": "lokalise_list_team_users",
+      "description": "Lists all users in a Lokalise team with pagination support. Required: teamId. Optional: limit (100), page. Use to audit team composition, check access levels, or prepare team changes. Returns: Users with roles, permissions, and activity status."
+    },
+    {
+      "name": "lokalise_get_team_user",
+      "description": "Gets detailed information about a specific user in a team. Required: teamId, userId. Use to verify user permissions, check role assignments, or investigate access issues. Returns: Complete user profile with all team permissions and administrative rights."
+    },
+    {
+      "name": "lokalise_update_team_user",
+      "description": "Updates a team user's role (owner, admin, member, or biller). Required: teamId, userId, role. Use to manage permissions, promote/demote, or adjust access levels. Returns: Updated user profile with new role and permissions."
+    },
+    {
+      "name": "lokalise_delete_team_user",
+      "description": "Removes a user from a Lokalise team. Required: teamId, userId. Use to remove members, clean up permissions, or manage team structure. Returns: Success message with user details."
+    },
+    {
+      "name": "lokalise_list_translations",
+      "description": "Low-level inspection of actual translated text across languages. Required: projectId. Optional: limit (100), cursor, filterLangId, filterIsReviewed, filterQaIssues. Use for quality audits, finding untranslated content, or checking specific language progress. Returns: Translation entries with content, status, QA flags. Note: Different from keys - this shows actual text."
+    },
+    {
+      "name": "lokalise_get_translation",
+      "description": "Examines a single piece of translated text in detail. Required: projectId, translationId. Use to check exact wording, review status, modification history, or investigate QA issues. Returns: Complete translation data including content, reviewer info, timestamps, and quality flags. Essential for translation debugging."
+    },
+    {
+      "name": "lokalise_update_translation",
+      "description": "Modifies actual translated text or its review status. Required: projectId, translationId. Optional: translation (new text), is_reviewed, is_unverified. Use to fix typos, approve translations, or mark problematic content. Returns: Updated translation. Note: Changes visible immediately to all users."
+    },
+    {
+      "name": "lokalise_bulk_update_translations",
+      "description": "Efficiently processes batch translation corrections or approvals. Required: projectId, updates array (up to 100). Each update needs translation_id plus changes. Use for mass approvals, systematic corrections, or importing reviewed content. Returns: Success/error per translation. Performance: ~5 updates/second with automatic rate limiting and retries."
+    },
+    {
+      "name": "lokalise_list_usergroups",
+      "description": "Lists all user groups in a Lokalise team with pagination support. Required: teamId. Optional: limit (100), page. Use to audit team organization, check group structure, or prepare group management operations. Returns: User groups with names, member counts, permissions, and language assignments. Essential for understanding team hierarchy."
+    },
+    {
+      "name": "lokalise_get_usergroup",
+      "description": "Gets detailed information about a specific user group including members, permissions, and project assignments. Required: teamId, groupId. Use to audit group configuration, verify member access, or understand permission structure. Returns: Complete group profile with admin rights, language permissions, and assigned projects/members."
+    },
+    {
+      "name": "lokalise_create_usergroup",
+      "description": "Creates a new user group in a Lokalise team for organized permission management. Required: teamId, name, isReviewer, isAdmin. Optional: adminRights, languages, projects, members. Use to establish role-based access control, organize team permissions, or set up project-specific groups. Returns: Created group with assigned ID and configuration."
+    },
+    {
+      "name": "lokalise_update_usergroup",
+      "description": "Updates a user group's properties including permissions and assignments. Required: teamId, groupId, name, isReviewer, isAdmin. Optional: adminRights, languages. Use to adjust group permissions, modify access levels, or reorganize team structure. Returns: Updated group configuration. Note: Cannot modify projects/members here - use dedicated tools."
+    },
+    {
+      "name": "lokalise_delete_usergroup",
+      "description": "Deletes a user group from a Lokalise team, removing all associated permissions. Required: teamId, groupId. Use for cleanup, removing obsolete groups, or restructuring team organization. Returns: Deletion confirmation. Warning: Removes all group assignments - members lose group-based permissions immediately."
+    },
+    {
+      "name": "lokalise_add_members_to_group",
+      "description": "Adds users to a user group, granting them group-based permissions and project access. Required: teamId, groupId, userIds array. Use to onboard team members, assign role-based access, or batch permission updates. Returns: Operation confirmation. Members immediately gain group permissions and project access."
+    },
+    {
+      "name": "lokalise_remove_members_from_group",
+      "description": "Removes users from a user group, revoking group-based permissions and project access. Required: teamId, groupId, userIds array. Use for role changes, offboarding, or permission cleanup. Returns: Operation confirmation. Warning: Immediate effect - users lose group permissions and project access."
+    },
+    {
+      "name": "lokalise_add_projects_to_group",
+      "description": "Adds projects to a user group, granting all group members access to specified projects. Required: teamId, groupId, projectIds array. Use to expand group project scope, onboard projects to existing teams, or batch project assignments. Returns: Operation confirmation. All group members gain immediate project access."
+    },
+    {
+      "name": "lokalise_remove_projects_from_group",
+      "description": "Removes projects from a user group, revoking group member access to specified projects. Required: teamId, groupId, projectIds array. Use to limit project scope, offboard projects, or restructure access. Returns: Operation confirmation. Warning: All group members lose immediate project access."
+    }
+  ]
+}

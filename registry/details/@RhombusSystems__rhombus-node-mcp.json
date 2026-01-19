@@ -1,0 +1,12 @@
+{
+  "id": "@RhombusSystems/rhombus-node-mcp",
+  "displayName": "rhombus-node-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:33.644Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RhombusSystems/rhombus-node-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

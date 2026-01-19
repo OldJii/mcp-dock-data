@@ -1,0 +1,12 @@
+{
+  "id": "front",
+  "displayName": "Front",
+  "description": "Front is a shared inbox and collaboration platform that centralizes customer communications from multiple channels, enabling teams to manage emails, chats, and more",
+  "createdAt": "2026-01-19T02:21:43.331Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/front"
+  },
+  "connection": null,
+  "capabilities": []
+}

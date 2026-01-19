@@ -1,0 +1,40 @@
+{
+  "id": "@su-myeong/my-mcp-server-20250925",
+  "displayName": "Greetings & Utilities",
+  "description": "Send greetings, perform quick calculations, check the current time, and generate images. Get started instantly with built-in examples you can extend. Ideal for quick demos and prototyping.",
+  "createdAt": "2026-01-19T02:21:01.236Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@su-myeong/my-mcp-server-20250925"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": ""
+    },
+    {
+      "name": "calculator",
+      "description": ""
+    },
+    {
+      "name": "get_time",
+      "description": ""
+    },
+    {
+      "name": "generate_image",
+      "description": ""
+    }
+  ]
+}

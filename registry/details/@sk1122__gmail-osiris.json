@@ -1,0 +1,65 @@
+{
+  "id": "@sk1122/gmail-osiris",
+  "displayName": "gmail-osiris",
+  "description": "",
+  "createdAt": "2026-01-19T02:20:58.221Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sk1122/gmail-osiris"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "fetchEmails",
+      "description": "Fetch emails from Gmail inbox with optional search query and filters"
+    },
+    {
+      "name": "get_latest_emails",
+      "description": "Get the most recent emails from Gmail, optionally including read emails"
+    },
+    {
+      "name": "get_emails_from_user",
+      "description": "Get emails from a specific sender email address"
+    },
+    {
+      "name": "get_unread_emails",
+      "description": "Get all unread emails, optionally filtered by date"
+    },
+    {
+      "name": "get_emails_by_thread",
+      "description": "Get all emails in a specific Gmail thread"
+    },
+    {
+      "name": "get_starred_emails",
+      "description": "Get all starred emails, optionally filtered by date"
+    },
+    {
+      "name": "get_emails_by_context",
+      "description": "Search emails by context or keywords in subject, body, or both"
+    },
+    {
+      "name": "get_emails_by_date",
+      "description": "Get emails within a specific date range"
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email through Gmail with support for CC, BCC, and HTML content"
+    },
+    {
+      "name": "send_email_reply",
+      "description": "Reply to an existing email message"
+    },
+    {
+      "name": "search_email",
+      "description": "Advanced Gmail search using Gmail search operators. Supports complex queries like \"from:example@gmail.com has:attachment after:2023/01/01\""
+    },
+    {
+      "name": "create_draft_email",
+      "description": "Create a draft email that can be reviewed and sent later"
+    }
+  ]
+}

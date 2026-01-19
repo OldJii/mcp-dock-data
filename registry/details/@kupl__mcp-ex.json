@@ -1,0 +1,12 @@
+{
+  "id": "@kupl/mcp-ex",
+  "displayName": "mcp-ex",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:27.646Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kupl/mcp-ex"
+  },
+  "connection": null,
+  "capabilities": []
+}

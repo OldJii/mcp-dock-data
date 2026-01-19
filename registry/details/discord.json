@@ -1,0 +1,41 @@
+{
+  "id": "discord",
+  "displayName": "Discord",
+  "description": "An instant messaging and VoIP social platform.",
+  "createdAt": "2026-01-19T02:12:45.921Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/discord"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "DISCORD_GET_INVITE",
+      "description": "Tool to retrieve information about a specific invite code. Use when you need to get details about a guild or channel associated with an invite."
+    },
+    {
+      "name": "DISCORD_GET_MY_GUILD_MEMBER",
+      "description": "Retrieves the guild member object for the currently authenticated user within a specified guild, provided they are a member of that guild."
+    },
+    {
+      "name": "DISCORD_GET_MY_OAUTH2_AUTHORIZATION",
+      "description": "Retrieves current OAuth2 authorization details for the application, including app info, scopes, token expiration, and user data (contingent on scopes like 'identify')."
+    },
+    {
+      "name": "DISCORD_GET_MY_USER",
+      "description": "Fetches comprehensive profile information for the currently authenticated Discord user, including email if the 'email' scope is granted."
+    },
+    {
+      "name": "DISCORD_LIST_MY_CONNECTIONS",
+      "description": "Retrieves a list of the authenticated user's connected third-party accounts on Discord."
+    },
+    {
+      "name": "DISCORD_LIST_MY_GUILDS",
+      "description": "Lists the current user's guilds, returning partial data for each; primarily used for displaying server lists or verifying memberships."
+    }
+  ]
+}

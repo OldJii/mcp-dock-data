@@ -1,0 +1,52 @@
+{
+  "id": "@chloemulti1-hue/my-mcp-server-251027",
+  "displayName": "Greetings & Utilities",
+  "description": "Greet people in multiple languages, perform quick calculations, and check current time across time zones. Generate images from text prompts to visualize ideas. Create detailed code review prompts to speed up your development workflow.",
+  "createdAt": "2026-01-19T02:19:59.290Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chloemulti1-hue/my-mcp-server-251027"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "HF_TOKEN"
+      ],
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API 토큰 (이미지 생성에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greet",
+      "description": "다양한 언어로 인사를 제공합니다."
+    },
+    {
+      "name": "calculate",
+      "description": "두 개의 숫자를 입력받아 사칙연산(덧셈, 뺄셈, 곱셈, 나눗셈)을 수행하고 결과를 반환합니다."
+    },
+    {
+      "name": "time",
+      "description": "특정 timezone의 현재 시간을 반환합니다."
+    },
+    {
+      "name": "code_review",
+      "description": "코드를 입력받아 상세한 코드 리뷰를 위한 프롬프트를 생성합니다."
+    },
+    {
+      "name": "generate_image",
+      "description": "텍스트 프롬프트로 이미지를 생성합니다."
+    }
+  ]
+}

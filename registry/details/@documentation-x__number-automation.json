@@ -1,0 +1,29 @@
+{
+  "id": "@documentation-x/number-automation",
+  "displayName": "number-automation",
+  "description": "Greet people by name with quick, friendly salutations. Explore the origin story of the 'Hello, World' program. Test your setup with simple prompts and examples.",
+  "createdAt": "2026-01-19T02:15:28.763Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@documentation-x/number-automation"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create-sms-deeplink",
+      "description": "Generate a deeplink URL that opens SMS app with pre-filled phone number and message"
+    },
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

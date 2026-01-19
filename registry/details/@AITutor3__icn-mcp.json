@@ -1,0 +1,37 @@
+{
+  "id": "@AITutor3/icn-mcp",
+  "displayName": "Incheon Airport Live",
+  "description": "Get real-time departure hall congestion, flight statuses, and parking availability at Incheon International Airport. Search departures and arrivals by flight ID or airport code and filter by date to plan your trip. Explore destination details for cities served from Incheon.",
+  "createdAt": "2026-01-19T02:14:36.200Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AITutor3/icn-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_departure_congestion",
+      "description": "Retrieves the real-time congestion of the departure hall at a specific terminal of Incheon International Airport.\nCongestion is indicated by the number of people waiting and the estimated waiting time."
+    },
+    {
+      "name": "get_flight_departures",
+      "description": "Retrieves the operational status of departing flights from Incheon Airport.\nYou can search by flight ID or destination airport code.\nIf no date is specified, it defaults to today's date. (e.g., 20250910)"
+    },
+    {
+      "name": "get_flight_arrivals",
+      "description": "Retrieves the operational status of arriving flights at Incheon Airport.\nYou can search by flight ID or origin airport code.\nIf no date is specified, it defaults to today's date. (e.g., 20250910)"
+    },
+    {
+      "name": "get_parking_status",
+      "description": "Retrieves the real-time parking status of Incheon Airport's parking lots.\nYou can specify a terminal (T1, T2) or view the overall status."
+    },
+    {
+      "name": "get_destination_info",
+      "description": "Looks up information about cities served by Incheon Airport using the IATA airport code.\n(e.g., 'AMS', 'CDG')"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Pls/perplexity",
+  "displayName": "perplexity",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:47.191Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Pls/perplexity"
+  },
+  "connection": null,
+  "capabilities": []
+}

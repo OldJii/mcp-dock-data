@@ -1,0 +1,53 @@
+{
+  "id": "@keithah/monarchmoney-ts-mcp",
+  "displayName": "Monarch Money",
+  "description": "Track accounts, transactions, and budgets from Monarch Money. Filter recent activity and surface spending insights to stay on top of your finances. Monitor budgets and trends to make smarter money decisions.",
+  "createdAt": "2026-01-19T02:21:16.268Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/monarchmoney-ts-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "email",
+        "password"
+      ],
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "MonarchMoney email address for login"
+        },
+        "password": {
+          "type": "string",
+          "description": "MonarchMoney password"
+        },
+        "mfaSecret": {
+          "type": "string",
+          "description": "Optional MFA/TOTP secret for two-factor authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_accounts",
+      "description": "Get all MonarchMoney accounts with AI optimization features (99% response reduction)"
+    },
+    {
+      "name": "get_transactions",
+      "description": "Get recent transactions with filtering and AI optimization"
+    },
+    {
+      "name": "get_budgets",
+      "description": "Get budget information with spending analysis"
+    }
+  ]
+}

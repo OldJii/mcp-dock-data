@@ -1,0 +1,41 @@
+{
+  "id": "@onurgu/art-events",
+  "displayName": "art-events",
+  "description": "",
+  "createdAt": "2026-01-19T02:14:29.233Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@onurgu/art-events"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "database_url": {
+          "type": "string",
+          "description": "PostgreSQL database connection URL",
+          "default": "postgresql://artdata_user:artdata_pass@localhost:5432/artdata_db"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_events_by_artist",
+      "description": "\n        Search for art events by artist name with fuzzy matching.\n        \n        Args:\n            artist_name: The name of the artist to search for (can contain typos)\n        \n        Returns:\n            JSON string containing matching events with artist and venue information\n        "
+    },
+    {
+      "name": "search_events_by_date_range",
+      "description": "\n        Search for art events that are visitable during a date range or on a specific date.\n        Returns events whose date ranges intersect with the search range.\n        \n        Args:\n            start_date: Start date in YYYY-MM-DD format (optional if specific_date is provided)\n            end_date: End date in YYYY-MM-DD format (optional if specific_date is provided)\n            specific_date: Specific date in YYYY-MM-DD format (alternative to date range)\n        \n        Returns:\n            JSON string containing events that are visitable during the specified date range\n        "
+    },
+    {
+      "name": "search_events_today",
+      "description": "\n        Search for art events happening today (automatically uses current date).\n        This is useful for LLMs that don't have access to the current date.\n        \n        Returns:\n            JSON string containing events happening today\n        "
+    }
+  ]
+}

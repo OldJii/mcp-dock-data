@@ -1,0 +1,33 @@
+{
+  "id": "@rin2401/smithery-mcp",
+  "displayName": "smithery-mcp",
+  "description": "Greet anyone by name with a friendly message. Toggle pirate mode for playful, swashbuckling greetings. Explore the 'Hello, World' origin story and use a ready-made prompt to craft the perfect intro.",
+  "createdAt": "2026-01-19T02:17:43.583Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rin2401/smithery-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

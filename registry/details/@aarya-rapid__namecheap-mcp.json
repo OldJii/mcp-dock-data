@@ -1,0 +1,16 @@
+{
+  "id": "@aarya-rapid/namecheap-mcp",
+  "displayName": "namecheap-mcp",
+  "description": "Search domains from plain-language ideas and get exact matches plus brandable variations. Check live availability with premium indicators. Jump straight to purchase with direct Namecheap buy links.",
+  "createdAt": "2026-01-19T02:17:46.404Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aarya-rapid/namecheap-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

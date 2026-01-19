@@ -1,0 +1,31 @@
+{
+  "id": "@docfork/mcp",
+  "displayName": "Docfork",
+  "description": "Up-to-date docs for AI Agents. Sign up for free API key at https://docfork.com",
+  "createdAt": "2026-01-19T02:13:28.752Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@docfork/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "configSchema": {
+        "type": "object",
+        "properties": {},
+        "description": "No configuration required"
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "docfork_search_docs",
+      "description": "Search documentation across GitHub repositories or the web. For targeted searches INSIDE a specific library's documentation, use the docforkIdentifier parameter (author/repo format). Extract from GitHub URLs (e.g., github.com/facebook/react → 'facebook/react') and include in ALL subsequent searches about that library for focused, accurate results."
+    },
+    {
+      "name": "docfork_read_url",
+      "description": "Fetches and returns the full content of a documentation page as markdown. This is ESSENTIAL for getting complete, detailed information after searching. Always use this to read URLs from docfork_search_docs results to get the actual documentation content."
+    }
+  ]
+}

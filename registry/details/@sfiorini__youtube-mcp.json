@@ -1,0 +1,59 @@
+{
+  "id": "@sfiorini/youtube-mcp",
+  "displayName": "youtube-mcp",
+  "description": "Search and browse videos, channels, and playlists to fetch titles, descriptions, stats, and durations.\n\nRetrieve multilingual, timestamped transcripts and search within captions for precise context.\n\nSurface channel and playlist insights quickly by listing items and details.",
+  "createdAt": "2026-01-19T02:13:54.260Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sfiorini/youtube-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "youtubeApiKey": {
+          "type": "string",
+          "description": "Your YouTube Data API v3 key. Required for all operations. Can also be provided via YOUTUBE_API_KEY environment variable."
+        },
+        "youtubeTranscriptLang": {
+          "type": "string",
+          "description": "Default language code for YouTube transcripts (e.g., 'en', 'es', 'fr', 'de')",
+          "default": "en"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "videos_getVideo",
+      "description": "Get detailed information about a YouTube video including URL"
+    },
+    {
+      "name": "videos_searchVideos",
+      "description": "Search for videos on YouTube and return results with URLs"
+    },
+    {
+      "name": "transcripts_getTranscript",
+      "description": "Get the transcript of a YouTube video"
+    },
+    {
+      "name": "channels_getChannel",
+      "description": "Get information about a YouTube channel"
+    },
+    {
+      "name": "channels_listVideos",
+      "description": "Get videos from a specific channel"
+    },
+    {
+      "name": "playlists_getPlaylist",
+      "description": "Get information about a YouTube playlist"
+    },
+    {
+      "name": "playlists_getPlaylistItems",
+      "description": "Get videos in a YouTube playlist"
+    }
+  ]
+}

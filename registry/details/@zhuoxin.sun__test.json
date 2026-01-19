@@ -1,0 +1,16 @@
+{
+  "id": "@zhuoxin.sun/test",
+  "displayName": "test",
+  "description": "Share the purpose, key user benefits, and primary actions so I can craft a concise listing. Include the desired name, target users, and notable integrations or data sources. Specify any constraints, authentication needs, or special capabilities.",
+  "createdAt": "2026-01-19T02:16:50.728Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zhuoxin.sun/test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

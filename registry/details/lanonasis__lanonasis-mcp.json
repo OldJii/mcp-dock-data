@@ -1,0 +1,211 @@
+{
+  "id": "lanonasis/lanonasis-mcp",
+  "displayName": "lanonasis-mcp",
+  "description": "Manage long-term memory across projects with fast semantic search and retrieval. Create, update, and organize memories, then query them to ground your workflows with relevant context. Control API keys and configuration, monitor system status, and instantly search the LanOnasis docs when you need guidance.",
+  "createdAt": "2026-01-19T02:21:33.396Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lanonasis/lanonasis-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "name": "lanonasis-mcp",
+      "tools": [
+        {
+          "name": "create_memory",
+          "description": "Create a new memory with vector embedding"
+        },
+        {
+          "name": "search_memories",
+          "description": "Search memories using semantic vector search"
+        },
+        {
+          "name": "search_lanonasis_docs",
+          "description": "Search LanOnasis documentation for Memory as a Service (MaaS) platform"
+        },
+        {
+          "name": "get_memory",
+          "description": "Get a specific memory by ID"
+        },
+        {
+          "name": "update_memory",
+          "description": "Update an existing memory"
+        },
+        {
+          "name": "delete_memory",
+          "description": "Delete a memory by ID"
+        },
+        {
+          "name": "list_memories",
+          "description": "List memories with pagination and filters"
+        },
+        {
+          "name": "create_api_key",
+          "description": "Create a new API key"
+        },
+        {
+          "name": "list_api_keys",
+          "description": "List API keys"
+        },
+        {
+          "name": "rotate_api_key",
+          "description": "Rotate an API key"
+        },
+        {
+          "name": "revoke_api_key",
+          "description": "Revoke (deactivate) an API key without deleting it"
+        },
+        {
+          "name": "delete_api_key",
+          "description": "Delete an API key"
+        },
+        {
+          "name": "get_health_status",
+          "description": "Get system health status"
+        },
+        {
+          "name": "get_auth_status",
+          "description": "Get authentication status"
+        },
+        {
+          "name": "get_organization_info",
+          "description": "Get organization information"
+        },
+        {
+          "name": "create_project",
+          "description": "Create a new project"
+        },
+        {
+          "name": "list_projects",
+          "description": "List projects"
+        },
+        {
+          "name": "get_config",
+          "description": "Get configuration settings"
+        },
+        {
+          "name": "set_config",
+          "description": "Set configuration setting"
+        }
+      ],
+      "server": {
+        "url": "https://mcp.lanonasis.com",
+        "transports": [
+          "http",
+          "sse",
+          "websocket",
+          "stdio"
+        ]
+      },
+      "vendor": "Lanonasis",
+      "version": "1.0.0",
+      "homepage": "https://lanonasis.com",
+      "description": "Lanonasis Memory as a Service - Persistent memory and context management with vector search",
+      "capabilities": {
+        "tools": true,
+        "prompts": true,
+        "resources": true
+      },
+      "documentation": "https://docs.lanonasis.com",
+      "authentication": {
+        "type": "oauth2",
+        "oauth": {
+          "scopes": [
+            "mcp:full",
+            "memories:read",
+            "memories:write",
+            "profile"
+          ],
+          "token_url": "https://auth.lanonasis.com/oauth/token",
+          "pkce_required": true,
+          "authorization_url": "https://auth.lanonasis.com/oauth/authorize"
+        },
+        "fallback": {
+          "api_key": {
+            "header": "X-API-Key"
+          }
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_memory",
+      "description": "Create a new memory with vector embedding"
+    },
+    {
+      "name": "search_memories",
+      "description": "Search memories using semantic vector search"
+    },
+    {
+      "name": "search_lanonasis_docs",
+      "description": "Search LanOnasis documentation for Memory as a Service (MaaS) platform"
+    },
+    {
+      "name": "get_memory",
+      "description": "Get a specific memory by ID"
+    },
+    {
+      "name": "update_memory",
+      "description": "Update an existing memory"
+    },
+    {
+      "name": "delete_memory",
+      "description": "Delete a memory by ID"
+    },
+    {
+      "name": "list_memories",
+      "description": "List memories with pagination and filters"
+    },
+    {
+      "name": "create_api_key",
+      "description": "Create a new API key"
+    },
+    {
+      "name": "list_api_keys",
+      "description": "List API keys"
+    },
+    {
+      "name": "rotate_api_key",
+      "description": "Rotate an API key"
+    },
+    {
+      "name": "revoke_api_key",
+      "description": "Revoke (deactivate) an API key without deleting it"
+    },
+    {
+      "name": "delete_api_key",
+      "description": "Delete an API key"
+    },
+    {
+      "name": "get_health_status",
+      "description": "Get system health status"
+    },
+    {
+      "name": "get_auth_status",
+      "description": "Get authentication status"
+    },
+    {
+      "name": "get_organization_info",
+      "description": "Get organization information"
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new project"
+    },
+    {
+      "name": "list_projects",
+      "description": "List projects"
+    },
+    {
+      "name": "get_config",
+      "description": "Get configuration settings"
+    },
+    {
+      "name": "set_config",
+      "description": "Set configuration setting"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "@jaejin0me/mcpserver_test2",
+  "displayName": "TypeScript Quickstart",
+  "description": "Jumpstart building TypeScript-based integrations with ready-made examples for greeting, calculation, time, and image generation. Customize and extend with your own tools and resources using simple schemas. Build and test fast with a clean, minimal setup.",
+  "createdAt": "2026-01-19T02:17:11.641Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jaejin0me/mcpserver_test2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": ""
+    },
+    {
+      "name": "calculator",
+      "description": ""
+    },
+    {
+      "name": "get_time",
+      "description": ""
+    },
+    {
+      "name": "generate_image",
+      "description": ""
+    }
+  ]
+}

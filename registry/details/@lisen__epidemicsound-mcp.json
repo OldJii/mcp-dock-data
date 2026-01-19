@@ -1,0 +1,12 @@
+{
+  "id": "@lisen/epidemicsound-mcp",
+  "displayName": "epidemicsound-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:30.730Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lisen/epidemicsound-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

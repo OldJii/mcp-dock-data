@@ -1,0 +1,12 @@
+{
+  "id": "@yeongbin-hwang/imply-druid-mcp",
+  "displayName": "imply-druid-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:13.654Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yeongbin-hwang/imply-druid-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

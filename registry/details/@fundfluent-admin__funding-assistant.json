@@ -1,0 +1,30 @@
+{
+  "id": "@fundfluent-admin/funding-assistant",
+  "displayName": "FluentLab Funding Assistant",
+  "description": "Access a comprehensive suite of tools and resources to help startups and small businesses secure funding. Find matching opportunities, manage required documents, and streamline your application process with our easy-to-use API.",
+  "createdAt": "2026-01-19T02:16:24.206Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fundfluent-admin/funding-assistant"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "FLUENTLAB_MCP_API_URL": {
+          "type": "string",
+          "description": "Optional URL for the FluentLab MCP API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-funding-options",
+      "description": "Retrieve available funding opportunities with detailed information including name and description. Use this tool when users need to explore available grants, funds, or financing opportunities. The results include program names, descriptions, eligibility criteria, and application details."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "@gurdasnijor/my-smithery-app",
+  "displayName": "Hello",
+  "description": "Greet people by name with a friendly hello. Explore quick interactions to demo and test workflows. Start simple with a minimal experience for experimenting with greetings.",
+  "createdAt": "2026-01-19T02:14:14.596Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gurdasnijor/my-smithery-app"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

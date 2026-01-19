@@ -1,0 +1,12 @@
+{
+  "id": "victoriametrics-community/mcp-victoriametrics",
+  "displayName": "mcp-victoriametrics",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:16.224Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/victoriametrics-community/mcp-victoriametrics"
+  },
+  "connection": null,
+  "capabilities": []
+}

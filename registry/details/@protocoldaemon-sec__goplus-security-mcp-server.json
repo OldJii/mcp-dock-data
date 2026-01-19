@@ -1,0 +1,33 @@
+{
+  "id": "@protocoldaemon-sec/goplus-security-mcp-server",
+  "displayName": "GoPlus Security",
+  "description": "Assess web3 threats by analyzing tokens, NFTs, and wallet addresses. Detect potential rug pulls, flag known phishing sites, and evaluate address reputation across supported chains. Leverage built-in docs and chain coverage to streamline due diligence.",
+  "createdAt": "2026-01-19T02:18:39.290Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@protocoldaemon-sec/goplus-security-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "rug_pull_detection",
+      "description": "\n        Detect potential rug pull risks for a token contract.\n        \n        Args:\n            chain_id: Blockchain chain ID (e.g., \"1\" for Ethereum, \"56\" for BSC)\n            address: Token contract address to analyze\n            api_key: GoPlus Security API key\n        "
+    },
+    {
+      "name": "phishing_site_detection",
+      "description": "\n        Check if a website is a known phishing site.\n        \n        Args:\n            url: Website URL to check\n            api_key: GoPlus Security API key\n        "
+    },
+    {
+      "name": "nft_security_analysis",
+      "description": "\n        Analyze NFT contract security.\n        \n        Args:\n            chain_id: Blockchain chain ID\n            address: NFT contract address to analyze\n            api_key: GoPlus Security API key\n        "
+    },
+    {
+      "name": "address_security_analysis",
+      "description": "\n        Analyze address security and reputation.\n        \n        Args:\n            address: Blockchain address to analyze\n            api_key: GoPlus Security API key\n        "
+    }
+  ]
+}

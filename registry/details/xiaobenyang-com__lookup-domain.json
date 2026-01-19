@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/lookup-domain",
+  "displayName": "lookup-domain",
+  "description": "Retrieve comprehensive registration details for any domain. View nameservers, contacts, statuses, and key dates to verify ownership and history. Investigate suspicious domains, validate transfers, and monitor changes with confidence.",
+  "createdAt": "2026-01-19T02:20:47.295Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/lookup-domain"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "domain_lookup",
+      "description": "Look up domain information using RDAP protocol with WHOIS fallback. Provides comprehensive domain registration details, nameservers, contacts, and status information."
+    }
+  ]
+}

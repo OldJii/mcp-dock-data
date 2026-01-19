@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/cook-tool",
+  "displayName": "cook-tool",
+  "description": "浏览全部可用菜品并快速查看菜单。获取菜品详细介绍，帮你更快做出点餐决策。",
+  "createdAt": "2026-01-19T02:17:14.620Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/cook-tool"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_all_dishes",
+      "description": "获取所有可用菜品的名称列表 (菜单)。"
+    },
+    {
+      "name": "get_dish_content",
+      "description": "根据提供的菜品名称获取其详细内容。"
+    }
+  ]
+}

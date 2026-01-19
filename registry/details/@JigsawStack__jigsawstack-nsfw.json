@@ -1,0 +1,32 @@
+{
+  "id": "@JigsawStack/jigsawstack-nsfw",
+  "displayName": "JigsawStack NSFW Detection",
+  "description": "Detect NSFW images using JigsawStack's AI Models.",
+  "createdAt": "2026-01-19T02:16:52.288Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JigsawStack/jigsawstack-nsfw"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jigsawstackApiKey"
+      ],
+      "properties": {
+        "jigsawstackApiKey": {
+          "type": "string",
+          "description": "Configuration for Jigsawstack Api Key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "nsfw",
+      "description": "Validate if an image is NSFW"
+    }
+  ]
+}

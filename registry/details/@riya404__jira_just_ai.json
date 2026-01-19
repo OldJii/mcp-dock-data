@@ -1,0 +1,12 @@
+{
+  "id": "@riya404/jira_just_ai",
+  "displayName": "jira_just_ai",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:53.966Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@riya404/jira_just_ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

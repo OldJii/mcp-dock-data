@@ -1,0 +1,25 @@
+{
+  "id": "@AmitJaison/slotmachine",
+  "displayName": "slotmachine",
+  "description": "Roll custom dice and spin a slot machine to explore luck and randomness. Take quick, playful breaks or run simple probability exercises. Get instant results useful for teaching, prototyping, and fun.",
+  "createdAt": "2026-01-19T02:20:35.310Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AmitJaison/slotmachine"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "roll_dice",
+      "description": "Rolls an N-sided die"
+    },
+    {
+      "name": "play_slot_machine",
+      "description": "Plays a slot machine game"
+    }
+  ]
+}

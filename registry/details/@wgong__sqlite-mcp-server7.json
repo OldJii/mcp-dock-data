@@ -1,0 +1,12 @@
+{
+  "id": "@wgong/sqlite-mcp-server7",
+  "displayName": "sqlite-mcp-server7",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:59.250Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wgong/sqlite-mcp-server7"
+  },
+  "connection": null,
+  "capabilities": []
+}

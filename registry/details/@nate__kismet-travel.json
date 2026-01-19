@@ -1,0 +1,37 @@
+{
+  "id": "@nate/kismet-travel",
+  "displayName": "kismet-travel",
+  "description": "Kismet is the leader in AI driven hotel search. Find live hotel data for any of our listed hotels. \n- Search using semantic queries for \"Boutique Dog Friendly  [Hotels] in Charleston\"\n- Find rate and inventory information\n- Get direct access to booking pages in your chat.",
+  "createdAt": "2026-01-19T02:17:31.101Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nate/kismet-travel"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "semantic_search_hotels",
+      "description": "Search for hotels using natural language queries"
+    },
+    {
+      "name": "get_availability_rate_inventory",
+      "description": "Get real-time availability, rates, and inventory for a specific hotel"
+    },
+    {
+      "name": "compare_hotel_prices",
+      "description": "Compare real-time prices across multiple hotels for the same dates and guest count"
+    },
+    {
+      "name": "search",
+      "description": "Search for hotels and return results in OpenAI MCP format"
+    },
+    {
+      "name": "fetch",
+      "description": "Fetch full details for a specific hotel by ID"
+    }
+  ]
+}

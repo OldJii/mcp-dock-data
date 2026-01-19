@@ -1,0 +1,16 @@
+{
+  "id": "@Hyeongseob91/mcp-server-test",
+  "displayName": "TEST Server",
+  "description": "Provide a test implementation of an MCP server to validate MCP client interactions and protocol compliance. Enable developers to experiment with MCP features in a controlled environment. Facilitate debugging and development of MCP-based integrations.",
+  "createdAt": "2026-01-19T02:20:27.663Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Hyeongseob91/mcp-server-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

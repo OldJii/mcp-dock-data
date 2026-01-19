@@ -1,0 +1,12 @@
+{
+  "id": "@prakharpandey32/canvas_to_calendar_sync",
+  "displayName": "canvas_to_calendar_sync",
+  "description": "This is a code to an MCP server which enables students to sync their exams and assignment dates on student/ university portals such as Canvas to their Google Calendar, provided the student portal is API enabled.",
+  "createdAt": "2026-01-19T02:27:43.333Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@prakharpandey32/canvas_to_calendar_sync"
+  },
+  "connection": null,
+  "capabilities": []
+}

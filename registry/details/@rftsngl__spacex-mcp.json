@@ -1,0 +1,35 @@
+{
+  "id": "@rftsngl/spacex-mcp",
+  "displayName": "SpaceX Launch Tracker",
+  "description": "Track SpaceX’s latest and upcoming launches. Fetch company information to add context. Keep dashboards, reports, and briefings current with up-to-date launch data.",
+  "createdAt": "2026-01-19T02:16:17.276Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rftsngl/spacex-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_latest_launch",
+      "description": "SpaceX'in en son roket fırlatma bilgilerini alır"
+    },
+    {
+      "name": "get_upcoming_launches",
+      "description": "SpaceX'in yaklaşan fırlatmalarını alır"
+    },
+    {
+      "name": "get_company_info",
+      "description": "SpaceX şirket bilgilerini alır"
+    }
+  ]
+}

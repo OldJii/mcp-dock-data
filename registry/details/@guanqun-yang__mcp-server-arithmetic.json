@@ -1,0 +1,33 @@
+{
+  "id": "@guanqun-yang/mcp-server-arithmetic",
+  "displayName": "Arithmetic",
+  "description": "Perform quick addition, subtraction, multiplication, and division in your workflow. Get fast, reliable results for everyday calculations. Streamline simple math tasks without switching tools.",
+  "createdAt": "2026-01-19T02:14:16.580Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guanqun-yang/mcp-server-arithmetic"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "fun1",
+      "description": "Divides the first number by the second"
+    },
+    {
+      "name": "fun2",
+      "description": "Multiplies two numbers together"
+    },
+    {
+      "name": "fun3",
+      "description": "Subtracts the second number from the first"
+    },
+    {
+      "name": "fun4",
+      "description": "Adds two numbers together"
+    }
+  ]
+}

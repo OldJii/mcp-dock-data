@@ -1,0 +1,26 @@
+{
+  "id": "@NivaucchuRabuessa/adverb-checker-mcp",
+  "displayName": "adverb-checker-mcp",
+  "description": "Identify adverbs in any text to tighten prose and improve clarity. Surface overuse and weak modifiers with a clean list for fast edits. Apply it during drafting, editing, or style reviews to keep writing precise.",
+  "createdAt": "2026-01-19T02:14:43.343Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NivaucchuRabuessa/adverb-checker-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_adverbs",
+      "description": "Check any text against the Open English WordNet dictionary"
+    }
+  ]
+}

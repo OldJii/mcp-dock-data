@@ -1,0 +1,12 @@
+{
+  "id": "@vinodkrishnan92/my-first-agent",
+  "displayName": "my-first-agent",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:52.215Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vinodkrishnan92/my-first-agent"
+  },
+  "connection": null,
+  "capabilities": []
+}

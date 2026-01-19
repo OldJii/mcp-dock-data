@@ -1,0 +1,12 @@
+{
+  "id": "@shawkatdidar/todoist_claude_mcp_server_v1-0",
+  "displayName": "todoist_claude_mcp_server_v1-0",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:55.365Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shawkatdidar/todoist_claude_mcp_server_v1-0"
+  },
+  "connection": null,
+  "capabilities": []
+}

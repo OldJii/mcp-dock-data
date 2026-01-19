@@ -1,0 +1,27 @@
+{
+  "id": "find-flights-mcp",
+  "displayName": "Find Flights",
+  "description": "Search and retrieve flight information using Duffel API.",
+  "createdAt": "2026-01-19T02:18:07.298Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/find-flights-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "duffelApiKeyLive"
+      ],
+      "properties": {
+        "duffelApiKeyLive": {
+          "type": "string",
+          "description": "The live API key for the Duffel API."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

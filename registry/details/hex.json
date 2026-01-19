@@ -1,0 +1,33 @@
+{
+  "id": "hex",
+  "displayName": "Hex",
+  "description": "Search your Hex projects and ask questions about your data with threaded analyses. Start a new thread, then monitor progress and retrieve results as they’re ready. Continue the conversation to refine answers and dive deeper into insights.",
+  "createdAt": "2026-01-19T02:17:42.765Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/hex"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_projects",
+      "description": "Search for projects"
+    },
+    {
+      "name": "create_thread",
+      "description": "Create a new Hex Thread to ask a question about your data. Hex will use its Threads Agent to analyze your data and then provide a response. The thread will take a few minutes to complete - you should warn the user about this. While the thread is running, you can use the `get_thread` tool to check on its status. You should check at least 10 times, or until the response has the information the user asked for. Once the thread is complete (status is IDLE), you can use the `continue_thread` tool to add follow-up questions or continue the conversation."
+    },
+    {
+      "name": "get_thread",
+      "description": "Fetch a Hex Thread using its ID. You can get an ID when you call the `create_thread` tool. If the thread is not finished yet, it will sleep for a number of seconds before returning the messages. You should warn the user about this. Once the thread is complete (status is IDLE), you can use the `continue_thread` tool to add follow-up questions or continue the conversation."
+    },
+    {
+      "name": "continue_thread",
+      "description": "Continue a Hex Thread by adding a new message and triggering the agent to process it. The thread must be in IDLE status to be continued. If the thread is currently running, this will return an error. The thread will take a few minutes to complete - you should warn the user about this. While the thread is running, you can use the `get_thread` tool to check on its status."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@raptor.rb/raptor-banana",
+  "displayName": "raptor-banana",
+  "description": "Nano Banana MCP",
+  "createdAt": "2026-01-19T02:25:41.210Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@raptor.rb/raptor-banana"
+  },
+  "connection": null,
+  "capabilities": []
+}

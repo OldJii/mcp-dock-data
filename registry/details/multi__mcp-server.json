@@ -1,0 +1,12 @@
+{
+  "id": "multi/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:31.325Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/multi/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

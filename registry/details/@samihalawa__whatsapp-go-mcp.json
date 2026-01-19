@@ -1,0 +1,239 @@
+{
+  "id": "@samihalawa/whatsapp-go-mcp",
+  "displayName": "WhatsApp Web Server",
+  "description": "Scan QR codes and go! No more troublesome autos or APIs! Send text messages, images, links, locations, and contact cards to WhatsApp chats and groups. Automate notifications, alerts, and outreach from your workflows. ",
+  "createdAt": "2026-01-19T02:13:15.685Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/whatsapp-go-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "whatsapp_add_group_participants",
+      "description": "Add participants to a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_archive_chat",
+      "description": "Archive or unarchive a WhatsApp chat."
+    },
+    {
+      "name": "whatsapp_change_avatar",
+      "description": "Change the profile avatar/picture of the logged-in WhatsApp account. Note: File upload in MCP context has limitations."
+    },
+    {
+      "name": "whatsapp_change_push_name",
+      "description": "Change the display name (push name) of the logged-in WhatsApp account."
+    },
+    {
+      "name": "whatsapp_check_phone",
+      "description": "Check if a phone number is registered on WhatsApp."
+    },
+    {
+      "name": "whatsapp_create_group",
+      "description": "Create a new WhatsApp group."
+    },
+    {
+      "name": "whatsapp_delete_chat",
+      "description": "Delete a WhatsApp chat."
+    },
+    {
+      "name": "whatsapp_delete_message",
+      "description": "Delete a WhatsApp message."
+    },
+    {
+      "name": "whatsapp_demote_group_admin",
+      "description": "Demote admins to regular participants in a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_download_media",
+      "description": "Download media from a WhatsApp message (image, video, audio, document)."
+    },
+    {
+      "name": "whatsapp_get_avatar",
+      "description": "Get user's WhatsApp profile picture."
+    },
+    {
+      "name": "whatsapp_get_business_profile",
+      "description": "Get business profile information for a WhatsApp Business account."
+    },
+    {
+      "name": "whatsapp_get_chat_list",
+      "description": "Get list of all WhatsApp chats."
+    },
+    {
+      "name": "whatsapp_get_devices",
+      "description": "Get list of connected WhatsApp devices."
+    },
+    {
+      "name": "whatsapp_get_group_info",
+      "description": "Get information about a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_get_group_info_from_link",
+      "description": "Get information about a WhatsApp group from an invite link."
+    },
+    {
+      "name": "whatsapp_get_group_request_participants",
+      "description": "Get list of participants requesting to join a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_get_invite_link",
+      "description": "Get invite link for a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_get_messages",
+      "description": "Get recent messages from a chat."
+    },
+    {
+      "name": "whatsapp_get_my_contacts",
+      "description": "Get list of contacts in the logged-in account's address book."
+    },
+    {
+      "name": "whatsapp_get_my_groups",
+      "description": "Get list of groups the logged-in account has joined."
+    },
+    {
+      "name": "whatsapp_get_my_newsletters",
+      "description": "Get list of newsletters the logged-in account has subscribed to."
+    },
+    {
+      "name": "whatsapp_get_my_privacy",
+      "description": "Get privacy settings of the logged-in WhatsApp account."
+    },
+    {
+      "name": "whatsapp_get_qr",
+      "description": "Get WhatsApp QR code for login. Returns the QR code image path and code string."
+    },
+    {
+      "name": "whatsapp_get_user_info",
+      "description": "Get information about a WhatsApp user."
+    },
+    {
+      "name": "whatsapp_join_group_link",
+      "description": "Join a WhatsApp group using an invite link."
+    },
+    {
+      "name": "whatsapp_leave_group",
+      "description": "Leave a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_login_with_code",
+      "description": "Login to WhatsApp using phone number code pairing."
+    },
+    {
+      "name": "whatsapp_logout",
+      "description": "Logout from WhatsApp and clear session."
+    },
+    {
+      "name": "whatsapp_manage_group_request_participants",
+      "description": "Approve or reject participants requesting to join a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_mark_as_read",
+      "description": "Mark messages as read."
+    },
+    {
+      "name": "whatsapp_mark_chat_as_read",
+      "description": "Mark all messages in a chat as read."
+    },
+    {
+      "name": "whatsapp_promote_group_admin",
+      "description": "Promote participants to admin in a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_react_message",
+      "description": "React to a WhatsApp message with an emoji."
+    },
+    {
+      "name": "whatsapp_reconnect",
+      "description": "Reconnect to WhatsApp server."
+    },
+    {
+      "name": "whatsapp_remove_group_participants",
+      "description": "Remove participants from a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_revoke_message",
+      "description": "Revoke/recall a WhatsApp message for everyone."
+    },
+    {
+      "name": "whatsapp_send_audio",
+      "description": "Send an audio file to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_contact",
+      "description": "Send a contact card to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_file",
+      "description": "Send a file/document to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_image",
+      "description": "Send an image to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_link",
+      "description": "Send a link with caption to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_location",
+      "description": "Send a location coordinates to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_poll",
+      "description": "Send a poll to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_presence",
+      "description": "Send typing indicator or online presence to WhatsApp."
+    },
+    {
+      "name": "whatsapp_send_text",
+      "description": "Send a text message to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_send_video",
+      "description": "Send a video file to a WhatsApp contact or group."
+    },
+    {
+      "name": "whatsapp_set_group_announce",
+      "description": "Set group to announcement mode (only admins can send messages)."
+    },
+    {
+      "name": "whatsapp_set_group_locked",
+      "description": "Lock or unlock group settings (only admins can edit)."
+    },
+    {
+      "name": "whatsapp_set_group_name",
+      "description": "Change the name of a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_set_group_topic",
+      "description": "Set the topic/description of a WhatsApp group."
+    },
+    {
+      "name": "whatsapp_star_message",
+      "description": "Star a WhatsApp message for bookmarking."
+    },
+    {
+      "name": "whatsapp_unfollow_newsletter",
+      "description": "Unfollow/unsubscribe from a WhatsApp newsletter."
+    },
+    {
+      "name": "whatsapp_unstar_message",
+      "description": "Unstar a WhatsApp message (remove bookmark)."
+    },
+    {
+      "name": "whatsapp_update_message",
+      "description": "Update/edit a WhatsApp message."
+    }
+  ]
+}

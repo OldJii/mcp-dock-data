@@ -1,0 +1,49 @@
+{
+  "id": "@access/blooio",
+  "displayName": "Blooio Messaging",
+  "description": "Send and manage SMS, iMessage, and RCS messages from your workflows. Track delivery, retrieve message details, cancel pending sends, and check contact capabilities. Verify account status and configure webhooks to receive message events. Get an API key from Blooio.com",
+  "createdAt": "2026-01-19T02:17:53.574Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@access/blooio"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "me",
+      "description": "Get current API key details and validation status."
+    },
+    {
+      "name": "send_message",
+      "description": "Send a single text or attachment message (queues outbound iMessage/SMS)."
+    },
+    {
+      "name": "get_message",
+      "description": "Get message details by messageId."
+    },
+    {
+      "name": "get_message_status",
+      "description": "Get current delivery status only."
+    },
+    {
+      "name": "cancel_message",
+      "description": "Cancel a queued or scheduled message."
+    },
+    {
+      "name": "contact_capabilities",
+      "description": "Check if a contact supports iMessage/SMS/RCS."
+    },
+    {
+      "name": "webhook_get",
+      "description": "Get the current webhook URL."
+    },
+    {
+      "name": "webhook_set",
+      "description": "Update the webhook URL for receiving message events."
+    }
+  ]
+}

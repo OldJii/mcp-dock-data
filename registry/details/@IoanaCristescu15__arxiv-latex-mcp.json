@@ -1,0 +1,23 @@
+{
+  "id": "@IoanaCristescu15/arxiv-latex-mcp",
+  "displayName": "arXiv LaTeX",
+  "description": "Retrieve the LaTeX of arXiv papers to preserve precise mathematical notation. Analyze and extract equations, proofs, and symbols with high fidelity. Speed up literature review and code generation from formal notation.",
+  "createdAt": "2026-01-19T02:15:31.314Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@IoanaCristescu15/arxiv-latex-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_paper_prompt",
+      "description": "Get a flattened LaTeX code of a paper from arXiv ID for precise interpretation of mathematical expressions"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@veetae/smithery-cloud",
+  "displayName": "smithery-cloud",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:04.259Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@veetae/smithery-cloud"
+  },
+  "connection": null,
+  "capabilities": []
+}

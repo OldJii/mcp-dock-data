@@ -1,0 +1,36 @@
+{
+  "id": "@SmartManoj/telegram-bot-mcp",
+  "displayName": "telegram-bot-mcp",
+  "description": "Send messages and notifications to Telegram chats from your workflows. Deliver quick alerts, updates, and status messages to individuals or groups. Add simple messaging wherever you need real-time reach.",
+  "createdAt": "2026-01-19T02:18:34.635Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SmartManoj/telegram-bot-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "telegram_chat_id": {
+          "type": "string",
+          "description": "Your Telegram Chat ID",
+          "default": "123456789"
+        },
+        "telegram_bot_token": {
+          "type": "string",
+          "description": "Your Telegram Bot Token from @BotFather",
+          "default": "1234567890:ABCDEFghijklmnopqrstuvwxyz123456789"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "send_telegram_message",
+      "description": "Send a message to a Telegram chat using the bot API."
+    }
+  ]
+}

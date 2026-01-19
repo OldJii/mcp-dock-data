@@ -1,0 +1,12 @@
+{
+  "id": "@mustafa-karakoyun/weather-mcp",
+  "displayName": "weather-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:35.436Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mustafa-karakoyun/weather-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@AsimRauf1997/currency-exchange-mcp",
+  "displayName": "Currency Exchange",
+  "description": "Convert amounts between currencies with up-to-date rates. Get accurate conversions for budgeting, pricing, and travel planning. Automate multi-currency workflows and reduce manual calculations.",
+  "createdAt": "2026-01-19T02:16:30.333Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AsimRauf1997/currency-exchange-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "currency_exchange",
+      "description": "\n    Convert currency from one type to another.\n    \n    Args:\n        from_currency: Source currency code (e.g., 'USD')\n        to_currency: Target currency code (e.g., 'EUR')\n        amount: Amount to convert\n        api_key: Your API key for the exchange rate service (optional, will use EXCHANGE_RATE_API_KEY from .env if not provided)\n        \n    Returns:\n        Dictionary with conversion details\n    "
+    }
+  ]
+}

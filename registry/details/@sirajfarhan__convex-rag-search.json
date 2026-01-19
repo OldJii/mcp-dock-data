@@ -1,0 +1,12 @@
+{
+  "id": "@sirajfarhan/convex-rag-search",
+  "displayName": "convex-rag-search",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:03.343Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sirajfarhan/convex-rag-search"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,221 @@
+{
+  "id": "outlook",
+  "displayName": "Outlook",
+  "description": "Outlook is Microsoft's email and calendaring platform integrating contacts and scheduling, enabling users to manage communications and events in a unified workspace",
+  "createdAt": "2026-01-19T02:12:37.937Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/outlook"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "OUTLOOK_ADD_EVENT_ATTACHMENT",
+      "description": "Adds an attachment to a specific Outlook calendar event. Use when you need to attach a file or nested item to an existing event."
+    },
+    {
+      "name": "OUTLOOK_ADD_MAIL_ATTACHMENT",
+      "description": "Tool to add an attachment to an email message. Use when you have a message ID and need to attach a small (<3 MB) file or reference."
+    },
+    {
+      "name": "OUTLOOK_CALENDAR_CREATE_EVENT",
+      "description": "Creates a new Outlook calendar event, ensuring `start_datetime` is chronologically before `end_datetime`."
+    },
+    {
+      "name": "OUTLOOK_CREATE_ATTACHMENT_UPLOAD_SESSION",
+      "description": "Tool to create an upload session for large (>3 MB) message attachments. Use when you need to upload attachments in chunks."
+    },
+    {
+      "name": "OUTLOOK_CREATE_CALENDAR",
+      "description": "Tool to create a new calendar in the signed-in user's mailbox. Use when organizing events into a separate calendar."
+    },
+    {
+      "name": "OUTLOOK_CREATE_CONTACT",
+      "description": "Creates a new contact in a Microsoft Outlook user's contacts folder."
+    },
+    {
+      "name": "OUTLOOK_CREATE_CONTACT_FOLDER",
+      "description": "Tool to create a new contact folder in the user's mailbox. Use when needing to organize contacts into custom folders."
+    },
+    {
+      "name": "OUTLOOK_CREATE_DRAFT",
+      "description": "Creates an Outlook email draft with subject, body, recipients, and an optional attachment. Supports creating drafts as part of existing conversation threads by specifying a conversationId; attachments require a name, mimetype, and content."
+    },
+    {
+      "name": "OUTLOOK_CREATE_DRAFT_REPLY",
+      "description": "Creates a draft reply in the specified user's Outlook mailbox to an existing message (identified by a valid `message_id`), optionally including a `comment` and CC/BCC recipients."
+    },
+    {
+      "name": "OUTLOOK_CREATE_EMAIL_RULE",
+      "description": "Create email rule filter with conditions and actions"
+    },
+    {
+      "name": "OUTLOOK_CREATE_MAIL_FOLDER",
+      "description": "Tool to create a new mail folder. Use when you need to organize email into a new folder."
+    },
+    {
+      "name": "OUTLOOK_CREATE_MASTER_CATEGORY",
+      "description": "Tool to create a new category in the user's master category list. Use after selecting a unique display name."
+    },
+    {
+      "name": "OUTLOOK_DELETE_CONTACT",
+      "description": "Permanently deletes an existing contact, using its `contact_id` (obtainable via 'List User Contacts' or 'Get Contact'), from the Outlook contacts of the user specified by `user_id`."
+    },
+    {
+      "name": "OUTLOOK_DELETE_EMAIL_RULE",
+      "description": "Delete an email rule"
+    },
+    {
+      "name": "OUTLOOK_DELETE_EVENT",
+      "description": "Deletes an existing calendar event, identified by its unique `event_id`, from a specified user's Microsoft Outlook calendar, with an option to send cancellation notifications to attendees."
+    },
+    {
+      "name": "OUTLOOK_DELETE_MAIL_FOLDER",
+      "description": "Delete a mail folder from the user's mailbox. Use when you need to remove an existing mail folder."
+    },
+    {
+      "name": "OUTLOOK_DOWNLOAD_OUTLOOK_ATTACHMENT",
+      "description": "Downloads a specific file attachment from an email message in a Microsoft Outlook mailbox; the attachment must contain 'contentBytes' (binary data) and not be a link or embedded item."
+    },
+    {
+      "name": "OUTLOOK_GET_CALENDAR_VIEW",
+      "description": "Get events ACTIVE during a time window (includes multi-day events). Use for \"what's on my calendar today/this week\" or availability checks. Returns events overlapping the time range. For keyword search or filters by category, use OUTLOOK_LIST_EVENTS instead."
+    },
+    {
+      "name": "OUTLOOK_GET_CONTACT",
+      "description": "Retrieves a specific Outlook contact by its `contact_id` from the contacts of a specified `user_id` (defaults to 'me' for the authenticated user)."
+    },
+    {
+      "name": "OUTLOOK_GET_CONTACT_FOLDERS",
+      "description": "Tool to retrieve a list of contact folders in the signed-in user's mailbox. Use after authentication when you need to browse or select among contact folders."
+    },
+    {
+      "name": "OUTLOOK_GET_EVENT",
+      "description": "Retrieves the full details of a specific calendar event by its ID from a user's Outlook calendar, provided the event exists."
+    },
+    {
+      "name": "OUTLOOK_GET_MAILBOX_SETTINGS",
+      "description": "Tool to retrieve mailbox settings. Use when you need to view settings such as automatic replies, time zone, and working hours for the signed-in or specified user."
+    },
+    {
+      "name": "OUTLOOK_GET_MAIL_DELTA",
+      "description": "Retrieve incremental changes (delta) of messages in a mailbox. FIRST RUN: Returns ALL messages in folder (use top=50 to limit). Response has @odata.deltaLink. SUBSEQUENT: Pass stored deltaLink to get only NEW/UPDATED/DELETED messages since last sync. Properties available: id, subject, from, receivedDateTime, isRead, etc. NOT available: internetMessageHeaders, full body, attachment content (response size limits)."
+    },
+    {
+      "name": "OUTLOOK_GET_MAIL_TIPS",
+      "description": "Tool to retrieve mail tips such as automatic replies and mailbox full status. Use when you need to check recipient status before sending mail."
+    },
+    {
+      "name": "OUTLOOK_GET_MASTER_CATEGORIES",
+      "description": "Tool to retrieve the user's master category list. Use when you need to get all categories defined for the user."
+    },
+    {
+      "name": "OUTLOOK_GET_MESSAGE",
+      "description": "Retrieves a specific email message by its ID from the specified user's Outlook mailbox. Use the 'select' parameter to include specific fields like 'internetMessageHeaders' for filtering automated emails."
+    },
+    {
+      "name": "OUTLOOK_GET_PROFILE",
+      "description": "Retrieves the Microsoft Outlook profile for a specified user."
+    },
+    {
+      "name": "OUTLOOK_GET_SCHEDULE",
+      "description": "Retrieves free/busy schedule information for specified email addresses within a defined time window."
+    },
+    {
+      "name": "OUTLOOK_GET_SUPPORTED_LANGUAGES",
+      "description": "Tool to retrieve supported languages in the user's mailbox. Use when you need to display or select from available mailbox languages."
+    },
+    {
+      "name": "OUTLOOK_GET_SUPPORTED_TIME_ZONES",
+      "description": "Tool to retrieve supported time zones in the user's mailbox. Use when you need a list of time zones to display or choose from for event scheduling."
+    },
+    {
+      "name": "OUTLOOK_LIST_CALENDARS",
+      "description": "Tool to list calendars in the signed-in user's mailbox. Use when you need to retrieve calendars with optional OData queries."
+    },
+    {
+      "name": "OUTLOOK_LIST_CONTACTS",
+      "description": "Retrieves a user's Microsoft Outlook contacts, from the default or a specified contact folder."
+    },
+    {
+      "name": "OUTLOOK_LIST_EMAIL_RULES",
+      "description": "List all email rules from inbox"
+    },
+    {
+      "name": "OUTLOOK_LIST_EVENT_ATTACHMENTS",
+      "description": "Tool to list attachments for a specific Outlook calendar event. Use when you have an event ID and need to view its attachments."
+    },
+    {
+      "name": "OUTLOOK_LIST_EVENTS",
+      "description": "Retrieves events from a user's Outlook calendar via Microsoft Graph API. Supports primary/secondary/shared calendars, pagination, filtering, property selection, sorting, and timezone specification. Use calendar_id to access non-primary calendars."
+    },
+    {
+      "name": "OUTLOOK_LIST_MAIL_FOLDERS",
+      "description": "Tool to list a user's top-level mail folders. Use when you need folders like Inbox, Drafts, Sent Items; set include_hidden_folders=True to include hidden folders."
+    },
+    {
+      "name": "OUTLOOK_LIST_MESSAGES",
+      "description": "Retrieves a list of email messages from a specified mail folder in an Outlook mailbox, with options for filtering (including by conversationId to get all messages in a thread), pagination, and sorting; ensure 'user_id' and 'folder' are valid, and all date/time strings are in ISO 8601 format."
+    },
+    {
+      "name": "OUTLOOK_LIST_OUTLOOK_ATTACHMENTS",
+      "description": "Lists metadata (like name, size, and type, but not `contentBytes`) for all attachments of a specified Outlook email message."
+    },
+    {
+      "name": "OUTLOOK_LIST_REMINDERS",
+      "description": "Tool to retrieve reminders for events occurring within a specified time range. Use when you need to see upcoming reminders between two datetimes."
+    },
+    {
+      "name": "OUTLOOK_LIST_USERS",
+      "description": "Tool to list users in Microsoft Entra ID. Use when you need to retrieve a paginated list of users, optionally filtering or selecting specific properties."
+    },
+    {
+      "name": "OUTLOOK_MOVE_MESSAGE",
+      "description": "Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message."
+    },
+    {
+      "name": "OUTLOOK_QUERY_EMAILS",
+      "description": "Primary tool for querying Outlook emails with custom OData filters. Build precise server-side filters for dates, read status, importance, subjects, attachments, and conversations. Best for structured queries on message metadata. Returns up to 100 messages per request with pagination support. • Server-side filters: dates, importance, isRead, hasAttachments, subjects, conversationId • CRITICAL: Always check response['@odata.nextLink'] for pagination • Limitations: Recipient/sender/category filters require OUTLOOK_SEARCH_MESSAGES • For keyword/body search: Use OUTLOOK_SEARCH_MESSAGES (KQL syntax)"
+    },
+    {
+      "name": "OUTLOOK_REPLY_EMAIL",
+      "description": "Sends a plain text reply to an Outlook email message, identified by `message_id`, allowing optional CC and BCC recipients."
+    },
+    {
+      "name": "OUTLOOK_SEARCH_MESSAGES",
+      "description": "Search Outlook messages using powerful KQL syntax. Supports sender (from:), recipient (to:, cc:), subject, date filters (received:, sent:), attachments, and boolean logic. Only works with Microsoft 365/Enterprise accounts (no @hotmail.com/@outlook.com). Examples: 'from:user@example.com AND received>=2025-10-01', 'to:info@jcdn.nl AND subject:invoice', 'received>today-30 AND hasattachment:yes'"
+    },
+    {
+      "name": "OUTLOOK_SEND_DRAFT",
+      "description": "Tool to send an existing draft message. Use after creating a draft when you want to deliver it to recipients immediately. Example: Send a draft message with ID 'AAMkAG…'."
+    },
+    {
+      "name": "OUTLOOK_SEND_EMAIL",
+      "description": "Sends an email with subject, body, recipients, and an optional attachment via Microsoft Graph API. Supports comma-separated email addresses in the to_email field for multiple recipients. Attachments require a non-empty file with valid name and mimetype."
+    },
+    {
+      "name": "OUTLOOK_UPDATE_CALENDAR_EVENT",
+      "description": "Updates specified fields of an existing Outlook calendar event. Implementation note: To avoid unintentionally clearing properties, the action first fetches the existing event, merges only the provided fields, and then PATCHes the merged updates. Unspecified fields remain unchanged."
+    },
+    {
+      "name": "OUTLOOK_UPDATE_CONTACT",
+      "description": "Updates an existing Outlook contact, identified by `contact_id` for the specified `user_id`, requiring at least one other field to be modified."
+    },
+    {
+      "name": "OUTLOOK_UPDATE_EMAIL",
+      "description": "Updates specified properties of an existing email message; `message_id` must identify a valid message within the specified `user_id`'s mailbox."
+    },
+    {
+      "name": "OUTLOOK_UPDATE_EMAIL_RULE",
+      "description": "Update an existing email rule"
+    },
+    {
+      "name": "OUTLOOK_UPDATE_MAILBOX_SETTINGS",
+      "description": "Tool to update mailbox settings for the signed-in user. Use when you need to configure automatic replies, default time zone, language, or working hours. Example: schedule automatic replies for vacation."
+    }
+  ]
+}

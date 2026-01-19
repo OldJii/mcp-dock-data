@@ -1,0 +1,33 @@
+{
+  "id": "duvomike/pjp-mcp",
+  "displayName": "pjp-mcp",
+  "description": "Find companies in HubSpot by name or domain to enrich research and outreach. Get fast, accurate matches with canonical company details right in your workflow. Streamline prospecting and CRM hygiene with targeted search.",
+  "createdAt": "2026-01-19T02:17:10.665Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/duvomike/pjp-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "hubspotAccessToken"
+      ],
+      "properties": {
+        "hubspotAccessToken": {
+          "type": "string",
+          "description": "HubSpot Private App access token with crm.objects.companies.read scope"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_companies",
+      "description": "Search for companies in HubSpot by name or domain"
+    }
+  ]
+}

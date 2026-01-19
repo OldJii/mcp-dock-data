@@ -1,0 +1,12 @@
+{
+  "id": "@artiomdiu/mastra-test",
+  "displayName": "mastra-test",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:28.346Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@artiomdiu/mastra-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

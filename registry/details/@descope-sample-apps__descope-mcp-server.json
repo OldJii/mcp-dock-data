@@ -1,0 +1,16 @@
+{
+  "id": "@descope-sample-apps/descope-mcp-server",
+  "displayName": "Descope MCP Server",
+  "description": "Interact with Descope's Management APIs to manage users, audit, and more.",
+  "createdAt": "2026-01-19T02:19:02.198Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@descope-sample-apps/descope-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

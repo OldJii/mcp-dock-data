@@ -1,0 +1,45 @@
+{
+  "id": "@maxvint/mcp-crypto-research",
+  "displayName": "Crypto Research Server",
+  "description": "Provide a specialized MCP server that enables integration with cryptocurrency research data and tools. Facilitate access to crypto-related resources and operations to enhance LLM applications with up-to-date blockchain and crypto insights. Empower users to leverage crypto data seamlessly within their AI workflows.",
+  "createdAt": "2026-01-19T02:13:48.360Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@maxvint/mcp-crypto-research"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "research_get_projects",
+      "description": "Search for projects on Research knowledge base."
+    },
+    {
+      "name": "research_get_project_by_twitter",
+      "description": "Get project details by Twitter username on Research knowledge base."
+    },
+    {
+      "name": "research_get_project_reports_by_twitter",
+      "description": "Get project reports by Twitter username on Research knowledge base."
+    },
+    {
+      "name": "research_search_reports",
+      "description": "Search for reports on Research knowledge base."
+    },
+    {
+      "name": "research_search_news",
+      "description": "Search for news on Research knowledge base."
+    }
+  ]
+}

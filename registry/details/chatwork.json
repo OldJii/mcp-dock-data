@@ -1,0 +1,49 @@
+{
+  "id": "chatwork",
+  "displayName": "Chatwork",
+  "description": "Chatwork is a team communication platform featuring group chats, file sharing, and task management, aiming to enhance collaboration and productivity for businesses",
+  "createdAt": "2026-01-19T02:12:57.240Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chatwork"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CHATWORK_DELETE_MESSAGE",
+      "description": "This tool allows you to delete a specific message from a Chatwork room by calling the DELETE endpoint at https://api.chatwork.com/v2/rooms/{room_id}/messages/{message_id}. It requires authentication using a Chatwork API token provided in the X-ChatWorkToken header, and the necessary permissions to delete messages in the specified room."
+    },
+    {
+      "name": "CHATWORK_GET_CHATWORK_CONTACTS",
+      "description": "This tool retrieves a list of all contacts from Chatwork. It is a fundamental tool that fetches all contact information such as account_id, room_id, name, chatwork_id, organization details, department, and avatar image URL, without needing additional parameters beyond authentication."
+    },
+    {
+      "name": "CHATWORK_GET_FILE",
+      "description": "This tool retrieves information about a specific file in a chat room. The API endpoint GET /v2/rooms/{room_id}/files/{file_id} provides file details such as file ID, account ID, message ID, filename, filesize, upload time, and download URL, which are useful for retrieving file metadata, verifying file existence, and managing file sharing within Chatwork."
+    },
+    {
+      "name": "CHATWORK_GET_MY_STATUS",
+      "description": "This tool retrieves the current status of the authenticated user, including unread message counts and task status. It provides a quick overview of unread messages, mentions, and tasks, making it valuable for monitoring ChatWork activity and building automation workflows."
+    },
+    {
+      "name": "CHATWORK_GET_ROOM_MEMBERS",
+      "description": "This tool retrieves a list of all members in a specified Chatwork room using the endpoint GET /rooms/{room_id}/members. It provides essential details like account_id, role, name, chatwork_id, organization_id, and organization_name, complementing the existing suite of room management tools."
+    },
+    {
+      "name": "CHATWORK_GET_ROOM_MESSAGES",
+      "description": "This tool retrieves messages from a specific Chatwork room using the GET https://api.chatwork.com/v2/rooms/{room_id}/messages endpoint. It requires a room_id parameter and an optional force flag to refresh the cache by retrieving the 100 newest messages."
+    },
+    {
+      "name": "CHATWORK_GET_ROOMS",
+      "description": "This tool retrieves a list of all chat rooms associated with the authenticated Chatwork account. It includes group chats, direct chats, and personal chats, and does not require any additional parameters beyond authentication."
+    },
+    {
+      "name": "CHATWORK_UPLOAD_FILE",
+      "description": "This tool allows users to upload files to a specific Chatwork room. It enables file sharing functionality within the Chatwork platform by providing an endpoint to upload files (along with an optional message) to a given room."
+    }
+  ]
+}

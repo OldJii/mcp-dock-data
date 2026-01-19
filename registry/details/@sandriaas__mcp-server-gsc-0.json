@@ -1,0 +1,63 @@
+{
+  "id": "@sandriaas/mcp-server-gsc-0",
+  "displayName": "Search Console Analytics",
+  "description": "Analyze Google Search Console performance with rich dimensions, advanced filters, and large-scale exports. Uncover quick-win SEO opportunities to prioritize content and optimization efforts. Manage properties with site listing, sitemap actions, and URL indexing checks.",
+  "createdAt": "2026-01-19T02:20:13.367Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sandriaas/mcp-server-gsc-0"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "googleCredentialsPath"
+      ],
+      "properties": {
+        "googleCredentialsPath": {
+          "type": "string",
+          "description": "Path to the Google Cloud service account credentials JSON file."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_sites",
+      "description": "List all sites in Google Search Console"
+    },
+    {
+      "name": "search_analytics",
+      "description": "Get search performance data from Google Search Console"
+    },
+    {
+      "name": "enhanced_search_analytics",
+      "description": "Enhanced search analytics with up to 25,000 rows, regex filters, and quick wins detection"
+    },
+    {
+      "name": "detect_quick_wins",
+      "description": "Automatically detect SEO quick wins and optimization opportunities"
+    },
+    {
+      "name": "index_inspect",
+      "description": "Inspect a URL to see if it is indexed or can be indexed"
+    },
+    {
+      "name": "list_sitemaps",
+      "description": "List sitemaps for a site in Google Search Console"
+    },
+    {
+      "name": "get_sitemap",
+      "description": "Get a sitemap for a site in Google Search Console"
+    },
+    {
+      "name": "submit_sitemap",
+      "description": "Submit a sitemap for a site in Google Search Console"
+    }
+  ]
+}

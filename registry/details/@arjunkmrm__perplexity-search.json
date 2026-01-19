@@ -1,0 +1,55 @@
+{
+  "id": "@arjunkmrm/perplexity-search",
+  "displayName": "Perplexity Search",
+  "description": "Enable AI assistants to perform web searches using Perplexity's Sonar Pro.",
+  "createdAt": "2026-01-19T02:14:16.193Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arjunkmrm/perplexity-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "perplexityApiKey",
+        "model",
+        "maxTokens",
+        "temperature"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "description": "Perplexity model to use",
+          "default": "sonar-pro",
+          "enum": [
+            "sonar",
+            "sonar-pro"
+          ]
+        },
+        "maxTokens": {
+          "type": "number",
+          "description": "Maximum tokens for response",
+          "default": 8192
+        },
+        "temperature": {
+          "type": "number",
+          "description": "Temperature for response generation",
+          "default": 0.2
+        },
+        "perplexityApiKey": {
+          "type": "string",
+          "description": "Your Perplexity API key"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Perform a web search using Perplexity's API, which provides detailed and contextually relevant results with citations. By default, no time filtering is applied to search results."
+    }
+  ]
+}

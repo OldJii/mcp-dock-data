@@ -1,0 +1,12 @@
+{
+  "id": "@lorenzocean/lims",
+  "displayName": "lims",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:56.326Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lorenzocean/lims"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@listenrightmeow/mcps",
+  "displayName": "MCP Sandbox Server",
+  "description": "Provide a sandbox environment to test and develop MCP servers compatible with Claude Desktop. Enable seamless integration and debugging of MCP server implementations. Facilitate rapid iteration and validation of MCP features in a controlled setting.",
+  "createdAt": "2026-01-19T02:20:05.600Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@listenrightmeow/mcps"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

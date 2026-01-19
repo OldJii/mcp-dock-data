@@ -1,0 +1,16 @@
+{
+  "id": "@michaelkrasa/alpha-ess-mcp-server",
+  "displayName": "Alpha ESS Solar Energy System Server",
+  "description": "Provide seamless access to Alpha ESS solar inverter and battery system data for AI assistants. Monitor real-time and historical energy statistics, configure battery charge and discharge schedules, and analyze energy trends with structured, enhanced data responses. Enable intelligent energy management and system control through secure API integration.",
+  "createdAt": "2026-01-19T02:20:25.635Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@michaelkrasa/alpha-ess-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

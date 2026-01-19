@@ -1,0 +1,21 @@
+{
+  "id": "@hydavinci/chromium-commits",
+  "displayName": "Chromium Latest Commit",
+  "description": "Query the latest commit information for any file in the Chromium repository with detailed commit data including hash, author, timestamp, message, modified files, and diffs. Integrate seamlessly with MCP-compatible tools via the provided MCP server to enable programmatic access and automation. Utilize multiple interfaces including CLI, Python API, and Docker for flexible deployment and usage.",
+  "createdAt": "2026-01-19T02:14:01.196Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hydavinci/chromium-commits"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_chromium_latest_commit",
+      "description": "\n    MCP handler to get the latest commit information for a specified file in Chromium repository\n\n    Args:\n        file_path (str): Relative path of the file in Chromium repository (e.g., \"components/sync/service/data_type_manager.cc\")\n\n    Returns:\n        str: Formatted commit information including hash, author, message, modified files list, and diff details\n    "
+    }
+  ]
+}

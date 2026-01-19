@@ -1,0 +1,585 @@
+{
+  "id": "slack",
+  "displayName": "Slack",
+  "description": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work — all within a secure, enterprise-grade environment.",
+  "createdAt": "2026-01-19T02:12:36.739Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/slack"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SLACK_ACTIVATE_OR_MODIFY_DO_NOT_DISTURB_DURATION",
+      "description": "DEPRECATED: Turns on Do Not Disturb mode for the current user, or changes its duration. Use `set_dnd_duration` instead."
+    },
+    {
+      "name": "SLACK_ADD_A_CUSTOM_EMOJI_TO_A_SLACK_TEAM",
+      "description": "DEPRECATED: Adds a custom emoji to a Slack workspace given a unique name and an image URL. Use `add_emoji` instead."
+    },
+    {
+      "name": "SLACK_ADD_AN_EMOJI_ALIAS_IN_SLACK",
+      "description": "Adds an alias for an existing custom emoji in a Slack Enterprise Grid organization."
+    },
+    {
+      "name": "SLACK_ADD_A_REMOTE_FILE_FROM_A_SERVICE",
+      "description": "Adds a reference to an external file (e.g., Google Drive, Dropbox) to Slack for discovery and sharing, requiring a unique `external_id` and an `external_url` accessible by Slack."
+    },
+    {
+      "name": "SLACK_ADD_A_STAR_TO_AN_ITEM",
+      "description": "Stars a channel, file, file comment, or a specific message in Slack."
+    },
+    {
+      "name": "SLACK_ADD_CALL_PARTICIPANTS",
+      "description": "Registers new participants added to a Slack call."
+    },
+    {
+      "name": "SLACK_ADD_EMOJI",
+      "description": "Adds a custom emoji to a Slack workspace given a unique name and an image URL; subject to workspace emoji limits."
+    },
+    {
+      "name": "SLACK_ADD_REACTION_TO_AN_ITEM",
+      "description": "Adds a specified emoji reaction to an existing message in a Slack channel, identified by its timestamp; does not remove or retrieve reactions."
+    },
+    {
+      "name": "SLACK_ARCHIVE_A_PUBLIC_OR_PRIVATE_CHANNEL",
+      "description": "Archives a Slack public or private channel, making it read-only; the primary 'general' channel cannot be archived."
+    },
+    {
+      "name": "SLACK_ARCHIVE_A_SLACK_CONVERSATION",
+      "description": "Archives a Slack conversation by its ID, rendering it read-only and hidden while retaining history, ideal for cleaning up inactive channels; be aware that some channels (like #general or certain DMs) cannot be archived and this may impact connected integrations."
+    },
+    {
+      "name": "SLACK_CHAT_POST_MESSAGE",
+      "description": "DEPRECATED: Posts a message to a Slack channel, direct message, or private channel. Use `send_message` instead."
+    },
+    {
+      "name": "SLACK_CLEAR_STATUS",
+      "description": "Clears the Slack status for the authenticated user, removing any custom text and emoji."
+    },
+    {
+      "name": "SLACK_CLOSE_DM_OR_MULTI_PERSON_DM",
+      "description": "Closes a Slack direct message (DM) or multi-person direct message (MPDM) channel, removing it from the user's sidebar without deleting history; this action affects only the calling user's view."
+    },
+    {
+      "name": "SLACK_CREATE_A_REMINDER",
+      "description": "Creates a Slack reminder with specified text and time; time accepts Unix timestamps, seconds from now, or natural language (e.g., 'in 15 minutes', 'every Thursday at 2pm')."
+    },
+    {
+      "name": "SLACK_CREATE_A_SLACK_USER_GROUP",
+      "description": "Creates a new User Group (often referred to as a subteam) in a Slack workspace."
+    },
+    {
+      "name": "SLACK_CREATE_CANVAS",
+      "description": "Creates a new Slack Canvas with the specified title and optional content."
+    },
+    {
+      "name": "SLACK_CREATE_CHANNEL",
+      "description": "Initiates a public or private channel-based conversation"
+    },
+    {
+      "name": "SLACK_CREATE_CHANNEL_BASED_CONVERSATION",
+      "description": "Creates a new public or private Slack channel with a unique name; the channel can be org-wide, or team-specific if `team_id` is given (required if `org_wide` is false or not provided)."
+    },
+    {
+      "name": "SLACK_CUSTOMIZE_URL_UNFURL",
+      "description": "Customizes URL previews (unfurling) in a specific Slack message using a URL-encoded JSON in `unfurls` to define custom content or remove existing previews."
+    },
+    {
+      "name": "SLACK_CUSTOMIZE_URL_UNFURLING_IN_MESSAGES",
+      "description": "DEPRECATED: Customizes URL previews (unfurling) in a specific Slack message. Use `customize_url_unfurl` instead."
+    },
+    {
+      "name": "SLACK_DELETE_A_COMMENT_ON_A_FILE",
+      "description": "Deletes a specific comment from a file in Slack; this action is irreversible."
+    },
+    {
+      "name": "SLACK_DELETE_A_FILE_BY_ID",
+      "description": "Permanently deletes an existing file from a Slack workspace using its unique file ID; this action is irreversible and also removes any associated comments or shares."
+    },
+    {
+      "name": "SLACK_DELETE_A_PUBLIC_OR_PRIVATE_CHANNEL",
+      "description": "Permanently and irreversibly deletes a specified public or private channel, including all its messages and files, within a Slack Enterprise Grid organization."
+    },
+    {
+      "name": "SLACK_DELETE_A_SCHEDULED_MESSAGE_IN_A_CHAT",
+      "description": "Deletes a pending, unsent scheduled message from the specified Slack channel, identified by its `scheduled_message_id`."
+    },
+    {
+      "name": "SLACK_DELETE_A_SLACK_REMINDER",
+      "description": "Deletes an existing Slack reminder, typically when it is no longer relevant or a task is completed; this operation is irreversible."
+    },
+    {
+      "name": "SLACK_DELETE_CANVAS",
+      "description": "Deletes a Slack Canvas permanently."
+    },
+    {
+      "name": "SLACK_DELETES_A_MESSAGE_FROM_A_CHAT",
+      "description": "Deletes a message, identified by its channel ID and timestamp, from a Slack channel, private group, or direct message conversation; the authenticated user or bot must be the original poster."
+    },
+    {
+      "name": "SLACK_DELETE_USER_PROFILE_PHOTO",
+      "description": "Deletes the Slack profile photo for the user identified by the token, reverting them to the default avatar; this action is irreversible and succeeds even if no custom photo was set."
+    },
+    {
+      "name": "SLACK_DISABLE_AN_EXISTING_SLACK_USER_GROUP",
+      "description": "Disables a specified, currently enabled Slack User Group by its unique ID, effectively archiving it by setting its 'date_delete' timestamp; the group is not permanently deleted and can be re-enabled."
+    },
+    {
+      "name": "SLACK_EDIT_CANVAS",
+      "description": "Edits a Slack Canvas with granular control over content placement. Supports replace, insert (before/after/start/end) operations for flexible content management."
+    },
+    {
+      "name": "SLACK_ENABLE_A_SPECIFIED_USER_GROUP",
+      "description": "Enables a disabled User Group in Slack using its ID, reactivating it for mentions and permissions; this action only changes the enabled status and cannot create new groups or modify other properties."
+    },
+    {
+      "name": "SLACK_ENABLE_PUBLIC_SHARING_OF_A_FILE",
+      "description": "Enables public sharing for an existing Slack file by generating a publicly accessible URL; this action does not create new files."
+    },
+    {
+      "name": "SLACK_END_A_CALL_WITH_DURATION_AND_ID",
+      "description": "Ends an ongoing Slack call, identified by its ID (obtained from `calls.add`), optionally specifying the call's duration."
+    },
+    {
+      "name": "SLACK_END_SNOOZE",
+      "description": "Ends the current user's snooze mode immediately."
+    },
+    {
+      "name": "SLACK_END_USER_DO_NOT_DISTURB_SESSION",
+      "description": "Ends the authenticated user's current Do Not Disturb (DND) session in Slack, affecting only DND status and making them available; if DND is not active, Slack acknowledges the request without changing status."
+    },
+    {
+      "name": "SLACK_END_USER_SNOOZE_MODE_IMMEDIATELY",
+      "description": "DEPRECATED: Ends the current user's snooze mode immediately. Use `end_snooze` instead."
+    },
+    {
+      "name": "SLACK_FETCH_BOT_USER_INFORMATION",
+      "description": "Fetches information for a specified, existing Slack bot user; will not work for regular user accounts or other integration types."
+    },
+    {
+      "name": "SLACK_FETCH_CONVERSATION_HISTORY",
+      "description": "Fetches a chronological list of messages and events from a specified Slack conversation, accessible by the authenticated user/bot, with options for pagination and time range filtering."
+    },
+    {
+      "name": "SLACK_FETCH_CURRENT_TEAM_INFO_WITH_OPTIONAL_TEAM_SCOPE",
+      "description": "DEPRECATED: Fetches comprehensive metadata about the current Slack team. Use `fetch_team_info` instead."
+    },
+    {
+      "name": "SLACK_FETCH_DND_STATUS_FOR_MULTIPLE_TEAM_MEMBERS",
+      "description": "DEPRECATED: Retrieves a user's current Do Not Disturb status. Use `get_team_dnd_status` instead."
+    },
+    {
+      "name": "SLACK_FETCH_ITEM_REACTIONS",
+      "description": "Fetches reactions for a Slack message, file, or file comment, requiring one of: channel and timestamp; file ID; or file comment ID."
+    },
+    {
+      "name": "SLACK_FETCH_MESSAGE_THREAD_FROM_A_CONVERSATION",
+      "description": "Retrieves replies to a specific parent message in a Slack conversation, using the channel ID and the parent message's timestamp (`ts`)."
+    },
+    {
+      "name": "SLACK_FETCH_TEAM_INFO",
+      "description": "Fetches comprehensive metadata about the current Slack team, or a specified team if the provided ID is accessible."
+    },
+    {
+      "name": "SLACK_FETCH_WORKSPACE_SETTINGS_INFORMATION",
+      "description": "Retrieves detailed settings for a specific Slack workspace, primarily for administrators in an Enterprise Grid organization to view or audit workspace configurations."
+    },
+    {
+      "name": "SLACK_FIND_CHANNELS",
+      "description": "Find channels in a Slack workspace by any criteria - name, topic, purpose, or description."
+    },
+    {
+      "name": "SLACK_FIND_USER_BY_EMAIL_ADDRESS",
+      "description": "Retrieves the Slack user object for an active user by their registered email address; fails with 'users_not_found' if the email is unregistered or the user is inactive."
+    },
+    {
+      "name": "SLACK_FIND_USERS",
+      "description": "Find users in a Slack workspace by any criteria - email, name, display name, or other text. Includes optimized email lookup for exact email matches."
+    },
+    {
+      "name": "SLACK_GET_CANVAS",
+      "description": "Retrieves a specific Slack Canvas by its ID, including its content and metadata."
+    },
+    {
+      "name": "SLACK_GET_CHANNEL_CONVERSATION_PREFERENCES",
+      "description": "Retrieves conversation preferences (e.g., who can post, who can thread) for a specified channel, primarily for use within Slack Enterprise Grid environments."
+    },
+    {
+      "name": "SLACK_GET_REMINDER_INFORMATION",
+      "description": "Retrieves detailed information for an existing Slack reminder specified by its ID; this is a read-only operation."
+    },
+    {
+      "name": "SLACK_GET_REMOTE_FILE",
+      "description": "Retrieve information about a remote file added to Slack."
+    },
+    {
+      "name": "SLACK_GET_TEAM_DND_STATUS",
+      "description": "Retrieves a user's current Do Not Disturb status."
+    },
+    {
+      "name": "SLACK_GET_USER_PRESENCE_INFO",
+      "description": "Retrieves a Slack user's current real-time presence (e.g., 'active', 'away') to determine their availability, noting this action does not provide historical data or status reasons."
+    },
+    {
+      "name": "SLACK_INITIATES_CHANNEL_BASED_CONVERSATIONS",
+      "description": "DEPRECATED: Initiates a public or private channel-based conversation. Use `create_channel` instead."
+    },
+    {
+      "name": "SLACK_INVITE_USERS_TO_A_SLACK_CHANNEL",
+      "description": "Invites users to an existing Slack channel using their valid Slack User IDs."
+    },
+    {
+      "name": "SLACK_INVITE_USER_TO_CHANNEL",
+      "description": "Invites users to a specified Slack channel; this action is restricted to Enterprise Grid workspaces and requires the authenticated user to be a member of the target channel."
+    },
+    {
+      "name": "SLACK_INVITE_USER_TO_WORKSPACE",
+      "description": "Invites a user to a Slack workspace and specified channels by email; use `resend=True` to re-process an existing invitation for a user not yet signed up."
+    },
+    {
+      "name": "SLACK_INVITE_USER_TO_WORKSPACE_WITH_OPTIONAL_CHANNEL_INVITES",
+      "description": "DEPRECATED: Invites a user to a Slack workspace and specified channels by email. Use `invite_user_to_workspace` instead."
+    },
+    {
+      "name": "SLACK_JOIN_AN_EXISTING_CONVERSATION",
+      "description": "Joins an existing Slack conversation (public channel, private channel, or multi-person direct message) by its ID, if the authenticated user has permission."
+    },
+    {
+      "name": "SLACK_LEAVE_A_CONVERSATION",
+      "description": "Leaves a Slack conversation given its channel ID; fails if leaving as the last member of a private channel or if used on a Slack Connect channel."
+    },
+    {
+      "name": "SLACK_LIST_ACCESSIBLE_CONVERSATIONS_FOR_A_USER",
+      "description": "DEPRECATED: Retrieves conversations accessible to a specified user. Use `list_conversations` instead."
+    },
+    {
+      "name": "SLACK_LIST_ALL_CHANNELS",
+      "description": "Lists conversations available to the user with various filters and search options."
+    },
+    {
+      "name": "SLACK_LIST_ALL_SLACK_TEAM_CHANNELS_WITH_VARIOUS_FILTERS",
+      "description": "DEPRECATED: Lists conversations available to the user with various filters and search options. Use `list_channels` instead."
+    },
+    {
+      "name": "SLACK_LIST_ALL_SLACK_TEAM_USERS_WITH_PAGINATION",
+      "description": "DEPRECATED: Retrieves a paginated list of all users in a Slack workspace. Use `list_all_users` instead."
+    },
+    {
+      "name": "SLACK_LIST_ALL_USERS",
+      "description": "Retrieves a paginated list of all users, including comprehensive details, profile information, status, and team memberships, in a Slack workspace; data may not be real-time."
+    },
+    {
+      "name": "SLACK_LIST_ALL_USERS_IN_A_USER_GROUP",
+      "description": "Retrieves a list of all user IDs within a specified Slack user group, with an option to include users from disabled groups."
+    },
+    {
+      "name": "SLACK_LIST_CANVASES",
+      "description": "Lists Slack Canvases with filtering by channel, user, timestamp, and page-based pagination. Uses Slack's files.list API with types=canvas filter."
+    },
+    {
+      "name": "SLACK_LIST_CONVERSATIONS",
+      "description": "List conversations (channels/DMs) accessible to a specified user (or the authenticated user if no user ID is provided), respecting shared membership for non-public channels."
+    },
+    {
+      "name": "SLACK_LIST_FILES_WITH_FILTERS_IN_SLACK",
+      "description": "Lists files and their metadata within a Slack workspace, filterable by user, channel, timestamp, or type; this action returns metadata only, not file content."
+    },
+    {
+      "name": "SLACK_LIST_REMINDERS",
+      "description": "Lists all reminders with their details for the authenticated Slack user; returns an empty list if no reminders exist."
+    },
+    {
+      "name": "SLACK_LIST_REMOTE_FILES",
+      "description": "Retrieve information about a team's remote files."
+    },
+    {
+      "name": "SLACK_LIST_SCHEDULED_MESSAGES",
+      "description": "Retrieves a list of pending (not yet delivered) messages scheduled in a specific Slack channel, or across all accessible channels if no channel ID is provided, optionally filtered by time and paginated."
+    },
+    {
+      "name": "SLACK_LIST_SCHEDULED_MESSAGES_IN_A_CHANNEL",
+      "description": "DEPRECATED: Retrieves a list of pending (not yet delivered) messages scheduled in a specific Slack channel. Use `list_scheduled_messages` instead."
+    },
+    {
+      "name": "SLACK_LIST_SLACK_S_REMOTE_FILES_WITH_FILTERS",
+      "description": "DEPRECATED: Retrieve information about a team's remote files. Use `list_remote_files` instead."
+    },
+    {
+      "name": "SLACK_LISTS_PINNED_ITEMS_IN_A_CHANNEL",
+      "description": "Retrieves all messages and files pinned to a specified channel; the caller must have access to this channel."
+    },
+    {
+      "name": "SLACK_LIST_STARRED_ITEMS",
+      "description": "Lists items starred by a user."
+    },
+    {
+      "name": "SLACK_LISTS_USER_S_STARRED_ITEMS_WITH_PAGINATION",
+      "description": "DEPRECATED: Lists items starred by a user. Use `list_starred_items` instead."
+    },
+    {
+      "name": "SLACK_LIST_TEAM_CUSTOM_EMOJIS",
+      "description": "Retrieves all custom emojis for the Slack workspace (image URLs or aliases), not standard Unicode emojis; does not include usage statistics or creation dates."
+    },
+    {
+      "name": "SLACK_LIST_USER_GROUPS_FOR_TEAM_WITH_OPTIONS",
+      "description": "Lists user groups in a Slack workspace, including user-created and default groups; results for large workspaces may be paginated."
+    },
+    {
+      "name": "SLACK_LIST_USER_REACTIONS",
+      "description": "Lists all reactions added by a specific user to messages, files, or file comments in Slack, useful for engagement analysis when the item content itself is not required."
+    },
+    {
+      "name": "SLACK_LIST_USER_REMINDERS_WITH_DETAILS",
+      "description": "DEPRECATED: Lists all reminders with their details for the authenticated Slack user. Use `list_reminders` instead."
+    },
+    {
+      "name": "SLACK_LIST_WORKSPACE_USERS",
+      "description": "Retrieves a paginated list of admin users for a specified Slack workspace."
+    },
+    {
+      "name": "SLACK_LOOKUP_CANVAS_SECTIONS",
+      "description": "Looks up section IDs in a Slack Canvas for use with targeted edit operations. Section IDs are needed for insert_after, insert_before, delete, and section-specific replace operations."
+    },
+    {
+      "name": "SLACK_MANUALLY_SET_USER_PRESENCE",
+      "description": "Manually sets a user's Slack presence, overriding automatic detection; this setting persists across connections but can be overridden by user actions or Slack's auto-away (e.g., after 10 mins of inactivity)."
+    },
+    {
+      "name": "SLACK_MARK_REMINDER_AS_COMPLETE",
+      "description": "Marks a specific Slack reminder as complete using its `reminder` ID; **DEPRECATED**: This Slack API endpoint ('reminders.complete') was deprecated in March 2023 and is not recommended for new applications."
+    },
+    {
+      "name": "SLACK_OPEN_DM",
+      "description": "Opens or resumes a Slack direct message (DM) or multi-person direct message (MPIM) by providing either user IDs or an existing channel ID."
+    },
+    {
+      "name": "SLACK_OPEN_OR_RESUME_DIRECT_OR_MULTI_PERSON_MESSAGES",
+      "description": "DEPRECATED: Opens or resumes a Slack direct message (DM) or multi-person direct message (MPIM). Use `open_dm` instead."
+    },
+    {
+      "name": "SLACK_PINS_AN_ITEM_TO_A_CHANNEL",
+      "description": "Pins a message to a specified Slack channel; the message must not already be pinned."
+    },
+    {
+      "name": "SLACK_REGISTER_CALL_PARTICIPANTS_REMOVAL",
+      "description": "DEPRECATED: Registers participants removed from a Slack call. Use `remove_call_participants` instead."
+    },
+    {
+      "name": "SLACK_REGISTERS_A_NEW_CALL_WITH_PARTICIPANTS",
+      "description": "DEPRECATED: Registers a new call in Slack using `calls.add` for third-party call integration. Use `start_call` instead."
+    },
+    {
+      "name": "SLACK_REGISTERS_NEW_CALL_PARTICIPANTS",
+      "description": "DEPRECATED: Registers new participants added to a Slack call. Use `add_call_participants` instead."
+    },
+    {
+      "name": "SLACK_REMOVE_A_REMOTE_FILE",
+      "description": "Removes the Slack reference to an external file (which must have been previously added via the remote files API), specified by either its `external_id` or `file` ID (one of which is required), without deleting the actual external file."
+    },
+    {
+      "name": "SLACK_REMOVE_A_STAR_FROM_AN_ITEM",
+      "description": "Removes a star from a previously starred Slack item (message, file, file comment, channel, group, or DM), requiring identification via `file`, `file_comment`, `channel` (for channel/group/DM), or both `channel` and `timestamp` (for a message)."
+    },
+    {
+      "name": "SLACK_REMOVE_A_USER_FROM_A_CONVERSATION",
+      "description": "Removes a specified user from a Slack conversation (channel); the caller must have permissions to remove users and cannot remove themselves using this action."
+    },
+    {
+      "name": "SLACK_REMOVE_CALL_PARTICIPANTS",
+      "description": "Registers participants removed from a Slack call."
+    },
+    {
+      "name": "SLACK_REMOVE_REACTION_FROM_ITEM",
+      "description": "Removes an emoji reaction from a message, file, or file comment in Slack."
+    },
+    {
+      "name": "SLACK_RENAME_A_CONVERSATION",
+      "description": "Renames a Slack channel, automatically adjusting the new name to meet naming conventions (e.g., converting to lowercase), which may affect integrations using the old name."
+    },
+    {
+      "name": "SLACK_RENAME_AN_EMOJI",
+      "description": "Renames an existing custom emoji in a Slack workspace, updating all its instances."
+    },
+    {
+      "name": "SLACK_RENAME_A_SLACK_CHANNEL",
+      "description": "Renames a public or private Slack channel; for Enterprise Grid workspaces, the user must be a Workspace Admin or Channel Manager."
+    },
+    {
+      "name": "SLACK_RETRIEVE_A_USER_S_IDENTITY_DETAILS",
+      "description": "Retrieves the authenticated user's and their team's identity, with details varying based on OAuth scopes (e.g., `identity.basic`, `identity.email`, `identity.avatar`)."
+    },
+    {
+      "name": "SLACK_RETRIEVE_CALL_INFORMATION",
+      "description": "Retrieves a point-in-time snapshot of a specific Slack call's information."
+    },
+    {
+      "name": "SLACK_RETRIEVE_CONVERSATION_INFORMATION",
+      "description": "Retrieves metadata for a Slack conversation by ID (e.g., name, purpose, creation date, with options for member count/locale), excluding message content; requires a valid channel ID."
+    },
+    {
+      "name": "SLACK_RETRIEVE_CONVERSATION_MEMBERS_LIST",
+      "description": "Retrieves a paginated list of active member IDs for a specified Slack public channel, private channel, direct message (DM), or multi-person direct message (MPIM)."
+    },
+    {
+      "name": "SLACK_RETRIEVE_CURRENT_USER_DND_STATUS",
+      "description": "Retrieves a Slack user's current Do Not Disturb (DND) status to determine their availability before interaction; any specified user ID must be a valid Slack user ID."
+    },
+    {
+      "name": "SLACK_RETRIEVE_DETAILED_INFORMATION_ABOUT_A_FILE",
+      "description": "Retrieves detailed metadata and paginated comments for a specific Slack file ID; does not download file content."
+    },
+    {
+      "name": "SLACK_RETRIEVE_DETAILED_USER_INFORMATION",
+      "description": "Retrieves comprehensive information for a valid Slack user ID, excluding message history and channel memberships."
+    },
+    {
+      "name": "SLACK_RETRIEVE_MESSAGE_PERMALINK_URL",
+      "description": "Retrieves a permalink URL for a specific message in a Slack channel or conversation; the permalink respects Slack's privacy settings."
+    },
+    {
+      "name": "SLACK_RETRIEVE_REMOTE_FILE_INFO_IN_SLACK",
+      "description": "DEPRECATED: Retrieve information about a remote file added to Slack. Use `get_remote_file` instead."
+    },
+    {
+      "name": "SLACK_RETRIEVE_TEAM_PROFILE_DETAILS",
+      "description": "Retrieves all profile field definitions for a Slack team, optionally filtered by visibility, to understand the team's profile structure."
+    },
+    {
+      "name": "SLACK_RETRIEVE_USER_PROFILE_INFORMATION",
+      "description": "Retrieves profile information for a specified Slack user (defaults to the authenticated user if `user` ID is omitted); a provided `user` ID must be valid."
+    },
+    {
+      "name": "SLACK_REVERSE_A_CONVERSATION_S_ARCHIVAL_STATUS",
+      "description": "DEPRECATED: Reverses conversation archival. Use `unarchive_channel` instead."
+    },
+    {
+      "name": "SLACK_REVOKE_PUBLIC_SHARING_ACCESS_FOR_A_FILE",
+      "description": "Revokes a Slack file's public URL, making it private; this is a no-op if not already public and is irreversible."
+    },
+    {
+      "name": "SLACK_SCHEDULE_MESSAGE",
+      "description": "Schedules a message to a Slack channel, DM, or private group for a future time (`post_at`), requiring `text`, `blocks`, or `attachments` for content; scheduling is limited to 120 days in advance."
+    },
+    {
+      "name": "SLACK_SCHEDULES_A_MESSAGE_TO_A_CHANNEL_AT_A_SPECIFIED_TIME",
+      "description": "DEPRECATED: Schedules a message to a Slack channel, DM, or private group for a future time. Use `schedule_message` instead."
+    },
+    {
+      "name": "SLACK_SEARCH_ALL",
+      "description": "Tool to search all messages and files. Use when you need unified content search across channels and files in one call."
+    },
+    {
+      "name": "SLACK_SEARCH_FOR_MESSAGES_WITH_QUERY",
+      "description": "DEPRECATED: Searches messages in a Slack workspace using a query with optional modifiers. Use `search_messages` instead."
+    },
+    {
+      "name": "SLACK_SEARCH_MESSAGES",
+      "description": "Workspace‑wide Slack message search with date ranges and filters. Use `query` modifiers (e.g., in:#channel, from:@user, before/after:YYYY-MM-DD), sorting (score/timestamp), and pagination."
+    },
+    {
+      "name": "SLACK_SEND_EPHEMERAL_MESSAGE",
+      "description": "Sends an ephemeral message to a user in a channel."
+    },
+    {
+      "name": "SLACK_SEND_MESSAGE",
+      "description": "Posts a message to a Slack channel, direct message, or private group; requires content via `text`, `blocks`, or `attachments`."
+    },
+    {
+      "name": "SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL",
+      "description": "DEPRECATED: Posts a message to a Slack channel, direct message, or private group. Use `send_message` instead."
+    },
+    {
+      "name": "SLACK_SENDS_EPHEMERAL_MESSAGES_TO_CHANNEL_USERS",
+      "description": "DEPRECATED: Sends an ephemeral message to a user in a channel. Use `send_ephemeral_message` instead."
+    },
+    {
+      "name": "SLACK_SET_A_CONVERSATION_S_PURPOSE",
+      "description": "Sets the purpose (a short description of its topic/goal, displayed in the header) for a Slack conversation; the calling user must be a member."
+    },
+    {
+      "name": "SLACK_SET_DND_DURATION",
+      "description": "Turns on Do Not Disturb mode for the current user, or changes its duration."
+    },
+    {
+      "name": "SLACK_SET_PROFILE_PHOTO",
+      "description": "This method allows the user to set their profile image."
+    },
+    {
+      "name": "SLACK_SET_READ_CURSOR_IN_A_CONVERSATION",
+      "description": "Marks a message, specified by its timestamp (`ts`), as the most recently read for the authenticated user in the given `channel`, provided the user is a member of the channel and the message exists within it."
+    },
+    {
+      "name": "SLACK_SET_SLACK_USER_PROFILE_INFORMATION",
+      "description": "Updates a Slack user's profile, setting either individual fields or multiple fields via a JSON object."
+    },
+    {
+      "name": "SLACK_SET_STATUS",
+      "description": "Sets the Slack status for the authenticated user with a custom text and optional emoji. The status appears next to the user's name in Slack."
+    },
+    {
+      "name": "SLACK_SET_THE_TOPIC_OF_A_CONVERSATION",
+      "description": "Sets or updates the topic for a specified Slack conversation."
+    },
+    {
+      "name": "SLACK_SET_USER_PROFILE_PHOTO_WITH_CROPPING_OPTIONS",
+      "description": "DEPRECATED: This method allows the user to set their profile image. Use `set_profile_photo` instead."
+    },
+    {
+      "name": "SLACK_SHARE_A_ME_MESSAGE_IN_A_CHANNEL",
+      "description": "Sends a 'me message' (e.g., '/me is typing') to a Slack channel, where it's displayed as a third-person user action; messages are plain text and the channel must exist and be accessible."
+    },
+    {
+      "name": "SLACK_SHARE_REMOTE_FILE_IN_CHANNELS",
+      "description": "Shares a remote file, which must already be registered with Slack, into specified Slack channels or direct message conversations."
+    },
+    {
+      "name": "SLACK_START_CALL",
+      "description": "Registers a new call in Slack using `calls.add` for third-party call integration; `created_by` is required if not using a user-specific token."
+    },
+    {
+      "name": "SLACK_START_REAL_TIME_MESSAGING_SESSION",
+      "description": "Initiates a Slack RTM session providing a single-use WebSocket URL (valid 30s) for event streaming; does not set initial presence status."
+    },
+    {
+      "name": "SLACK_UNARCHIVE_A_PUBLIC_OR_PRIVATE_CHANNEL",
+      "description": "Unarchives a specified public or private Slack channel that is currently archived, using its channel ID."
+    },
+    {
+      "name": "SLACK_UNARCHIVE_CHANNEL",
+      "description": "Reverses conversation archival."
+    },
+    {
+      "name": "SLACK_UNPIN_ITEM_FROM_CHANNEL",
+      "description": "Unpins a message, identified by its timestamp, from a specified channel if the message is currently pinned there; this operation is destructive."
+    },
+    {
+      "name": "SLACK_UPDATE_AN_EXISTING_SLACK_USER_GROUP",
+      "description": "Updates an existing Slack User Group, which must be specified by an existing `usergroup` ID, with new optional details such as its name, description, handle, or default channels."
+    },
+    {
+      "name": "SLACK_UPDATES_AN_EXISTING_REMOTE_FILE",
+      "description": "Updates metadata or content details for an existing remote file in Slack; this action cannot upload new files or change the fundamental file type."
+    },
+    {
+      "name": "SLACK_UPDATES_A_SLACK_MESSAGE",
+      "description": "Updates a Slack message, identified by `channel` ID and `ts` timestamp, by modifying its `text`, `attachments`, or `blocks`; provide at least one content field, noting `attachments`/`blocks` are replaced if included (`[]` clears them)."
+    },
+    {
+      "name": "SLACK_UPDATE_SLACK_CALL_INFORMATION",
+      "description": "Updates the title, join URL, or desktop app join URL for an existing Slack call identified by its ID."
+    },
+    {
+      "name": "SLACK_UPDATE_USER_GROUP_MEMBERS",
+      "description": "Replaces all members of an existing Slack User Group with a new list of valid user IDs."
+    },
+    {
+      "name": "SLACK_UPLOAD_OR_CREATE_A_FILE_IN_SLACK",
+      "description": "Uploads a file to Slack, requiring either `content` (for text) or `file` (for binary data), optionally sharing it in specified `channels` or as a reply via `thread_ts`."
+    }
+  ]
+}

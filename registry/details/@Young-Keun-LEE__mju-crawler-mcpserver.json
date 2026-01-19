@@ -1,0 +1,23 @@
+{
+  "id": "@Young-Keun-LEE/mju-crawler-mcpserver",
+  "displayName": "mju-crawler-mcpserver",
+  "description": "Fetch the latest notices from MJU in one place. Stay informed about new announcements without manual website checks. Pull updates directly into your workflow to act faster.",
+  "createdAt": "2026-01-19T02:15:28.379Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Young-Keun-LEE/mju-crawler-mcpserver"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_mju_notices",
+      "description": ""
+    }
+  ]
+}

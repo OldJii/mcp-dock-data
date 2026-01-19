@@ -1,0 +1,41 @@
+{
+  "id": "lama/demo-mcp",
+  "displayName": "demo-mcp",
+  "description": "Greet anyone with a friendly hello or a quintessential Dutch 'Ja daaaag'. Discover the origin of 'Hello, World' and the cultural nuance behind 'Ja daaaag' to add context and charm. Deliver quick, cheerful messages on demand.",
+  "createdAt": "2026-01-19T02:17:40.352Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lama/demo-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "debug"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    },
+    {
+      "name": "ja_daaaag",
+      "description": "Zegt altijd een typisch Nederlandse 'Ja daaaag' 😄"
+    }
+  ]
+}

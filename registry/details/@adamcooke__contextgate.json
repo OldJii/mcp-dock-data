@@ -1,0 +1,12 @@
+{
+  "id": "@adamcooke/contextgate",
+  "displayName": "contextgate",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:22.292Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@adamcooke/contextgate"
+  },
+  "connection": null,
+  "capabilities": []
+}

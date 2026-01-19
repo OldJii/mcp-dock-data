@@ -1,0 +1,12 @@
+{
+  "id": "@madzarm/mcp-server-gelato",
+  "displayName": "mcp-server-gelato",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:21.263Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@madzarm/mcp-server-gelato"
+  },
+  "connection": null,
+  "capabilities": []
+}

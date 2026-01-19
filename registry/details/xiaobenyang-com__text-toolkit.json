@@ -1,0 +1,196 @@
+{
+  "id": "xiaobenyang-com/text-toolkit",
+  "displayName": "text-toolkit",
+  "description": "Transform and format text quickly to keep content clean, consistent, and readable. Encode, decode, and escape strings for reliable sharing across apps and the web. Analyze readability, count metrics, work with regex, and generate UUIDs, hashes, and filler text on demand.",
+  "createdAt": "2026-01-19T02:20:34.704Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/text-toolkit"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "case_to_camel",
+      "description": "Convert text to camelCase"
+    },
+    {
+      "name": "case_to_pascal",
+      "description": "Convert text to PascalCase"
+    },
+    {
+      "name": "case_to_snake",
+      "description": "Convert text to snake_case"
+    },
+    {
+      "name": "case_to_kebab",
+      "description": "Convert text to kebab-case"
+    },
+    {
+      "name": "case_to_constant",
+      "description": "Convert text to CONSTANT_CASE"
+    },
+    {
+      "name": "case_to_dot",
+      "description": "Convert text to dot.case"
+    },
+    {
+      "name": "case_to_no",
+      "description": "Convert text to no case"
+    },
+    {
+      "name": "case_to_pascal_snake",
+      "description": "Convert text to Pascal_Snake_Case"
+    },
+    {
+      "name": "case_to_path",
+      "description": "Convert text to path/case"
+    },
+    {
+      "name": "case_to_sentence",
+      "description": "Convert text to Sentence case"
+    },
+    {
+      "name": "case_to_train",
+      "description": "Convert text to Train-Case"
+    },
+    {
+      "name": "case_to_capital",
+      "description": "Convert text to Capital Case"
+    },
+    {
+      "name": "encode_base64",
+      "description": "Encode text to Base64"
+    },
+    {
+      "name": "decode_base64",
+      "description": "Decode Base64 to text"
+    },
+    {
+      "name": "encode_url",
+      "description": "Encode text for URLs"
+    },
+    {
+      "name": "decode_url",
+      "description": "Decode URL-encoded text"
+    },
+    {
+      "name": "encode_html",
+      "description": "Encode HTML entities"
+    },
+    {
+      "name": "decode_html",
+      "description": "Decode HTML entities"
+    },
+    {
+      "name": "format_json",
+      "description": "Format and beautify JSON"
+    },
+    {
+      "name": "format_xml",
+      "description": "Format and beautify XML"
+    },
+    {
+      "name": "format_sql",
+      "description": "Format and beautify SQL"
+    },
+    {
+      "name": "format_html",
+      "description": "Format and beautify HTML"
+    },
+    {
+      "name": "count_characters",
+      "description": "Count characters in text"
+    },
+    {
+      "name": "count_words",
+      "description": "Count words in text"
+    },
+    {
+      "name": "count_lines",
+      "description": "Count lines in text"
+    },
+    {
+      "name": "analyze_readability",
+      "description": "Calculate readability metrics"
+    },
+    {
+      "name": "string_trim",
+      "description": "Trim whitespace from text"
+    },
+    {
+      "name": "string_substring",
+      "description": "Extract a substring"
+    },
+    {
+      "name": "string_replace",
+      "description": "Replace text"
+    },
+    {
+      "name": "string_split",
+      "description": "Split text into an array"
+    },
+    {
+      "name": "string_join",
+      "description": "Join an array into text"
+    },
+    {
+      "name": "generate_uuid",
+      "description": "Generate a UUID"
+    },
+    {
+      "name": "validate_uuid",
+      "description": "Validate a UUID"
+    },
+    {
+      "name": "generate_md5",
+      "description": "Generate MD5 hash"
+    },
+    {
+      "name": "generate_sha1",
+      "description": "Generate SHA-1 hash"
+    },
+    {
+      "name": "generate_sha256",
+      "description": "Generate SHA-256 hash"
+    },
+    {
+      "name": "generate_sha512",
+      "description": "Generate SHA-512 hash"
+    },
+    {
+      "name": "generate_hmac",
+      "description": "Generate HMAC hash"
+    },
+    {
+      "name": "generate_lorem_ipsum",
+      "description": "Generate lorem ipsum text"
+    },
+    {
+      "name": "regex_test",
+      "description": "Test a regex pattern against text"
+    },
+    {
+      "name": "regex_replace",
+      "description": "Replace text using a regex pattern"
+    },
+    {
+      "name": "regex_extract",
+      "description": "Extract matches using a regex pattern"
+    },
+    {
+      "name": "regex_split",
+      "description": "Split text using a regex pattern"
+    }
+  ]
+}

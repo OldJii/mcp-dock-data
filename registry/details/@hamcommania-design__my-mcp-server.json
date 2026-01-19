@@ -1,0 +1,42 @@
+{
+  "id": "@hamcommania-design/my-mcp-server",
+  "displayName": "my-mcp-server",
+  "description": "Kickstart your TypeScript build with ready-to-use examples for actions and resources. Customize and expand with features like greetings, time, math, and image generation. Ship faster with a clear structure that’s easy to adapt.",
+  "createdAt": "2026-01-19T02:14:44.337Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hamcommania-design/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "hfToken": {
+          "type": "string",
+          "description": "Hugging Face API Token (이미지 생성 기능에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자의 이름과 언어를 입력받아 해당 언어로 인사말을 반환합니다."
+    },
+    {
+      "name": "get_time",
+      "description": "지역 이름을 입력받아 해당 지역의 현재 시간을 반환합니다."
+    },
+    {
+      "name": "calc",
+      "description": "두 개의 숫자와 하나의 연산자를 입력받아 계산 결과를 반환합니다."
+    },
+    {
+      "name": "generate_image",
+      "description": "텍스트 프롬프트를 입력받아 AI로 이미지를 생성합니다."
+    }
+  ]
+}

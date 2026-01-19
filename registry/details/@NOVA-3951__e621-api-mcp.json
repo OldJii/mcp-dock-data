@@ -1,0 +1,12 @@
+{
+  "id": "@NOVA-3951/e621-api-mcp",
+  "displayName": "e621-api-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:31.582Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/e621-api-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

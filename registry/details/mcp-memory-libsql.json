@@ -1,0 +1,31 @@
+{
+  "id": "mcp-memory-libsql",
+  "displayName": "LibSQL Memory",
+  "description": "High-performance vector search and persistent memory using libSQL.",
+  "createdAt": "2026-01-19T02:19:24.658Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-memory-libsql"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "libsqlUrl"
+      ],
+      "properties": {
+        "libsqlUrl": {
+          "type": "string",
+          "description": "URL for the libSQL database, e.g., 'file:/path/to/database.db' for local or 'libsql://your-database.turso.io' for remote."
+        },
+        "libsqlAuthToken": {
+          "type": "string",
+          "description": "Authentication token for remote libSQL databases."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

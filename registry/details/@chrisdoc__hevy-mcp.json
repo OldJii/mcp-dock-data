@@ -1,0 +1,18 @@
+{
+  "id": "@chrisdoc/hevy-mcp",
+  "displayName": "hevy-mcp",
+  "description": "Manage your Hevy workouts, routines, folders, and exercise templates. Create and update sessions faster, organize plans, and search exercises to build workouts quickly. Stay synced with changes so your training log is always up to date.",
+  "createdAt": "2026-01-19T02:15:44.712Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chrisdoc/hevy-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

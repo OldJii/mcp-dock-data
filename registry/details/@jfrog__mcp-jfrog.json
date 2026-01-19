@@ -1,0 +1,157 @@
+{
+  "id": "@jfrog/mcp-jfrog",
+  "displayName": "JFrog MCP Server",
+  "description": "Manage your repositories, track builds, and oversee the release lifecycle seamlessly. Leverage powerful AQL queries to search for artifacts and monitor runtime clusters effectively. Enhance your JFrog platform experience with this integrated MCP server.",
+  "createdAt": "2026-01-19T02:21:42.737Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jfrog/mcp-jfrog"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "jfrogAccessToken",
+        "jfrogUrl"
+      ],
+      "properties": {
+        "jfrogUrl": {
+          "type": "string",
+          "description": "Base URL for your JFrog platform instance"
+        },
+        "jfrogAccessToken": {
+          "type": "string",
+          "description": "Your JFrog access token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "jfrog_check_availability",
+      "description": "Check if JFrog platform is ready and functioning or not"
+    },
+    {
+      "name": "jfrog_create_local_repository",
+      "description": "Create a new local repository in artifactroy"
+    },
+    {
+      "name": "jfrog_create_remote_repository",
+      "description": "Create a new remote repository in Artifactory to proxy external package registries"
+    },
+    {
+      "name": "jfrog_create_virtual_repository",
+      "description": "Create a new virtual repository in Artifactory that aggregates multiple repositories"
+    },
+    {
+      "name": "jfrog_set_folder_property",
+      "description": "Set properties on a folder in Artifactory, with optional recursive application"
+    },
+    {
+      "name": "jfrog_list_repositories",
+      "description": "List all repositories in Artifactory with optional filtering by type, package type, and project"
+    },
+    {
+      "name": "jfrog_list_builds",
+      "description": "return a list of all my build in the jfrog platform"
+    },
+    {
+      "name": "jfrog_get_specific_build",
+      "description": "Get details for a specific build by name, optionally scoped to a project"
+    },
+    {
+      "name": "jfrog_list_runtime_clusters",
+      "description": "return a list of all my runtime clusters in the jfrog platform"
+    },
+    {
+      "name": "jfrog_get_runtime_specific_cluster",
+      "description": "return a runtime cluster by id"
+    },
+    {
+      "name": "jfrog_list_running_images",
+      "description": "List all running container images across runtime clusters with their security and operational status"
+    },
+    {
+      "name": "jfrog_list_environments",
+      "description": "Get a list of all environments types (e.g. dev, prod, etc.) in the JFrog platform with their details"
+    },
+    {
+      "name": "jfrog_list_projects",
+      "description": "Get a list of all projects in the JFrog platform with their details"
+    },
+    {
+      "name": "jfrog_create_project",
+      "description": "Create a new project in the JFrog platform"
+    },
+    {
+      "name": "jfrog_get_specific_project",
+      "description": "Get detailed information about a specific project in the JFrog platform"
+    },
+    {
+      "name": "jfrog_execute_aql_query",
+      "description": "Execute an Artifactory Query Language (AQL) query to search for artifacts, builds, or other entities in JFrog Artifactory. AQL is a powerful query language for searching and filtering artifacts in Artifactory repositories. It supports complex criteria, sorting, pagination, and more."
+    },
+    {
+      "name": "jfrog_get_package_info",
+      "description": "Useful for when you need to get publicly available information about a software package. it will provide you with the following information on it, if available in public sources: a short description of the package, its latest published version, the software license this software is distributed under, along with urls of its version control system, its homepage and whether it is known to be a malicious package (in any version)."
+    },
+    {
+      "name": "jfrog_get_package_versions",
+      "description": "Useful for when you need to get a list of versions of a publicly available package. it can tell you each version's publication date. Can also filter based on version vulnerability status."
+    },
+    {
+      "name": "jfrog_get_package_version_vulnerabilities",
+      "description": "Useful for when you need the list of known vulnerabilities affecting a specific version of an open source package."
+    },
+    {
+      "name": "jfrog_get_vulnerability_info",
+      "description": "Useful for when you need to get a specific vulnerability information, including its affected packages and versions."
+    },
+    {
+      "name": "jfrog_get_package_curation_status",
+      "description": "Useful for checking the curation status of a specific package version. Returns one of the following statuses: approved, blocked, inconclusive."
+    },
+    {
+      "name": "jfrog_list_permission_targets",
+      "description": "Get a list of all permission targets in the JFrog platform"
+    },
+    {
+      "name": "jfrog_get_permission_target",
+      "description": "Get detailed information about a specific permission target"
+    },
+    {
+      "name": "jfrog_create_permission_target",
+      "description": "Create a new permission target in the JFrog platform"
+    },
+    {
+      "name": "jfrog_update_permission_target",
+      "description": "Update an existing permission target in the JFrog platform"
+    },
+    {
+      "name": "jfrog_delete_permission_target",
+      "description": "Delete a permission target from the JFrog platform"
+    },
+    {
+      "name": "jfrog_get_permission_resource",
+      "description": "Get details of a specific resource type within a permission target"
+    },
+    {
+      "name": "jfrog_update_permission_resource",
+      "description": "Update a specific resource type within a permission target"
+    },
+    {
+      "name": "jfrog_replace_permission_resource",
+      "description": "Replace a specific resource type within a permission target"
+    },
+    {
+      "name": "jfrog_delete_permission_resource",
+      "description": "Delete a specific resource type from a permission target"
+    },
+    {
+      "name": "jfrog_get_artifacts_summary",
+      "description": "Get the summary of artifacts, one or many"
+    }
+  ]
+}

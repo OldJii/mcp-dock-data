@@ -1,0 +1,12 @@
+{
+  "id": "@sseaan/amap-mcp-server",
+  "displayName": "amap-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:39.253Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sseaan/amap-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

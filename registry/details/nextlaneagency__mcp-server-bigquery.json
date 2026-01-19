@@ -1,0 +1,12 @@
+{
+  "id": "nextlaneagency/mcp-server-bigquery",
+  "displayName": "mcp-server-bigquery",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:07.369Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/nextlaneagency/mcp-server-bigquery"
+  },
+  "connection": null,
+  "capabilities": []
+}

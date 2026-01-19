@@ -1,0 +1,12 @@
+{
+  "id": "@zlzmm5188/telegram-system-docker",
+  "displayName": "telegram-system-docker",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:45.722Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zlzmm5188/telegram-system-docker"
+  },
+  "connection": null,
+  "capabilities": []
+}

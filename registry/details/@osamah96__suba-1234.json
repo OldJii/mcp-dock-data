@@ -1,0 +1,33 @@
+{
+  "id": "@osamah96/suba-1234",
+  "displayName": "suba-1234",
+  "description": "",
+  "createdAt": "2026-01-19T02:20:31.282Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@osamah96/suba-1234"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "read_tables",
+      "description": "List all tables in the BrandMePlease database with row counts"
+    },
+    {
+      "name": "query_brand_data",
+      "description": "Query BrandMePlease data from specific tables"
+    },
+    {
+      "name": "get_brand_analysis",
+      "description": "Get brand analysis data with consistency scores"
+    },
+    {
+      "name": "create_brand_analysis",
+      "description": "Create a new brand consistency analysis"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "@Phionx/first-mcp",
+  "displayName": "Say Hello",
+  "description": "Send personalized greetings by name and quickly test simple interactions. Toggle Pirate Mode to speak like a pirate. Explore the origin of 'Hello, World' and generate greeting prompts for different tones.",
+  "createdAt": "2026-01-19T02:16:56.658Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Phionx/first-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

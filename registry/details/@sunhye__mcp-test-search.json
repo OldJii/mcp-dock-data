@@ -1,0 +1,39 @@
+{
+  "id": "@sunhye/mcp-test-search",
+  "displayName": "Takeoff News",
+  "description": "Fetch the latest issue posts and weekly news from Takeoff. Stay current with concise updates for quick research and monitoring. Keep your team informed with timely highlights.",
+  "createdAt": "2026-01-19T02:16:05.195Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sunhye/mcp-test-search"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_latest_posts",
+      "description": "Get the latest AI issue posts from the Takeoff API"
+    },
+    {
+      "name": "get_latest_weekly_news",
+      "description": "Get the latest weekly news from the Takeoff API"
+    }
+  ]
+}

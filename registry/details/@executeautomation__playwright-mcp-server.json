@@ -1,0 +1,18 @@
+{
+  "id": "@executeautomation/playwright-mcp-server",
+  "displayName": "Playwright",
+  "description": "Provides browser automation capabilities using Playwright, enabling LLMs to interact with web pages, take screenshots, and execute JavaScript in a browser environment.",
+  "createdAt": "2026-01-19T02:14:30.238Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@executeautomation/playwright-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object"
+    }
+  },
+  "capabilities": []
+}

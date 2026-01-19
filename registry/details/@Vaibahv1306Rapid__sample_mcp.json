@@ -1,0 +1,43 @@
+{
+  "id": "@Vaibahv1306Rapid/sample_mcp",
+  "displayName": "Smithery Scaffold",
+  "description": "Provide a scaffolded environment to develop and run MCP servers with ease. Enable rapid prototyping and integration of tools, resources, and prompts for LLM applications. Simplify MCP server setup and development workflows.",
+  "createdAt": "2026-01-19T02:18:25.596Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Vaibahv1306Rapid/sample_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_leave_balance",
+      "description": "Check how many leave days are left for the employee"
+    },
+    {
+      "name": "apply_leave",
+      "description": "Apply leave for specific dates"
+    },
+    {
+      "name": "get_leave_history",
+      "description": "Get leave history for the employee"
+    }
+  ]
+}

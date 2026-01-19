@@ -1,0 +1,21 @@
+{
+  "id": "@kaparnashilpa/vsfclubshilpa",
+  "displayName": "vsfclubshilpa",
+  "description": "",
+  "createdAt": "2026-01-19T02:19:42.621Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kaparnashilpa/vsfclubshilpa"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

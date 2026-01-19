@@ -1,0 +1,12 @@
+{
+  "id": "@thuhang2510/test_mcp_server_v2",
+  "displayName": "test_mcp_server_v2",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:15.224Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@thuhang2510/test_mcp_server_v2"
+  },
+  "connection": null,
+  "capabilities": []
+}

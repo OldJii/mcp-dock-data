@@ -1,0 +1,42 @@
+{
+  "id": "@GGoYoungHee/ai-mcp-server-test",
+  "displayName": "ai-mcp-server-test",
+  "description": "Kickstart your workflow with a ready-to-use starter that bundles everyday utilities. Greet people, run basic calculations, check the current time, and generate images from text. Customize and extend it to fit your needs.",
+  "createdAt": "2026-01-19T02:19:43.218Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GGoYoungHee/ai-mcp-server-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "hfToken": {
+          "type": "string",
+          "description": "Hugging Face API token for image generation (optional)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "Returns a greeting message in the specified language"
+    },
+    {
+      "name": "calc",
+      "description": "Performs basic arithmetic operations on two numbers"
+    },
+    {
+      "name": "current_time",
+      "description": "Returns the current time in the specified timezone"
+    },
+    {
+      "name": "generate_image",
+      "description": "Generates an image from a text prompt using FLUX.1-schnell model"
+    }
+  ]
+}

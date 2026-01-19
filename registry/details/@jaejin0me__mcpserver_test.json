@@ -1,0 +1,12 @@
+{
+  "id": "@jaejin0me/mcpserver_test",
+  "displayName": "mcpserver_test",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:35.273Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jaejin0me/mcpserver_test"
+  },
+  "connection": null,
+  "capabilities": []
+}

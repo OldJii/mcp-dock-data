@@ -1,0 +1,32 @@
+{
+  "id": "@xiaobenyang-com/mcp_tools_2",
+  "displayName": "mcp_tools_2",
+  "description": "查询实时热点，快速掌握全网新闻动态。提取新闻关键词与要点，秒懂核心信息。定制关注主题，及时获取最新进展。",
+  "createdAt": "2026-01-19T02:20:44.875Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xiaobenyang-com/mcp_tools_2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_all_dishes",
+      "description": "获取所有可用菜品的名称列表 (菜单)。"
+    },
+    {
+      "name": "get_dish_content",
+      "description": "根据提供的菜品名称获取其详细内容。"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@mengfwan/karpenter-provider-aws",
+  "displayName": "karpenter-provider-aws",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:19.263Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mengfwan/karpenter-provider-aws"
+  },
+  "connection": null,
+  "capabilities": []
+}

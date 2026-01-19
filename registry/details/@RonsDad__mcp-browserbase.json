@@ -1,0 +1,173 @@
+{
+  "id": "@RonsDad/mcp-browserbase",
+  "displayName": "Browserbase Web Automation Server",
+  "description": "Enable AI-powered web browser automation with natural language commands. Control cloud browsers to navigate, interact, extract data, and capture screenshots seamlessly. Manage multiple sessions with advanced stealth and proxy support for robust automation workflows.",
+  "createdAt": "2026-01-19T02:21:34.402Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RonsDad/mcp-browserbase"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "browserbaseApiKey",
+        "browserbaseProjectId"
+      ],
+      "properties": {
+        "server": {
+          "type": "object",
+          "description": ""
+        },
+        "context": {
+          "type": "object",
+          "description": ""
+        },
+        "cookies": {
+          "type": "array",
+          "description": "Cookies to inject into the Browserbase context"
+        },
+        "proxies": {
+          "type": "boolean",
+          "description": "Whether or not to use Browserbase proxies"
+        },
+        "viewPort": {
+          "type": "object",
+          "description": ""
+        },
+        "keepAlive": {
+          "type": "boolean",
+          "description": "Whether or not to keep the Browserbase session alive"
+        },
+        "modelName": {
+          "type": "string",
+          "description": "The model to use for Stagehand (default: google/gemini-2.0-flash)",
+          "enum": [
+            "openai/gpt-4.1",
+            "openai/gpt-4.1-mini",
+            "openai/gpt-4.1-nano",
+            "openai/o4-mini",
+            "openai/o3",
+            "openai/o3-mini",
+            "openai/o1",
+            "openai/o1-mini",
+            "openai/gpt-4o",
+            "openai/gpt-4o-mini",
+            "openai/gpt-4o-2024-08-06",
+            "openai/gpt-4.5-preview",
+            "openai/o1-preview",
+            "anthropic/claude-3-5-sonnet-latest",
+            "anthropic/claude-3-5-sonnet-20241022",
+            "anthropic/claude-3-5-sonnet-20240620",
+            "anthropic/claude-3-7-sonnet-latest",
+            "anthropic/claude-3-7-sonnet-20250219",
+            "cerebras/cerebras-llama-3.3-70b",
+            "cerebras/cerebras-llama-3.1-8b",
+            "groq/groq-llama-3.3-70b-versatile",
+            "groq/groq-llama-3.3-70b-specdec",
+            "google/gemini-1.5-flash",
+            "google/gemini-1.5-pro",
+            "google/gemini-1.5-flash-8b",
+            "google/gemini-2.0-flash-lite",
+            "google/gemini-2.0-flash",
+            "google/gemini-2.5-flash-preview-04-17",
+            "google/gemini-2.5-pro-preview-03-25"
+          ]
+        },
+        "modelApiKey": {
+          "type": "string",
+          "description": "API key for the custom model provider. Required when using a model other than the default google/gemini-2.0-flash"
+        },
+        "experimental": {
+          "type": "boolean",
+          "description": "Enable experimental Stagehand features"
+        },
+        "advancedStealth": {
+          "type": "boolean",
+          "description": "Use advanced stealth mode. Only available to Browserbase Scale Plan users"
+        },
+        "browserbaseApiKey": {
+          "type": "string",
+          "description": "The Browserbase API Key to use"
+        },
+        "browserbaseProjectId": {
+          "type": "string",
+          "description": "The Browserbase Project ID to use"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "multi_browserbase_stagehand_session_create",
+      "description": "Create parallel browser session for multi-session workflows. Use this when you need multiple browser instances running simultaneously: parallel data scraping, concurrent automation, A/B testing, multiple user accounts, cross-site operations, batch processing, or any task requiring more than one browser. Creates an isolated browser session with independent cookies, authentication, and state. Always pair with session-specific tools (those ending with '_session'). Perfect for scaling automation tasks that require multiple browsers working in parallel."
+    },
+    {
+      "name": "multi_browserbase_stagehand_session_list",
+      "description": "ONLY WORKS WITH MULTI-SESSION TOOLS! Track all parallel sessions: Critical tool for multi-session management! Shows all active browser sessions with their IDs, names, ages, and Browserbase session IDs. Use this frequently to monitor your parallel automation workflows, verify sessions are running, and get session IDs for session-specific tools. Essential for debugging and resource management in complex multi-browser scenarios."
+    },
+    {
+      "name": "multi_browserbase_stagehand_session_close",
+      "description": "Cleanup parallel session for multi-session workflows. Properly terminates a browser session, ends the Browserbase session, and frees cloud resources. Always use this when finished with a session to avoid resource waste and billing charges. Critical for responsible multi-session automation - each unclosed session continues consuming resources!"
+    },
+    {
+      "name": "multi_browserbase_stagehand_navigate_session",
+      "description": "Navigate to a URL in the browser. Only use this tool with URLs you're confident will work and stay up to date. Otherwise, use https://google.com as the starting point (for a specific session)"
+    },
+    {
+      "name": "multi_browserbase_stagehand_act_session",
+      "description": "Performs an action on a web page element. Act actions should be as atomic and specific as possible, i.e. \"Click the sign in button\" or \"Type 'hello' into the search input\". AVOID actions that are more than one step, i.e. \"Order me pizza\" or \"Send an email to Paul asking him to call me\". (for a specific session)"
+    },
+    {
+      "name": "multi_browserbase_stagehand_extract_session",
+      "description": "Extracts structured information and text content from the current web page based on specific instructions and a defined schema. This tool is ideal for scraping data, gathering information, or pulling specific content from web pages. Use this tool when you need to get text content, data, or information from a page rather than interacting with elements. For interactive elements like buttons, forms, or clickable items, use the observe tool instead. The extraction works best when you provide clear, specific instructions about what to extract and a well-defined JSON schema for the expected output format. This ensures the extracted data is properly structured and usable. (for a specific session)"
+    },
+    {
+      "name": "multi_browserbase_stagehand_observe_session",
+      "description": "Observes and identifies specific interactive elements on the current web page that can be used for subsequent actions. This tool is specifically designed for finding actionable (interactable) elements such as buttons, links, form fields, dropdowns, checkboxes, and other UI components that you can interact with. Use this tool when you need to locate elements before performing actions with the act tool. DO NOT use this tool for extracting text content or data - use the extract tool instead for that purpose. The observe tool returns detailed information about the identified elements including their properties, location, and interaction capabilities. This information can then be used to craft precise actions. The more specific your observation instruction, the more accurate the element identification will be. Think of this as your 'eyes' on the page to find exactly what you need to interact with. (for a specific session)"
+    },
+    {
+      "name": "multi_browserbase_stagehand_get_url_session",
+      "description": "Gets the current URL of the browser page. Returns the complete URL including protocol, domain, path, and any query parameters or fragments. (for a specific session)"
+    },
+    {
+      "name": "browserbase_stagehand_get_all_urls",
+      "description": "Gets the current URLs of all active browser sessions. Returns a mapping of session IDs to their current URLs."
+    },
+    {
+      "name": "browserbase_session_create",
+      "description": "Create or reuse a single cloud browser session using Browserbase with fully initialized Stagehand. WARNING: This tool is for SINGLE browser workflows only. If you need multiple browser sessions running simultaneously (parallel scraping, A/B testing, multiple accounts), use 'multi_browserbase_stagehand_session_create' instead. This creates one browser session with all configuration flags (proxies, stealth, viewport, cookies, etc.) and initializes Stagehand to work with that session. Updates the active session."
+    },
+    {
+      "name": "browserbase_session_close",
+      "description": "Closes the current Browserbase session by properly shutting down the Stagehand instance, which handles browser cleanup and terminates the session recording."
+    },
+    {
+      "name": "browserbase_stagehand_navigate",
+      "description": "Navigate to a URL in the browser. Only use this tool with URLs you're confident will work and stay up to date. Otherwise, use https://google.com as the starting point"
+    },
+    {
+      "name": "browserbase_stagehand_act",
+      "description": "Performs an action on a web page element. Act actions should be as atomic and specific as possible, i.e. \"Click the sign in button\" or \"Type 'hello' into the search input\". AVOID actions that are more than one step, i.e. \"Order me pizza\" or \"Send an email to Paul asking him to call me\"."
+    },
+    {
+      "name": "browserbase_stagehand_extract",
+      "description": "Extracts structured information and text content from the current web page based on specific instructions and a defined schema. This tool is ideal for scraping data, gathering information, or pulling specific content from web pages. Use this tool when you need to get text content, data, or information from a page rather than interacting with elements. For interactive elements like buttons, forms, or clickable items, use the observe tool instead. The extraction works best when you provide clear, specific instructions about what to extract and a well-defined JSON schema for the expected output format. This ensures the extracted data is properly structured and usable."
+    },
+    {
+      "name": "browserbase_stagehand_observe",
+      "description": "Observes and identifies specific interactive elements on the current web page that can be used for subsequent actions. This tool is specifically designed for finding actionable (interactable) elements such as buttons, links, form fields, dropdowns, checkboxes, and other UI components that you can interact with. Use this tool when you need to locate elements before performing actions with the act tool. DO NOT use this tool for extracting text content or data - use the extract tool instead for that purpose. The observe tool returns detailed information about the identified elements including their properties, location, and interaction capabilities. This information can then be used to craft precise actions. The more specific your observation instruction, the more accurate the element identification will be. Think of this as your 'eyes' on the page to find exactly what you need to interact with."
+    },
+    {
+      "name": "browserbase_screenshot",
+      "description": "Takes a screenshot of the current page. Use this tool to learn where you are on the page when controlling the browser with Stagehand. Only use this tool when the other tools are not sufficient to get the information you need."
+    },
+    {
+      "name": "browserbase_stagehand_get_url",
+      "description": "Gets the current URL of the browser page. Returns the complete URL including protocol, domain, path, and any query parameters or fragments."
+    }
+  ]
+}

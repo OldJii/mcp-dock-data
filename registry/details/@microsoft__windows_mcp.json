@@ -1,0 +1,12 @@
+{
+  "id": "@microsoft/windows_mcp",
+  "displayName": "windows_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:45.616Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@microsoft/windows_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

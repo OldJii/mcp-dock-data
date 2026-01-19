@@ -1,0 +1,48 @@
+{
+  "id": "@DynamicEndpoints/fantasy-pros-mcp",
+  "displayName": "FantasyPros API Server",
+  "description": "Access sports data, news, rankings, and projections seamlessly. Retrieve the latest updates and player information for NFL, MLB, NBA, and NHL with ease. Enhance your applications with real-time sports insights and analytics.",
+  "createdAt": "2026-01-19T02:19:22.225Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/fantasy-pros-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fantasyprosApiKey"
+      ],
+      "properties": {
+        "fantasyprosApiKey": {
+          "type": "string",
+          "description": "API key for FantasyPros services."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_sport_news",
+      "description": "Get news for a specific sport"
+    },
+    {
+      "name": "get_players",
+      "description": "Get player information for a specific sport"
+    },
+    {
+      "name": "get_rankings",
+      "description": "Get consensus rankings for a sport"
+    },
+    {
+      "name": "get_projections",
+      "description": "Get player projections for a sport"
+    },
+    {
+      "name": "get_all_news",
+      "description": "Get all news from FantasyPros"
+    }
+  ]
+}

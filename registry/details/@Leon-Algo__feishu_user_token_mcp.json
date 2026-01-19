@@ -1,0 +1,25 @@
+{
+  "id": "@Leon-Algo/feishu_user_token_mcp",
+  "displayName": "Feishu Tokens",
+  "description": "Manage Feishu app and user access tokens with ease. Fetch valid app tokens and refresh user tokens automatically when needed. Streamline authentication for your Feishu integrations with clear expiry details.",
+  "createdAt": "2026-01-19T02:15:11.073Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Leon-Algo/feishu_user_token_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "refresh_feishu_user_token",
+      "description": "\n        Refreshes a Feishu user access token using the provided refresh token.\n        The app_id and app_secret are retrieved from the session configuration.\n        Returns the new access token, refresh token, and expiration information.\n        "
+    },
+    {
+      "name": "get_feishu_app_token",
+      "description": "\n        Provides a valid Feishu app access token using provided app_id and app_secret.\n        If the existing token is expired or invalid, it will be refreshed automatically.\n        \n        Args:\n            app_id: The App ID of your Feishu application\n            app_secret: The App Secret of your Feishu application\n        \n        Returns:\n            A dictionary containing the app_access_token and expiration information\n        "
+    }
+  ]
+}

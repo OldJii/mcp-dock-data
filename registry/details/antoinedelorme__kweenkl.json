@@ -1,0 +1,41 @@
+{
+  "id": "antoinedelorme/kweenkl",
+  "displayName": "Kweenkl",
+  "description": "Send instant push notifications directly to iOS devices to stay updated on important events and alerts. Manage notification channels and search through history to keep track of previous communications. Streamline your workflow by triggering real-time updates from any environment.",
+  "createdAt": "2026-01-19T02:17:39.551Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/antoinedelorme/kweenkl"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "kweenkl_status",
+      "description": "Check kweenkl server connectivity and status. Use this to verify the connection is working before sending notifications. No authentication required."
+    },
+    {
+      "name": "kweenkl_login",
+      "description": "Start the kweenkl login/onboarding flow. If the user provides their device_token (from the iOS app), this will immediately create their webhook. Otherwise, guides them to download the app or join the waitlist."
+    },
+    {
+      "name": "kweenkl_login_check",
+      "description": "Check the status of a device authorization flow. Call this after kweenkl_login to see if the user has approved the connection in their iOS app."
+    },
+    {
+      "name": "search",
+      "description": "Search kweenkl notification channels and messages. Use this to find channels by name or search through notification history."
+    },
+    {
+      "name": "fetch",
+      "description": "Fetch details about a specific kweenkl channel or notification by ID."
+    },
+    {
+      "name": "kweenkl",
+      "description": "Send a push notification using kweenkl. The verb 'kweenkl' means to send a notification. Use this to notify users about important events, updates, or information that requires immediate attention."
+    }
+  ]
+}

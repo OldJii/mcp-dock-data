@@ -1,0 +1,12 @@
+{
+  "id": "@rathod.aryan.2001/my-test-mcp",
+  "displayName": "my-test-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:34.615Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rathod.aryan.2001/my-test-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

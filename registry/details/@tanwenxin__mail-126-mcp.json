@@ -1,0 +1,70 @@
+{
+  "id": "@tanwenxin/mail-126-mcp",
+  "displayName": "126 Email SMTP Server",
+  "description": "Send emails securely using the 126 email service with SMTP support. Enable sending plain text and HTML emails with CC and BCC options. Verify SMTP connections easily to ensure reliable email delivery.",
+  "createdAt": "2026-01-19T02:18:30.276Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tanwenxin/mail-126-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "email_user",
+        "email_password"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "from_name": {
+          "type": "string",
+          "description": "Display name for sender"
+        },
+        "smtp_host": {
+          "type": "string",
+          "description": "SMTP server host",
+          "default": "smtp.126.com"
+        },
+        "smtp_port": {
+          "type": "number",
+          "description": "SMTP server port (465 for SSL)",
+          "default": 465
+        },
+        "email_user": {
+          "type": "string",
+          "description": "126 email address for authentication"
+        },
+        "smtp_secure": {
+          "type": "boolean",
+          "description": "Use SSL/TLS (true for SSL)",
+          "default": true
+        },
+        "email_password": {
+          "type": "string",
+          "description": "126 email password or app-specific password"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "send_email",
+      "description": "Send email using 126 SMTP service"
+    },
+    {
+      "name": "verify_smtp_connection",
+      "description": "Verify SMTP connection to 126 email service"
+    }
+  ]
+}

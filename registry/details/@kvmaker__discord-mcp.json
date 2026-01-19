@@ -1,0 +1,12 @@
+{
+  "id": "@kvmaker/discord-mcp",
+  "displayName": "discord-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:43.191Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kvmaker/discord-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

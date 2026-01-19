@@ -1,0 +1,39 @@
+{
+  "id": "@lasaths/phosphor-icons-mcp",
+  "displayName": "phosphor-icons-mcp",
+  "description": "Search and browse 1,400+ Phosphor icons by name, category, or tags. Generate SVGs in six weights with custom color and size, or fetch multiple icons at once. Streamline UI design with a ready-to-use catalog and quick integration guidance.",
+  "createdAt": "2026-01-19T02:13:41.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lasaths/phosphor-icons-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "defaultWeight": {
+          "type": "string",
+          "description": "Default icon weight/style",
+          "default": "regular"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-icon",
+      "description": "Retrieve one or more SVG icons from Phosphor Icons library. Provide either a single icon name or an array of names for batch retrieval. Returns SVG content with specified weight/style and optional color."
+    },
+    {
+      "name": "search-icons",
+      "description": "Search for icons by name, category, or tags. Returns a list of matching icons."
+    },
+    {
+      "name": "list-categories",
+      "description": "Get a list of all icon categories available in Phosphor Icons."
+    }
+  ]
+}

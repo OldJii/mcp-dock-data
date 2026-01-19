@@ -1,0 +1,54 @@
+{
+  "id": "@robinbortlik/oso-cloud-mcp",
+  "displayName": "Oso Cloud MCP Server",
+  "description": "Easily understand your authorization by querying the OSO Cloud API using natural language.   ",
+  "createdAt": "2026-01-19T02:17:44.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@robinbortlik/oso-cloud-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "osoApiKey"
+      ],
+      "properties": {
+        "osoApiKey": {
+          "type": "string",
+          "description": "Oso Cloud API key"
+        },
+        "osoApiUrl": {
+          "type": "string",
+          "description": "Oso Cloud API URL",
+          "default": "https://cloud.osohq.com/api"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_policy",
+      "description": "Get the current Oso Cloud policy"
+    },
+    {
+      "name": "authorize",
+      "description": "Check if an actor can perform an action on a resource"
+    },
+    {
+      "name": "list_resources",
+      "description": "List resources of a specific type that an actor can perform an action on"
+    },
+    {
+      "name": "get_actions",
+      "description": "Get all actions an actor can perform on a resource"
+    }
+  ]
+}

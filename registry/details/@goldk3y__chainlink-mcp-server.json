@@ -1,0 +1,163 @@
+{
+  "id": "@goldk3y/chainlink-mcp-server",
+  "displayName": "Chainlink",
+  "description": "Provide seamless access to Chainlink's decentralized oracle network services including real-time price feeds, verifiable randomness, cross-chain interoperability, automation, and proof of reserve. Enable AI developers to integrate reliable blockchain data and execute custom off-chain functions effortlessly. Simplify building decentralized finance, gaming, and cross-chain applications with comprehensive Chainlink ecosystem tools.",
+  "createdAt": "2026-01-19T02:20:53.385Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@goldk3y/chainlink-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "networks": {
+          "type": "object",
+          "description": "Custom network configurations"
+        },
+        "defaultNetwork": {
+          "type": "string",
+          "description": "Default network for operations",
+          "default": "ethereum"
+        },
+        "chainlinkApiKey": {
+          "type": "string",
+          "description": "Chainlink API key for premium features"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_price_feed",
+      "description": "Get the latest price data for a specific trading pair from Chainlink Data Feeds. Returns current price, last update time, and round information."
+    },
+    {
+      "name": "get_price_feeds_batch",
+      "description": "Get price data for multiple trading pairs at once. More efficient than individual requests."
+    },
+    {
+      "name": "list_available_feeds",
+      "description": "List all available price feeds on a specific network. Shows supported trading pairs and their contract addresses."
+    },
+    {
+      "name": "search_feeds",
+      "description": "Search for price feeds by symbol, description, or category. Useful for discovering available data sources."
+    },
+    {
+      "name": "get_feed_metadata",
+      "description": "Get detailed metadata about a specific price feed including update frequency, data sources, and reliability metrics."
+    },
+    {
+      "name": "get_round_data",
+      "description": "Get historical price data for specific rounds. Useful for analyzing price movements and feed update patterns."
+    },
+    {
+      "name": "deploy_function",
+      "description": "Deploy a new Chainlink Function with custom JavaScript code. Functions can fetch external data and perform custom computations off-chain."
+    },
+    {
+      "name": "call_function",
+      "description": "Execute a deployed Chainlink Function with specified arguments. Returns a request ID to track execution."
+    },
+    {
+      "name": "get_function_result",
+      "description": "Get the result of a Chainlink Function execution. Returns the computed result or error if execution failed."
+    },
+    {
+      "name": "list_user_functions",
+      "description": "List all Chainlink Functions deployed by the user. Shows function details, status, and usage statistics."
+    },
+    {
+      "name": "estimate_function_cost",
+      "description": "Estimate the cost of executing a Chainlink Function including compute costs and gas fees."
+    },
+    {
+      "name": "create_automation",
+      "description": "Create a new Chainlink Automation job to automatically execute smart contract functions based on time or custom conditions."
+    },
+    {
+      "name": "list_automations",
+      "description": "List all active Chainlink Automation jobs. Shows status, execution history, and configuration details."
+    },
+    {
+      "name": "get_automation_status",
+      "description": "Get detailed status and execution history for a specific automation job."
+    },
+    {
+      "name": "pause_automation",
+      "description": "Pause a running automation job. Can be resumed later without losing configuration."
+    },
+    {
+      "name": "resume_automation",
+      "description": "Resume a paused automation job. Will continue executing based on original configuration."
+    },
+    {
+      "name": "cancel_automation",
+      "description": "Cancel an automation job permanently. This action cannot be undone."
+    },
+    {
+      "name": "request_random_words",
+      "description": "Request cryptographically secure random numbers from Chainlink VRF. Returns a request ID for tracking."
+    },
+    {
+      "name": "get_random_result",
+      "description": "Get the random numbers for a completed VRF request. Returns the randomness along with fulfillment details."
+    },
+    {
+      "name": "verify_randomness",
+      "description": "Verify the cryptographic proof of a VRF result. Ensures the randomness is genuine and tamper-proof."
+    },
+    {
+      "name": "get_vrf_config",
+      "description": "Get VRF configuration details for a network including key hashes, gas lanes, and pricing."
+    },
+    {
+      "name": "estimate_vrf_cost",
+      "description": "Estimate the total cost for a VRF request including LINK premium and gas fees."
+    },
+    {
+      "name": "send_cross_chain_message",
+      "description": "Send a message from one blockchain to another using Chainlink CCIP. Supports arbitrary data transfer."
+    },
+    {
+      "name": "transfer_tokens_cross_chain",
+      "description": "Transfer tokens from one blockchain to another using Chainlink CCIP. Supports various token standards."
+    },
+    {
+      "name": "get_message_status",
+      "description": "Check the status of a cross-chain message or token transfer. Returns delivery confirmation and details."
+    },
+    {
+      "name": "list_supported_networks",
+      "description": "List all blockchain networks supported by Chainlink CCIP with their configurations and capabilities."
+    },
+    {
+      "name": "estimate_ccip_fees",
+      "description": "Estimate the cost of sending messages or transferring tokens via CCIP between specific networks."
+    },
+    {
+      "name": "get_proof_of_reserve",
+      "description": "Get the latest proof of reserve data for a specific asset. Shows total supply, backing assets, and collateralization ratio."
+    },
+    {
+      "name": "verify_reserve_proof",
+      "description": "Verify the cryptographic proof for reserve attestations. Ensures data integrity and authenticity."
+    },
+    {
+      "name": "list_supported_assets",
+      "description": "List all assets with available Proof of Reserve feeds. Shows asset details and data availability."
+    },
+    {
+      "name": "get_reserve_history",
+      "description": "Get historical reserve data for an asset. Shows reserve levels over time and collateralization trends."
+    }
+  ]
+}

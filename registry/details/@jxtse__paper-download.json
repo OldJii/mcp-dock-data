@@ -1,0 +1,12 @@
+{
+  "id": "@jxtse/paper-download",
+  "displayName": "paper-download",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:06.458Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jxtse/paper-download"
+  },
+  "connection": null,
+  "capabilities": []
+}

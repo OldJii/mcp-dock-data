@@ -1,0 +1,71 @@
+{
+  "id": "@huangfeng19820712/mcp-mysql-server",
+  "displayName": "MySQL Database Server",
+  "description": "Enable AI models to interact with MySQL databases through a standardized interface. Perform database operations such as querying, executing statements, listing tables, and describing table structures securely and efficiently. Simplify database management with automatic connection handling and prepared statement support.",
+  "createdAt": "2026-01-19T02:16:42.256Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@huangfeng19820712/mcp-mysql-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mysqlHost",
+        "mysqlUser",
+        "mysqlPassword",
+        "mysqlDatabase"
+      ],
+      "properties": {
+        "mysqlHost": {
+          "type": "string",
+          "description": "Hostname for the MySQL server"
+        },
+        "mysqlUser": {
+          "type": "string",
+          "description": "MySQL user name"
+        },
+        "mysqlDatabase": {
+          "type": "string",
+          "description": "MySQL database name"
+        },
+        "mysqlPassword": {
+          "type": "string",
+          "description": "MySQL user's password"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "connect_db",
+      "description": "Connect to MySQL database"
+    },
+    {
+      "name": "query",
+      "description": "Execute a SELECT query,can not get table structure,use describe_table tool to get table structure"
+    },
+    {
+      "name": "execute",
+      "description": "Execute an INSERT, UPDATE, or DELETE query"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get table structure"
+    },
+    {
+      "name": "show_statement",
+      "description": "Execute a SHOW statement (e.g., SHOW STATUS, SHOW VARIABLES)"
+    },
+    {
+      "name": "explain",
+      "description": "Analyze SQL query performance using EXPLAIN"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@mm/project-0",
+  "displayName": "project-0",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:52.432Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mm/project-0"
+  },
+  "connection": null,
+  "capabilities": []
+}

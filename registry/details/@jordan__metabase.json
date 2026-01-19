@@ -1,0 +1,12 @@
+{
+  "id": "@jordan/metabase",
+  "displayName": "metabase",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:28.756Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jordan/metabase"
+  },
+  "connection": null,
+  "capabilities": []
+}

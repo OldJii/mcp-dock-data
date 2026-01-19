@@ -1,0 +1,21 @@
+{
+  "id": "@ksruthi1992/vsftest",
+  "displayName": "vsftest",
+  "description": "",
+  "createdAt": "2026-01-19T02:19:03.207Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ksruthi1992/vsftest"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "alerts_active_area",
+      "description": "Returns active alerts for the given area (state or marine area)"
+    }
+  ]
+}

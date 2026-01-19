@@ -1,0 +1,49 @@
+{
+  "id": "@Rapiernik/mcp-server",
+  "displayName": "MCP Server",
+  "description": "Integrate your applications with external data and tools seamlessly. Enhance your LLM capabilities by allowing them to interact with real-world resources and perform actions dynamically. Simplify the process of building intelligent applications with standardized protocols.",
+  "createdAt": "2026-01-19T02:16:27.768Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Rapiernik/mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_company_job_postings",
+      "description": ""
+    },
+    {
+      "name": "initiate_company_job_postings_collection",
+      "description": ""
+    },
+    {
+      "name": "initiate_company_posts_collection",
+      "description": ""
+    },
+    {
+      "name": "get_company_posts",
+      "description": ""
+    },
+    {
+      "name": "initiate_companies_data_collection",
+      "description": ""
+    },
+    {
+      "name": "get_companies_data",
+      "description": ""
+    },
+    {
+      "name": "get_employee_work_email",
+      "description": ""
+    }
+  ]
+}

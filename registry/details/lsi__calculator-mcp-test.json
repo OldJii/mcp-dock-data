@@ -1,0 +1,12 @@
+{
+  "id": "lsi/calculator-mcp-test",
+  "displayName": "calculator-mcp-test",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:49.738Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lsi/calculator-mcp-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

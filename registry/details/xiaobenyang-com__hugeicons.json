@@ -1,0 +1,44 @@
+{
+  "id": "xiaobenyang-com/hugeicons",
+  "displayName": "hugeicons",
+  "description": "Browse and search the Hugeicons library to quickly find the right icons by name or tag. Get platform-specific usage guidance to integrate icons seamlessly in your app, site, or design system. Retrieve exact Unicode glyphs for each icon and style to ensure consistent rendering across platforms.",
+  "createdAt": "2026-01-19T02:17:33.102Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/hugeicons"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_icons",
+      "description": "Get a list of all available Hugeicons icons"
+    },
+    {
+      "name": "search_icons",
+      "description": "Search for icons by name or tags. Use commas to search for multiple icons (e.g. 'home, notification, settings')"
+    },
+    {
+      "name": "get_platform_usage",
+      "description": "Get platform-specific usage instructions for Hugeicons"
+    },
+    {
+      "name": "get_icon_glyphs",
+      "description": "Get all glyphs (unicode characters) for a specific icon across all available styles"
+    },
+    {
+      "name": "get_icon_glyph_by_style",
+      "description": "Get the glyph (unicode character) for a specific icon with a particular style"
+    }
+  ]
+}

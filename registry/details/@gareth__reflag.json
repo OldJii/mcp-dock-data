@@ -1,0 +1,12 @@
+{
+  "id": "@gareth/reflag",
+  "displayName": "reflag",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:13.600Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gareth/reflag"
+  },
+  "connection": null,
+  "capabilities": []
+}

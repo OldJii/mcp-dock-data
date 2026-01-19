@@ -1,0 +1,12 @@
+{
+  "id": "@ContexaAI/notion-mcp-server-sse",
+  "displayName": "notion-mcp-server-sse",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:58.365Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ContexaAI/notion-mcp-server-sse"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "@tharuneshwar-s/auditron-soc-mcp-server",
+  "displayName": "Auditron",
+  "description": "Run cloud compliance audits across AWS, Azure, and GCP. Discover provider-specific audit controls and execute targeted checks to surface misconfigurations and risks. Streamline multi-cloud security assessments with fast, repeatable evaluations.",
+  "createdAt": "2026-01-19T02:17:29.117Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tharuneshwar-s/auditron-soc-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "rootGet",
+      "description": "A simple health check endpoint to confirm the service is running."
+    },
+    {
+      "name": "listToolsToolsGet",
+      "description": "Provides a structured, machine-readable list of all available audit controls,\ncategorized by cloud provider. This is the primary discovery endpoint for an agent."
+    },
+    {
+      "name": "auditAwsAuditAwsPost",
+      "description": "Executes a list of specified audit controls for Amazon Web Services.\n\nThis endpoint accepts parameters and/or request body."
+    },
+    {
+      "name": "auditAzureAuditAzurePost",
+      "description": "Executes a list of specified audit controls for Microsoft Azure.\n\nThis endpoint accepts parameters and/or request body."
+    },
+    {
+      "name": "auditGcpAuditGcpPost",
+      "description": "Executes a list of specified audit controls for Google Cloud Platform.\n\nThis endpoint accepts parameters and/or request body."
+    }
+  ]
+}

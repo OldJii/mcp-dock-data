@@ -1,0 +1,12 @@
+{
+  "id": "@zoomeye-ai/abc",
+  "displayName": "abc",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:10.751Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zoomeye-ai/abc"
+  },
+  "connection": null,
+  "capabilities": []
+}

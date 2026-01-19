@@ -1,0 +1,12 @@
+{
+  "id": "@ada/coinapi-mcp-server",
+  "displayName": "coinapi-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:04.748Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ada/coinapi-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

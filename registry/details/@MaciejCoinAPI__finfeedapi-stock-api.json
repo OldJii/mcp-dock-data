@@ -1,0 +1,16 @@
+{
+  "id": "@MaciejCoinAPI/finfeedapi-stock-api",
+  "displayName": "apibricks-coinapi-finfeedapi",
+  "description": "All the server endpoints for API Bricks CoinAPI and FinFeedAPI products",
+  "createdAt": "2026-01-19T02:19:00.368Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MaciejCoinAPI/finfeedapi-stock-api"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

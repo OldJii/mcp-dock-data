@@ -1,0 +1,12 @@
+{
+  "id": "@aixsignal/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:19.672Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aixsignal/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

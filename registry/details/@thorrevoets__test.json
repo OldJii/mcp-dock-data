@@ -1,0 +1,12 @@
+{
+  "id": "@thorrevoets/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:05.763Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@thorrevoets/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

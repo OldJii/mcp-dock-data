@@ -1,0 +1,12 @@
+{
+  "id": "@cnghockey/lightmcp",
+  "displayName": "lightmcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:31.669Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cnghockey/lightmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

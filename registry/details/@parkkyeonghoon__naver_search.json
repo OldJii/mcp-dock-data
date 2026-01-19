@@ -1,0 +1,12 @@
+{
+  "id": "@parkkyeonghoon/naver_search",
+  "displayName": "naver_search",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:13.374Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@parkkyeonghoon/naver_search"
+  },
+  "connection": null,
+  "capabilities": []
+}

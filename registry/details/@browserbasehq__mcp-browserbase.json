@@ -1,0 +1,106 @@
+{
+  "id": "@browserbasehq/mcp-browserbase",
+  "displayName": "Browserbase",
+  "description": "Provides cloud browser automation capabilities using Stagehand and Browserbase, enabling LLMs to interact with web pages, take screenshots, and run parallel sessions in a cloud browser environment.",
+  "createdAt": "2026-01-19T02:13:24.596Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@browserbasehq/mcp-browserbase"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "browserbaseApiKey",
+        "browserbaseProjectId"
+      ],
+      "properties": {
+        "server": {
+          "type": "object",
+          "description": ""
+        },
+        "context": {
+          "type": "object",
+          "description": ""
+        },
+        "proxies": {
+          "type": "boolean",
+          "description": "Whether or not to use Browserbase proxies"
+        },
+        "viewPort": {
+          "type": "object",
+          "description": ""
+        },
+        "keepAlive": {
+          "type": "boolean",
+          "description": "Whether or not to keep the Browserbase session alive"
+        },
+        "modelName": {
+          "type": "string",
+          "description": "The model to use for Stagehand (default: gemini-2.0-flash)"
+        },
+        "modelApiKey": {
+          "type": "string",
+          "description": "API key for the custom model provider. Required when using a model other than the default gemini-2.0-flash"
+        },
+        "experimental": {
+          "type": "boolean",
+          "description": "Enable experimental Stagehand features"
+        },
+        "advancedStealth": {
+          "type": "boolean",
+          "description": "Use advanced stealth mode. Only available to Browserbase Scale Plan users"
+        },
+        "browserbaseApiKey": {
+          "type": "string",
+          "description": "The Browserbase API Key to use"
+        },
+        "browserbaseProjectId": {
+          "type": "string",
+          "description": "The Browserbase Project ID to use"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "browserbase_session_create",
+      "description": "Create or reuse a Browserbase browser session and set it as active."
+    },
+    {
+      "name": "browserbase_session_close",
+      "description": "Close the current Browserbase session and reset the active context."
+    },
+    {
+      "name": "browserbase_stagehand_navigate",
+      "description": "Navigate to a URL in the browser. Only use this tool with URLs you're confident will work and be up to date. \n    Otherwise, use https://google.com as the starting point"
+    },
+    {
+      "name": "browserbase_stagehand_act",
+      "description": "Perform a single action on the page (e.g., click, type)."
+    },
+    {
+      "name": "browserbase_stagehand_extract",
+      "description": "Extract structured data or text from the current page using an instruction."
+    },
+    {
+      "name": "browserbase_stagehand_observe",
+      "description": "Find interactive elements on the page from an instruction; optionally return an action."
+    },
+    {
+      "name": "browserbase_screenshot",
+      "description": "Capture a full-page screenshot and return it (and save as a resource)."
+    },
+    {
+      "name": "browserbase_stagehand_get_url",
+      "description": "Return the current page URL (full URL with query/fragment)."
+    },
+    {
+      "name": "browserbase_stagehand_agent",
+      "description": "Execute a task autonomously using Gemini Computer Use agent. The agent will navigate and interact with web pages to complete the given task."
+    }
+  ]
+}

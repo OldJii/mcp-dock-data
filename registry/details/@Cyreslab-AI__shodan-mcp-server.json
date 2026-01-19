@@ -1,0 +1,120 @@
+{
+  "id": "@Cyreslab-AI/shodan-mcp-server",
+  "displayName": "Shodan MCP Server",
+  "description": "Access Shodan's API to enhance your AI assistant's capabilities. Query detailed information about internet-connected devices and services to bolster cybersecurity research and threat intelligence. Simplify your data retrieval with advanced search functionalities and result summarization.",
+  "createdAt": "2026-01-19T02:16:43.228Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Cyreslab-AI/shodan-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "shodanApiKey"
+      ],
+      "properties": {
+        "shodanApiKey": {
+          "type": "string",
+          "description": "Your Shodan API key."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_host_info",
+      "description": "Get detailed information about a specific IP address"
+    },
+    {
+      "name": "search_shodan",
+      "description": "Search Shodan's database for devices and services"
+    },
+    {
+      "name": "scan_network_range",
+      "description": "Scan a network range (CIDR notation) for devices"
+    },
+    {
+      "name": "get_ssl_info",
+      "description": "Get SSL certificate information for a domain"
+    },
+    {
+      "name": "search_iot_devices",
+      "description": "Search for specific types of IoT devices"
+    },
+    {
+      "name": "get_host_count",
+      "description": "Get the count of hosts matching a search query without consuming query credits"
+    },
+    {
+      "name": "list_search_facets",
+      "description": "List all available search facets that can be used with Shodan queries"
+    },
+    {
+      "name": "list_search_filters",
+      "description": "List all available search filters that can be used in Shodan queries"
+    },
+    {
+      "name": "parse_search_tokens",
+      "description": "Parse a search query to understand which filters and parameters are being used"
+    },
+    {
+      "name": "list_ports",
+      "description": "List all ports that Shodan crawls on the Internet"
+    },
+    {
+      "name": "list_protocols",
+      "description": "List all protocols that can be used when performing on-demand Internet scans"
+    },
+    {
+      "name": "get_api_info",
+      "description": "Get information about your API plan including credits and limits"
+    },
+    {
+      "name": "get_my_ip",
+      "description": "Get your current IP address as seen from the Internet"
+    },
+    {
+      "name": "dns_lookup",
+      "description": "Resolve hostnames to IP addresses using DNS lookup"
+    },
+    {
+      "name": "reverse_dns_lookup",
+      "description": "Get hostnames for IP addresses using reverse DNS lookup"
+    },
+    {
+      "name": "get_domain_info",
+      "description": "Get comprehensive domain information including subdomains and DNS records"
+    },
+    {
+      "name": "get_account_profile",
+      "description": "Get account profile information including membership status and credits"
+    },
+    {
+      "name": "get_cve_info",
+      "description": "Get detailed information about a specific CVE"
+    },
+    {
+      "name": "search_cves",
+      "description": "Search for vulnerabilities with various filters"
+    },
+    {
+      "name": "get_cpes",
+      "description": "Get Common Platform Enumeration (CPE) information for products"
+    },
+    {
+      "name": "get_newest_cves",
+      "description": "Get the newest vulnerabilities from the CVE database"
+    },
+    {
+      "name": "get_kev_cves",
+      "description": "Get Known Exploited Vulnerabilities (KEV) from CISA"
+    },
+    {
+      "name": "get_cves_by_epss",
+      "description": "Get CVEs sorted by EPSS score (Exploit Prediction Scoring System)"
+    }
+  ]
+}

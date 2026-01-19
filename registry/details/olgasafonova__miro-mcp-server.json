@@ -1,0 +1,12 @@
+{
+  "id": "olgasafonova/miro-mcp-server",
+  "displayName": "miro-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:13.351Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/olgasafonova/miro-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

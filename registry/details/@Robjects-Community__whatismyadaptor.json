@@ -1,0 +1,12 @@
+{
+  "id": "@Robjects-Community/whatismyadaptor",
+  "displayName": "whatismyadaptor",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:40.284Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Robjects-Community/whatismyadaptor"
+  },
+  "connection": null,
+  "capabilities": []
+}

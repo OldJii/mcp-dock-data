@@ -1,0 +1,817 @@
+{
+  "id": "pagerduty",
+  "displayName": "Pagerduty",
+  "description": "Integrate PagerDuty to manage incidents, schedules, and alerts directly from your application.",
+  "createdAt": "2026-01-19T02:12:54.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/pagerduty"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "PAGERDUTY_ADD_SERVICE_TO_INCIDENT_WORKFLOW_TRIGGER",
+      "description": "This endpoint adds a service to an existing incident workflow trigger in PagerDuty. It allows you to associate a specific service with a trigger, enabling automated incident management processes for that service. Use this endpoint when you need to connect a service to an incident workflow, typically during the setup or modification of your incident response procedures. The endpoint requires the trigger's ID and the service's ID to make the association. It's important to note that this operation doesn't create new services or triggers, but rather links existing ones. Ensure that both the trigger and service exist in your PagerDuty account before making this call."
+    },
+    {
+      "name": "PAGERDUTY_AGGREGATE_ESCALATION_POLICY_INCIDENT_METRICS",
+      "description": "This endpoint analyzes and aggregates incident metrics across all escalation policies in PagerDuty. It allows for detailed filtering and customization of the analysis, enabling users to gain insights into incident patterns, response times, and escalation effectiveness. The endpoint is particularly useful for operational reviews, performance analysis, and identifying areas for improvement in incident management processes. It provides flexibility in data selection through various filters and supports different time-based aggregations for comprehensive reporting."
+    },
+    {
+      "name": "PAGERDUTY_AGGREGATE_INCIDENT_METRICS_WITH_FILTERS",
+      "description": "Retrieves and aggregates metrics for incidents across all services in PagerDuty. This endpoint allows for extensive filtering and customization of incident data, enabling detailed analysis of operational performance. It's particularly useful for generating reports, identifying trends, and assessing incident management efficiency over specified time periods. The endpoint supports various filtering criteria, time zone adjustments, and aggregation options, making it a powerful tool for both high-level overviews and granular incident analytics. However, users should be aware of the complexity of the filtering options and ensure they provide accurate parameters to obtain relevant data."
+    },
+    {
+      "name": "PAGERDUTY_ASSOCIATE_SERVICE_DEPENDENCIES",
+      "description": "Associates multiple service dependencies in PagerDuty, allowing you to define relationships between supporting and dependent services. This endpoint is used to establish a hierarchical structure of services, which is crucial for effective incident management and impact analysis. It enables you to create multiple dependencies in a single API call, improving efficiency when setting up complex service relationships. Use this endpoint when you need to define or update the dependency structure of your services in PagerDuty, such as during initial setup, service restructuring, or when adding new services to your incident management workflow."
+    },
+    {
+      "name": "PAGERDUTY_ASSOCIATE_TEAM_WITH_AUTOMATION_ACTION",
+      "description": "This endpoint associates a specific team with an automation action in PagerDuty. It allows you to link a team to an automated workflow, enabling better organization and management of automation actions within your incident response processes. Use this endpoint when you need to assign responsibility for an automation action to a particular team or when restructuring your automation workflows. The association helps in tracking, auditing, and managing permissions for automation actions across different teams in your organization. Note that this endpoint only creates the association; it does not create new teams or automation actions."
+    },
+    {
+      "name": "PAGERDUTY_AUDIT_ESCALATION_POLICY_RECORDS",
+      "description": "Retrieves the audit records for a specific escalation policy in PagerDuty. This endpoint allows users to access a detailed history of changes made to the escalation policy, including modifications to escalation rules, associated services, and on-call schedules. It's particularly useful for compliance tracking, troubleshooting, and understanding how the incident response process has been adjusted over time. The audit records provide transparency into who made changes, what was changed, and when the changes occurred, helping teams maintain accountability and optimize their incident management workflows."
+    },
+    {
+      "name": "PAGERDUTY_CONVERT_SERVICE_RULE_BY_ID",
+      "description": "Converts the rules associated with a specific PagerDuty service to a new or optimized format. This endpoint is used to update and standardize the incident management rules for a given service, improving the efficiency and consistency of alert handling. It should be used when there's a need to modernize rule sets, apply best practices, or adapt rules to changing service requirements. The conversion process is applied to all rules linked to the specified service ID, potentially modifying their structure or behavior. It's important to note that this operation may impact existing incident routing and alerting patterns, so it should be used cautiously and preferably during a maintenance window."
+    },
+    {
+      "name": "PAGERDUTY_COUNT_PAUSED_INCIDENT_REPORTS",
+      "description": "Retrieves the count of paused incident reports in the PagerDuty system. This endpoint is part of PagerDuty's Incident Management and Analytics features, providing a quick way to quantify the number of incidents that are currently in a paused state. It's particularly useful for generating high-level analytics, tracking incident management efficiency, and identifying trends in incident handling. The endpoint returns a simple count, making it ideal for dashboard displays or periodic system status checks. It should be used when a rapid overview of paused incidents is needed, but it won't provide detailed information about individual incidents."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_A_CUSTOM_FIELD_FOR_AN_INCIDENT_TYPE",
+      "description": "Create a Custom Field for an Incident Type. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.write`"
+    },
+    {
+      "name": "PAGERDUTY_CREATE_A_FIELD_OPTION_FOR_A_CUSTOM_FIELD",
+      "description": "Create a field option for a custom field. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.write`"
+    },
+    {
+      "name": "PAGERDUTY_CREATE_AND_MANAGE_CUSTOM_INCIDENT_FIELDS",
+      "description": "Creates a new custom field for incidents in PagerDuty. This endpoint allows you to define additional data points to be associated with incidents, enhancing incident management and reporting capabilities. Custom fields can be used to store various types of information such as environment, severity, or any other relevant metadata. The field can be configured with different data types and value constraints, allowing for flexible and structured data capture. Use this endpoint when you need to extend the incident data model with organization-specific information. Note that once created, certain properties of a custom field cannot be changed, so careful planning of field structure is important."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_AN_INCIDENT_TYPE",
+      "description": "Create a new incident type. Incident Types are a feature which will allow customers to categorize incidents, such as a security incident, a major incident, or a fraud incident. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. For more information see the [API Concepts Document](../../api-reference/ZG9jOjI3NDc5Nzc-api-concepts#incidentType) Scoped OAuth requires: `incident_types.write`"
+    },
+    {
+      "name": "PAGERDUTY_CREATE_A_RULESET",
+      "description": "Creates a new Ruleset in PagerDuty for managing incident routing and notification rules. This endpoint allows you to define a named set of rules that determine how incidents are processed and directed to specific teams or users. It's particularly useful when setting up or modifying your incident management workflow. The created Ruleset can be global, affecting all incoming incidents, or assigned to a specific team for more targeted incident routing. Note that while you can create the Ruleset structure with this call, the actual rules within the Ruleset must be added separately using other API endpoints."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_A_TRIGGER",
+      "description": "Create new Incident Workflow Trigger Scoped OAuth requires: `incident_workflows.write`"
+    },
+    {
+      "name": "PAGERDUTY_CREATE_AUTOMATION_RUNNER_ENDPOINT",
+      "description": "Creates a new automation runner in the PagerDuty incident management system. This endpoint allows you to set up either a sidecar runner, which polls for invocations externally, or a runbook runner, which communicates directly with a runbook instance. Use this when you need to automate actions within PagerDuty, such as incident response processes or scheduled tasks. The runner can be associated with specific teams for better organization and access control. Note that the required parameters differ based on the chosen runner type, with runbook runners requiring additional configuration for server connection."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_BUSINESS_SERVICE",
+      "description": "This endpoint creates a new Business Service in PagerDuty, which represents a specific service or application that can be monitored and managed within the incident management platform. It allows you to define essential properties of the service, including its name, description, point of contact, and the team responsible for it. Use this endpoint when you need to add a new service to your PagerDuty account for monitoring and incident management. The created Business Service can be later associated with technical services, incidents, and escalation policies. Note that this endpoint only creates the Business Service; additional configuration may be required to set up monitoring and alerting for the service."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_ESCALATION_POLICY",
+      "description": "Creates a new escalation policy in PagerDuty, defining how incidents are escalated to different responders or teams. This endpoint allows you to set up a structured response plan for managing incidents, including escalation rules, targets, and associated services or teams. Use this when setting up or modifying incident management workflows. The created policy determines the sequence of notifications and assignments for unacknowledged incidents. Note that while you can create the policy structure, actual service associations are read-only and must be managed separately. Only one team can be associated with a policy, and the account must have the 'teams' ability to use this feature."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_EVENT_ORCHESTRATION",
+      "description": "Creates a new Event Orchestration in PagerDuty, which defines how incoming events are processed and routed to appropriate services. This endpoint allows you to set up a configuration that manages the flow of events from various integrations, ensuring efficient incident handling. Use this when you need to establish a new set of rules for event routing, especially when introducing new services or reorganizing your incident management workflow. The created Orchestration can later be associated with specific integrations using their routing keys. Note that while you can create the Orchestration structure, the actual integrations and routing details are managed separately and will be populated as read-only information once configured."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_EVENT_RULE_IN_RULESET",
+      "description": "Creates a new Event Rule within a specified Ruleset in PagerDuty's incident management system. This endpoint allows you to define complex conditions for event matching and specify actions to be taken when an event meets those conditions. Use this to automate incident response, customize alert routing, and fine-tune event processing based on specific criteria. The created rule becomes part of the Ruleset's evaluation sequence, affecting how incoming events are processed and managed."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_EXTENSION_OBJECT",
+      "description": "Creates a new extension in PagerDuty, allowing for additional functionality or integrations to be added to your services. This endpoint is used to set up webhooks, custom integrations, or other specific features that enhance the capabilities of your PagerDuty account. The extension is defined by its name, associated services, and a specific extension schema that determines its behavior. Use this endpoint when you need to automate the creation of extensions, such as setting up multiple webhooks or implementing custom workflows. It's particularly useful for large-scale deployments or when programmatically managing your PagerDuty configuration. Note that the extension can be temporarily disabled by PagerDuty if issues arise, such as repeated rejections from a webhook server."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_HANDOFF_NOTIFICATION_RULE",
+      "description": "Creates a new on-call handoff notification rule for a specific user in PagerDuty. This endpoint allows you to set up automated notifications for when a user is about to start or end their on-call shift. It defines how and when the user should be notified about upcoming handoffs, helping to ensure smooth transitions between on-call periods. Use this when you need to establish or modify the way a user is informed about their on-call responsibilities. The rule can be set for incoming shifts, outgoing shifts, or both, and can use various contact methods like email, phone, push notifications, or SMS. Note that this endpoint creates a new rule and does not modify existing ones."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INCIDENT_FIELD_OPTION",
+      "description": "Creates a new field option for a specific custom field in PagerDuty's incident management system. This endpoint allows you to add predefined options to custom fields, enhancing the ability to categorize and filter incidents with consistent, structured data. Use this when you need to expand the list of selectable values for a string-type custom field. The new option becomes immediately available for selection when updating or creating incidents. Note that this operation is specific to custom fields of type 'string' and cannot be used for other data types. Ensure that the field_id in the URL corresponds to an existing custom field in your PagerDuty account."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INCIDENT_RECORD",
+      "description": "Creates a new incident in PagerDuty with specified details and assignments. Use this endpoint when an event requires immediate attention from on-call teams. It supports comprehensive incident documentation, including priority, urgency, and conference bridge information. The 'incident_key' parameter helps prevent duplicate incidents, crucial for maintaining a clean incident list."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INCIDENT_WORKFLOW",
+      "description": "This endpoint creates a new Incident Workflow in PagerDuty, allowing users to define a series of automated steps to be executed during incident response. It enables the setup of complex, multi-step processes that can include actions like sending notifications, updating statuses, or triggering other integrated systems. The workflow creation is highly customizable, supporting various action types and nested workflows, making it suitable for diverse incident management scenarios across different team structures and response protocols."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INCIDENT_WORKFLOW_INSTANCE",
+      "description": "Creates a new instance of an incident workflow for a specific incident in PagerDuty. This endpoint allows you to initiate a predefined workflow process for managing and resolving an ongoing incident. It links the workflow instance to a particular incident, enabling automated and standardized incident response procedures. Use this when you need to start a structured response process for a newly created or existing incident. The endpoint is particularly useful for ensuring consistent handling of incidents across your organization and for tracking the progress of incident resolution through defined stages."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INTEGRATION_FOR_ORCHESTRATION",
+      "description": "Creates a new integration within an existing event orchestration in PagerDuty. This endpoint allows users to set up connections between PagerDuty and external systems or services, enabling automated event management and incident response. It should be used when adding a new integration to an event orchestration, such as connecting a monitoring tool or alerting system. The endpoint requires minimal information, focusing on the integration's label for identification purposes. Note that this endpoint only creates the integration; additional configuration may be required in the PagerDuty interface or through other API calls to fully set up the integration's functionality."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_INTEGRATION_FOR_SERVICE",
+      "description": "This endpoint creates a new integration for a specific PagerDuty service. It allows you to set up various types of integrations, including email-based and Events API v2 integrations. The primary use case is to establish new channels for incident creation and management within a PagerDuty service. This tool is particularly useful when setting up automated alerting systems or connecting external monitoring tools to PagerDuty. The integration type and configuration options determine how incidents are triggered and processed. Note that this endpoint focuses on creation only and does not handle updating or deleting existing integrations."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_MAINTENANCE_WINDOW_OBJECT",
+      "description": "Creates a new maintenance window in PagerDuty, allowing you to schedule periods of planned maintenance for specific services. During a maintenance window, incidents are not created for the affected services, preventing unnecessary alerts and notifications. This endpoint is useful for planning and executing system upgrades, patches, or other maintenance tasks without triggering false alarms. The maintenance window has a defined start and end time, can be associated with multiple services, and optionally linked to specific teams. It's important to note that while incidents are suppressed during the maintenance window, underlying issues are still logged and can be reviewed later if needed."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_NEW_SCHEDULE_LAYER",
+      "description": "Creates a new on-call schedule in PagerDuty, defining rotation patterns for team members. This endpoint allows you to set up complex schedules with multiple layers, each having its own rotation pattern, user assignments, and time restrictions. Use it to establish new on-call rotations, manage team availability, and ensure continuous incident response coverage. The created schedule can be used in escalation policies to determine who gets notified during incidents. Note that while you can create a basic schedule structure, some elements like rendered schedule entries are read-only and will be populated by the system after creation."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_NEW_SERVICE",
+      "description": "Creates a new service in PagerDuty, which is a key component for managing incidents and alerts. This endpoint allows you to set up a service with various configurations including escalation policies, incident urgency rules, support hours, and alert grouping parameters. Use this when you need to add a new monitored service to your PagerDuty account, such as a new application, infrastructure component, or business process. The created service will be used as a target for incoming alerts and incidents, helping to organize and streamline your incident management process. Note that some advanced features like intelligent alert grouping may depend on your PagerDuty plan."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_NEW_TAG_IN_SYSTEM",
+      "description": "Creates a new tag in PagerDuty for labeling and categorizing entities. This endpoint allows users to add a custom label to their PagerDuty account, which can be used to organize and filter various resources such as incidents, services, or teams. The created tag can be subsequently assigned to relevant entities to improve organization and searchability within the PagerDuty platform. Use this endpoint when you need to introduce a new categorization or labeling scheme in your PagerDuty setup. Note that this endpoint only creates the tag; assigning it to specific entities would require separate API calls."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_NEW_TEAM_WITH_DETAILS",
+      "description": "Creates a new team within your PagerDuty account. This endpoint allows you to establish a group of users with shared responsibilities, often used for organizing incident management and on-call schedules. Use this when setting up a new department, project team, or any other group that needs to collaborate on incident responses. The created team can be configured as public or private, determining the level of access for non-members. Note that while you can create the team structure with this call, you'll need separate API calls to add members or assign schedules to the team."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_NEW_WEBHOOK_SUBSCRIPTION",
+      "description": "Creates a new webhook subscription in PagerDuty to receive specific event notifications. This endpoint allows users to set up automated notifications for various incident-related events, such as triggers, acknowledgments, and resolutions. The webhook can be configured to filter events by service, team, or account-wide, and supports custom HTTP headers for enhanced integration capabilities. Use this when you need to integrate PagerDuty's real-time incident updates with external systems or workflows. Note that the webhook's secret for payload verification is only provided in the initial creation response and cannot be retrieved later."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_OR_UPDATE_STATUS_PAGE_POST",
+      "description": "Creates a new post on a specified PagerDuty Status Page. This endpoint allows you to publish information about incidents or scheduled maintenance, including details such as the post type, timing, and associated updates. Use this to communicate service status, planned downtime, or ongoing issues to your users or customers. The post can include multiple updates, each with its own message, severity, and impact on specific services. This is particularly useful for providing real-time information during incidents or for scheduling and describing maintenance windows."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_OR_UPDATE_STATUS_PAGE_POSTMORTEM",
+      "description": "Creates or updates a postmortem for a specific status page post in PagerDuty. This endpoint allows you to add detailed analysis and insights about an incident after its resolution. The postmortem can include rich-text content and offers the option to notify subscribers. Use this when you need to provide a comprehensive review of an incident, its root causes, and lessons learned. It's particularly useful for maintaining transparency and improving incident response processes. Note that the postmortem is limited to 10,000 characters and is always associated with an existing status page post."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_RESPONSE_PLAY_FOR_INCIDENTS",
+      "description": "Creates a new Response Play in PagerDuty, which is a predefined set of actions to be executed in response to an incident. This endpoint allows you to configure automated responses, including adding subscribers, assigning responders, setting up conference details, and defining how the Response Play can be triggered. Use this when you want to standardize and automate your incident management process, ensuring consistent and efficient responses to different types of incidents. The Response Play can be set to run automatically for specific services or be manually triggered by team members or responders, depending on the configuration. This tool is particularly useful for creating templated responses for common incident types or for implementing best practices across your organization's incident management workflow."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_SCHEDULE_OVERRIDES_CONFIGURATION",
+      "description": "Creates one or more overrides for a specific schedule in PagerDuty. This endpoint allows you to temporarily modify the on-call schedule by assigning different users for specific time periods. It's useful for handling planned absences, shift swaps, or special coverage requirements without permanently altering the regular schedule. The overrides are applied to the schedule identified by the {id} parameter in the endpoint URL. Multiple overrides can be created in a single request, enabling efficient batch modifications to the schedule. Each override specifies a start time, end time, and the user who will be on call during that period. The endpoint should be used when temporary changes to the on-call rotation are needed. It does not modify the underlying schedule configuration."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_SERVICE_EVENT_RULE",
+      "description": "Creates a new event rule for a specific service in PagerDuty. This endpoint allows you to define complex conditions and actions for handling incoming events, enabling automated incident management and alert routing. Use this when you need to set up custom logic for processing events, such as setting priorities, annotating incidents, or suppressing alerts based on specific criteria. The rule's position in the evaluation order can be specified, and various time-based conditions can be applied to control when the rule is active. This endpoint is crucial for fine-tuning your incident response workflow and reducing alert noise."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_STATUS_PAGE_SUBSCRIPTION",
+      "description": "Creates a new subscription for a PagerDuty status page. This endpoint allows users to set up notifications for specific status pages or components within those pages. It's used to keep subscribers informed about updates, incidents, or changes to the monitored services. The subscription can be configured for either email or webhook notifications, allowing for flexible integration with various notification systems. This tool should be used when setting up new monitoring or alert systems, or when adding new stakeholders who need to be kept informed about service status. It's particularly useful for DevOps teams, IT managers, or customer support teams who need real-time updates on service health. Note that this endpoint only creates the subscription; it does not manage or trigger the actual notifications."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_STATUS_UPDATE_TEMPLATE",
+      "description": "Creates a new template in PagerDuty for standardized status updates. This endpoint allows users to define customizable templates for various notification types, including emails and short messages. It's primarily used to streamline communication during incident management by providing consistent and pre-formatted status update messages. The template can include placeholders for dynamic content, allowing for personalized and context-specific notifications. This endpoint should be used when setting up new standardized communication formats for incident updates, but it's important to note that currently only 'status_update' type templates are supported."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_USER_NOTIFICATION_RULE",
+      "description": "Creates a new notification rule for a specific user in PagerDuty. This endpoint allows you to define how and when a user should be notified about assigned incidents. You can specify the delay before notification, the method of contact, and the urgency level of incidents that trigger this rule. This is particularly useful for customizing alert behaviors for different users based on their preferences or role within the organization. The rule created will be associated with the user identified by the provided ID in the URL path."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_USER_OBJECT",
+      "description": "Creates a new user in the PagerDuty system with the specified attributes. This endpoint should be used when onboarding new team members or adding users to your PagerDuty account. It allows you to set up essential user information, including name, email, role, and time zone preferences. The created user will have default contact methods and notification rules, which can be customized later. Note that some fields like teams, contact methods, and notification rules cannot be set during user creation and must be managed separately. The endpoint requires at minimum a name, email, and user type, with several optional fields for further customization."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_USER_STATUS_UPDATE_NOTIFICATION_RULE",
+      "description": "Creates a new status update notification rule for a specific user in PagerDuty. This endpoint allows you to define how a user will be notified about incident status updates. It's used to customize notification preferences for individual users, ensuring they receive timely updates through their preferred contact method. The rule specifies which contact method (email, phone, push notification, or SMS) should be used for sending status updates. This is particularly useful for tailoring notification strategies to match users' roles and responsibilities within the incident management process."
+    },
+    {
+      "name": "PAGERDUTY_CREATE_WORKFLOW_INTEGRATION_CONNECTION",
+      "description": "Create a new Workflow Integration Connection. Scoped OAuth requires: `workflow_integrations:connections.write`"
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ACCOUNT_SUBSCRIPTION_BY_ID",
+      "description": "Deletes the account subscription associated with a specific business service in PagerDuty. This endpoint is used to terminate the subscription or billing relationship between a business service and the account. It should be used when you need to discontinue the subscription for a particular business service, such as when the service is no longer needed or when restructuring your PagerDuty setup. This action is irreversible, so it should be used with caution. The endpoint does not return any specific data upon successful deletion, likely providing only a success status code."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_A_CUSTOM_FIELD_FOR_AN_INCIDENT_TYPE",
+      "description": "Delete a custom field for an incident type. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.write`"
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ADDON_BY_ID",
+      "description": "Deletes a specific add-on from the PagerDuty account using its unique identifier. This endpoint should be used when you want to remove an integration or extension that is no longer needed or active in your PagerDuty setup. It's important to note that this action is irreversible, and once an add-on is deleted, it cannot be recovered without re-adding it. Use this endpoint with caution, as removing an add-on may impact any automated workflows or integrations that depend on it."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_A_FIELD_OPTION_FOR_A_CUSTOM_FIELD",
+      "description": "Delete a field option for a custom field. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.write`"
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ALERT_GROUPING_SETTING",
+      "description": "This endpoint allows you to delete specific alert grouping settings in PagerDuty. It is used to remove outdated or unnecessary configurations that determine how alerts are grouped into incidents. The deletion is permanent and cannot be undone, so it should be used with caution. This operation is particularly useful when updating your incident management strategy or cleaning up unused configurations to maintain an efficient alert grouping system. Note that deleting these settings may affect how future alerts are grouped, potentially impacting your team's incident response workflow."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ALL_OAUTH_DELEGATIONS",
+      "description": "Delete all OAuth delegations as per provided query parameters. An OAuth delegation represents an instance of a user or account's authorization to an app (via OAuth) to access their PagerDuty account. Common apps include the PagerDuty mobile app, Slack, Microsoft Teams, and third-party apps. Deleting an OAuth delegation will revoke that instance of an app's access to that user or account. To grant access again, reauthorization/reauthentication may be required. At this time, this endpoint only supports deleting mobile app OAuth delegations for a given user. This is equivalent to signing users out of the mobile app. This is an asynchronous API, the deletion request itself will be processed within 24 hours. Scoped OAuth requires: `oauth_delegations.write`"
+    },
+    {
+      "name": "PAGERDUTY_DELETE_AUTOMATION_ACTION_BY_ID",
+      "description": "Deletes a specific Automation Action from the PagerDuty system. This endpoint is used to permanently remove an Automation Action, which includes any associated scripts or jobs in Runbook Automation. It should be used when an Automation Action is no longer needed or has become obsolete. Once deleted, the action cannot be recovered, so use this endpoint with caution. This operation is typically performed by administrators or users with appropriate permissions to manage Automation Actions."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_AUTOMATION_ACTION_SERVICE_BY_ID",
+      "description": "This endpoint removes a specific automation action from a particular service in PagerDuty. It is used to disassociate an automated workflow or action from a service, effectively stopping that action from being triggered for incidents related to the specified service. This operation is useful when you need to update your incident management workflow or when an automated action is no longer relevant for a specific service. It's important to note that this endpoint only removes the association between the action and the service; it does not delete the automation action itself from the system. Use this endpoint with caution, as removing an automation action from a service will immediately affect the incident response process for that service."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_AUTOMATION_ACTIONS_RUNNER_BY_ID",
+      "description": "Deletes a specific automation runner from the PagerDuty system. This endpoint is used to permanently remove an automation runner, which is responsible for executing automated tasks and workflows. It should be used when an automation runner is no longer needed or needs to be replaced. Once deleted, all associated automated actions and schedules tied to this runner will be affected. Exercise caution when using this endpoint, as the deletion is irreversible and may impact existing automation setups."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_BUSINESS_SERVICE_BY_ID",
+      "description": "Deletes a specific business service from the PagerDuty system. This endpoint should be used when you want to permanently remove a business service that is no longer needed or relevant to your organization's incident management structure. It's important to note that this action is irreversible and will remove all associations between the deleted business service and any technical services or incidents. Use this endpoint with caution, as it may impact reporting and historical data related to the deleted business service. Before deletion, ensure that no active incidents or dependencies rely on this business service to avoid disruptions in your incident management workflow."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_BUSINESS_SERVICE_PRIORITY_THRESHOLDS",
+      "description": "Deletes all priority thresholds for business services in the PagerDuty account. This endpoint is used to remove the configured priority settings that determine how incidents are escalated based on their urgency for business services. It should be used when you want to reset or remove all priority threshold configurations across your business services. This operation is irreversible and will affect how future incidents are prioritized and escalated for all business services in the account. It's important to note that this action does not delete the business services themselves, only their associated priority thresholds."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_CACHE_VARIABLE_FOR_EVENT",
+      "description": "Deletes a specific cache variable associated with an event orchestration in PagerDuty. This endpoint is used to remove temporary data storage that was previously set up for use in event orchestration workflows. It should be used when you need to clean up or remove outdated cache variables that are no longer needed in your event management process. This operation is permanent and cannot be undone, so it should be used with caution. The endpoint requires both the event orchestration ID and the specific cache variable ID to ensure precise removal of the intended data."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_CACHE_VARIABLE_FROM_SERVICE",
+      "description": "This endpoint deletes a specific cache variable associated with a service in PagerDuty's event orchestration system. It is used to remove temporary data that is no longer needed, helping to maintain system efficiency. The endpoint should be used when you want to permanently remove a cache variable from a particular service, such as when the variable is obsolete or to free up resources. It's important to note that this action is irreversible, and once deleted, the cache variable cannot be recovered. Use this endpoint with caution to avoid accidentally removing critical data used in event orchestrations."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_CUSTOM_FIELD_BY_FIELD_ID",
+      "description": "Deletes a specific custom field from incidents in PagerDuty. This endpoint allows users to remove a custom field that is no longer needed or relevant for incident management. It should be used when you want to permanently delete a custom field from all incidents, both existing and future. The operation is irreversible, so caution should be exercised when using this endpoint. It's important to note that this action will remove the specified custom field and its associated data from all incidents, which could impact reporting and analysis based on that field."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ESCALATION_POLICY_BY_ID",
+      "description": "Permanently removes a specific escalation policy from the PagerDuty system. This endpoint should be used when an escalation policy is no longer needed or has become obsolete. Once deleted, the escalation policy cannot be recovered, and any services or incidents associated with it will need to be reassigned. Exercise caution when using this endpoint, as it will impact incident routing and may affect your team's ability to respond to alerts if not properly managed. It's recommended to review and update any dependent services before deleting an escalation policy."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_EVENT_BY_ID",
+      "description": "Deletes a specific Event Orchestration from the PagerDuty system. This endpoint should be used when you want to permanently remove an Event Orchestration configuration, including all its associated rules and routing logic. It's important to note that this action is irreversible, and once an Event Orchestration is deleted, it cannot be recovered. Before using this endpoint, ensure that the Event Orchestration is no longer needed and that its deletion won't disrupt any critical event routing or automation processes in your PagerDuty setup. This endpoint is particularly useful during cleanup operations or when restructuring your event management workflow."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_EXTENSION_BY_ID",
+      "description": "Deletes a specific extension from the PagerDuty service. This endpoint should be used when you want to remove an additional feature or integration that has been previously added to your PagerDuty account. It's particularly useful for cleaning up obsolete integrations or disabling unwanted functionalities. Note that deleting an extension is permanent and cannot be undone, so use this endpoint with caution. This operation doesn't affect the core PagerDuty service, only the specified extension."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_FIELD_OPTION",
+      "description": "This endpoint deletes a specific field option from a custom field in PagerDuty's incident management system. It allows you to remove predefined options that are no longer needed or relevant for incident categorization or data collection. Use this endpoint when you want to update the available options for a custom field by removing outdated or unnecessary choices. Be cautious when using this endpoint, as deleting a field option may impact existing incidents that use this option and could affect reporting or automation based on these custom fields. This operation cannot be undone, so it's advisable to have a backup of your custom field configuration before making changes."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_INCIDENT_WORKFLOW_BY_ID",
+      "description": "Deletes a specific incident workflow from the PagerDuty system. This endpoint should be used when you want to permanently remove a customized sequence of automated actions and triggers associated with incident management. It's important to note that this action is irreversible, and once deleted, the workflow cannot be recovered. Use this endpoint with caution, ensuring that the workflow is no longer needed before deletion. This operation helps in maintaining a clean and relevant set of incident workflows, improving overall incident management efficiency."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_INCIDENT_WORKFLOW_TRIGGER_BY_ID",
+      "description": "Deletes a specific trigger associated with an incident workflow in PagerDuty. This endpoint is used to remove an automated trigger that initiates a predefined workflow in response to incidents. It should be used when you need to modify your incident response automation by removing outdated or unnecessary triggers. This operation is permanent and cannot be undone, so it should be used with caution. The endpoint does not return any data upon successful deletion, typically responding with a 204 No Content status."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_INCIDENT_WORKFLOW_TRIGGER_SERVICE",
+      "description": "This endpoint removes a specific service from a trigger within an incident workflow in PagerDuty. It is used to modify the configuration of an existing incident workflow by disassociating a service from a particular trigger. This action is useful when you need to update the automation rules or remove a service from the automated response process for certain incidents. The endpoint requires both the trigger ID and the service ID to be specified in the URL path. Upon successful execution, the specified service will no longer be associated with the trigger, affecting future incident workflow executions. This operation cannot be undone, so it should be used with caution to avoid disrupting critical incident management processes."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_INTEGRATION_FROM_EVENT_ORCHESTRATION",
+      "description": "Removes a specific integration from an event orchestration in PagerDuty. This endpoint is used to disconnect a particular tool or service from the event orchestration setup, effectively stopping it from triggering or modifying incidents within that orchestration. It's particularly useful when you need to retire an old integration or reconfigure your event management workflow. Be cautious when using this endpoint, as deleting an integration is irreversible and may impact your incident response processes if not properly planned."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_MAINTENANCE_WINDOW_BY_ID",
+      "description": "Deletes a specific maintenance window in PagerDuty's incident management system. This endpoint is used to permanently remove a scheduled maintenance window, effectively re-enabling any services and integrations that were temporarily disabled during the maintenance period. It should be used when a maintenance window is no longer needed or was created in error. Once deleted, the maintenance window cannot be recovered, so caution should be exercised when using this endpoint. This operation is particularly useful for cleaning up obsolete maintenance windows or adjusting scheduled maintenance plans."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_ONCALL_HANDOFF_NOTIFICATION_RULE",
+      "description": "This endpoint deletes a specific on-call handoff notification rule for a given user in PagerDuty. It is used to remove custom notification settings for when on-call responsibilities are transferred between team members. This operation is permanent and cannot be undone, so it should be used with caution. The endpoint is particularly useful for maintaining clean and up-to-date notification configurations, especially when certain handoff rules are no longer needed or have become obsolete. It requires both the user's ID and the specific rule ID to ensure precise targeting of the rule to be deleted."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_POST_FROM_STATUS_PAGE",
+      "description": "This endpoint deletes a specific post from a PagerDuty status page. It is used to remove outdated or irrelevant information from a status page, helping to maintain clear and accurate communication with users about service status. The operation is irreversible, so it should be used with caution. This endpoint is particularly useful for cleaning up resolved incidents or removing erroneous updates. It does not provide any ability to modify or retrieve post content; it only removes the specified post entirely from the status page."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_POST_UPDATE_BY_ID",
+      "description": "This endpoint deletes a specific post update from a status page post in PagerDuty. It allows users to remove outdated or incorrect information from a status page, ensuring that only relevant and accurate updates are displayed. The endpoint should be used when an organization needs to retract or remove a previously published update on their status page. It's important to note that this action is permanent and cannot be undone, so it should be used with caution. This endpoint is particularly useful for maintaining the accuracy and relevance of status page communications during incident management or scheduled maintenance periods."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_RESPONSE_PLAY",
+      "description": "Deletes a specific Response Play from the PagerDuty system. This endpoint should be used when you need to remove an outdated or unnecessary Response Play from your incident management workflow. It permanently eliminates the predefined sequence of actions associated with the specified Response Play ID. Use this endpoint with caution, as the deletion is irreversible and may impact automated incident response processes. This operation is particularly useful for maintaining an up-to-date and efficient set of response strategies in your PagerDuty account."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_RULE_FROM_RULESET_BY_ID",
+      "description": "Deletes a specific rule from a ruleset in PagerDuty's incident management platform. This endpoint allows users to remove individual event rules, providing flexibility in managing and updating rulesets. It should be used when you need to eliminate an outdated, unnecessary, or incorrect rule from a ruleset. The operation is permanent and cannot be undone, so caution should be exercised when using this endpoint. It's important to note that deleting a rule may affect the event routing and actions defined in the ruleset, potentially impacting incident management workflows."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_RULESET_BY_ID",
+      "description": "Deletes a specific ruleset from the PagerDuty system based on the provided ID. This endpoint should be used when you need to remove an existing ruleset, which may be necessary during incident management reconfiguration or when cleaning up obsolete rulesets. The deletion is permanent and cannot be undone, so use this endpoint with caution. It's important to note that deleting a ruleset will affect the incident routing and escalation policies associated with it, potentially impacting your organization's incident response workflow."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_RUNNER_TEAM_ASSOCIATION",
+      "description": "This endpoint removes a team's association from a specific Automation Action runner in PagerDuty. It is used to revoke a team's access to execute or manage tasks on a particular runner. The operation is permanent and should be used when you no longer want a team to have access to the runner's capabilities. This action is typically performed for security reasons, organizational changes, or when refining access control within your PagerDuty environment. Note that this endpoint only removes the association; it does not delete the runner or the team themselves."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_SCHEDULE_BY_ID",
+      "description": "The DeleteSchedule endpoint removes a specific schedule from the PagerDuty system. It is used to delete outdated or unnecessary on-call schedules, helping to maintain an organized and efficient incident management workflow. This operation is permanent and cannot be undone, so it should be used with caution. The endpoint is particularly useful when restructuring team rotations or when a project or team associated with the schedule is no longer active. It's important to note that deleting a schedule does not affect any historical data or past incidents associated with it, but it will prevent the schedule from being used in future incident assignments."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_SCHEDULE_OVERRIDE_BY_ID",
+      "description": "This endpoint deletes a specific override from a PagerDuty schedule. It allows users to remove temporary changes made to the regular schedule, reverting it back to its original state. This operation is useful for canceling previously set overrides that are no longer needed, such as temporary shift changes or one-time schedule adjustments. The deletion is permanent and cannot be undone, so it should be used with caution. This endpoint is particularly helpful for maintaining schedule integrity and ensuring that only current and relevant overrides remain active."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_SERVICE_BY_ID",
+      "description": "Deletes a specific service from the PagerDuty account. This endpoint should be used when you need to permanently remove a service that is no longer required or active. It's important to note that this operation is irreversible and will delete all associated incidents, alerts, and integrations for the specified service. Use this endpoint with caution, as it can impact your incident management workflow. Before deletion, ensure that the service is no longer needed and that all relevant data has been backed up if necessary."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_SERVICE_RULE_BY_ID",
+      "description": "Deletes a specific rule from a PagerDuty service. This endpoint is used to permanently remove a rule that defines conditions for incident creation or automation within a particular service. It should be used when you need to eliminate an outdated, incorrect, or no longer needed rule from your service configuration. The operation cannot be undone, so use it with caution. This endpoint does not return the deleted rule's details; it only confirms the successful deletion."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_STATUS_PAGE_POSTMORTEM",
+      "description": "This endpoint allows you to delete a postmortem associated with a specific post on a PagerDuty status page. It is used to remove the detailed analysis and lessons learned from an incident after it has been resolved and documented. This action is permanent and should be used with caution, as it will remove valuable information about past incidents. The endpoint is particularly useful for maintaining the relevance of status page content, removing outdated postmortems, or correcting information that should not have been published. It's important to note that this operation cannot be undone, so it's recommended to have a backup of the postmortem content before deletion if retention of this information is necessary for internal records."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_STATUS_UPDATE_NOTIFICATION_RULE",
+      "description": "Deletes a specific status update notification rule associated with a user in the PagerDuty system. This endpoint allows administrators or users with appropriate permissions to remove custom notification rules for status updates, helping to manage and streamline the user's notification preferences. It should be used when a particular status update notification rule is no longer needed or requires removal from the user's settings. The operation is irreversible, so caution should be exercised when invoking this endpoint. It's important to note that this endpoint only removes the specified rule and does not affect other notification rules or user settings."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_SUBSCRIPTION_FROM_STATUS_PAGE",
+      "description": "Deletes a specific subscription associated with a PagerDuty status page. This endpoint is used to remove a subscription, effectively stopping notifications or updates related to the status page for the subscribed entity. It should be used when a user or system no longer needs to receive alerts or information about a particular status page. This operation is permanent and cannot be undone, so it should be used with caution. The endpoint requires both the status page ID and the specific subscription ID to ensure precise removal of the intended subscription."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_TAG_BY_ID",
+      "description": "Deletes a specific tag from the PagerDuty system based on its unique identifier. This endpoint should be used when you need to remove a tag that is no longer relevant or necessary for categorizing incidents, services, or other resources in PagerDuty. It's important to note that deleting a tag will remove it from all associated resources, which could impact filtering and organization within the PagerDuty platform. This operation is irreversible, so it should be used with caution. The endpoint does not return the deleted tag's information, so if you need to reference the tag details, you should retrieve them before deletion."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_TEAM_BY_ID",
+      "description": "Deletes a specific team from the PagerDuty system based on the provided team ID. This endpoint should be used when you need to remove a team that is no longer required in your incident management structure. It's important to note that deleting a team is a permanent action and cannot be undone. Before deletion, ensure that all associated users, schedules, and escalation policies have been properly reassigned or removed to prevent disruption to your incident management workflows. This operation does not delete the users within the team; it only removes the team structure itself."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_TEAM_ESCALATION_POLICY",
+      "description": "This endpoint removes an escalation policy association from a specific team in PagerDuty. It is used to update team configurations by disassociating an escalation policy that is no longer needed or relevant for the team's incident management process. The operation is irreversible and should be used with caution, as it may affect the team's incident response workflow. This endpoint is particularly useful when reorganizing team responsibilities or during cleanup of outdated escalation policies. It does not delete the escalation policy itself, but only removes its association with the specified team."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_TEAM_FROM_AUTOMATION_ACTION",
+      "description": "This endpoint removes a specific team's access to an Automation Action in PagerDuty. It's used to revoke permissions when a team no longer needs to use or should not have access to a particular Automation Action. This operation is permanent and cannot be undone through this endpoint. It should be used carefully, as it will immediately prevent the specified team from executing the Automation Action. This endpoint is particularly useful for managing access control and ensuring that only authorized teams can perform certain automated tasks."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_TEMPLATE_BY_ID",
+      "description": "Deletes a specific template from the PagerDuty account. This endpoint is used to permanently remove a template configuration, which can be useful for cleaning up outdated or unnecessary incident response plans. Once deleted, the template cannot be recovered, so use this operation with caution. It should be used when you no longer need a particular template for incident management or when you want to replace an old template with a new one. This operation does not affect any ongoing incidents that may have been created using the template."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_BY_ID",
+      "description": "Deletes a specific user from the PagerDuty system using their unique identifier. This endpoint should be used when you need to permanently remove a user's account, such as when an employee leaves the organization or no longer requires access to the incident management system. It's important to note that deleting a user is irreversible and will remove all associated data, including their contact information, notification rules, and incident history. Before deletion, ensure that any ongoing incidents or schedules involving this user are reassigned to prevent disruptions in incident management workflows. This operation cannot be undone, so it should be used with caution and only when absolutely necessary."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_CONTACT_METHOD",
+      "description": "Deletes a specific contact method associated with a user in PagerDuty. This endpoint should be used when you need to remove an outdated or unnecessary contact method from a user's profile. It permanently removes the specified contact method, so use with caution. This operation cannot be undone. Ensure that the user has at least one remaining contact method after deletion to maintain their ability to receive notifications. This endpoint is particularly useful for maintaining up-to-date user profiles and streamlining communication channels."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_FROM_TEAM_BY_ID",
+      "description": "This endpoint removes a specific user from a designated team within the PagerDuty incident management platform. It is used to update team compositions by disassociating a user from a particular team, which affects the user's involvement in that team's incident responses and escalation policies. This operation is particularly useful when restructuring teams, offboarding employees, or adjusting user roles and responsibilities. The endpoint requires both the team's unique identifier and the user's unique identifier to ensure precise user-team disassociation. It's important to note that this action does not delete the user from the PagerDuty account; it only removes their association with the specified team. Use this endpoint cautiously, as it immediately affects the user's ability to receive and respond to incidents related to the team."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_NOTIFICATION_RULE",
+      "description": "Deletes a specific notification rule for a user in PagerDuty. This endpoint allows administrators or users with appropriate permissions to remove custom notification rules, modifying how and when a user receives alerts about incidents. It should be used when updating a user's notification preferences or when a specific notification rule is no longer needed. The deletion is permanent and cannot be undone, so caution should be exercised when using this endpoint. It's important to note that this action does not affect the user's default notification rules or their overall ability to receive notifications; it only removes the specified custom rule."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_SESSION_BY_ID",
+      "description": "Deletes all active sessions for a specified user in the PagerDuty system. This endpoint is used to forcibly log out a user from all devices and applications where they might be currently authenticated. It's particularly useful for security purposes, such as when a user's credentials may have been compromised, or when offboarding an employee. The operation is irreversible and will require the user to re-authenticate on all devices. Use with caution as it may disrupt the user's ongoing work if not coordinated properly."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_USER_SESSION_BY_TYPE",
+      "description": "This endpoint deletes a specific user session in PagerDuty. It is used to forcibly terminate an active session for a given user, effectively logging them out from a particular device or application. This operation is crucial for maintaining security, especially when you need to revoke access immediately, such as when a device is lost or stolen, or when suspicious activity is detected. The endpoint requires the user ID, session type, and specific session ID to accurately target and remove the desired session. It should be used cautiously as it will immediately terminate the user's access without warning."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_WEBHOOK_SUBSCRIPTION_BY_ID",
+      "description": "Deletes a specific webhook subscription from your PagerDuty account. This endpoint should be used when you want to stop receiving notifications for a particular webhook subscription, such as when the integration is no longer needed or when updating your notification preferences. Once deleted, the webhook subscription will immediately cease to function, and you will no longer receive notifications for the events it was configured to monitor. This action is irreversible, so use it with caution. If you need to temporarily disable notifications, consider using other management options instead of deletion."
+    },
+    {
+      "name": "PAGERDUTY_DELETE_WORKFLOW_INTEGRATION_CONNECTION",
+      "description": "Delete a Workflow Integration Connection. Scoped OAuth requires: `workflow_integrations:connections.write`"
+    },
+    {
+      "name": "PAGERDUTY_DISASSOCIATE_SERVICE_DEPENDENCIES",
+      "description": "This endpoint disassociates service dependencies in PagerDuty by deleting specified relationships between supporting and dependent services. It allows for the removal of multiple service dependencies in a single API call, enabling efficient management of service hierarchies and relationships within the PagerDuty platform. The endpoint should be used when restructuring service dependencies, removing obsolete relationships, or updating the service topology. It's important to note that this operation is irreversible and will immediately affect the dependency structure of the services involved."
+    },
+    {
+      "name": "PAGERDUTY_EDIT_WEBHOOK_SUBSCRIPTION_BY_ID",
+      "description": "The UpdateWebhookSubscription endpoint allows you to modify an existing webhook subscription in PagerDuty. This PUT method enables users to update the events they want to be notified about, change the filter criteria for triggering notifications, update the subscription's description, and toggle its active state. It's particularly useful for adjusting notification preferences as your incident management needs evolve. The endpoint requires specifying the webhook subscription ID in the URL path and accepts a JSON body with the updated subscription details. Note that while you can update multiple aspects of the subscription, you must provide at least the 'events' array in your request. Be cautious when updating filters, as this can significantly change which incidents trigger notifications."
+    },
+    {
+      "name": "PAGERDUTY_ENABLE_EXTENSION_BY_ID",
+      "description": "Enables a specific extension in the PagerDuty system. This endpoint is used to activate an extension that has been previously configured but is currently inactive. It allows users to turn on additional functionalities or integrations within their PagerDuty account. The extension is identified by its unique ID, which must be provided in the request path. This action is typically used when setting up new integrations, reactivating temporarily disabled features, or as part of automated workflows for managing PagerDuty configurations. Note that enabling an extension may have immediate effects on the account's behavior, such as allowing new types of alerts or activating connections with external services."
+    },
+    {
+      "name": "PAGERDUTY_ENABLE_WEBHOOK_SUBSCRIPTION_BY_ID",
+      "description": "Activates a specific webhook subscription in PagerDuty, enabling the system to send notifications for the events configured in that subscription. This endpoint should be used when you want to start receiving webhook notifications after creating or previously disabling a subscription. It's particularly useful for managing notification flows dynamically, such as during maintenance periods or when integrating new systems. Note that this operation only affects the specified subscription and does not modify its configuration or event filters."
+    },
+    {
+      "name": "PAGERDUTY_EXECUTE_RESPONSE_PLAY_BY_ID",
+      "description": "Executes a predefined Response Play for a specific incident in PagerDuty. This endpoint allows you to trigger a sequence of automated actions designed to manage and respond to the given incident. It's useful for standardizing and streamlining your incident response process, ensuring consistent handling of similar incidents. The endpoint requires you to specify the incident for which the Response Play should be run, using the incident's unique identifier. Note that the Response Play itself is identified by the ID in the URL path, not in the request body."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_CACHE_VARIABLE_FOR_EVENT_ORCHESTRATION",
+      "description": "Retrieves detailed information about a specific cache variable within an event orchestration in PagerDuty. This endpoint allows users to fetch the current state and configuration of a cache variable, which is used to store temporary data for optimizing event orchestration performance. It's particularly useful when you need to inspect or debug the cached data being used in your event orchestration workflows. The endpoint should be used when you need to verify the contents of a specific cache variable or when troubleshooting issues related to event orchestration data caching. Note that this endpoint only provides read access to the cache variable and cannot be used to modify its contents."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_CUSTOM_INCIDENT_FIELD_BY_ID",
+      "description": "Retrieves detailed information about a specific custom field associated with incidents in PagerDuty. This endpoint allows users to fetch the configuration and attributes of a custom field by providing its unique identifier. It's useful for verifying custom field settings, understanding the structure of additional data points on incidents, or preparing to update a custom field. The endpoint should be used when detailed information about a particular custom field is needed, such as its name, data type, or any predefined options. Note that this endpoint only provides information about the custom field itself, not the values assigned to incidents."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_ESCALATION_POLICES_LIST",
+      "description": "Retrieves a list of escalation policies configured in the PagerDuty account. This endpoint allows users to access detailed information about how incidents are escalated within their organization, including the sequence of notifications and assignments for different teams or individuals. It's particularly useful for reviewing and auditing the incident response process, ensuring that critical alerts are properly routed and escalated. The endpoint provides a comprehensive view of all escalation policies, which is essential for maintaining an effective incident management strategy. However, it does not modify any existing policies or create new ones; it's purely for retrieval and review purposes."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_EVENT_ORCHESTRATIONS",
+      "description": "Retrieves a list of event orchestrations configured in the PagerDuty account. Event orchestrations are used to manage and automate the routing and handling of events and incidents. This endpoint allows you to fetch details about existing orchestrations, which can be useful for auditing, reporting, or managing your incident response workflows. The response typically includes information such as orchestration names, associated routing keys, and configured rules. Use this endpoint when you need to review or list the current event orchestrations in your PagerDuty setup. Note that this endpoint does not provide real-time event data or incident details, only the configuration of the orchestrations themselves."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_INCIDENT_ANALYTICS_BY_ID",
+      "description": "Retrieves raw analytics data for a specific incident in PagerDuty. This endpoint provides unprocessed incident information, allowing for detailed analysis and custom reporting. It should be used when in-depth, granular data about a particular incident is needed, such as for investigating complex issues or generating custom analytics. The endpoint returns comprehensive incident details, which may include timestamps, status changes, assignee information, and other relevant metrics. However, it does not provide pre-analyzed or aggregated data; users will need to process the raw data themselves for specific insights."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_INCIDENT_LIST",
+      "description": "Retrieves a list of incidents from PagerDuty based on specified criteria. This endpoint allows users to fetch multiple incidents, making it useful for incident management, reporting, and analysis. It supports filtering by status and date range, as well as pagination for handling large result sets. The endpoint is particularly valuable for obtaining an overview of recent or ongoing incidents, tracking incident trends, or integrating PagerDuty incident data into external systems or dashboards. Note that while this endpoint provides a summary of incidents, it may not include full details for each incident; separate API calls might be necessary to fetch comprehensive information for individual incidents."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_OUTLIER_INCIDENT_BY_ID",
+      "description": "Retrieves detailed information about an outlier incident associated with a specific incident in PagerDuty. This endpoint is used to gather insights on incidents that deviate significantly from normal patterns, helping teams identify and analyze unusual or potentially critical issues. It should be used when investigating anomalies in incident patterns or when conducting post-incident reviews. The endpoint provides specific data about the outlier incident, which can be crucial for understanding unique characteristics or severity of the issue compared to typical incidents."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_POST_UPDATE_STATUS",
+      "description": "Retrieves detailed information about a specific post update on a PagerDuty status page. This endpoint allows you to fetch the content and metadata of a particular update made to a post, providing insight into the chronological changes and communications related to an incident or maintenance event. Use this when you need to review or display the exact content of a specific update, such as for auditing purposes or to provide detailed information to stakeholders. The endpoint requires the unique identifiers for the status page, the post, and the specific update, ensuring precise retrieval of the desired information. It's particularly useful for tracking the evolution of an incident's communication or for analyzing the effectiveness of status updates over time."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_PRIORITIES_LIST",
+      "description": "Retrieves a list of existing priorities in the PagerDuty system, ordered from most severe to least severe. This endpoint should be used when you need to obtain information about the current priority levels configured in your PagerDuty account. It's particularly useful for integrations that need to reference or display priority information, or for administrators who want to review the existing priority structure. The endpoint provides a read-only view of priorities and does not allow for creation, modification, or deletion of priority levels. Keep in mind that this API call is subject to rate limiting, so it should not be called excessively in short periods."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_RELATED_CHANGE_EVENTS_FOR_INCIDENT",
+      "description": "Retrieves a list of change events related to a specific incident in PagerDuty. This endpoint is used to gather contextual information about changes or updates associated with an incident, which can be crucial for understanding its progression and resolution. It provides insights into actions taken, system modifications, or other relevant events that occurred in connection with the incident. Use this endpoint when investigating incident timelines, auditing response actions, or compiling comprehensive incident reports. Note that this endpoint only returns change events directly linked to the specified incident and does not provide general incident details or unrelated events."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_RELATED_INCIDENTS_BY_ID",
+      "description": "Retrieves a list of incidents that are potentially related to a specified incident in PagerDuty. This endpoint utilizes machine learning algorithms to identify and return incidents that may be connected or similar to the given incident. It's particularly useful for incident management teams to gain a broader context of ongoing issues, identify patterns, and potentially streamline resolution processes. The endpoint should be used when investigating an incident to discover any correlated problems or when trying to understand the wider impact of a particular issue across the system. It does not modify any incident data and is intended for informational purposes only."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_RUNNER_TEAMS_INTEGRATION",
+      "description": "Retrieves a list of teams associated with a specific Automation Action Runner in PagerDuty. This endpoint allows users to identify which teams have access to or are responsible for a particular runner, facilitating better management and organization of automation resources. It's particularly useful for administrators who need to audit runner permissions or when planning to modify team access to automation capabilities. The endpoint returns team information related to the specified runner only and does not provide details about the runner itself or its automation actions."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_STATUS_PAGES",
+      "description": "Retrieves a list of all status pages configured in the PagerDuty account. Status pages provide real-time information about the operational status of services, ongoing incidents, and planned maintenance. This endpoint should be used when you need to obtain an overview of all available status pages, which can be useful for monitoring, reporting, or integrating status information into other systems. The response will include details such as the status page ID, name, and current state. Note that this endpoint does not provide the actual content of each status page, but rather metadata about the pages themselves."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_USER_CONTACT_METHOD",
+      "description": "Retrieves detailed information about a specific contact method for a particular user in PagerDuty. This endpoint allows you to fetch the configuration and settings of a single contact method, such as an email address, phone number, or push notification settings, associated with a user's account. It's useful for verifying or auditing user contact information, or when you need to display or update a specific contact method. The endpoint requires both the user ID and the contact method ID to pinpoint the exact resource. It does not modify any data and is safe for frequent calls, but should be used judiciously in high-volume scenarios to avoid hitting rate limits."
+    },
+    {
+      "name": "PAGERDUTY_FETCH_VENDOR_LIST",
+      "description": "Retrieves a list of vendors or third-party integrations available in the PagerDuty platform. This endpoint allows users to access information about various services and tools that can be integrated with PagerDuty for enhanced incident management and alerting capabilities. Use this endpoint when you need to explore or review the available integrations, such as monitoring tools, ticketing systems, or communication platforms. The response likely includes details such as vendor names, integration types, and possibly configuration options. Note that this endpoint does not provide real-time status of integrations or perform any actions on the integrations themselves."
+    },
+    {
+      "name": "PAGERDUTY_FILTER_AND_AGGREGATE_INCIDENT_METRICS",
+      "description": "Analyzes and aggregates incident metrics across teams in PagerDuty, allowing for detailed filtering and customization of results. This endpoint is used to gain insights into incident patterns, team performance, and overall operational efficiency. It provides flexible options for data selection, time range specification, and result presentation, making it valuable for generating reports, identifying trends, and optimizing incident management processes. The endpoint is particularly useful for operational reviews, team performance assessments, and strategic planning in incident response."
+    },
+    {
+      "name": "PAGERDUTY_GET_ADDONS_LIST",
+      "description": "Retrieves a list of all addons associated with the PagerDuty account. This endpoint allows users to view the additional features or integrations that have been added to enhance the platform's capabilities. It provides an overview of the current addons, which can include third-party services or custom extensions that extend the functionality of the core PagerDuty system. This endpoint is useful for auditing the account's current addons, planning for potential new integrations, or managing existing ones. Note that this endpoint only returns basic information about the addons and may not include detailed configuration settings for each addon."
+    },
+    {
+      "name": "PAGERDUTY_GET_A_FIELD_OPTION_ON_A_CUSTOM_FIELD",
+      "description": "Get a field option on a custom field <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_AGGREGATED_PD_ADVANCE_USAGE_DATA",
+      "description": "Provides aggregated metrics for the usage of PD Advance. <!-- theme: info --> > **Note:** Analytics data is updated [periodically](https://support.pagerduty.com/main/docs/insights#:~:text=Data%20Update%20Schedule). It takes up to 24 hours before new incidents appear in the Analytics API. Scoped OAuth requires: `analytics.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_ALERT_GROUPING_SETTINGS",
+      "description": "Retrieves the current alert grouping settings for the PagerDuty account. This endpoint provides information on how alerts are automatically grouped together in the incident management system. It should be used when you need to understand or audit the current configuration for alert grouping, which can impact how incidents are organized and presented to responders. The endpoint returns the global settings that apply across the account, but it does not provide information about service-specific alert grouping rules or real-time grouping status of active incidents. This information is crucial for administrators managing large-scale incident response processes or when troubleshooting alert noise issues."
+    },
+    {
+      "name": "PAGERDUTY_GET_ALERTS_BY_INCIDENT_ID",
+      "description": "Retrieves all alerts associated with a specific incident in PagerDuty. This endpoint allows users to fetch detailed information about the notifications and alerts that were triggered as part of an incident's lifecycle. It is particularly useful for incident postmortems, auditing purposes, or understanding the notification flow during an incident. The endpoint returns a list of alerts, which may include information such as alert creation time, alert status, and the targets (users or services) that received the notifications. It should be used when detailed alert information for a known incident is required, but it will not provide information about the incident itself beyond its associated alerts."
+    },
+    {
+      "name": "PAGERDUTY_GET_AN_INCIDENT_TYPE",
+      "description": "Get detailed information about a single incident type. Accepts either an incident type id, or an incident type name. Incident Types are a feature which will allow customers to categorize incidents, such as a security incident, a major incident, or a fraud incident. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. For more information see the [API Concepts Document](../../api-reference/ZG9jOjI3NDc5Nzc-api-concepts#incident) Scoped OAuth requires: `incident_types.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_AN_INCIDENT_TYPE_CUSTOM_FIELD",
+      "description": "Get a custom field for an incident type. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_A_TRIGGER",
+      "description": "Retrieve an existing Incident Workflows Trigger Scoped OAuth requires: `incident_workflows.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_AUDIT_RECORDS",
+      "description": "Retrieves a list of audit records from the PagerDuty system. This endpoint allows users to access logs of configuration changes made to PagerDuty resources, such as account objects. The records are sorted by execution time, with the newest records appearing first. This tool is particularly useful for tracking and reviewing changes, conducting security audits, or generating reports on system modifications. It provides a comprehensive view of who made what changes and when, enhancing transparency and accountability within the organization. The endpoint supports pagination and date range filtering to manage large volumes of audit data effectively."
+    },
+    {
+      "name": "PAGERDUTY_GET_AUTOMATION_ACTION_BY_ID",
+      "description": "Retrieves detailed information about a specific automation action in PagerDuty's incident management platform. This endpoint allows users to fetch the configuration and attributes of a predefined automation action by its unique identifier. It's particularly useful when you need to review or audit the settings of an existing automation action, such as its triggers, conditions, or associated workflows. The endpoint should be used when detailed information about a single automation action is required, rather than for listing multiple actions. Note that this endpoint only provides read access to the automation action details and cannot be used to modify the action."
+    },
+    {
+      "name": "PAGERDUTY_GET_AUTOMATION_ACTION_RUNNER_BY_ID",
+      "description": "Retrieves detailed information about a specific Automation Action Runner in PagerDuty. This endpoint allows users to fetch the configuration, status, and other relevant details of a Runner by providing its unique identifier. It's particularly useful for monitoring the health and settings of individual Runners, which are crucial components in PagerDuty's automated incident response system. This tool should be used when you need to inspect or verify the properties of a specific Runner, such as its connection status, associated scripts, or execution environment. It does not modify the Runner's configuration or trigger any actions; it's purely for information retrieval."
+    },
+    {
+      "name": "PAGERDUTY_GET_AUTOMATION_ACTIONS_RUNNERS",
+      "description": "Retrieves a list of automation action runners associated with the PagerDuty account. This endpoint allows users to view all available runners that can execute automation actions within their incident management workflow. It provides essential information about each runner, such as its ID, name, and current status. Use this endpoint when you need to manage, monitor, or select runners for executing automation actions. The response typically includes details that help in understanding the capacity and availability of runners for performing automated tasks. This endpoint is particularly useful for administrators and DevOps teams who need to oversee and optimize their automation infrastructure within PagerDuty."
+    },
+    {
+      "name": "PAGERDUTY_GET_AUTOMATION_ACTION_TEAM_BY_TEAM_ID",
+      "description": "Retrieves detailed information about a specific automation action's association with a particular team in PagerDuty. This endpoint allows you to examine how an automation action is configured or applied within the context of a specific team. It's useful for understanding the relationship between automation actions and teams, which can be crucial for managing incident response workflows and team-specific automations. The endpoint should be used when you need to verify or audit the automation action settings for a particular team, or when troubleshooting team-specific automation behaviors."
+    },
+    {
+      "name": "PAGERDUTY_GET_BUSINESS_SERVICES_PRIORITY_THRESHOLDS",
+      "description": "Retrieves the current priority threshold settings for all business services in PagerDuty. This endpoint allows users to fetch the configured thresholds that determine incident prioritization and escalation for each business service. It should be used when auditing or reviewing the current priority configurations across the organization's services. The tool provides a comprehensive view of how incidents are categorized and escalated based on their severity for different business services. It does not allow modification of these thresholds; for changes, a separate update endpoint would be required."
+    },
+    {
+      "name": "PAGERDUTY_GET_BUSINESS_SERVICE_SUBSCRIBERS_BY_ID",
+      "description": "Retrieves a list of subscribers for a specific business service in PagerDuty. This endpoint allows you to fetch all users or teams configured to receive notifications for incidents related to the specified business service. It's useful for auditing who is responsible for responding to issues within a particular service, or for managing notification settings at a service level. The endpoint returns read-only data and does not modify any configurations. Use this when you need to review or verify the current subscriber list for a business service, such as during incident response planning or service ownership reviews."
+    },
+    {
+      "name": "PAGERDUTY_GET_CACHE_VARIABLE_BY_ID",
+      "description": "Retrieves detailed information about a specific cache variable associated with a particular service within an event orchestration in PagerDuty. This endpoint allows you to access the current state and configuration of a cache variable, which can be crucial for understanding and troubleshooting event orchestration workflows. Use this when you need to inspect or verify the settings of a cache variable for a given service, such as during debugging or auditing processes. The endpoint provides read-only access and does not allow modification of the cache variable. Keep in mind that the response will only include information about the specified cache variable and will not provide a comprehensive view of all variables or the entire event orchestration configuration."
+    },
+    {
+      "name": "PAGERDUTY_GET_CACHE_VARIABLES_FOR_SERVICE",
+      "description": "Retrieves the cache variables associated with a specific service in PagerDuty's event orchestration system. This endpoint allows you to access temporary storage data used within event orchestration workflows for the specified service. It's particularly useful for debugging, auditing, or analyzing the current state of event handling for a service. The retrieved cache variables can provide insights into how events are being processed and what data is being stored temporarily during orchestration. This endpoint should be used when you need to inspect or verify the cache variables for a particular service, which can be helpful in troubleshooting or optimizing event orchestration workflows."
+    },
+    {
+      "name": "PAGERDUTY_GET_ESCALATION_POLICY_BY_ID",
+      "description": "Retrieves detailed information about a specific escalation policy in PagerDuty. This endpoint allows you to fetch the complete configuration of an escalation policy, including its name, description, escalation rules, and associated services. Use this when you need to review or audit an existing escalation policy's setup. It's particularly useful for understanding how incidents are being routed and escalated within your organization. This endpoint does not modify any data and is safe for frequent calls, but be mindful of rate limits. Note that it only provides information for a single policy; to list multiple policies, you would need a different endpoint."
+    },
+    {
+      "name": "PAGERDUTY_GET_EVENT_INTEGRATIONS_BY_ID",
+      "description": "Retrieves a list of integrations associated with a specific event orchestration in PagerDuty. This endpoint allows users to fetch all the integrations that are configured for a particular event orchestration, providing insights into how incidents are being routed and managed. It's useful for auditing the current setup of an event orchestration or when planning to modify the orchestration's integration configuration. The endpoint returns details about each integration, which may include integration types, configurations, and other relevant metadata. Use this when you need to review or analyze the integrations tied to a specific event orchestration for troubleshooting, reporting, or system optimization purposes."
+    },
+    {
+      "name": "PAGERDUTY_GET_EVENT_ORCHESTRATION_BY_ID",
+      "description": "Retrieves detailed information about a specific event orchestration in PagerDuty using its unique identifier. This endpoint allows users to fetch the configuration and settings of a particular event orchestration, which is crucial for understanding and analyzing how incidents are being managed and automated within the PagerDuty system. It should be used when you need to review or audit the setup of an event orchestration, such as its routing rules, filters, and associated services. The endpoint provides a comprehensive view of the orchestration but does not modify any settings. Keep in mind that access to this information may be restricted based on the user's permissions within the PagerDuty account."
+    },
+    {
+      "name": "PAGERDUTY_GET_EVENT_ORCHESTRATION_CACHE_VARIABLES",
+      "description": "Retrieves the cache variables associated with a specific event orchestration in PagerDuty. This endpoint allows you to access temporary data storage elements used during event orchestration processes, which are crucial for maintaining context and improving efficiency in incident management workflows. Use this endpoint when you need to inspect or debug the current state of an event orchestration's cache variables, or when you want to retrieve stored information for further processing in your incident management pipeline. Note that cache variables are temporary and may not persist indefinitely, so the retrieved data represents the current state at the time of the API call."
+    },
+    {
+      "name": "PAGERDUTY_GET_EVENT_ORCHESTRATION_GLOBAL",
+      "description": "Get the Global Orchestration for an Event Orchestration. Global Orchestration Rules allows you to create a set of Event Rules. These rules evaluate against all Events sent to an Event Orchestration. When a matching rule is found, it can modify and enhance the event and can route the event to another set of Global Rules within this Orchestration for further processing. For more information see the [API Concepts Document](../../api-reference/ZG9jOjI3NDc5Nzc-api-concepts#event-orchestrations) Scoped OAuth requires: `event_orchestrations.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_EVENT_ORCHESTRATION_INTEGRATION",
+      "description": "Retrieves detailed information about a specific integration associated with an event orchestration in PagerDuty. This endpoint allows you to fetch the configuration and settings of a particular integration within the context of an event orchestration. Use this when you need to inspect or verify the setup of an integration, such as its type, configuration parameters, or connection status. The endpoint is particularly useful for troubleshooting integration issues or when you need to review the current state of an integration as part of your incident management workflow. Note that this endpoint only provides read access to the integration details and cannot be used to modify the integration."
+    },
+    {
+      "name": "PAGERDUTY_GET_EXTENSION_SCHEMA_BY_ID",
+      "description": "Retrieves a specific extension schema from PagerDuty by its unique identifier. This endpoint is used to fetch detailed information about a custom data structure that extends the functionality of the PagerDuty API. It's particularly useful for developers who need to understand or work with custom fields or data structures in their PagerDuty integrations. The endpoint returns the complete definition of the requested extension schema, including any custom fields, their types, and other metadata. This tool should be used when you need to inspect or verify the structure of a specific extension schema, but it won't allow you to modify the schema or create new ones. Keep in mind that access to extension schemas may be subject to account permissions and the schema must exist in the PagerDuty account for the request to succeed."
+    },
+    {
+      "name": "PAGERDUTY_GET_IMPACT_BY_STATUS_PAGE_ID",
+      "description": "Retrieves detailed information about a specific impact on a PagerDuty status page. This endpoint allows you to fetch the current state and details of a particular impact, such as its severity, affected components, and any updates related to the impact. It's useful for monitoring the progress of ongoing incidents or reviewing past impacts on your services. The endpoint should be used when you need to get the most up-to-date information about a known impact, especially during incident management or when providing updates to stakeholders. Note that this endpoint only provides information about a single impact and does not give an overview of all impacts on a status page."
+    },
+    {
+      "name": "PAGERDUTY_GET_INCIDENT_ALERT_DETAILS",
+      "description": "Retrieves detailed information about a specific alert associated with a particular incident in PagerDuty. This endpoint is used when you need to access the properties and current state of an individual alert within the context of its parent incident. It's particularly useful for tracking the progression of an alert, understanding its current status, and gathering related metadata. The endpoint should be called when detailed information about a single alert is required, rather than for bulk operations or listing multiple alerts. Note that this endpoint focuses on retrieving data and does not modify the alert or incident."
+    },
+    {
+      "name": "PAGERDUTY_GET_INCIDENT_LOG_ENTRIES_BY_ID",
+      "description": "Retrieves all log entries associated with a specific incident in PagerDuty. This endpoint provides a comprehensive history of actions, notifications, and status changes related to the incident. It should be used when detailed information about the lifecycle of an incident is needed, such as for post-incident reviews, auditing, or tracking the incident resolution process. The endpoint returns log entries in chronological order, allowing users to trace the incident's progression from creation to resolution. Note that the number of log entries returned may be large for long-running or complex incidents, so pagination might be necessary (though not specified in the given schema)."
+    },
+    {
+      "name": "PAGERDUTY_GET_INCIDENT_WORKFLOW_ACTION_BY_ID",
+      "description": "Retrieves detailed information about a specific action within an incident workflow in PagerDuty. This endpoint allows users to fetch the configuration, settings, and other relevant details of a particular workflow action by providing its unique identifier. It is useful for inspecting the current state of an action, troubleshooting workflow issues, or gathering information for reporting purposes. The endpoint should be used when you need to examine or verify the properties of an individual workflow action, but it does not modify or execute the action itself."
+    },
+    {
+      "name": "PAGERDUTY_GET_INCIDENT_WORKFLOWS",
+      "description": "Retrieves a list of incident workflows configured in the PagerDuty account. This endpoint allows users to fetch information about automated sequences of actions set up to respond to incidents. It's useful for reviewing existing workflows, auditing incident response processes, or gathering data for reporting purposes. The endpoint supports pagination and filtering by workflow name. It does not create, modify, or delete workflows; it's purely for retrieval of workflow information."
+    },
+    {
+      "name": "PAGERDUTY_GET_INCIDENT_WORKFLOWS_ACTIONS",
+      "description": "Retrieves a list of all available actions that can be used in incident workflows within PagerDuty. This endpoint provides information about the various automated tasks and responses that can be configured to streamline incident management processes. It should be used when setting up or modifying incident workflows to understand the range of actions available for automation. The endpoint returns details about each action, which may include its name, description, and any configurable parameters. This tool is particularly useful for developers and system administrators who are designing or optimizing their incident response procedures in PagerDuty. Note that while this endpoint retrieves action information, it does not execute or modify any actions itself."
+    },
+    {
+      "name": "PAGERDUTY_GET_LOG_ENTRIES",
+      "description": "Retrieves log entries from the PagerDuty system, providing a detailed history of events and actions related to incidents and system activities. This endpoint is crucial for auditing purposes, allowing users to track changes, responses, and other important events within their incident management workflow. It supports filtering by date range and specific incidents, making it useful for both broad overview analysis and detailed incident investigations. The endpoint uses pagination to manage large sets of log entries, ensuring efficient data retrieval and processing."
+    },
+    {
+      "name": "PAGERDUTY_GET_MAINTENANCE_WINDOW_BY_ID",
+      "description": "Retrieves detailed information about a specific maintenance window in PagerDuty. This endpoint allows users to access the configuration, schedule, and status of a particular maintenance window using its unique identifier. It's useful for reviewing planned maintenance periods, verifying window settings, or checking the current status of a maintenance window. The endpoint should be used when detailed information about a single maintenance window is needed, rather than for listing all maintenance windows or creating new ones."
+    },
+    {
+      "name": "PAGERDUTY_GET_OAUTH_DELEGATIONS_REVOCATION_REQUESTS_STATUS",
+      "description": "Get the status of all OAuth delegations revocation requests for this account, specifically how many requests are still pending. This endpoint is limited to account owners and admins. Scoped OAuth requires: `oauth_delegations.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_PAUSED_INCIDENT_ALERTS",
+      "description": "Retrieves alerts associated with paused incident reports in PagerDuty. This endpoint allows users to fetch information about alerts that have been temporarily halted in the reporting process. It's useful for reviewing and managing incidents that have been paused, potentially for prioritization or during maintenance periods. The endpoint returns a list of alerts related to paused incident reports, which can help in assessing the current state of incident management and decision-making for further actions. Note that this endpoint only provides information about paused alerts and does not include details about active or resolved incidents."
+    },
+    {
+      "name": "PAGERDUTY_GET_POST_FROM_STATUS_PAGE_BY_ID",
+      "description": "Retrieves detailed information about a specific post on a PagerDuty status page. This endpoint allows you to fetch the content, timestamp, and any associated metadata for a particular update or message that has been posted to a status page. It's particularly useful for retrieving historical updates about incidents, maintenance notices, or general service status communications. Use this endpoint when you need to access or display the full details of a specific status update, such as when building a custom status page interface or integrating PagerDuty status updates into another system. Note that this endpoint only retrieves information for existing posts; it cannot be used to create, modify, or delete posts."
+    },
+    {
+      "name": "PAGERDUTY_GET_RESPONSE_PLAYS",
+      "description": "Retrieves a list of response plays configured in the PagerDuty account. Response plays are predefined sets of actions that can be automatically executed when an incident occurs, helping to streamline and standardize incident response processes. This endpoint allows you to fetch and review existing response plays, which is useful for auditing, reporting, or integrating response play information into other systems. The list can be paginated and filtered using various parameters to manage large sets of response plays efficiently."
+    },
+    {
+      "name": "PAGERDUTY_GET_RULE_FROM_RULESET_BY_ID",
+      "description": "Retrieves detailed information about a specific rule within a PagerDuty ruleset. This endpoint allows users to fetch the configuration and settings of an individual rule, which is essential for understanding how incidents are being automated and managed. It should be used when detailed information about a particular rule's conditions, actions, or other properties is needed. This endpoint is particularly useful for auditing ruleset configurations, troubleshooting automation issues, or preparing to update rule settings. It does not modify any data and is safe for frequent use in monitoring or dashboard applications. However, it will not provide an overview of all rules in a ruleset or allow for rule modifications."
+    },
+    {
+      "name": "PAGERDUTY_GET_SCHEDULES",
+      "description": "Retrieves a list of all schedules from your PagerDuty account. This endpoint provides essential information about on-call rotations, helping teams manage and organize their incident response workflows. Use this when you need to view all existing schedules, such as during schedule audits, team restructuring, or when setting up integrations that require schedule IDs. The endpoint returns basic details for each schedule, which can be used to make further API calls for more specific information. Note that this endpoint does not provide the full details of each schedule's rotation patterns; for that, you would need to make additional API calls using the schedule IDs returned by this endpoint."
+    },
+    {
+      "name": "PAGERDUTY_GET_SERVICE_IMPACTS_BY_URL_SLUG",
+      "description": "Retrieves service impacts for a specific status dashboard in PagerDuty. This endpoint allows users to fetch real-time information about how incidents or maintenance activities are affecting services displayed on a particular dashboard. It's useful for monitoring the current state of services, understanding ongoing issues, and assessing the overall health of systems represented in the specified dashboard. The endpoint should be used when you need to programmatically access up-to-date service impact data for a known status dashboard, enabling integration with other monitoring or reporting tools. Note that this endpoint only provides information for a single dashboard at a time and requires knowledge of the dashboard's URL slug."
+    },
+    {
+      "name": "PAGERDUTY_GET_SEVERITY_FOR_STATUS_PAGE",
+      "description": "Retrieves detailed information about a specific severity level on a particular status page in PagerDuty. This endpoint is used to fetch the configuration and metadata associated with a severity, which is crucial for understanding how incidents are categorized and communicated on a status page. It provides insights into how different levels of service disruptions are represented and managed within the PagerDuty system. This tool is essential for developers and administrators who need to programmatically access or audit severity configurations on status pages, enabling them to ensure consistent incident communication across their organization."
+    },
+    {
+      "name": "PAGERDUTY_GET_SPECIFIC_POST_UPDATE_STATUS",
+      "description": "Retrieves the updates for a specific post on a PagerDuty status page. This endpoint allows users to fetch the chronological list of updates made to a particular post, providing detailed information about how the status or information has changed over time. It's particularly useful for tracking the progression of an incident or maintenance event that has been communicated through a status page. The endpoint should be used when there's a need to review the history of updates for a specific status page post, such as during post-incident reviews or when compiling reports on communication effectiveness during incidents."
+    },
+    {
+      "name": "PAGERDUTY_GET_STATUS_DASHBOARD_BY_ID",
+      "description": "Retrieves detailed information about a specific status dashboard in PagerDuty. This endpoint allows users to fetch the current configuration, components, and status of a particular dashboard, which is crucial for monitoring system health and managing incidents efficiently. It should be used when you need to access up-to-date information about a known status dashboard, such as during incident response or when updating dashboard configurations. The endpoint will not modify any data and is intended for read-only operations."
+    },
+    {
+      "name": "PAGERDUTY_GET_STATUS_FOR_STATUS_PAGE_BY_ID",
+      "description": "Retrieves the current status of a specific item on a PagerDuty status page. This endpoint is used to fetch up-to-date information about the operational state of a particular service or component listed on a status page. It's particularly useful for integrations that need to monitor or display the latest status of services to users or internal systems. The endpoint requires both the status page ID and the specific status item ID, allowing for precise querying of individual service statuses within a larger status page context. This tool should be used when you need to programmatically check the current state of a specific service on a PagerDuty status page, such as during incident management or for creating custom dashboards."
+    },
+    {
+      "name": "PAGERDUTY_GET_STATUS_PAGE_IMPACTS_BY_ID",
+      "description": "Retrieves the impacts associated with a specific status page in PagerDuty. This endpoint allows users to fetch detailed information about service disruptions, incidents, or other events affecting the services displayed on a particular status page. It is useful for monitoring the current state of services, understanding the severity and scope of ongoing issues, and keeping stakeholders informed about service health. The endpoint should be used when there's a need to programmatically access impact data for a status page, such as for integration with other monitoring tools or for creating custom dashboards."
+    },
+    {
+      "name": "PAGERDUTY_GET_STATUS_PAGE_SUBSCRIPTION",
+      "description": "Retrieves detailed information about a specific subscription associated with a particular status page in PagerDuty. This endpoint allows users to fetch subscription details such as the subscriber's contact information, notification preferences, and current subscription status. It should be used when you need to review or verify the details of an existing subscription for a status page. The endpoint is particularly useful for managing and auditing subscriber information, troubleshooting notification issues, or when updating subscription settings. Note that this endpoint only provides read access to subscription data and cannot be used to modify or create new subscriptions."
+    },
+    {
+      "name": "PAGERDUTY_GET_TEAM_MEMBERS_BY_ID",
+      "description": "Retrieves a list of all members associated with a specific team in PagerDuty. This endpoint is useful for obtaining detailed information about the composition of a team, including user IDs, names, roles, and contact information of team members. It should be used when you need to review or audit team membership, update on-call rotations, or gather information for reporting purposes. The endpoint does not modify team membership; it only provides read access to the current team roster. Keep in mind that the response may be paginated for teams with a large number of members."
+    },
+    {
+      "name": "PAGERDUTY_GET_TEAM_NOTIFICATION_SUBSCRIPTIONS",
+      "description": "Retrieves the notification subscriptions for a specific team in PagerDuty. This endpoint allows you to fetch detailed information about how a team is configured to receive notifications for various events and incidents. It's particularly useful for auditing a team's notification settings, understanding their alert preferences, and ensuring that the right people are notified at the right time. The endpoint should be used when you need to review or analyze a team's current notification setup, but it won't allow you to modify these settings directly. Keep in mind that the response may include sensitive information about team members and their notification preferences, so use this endpoint judiciously and in compliance with your organization's data privacy policies."
+    },
+    {
+      "name": "PAGERDUTY_GET_TEAMS_ASSOCIATED_WITH_ACTION_ID",
+      "description": "Retrieves the list of teams associated with a specific automation action in PagerDuty. This endpoint is useful for understanding which teams are responsible for or have access to a particular automated process in the incident management workflow. It can be used to audit team assignments, manage access control, or gather information for reporting purposes. The endpoint returns only the teams linked to the specified automation action and does not provide details about the action itself or other related resources."
+    },
+    {
+      "name": "PAGERDUTY_GET_TEMPLATE_BY_ID",
+      "description": "Retrieves detailed information about a specific template in PagerDuty by its unique identifier. This endpoint is used to access the configuration and settings of a pre-defined template, which can include incident response procedures, notification rules, and other standardized actions. It's particularly useful when you need to review or reference an existing template for incident management purposes. The endpoint returns comprehensive data about the template, but does not modify or create new templates."
+    },
+    {
+      "name": "PAGERDUTY_GET_THE_SERVICE_ORCHESTRATION_FOR_A_SERVICE",
+      "description": "Get a Service Orchestration. A Service Orchestration allows you to create a set of Event Rules. The Service Orchestration evaluates Events sent to this Service against each of its rules, beginning with the rules in the \"start\" set. When a matching rule is found, it can modify and enhance the event and can route the event to another set of rules within this Service Orchestration for further processing. For more information see the [API Concepts Document](../../api-reference/ZG9jOjI3NDc5Nzc-api-concepts#event-orchestrations) Scoped OAuth requires: `services.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_USER_NOTIFICATION_SUBSCRIPTIONS",
+      "description": "Retrieves the notification subscriptions for a specific user in PagerDuty. This endpoint allows you to fetch detailed information about how a user is configured to receive various types of notifications, such as incident alerts, updates, or system messages. It's useful for auditing a user's notification settings, troubleshooting communication issues, or when you need to review or modify a user's notification preferences programmatically. The response likely includes a list of subscription objects, each detailing the type of notification, delivery method (e.g., email, SMS), and any specific rules or filters applied. This endpoint should be used when you need to understand or manage a user's notification setup within PagerDuty."
+    },
+    {
+      "name": "PAGERDUTY_GET_USER_SESSION_BY_TYPE",
+      "description": "Retrieves detailed information about a specific user session in PagerDuty. This endpoint allows you to fetch session-related data for a particular user, filtered by session type and identified by a unique session ID. It's useful for monitoring user activity, troubleshooting authentication issues, or auditing system access. The endpoint returns data about the specified session, which may include creation time, last activity timestamp, expiration time, and other relevant session attributes. It should be used when detailed information about a user's specific session is required, but it does not provide information about other sessions or general user account details."
+    },
+    {
+      "name": "PAGERDUTY_GET_USER_SESSIONS_BY_ID",
+      "description": "Retrieves all active sessions for a specific user in PagerDuty. This endpoint allows you to fetch information about a user's current login sessions, which can be useful for auditing, security monitoring, or managing user access. It provides details such as session start times, device information, and IP addresses for each active session. Use this endpoint when you need to track user activity, investigate potential security issues, or manage concurrent logins. Note that this endpoint only returns information about active sessions and does not provide historical session data or the ability to modify sessions."
+    },
+    {
+      "name": "PAGERDUTY_GET_USER_STATUS_UPDATE_NOTIFICATION_RULES",
+      "description": "Retrieves the status update notification rules for a specific user in PagerDuty. This endpoint allows you to fetch the configured rules that determine how and when a user receives notifications about status changes in incidents or services they are associated with. It's useful for understanding a user's current notification preferences and can be helpful when auditing or updating user settings. The endpoint returns a list of notification rules, each detailing the conditions under which status update notifications are sent to the user."
+    },
+    {
+      "name": "PAGERDUTY_GET_WEBHOOK_SUBSCRIPTION_BY_ID",
+      "description": "Retrieves detailed information about a specific webhook subscription in PagerDuty. This endpoint allows you to fetch the configuration and status of a webhook subscription, including its delivery method, subscribed events, and any applied filters. Use this when you need to review or verify the settings of an existing webhook subscription, such as checking which events it's configured to receive or confirming its current status. The endpoint provides a snapshot of the subscription's configuration but does not include historical data about past webhook deliveries or failures."
+    },
+    {
+      "name": "PAGERDUTY_GET_WORKFLOW_INTEGRATION",
+      "description": "Get details about a Workflow Integration. Scoped OAuth requires: `workflow_integrations.read`"
+    },
+    {
+      "name": "PAGERDUTY_GET_WORKFLOW_INTEGRATION_CONNECTION",
+      "description": "Get details about a Workflow Integration Connection. Scoped OAuth requires: `workflow_integrations:connections.read`"
+    },
+    {
+      "name": "PAGERDUTY_INSTALL_ADD_ON_ENDPOINT",
+      "description": "This endpoint allows you to install a new add-on to your PagerDuty account, enhancing its functionality with custom integrations. Add-ons can be either full-page or incident-specific, providing additional context or tools within the PagerDuty interface. Use this endpoint when you want to integrate external resources or custom dashboards into your PagerDuty workflow. The add-on must have a secure HTTPS source URL and a unique name within your account. Note that while you can install multiple add-ons, each must serve a distinct purpose and have a different name and source URL."
+    },
+    {
+      "name": "PAGERDUTY_INVOKE_AUTOMATION_ACTION_BY_ID",
+      "description": "Invokes a specific automation action in PagerDuty, associating it with a particular incident. This endpoint allows you to trigger pre-defined automated tasks or workflows within the PagerDuty incident management system. It's particularly useful for executing custom actions or scripts in response to specific incidents, enhancing the incident response process. The action is identified by its unique ID, and the invocation must be linked to an existing incident through its incident ID. This endpoint should be used when you need to programmatically execute automation actions as part of your incident management workflow or integration with other systems."
+    },
+    {
+      "name": "PAGERDUTY_LIST_ALL_WORKFLOW_INTEGRATION_CONNECTIONS",
+      "description": "List all Workflow Integration Connections. Scoped OAuth requires: `workflow_integrations:connections.read`"
+    },
+    {
+      "name": "PAGERDUTY_LIST_AUTOMATION_ACTION_DETAILS",
+      "description": "This endpoint retrieves a list of automation actions configured in the PagerDuty account. Automation actions are predefined tasks or operations that can be executed automatically in response to incidents or other triggers. The endpoint allows users to view all available automation actions, which can be useful for auditing, managing, or integrating these actions into other workflows. It supports pagination for handling large sets of actions and can include related information about associated services and teams. Use this endpoint when you need to review, inventory, or programmatically access the automation capabilities within your PagerDuty environment. Note that this endpoint only provides information about existing actions and does not create, modify, or execute the actions themselves."
+    },
+    {
+      "name": "PAGERDUTY_LIST_EXTENSION_SCHEMAS",
+      "description": "Retrieves all available extension schemas from the PagerDuty API. This endpoint allows users to fetch custom schema extensions that have been defined for their PagerDuty account. Extension schemas are used to add custom data structures or validation rules to the standard API schema, enabling more flexible and tailored data management. This tool is particularly useful when you need to understand the custom data fields or structures that have been added to your PagerDuty implementation. It does not create, modify, or delete extension schemas; it only provides a read-only view of the existing schemas."
+    },
+    {
+      "name": "PAGERDUTY_LIST_FIELD_OPTIONS_ON_A_CUSTOM_FIELD",
+      "description": "List field options for a custom field. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.read`"
+    },
+    {
+      "name": "PAGERDUTY_LIST_INCIDENT_STATUS_UPDATE_SUBSCRIBERS",
+      "description": "Retrieves a list of subscribers to status updates for a specific incident in PagerDuty. This endpoint allows you to see all users or services that are currently subscribed to receive notifications about status changes for the given incident. It's useful for understanding who is being kept informed about the incident's progress. This tool should be used when you need to review or audit the notification list for an incident, ensuring that all necessary stakeholders are included. It does not modify the subscriber list; for adding or removing subscribers, separate endpoints would be required."
+    },
+    {
+      "name": "PAGERDUTY_LIST_INCIDENT_TYPE_CUSTOM_FIELDS",
+      "description": "List the custom fields for an incident type. Custom Fields (CF) are a feature which will allow customers to extend Incidents with their own custom data, to provide additional context and support features such as customized filtering, search and analytics. Custom Fields can be applied to different incident types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. Scoped OAuth requires: `custom_fields.read`"
+    },
+    {
+      "name": "PAGERDUTY_LIST_INCIDENT_TYPES",
+      "description": "List the available incident types Incident Types are a feature which will allow customers to categorize incidents, such as a security incident, a major incident, or a fraud incident. These can be filtered by enabled or disabled types. <!-- theme: warning --> > ### Early Access > This endpoint is in Early Access and may change at any time. You must pass in the X-EARLY-ACCESS header to access it. For more information see the [API Concepts Document](../../api-reference/ZG9jOjI3NDc5Nzc-api-concepts#incidentType) Scoped OAuth requires: `incident_types.read`"
+    },
+    {
+      "name": "PAGERDUTY_LIST_LICENSES",
+      "description": "The ListLicenses endpoint retrieves a comprehensive list of all licenses associated with the authenticated PagerDuty account. This tool is essential for administrators and account managers who need to review, audit, or manage the licensing status of their PagerDuty implementation. It provides an overview of all active licenses, including details such as license type, expiration date, and the number of users covered. This endpoint should be used when you need to perform license inventory, plan for renewals, or ensure compliance with your service agreement. Note that while it offers a complete view of licenses, it does not provide functionalities to modify licenses directly through the API."
+    },
+    {
+      "name": "PAGERDUTY_LIST_SUPPORTING_SERVICE_IMPACTS",
+      "description": "Retrieves information about the impacts of supporting services on a specific business service in PagerDuty. This endpoint is used to understand the relationships and dependencies between a primary business service and its supporting services, along with the potential impacts these relationships may have on incident management and service reliability. It's particularly useful for assessing the cascading effects of incidents across interconnected services and for proactive risk management. The endpoint should be used when analyzing service dependencies, planning incident response strategies, or evaluating the overall resilience of your service infrastructure. Note that this endpoint focuses on impact information and may not provide real-time incident data or detailed metrics about the services themselves."
+    },
+    {
+      "name": "PAGERDUTY_LIST_TEMPLATES",
+      "description": "Retrieves a list of templates available in the PagerDuty system. Templates are pre-defined configurations used for creating alerts, notifications, and other automated processes within PagerDuty. This endpoint should be used when you need to view or manage the existing templates in your PagerDuty account. It provides an overview of all templates, which can be useful for auditing, updating, or selecting templates for use in incident management workflows. The endpoint does not create, modify, or delete templates; it is solely for retrieving template information."
+    },
+    {
+      "name": "PAGERDUTY_LIST_WORKFLOW_INTEGRATION_CONNECTIONS",
+      "description": "List all Workflow Integration Connections for a specific Workflow Integration. Scoped OAuth requires: `workflow_integrations:connections.read`"
+    },
+    {
+      "name": "PAGERDUTY_LIST_WORKFLOW_INTEGRATIONS",
+      "description": "List available Workflow Integrations. Scoped OAuth requires: `workflow_integrations.read`"
+    },
+    {
+      "name": "PAGERDUTY_MANAGE_CACHE_VARIABLES_FOR_EVENT_SERVICE",
+      "description": "Creates a new cache variable for a specific service in PagerDuty's event orchestrations. This endpoint allows you to define a cache variable that can store either the most recent value from an event field or count trigger events within a specified time range. Cache variables are useful for maintaining temporary data related to events, which can be used in event routing and management. The created cache variable can be used to enhance event processing logic and improve incident management workflows."
+    },
+    {
+      "name": "PAGERDUTY_MERGE_SOURCE_INCIDENTS_INTO_TARGET_INCIDENT",
+      "description": "Merges multiple source incidents into a target incident in PagerDuty's incident management system. This endpoint allows users to consolidate related or duplicate incidents into a single, primary incident for streamlined management and resolution. The operation combines the specified source incidents into the target incident identified by the URL path, marking the source incidents as resolved. This tool should be used when multiple incidents are determined to be part of the same underlying issue or when consolidating incident management efforts. It's particularly useful for reducing noise and focusing on the root cause of related issues. Note that this action is irreversible, so care should be taken to ensure that the incidents are truly related before merging."
+    },
+    {
+      "name": "PAGERDUTY_MIGRATE_INTEGRATION_BETWEEN_ORCHESTRATIONS",
+      "description": "This endpoint facilitates the migration of an integration from one event orchestration to another within PagerDuty. It allows users to reassign an existing integration to a different event orchestration, maintaining the integration's configuration while updating its association. This operation is useful when restructuring event management workflows or optimizing incident routing. The endpoint should be used when there's a need to change how a specific integration interacts with PagerDuty's event processing system. It's important to note that this process only changes the association and does not modify the integration's settings or connected external services."
+    },
+    {
+      "name": "PAGERDUTY_MODIFY_ENTITY_TAGS",
+      "description": "This endpoint allows you to modify the tags associated with a specific entity in PagerDuty. It provides functionality to both add new tags and remove existing ones in a single API call. The endpoint is particularly useful for updating the categorization or labeling of PagerDuty entities such as incidents, services, or users. It supports adding tags by label (creating new ones if necessary) or by reference, and removing tags by their unique identifiers. This flexibility allows for efficient tag management across your PagerDuty resources, enabling better organization and easier searching of entities. Use this endpoint when you need to update the tags for a specific entity, either to refine its categorization or to align it with current operational needs."
+    },
+    {
+      "name": "PAGERDUTY_PING_WEBHOOK_SUBSCRIPTION",
+      "description": "The PingWebhookSubscription endpoint sends a test POST request to a specified webhook subscription in your PagerDuty account. This tool is used to verify that a webhook subscription is correctly configured and can receive notifications. It's particularly useful after setting up a new webhook subscription or when troubleshooting integration issues. The endpoint doesn't modify any data but simulates a real webhook delivery, allowing you to confirm that your systems can properly receive and process PagerDuty webhooks. Note that this tool only tests the delivery mechanism and doesn't validate the processing of specific event types on your end."
+    },
+    {
+      "name": "PAGERDUTY_POST_ACCOUNT_SUBSCRIPTION_FOR_BUSINESS_SERVICE",
+      "description": "This endpoint creates or updates an account subscription for a specific business service in PagerDuty. It allows users to manage subscription settings, such as notification preferences or service-level agreements, for a particular business service identified by its unique ID. Use this endpoint when you need to set up new subscription configurations or modify existing ones for a business service. The endpoint is particularly useful for automating subscription management across multiple business services or integrating subscription updates with other systems. Note that this operation may affect billing or service access, so it should be used carefully and with proper authorization."
+    },
+    {
+      "name": "PAGERDUTY_POST_ALERT_GROUPING_SETTINGS",
+      "description": "Creates a new Alert Grouping Setting in PagerDuty, defining how alerts will be automatically grouped into incidents based on specified configurations. This endpoint allows users to set up intelligent alert grouping rules, improving incident management efficiency by reducing noise and consolidating related alerts. It's particularly useful for teams looking to streamline their incident response process and minimize alert fatigue. The setting can be applied to one or multiple services, with the option to use content-based or intelligent grouping algorithms."
+    },
+    {
+      "name": "PAGERDUTY_POST_ANALYTIC_METRICS_ON_ESCALATION_POLICIES",
+      "description": "Retrieves and aggregates analytics metrics for incidents related to escalation policies in PagerDuty. This endpoint allows for detailed filtering and customization of incident data, enabling users to analyze trends, performance, and patterns in their incident management process. It's particularly useful for generating reports, identifying areas for improvement, and understanding the effectiveness of escalation policies over time. The endpoint supports various filtering options, time zone specifications, and time-based aggregation, making it a powerful tool for operational insights and decision-making in incident management."
+    },
+    {
+      "name": "PAGERDUTY_POST_ANALYTICS_METRICS_RESPONDER_FILTERS",
+      "description": "The AnalyzeResponderMetrics endpoint aggregates and analyzes responder performance metrics for PagerDuty incidents. It provides insights into response times, efficiency, and workload distribution. This tool is ideal for assessing and optimizing incident response processes, offering flexible filtering options for focused analysis. Note that it provides aggregated data, not real-time information, with a maximum analysis range of one year."
+    },
+    {
+      "name": "PAGERDUTY_POST_CHANGE_EVENTS",
+      "description": "Creates a new change event in the PagerDuty system. This endpoint allows you to record and track significant changes or updates within your infrastructure or services. Use this when you want to log important modifications, deployments, or system alterations that may impact incident management or operational processes. The change event data can be used for correlation with incidents, providing context for potential issues or for auditing purposes. This endpoint is particularly useful for maintaining a comprehensive change log and enhancing the incident response process by providing additional context about recent system changes."
+    },
+    {
+      "name": "PAGERDUTY_POST_EVENT_ORCHESTRATION_CACHE_VARIABLES",
+      "description": "Creates a new cache variable within a PagerDuty event orchestration. This endpoint allows you to define a cache variable that can store dynamic data related to events, either based on recent values extracted from event fields or by counting trigger events within a specified time range. Cache variables are useful for maintaining state across multiple events and can be used in event routing and automation rules. The created cache variable can be configured with conditions to determine when it should be updated and can be optionally disabled. This tool should be used when setting up complex event orchestrations that require stateful processing or when implementing advanced automation workflows in PagerDuty."
+    },
+    {
+      "name": "PAGERDUTY_POST_INCIDENT_METRICS",
+      "description": "This endpoint retrieves analytics metrics for responder teams based on incident data in PagerDuty. It allows for detailed filtering and customization of the data set, enabling users to analyze team and responder performance across various dimensions such as time range, urgency, priorities, and specific teams or responders. The endpoint is particularly useful for generating reports, assessing team efficiency, and identifying trends in incident management. It should be used when comprehensive analytics on responder team performance are needed, especially for large-scale or complex incident management scenarios. However, it's important to note that the endpoint has a maximum time range of one year for analysis, and the results are limited to the data the requestor has access to within the PagerDuty system."
+    },
+    {
+      "name": "PAGERDUTY_POST_INCIDENT_METRICS_WITH_FILTERS",
+      "description": "This endpoint retrieves and aggregates analytics metrics for incidents across all teams in PagerDuty. It allows users to apply various filters and parameters to analyze incident data, such as creation date range, urgency, team associations, and more. The endpoint is particularly useful for generating reports, identifying trends, and performing operational reviews across multiple teams and services. It provides flexibility in data aggregation and sorting, enabling users to customize their analysis based on specific needs and time frames. However, users should be aware of the one-year limitation on the date range when using the created_at filters."
+    },
+    {
+      "name": "PAGERDUTY_POST_INCIDENT_NOTE_USING_ID",
+      "description": "Adds a new note to an existing incident in PagerDuty. This endpoint allows users to append additional information, updates, or comments to a specific incident identified by its unique ID. It's particularly useful for documenting the progress of incident resolution, sharing important observations, or recording actions taken. The note content can include any text relevant to the incident management process, helping teams collaborate and maintain a clear record of the incident's timeline and handling."
+    }
+  ]
+}

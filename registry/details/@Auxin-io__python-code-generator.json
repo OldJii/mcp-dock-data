@@ -1,0 +1,34 @@
+{
+  "id": "@Auxin-io/python-code-generator",
+  "displayName": "Python Code Generator",
+  "description": "Generate a ready-to-run Python 'Hello, World!' script with streamable output. Quickly validate integrations or demo code execution. Learn secure patterns by contrasting with insecure examples.",
+  "createdAt": "2026-01-19T02:20:02.767Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/python-code-generator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generatePythonCode",
+      "description": "I give you secure Python code"
+    }
+  ]
+}

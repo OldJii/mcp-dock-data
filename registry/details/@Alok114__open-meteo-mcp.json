@@ -1,0 +1,12 @@
+{
+  "id": "@Alok114/open-meteo-mcp",
+  "displayName": "open-meteo-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:07.383Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Alok114/open-meteo-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

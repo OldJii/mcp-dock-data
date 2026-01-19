@@ -1,0 +1,29 @@
+{
+  "id": "@TheSethRose/mcp-server-starter",
+  "displayName": "MCP Server Starter",
+  "description": "Build a robust server to enable AI agents to interact with various tools.",
+  "createdAt": "2026-01-19T02:18:36.249Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@TheSethRose/mcp-server-starter"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "calculate",
+      "description": "Perform basic arithmetic operations"
+    },
+    {
+      "name": "fetch_user",
+      "description": "Fetch user details from JSONPlaceholder API"
+    }
+  ]
+}

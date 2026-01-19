@@ -1,0 +1,41 @@
+{
+  "id": "zoho_invoice",
+  "displayName": "Zoho invoice",
+  "description": "Zoho Invoice simplifies billing, recurring payments, and expense management, helping freelancers and small businesses send professional invoices",
+  "createdAt": "2026-01-19T02:12:56.443Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_invoice"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_INVOICE_GET_ITEM",
+      "description": "Tool to retrieve the details of a specific item by item_id. Use when you need to fetch an item's data after confirming its existence."
+    },
+    {
+      "name": "ZOHO_INVOICE_LIST_CONTACTS",
+      "description": "Tool to list contacts. Use after obtaining the organization ID to retrieve contacts with optional filters and pagination."
+    },
+    {
+      "name": "ZOHO_INVOICE_LIST_EXPENSES",
+      "description": "Tool to list all expenses with optional pagination. Use when you need to retrieve expenses with simple pagination."
+    },
+    {
+      "name": "ZOHO_INVOICE_LIST_INVOICES",
+      "description": "Tool to list invoices. Use when you need to retrieve all invoices with optional filters and pagination."
+    },
+    {
+      "name": "ZOHO_INVOICE_LIST_ITEMS",
+      "description": "Tool to list all items. Use when you need to retrieve your item catalog with optional pagination and filtering after specifying the organization ID."
+    },
+    {
+      "name": "ZOHO_INVOICE_LIST_PAYMENTS",
+      "description": "Tool to list payments. Use when you need to retrieve all payments with optional filters like customer, invoice, date range, and pagination."
+    }
+  ]
+}

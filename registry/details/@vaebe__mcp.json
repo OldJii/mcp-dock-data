@@ -1,0 +1,29 @@
+{
+  "id": "@vaebe/mcp",
+  "displayName": "Server Time",
+  "description": "Retrieve the current time effortlessly with this server. Integrate time-fetching capabilities into your applications seamlessly. Enhance your projects with accurate and reliable time data.",
+  "createdAt": "2026-01-19T02:13:53.270Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vaebe/mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_time",
+      "description": "获取当前时间"
+    },
+    {
+      "name": "convert_time",
+      "description": "在时区之间转换时间"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "@lumberjack-so/joemcp",
+  "displayName": "joemcp",
+  "description": "Manage clients, contacts, proposals, estimates, and projects in Joe API. Create and track action items, assign supervisors, and coordinate schedules to keep work moving. Monitor project finances with summaries and detailed views to make informed decisions.",
+  "createdAt": "2026-01-19T02:13:12.695Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lumberjack-so/joemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API key for authentication (if required)"
+        },
+        "apiBaseUrl": {
+          "type": "string",
+          "description": "Base URL for JoeAPI backend",
+          "default": "https://joeapi.fly.dev"
+        },
+        "requestTimeout": {
+          "type": "number",
+          "description": "Request timeout in milliseconds",
+          "default": 30000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_clients",
+      "description": "Retrieve a paginated list of clients"
+    },
+    {
+      "name": "create_client",
+      "description": "Create a new client record"
+    },
+    {
+      "name": "list_contacts",
+      "description": "Retrieve a list of contacts"
+    },
+    {
+      "name": "create_contact",
+      "description": "Create a new contact"
+    },
+    {
+      "name": "list_proposals",
+      "description": "Get a minimal list of proposals with optional project filtering. Returns only name, id, and projectId for each proposal. Use discover or search to find proposals and get full details."
+    },
+    {
+      "name": "list_estimates",
+      "description": "Get a minimal list of estimates with optional project filtering. Returns only name, id, and projectId for each estimate. Use get_estimates to retrieve full details for a specific project's estimates."
+    },
+    {
+      "name": "list_action_items",
+      "description": "Get a minimal list of action items with optional project filtering. Returns only name (title), id, and projectId for each action item. Use get_action_item to retrieve full details for a specific action item."
+    },
+    {
+      "name": "get_action_item",
+      "description": "Get full details for a specific action item by ID"
+    },
+    {
+      "name": "create_action_item",
+      "description": "Create a new Action Item. Can be Generic (ActionTypeId=3), Cost Change (ActionTypeId=1), or Schedule Change (ActionTypeId=2). For Cost/Schedule changes, you MUST include the corresponding nested object with all required fields."
+    },
+    {
+      "name": "add_action_item_comment",
+      "description": "Add a comment to an action item"
+    },
+    {
+      "name": "assign_action_item_supervisor",
+      "description": "Assign a supervisor to an action item"
+    },
+    {
+      "name": "list_projects",
+      "description": "Get a minimal list of all projects. Returns only name, id, and projectId for each project. Use get_project to retrieve full details for a specific project."
+    },
+    {
+      "name": "get_project",
+      "description": "Get full project details by project ID"
+    },
+    {
+      "name": "get_schedule",
+      "description": "Get full schedule data for a specific project"
+    },
+    {
+      "name": "list_schedules",
+      "description": "Get a minimal list of schedules with optional project filtering. Returns only name, id, and projectId for each schedule."
+    },
+    {
+      "name": "get_estimates",
+      "description": "Get full estimate data for a specific project"
+    },
+    {
+      "name": "discover",
+      "description": "Discover comprehensive project data by searching for a project and retrieving all related information including project details, financials (estimates, job balances, cost variance), schedules, and action items - all in one unified JSON response"
+    },
+    {
+      "name": "async",
+      "description": "Delegate complex multi-step workflows to the async-agent system with real-time progress updates. Use this for tasks that require multiple coordinated steps, data gathering from multiple sources, or complex orchestration."
+    },
+    {
+      "name": "get_financials",
+      "description": "Get comprehensive financial data for a project including job balances and cost variance"
+    },
+    {
+      "name": "get_transactions",
+      "description": "Get transaction list for a project with optional date range filtering"
+    },
+    {
+      "name": "find_project",
+      "description": "Search for projects by name, client name, or other attributes. Returns matching projects with basic info."
+    },
+    {
+      "name": "find_estimate",
+      "description": "Search for estimates and estimate categories. Can search across all estimates or within a specific project."
+    },
+    {
+      "name": "find_schedule",
+      "description": "Search for schedules and construction tasks. Can search across all schedules or within a specific project."
+    },
+    {
+      "name": "find_proposal",
+      "description": "Search for proposals by proposal number, title, or description. Can optionally filter by project."
+    },
+    {
+      "name": "find_action_items",
+      "description": "Search for action items by title or description. Can optionally filter by project."
+    },
+    {
+      "name": "search",
+      "description": "Generic search tool that can search across multiple entity types with optional filtering by project."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "@vinodkrishnan92/my-first-mcp",
+  "displayName": "Profile & Company Insights",
+  "description": "Explore an agent's capabilities, configuration, and profile details. Fetch background information about the organization behind the agent. Quickly audit setups and document ownership for compliance and onboarding.",
+  "createdAt": "2026-01-19T02:17:59.268Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vinodkrishnan92/my-first-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_agent_info",
+      "description": "Get information about this agent including capabilities and configuration"
+    },
+    {
+      "name": "get_company_info",
+      "description": "Get information about the company/organization behind this agent"
+    }
+  ]
+}

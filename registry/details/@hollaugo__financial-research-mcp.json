@@ -1,0 +1,73 @@
+{
+  "id": "@hollaugo/financial-research-mcp",
+  "displayName": "Equity Research",
+  "description": "Research stocks with concise summaries, financial statements, and sector insights. Track dividends, splits, insider and institutional activity, along with analyst targets and recommendations. Summarize SEC filings into clear takeaways to speed up due diligence.",
+  "createdAt": "2026-01-19T02:14:02.591Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hollaugo/financial-research-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "user_agent": {
+          "type": "string",
+          "description": "User agent for SEC requests",
+          "default": "Prompt Circle Labs info@promptcircle.com"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_stock_summary",
+      "description": "Get a basic stock summary using Yahoo Finance."
+    },
+    {
+      "name": "get_sec_filings",
+      "description": "Get recent SEC filings for a ticker."
+    },
+    {
+      "name": "get_analyst_targets",
+      "description": "Get analyst price targets for a ticker."
+    },
+    {
+      "name": "get_recommendations",
+      "description": "Get analyst recommendations for a ticker."
+    },
+    {
+      "name": "get_dividends",
+      "description": "Get dividend history for a ticker."
+    },
+    {
+      "name": "get_splits",
+      "description": "Get stock split history for a ticker."
+    },
+    {
+      "name": "get_institutional_holders",
+      "description": "Get institutional holders for a ticker."
+    },
+    {
+      "name": "get_insider_transactions",
+      "description": "Get insider transactions for a ticker."
+    },
+    {
+      "name": "get_sector_info",
+      "description": "Get sector and industry information for a ticker."
+    },
+    {
+      "name": "get_financial_statements",
+      "description": "Get balance sheet, income statement, and cashflow for a ticker."
+    },
+    {
+      "name": "summarize_filing",
+      "description": "Fetches an SEC filing from a URL, extracts main content using BSHTMLLoader, and summarizes the key points."
+    }
+  ]
+}

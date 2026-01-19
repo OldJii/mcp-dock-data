@@ -1,0 +1,48 @@
+{
+  "id": "@Puthin7778/plantops-mcp",
+  "displayName": "Plantops GraphQL Explorer",
+  "description": "Explore and query the Plantops GraphQL API with schema introspection, field discovery, and mutation browsing. Inspect complex types and arguments to craft accurate requests. Run queries directly to validate responses and speed up integration.",
+  "createdAt": "2026-01-19T02:14:27.678Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Puthin7778/plantops-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "listFields",
+      "description": "List all top-level GraphQL query fields with descriptions."
+    },
+    {
+      "name": "listMutations",
+      "description": "List all top-level GraphQL mutation fields with descriptions."
+    },
+    {
+      "name": "describeField",
+      "description": "Return the argument schema and return type for a top-level field. IMPORTANT: This does not show sub-fields of complex types. To discover the fields of a complex return type (e.g., 'Users'), use the 'introspectType' tool."
+    },
+    {
+      "name": "describeComplexField",
+      "description": "Describes a top-level query or mutation field, its arguments, and its immediate sub-fields if it returns a complex object."
+    },
+    {
+      "name": "introspectType",
+      "description": "Discover the available fields for a complex GraphQL object type. Use this when a type name is returned from another tool (like 'describeField') and you need to know its internal structure."
+    },
+    {
+      "name": "executeQuery",
+      "description": "Execute a GraphQL query string (and optional variables) and return JSON."
+    }
+  ]
+}

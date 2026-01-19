@@ -1,0 +1,12 @@
+{
+  "id": "n3wth/ynab-mcp-server",
+  "displayName": "ynab-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:50.789Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/n3wth/ynab-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

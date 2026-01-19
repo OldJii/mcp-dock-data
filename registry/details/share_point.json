@@ -1,0 +1,41 @@
+{
+  "id": "share_point",
+  "displayName": "Share point",
+  "description": "SharePoint is a Microsoft platform for document management and intranets, enabling teams to collaborate, store, and organize content securely and effectively",
+  "createdAt": "2026-01-19T02:13:03.763Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/share_point"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "SHARE_POINT_SHAREPOINT_CREATE_FOLDER",
+      "description": "Creates a new folder in SharePoint using the REST API."
+    },
+    {
+      "name": "SHARE_POINT_SHAREPOINT_CREATE_LIST",
+      "description": "Creates a new list in SharePoint using the REST API."
+    },
+    {
+      "name": "SHARE_POINT_SHAREPOINT_CREATE_LIST_ITEM",
+      "description": "Creates a new item in a SharePoint list."
+    },
+    {
+      "name": "SHARE_POINT_SHAREPOINT_CREATE_USER",
+      "description": "Creates a new user in SharePoint."
+    },
+    {
+      "name": "SHARE_POINT_SHAREPOINT_FIND_USER",
+      "description": "Finds a user in both Microsoft Graph and SharePoint to verify their existence and status."
+    },
+    {
+      "name": "SHARE_POINT_SHAREPOINT_REMOVE_USER",
+      "description": "Removes a user from SharePoint. Will not fail if user doesn't exist."
+    }
+  ]
+}

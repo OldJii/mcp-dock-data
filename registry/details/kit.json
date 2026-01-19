@@ -1,0 +1,133 @@
+{
+  "id": "kit",
+  "displayName": "Kit",
+  "description": "Kit is a platform that allows creators to automate tasks and developers to build apps for the Kit App Store.",
+  "createdAt": "2026-01-19T02:13:06.740Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/kit"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "KIT_ADD_SUBSCRIBER_TO_FORM",
+      "description": "Tool to add a subscriber to a specific form by ID. Use after confirming form and subscriber IDs."
+    },
+    {
+      "name": "KIT_CREATE_CUSTOM_FIELD",
+      "description": "Tool to create a new custom field for subscriber data. Use when you need to store extra attributes for subscribers."
+    },
+    {
+      "name": "KIT_CREATE_TAG",
+      "description": "Tool to create a new tag in the account. Use when you need a custom label to segment subscribers. Use after confirming tag uniqueness to avoid duplicates. Example: \"Create a tag called 'VIP' for premium customers.\""
+    },
+    {
+      "name": "KIT_CREATE_WEBHOOK",
+      "description": "Tool to create a new webhook subscription. Use when you need subscriber or purchase event notifications."
+    },
+    {
+      "name": "KIT_DELETE_BROADCAST",
+      "description": "Tool to delete a specific broadcast. Use when you need to permanently remove a broadcast by ID (after confirming the ID). Example prompt: \"Delete broadcast with ID 123\""
+    },
+    {
+      "name": "KIT_DELETE_CUSTOM_FIELD",
+      "description": "Tool to delete a specific custom field. Use after confirming the custom field ID is correct. Deletes the field permanently."
+    },
+    {
+      "name": "KIT_DELETE_SUBSCRIBER",
+      "description": "Tool to delete (unsubscribe) a subscriber by ID. Use when you need to remove a subscriber from all sequences and forms after confirming the subscriber exists."
+    },
+    {
+      "name": "KIT_DELETE_TAG",
+      "description": "Tool to delete a tag by ID. Use when you need to remove obsolete or incorrect tags after confirming the tag exists."
+    },
+    {
+      "name": "KIT_DELETE_WEBHOOK",
+      "description": "Tool to delete a webhook by ID. Use when you want to permanently remove a webhook after confirming its ID."
+    },
+    {
+      "name": "KIT_GET_ACCOUNT",
+      "description": "Tool to retrieve current account information. Use after validating API key to fetch account ID, plan type, primary email, and timezone details."
+    },
+    {
+      "name": "KIT_GET_ACCOUNT_COLORS",
+      "description": "Tool to retrieve list of colors associated with the account. Use after confirming authentication to fetch account-specific color palette."
+    },
+    {
+      "name": "KIT_GET_BROADCAST",
+      "description": "Tool to retrieve details of a specific broadcast by ID. Use when you have a valid broadcast ID and need its metadata."
+    },
+    {
+      "name": "KIT_GET_BROADCAST_STATS",
+      "description": "Tool to retrieve statistics for a specific broadcast by ID. Use after a broadcast has been sent to monitor performance."
+    },
+    {
+      "name": "KIT_GET_CREATOR_PROFILE",
+      "description": "Tool to retrieve the creator profile information for the account. Use when you need creator metadata (bio, avatar, social links) before publishing or customizing content."
+    },
+    {
+      "name": "KIT_GET_EMAIL_STATS",
+      "description": "Tool to retrieve email statistics for the account. Use after confirming authentication to fetch metrics on emails (sent, opened, clicked) over the last 90 days."
+    },
+    {
+      "name": "KIT_LIST_BROADCASTS",
+      "description": "Tool to retrieve a paginated list of all broadcasts. Use when you need to enumerate or review broadcast summaries with cursor-based pagination."
+    },
+    {
+      "name": "KIT_LIST_CUSTOM_FIELDS",
+      "description": "Tool to retrieve a paginated list of custom fields. Use after confirming you need to enumerate or inspect all custom fields with cursor-based pagination."
+    },
+    {
+      "name": "KIT_LIST_FORMS",
+      "description": "Tool to list all forms. Use when you need to fetch forms with optional filters and pagination."
+    },
+    {
+      "name": "KIT_LIST_SEGMENTS",
+      "description": "Tool to retrieve a paginated list of segments. Use when you need to enumerate segments with cursor-based pagination for further processing or display."
+    },
+    {
+      "name": "KIT_LIST_SEQUENCES",
+      "description": "Tool to retrieve a paginated list of all sequences. Use when you need to enumerate sequences with pagination for further processing or display."
+    },
+    {
+      "name": "KIT_LIST_SUBSCRIBERS",
+      "description": "Tool to retrieve a list of subscribers. Use when you need to fetch subscriber records with optional filtering, sorting, and pagination."
+    },
+    {
+      "name": "KIT_LIST_SUBSCRIBERS_FOR_FORM",
+      "description": "Tool to retrieve subscribers for a specific form by ID. Use when you need to page or filter subscribers of a form."
+    },
+    {
+      "name": "KIT_LIST_TAGS",
+      "description": "Tool to retrieve a list of all tags. Use when you need a complete inventory of tags for the Kit account."
+    },
+    {
+      "name": "KIT_LIST_TAG_SUBSCRIBERS",
+      "description": "Tool to retrieve subscribers for a specific tag. Use after confirming the tag ID when you need to list subscribers associated with a tag."
+    },
+    {
+      "name": "KIT_TAG_SUBSCRIBER",
+      "description": "Tool to associate a subscriber with a specific tag by ID. Use after confirming tag and subscriber IDs when tagging a subscriber."
+    },
+    {
+      "name": "KIT_TAG_SUBSCRIBER_BY_EMAIL",
+      "description": "Tool to associate a subscriber with a tag using an email address. Use when you have a tag ID and subscriber email ready. Use after confirming both resources exist."
+    },
+    {
+      "name": "KIT_UPDATE_ACCOUNT_COLORS",
+      "description": "Tool to update the list of colors for the account. Use when customizing your Kit account's color palette for broadcasts and templates."
+    },
+    {
+      "name": "KIT_UPDATE_CUSTOM_FIELD",
+      "description": "Tool to update a custom field's label. Use after listing or retrieving custom fields and confirming the field ID to rename."
+    },
+    {
+      "name": "KIT_UPDATE_TAG",
+      "description": "Tool to update a tag's name by ID. Use after retrieving tag ID and confirming the new name."
+    }
+  ]
+}

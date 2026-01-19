@@ -1,0 +1,31 @@
+{
+  "id": "@kapilthakare-cyberpunk/hello-server",
+  "displayName": "hello-server",
+  "description": "Greet anyone with a friendly, customizable message. Tailor tone and format for intros, demos, or onboarding. Explore the origin of 'Hello, World' for quick context.",
+  "createdAt": "2026-01-19T02:18:11.309Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kapilthakare-cyberpunk/hello-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

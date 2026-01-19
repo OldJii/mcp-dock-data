@@ -1,0 +1,16 @@
+{
+  "id": "@devbrother2024/mcp-server-test2-251209",
+  "displayName": "mcp-server-test2-251209",
+  "description": "Convert addresses into precise coordinates and retrieve current weather for any location. Accelerate location-aware workflows with streamlined geocoding and weather lookups. Try quick greeting responses for demos and testing.",
+  "createdAt": "2026-01-19T02:21:24.296Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devbrother2024/mcp-server-test2-251209"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

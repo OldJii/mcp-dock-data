@@ -1,0 +1,465 @@
+{
+  "id": "@GigaChatTester/hubspot-mcp",
+  "displayName": "HubSpot CRM API Server",
+  "description": "Provide standardized access and management of HubSpot CRM data through a comprehensive MCP server. Enable efficient CRM operations including object management, advanced search, batch processing, and association handling. Simplify integration with HubSpot's API for seamless CRM workflows and data validation.",
+  "createdAt": "2026-01-19T02:17:26.096Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GigaChatTester/hubspot-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "crm_create_company",
+      "description": "Create a new company with validated properties"
+    },
+    {
+      "name": "crm_update_company",
+      "description": "Update an existing company with validated properties"
+    },
+    {
+      "name": "crm_get_company",
+      "description": "Get a single company by ID with specific properties and associations"
+    },
+    {
+      "name": "crm_search_companies",
+      "description": "Search companies with company-specific filters"
+    },
+    {
+      "name": "crm_batch_create_companies",
+      "description": "Create multiple companies in a single request"
+    },
+    {
+      "name": "crm_batch_update_companies",
+      "description": "Update multiple companies in a single request"
+    },
+    {
+      "name": "crm_get_company_properties",
+      "description": "Get all properties for companies"
+    },
+    {
+      "name": "crm_create_company_property",
+      "description": "Create a new company property"
+    },
+    {
+      "name": "crm_list_objects",
+      "description": "List CRM objects of a specific type with optional filtering and pagination"
+    },
+    {
+      "name": "crm_get_object",
+      "description": "Get a single CRM object by ID"
+    },
+    {
+      "name": "crm_create_object",
+      "description": "Create a new CRM object"
+    },
+    {
+      "name": "crm_update_object",
+      "description": "Update an existing CRM object"
+    },
+    {
+      "name": "crm_archive_object",
+      "description": "Archive (delete) a CRM object"
+    },
+    {
+      "name": "crm_search_objects",
+      "description": "Search CRM objects using filters"
+    },
+    {
+      "name": "crm_batch_create_objects",
+      "description": "Create multiple CRM objects in a single request"
+    },
+    {
+      "name": "crm_batch_read_objects",
+      "description": "Create multiple CRM objects in a single request"
+    },
+    {
+      "name": "crm_batch_update_objects",
+      "description": "Update multiple CRM objects in a single request"
+    },
+    {
+      "name": "crm_batch_archive_objects",
+      "description": "Archive (delete) multiple CRM objects in a single request"
+    },
+    {
+      "name": "crm_list_association_types",
+      "description": "List all available association types for a given object type pair"
+    },
+    {
+      "name": "crm_get_associations",
+      "description": "Get all associations of a specific type between objects"
+    },
+    {
+      "name": "crm_create_association",
+      "description": "Create an association between two objects"
+    },
+    {
+      "name": "crm_archive_association",
+      "description": "Archive (delete) an association between two objects"
+    },
+    {
+      "name": "crm_batch_create_associations",
+      "description": "Create multiple associations in a single request"
+    },
+    {
+      "name": "crm_batch_archive_associations",
+      "description": "Archive (delete) multiple associations in a single request"
+    },
+    {
+      "name": "crm_create_contact",
+      "description": "Create a new contact with validated properties"
+    },
+    {
+      "name": "crm_update_contact",
+      "description": "Update an existing contact with validated properties"
+    },
+    {
+      "name": "crm_get_contact",
+      "description": "Get a single contact by ID with specific properties and associations"
+    },
+    {
+      "name": "crm_search_contacts",
+      "description": "Search contacts with contact-specific filters"
+    },
+    {
+      "name": "crm_batch_create_contacts",
+      "description": "Create multiple contacts in a single request"
+    },
+    {
+      "name": "crm_batch_update_contacts",
+      "description": "Update multiple contacts in a single request"
+    },
+    {
+      "name": "crm_get_contact_properties",
+      "description": "Get all properties for contacts"
+    },
+    {
+      "name": "crm_create_contact_property",
+      "description": "Create a new contact property"
+    },
+    {
+      "name": "crm_create_lead",
+      "description": "Create a new lead with validated properties"
+    },
+    {
+      "name": "crm_update_lead",
+      "description": "Update an existing lead with validated properties"
+    },
+    {
+      "name": "crm_get_lead",
+      "description": "Get a single lead by ID with specific properties and associations"
+    },
+    {
+      "name": "crm_search_leads",
+      "description": "Search leads with lead-specific filters"
+    },
+    {
+      "name": "crm_batch_create_leads",
+      "description": "Create multiple leads in a single request"
+    },
+    {
+      "name": "crm_batch_update_leads",
+      "description": "Update multiple leads in a single request"
+    },
+    {
+      "name": "crm_get_lead_properties",
+      "description": "Get all properties for leads"
+    },
+    {
+      "name": "crm_create_lead_property",
+      "description": "Create a new lead property"
+    },
+    {
+      "name": "meetings_list",
+      "description": "List all meetings with optional filtering"
+    },
+    {
+      "name": "meetings_get",
+      "description": "Get details of a specific meeting"
+    },
+    {
+      "name": "meetings_create",
+      "description": "Create a new meeting"
+    },
+    {
+      "name": "meetings_update",
+      "description": "Update an existing meeting"
+    },
+    {
+      "name": "meetings_archive",
+      "description": "Archive (delete) a meeting"
+    },
+    {
+      "name": "meetings_search",
+      "description": "Search meetings with specific filters"
+    },
+    {
+      "name": "meetings_batch_create",
+      "description": "Create multiple meetings in a single request"
+    },
+    {
+      "name": "meetings_batch_update",
+      "description": "Update multiple meetings in a single request"
+    },
+    {
+      "name": "meetings_batch_archive",
+      "description": "Archive (delete) multiple meetings in a single request"
+    },
+    {
+      "name": "notes_create",
+      "description": "Create a new note"
+    },
+    {
+      "name": "notes_get",
+      "description": "Get details of a specific note"
+    },
+    {
+      "name": "notes_update",
+      "description": "Update an existing note"
+    },
+    {
+      "name": "notes_archive",
+      "description": "Archive (delete) a note"
+    },
+    {
+      "name": "notes_list",
+      "description": "List all notes with optional filtering"
+    },
+    {
+      "name": "notes_search",
+      "description": "Search notes with specific filters"
+    },
+    {
+      "name": "notes_batch_create",
+      "description": "Create multiple notes in a single request"
+    },
+    {
+      "name": "notes_batch_read",
+      "description": "Read multiple notes in a single request"
+    },
+    {
+      "name": "notes_batch_update",
+      "description": "Update multiple notes in a single request"
+    },
+    {
+      "name": "notes_batch_archive",
+      "description": "Archive (delete) multiple notes in a single request"
+    },
+    {
+      "name": "tasks_create",
+      "description": "Create a new task"
+    },
+    {
+      "name": "tasks_get",
+      "description": "Get details of a specific task"
+    },
+    {
+      "name": "tasks_update",
+      "description": "Update an existing task"
+    },
+    {
+      "name": "tasks_archive",
+      "description": "Archive (delete) a task"
+    },
+    {
+      "name": "tasks_list",
+      "description": "List all tasks with optional filtering"
+    },
+    {
+      "name": "tasks_search",
+      "description": "Search tasks with specific filters"
+    },
+    {
+      "name": "tasks_batch_create",
+      "description": "Create multiple tasks in a single request"
+    },
+    {
+      "name": "tasks_batch_read",
+      "description": "Read multiple tasks in a single request"
+    },
+    {
+      "name": "tasks_batch_update",
+      "description": "Update multiple tasks in a single request"
+    },
+    {
+      "name": "tasks_batch_archive",
+      "description": "Archive (delete) multiple tasks in a single request"
+    },
+    {
+      "name": "engagement_details_get",
+      "description": "Get details of a specific engagement"
+    },
+    {
+      "name": "engagement_details_create",
+      "description": "Create a new engagement with details"
+    },
+    {
+      "name": "engagement_details_update",
+      "description": "Update an existing engagement's details"
+    },
+    {
+      "name": "engagement_details_list",
+      "description": "List all engagements with optional filtering"
+    },
+    {
+      "name": "engagement_details_archive",
+      "description": "Archive (delete) an engagement"
+    },
+    {
+      "name": "engagement_details_get_associated",
+      "description": "Get all engagements associated with an object"
+    },
+    {
+      "name": "calls_create",
+      "description": "Create a new call record"
+    },
+    {
+      "name": "calls_get",
+      "description": "Get details of a specific call"
+    },
+    {
+      "name": "calls_update",
+      "description": "Update an existing call record"
+    },
+    {
+      "name": "calls_archive",
+      "description": "Archive (delete) a call record"
+    },
+    {
+      "name": "calls_list",
+      "description": "List all calls with optional filtering"
+    },
+    {
+      "name": "calls_search",
+      "description": "Search calls with specific filters"
+    },
+    {
+      "name": "calls_batch_create",
+      "description": "Create multiple call records in a single request"
+    },
+    {
+      "name": "calls_batch_read",
+      "description": "Read multiple call records in a single request"
+    },
+    {
+      "name": "calls_batch_update",
+      "description": "Update multiple call records in a single request"
+    },
+    {
+      "name": "calls_batch_archive",
+      "description": "Archive (delete) multiple call records in a single request"
+    },
+    {
+      "name": "emails_create",
+      "description": "Create a new email record"
+    },
+    {
+      "name": "emails_get",
+      "description": "Get details of a specific email"
+    },
+    {
+      "name": "emails_update",
+      "description": "Update an existing email record"
+    },
+    {
+      "name": "emails_archive",
+      "description": "Archive (delete) an email record"
+    },
+    {
+      "name": "emails_list",
+      "description": "List all emails with optional filtering"
+    },
+    {
+      "name": "emails_search",
+      "description": "Search emails with specific filters"
+    },
+    {
+      "name": "emails_batch_create",
+      "description": "Create multiple email records in a single request"
+    },
+    {
+      "name": "emails_batch_read",
+      "description": "Read multiple email records in a single request"
+    },
+    {
+      "name": "emails_batch_update",
+      "description": "Update multiple email records in a single request"
+    },
+    {
+      "name": "emails_batch_archive",
+      "description": "Archive (delete) multiple email records in a single request"
+    },
+    {
+      "name": "communications_get_preferences",
+      "description": "Get communication preferences for a contact"
+    },
+    {
+      "name": "communications_update_preferences",
+      "description": "Update communication preferences for a contact"
+    },
+    {
+      "name": "communications_unsubscribe_contact",
+      "description": "Unsubscribe a contact from all email communications"
+    },
+    {
+      "name": "communications_subscribe_contact",
+      "description": "Subscribe a contact to all email communications"
+    },
+    {
+      "name": "communications_get_subscription_definitions",
+      "description": "Get all subscription definitions for the portal"
+    },
+    {
+      "name": "communications_get_subscription_status",
+      "description": "Get subscription status for multiple contacts"
+    },
+    {
+      "name": "communications_update_subscription_status",
+      "description": "Update subscription status for multiple contacts"
+    },
+    {
+      "name": "products_list",
+      "description": "Read a page of products. Control what is returned via the `properties` query param. `after` is the paging cursor token of the last successfully read resource will be returned as the `paging.next.after` JSON property of a paged response containing more results."
+    },
+    {
+      "name": "products_read",
+      "description": "Read an Object identified by ID"
+    },
+    {
+      "name": "products_create",
+      "description": "Create a product with the given properties and return a copy of the object, including the ID."
+    },
+    {
+      "name": "products_update",
+      "description": "Perform a partial update of an Object identified by ID. Read-only and non-existent properties will result in an error. Properties values can be cleared by passing an empty string."
+    },
+    {
+      "name": "products_archive",
+      "description": "Move an Object identified by ID to the recycling bin."
+    },
+    {
+      "name": "products_search",
+      "description": "Search products"
+    },
+    {
+      "name": "products_batch_archive",
+      "description": "Archive (delete) a batch of products by ID"
+    },
+    {
+      "name": "products_batch_create",
+      "description": "Create a batch of products"
+    },
+    {
+      "name": "products_batch_read",
+      "description": "Read a batch of products by internal ID, or unique property values. Retrieve records by the `idProperty` parameter to retrieve records by a custom unique value property."
+    },
+    {
+      "name": "products_batch_update",
+      "description": "Update a batch of products by internal ID, or unique values specified by the `idProperty` query param."
+    }
+  ]
+}

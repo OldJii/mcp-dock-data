@@ -1,0 +1,51 @@
+{
+  "id": "@NOVA-3951/fastmail",
+  "displayName": "Fastmail",
+  "description": "Search your Fastmail account by keyword or mailbox and retrieve full message content with attachments. List mailboxes with counts while maintaining secure, read-only access.",
+  "createdAt": "2026-01-19T02:16:31.320Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/fastmail"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "fastmailApiToken"
+      ],
+      "properties": {
+        "maxResults": {
+          "type": "number",
+          "description": "Maximum emails to return (default: 10, max: 50)",
+          "default": 10
+        },
+        "defaultMailbox": {
+          "type": "string",
+          "description": "Default mailbox to search (e.g., inbox, sent)",
+          "default": ""
+        },
+        "fastmailApiToken": {
+          "type": "string",
+          "description": "Your Fastmail API token. Get one from https://app.fastmail.com/settings/security/tokens/new"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_emails",
+      "description": "Search emails in your Fastmail account by text query and optionally filter by mailbox.\n    \n    This tool searches across email subjects, bodies, sender addresses, and recipient addresses.\n    Results are sorted by date with the most recent emails first.\n    \n    Args:\n        query: Search query text to find in emails. Searches subject, body, from, and to fields. Leave empty to get the most recent emails.\n        limit: Maximum number of emails to return. Default is 10, maximum allowed is 50. Use smaller values for faster responses.\n        mailbox: Filter results to a specific mailbox/folder. Common values: 'inbox', 'sent', 'drafts', 'archive', 'trash', 'spam'. Leave empty to search all mailboxes.\n    \n    Returns:\n        A formatted list of matching emails with ID, subject, sender, date, and preview.\n    "
+    },
+    {
+      "name": "get_email",
+      "description": "Retrieve the full content of a specific email by its unique ID.\n    \n    This tool fetches complete email details including the full body text,\n    attachment information, and all metadata. Use the email ID from search results.\n    \n    Args:\n        email_id: The unique identifier of the email to retrieve. Obtain this from the search_emails tool results.\n    \n    Returns:\n        The complete email with subject, sender, recipients, date, body text, and attachment list.\n    "
+    },
+    {
+      "name": "list_mailboxes",
+      "description": "List all mailboxes (folders) in your Fastmail account with email counts.\n    \n    This tool retrieves all available mailboxes including inbox, sent, drafts,\n    archive, trash, spam, and any custom folders. Shows the total and unread\n    email count for each mailbox.\n    \n    Returns:\n        A formatted list of all mailboxes with their names, roles, total emails, and unread counts.\n    "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "@smithery/unicorn",
+  "displayName": "Unicorn or Bust",
+  "description": "A choose your own adventure game where you play as a startup founder trying to build a unicorn against all odds.",
+  "createdAt": "2026-01-19T02:12:44.392Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@smithery/unicorn"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "start_game",
+      "description": "Start a new game. IMPORTANT: Do NOT describe options in your text response - they are shown in the UI. Just set the scene briefly."
+    },
+    {
+      "name": "play_turn",
+      "description": "Resolve player choice. IMPORTANT: Do NOT describe next challenge options in text - they are shown in the UI. Just narrate what happened."
+    }
+  ]
+}

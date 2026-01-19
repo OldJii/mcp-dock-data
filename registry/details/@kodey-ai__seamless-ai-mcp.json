@@ -1,0 +1,66 @@
+{
+  "id": "@kodey-ai/seamless-ai-mcp",
+  "displayName": "Seamless Prospecting",
+  "description": "Find and enrich B2B contacts and companies for prospecting and outreach. Uncover verified emails, phone numbers, and firmographic insights. Review your organization's saved leads and track research progress and credit usage.",
+  "createdAt": "2026-01-19T02:15:37.588Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kodey-ai/seamless-ai-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Seamless.AI API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_contacts",
+      "description": "Search for contacts with advanced filtering options including company, location, job title, seniority, and job changes"
+    },
+    {
+      "name": "search_companies",
+      "description": "Search for companies with filters including name, location, size, revenue, technologies, and founding date"
+    },
+    {
+      "name": "research_contacts",
+      "description": "Research/enrich contact information. Can use search result IDs or provide partial contact info for enrichment"
+    },
+    {
+      "name": "research_companies",
+      "description": "Research/enrich company information. Can use search result IDs or provide partial company info"
+    },
+    {
+      "name": "poll_contact_research",
+      "description": "Poll the status and results of contact research requests"
+    },
+    {
+      "name": "poll_company_research",
+      "description": "Poll the status and results of company research requests"
+    },
+    {
+      "name": "get_org_contacts",
+      "description": "Get contacts from your organization within a date range"
+    },
+    {
+      "name": "get_org_companies",
+      "description": "Get companies from your organization within a date range"
+    },
+    {
+      "name": "get_rate_limit_info",
+      "description": "Get current rate limit and credit information"
+    }
+  ]
+}

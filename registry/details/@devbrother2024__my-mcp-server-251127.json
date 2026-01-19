@@ -1,0 +1,42 @@
+{
+  "id": "@devbrother2024/my-mcp-server-251127",
+  "displayName": "my-mcp-server-251127",
+  "description": "Handle quick greetings, calculations, and time lookups by time zone. Generate images from text prompts and kick off code reviews with a ready-made prompt. Prototype faster with included examples for testing.",
+  "createdAt": "2026-01-19T02:14:00.589Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devbrother2024/my-mcp-server-251127"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API 토큰 (이미지 생성 기능에 필요)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자의 이름과 언어를 입력받아 해당 언어로 인사말을 반환합니다."
+    },
+    {
+      "name": "calc",
+      "description": "두 개의 숫자와 연산자를 입력받아 계산 결과를 반환합니다."
+    },
+    {
+      "name": "getCurrentTime",
+      "description": "타임존을 입력받아 해당 타임존의 현재 시간을 반환합니다."
+    },
+    {
+      "name": "generateImage",
+      "description": "텍스트 프롬프트를 입력받아 AI로 이미지를 생성합니다."
+    }
+  ]
+}

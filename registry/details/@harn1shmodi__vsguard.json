@@ -1,0 +1,18 @@
+{
+  "id": "@harn1shmodi/vsguard",
+  "displayName": "VSGuard",
+  "description": "Add proactive OWASP ASVS security guidance to coding AI agents to write secure code from the start. Scan code for cybersecurity vulnerabilities across multiple languages and receive clear findings with remediation steps. Generate secure fixes with ASVS-mapped guidance and ready-to-use examples.",
+  "createdAt": "2026-01-19T02:20:37.740Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@harn1shmodi/vsguard"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": []
+}

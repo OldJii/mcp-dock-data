@@ -1,0 +1,96 @@
+{
+  "id": "@CaullenOmdahl/nextjs-react-tailwind-assistant",
+  "displayName": "Next.js Tailwind Assistant",
+  "description": "Your comprehensive AI companion for building modern Next.js applications with React and Tailwind CSS. This MCP server provides instant access to complete documentation, production-ready components, and battle-tested design patterns abstracted from professional templates.",
+  "createdAt": "2026-01-19T02:15:25.593Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@CaullenOmdahl/nextjs-react-tailwind-assistant"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "cacheTimeout": {
+          "type": "number",
+          "description": "Cache timeout in milliseconds (default: 5 minutes)",
+          "default": 300000
+        },
+        "maxSearchResults": {
+          "type": "number",
+          "description": "Default maximum search results (1-20)",
+          "default": 5
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_nextjs_full_docs",
+      "description": "Get the complete Next.js 15+ documentation (~2.5MB, ~320,000 tokens). WARNING: This returns ~320,000 tokens. Only use with LLMs that support large context windows (100k+ tokens). For smaller contexts, use 'search_nextjs_docs' instead. Covers: App Router, Server Components, Client Components, routing, layouts, pages, data fetching, Server Actions, middleware, deployment, and optimization."
+    },
+    {
+      "name": "get_tailwind_full_docs",
+      "description": "Get the complete Tailwind CSS documentation (~2.1MB, ~730,000 tokens). WARNING: This returns ~730,000 tokens. Only use with LLMs that support very large context windows (200k+ tokens). For smaller contexts, use 'search_tailwind_docs' instead. Covers all utility classes, concepts, responsive design, dark mode, customization, and plugins."
+    },
+    {
+      "name": "search_nextjs_docs",
+      "description": "Search within the Next.js documentation for specific topics or keywords. Returns relevant excerpts matching the query. Recommended for most use cases as it provides targeted results without the full 320k token context."
+    },
+    {
+      "name": "search_tailwind_docs",
+      "description": "Search within the Tailwind CSS documentation for specific utility classes or concepts. Returns relevant excerpts matching the query. Recommended for most use cases as it provides targeted results without the full 730k token context."
+    },
+    {
+      "name": "get_catalyst_component",
+      "description": "Retrieve the TypeScript source code for a specific Catalyst UI component. Components include forms (button, checkbox, input, etc.), navigation (navbar, sidebar, dropdown), layout (divider, heading), feedback (alert, badge, dialog), and data display (avatar, table, pagination). All components are production-ready TypeScript React components with Tailwind styling and Headless UI integration."
+    },
+    {
+      "name": "list_catalyst_components",
+      "description": "List all 28 available Catalyst UI components organized by category. Categories include: forms (button, checkbox, fieldset, input, radio, select, switch, textarea), navigation (navbar, sidebar, dropdown, link), layout (divider, heading, stacked-layout, auth-layout), feedback (alert, badge, dialog), data-display (avatar, description-list, listbox, pagination, table, text), and advanced (combobox)."
+    },
+    {
+      "name": "get_pattern",
+      "description": "Retrieve documentation for a specific abstracted pattern. Patterns are organized into: layouts (app-header, sidebar-layout, auth-layout, overlay-navigation), pages (hero-section, pricing-page, blog-layout), and features (animations, dark-mode). Patterns include implementation details, code examples, accessibility considerations, and dependencies."
+    },
+    {
+      "name": "list_patterns",
+      "description": "List all available abstracted template patterns organized by category (layouts, pages, features). Patterns are abstracted from professional Next.js templates and include common architectural approaches, not template-specific implementations. Each pattern includes multiple variants, dependencies, accessibility guidelines, and dark mode support."
+    },
+    {
+      "name": "get_color_design_guidance",
+      "description": "Retrieve comprehensive color design patterns documentation (~20KB). Covers color psychology, premium vs cheap distinctions, harmony systems, industry-specific guidance, and 2024-2025 modern trends. **RECOMMENDED WORKFLOW**: Due to the comprehensive nature of this content, consider using a subagent to execute the color selection workflow with full context. The subagent can analyze the guidance and make informed color decisions for your specific project."
+    },
+    {
+      "name": "analyze_existing_site",
+      "description": "Analyze an existing website or Google Business listing to extract useful information and assets for rebuilding. Extracts business info, contact details, images, content structure, site type, and design elements. **RECOMMENDED WORKFLOW**: Due to the complexity of site analysis and data extraction, use a subagent to perform the analysis. The subagent can use WebFetch to scrape the site, analyze structure, extract assets, and return organized data for the new build."
+    },
+    {
+      "name": "list_starter_kits",
+      "description": "List all available template starter kits with their features, use cases, and complexity levels. Each template includes architectural decision guidance that teaches you how to choose the right libraries and patterns for your needs, rather than prescribing specific solutions. Includes: Documentation Site, SaaS Marketing, Portfolio & Blog, Agency/Studio, Content Platform, Event/Conference, App Marketing, Podcast/Media, CMS-Integrated, Pitch Deck, Admin Dashboard, and E-commerce templates."
+    },
+    {
+      "name": "get_starter_kit",
+      "description": "Get detailed information about a specific template starter kit including features, architectural decisions with tradeoffs, alternative approaches, and implementation guidance. Each template teaches decision-making frameworks rather than prescribing specific libraries. Use list_starter_kits to see available template IDs."
+    },
+    {
+      "name": "recommend_template",
+      "description": "Get template recommendations based on your project requirements. Provide criteria like purpose, color preferences, animation level, required features, and complexity. Returns ranked template suggestions with explanations."
+    },
+    {
+      "name": "answer_questionnaire",
+      "description": "Submit answers to the template selection questionnaire and receive personalized recommendations. Provide answers as a key-value object where keys are question IDs (purpose, colorPreference, animations, features, complexity) and values are your choices."
+    },
+    {
+      "name": "get_library_docs",
+      "description": "Get comprehensive documentation for commonly used libraries in Next.js projects. Available: framer-motion, mdx, headless-ui, next-themes, clsx, tailwind-plugins. Includes installation, usage examples, patterns, and best practices."
+    },
+    {
+      "name": "list_library_docs",
+      "description": "List all available library documentation files. Includes commonly used libraries like Framer Motion, MDX, Headless UI, next-themes, clsx, and Tailwind plugins. Each provides installation, usage examples, and best practices."
+    }
+  ]
+}

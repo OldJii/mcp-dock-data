@@ -1,0 +1,12 @@
+{
+  "id": "@argotdev/spotify-mcp-ts",
+  "displayName": "spotify-mcp-ts",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:44.640Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@argotdev/spotify-mcp-ts"
+  },
+  "connection": null,
+  "capabilities": []
+}

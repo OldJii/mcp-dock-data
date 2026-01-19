@@ -1,0 +1,12 @@
+{
+  "id": "@miguel-escribano/fiware-mcp-server",
+  "displayName": "fiware-mcp-server",
+  "description": "This MCP server is designed for **local deployment** with your own \nFIWARE infrastructure and credentials. It connects to your specific \nContext Broker instance using your authentication details.\n\n**Available on Smithery**: You can find this server in the Smithery \nMCP Registry, but it requires local installation and configuration \nwith your FIWARE credentials.",
+  "createdAt": "2026-01-19T02:25:25.214Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@miguel-escribano/fiware-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

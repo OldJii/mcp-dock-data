@@ -1,0 +1,27 @@
+{
+  "id": "@felores/placid-mcp-server",
+  "displayName": "Placid",
+  "description": "Integrate with Placid.app to list templates and generate creatives.",
+  "createdAt": "2026-01-19T02:20:42.387Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@felores/placid-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "placidApiToken"
+      ],
+      "properties": {
+        "placidApiToken": {
+          "type": "string",
+          "description": "The API token for the Placid server."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "@dravidsajinraj-iex/ai-diagram-generator-mcp",
+  "displayName": "Eraser Diagram Generator",
+  "description": "Generate professional diagrams from text descriptions using the Eraser API through a simple MCP interface. Create flowcharts, architecture diagrams, UML diagrams, and more with robust error handling and input validation. Seamlessly integrate diagram generation capabilities into your MCP-compatible clients.",
+  "createdAt": "2026-01-19T02:18:48.382Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dravidsajinraj-iex/ai-diagram-generator-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "eraserApiKey",
+        "eraserApiUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Toggle debug logging",
+          "default": false
+        },
+        "eraserApiKey": {
+          "type": "string",
+          "description": "Eraser API key for authentication"
+        },
+        "eraserApiUrl": {
+          "type": "string",
+          "description": "Eraser presigned base URL"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generateDiagram",
+      "description": "Generate a diagram from text description using Eraser API"
+    }
+  ]
+}

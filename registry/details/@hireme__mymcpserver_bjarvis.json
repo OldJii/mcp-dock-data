@@ -1,0 +1,12 @@
+{
+  "id": "@hireme/mymcpserver_bjarvis",
+  "displayName": "mymcpserver_bjarvis",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:58.585Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hireme/mymcpserver_bjarvis"
+  },
+  "connection": null,
+  "capabilities": []
+}

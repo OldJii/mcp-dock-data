@@ -1,0 +1,45 @@
+{
+  "id": "@brandao-20/mcp_server_ipma",
+  "displayName": "IPMA Weather Data Server",
+  "description": "Provide real-time and historical weather data from the Portuguese Institute for Sea and Atmosphere (IPMA) to your applications. Enable seamless access to meteorological information for forecasting, analysis, and decision-making. Integrate reliable weather data effortlessly through standardized MCP endpoints.",
+  "createdAt": "2026-01-19T02:14:07.351Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@brandao-20/mcp_server_ipma"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_weather_forecast",
+      "description": "Obter previsão meteorológica para uma cidade específica em Portugal"
+    },
+    {
+      "name": "get_weather_warnings",
+      "description": "Obter avisos meteorológicos ativos em Portugal"
+    },
+    {
+      "name": "get_seismic_data",
+      "description": "Obter dados sísmicos recentes"
+    },
+    {
+      "name": "get_locations",
+      "description": "Listar todas as cidades/locais disponíveis para previsão"
+    },
+    {
+      "name": "get_weather_stations",
+      "description": "Obter dados de observação das estações meteorológicas"
+    },
+    {
+      "name": "get_uv_forecast",
+      "description": "Obter previsão do índice UV"
+    }
+  ]
+}

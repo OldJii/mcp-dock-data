@@ -1,0 +1,12 @@
+{
+  "id": "yahoo-finance/yfinance-mcp-ai",
+  "displayName": "yfinance-mcp-ai",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:16.703Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/yahoo-finance/yfinance-mcp-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

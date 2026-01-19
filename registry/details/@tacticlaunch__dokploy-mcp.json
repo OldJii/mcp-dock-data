@@ -1,0 +1,12 @@
+{
+  "id": "@tacticlaunch/dokploy-mcp",
+  "displayName": "dokploy-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:54.570Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tacticlaunch/dokploy-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

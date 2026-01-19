@@ -1,0 +1,12 @@
+{
+  "id": "@rafliruslan/ticktick-mcp-server",
+  "displayName": "ticktick-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:22.685Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@rafliruslan/ticktick-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

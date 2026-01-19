@@ -1,0 +1,12 @@
+{
+  "id": "@vmunagalatrifinlabs/salesroom",
+  "displayName": "salesroom",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:13.636Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vmunagalatrifinlabs/salesroom"
+  },
+  "connection": null,
+  "capabilities": []
+}

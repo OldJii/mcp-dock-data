@@ -1,0 +1,37 @@
+{
+  "id": "chris/jules-orchestrator1",
+  "displayName": "jules-orchestrator1",
+  "description": "Say hello to anyone by name with a friendly tone. Explore the origin story behind the iconic 'Hello, World.' Keep interactions warm and inviting.",
+  "createdAt": "2026-01-19T02:19:31.797Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/jules-orchestrator1"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "debug"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "@vyb1ng/plex-mcp",
+  "displayName": "Plex Media Library Search Server",
+  "description": "Enable seamless searching and browsing of your Plex media libraries through an MCP server. Authenticate securely with Plex via OAuth or static tokens and retrieve rich metadata for movies, shows, music, playlists, and more. Manage your Plex content efficiently with comprehensive tools for playlists, collections, and media information.",
+  "createdAt": "2026-01-19T02:18:24.383Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vyb1ng/plex-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "plexUrl"
+      ],
+      "properties": {
+        "plexUrl": {
+          "type": "string",
+          "description": "URL of the Plex server"
+        },
+        "plexToken": {
+          "type": "string",
+          "description": "Plex authentication token (optional - can authenticate interactively)"
+        },
+        "plexVerifySsl": {
+          "type": "boolean",
+          "description": "Whether to verify Plex server SSL certificate",
+          "default": true
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_plex",
+      "description": "Search for movies, TV shows, and other content in Plex libraries"
+    },
+    {
+      "name": "browse_libraries",
+      "description": "List all available Plex libraries (Movies, TV Shows, Music, etc.)"
+    },
+    {
+      "name": "browse_library",
+      "description": "Browse content within a specific Plex library with filtering and sorting options"
+    },
+    {
+      "name": "get_recently_added",
+      "description": "Get recently added content from Plex libraries"
+    },
+    {
+      "name": "get_watch_history",
+      "description": "Get playback history for the Plex server"
+    },
+    {
+      "name": "get_on_deck",
+      "description": "Get 'On Deck' items (continue watching) for users"
+    },
+    {
+      "name": "list_playlists",
+      "description": "List all playlists on the Plex server"
+    },
+    {
+      "name": "browse_playlist",
+      "description": "Browse and view the contents of a specific playlist with full track metadata"
+    },
+    {
+      "name": "create_playlist",
+      "description": "Create a new regular playlist on the Plex server. Requires an initial item (item_key parameter) to be created successfully. Smart playlists are not supported due to their complex filter requirements."
+    },
+    {
+      "name": "add_to_playlist",
+      "description": "Add items to an existing playlist"
+    },
+    {
+      "name": "delete_playlist",
+      "description": "Delete an existing playlist"
+    },
+    {
+      "name": "get_watched_status",
+      "description": "Check watch status and progress for specific content items"
+    },
+    {
+      "name": "get_collections",
+      "description": "List all collections available on the Plex server"
+    },
+    {
+      "name": "browse_collection",
+      "description": "Browse content within a specific collection"
+    },
+    {
+      "name": "get_media_info",
+      "description": "Get detailed technical information about media files (codecs, bitrates, file sizes, etc.)"
+    },
+    {
+      "name": "get_library_stats",
+      "description": "Get comprehensive statistics about Plex libraries (storage usage, file counts, content breakdown, etc.)"
+    },
+    {
+      "name": "get_listening_stats",
+      "description": "Get detailed listening statistics and music recommendations based on play history and patterns"
+    },
+    {
+      "name": "discover_music",
+      "description": "Natural language music discovery with smart recommendations based on your preferences and library"
+    },
+    {
+      "name": "authenticate_plex",
+      "description": "Initiate Plex OAuth authentication flow to get user login URL"
+    },
+    {
+      "name": "check_auth_status",
+      "description": "Check if Plex authentication is complete and retrieve the auth token"
+    },
+    {
+      "name": "clear_auth",
+      "description": "Clear stored authentication credentials"
+    },
+    {
+      "name": "validate_llm_response",
+      "description": "Validate LLM response format and content against expected schemas for different prompt types"
+    }
+  ]
+}

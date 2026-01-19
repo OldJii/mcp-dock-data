@@ -1,0 +1,333 @@
+{
+  "id": "boring/boring",
+  "displayName": "boring",
+  "description": "Automate planning, implementation, and verification of code across your projects. Ensure reliable outcomes with spec-driven workflows, rigorous checks, and iterative auto-fix. Work seamlessly inside Cursor, VS Code, and Claude Desktop with a consistent, privacy-first experience.",
+  "createdAt": "2026-01-19T02:15:04.734Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/boring/boring"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {
+        "LOG_LEVEL": {
+          "type": "string",
+          "description": "Control server logging verbosity for debugging and monitoring.\n\n- \"DEBUG\": Shows all details including internal operations (verbose, use for troubleshooting)\n- \"INFO\": Normal operation logs (recommended for development)\n- \"WARNING\": Only warnings and errors (recommended for production)\n- \"ERROR\": Only error messages (minimal logging)\n\n**Default:** \"INFO\"\n**Example:** Use \"DEBUG\" when troubleshooting tool execution issues\n",
+          "default": "INFO"
+        },
+        "RAG_ENABLED": {
+          "type": "boolean",
+          "description": "Enable semantic code search with vector embeddings using RAG (Retrieval-Augmented Generation).\n\n**Requirements:**\n- Requires `boring-aicoding[vector]` installation\n- Install with: `pip install \"boring-aicoding[vector]\"`\n- After installation, use `boring_rag_reload` tool to hot-reload dependencies\n\n**Features Enabled:**\n- Semantic code search (`boring_rag_search`)\n- Codebase indexing (`boring_rag_index`)\n- Dependency graph expansion\n\n**Default:** true (enabled by default, requires dependencies)\n**Example:** Set to false if you don't need semantic search capabilities\n",
+          "default": true
+        },
+        "BORING_MCP_MODE": {
+          "type": "string",
+          "description": "Enable or disable MCP (Model Context Protocol) tool registration.\n\n- \"1\": Enables all 55+ MCP tools for full functionality\n- \"0\": Disables MCP functionality (minimal mode)\n\n**Default:** \"1\" (recommended for full feature access)\n**Example:** Set to \"0\" only if you need minimal tool exposure\n",
+          "default": "1"
+        },
+        "SHADOW_MODE_LEVEL": {
+          "type": "string",
+          "description": "Human-in-the-loop protection level for write operations.\n\n- \"DISABLED\": No protection, all operations execute immediately (not recommended)\n- \"ENABLED\": Auto-approve low-risk operations, require approval for high-risk (recommended default)\n- \"STRICT\": Require explicit approval for all write operations (recommended for production)\n\n**Default:** \"ENABLED\" (balanced safety and usability)\n**Example:** Use \"STRICT\" in production environments for maximum safety\n",
+          "default": "ENABLED"
+        },
+        "BORING_MCP_PROFILE": {
+          "type": "string",
+          "description": "Select the toolset profile to load (V11+).\n\n- \"ultra_lite\": Essential tools only (97% token savings, good for reasoning models)\n- \"minimal\": Read-only context (files + RAG)\n- \"lite\": Daily driver (core tools + git)\n- \"standard\": Balanced suite (recommended default)\n- \"full\": Maximum power (security, vibe check, agents)\n\n**Default:** \"standard\"\n**Example:** Use \"ultra_lite\" for low token usage\n",
+          "default": "standard"
+        },
+        "VERIFICATION_LEVEL": {
+          "type": "string",
+          "description": "Default code verification strictness level used by verification tools.\n\n- \"BASIC\": Syntax checking only (fastest, minimal checks)\n- \"STANDARD\": Includes linting and style checks (recommended default)\n- \"FULL\": Includes tests and comprehensive checks (thorough, slower)\n- \"SEMANTIC\": AI-powered code review (most comprehensive, requires LLM API)\n\n**Default:** \"STANDARD\" (balanced quality and speed)\n**Example:** Use \"FULL\" before production deployments, \"SEMANTIC\" for critical code reviews\n",
+          "default": "STANDARD"
+        },
+        "PROJECT_ROOT_DEFAULT": {
+          "type": "string",
+          "description": "Default working directory for file operations when project_path parameter is not specified in tool calls.\n\n- Use \".\" for current working directory\n- Use absolute paths like \"/home/user/projects/my-app\" for specific projects\n- Relative paths are resolved from the server's working directory\n\n**Default:** \".\" (current directory)\n**Example:** \"/home/user/my-project\" or \".\"\n",
+          "default": "."
+        },
+        "BORING_ALLOW_DANGEROUS": {
+          "type": "boolean",
+          "description": "⚠️ **DANGEROUS SETTING**: Skip human approval for destructive operations.\n\n**Security Warning:**\n- Only enable in fully isolated environments (containers, sandboxes)\n- When enabled, operations like file deletion, system commands may execute without confirmation\n- Shadow Mode protection still applies when SHADOW_MODE_LEVEL is set\n\n**Default:** false (recommended for safety)\n**Example:** Set to true only in CI/CD pipelines with proper isolation\n",
+          "default": false
+        }
+      },
+      "description": "Configure the Boring AI Development Assistant for autonomous code generation and verification.\n\n**Required Configuration:**\n- All parameters are optional with sensible defaults\n- For production use, set SHADOW_MODE_LEVEL to \"STRICT\" for maximum safety\n- Enable RAG_ENABLED for semantic code search capabilities (requires additional dependencies)\n\n**Documentation:** https://github.com/Boring206/boring-gemini\n**Examples:** See README.md for configuration examples\n",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "run_boring",
+      "description": "Run autonomous development loop (creates workflow template in MCP mode)"
+    },
+    {
+      "name": "boring_health_check",
+      "description": "Check Boring system health including API key status, dependencies, and backend availability"
+    },
+    {
+      "name": "boring_quickstart",
+      "description": "Get a comprehensive quick start guide for new users with recommended workflows"
+    },
+    {
+      "name": "boring_status",
+      "description": "Get current autonomous loop status, including active task, call counts, and recent errors"
+    },
+    {
+      "name": "boring_done",
+      "description": "Report task completion to the user with optional desktop notification"
+    },
+    {
+      "name": "boring_forget_all",
+      "description": "Signal to clear LLM context to maintain accuracy (Context Hygiene)"
+    },
+    {
+      "name": "boring_hooks_install",
+      "description": "Install Git hooks"
+    },
+    {
+      "name": "boring_hooks_uninstall",
+      "description": "Uninstall Git hooks"
+    },
+    {
+      "name": "boring_hooks_status",
+      "description": "Check Git hooks status"
+    },
+    {
+      "name": "boring_commit",
+      "description": "Generate semantic Git commit from task.md"
+    },
+    {
+      "name": "boring_visualize",
+      "description": "Generate architecture diagram from codebase"
+    },
+    {
+      "name": "boring_checkpoint",
+      "description": "Create or restore project checkpoints (save states)"
+    },
+    {
+      "name": "boring_session_start",
+      "description": "🎯 啟動 Vibe Session - 完整 AI 協作流程"
+    },
+    {
+      "name": "boring_session_confirm",
+      "description": "✅ 確認當前階段並進入下一階段"
+    },
+    {
+      "name": "boring_session_status",
+      "description": "📊 查看當前 Vibe Session 狀態"
+    },
+    {
+      "name": "boring_session_load",
+      "description": "📂 載入之前的 Vibe Session"
+    },
+    {
+      "name": "boring_session_pause",
+      "description": "⏸️ 暫停當前 Vibe Session"
+    },
+    {
+      "name": "boring_session_auto",
+      "description": "🤖 切換自動模式"
+    },
+    {
+      "name": "boring_workspace_add",
+      "description": "註冊新專案到工作區 (Register project). 適合: '加入專案', 'Add project', '註冊新專案'."
+    },
+    {
+      "name": "boring_workspace_remove",
+      "description": "移除專案 (Remove project). 適合: '移除專案', 'Remove project', '刪除專案註冊' (檔案不會刪除)."
+    },
+    {
+      "name": "boring_workspace_list",
+      "description": "看看我有哪些專案 (List projects). 適合: 'Show my projects', '我的專案有哪些', 'What am I working on?'."
+    },
+    {
+      "name": "boring_workspace_switch",
+      "description": "切換到另一個專案 (Switch project). 適合: 'Switch to XXX', '切換專案', 'Work on another project'."
+    },
+    {
+      "name": "boring_list_plugins",
+      "description": "看看有什麼擴充功能可以用 (List plugins). 適合: 'What plugins?', '有什麼擴充', 'Show available tools'."
+    },
+    {
+      "name": "boring_run_plugin",
+      "description": "執行指定的擴充功能 (Run plugin). 適合: '跑 XXX 外掛', 'Execute plugin', '執行擴充'."
+    },
+    {
+      "name": "boring_reload_plugins",
+      "description": "重新載入所有擴充功能 (Reload plugins). 適合: '重載外掛', 'Reload plugins', '更新擴充'."
+    },
+    {
+      "name": "boring_prompt_fix",
+      "description": "幫我修問題、自動修復 (Auto fix issues). 適合: 'Fix errors', '幫我修', '處理問題', 'Auto correct'."
+    },
+    {
+      "name": "boring_suggest_next",
+      "description": "告訴我下一步該做什麼 (Suggest next steps). 適合: 'What should I do next?', '下一步呢', '給我建議', 'What now?'."
+    },
+    {
+      "name": "boring_get_progress",
+      "description": "查看任務進度 (Check task progress). 適合: '任務做到哪了', 'Check progress', '進度如何', 'Is it done yet?'."
+    },
+    {
+      "name": "boring_rag_reload",
+      "description": "Reload RAG dependencies after pip install."
+    },
+    {
+      "name": "boring_rag_index",
+      "description": "Index codebase for semantic search."
+    },
+    {
+      "name": "boring_rag_search",
+      "description": "Semantic code search with RAG."
+    },
+    {
+      "name": "boring_rag_status",
+      "description": "Check RAG index health and statistics."
+    },
+    {
+      "name": "boring_rag_context",
+      "description": "Get callers and callees for a function."
+    },
+    {
+      "name": "boring_rag_expand",
+      "description": "Expand dependency context for a chunk."
+    },
+    {
+      "name": "boring_multi_agent",
+      "description": "[PROMPT GENERATOR] Generate multi-agent workflow prompts (Architect → Coder → Reviewer). Returns CLI commands to execute manually."
+    },
+    {
+      "name": "boring_prompt_plan",
+      "description": "[PROMPT GENERATOR] Generate architecture planning prompt. Returns a prompt to execute with your IDE AI or Gemini CLI."
+    },
+    {
+      "name": "boring_agent_review",
+      "description": "[PROMPT GENERATOR] Generate code review prompt. Returns a prompt to execute with your IDE AI or Gemini CLI."
+    },
+    {
+      "name": "boring_delegate",
+      "description": "[SEMANTIC ROUTER] Route tasks to specialized tools. Returns instructions for delegating to external MCP servers."
+    },
+    {
+      "name": "boring_shadow_status",
+      "description": "Get Shadow Mode status and pending operations"
+    },
+    {
+      "name": "boring_shadow_approve",
+      "description": "Approve a pending Shadow Mode operation"
+    },
+    {
+      "name": "boring_shadow_reject",
+      "description": "Reject a pending Shadow Mode operation"
+    },
+    {
+      "name": "boring_shadow_mode",
+      "description": "Change Shadow Mode protection level"
+    },
+    {
+      "name": "boring_shadow_clear",
+      "description": "Clear all pending Shadow Mode operations"
+    },
+    {
+      "name": "boring_shadow_trust",
+      "description": "Add or update a trust rule for auto-approving operations"
+    },
+    {
+      "name": "boring_shadow_trust_list",
+      "description": "List all trust rules"
+    },
+    {
+      "name": "boring_shadow_trust_remove",
+      "description": "Remove a trust rule"
+    },
+    {
+      "name": "boring_security_scan",
+      "description": "Run security scan (secrets, SAST, dependencies)"
+    },
+    {
+      "name": "boring_transaction",
+      "description": "Manage atomic transactions (start/commit/rollback)"
+    },
+    {
+      "name": "boring_task",
+      "description": "Manage background tasks (submit/status/list)"
+    },
+    {
+      "name": "boring_context",
+      "description": "Manage conversation context (save/load/list)"
+    },
+    {
+      "name": "boring_profile",
+      "description": "Manage user profile and learned memory"
+    },
+    {
+      "name": "boring_test_gen",
+      "description": "自動生成單元測試 (Auto-generate unit tests). 說: '幫我寫測試', '生成 auth.py 的測試', 'Generate tests for api.ts'. 我會分析程式碼並生成 pytest/jest 測試案例！支援 Python, JS, TS. 🆕 V10.21: 整合 RAG 參考現有測試風格！"
+    },
+    {
+      "name": "boring_code_review",
+      "description": "AI 程式碼審查 (AI Code Review). 說: '審查我的程式碼', 'Review my code', '幫我看看哪裡可以改進'. 我會分析程式碼品質並給出改善建議！支援 Python, JS, TS. 🆕 V10.21: 整合 BrainManager 參考已學習的 Pattern！"
+    },
+    {
+      "name": "boring_perf_tips",
+      "description": "效能分析提示 (Performance Tips). 說: '分析效能', '效能優化建議', 'Check performance of api.py'. 我會專注檢查效能瓶頸 (如 N+1 query, I/O in loop) 並提供優化建議！支援 Py, JS, TS."
+    },
+    {
+      "name": "boring_arch_check",
+      "description": "架構分析 (Architecture Analysis). 說: '分析專案架構', 'Show me the dependencies', '看看誰引用誰', '該如何重構'. 我會生成 Mermaid 依賴圖，讓你一目了然專案結構！"
+    },
+    {
+      "name": "boring_doc_gen",
+      "description": "自動生成文檔 (Auto-generate Documentation). 說: '幫我寫文檔', 'Generate docs for api.py', 'API 文檔', '自動註解'. 我會擷取 Docstrings/JSDoc 並生成 Markdown 參考文檔！"
+    },
+    {
+      "name": "boring_vibe_check",
+      "description": "Vibe Score 健檢 (Gamified Health Check). 說: 'Vibe Check my project', '健檢 utils.py', 'Give me a vibe score'. 我會整合 Lint, Security, Doc 檢查，計算 0-100 分數，並提供一鍵修復 Prompt！ 🆕 V10.21: 整合 Storage 記錄歷史分數趨勢！"
+    },
+    {
+      "name": "boring_impact_check",
+      "description": "衝擊分析 (Impact Analysis). 說: 'Check impact of modifying utils.py', '改這隻檔案會影響誰', 'Impact check'. 我會分析反向依賴 (支援多層追蹤)，告訴你修改此檔案會影響哪些模組，並給出驗證 Prompt！ 🆕 V10.21: 整合 RAG 語義分析更精準！"
+    },
+    {
+      "name": "boring_predict_errors",
+      "description": "🔮 預測可能的錯誤 (Predict likely errors before running). 說: '預測這個檔案會有什麼錯誤', 'predict errors for auth.py'. 我會分析歷史模式，預測最可能發生的錯誤並提供預防建議！"
+    },
+    {
+      "name": "boring_health_score",
+      "description": "📊 專案健康評分 (Project health score). 說: '專案健康狀況', '給我健康報告', 'project health score'. 我會分析成功率、錯誤趨勢、解決率，給出綜合健康評分！"
+    },
+    {
+      "name": "boring_optimize_context",
+      "description": "🧠 優化上下文 (Optimize context for LLM). 說: '幫我壓縮這些程式碼', 'optimize context'. 我會智能壓縮程式碼上下文，減少 token 使用同時保留關鍵資訊！"
+    },
+    {
+      "name": "boring_predict_impact",
+      "description": "預測程式碼變更影響 (Predict change impact). 適合: '這個改動會影響什麼?', 'What will this change break?', '影響分析'. V10.23 新功能！使用歷史數據預測風險。"
+    },
+    {
+      "name": "boring_risk_areas",
+      "description": "查看高風險區域 (Risk areas). 適合: '哪裡最容易出錯?', 'Show risk areas', '高風險程式碼'. V10.23 新功能！基於歷史錯誤識別風險熱點。"
+    },
+    {
+      "name": "boring_cache_insights",
+      "description": "查看智能快取統計 (Cache insights). 適合: 'Show cache stats', '快取效率如何?', 'Cache performance'. V10.23 新功能！多層快取 + 相關性預取。"
+    },
+    {
+      "name": "boring_intelligence_stats",
+      "description": "查看完整智能統計 (Intelligence stats). 適合: 'Show AI stats', '智能模組狀態', 'How smart am I?'. V10.23 全面統計報告！"
+    },
+    {
+      "name": "boring_set_session_context",
+      "description": "設定 Session 上下文 (Set session context). 適合: '我在 debug', 'I am testing', '設定任務類型'. V10.23 新功能！讓所有智能模組了解當前任務。"
+    },
+    {
+      "name": "boring_get_session_context",
+      "description": "查看當前 Session 上下文 (Get session context). 適合: 'What am I working on?', '目前任務是什麼?'. V10.23 新功能！"
+    }
+  ]
+}

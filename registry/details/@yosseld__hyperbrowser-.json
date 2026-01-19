@@ -1,0 +1,16 @@
+{
+  "id": "@yosseld/hyperbrowser-",
+  "displayName": "HyperBrowser MCP",
+  "description": "",
+  "createdAt": "2026-01-19T02:16:50.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yosseld/hyperbrowser-"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

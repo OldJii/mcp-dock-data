@@ -1,0 +1,12 @@
+{
+  "id": "@xhelas/metadata",
+  "displayName": "metadata",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:17.579Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xhelas/metadata"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@garfield-bb/hap-mcp",
+  "displayName": "hap-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:24.618Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@garfield-bb/hap-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@masflame/afrikure-medicine-mcp",
+  "displayName": "afrikure-medicine-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:41.607Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@masflame/afrikure-medicine-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@amir_shocknews/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:17.369Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@amir_shocknews/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

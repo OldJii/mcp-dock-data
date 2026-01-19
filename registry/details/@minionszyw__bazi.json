@@ -1,0 +1,21 @@
+{
+  "id": "@minionszyw/bazi",
+  "displayName": "BaZi",
+  "description": "Generate BaZi charts from birth details. Explore Four Pillars, solar terms, and Luck Pillars for deeper readings. Convert between Gregorian and Lunar calendars with city-aware timing for accuracy.",
+  "createdAt": "2026-01-19T02:15:47.398Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@minionszyw/bazi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "bazi",
+      "description": "\n    Calculate BaZi (八字) information.\n\n    Args:\n        name: The name of the person.\n        gender: The gender of the person ('男' for male, '女' for female).\n        calendar: The calendar type for the birth date ('公历' for Gregorian, '农历' for Lunar).\n        year: The year of birth.\n        month: The month of birth.\n        day: The day of birth.\n        hour: The hour of birth (0-23).\n        minute: The minute of birth (0-59).\n        birth_city: The city of birth.\n        current_city: The current city of residence (optional).\n    \n    Returns:\n        A dictionary containing the BaZi information.\n    "
+    }
+  ]
+}

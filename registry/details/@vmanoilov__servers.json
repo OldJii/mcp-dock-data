@@ -1,0 +1,12 @@
+{
+  "id": "@vmanoilov/servers",
+  "displayName": "servers",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:34.678Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vmanoilov/servers"
+  },
+  "connection": null,
+  "capabilities": []
+}

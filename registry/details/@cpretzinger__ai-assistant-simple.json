@@ -1,0 +1,252 @@
+{
+  "id": "@cpretzinger/ai-assistant-simple",
+  "displayName": "MemoryForge AI with Redis, PostgreSQL, and Qdrant",
+  "description": "Updated 9-16-25 Fixed EV issues Connections should be solid! v3.1.0\nGREAT NEWS: The server will now work for everyone - Railway users, Heroku users, Render users, etc.!\n***ONLY ADD EVS that APPLY TO YOUR OWN INSTANCES - Leave Blank if unused - :) \nUpdate 9-15-25\nv3.0 fixed semantic search\ntemporal tool: Add this at the beginning of n8n workflows to give temporal context\n\nUPDATED 9/1/2025! NEW TOOLS!\n\nUse the Redis Stream tools with n8n MCP Client Node for use anywhere!\n\nThe Ultimate Context Intelligence Engine\nTransform your AI into a memory master with lightning-fast recall and semantic superpowers.\n\nMemoryForge AI is the most advanced context management system ever built for AI assistants. Combining blazing-fast Redis caching, rock-solid PostgreSQL persistence, and cutting-edge Qdrant vector search, it gives your AI perfect memory that never forgets and always finds exactly what you need.\n\n⚡ Why MemoryForge Dominates:\n🚀 Sub-millisecond Context Retrieval - Redis-powered cache makes your AI respond instantly\n🎯 Semantic Memory Search - Find related information even when you can't remember exact words\n💎 Bulletproof Persistence - PostgreSQL ensures your context survives forever\n🔄 Real-time Sync - Pub/sub notifications keep everything perfectly synchronized\n🧬 Auto-Embedding Magic - Automatically converts text into searchable vector embeddings\n🎭 Multi-Session Mastery - Juggle unlimited parallel conversations and contexts\n🎪 Perfect For:\nConversation Continuity - Never lose track of what you were discussing\nDocument Intelligence - Instantly find relevant emails, notes, and files\nProject Memory - Maintain context across complex, long-term projects\nKnowledge Synthesis - Connect related ideas from different conversations\nPersonal AI Assistant - Build an AI that truly knows and remembers you\nStop fighting with forgetful AI. Start building with MemoryForge - where every conversation builds on the last, and every search finds exactly what matters.\n\nYour AI's memory just got a PhD in remembering everything that matters.",
+  "createdAt": "2026-01-19T02:16:17.839Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cpretzinger/ai-assistant-simple"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "REDISHOST": {
+          "type": "string",
+          "description": "Redis host (Azure/some providers)"
+        },
+        "REDISPORT": {
+          "type": "string",
+          "description": "Redis port (Azure/some providers)"
+        },
+        "REDISUSER": {
+          "type": "string",
+          "description": "Redis username (if needed)"
+        },
+        "REDIS_URL": {
+          "type": "string",
+          "description": "Redis URL (redis://user:pass@host:port)"
+        },
+        "QDRANT_URL": {
+          "type": "string",
+          "description": "Qdrant URL"
+        },
+        "REDIS_HOST": {
+          "type": "string",
+          "description": "Redis host for direct connection"
+        },
+        "REDIS_PORT": {
+          "type": "string",
+          "description": "Redis port",
+          "default": "6379"
+        },
+        "POSTGRES_DB": {
+          "type": "string",
+          "description": "PostgreSQL database",
+          "default": "railway"
+        },
+        "DATABASE_URL": {
+          "type": "string",
+          "description": "Railway PostgreSQL connection URL"
+        },
+        "POSTGRES_HOST": {
+          "type": "string",
+          "description": "PostgreSQL host for direct connection"
+        },
+        "POSTGRES_PORT": {
+          "type": "string",
+          "description": "PostgreSQL port",
+          "default": "5432"
+        },
+        "POSTGRES_USER": {
+          "type": "string",
+          "description": "PostgreSQL user",
+          "default": "postgres"
+        },
+        "REDISPASSWORD": {
+          "type": "string",
+          "description": "Redis password (Azure/some providers)"
+        },
+        "OPENAI_API_KEY": {
+          "type": "string",
+          "description": "OpenAI API key for embeddings"
+        },
+        "QDRANT_API_KEY": {
+          "type": "string",
+          "description": "Qdrant API key"
+        },
+        "REDIS_PASSWORD": {
+          "type": "string",
+          "description": "Redis password"
+        },
+        "EMBEDDING_MODEL": {
+          "type": "string",
+          "description": "Embedding model to use",
+          "default": "text-embedding-3-small"
+        },
+        "REDIS_PROXY_URL": {
+          "type": "string",
+          "description": "Redis HTTP proxy URL"
+        },
+        "POSTGRES_API_KEY": {
+          "type": "string",
+          "description": "PostgREST API key"
+        },
+        "REDIS_PUBLIC_URL": {
+          "type": "string",
+          "description": "Redis public URL (alternative name)"
+        },
+        "POSTGRES_PASSWORD": {
+          "type": "string",
+          "description": "PostgreSQL password"
+        },
+        "POSTGRES_REST_URL": {
+          "type": "string",
+          "description": "PostgREST API URL (alternative to direct connection)"
+        },
+        "RAILWAY_REDIS_URL": {
+          "type": "string",
+          "description": "Railway Redis URL"
+        },
+        "RAILWAY_REDIS_HOST": {
+          "type": "string",
+          "description": "Railway Redis host"
+        },
+        "RAILWAY_REDIS_PORT": {
+          "type": "string",
+          "description": "Railway Redis port"
+        },
+        "REDIS_PROXY_API_KEY": {
+          "type": "string",
+          "description": "Redis proxy API key"
+        },
+        "RAILWAY_REDIS_PASSWORD": {
+          "type": "string",
+          "description": "Railway Redis password"
+        },
+        "REDIS_STREAM_MAX_RETRIES": {
+          "type": "number",
+          "description": "Maximum retry attempts for failed processing",
+          "default": 5
+        },
+        "REDIS_AUTO_RECOVERY_ENABLED": {
+          "type": "boolean",
+          "description": "Enable automatic recovery workers",
+          "default": true
+        },
+        "REDIS_CIRCUIT_BREAKER_THRESHOLD": {
+          "type": "number",
+          "description": "Failure threshold for circuit breaker",
+          "default": 10
+        },
+        "REDIS_STREAM_EMERGENCY_CLEANUP_DAYS": {
+          "type": "number",
+          "description": "Days to keep data before emergency cleanup",
+          "default": 7
+        },
+        "REDIS_RECOVERY_SCAN_INTERVAL_MINUTES": {
+          "type": "number",
+          "description": "Minutes between recovery scans",
+          "default": 5
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_context",
+      "description": "Get or create context for a topic or project"
+    },
+    {
+      "name": "update_context",
+      "description": "Update or add context for a topic or project"
+    },
+    {
+      "name": "list_topics",
+      "description": "List all available topics/projects"
+    },
+    {
+      "name": "delete_context",
+      "description": "Delete context for a specific topic"
+    },
+    {
+      "name": "search_context",
+      "description": "Search for similar contexts using semantic search"
+    },
+    {
+      "name": "get_context_history",
+      "description": "Get history of updates for a topic"
+    },
+    {
+      "name": "export_contexts",
+      "description": "Export all contexts to JSON format"
+    },
+    {
+      "name": "configure_auto_save",
+      "description": "Configure automatic context saving with custom frequency"
+    },
+    {
+      "name": "get_auto_save_status",
+      "description": "Get current auto-save configuration and status"
+    },
+    {
+      "name": "get_stream_context",
+      "description": "Get context data directly from Redis events:raw stream"
+    },
+    {
+      "name": "update_stream_context",
+      "description": "Write context data directly to Redis events:raw stream"
+    },
+    {
+      "name": "search_person_history",
+      "description": "Search for all interactions with a specific person"
+    },
+    {
+      "name": "find_similar_events",
+      "description": "Find semantically similar events using vector search"
+    },
+    {
+      "name": "get_temporal_patterns",
+      "description": "Analyze temporal patterns in events"
+    },
+    {
+      "name": "cleanup_processed_streams",
+      "description": "Clean up processed entries from Redis streams"
+    },
+    {
+      "name": "get_stream_health",
+      "description": "Get health status of Redis streams and processing pipeline"
+    },
+    {
+      "name": "update_processing_status",
+      "description": "Update processing status for a stream entry"
+    },
+    {
+      "name": "trigger_recovery_scan",
+      "description": "Manually trigger a recovery scan for stuck entries"
+    },
+    {
+      "name": "get_circuit_breaker_status",
+      "description": "Get current circuit breaker status and failure counts"
+    },
+    {
+      "name": "verify_data_integrity",
+      "description": "Verify data integrity across Redis, PostgreSQL, and Qdrant"
+    },
+    {
+      "name": "emergency_backup_stream",
+      "description": "Create emergency backup of Redis stream data to prevent data loss"
+    }
+  ]
+}

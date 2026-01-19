@@ -1,0 +1,185 @@
+{
+  "id": "calendly",
+  "displayName": "Calendly",
+  "description": "Calendly is an appointment scheduling tool that automates meeting invitations, availability checks, and reminders, helping individuals and teams avoid email back-and-forth",
+  "createdAt": "2026-01-19T02:12:42.035Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/calendly"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CALENDLY_CANCEL_EVENT",
+      "description": "Permanently cancels an existing, active scheduled event by its `uuid`, optionally providing a `reason`, which may trigger notifications to invitees."
+    },
+    {
+      "name": "CALENDLY_CREATE_INVITEE_NO_SHOW",
+      "description": "Marks an Invitee, identified by their existing and valid URI, as a 'No Show' for a scheduled event."
+    },
+    {
+      "name": "CALENDLY_CREATE_ONE_OFF_EVENT_TYPE",
+      "description": "Creates a temporary Calendly one-off event type for unique meetings outside regular availability, requiring valid host/co-host URIs, a future date/range for `date_setting`, and a positive `duration`."
+    },
+    {
+      "name": "CALENDLY_CREATE_SCHEDULING_LINK",
+      "description": "Create a single-use scheduling link. Creates a scheduling link that can be used to book an event. The link allows invitees to schedule up to the specified maximum number of events. Once the limit is reached, the link becomes inactive."
+    },
+    {
+      "name": "CALENDLY_CREATE_SHARE",
+      "description": "Creates a customizable, one-time share link for a Calendly event type, allowing specific overrides to its settings (e.g., duration, availability, location) without altering the original event type."
+    },
+    {
+      "name": "CALENDLY_CREATE_SINGLE_USE_SCHEDULING_LINK",
+      "description": "Creates a one-time, single-use scheduling link for an active Calendly event type, expiring after one booking."
+    },
+    {
+      "name": "CALENDLY_CREATE_WEBHOOK_SUBSCRIPTION",
+      "description": "Creates a Calendly webhook subscription to notify a specified `url` (which must be a publicly accessible HTTPS endpoint) for selected `events` within a given `organization` and `scope`."
+    },
+    {
+      "name": "CALENDLY_DELETE_INVITEE_DATA",
+      "description": "Permanently removes all invitee data associated with the provided emails from past organization events, for data privacy compliance (requires Enterprise subscription; deletion may take up to one week)."
+    },
+    {
+      "name": "CALENDLY_DELETE_INVITEE_NO_SHOW",
+      "description": "Deletes an Invitee No-Show record by its `uuid` to reverse an invitee's 'no-show' status; the `uuid` must refer to an existing record."
+    },
+    {
+      "name": "CALENDLY_DELETE_SCHEDULED_EVENT_DATA",
+      "description": "For Enterprise users, initiates deletion of an organization's scheduled event data between a `start_time` and `end_time` (inclusive, where `start_time` must be <= `end_time`); actual data deletion may take up to 7 days to complete."
+    },
+    {
+      "name": "CALENDLY_DELETE_WEBHOOK_SUBSCRIPTION",
+      "description": "Deletes an existing webhook subscription to stop Calendly sending event notifications to its registered callback URL; this operation is idempotent."
+    },
+    {
+      "name": "CALENDLY_GET_CURRENT_USER",
+      "description": "Retrieves detailed information about the currently authenticated Calendly user."
+    },
+    {
+      "name": "CALENDLY_GET_EVENT",
+      "description": "Use to retrieve a specific Calendly scheduled event by its UUID, provided the event exists in the user's Calendly account."
+    },
+    {
+      "name": "CALENDLY_GET_EVENT_INVITEE",
+      "description": "Retrieves detailed information about a specific invitee of a scheduled event, using their unique UUIDs."
+    },
+    {
+      "name": "CALENDLY_GET_EVENT_TYPE",
+      "description": "Retrieves details for a specific Calendly event type, identified by its UUID, which must be valid and correspond to an existing event type."
+    },
+    {
+      "name": "CALENDLY_GET_GROUP",
+      "description": "Retrieves all attributes of a specific Calendly group by its UUID; the group must exist."
+    },
+    {
+      "name": "CALENDLY_GET_GROUP_RELATIONSHIP",
+      "description": "Retrieves a specific Calendly group relationship by its valid and existing UUID, providing details on user-group associations and membership."
+    },
+    {
+      "name": "CALENDLY_GET_INVITEE_NO_SHOW",
+      "description": "Retrieves details for a specific Invitee No Show record by its UUID; an Invitee No Show is marked when an invitee does not attend a scheduled event."
+    },
+    {
+      "name": "CALENDLY_GET_ORGANIZATION_INVITATION",
+      "description": "Retrieves a specific Calendly organization invitation using its UUID and the parent organization's UUID."
+    },
+    {
+      "name": "CALENDLY_GET_ORGANIZATION_MEMBERSHIP",
+      "description": "Retrieves a specific Calendly organization membership by its UUID, returning all its attributes."
+    },
+    {
+      "name": "CALENDLY_GET_ROUTING_FORM",
+      "description": "Retrieves a specific routing form by its UUID, providing its configuration details including questions and routing logic."
+    },
+    {
+      "name": "CALENDLY_GET_USER",
+      "description": "Retrieves comprehensive details for an existing Calendly user."
+    },
+    {
+      "name": "CALENDLY_GET_USER_AVAILABILITY_SCHEDULE",
+      "description": "Retrieves an existing user availability schedule by its UUID; this schedule defines the user's default hours of availability."
+    },
+    {
+      "name": "CALENDLY_GET_WEBHOOK_SUBSCRIPTION",
+      "description": "Retrieves the details of an existing webhook subscription, identified by its UUID, including its callback URL, subscribed events, scope, and state."
+    },
+    {
+      "name": "CALENDLY_INVITE_USER_TO_ORGANIZATION",
+      "description": "Invites a user to the specified Calendly organization by email, if they aren't already a member and lack a pending invitation to it."
+    },
+    {
+      "name": "CALENDLY_LIST_ACTIVITY_LOG_ENTRIES",
+      "description": "Retrieves a list of activity log entries for a specified Calendly organization (requires an active Enterprise subscription), supporting filtering, sorting, and pagination."
+    },
+    {
+      "name": "CALENDLY_LIST_EVENT_INVITEES",
+      "description": "Retrieves a list of invitees for a specified Calendly event UUID, with options to filter by status or email, and sort by creation time."
+    },
+    {
+      "name": "CALENDLY_LIST_EVENTS",
+      "description": "Retrieves a list of scheduled Calendly events. Exactly one of `user`, `organization`, or `group` must be provided to scope the query. The `invitee_email` parameter is a filter and cannot be used as a scope. Admin rights may be needed when filtering by `organization` or `group`."
+    },
+    {
+      "name": "CALENDLY_LIST_EVENT_TYPE_AVAILABLE_TIMES",
+      "description": "Fetches available time slots for a Calendly event type within a specified time range; results are not paginated."
+    },
+    {
+      "name": "CALENDLY_LIST_EVENT_TYPE_HOSTS",
+      "description": "Retrieves a list of hosts (users) assigned to a specific, existing Calendly event type, identified by its URI."
+    },
+    {
+      "name": "CALENDLY_LIST_GROUP_RELATIONSHIPS",
+      "description": "Retrieves a list of group relationships defining an owner's role (e.g., member, admin) within a group; an owner can have one membership per group but multiple admin roles across different groups."
+    },
+    {
+      "name": "CALENDLY_LIST_GROUPS",
+      "description": "Returns a list of groups for a specified Calendly organization URI, supporting pagination."
+    },
+    {
+      "name": "CALENDLY_LIST_ORGANIZATION_INVITATIONS",
+      "description": "Retrieves a list of invitations for a specific organization, identified by its UUID."
+    },
+    {
+      "name": "CALENDLY_LIST_ORGANIZATION_MEMBERSHIPS",
+      "description": "Retrieves a list of organization memberships."
+    },
+    {
+      "name": "CALENDLY_LIST_OUTGOING_COMMUNICATIONS",
+      "description": "Retrieves a list of outgoing SMS communications for a specified organization; requires an Enterprise subscription and if filtering by creation date, both `min_created_at` and `max_created_at` must be provided to form a valid range."
+    },
+    {
+      "name": "CALENDLY_LIST_ROUTING_FORMS",
+      "description": "Retrieves routing forms for a specified organization; routing forms are questionnaires used to direct invitees to appropriate booking pages or external URLs."
+    },
+    {
+      "name": "CALENDLY_LIST_USER_AVAILABILITY_SCHEDULES",
+      "description": "Retrieves all availability schedules for the specified Calendly user."
+    },
+    {
+      "name": "CALENDLY_LIST_USER_BUSY_TIMES",
+      "description": "Fetches a user's busy time intervals (internal and external calendar events) in ascending order for a period up to 7 days; keyset pagination is not supported."
+    },
+    {
+      "name": "CALENDLY_LIST_USER_S_EVENT_TYPES",
+      "description": "Retrieves event types for a user or organization; requires either the `user` or `organization` URI."
+    },
+    {
+      "name": "CALENDLY_LIST_WEBHOOK_SUBSCRIPTIONS",
+      "description": "Retrieves webhook subscriptions for a Calendly organization; `scope` determines if `user` or `group` URI is also required for filtering."
+    },
+    {
+      "name": "CALENDLY_REMOVE_USER_FROM_ORGANIZATION",
+      "description": "Removes a user (who is not an owner) from an organization by their membership UUID, requiring administrative privileges."
+    },
+    {
+      "name": "CALENDLY_REVOKE_USER_S_ORGANIZATION_INVITATION",
+      "description": "Revokes a pending and revokable (not yet accepted or expired) organization invitation using its UUID and the organization's UUID, rendering the invitation link invalid."
+    }
+  ]
+}

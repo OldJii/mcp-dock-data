@@ -1,0 +1,60 @@
+{
+  "id": "@JedPattersonn/whoop-mcp",
+  "displayName": "WHOOP",
+  "description": "Access your WHOOP fitness data—overview, sleep, recovery, strain, and healthspan—right where you work. Track daily trends and surface insights to understand readiness, workload, and sleep quality. Get quick summaries or deep dives by date to guide training and recovery decisions.",
+  "createdAt": "2026-01-19T02:14:19.744Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JedPattersonn/whoop-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "whoopEmail",
+        "whoopPassword"
+      ],
+      "properties": {
+        "whoopEmail": {
+          "type": "string",
+          "description": "Your Whoop account email address"
+        },
+        "mcpAuthToken": {
+          "type": "string",
+          "description": "Optional authentication token for securing MCP endpoint access"
+        },
+        "whoopPassword": {
+          "type": "string",
+          "description": "Your Whoop account password"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "whoop_get_overview",
+      "description": "Get comprehensive Whoop data overview including cycle info, live metrics (recovery, strain, sleep, calories), gauges, activities, and key health statistics for a specific date"
+    },
+    {
+      "name": "whoop_get_sleep",
+      "description": "Get detailed sleep data including sleep performance score, contributors (hours vs needed, consistency, efficiency, sleep stress), and insights for a specific date"
+    },
+    {
+      "name": "whoop_get_recovery",
+      "description": "Get comprehensive recovery analysis including recovery score, HRV, RHR, respiratory rate, sleep performance, and recovery contributors with trends"
+    },
+    {
+      "name": "whoop_get_strain",
+      "description": "Get comprehensive strain analysis including day strain score, heart rate zones, strength training time, steps, activities, and strain contributors with trends"
+    },
+    {
+      "name": "whoop_get_healthspan",
+      "description": "Get comprehensive healthspan analysis including WHOOP Age (biological age), pace of aging, and comparison to chronological age"
+    }
+  ]
+}

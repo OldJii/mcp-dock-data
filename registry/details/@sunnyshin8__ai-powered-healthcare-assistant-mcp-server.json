@@ -1,0 +1,12 @@
+{
+  "id": "@sunnyshin8/ai-powered-healthcare-assistant-mcp-server",
+  "displayName": "ai-powered-healthcare-assistant-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:07.706Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sunnyshin8/ai-powered-healthcare-assistant-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

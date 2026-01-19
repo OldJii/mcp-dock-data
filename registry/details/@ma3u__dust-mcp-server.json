@@ -1,0 +1,16 @@
+{
+  "id": "@ma3u/dust-mcp-server",
+  "displayName": "Dust Agent Integration Server",
+  "description": "Provide seamless integration with Dust.tt agents to query, list, and retrieve agent configurations. Enable efficient interaction with Dust agents through Claude Desktop using STDIO or HTTP transport. Simplify managing and querying AI agents within your workspace.",
+  "createdAt": "2026-01-19T02:20:48.709Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ma3u/dust-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

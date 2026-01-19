@@ -1,0 +1,12 @@
+{
+  "id": "@SW2-receipt/sw_2_mcp_server",
+  "displayName": "sw_2_mcp_server",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:01.323Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SW2-receipt/sw_2_mcp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "attio",
+  "displayName": "Attio",
+  "description": "Attio is a fully customizable workspace for your team's relationships and workflows.",
+  "createdAt": "2026-01-19T02:12:37.127Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/attio"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ATTIO_CREATE_NOTE",
+      "description": "This tool creates a new note on a given record in Attio. The note can be attached to any record type (like person, company, or deal) and includes a title and content. It requires parameters such as parent_object, parent_record_id, title, and content, with an optional created_at timestamp."
+    },
+    {
+      "name": "ATTIO_CREATE_RECORD",
+      "description": "This tool creates a new record in Attio for a specified object type (people, companies, deals, users, workspaces, etc.). It requires the object type and a values dictionary containing the attributes for the new record."
+    },
+    {
+      "name": "ATTIO_DELETE_NOTE",
+      "description": "This tool allows users to delete a specific note in Attio by its ID. It is implemented via DELETE https://api.attio.com/v2/notes/{note_id} and handles note deletion by validating the provided note_id. It complements ATTIO_CREATE_NOTE functionality, providing complete note management capabilities within the Attio platform."
+    },
+    {
+      "name": "ATTIO_DELETE_RECORD",
+      "description": "This tool allows you to delete a record from Attio permanently. The deletion is irreversible, and the data will eventually be removed from the system."
+    },
+    {
+      "name": "ATTIO_FIND_RECORD",
+      "description": "This tool allows users to find a record in Attio by either its unique ID or by searching using unique attributes. It provides two methods: one for directly retrieving a record by its ID with the GET /v2/objects/{object}/records/{record_id} endpoint, and another for searching by attributes using the POST /v2/objects/{object}/records/query endpoint."
+    },
+    {
+      "name": "ATTIO_GET_OBJECT",
+      "description": "This tool retrieves detailed information about a specific object type in Attio, including all its attributes and their properties. This is useful for understanding what fields are available when creating or updating records of this type."
+    },
+    {
+      "name": "ATTIO_LIST_LISTS",
+      "description": "This tool retrieves all lists available in the Attio workspace. The lists are returned sorted as they appear in the sidebar. This tool is essential for managing and navigating lists, and is a prerequisite for many list-related operations. It requires the list_configuration:read permission scope."
+    },
+    {
+      "name": "ATTIO_LIST_NOTES",
+      "description": "This tool lists all notes associated with a specific record in Attio. Notes are returned in reverse chronological order (newest first)."
+    },
+    {
+      "name": "ATTIO_LIST_OBJECTS",
+      "description": "This tool retrieves a list of all available objects (both system-defined and user-defined) in the Attio workspace. It makes a GET request to the /v2/objects endpoint and returns a JSON response containing key metadata about each object, which is fundamental for understanding and accessing the workspace's structure."
+    },
+    {
+      "name": "ATTIO_LIST_RECORDS",
+      "description": "This tool lists records from a specific object type in Attio. It provides simple pagination support and returns records in the order they were created. For complex filtering, use the FindRecord action instead. Standard object types include: people, companies, deals, users, workspaces. If you get a 404 error, verify the object type exists using the List Objects action first."
+    },
+    {
+      "name": "ATTIO_UPDATE_RECORD",
+      "description": "This tool updates an existing record in Attio for a specified object type (people, companies, deals, users, workspaces, etc.). It uses PATCH to partially update only the provided fields, leaving other fields unchanged."
+    }
+  ]
+}

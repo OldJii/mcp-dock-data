@@ -1,0 +1,12 @@
+{
+  "id": "@jakedsouza/ynab-mcp",
+  "displayName": "ynab-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:48.802Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jakedsouza/ynab-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

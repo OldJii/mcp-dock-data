@@ -1,0 +1,97 @@
+{
+  "id": "@praveencs87/trello-mcp",
+  "displayName": "Trello MCP Server",
+  "description": "Enable AI assistants and automation tools to seamlessly manage your Trello boards, lists, cards, and labels through a standardized interface. Simplify Trello workflow management by integrating with any MCP-compatible client. Streamline project and task management with easy commands for creating, moving, and commenting on Trello items.",
+  "createdAt": "2026-01-19T02:18:02.878Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@praveencs87/trello-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "trelloApiKey",
+        "trelloApiToken"
+      ],
+      "properties": {
+        "trelloApiKey": {
+          "type": "string",
+          "description": "Trello API Key"
+        },
+        "trelloApiToken": {
+          "type": "string",
+          "description": "Trello API Token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create-card",
+      "description": ""
+    },
+    {
+      "name": "get-boards",
+      "description": ""
+    },
+    {
+      "name": "get-lists",
+      "description": ""
+    },
+    {
+      "name": "create-cards",
+      "description": ""
+    },
+    {
+      "name": "move-card",
+      "description": ""
+    },
+    {
+      "name": "add-comment",
+      "description": ""
+    },
+    {
+      "name": "create-label",
+      "description": ""
+    },
+    {
+      "name": "add-label",
+      "description": ""
+    },
+    {
+      "name": "move-cards",
+      "description": ""
+    },
+    {
+      "name": "add-comments",
+      "description": ""
+    },
+    {
+      "name": "create-labels",
+      "description": ""
+    },
+    {
+      "name": "add-labels",
+      "description": ""
+    },
+    {
+      "name": "get-tickets-by-list",
+      "description": ""
+    },
+    {
+      "name": "archive-card",
+      "description": ""
+    },
+    {
+      "name": "archive-cards",
+      "description": ""
+    },
+    {
+      "name": "get-comments-by-user",
+      "description": ""
+    }
+  ]
+}

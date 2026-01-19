@@ -1,0 +1,12 @@
+{
+  "id": "@afgong/sqlite-mcp-server",
+  "displayName": "Messages SQLite Explorer",
+  "description": "Explore your Messages SQLite database to browse tables and inspect schemas with ease. Run flexible queries to retrieve results and understand structure quickly. Speed up investigation, reporting, and troubleshooting.",
+  "createdAt": "2026-01-19T02:27:28.733Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@afgong/sqlite-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

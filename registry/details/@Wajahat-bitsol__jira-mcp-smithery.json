@@ -1,0 +1,35 @@
+{
+  "id": "@Wajahat-bitsol/jira-mcp-smithery",
+  "displayName": "Jira Integration Server",
+  "description": "Enable seamless integration of Jira issue tracking within your LLM applications. Fetch, create, and manage Jira issues and projects dynamically to enhance your workflow automation. Streamline your project management by connecting your agents directly to Jira data and actions.",
+  "createdAt": "2026-01-19T02:14:55.225Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Wajahat-bitsol/jira-mcp-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

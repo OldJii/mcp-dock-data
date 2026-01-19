@@ -1,0 +1,12 @@
+{
+  "id": "@soohoon/greptile",
+  "displayName": "greptile",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:12.264Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@soohoon/greptile"
+  },
+  "connection": null,
+  "capabilities": []
+}

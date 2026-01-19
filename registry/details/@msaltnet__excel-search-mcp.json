@@ -1,0 +1,29 @@
+{
+  "id": "@msaltnet/excel-search-mcp",
+  "displayName": "Excel MCP Server",
+  "description": "Find Excel files fast. Extract data from spreadsheets for quick analysis. Search across multiple files to pinpoint what you need.",
+  "createdAt": "2026-01-19T02:14:33.252Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@msaltnet/excel-search-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "list_excel_files_tool",
+      "description": "Search and return a list of Excel files in the configured work directory."
+    },
+    {
+      "name": "read_excel_data_tool",
+      "description": "Read Excel file data and convert it to JSON format."
+    },
+    {
+      "name": "search_in_excel_tool",
+      "description": "Search for specific text within Excel file(s)."
+    }
+  ]
+}

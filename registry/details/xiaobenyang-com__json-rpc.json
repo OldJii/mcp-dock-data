@@ -1,0 +1,32 @@
+{
+  "id": "xiaobenyang-com/json-rpc",
+  "displayName": "json-rpc",
+  "description": "Discover available methods on any JSON-RPC endpoint. Invoke methods with custom parameters to test and automate workflows. Validate integrations faster by exploring, calling, and iterating in one place.",
+  "createdAt": "2026-01-19T02:18:54.925Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/json-rpc"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "rpc_call",
+      "description": "Call any JSON-RPC method on a server with parameters. A user would prompt: Call method <method> on <server url> with params <params>"
+    },
+    {
+      "name": "rpc_discover",
+      "description": "This uses JSON-RPC to call `rpc.discover` which is part of the OpenRPC Specification for discovery for JSON-RPC servers. A user would prompt: What JSON-RPC methods does this server have? <server url>"
+    }
+  ]
+}

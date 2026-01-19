@@ -1,0 +1,25 @@
+{
+  "id": "@qianniuspace/mcp-security-audit",
+  "displayName": "Mcp Security Audit",
+  "description": "A powerful MCP (Model Context Protocol) Server that audits npm package dependencies for security vulnerabilities. Built with remote npm registry integration for real-time security checks.",
+  "createdAt": "2026-01-19T02:16:53.696Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@qianniuspace/mcp-security-audit"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "audit_nodejs_dependencies",
+      "description": "Audit specific dependencies for vulnerabilities"
+    }
+  ]
+}

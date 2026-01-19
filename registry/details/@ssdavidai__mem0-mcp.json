@@ -1,0 +1,42 @@
+{
+  "id": "@ssdavidai/mem0-mcp",
+  "displayName": "Mem0 Memories",
+  "description": "Store and retrieve user-specific memories to maintain reliable long-term context. Search past memories to surface the most relevant details instantly. Organize preferences and facts per user for consistent, personalized interactions across sessions.",
+  "createdAt": "2026-01-19T02:15:57.220Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ssdavidai/mem0-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Mem0 API key"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Default user ID for memory storage",
+          "default": "mem0-mcp-user"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add-memory",
+      "description": "Add a new memory. This method is called everytime the user informs anything about themselves, their preferences, or anything that has any relevent information whcih can be useful in the future conversation. This can also be called when the user asks you to remember something."
+    },
+    {
+      "name": "search-memories",
+      "description": "Search through stored memories. This method is called ANYTIME the user asks anything."
+    }
+  ]
+}

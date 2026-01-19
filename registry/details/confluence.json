@@ -1,0 +1,237 @@
+{
+  "id": "confluence",
+  "displayName": "Confluence",
+  "description": "A tool for team collaboration and knowledge management.",
+  "createdAt": "2026-01-19T02:12:56.044Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/confluence"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CONFLUENCE_ADD_CONTENT_LABEL",
+      "description": "Tool to add labels to a piece of content. Use after obtaining the content ID to tag pages or blog posts with metadata labels."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_BLOGPOST",
+      "description": "Tool to create a new Confluence blog post. Use when you need to publish content in a specific space."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_BLOGPOST_PROPERTY",
+      "description": "Tool to create a property on a specified blog post. Use when you need to add custom metadata to a blog post. Creates a new property with a key-value pair on a specified Confluence blog post. This allows users to add custom metadata relevant to the blog post."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_CONTENT_PROPERTY_FOR_WHITEBOARD",
+      "description": "Tool to create a new content property on a whiteboard. Use when you need to attach custom metadata to a Confluence whiteboard."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_PAGE",
+      "description": "Tool to create a new Confluence page in a specified space. Use when you need to create new documentation or content."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_PAGE_PROPERTY",
+      "description": "Tool to create a property on a Confluence page. Use when you need to add custom metadata or settings to a page."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_PRIVATE_SPACE",
+      "description": "Tool to create a private Confluence space. Use when you need an isolated workspace viewable only by its creator."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_SPACE",
+      "description": "Tool to create a new Confluence space. Use when setting up a new knowledge area for organization."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_SPACE_PROPERTY",
+      "description": "Tool to create a new property on a Confluence space. Use after confirming the space ID when adding custom metadata."
+    },
+    {
+      "name": "CONFLUENCE_CREATE_WHITEBOARD",
+      "description": "Tool to create a new Confluence whiteboard. Use when you need to start a collaborative whiteboard session."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_BLOGPOST_PROPERTY",
+      "description": "Tool to delete a blog post property. Use when you need to remove custom metadata from a specified blog post."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_CONTENT_PROPERTY_FOR_PAGE_BY_ID",
+      "description": "Tool to delete a content property from a page by property ID. Use when you need to remove custom metadata from a page for cleanup or auditing. This action deletes a specified content property from a Confluence page using its page ID and property ID. It is useful for removing outdated or unnecessary metadata."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_CONTENT_PROPERTY_FOR_WHITEBOARD_BY_ID",
+      "description": "Tool to delete a content property from a whiteboard by property ID. Use when you need to remove custom metadata from a whiteboard."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_PAGE",
+      "description": "Tool to delete a Confluence page. Use with caution as this will permanently remove the page from the space."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_SPACE",
+      "description": "Tool to delete a Confluence space by its key. Use when you need to permanently remove a space."
+    },
+    {
+      "name": "CONFLUENCE_DELETE_SPACE_PROPERTY",
+      "description": "Tool to delete a space property. Use when you need to remove a property from a Confluence space after review."
+    },
+    {
+      "name": "CONFLUENCE_GET_ATTACHMENT_LABELS",
+      "description": "Tool to list labels on an attachment. Use after confirming the attachment ID to fetch its labels."
+    },
+    {
+      "name": "CONFLUENCE_GET_ATTACHMENTS",
+      "description": "Tool to retrieve attachments of a Confluence page. Use after confirming page ID to list its attachments (supports pagination)."
+    },
+    {
+      "name": "CONFLUENCE_GET_AUDIT_LOGS",
+      "description": "Tool to retrieve Confluence audit records. Use when you need to fetch and filter audit logs for compliance or troubleshooting."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_BY_ID",
+      "description": "Tool to retrieve a specific Confluence blog post by its ID. Use when you have a blog post ID and need detailed metadata and content."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_LABELS",
+      "description": "Tool to retrieve labels of a specific Confluence blog post by ID. Use after obtaining the blog post ID to list its labels."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_LIKE_COUNT",
+      "description": "Tool to get like count for a Confluence blog post. Use after confirming the blog post ID to retrieve total likes."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_OPERATIONS",
+      "description": "Tool to retrieve permitted operations for a Confluence blog post. Use after confirming the blog post ID to see allowed actions."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOG_POSTS",
+      "description": "Tool to retrieve a list of blog posts. Use when you need a paginated list of Confluence blog posts."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOG_POSTS_FOR_LABEL",
+      "description": "Tool to list all blog posts under a specific label. Use when you have a label ID and need to retrieve associated blog posts."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_VERSION_DETAILS",
+      "description": "Tool to retrieve details for a specific version of a blog post. Use when you have a blogpostId and versionNumber and need detailed metadata for that version."
+    },
+    {
+      "name": "CONFLUENCE_GET_BLOGPOST_VERSIONS",
+      "description": "Tool to retrieve all versions of a specific blog post. Use when you have a blogpostId and need to list version numbers."
+    },
+    {
+      "name": "CONFLUENCE_GET_CHILD_PAGES",
+      "description": "Tool to list all direct child pages of a given Confluence page. Use when you have a parent page ID and need to discover its direct descendants."
+    },
+    {
+      "name": "CONFLUENCE_GET_CONTENT_PROPERTIES_FOR_BLOG_POST",
+      "description": "Tool to retrieve all content properties on a blog post. Use when you need to list metadata properties set on a specific Confluence blog post."
+    },
+    {
+      "name": "CONFLUENCE_GET_CONTENT_PROPERTIES_FOR_PAGE",
+      "description": "Tool to retrieve all content properties on a page. Use when you need to list metadata properties set on a specific Confluence page."
+    },
+    {
+      "name": "CONFLUENCE_GET_CONTENT_RESTRICTIONS",
+      "description": "Tool to retrieve restrictions on a Confluence content item. Use when you need to see who can view or edit a page or blog post."
+    },
+    {
+      "name": "CONFLUENCE_GET_CURRENT_USER",
+      "description": "Tool to get information about the currently authenticated user. Use when you need to check user details or permissions."
+    },
+    {
+      "name": "CONFLUENCE_GET_INLINE_COMMENTS_FOR_BLOG_POST",
+      "description": "Tool to retrieve inline comments for a Confluence blog post. Use when you need inline comment details by blog post ID."
+    },
+    {
+      "name": "CONFLUENCE_GET_LABELS",
+      "description": "Tool to retrieve all labels in a Confluence site. Use when you need to list or page through labels."
+    },
+    {
+      "name": "CONFLUENCE_GET_LABELS_FOR_PAGE",
+      "description": "Tool to retrieve labels of a specific Confluence page by ID. Use after obtaining the page ID to list its labels."
+    },
+    {
+      "name": "CONFLUENCE_GET_LABELS_FOR_SPACE",
+      "description": "Tool to list labels on a space. Use when you need to retrieve labels for a specific space."
+    },
+    {
+      "name": "CONFLUENCE_GET_LABELS_FOR_SPACE_CONTENT",
+      "description": "Tool to list labels on all content in a space. Use when you need to retrieve or filter content labels by space, with pagination and optional prefix filtering."
+    },
+    {
+      "name": "CONFLUENCE_GET_PAGE_ANCESTORS",
+      "description": "Tool to retrieve all ancestors for a given Confluence page by its ID. Use when you need the full page hierarchy."
+    },
+    {
+      "name": "CONFLUENCE_GET_PAGE_BY_ID",
+      "description": "Tool to retrieve a Confluence page by its ID. Use when you have a page ID and need its detailed metadata and content."
+    },
+    {
+      "name": "CONFLUENCE_GET_PAGE_LIKE_COUNT",
+      "description": "Tool to get like count for a Confluence page. Use after confirming the page ID to retrieve total likes."
+    },
+    {
+      "name": "CONFLUENCE_GET_PAGES",
+      "description": "Tool to retrieve a list of pages. Use when you need a paginated list of Confluence pages."
+    },
+    {
+      "name": "CONFLUENCE_GET_PAGE_VERSIONS",
+      "description": "Tool to retrieve all versions of a specific Confluence page. Use after confirming the page ID to audit its edit history."
+    },
+    {
+      "name": "CONFLUENCE_GET_SPACE_BY_ID",
+      "description": "Tool to retrieve a Confluence space by its ID. Use when you need detailed metadata of a specific space."
+    },
+    {
+      "name": "CONFLUENCE_GET_SPACE_CONTENTS",
+      "description": "Tool to retrieve content in a Confluence space. Use when you need to list pages, blogposts, or attachments of a specific space key."
+    },
+    {
+      "name": "CONFLUENCE_GET_SPACE_PROPERTIES",
+      "description": "Tool to get properties of a Confluence space. Use when you need to retrieve custom metadata or settings stored as space properties."
+    },
+    {
+      "name": "CONFLUENCE_GET_SPACES",
+      "description": "Tool to retrieve a list of Confluence spaces. Use when you need a paginated list of spaces with optional filtering."
+    },
+    {
+      "name": "CONFLUENCE_GET_USER_ANONYMOUS",
+      "description": "Tool to retrieve information about the anonymous user. Use when you need to obtain guest user details before unauthenticated interactions."
+    },
+    {
+      "name": "CONFLUENCE_SEARCH_CONTENT",
+      "description": "Searches for content by filtering pages from the Confluence v2 API with intelligent ranking. Since the native search endpoint is deprecated, this action: 1. Fetches pages from the v2 pages endpoint with pagination (up to 300 pages) 2. Applies intelligent client-side filtering with relevance scoring 3. Returns results ranked by match quality (exact phrase > all words > partial matches) The search algorithm prioritizes exact phrase matches, then checks for all query words present in the title, and finally considers partial word matches. Results are automatically sorted by relevance score for optimal user experience."
+    },
+    {
+      "name": "CONFLUENCE_SEARCH_USERS",
+      "description": "Searches for users using user-specific queries from the Confluence Query Language (CQL)."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_BLOGPOST",
+      "description": "Tool to update a Confluence blog post's title or content. Use when you need to modify an existing blog post. Ensure you have the latest version number before calling."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_BLOGPOST_PROPERTY",
+      "description": "Tool to update a property of a specified blog post. Use when you need to modify custom metadata on a blog post."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_CONTENT_PROPERTY_FOR_PAGE_BY_ID",
+      "description": "Tool to update a content property on a Confluence page. Use when you need to modify an existing metadata property by its ID."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_CONTENT_PROPERTY_FOR_WHITEBOARD_BY_ID",
+      "description": "Tool to update a content property on a whiteboard. Use when you need to modify metadata on a Confluence whiteboard."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_PAGE",
+      "description": "Tool to update an existing Confluence page. Use when you need to modify existing documentation or content."
+    },
+    {
+      "name": "CONFLUENCE_UPDATE_SPACE_PROPERTY",
+      "description": "Tool to update a space property. Use when you need to modify custom metadata stored on a Confluence space (requires fetching the current property version first)."
+    }
+  ]
+}

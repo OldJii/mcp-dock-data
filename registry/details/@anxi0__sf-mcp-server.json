@@ -1,0 +1,12 @@
+{
+  "id": "@anxi0/sf-mcp-server",
+  "displayName": "sf-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:18.324Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@anxi0/sf-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

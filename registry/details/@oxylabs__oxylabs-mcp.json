@@ -1,0 +1,34 @@
+{
+  "id": "@oxylabs/oxylabs-mcp",
+  "displayName": "Oxylabs MCP",
+  "description": "Fetch and process content from specified URLs using the Oxylabs Web Scraper API.",
+  "createdAt": "2026-01-19T02:19:35.215Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@oxylabs/oxylabs-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "oxylabsPassword": {
+          "type": "string",
+          "description": "Oxylabs password"
+        },
+        "oxylabsUsername": {
+          "type": "string",
+          "description": "Oxylabs username"
+        },
+        "oxylabsAiStudioApiKey": {
+          "type": "string",
+          "description": "Oxylabs AI Studio api key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

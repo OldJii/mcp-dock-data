@@ -1,0 +1,65 @@
+{
+  "id": "@KaranThink41/workday_mcp_server",
+  "displayName": "Workday MCP Server",
+  "description": "Enable seamless integration of Workday data and services with language models through a standardized protocol. Facilitate dynamic access to Workday resources, tools, and prompts to enhance automation and contextual understanding. Streamline workflows by bridging Workday's enterprise capabilities with AI-driven applications.",
+  "createdAt": "2026-01-19T02:16:40.655Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@KaranThink41/workday_mcp_server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "workdayClientId",
+        "workdayClientSecret",
+        "workdayRefreshToken",
+        "workdayTenant",
+        "workdayUrl",
+        "workdayAcessToken"
+      ],
+      "properties": {
+        "workdayUrl": {
+          "type": "string",
+          "description": "URL for your Workday API"
+        },
+        "workdayTenant": {
+          "type": "string",
+          "description": "Tenant ID for your Workday application"
+        },
+        "workdayClientId": {
+          "type": "string",
+          "description": "Client ID for your Workday application"
+        },
+        "workdayAcessToken": {
+          "type": "string",
+          "description": "Access Token for your Workday API"
+        },
+        "workdayClientSecret": {
+          "type": "string",
+          "description": "Client Secret for your Workday application"
+        },
+        "workdayRefreshToken": {
+          "type": "string",
+          "description": "Refresh Token for your Workday application"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "workday_get_employees",
+      "description": "Get a list of employees from Workday."
+    },
+    {
+      "name": "workday_get_eligible_leave_balance",
+      "description": "Get the eligible absence types and leave balance for an employee from Workday."
+    },
+    {
+      "name": "workday_submit_leave_request",
+      "description": "Submit a time off request for an employee in Workday."
+    }
+  ]
+}

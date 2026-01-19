@@ -1,0 +1,12 @@
+{
+  "id": "@Leon-Algo/feishu_access_token_mcp",
+  "displayName": "feishu_access_token_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:43.917Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Leon-Algo/feishu_access_token_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

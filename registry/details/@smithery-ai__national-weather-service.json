@@ -1,0 +1,48 @@
+{
+  "id": "@smithery-ai/national-weather-service",
+  "displayName": "United States Weather",
+  "description": "Provide real-time and forecast weather information for locations in the United States using natural language queries. Access current conditions, multi-day and hourly forecasts, weather alerts, and nearby weather stations without requiring an API key. Enable users to get official, government-sourced weather data easily through intuitive tools.",
+  "createdAt": "2026-01-19T02:13:13.299Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@smithery-ai/national-weather-service"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_weather",
+      "description": "Get current weather conditions for a location in the United States. Perfect for 'What's the weather like in [US location]?' questions. Covers all US states, territories, and coastal waters."
+    },
+    {
+      "name": "get_weather_forecast",
+      "description": "Get multi-day weather forecast for a location in the United States. Perfect for 'What's the forecast for [US location]?' questions. Provides detailed day/night forecasts for up to 7 days."
+    },
+    {
+      "name": "get_hourly_forecast",
+      "description": "Get hour-by-hour weather forecast for a location in the United States. Perfect for 'What's the hourly forecast?' or 'Will it rain this afternoon in [US location]?' questions. Provides detailed hourly conditions for up to 48 hours."
+    },
+    {
+      "name": "get_weather_alerts",
+      "description": "Get active weather alerts, warnings, watches, and advisories for locations in the United States. Perfect for 'Are there any weather alerts in [US location]?' questions. Covers severe weather, winter storms, heat warnings, flood alerts, and more."
+    },
+    {
+      "name": "find_weather_stations",
+      "description": "Find weather observation stations near a location in the United States. Useful for getting station-specific data, finding data sources, or understanding which stations provide weather data for an area. Includes ASOS, AWOS, and other automated weather stations."
+    },
+    {
+      "name": "get_local_time",
+      "description": "Get the current local time for a US location. Shows what time it is right now at the specified location."
+    }
+  ]
+}

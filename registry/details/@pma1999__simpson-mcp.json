@@ -1,0 +1,67 @@
+{
+  "id": "@pma1999/simpson-mcp",
+  "displayName": "simpson-mcp",
+  "description": "Search characters, episodes, and locations from The Simpsons by name and get detailed results. Browse paginated lists or fetch specific items by ID. Construct shareable image URLs for Simpsons assets.",
+  "createdAt": "2026-01-19T02:21:03.286Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pma1999/simpson-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "simpsons_search_character_by_name",
+      "description": "Searches for a character by name and returns their detailed information."
+    },
+    {
+      "name": "simpsons_search_episode_by_name",
+      "description": "Searches for an episode by its title and returns detailed information."
+    },
+    {
+      "name": "simpsons_search_location_by_name",
+      "description": "Searches for a location by its name and returns detailed information."
+    },
+    {
+      "name": "simpsons_list_characters",
+      "description": "Lists Simpsons characters, 20 per page."
+    },
+    {
+      "name": "simpsons_list_episodes",
+      "description": "Lists Simpsons episodes, 20 per page."
+    },
+    {
+      "name": "simpsons_list_locations",
+      "description": "Lists Simpsons locations, 20 per page."
+    },
+    {
+      "name": "simpsons_get_character_by_id",
+      "description": "Gets detailed information for a specific character by their unique ID."
+    },
+    {
+      "name": "simpsons_get_episode_by_id",
+      "description": "Gets detailed information for a specific episode by its unique ID."
+    },
+    {
+      "name": "simpsons_get_location_by_id",
+      "description": "Gets detailed information for a specific location by its unique ID."
+    },
+    {
+      "name": "simpsons_get_image_url",
+      "description": "Constructs the full CDN URL for a Simpsons image."
+    }
+  ]
+}

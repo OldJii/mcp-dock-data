@@ -1,0 +1,12 @@
+{
+  "id": "@joeleesuh/githubmcpserver",
+  "displayName": "githubmcpserver",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:38.643Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joeleesuh/githubmcpserver"
+  },
+  "connection": null,
+  "capabilities": []
+}

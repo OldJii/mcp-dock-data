@@ -1,0 +1,140 @@
+{
+  "id": "@kohasummons/paystack-mcp",
+  "displayName": "Paystack",
+  "description": "The Paystack Model Context Protocol (MCP) server allows AI agents to interact with Paystack through standardized MCP clients via tool calling. This protocol supports various tools to interact with different Paystack services.",
+  "createdAt": "2026-01-19T02:19:19.798Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kohasummons/paystack-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "paystackSecretKey"
+      ],
+      "properties": {
+        "paystackSecretKey": {
+          "type": "string",
+          "description": "Your Paystack secret key for API access"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_product",
+      "description": "Create a new product on your Paystack integration"
+    },
+    {
+      "name": "list_products",
+      "description": "List products available on your Paystack integration with pagination support"
+    },
+    {
+      "name": "get_product",
+      "description": "Get details of a specific product by ID"
+    },
+    {
+      "name": "update_product",
+      "description": "Update an existing product by ID"
+    },
+    {
+      "name": "create_customer",
+      "description": "Create a new customer in Paystack"
+    },
+    {
+      "name": "list_customers",
+      "description": "List customers available on your Paystack integration"
+    },
+    {
+      "name": "get_customer",
+      "description": "Get details of a specific customer by email or code"
+    },
+    {
+      "name": "update_customer",
+      "description": "Update a customer's details"
+    },
+    {
+      "name": "validate_customer",
+      "description": "Validate a customer's identity with bank account"
+    },
+    {
+      "name": "set_customer_risk_action",
+      "description": "Whitelist or blacklist a customer"
+    },
+    {
+      "name": "deactivate_authorization",
+      "description": "Deactivate a payment authorization when a card needs to be forgotten"
+    },
+    {
+      "name": "initialize_transaction",
+      "description": "Initialize a transaction to accept payment on Paystack"
+    },
+    {
+      "name": "verify_transaction",
+      "description": "Verify a transaction's status using the transaction reference"
+    },
+    {
+      "name": "fetch_transaction",
+      "description": "Get details of a transaction by ID"
+    },
+    {
+      "name": "list_transactions",
+      "description": "List transactions with pagination and filtering options"
+    },
+    {
+      "name": "charge_authorization",
+      "description": "Charge a previously authorized card"
+    },
+    {
+      "name": "partial_debit",
+      "description": "Charge a partial amount from a previously authorized card"
+    },
+    {
+      "name": "transaction_totals",
+      "description": "Get total amount received on your account"
+    },
+    {
+      "name": "export_transactions",
+      "description": "Export a list of transactions carried out on your integration"
+    },
+    {
+      "name": "list_banks",
+      "description": "Get a list of all banks supported by Paystack and their properties"
+    },
+    {
+      "name": "list_countries",
+      "description": "Get a list of countries that Paystack currently supports"
+    },
+    {
+      "name": "list_states",
+      "description": "Get a list of states for a country for address verification"
+    },
+    {
+      "name": "check_balance",
+      "description": "Get the available balance on your Paystack integration"
+    },
+    {
+      "name": "balance_ledger",
+      "description": "Fetch all pay-ins and pay-outs that occurred on your Paystack integration"
+    },
+    {
+      "name": "resend_transfers_otp",
+      "description": "Generates a new OTP and sends to customer for transfer verification"
+    },
+    {
+      "name": "disable_transfers_otp",
+      "description": "Disable OTP requirement for transfers"
+    },
+    {
+      "name": "finalize_disable_otp",
+      "description": "Finalize the request to disable OTP on your transfers"
+    },
+    {
+      "name": "enable_transfers_otp",
+      "description": "Enable OTP requirement for transfers"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "@keithah/tessie-mcp",
+  "displayName": "Tessie Vehicle Insights",
+  "description": "Unofficial integration!\n\n## ✨ Key Features\n\n### 💰 Financial Intelligence\n- **Smart Charging Cost Analysis** - Track home vs Supercharger vs public charging costs\n- **Trip Cost Optimization** - Calculate real trip costs with gas vehicle comparisons\n- **Money-Saving Recommendations** - \"Shift to off-peak charging to save $45/month\"\n- **Environmental Impact Tracking** - CO2 savings and tree-planting equivalents\n\n### 🧠 Predictive Analytics\n- **Commute Pattern Detection** - Auto-identify regular routes (home ↔ work)\n- **Efficiency Trend Analysis** - Track route performance over time\n- **FSD Usage Estimation** - Predict autopilot usage from driving patterns\n- **Future Trip Planning** - Cost estimates and charging strategy for upcoming trips\n\n### 📊 Advanced Insights\n- **Efficiency Trends** - Weekly/monthly/seasonal efficiency analysis with confidence scoring\n- **Weather Impact Analysis** - Hot/cold weather penalties with optimization tips\n- **Speed Factor Analysis** - Highway vs city efficiency with optimal speed recommendations\n- **Smart Charging Reminders** - Priority-based alerts with cost savings calculations\n- **Time Pattern Detection** - Best/worst days and times for efficient driving\n- **Route Optimization** - \"Your Santa Rosa commute efficiency is declining 📉\"\n- **Charging Strategy** - Optimal departure battery levels and time-of-use scheduling\n- **Weekly/Monthly Summaries** - Comprehensive ownership analytics with actionable insights\n\n### 🚗 Complete Tesla Data Access\n- **Real-time Vehicle State** - Battery, location, climate, locks, speed\n- **Historical Driving Data** - Trips, mileage, efficiency, routes\n- **Charging Analytics** - Sessions, costs, locations, optimization\n- **Smart VIN Resolution** - Automatically detects your active vehicle\n\n## 🛠️ Available Tools\n\n### 🚗 Vehicle Information & Status\n- **get_vehicles** - List all vehicles in your Tessie account\n- **get_vehicle_current_state** - Get comprehensive vehicle status with location address\n- **get_driving_history** - Get driving history and trip data\n- **get_weekly_mileage** - Calculate total miles driven in a specific period\n\n### 💰 Financial & Cost Analysis\n- **analyze_charging_costs** - Comprehensive charging cost analysis by location type\n- **calculate_trip_cost** - Calculate cost and environmental impact of completed trips\n- **estimate_future_trip** - Plan charging strategy and costs for upcoming trips\n\n### 🧠 Intelligence & Analytics\n- **analyze_latest_drive** - Detailed analysis of recent drive with FSD prediction\n- **analyze_commute_patterns** - Detect regular routes with efficiency trends\n- **analyze_efficiency_trends** - Comprehensive efficiency analysis with weather/speed/time factors\n- **get_smart_charging_reminders** - Intelligent charging optimization with cost savings\n- **natural_language_query** - Process natural language queries about vehicle data\n\n### 🔋 Battery & Charging\n- **Smart charging cost tracking** with home vs Supercharger vs public analysis\n- **Money-saving recommendations** based on usage patterns\n- **Time-of-use optimization** for peak/off-peak charging rates\n\n### 📍 Location & Navigation\n- **Automatic address resolution** from GPS coordinates\n- **Route pattern recognition** for commute detection\n- **Distance and efficiency calculations** between locations\n\n### 🤖 Predictive FSD Detection\n- **Highway speed consistency analysis** for autopilot estimation\n- **Route-based FSD probability** using driving patterns\n- **Efficiency comparison** between predicted FSD and manual driving\n\n## 💬 Example Commands\n\n### 🚗 Vehicle Status & Location\n```\n\"What's my Tesla's current battery level?\"\n\"Where is my car parked right now?\"\n\"Show me my vehicle status\"\n\"Is my Tesla locked?\"\n\"What's the climate temperature?\"\n```\n\n### 💰 Cost Analysis & Optimization\n```\n\"How much did I spend on charging last month?\"\n\"Analyze my charging costs by location\"\n\"Calculate the cost of my trip to Santa Rosa\"\n\"How much money am I saving vs a gas car?\"\n\"Show me my Supercharger vs home charging breakdown\"\n```\n\n### 🗺️ Trip Planning & Analysis\n```\n\"Estimate the cost for a 300-mile trip with 65% battery\"\n\"Analyze my latest drive\"\n\"How efficient was my commute this week?\"\n\"Plan charging stops for my trip to Los Angeles\"\n```\n\n### 🛣️ Commute & Route Intelligence\n```\n\"Detect my regular commute patterns\"\n\"Which of my routes is most efficient?\"\n\"Show me my weekly driving patterns\"\n\"How much do my commutes cost per week?\"\n\"Is my route efficiency improving or declining?\"\n```\n\n### 🤖 FSD & Autopilot Analysis\n```\n\"How much autopilot did I use this week?\"\n\"Analyze my FSD usage patterns\"\n\"Compare my manual vs autopilot efficiency\"\n\"What percentage of my highway driving was on FSD?\"\n```\n\n### 📊 Advanced Analytics & Efficiency\n```\n\"Analyze my driving efficiency trends over the past 6 weeks\"\n\"Show me how weather affects my Tesla's efficiency\"\n\"Which days of the week am I most efficient?\"\n\"Compare my highway vs city driving efficiency\"\n\"What are my efficiency trends - improving or declining?\"\n```\n\n### 🔌 Smart Charging & Optimization\n```\n\"Give me smart charging reminders for tonight\"\n\"Should I charge now or wait for off-peak hours?\"\n\"What's my optimal charging schedule this week?\"\n\"How much can I save with better charging timing?\"\n\"Check if I need to charge before my 200-mile trip tomorrow\"\n```\n\n### 📊 Comprehensive Analytics\n```\n\"Give me a comprehensive monthly summary\"\n\"What are my most expensive charging locations?\"\n\"Compare this month's efficiency to last month\"\n\"Show me my driving patterns and optimization tips\"\n```\n",
+  "createdAt": "2026-01-19T02:16:16.299Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@keithah/tessie-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "TESSIE_API_KEY": {
+          "type": "string",
+          "description": "Tessie API access token from https://dash.tessie.com/settings/api"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_active_context",
+      "description": "Quick context: vehicles you can access plus next-step guidance."
+    },
+    {
+      "name": "fetch_vehicle_state",
+      "description": "Fetch the latest vehicle state (location, climate, locks, battery snapshot)."
+    },
+    {
+      "name": "fetch_vehicle_battery",
+      "description": "Fetch battery and charging details for a vehicle."
+    },
+    {
+      "name": "search_drives",
+      "description": "List recent drives for a vehicle (summary-first with optional date range)."
+    },
+    {
+      "name": "get_driving_path",
+      "description": "Get driving path coordinates for a vehicle over a timeframe."
+    },
+    {
+      "name": "manage_vehicle_command",
+      "description": "Composite command executor for Tessie vehicle actions (lock, charging, climate, speed limit, sentry). Speed limit PIN is sensitive—avoid logging or sharing it."
+    }
+  ]
+}

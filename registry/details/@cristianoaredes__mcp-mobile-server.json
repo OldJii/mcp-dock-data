@@ -1,0 +1,156 @@
+{
+  "id": "@cristianoaredes/mcp-mobile-server",
+  "displayName": "Flutter Mobile Workbench",
+  "description": "Accelerate Flutter mobile development with guided setup, smart device management, and streamlined run/build/test workflows. Handle Android and iOS simulators and emulators, capture logs and screenshots, and resolve common issues automatically. Ship confidently with release builds and built-in health checks.",
+  "createdAt": "2026-01-19T02:13:18.669Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cristianoaredes/mcp-mobile-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "anyOf": [
+        {
+          "not": {}
+        },
+        {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      ],
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "flutter_doctor",
+      "description": "Run Flutter doctor to check development environment setup"
+    },
+    {
+      "name": "flutter_version",
+      "description": "Get Flutter SDK version information"
+    },
+    {
+      "name": "flutter_list_devices",
+      "description": "List connected devices and emulators available for Flutter development"
+    },
+    {
+      "name": "android_list_devices",
+      "description": "List connected Android devices and emulators (supports ADB fallback to native-run)"
+    },
+    {
+      "name": "native_run_list_devices",
+      "description": "List connected devices using native-run (Android & iOS support)"
+    },
+    {
+      "name": "native_run_install_app",
+      "description": "Install app on device using native-run (works for Android APK & iOS app)"
+    },
+    {
+      "name": "ios_list_simulators",
+      "description": "List available iOS simulators"
+    },
+    {
+      "name": "android_list_emulators",
+      "description": "List available Android emulators"
+    },
+    {
+      "name": "android_create_avd",
+      "description": "Create a new Android Virtual Device (AVD)"
+    },
+    {
+      "name": "android_start_emulator",
+      "description": "Start an Android emulator"
+    },
+    {
+      "name": "android_stop_emulator",
+      "description": "Stop a running Android emulator"
+    },
+    {
+      "name": "ios_shutdown_simulator",
+      "description": "Shutdown an iOS simulator"
+    },
+    {
+      "name": "flutter_launch_emulator",
+      "description": "Launch a Flutter emulator"
+    },
+    {
+      "name": "flutter_run",
+      "description": "Start a Flutter development session (hot reload enabled)"
+    },
+    {
+      "name": "flutter_build",
+      "description": "Build Flutter app for specific target platform"
+    },
+    {
+      "name": "flutter_test",
+      "description": "Run Flutter tests with optional coverage"
+    },
+    {
+      "name": "flutter_clean",
+      "description": "Clean Flutter build cache and generated files"
+    },
+    {
+      "name": "flutter_pub_get",
+      "description": "Install Flutter project dependencies (pub get)"
+    },
+    {
+      "name": "android_install_apk",
+      "description": "Install an APK file to an Android device or emulator"
+    },
+    {
+      "name": "android_logcat",
+      "description": "Capture Android logcat output from device or emulator"
+    },
+    {
+      "name": "android_screenshot",
+      "description": "Capture screenshot from Android device or emulator"
+    },
+    {
+      "name": "ios_boot_simulator",
+      "description": "Boot an iOS simulator"
+    },
+    {
+      "name": "ios_take_screenshot",
+      "description": "Take a screenshot of an iOS simulator"
+    },
+    {
+      "name": "flutter_dev_session",
+      "description": "Complete Flutter dev setup: check env, list devices, select best device, run with hot reload"
+    },
+    {
+      "name": "flutter_test_suite",
+      "description": "Run complete test suite: unit tests, widget tests, integration tests with coverage report"
+    },
+    {
+      "name": "flutter_release_build",
+      "description": "Build release versions for all platforms: APK, AAB, IPA with signing"
+    },
+    {
+      "name": "mobile_device_manager",
+      "description": "Smart device management: list all, recommend best, auto-start if needed"
+    },
+    {
+      "name": "flutter_fix_common_issues",
+      "description": "Auto-fix common issues: clean, pub get, pod install, gradle sync, invalidate caches"
+    },
+    {
+      "name": "flutter_setup_environment",
+      "description": "Complete Flutter SDK installation and environment setup with automatic path configuration"
+    },
+    {
+      "name": "android_sdk_setup",
+      "description": "Setup Android SDK and configure environment for Android development"
+    },
+    {
+      "name": "health_check",
+      "description": "Check server health, tool availability and environment status"
+    }
+  ]
+}

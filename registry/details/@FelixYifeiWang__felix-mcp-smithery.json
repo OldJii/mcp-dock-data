@@ -1,0 +1,37 @@
+{
+  "id": "@FelixYifeiWang/felix-mcp-smithery",
+  "displayName": "Felix-MCP",
+  "description": "Streamline your workflow with Felix. Integrate it into your workspace and tailor its behavior to your needs.",
+  "createdAt": "2026-01-19T02:18:16.279Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FelixYifeiWang/felix-mcp-smithery"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Return a hello message"
+    },
+    {
+      "name": "randomNumber",
+      "description": "Return a random integer up to max (default 100)"
+    },
+    {
+      "name": "weather",
+      "description": "Get current weather for a city (wttr.in)"
+    },
+    {
+      "name": "summarize",
+      "description": "Summarize text using OpenAI (default 1–3 sentences). Requires OPENAI_API_KEY."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@gregorydickson/memory-graph",
+  "displayName": "memory-graph",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:46.305Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gregorydickson/memory-graph"
+  },
+  "connection": null,
+  "capabilities": []
+}

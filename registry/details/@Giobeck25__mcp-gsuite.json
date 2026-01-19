@@ -1,0 +1,12 @@
+{
+  "id": "@Giobeck25/mcp-gsuite",
+  "displayName": "mcp-gsuite",
+  "description": "server for google ",
+  "createdAt": "2026-01-19T02:22:45.868Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Giobeck25/mcp-gsuite"
+  },
+  "connection": null,
+  "capabilities": []
+}

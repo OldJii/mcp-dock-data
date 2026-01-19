@@ -1,0 +1,12 @@
+{
+  "id": "@adnocad/hady_mcp",
+  "displayName": "hady_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:27.756Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@adnocad/hady_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

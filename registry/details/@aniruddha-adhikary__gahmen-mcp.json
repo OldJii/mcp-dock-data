@@ -1,0 +1,65 @@
+{
+  "id": "@aniruddha-adhikary/gahmen-mcp",
+  "displayName": "MCP Server for Singapore Government Open Data",
+  "description": "Provide seamless access to open datasets and collections from data.gov.sg. Enable searching, metadata retrieval, and filtered dataset downloads for analysis.",
+  "createdAt": "2026-01-19T02:13:17.671Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aniruddha-adhikary/gahmen-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "datagovsg_list_collections",
+      "description": "List all collections on data.gov.sg"
+    },
+    {
+      "name": "datagovsg_get_collection",
+      "description": "Get metadata for a specific data.gov.sg collection"
+    },
+    {
+      "name": "datagovsg_list_datasets",
+      "description": "List all datasets on data.gov.sg"
+    },
+    {
+      "name": "datagovsg_get_dataset_metadata",
+      "description": "Get metadata for a specific data.gov.sg dataset"
+    },
+    {
+      "name": "datagovsg_search_dataset",
+      "description": "Search for data within a data.gov.sg dataset"
+    },
+    {
+      "name": "datagovsg_initiate_download",
+      "description": "Initiate download of a data.gov.sg dataset with optional filtering"
+    },
+    {
+      "name": "datagovsg_poll_download",
+      "description": "Check data.gov.sg download status and get download URL"
+    },
+    {
+      "name": "singstat_search_resources",
+      "description": "Search for SingStat tables by keyword (works best with single words)"
+    },
+    {
+      "name": "singstat_get_metadata",
+      "description": "Get metadata for a specific SingStat table"
+    },
+    {
+      "name": "singstat_get_table_data",
+      "description": "Get data from a specific SingStat table with optional filtering"
+    }
+  ]
+}

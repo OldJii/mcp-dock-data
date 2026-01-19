@@ -1,0 +1,12 @@
+{
+  "id": "simonblanco/kanban",
+  "displayName": "kanban",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:29.361Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/simonblanco/kanban"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@RickJoosten/im_builder",
+  "displayName": "im_builder",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:44.297Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RickJoosten/im_builder"
+  },
+  "connection": null,
+  "capabilities": []
+}

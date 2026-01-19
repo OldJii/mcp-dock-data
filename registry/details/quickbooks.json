@@ -1,0 +1,89 @@
+{
+  "id": "quickbooks",
+  "displayName": "Quickbooks",
+  "description": "Quickbooks is a cloud-based accounting software that helps you manage your finances, track your income and expenses, and get insights into your business",
+  "createdAt": "2026-01-19T02:13:08.732Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/quickbooks"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "QUICKBOOKS_CREATE_ACCOUNT",
+      "description": "Create a new account in QuickBooks with the given parameters."
+    },
+    {
+      "name": "QUICKBOOKS_CREATE_CUSTOMER",
+      "description": "Create a new customer in QuickBooks with the given parameters."
+    },
+    {
+      "name": "QUICKBOOKS_CREATE_EMPLOYEE",
+      "description": "Create a new employee in QuickBooks."
+    },
+    {
+      "name": "QUICKBOOKS_CREATE_INVOICE",
+      "description": "Tool to create a new invoice in QuickBooks. Use after confirming customer and item details."
+    },
+    {
+      "name": "QUICKBOOKS_CREATE_VENDOR",
+      "description": "Create a new vendor in QuickBooks with the given details."
+    },
+    {
+      "name": "QUICKBOOKS_CUSTOMER_BALANCE_DETAIL",
+      "description": "Generate a balance detail report for a customer in QuickBooks with the given customer ID."
+    },
+    {
+      "name": "QUICKBOOKS_CUSTOMER_BALANCE_REPORT",
+      "description": "Generate a balance report for a customer in QuickBooks with the given customer ID."
+    },
+    {
+      "name": "QUICKBOOKS_LIST_INVOICES",
+      "description": "Tool to list invoices via QuickBooks Query endpoint. Use when retrieving invoices with optional pagination and custom fields."
+    },
+    {
+      "name": "QUICKBOOKS_QUERY_ACCOUNT",
+      "description": "Query an account in QuickBooks with the given parameters."
+    },
+    {
+      "name": "QUICKBOOKS_READ_ACCOUNT",
+      "description": "Read an account in QuickBooks with the given account ID."
+    },
+    {
+      "name": "QUICKBOOKS_READ_CUSTOMER",
+      "description": "Read a customer in QuickBooks with the given customer ID."
+    },
+    {
+      "name": "QUICKBOOKS_READ_EMPLOYEE",
+      "description": "Read an employee's details in QuickBooks with the given employee ID."
+    },
+    {
+      "name": "QUICKBOOKS_READ_INVOICE",
+      "description": "Tool to fetch a QuickBooks invoice by ID or the most recent if no ID provided. Use when needing full invoice details including metadata and sync token."
+    },
+    {
+      "name": "QUICKBOOKS_READ_VENDOR",
+      "description": "Read a vendor in QuickBooks with the given vendor ID."
+    },
+    {
+      "name": "QUICKBOOKS_UPDATE_FULL_INVOICE",
+      "description": "Tool to fully replace an Invoice. Use when you need to update all aspects of an existing invoice in a single operation."
+    },
+    {
+      "name": "QUICKBOOKS_UPDATE_SPARSE_INVOICE",
+      "description": "Tool to perform a sparse update of an existing invoice. Use when you need to update only specific invoice fields without overwriting other data."
+    },
+    {
+      "name": "QUICKBOOKS_VENDOR_BALANCE_DETAIL",
+      "description": "Generate a balance detail report for a vendor in QuickBooks with the given vendor ID."
+    },
+    {
+      "name": "QUICKBOOKS_VENDOR_BALANCE_REPORT",
+      "description": "Get the balance report of a vendor in QuickBooks with the given vendor ID."
+    }
+  ]
+}

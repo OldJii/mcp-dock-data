@@ -1,0 +1,21 @@
+{
+  "id": "@aliemregencer/jama-abstract-mcp-v2",
+  "displayName": "Jama Abstract MCP Server",
+  "description": "Provide a flexible MCP server implementation that integrates with external tools and resources to enhance LLM applications. Enable dynamic interaction with data and actions through a standardized protocol, improving the capabilities of AI agents. Simplify the connection between language models and real-world context for more effective automation and assistance.",
+  "createdAt": "2026-01-19T02:21:19.278Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aliemregencer/jama-abstract-mcp-v2"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "generate_va_abstract",
+      "description": "JAMA Network makalesinden VA (Veterans Affairs) formatında görsel özet oluşturur.\nParametre verilmezse GITHUB_REPO / GITHUB_TOKEN ortam değişkenlerinden okunur."
+    }
+  ]
+}

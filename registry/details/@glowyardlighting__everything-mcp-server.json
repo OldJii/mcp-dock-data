@@ -1,0 +1,12 @@
+{
+  "id": "@glowyardlighting/everything-mcp-server",
+  "displayName": "everything-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:56.280Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@glowyardlighting/everything-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@ceo/youtube",
+  "displayName": "youtube",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:06.209Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ceo/youtube"
+  },
+  "connection": null,
+  "capabilities": []
+}

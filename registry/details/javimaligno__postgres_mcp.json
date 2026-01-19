@@ -1,0 +1,12 @@
+{
+  "id": "javimaligno/postgres_mcp",
+  "displayName": "postgres_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:46.185Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/javimaligno/postgres_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

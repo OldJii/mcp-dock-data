@@ -1,0 +1,12 @@
+{
+  "id": "@cuenobi/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:18.225Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cuenobi/mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

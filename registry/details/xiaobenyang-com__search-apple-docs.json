@@ -1,0 +1,96 @@
+{
+  "id": "xiaobenyang-com/search-apple-docs",
+  "displayName": "search-apple-docs",
+  "description": "Discover Apple APIs, frameworks, and symbols fast with comprehensive documentation search. Explore WWDC sessions and code examples to learn modern patterns and best practices. Check platform availability, track updates, and browse sample projects to build faster and stay current.",
+  "createdAt": "2026-01-19T02:20:56.604Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/search-apple-docs"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_apple_docs",
+      "description": "Search Apple Developer Documentation for APIs, frameworks, guides, and samples. Best for finding specific APIs, classes, or methods. For browsing sample code projects, use get_sample_code. For WWDC videos, use the dedicated WWDC tools (list_wwdc_videos, search_wwdc_content)."
+    },
+    {
+      "name": "get_apple_doc_content",
+      "description": "Get detailed content from a specific Apple Developer Documentation page. Use this after search_apple_docs to get full documentation. Supports enhanced analysis options for comprehensive API understanding. Best for: reading API details, understanding usage, checking availability."
+    },
+    {
+      "name": "list_technologies",
+      "description": "Browse all Apple technologies and frameworks by category. Essential for discovering available frameworks and understanding Apple's technology ecosystem. Use this when: exploring what's available, finding framework identifiers for search_framework_symbols, checking beta status."
+    },
+    {
+      "name": "search_framework_symbols",
+      "description": "Browse and search symbols within a specific Apple framework. Perfect for exploring framework APIs, finding all views/controllers/delegates in a framework, or discovering available types. Use after list_technologies to get framework identifiers."
+    },
+    {
+      "name": "get_related_apis",
+      "description": "Analyze API relationships and discover related functionality. Shows inheritance, protocol conformances, and Apple's recommended alternatives. Essential for understanding how APIs work together. Use when: learning API hierarchy, finding protocol requirements, discovering related functionality."
+    },
+    {
+      "name": "resolve_references_batch",
+      "description": "Deep dive into all types and APIs referenced in a documentation page. Resolves all mentioned types, methods, and properties to understand dependencies. Use when: analyzing complex APIs, understanding type requirements, exploring API ecosystems."
+    },
+    {
+      "name": "get_platform_compatibility",
+      "description": "Check API availability across Apple platforms and OS versions. Shows minimum deployment targets, deprecations, and platform-specific features. Critical for cross-platform development. Use when: planning app requirements, checking API availability, finding platform alternatives."
+    },
+    {
+      "name": "find_similar_apis",
+      "description": "Discover alternative and related APIs. Finds APIs with similar functionality, modern replacements for deprecated APIs, and platform-specific alternatives. Perfect when looking for better ways to implement functionality."
+    },
+    {
+      "name": "get_documentation_updates",
+      "description": "Track latest Apple platform updates, new APIs, and changes. Shows WWDC announcements, framework updates, and release notes. Essential for staying current with Apple development. For detailed WWDC videos, use WWDC-specific tools."
+    },
+    {
+      "name": "get_technology_overviews",
+      "description": "Access comprehensive guides and tutorials for Apple technologies. Includes getting started guides, architectural overviews, best practices, and implementation patterns. Perfect for learning new frameworks or understanding Apple's recommended approaches."
+    },
+    {
+      "name": "get_sample_code",
+      "description": "Browse complete sample projects from Apple. Full working examples demonstrating best practices and implementation patterns. Different from search_apple_docs which returns code snippets. Use for learning by example."
+    },
+    {
+      "name": "list_wwdc_videos",
+      "description": "Browse WWDC session videos with full offline access to transcripts and code. Shows all available sessions with filtering options. Use this to discover WWDC content, find sessions by topic, or identify videos with code examples."
+    },
+    {
+      "name": "search_wwdc_content",
+      "description": "Full-text search across all WWDC video transcripts and code examples. Find specific discussions, API mentions, or implementation examples. More powerful than list_wwdc_videos for finding specific content."
+    },
+    {
+      "name": "get_wwdc_video",
+      "description": "Access complete WWDC session content including full transcript, code examples, and resources. Use after finding videos with list_wwdc_videos or search_wwdc_content. Provides offline access to entire session content."
+    },
+    {
+      "name": "get_wwdc_code_examples",
+      "description": "Browse all code examples from WWDC sessions. Perfect for finding implementation patterns, seeing new API usage, or learning by example. Each result includes the code and its session context."
+    },
+    {
+      "name": "browse_wwdc_topics",
+      "description": "List all WWDC topic categories with their IDs. Essential first step before using list_wwdc_videos with topic filtering. Returns topic IDs like \"swiftui-ui-frameworks\" that can be used in other tools."
+    },
+    {
+      "name": "find_related_wwdc_videos",
+      "description": "Discover WWDC sessions related to a specific video. Finds prerequisite sessions, follow-up content, and thematically similar talks. Essential for creating learning paths."
+    },
+    {
+      "name": "list_wwdc_years",
+      "description": "List all available WWDC years with video counts and statistics. Shows which years have content available and how many videos each year contains."
+    }
+  ]
+}

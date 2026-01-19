@@ -1,0 +1,30 @@
+{
+  "id": "@CaullenOmdahl/expo-mcp-server",
+  "displayName": "Expo Dev Assistant",
+  "description": "Manage Expo and React Native projects from setup to release. Trigger cloud builds, publish over-the-air updates, and submit releases to App Store and Google Play with clear status and logs. Run diagnostics, validate configuration, and access relevant docs to resolve issues faster.",
+  "createdAt": "2026-01-19T02:15:53.671Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@CaullenOmdahl/expo-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "expoToken": {
+          "type": "string",
+          "description": "Expo access token for authentication (can also use EXPO_TOKEN env var)"
+        },
+        "defaultFormat": {
+          "type": "string",
+          "description": "Default output format for tool responses",
+          "default": "markdown"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

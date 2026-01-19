@@ -1,0 +1,35 @@
+{
+  "id": "@csrdltte/mcp-smooth",
+  "displayName": "Smooth MCP Server",
+  "description": "Provide a streamlined and extensible MCP server implementation that enables seamless integration of LLMs with external tools, resources, and prompts. Facilitate dynamic context enrichment and tool invocation to enhance AI applications. Simplify building and deploying MCP-compliant servers with modern TypeScript tooling.",
+  "createdAt": "2026-01-19T02:19:04.230Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@csrdltte/mcp-smooth"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

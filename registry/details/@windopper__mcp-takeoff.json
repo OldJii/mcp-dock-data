@@ -1,0 +1,39 @@
+{
+  "id": "@windopper/mcp-takeoff",
+  "displayName": "Takeoff.",
+  "description": "AI trend collect service",
+  "createdAt": "2026-01-19T02:15:31.700Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@windopper/mcp-takeoff"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_latest_posts",
+      "description": "Get the latest AI issue posts from the Takeoff API"
+    },
+    {
+      "name": "get_latest_weekly_news",
+      "description": "Get the latest weekly news from the Takeoff API"
+    }
+  ]
+}

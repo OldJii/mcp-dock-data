@@ -1,0 +1,40 @@
+{
+  "id": "@antoncoding/mcp-brianknows",
+  "displayName": "Brian Knows",
+  "description": "Enhance your applications with intelligent context-aware capabilities. Leverage real-world data and tools seamlessly to create more interactive and responsive user experiences.",
+  "createdAt": "2026-01-19T02:21:36.248Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antoncoding/mcp-brianknows"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "brianKey"
+      ],
+      "properties": {
+        "brianKey": {
+          "type": "string",
+          "description": "The API key for accessing the BrianKnows API"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "ping",
+      "description": "Check if the Brian API server is alive"
+    },
+    {
+      "name": "search",
+      "description": "Search using Brian's knowledge engine"
+    },
+    {
+      "name": "agent",
+      "description": "Chat with Brian agent"
+    }
+  ]
+}

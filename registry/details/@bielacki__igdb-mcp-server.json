@@ -1,0 +1,52 @@
+{
+  "id": "@bielacki/igdb-mcp-server",
+  "displayName": "IGDB",
+  "description": "Explore and discover video games from the Internet Game Database. Search titles, view detailed info on platforms, ratings, studios, and media, and track trending or upcoming releases. Run advanced queries to surface exactly what you need.",
+  "createdAt": "2026-01-19T02:18:12.329Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bielacki/igdb-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "Settings",
+      "required": [
+        "IGDB_CLIENT_ID",
+        "IGDB_CLIENT_SECRET"
+      ],
+      "properties": {
+        "IGDB_CLIENT_ID": {
+          "type": "string",
+          "description": "Your IGDB Client ID. Get it from https://dev.twitch.tv/console"
+        },
+        "IGDB_CLIENT_SECRET": {
+          "type": "string",
+          "description": "Your IGDB Client Secret. Get it from https://dev.twitch.tv/console"
+        }
+      },
+      "description": "Configuration for IGDB MCP Server.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_games",
+      "description": "Search for games in the IGDB database"
+    },
+    {
+      "name": "get_game_details",
+      "description": "Retrieve detailed information about a specific game from IGDB"
+    },
+    {
+      "name": "get_most_anticipated_games",
+      "description": "Fetch upcoming games sorted by hype count, filtered for future or TBA releases"
+    },
+    {
+      "name": "custom_query",
+      "description": "Run a custom Apicalypse query against any IGDB API endpoint"
+    }
+  ]
+}

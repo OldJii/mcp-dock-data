@@ -1,0 +1,12 @@
+{
+  "id": "@taurus5650/mcp_mindmup2_google_drive",
+  "displayName": "mcp_mindmup2_google_drive",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:59.367Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@taurus5650/mcp_mindmup2_google_drive"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@layer5-5/mcp-server-pipedrive",
+  "displayName": "mcp-server-pipedrive",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:07.296Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@layer5-5/mcp-server-pipedrive"
+  },
+  "connection": null,
+  "capabilities": []
+}

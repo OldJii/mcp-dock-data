@@ -1,0 +1,12 @@
+{
+  "id": "@laco.tousek/libre",
+  "displayName": "libre",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:22.290Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@laco.tousek/libre"
+  },
+  "connection": null,
+  "capabilities": []
+}

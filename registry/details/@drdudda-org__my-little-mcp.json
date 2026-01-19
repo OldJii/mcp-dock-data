@@ -1,0 +1,28 @@
+{
+  "id": "@drdudda-org/my-little-mcp",
+  "displayName": "KST Time & Randomizer",
+  "description": "Get the current date and time in Korea Standard Time. Draw a random number between 1 and 50 for quick picks, testing, or games. Streamline tasks that need precise local time and simple randomness.",
+  "createdAt": "2026-01-19T02:13:49.743Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@drdudda-org/my-little-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_time",
+      "description": "현재 시간을 알려주는 도구입니다. 한국 시간(KST)으로 현재 날짜와 시간을 반환합니다."
+    },
+    {
+      "name": "get_random_number",
+      "description": "1부터 50 사이의 랜덤한 숫자를 하나 뽑아주는 도구입니다."
+    }
+  ]
+}

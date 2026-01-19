@@ -1,0 +1,12 @@
+{
+  "id": "@gavanduffy/office-powerpoint-mcp-server",
+  "displayName": "office-powerpoint-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:40.234Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gavanduffy/office-powerpoint-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

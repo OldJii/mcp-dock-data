@@ -1,0 +1,25 @@
+{
+  "id": "@akaramanapp/greeting",
+  "displayName": "Greeting",
+  "description": "Enhance your applications with personalized greeting capabilities. Easily integrate and customize greetings to improve user engagement and experience. Leverage the power of the Model Context Protocol to create dynamic interactions effortlessly.",
+  "createdAt": "2026-01-19T02:16:37.688Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@akaramanapp/greeting"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add",
+      "description": ""
+    }
+  ]
+}

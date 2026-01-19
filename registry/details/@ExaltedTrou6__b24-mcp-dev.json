@@ -1,0 +1,33 @@
+{
+  "id": "@ExaltedTrou6/b24-mcp-dev",
+  "displayName": "Bitrix24 MCP-DEV",
+  "description": "The MCP server for Bitrix24 provides AI assistants with structured access to the Bitrix24 API. It delivers up-to-date method descriptions, parameters, and valid values, allowing assistants to work with precise data instead of guesswork. This reduces code errors and accelerates Bitrix24 integration development.",
+  "createdAt": "2026-01-19T02:14:46.297Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ExaltedTrou6/b24-mcp-dev"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "bitrix-search",
+      "description": "Description: Searches for Bitrix24 methods and articles based on a natural language query. Returns a list of methods and articles with short descriptions."
+    },
+    {
+      "name": "bitrix-method-details",
+      "description": "Description: Returns details of a Bitrix24 REST method. Use after resolving a method via 'bitrix-search'.\nParameters:\n- method (required): exact REST method name (e.g., 'crm.deal.add').\n- field (optional): all|name|description|params|example|errors|returns|url (default: all).\nResponse format:\n- field=name → only the method name.\n- field=description → only the description (no headings).\n- field=params → list of parameters, one per line.\n- field=example → first available example (raw text/code).\n- field=errors → extracted errors table/paragraphs (heuristic).\n- field=returns → extracted returns section (heuristic).\n- field=url → only the URL.\n- field=all → Method/Title/Description/URL/Params/Example in a compact order.\nError handling / ambiguity:\n- If the method is not found: 'Method '<method>' not found.'\n- If a field is missing (e.g., no examples), an empty string is returned for that field."
+    },
+    {
+      "name": "bitrix-article-details",
+      "description": "Description: Returns full text for a non-method documentation article.\nUse after resolving an article via 'bitrix-search'.\nParameters:\n- title_or_hint (required): Title or unique hint to locate the article (e.g., first line from search).\n- top_k (optional): How many candidates to aggregate (default: 5).\nResponse format:\nReturns structured article content with metadata:\n- Title and description\n- Full text content\n- URL and other metadata if available\n"
+    },
+    {
+      "name": "bitrix-event-details",
+      "description": "Description: Returns event documentation details similarly to articles.\nUse after resolving an event via 'bitrix-search'.\nParameters:\n- title_or_hint (required): Title or unique hint to locate the event doc.\n- top_k (optional): How many candidates to aggregate (default: 5).\n"
+    }
+  ]
+}

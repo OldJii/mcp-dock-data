@@ -1,0 +1,44 @@
+{
+  "id": "@STAPROcz/fons-unit-testing-mcp-server",
+  "displayName": "fons-unit-testing-mcp-server",
+  "description": "Speed up writing unit tests for FONS Enterprise. Search trusted docs and code examples to learn patterns and grab relevant snippets. Generate AAA-style tests with mocking for your classes and methods in seconds.",
+  "createdAt": "2026-01-19T02:13:43.616Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@STAPROcz/fons-unit-testing-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "dataPath": {
+          "type": "string",
+          "description": "Path to knowledge base data",
+          "default": "./src/knowledge/teched"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "fons_search_docs",
+      "description": "Search through FONS Enterprise unit testing documentation, workshops, and best practices"
+    },
+    {
+      "name": "fons_get_example",
+      "description": "Get specific code examples for FONS unit tests (basic, mock, async, parametrized, integration)"
+    },
+    {
+      "name": "fons_generate_test",
+      "description": "Generate a complete unit test for a FONS method with mocking and AAA pattern"
+    }
+  ]
+}

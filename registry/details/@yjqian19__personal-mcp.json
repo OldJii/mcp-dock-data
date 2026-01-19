@@ -1,0 +1,48 @@
+{
+  "id": "@yjqian19/personal-mcp",
+  "displayName": "Say Hello",
+  "description": "Generate personalized greetings instantly. Add a playful pirate voice with an optional mode and tailor messages to any name or occasion. Explore the origin of \"Hello, World\" with the included reference.",
+  "createdAt": "2026-01-19T02:14:47.309Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yjqian19/personal-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ExifConfig",
+      "properties": {
+        "timeout": {
+          "type": "integer",
+          "description": "Request timeout in seconds",
+          "default": 30
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes, default 50MB",
+          "default": 52428800
+        },
+        "include_location": {
+          "type": "boolean",
+          "description": "Include location information (GPS)",
+          "default": false
+        },
+        "include_technical": {
+          "type": "boolean",
+          "description": "Include technical parameters (aperture, shutter, etc.)",
+          "default": true
+        }
+      },
+      "description": "EXIF extractor configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "extract_exif",
+      "description": "Extract EXIF information from image URL or Base64 data"
+    }
+  ]
+}

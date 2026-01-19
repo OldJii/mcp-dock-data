@@ -1,0 +1,61 @@
+{
+  "id": "@VisActor/vchart-mcp-server",
+  "displayName": "VChart Visualization Server",
+  "description": "Generate interactive charts and visualizations through AI assistants using a variety of chart types and output formats. Easily create images, HTML, or specification objects for programmatic use to enhance data presentation and analysis. Support a wide range of chart types including Cartesian, polar, hierarchical, progress, word cloud, and more for versatile visualization needs.",
+  "createdAt": "2026-01-19T02:19:10.291Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@VisActor/vchart-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_cartesian_chart",
+      "description": "Generates Cartesian charts: line (trends over time), area (cumulative totals), bar (category comparison), waterfall (incremental changes), ranking bar (ordered categories), and funnel (visualizes stages in a process or conversion rates)."
+    },
+    {
+      "name": "generate_dual_axis_chart",
+      "description": "Generate a dual-axis chart for visualizing two quantitative variables using a combination of bar and line series. Ideal for comparing trends and magnitudes across two metrics with distinct y-axes."
+    },
+    {
+      "name": "generate_heatmap_chart",
+      "description": "Generates a heatmap chart based on a Cartesian coordinate system. It is used to visualize the intensity or density of values at the intersection of two discrete variables, suitable for revealing association patterns and distribution characteristics between variables."
+    },
+    {
+      "name": "generate_polar_chart",
+      "description": "Generate a polar chart (rose, radar, pie) to display numerical differences among different categories using radius and angle in polar coordinates."
+    },
+    {
+      "name": "generate_progress_chart",
+      "description": "Generates a progress chart for visualizing quantitative values normalized between 0 and 1. Ideal for representing progress, completion rates, or proportional metrics. The gauge chart and liquid chart currently only supports displaying data for a single dimension."
+    },
+    {
+      "name": "generate_range_column_chart",
+      "description": "Generate a range column chart to display the value range (such as minimum and maximum) for each category, suitable for comparing the range distribution across different categories."
+    },
+    {
+      "name": "generate_sankey_chart",
+      "description": "Generate a Sankey diagram to visualize the flow relationships between nodes in complex networks, suitable for displaying the distribution and flow paths of source and target data."
+    },
+    {
+      "name": "generate_scatter_chart",
+      "description": "Generate a scatter chart to visually display the distribution, clustering trends, and correlations of data points in two-dimensional or multi-dimensional space. Suitable for analyzing relationships between variables, outlier detection, and similar scenarios."
+    },
+    {
+      "name": "generate_hierarchical_chart",
+      "description": "Generate a chart for hierarchical visualization of multi-level categorical data proportions, include sunburst, treemap, circle_packing."
+    },
+    {
+      "name": "generate_wordcloud_venn",
+      "description": "Generate a word cloud to visualize word frequency or importance, or a Venn diagram to show relationships such as intersections and unions between sets."
+    }
+  ]
+}

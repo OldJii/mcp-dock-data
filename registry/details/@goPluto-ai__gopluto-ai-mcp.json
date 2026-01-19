@@ -1,0 +1,12 @@
+{
+  "id": "@goPluto-ai/gopluto-ai-mcp",
+  "displayName": "gopluto-ai-mcp",
+  "description": "AI assistants are powerful, but sometimes you still need the human touch — a real expert who understands your exact challenge and can solve it fast. That’s where GoPluto.ai comes in.\n\nGoPluto is the quick commerce of services, designed to connect you with the right live expert in minutes. Whether you’re stuck on a technical issue, need business guidance, or want creative input, simply Ask Pluto. Our system instantly matches you with verified service providers who can step in and resolve your problem on the spot.",
+  "createdAt": "2026-01-19T02:28:18.373Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@goPluto-ai/gopluto-ai-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

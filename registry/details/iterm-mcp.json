@@ -1,0 +1,16 @@
+{
+  "id": "iterm-mcp",
+  "displayName": "iTerm",
+  "description": "Execute commands in the current iTerm session.",
+  "createdAt": "2026-01-19T02:14:59.374Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/iterm-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

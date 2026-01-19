@@ -1,0 +1,41 @@
+{
+  "id": "zoho",
+  "displayName": "Zoho",
+  "description": "Zoho is a suite of cloud applications including CRM, email marketing, and collaboration tools, enabling businesses to automate and scale operations",
+  "createdAt": "2026-01-19T02:12:51.843Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_CONVERT_ZOHO_LEAD",
+      "description": "Converts a lead into a contact, account, and optionally a deal in Zoho CRM."
+    },
+    {
+      "name": "ZOHO_CREATE_ZOHO_RECORD",
+      "description": "Creates new records in a specified module in Zoho CRM."
+    },
+    {
+      "name": "ZOHO_CREATE_ZOHO_TAG",
+      "description": "Creates new tags in Zoho CRM."
+    },
+    {
+      "name": "ZOHO_GET_ZOHO_RECORDS",
+      "description": "Retrieves records from a specified module in Zoho CRM. Notes: - Discrete (page/per_page) pagination is limited to the first 2,000 records. To retrieve records beyond this, use token-based pagination via page_token from the previous response's info.next_page_token. - Do not use page together with page_token. - You cannot use cvid together with sort_by."
+    },
+    {
+      "name": "ZOHO_UPDATE_RELATED_RECORDS",
+      "description": "Associates or updates relationships between records across different modules in Zoho CRM."
+    },
+    {
+      "name": "ZOHO_UPDATE_ZOHO_RECORD",
+      "description": "Updates existing records in a specified module in Zoho CRM."
+    }
+  ]
+}

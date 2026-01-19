@@ -1,0 +1,12 @@
+{
+  "id": "investbuddy/stock-predictions",
+  "displayName": "stock-predictions",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:24.309Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/investbuddy/stock-predictions"
+  },
+  "connection": null,
+  "capabilities": []
+}

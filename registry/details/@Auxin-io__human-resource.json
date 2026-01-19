@@ -1,0 +1,34 @@
+{
+  "id": "@Auxin-io/human-resource",
+  "displayName": "Employee Records",
+  "description": "Create employee records to prototype HR onboarding workflows. Validate data flows and automate record setup during development. Iterate quickly without touching production systems.",
+  "createdAt": "2026-01-19T02:19:16.767Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Auxin-io/human-resource"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "createEmployeeRecord",
+      "description": "Creates a new employee record in HR system (demo stub)"
+    }
+  ]
+}

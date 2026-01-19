@@ -1,0 +1,48 @@
+{
+  "id": "@kmerce28/cursor_test",
+  "displayName": "Greetings & Math",
+  "description": "Greet people, perform quick calculations, and generate images from text prompts. Retrieve basic environment specs. Customize it as a simple starting point for your workflows.",
+  "createdAt": "2026-01-19T02:20:16.956Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kmerce28/cursor_test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자에게 인사를 건넵니다"
+    },
+    {
+      "name": "add",
+      "description": "두 숫자를 더합니다"
+    },
+    {
+      "name": "subtract",
+      "description": "두 숫자를 뺍니다"
+    },
+    {
+      "name": "multiply",
+      "description": "두 숫자를 곱합니다"
+    },
+    {
+      "name": "divide",
+      "description": "두 숫자를 나눕니다"
+    },
+    {
+      "name": "generate_image",
+      "description": "텍스트 프롬프트로 이미지를 생성합니다"
+    }
+  ]
+}

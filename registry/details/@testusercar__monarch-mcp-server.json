@@ -1,0 +1,12 @@
+{
+  "id": "@testusercar/monarch-mcp-server",
+  "displayName": "monarch-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:05.336Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@testusercar/monarch-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

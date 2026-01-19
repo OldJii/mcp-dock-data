@@ -1,0 +1,21 @@
+{
+  "id": "@IlyaGusev/academia_mcp",
+  "displayName": "Academia",
+  "description": "Search arXiv and ACL Anthology, retrieve citations and references, and browse web sources to accelerate literature reviews. Download papers to text, compile manuscripts with LaTeX templates, and discover Hugging Face datasets to support experiments.",
+  "createdAt": "2026-01-19T02:21:38.275Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@IlyaGusev/academia_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

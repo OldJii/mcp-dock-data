@@ -1,0 +1,12 @@
+{
+  "id": "@tomba-io/tomba-mcp-server",
+  "displayName": "tomba-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:05.239Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tomba-io/tomba-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "javimaligno/mcp-server-bitbucket",
+  "displayName": "mcp-server-bitbucket",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:58.246Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/javimaligno/mcp-server-bitbucket"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "@AudienseCo/mcp-audiense-insights",
+  "displayName": "Audiense Insights",
+  "description": "Extract marketing insights and audience analysis from Audiense reports.",
+  "createdAt": "2026-01-19T02:20:52.364Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AudienseCo/mcp-audiense-insights"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "audienseClientId",
+        "audienseClientSecret"
+      ],
+      "properties": {
+        "audienseClientId": {
+          "type": "string",
+          "description": "Client ID for the Audiense API."
+        },
+        "twitterBearerToken": {
+          "type": "string",
+          "description": "Bearer Token for the Twitter API (optional)."
+        },
+        "audienseClientSecret": {
+          "type": "string",
+          "description": "Client Secret for the Audiense API."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-reports",
+      "description": "Retrieves the list of Audiense insights reports owned by the authenticated user."
+    },
+    {
+      "name": "get-report-info",
+      "description": "Retrieves detailed information about a specific intelligence report, including its status, segmentation type, audience size, segments, and access links."
+    },
+    {
+      "name": "get-audience-insights",
+      "description": "Retrieves aggregated insights for a given audience ID, providing statistical distributions across various attributes.\n    Available insights include demographics (e.g., gender, age, country), behavioral traits (e.g., active hours, platform usage), psychographics (e.g., personality traits, interests), and socioeconomic factors (e.g., income, education status)."
+    },
+    {
+      "name": "get-baselines",
+      "description": "Retrieves available baselines, optionally filtered by country."
+    },
+    {
+      "name": "get-categories",
+      "description": "Retrieves the list of available affinity categories that can be used as the categories parameter in the compare-audience-influencers tool."
+    },
+    {
+      "name": "compare-audience-influencers",
+      "description": "Compares the influencers of an audience with a baseline audience. The baseline is determined as follows: \n    If the selection was the full audience and a single country represents more than 50% of the audience, that country is used as the baseline.\n    Otherwise, the Global baseline is applied. If the selection was a specific segment, the full audience is used as the baseline.\n    Each influencer comparison includes: \n        - Affinity (%) - The level of alignment between the influencer and the audience. Baseline Affinity (%)\n        - The influencer’s affinity within the baseline audience. Uniqueness Score\n        - A measure of how distinct the influencer is within the selected audience compared to the baseline.\n    "
+    },
+    {
+      "name": "get-audience-content",
+      "description": "Retrieves audience content engagement details for a given audience.\n\nThis tool provides a detailed breakdown of the content an audience interacts with, including:\n- **Liked Content**: Popular posts, top domains, top emojis, top hashtags, top links, top media, and a word cloud.\n- **Shared Content**: Content that the audience shares, categorized similarly to liked content.\n- **Influential Content**: Content from influential accounts that impact the audience, with similar categorization.\n\nEach category contains:\n- **popularPost**: List of the most engaged posts.\n- **topDomains**: Most mentioned domains.\n- **topEmojis**: Most used emojis.\n- **topHashtags**: Most used hashtags.\n- **topLinks**: Most shared links.\n- **topMedia**: Media types shared and samples.\n- **wordcloud**: Frequently used words."
+    },
+    {
+      "name": "report-summary",
+      "description": "Generates a comprehensive summary of an Audiense report, including segment details, top insights, and influencers."
+    }
+  ]
+}

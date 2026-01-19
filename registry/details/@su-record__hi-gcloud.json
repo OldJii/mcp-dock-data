@@ -1,0 +1,66 @@
+{
+  "id": "@su-record/hi-gcloud",
+  "displayName": "hi-gcloud",
+  "description": "Streamline GCP operations with quick access to logs, Cloud Run status, Cloud SQL (read-only), Storage, secrets, services, auth, and billing. Accelerate deployment debugging and cost monitoring with focused queries and project-aware controls.",
+  "createdAt": "2026-01-19T02:13:20.276Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@su-record/hi-gcloud"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "gcp_setup",
+      "description": "설정|초기화|프로필|setup|init|configure - 프로젝트별 GCP 설정 파일(.hi-gcloud.json)을 생성합니다. project_path에 현재 작업 폴더 경로를 지정하세요."
+    },
+    {
+      "name": "gcp_logs_read",
+      "description": "로그 조회|에러 확인|Cloud Logging|gcp logs|에러 로그 - GCP Cloud Logging에서 로그를 조회합니다"
+    },
+    {
+      "name": "gcp_run_status",
+      "description": "Cloud Run 상태|서비스 상태|배포 상태|run status - Cloud Run 서비스 상태를 조회합니다"
+    },
+    {
+      "name": "gcp_run_logs",
+      "description": "Cloud Run 로그|배포 로그|서비스 로그|run logs - Cloud Run 서비스 로그를 조회합니다"
+    },
+    {
+      "name": "gcp_sql_query",
+      "description": "Cloud SQL 쿼리|DB 조회|sql query - Cloud SQL에서 읽기 전용 쿼리를 실행합니다"
+    },
+    {
+      "name": "gcp_sql_proxy",
+      "description": "Cloud SQL 프록시|DB 연결|sql proxy|database connect - Cloud SQL Proxy를 실행하여 로컬에서 Cloud SQL에 연결합니다"
+    },
+    {
+      "name": "gcp_storage_list",
+      "description": "GCS 목록|버킷 목록|스토리지|storage list - Cloud Storage 버킷/객체 목록을 조회합니다"
+    },
+    {
+      "name": "gcp_secret_list",
+      "description": "시크릿 목록|비밀 관리|secret manager|secrets - Secret Manager 시크릿을 조회합니다"
+    },
+    {
+      "name": "gcp_auth_status",
+      "description": "인증 상태|로그인 확인|계정 정보|auth status|whoami - GCP 인증 상태와 계정 정보를 확인합니다"
+    },
+    {
+      "name": "gcp_services_list",
+      "description": "API 목록|활성화된 서비스|enabled APIs|services - 프로젝트에서 활성화된 API 서비스 목록을 조회합니다"
+    },
+    {
+      "name": "gcp_billing_info",
+      "description": "과금 정보|비용 확인|요금|billing|cost|얼마 나왔어 - GCP 프로젝트 결제 정보와 비용을 조회합니다"
+    }
+  ]
+}

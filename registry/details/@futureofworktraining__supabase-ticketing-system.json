@@ -1,0 +1,12 @@
+{
+  "id": "@futureofworktraining/supabase-ticketing-system",
+  "displayName": "supabase-ticketing-system",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:14.252Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@futureofworktraining/supabase-ticketing-system"
+  },
+  "connection": null,
+  "capabilities": []
+}

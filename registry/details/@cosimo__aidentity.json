@@ -1,0 +1,12 @@
+{
+  "id": "@cosimo/aidentity",
+  "displayName": "aidentity",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:00.360Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cosimo/aidentity"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "@Linell/grimoire-mcp",
+  "displayName": "Grimoire Spellbook Server",
+  "description": "Provide a comprehensive spellbook for Dungeons & Dragons 5th Edition to enhance your gameplay experience. Access detailed spell information and manage your spell resources efficiently. Streamline your D&D sessions with easy-to-use spell data and tools.",
+  "createdAt": "2026-01-19T02:13:22.614Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Linell/grimoire-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_spells",
+      "description": "Search for D&D 5E spells with various filters"
+    },
+    {
+      "name": "get_spell",
+      "description": "Get detailed information about a specific D&D 5E spell"
+    },
+    {
+      "name": "list_schools",
+      "description": "List all available D&D 5E spell schools"
+    },
+    {
+      "name": "list_classes",
+      "description": "List all available D&D 5E character classes that can cast spells"
+    },
+    {
+      "name": "get_class_spells",
+      "description": "Get all spells available to a specific class at a given level"
+    }
+  ]
+}

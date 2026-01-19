@@ -1,0 +1,33 @@
+{
+  "id": "@junmer/mcp-server-lottiefiles",
+  "displayName": "LottieFiles Server",
+  "description": "Search and retrieve Lottie animations effortlessly. Access detailed information about specific animations and discover popular animations with ease. Enhance your projects with dynamic animations from LottieFiles.",
+  "createdAt": "2026-01-19T02:14:27.304Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@junmer/mcp-server-lottiefiles"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_animations",
+      "description": "Search for Lottie animations by keywords, tags, and other criteria. Supports pagination."
+    },
+    {
+      "name": "get_animation_details",
+      "description": "Get detailed information about a specific Lottie animation, including animation data, preview images, and tags."
+    },
+    {
+      "name": "get_popular_animations",
+      "description": "Get a list of currently popular Lottie animations."
+    }
+  ]
+}

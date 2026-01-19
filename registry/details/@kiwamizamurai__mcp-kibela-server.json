@@ -1,0 +1,81 @@
+{
+  "id": "@kiwamizamurai/mcp-kibela-server",
+  "displayName": "Kibela MCP Server",
+  "description": "Integrate with Kibela API to search and retrieve notes.",
+  "createdAt": "2026-01-19T02:19:18.354Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kiwamizamurai/mcp-kibela-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "kibelaTeam",
+        "kibelaToken"
+      ],
+      "properties": {
+        "kibelaTeam": {
+          "type": "string",
+          "description": "Your Kibela team name"
+        },
+        "kibelaToken": {
+          "type": "string",
+          "description": "Your Kibela API token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "kibela_search_notes",
+      "description": "Search Kibela notes with given query"
+    },
+    {
+      "name": "kibela_get_my_notes",
+      "description": "Get your latest notes from Kibela"
+    },
+    {
+      "name": "kibela_get_note_content",
+      "description": "Get content and comments of a specific note"
+    },
+    {
+      "name": "kibela_get_groups",
+      "description": "Get list of accessible groups"
+    },
+    {
+      "name": "kibela_get_group_folders",
+      "description": "Get folders in a group"
+    },
+    {
+      "name": "kibela_get_group_notes",
+      "description": "Get notes in a group that are not attached to any folder"
+    },
+    {
+      "name": "kibela_get_folder_notes",
+      "description": "Get notes in a folder"
+    },
+    {
+      "name": "kibela_get_users",
+      "description": "Get list of users"
+    },
+    {
+      "name": "kibela_like_note",
+      "description": "Like a note"
+    },
+    {
+      "name": "kibela_unlike_note",
+      "description": "Unlike a note"
+    },
+    {
+      "name": "kibela_get_recently_viewed_notes",
+      "description": "Get your recently viewed notes"
+    },
+    {
+      "name": "kibela_get_note_from_path",
+      "description": "Get note content by its URL"
+    }
+  ]
+}

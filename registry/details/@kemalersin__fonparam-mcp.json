@@ -1,0 +1,81 @@
+{
+  "id": "@kemalersin/fonparam-mcp",
+  "displayName": "FonParam Investment Funds Data Server",
+  "description": "Provide real-time and historical data on Turkish investment funds, including fund listings, performance analysis, company details, and inflation statistics. Enable detailed fund comparisons and investment analysis to support informed financial decisions. Access daily market statistics and inflation rates to stay updated with the latest economic indicators.",
+  "createdAt": "2026-01-19T02:18:35.234Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kemalersin/fonparam-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_funds",
+      "description": "Yatırım fonlarını listeler ve filtreleme imkanı sunar"
+    },
+    {
+      "name": "top_performing_funds",
+      "description": "En iyi performans gösteren fonları getirir"
+    },
+    {
+      "name": "compare_funds",
+      "description": "Fonları karşılaştırır (2-5 fon)"
+    },
+    {
+      "name": "analyze_fund",
+      "description": "Fon için yatırım analizi yapar"
+    },
+    {
+      "name": "fund_historical_data",
+      "description": "Fonun geçmiş değerlerini getirir"
+    },
+    {
+      "name": "list_companies",
+      "description": "Portföy yönetim şirketlerini listeler"
+    },
+    {
+      "name": "company_details",
+      "description": "Portföy yönetim şirketi detaylarını getirir"
+    },
+    {
+      "name": "statistics",
+      "description": "Günlük istatistikleri listeler"
+    },
+    {
+      "name": "latest_statistics",
+      "description": "Son istatistikleri getirir"
+    },
+    {
+      "name": "statistics_by_date",
+      "description": "Belirli bir günün istatistiklerini getirir"
+    },
+    {
+      "name": "list_fund_types",
+      "description": "Fon tiplerini listeler"
+    },
+    {
+      "name": "fund_type_details",
+      "description": "Belirli bir fon tipinin detaylarını getirir"
+    },
+    {
+      "name": "inflation_rates",
+      "description": "Enflasyon verilerini listeler"
+    },
+    {
+      "name": "latest_inflation_rate",
+      "description": "Son enflasyon verisini getirir"
+    },
+    {
+      "name": "monthly_inflation_rate",
+      "description": "Belirli bir ay ve yıldaki enflasyon verisini getirir"
+    }
+  ]
+}

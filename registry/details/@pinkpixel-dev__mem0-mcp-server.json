@@ -1,0 +1,55 @@
+{
+  "id": "@pinkpixel-dev/mem0-mcp-server",
+  "displayName": "Mem0 Memory Server",
+  "description": "Enable AI agents to store, search, and delete persistent memories across sessions to enhance context retention and recall. Integrate seamlessly with Mem0.ai's cloud or self-hosted Supabase storage for scalable and reliable memory management. Optimize your LLM applications with advanced filtering, semantic search, and flexible storage modes tailored to your needs.",
+  "createdAt": "2026-01-19T02:16:41.246Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pinkpixel-dev/mem0-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mem0ApiKey",
+        "defaultUserId"
+      ],
+      "properties": {
+        "mem0ApiKey": {
+          "type": "string",
+          "description": "API key for Mem0 cloud storage mode"
+        },
+        "defaultAppId": {
+          "type": "string",
+          "description": "Default app ID for project scoping",
+          "default": ""
+        },
+        "defaultUserId": {
+          "type": "string",
+          "description": "Default user ID for memory operations"
+        },
+        "defaultAgentId": {
+          "type": "string",
+          "description": "Default agent ID for identifying the LLM/agent",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add_memory",
+      "description": "Stores a piece of text as a memory in Mem0."
+    },
+    {
+      "name": "search_memory",
+      "description": "Searches stored memories in Mem0 based on a query."
+    },
+    {
+      "name": "delete_memory",
+      "description": "Deletes a specific memory by ID from Mem0."
+    }
+  ]
+}

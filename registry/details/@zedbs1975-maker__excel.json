@@ -1,0 +1,12 @@
+{
+  "id": "@zedbs1975-maker/excel",
+  "displayName": "excel",
+  "description": "IA for excel",
+  "createdAt": "2026-01-19T02:23:05.014Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@zedbs1975-maker/excel"
+  },
+  "connection": null,
+  "capabilities": []
+}

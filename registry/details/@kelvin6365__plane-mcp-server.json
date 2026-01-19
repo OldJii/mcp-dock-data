@@ -1,0 +1,57 @@
+{
+  "id": "@kelvin6365/plane-mcp-server",
+  "displayName": "Plane MCP Server",
+  "description": "Manage your projects and issues seamlessly with Plane's API. Enable LLMs to interact with your project management workflows while ensuring user control and security. Streamline your project management tasks effortlessly.",
+  "createdAt": "2026-01-19T02:19:49.186Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kelvin6365/plane-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "planeApiKey",
+        "planeWorkspaceSlug"
+      ],
+      "properties": {
+        "planeApiKey": {
+          "type": "string",
+          "description": "Your Plane.so API key."
+        },
+        "planeWorkspaceSlug": {
+          "type": "string",
+          "description": "Your Plane.so workspace slug identifier."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list-projects",
+      "description": "List all projects in the workspace"
+    },
+    {
+      "name": "get-project",
+      "description": "Get detailed information about a specific project"
+    },
+    {
+      "name": "create-issue",
+      "description": "Create a new issue in a project"
+    },
+    {
+      "name": "list-issues",
+      "description": "List issues from a project"
+    },
+    {
+      "name": "get-issue",
+      "description": "Get detailed information about a specific issue"
+    },
+    {
+      "name": "update-issue",
+      "description": "Update an existing issue in a project, delete just update the issue title with 'delete' or 'remove'"
+    }
+  ]
+}

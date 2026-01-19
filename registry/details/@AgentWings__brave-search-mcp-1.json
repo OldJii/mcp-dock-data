@@ -1,0 +1,12 @@
+{
+  "id": "@AgentWings/brave-search-mcp-1",
+  "displayName": "brave-search-mcp-1",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:06.626Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AgentWings/brave-search-mcp-1"
+  },
+  "connection": null,
+  "capabilities": []
+}

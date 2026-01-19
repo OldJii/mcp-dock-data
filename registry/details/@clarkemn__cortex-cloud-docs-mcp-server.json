@@ -1,0 +1,12 @@
+{
+  "id": "@clarkemn/cortex-cloud-docs-mcp-server",
+  "displayName": "cortex-cloud-docs-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:27.672Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@clarkemn/cortex-cloud-docs-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,109 @@
+{
+  "id": "@Ami3466/mcp-flowengine-n8n-workflow-builder",
+  "displayName": "mcp-flowengine-n8n-workflow-builder",
+  "description": "Generate production-ready n8n workflows from plain language. \nValidate, test, and auto-fix workflows to catch errors and improve reliability. Explore templates and a rich node library to design, optimize, and secure your automations.\nFor free n8n hosting and to enjoy the full capabilities of n8n workflow builder, go to flowengine.cloud",
+  "createdAt": "2026-01-19T02:15:22.635Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Ami3466/mcp-flowengine-n8n-workflow-builder"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "build_workflow",
+      "description": "Generate n8n workflow from natural language description using FlowEngine's generation engine"
+    },
+    {
+      "name": "add_node",
+      "description": "Add a node to an existing workflow"
+    },
+    {
+      "name": "edit_node",
+      "description": "Edit parameters of an existing node in a workflow"
+    },
+    {
+      "name": "delete_node",
+      "description": "Delete a node from a workflow"
+    },
+    {
+      "name": "add_connection",
+      "description": "Add a connection between two nodes in a workflow"
+    },
+    {
+      "name": "get_workflow_details",
+      "description": "Get detailed information about a workflow structure"
+    },
+    {
+      "name": "validate_workflow",
+      "description": "Validate and auto-fix n8n workflow JSON with 13 comprehensive auto-fixing features"
+    },
+    {
+      "name": "extract_workflow_json",
+      "description": "Extract n8n workflow JSON from text/markdown (useful when AI wraps JSON in explanation)"
+    },
+    {
+      "name": "suggest_architecture",
+      "description": "Recommend the best workflow architecture pattern for a task"
+    },
+    {
+      "name": "suggest_nodes",
+      "description": "Recommend nodes for a specific task"
+    },
+    {
+      "name": "analyze_workflow",
+      "description": "Analyze workflow and provide insights and suggestions"
+    },
+    {
+      "name": "suggest_improvements",
+      "description": "Get optimization suggestions for a workflow"
+    },
+    {
+      "name": "explain_workflow",
+      "description": "Generate natural language explanation of what a workflow does"
+    },
+    {
+      "name": "search_nodes",
+      "description": "Search the node library (600+ nodes) by keyword"
+    },
+    {
+      "name": "list_nodes_by_category",
+      "description": "List all nodes in a specific category"
+    },
+    {
+      "name": "get_node_details",
+      "description": "Get detailed information about a specific node"
+    },
+    {
+      "name": "test_workflow",
+      "description": "Dry-run test workflow without executing (simulates execution path)"
+    },
+    {
+      "name": "scan_security",
+      "description": "Scan workflow for security vulnerabilities (credential leaks, unsafe code, etc.)"
+    },
+    {
+      "name": "analyze_performance",
+      "description": "Analyze workflow performance and detect bottlenecks"
+    },
+    {
+      "name": "list_templates",
+      "description": "List all available workflow templates"
+    },
+    {
+      "name": "get_template",
+      "description": "Get a specific workflow template by ID"
+    },
+    {
+      "name": "search_templates",
+      "description": "Search workflow templates"
+    },
+    {
+      "name": "fix_json",
+      "description": "Attempt to repair truncated or malformed workflow JSON"
+    }
+  ]
+}

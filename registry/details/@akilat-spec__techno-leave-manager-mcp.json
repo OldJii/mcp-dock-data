@@ -1,0 +1,12 @@
+{
+  "id": "@akilat-spec/techno-leave-manager-mcp",
+  "displayName": "techno-leave-manager-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:36.629Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@akilat-spec/techno-leave-manager-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

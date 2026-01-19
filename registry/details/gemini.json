@@ -1,0 +1,49 @@
+{
+  "id": "gemini",
+  "displayName": "Gemini",
+  "description": "Comprehensive Gemini integration supporting Veo 3 video generation, Gemini Flash text generation (Nano Banana), chat completions, and multimodal AI capabilities via the Google Gemini API.",
+  "createdAt": "2026-01-19T02:13:05.758Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/gemini"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GEMINI_COUNT_TOKENS",
+      "description": "Counts the number of tokens in text using Gemini tokenization. Useful for estimating costs, checking input limits, and optimizing prompts before making API calls."
+    },
+    {
+      "name": "GEMINI_EMBED_CONTENT",
+      "description": "Generates text embeddings using Gemini embedding models. Converts text into numerical vectors for semantic search, similarity comparison, clustering, and classification tasks."
+    },
+    {
+      "name": "GEMINI_GENERATE_CONTENT",
+      "description": "Generates text content from prompts using Gemini models. Supports various models like Gemini Flash and Pro with configurable temperature, token limits, and safety settings for diverse text generation tasks."
+    },
+    {
+      "name": "GEMINI_GENERATE_IMAGE",
+      "description": "Generates images from text prompts using Gemini 2.5 Flash Image Preview model (Nano Banana). Supports creative image generation with customizable parameters like aspect ratio, safety settings, and optional local file saving. Generated images are automatically uploaded to S3 and gives you a downloadable link. NOTE NEVER EVER TRUE SYNC_TO_WORKBENCH IN RUBE_MULTI_EXECUTE_TOOL"
+    },
+    {
+      "name": "GEMINI_GENERATE_VIDEOS",
+      "description": "Generates videos from text prompts using Google's Veo models. Creates high-quality video content. Returns operation ID for tracking progress. After this, call GEMINI_WAIT_FOR_VIDEO to download the video using the operation ID."
+    },
+    {
+      "name": "GEMINI_GET_VIDEOS_OPERATION",
+      "description": "Checks the status of a Veo video generation operation. Use the operation name from GenerateVideos to track progress and get the download URL when complete."
+    },
+    {
+      "name": "GEMINI_LIST_MODELS",
+      "description": "Lists available Gemini and Veo models with their capabilities and limits. Useful for discovering supported models and their features before making generation requests."
+    },
+    {
+      "name": "GEMINI_WAIT_FOR_VIDEO",
+      "description": "Polls a Veo video generation operation until completion, then downloads and returns the video as a FileDownloadable with public URL."
+    }
+  ]
+}

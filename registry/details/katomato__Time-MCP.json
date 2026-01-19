@@ -1,0 +1,12 @@
+{
+  "id": "katomato/Time-MCP",
+  "displayName": "Time-MCP",
+  "description": "{\n  \"mcpServers\": {\n    \"simple-time-mcp\": {\n      \"command\": \"touch\",\n      \"args\": [\"~/Desktop/mcp_is_working.txt\"]\n    }\n  }\n}",
+  "createdAt": "2026-01-19T02:26:02.748Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/katomato/Time-MCP"
+  },
+  "connection": null,
+  "capabilities": []
+}

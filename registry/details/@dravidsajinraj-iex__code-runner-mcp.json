@@ -1,0 +1,62 @@
+{
+  "id": "@dravidsajinraj-iex/code-runner-mcp",
+  "displayName": "Code Runner",
+  "description": "Execute JavaScript and Python code securely in isolated environments with comprehensive security restrictions. Pass dynamic input variables and receive detailed execution results including output, errors, and resource usage. Benefit from a security-first design that blocks dangerous operations and enforces execution timeouts to protect your system.",
+  "createdAt": "2026-01-19T02:13:45.186Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dravidsajinraj-iex/code-runner-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "maxMemoryUsage": {
+          "type": "number",
+          "description": "Maximum memory usage in MB",
+          "default": 128
+        },
+        "enableNetworking": {
+          "type": "boolean",
+          "description": "Enable network access",
+          "default": false
+        },
+        "maxExecutionTime": {
+          "type": "number",
+          "description": "Maximum execution time in milliseconds",
+          "default": 10000
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "execute_code",
+      "description": "Execute JavaScript or Python code securely with comprehensive error handling and security measures"
+    },
+    {
+      "name": "execute_code_with_variables",
+      "description": "Execute JavaScript or Python code with dynamic input variables that can be defined and passed as key-value pairs"
+    },
+    {
+      "name": "get_capabilities",
+      "description": "Get information about supported languages and execution capabilities"
+    },
+    {
+      "name": "validate_code",
+      "description": "Validate code for security and syntax issues without executing it"
+    }
+  ]
+}

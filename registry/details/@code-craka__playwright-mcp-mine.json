@@ -1,0 +1,12 @@
+{
+  "id": "@code-craka/playwright-mcp-mine",
+  "displayName": "playwright-mcp-mine",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:23.540Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@code-craka/playwright-mcp-mine"
+  },
+  "connection": null,
+  "capabilities": []
+}

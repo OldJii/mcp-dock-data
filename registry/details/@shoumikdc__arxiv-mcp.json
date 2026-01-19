@@ -1,0 +1,46 @@
+{
+  "id": "@shoumikdc/arxiv-mcp",
+  "displayName": "arXiv Explorer",
+  "description": "Discover new arXiv papers by category or keyword. Get daily updates with adjustable result counts to match your workflow. Stay current and accelerate literature reviews.",
+  "createdAt": "2026-01-19T02:14:51.648Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shoumikdc/arxiv-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "num_papers": {
+          "type": "integer",
+          "description": "Number of arXiv papers to return",
+          "default": 5
+        },
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    },
+    {
+      "name": "fetch_current_arxiv_postings_rss",
+      "description": "\n        Returns all of today's brand-new arXiv submissions in a category via RSS.\n        "
+    },
+    {
+      "name": "keyword_search_arxiv_rss",
+      "description": "Search the daily arXiv RSS feed for a category, filtering by keyword in title or summary."
+    }
+  ]
+}

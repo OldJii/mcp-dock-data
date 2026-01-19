@@ -1,0 +1,152 @@
+{
+  "id": "@thirdstrandstudio/mcp-figma",
+  "displayName": "Figma MCP Server",
+  "description": "Interact seamlessly with the Figma API to manage files, comments, components, and more. Leverage a comprehensive set of tools to enhance your design workflow and automate tasks within Figma. Simplify your design processes and integrate Figma capabilities into your applications effortlessly.",
+  "createdAt": "2026-01-19T02:19:21.218Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@thirdstrandstudio/mcp-figma"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "figmaApiKey"
+      ],
+      "properties": {
+        "figmaApiKey": {
+          "type": "string",
+          "description": "Figma API token for authenticating requests"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "figma_get_me",
+      "description": "Get the current user"
+    },
+    {
+      "name": "figma_get_file",
+      "description": "Get a Figma file by key"
+    },
+    {
+      "name": "figma_get_file_nodes",
+      "description": "Get specific nodes from a Figma file"
+    },
+    {
+      "name": "figma_get_images",
+      "description": "Render images from a Figma file"
+    },
+    {
+      "name": "figma_get_image_fills",
+      "description": "Get image fills in a Figma file"
+    },
+    {
+      "name": "figma_get_file_versions",
+      "description": "Get version history of a Figma file"
+    },
+    {
+      "name": "figma_get_comments",
+      "description": "Get comments in a Figma file"
+    },
+    {
+      "name": "figma_post_comment",
+      "description": "Add a comment to a Figma file"
+    },
+    {
+      "name": "figma_delete_comment",
+      "description": "Delete a comment from a Figma file"
+    },
+    {
+      "name": "figma_get_comment_reactions",
+      "description": "Get reactions for a comment"
+    },
+    {
+      "name": "figma_post_comment_reaction",
+      "description": "Add a reaction to a comment"
+    },
+    {
+      "name": "figma_delete_comment_reaction",
+      "description": "Delete a reaction from a comment"
+    },
+    {
+      "name": "figma_get_team_projects",
+      "description": "Get projects in a team"
+    },
+    {
+      "name": "figma_get_project_files",
+      "description": "Get files in a project"
+    },
+    {
+      "name": "figma_get_team_components",
+      "description": "Get components in a team"
+    },
+    {
+      "name": "figma_get_file_components",
+      "description": "Get components in a file"
+    },
+    {
+      "name": "figma_get_component",
+      "description": "Get a component by key"
+    },
+    {
+      "name": "figma_get_team_component_sets",
+      "description": "Get component sets in a team"
+    },
+    {
+      "name": "figma_get_file_component_sets",
+      "description": "Get component sets in a file"
+    },
+    {
+      "name": "figma_get_component_set",
+      "description": "Get a component set by key"
+    },
+    {
+      "name": "figma_get_team_styles",
+      "description": "Get styles in a team"
+    },
+    {
+      "name": "figma_get_file_styles",
+      "description": "Get styles in a file"
+    },
+    {
+      "name": "figma_get_style",
+      "description": "Get a style by key"
+    },
+    {
+      "name": "figma_post_webhook",
+      "description": "Create a webhook"
+    },
+    {
+      "name": "figma_get_webhook",
+      "description": "Get a webhook by ID"
+    },
+    {
+      "name": "figma_update_webhook",
+      "description": "Update a webhook"
+    },
+    {
+      "name": "figma_delete_webhook",
+      "description": "Delete a webhook"
+    },
+    {
+      "name": "figma_get_team_webhooks",
+      "description": "Get webhooks for a team"
+    },
+    {
+      "name": "figma_get_library_analytics_component_usages",
+      "description": "Get library analytics component usage data"
+    },
+    {
+      "name": "figma_get_library_analytics_style_usages",
+      "description": "Get library analytics style usage data"
+    },
+    {
+      "name": "figma_get_library_analytics_variable_usages",
+      "description": "Get library analytics variable usage data"
+    }
+  ]
+}

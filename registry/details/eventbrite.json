@@ -1,0 +1,29 @@
+{
+  "id": "eventbrite",
+  "displayName": "Eventbrite",
+  "description": "Eventbrite enables organizers to plan, promote, and manage events, selling tickets and providing attendee tools for conferences, concerts, and gatherings",
+  "createdAt": "2026-01-19T02:12:51.443Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/eventbrite"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "EVENTBRITE_GET_EVENT_CATEGORIES",
+      "description": "Tool to retrieve event categories. Use when selecting a category for an event. Localizes results via optional locale parameter."
+    },
+    {
+      "name": "EVENTBRITE_GET_EVENT_FORMATS",
+      "description": "Tool to list event formats. Use when you need the available formats before creating or updating an event."
+    },
+    {
+      "name": "EVENTBRITE_GET_EVENT_SUBCATEGORIES",
+      "description": "Tool to list all event subcategories. Use when fetching available subcategory options, optionally filtered by locale after selecting a category."
+    }
+  ]
+}

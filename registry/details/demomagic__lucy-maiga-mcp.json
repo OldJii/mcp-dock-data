@@ -1,0 +1,56 @@
+{
+  "id": "demomagic/lucy-maiga-mcp",
+  "displayName": "Maiga",
+  "description": "Evaluate cryptocurrency tokens through deep technical, fundamental, and on-chain analysis. Monitor social media sentiment and trending discussions to identify market opportunities in real-time. Track the influence of key opinion leaders and access detailed reports on token performance and holder distribution.",
+  "createdAt": "2026-01-19T02:18:42.318Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/demomagic/lucy-maiga-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiToken"
+      ],
+      "properties": {
+        "apiToken": {
+          "type": "string",
+          "description": "Partner API token for Maiga API authentication"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "maiga_analyse_token",
+      "description": "Performs comprehensive technical and fundamental analysis on a cryptocurrency token"
+    },
+    {
+      "name": "maiga_mindshare",
+      "description": "Analyzes social media sentiment and trending discussions about a token over the last 24 hours"
+    },
+    {
+      "name": "maiga_token_info",
+      "description": "Retrieves detailed token holder information and on-chain analysis"
+    },
+    {
+      "name": "maiga_market_report",
+      "description": "Generates specialized market reports based on different analysis modes"
+    },
+    {
+      "name": "maiga_kol_analysis",
+      "description": "Analyzes the influence and statistics of cryptocurrency influencers on X (Twitter)"
+    },
+    {
+      "name": "maiga_trending_tokens",
+      "description": "Retrieves the top trending tokens in the last 24 hours based on social media mentions and activity"
+    }
+  ]
+}

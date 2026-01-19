@@ -1,0 +1,12 @@
+{
+  "id": "@mcoulmeau/gpt_agent",
+  "displayName": "gpt_agent",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:48.793Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mcoulmeau/gpt_agent"
+  },
+  "connection": null,
+  "capabilities": []
+}

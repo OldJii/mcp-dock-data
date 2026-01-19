@@ -1,0 +1,281 @@
+{
+  "id": "lanonasis/lano-enterprise-mcp",
+  "displayName": "Lano-enterprise-mcp",
+  "description": "Store and retrieve semantic memories using advanced vector search and intelligence-driven insight extraction. Organize knowledge across projects with secure access controls and comprehensive system health monitoring. Optimize your information flow by detecting duplicates and analyzing usage patterns for better decision support.",
+  "createdAt": "2026-01-19T02:15:45.697Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/lanonasis/lano-enterprise-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "name": "lanonasis-enterprise-mcp",
+      "tools": [
+        {
+          "name": "list_memories",
+          "description": "List memories with pagination and filters"
+        },
+        {
+          "name": "create_memory",
+          "description": "Create a new memory with vector embedding"
+        },
+        {
+          "name": "create_memory_chunked",
+          "description": "Create memory with auto-chunking for large content"
+        },
+        {
+          "name": "get_memory",
+          "description": "Retrieve a specific memory by ID"
+        },
+        {
+          "name": "update_memory",
+          "description": "Update an existing memory"
+        },
+        {
+          "name": "delete_memory",
+          "description": "Delete a memory"
+        },
+        {
+          "name": "search_memories",
+          "description": "Semantic vector search across memories"
+        },
+        {
+          "name": "search_lanonasis_docs",
+          "description": "Search product documentation"
+        },
+        {
+          "name": "list_api_keys",
+          "description": "List API keys"
+        },
+        {
+          "name": "create_api_key",
+          "description": "Create new API key"
+        },
+        {
+          "name": "delete_api_key",
+          "description": "Delete an API key"
+        },
+        {
+          "name": "rotate_api_key",
+          "description": "Rotate API key secret"
+        },
+        {
+          "name": "revoke_api_key",
+          "description": "Revoke an API key"
+        },
+        {
+          "name": "list_projects",
+          "description": "List projects"
+        },
+        {
+          "name": "create_project",
+          "description": "Create a new project"
+        },
+        {
+          "name": "get_organization_info",
+          "description": "Get organization details"
+        },
+        {
+          "name": "get_health_status",
+          "description": "Get system health status"
+        },
+        {
+          "name": "get_auth_status",
+          "description": "Get authentication status"
+        },
+        {
+          "name": "get_config",
+          "description": "Get configuration"
+        },
+        {
+          "name": "set_config",
+          "description": "Set configuration"
+        },
+        {
+          "name": "intelligence_health_check",
+          "description": "Check AI services health"
+        },
+        {
+          "name": "intelligence_suggest_tags",
+          "description": "AI-powered tag suggestions"
+        },
+        {
+          "name": "intelligence_find_related",
+          "description": "Find semantically related memories"
+        },
+        {
+          "name": "intelligence_detect_duplicates",
+          "description": "Detect duplicate memories"
+        },
+        {
+          "name": "intelligence_extract_insights",
+          "description": "Extract insights from memories"
+        },
+        {
+          "name": "intelligence_analyze_patterns",
+          "description": "Analyze memory usage patterns"
+        },
+        {
+          "name": "memory_stats",
+          "description": "Get memory statistics"
+        },
+        {
+          "name": "memory_bulk_delete",
+          "description": "Bulk delete memories"
+        }
+      ],
+      "server": {
+        "url": "https://mcp.lanonasis.com",
+        "transports": [
+          "http",
+          "sse"
+        ]
+      },
+      "vendor": "Lanonasis",
+      "version": "1.0.0",
+      "homepage": "https://lanonasis.com",
+      "description": "Lanonasis Enterprise MCP - Memory Intelligence with AI-powered analysis, circuit breakers, and reliability patterns",
+      "capabilities": {
+        "tools": true,
+        "prompts": true,
+        "resources": true
+      },
+      "documentation": "https://docs.lanonasis.com",
+      "authentication": {
+        "type": "oauth2",
+        "oauth": {
+          "scopes": [
+            "mcp:full",
+            "memories:read",
+            "memories:write",
+            "profile"
+          ],
+          "token_url": "https://auth.lanonasis.com/oauth/token",
+          "pkce_required": true,
+          "authorization_url": "https://auth.lanonasis.com/oauth/authorize"
+        },
+        "fallback": {
+          "api_key": {
+            "header": "X-API-Key"
+          }
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_memories",
+      "description": "List memories with pagination and filters. Returns paginated results sorted by the specified field."
+    },
+    {
+      "name": "create_memory",
+      "description": "Create a new memory with automatic vector embedding generation for semantic search. The content is processed to create searchable embeddings."
+    },
+    {
+      "name": "create_memory_chunked",
+      "description": "Create memory entries from large content by automatically splitting into multiple chunks. Each chunk preserves context with overlap and is tagged for reassembly. Use this for documents, long conversations, or any content exceeding 8000 characters."
+    },
+    {
+      "name": "get_memory",
+      "description": "Retrieve a specific memory by its unique identifier. Returns full memory details including content, metadata, and timestamps."
+    },
+    {
+      "name": "update_memory",
+      "description": "Update an existing memory's content, title, type, tags, or metadata. Only provided fields are updated; others remain unchanged."
+    },
+    {
+      "name": "delete_memory",
+      "description": "Permanently delete a memory by its ID. This action cannot be undone."
+    },
+    {
+      "name": "search_memories",
+      "description": "Search memories using semantic vector search. Finds memories with similar meaning to the query, not just keyword matches."
+    },
+    {
+      "name": "search_lanonasis_docs",
+      "description": "Search the Lanonasis documentation for guides, API references, and SDK information."
+    },
+    {
+      "name": "list_api_keys",
+      "description": "List all API keys for the authenticated user. Shows key metadata but not the secret values."
+    },
+    {
+      "name": "create_api_key",
+      "description": "Create a new API key for programmatic access. The secret is only shown once upon creation."
+    },
+    {
+      "name": "delete_api_key",
+      "description": "Permanently delete an API key. This cannot be undone. Applications using this key will lose access."
+    },
+    {
+      "name": "rotate_api_key",
+      "description": "Generate a new secret for an existing API key. The old secret becomes invalid immediately."
+    },
+    {
+      "name": "revoke_api_key",
+      "description": "Deactivate an API key without deleting it. The key can potentially be reactivated later."
+    },
+    {
+      "name": "list_projects",
+      "description": "List all projects accessible to the user, optionally filtered by organization."
+    },
+    {
+      "name": "create_project",
+      "description": "Create a new project for organizing memories and API keys. Projects help separate concerns and manage access."
+    },
+    {
+      "name": "get_organization_info",
+      "description": "Get detailed information about an organization including settings, members count, and usage limits."
+    },
+    {
+      "name": "get_health_status",
+      "description": "Get comprehensive system health status including API, database, and service availability."
+    },
+    {
+      "name": "get_auth_status",
+      "description": "Get current authentication status, user information, and access level."
+    },
+    {
+      "name": "get_config",
+      "description": "Retrieve a configuration setting by key. Returns the current value and metadata."
+    },
+    {
+      "name": "set_config",
+      "description": "Update a configuration setting. Some settings may require admin access."
+    },
+    {
+      "name": "intelligence_health_check",
+      "description": "Check health status and availability of AI intelligence services including embedding and analysis endpoints."
+    },
+    {
+      "name": "intelligence_suggest_tags",
+      "description": "Get AI-powered tag suggestions for a memory based on its content. Uses natural language understanding to recommend relevant tags."
+    },
+    {
+      "name": "intelligence_find_related",
+      "description": "Find semantically related memories using vector similarity search. Discovers connections between memories based on meaning."
+    },
+    {
+      "name": "intelligence_detect_duplicates",
+      "description": "Detect potential duplicate memories using semantic similarity analysis. Helps identify redundant content for cleanup."
+    },
+    {
+      "name": "intelligence_extract_insights",
+      "description": "Extract actionable insights and summaries from memories using AI analysis. Great for decision support and knowledge synthesis."
+    },
+    {
+      "name": "intelligence_analyze_patterns",
+      "description": "Analyze usage patterns and trends across memories over time. Identifies what topics you focus on and how usage evolves."
+    },
+    {
+      "name": "memory_stats",
+      "description": "Get comprehensive statistics about memory usage including counts by type, storage used, and activity metrics."
+    },
+    {
+      "name": "memory_bulk_delete",
+      "description": "Delete multiple memories at once. This is a destructive operation that cannot be undone."
+    }
+  ]
+}

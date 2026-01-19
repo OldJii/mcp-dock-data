@@ -1,0 +1,97 @@
+{
+  "id": "zoho_inventory",
+  "displayName": "Zoho inventory",
+  "description": "Zoho Inventory helps businesses track stock, manage orders, and sync inventory across multiple sales channels, streamlining supply chain operations",
+  "createdAt": "2026-01-19T02:13:02.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zoho_inventory"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "ZOHO_INVENTORY_ADD_INVOICE_ATTACHMENT",
+      "description": "Tool to upload an attachment to a specific invoice. Use when you need to add a file attachment to an invoice."
+    },
+    {
+      "name": "ZOHO_INVENTORY_BULK_DELETE_SALES_ORDERS",
+      "description": "Tool to bulk delete sales orders. Use this to remove multiple sales orders at once."
+    },
+    {
+      "name": "ZOHO_INVENTORY_BULK_EMAIL_INVOICES",
+      "description": "Tool to send multiple invoices by email in one call. Use when you need to notify customers for up to 10 invoices at once."
+    },
+    {
+      "name": "ZOHO_INVENTORY_BULK_EXPORT_INVOICES",
+      "description": "Tool to bulk export invoices as a single PDF. Use when you need to download multiple invoices in a single file for archiving or sharing."
+    },
+    {
+      "name": "ZOHO_INVENTORY_BULK_PRINT_INVOICES",
+      "description": "Tool to bulk print invoices as a consolidated PDF. Use when you need a PDF file of multiple invoices for printing or archiving."
+    },
+    {
+      "name": "ZOHO_INVENTORY_BULK_PRINT_PACKAGES",
+      "description": "Tool to bulk print package slips as a consolidated PDF. Use when you need a PDF file of multiple package slips for printing or archiving."
+    },
+    {
+      "name": "ZOHO_INVENTORY_CANCEL_INVOICE_WRITE_OFF",
+      "description": "Tool to cancel write off for an invoice. Use when undoing a previously applied write off on an invoice after verifying the invoice has a write off applied."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_COMPOSITE_ITEM",
+      "description": "Tool to delete a composite item. Use when you need to remove an existing composite item. Endpoint: DELETE /inventory/v1/compositeitems/{composite_item_id} Required query: organization_id Authorization header: Zoho-oauthtoken {access_token}"
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_CONTACT_PERSON",
+      "description": "Tool to delete a contact person. Use when you need to remove a contact person from your organization after confirming it is no longer needed."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_INVOICE",
+      "description": "Tool to delete an invoice. Use when you need to remove an existing invoice that has no payments or credits applied."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_INVOICE_ATTACHMENT",
+      "description": "Tool to delete an invoice attachment. Use when you need to remove a file attached to an invoice."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_INVOICE_COMMENT",
+      "description": "Delete a specific comment from an invoice in Zoho Inventory. Zoho API: DELETE /inventory/v1/invoices/{invoice_id}/comments/{comment_id} Required query param: organization_id Auth header format: Authorization: Zoho-oauthtoken <access_token>"
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_ITEM",
+      "description": "Tool to delete an item. Use when you need to remove an existing inventory item after confirming it is not referenced in any transactions."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_ITEM_GROUP",
+      "description": "Tool to delete an item group. Use to remove an existing item group that is no longer needed."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_ITEM_IMAGE",
+      "description": "Tool to delete an image associated with an item. Use when you need to remove an item's image after ensuring it's no longer required."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_PACKAGE",
+      "description": "Tool to delete a package. Use when you need to remove an existing package created for a sales order."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DELETE_SALES_ORDER",
+      "description": "Tool to delete a sales order. Use when you need to remove an existing sales order."
+    },
+    {
+      "name": "ZOHO_INVENTORY_DISABLE_PAYMENT_REMINDER",
+      "description": "Tool to disable payment reminders for an invoice. Use when you want to stop automatic payment reminders for an invoice after it has been issued."
+    },
+    {
+      "name": "ZOHO_INVENTORY_EMAIL_INVOICE",
+      "description": "Tool to email a specific invoice to customers. Use when you need to send an invoice via email, with optional attachments."
+    },
+    {
+      "name": "ZOHO_INVENTORY_LIST_SALES_ORDERS",
+      "description": "Tool to list sales orders. Use when needing to fetch sales orders for an organization."
+    }
+  ]
+}

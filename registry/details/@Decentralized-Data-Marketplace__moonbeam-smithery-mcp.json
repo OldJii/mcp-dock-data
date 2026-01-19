@@ -1,0 +1,16 @@
+{
+  "id": "@Decentralized-Data-Marketplace/moonbeam-smithery-mcp",
+  "displayName": "Moonbeam Smithery MCP Server",
+  "description": "Enable seamless integration with decentralized data marketplaces by providing a server that exposes tools and resources for blockchain interactions. Facilitate secure and efficient access to Web3 data and operations through a standardized protocol. Enhance your applications with reliable connectivity to decentralized data sources and smart contract functionalities.",
+  "createdAt": "2026-01-19T02:19:07.273Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Decentralized-Data-Marketplace/moonbeam-smithery-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

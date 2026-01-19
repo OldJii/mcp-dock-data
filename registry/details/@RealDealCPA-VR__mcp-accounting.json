@@ -1,0 +1,74 @@
+{
+  "id": "@RealDealCPA-VR/mcp-accounting",
+  "displayName": "Accounting Practice",
+  "description": "Streamline client management, compliance deadlines, and core bookkeeping for your firm. Automate bank reconciliation, payroll, sales tax, and tax estimates while optimizing deductions. Sync with QuickBooks to keep records current.",
+  "createdAt": "2026-01-19T02:17:01.385Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RealDealCPA-VR/mcp-accounting"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "OPENAI_API_KEY": {
+          "type": "string",
+          "description": "Your OpenAI API key or 'local' for local LLM",
+          "default": "local"
+        },
+        "OPENAI_API_BASE_URL": {
+          "type": "string",
+          "description": "Base URL for OpenAI-compatible API",
+          "default": "https://vrllm.ngrok.app/v1"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_client_info",
+      "description": "Retrieve comprehensive client information"
+    },
+    {
+      "name": "update_client_profile",
+      "description": "Update client profile information"
+    },
+    {
+      "name": "get_client_deadlines",
+      "description": "Get upcoming tax and compliance deadlines"
+    },
+    {
+      "name": "process_bank_statement",
+      "description": "Import and categorize bank statement transactions"
+    },
+    {
+      "name": "reconcile_accounts",
+      "description": "Perform automated bank reconciliation"
+    },
+    {
+      "name": "calculate_tax_liability",
+      "description": "Calculate estimated tax liability"
+    },
+    {
+      "name": "optimize_deductions",
+      "description": "Analyze and optimize business deductions"
+    },
+    {
+      "name": "calculate_payroll",
+      "description": "Process payroll calculations"
+    },
+    {
+      "name": "sales_tax_calculation",
+      "description": "Calculate sales tax by jurisdiction"
+    },
+    {
+      "name": "quickbooks_sync",
+      "description": "Synchronize data with QuickBooks"
+    }
+  ]
+}

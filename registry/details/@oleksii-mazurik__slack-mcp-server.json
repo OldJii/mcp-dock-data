@@ -1,0 +1,12 @@
+{
+  "id": "@oleksii-mazurik/slack-mcp-server",
+  "displayName": "slack-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:10.362Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@oleksii-mazurik/slack-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

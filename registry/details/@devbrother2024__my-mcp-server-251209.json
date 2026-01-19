@@ -1,0 +1,42 @@
+{
+  "id": "@devbrother2024/my-mcp-server-251209",
+  "displayName": "my-mcp-server-251209",
+  "description": "Get the current time, greet users, run quick calculations, geocode places, and check live weather in one place. Check system status on demand and request fast code reviews. Extend to match your workflow as your needs grow.",
+  "createdAt": "2026-01-19T02:16:39.287Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devbrother2024/my-mcp-server-251209"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "time",
+      "description": "timezone을 입력 받아서 현재 시간을 반환합니다."
+    },
+    {
+      "name": "greet",
+      "description": "이름과 언어를 입력하면 인사말을 반환합니다."
+    },
+    {
+      "name": "calculator",
+      "description": "두 개의 숫자와 연산자를 입력받아 사칙연산을 수행합니다."
+    },
+    {
+      "name": "geocode",
+      "description": "도시 이름이나 주소를 입력받아 위도, 경도 좌표를 반환합니다."
+    },
+    {
+      "name": "weather",
+      "description": "위도, 경도 좌표를 입력받아 현재 날씨 정보를 반환합니다."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@AngusHsu/lunar-mcp-server",
+  "displayName": "lunar-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:12.284Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AngusHsu/lunar-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

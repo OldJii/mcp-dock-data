@@ -1,0 +1,12 @@
+{
+  "id": "@scenaro/smithery-mcp-server",
+  "displayName": "smithery-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:34.625Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@scenaro/smithery-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@piotroq/pb-media-studio",
+  "displayName": "pb-media-studio",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:39.189Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@piotroq/pb-media-studio"
+  },
+  "connection": null,
+  "capabilities": []
+}

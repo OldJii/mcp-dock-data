@@ -1,0 +1,12 @@
+{
+  "id": "@jackauswork/oro-commerce-mcp-server",
+  "displayName": "oro-commerce-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:55.313Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jackauswork/oro-commerce-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

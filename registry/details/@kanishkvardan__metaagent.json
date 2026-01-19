@@ -1,0 +1,12 @@
+{
+  "id": "@kanishkvardan/metaagent",
+  "displayName": "metaagent",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:59.675Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kanishkvardan/metaagent"
+  },
+  "connection": null,
+  "capabilities": []
+}

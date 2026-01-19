@@ -1,0 +1,35 @@
+{
+  "id": "@kamath/graphing-calculator",
+  "displayName": "Graphing Calculator",
+  "description": "Provide interactive graphing calculator capabilities to your agents, enabling them to plot and analyze mathematical functions visually. Enhance your applications with dynamic graphing tools that support complex calculations and visual data representation. Empower users to explore mathematical concepts through intuitive graphical interfaces.",
+  "createdAt": "2026-01-19T02:15:15.301Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kamath/graphing-calculator"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "graph",
+      "description": "Create an interactive function graph using Desmos API. ONLY USE THIS FOR GRAPHING 2D FUNCTIONS. DO NOT INPUT VARIABLE NAMES THAT ARE NOT X OR Y."
+    }
+  ]
+}

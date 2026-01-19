@@ -1,0 +1,12 @@
+{
+  "id": "@joonho-wowpocket/mcp-server",
+  "displayName": "mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:00.270Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@joonho-wowpocket/mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@vvarp/openapi-slice-mcp",
+  "displayName": "openapi-slice-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:04.349Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@vvarp/openapi-slice-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,117 @@
+{
+  "id": "google_analytics",
+  "displayName": "Google Analytics",
+  "description": "Google Analytics tracks and reports website traffic, user behavior, and conversion data, enabling marketers to optimize online performance and customer journeys",
+  "createdAt": "2026-01-19T02:12:47.917Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/google_analytics"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLE_ANALYTICS_BATCH_RUN_REPORTS",
+      "description": "Tool to return multiple analytics data reports in a batch. Use when you need to fetch multiple reports for one GA4 property in a single request."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_CHECK_COMPATIBILITY",
+      "description": "Tool to list dimensions and metrics compatible with a GA4 report request. Use when you need to validate compatibility of chosen dimensions or metrics before running a report."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_CREATE_AUDIENCE_EXPORT",
+      "description": "Tool to create an audience export. Use after configuring the audience and dimensions to produce a long-running Operation."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_CREATE_AUDIENCE_LIST",
+      "description": "Tool to create an audience list. Use when you need to define and asynchronously populate a new AudienceList resource under a GA4 property."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_CREATE_EXPANDED_DATA_SET",
+      "description": "Tool to create an expanded data set for a property. Use when you need to combine specific dimensions and metrics into a custom dataset after property creation."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_CREATE_ROLLUP_PROPERTY",
+      "description": "Tool to create a GA4 Roll-up Property and optionally initial source links."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_ACCOUNT",
+      "description": "Tool to retrieve a single Account by its resource name. Use when you need detailed account info after confirming the account resource name (e.g., accounts/100)."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_AUDIENCE_EXPORT",
+      "description": "Tool to get configuration metadata for an Audience Export. Use after creating an Audience Export to retrieve its status and details."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_AUDIENCE_LIST",
+      "description": "Tool to get configuration metadata about a specific audience list. Use after confirming the audience list resource name."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_KEY_EVENT",
+      "description": "Tool to retrieve a Key Event. Use after confirming the key event resource name."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_METADATA",
+      "description": "Tool to get metadata for dimensions, metrics, and comparisons for a GA4 property. Use when you need to discover available fields before building a report."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_GET_PROPERTY_QUOTAS_SNAPSHOT",
+      "description": "Tool to retrieve all property quotas organized by category for a given property. Use when you need to check current quota usage for a GA4 property."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_ACCOUNTS",
+      "description": "Tool to list all Accounts accessible by the caller. Use when you need to enumerate all Google Analytics accounts your credentials can access."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_AUDIENCE_EXPORTS",
+      "description": "Tool to list all audience exports for a GA4 property. Use when you need to fetch its export history after initiating exports."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_AUDIENCE_LISTS",
+      "description": "Tool to list all audience lists for a GA4 property. Use when you need to retrieve a property's configured audience lists after confirming the property ID."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_AUDIENCES",
+      "description": "Tool to list all audiences on a property. Use when you need to fetch all audiences for a GA4 property after confirming its existence."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_KEY_EVENTS",
+      "description": "Tool to list Key Events. Use when you need to retrieve all key event definitions for a given property."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_PROPERTIES",
+      "description": "Tool to list GA4 properties under a specific account. Use after obtaining an account ID; supports pagination and including soft-deleted properties."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_REPORTING_DATA_ANNOTATIONS",
+      "description": "Tool to list all Reporting Data Annotations on a property. Use when you need to retrieve or inspect annotations for a GA4 property."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_ROLLUP_PROPERTIES",
+      "description": "Tool to list roll-up GA4 properties accessible to the caller. Use when you need to identify roll-up properties across all accessible accounts."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_LIST_SEARCH_ADS360_LINKS",
+      "description": "Tool to list all SearchAds360Links on a property. Use when you need to fetch all Search Ads 360 links for a given property after authenticating."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_QUERY_AUDIENCE_EXPORT",
+      "description": "Tool to query a completed audience export. Use when you need to fetch user rows with pagination."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_QUERY_AUDIENCE_LIST",
+      "description": "Tool to query an audience list. Use when you need to retrieve user rows from a GA4 audience list with pagination."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_RUN_FUNNEL_REPORT",
+      "description": "Tool to run a GA4 funnel report. Use when you need a customized funnel analysis report for a given property."
+    },
+    {
+      "name": "GOOGLE_ANALYTICS_RUN_REPORT",
+      "description": "Tool to run a customized GA4 data report. Use when you need event data after specifying dimensions, metrics, and date ranges."
+    }
+  ]
+}

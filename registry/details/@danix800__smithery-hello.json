@@ -1,0 +1,34 @@
+{
+  "id": "@danix800/smithery-hello",
+  "displayName": "Hello",
+  "description": "Send a friendly greeting to anyone. Personalize quick intros and acknowledgments in chats or demos. Keep conversations warm with a simple hello on demand.",
+  "createdAt": "2026-01-19T02:18:19.327Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@danix800/smithery-hello"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

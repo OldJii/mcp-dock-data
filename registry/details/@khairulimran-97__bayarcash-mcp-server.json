@@ -1,0 +1,71 @@
+{
+  "id": "@khairulimran-97/bayarcash-mcp-server",
+  "displayName": "bayarcash-mcp-server",
+  "description": "Manage Bayarcash payments and transactions. Create and track payment intents, list portals, channels and FPX banks, and enroll FPX Direct Debit. Monitor revenue and filter results across sandbox or production.",
+  "createdAt": "2026-01-19T02:20:25.238Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@khairulimran-97/bayarcash-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiToken",
+        "apiSecretKey"
+      ],
+      "properties": {
+        "apiToken": {
+          "type": "string",
+          "description": "Your Bayarcash API Token from console.bayar.cash. Required for authentication."
+        },
+        "useSandbox": {
+          "type": "boolean",
+          "description": "Enable sandbox mode for testing. Defaults to true. Set to false for production.",
+          "default": true
+        },
+        "apiSecretKey": {
+          "type": "string",
+          "description": "Your Bayarcash API Secret Key. Used for checksum generation and webhook verification."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "create_payment_intent",
+      "description": "Create a new payment intent for processing payments through Bayarcash. Returns payment URL and order details with payment intent ID. WORKFLOW: 1) If user has NOT provided payer_email, call list_transactions (limit 1, sorted by latest) to get the most recent payer_email and ask user: \"Would you like to use the email from your last payment: {email}?\" If yes, use it. If no or no previous transactions, ask for email. 2) If user has NOT provided portal_key, call get_portals first to show list and ask user to select. 3) If user has NOT specified payment_channel, call get_payment_channels to show list and ask user to select. 4) Ask user if they want to provide payer telephone number (optional, Malaysia numbers only). 5) If user already provided these values in their message, use them directly. IMPORTANT: After creating payment, store the returned \"id\" field (e.g., pi_pGwAaq) - this can be used later to check payment status with get_payment_intent tool."
+    },
+    {
+      "name": "get_payment_intent",
+      "description": "Get payment intent details and status by payment intent ID. Use this to check the current status of a payment after it has been created. Returns comprehensive payment history including all attempts (successful and unsuccessful)."
+    },
+    {
+      "name": "get_transaction",
+      "description": "Get transaction details by transaction ID"
+    },
+    {
+      "name": "get_transaction_by_order",
+      "description": "Get transaction details by order number"
+    },
+    {
+      "name": "list_transactions",
+      "description": "List all transactions with optional filters. Returns paginated transaction data including pagination metadata (first, last, previous, next page links). SMART FILTER: If you have a payer_email from a previous payment creation (stored from create_payment_intent response), ask user: \"Would you like to filter transactions by the email used in your last payment: {email}?\" If yes, use that email as payer_email filter."
+    },
+    {
+      "name": "get_portals",
+      "description": "Get list of available payment portals"
+    },
+    {
+      "name": "get_payment_channels",
+      "description": "Get list of available payment channels"
+    },
+    {
+      "name": "get_fpx_banks",
+      "description": "Get list of FPX banks for online banking payments"
+    }
+  ]
+}

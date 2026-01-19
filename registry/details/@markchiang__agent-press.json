@@ -1,0 +1,21 @@
+{
+  "id": "@markchiang/agent-press",
+  "displayName": "agent-press",
+  "description": "GeneOnline Agent Press MCP Server",
+  "createdAt": "2026-01-19T02:18:55.317Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@markchiang/agent-press"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "news_company",
+      "description": "Fetch recent company headlines for a given stock symbol."
+    }
+  ]
+}

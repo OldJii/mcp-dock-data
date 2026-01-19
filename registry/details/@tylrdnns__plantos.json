@@ -1,0 +1,12 @@
+{
+  "id": "@tylrdnns/plantos",
+  "displayName": "plantos",
+  "description": "Agricultural intelligence MCP server providing soil analysis, weather data, crop predictions, and AI-powered farming recommendations",
+  "createdAt": "2026-01-19T02:22:47.013Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tylrdnns/plantos"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "@Phionx/dimensional-analysis-checker",
+  "displayName": "Dimensional Analysis",
+  "description": "Validate physics equations for dimensional consistency. Add custom variables and explore available units and constants to adapt checks to your context. Get clear explanations to pinpoint unit mismatches and fix mistakes quickly.",
+  "createdAt": "2026-01-19T02:19:57.264Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Phionx/dimensional-analysis-checker"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "verbose_output": {
+          "type": "boolean",
+          "description": "Show detailed unit analysis in results",
+          "default": false
+        },
+        "custom_variables": {
+          "type": "string",
+          "description": "Custom variables in format 'var1=unit1,var2=unit2' (e.g., 'g=9.81*meter/second**2,A=meter**2')",
+          "default": null
+        },
+        "include_constants": {
+          "type": "boolean",
+          "description": "Include physical constants in unit listings",
+          "default": true
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check_equation",
+      "description": "Check if a physics equation is dimensionally consistent.\n        \n        Examples:\n        - \"F = m * a\" (Newton's second law)\n        - \"E = m * c**2\" (Einstein's mass-energy equivalence)\n        - \"V = I * R\" (Ohm's law)\n        - \"d = v * t\" (distance = velocity * time)\n        - \"g = 9.81 * meter/second**2\" (custom gravitational acceleration)\n        "
+    },
+    {
+      "name": "add_custom_variable",
+      "description": "Add a custom variable to the context for equation checking.\n        \n        Args:\n            name: Variable name (e.g., 'g', 'A', 'rho')\n            unit: Unit expression (e.g., '9.81*meter/second**2', 'meter**2', 'kilogram/meter**3')\n        \n        Examples:\n            add_custom_variable(\"g\", \"9.81*meter/second**2\")  # Gravitational acceleration\n            add_custom_variable(\"A\", \"meter**2\")              # Area\n            add_custom_variable(\"rho\", \"kilogram/meter**3\")   # Density\n        "
+    },
+    {
+      "name": "list_units",
+      "description": "List all available physical units and constants for equation checking.\n        \n        Returns a categorized list of symbols with their units and descriptions.\n        "
+    }
+  ]
+}

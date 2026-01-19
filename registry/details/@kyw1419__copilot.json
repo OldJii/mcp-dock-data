@@ -1,0 +1,12 @@
+{
+  "id": "@kyw1419/copilot",
+  "displayName": "copilot",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:34.199Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kyw1419/copilot"
+  },
+  "connection": null,
+  "capabilities": []
+}

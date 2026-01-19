@@ -1,0 +1,21 @@
+{
+  "id": "@NektoNeo/mcp",
+  "displayName": "mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:18:09.295Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NektoNeo/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

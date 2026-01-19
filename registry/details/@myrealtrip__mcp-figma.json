@@ -1,0 +1,12 @@
+{
+  "id": "@myrealtrip/mcp-figma",
+  "displayName": "mcp-figma",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:44.746Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@myrealtrip/mcp-figma"
+  },
+  "connection": null,
+  "capabilities": []
+}

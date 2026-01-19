@@ -1,0 +1,12 @@
+{
+  "id": "rapid/note-taker-mcp",
+  "displayName": "note-taker-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:18.917Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/rapid/note-taker-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

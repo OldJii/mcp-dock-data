@@ -1,0 +1,27 @@
+{
+  "id": "mcp-trader",
+  "displayName": "MCP Trader Server",
+  "description": "A Model Context Protocol (MCP) server for stock traders.",
+  "createdAt": "2026-01-19T02:16:59.621Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-trader"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tiingoApiKey"
+      ],
+      "properties": {
+        "tiingoApiKey": {
+          "type": "string",
+          "description": "The API key for the Tiingo API."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

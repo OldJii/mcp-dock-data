@@ -1,0 +1,29 @@
+{
+  "id": "contentful",
+  "displayName": "Contentful",
+  "description": "Contentful is a headless CMS allowing developers to create, manage, and distribute content across multiple channels and devices with an API-first approach",
+  "createdAt": "2026-01-19T02:12:49.844Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/contentful"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CONTENTFUL_GET_SPACE",
+      "description": "Retrieves details of a specific space by its ID. This action is used to get information about a single space in Contentful."
+    },
+    {
+      "name": "CONTENTFUL_LIST_SPACES",
+      "description": "Lists all spaces that the authenticated user has access to in Contentful. This is a fundamental operation needed before performing any other content management actions since most operations require a space ID."
+    },
+    {
+      "name": "CONTENTFUL_UPDATE_SPACE",
+      "description": "Updates the name of a specific space. Notes: - The version number is required to ensure you're updating the latest version of the space. - You can get the current version from the sys.version field when fetching space details. - Only the name of the space can be updated."
+    }
+  ]
+}

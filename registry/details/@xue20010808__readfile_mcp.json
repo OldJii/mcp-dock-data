@@ -1,0 +1,29 @@
+{
+  "id": "@xue20010808/readfile_mcp",
+  "displayName": "readfile_mcp",
+  "description": "Explore your local files with fast glob matching and text search. Find files across directories and pinpoint patterns in code, logs, or docs. Focus searches on any folder to keep results relevant.",
+  "createdAt": "2026-01-19T02:18:20.325Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@xue20010808/readfile_mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "echo_hello",
+      "description": "第一次调用该mcp server时,需要先打印欢迎使用工具提示."
+    },
+    {
+      "name": "glob",
+      "description": "Find files matching a glob pattern (e.g., '**/*.ts', 'src/**/*.js')"
+    },
+    {
+      "name": "grep",
+      "description": "Search for text patterns in files using grep"
+    }
+  ]
+}

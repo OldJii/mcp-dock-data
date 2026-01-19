@@ -1,0 +1,56 @@
+{
+  "id": "@Sallvainian/ngss-mcp",
+  "displayName": "NGSS Standards Explorer",
+  "description": "Search and retrieve NGSS standards by code, domain, or topic. Explore three-dimensional components (SEPs, DCIs, and CCCs) and discover related standards by shared practices, concepts, or core ideas. Plan cohesive curriculum units with suggestions for compatible standards.",
+  "createdAt": "2026-01-19T02:13:21.635Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Sallvainian/ngss-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_standard",
+      "description": "Retrieve a specific NGSS standard by its code identifier (e.g., MS-PS1-1, MS-LS2-3, MS-ESS3-1)"
+    },
+    {
+      "name": "search_by_domain",
+      "description": "Find all NGSS standards in a specific science domain (Physical Science, Life Science, or Earth and Space Science)"
+    },
+    {
+      "name": "get_3d_components",
+      "description": "Extract the three-dimensional learning components (SEP: Science and Engineering Practices, DCI: Disciplinary Core Ideas, CCC: Crosscutting Concepts) for a specific standard (e.g., MS-PS1-1, MS-LS2-3, MS-ESS3-1)"
+    },
+    {
+      "name": "search_standards",
+      "description": "Perform full-text search across all NGSS standard content including performance expectations, topics, and keywords (e.g., \"energy transfer\", \"ecosystems\", \"chemical reactions\", \"climate change\")"
+    },
+    {
+      "name": "search_by_practice",
+      "description": "Find all NGSS standards using a specific Science and Engineering Practice (SEP). Examples: \"Developing and Using Models\", \"Analyzing and Interpreting Data\", \"Planning and Carrying Out Investigations\""
+    },
+    {
+      "name": "search_by_crosscutting_concept",
+      "description": "Find all NGSS standards using a specific Crosscutting Concept (CCC). Examples: \"Patterns\", \"Cause and Effect\", \"Systems and System Models\", \"Energy and Matter\""
+    },
+    {
+      "name": "search_by_disciplinary_core_idea",
+      "description": "Find all NGSS standards using a specific Disciplinary Core Idea (DCI). Examples: \"Definitions of Energy\", \"Interdependent Relationships in Ecosystems\", \"Weather and Climate\""
+    },
+    {
+      "name": "get_unit_suggestions",
+      "description": "Recommend compatible NGSS standards for curriculum unit planning based on 3D framework overlap (domain, SEP, DCI, CCC). Example: Given anchor \"MS-PS3-1\" (energy), suggest 2-7 compatible standards that share similar practices, concepts, or disciplinary ideas for a cohesive unit"
+    }
+  ]
+}

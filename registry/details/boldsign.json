@@ -1,0 +1,12 @@
+{
+  "id": "boldsign",
+  "displayName": "Boldsign",
+  "description": "BoldSign delivers eSignature solutions, letting organizations create, send, and manage legally binding documents through streamlined digital signing workflows",
+  "createdAt": "2026-01-19T02:21:45.346Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/boldsign"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@meirk-brd/brightdata-mcp-test",
+  "displayName": "brightdata-mcp-test",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:55.321Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@meirk-brd/brightdata-mcp-test"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,166 @@
+{
+  "id": "@ethanke/salad_mcp",
+  "displayName": "salad_mcp",
+  "description": "Manage GPU workloads on SaladCloud, including container groups and inference endpoints. Operate queues, jobs, logs, and quotas to run and monitor deployments. Check CPU/GPU availability to plan capacity and scale efficiently.",
+  "createdAt": "2026-01-19T02:19:54.650Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ethanke/salad_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_container_groups",
+      "description": "List all container groups in a SaladCloud organization and project. Container groups represent scalable sets of identical containers running as distributed services."
+    },
+    {
+      "name": "get_container_group",
+      "description": "Get detailed information about a specific container group including its configuration, status, and instances."
+    },
+    {
+      "name": "create_container_group",
+      "description": "Create a new container group with specified configuration including image, resources (CPU, memory, GPU), networking, and other settings."
+    },
+    {
+      "name": "update_container_group",
+      "description": "Update an existing container group. You can modify replicas, resources, networking, environment variables, and other configuration."
+    },
+    {
+      "name": "start_container_group",
+      "description": "Start a stopped container group. This will allocate resources and begin running the containers."
+    },
+    {
+      "name": "stop_container_group",
+      "description": "Stop a running container group. This will deallocate resources and stop all running containers."
+    },
+    {
+      "name": "delete_container_group",
+      "description": "Delete a container group permanently. This action cannot be undone."
+    },
+    {
+      "name": "list_inference_endpoints",
+      "description": "List all available inference endpoints in an organization. Inference endpoints provide ready-to-use AI model APIs."
+    },
+    {
+      "name": "get_inference_endpoint",
+      "description": "Get detailed information about a specific inference endpoint including its configuration and metadata."
+    },
+    {
+      "name": "list_queues",
+      "description": "List all message queues in a project. Queues enable asynchronous workload processing."
+    },
+    {
+      "name": "get_queue",
+      "description": "Get detailed information about a specific message queue."
+    },
+    {
+      "name": "create_queue",
+      "description": "Create a new message queue for asynchronous workload processing."
+    },
+    {
+      "name": "delete_queue",
+      "description": "Delete a message queue permanently. This action cannot be undone."
+    },
+    {
+      "name": "get_quotas",
+      "description": "Get organization resource quotas including limits on container groups, instances, and reallocations."
+    },
+    {
+      "name": "get_system_logs",
+      "description": "Get system logs for a container group. Returns logs from container group system events."
+    },
+    {
+      "name": "list_container_group_instances",
+      "description": "List all instances of a container group. Instances represent individual running containers within a group."
+    },
+    {
+      "name": "get_container_group_instance",
+      "description": "Get detailed information about a specific container group instance."
+    },
+    {
+      "name": "update_container_group_instance",
+      "description": "Update a container group instance. Can be used to modify instance settings like deletion cost."
+    },
+    {
+      "name": "reallocate_container_group_instance",
+      "description": "Reallocate a container group instance to a different machine."
+    },
+    {
+      "name": "recreate_container_group_instance",
+      "description": "Recreate a container group instance on the same machine."
+    },
+    {
+      "name": "restart_container_group_instance",
+      "description": "Restart a container group instance."
+    },
+    {
+      "name": "update_queue",
+      "description": "Update a message queue configuration."
+    },
+    {
+      "name": "list_queue_jobs",
+      "description": "List all jobs in a message queue."
+    },
+    {
+      "name": "create_queue_job",
+      "description": "Create a new job in a message queue."
+    },
+    {
+      "name": "get_queue_job",
+      "description": "Get detailed information about a specific queue job."
+    },
+    {
+      "name": "delete_queue_job",
+      "description": "Delete a job from a message queue."
+    },
+    {
+      "name": "list_inference_endpoint_jobs",
+      "description": "List all jobs for a specific inference endpoint."
+    },
+    {
+      "name": "create_inference_endpoint_job",
+      "description": "Create a new inference job for an endpoint."
+    },
+    {
+      "name": "get_inference_endpoint_job",
+      "description": "Get detailed information about a specific inference job."
+    },
+    {
+      "name": "delete_inference_endpoint_job",
+      "description": "Delete an inference job."
+    },
+    {
+      "name": "list_gpu_classes",
+      "description": "List all available GPU classes for an organization. GPU classes define the types of GPUs available for container groups."
+    },
+    {
+      "name": "get_webhook_secret_key",
+      "description": "Get the webhook secret key for an organization. Used to verify webhook payloads."
+    },
+    {
+      "name": "update_webhook_secret_key",
+      "description": "Regenerate the webhook secret key for an organization."
+    },
+    {
+      "name": "query_log_entries",
+      "description": "Query log entries for an organization. Retrieve logs matching a query string within a specified time range. Supports pagination and sorting."
+    },
+    {
+      "name": "get_cpu_availability",
+      "description": "Get CPU availability information for an organization. Returns available CPU resources."
+    },
+    {
+      "name": "get_gpu_availability",
+      "description": "Get GPU availability information for an organization. Returns available GPU resources by class."
+    }
+  ]
+}

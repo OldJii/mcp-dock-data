@@ -1,0 +1,12 @@
+{
+  "id": "xiaobenyang-com/scan-code-tool",
+  "displayName": "scan-code-tool",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:57.298Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/scan-code-tool"
+  },
+  "connection": null,
+  "capabilities": []
+}

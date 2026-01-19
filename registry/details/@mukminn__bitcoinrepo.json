@@ -1,0 +1,12 @@
+{
+  "id": "@mukminn/bitcoinrepo",
+  "displayName": "bitcoinrepo",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:08.550Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@mukminn/bitcoinrepo"
+  },
+  "connection": null,
+  "capabilities": []
+}

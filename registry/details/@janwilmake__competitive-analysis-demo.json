@@ -1,0 +1,21 @@
+{
+  "id": "@janwilmake/competitive-analysis-demo",
+  "displayName": "Competitive Analysis",
+  "description": "Produce a comprehensive competitive landscape report that compares rivals, positioning, and differentiators. Identify strengths, weaknesses, market gaps, and opportunities to refine strategy. Save hours of research with a clear, ready-to-share summary for stakeholders.",
+  "createdAt": "2026-01-19T02:16:02.630Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@janwilmake/competitive-analysis-demo"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "getAnalysisMarkdown",
+      "description": "Returns a comprehensive markdown report of the competitive landscape analysis"
+    }
+  ]
+}

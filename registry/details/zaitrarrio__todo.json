@@ -1,0 +1,33 @@
+{
+  "id": "zaitrarrio/todo",
+  "displayName": "todo",
+  "description": "Stay organized with quick task capture and clear tracking. Create, review, complete, and delete tasks to keep momentum. Filter by status to focus on what matters now.",
+  "createdAt": "2026-01-19T02:19:32.195Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/zaitrarrio/todo"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "create_task",
+      "description": "Creates a new task with a title and optional due date and description."
+    },
+    {
+      "name": "list_tasks",
+      "description": "Lists all current tasks, optionally filtering by completion status."
+    },
+    {
+      "name": "update_task_status",
+      "description": "Updates the completion status of an existing task."
+    },
+    {
+      "name": "delete_task",
+      "description": "Deletes a task by its ID."
+    }
+  ]
+}

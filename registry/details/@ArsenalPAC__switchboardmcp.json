@@ -1,0 +1,178 @@
+{
+  "id": "@ArsenalPAC/switchboardmcp",
+  "displayName": "Switchboard API Integration Server",
+  "description": "Enable AI assistants to manage broadcast messaging, email campaigns, and contacts through the Switchboard API. Access tools for campaign management, contact organization, CSV exports, and job monitoring seamlessly. Simplify outreach and communication workflows by integrating Switchboard's capabilities directly into your AI environment.\n\nBuilt, maintained & paid for by Arsenal PAC and not endorsed by any candidate or candidate's committee. This project is neither endorsed nor supported by Switchboard Public Benefit Corp.",
+  "createdAt": "2026-01-19T02:19:05.640Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ArsenalPAC/switchboardmcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "account_id",
+        "secret_key"
+      ],
+      "properties": {
+        "account_id": {
+          "type": "string",
+          "description": "Your Switchboard API Account ID (from https://oneswitchboard.com/organization/settings?tab=api)"
+        },
+        "secret_key": {
+          "type": "string",
+          "description": "Your Switchboard API Secret Key (from https://oneswitchboard.com/organization/settings?tab=api)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_broadcasts",
+      "description": "List all broadcasts in your organization"
+    },
+    {
+      "name": "get_broadcast",
+      "description": "Get details of a specific broadcast"
+    },
+    {
+      "name": "create_phone_contact",
+      "description": "Create a new phone number contact"
+    },
+    {
+      "name": "list_labels",
+      "description": "List all labels in your organization"
+    },
+    {
+      "name": "create_label",
+      "description": "Create a new label for organizing contacts"
+    },
+    {
+      "name": "export_broadcasts",
+      "description": "Export broadcast data. Returns a signed URL for downloading the export."
+    },
+    {
+      "name": "whoami",
+      "description": "Get information about the current API credentials and permissions"
+    },
+    {
+      "name": "list_phone_contacts",
+      "description": "List all phone contacts in your organization"
+    },
+    {
+      "name": "update_phone_labels",
+      "description": "Add or remove labels from a phone contact"
+    },
+    {
+      "name": "create_email_contact",
+      "description": "Create a new email contact"
+    },
+    {
+      "name": "list_email_contacts",
+      "description": "List all email contacts in your organization"
+    },
+    {
+      "name": "list_email_lists",
+      "description": "List all email lists in your organization"
+    },
+    {
+      "name": "list_email_blasts",
+      "description": "List all email blasts/campaigns"
+    },
+    {
+      "name": "get_email_blast",
+      "description": "Get details of a specific email blast"
+    },
+    {
+      "name": "get_broadcast_messages",
+      "description": "List all messages sent in a specific broadcast"
+    },
+    {
+      "name": "create_phone_list",
+      "description": "Create a phone list from a CSV file URL"
+    },
+    {
+      "name": "export_phone_contacts",
+      "description": "Export all phone contacts. Returns a signed URL for downloading the export."
+    },
+    {
+      "name": "export_email_contacts",
+      "description": "Export all email contacts. Returns a signed URL for downloading the export."
+    },
+    {
+      "name": "list_phone_lists",
+      "description": "List all phone lists in your organization"
+    },
+    {
+      "name": "export_email_blasts",
+      "description": "Export all email blast data. Returns a signed URL for downloading."
+    },
+    {
+      "name": "export_inbox",
+      "description": "Export inbox messages with various filtering options"
+    },
+    {
+      "name": "update_email_labels",
+      "description": "Add or remove labels from an email contact"
+    },
+    {
+      "name": "create_email_list",
+      "description": "Create an email list from a CSV file URL"
+    },
+    {
+      "name": "export_broadcast_messages",
+      "description": "Export all messages for a specific broadcast"
+    },
+    {
+      "name": "get_label",
+      "description": "Get details of a specific label"
+    },
+    {
+      "name": "edit_label",
+      "description": "Edit/rename an existing label"
+    },
+    {
+      "name": "get_email_blast_messages",
+      "description": "List all messages sent in a specific email blast"
+    },
+    {
+      "name": "export_email_blast_messages",
+      "description": "Export all messages for a specific email blast"
+    },
+    {
+      "name": "get_email_list",
+      "description": "Get details of a specific email list"
+    },
+    {
+      "name": "export_email_list",
+      "description": "Export a specific email list"
+    },
+    {
+      "name": "update_email_list_labels",
+      "description": "Add or remove labels from all contacts in an email list"
+    },
+    {
+      "name": "get_phone_list",
+      "description": "Get details of a specific phone list"
+    },
+    {
+      "name": "export_phone_list",
+      "description": "Export a specific phone list"
+    },
+    {
+      "name": "update_phone_list_labels",
+      "description": "Add or remove labels from all contacts in a phone list"
+    },
+    {
+      "name": "list_jobs",
+      "description": "List async jobs (imports, exports, etc.)"
+    },
+    {
+      "name": "get_job",
+      "description": "Get status of a specific async job"
+    }
+  ]
+}

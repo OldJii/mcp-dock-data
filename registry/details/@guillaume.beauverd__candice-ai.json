@@ -1,0 +1,12 @@
+{
+  "id": "@guillaume.beauverd/candice-ai",
+  "displayName": "candice-ai",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:48.673Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@guillaume.beauverd/candice-ai"
+  },
+  "connection": null,
+  "capabilities": []
+}

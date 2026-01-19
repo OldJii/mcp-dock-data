@@ -1,0 +1,39 @@
+{
+  "id": "@fletton/cut_text",
+  "displayName": "Cut Text",
+  "description": "Provide a minimal MCP server scaffold to help developers quickly build and test MCP servers. Enable rapid prototyping of MCP tools and resources with a simple setup. Facilitate integration of custom MCP capabilities in your applications.",
+  "createdAt": "2026-01-19T02:13:56.245Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@fletton/cut_text"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    },
+    {
+      "name": "cut_text",
+      "description": "Cut text into chunks of up to 300 words each, with Chinese language support"
+    }
+  ]
+}

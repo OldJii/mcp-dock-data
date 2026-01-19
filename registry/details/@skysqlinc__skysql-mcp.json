@@ -1,0 +1,12 @@
+{
+  "id": "@skysqlinc/skysql-mcp",
+  "displayName": "skysql-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:00.281Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@skysqlinc/skysql-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

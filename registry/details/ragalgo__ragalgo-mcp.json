@@ -1,0 +1,75 @@
+{
+  "id": "ragalgo/ragalgo-mcp",
+  "displayName": "ragalgo-mcp",
+  "description": "Deliver scored market context for Korean stocks and crypto to drive confident decisions. Use sentiment-filtered news, technical analysis, and concise market snapshots for clear, actionable insights. Avoid noisy real-time data by focusing on confirmed post-market signals.",
+  "createdAt": "2026-01-19T02:18:01.259Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ragalgo/ragalgo-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "RAGALGO_API_KEY"
+      ],
+      "properties": {
+        "RAGALGO_API_KEY": {
+          "type": "string",
+          "description": "Your API key for the RagAlgo service"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_tags",
+      "description": "🔍 [TAG LOOKUP - USE FIRST] ALWAYS use this BEFORE other RagAlgo tools when user mentions any stock, coin, or theme by NAME.\n\nPRIMARY TOOL for converting names to tag_codes. Without correct tag_code, other tools will return inaccurate or empty results.\n\nALWAYS use when you see:\n- Stock names: Apple, Tesla, Samsung, Nvidia, Toyota\n- Crypto names: Bitcoin, Ethereum, Ripple, Solana\n- Index/Market names: S&P 500, Nasdaq, Dow Jones, Nikkei 225\n- Theme/sector names: AI, Semiconductor, EV, Bio\n\nExamples: \"Apple\" → USTK_AAPL, \"Samsung\" → STK005930, \"S&P 500\" → ^GSPC\n\nCRITICAL: Call this first, then use the returned tag_code in other tools."
+    },
+    {
+      "name": "get_snapshots",
+      "description": "📊 [TIER 1: GLOBAL MARKET DASHBOARD] PRIMARY TOOL for ALL market questions. ALWAYS use this FIRST.\n\nThis is the ONLY tool that returns news + chart + research COMBINED in one call.\nPrefer this over calling get_news + get_chart separately - much more efficient!\n\nALWAYS use when user asks:\n- \"How's the market today?\"\n- \"Market summary\"\n- \"What's hot today?\"\n- \"Daily briefing\"\n- \"S&P 500 status\"\n\nSupports: \n- Markets: US (NYSE/Nasdaq), KR (Korea), UK (LSE), JP (Tokyo), Crypto, Futures\n- Auto-routes based on tag_code prefix (STK, USTK, LSE, JPIX, CRY, =F, ^)\n\nReturns per asset: \n- News stats (count, avg_sentiment, bullish/bearish ratio)\n- Chart data (score, zone, price)\n- Research reports (count, outlook)\n\nTIP: If research_count > 0, use 'get_research' for full report details."
+    },
+    {
+      "name": "get_news_scored",
+      "description": "📰 [TIER 2: NEWS DETAIL] Get global news articles with AI sentiment scores (-10 to +10).\n\nUse for detailed news lookup when get_snapshots shows significant news activity.\nFilter by: tag_code, verdict (bullish/bearish/neutral), score range\n\nSupports: All global markets (US, KR, UK, JP, Crypto)\nResponse includes tag_codes for cross-referencing with charts.\n\nTIP: Use get_snapshots first for overview, then this for detailed news on specific tags."
+    },
+    {
+      "name": "get_news",
+      "description": "📰 [RAW NEWS - NO SCORES] Basic news without sentiment analysis. Use only when sentiment scores are not needed.\n\nPrefer get_news_scored over this for most use cases."
+    },
+    {
+      "name": "get_chart_stock",
+      "description": "📈 [TIER 2: STOCK CHART DETAIL] Get detailed technical analysis with V4 scoring.\n\nUse for: \"which stocks are rising?\", momentum screening, detailed chart analysis\nFilter by: zone (STRONG_UP/UP_ZONE/NEUTRAL/DOWN_ZONE/STRONG_DOWN), market (US/KR/JP/UK)\n\nSupports: US, KR, JP, UK markets\nResponse includes tag_code for cross-referencing with news.\n\nTIP: Use get_snapshots first for quick overview, then this for detailed technical analysis."
+    },
+    {
+      "name": "get_chart_coin",
+      "description": "🪙 [TIER 2: CRYPTO CHART DETAIL] Get detailed crypto technical analysis with V4 scoring.\n\nUse for: \"how's Bitcoin?\", crypto momentum screening, detailed chart analysis\nFilter by: zone (STRONG_UP/UP_ZONE/NEUTRAL/DOWN_ZONE/STRONG_DOWN)\n\nSupports: All major cryptocurrencies (KRW pairs)\nResponse includes tag_code for cross-referencing."
+    },
+    {
+      "name": "get_research",
+      "description": "📑 [TIER 2: RESEARCH DETAIL] Get professional analyst reports and key insights.\n\nUse when: \n- get_snapshots shows 'research_count > 0'\n- User asks for: \"market outlook\", \"sector analysis\", \"future trends\", \"investment insights\"\n- Questions about: \"AI Industry outlook\", \"Semiconductor Cycle\"\n\nFilter by: tag_code, source (mckinsey, goldman, etc.)\n\nReturns:\n- Full AI Summary\n- Key Investment Insights\n- Market Outlook (Bullish/Bearish)\n- Tag codes for related assets\n\nTIP: This tool provides *LONG-TERM* sector trends and professional analysis. Combine with news/charts for comprehensive view."
+    },
+    {
+      "name": "get_financials",
+      "description": "💰 [STOCK FUNDAMENTALS] Get quarterly financial statements.\n\nUse for: \"Samsung financials\", \"low PER stocks\", \"high ROE companies\", \"undervalued stocks\"\n\nReturns: PER, PBR, ROE, ROA, revenue, operating_income, net_income, debt_ratio, dividend_yield\n\nNote: Currently supports KOREAN stocks only."
+    },
+    {
+      "name": "match_tags",
+      "description": "🏷️ [AUTO-TAG EXTRACTION] Extract stock/crypto/theme tags from any text.\n\nUse for: Analyzing what topics a news title mentions, auto-categorizing text content, finding related tags from a sentence.\n\nInput: any text (e.g., \"Nvidia HBM chip breakthrough news\")\nReturns: matched tags with confidence scores"
+    },
+    {
+      "name": "get_trends",
+      "description": "📉 [SENTIMENT TRENDS] Get historical sentiment trend for a specific asset over time.\n\nUse for: \"Samsung news trend last week\", \"Bitcoin sentiment this month\", \"recent 7-day news trend\"\n\nREQUIRES tag_code - use search_tags first!\nReturns: daily news_count and avg_sentiment over N days"
+    },
+    {
+      "name": "get_available_rooms",
+      "description": "📺 [REALTIME] Get active WebSocket subscription rooms for real-time data streaming.\n\nReturns: Available room IDs for market_snapshot, global_news, and tag-specific streams."
+    }
+  ]
+}

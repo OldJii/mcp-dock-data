@@ -1,0 +1,12 @@
+{
+  "id": "mistral-ocr-mcp/claude-task-master",
+  "displayName": "claude-task-master",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:31.317Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mistral-ocr-mcp/claude-task-master"
+  },
+  "connection": null,
+  "capabilities": []
+}

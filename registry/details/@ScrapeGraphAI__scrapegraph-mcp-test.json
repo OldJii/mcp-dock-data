@@ -1,0 +1,26 @@
+{
+  "id": "@ScrapeGraphAI/scrapegraph-mcp-test",
+  "displayName": "Scrapegraph",
+  "description": "Convert webpages to clean markdown or structured data with minimal effort. Run multi-page crawls with smart scrolling, domain constraints, and clear source references. Search the web, scrape results, and extract the insights you need for faster research.",
+  "createdAt": "2026-01-19T02:18:13.736Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ScrapeGraphAI/scrapegraph-mcp-test"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "scrapegraphApiKey": {
+          "type": "string",
+          "description": "Your Scrapegraph API key (optional - can also be set via SGAI_API_KEY environment variable)",
+          "default": null
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": []
+}

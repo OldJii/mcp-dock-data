@@ -1,0 +1,77 @@
+{
+  "id": "@ebartan/bodrum-belediyesi",
+  "displayName": "Bodrum Belediyesi",
+  "description": "Provide a scaffold for building MCP servers with ease. Accelerate development by leveraging pre-built tools and integrations. Simplify the creation and management of MCP-compliant services.",
+  "createdAt": "2026-01-19T02:16:19.623Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ebartan/bodrum-belediyesi"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_departments",
+      "description": "Bodrum Belediyesi'nin tüm müdürlüklerini listeler"
+    },
+    {
+      "name": "get_department",
+      "description": "Belirli bir müdürlük hakkında detaylı bilgi getirir"
+    },
+    {
+      "name": "search_departments",
+      "description": "Anahtar kelimeye göre müdürlük arar"
+    },
+    {
+      "name": "list_neighborhoods",
+      "description": "Bodrum'un tüm mahallelerini listeler"
+    },
+    {
+      "name": "get_neighborhood",
+      "description": "Belirli bir mahalle hakkında detaylı bilgi getirir"
+    },
+    {
+      "name": "search_neighborhoods",
+      "description": "Anahtar kelimeye göre mahalle arar"
+    },
+    {
+      "name": "get_streets_by_neighborhood",
+      "description": "Bir mahalledeki tüm sokak ve caddeleri listeler"
+    },
+    {
+      "name": "search_streets",
+      "description": "Sokak/cadde adına göre arama yapar"
+    },
+    {
+      "name": "get_street_stats",
+      "description": "Tüm sokak ve caddelerin istatistiklerini getirir"
+    },
+    {
+      "name": "get_public_works_by_neighborhood",
+      "description": "Bir mahalledeki Fen İşleri çalışmalarını listeler (2024-2025)"
+    },
+    {
+      "name": "get_public_works_by_status",
+      "description": "Durumuna göre Fen İşleri çalışmalarını listeler"
+    },
+    {
+      "name": "search_public_works",
+      "description": "Fen İşleri çalışmalarında arama yapar"
+    },
+    {
+      "name": "get_public_works_stats",
+      "description": "Fen İşleri çalışmaları istatistiklerini getirir (2024-2025)"
+    }
+  ]
+}

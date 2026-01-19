@@ -1,0 +1,12 @@
+{
+  "id": "@jonathanrorbet-dotcom/postgress",
+  "displayName": "postgress",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:27.785Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jonathanrorbet-dotcom/postgress"
+  },
+  "connection": null,
+  "capabilities": []
+}

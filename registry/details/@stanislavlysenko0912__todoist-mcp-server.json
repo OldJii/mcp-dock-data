@@ -1,0 +1,168 @@
+{
+  "id": "@stanislavlysenko0912/todoist-mcp-server",
+  "displayName": "Todoist MCP Server",
+  "description": "Integrate your AI assistants with Todoist for seamless task management. Manage tasks, projects, comments, and labels using natural language commands. Enhance your productivity by interacting with Todoist through conversational AI.",
+  "createdAt": "2026-01-19T02:19:28.320Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@stanislavlysenko0912/todoist-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "The API key for the Todoist server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_comments_list",
+      "description": "Get comments list from Todoist"
+    },
+    {
+      "name": "create_comments",
+      "description": "Create new comments in Todoist"
+    },
+    {
+      "name": "get_comments",
+      "description": "Get comments from Todoist by ID"
+    },
+    {
+      "name": "update_comments",
+      "description": "Update comments in Todoist"
+    },
+    {
+      "name": "delete_comments",
+      "description": "Delete comments in Todoist"
+    },
+    {
+      "name": "get_labels_list",
+      "description": "Get all personal labels from Todoist"
+    },
+    {
+      "name": "create_labels",
+      "description": "Create a new personal labels in Todoist"
+    },
+    {
+      "name": "get_labels",
+      "description": "Get a personal label from Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "update_labels",
+      "description": "Update a personal label in Todoist"
+    },
+    {
+      "name": "delete_labels",
+      "description": "Delete a personal label in Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "get_shared_labels",
+      "description": "Get all shared labels from Todoist"
+    },
+    {
+      "name": "rename_shared_labels",
+      "description": "Rename a shared label in Todoist"
+    },
+    {
+      "name": "remove_shared_labels",
+      "description": "Remove a shared label in Todoist"
+    },
+    {
+      "name": "get_projects_list",
+      "description": "Get all projects from Todoist"
+    },
+    {
+      "name": "create_projects",
+      "description": "Create new projects in Todoist"
+    },
+    {
+      "name": "get_projects",
+      "description": "Get projects from Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "update_projects",
+      "description": "Update projects in Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "delete_projects",
+      "description": "Delete projects from Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "get_collaborators",
+      "description": "Get all collaborators for a project in Todoist"
+    },
+    {
+      "name": "move_projects",
+      "description": "Move a projects to a different parent in Todoist"
+    },
+    {
+      "name": "get_sections_list",
+      "description": "Get sections list from Todoist"
+    },
+    {
+      "name": "create_sections",
+      "description": "Create new sections in Todoist"
+    },
+    {
+      "name": "get_sections",
+      "description": "Get sections from Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "update_sections",
+      "description": "Update sections in Todoist"
+    },
+    {
+      "name": "delete_sections",
+      "description": "Delete sections in Todoist\nEither 'id' or the 'name' to identify the target."
+    },
+    {
+      "name": "get_tasks_list",
+      "description": "Get tasks list from Todoist"
+    },
+    {
+      "name": "create_tasks",
+      "description": "Create new tasks in Todoist"
+    },
+    {
+      "name": "get_tasks",
+      "description": "Get tasks from Todoist\nEither 'task_id' or the 'task_name' to identify the target."
+    },
+    {
+      "name": "update_tasks",
+      "description": "Update tasks in Todoist\nEither 'task_id' or the 'task_name' to identify the target."
+    },
+    {
+      "name": "close_tasks",
+      "description": "Close tasks in Todoist\nEither 'task_id' or the 'task_name' to identify the target."
+    },
+    {
+      "name": "reopen_tasks",
+      "description": "Reopen tasks in Todoist\nEither 'task_id' or the 'task_name' to identify the target."
+    },
+    {
+      "name": "delete_tasks",
+      "description": "Delete tasks from Todoist\nEither 'task_id' or the 'task_name' to identify the target."
+    },
+    {
+      "name": "move_tasks",
+      "description": "Move tasks to a different parent or section in Todoist. Exactly one of parent_id, section_id, or project_id must be provided"
+    },
+    {
+      "name": "get_completed_tasks",
+      "description": "Get completed tasks from Todoist with filtering options"
+    },
+    {
+      "name": "utils_get_colors",
+      "description": "Get available colors for projects, labels, filters in Todoist"
+    }
+  ]
+}

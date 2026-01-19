@@ -1,0 +1,12 @@
+{
+  "id": "Prompeteer/server",
+  "displayName": "server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:25.755Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/Prompeteer/server"
+  },
+  "connection": null,
+  "capabilities": []
+}

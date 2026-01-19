@@ -1,0 +1,49 @@
+{
+  "id": "@dot-Justin/poke-image-mcp",
+  "displayName": "poke-image-mcp",
+  "description": "Browse, inspect, convert, and resize images from a local library. Generate thumbnails, extract metadata, and retrieve files in common formats. Streamline image prep for previews, responsive layouts, and format optimization.",
+  "createdAt": "2026-01-19T02:13:29.351Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@dot-Justin/poke-image-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_images",
+      "description": "Lists all available images in the images directory"
+    },
+    {
+      "name": "get_image",
+      "description": "Returns a specific image by filename from the images directory. Supports JPG, PNG, GIF, WebP, and BMP formats."
+    },
+    {
+      "name": "get_image_metadata",
+      "description": "Returns metadata about an image (filename, size, format, dimensions) without loading the full image"
+    },
+    {
+      "name": "convert_image",
+      "description": "Converts an image to a different format (JPG, PNG, WebP, GIF). Returns the converted image."
+    },
+    {
+      "name": "resize_image",
+      "description": "Resizes an image to specified dimensions. Can maintain aspect ratio or force exact dimensions."
+    },
+    {
+      "name": "create_thumbnail",
+      "description": "Creates a thumbnail version of an image with specified maximum dimension"
+    },
+    {
+      "name": "get_image_info",
+      "description": "Gets detailed technical information about an image including dimensions, format, color space, etc."
+    }
+  ]
+}

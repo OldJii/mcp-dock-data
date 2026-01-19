@@ -1,0 +1,25 @@
+{
+  "id": "paypal",
+  "displayName": "PayPal",
+  "description": "Create and share PayPal invoice links in seconds. View your recent transactions with key details. Streamline payments and keep your cash flow organized.",
+  "createdAt": "2026-01-19T02:19:10.689Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/paypal"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "create_invoice",
+      "description": "Creates PayPal Invoice Link"
+    },
+    {
+      "name": "list_transactions",
+      "description": "Fetches details of your PayPal Transactions"
+    }
+  ]
+}

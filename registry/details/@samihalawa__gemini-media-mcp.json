@@ -1,0 +1,12 @@
+{
+  "id": "@samihalawa/gemini-media-mcp",
+  "displayName": "gemini-media-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:14.199Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@samihalawa/gemini-media-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

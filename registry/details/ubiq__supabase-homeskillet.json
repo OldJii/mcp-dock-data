@@ -1,0 +1,12 @@
+{
+  "id": "ubiq/supabase-homeskillet",
+  "displayName": "supabase-homeskillet",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:28.236Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ubiq/supabase-homeskillet"
+  },
+  "connection": null,
+  "capabilities": []
+}

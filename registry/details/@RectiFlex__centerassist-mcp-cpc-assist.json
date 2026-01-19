@@ -1,0 +1,12 @@
+{
+  "id": "@RectiFlex/centerassist-mcp-cpc-assist",
+  "displayName": "centerassist-mcp-cpc-assist",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:47.623Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@RectiFlex/centerassist-mcp-cpc-assist"
+  },
+  "connection": null,
+  "capabilities": []
+}

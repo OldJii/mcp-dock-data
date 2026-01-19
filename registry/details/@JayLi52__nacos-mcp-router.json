@@ -1,0 +1,12 @@
+{
+  "id": "@JayLi52/nacos-mcp-router",
+  "displayName": "nacos-mcp-router",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:21.278Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JayLi52/nacos-mcp-router"
+  },
+  "connection": null,
+  "capabilities": []
+}

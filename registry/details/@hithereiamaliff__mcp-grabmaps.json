@@ -1,0 +1,41 @@
+{
+  "id": "@hithereiamaliff/mcp-grabmaps",
+  "displayName": "GrabMaps MCP Server",
+  "description": "Provide seamless access to GrabMaps geocoding and routing services across 8 countries in Southeast Asia through a standardized MCP interface. Enable AI models and applications to perform place searches, reverse geocoding, route calculations, and place detail retrieval efficiently. Simplify integration with GrabMaps data via AWS Location Service without requiring direct map rendering capabilities.\n\nAvailable coverage countries for GrabMaps usage:\n\n- 🇲🇾 Malaysia\n- 🇸🇬 Singapore\n- 🇹🇭 Thailand\n- 🇲🇲 Myanmar\n- 🇰🇭 Cambodia\n- 🇻🇳 Vietnam\n- 🇵🇭 Philippines\n- 🇮🇩 Indonesia\n\nNote: this MCP server is NOT officially affiliated with Grab, GrabMaps, or AWS Location Service.",
+  "createdAt": "2026-01-19T02:16:56.272Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-grabmaps"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "searchPlaceIndexForText",
+      "description": "Search for places using text query. GrabMaps supports 8 Southeast Asian countries: Malaysia, Singapore, Thailand, Myanmar, Cambodia, Vietnam, Philippines, Indonesia."
+    },
+    {
+      "name": "searchPlaceIndexForPosition",
+      "description": "Search for places by coordinates (reverse geocoding). Supports Southeast Asia only."
+    },
+    {
+      "name": "searchPlaceIndexForSuggestions",
+      "description": "Get place suggestions based on partial text input. Supports Southeast Asia only."
+    },
+    {
+      "name": "getPlace",
+      "description": "Get place details by place ID. Supports Southeast Asia only."
+    },
+    {
+      "name": "calculateRoute",
+      "description": "Calculate a route between two points. Supports Car, Truck, Walking, Bicycle, Motorcycle modes."
+    },
+    {
+      "name": "calculateRouteMatrix",
+      "description": "Calculate route matrix between multiple origins and destinations."
+    }
+  ]
+}

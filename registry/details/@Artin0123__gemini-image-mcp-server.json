@@ -1,0 +1,41 @@
+{
+  "id": "@Artin0123/gemini-image-mcp-server",
+  "displayName": "Gemini Vision",
+  "description": "Analyze images and videos with Gemini to get fast, reliable visual insights. Handle content from URLs and YouTube links. Summarize scenes, identify objects, and extract key details for reports or automation. This is remote version, check local branch in github to use local tools.",
+  "createdAt": "2026-01-19T02:15:52.285Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Artin0123/gemini-image-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "modelName": {
+          "type": "string",
+          "description": "Optional Gemini model name override. Defaults to models/gemini-flash-lite-latest."
+        },
+        "geminiApiKey": {
+          "type": "string",
+          "description": "Your Google Gemini API key for image and video analysis. Falls back to GEMINI_API_KEY when omitted."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": true
+    }
+  },
+  "capabilities": [
+    {
+      "name": "analyze_image",
+      "description": "Analyzes images available via URLs using Gemini API. Maximum file size: 16 MB."
+    },
+    {
+      "name": "analyze_youtube_video",
+      "description": "Analyzes a YouTube video from URL using Gemini API. No size limit."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "@WebpageFX/ltc-mcp-server",
+  "displayName": "LTC Catalog",
+  "description": "Fetch detailed product data from the LTC catalog by ProductNo. Discover all items currently on sale to power merchandising and pricing workflows. Use rich attributes like pricing, categories, and availability to filter and recommend products.",
+  "createdAt": "2026-01-19T02:17:35.531Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@WebpageFX/ltc-mcp-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "feedXmlUrl"
+      ],
+      "properties": {
+        "feedXmlUrl": {
+          "type": "string",
+          "description": "URL to the XML feed containing LTC product data"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_products",
+      "description": "Get product details for multiple ProductNos from LTC catalog"
+    },
+    {
+      "name": "get_products_on_sale3",
+      "description": "Get all products from LTC catalog that are on sale"
+    }
+  ]
+}

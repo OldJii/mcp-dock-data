@@ -1,0 +1,12 @@
+{
+  "id": "@Ethan-IS/swift-tuist",
+  "displayName": "swift-tuist",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:50.251Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Ethan-IS/swift-tuist"
+  },
+  "connection": null,
+  "capabilities": []
+}

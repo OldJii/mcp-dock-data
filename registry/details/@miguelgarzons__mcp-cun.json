@@ -1,0 +1,37 @@
+{
+  "id": "@miguelgarzons/mcp-cun",
+  "displayName": "Hello",
+  "description": "Greet people by name with friendly, personalized messages. Add a warm touch to onboarding, demos, or quick intros. Keep interactions personable and welcoming.",
+  "createdAt": "2026-01-19T02:19:40.387Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@miguelgarzons/mcp-cun"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "say_hello",
+      "description": "Greet a user by name."
+    },
+    {
+      "name": "say_goodbye",
+      "description": "Say goodbye to a user by name."
+    },
+    {
+      "name": "add",
+      "description": "Add two numbers."
+    },
+    {
+      "name": "multiply",
+      "description": "Multiply two numbers."
+    }
+  ]
+}

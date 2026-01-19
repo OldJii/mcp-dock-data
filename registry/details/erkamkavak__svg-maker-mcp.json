@@ -1,0 +1,64 @@
+{
+  "id": "erkamkavak/svg-maker-mcp",
+  "displayName": "svg-maker-mcp",
+  "description": "Create, render, and optimize SVGs with instant PNG previews to verify visual intent. Convert SVGs into React, React Native, PDF, or Data URI formats for easy integration. Validate, format, and extract metadata like dimensions and titles to ensure clean, reliable graphics.",
+  "createdAt": "2026-01-19T02:15:24.241Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/erkamkavak/svg-maker-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "render_svg",
+      "description": "Renders SVG code to a PNG image for visual verification. IMPORTANT: You should ALWAYS use this tool to preview your generated or modified SVG code to ensure it correctly fulfills the user's request and matches their visual intent."
+    },
+    {
+      "name": "save_svg_to_server",
+      "description": "Saves the SVG code to a file on the SERVER'S local system. IMPORTANT: This tool saves to the disk where the MCP server is RUNNING. If this server is hosted remotely (like on Smithery), the file will NOT be saved to the user's computer. Use this tool only if you are running the server locally or intentionally saving to a remote host."
+    },
+    {
+      "name": "get_svg_code",
+      "description": "Returns the SVG XML string, optionally optimized. Use this tool when the user wants to 'download', 'save', or 'export' an SVG to their LOCAL machine. After receiving the code from this tool, you (the AI) must use your own local environment's file-writing tools to save this content to the user's desired path on their computer."
+    },
+    {
+      "name": "optimize_svg",
+      "description": "Optimizes and minifies SVG code using SVGO. After optimization, you should use 'render_svg' to ensure that the visual integrity of the image was maintained."
+    },
+    {
+      "name": "format_svg",
+      "description": "Prettifies (formats) SVG code with consistent indentation and line breaks. Use this tool ONLY when the user explicitly requests formatted or prettified SVG code."
+    },
+    {
+      "name": "svg_to_react",
+      "description": "Converts SVG code to a React Functional Component (JSX). Automatically handles camelCasing for attributes (e.g., stroke-width -> strokeWidth), converts 'class' to 'className', and transforms 'style' strings into React-style objects."
+    },
+    {
+      "name": "svg_to_react_native",
+      "description": "Converts SVG code to a React Native Component using the 'react-native-svg' library. Maps standard SVG tags to their React Native equivalents (e.g., <path> -> <Path>) and ensures attributes are compatible."
+    },
+    {
+      "name": "svg_to_data_uri",
+      "description": "Converts SVG code into a base64-encoded Data URI. Useful for embedding SVGs directly into HTML or CSS as background images."
+    },
+    {
+      "name": "validate_svg",
+      "description": "Validates SVG code for XML syntax, root element correctness, and standard tag usage. Detects potential rendering issues like missing dimensions or non-standard elements."
+    },
+    {
+      "name": "get_svg_metadata",
+      "description": "Extracts high-level metadata from SVG code. Provides information like defined width, height, viewBox, and title."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@sseaan/mcp-server-inbox",
+  "displayName": "mcp-server-inbox",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:21.366Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sseaan/mcp-server-inbox"
+  },
+  "connection": null,
+  "capabilities": []
+}

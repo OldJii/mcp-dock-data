@@ -1,0 +1,49 @@
+{
+  "id": "@MetehanGZL/pokemcp",
+  "displayName": "Pokémon Information Server",
+  "description": "Provide detailed Pokémon data and information through a standardized MCP interface. Enable LLMs and applications to query and retrieve Pokémon-related content efficiently. Enhance your agents with rich, structured Pokémon knowledge.",
+  "createdAt": "2026-01-19T02:14:10.289Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MetehanGZL/pokemcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "random_pokemon",
+      "description": "Rastgele bir Pokémon seç"
+    },
+    {
+      "name": "random_pokemon_from_region",
+      "description": "Belirli bir bölgeden rastgele bir Pokémon seç"
+    },
+    {
+      "name": "random_pokemon_by_type",
+      "description": "Belirli bir türden rastgele bir Pokémon seç"
+    },
+    {
+      "name": "pokemon_query",
+      "description": "Doğal dil ile Pokémon sorguları yap"
+    },
+    {
+      "name": "start_battle",
+      "description": "Start a battle between two Pokémon"
+    },
+    {
+      "name": "make_move",
+      "description": "Make a move in the current battle"
+    },
+    {
+      "name": "use_item",
+      "description": "Use an item in battle"
+    }
+  ]
+}

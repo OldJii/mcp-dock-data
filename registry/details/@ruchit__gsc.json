@@ -1,0 +1,12 @@
+{
+  "id": "@ruchit/gsc",
+  "displayName": "gsc",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:18.520Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ruchit/gsc"
+  },
+  "connection": null,
+  "capabilities": []
+}

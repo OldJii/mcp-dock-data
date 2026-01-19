@@ -1,0 +1,12 @@
+{
+  "id": "@diego.otero/analytics",
+  "displayName": "analytics",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:44.364Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@diego.otero/analytics"
+  },
+  "connection": null,
+  "capabilities": []
+}

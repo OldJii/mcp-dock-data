@@ -1,0 +1,63 @@
+{
+  "id": "@aakashns/duediligencemcp",
+  "displayName": "Due Diligence Assistant",
+  "description": "Provide comprehensive due diligence support by integrating various data sources and tools to streamline the evaluation process. Enable efficient access to relevant documents, perform analyses, and generate insightful reports. Enhance decision-making with automated workflows tailored for due diligence tasks.",
+  "createdAt": "2026-01-19T02:16:51.702Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@aakashns/duediligencemcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    },
+    {
+      "name": "initializeDueDiligenceReport",
+      "description": "Initialize a due diligence report by creating a report file with company name and date, and fetch PitchBook data"
+    },
+    {
+      "name": "generateFinancialSlide",
+      "description": "Generate financial due diligence Marp slide and append it to the report file"
+    },
+    {
+      "name": "generateIndustrySlide",
+      "description": "Generate industry due diligence Marp slide with market analysis and competitive landscape"
+    },
+    {
+      "name": "generateIdentitySlide",
+      "description": "Generate identity due diligence Marp slide with founder background analysis"
+    },
+    {
+      "name": "generateLegalSlide",
+      "description": "Generate legal due diligence Marp slide with legal risk assessment and compliance analysis"
+    },
+    {
+      "name": "generateConclusionSlide",
+      "description": "Generate conclusion and investment recommendation Marp slide with final verdict"
+    },
+    {
+      "name": "finalizeDueDiligenceReport",
+      "description": "Provide final investment verdict and point to the completed due diligence slide deck"
+    }
+  ]
+}

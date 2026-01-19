@@ -1,0 +1,12 @@
+{
+  "id": "@sayand/growwmcp",
+  "displayName": "growwmcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:42.601Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sayand/growwmcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "@kj455/mcp-kibela",
+  "displayName": "Kibela Integration Server",
+  "description": "Integrate with Kibela to search and fetch notes seamlessly.",
+  "createdAt": "2026-01-19T02:21:09.341Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kj455/mcp-kibela"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "kibelaTeam",
+        "kibelaToken"
+      ],
+      "properties": {
+        "kibelaTeam": {
+          "type": "string",
+          "description": "Your Kibela team name"
+        },
+        "kibelaToken": {
+          "type": "string",
+          "description": "Your Kibela API token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "kibela_search_notes",
+      "description": "Search Kibela notes by query"
+    },
+    {
+      "name": "kibela_get_my_notes",
+      "description": "Get my latest notes from Kibela"
+    },
+    {
+      "name": "kibela_get_note_content",
+      "description": "Get note content by note ID"
+    },
+    {
+      "name": "kibela_get_note_from_path",
+      "description": "Get note content by note path"
+    },
+    {
+      "name": "kibela_update_note_content",
+      "description": "Update note content by note id. This tool allows you to modify the content of an existing Kibela note. Before updating, it fetches the current content of the note to ensure proper version control. Note that you need the note ID (not the note path) to use this tool."
+    },
+    {
+      "name": "kibela_create_note",
+      "description": "Create a new note in Kibela."
+    }
+  ]
+}

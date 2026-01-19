@@ -1,0 +1,85 @@
+{
+  "id": "bitbucket",
+  "displayName": "Bitbucket",
+  "description": "Bitbucket is a Git-based code hosting and collaboration platform supporting private and public repositories, enabling teams to manage and review code through pull requests and integrations",
+  "createdAt": "2026-01-19T02:12:40.437Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/bitbucket"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "BITBUCKET_CREATE_BRANCH",
+      "description": "Creates a new branch in a Bitbucket repository from a target commit hash; the branch name must be unique, adhere to Bitbucket's naming conventions, and not include the 'refs/heads/' prefix."
+    },
+    {
+      "name": "BITBUCKET_CREATE_ISSUE",
+      "description": "Creates a new issue in a Bitbucket repository, setting the authenticated user as reporter; ensures assignee (if provided) has repository access, and that any specified milestone, version, or component IDs exist."
+    },
+    {
+      "name": "BITBUCKET_CREATE_ISSUE_COMMENT",
+      "description": "Adds a new comment with markdown support to an existing Bitbucket issue."
+    },
+    {
+      "name": "BITBUCKET_CREATE_PULL_REQUEST",
+      "description": "Creates a new pull request in a specified Bitbucket repository, ensuring the source branch exists and is distinct from the (optional) destination branch."
+    },
+    {
+      "name": "BITBUCKET_CREATE_REPOSITORY",
+      "description": "Creates a new Bitbucket 'git' repository in a specified workspace, defaulting to the workspace's oldest project if `project_key` is not provided."
+    },
+    {
+      "name": "BITBUCKET_CREATE_SNIPPET_COMMENT",
+      "description": "Posts a new top-level comment or a threaded reply to an existing comment on a specified Bitbucket snippet."
+    },
+    {
+      "name": "BITBUCKET_DELETE_ISSUE",
+      "description": "Permanently deletes a specific issue, identified by its `issue_id`, from the repository specified by `repo_slug` within the given `workspace`."
+    },
+    {
+      "name": "BITBUCKET_DELETE_REPOSITORY",
+      "description": "Permanently deletes a specified Bitbucket repository; this action is irreversible and does not affect forks."
+    },
+    {
+      "name": "BITBUCKET_GET_CURRENT_USER",
+      "description": "Retrieves the profile information (UUID, display name, links, creation date) for the currently authenticated Bitbucket user."
+    },
+    {
+      "name": "BITBUCKET_GET_FILE_FROM_REPOSITORY",
+      "description": "Retrieves a specific file's content from a Bitbucket repository at a given commit (hash, branch, or tag), failing if the file path is invalid for that commit."
+    },
+    {
+      "name": "BITBUCKET_GET_PULL_REQUEST",
+      "description": "Get a single pull request by ID with complete details."
+    },
+    {
+      "name": "BITBUCKET_GET_SNIPPET",
+      "description": "Retrieves a specific Bitbucket snippet by its encoded ID from an existing workspace, returning its metadata and file structure."
+    },
+    {
+      "name": "BITBUCKET_LIST_PULL_REQUESTS",
+      "description": "Lists pull requests in a specified, accessible Bitbucket repository, optionally filtering by state (OPEN, MERGED, DECLINED)."
+    },
+    {
+      "name": "BITBUCKET_LIST_REPOSITORIES_IN_WORKSPACE",
+      "description": "Lists repositories in a specified Bitbucket workspace, accessible to the authenticated user, with options to filter by role or query string, and sort results."
+    },
+    {
+      "name": "BITBUCKET_LIST_WORKSPACE_MEMBERS",
+      "description": "Lists all members of a specified Bitbucket workspace; the workspace must exist."
+    },
+    {
+      "name": "BITBUCKET_LIST_WORKSPACES",
+      "description": "Lists Bitbucket workspaces accessible to the authenticated user, optionally filtered and sorted."
+    },
+    {
+      "name": "BITBUCKET_UPDATE_ISSUE",
+      "description": "Updates an existing issue in a Bitbucket repository by modifying specified attributes; requires `workspace`, `repo_slug`, `issue_id`, and at least one attribute to update."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "@marktoda/astrotask",
+  "displayName": "Astrotask",
+  "description": "Manage and organize tasks efficiently with AI agent integration. Create, update, query, and track tasks with hierarchical support and real-time feedback. Enhance productivity by leveraging structured task management tools designed for seamless AI interaction.",
+  "createdAt": "2026-01-19T02:17:20.030Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@marktoda/astrotask"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "databaseUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable verbose database logging",
+          "default": false
+        },
+        "logLevel": {
+          "type": "string",
+          "description": "Logging level for the MCP server",
+          "default": "info"
+        },
+        "databaseUrl": {
+          "type": "string",
+          "description": "SQLite database path or connection URL for Astrotask",
+          "default": "./data/astrotask.db"
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "Optional OpenAI API key for enhanced functionality"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getNextTask",
+      "description": ""
+    },
+    {
+      "name": "addTasks",
+      "description": ""
+    },
+    {
+      "name": "listTasks",
+      "description": ""
+    },
+    {
+      "name": "addTaskContext",
+      "description": ""
+    },
+    {
+      "name": "addDependency",
+      "description": ""
+    },
+    {
+      "name": "updateStatus",
+      "description": ""
+    }
+  ]
+}

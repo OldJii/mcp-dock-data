@@ -1,0 +1,12 @@
+{
+  "id": "@gabemempin/telegram",
+  "displayName": "telegram",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:28.357Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gabemempin/telegram"
+  },
+  "connection": null,
+  "capabilities": []
+}

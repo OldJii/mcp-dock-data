@@ -1,0 +1,53 @@
+{
+  "id": "googlemeet",
+  "displayName": "Google Meet",
+  "description": "Google Meet is a secure video conferencing platform that integrates with Google Workspace, facilitating remote meetings, screen sharing, and chat",
+  "createdAt": "2026-01-19T02:12:49.072Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googlemeet"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLEMEET_CREATE_MEET",
+      "description": "Creates a new Google Meet space, optionally configuring its access type and entry point access controls."
+    },
+    {
+      "name": "GOOGLEMEET_GET_CONFERENCE_RECORD_FOR_MEET",
+      "description": "Get conference record"
+    },
+    {
+      "name": "GOOGLEMEET_GET_MEET",
+      "description": "Retrieve details of a Google Meet space using its unique identifier."
+    },
+    {
+      "name": "GOOGLEMEET_GET_PARTICIPANT_SESSION",
+      "description": "Tool to get a specific participant session from a conference record. Use when you need to retrieve details about a particular participant in a past meeting."
+    },
+    {
+      "name": "GOOGLEMEET_GET_RECORDINGS_BY_CONFERENCE_RECORD_ID",
+      "description": "Retrieves recordings from Google Meet for a given conference record ID."
+    },
+    {
+      "name": "GOOGLEMEET_GET_TRANSCRIPTS_BY_CONFERENCE_RECORD_ID",
+      "description": "Retrieves all transcripts for a specific Google Meet conference using its conferenceRecord_id."
+    },
+    {
+      "name": "GOOGLEMEET_LIST_CONFERENCE_RECORDS",
+      "description": "Tool to list conference records. Use when you need to retrieve a list of past conferences, optionally filtering them by criteria like meeting code, space name, or time range."
+    },
+    {
+      "name": "GOOGLEMEET_LIST_PARTICIPANT_SESSIONS",
+      "description": "Tool to list all participant sessions for a specific conference record in Google Meet. Use this when you need to retrieve a list of participants who joined a particular meeting."
+    },
+    {
+      "name": "GOOGLEMEET_UPDATE_SPACE",
+      "description": "Updates a meeting space. Use this tool to modify the settings of an existing Google Meet space. Requires the Space resource in the request body and the space name in the path."
+    }
+  ]
+}

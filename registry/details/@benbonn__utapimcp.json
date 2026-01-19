@@ -1,0 +1,24 @@
+{
+  "id": "@benbonn/utapimcp",
+  "displayName": "DHL Shipment Tracking (UTAPI ) MCP Server",
+  "description": "Connect seamlesslyto all DHL products to track your shipments \nGet your key at https://developer.dhl.com\n",
+  "createdAt": "2026-01-19T02:20:26.235Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@benbonn/utapimcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "description": "No configuration needed"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "track-shipment",
+      "description": "Track a shipment using DHL API"
+    }
+  ]
+}

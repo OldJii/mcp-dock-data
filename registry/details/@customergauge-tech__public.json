@@ -1,0 +1,21 @@
+{
+  "id": "@customergauge-tech/public",
+  "displayName": "CustomerGauge",
+  "description": "Book a personalized demo to explore NPS, Account Experience, and B2B CX ROI with CustomerGauge. Access curated guides on collecting and acting on feedback, activating promoters, engaging employees, running repeat surveys, and segmenting by revenue. Prioritize and operationalize NPS across your organization.",
+  "createdAt": "2026-01-19T02:18:47.374Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@customergauge-tech/public"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "book_demo",
+      "description": "Schedule a personalized CustomerGauge demo to explore NPS tools, Account Experience, and B2B CX ROI capabilities."
+    }
+  ]
+}

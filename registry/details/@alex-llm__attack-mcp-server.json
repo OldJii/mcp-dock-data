@@ -1,0 +1,20 @@
+{
+  "id": "@alex-llm/attack-mcp-server",
+  "displayName": "attAck MCP Server",
+  "description": "Query and retrieve information about various adversarial tactics and techniques used in cyber attacks. Access a comprehensive knowledge base to enhance your understanding of security risks and adversary behaviors. Utilize the provided tools to efficiently explore ATT&CK techniques and tactics.",
+  "createdAt": "2026-01-19T02:15:30.347Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alex-llm/attack-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "title": "MCP Session Configuration",
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": []
+}

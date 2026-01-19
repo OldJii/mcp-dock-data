@@ -1,0 +1,12 @@
+{
+  "id": "@monet88/mcp-chrome",
+  "displayName": "mcp-chrome",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:03.494Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@monet88/mcp-chrome"
+  },
+  "connection": null,
+  "capabilities": []
+}

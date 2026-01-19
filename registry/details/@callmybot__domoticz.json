@@ -1,0 +1,46 @@
+{
+  "id": "@callmybot/domoticz",
+  "displayName": "Hello",
+  "description": "Greet anyone by name with a friendly hello. Explore the origin of 'Hello, World' for context in demos and lessons. Speed up onboarding and test flows with ready-to-use greetings.",
+  "createdAt": "2026-01-19T02:21:17.299Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@callmybot/domoticz"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "baseURL",
+        "username",
+        "password"
+      ],
+      "properties": {
+        "baseURL": {
+          "type": "string",
+          "description": "The base URL of your Domoticz instance"
+        },
+        "password": {
+          "type": "string",
+          "description": "The MCP user password"
+        },
+        "username": {
+          "type": "string",
+          "description": "The MCP user username"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

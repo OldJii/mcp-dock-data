@@ -1,0 +1,12 @@
+{
+  "id": "@bughide011/hide",
+  "displayName": "brightdata-mcp",
+  "description": "test111",
+  "createdAt": "2026-01-19T02:25:54.559Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@bughide011/hide"
+  },
+  "connection": null,
+  "capabilities": []
+}

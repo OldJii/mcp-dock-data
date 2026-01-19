@@ -1,0 +1,225 @@
+{
+  "id": "@slhad/aha-mcp",
+  "displayName": "Home Assistant Automations & Dashboards",
+  "description": "A TypeScript MCP server for Home Assistant, enabling programmatic management of entities, automations, services, and dashboards. Designed for extensibility. Includes Docker support and Vitest-based tests for easy deployment and reliability.",
+  "createdAt": "2026-01-19T02:16:29.332Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@slhad/aha-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "url",
+        "accessToken"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": ""
+        },
+        "debugMode": {
+          "type": "string",
+          "description": "Enable debug mode for verbose logging"
+        },
+        "accessToken": {
+          "type": "string",
+          "description": ""
+        },
+        "LIMIT_RESOURCES": {
+          "type": "string",
+          "description": "Limit the number of resources to convert, -1 for no limit"
+        },
+        "RESOURCES_TO_TOOLS": {
+          "type": "string",
+          "description": "Enable resource to tool conversion"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get-rest-automation-trace",
+      "description": "Fetches the trace for a specific automation run using its REST id and run id."
+    },
+    {
+      "name": "list-rest-automation-traces",
+      "description": "List all traces for a specific automation using its REST id."
+    },
+    {
+      "name": "list-automations",
+      "description": "List all automations"
+    },
+    {
+      "name": "delete-automation",
+      "description": "Delete an automation by id"
+    },
+    {
+      "name": "get-automation-by-entity-id",
+      "description": "Find an automation entity using its entity_id (e.g. automation.my_automation)."
+    },
+    {
+      "name": "get-rest-automation-by-entity-id",
+      "description": "Get an automation's REST definition using its entity_id (e.g. automation.my_automation)."
+    },
+    {
+      "name": "update-automation-by-entity-id",
+      "description": "Update an automation using its entity_id (e.g. automation.my_automation)."
+    },
+    {
+      "name": "get-automation-by-rest-id",
+      "description": "Find an automation entity using its REST API id (rest_id, not entity_id)."
+    },
+    {
+      "name": "get-rest-automation-by-rest-id",
+      "description": "Get an automation's REST definition using its rest_id (REST API id, not entity_id)."
+    },
+    {
+      "name": "update-rest-automation-by-rest-id",
+      "description": "Update an automation using its rest_id (REST API id, not entity_id)."
+    },
+    {
+      "name": "delete-rest-automation-by-rest-id",
+      "description": "Delete an automation using its rest_id (REST API id, not entity_id)."
+    },
+    {
+      "name": "create-rest-automation",
+      "description": "Create a new automation via the Home Assistant REST API. Returns the new rest_id."
+    },
+    {
+      "name": "list-device-automation-triggers",
+      "description": "List all triggers for a specific device's automations."
+    },
+    {
+      "name": "get-status",
+      "description": "Get Home Assistant connection status"
+    },
+    {
+      "name": "validate-config",
+      "description": "Validate triggers, conditions and actions configurations as if part of an automation. Any changes to automation should be checked with this tool"
+    },
+    {
+      "name": "call-service",
+      "description": "Call a Home Assistant service"
+    },
+    {
+      "name": "get-manifest",
+      "description": "Get the manifest of a Home Assistant integration"
+    },
+    {
+      "name": "get-entity-registry-by-entity-id",
+      "description": "Get registry info for a specific entity_id"
+    },
+    {
+      "name": "get-device-id-by-entity-id",
+      "description": "Get the device_id for a given entity_id"
+    },
+    {
+      "name": "get-config-entry-id-by-entity-id",
+      "description": "Get the config_entry_id for a given entity_id, useful for templated sensors and other config entry flows alike"
+    },
+    {
+      "name": "update-device-registry",
+      "description": "Update the device registry for a specific device_id"
+    },
+    {
+      "name": "create-config-entry-flow",
+      "description": "Create a new config entry in the Home Assistant entity registry for a new config entry (new templated helpers for ex)"
+    },
+    {
+      "name": "continue-config-entry-flow",
+      "description": "Continue an existing config entry flow with a next step Id"
+    },
+    {
+      "name": "finish-config-entry-flow",
+      "description": "Finish an existing config entry flow"
+    },
+    {
+      "name": "create-config-entry-options-flow",
+      "description": "Create a new config entry options flow for a specific config entry (already existing config entry, templated helpers for ex)"
+    },
+    {
+      "name": "update-config-entry-options-flow",
+      "description": "Update an existing config entry options flow"
+    },
+    {
+      "name": "list-config-entry-flows-helpers",
+      "description": "List available config entry flow handlers for helpers"
+    },
+    {
+      "name": "list-scripts",
+      "description": "List all scripts in Home Assistant, friendly_name = alias"
+    },
+    {
+      "name": "get-rest-script-by-entity-id",
+      "description": "Get the details of a specific script by its entity_id"
+    },
+    {
+      "name": "get-rest-script-by-alias",
+      "description": "Get the details of a specific script by its alias, not script.entity_id"
+    },
+    {
+      "name": "upsertScriptRest-rest-script-by-alias",
+      "description": "Create or Update the details of a specific script by its alias"
+    },
+    {
+      "name": "delete-rest-script-by-alias",
+      "description": "Delete a specific script by its alias"
+    },
+    {
+      "name": "list-entities-by-prefix",
+      "description": "List all Home Assistant entities by prefix"
+    },
+    {
+      "name": "list-entities-by-regex",
+      "description": "List all Home Assistant entities matching a regex pattern"
+    },
+    {
+      "name": "get-entity-state",
+      "description": "Get state of a specific entity_id"
+    },
+    {
+      "name": "get-entity-domain",
+      "description": "Get domain of a specific entity_id"
+    },
+    {
+      "name": "search-related",
+      "description": "Search for entities related to a specific item_type (like 'area') and entity_id (like 'studio')"
+    },
+    {
+      "name": "list-area",
+      "description": "List all Home Assistant areas"
+    },
+    {
+      "name": "get-lovelace-config",
+      "description": "Fetch Lovelace dashboard config by url_path. The URL must contain a dash ('-') and must not contain spaces or special characters, except '_' and '-'"
+    },
+    {
+      "name": "update-lovelace-config",
+      "description": "Update Lovelace dashboard config by url_path."
+    },
+    {
+      "name": "list-lovelace-dashboards",
+      "description": "List all Lovelace dashboards."
+    },
+    {
+      "name": "create-lovelace-dashboard",
+      "description": "Create a new Lovelace dashboard."
+    },
+    {
+      "name": "delete-lovelace-dashboard",
+      "description": "Delete a Lovelace dashboard by dashboard_id."
+    },
+    {
+      "name": "get-lovelace-resources",
+      "description": "Fetch Lovelace resources."
+    }
+  ]
+}

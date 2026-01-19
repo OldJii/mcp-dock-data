@@ -1,0 +1,12 @@
+{
+  "id": "@Rhonstin/pi-cluster",
+  "displayName": "pi-cluster",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:17.661Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Rhonstin/pi-cluster"
+  },
+  "connection": null,
+  "capabilities": []
+}

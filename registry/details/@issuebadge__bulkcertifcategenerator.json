@@ -1,0 +1,12 @@
+{
+  "id": "@issuebadge/bulkcertifcategenerator",
+  "displayName": "bulkcertifcategenerator",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:34.751Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@issuebadge/bulkcertifcategenerator"
+  },
+  "connection": null,
+  "capabilities": []
+}

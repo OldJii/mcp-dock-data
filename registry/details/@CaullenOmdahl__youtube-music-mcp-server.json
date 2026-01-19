@@ -1,0 +1,113 @@
+{
+  "id": "@CaullenOmdahl/youtube-music-mcp-server",
+  "displayName": "youtube-music-mcp-server",
+  "description": "Search songs, albums, and artists on YouTube Music. Manage your library and playlists end-to-end: create, edit, and organize tracks. Generate smart, personalized playlists and analyze your taste profile to discover new music.",
+  "createdAt": "2026-01-19T02:19:56.264Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@CaullenOmdahl/youtube-music-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_songs",
+      "description": "Search for songs on YouTube Music. Returns structured JSON with song title, album, artist, year, and video ID."
+    },
+    {
+      "name": "search_albums",
+      "description": "Search for albums on YouTube Music. Returns album name, artist, year, and browse ID."
+    },
+    {
+      "name": "search_artists",
+      "description": "Search for artists on YouTube Music. Returns artist name, browse ID, and thumbnails."
+    },
+    {
+      "name": "get_song_info",
+      "description": "Get detailed information about a specific song by video ID. Returns title, artist, album, duration, and thumbnails."
+    },
+    {
+      "name": "get_album_info",
+      "description": "Get detailed album information including all tracks, year, and artist. Use browse_id from search results."
+    },
+    {
+      "name": "get_artist_info",
+      "description": "Get detailed artist information including top songs. Use browse_id from search results."
+    },
+    {
+      "name": "get_library_songs",
+      "description": "Get the user's liked songs from their YouTube Music library. Returns structured JSON with song details."
+    },
+    {
+      "name": "get_playlists",
+      "description": "Get the user's playlists from YouTube Music library. Returns playlist name, ID, and track count as structured JSON."
+    },
+    {
+      "name": "get_playlist_details",
+      "description": "Get detailed playlist information including all tracks with song, album, artist, and duration."
+    },
+    {
+      "name": "create_playlist",
+      "description": "Create a new YouTube Music playlist. Returns the new playlist ID."
+    },
+    {
+      "name": "edit_playlist",
+      "description": "Edit playlist metadata (name, description, privacy). Only provide fields you want to change."
+    },
+    {
+      "name": "delete_playlist",
+      "description": "Delete a playlist from YouTube Music. This action cannot be undone."
+    },
+    {
+      "name": "add_songs_to_playlist",
+      "description": "Add one or more songs to an existing playlist. Supports batch operations for efficiency."
+    },
+    {
+      "name": "remove_songs_from_playlist",
+      "description": "Remove one or more songs from a playlist. Requires setVideoId (not videoId) from playlist track data."
+    },
+    {
+      "name": "start_smart_playlist",
+      "description": "Start an interactive smart playlist creation session. Returns session ID to use with other smart playlist tools."
+    },
+    {
+      "name": "add_seed_artist",
+      "description": "Add an artist to influence smart playlist recommendations. Looks up artist in MusicBrainz and retrieves tags."
+    },
+    {
+      "name": "add_seed_track",
+      "description": "Add a specific track as a seed for smart playlist recommendations."
+    },
+    {
+      "name": "refine_recommendations",
+      "description": "Adjust recommendation parameters: exclude artists, prefer/avoid tags, set diversity level."
+    },
+    {
+      "name": "get_recommendations",
+      "description": "Generate playlist recommendations based on seeds and refinement settings. Searches YouTube Music for tracks."
+    },
+    {
+      "name": "preview_playlist",
+      "description": "Preview the smart playlist before creating it. Shows all tracks and session details."
+    },
+    {
+      "name": "create_smart_playlist",
+      "description": "Create the smart playlist on YouTube Music with all recommended tracks."
+    },
+    {
+      "name": "get_user_taste_profile",
+      "description": "Analyze user's liked songs to build a taste profile with top tags, artists, and genres."
+    },
+    {
+      "name": "get_auth_status",
+      "description": "Check authentication status and get OAuth URL if not authenticated. After authenticating via the returned URL, the session becomes active automatically."
+    },
+    {
+      "name": "get_server_status",
+      "description": "Get server health, version, uptime, and rate limit status."
+    }
+  ]
+}

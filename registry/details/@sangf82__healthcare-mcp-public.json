@@ -1,0 +1,12 @@
+{
+  "id": "@sangf82/healthcare-mcp-public",
+  "displayName": "healthcare-mcp-public",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:59.576Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sangf82/healthcare-mcp-public"
+  },
+  "connection": null,
+  "capabilities": []
+}

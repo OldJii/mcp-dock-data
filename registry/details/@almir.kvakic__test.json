@@ -1,0 +1,12 @@
+{
+  "id": "@almir.kvakic/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:09.251Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@almir.kvakic/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "@DynamicEndpoints/espn-mcp",
+  "displayName": "ESPN Server",
+  "description": "Access real-time sports data from ESPN through a standardized interface. Get live scores, player statistics, and league standings for major sports leagues including NFL, NBA, MLB, and more. Export data easily to markdown files for reporting and analysis.",
+  "createdAt": "2026-01-19T02:21:19.686Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DynamicEndpoints/espn-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "cacheTimeout": {
+          "type": "number",
+          "description": "Cache timeout in milliseconds",
+          "default": 300000
+        },
+        "enableStreaming": {
+          "type": "boolean",
+          "description": "Enable Server-Side Events for real-time updates",
+          "default": true
+        },
+        "maxConcurrentRequests": {
+          "type": "number",
+          "description": "Maximum number of concurrent ESPN API requests",
+          "default": 5
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_live_scores",
+      "description": "Get live scores and game information for any sport and league"
+    },
+    {
+      "name": "get_team_information",
+      "description": "Get comprehensive team information including roster and statistics"
+    },
+    {
+      "name": "get_specific_team",
+      "description": "Get detailed information about a specific team by team abbreviation"
+    },
+    {
+      "name": "get_college_football_rankings",
+      "description": "Get current college football rankings"
+    },
+    {
+      "name": "get_game_summary",
+      "description": "Get detailed game summary information for a specific game"
+    },
+    {
+      "name": "get_league_standings",
+      "description": "Get current standings and playoff information for any league"
+    },
+    {
+      "name": "get_sports_news",
+      "description": "Get latest sports news and breaking stories"
+    },
+    {
+      "name": "search_athletes",
+      "description": "Search for athlete information and career statistics"
+    }
+  ]
+}

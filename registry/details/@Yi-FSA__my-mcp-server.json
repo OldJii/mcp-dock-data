@@ -1,0 +1,40 @@
+{
+  "id": "@Yi-FSA/my-mcp-server",
+  "displayName": "Greeting Plus",
+  "description": "Send friendly greetings, perform quick calculations, check Korea’s current time, and generate images from text prompts. Review code with a structured prompt and access helpful reference info.",
+  "createdAt": "2026-01-19T02:20:28.266Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Yi-FSA/my-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "사용자에게 인사를 하는 도구입니다."
+    },
+    {
+      "name": "calculator",
+      "description": "사칙연산을 수행하는 계산기 도구입니다."
+    },
+    {
+      "name": "korea-time",
+      "description": "한국의 현재 시간을 조회하는 도구입니다."
+    },
+    {
+      "name": "generate-image",
+      "description": "텍스트 프롬프트를 기반으로 이미지를 생성하는 도구입니다."
+    }
+  ]
+}

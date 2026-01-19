@@ -1,0 +1,52 @@
+{
+  "id": "@antivirusakash/blog-imagegen-mcp",
+  "displayName": "OpenAI Image Generator",
+  "description": "Generate images using the OpenAI gpt-image-1 model seamlessly within your applications. Enhance your workflows by integrating AI-powered image creation capabilities. Simplify image generation with a standardized MCP server interface.",
+  "createdAt": "2026-01-19T02:21:07.355Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@antivirusakash/blog-imagegen-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "openaiApiKey"
+      ],
+      "properties": {
+        "defaultN": {
+          "type": "integer",
+          "description": "Default number of images to generate (1-4).",
+          "default": 1
+        },
+        "defaultSize": {
+          "type": "string",
+          "description": "Default image size for generation. Must be one of the allowed values.",
+          "default": "1024x1024",
+          "enum": [
+            "256x256",
+            "512x512",
+            "1024x1024"
+          ]
+        },
+        "openaiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "generate_image",
+      "description": "Generate image(s) using OpenAI's gpt-image-1 model."
+    }
+  ]
+}

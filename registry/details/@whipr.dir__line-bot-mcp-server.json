@@ -1,0 +1,12 @@
+{
+  "id": "@whipr.dir/line-bot-mcp-server",
+  "displayName": "line-bot-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:31.218Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@whipr.dir/line-bot-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

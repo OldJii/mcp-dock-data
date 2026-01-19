@@ -1,0 +1,12 @@
+{
+  "id": "@yshan2028/mcp-pdf-reader",
+  "displayName": "mcp-pdf-reader",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:54.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yshan2028/mcp-pdf-reader"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "@tobinsouth/smithery-authkit",
+  "displayName": "Smithery AuthKit",
+  "description": "Enable seamless creation and management of authentication workflows for your applications. Simplify user onboarding and security integration with ready-to-use scaffolding tools. Accelerate development by generating authentication modules effortlessly.",
+  "createdAt": "2026-01-19T02:17:36.734Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tobinsouth/smithery-authkit"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone"
+    }
+  ]
+}

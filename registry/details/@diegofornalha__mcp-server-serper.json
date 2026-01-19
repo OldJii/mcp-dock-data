@@ -1,0 +1,45 @@
+{
+  "id": "@diegofornalha/mcp-server-serper",
+  "displayName": "Serper Search and Scrape",
+  "description": "Habilite recursos poderosos de pesquisa na web e extração de conteúdo. Realize pesquisas ricas na web e raspe o conteúdo da página da web perfeitamente com a integração da API Serper.",
+  "createdAt": "2026-01-19T02:17:08.305Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@diegofornalha/mcp-server-serper"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "serperApiKey"
+      ],
+      "properties": {
+        "language": {
+          "type": "string",
+          "description": "Linguagem de implementação a ser usada (typescript ou python)",
+          "default": "python"
+        },
+        "serperApiKey": {
+          "type": "string",
+          "description": "Chave de API para o servidor MCP Serper."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "google_search",
+      "description": "Ferramenta para realizar buscas na web via API Serper e recuperar resultados completos. Capaz de recuperar resultados orgânicos de busca, pessoas também perguntam, buscas relacionadas e gráfico de conhecimento."
+    },
+    {
+      "name": "scrape",
+      "description": "Ferramenta para extrair o conteúdo de uma página web e recuperar o texto e, opcionalmente, o conteúdo em markdown. Também recupera os metadados JSON-LD e os metadados do cabeçalho."
+    },
+    {
+      "name": "_health",
+      "description": "Endpoint de verificação de saúde"
+    }
+  ]
+}

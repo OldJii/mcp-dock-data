@@ -1,0 +1,12 @@
+{
+  "id": "@lattmamb/agent-0",
+  "displayName": "agent-0",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:45.683Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@lattmamb/agent-0"
+  },
+  "connection": null,
+  "capabilities": []
+}

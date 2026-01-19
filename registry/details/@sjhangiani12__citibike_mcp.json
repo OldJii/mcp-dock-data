@@ -1,0 +1,28 @@
+{
+  "id": "@sjhangiani12/citibike_mcp",
+  "displayName": "Citi Bike Nearby",
+  "description": "Find nearby Citi Bike stations with distance and e-bike/classic availability. Choose optimal pickup or drop-off spots in seconds. Plan rides more efficiently across the Citi Bike network.",
+  "createdAt": "2026-01-19T02:16:04.220Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@sjhangiani12/citibike_mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [],
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "nearest_citibikes",
+      "description": "Return nearest Citi Bike stations for a lat/lon with distance and ebike/classic availability."
+    }
+  ]
+}

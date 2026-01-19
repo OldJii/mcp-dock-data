@@ -1,0 +1,12 @@
+{
+  "id": "@Raymondycp/mcpserver",
+  "displayName": "mcpserver",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:35.359Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Raymondycp/mcpserver"
+  },
+  "connection": null,
+  "capabilities": []
+}

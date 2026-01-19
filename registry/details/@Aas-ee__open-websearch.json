@@ -1,0 +1,67 @@
+{
+  "id": "@Aas-ee/open-websearch",
+  "displayName": "OpenWebSearch",
+  "description": "Web search using free multi-engine search (NO API KEYS REQUIRED) — Supports Bing, Baidu, DuckDuckGo, Brave, Exa, Github, Juejin, and CSDN.",
+  "createdAt": "2026-01-19T02:13:46.571Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Aas-ee/open-websearch"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "proxyUrl": {
+          "type": "string",
+          "description": "Proxy server URL",
+          "default": "http://127.0.0.1:10809"
+        },
+        "useProxy": {
+          "type": "boolean",
+          "description": "Enable HTTP proxy",
+          "default": false
+        },
+        "corsOrigin": {
+          "type": "string",
+          "description": "CORS origin",
+          "default": "*"
+        },
+        "enableCors": {
+          "type": "boolean",
+          "description": "Enable CORS",
+          "default": false
+        },
+        "defaultSearchEngine": {
+          "type": "string",
+          "description": "Default search engine (bing, baidu, duckduckgo, exa, brave, juejin)",
+          "default": "duckduckgo"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search",
+      "description": "Search the web using multiple engines (e.g., Baidu, Bing, DuckDuckGo, CSDN, Exa, Brave, Juejin(掘金)) with no API key required"
+    },
+    {
+      "name": "fetchLinuxDoArticle",
+      "description": "Fetch full article content from a linux.do post URL"
+    },
+    {
+      "name": "fetchCsdnArticle",
+      "description": "Fetch full article content from a csdn post URL"
+    },
+    {
+      "name": "fetchGithubReadme",
+      "description": "Fetch README content from a GitHub repository URL"
+    },
+    {
+      "name": "fetchJuejinArticle",
+      "description": "Fetch full article content from a Juejin(掘金) post URL"
+    }
+  ]
+}

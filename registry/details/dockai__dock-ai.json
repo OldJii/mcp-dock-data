@@ -1,0 +1,21 @@
+{
+  "id": "dockai/dock-ai",
+  "displayName": "dock-ai",
+  "description": "Discover whether a business domain has a ready-to-use connector so you can shop, book, or interact directly. Check availability across providers and understand what you can do. Skip manual searching and jump straight to the right integration.",
+  "createdAt": "2026-01-19T02:20:44.479Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/dockai/dock-ai"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "resolve_domain",
+      "description": "Check if an MCP connector exists for a business domain.\n\nUSE THIS when a user wants to shop, book, or interact with a business.\nExamples:\n- \"Find products on Gymshark\" -> resolve_domain(\"gymshark.com\")\n- \"Book a table at Carbone\" -> resolve_domain(\"carbonenewyork.com\")\n\nReturns:\n    - mcps: Available MCP connectors with endpoints and capabilities\n    - pending_providers: Providers without public MCP yet"
+    }
+  ]
+}

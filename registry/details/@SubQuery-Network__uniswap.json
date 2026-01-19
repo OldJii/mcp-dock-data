@@ -1,0 +1,33 @@
+{
+  "id": "@SubQuery-Network/uniswap",
+  "displayName": "Uniswap",
+  "description": "Explore Uniswap v4 data to analyze pools, tokens, swaps, and positions. Track TVL, volume, fees, prices, and liquidity with daily or hourly snapshots. Find top pools, drill into transaction histories, and view protocol-wide metrics and hook contract details.\n\nGet the API Key from: https://asksubquery.xyz/?referrer_code=UNISWAP",
+  "createdAt": "2026-01-19T02:17:29.507Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@SubQuery-Network/uniswap"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "api_key"
+      ],
+      "properties": {
+        "api_key": {
+          "type": "string",
+          "description": "Ask SubQuery API Key"
+        }
+      },
+      "description": "Configuration for connecting to this MCP server"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "graphql_agent",
+      "description": "Ask questions about Uniswap V4; the agent will inspect the schema, validate and execute GraphQL queries, then summarize the results.\n\nCapabilities:\n• Pool statistics (volume, fees, TVL)\n• Token performance metrics (price, volume, liquidity)\n• Transaction details (swaps, liquidity modifications)\n• Position tracking (subscriptions, transfers)\n• Time-series data (daily/hourly snapshots)\n• Protocol-wide analytics (total volume, TVL)\n• Hook contract information"
+    }
+  ]
+}

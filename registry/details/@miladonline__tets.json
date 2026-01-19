@@ -1,0 +1,12 @@
+{
+  "id": "@miladonline/tets",
+  "displayName": "tets",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:20.436Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@miladonline/tets"
+  },
+  "connection": null,
+  "capabilities": []
+}

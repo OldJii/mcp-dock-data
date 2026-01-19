@@ -1,0 +1,16 @@
+{
+  "id": "@alxubuntu/america-hostinger-mcp",
+  "displayName": "america-hostinger-mcp",
+  "description": "Manage domains, DNS, billing, websites, and VPS resources in your Hostinger account. Deploy WordPress sites, plugins, themes, and JavaScript or static apps in minutes. Monitor deployments and VPS health with logs, metrics, backups, snapshots, and firewall controls.",
+  "createdAt": "2026-01-19T02:18:32.314Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@alxubuntu/america-hostinger-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

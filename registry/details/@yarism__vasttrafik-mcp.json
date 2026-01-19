@@ -1,0 +1,12 @@
+{
+  "id": "@yarism/vasttrafik-mcp",
+  "displayName": "vasttrafik-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:29.324Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yarism/vasttrafik-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

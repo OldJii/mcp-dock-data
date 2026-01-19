@@ -1,0 +1,12 @@
+{
+  "id": "@wxy-250701/dify_conversation_history_everyx",
+  "displayName": "dify_conversation_history_everyx",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:56.296Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@wxy-250701/dify_conversation_history_everyx"
+  },
+  "connection": null,
+  "capabilities": []
+}

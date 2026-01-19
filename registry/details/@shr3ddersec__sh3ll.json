@@ -1,0 +1,12 @@
+{
+  "id": "@shr3ddersec/sh3ll",
+  "displayName": "sh3ll",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:29.216Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shr3ddersec/sh3ll"
+  },
+  "connection": null,
+  "capabilities": []
+}

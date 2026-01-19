@@ -1,0 +1,12 @@
+{
+  "id": "@matteo-gabrielli/weather_test_mcp",
+  "displayName": "weather_test_mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:32.302Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@matteo-gabrielli/weather_test_mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

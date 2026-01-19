@@ -1,0 +1,36 @@
+{
+  "id": "xiaobenyang-com/whois-mcp",
+  "displayName": "whois-mcp",
+  "description": "Look up domain registration details across 1,260+ TLDs, including registrar, registrant, dates, nameservers, and status. Keep results current by refreshing the WHOIS server list. See all supported TLDs to plan bulk or targeted queries.",
+  "createdAt": "2026-01-19T02:20:59.239Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/whois-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "whois_lookup",
+      "description": "Look up domain information using WHOIS protocol (port 43). Queries authoritative WHOIS servers for domain registration details including registrar, registrant, dates, nameservers, and status. Supports 1,260+ TLDs."
+    },
+    {
+      "name": "refresh_whois_servers",
+      "description": "Refresh the WHOIS server dictionary by fetching the latest TLD list from IANA. This updates the list of available WHOIS servers for domain lookups. Run this periodically to ensure the server list is up-to-date."
+    },
+    {
+      "name": "list_supported_tlds",
+      "description": "List all supported TLDs (Top-Level Domains) that have WHOIS servers available. Returns the complete list of TLDs that can be queried."
+    }
+  ]
+}

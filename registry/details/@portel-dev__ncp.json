@@ -1,0 +1,38 @@
+{
+  "id": "@portel-dev/ncp",
+  "displayName": "Natural Context Provider",
+  "description": "Discover tools across your connected servers using natural language. Find the right capability fast and avoid manual browsing. Run chosen tools directly without switching contexts.",
+  "createdAt": "2026-01-19T02:14:50.670Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@portel-dev/ncp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "profile": {
+          "type": "string",
+          "description": "NCP profile to use (optional)",
+          "default": "default"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "find",
+      "description": "Discover tools across all connected MCP servers using natural language"
+    },
+    {
+      "name": "run",
+      "description": "Execute a tool on a specific MCP server"
+    }
+  ]
+}

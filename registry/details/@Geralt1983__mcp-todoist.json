@@ -1,0 +1,91 @@
+{
+  "id": "@Geralt1983/mcp-todoist",
+  "displayName": "mcp-todoist",
+  "description": "Streamline Todoist task management from your workflow. Create, update, move, complete, and delete tasks with natural filters like today or overdue, and manage projects, sections, and labels. Plan your day or week with quick-add, daily review, and project overview prompts.",
+  "createdAt": "2026-01-19T02:13:16.274Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Geralt1983/mcp-todoist"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "default": {},
+      "properties": {
+        "apiToken": {
+          "type": "string",
+          "description": "Todoist API token. If not provided, will use TODOIST_API_TOKEN environment variable."
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "todoist_create_task",
+      "description": "Create one or more tasks in Todoist. Supports both single task creation and batch operations. Include details like due dates, priorities, labels, and project assignments."
+    },
+    {
+      "name": "todoist_get_tasks",
+      "description": "Retrieve tasks from Todoist with flexible filtering options. Filter by project, section, label, priority, or use natural language filters like 'today', 'tomorrow', 'overdue'."
+    },
+    {
+      "name": "todoist_update_task",
+      "description": "Update one or more existing tasks in Todoist. Supports both single task updates and batch operations. Can update by task ID or search by task name."
+    },
+    {
+      "name": "todoist_delete_task",
+      "description": "Delete one or more tasks from Todoist. Supports both single task deletion and batch operations. Can delete by task ID or search by task name."
+    },
+    {
+      "name": "todoist_complete_task",
+      "description": "Mark one or more tasks as complete in Todoist. Supports both single task completion and batch operations. Can complete by task ID or search by task name."
+    },
+    {
+      "name": "todoist_move_task",
+      "description": "Move one or more tasks to a different project, section, or parent task. Use this instead of update when changing task location. Exactly one destination (project_id, section_id, or parent_id) must be specified."
+    },
+    {
+      "name": "todoist_get_projects",
+      "description": "Retrieve all projects from Todoist. Optionally include sections and hierarchy information to understand parent-child project relationships."
+    },
+    {
+      "name": "todoist_create_project",
+      "description": "Create one or more projects in Todoist. Supports both single project creation and batch operations. Can create nested projects and optionally add sections during creation."
+    },
+    {
+      "name": "todoist_update_project",
+      "description": "Update one or more existing projects in Todoist. Supports both single project updates and batch operations. Can update by project ID or search by project name."
+    },
+    {
+      "name": "todoist_get_project_sections",
+      "description": "Retrieve sections from one or more projects in Todoist. Sections help organize tasks within a project. Supports batch operations."
+    },
+    {
+      "name": "todoist_create_project_section",
+      "description": "Create one or more sections within Todoist projects. Sections help organize tasks. Supports both single section creation and batch operations."
+    },
+    {
+      "name": "todoist_get_personal_labels",
+      "description": "Retrieve all personal labels from Todoist. Labels help categorize and organize tasks across projects."
+    },
+    {
+      "name": "todoist_get_personal_label",
+      "description": "Retrieve a specific personal label by its ID from Todoist."
+    },
+    {
+      "name": "todoist_create_personal_label",
+      "description": "Create one or more personal labels in Todoist. Supports both single label creation and batch operations. Labels can have colors and be marked as favorites."
+    },
+    {
+      "name": "todoist_update_personal_label",
+      "description": "Update one or more existing personal labels in Todoist. Supports both single label updates and batch operations. Can update by label ID or search by label name."
+    },
+    {
+      "name": "todoist_delete_personal_label",
+      "description": "Delete a personal label from Todoist. This will remove the label from all tasks that use it."
+    }
+  ]
+}

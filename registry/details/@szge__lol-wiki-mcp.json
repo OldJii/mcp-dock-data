@@ -1,0 +1,12 @@
+{
+  "id": "@szge/lol-wiki-mcp",
+  "displayName": "lol-wiki-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:34.267Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@szge/lol-wiki-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@scouthunter1/fastapi-lua-api",
+  "displayName": "fastapi-lua-api",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:25.369Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@scouthunter1/fastapi-lua-api"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@prasadad/mcp-simple-pubmed",
+  "displayName": "mcp-simple-pubmed",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:38.186Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@prasadad/mcp-simple-pubmed"
+  },
+  "connection": null,
+  "capabilities": []
+}

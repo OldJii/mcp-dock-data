@@ -1,0 +1,16 @@
+{
+  "id": "@NOVA-3951/raindrop",
+  "displayName": "Raindrop.io",
+  "description": "Manage and curate your Raindrop.io bookmarks, collections, and tags without leaving your workflow. Search across all saves, list by collection, and quickly create, update, move, or delete items. Automate organization with tagging tools, rename or merge tags at scale, and keep research tidy and up to date.",
+  "createdAt": "2026-01-19T02:17:14.235Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@NOVA-3951/raindrop"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

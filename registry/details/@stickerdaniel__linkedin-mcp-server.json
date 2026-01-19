@@ -1,0 +1,16 @@
+{
+  "id": "@stickerdaniel/linkedin-mcp-server",
+  "displayName": "LinkedIn Profile and Job Scraper",
+  "description": "Enable AI assistants to interact with LinkedIn by scraping profiles, companies, and job postings. Perform detailed data extraction and session management to support recruitment and business research workflows. Simplify LinkedIn data access with secure credential handling and seamless integration.",
+  "createdAt": "2026-01-19T02:17:17.573Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@stickerdaniel/linkedin-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

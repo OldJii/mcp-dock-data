@@ -1,0 +1,21 @@
+{
+  "id": "@arjunkmrm/time-server",
+  "displayName": "World Clock",
+  "description": "Get the current time in any timezone. Set a default timezone for fast lookups. Switch timezones on demand to compare across regions.",
+  "createdAt": "2026-01-19T02:18:21.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@arjunkmrm/time-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get-time",
+      "description": "Get the current time in the configured timezone or a specified timezone"
+    }
+  ]
+}

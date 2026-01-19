@@ -1,0 +1,138 @@
+{
+  "id": "@shinzo-labs/coinmarketcap-mcp",
+  "displayName": "CoinMarketCap MCP",
+  "description": "Access the complete CoinMarketCap API with 20+ basic endpoints and 50+ total, including cryptocurrency market data, exchange information, and other blockchain-related metrics.\n\nSign up here for a free API key: https://pro.coinmarketcap.com/signup/?plan=0",
+  "createdAt": "2026-01-19T02:13:59.617Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@shinzo-labs/coinmarketcap-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "COINMARKETCAP_API_KEY"
+      ],
+      "properties": {
+        "SUBSCRIPTION_LEVEL": {
+          "type": "string",
+          "description": "SUBSCRIPTION_LEVEL - One of: Basic, Hobbyist, Startup, Standard, Professional, or Enterprise (defaults to Basic)",
+          "default": "Basic"
+        },
+        "COINMARKETCAP_API_KEY": {
+          "type": "string",
+          "description": "COINMARKETCAP_API_KEY - Your API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "cryptoCategories",
+      "description": "Returns information about all coin categories available on CoinMarketCap."
+    },
+    {
+      "name": "cryptoCategory",
+      "description": "Returns information about a single coin category on CoinMarketCap."
+    },
+    {
+      "name": "cryptoCurrencyMap",
+      "description": "Returns a mapping of all cryptocurrencies to unique CoinMarketCap IDs."
+    },
+    {
+      "name": "getCryptoMetadata",
+      "description": "Returns all static metadata for one or more cryptocurrencies including logo, description, and website URLs."
+    },
+    {
+      "name": "allCryptocurrencyListings",
+      "description": "Returns a paginated list of all active cryptocurrencies with latest market data."
+    },
+    {
+      "name": "cryptoQuotesLatest",
+      "description": "Returns the latest market quote for one or more cryptocurrencies."
+    },
+    {
+      "name": "dexInfo",
+      "description": "Returns all static metadata for one or more decentralised exchanges."
+    },
+    {
+      "name": "dexListingsLatest",
+      "description": "Returns a paginated list of all decentralised cryptocurrency exchanges including the latest aggregate market data."
+    },
+    {
+      "name": "dexNetworksList",
+      "description": "Returns a list of all networks to unique CoinMarketCap ids."
+    },
+    {
+      "name": "dexSpotPairsLatest",
+      "description": "Returns a paginated list of all active dex spot pairs with latest market data."
+    },
+    {
+      "name": "dexPairsQuotesLatest",
+      "description": "Returns the latest market quote for 1 or more spot pairs."
+    },
+    {
+      "name": "dexPairsOhlcvLatest",
+      "description": "Returns the latest OHLCV market values for one or more spot pairs for the current UTC day."
+    },
+    {
+      "name": "dexPairsOhlcvHistorical",
+      "description": "Returns historical OHLCV data along with market cap for any spot pairs using time interval parameters."
+    },
+    {
+      "name": "dexPairsTradeLatest",
+      "description": "Returns up to the latest 100 trades for 1 spot pair."
+    },
+    {
+      "name": "exchangeAssets",
+      "description": "Returns the assets/token holdings of an exchange."
+    },
+    {
+      "name": "exchangeInfo",
+      "description": "Returns metadata for one or more exchanges."
+    },
+    {
+      "name": "exchangeMap",
+      "description": "Returns a mapping of all exchanges to unique CoinMarketCap IDs."
+    },
+    {
+      "name": "globalMetricsLatest",
+      "description": "Returns the latest global cryptocurrency market metrics."
+    },
+    {
+      "name": "cmc100IndexHistorical",
+      "description": "Returns an interval of historic CoinMarketCap 100 Index values based on the interval parameter."
+    },
+    {
+      "name": "cmc100IndexLatest",
+      "description": "Returns the lastest CoinMarketCap 100 Index value, constituents, and constituent weights."
+    },
+    {
+      "name": "fearAndGreedLatest",
+      "description": "Returns the latest CMC Crypto Fear and Greed Index value."
+    },
+    {
+      "name": "fearAndGreedHistorical",
+      "description": "Returns historical CMC Crypto Fear and Greed Index values."
+    },
+    {
+      "name": "fiatMap",
+      "description": "Returns a mapping of all supported fiat currencies to unique CoinMarketCap IDs."
+    },
+    {
+      "name": "getPostmanCollection",
+      "description": "Returns a Postman collection for the CoinMarketCap API."
+    },
+    {
+      "name": "priceConversion",
+      "description": "Convert an amount of one cryptocurrency or fiat currency into one or more different currencies."
+    },
+    {
+      "name": "keyInfo",
+      "description": "Returns API key details and usage stats."
+    }
+  ]
+}

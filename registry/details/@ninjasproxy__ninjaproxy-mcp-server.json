@@ -1,0 +1,49 @@
+{
+  "id": "@ninjasproxy/ninjaproxy-mcp-server",
+  "displayName": "NinjaProxy MCP Server",
+  "description": "Manage and access your static proxy IPs from NinjaProxy. Retrieve your proxy IPs, get specific proxies by index, and obtain ready-to-use proxy configurations for HTTP requests. Simplify proxy management and integration for your applications.",
+  "createdAt": "2026-01-19T02:19:39.791Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ninjasproxy/ninjaproxy-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "NINJAPROXY_API_KEY"
+      ],
+      "properties": {
+        "NINJAPROXY_API_KEY": {
+          "type": "string",
+          "description": "Your NinjaProxy API key from ninjaproxy.com"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "set_api_key",
+      "description": "Set the API key for accessing the NinjaProxy service"
+    },
+    {
+      "name": "get_my_proxies",
+      "description": "Get your assigned static proxy IPs"
+    },
+    {
+      "name": "get_proxy_by_index",
+      "description": "Get a specific proxy from your list by index (0-based)"
+    },
+    {
+      "name": "get_proxy_config",
+      "description": "Get proxy configuration for making HTTP requests"
+    }
+  ]
+}

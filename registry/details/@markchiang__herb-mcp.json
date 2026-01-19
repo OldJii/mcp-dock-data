@@ -1,0 +1,55 @@
+{
+  "id": "@markchiang/herb-mcp",
+  "displayName": "HERB Lookup",
+  "description": "Map genes, targets, diseases, herbs, and ingredients within the HERB database. Resolve gene symbols and disease names to HERB IDs, then surface the most significant herb and ingredient associations. Speed up pharmacology and TCM research with quick, curated lookups.",
+  "createdAt": "2026-01-19T02:14:21.750Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@markchiang/herb-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "message": "No configuration schema available"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "search_gene_symbol",
+      "description": "Find HERB target IDs for a gene symbol or alias."
+    },
+    {
+      "name": "target_to_herbs",
+      "description": "Retrieve herbs associated with a HERB target ID."
+    },
+    {
+      "name": "target_to_ingredients",
+      "description": "Retrieve ingredients associated with a HERB target ID."
+    },
+    {
+      "name": "search_disease",
+      "description": "Look up HERB disease IDs by name or identifier."
+    },
+    {
+      "name": "disease_to_herbs",
+      "description": "Retrieve herbs associated with a HERB disease ID."
+    },
+    {
+      "name": "disease_detail",
+      "description": "Fetch normalized Herb API 2.0 association tables for a HERB disease ID."
+    },
+    {
+      "name": "gene_to_herbs",
+      "description": "Shortcut that finds target IDs for a gene symbol and returns associated herbs."
+    },
+    {
+      "name": "gene_to_ingredients",
+      "description": "Shortcut that finds target IDs for a gene symbol and returns associated ingredients."
+    },
+    {
+      "name": "disease_name_to_herbs",
+      "description": "Shortcut that resolves disease names to HERB IDs and returns associated herbs."
+    }
+  ]
+}

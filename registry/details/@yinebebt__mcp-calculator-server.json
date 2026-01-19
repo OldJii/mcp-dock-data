@@ -1,0 +1,12 @@
+{
+  "id": "@yinebebt/mcp-calculator-server",
+  "displayName": "mcp-calculator-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:36.267Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yinebebt/mcp-calculator-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

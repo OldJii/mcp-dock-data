@@ -1,0 +1,16 @@
+{
+  "id": "@musabz360/weather-mcp-server",
+  "displayName": "Weather Information Server",
+  "description": "Provide real-time weather data and forecasts to your applications. Enable agents to query current weather conditions and related information seamlessly. Enhance your projects with accurate and up-to-date meteorological data.",
+  "createdAt": "2026-01-19T02:19:19.383Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@musabz360/weather-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

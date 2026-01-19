@@ -1,0 +1,48 @@
+{
+  "id": "@devbrother2024/my-mcp-server-251027",
+  "displayName": "Greeting & Utilities",
+  "description": "Send personalized greetings in your preferred language, perform quick calculations, and check the current time by timezone. Generate images from text prompts and create focused code review prompts to improve code quality.",
+  "createdAt": "2026-01-19T02:18:56.335Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@devbrother2024/my-mcp-server-251027"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "HF_TOKEN"
+      ],
+      "properties": {
+        "HF_TOKEN": {
+          "type": "string",
+          "description": "Hugging Face API token for image generation"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "greeting",
+      "description": "Greets a user in their preferred language with a personalized message"
+    },
+    {
+      "name": "calculator",
+      "description": "Performs basic arithmetic operations (addition, subtraction, multiplication, division) on two numbers"
+    },
+    {
+      "name": "time",
+      "description": "Returns the current time in the specified timezone (defaults to Asia/Seoul if not provided)"
+    },
+    {
+      "name": "generate_image",
+      "description": "Generates an image from a text prompt using AI image generation (FLUX.1-schnell model)"
+    }
+  ]
+}

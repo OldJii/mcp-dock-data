@@ -1,0 +1,12 @@
+{
+  "id": "@velonlee/hello-world-mcp",
+  "displayName": "hello-world-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:02.745Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@velonlee/hello-world-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

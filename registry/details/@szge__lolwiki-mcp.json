@@ -1,0 +1,33 @@
+{
+  "id": "@szge/lolwiki-mcp",
+  "displayName": "Say Hello",
+  "description": "Generate friendly greetings for any audience. Toggle Pirate Mode for a playful, swashbuckling style. Explore the origin of 'Hello, World' and craft tailored greeting prompts.",
+  "createdAt": "2026-01-19T02:20:07.617Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@szge/lolwiki-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "pirate_mode": {
+          "type": "boolean",
+          "description": "Speak like a pirate",
+          "default": false
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "hello",
+      "description": "Say hello to someone."
+    }
+  ]
+}

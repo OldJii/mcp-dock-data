@@ -1,0 +1,12 @@
+{
+  "id": "@JeongGyu11/auto_llm_routing",
+  "displayName": "auto_llm_routing",
+  "description": "",
+  "createdAt": "2026-01-19T02:28:26.255Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@JeongGyu11/auto_llm_routing"
+  },
+  "connection": null,
+  "capabilities": []
+}

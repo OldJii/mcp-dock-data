@@ -1,0 +1,12 @@
+{
+  "id": "@caubequay010/mcp-proxy",
+  "displayName": "mcp-proxy",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:04.723Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@caubequay010/mcp-proxy"
+  },
+  "connection": null,
+  "capabilities": []
+}

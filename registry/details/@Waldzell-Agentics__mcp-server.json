@@ -1,0 +1,69 @@
+{
+  "id": "@Waldzell-Agentics/mcp-server",
+  "displayName": "Mapbox",
+  "description": "Find places and addresses with precise geocoding, or search by category or brand. Plan routes and compare travel times using directions, isochrones, and distance matrices. Generate static map images to visualize locations and share context.",
+  "createdAt": "2026-01-19T02:14:48.299Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Waldzell-Agentics/mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "MAPBOX_ACCESS_TOKEN"
+      ],
+      "properties": {
+        "VERBOSE_ERRORS": {
+          "type": "string",
+          "description": "Enable detailed error messages for debugging",
+          "default": "false"
+        },
+        "MAPBOX_ACCESS_TOKEN": {
+          "type": "string",
+          "description": "Your Mapbox secret access token"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "version_tool",
+      "description": "Get the current version information of the MCP server"
+    },
+    {
+      "name": "category_search_tool",
+      "description": "Return all places that match a category (industry, amenity, or NAICS‑style code). Use when the user asks for a type of place, plural or generic terms like 'museums', 'coffee shops', 'electric‑vehicle chargers', or when the query includes is‑a phrases such as 'any', 'all', 'nearby'. Do not use when a unique name or brand is provided. Supports both JSON and text output formats."
+    },
+    {
+      "name": "directions_tool",
+      "description": "Fetches directions from Mapbox API based on provided coordinates and direction method."
+    },
+    {
+      "name": "forward_geocode_tool",
+      "description": "Forward geocode addresses, cities, towns, neighborhoods, districts, postcodes, regions, and countries using Mapbox Geocoding API v6. Converts location name into geographic coordinates. Setting a proximity point helps to bias results towards a specific area for more relevant results. Do not use this tool for geocoding points of interest like businesses, landmarks, historic sites, museums, etc. Supports both JSON and text output formats."
+    },
+    {
+      "name": "isochrone_tool",
+      "description": "Computes areas that are reachable within a specified amount of time from a location, and returns the reachable regions as contours of Polygons or LineStrings in GeoJSON format that you can display on a map.\n  Common use cases:\n    - Show a user how far they can travel in X minutes from their current location\n    - Determine whether a destination is within a certain travel time threshold\n    - Compare travel ranges for different modes of transportation'"
+    },
+    {
+      "name": "matrix_tool",
+      "description": "Calculates travel times and distances between multiple points using Mapbox Matrix API."
+    },
+    {
+      "name": "poi_search_tool",
+      "description": "Find one specific place or brand location by its proper name or unique brand. Use only when the user's query includes a distinct title (e.g., \"The Met\", \"Starbucks Reserve Roastery\") or a brand they want all nearby branches of (e.g., \"Macy's stores near me\"). Do not use for generic place types such as 'museums', 'coffee shops', 'tacos', etc. Setting a proximity point is strongly encouraged for more relevant results. Always try to use a limit of at least 3 in case the user's intended result is not the first result. Supports both JSON and text output formats."
+    },
+    {
+      "name": "reverse_geocode_tool",
+      "description": "Find addresses, cities, towns, neighborhoods, postcodes, districts, regions, and countries around a specified geographic coordinate pair. Converts geographic coordinates (longitude, latitude) into human-readable addresses or place names. Use limit=1 for best results. This tool cannot reverse geocode businesses, landmarks, historic sites, and other points of interest that are not of the types mentioned. Supports both JSON and text output formats."
+    },
+    {
+      "name": "static_map_image_tool",
+      "description": "Generates a static map image from Mapbox Static Images API. Supports center coordinates, zoom level (0-22), image size (up to 1280x1280), various Mapbox styles, and overlays (markers, paths, GeoJSON). Returns PNG for vector styles, JPEG for raster-only styles."
+    }
+  ]
+}

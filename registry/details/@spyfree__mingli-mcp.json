@@ -1,0 +1,45 @@
+{
+  "id": "@spyfree/mingli-mcp",
+  "displayName": "Ziwei & Bazi Astrology",
+  "description": "Generate Ziwei Doushu and Bazi charts with insights into palaces, stars, and the five elements. Explore fortunes across decades, years, months, days, and hours to time decisions and plan ahead. Compare available astrology systems and analyze elemental strengths, balance, and gaps.",
+  "createdAt": "2026-01-19T02:14:03.185Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@spyfree/mingli-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get_ziwei_chart",
+      "description": "获取紫微斗数排盘信息，包含命盘十二宫、主星、辅星、四化等详细信息"
+    },
+    {
+      "name": "get_ziwei_fortune",
+      "description": "获取紫微斗数运势信息，包含大限、流年、流月、流日、流时的运势详情"
+    },
+    {
+      "name": "analyze_ziwei_palace",
+      "description": "分析紫微斗数特定宫位的详细信息"
+    },
+    {
+      "name": "list_fortune_systems",
+      "description": "列出所有可用的命理系统（紫微斗数、八字、占星等）"
+    },
+    {
+      "name": "get_bazi_chart",
+      "description": "获取八字（四柱）排盘信息，包含年月日时四柱、十神、五行、地支藏干等详细信息"
+    },
+    {
+      "name": "get_bazi_fortune",
+      "description": "获取八字运势信息，包含大运、流年等详情"
+    },
+    {
+      "name": "analyze_bazi_element",
+      "description": "分析八字五行强弱，包含五行分数、平衡度、缺失五行等"
+    }
+  ]
+}

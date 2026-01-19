@@ -1,0 +1,12 @@
+{
+  "id": "@ZhaoDiankui/mariadb-mcp",
+  "displayName": "mariadb-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:24.705Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ZhaoDiankui/mariadb-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

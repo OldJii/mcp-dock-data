@@ -1,0 +1,244 @@
+{
+  "id": "@pshivapr/selenium-mcp",
+  "displayName": "Selenium MCP Server",
+  "description": "Enable AI assistants and applications to perform automated web browser interactions, testing, and scraping through a standardized interface. Control multiple browsers with comprehensive element interaction and advanced navigation tools. Benefit from type-safe, robust browser automation powered by Selenium WebDriver.",
+  "createdAt": "2026-01-19T02:21:42.331Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@pshivapr/selenium-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "capabilities": [
+    {
+      "name": "browser_open",
+      "description": "Open a new browser session"
+    },
+    {
+      "name": "browser_navigate",
+      "description": "Navigate to a URL"
+    },
+    {
+      "name": "browser_navigate_back",
+      "description": "Navigate back in the browser"
+    },
+    {
+      "name": "browser_navigate_forward",
+      "description": "Navigate forward in the browser"
+    },
+    {
+      "name": "browser_title",
+      "description": "Get the current page title"
+    },
+    {
+      "name": "browser_get_url",
+      "description": "Get the current page URL"
+    },
+    {
+      "name": "browser_get_page_source",
+      "description": "Get the current page source"
+    },
+    {
+      "name": "browser_maximize",
+      "description": "Maximize the browser window"
+    },
+    {
+      "name": "browser_resize",
+      "description": "Resize the browser window"
+    },
+    {
+      "name": "browser_refresh",
+      "description": "Refresh the current page"
+    },
+    {
+      "name": "browser_switch_to_window",
+      "description": "Switch to a different browser window"
+    },
+    {
+      "name": "browser_switch_to_original_window",
+      "description": "Switches back to the original browser window"
+    },
+    {
+      "name": "browser_switch_to_window_by_title",
+      "description": "Switch to a window by its title"
+    },
+    {
+      "name": "browser_switch_window_by_index",
+      "description": "Switch to a window by its index"
+    },
+    {
+      "name": "browser_switch_to_window_by_url",
+      "description": "Switch to a window by its URL"
+    },
+    {
+      "name": "browser_close",
+      "description": "Close the current browser session"
+    },
+    {
+      "name": "browser_find_element",
+      "description": "Find an element"
+    },
+    {
+      "name": "browser_find_elements",
+      "description": "Find multiple elements"
+    },
+    {
+      "name": "browser_click",
+      "description": "Perform a click on an element"
+    },
+    {
+      "name": "browser_type",
+      "description": "Type into an editable field"
+    },
+    {
+      "name": "browser_clear",
+      "description": "Clears the value of an input element"
+    },
+    {
+      "name": "browser_get_element_text",
+      "description": "Gets the text of an element"
+    },
+    {
+      "name": "browser_get_attribute",
+      "description": "Gets the value of an attribute from an element"
+    },
+    {
+      "name": "browser_element_is_displayed",
+      "description": "Checks if an element is displayed"
+    },
+    {
+      "name": "browser_element_is_enabled",
+      "description": "Checks if an element is enabled"
+    },
+    {
+      "name": "browser_element_is_selected",
+      "description": "Checks if an element is selected"
+    },
+    {
+      "name": "browser_switch_to_frame",
+      "description": "Switches to an iframe element"
+    },
+    {
+      "name": "browser_switch_to_default_content",
+      "description": "Switches to the default content"
+    },
+    {
+      "name": "browser_switch_to_parent_frame",
+      "description": "Switches to the parent iframe"
+    },
+    {
+      "name": "browser_file_upload",
+      "description": "Uploads a file using a file input element"
+    },
+    {
+      "name": "browser_hover",
+      "description": "Hover over an element"
+    },
+    {
+      "name": "browser_wait_for_element",
+      "description": "Wait for an element to be present"
+    },
+    {
+      "name": "browser_drag_and_drop",
+      "description": "Perform drag and drop between two elements"
+    },
+    {
+      "name": "browser_double_click",
+      "description": "Perform double click on an element"
+    },
+    {
+      "name": "browser_right_click",
+      "description": "Perform right click (context click) on an element"
+    },
+    {
+      "name": "browser_select_dropdown_by_text",
+      "description": "Select dropdown by visible text"
+    },
+    {
+      "name": "browser_select_dropdown_by_value",
+      "description": "Select dropdown by value"
+    },
+    {
+      "name": "browser_key_press",
+      "description": "Press a key on the keyboard"
+    },
+    {
+      "name": "browser_execute_script",
+      "description": "Execute JavaScript in the context of the current page"
+    },
+    {
+      "name": "browser_scroll_to_element",
+      "description": "Scroll to an element"
+    },
+    {
+      "name": "browser_scroll_to_top",
+      "description": "Scroll to the top of the page"
+    },
+    {
+      "name": "browser_scroll_to_bottom",
+      "description": "Scroll to the bottom of the page"
+    },
+    {
+      "name": "browser_scroll_to_coordinates",
+      "description": "Scroll to specific coordinates"
+    },
+    {
+      "name": "browser_scroll_by_pixels",
+      "description": "Scroll by a specific number of pixels"
+    },
+    {
+      "name": "browser_select_checkbox",
+      "description": "Select a checkbox"
+    },
+    {
+      "name": "browser_unselect_checkbox",
+      "description": "Unselect a checkbox"
+    },
+    {
+      "name": "browser_submit_form",
+      "description": "Submit a form"
+    },
+    {
+      "name": "browser_focus_element",
+      "description": "Focus on a specific element"
+    },
+    {
+      "name": "browser_blur_element",
+      "description": "Remove focus from a specific element"
+    },
+    {
+      "name": "browser_screenshot",
+      "description": "Take a screenshot of the current page"
+    },
+    {
+      "name": "browser_get_cookies",
+      "description": "Get all cookies"
+    },
+    {
+      "name": "browser_get_cookie_by_name",
+      "description": "Get a cookie by name"
+    },
+    {
+      "name": "browser_add_cookie_by_name",
+      "description": "Add a cookie to the browser"
+    },
+    {
+      "name": "browser_set_cookie_object",
+      "description": "Set a cookie in the browser"
+    },
+    {
+      "name": "browser_delete_cookie",
+      "description": "Delete a cookie from the browser"
+    },
+    {
+      "name": "browser_delete_cookies",
+      "description": "Delete cookies from the browser"
+    }
+  ]
+}

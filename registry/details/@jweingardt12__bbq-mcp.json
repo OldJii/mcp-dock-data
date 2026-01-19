@@ -1,0 +1,101 @@
+{
+  "id": "@jweingardt12/bbq-mcp",
+  "displayName": "bbq-mcp",
+  "description": "Plan and monitor your cooks with real-time ThermoWorks readings, expert guidance, and stall detection. Estimate timelines, target temps, and rest times for 20+ proteins and popular methods. Get actionable tips and progress analysis to hit perfect doneness and serve on time.",
+  "createdAt": "2026-01-19T02:20:08.293Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@jweingardt12/bbq-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "useLegacySmoke": {
+          "type": "boolean",
+          "description": "Use legacy Smoke Gateway",
+          "default": false
+        },
+        "defaultTempUnit": {
+          "type": "string",
+          "description": "Default temperature unit",
+          "default": "fahrenheit"
+        },
+        "thermoworksEmail": {
+          "type": "string",
+          "description": "ThermoWorks account email (optional)"
+        },
+        "thermoworksPassword": {
+          "type": "string",
+          "description": "ThermoWorks account password (optional)"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "bbq_get_cooking_guidance",
+      "description": "Get comprehensive cooking guidance for a specific protein including target temperatures, time estimates, and tips.\n\nThis is the primary tool for planning a cook. It provides:\n- Target internal temperature based on desired doneness\n- Pull temperature (accounting for carryover)\n- Estimated cook time based on weight and method\n- Timeline for when to start if serving time is specified\n- Stall warnings for large cuts\n- Resting instructions\n- Pro tips for the specific protein\n\nArgs:\n  - protein_type: Type of meat (e.g., 'beef_brisket', 'pork_shoulder', 'chicken_whole')\n  - weight_pounds: Weight in pounds (e.g., 12.5)\n  - target_doneness: Desired doneness level (optional, uses recommended if not specified)\n  - cook_method: Cooking method (optional, uses recommended if not specified)\n  - serving_time: Target serving time in ISO 8601 format (optional)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"How should I cook a 14 lb brisket?\" -> protein_type='beef_brisket', weight_pounds=14\n  - \"I want to serve pulled pork at 6pm\" -> protein_type='pork_butt', serving_time='2024-12-25T18:00:00'"
+    },
+    {
+      "name": "bbq_analyze_temperature",
+      "description": "Analyze current temperature reading and provide progress assessment, trend analysis, and recommendations.\n\nUse this tool to interpret live temperature data from a thermometer. It provides:\n- Progress percentage toward target\n- Temperature trend (rising, falling, stalled, stable)\n- Rate of temperature change per hour\n- Estimated time remaining\n- Stall detection\n- Actionable recommendations\n\nArgs:\n  - current_temp: Current internal temperature in °F\n  - target_temp: Target internal temperature in °F\n  - protein_type: Type of protein being cooked\n  - cook_method: Cooking method (optional)\n  - cook_start_time: When cook started, ISO 8601 format (optional)\n  - previous_readings: Array of {temp, timestamp} for trend analysis (optional)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"My brisket is at 165°F, target is 203°F\" -> current_temp=165, target_temp=203, protein_type='beef_brisket'\n  - \"Temperature hasn't moved in 2 hours\" -> Include previous_readings for stall detection"
+    },
+    {
+      "name": "bbq_get_target_temperature",
+      "description": "Get the target internal temperature for a specific protein and doneness level.\n\nReturns both the target serving temperature and the pull temperature (when to remove from heat) accounting for carryover cooking.\n\nArgs:\n  - protein_type: Type of protein\n  - doneness: Desired doneness level (optional, uses recommended if not specified)\n  - include_pull_temp: Whether to include pull temperature (default: true)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"What temp for medium-rare ribeye?\" -> protein_type='beef_ribeye', doneness='medium_rare'\n  - \"When is chicken done?\" -> protein_type='chicken_whole'"
+    },
+    {
+      "name": "bbq_list_proteins",
+      "description": "List all supported protein types with their key cooking information.\n\nUse this to discover available proteins and their identifiers for use with other tools.\n\nArgs:\n  - category: Filter by category ('beef', 'pork', 'poultry', 'lamb', 'seafood', 'all')\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"What meats can you help me cook?\" -> category='all'\n  - \"Show me beef options\" -> category='beef'"
+    },
+    {
+      "name": "bbq_estimate_cook_time",
+      "description": "Estimate total cooking time for a protein based on weight and cooking method.\n\nProvides time estimates with confidence levels and accounts for factors like stalls.\n\nArgs:\n  - protein_type: Type of protein\n  - weight_pounds: Weight in pounds\n  - cook_method: Cooking method to use\n  - smoker_temp: Smoker/grill temperature in °F (optional)\n  - target_doneness: Target doneness level (optional)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"How long for a 10 lb pork butt?\" -> protein_type='pork_butt', weight_pounds=10, cook_method='smoke_low_slow'\n  - \"Time for hot and fast brisket\" -> protein_type='beef_brisket', cook_method='smoke_hot_fast'"
+    },
+    {
+      "name": "bbq_detect_stall",
+      "description": "Analyze temperature readings to detect if a cook is experiencing a stall.\n\nThe stall is a phenomenon where internal temperature plateaus, common with large cuts like brisket and pork shoulder. This tool analyzes temperature trend to detect stalls and provides recommendations.\n\nArgs:\n  - protein_type: Type of protein being cooked\n  - current_temp: Current internal temperature in °F\n  - readings: Array of at least 3 readings with {temp, timestamp}\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"Is my brisket stalling?\" -> Provide current_temp and readings array\n  - \"Temp hasn't moved in 2 hours\" -> Include readings over that period"
+    },
+    {
+      "name": "bbq_get_cooking_tips",
+      "description": "Get cooking tips and best practices for a specific protein and situation.\n\nArgs:\n  - protein_type: Type of protein\n  - cook_method: Specific cooking method (optional)\n  - current_phase: Current cooking phase for targeted tips (optional)\n    - 'prep': Preparation and seasoning\n    - 'cooking': Active cooking\n    - 'stall': Temperature stall\n    - 'wrapping': Texas crutch / wrapping\n    - 'final_push': End of cook\n    - 'resting': Rest period\n    - 'serving': Slicing and serving\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"Tips for smoking brisket\" -> protein_type='beef_brisket', cook_method='smoke_low_slow'\n  - \"Help with the stall\" -> protein_type='beef_brisket', current_phase='stall'"
+    },
+    {
+      "name": "bbq_calculate_rest_time",
+      "description": "Calculate recommended rest time and expected carryover cooking.\n\nResting allows juices to redistribute and temperature to equalize. This tool provides rest time recommendations and predicts final temperature after carryover.\n\nArgs:\n  - protein_type: Type of protein\n  - current_temp: Current internal temperature when removed from heat\n  - target_final_temp: Desired final temperature after resting (optional)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"Brisket is at 200°F, how long to rest?\" -> protein_type='beef_brisket', current_temp=200\n  - \"Pulled steak at 125°F for medium-rare\" -> protein_type='beef_ribeye', current_temp=125, target_final_temp=130"
+    },
+    {
+      "name": "bbq_analyze_device_reading",
+      "description": "Analyze temperature readings from a ThermoWorks device (Signals, Smoke, BlueDOT).\n\nSimulates integration with ThermoWorks Cloud to provide analysis of multi-probe readings.\n\nArgs:\n  - device_type: Type of ThermoWorks device ('Signals', 'Smoke', 'BlueDOT')\n  - probe_readings: Array of probe readings with {probe_id, name, temperature}\n  - protein_type: Type of protein being cooked (optional)\n  - target_temp: Target temperature (optional)\n  - response_format: 'markdown' or 'json'\n\nExamples:\n  - \"Signals reading: Probe 1 at 165°F, Ambient at 250°F\"\n  - \"Smoke shows 180°F on the meat probe\""
+    },
+    {
+      "name": "bbq_convert_temperature",
+      "description": "Convert temperature between Fahrenheit and Celsius.\n\nArgs:\n  - temperature: Temperature value to convert\n  - from_unit: Source unit ('fahrenheit' or 'celsius')\n  - to_unit: Target unit ('fahrenheit' or 'celsius')\n\nExamples:\n  - \"What is 225°F in Celsius?\" -> temperature=225, from_unit='fahrenheit', to_unit='celsius'\n  - \"Convert 100°C to Fahrenheit\" -> temperature=100, from_unit='celsius', to_unit='fahrenheit'"
+    },
+    {
+      "name": "thermoworks_authenticate",
+      "description": "Connect to ThermoWorks Cloud using your ThermoWorks account credentials.\n\nThis allows the BBQ MCP Server to access live temperature data from your connected ThermoWorks devices (Signals, Smoke, BlueDOT, etc.).\n\nIMPORTANT: Your credentials are only used to authenticate with ThermoWorks' servers and are not stored. The authentication token expires after 1 hour.\n\nArgs:\n  - email: Your ThermoWorks account email (same as the ThermoWorks app)\n  - password: Your ThermoWorks account password\n  - use_legacy_smoke: Set to true for older Smoke Gateway devices (pre-2022)\n\nReturns:\n  Authentication status and list of connected devices.\n\nSecurity Notes:\n  - Credentials are sent directly to ThermoWorks/Firebase servers over HTTPS\n  - No credentials are stored by the MCP server\n  - For production use, set credentials via environment variables:\n    THERMOWORKS_EMAIL and THERMOWORKS_PASSWORD\n\nExamples:\n  - \"Connect to my ThermoWorks account\" -> Provide email and password\n  - \"I have an older Smoke Gateway\" -> Set use_legacy_smoke=true"
+    },
+    {
+      "name": "thermoworks_check_auth",
+      "description": "Check if you're currently authenticated with ThermoWorks Cloud.\n\nReturns:\n  Authentication status and token expiry time."
+    },
+    {
+      "name": "thermoworks_get_devices",
+      "description": "Get a list of all ThermoWorks devices connected to your account.\n\nRequires authentication first via thermoworks_authenticate.\n\nArgs:\n  - response_format: 'markdown' or 'json'\n\nReturns:\n  List of devices with serial numbers, names, and types."
+    },
+    {
+      "name": "thermoworks_get_live_readings",
+      "description": "Get current temperature readings from your ThermoWorks devices.\n\nRequires authentication first via thermoworks_authenticate.\n\nArgs:\n  - device_serial: Serial number of specific device (optional, defaults to all devices)\n  - response_format: 'markdown' or 'json'\n\nReturns:\n  Current probe temperatures, alarm settings, and timestamps.\n\nExamples:\n  - \"What are my current temperatures?\" -> Gets all device readings\n  - \"Show me the Signals readings\" -> Specify device_serial"
+    },
+    {
+      "name": "thermoworks_analyze_live",
+      "description": "Get live temperature from a connected ThermoWorks device and analyze cooking progress.\n\nCombines real-time device data with the BBQ cooking knowledge base to provide actionable recommendations.\n\nRequires authentication first via thermoworks_authenticate.\n\nArgs:\n  - device_serial: Serial number of the device\n  - probe_id: Probe number to analyze (default: '1')\n  - protein_type: Type of protein being cooked\n  - target_temp: Target temperature (optional, uses protein default)\n  - response_format: 'markdown' or 'json'\n\nReturns:\n  Current temperature, progress percentage, trend analysis, and recommendations.\n\nExamples:\n  - \"How's my brisket doing?\" -> Analyzes probe 1 against brisket targets\n  - \"Check the turkey on probe 2\" -> protein_type='turkey_whole', probe_id='2'"
+    }
+  ]
+}

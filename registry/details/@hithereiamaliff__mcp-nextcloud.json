@@ -1,0 +1,153 @@
+{
+  "id": "@hithereiamaliff/mcp-nextcloud",
+  "displayName": "Nextcloud MCP Server",
+  "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to interact with your Nextcloud instance. Features 34 tools across Notes, Calendar, Contacts, Tables, and WebDAV operations. Built in TypeScript (rewritten from the original fork's Python codebase from scratch) with full Smithery support for one-click cloud deployment and local testing via Smithery playground.\n\nNote: this is NOT an official MCP server by Nextcloud, and is a direct fork of cbcoutinho's nextcloud-mcp-server.",
+  "createdAt": "2026-01-19T02:15:50.353Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hithereiamaliff/mcp-nextcloud"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "nextcloud_notes_create_note",
+      "description": "Create a new note in Nextcloud Notes"
+    },
+    {
+      "name": "nextcloud_notes_update_note",
+      "description": "Update an existing note in Nextcloud Notes"
+    },
+    {
+      "name": "nextcloud_notes_append_content",
+      "description": "Append content to an existing note"
+    },
+    {
+      "name": "nextcloud_notes_search_notes",
+      "description": "Search for notes in Nextcloud Notes"
+    },
+    {
+      "name": "nextcloud_notes_delete_note",
+      "description": "Delete a note from Nextcloud Notes"
+    },
+    {
+      "name": "nextcloud_calendar_list_calendars",
+      "description": "List all calendars in Nextcloud"
+    },
+    {
+      "name": "nextcloud_calendar_create_event",
+      "description": "Create a new calendar event"
+    },
+    {
+      "name": "nextcloud_calendar_list_events",
+      "description": "List events from a calendar"
+    },
+    {
+      "name": "nextcloud_calendar_get_event",
+      "description": "Get details of a specific event"
+    },
+    {
+      "name": "nextcloud_calendar_update_event",
+      "description": "Update an existing event"
+    },
+    {
+      "name": "nextcloud_calendar_delete_event",
+      "description": "Delete an event from calendar"
+    },
+    {
+      "name": "nextcloud_calendar_debug_list_calendars",
+      "description": "Debug: List all calendars with detailed info"
+    },
+    {
+      "name": "nextcloud_calendar_debug_verify_calendar",
+      "description": "Debug: Verify if a specific calendar exists and is accessible"
+    },
+    {
+      "name": "nextcloud_calendar_debug_create_test_event",
+      "description": "Debug: Create a test event with proper formatting"
+    },
+    {
+      "name": "nextcloud_calendar_debug_list_events_verbose",
+      "description": "Debug: List events from a calendar with detailed logging"
+    },
+    {
+      "name": "nextcloud_contacts_list_addressbooks",
+      "description": "List all address books"
+    },
+    {
+      "name": "nextcloud_contacts_create_addressbook",
+      "description": "Create a new address book"
+    },
+    {
+      "name": "nextcloud_contacts_delete_addressbook",
+      "description": "Delete an address book"
+    },
+    {
+      "name": "nextcloud_contacts_list_contacts",
+      "description": "List contacts from an address book"
+    },
+    {
+      "name": "nextcloud_contacts_create_contact",
+      "description": "Create a new contact"
+    },
+    {
+      "name": "nextcloud_contacts_delete_contact",
+      "description": "Delete a contact"
+    },
+    {
+      "name": "nextcloud_tables_list_tables",
+      "description": "List all tables in Nextcloud Tables"
+    },
+    {
+      "name": "nextcloud_tables_get_schema",
+      "description": "Get schema of a specific table"
+    },
+    {
+      "name": "nextcloud_tables_read_table",
+      "description": "Read data from a table"
+    },
+    {
+      "name": "nextcloud_tables_insert_row",
+      "description": "Insert a new row into a table"
+    },
+    {
+      "name": "nextcloud_tables_update_row",
+      "description": "Update an existing row in a table"
+    },
+    {
+      "name": "nextcloud_tables_delete_row",
+      "description": "Delete a row from a table"
+    },
+    {
+      "name": "nextcloud_webdav_list_directory",
+      "description": "List files and directories in Nextcloud"
+    },
+    {
+      "name": "nextcloud_webdav_read_file",
+      "description": "Read content of a file from Nextcloud"
+    },
+    {
+      "name": "nextcloud_webdav_write_file",
+      "description": "Write content to a file in Nextcloud"
+    },
+    {
+      "name": "nextcloud_webdav_create_directory",
+      "description": "Create a new directory in Nextcloud"
+    },
+    {
+      "name": "nextcloud_webdav_delete_resource",
+      "description": "Delete a file or directory from Nextcloud"
+    },
+    {
+      "name": "nextcloud_webdav_search_files",
+      "description": "Search for files across Nextcloud using unified search - supports filename, content, and metadata search"
+    },
+    {
+      "name": "nextcloud_hello",
+      "description": "A simple test tool to verify that the MCP server is working correctly"
+    }
+  ]
+}

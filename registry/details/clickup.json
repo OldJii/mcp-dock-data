@@ -1,0 +1,597 @@
+{
+  "id": "clickup",
+  "displayName": "Clickup",
+  "description": "ClickUp unifies tasks, docs, goals, and chat in a single platform, allowing teams to plan, organize, and collaborate across projects with customizable workflows",
+  "createdAt": "2026-01-19T02:12:35.157Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/clickup"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "CLICKUP_ADD_DEPENDENCY",
+      "description": "Adds a 'waiting on' or 'blocking' dependency to a task, requiring either `depends_on` (task becomes waiting on) or `dependency_of` (task becomes blocking), but not both; `team_id` is required if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_ADD_GUEST_TO_FOLDER",
+      "description": "Adds a guest to a folder with specified permissions; requires a ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_ADD_GUEST_TO_LIST",
+      "description": "Shares a ClickUp List with an existing guest user, granting them specified permissions; requires the Workspace to be on the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_ADD_GUEST_TO_TASK",
+      "description": "Assigns a guest to a task with specified permissions; requires ClickUp Enterprise Plan, and `team_id` if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_ADD_TAGS_FROM_TIME_ENTRIES",
+      "description": "Associates a list of specified tags with one or more time entries within a given Team (Workspace)."
+    },
+    {
+      "name": "CLICKUP_ADD_TAG_TO_TASK",
+      "description": "Adds an existing tag to a specified task; team_id is required if custom_task_ids is true."
+    },
+    {
+      "name": "CLICKUP_ADD_TASK_LINK",
+      "description": "Links two existing and accessible ClickUp tasks, identified by `task_id` (source) and `links_to` (target)."
+    },
+    {
+      "name": "CLICKUP_ADD_TASK_TO_LIST",
+      "description": "Adds an existing task to an additional ClickUp List; the \"Tasks in Multiple Lists\" ClickApp must be enabled in the Workspace for this."
+    },
+    {
+      "name": "CLICKUP_ATTACHMENTS_UPLOAD_FILE_TO_TASK_AS_ATTACHMENT",
+      "description": "DEPRECATED: Use `create_task_attachment` to upload a file to a task; requires `multipart/form-data`."
+    },
+    {
+      "name": "CLICKUP_AUTHORIZATION_GET_ACCESS_TOKEN",
+      "description": "DEPRECATED: Use `get_access_token` instead. Exchanges a ClickUp OAuth 2.0 authorization code for an access token."
+    },
+    {
+      "name": "CLICKUP_AUTHORIZATION_GET_WORK_SPACE_LIST",
+      "description": "DEPRECATED: Use `get_authorized_teams_workspaces` instead to retrieve Workspaces (Teams) accessible to the authenticated user."
+    },
+    {
+      "name": "CLICKUP_AUTHORIZATION_VIEW_ACCOUNT_DETAILS",
+      "description": "DEPRECATED: Use `get_authorized_user` instead. Retrieves details of the authenticated user's ClickUp account."
+    },
+    {
+      "name": "CLICKUP_CHANGE_TAG_NAMES_FROM_TIME_ENTRIES",
+      "description": "Updates the name, background color, and/or foreground color for an existing time entry tag, identified by its current `name` and `team_id`."
+    },
+    {
+      "name": "CLICKUP_CLICK_UP_SEARCH_DOCS",
+      "description": "Tool to search and list Docs metadata in a ClickUp workspace. Use after confirming the workspace ID to quickly locate relevant meeting notes before fetching pages."
+    },
+    {
+      "name": "CLICKUP_CREATE_A_TIME_ENTRY",
+      "description": "Creates a new time entry for a specified team."
+    },
+    {
+      "name": "CLICKUP_CREATE_CHAT_VIEW_COMMENT",
+      "description": "Posts a new comment to a specified ClickUp Chat view; the 'view_id' must correspond to an existing and accessible Chat view."
+    },
+    {
+      "name": "CLICKUP_CREATE_CHECKLIST",
+      "description": "Creates a new checklist with a specified name within an existing task, which can be identified by its standard ID or a custom task ID (if `custom_task_ids` is true, `team_id` is also required)."
+    },
+    {
+      "name": "CLICKUP_CREATE_CHECKLIST_ITEM",
+      "description": "Creates a new checklist item within a specified, existing checklist, optionally setting the item's name and assigning it to a user."
+    },
+    {
+      "name": "CLICKUP_CREATE_FOLDER",
+      "description": "Creates a new ClickUp Folder within the specified Space, which must exist and be accessible."
+    },
+    {
+      "name": "CLICKUP_CREATE_FOLDERLESS_LIST",
+      "description": "Creates a new folderless list (a list not part of any Folder) directly within a specified ClickUp Space."
+    },
+    {
+      "name": "CLICKUP_CREATE_FOLDER_VIEW",
+      "description": "Creates a new, highly customizable view within a specific ClickUp folder using its `folder_id`."
+    },
+    {
+      "name": "CLICKUP_CREATE_GOAL",
+      "description": "Creates a new goal in a ClickUp Team (Workspace)."
+    },
+    {
+      "name": "CLICKUP_CREATE_KEY_RESULT",
+      "description": "Creates a new Key Result (Target) for a specified Goal in ClickUp to define and track measurable objectives towards achieving that Goal."
+    },
+    {
+      "name": "CLICKUP_CREATE_LIST",
+      "description": "Creates a new list in ClickUp within a specified, existing folder."
+    },
+    {
+      "name": "CLICKUP_CREATE_LIST_COMMENT",
+      "description": "Adds a new comment with specific text to an existing and accessible ClickUp List, assigns it to a user, and sets notification preferences for all list members."
+    },
+    {
+      "name": "CLICKUP_CREATE_LIST_VIEW",
+      "description": "Creates a new, customizable view (e.g., list, board, calendar) within a specified ClickUp List, requiring an existing list_id accessible by the user."
+    },
+    {
+      "name": "CLICKUP_CREATE_SPACE",
+      "description": "Creates a new space in a ClickUp team, with customizable name, privacy, color, and feature settings."
+    },
+    {
+      "name": "CLICKUP_CREATE_SPACE_TAG",
+      "description": "Creates a new tag (name, foreground color, background color) in an existing ClickUp Space."
+    },
+    {
+      "name": "CLICKUP_CREATE_SPACE_VIEW",
+      "description": "Creates a customizable view (e.g., List, Board, Gantt) within a specified ClickUp Space, allowing configuration of grouping, sorting, filtering, and display settings."
+    },
+    {
+      "name": "CLICKUP_CREATE_TASK",
+      "description": "Creates a new ClickUp task in a specific list, optionally as a subtask if a `parent` task ID (which cannot be a subtask itself and must be in the same list) is provided."
+    },
+    {
+      "name": "CLICKUP_CREATE_TASK_ATTACHMENT",
+      "description": "Uploads a file as an attachment to a specified ClickUp task, requiring `multipart/form-data` for file upload."
+    },
+    {
+      "name": "CLICKUP_CREATE_TASK_COMMENT",
+      "description": "Adds a comment to a ClickUp task; `team_id` is required if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_CREATE_TASK_FROM_TEMPLATE",
+      "description": "Creates a new task in a specified ClickUp list from a task template, using the provided name for the new task."
+    },
+    {
+      "name": "CLICKUP_CREATE_TEAM",
+      "description": "Creates a new team (user group) with specified members in a Workspace; member IDs must be for existing users, and be aware that adding view-only guests as paid members may incur extra charges."
+    },
+    {
+      "name": "CLICKUP_CREATE_WEBHOOK",
+      "description": "Creates a ClickUp webhook for a Team (Workspace) to notify a public URL on specified events (at least one, or '*' for all), optionally scoped to a Space, Folder, List, or Task; the endpoint must accept requests from dynamic IPs."
+    },
+    {
+      "name": "CLICKUP_CREATE_WORKSPACE_EVERYTHING_LEVEL_VIEW",
+      "description": "Creates a new, customizable view (e.g., List, Board) at the 'Everything' level for a specified Team (Workspace ID), encompassing all tasks within that Workspace."
+    },
+    {
+      "name": "CLICKUP_DELETE_A_TIME_ENTRY",
+      "description": "Deletes an existing time entry, specified by `timer_id`, from a Workspace identified by `team_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_CHECKLIST",
+      "description": "Permanently deletes an existing checklist identified by its `checklist_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_CHECKLIST_ITEM",
+      "description": "Permanently deletes an existing item, identified by `checklist_item_id`, from an existing checklist, identified by `checklist_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_COMMENT",
+      "description": "Deletes an existing comment from a task using its `comment_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_DEPENDENCY",
+      "description": "Removes two dependency links for `task_id`: one where `task_id` is blocked by `depends_on`, and another where `dependency_of` is blocked by `task_id`; `team_id` is required if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_DELETE_FOLDER",
+      "description": "Permanently and irreversibly deletes a specified folder and all its contents (Lists, Tasks) if the folder_id exists."
+    },
+    {
+      "name": "CLICKUP_DELETE_GOAL",
+      "description": "Permanently removes an existing Goal, identified by its `goal_id`, from the Workspace."
+    },
+    {
+      "name": "CLICKUP_DELETE_KEY_RESULT",
+      "description": "Deletes an existing Key Result, also referred to as a Target within a Goal, identified by its `key_result_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_LIST",
+      "description": "Permanently deletes an existing List and all its contents; this action is destructive and irreversible via the API."
+    },
+    {
+      "name": "CLICKUP_DELETE_SPACE",
+      "description": "Permanently deletes a specified Space in ClickUp; this action is irreversible as the Space cannot be recovered via the API."
+    },
+    {
+      "name": "CLICKUP_DELETE_SPACE_TAG",
+      "description": "Deletes a Tag from a Space, identified by `tag_name` in path; precise matching of Tag details in the request body (`tag_name_1`, `tag_tag_fg`, `tag_tag_bg`) is generally required for successful deletion."
+    },
+    {
+      "name": "CLICKUP_DELETE_TASK",
+      "description": "Permanently deletes a task, using its standard ID or a custom task ID (requires `custom_task_ids=true` and `team_id`)."
+    },
+    {
+      "name": "CLICKUP_DELETE_TASK_LINK",
+      "description": "Deletes an existing link, effectively a dependency or relationship, between two ClickUp tasks; set `custom_task_ids=true` and provide `team_id` if using custom task IDs."
+    },
+    {
+      "name": "CLICKUP_DELETE_TEAM",
+      "description": "Permanently deletes an existing Team (user group) from the Workspace using its `group_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_TIME_TRACKED",
+      "description": "Deletes a time-tracked interval from a task; use this legacy endpoint for older time tracking systems."
+    },
+    {
+      "name": "CLICKUP_DELETE_VIEW",
+      "description": "Permanently and irreversibly deletes an existing View in ClickUp, identified by its `view_id`."
+    },
+    {
+      "name": "CLICKUP_DELETE_WEBHOOK",
+      "description": "Permanently removes an existing webhook, specified by its ID, thereby ceasing all its event monitoring and notifications."
+    },
+    {
+      "name": "CLICKUP_EDIT_CHECKLIST",
+      "description": "Updates an existing checklist's name or position, identified by its `checklist_id`."
+    },
+    {
+      "name": "CLICKUP_EDIT_CHECKLIST_ITEM",
+      "description": "Updates an existing checklist item, allowing modification of its name, assignee, resolution status, or parent item for nesting."
+    },
+    {
+      "name": "CLICKUP_EDIT_GUEST_ON_WORKSPACE",
+      "description": "Modifies the details and permissions of an existing guest user within a specific Workspace."
+    },
+    {
+      "name": "CLICKUP_EDIT_KEY_RESULT",
+      "description": "Updates an existing key result's progress or note in ClickUp, where the key result measures progress towards a goal."
+    },
+    {
+      "name": "CLICKUP_EDIT_SPACE_TAG",
+      "description": "Updates an existing tag's name and colors in a ClickUp Space; requires current tag name for identification, and new values for tag name, foreground color, and background color, all of which are mandatory for the update."
+    },
+    {
+      "name": "CLICKUP_EDIT_TIME_TRACKED",
+      "description": "Edits a legacy time-tracked interval for a task (identified by `task_id` and `interval_id`) to update its start/end times and duration; `team_id` is required if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_EDIT_USER_ON_WORKSPACE",
+      "description": "Updates a user's username, admin status, or custom role in a Workspace; requires the Workspace to be on an Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_FOLDERS_CREATE_NEW_FOLDER",
+      "description": "DEPRECATED: Creates a new Folder in a ClickUp Space; use `create_folder` instead."
+    },
+    {
+      "name": "CLICKUP_FOLDERS_GET_CONTENTS_OF",
+      "description": "DEPRECATED: Use `get_folders`. Retrieves Folders within a specified ClickUp Space, ensuring `space_id` is valid, with an option to filter by archived status."
+    },
+    {
+      "name": "CLICKUP_FOLDERS_GET_FOLDER_CONTENT",
+      "description": "DEPRECATED: Retrieves detailed information about a specific folder in ClickUp; use `get_folder` instead."
+    },
+    {
+      "name": "CLICKUP_GET_ACCESSIBLE_CUSTOM_FIELDS",
+      "description": "Retrieves all accessible Custom Field definitions for a specified ClickUp List using its `list_id`."
+    },
+    {
+      "name": "CLICKUP_GET_ACCESS_TOKEN",
+      "description": "Exchanges a ClickUp OAuth 2.0 authorization code (obtained after user consent) for an access token."
+    },
+    {
+      "name": "CLICKUP_GET_ALL_TAGS_FROM_TIME_ENTRIES",
+      "description": "Retrieves all unique tags applied to time entries within a specified ClickUp Team (Workspace)."
+    },
+    {
+      "name": "CLICKUP_GET_AUTHORIZED_TEAMS_WORKSPACES",
+      "description": "Retrieves a list of Workspaces (Teams) the authenticated user can access."
+    },
+    {
+      "name": "CLICKUP_GET_AUTHORIZED_USER",
+      "description": "Retrieves the details of the currently authenticated ClickUp user."
+    },
+    {
+      "name": "CLICKUP_GET_BULK_TASKS_TIME_IN_STATUS",
+      "description": "Retrieves the time spent in each status for multiple tasks; requires the 'Total time in Status' ClickApp to be enabled in the Workspace."
+    },
+    {
+      "name": "CLICKUP_GET_CHAT_VIEW_COMMENTS",
+      "description": "Retrieves comments from a specified Chat view in ClickUp, supporting pagination via `start` and `start_id` to fetch comments older than the default 25 most recent."
+    },
+    {
+      "name": "CLICKUP_GET_CUSTOM_ROLES",
+      "description": "Retrieves all Custom Roles, which allow granular permission configurations, for a specified Workspace (Team)."
+    },
+    {
+      "name": "CLICKUP_GET_CUSTOM_TASK_TYPES",
+      "description": "Retrieves all custom task types available within a specified Workspace (team_id)."
+    },
+    {
+      "name": "CLICKUP_GET_FILTERED_TEAM_TASKS",
+      "description": "Retrieves a paginated list of tasks (up to 100 per page) from a specified team (Workspace ID in `team_Id`) based on various filter criteria, respecting user access permissions."
+    },
+    {
+      "name": "CLICKUP_GET_FOLDER",
+      "description": "Retrieves detailed information about a specific folder in ClickUp."
+    },
+    {
+      "name": "CLICKUP_GET_FOLDERLESS_LISTS",
+      "description": "Retrieves all Lists within a specified Space that are not located in any Folder."
+    },
+    {
+      "name": "CLICKUP_GET_FOLDERS",
+      "description": "Retrieves Folders within a specified ClickUp Space, ensuring `space_id` is valid, with an option to filter by archived status."
+    },
+    {
+      "name": "CLICKUP_GET_FOLDER_VIEWS",
+      "description": "Retrieves all configured views (like List, Board, Calendar) for a specified, existing Folder in ClickUp."
+    },
+    {
+      "name": "CLICKUP_GET_GOAL",
+      "description": "Retrieves detailed information for an existing ClickUp Goal, specified by its unique `goal_id`."
+    },
+    {
+      "name": "CLICKUP_GET_GOALS",
+      "description": "Retrieves goals for a specified ClickUp Workspace (Team); the `team_id` must be valid and accessible."
+    },
+    {
+      "name": "CLICKUP_GET_GUEST",
+      "description": "Call this to retrieve detailed information for a specific guest within a Team (Workspace), ensuring the `guest_id` is valid for the given `team_id`; this action requires the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_GET_LIST",
+      "description": "Retrieves detailed information for an existing List in ClickUp, identified by its unique `list_id`."
+    },
+    {
+      "name": "CLICKUP_GET_LIST_COMMENTS",
+      "description": "Retrieves comments for a specific ClickUp List, supporting pagination using `start` (timestamp) and `start_id` (comment ID) to fetch earlier comments; omits them for the latest 25."
+    },
+    {
+      "name": "CLICKUP_GET_LIST_MEMBERS",
+      "description": "Retrieves all members of a specific, existing ClickUp List by its ID."
+    },
+    {
+      "name": "CLICKUP_GET_LISTS",
+      "description": "Retrieves all lists within a specified, existing ClickUp folder, optionally filtering by archived status."
+    },
+    {
+      "name": "CLICKUP_GET_LIST_VIEWS",
+      "description": "Retrieves all task and page views for a specified and accessible ClickUp List."
+    },
+    {
+      "name": "CLICKUP_GET_RUNNING_TIME_ENTRY",
+      "description": "Retrieves the currently active time entry for a user in a Workspace; a negative 'duration' in its data indicates it's running, and the response may be empty if no entry is active."
+    },
+    {
+      "name": "CLICKUP_GET_SINGULAR_TIME_ENTRY",
+      "description": "Fetches a specific time entry by its ID for a given team; a negative duration in the response indicates an active timer."
+    },
+    {
+      "name": "CLICKUP_GET_SPACE",
+      "description": "Retrieves detailed information for an existing Space in a ClickUp Workspace, identified by its unique space_id."
+    },
+    {
+      "name": "CLICKUP_GET_SPACES",
+      "description": "Retrieves Spaces for a Team ID; member information for private Spaces is returned only if the authenticated user is a member."
+    },
+    {
+      "name": "CLICKUP_GET_SPACE_TAGS",
+      "description": "Retrieves all tags for tasks within a specified ClickUp Space, requiring a valid `space_id`."
+    },
+    {
+      "name": "CLICKUP_GET_SPACE_VIEWS",
+      "description": "Retrieves all task and page views for a specified Space ID in ClickUp."
+    },
+    {
+      "name": "CLICKUP_GET_TASK",
+      "description": "Retrieves comprehensive details for a ClickUp task by its ID, supporting standard or custom task IDs (requires `team_id` for custom IDs)."
+    },
+    {
+      "name": "CLICKUP_GET_TASK_COMMENTS",
+      "description": "Retrieves up to 25 comments for a specified task, supporting pagination using `start` and `start_id` to fetch older comments."
+    },
+    {
+      "name": "CLICKUP_GET_TASK_MEMBERS",
+      "description": "Retrieves users with explicit access (directly assigned or shared) to a specific existing task, excluding users with inherited permissions."
+    },
+    {
+      "name": "CLICKUP_GET_TASKS",
+      "description": "Retrieves tasks from a specified ClickUp list; only tasks whose home is the given list_id are returned."
+    },
+    {
+      "name": "CLICKUP_GET_TASK_S_TIME_IN_STATUS",
+      "description": "Retrieves the duration a task has spent in each status, provided the 'Total time in Status' ClickApp is enabled for the Workspace."
+    },
+    {
+      "name": "CLICKUP_GET_TASK_TEMPLATES",
+      "description": "Retrieves task templates for a specified Workspace (Team ID), supporting pagination."
+    },
+    {
+      "name": "CLICKUP_GET_TEAMS",
+      "description": "Retrieves user groups (Teams) from a ClickUp Workspace, typically requiring `team_id` (Workspace ID), with an option to filter by `group_ids`."
+    },
+    {
+      "name": "CLICKUP_GET_TIME_ENTRIES_WITHIN_A_DATE_RANGE",
+      "description": "Retrieves time entries for a specified Team (Workspace ID) within a date range (defaults to the last 30 days for the authenticated user if dates are omitted); active timers are indicated by negative durations in the response."
+    },
+    {
+      "name": "CLICKUP_GET_TIME_ENTRY_HISTORY",
+      "description": "Retrieves the modification history for an existing time entry within a specific ClickUp Team (Workspace)."
+    },
+    {
+      "name": "CLICKUP_GET_TRACKED_TIME",
+      "description": "Retrieves tracked time for a task using a legacy endpoint; prefer newer Time Tracking API endpoints for managing time entries."
+    },
+    {
+      "name": "CLICKUP_GET_USER",
+      "description": "Retrieves detailed information for a specific user within a ClickUp Workspace (Team), available only for Workspaces on the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_GET_VIEW",
+      "description": "Fetches details for a specific ClickUp view, identified by its `view_id`, which must exist."
+    },
+    {
+      "name": "CLICKUP_GET_VIEW_TASKS",
+      "description": "Retrieves all tasks visible in a specified ClickUp view, respecting its applied filters, sorting, and grouping."
+    },
+    {
+      "name": "CLICKUP_GET_WEBHOOKS",
+      "description": "Fetches webhooks for a Team (Workspace), returning only those created by the authenticated user via API, for a `team_id` they can access."
+    },
+    {
+      "name": "CLICKUP_GET_WORKSPACE_EVERYTHING_LEVEL_VIEWS",
+      "description": "Retrieves all task and page views at the 'Everything Level' (a comprehensive overview of all tasks across all Spaces) for a specified ClickUp Workspace."
+    },
+    {
+      "name": "CLICKUP_GET_WORKSPACE_PLAN",
+      "description": "Retrieves the details of the current subscription plan for a specified ClickUp Workspace."
+    },
+    {
+      "name": "CLICKUP_GET_WORKSPACE_SEATS",
+      "description": "Retrieves seat utilization (used, total, available for members/guests) for a ClickUp Workspace (Team) ID, which must be for an existing Workspace."
+    },
+    {
+      "name": "CLICKUP_INVITE_GUEST_TO_WORKSPACE",
+      "description": "Invites a guest by email to a ClickUp Workspace (Team) on an Enterprise Plan, setting initial permissions and optionally a custom role; further access configuration for specific items may require separate actions."
+    },
+    {
+      "name": "CLICKUP_INVITE_USER_TO_WORKSPACE",
+      "description": "Invites a user via email to a ClickUp Workspace (Team), optionally granting admin rights or a custom role; requires an Enterprise Plan for the Workspace."
+    },
+    {
+      "name": "CLICKUP_LISTS_GET_FOLDER_LISTS",
+      "description": "DEPRECATED: Use `get_lists` instead. Retrieves lists from a specified, existing ClickUp folder."
+    },
+    {
+      "name": "CLICKUP_MEMBERS_GET_LIST_USERS",
+      "description": "DEPRECATED: Retrieves users with access to a specific List; use `get_list_members` instead."
+    },
+    {
+      "name": "CLICKUP_REMOVE_CUSTOM_FIELD_VALUE",
+      "description": "Removes an existing value from a Custom Field on a specific task; this does not delete the Custom Field definition or its predefined options."
+    },
+    {
+      "name": "CLICKUP_REMOVE_GUEST_FROM_FOLDER",
+      "description": "Revokes a guest's access to a specific ClickUp Folder, optionally unsharing items explicitly shared with them within it; requires an Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_REMOVE_GUEST_FROM_LIST",
+      "description": "Revokes a guest's access to a specific List, provided the guest currently has access to this List and the Workspace is on the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_REMOVE_GUEST_FROM_TASK",
+      "description": "Revokes a guest's access to a specific task; only available for Workspaces on the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_REMOVE_GUEST_FROM_WORKSPACE",
+      "description": "Permanently removes a guest from a specified Workspace, revoking all their access; this destructive operation requires the Workspace to be on the ClickUp Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_REMOVE_TAG_FROM_TASK",
+      "description": "Removes a tag from a specified task by disassociating it (does not delete the tag from Workspace), succeeding even if the tag is not on the task."
+    },
+    {
+      "name": "CLICKUP_REMOVE_TAGS_FROM_TIME_ENTRIES",
+      "description": "Removes tags from specified time entries in a team, without deleting the tags from the workspace."
+    },
+    {
+      "name": "CLICKUP_REMOVE_TASK_FROM_LIST",
+      "description": "Removes a task from an extra list (not its home list); the 'Tasks in Multiple Lists' ClickApp must be enabled."
+    },
+    {
+      "name": "CLICKUP_REMOVE_USER_FROM_WORKSPACE",
+      "description": "Deactivates a user from a specified ClickUp Workspace, revoking their access (user can be reactivated later); requires the Workspace to be on an Enterprise Plan."
+    },
+    {
+      "name": "CLICKUP_SET_CUSTOM_FIELD_VALUE",
+      "description": "Sets or updates a Custom Field's value for a task; the new value (with type-dependent structure, e.g., `{\"value\": \"text\"}` or `{\"value\": 123, \"value_options\": {\"currency_type\":\"USD\"}}`) is provided in the JSON request body."
+    },
+    {
+      "name": "CLICKUP_SHARED_HIERARCHY",
+      "description": "Retrieves the hierarchy of tasks, Lists, and Folders shared with the authenticated user within an existing ClickUp Team (Workspace), identified by its `team_id`."
+    },
+    {
+      "name": "CLICKUP_SPACES_GET_DETAILS",
+      "description": "DEPRECATED: Retrieves detailed information about a specific Space; use the GetSpace action instead."
+    },
+    {
+      "name": "CLICKUP_SPACES_GET_SPACE_DETAILS",
+      "description": "DEPRECATED: Use `get_spaces` instead; retrieves Spaces, with member info for private Spaces accessible only if the user is a member."
+    },
+    {
+      "name": "CLICKUP_START_A_TIME_ENTRY",
+      "description": "Starts a new time entry (timer) in the specified Team (Workspace), optionally associating it with a task, adding a description, setting billable status, or applying tags (tags feature requires Business Plan or higher)."
+    },
+    {
+      "name": "CLICKUP_STOP_A_TIME_ENTRY",
+      "description": "Stops the authenticated user's currently active time entry in the specified Team (Workspace), which requires an existing time entry to be running."
+    },
+    {
+      "name": "CLICKUP_TASK_CHECKLISTS_CREATE_NEW_CHECKLIST",
+      "description": "(DEPRECATED: Use `create_checklist` instead) Creates a new checklist with a specified name within an existing task, identifiable by standard ID or custom task ID (if `custom_task_ids` is true, `team_id` is also required)."
+    },
+    {
+      "name": "CLICKUP_TASKS_GET_TASK_DETAILS",
+      "description": "Retrieves details for a task by its ID, supporting standard or custom IDs (requires `team_id` for custom IDs). <<DEPRECATED: This action is deprecated. Please use 'get_task' instead.>>"
+    },
+    {
+      "name": "CLICKUP_TEAMS_USER_GROUPS_CREATE_TEAM",
+      "description": "DEPRECATED: Use 'create_team'. Creates a team (user group) in a Workspace; adding a view-only guest as a paid member may incur extra charges."
+    },
+    {
+      "name": "CLICKUP_TEAMS_WORK_SPACES_GET_WORK_SPACE_PLAN",
+      "description": "DEPRECATED: Retrieves the current plan for the specified Workspace; use `get_workspace_plan` instead."
+    },
+    {
+      "name": "CLICKUP_TEAMS_WORK_SPACES_GET_WORK_SPACE_SEATS",
+      "description": "DEPRECATED: Use `get_workspace_seats` to retrieve seat utilization for a ClickUp Workspace (Team) ID."
+    },
+    {
+      "name": "CLICKUP_TRACK_TIME",
+      "description": "Records a time entry for a task using ClickUp's legacy time tracking system; newer endpoints are generally recommended."
+    },
+    {
+      "name": "CLICKUP_UPDATE_A_TIME_ENTRY",
+      "description": "Updates an existing ClickUp time entry; provide `start` and `end` times together, and include `team_id` as a query param (request field `team_id_1`) if `custom_task_ids` is true."
+    },
+    {
+      "name": "CLICKUP_UPDATE_COMMENT",
+      "description": "Updates an existing task comment's text, assignee (who must be a valid workspace member), or resolution status, requiring a valid existing comment_id."
+    },
+    {
+      "name": "CLICKUP_UPDATE_FOLDER",
+      "description": "Updates the name of an existing folder in ClickUp."
+    },
+    {
+      "name": "CLICKUP_UPDATE_GOAL",
+      "description": "Updates attributes of an existing ClickUp goal, identified by its `goal_id`."
+    },
+    {
+      "name": "CLICKUP_UPDATE_LIST",
+      "description": "Updates attributes of an existing ClickUp list, such as its name, content, due date, priority, assignee, or color status, identified by its `list_id`."
+    },
+    {
+      "name": "CLICKUP_UPDATE_SPACE",
+      "description": "Updates an existing ClickUp Space, allowing modification of its name, color, privacy, and feature settings (ClickApps)."
+    },
+    {
+      "name": "CLICKUP_UPDATE_TASK",
+      "description": "Updates attributes of an existing task; `team_id` is required if `custom_task_ids` is true, use a single space (\" \") for `description` to clear it, and provide at least one modifiable field."
+    },
+    {
+      "name": "CLICKUP_UPDATE_TEAM",
+      "description": "Updates an existing ClickUp User Group (Team) using its `group_id`; note that adding a view-only guest as a paid member may incur charges."
+    },
+    {
+      "name": "CLICKUP_UPDATE_VIEW",
+      "description": "Updates an existing ClickUp view's settings such as name, type, grouping, or filters; ensure `parent_id` and `parent_type` define a valid hierarchy, and that specified field names (e.g. for sorting, columns) are valid within the ClickUp workspace."
+    },
+    {
+      "name": "CLICKUP_UPDATE_WEBHOOK",
+      "description": "Updates the endpoint URL, monitored events, and status of an existing webhook, identified by its `webhook_id`."
+    },
+    {
+      "name": "CLICKUP_VIEWS_GET_EVERYTHING_LEVEL",
+      "description": "DEPRECATED: Retrieves task and page views at the Everything Level of a Workspace; use `get_workspace_everything_level_views` instead."
+    },
+    {
+      "name": "CLICKUP_VIEWS_SPACE_VIEWS_GET",
+      "description": "(DEPRECATED: Use get_space_views instead) Retrieves all task and page views for a specified Space ID in ClickUp."
+    }
+  ]
+}

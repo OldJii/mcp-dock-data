@@ -1,0 +1,12 @@
+{
+  "id": "@FlameZerg/test",
+  "displayName": "test",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:19.682Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@FlameZerg/test"
+  },
+  "connection": null,
+  "capabilities": []
+}

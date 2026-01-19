@@ -1,0 +1,27 @@
+{
+  "id": "mcp-obsidian",
+  "displayName": "Obsidian Reader",
+  "description": "Read and search within a directory of Markdown notes in an Obsidian vault.",
+  "createdAt": "2026-01-19T02:15:36.245Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/mcp-obsidian"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "vaultPath"
+      ],
+      "properties": {
+        "vaultPath": {
+          "type": "string",
+          "description": "The path to your Obsidian vault."
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

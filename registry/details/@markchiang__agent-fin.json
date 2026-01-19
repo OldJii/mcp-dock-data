@@ -1,0 +1,113 @@
+{
+  "id": "@markchiang/agent-fin",
+  "displayName": "agent-fin",
+  "description": "",
+  "createdAt": "2026-01-19T02:17:18.372Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@markchiang/agent-fin"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "equity_fundamental_cash",
+      "description": "Get the cash flow statement for a given company."
+    },
+    {
+      "name": "equity_fundamental_dividends",
+      "description": "Get historical dividend data for a given company."
+    },
+    {
+      "name": "equity_price_historical",
+      "description": "Get historical price data for a given stock. This includes open, high, low, close, and volume."
+    },
+    {
+      "name": "equity_price_quote",
+      "description": "Get the latest quote data for a given stock symbol."
+    },
+    {
+      "name": "equity_fundamental_income",
+      "description": "Get the income statement for a given company."
+    },
+    {
+      "name": "equity_fundamental_balance",
+      "description": "Get the balance sheet for a given company."
+    },
+    {
+      "name": "equity_fundamental_metrics",
+      "description": "Get key fundamental metrics for a company."
+    },
+    {
+      "name": "equity_calendar_ipo",
+      "description": "Get historical and upcoming initial public offerings (IPOs)."
+    },
+    {
+      "name": "equity_compare_groups",
+      "description": "Get company data grouped by sector, industry or country."
+    },
+    {
+      "name": "equity_compare_company_facts",
+      "description": "Compare reported company facts and fundamental data points."
+    },
+    {
+      "name": "equity_estimates_consensus",
+      "description": "Get consensus price target and recommendation."
+    },
+    {
+      "name": "equity_discovery_losers",
+      "description": "Get the top price losers in the stock market."
+    },
+    {
+      "name": "equity_discovery_active",
+      "description": "Get the most actively traded stocks based on volume."
+    },
+    {
+      "name": "equity_discovery_undervalued_large_caps",
+      "description": "Get potentially undervalued large cap stocks."
+    },
+    {
+      "name": "equity_discovery_undervalued_growth",
+      "description": "Get potentially undervalued growth stocks."
+    },
+    {
+      "name": "equity_discovery_aggressive_small_caps",
+      "description": "Get top small cap stocks based on earnings growth."
+    },
+    {
+      "name": "equity_discovery_growth_tech",
+      "description": "Get top tech stocks based on revenue and earnings growth."
+    },
+    {
+      "name": "equity_profile",
+      "description": "Get the company profile, including key information and descriptions."
+    },
+    {
+      "name": "equity_screener",
+      "description": "Screen for equities using a predefined metric such as overview or valuation."
+    },
+    {
+      "name": "equity_search",
+      "description": "Search for equity tickers or names via NASDAQ."
+    },
+    {
+      "name": "equity_ownership_share_statistics",
+      "description": "Get share statistics such as float, shares outstanding, and insider holdings."
+    },
+    {
+      "name": "equity_shorts_fails_to_deliver",
+      "description": "Get fails-to-deliver data reported to the SEC."
+    },
+    {
+      "name": "equity_shorts_short_interest",
+      "description": "Get reported short interest for a given symbol."
+    },
+    {
+      "name": "equity_shorts_short_volume",
+      "description": "Get reported short volume statistics for a given symbol."
+    }
+  ]
+}

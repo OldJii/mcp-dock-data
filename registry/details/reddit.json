@@ -1,0 +1,57 @@
+{
+  "id": "reddit",
+  "displayName": "Reddit",
+  "description": "Reddit is a social news platform with user-driven communities (subreddits), offering content sharing, discussions, and viral marketing opportunities for brands",
+  "createdAt": "2026-01-19T02:12:38.711Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/reddit"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "REDDIT_CREATE_REDDIT_POST",
+      "description": "Creates a new text or link post on a specified, existing Reddit subreddit, optionally applying a flair."
+    },
+    {
+      "name": "REDDIT_DELETE_REDDIT_COMMENT",
+      "description": "Deletes a Reddit comment, identified by its fullname ID, if it was authored by the authenticated user."
+    },
+    {
+      "name": "REDDIT_DELETE_REDDIT_POST",
+      "description": "Permanently deletes a Reddit post by its ID, provided the authenticated user has deletion permissions for that post."
+    },
+    {
+      "name": "REDDIT_EDIT_REDDIT_COMMENT_OR_POST",
+      "description": "Edits the body text of the authenticated user's own existing comment or self-post on Reddit; cannot edit link posts or titles."
+    },
+    {
+      "name": "REDDIT_GET_USER_FLAIR",
+      "description": "Fetches the list of available link flairs (i.e., post flairs, not user flairs) for a given subreddit."
+    },
+    {
+      "name": "REDDIT_POST_REDDIT_COMMENT",
+      "description": "Posts a comment on Reddit, replying to an existing and accessible submission (post) or another comment."
+    },
+    {
+      "name": "REDDIT_RETRIEVE_POST_COMMENTS",
+      "description": "Retrieves all comments for a Reddit post given its article ID (which must be for an existing, public post); nested replies within comments are returned as raw dictionaries requiring parsing."
+    },
+    {
+      "name": "REDDIT_RETRIEVE_REDDIT_POST",
+      "description": "Retrieves the current hot posts from a specified, publicly accessible subreddit."
+    },
+    {
+      "name": "REDDIT_RETRIEVE_SPECIFIC_COMMENT",
+      "description": "Retrieves detailed information for a specific Reddit comment or post using its fullname."
+    },
+    {
+      "name": "REDDIT_SEARCH_ACROSS_SUBREDDITS",
+      "description": "Searches Reddit for content (e.g., posts, comments) using a query, with results typically confined to subreddits unless `restrict_sr` is set to False."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@Kapeli/dash-mcp-server",
+  "displayName": "dash-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:28.643Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Kapeli/dash-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

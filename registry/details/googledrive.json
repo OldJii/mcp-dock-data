@@ -1,0 +1,97 @@
+{
+  "id": "googledrive",
+  "displayName": "Google Drive",
+  "description": "Google Drive is a cloud storage solution for uploading, sharing, and collaborating on files across devices, with robust search and offline access",
+  "createdAt": "2026-01-19T02:12:34.234Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/googledrive"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "GOOGLEDRIVE_ADD_FILE_SHARING_PREFERENCE",
+      "description": "Modifies sharing permissions for an existing google drive file, granting a specified role to a user, group, domain, or 'anyone'."
+    },
+    {
+      "name": "GOOGLEDRIVE_COPY_FILE",
+      "description": "Duplicates an existing file in google drive, identified by its `file id`."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_COMMENT",
+      "description": "Tool to create a comment on a file. use when you need to add a new comment to a specific file in google drive."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_DRIVE",
+      "description": "Tool to create a new shared drive. use when you need to programmatically create a new shared drive for collaboration or storage."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_FILE",
+      "description": "Creates a new file or folder with metadata. use to create empty files or folders, or files with content by providing it in the request body (though this action primarily focuses on metadata creation)."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_FILE_FROM_TEXT",
+      "description": "Creates a new file in google drive from provided text content (up to 10mb), supporting various formats including automatic conversion to google workspace types."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_FOLDER",
+      "description": "Creates a new folder in google drive, optionally within a parent folder specified by its id or name; if a parent name is provided but not found, the action will fail."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_REPLY",
+      "description": "Tool to create a reply to a comment in google drive. use when you need to respond to an existing comment on a file."
+    },
+    {
+      "name": "GOOGLEDRIVE_CREATE_SHORTCUT_TO_FILE",
+      "description": "Tool to create a shortcut to a file or folder in google drive. use when you need to link to an existing drive item from another location without duplicating it."
+    },
+    {
+      "name": "GOOGLEDRIVE_DELETE_COMMENT",
+      "description": "Deletes a comment from a file. use when you need to remove a specific comment from a google drive file."
+    },
+    {
+      "name": "GOOGLEDRIVE_DELETE_DRIVE",
+      "description": "Tool to permanently delete a shared drive. use when you need to remove a shared drive and its contents (if specified)."
+    },
+    {
+      "name": "GOOGLEDRIVE_DELETE_PERMISSION",
+      "description": "Deletes a permission from a file by permission id. use when you need to revoke access for a specific user or group from a file."
+    },
+    {
+      "name": "GOOGLEDRIVE_DELETE_REPLY",
+      "description": "Tool to delete a specific reply by reply id. use when you need to remove a reply from a comment on a file."
+    },
+    {
+      "name": "GOOGLEDRIVE_DOWNLOAD_FILE",
+      "description": "Downloads a file from google drive by its id. for google workspace documents (docs, sheets, slides), optionally exports to a specified `mime type`. for other file types, downloads in their native format regardless of mime type."
+    },
+    {
+      "name": "GOOGLEDRIVE_EDIT_FILE",
+      "description": "Updates an existing google drive file by overwriting its entire content with new text (max 10mb)."
+    },
+    {
+      "name": "GOOGLEDRIVE_EMPTY_TRASH",
+      "description": "Tool to permanently delete all of the user's trashed files. use when you want to empty the trash in google drive."
+    },
+    {
+      "name": "GOOGLEDRIVE_FILES_MODIFY_LABELS",
+      "description": "Modifies the set of labels applied to a file. returns a list of the labels that were added or modified. use when you need to programmatically change labels on a google drive file, such as adding, updating, or removing them."
+    },
+    {
+      "name": "GOOGLEDRIVE_FIND_FILE",
+      "description": "Tool to list or search for files and folders in google drive. use when you need to find specific files based on query criteria or list contents of a drive/folder."
+    },
+    {
+      "name": "GOOGLEDRIVE_FIND_FOLDER",
+      "description": "Tool to find a folder in google drive by its name and optionally a parent folder. use when you need to locate a specific folder to perform further actions like creating files in it or listing its contents."
+    },
+    {
+      "name": "GOOGLEDRIVE_GENERATE_IDS",
+      "description": "Generates a set of file ids which can be provided in create or copy requests. use when you need to pre-allocate ids for new files or copies."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "@david-choi-querypie/david-mcp",
+  "displayName": "Say Hello",
+  "description": "Greet people by name to add a friendly touch to interactions. Personalize welcome messages for onboarding, demos, or testing. Keep conversations warm and approachable with quick, contextual hellos.",
+  "createdAt": "2026-01-19T02:14:34.608Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@david-choi-querypie/david-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "say_hello",
+      "description": "Greet a user by name."
+    }
+  ]
+}

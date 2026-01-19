@@ -1,0 +1,12 @@
+{
+  "id": "@MenschMachine/pdfdancer-mcp",
+  "displayName": "pdfdancer-mcp",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:44.377Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@MenschMachine/pdfdancer-mcp"
+  },
+  "connection": null,
+  "capabilities": []
+}

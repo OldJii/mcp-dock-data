@@ -1,0 +1,60 @@
+{
+  "id": "@yusufsenyer/augment-agent",
+  "displayName": "Augment Weather Agent",
+  "description": "Provide natural language weather information and forecasts for any city worldwide. Answer user queries about current weather and 7-day forecasts with full Turkish language support. Integrate easily via REST API endpoints for chat and direct weather data access.",
+  "createdAt": "2026-01-19T02:13:47.764Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yusufsenyer/augment-agent"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Debug loglarını etkinleştir",
+          "default": false
+        },
+        "timezone": {
+          "type": "string",
+          "description": "Zaman dilimi ayarı",
+          "default": "Europe/Istanbul"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_current_weather",
+      "description": "Belirtilen koordinatlardaki güncel hava durumu bilgisini getirir"
+    },
+    {
+      "name": "get_weather_by_city",
+      "description": "Şehir adına göre güncel hava durumu bilgisini getirir (Türkiye şehirleri)"
+    },
+    {
+      "name": "get_hourly_forecast",
+      "description": "Belirtilen koordinatlarda 24 saatlik hava durumu tahminini getirir"
+    },
+    {
+      "name": "get_daily_forecast",
+      "description": "Belirtilen koordinatlarda 7 günlük hava durumu tahminini getirir"
+    },
+    {
+      "name": "get_daily_forecast_by_city",
+      "description": "Şehir adına göre 7 günlük hava durumu tahminini getirir (Türkiye şehirleri)"
+    },
+    {
+      "name": "get_supported_cities",
+      "description": "Desteklenen Türkiye şehirlerinin listesini getirir"
+    }
+  ]
+}

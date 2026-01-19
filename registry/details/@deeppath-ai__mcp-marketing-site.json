@@ -1,0 +1,34 @@
+{
+  "id": "@deeppath-ai/mcp-marketing-site",
+  "displayName": "Marketing Master – Landing Page Evaluator",
+  "description": "Analyze any landing page's SEO compliance, layout structure, color contrast, and loading speed to optimize its conversion potential and technical performance. Receive automatic suggestions and code snippets to improve your page's effectiveness and accessibility. Perfect for product managers, marketing teams, and SEO engineers seeking rapid, actionable insights.",
+  "createdAt": "2026-01-19T02:14:42.751Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@deeppath-ai/mcp-marketing-site"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {
+        "server": {
+          "type": "object",
+          "description": ""
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-mcp-version": "1.0",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "assess-site",
+      "description": "This system evaluates the compliance and potential risks associated with web crawling activities. It is designed to assist developers, legal teams, and data professionals in ensuring that their crawlers operate within acceptable technical, legal, and ethical boundaries."
+    }
+  ]
+}

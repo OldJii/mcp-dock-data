@@ -1,0 +1,25 @@
+{
+  "id": "@chuhuoyuan/cloudflare",
+  "displayName": "Cloudflare Docs",
+  "description": "Search Cloudflare documentation across Workers, Pages, R2, Zero Trust, and more. Generate best-practice Workers code and accelerate troubleshooting with relevant guidance. Follow clear steps to migrate Pages projects to Workers with fewer pitfalls.",
+  "createdAt": "2026-01-19T02:14:50.286Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@chuhuoyuan/cloudflare"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_cloudflare_documentation",
+      "description": "Search the Cloudflare documentation.\n\n\t\tThis tool should be used to answer any question about Cloudflare products or features, including:\n\t\t- Workers, Pages, R2, Images, Stream, D1, Durable Objects, KV, Workflows, Hyperdrive, Queues\n\t\t- AutoRAG, Workers AI, Vectorize, AI Gateway, Browser Rendering\n\t\t- Zero Trust, Access, Tunnel, Gateway, Browser Isolation, WARP, DDOS, Magic Transit, Magic WAN\n\t\t- CDN, Cache, DNS, Zaraz, Argo, Rulesets, Terraform, Account and Billing\n\n\t\tResults are returned as semantically similar chunks to the query.\n\t\t"
+    },
+    {
+      "name": "migrate_pages_to_workers_guide",
+      "description": "ALWAYS read this guide before migrating Pages projects to Workers."
+    }
+  ]
+}

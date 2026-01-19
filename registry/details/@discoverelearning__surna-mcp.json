@@ -1,0 +1,42 @@
+{
+  "id": "@discoverelearning/surna-mcp",
+  "displayName": "surna-mcp",
+  "description": "Design and manage eLearning courses on Surna using your choice of Agentic AI system. Create and organise lessons, add interactive blocks and assessments, and handle assets with ease. Export or import courses and work across language versions to streamline authoring at scale.",
+  "createdAt": "2026-01-19T02:19:09.274Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@discoverelearning/surna-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "SURNA_API_KEY"
+      ],
+      "properties": {
+        "SURNA_API_KEY": {
+          "type": "string",
+          "description": "Get this from https://surna.io → Account Settings → API Keys"
+        },
+        "SURNA_MCP_MODE": {
+          "type": "string",
+          "description": "efficient: return only search_tools on list_tools for minimal context; traditional: expose all tools for backward compatibility",
+          "default": "efficient"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_surna_api_docs",
+      "description": "Retrieve Surna API documentation. Call this first to load the right section before executing actions."
+    },
+    {
+      "name": "execute_surna_action",
+      "description": "Execute JavaScript against the Surna API (courses, lessons, blocks, assets). Read docs first, then run your script."
+    }
+  ]
+}

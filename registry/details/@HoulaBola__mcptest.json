@@ -1,0 +1,12 @@
+{
+  "id": "@HoulaBola/mcptest",
+  "displayName": "mcptest",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:48.970Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@HoulaBola/mcptest"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "@libra850/obsidian-mcp-server",
+  "displayName": "Obsidian Vault Management Server",
+  "description": "Manage and enhance your Obsidian vault by creating, reading, updating notes using templates, and efficiently handling tags and file searches. Improve note interconnectivity with advanced link management features including wiki link creation, broken link detection and repair, backlink analysis, and automatic Map of Contents generation. Streamline your knowledge management workflow with powerful MCP tools tailored for Obsidian users.\n\nテンプレートを使用してノートを作成、読み取り、更新し、タグやファイル検索を効率的に処理することで、Obsidian データ保管庫を管理および強化します。 ウィキリンクの作成、リンク切れの検出と修復、バックリンク分析、目次マップの自動生成などの高度なリンク管理機能により、ノートの相互接続性を向上させます。 Obsidianユーザー向けにカスタマイズされた強力なMCPツールで、ナレッジマネジメントのワークフローを合理化します。",
+  "createdAt": "2026-01-19T02:15:07.311Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@libra850/obsidian-mcp-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

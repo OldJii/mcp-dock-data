@@ -1,0 +1,12 @@
+{
+  "id": "@cryptomcp/allinone-crypto-trading-mcp-server",
+  "displayName": "allinone-crypto-trading-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:02.363Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@cryptomcp/allinone-crypto-trading-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}

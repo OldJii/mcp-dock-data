@@ -1,0 +1,61 @@
+{
+  "id": "ticktick",
+  "displayName": "Ticktick",
+  "description": "TickTick is a cross-platform task management and to-do list application designed to help users organize their tasks and schedules efficiently.",
+  "createdAt": "2026-01-19T02:12:36.329Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/ticktick"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "TICKTICK_COMPLETE_TASK",
+      "description": "Tool to mark a task as complete. Use after confirming the task is done."
+    },
+    {
+      "name": "TICKTICK_CREATE_PROJECT",
+      "description": "Tool to create a new project in TickTick. Use when you need to programmatically add a project after obtaining a valid access token."
+    },
+    {
+      "name": "TICKTICK_CREATE_TASK",
+      "description": "Tool to create a new task in TickTick. Use after you have task details such as title, dates, and optional reminders or subtasks."
+    },
+    {
+      "name": "TICKTICK_DELETE_PROJECT",
+      "description": "Tool to delete a specific project. Use when you have confirmed the project ID and intend to permanently remove it. Example: \"Delete the project with ID 6226ff9877acee87727f6bca\"."
+    },
+    {
+      "name": "TICKTICK_DELETE_TASK",
+      "description": "Tool to delete a specific task. Use when you need to remove a task from a project after confirming both project and task IDs."
+    },
+    {
+      "name": "TICKTICK_GET_PROJECT_WITH_DATA",
+      "description": "Tool to retrieve a project and its associated data (tasks, columns). Use when you need full project details including its tasks and columns after selecting a project ID."
+    },
+    {
+      "name": "TICKTICK_GET_USER_PROJECT",
+      "description": "Tool to retrieve all projects for the user. Use when you need to list available projects for selection."
+    },
+    {
+      "name": "TICKTICK_OAUTH2_AUTHORIZATION_STEP1",
+      "description": "Tool to generate the TickTick OAuth2 authorization URL. Use to redirect the user to obtain the authorization code (step 1)."
+    },
+    {
+      "name": "TICKTICK_OAUTH2_AUTHORIZATION_STEP_1",
+      "description": "Tool to redirect user to TickTick authorization page to obtain authorization code. Use when initiating the OAuth2 flow before exchanging the code."
+    },
+    {
+      "name": "TICKTICK_UPDATE_PROJECT",
+      "description": "Tool to update an existing project. Use when you need to modify project details like name, color, sort order, view mode, or kind after selecting a project ID."
+    },
+    {
+      "name": "TICKTICK_UPDATE_TASK",
+      "description": "Tool to update an existing task. Use after confirming the taskId and projectId."
+    }
+  ]
+}

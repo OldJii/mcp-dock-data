@@ -1,0 +1,12 @@
+{
+  "id": "@nicolas/airtable",
+  "displayName": "airtable",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:53.236Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@nicolas/airtable"
+  },
+  "connection": null,
+  "capabilities": []
+}

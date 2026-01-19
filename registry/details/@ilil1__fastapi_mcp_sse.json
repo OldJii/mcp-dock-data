@@ -1,0 +1,16 @@
+{
+  "id": "@ilil1/fastapi_mcp_sse",
+  "displayName": "FastAPI SSE MCP Server",
+  "description": "Provide a FastAPI-based server that implements the Model Context Protocol (MCP) using Server-Sent Events (SSE) to enable AI models to interact with external tools and data sources. Seamlessly integrate MCP SSE endpoints with standard web routes in a unified web application. Facilitate easy extension and debugging with MCP Inspector support and customizable route structures.",
+  "createdAt": "2026-01-19T02:18:05.714Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ilil1/fastapi_mcp_sse"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

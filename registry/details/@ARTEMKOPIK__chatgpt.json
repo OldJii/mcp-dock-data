@@ -1,0 +1,12 @@
+{
+  "id": "@ARTEMKOPIK/chatgpt",
+  "displayName": "chatgpt",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:28.363Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ARTEMKOPIK/chatgpt"
+  },
+  "connection": null,
+  "capabilities": []
+}

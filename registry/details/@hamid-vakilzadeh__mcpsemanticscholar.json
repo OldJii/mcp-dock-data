@@ -1,0 +1,84 @@
+{
+  "id": "@hamid-vakilzadeh/mcpsemanticscholar",
+  "displayName": "AI Research Assistant",
+  "description": "The server provides immediate access to millions of academic papers through Semantic Scholar and arXiv, enabling AI-powered research with comprehensive search, citation analysis, and full-text PDF extraction from multiple sources (arXiv and Wiley open-access).\n\n - No API key is required.\n",
+  "createdAt": "2026-01-19T02:13:14.305Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@hamid-vakilzadeh/mcpsemanticscholar"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging for troubleshooting",
+          "default": false
+        },
+        "WILEY_TDM_CLIENT_TOKEN": {
+          "type": "string",
+          "description": "Your Wiley TDM Client Token for downloading papers"
+        },
+        "SEMANTIC_SCHOLAR_API_KEY": {
+          "type": "string",
+          "description": "Your Semantic Scholar API key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "papers-search-basic",
+      "description": "Search for academic papers with a simple query."
+    },
+    {
+      "name": "paper-search-advanced",
+      "description": "Search for academic papers with advanced filtering options"
+    },
+    {
+      "name": "search-paper-title",
+      "description": "Find a paper by closest title match"
+    },
+    {
+      "name": "get-paper-abstract",
+      "description": "Get detailed information about a specific paper including its abstract"
+    },
+    {
+      "name": "papers-citations",
+      "description": "Get papers that cite a specific paper"
+    },
+    {
+      "name": "papers-references",
+      "description": "Get papers cited by a specific paper"
+    },
+    {
+      "name": "authors-search",
+      "description": "Search for authors by name or affiliation"
+    },
+    {
+      "name": "authors-papers",
+      "description": "Get papers written by a specific author"
+    },
+    {
+      "name": "papers-batch",
+      "description": "Look up multiple papers by their IDs"
+    },
+    {
+      "name": "search-arxiv",
+      "description": "Search for papers on arXiv using their API"
+    },
+    {
+      "name": "download-full-paper-arxiv",
+      "description": "Download full-text PDF of an arXiv paper and extract text content (memory only)"
+    },
+    {
+      "name": "analysis-citation-network",
+      "description": "Analyze the citation network for a specific paper"
+    }
+  ]
+}

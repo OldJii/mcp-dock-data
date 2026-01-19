@@ -1,0 +1,12 @@
+{
+  "id": "@Basis-sh/basis",
+  "displayName": "basis",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:51.066Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Basis-sh/basis"
+  },
+  "connection": null,
+  "capabilities": []
+}

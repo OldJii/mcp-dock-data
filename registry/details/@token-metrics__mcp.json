@@ -1,0 +1,124 @@
+{
+  "id": "@token-metrics/mcp",
+  "displayName": "Token Metrics MCP",
+  "description": "Provide AI assistants with real-time cryptocurrency market data, trading signals, price predictions, and advanced analytics. Enable seamless access to comprehensive crypto insights and quantitative metrics to enhance decision-making. Empower users with AI-generated reports and market sentiment analysis for smarter crypto investments.",
+  "createdAt": "2026-01-19T02:17:05.738Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@token-metrics/mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "apiKey"
+      ],
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your Token Metrics API Key"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "get_tokens_data",
+      "description": "Fetch token(s) data from Token Metrics API. Provide either token_id or symbol (or both) along with optional date range."
+    },
+    {
+      "name": "get_tokens_price",
+      "description": "Fetch token(s) price from Token Metrics API. Provide token_id."
+    },
+    {
+      "name": "get_tokens_hourly_ohlcv",
+      "description": "Fetch hourly OHLCV (Open, High, Low, Close, Volume) data for token(s) for a specific date or date range from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_daily_ohlcv",
+      "description": "Fetch daily OHLCV (Open, High, Low, Close, Volume) data for token(s) for a specific date or date range from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_investor_grade",
+      "description": "Fetch token(s) long term grades, including Technology and Fundamental metrics for a specific date or date range from Token Metrics API."
+    },
+    {
+      "name": "get_market_metrics",
+      "description": "Fetch Market Analytics from Token Metrics API. They provide insight into the full Crypto Market, including the Bullish/Bearish Market indicator for a specific date or date range."
+    },
+    {
+      "name": "get_tokens_trading_signal",
+      "description": "Fetch token(s) AI generated trading signals for long and short positions for a specific date or date range from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_ai_report",
+      "description": "Fetch token(s) AI-generated reports providing comprehensive analyses of cryptocurrency tokens, including deep dives, investment analyses, and code reviews from Token Metrics API."
+    },
+    {
+      "name": "get_crypto_investors",
+      "description": "Fetch the latest list of crypto investors and their scores from Token Metrics API."
+    },
+    {
+      "name": "get_top_tokens_by_market_cap",
+      "description": "Fetch the the list of coins with top market cap from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_resistance_and_support",
+      "description": "Fetch token(s) historical levels of resistance and support from Token Metrics API. Provide token_id or symbol."
+    },
+    {
+      "name": "get_sentiment",
+      "description": "Fetch the hourly sentiment score for Twitter, Reddit, and all the News, including quick summary of what happened from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_quant_metrics",
+      "description": "Fetch the latest quantitative metrics for token(s). Note that Token Metrics pricing data starts on 2019-01-01 for most tokens. More historical data will be available soon."
+    },
+    {
+      "name": "get_tokens_scenario_analysis",
+      "description": "Fetch tokens(s) price prediction based on different Crypto Market scenarios from Token Metrics API."
+    },
+    {
+      "name": "get_tokens_correlation",
+      "description": "Fetch token(s) Top 10 and Bottom 10 correlated tokens from the top 100 market cap tokens from Token Metrics API."
+    },
+    {
+      "name": "get_indices",
+      "description": "Fetch active and passive crypto indices with performance and market data from Token Metrics API."
+    },
+    {
+      "name": "get_indices_holdings",
+      "description": "Fetch the current holdings of the given Index, along with their respective weight in percentage from Token Metrics API."
+    },
+    {
+      "name": "get_indices_performance",
+      "description": "Fetch historical performance data for a given index, including cumulative return on investment (ROI) over time from Token Metrics API. This data is useful for analyzing index trends and evaluating investment performance."
+    },
+    {
+      "name": "get_tokens_hourly_trading_signals",
+      "description": "Fetch token(s) hourly AI generated trading signals for long and short positions from Token Metrics API."
+    },
+    {
+      "name": "get_moonshot_tokens",
+      "description": "Fetch the AI-curated token picks (Moonshots) with high breakout potential based on grades, sentiment, volume, and on-chain data to help users trade smarter and faster from Token Metrics API."
+    },
+    {
+      "name": "get_token_tm_grade",
+      "description": "Fetch token's latest TM Grade and Fundamental Grade insights, including signals, momentum, and 24‑hour percentage changes from Token Metrics API."
+    },
+    {
+      "name": "get_token_tm_grade_historical",
+      "description": "Fetch token's historical TM Grade and Fundamental Grade data over a specified date range, including signals and momentum trends from Token Metrics API."
+    },
+    {
+      "name": "get_token_technology_grade",
+      "description": "Fetch token's latest Technology Grade, reflecting its tech strength and innovation ranking compared to other tokens from Token Metrics API."
+    }
+  ]
+}

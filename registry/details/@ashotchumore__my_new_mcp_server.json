@@ -1,0 +1,12 @@
+{
+  "id": "@ashotchumore/my_new_mcp_server",
+  "displayName": "my_new_mcp_server",
+  "description": "",
+  "createdAt": "2026-01-19T02:21:55.240Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ashotchumore/my_new_mcp_server"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "xiaobenyang-com/read-website",
+  "displayName": "read-website",
+  "description": "Extract website content quickly for research and analysis. Read documentation, summarize pages, and gather insights from across the web. Receive clean, structured output that preserves links and hierarchy.",
+  "createdAt": "2026-01-19T02:18:00.069Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/xiaobenyang-com/read-website"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_website",
+      "description": "Fast, token-efficient web content extraction - ideal for reading documentation, analyzing content, and gathering information from websites. Converts to clean Markdown while preserving links and structure."
+    }
+  ]
+}

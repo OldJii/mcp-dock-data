@@ -1,0 +1,44 @@
+{
+  "id": "@Hint-Services/mcp-limitless",
+  "displayName": "Limitless AI Lifelog Access",
+  "description": "Enable AI assistants to seamlessly access and analyze your personal lifelog data recorded by Limitless AI. Retrieve, search, and understand your daily conversations and activities to enhance productivity, decision-making, and content creation. Integrate your lifelog with AI for context-aware assistance and intelligent insights.",
+  "createdAt": "2026-01-19T02:17:33.495Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Hint-Services/mcp-limitless"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "default": {},
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Limitless API token. If not provided, will use LIMITLESS_API_KEY environment variable."
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "Base URL for Limitless API. Defaults to https://api.limitless.ai",
+          "default": "https://api.limitless.ai"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "getLifelogs",
+      "description": "Retrieve lifelog entries from your Limitless AI pendant. Access your recorded conversations, thoughts, and daily activities with flexible filtering options."
+    },
+    {
+      "name": "getLifelogEntry",
+      "description": "Retrieve a specific lifelog entry by its ID. Get detailed information about a particular recorded moment from your Limitless AI pendant."
+    },
+    {
+      "name": "searchLifelogs",
+      "description": "Search through your lifelog entries from Limitless AI. Find specific conversations, topics, or moments by searching through the content and summaries of your recorded activities."
+    }
+  ]
+}

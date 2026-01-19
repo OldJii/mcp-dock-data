@@ -1,0 +1,37 @@
+{
+  "id": "@AbhinavBansal17/mcp-headless-gmail",
+  "displayName": "mcp-headless-gmail",
+  "description": "Read recent Gmail messages, retrieve full bodies in chunks, and send emails. Operate headlessly with runtime-provided credentials to avoid local setup. Automatically refresh tokens to keep workflows uninterrupted.",
+  "createdAt": "2026-01-19T02:16:08.767Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@AbhinavBansal17/mcp-headless-gmail"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "description": "Schema for the /mcp endpoint configuration"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "gmail_refresh_token",
+      "description": "Refresh the access token using the refresh token and client credentials"
+    },
+    {
+      "name": "gmail_get_recent_emails",
+      "description": "Get the most recent emails from Gmail (returns metadata, snippets, and first 1k chars of body)"
+    },
+    {
+      "name": "gmail_get_email_body_chunk",
+      "description": "Get a 1k character chunk of an email body starting from the specified offset"
+    },
+    {
+      "name": "gmail_send_email",
+      "description": "Send an email via Gmail"
+    }
+  ]
+}

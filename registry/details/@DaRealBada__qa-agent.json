@@ -1,0 +1,16 @@
+{
+  "id": "@DaRealBada/qa-agent",
+  "displayName": "QA Agent",
+  "description": "Enable question answering workflows with a simple agent setup. Facilitate automated responses to queries using predefined workflows. Streamline information retrieval and processing for end-users.",
+  "createdAt": "2026-01-19T02:18:44.737Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@DaRealBada/qa-agent"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": []
+}

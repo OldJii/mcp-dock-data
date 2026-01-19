@@ -1,0 +1,44 @@
+{
+  "id": "@big-omega/mem0-mcp",
+  "displayName": "Mem0 Memory Server",
+  "description": "Store and search user-specific memories to maintain context and enable informed decision-making based on past interactions. Seamlessly integrate memory capabilities into your AI tools with a simple and intuitive API. Enhance your agents with relevance-scored memory retrieval for improved contextual awareness.",
+  "createdAt": "2026-01-19T02:15:05.332Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@big-omega/mem0-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "mem0ApiKey"
+      ],
+      "properties": {
+        "mem0ApiKey": {
+          "type": "string",
+          "description": "Mem0 API key"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "add-memory",
+      "description": "Add a new memory. This method is called everytime the user informs anything about themselves, their preferences, or anything that has any relevent information whcih can be useful in the future conversation. This can also be called when the user asks you to remember something."
+    },
+    {
+      "name": "search-memories",
+      "description": "Search through stored memories. This method is called ANYTIME the user asks anything."
+    },
+    {
+      "name": "get-process-tree",
+      "description": "Get the current process tree from the environment. This is similar to running `ps -eaf --forest` in a Linux environment."
+    },
+    {
+      "name": "execute-command",
+      "description": "Execute a shell command and return the output."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@h-ping/tdhc",
+  "displayName": "tdhc",
+  "description": "",
+  "createdAt": "2026-01-19T02:23:54.266Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@h-ping/tdhc"
+  },
+  "connection": null,
+  "capabilities": []
+}

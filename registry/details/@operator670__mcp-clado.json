@@ -1,0 +1,12 @@
+{
+  "id": "@operator670/mcp-clado",
+  "displayName": "mcp-clado",
+  "description": "",
+  "createdAt": "2026-01-19T02:25:14.319Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@operator670/mcp-clado"
+  },
+  "connection": null,
+  "capabilities": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "@leo04per/cp-train-tracking",
+  "displayName": "cp-train-tracking",
+  "description": "",
+  "createdAt": "2026-01-19T02:24:42.417Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@leo04per/cp-train-tracking"
+  },
+  "connection": null,
+  "capabilities": []
+}

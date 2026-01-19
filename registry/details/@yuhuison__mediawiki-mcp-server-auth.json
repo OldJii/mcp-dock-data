@@ -1,0 +1,57 @@
+{
+  "id": "@yuhuison/mediawiki-mcp-server-auth",
+  "displayName": "MediaWiki Auth",
+  "description": "Connect to your MediaWiki using simple credentials and manage content without OAuth. Search, read, create, and update pages, review histories, and retrieve files across one or more wikis. Automate routine wiki maintenance with minimal setup.",
+  "createdAt": "2026-01-19T02:16:04.606Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@yuhuison/mediawiki-mcp-server-auth"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "get-page",
+      "description": "Returns the standard page object for a wiki page, optionally including page source or rendered HTML, and including the license and information about the latest revision.2"
+    },
+    {
+      "name": "get-page-history",
+      "description": "Returns information about the latest revisions to a wiki page, in segments of 20 revisions, starting with the latest revision. The response includes API routes for the next oldest, next newest, and latest revision segments."
+    },
+    {
+      "name": "create-image-to-wiki",
+      "description": "Generate an image from a prompt using ModelScope API and upload it to MediaWiki as a file. it will generate JPEG image by default."
+    },
+    {
+      "name": "load-world",
+      "description": "load the world knowledge from the wiki.Use to init for starting chat;"
+    },
+    {
+      "name": "list-all-page-titles",
+      "description": "List wiki page titles (uses list=allpages). Supports limit and continuation."
+    },
+    {
+      "name": "update-page",
+      "description": "Updates a wiki page (or a specific section) using the traditional MediaWiki Action API (action=edit). Please CALL [get-page] to get the latest content before updating to avoid to lose some content OR use section param to specify the section to update."
+    },
+    {
+      "name": "get-file",
+      "description": "Returns information about a file, including links to download the file in thumbnail, preview, and original formats."
+    },
+    {
+      "name": "create-page",
+      "description": "Creates a wiki page with the provided content."
+    },
+    {
+      "name": "upload-image",
+      "description": "Download an image from a URL and upload it to MediaWiki as a file."
+    },
+    {
+      "name": "set-target-wiki",
+      "description": "Set the active target wiki for this editing session. This tool should be called once at the beginning. "
+    }
+  ]
+}

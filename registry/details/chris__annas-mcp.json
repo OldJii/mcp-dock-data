@@ -1,0 +1,44 @@
+{
+  "id": "chris/annas-mcp",
+  "displayName": "annas-mcp",
+  "description": "Search a vast catalog of books on Anna's Archive. Discover editions, formats, and metadata to quickly pinpoint the right copy. Download selected titles for fast, offline access.",
+  "createdAt": "2026-01-19T02:15:57.601Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/chris/annas-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "secretKey"
+      ],
+      "properties": {
+        "secretKey": {
+          "type": "string",
+          "description": "Your Anna's Archive API key for accessing the JSON API. Get one at https://annas-archive.org/faq#api"
+        },
+        "downloadPath": {
+          "type": "string",
+          "description": "Path where downloaded documents will be stored",
+          "default": "/tmp/downloads"
+        }
+      },
+      "description": "Configuration for connecting to Anna's Archive MCP server",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "download",
+      "description": "Download a book by its MD5 hash. Requires ANNAS_SECRET_KEY/secretKey environment variable."
+    },
+    {
+      "name": "search",
+      "description": "Search books on Anna's Archive"
+    }
+  ]
+}

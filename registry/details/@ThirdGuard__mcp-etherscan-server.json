@@ -1,0 +1,56 @@
+{
+  "id": "@ThirdGuard/mcp-etherscan-server",
+  "displayName": "Etherscan Tools",
+  "description": "Access Ethereum blockchain data effortlessly. Check balances, view transaction history, track token transfers, and fetch contract ABIs with ease. Enhance your Ethereum interactions with real-time gas prices and ENS name resolution.",
+  "createdAt": "2026-01-19T02:15:19.662Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@ThirdGuard/mcp-etherscan-server"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "etherscanApiKey"
+      ],
+      "properties": {
+        "etherscanApiKey": {
+          "type": "string",
+          "description": "Your Etherscan API key."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "check-balance",
+      "description": "Check the ETH balance of an Ethereum address"
+    },
+    {
+      "name": "get-transactions",
+      "description": "Get recent transactions for an Ethereum address"
+    },
+    {
+      "name": "get-token-transfers",
+      "description": "Get ERC20 token transfers for an Ethereum address"
+    },
+    {
+      "name": "get-contract-abi",
+      "description": "Get the ABI for a smart contract"
+    },
+    {
+      "name": "get-contract-code",
+      "description": "Get the source code for a smart contract"
+    },
+    {
+      "name": "get-gas-prices",
+      "description": "Get current gas prices in Gwei"
+    },
+    {
+      "name": "get-ens-name",
+      "description": "Get the ENS name for an Ethereum address"
+    }
+  ]
+}

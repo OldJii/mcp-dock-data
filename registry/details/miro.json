@@ -1,0 +1,77 @@
+{
+  "id": "miro",
+  "displayName": "Miro",
+  "description": "Miro is a collaborative online whiteboard enabling teams to brainstorm ideas, design wireframes, plan workflows, and manage projects visually",
+  "createdAt": "2026-01-19T02:12:41.221Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/miro"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "MIRO_CREATE_APP_CARD_ITEM",
+      "description": "Tool to add an app card item to a board. Use when you need to push a rich preview card with custom fields into a Miro board (e.g., after assembling card data)."
+    },
+    {
+      "name": "MIRO_CREATE_BOARD",
+      "description": "Tool to create a new board. Use when you need to set up a board with a specific name, description, and policies. Example: \"Create a new board named Project Plan\"."
+    },
+    {
+      "name": "MIRO_DELETE_APP_CARD_ITEM",
+      "description": "Tool to delete an app card item from a board. Use when you need to remove an app card item created by your app after it is no longer needed."
+    },
+    {
+      "name": "MIRO_DELETE_DOCUMENT_ITEM",
+      "description": "Tool to delete a document item from a board. Use when you need to remove a document item (e.g., PDF or image) that is no longer relevant. Example: \"Delete the document item with ID 'item456' from board 'board123'.\""
+    },
+    {
+      "name": "MIRO_DELETE_ITEM",
+      "description": "Tool to delete a specific item from a board. Use when you need to remove an item (e.g., shape, sticky note) after confirming its board and item IDs."
+    },
+    {
+      "name": "MIRO_GET_APP_CARD_ITEM",
+      "description": "Tool to retrieve a specific app card item by its ID. Use when you need the details of an existing app card item."
+    },
+    {
+      "name": "MIRO_GET_BOARD",
+      "description": "Tool to retrieve details of a specific board. Use when you have a board ID and need to fetch its metadata."
+    },
+    {
+      "name": "MIRO_GET_BOARD_ITEMS",
+      "description": "Tool to list items on a Miro board (shapes, stickies, cards, etc.) with pagination. Use when you need to page through board elements for analytics or reporting."
+    },
+    {
+      "name": "MIRO_GET_BOARD_MEMBERS",
+      "description": "Tool to retrieve a list of members for a board. Use when you need to list all users with access to a board after confirming its ID."
+    },
+    {
+      "name": "MIRO_GET_BOARDS",
+      "description": "Tool to retrieve accessible boards with optional filters. Use when you need to list or search boards by team, project, owner, or keywords."
+    },
+    {
+      "name": "MIRO_GET_CONNECTORS",
+      "description": "Tool to retrieve a list of connectors on a board. Use after confirming the board ID and when you need to page through connector items."
+    },
+    {
+      "name": "MIRO_GET_TAG",
+      "description": "Tool to retrieve details of a specific tag on a board. Use when you have a board ID and tag ID and need its metadata."
+    },
+    {
+      "name": "MIRO_LIST_ORGANIZATIONS",
+      "description": "Tool to retrieve list of organizations accessible to the user. Use when you need to view all available organizations."
+    },
+    {
+      "name": "MIRO_UPDATE_APP_CARD_ITEM",
+      "description": "Tool to update an app card item on a board. Use when you need to modify properties of an existing app card item. Include only fields to change."
+    },
+    {
+      "name": "MIRO_UPDATE_BOARD",
+      "description": "Tool to update properties of a specific board. Use when you have a board ID and need to modify its name, description, or permissions policy. Use after confirming the board exists."
+    }
+  ]
+}

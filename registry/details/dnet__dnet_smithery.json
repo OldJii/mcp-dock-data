@@ -1,0 +1,12 @@
+{
+  "id": "dnet/dnet_smithery",
+  "displayName": "dnet_smithery",
+  "description": "",
+  "createdAt": "2026-01-19T02:22:25.339Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/dnet/dnet_smithery"
+  },
+  "connection": null,
+  "capabilities": []
+}

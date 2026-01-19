@@ -1,0 +1,12 @@
+{
+  "id": "@kinhsach/kinhsach",
+  "displayName": "kinhsach",
+  "description": "",
+  "createdAt": "2026-01-19T02:27:42.737Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@kinhsach/kinhsach"
+  },
+  "connection": null,
+  "capabilities": []
+}

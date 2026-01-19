@@ -1,0 +1,26 @@
+{
+  "id": "@iremaltunay55/denememcp",
+  "displayName": "Weather Information Server",
+  "description": "Provide accurate and up-to-date weather information including current conditions, forecasts, and location search. Enable users to retrieve detailed weather summaries for any city or postal code using the AccuWeather API. Simplify weather data access for applications and agents with easy-to-use tools.",
+  "createdAt": "2026-01-19T02:18:21.745Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@iremaltunay55/denememcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "API_KEY": {
+          "type": "string",
+          "description": "Your AccuWeather API key",
+          "default": "FgRNkenGLf3Guq67iAtz6ngyx356ojve"
+        }
+      }
+    }
+  },
+  "capabilities": []
+}

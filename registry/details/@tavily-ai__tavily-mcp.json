@@ -1,0 +1,44 @@
+{
+  "id": "@tavily-ai/tavily-mcp",
+  "displayName": "Tavily MCP Server",
+  "description": "Enable real-time web search and data extraction capabilities.",
+  "createdAt": "2026-01-19T02:15:16.308Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@tavily-ai/tavily-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [
+        "tavilyApiKey"
+      ],
+      "properties": {
+        "tavilyApiKey": {
+          "type": "string",
+          "description": "The API key for the Tavily MCP server."
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "tavily-search",
+      "description": "A powerful web search tool that provides comprehensive, real-time results using Tavily's AI search engine. Returns relevant web content with customizable parameters for result count, content type, and domain filtering. Ideal for gathering current information, news, and detailed web content analysis."
+    },
+    {
+      "name": "tavily-extract",
+      "description": "A powerful web content extraction tool that retrieves and processes raw content from specified URLs, ideal for data collection, content analysis, and research tasks."
+    },
+    {
+      "name": "tavily-crawl",
+      "description": "A powerful web crawler that initiates a structured web crawl starting from a specified base URL. The crawler expands from that point like a graph, following internal links across pages. You can control how deep and wide it goes, and guide it to focus on specific sections of the site."
+    },
+    {
+      "name": "tavily-map",
+      "description": "A powerful web mapping tool that creates a structured map of website URLs, allowing you to discover and analyze site structure, content organization, and navigation paths. Perfect for site audits, content discovery, and understanding website architecture."
+    }
+  ]
+}

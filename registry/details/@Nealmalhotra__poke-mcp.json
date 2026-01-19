@@ -1,0 +1,45 @@
+{
+  "id": "@Nealmalhotra/poke-mcp",
+  "displayName": "Poke People & Interactions",
+  "description": "Query people and interaction transcripts from your PostgreSQL database. Quickly list unique people and retrieve all interactions for any selected person. Stay organized and speed up analysis with fast lookups and flexible result limits.",
+  "createdAt": "2026-01-19T02:19:58.265Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@Nealmalhotra/poke-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "MCP Session Configuration",
+      "required": [
+        "databaseUrl"
+      ],
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug logging",
+          "default": false
+        },
+        "databaseUrl": {
+          "type": "string",
+          "description": "PostgreSQL database connection string"
+        }
+      },
+      "description": "Schema for the /mcp endpoint configuration",
+      "x-query-style": "dot+bracket",
+      "additionalProperties": false
+    }
+  },
+  "capabilities": [
+    {
+      "name": "list_people",
+      "description": "List all unique people you have talked to in real life"
+    },
+    {
+      "name": "list_interactions_with_person",
+      "description": "Get all interaction transcripts with a specific person by name. This is a list of all the interactions you have had with a person in real life."
+    }
+  ]
+}

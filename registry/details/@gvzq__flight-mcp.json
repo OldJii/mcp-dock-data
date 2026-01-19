@@ -1,0 +1,33 @@
+{
+  "id": "@gvzq/flight-mcp",
+  "displayName": "Flight Search MCP Server",
+  "description": "\nReal-Time Flight Data Access\nConnect to liveflight pricing and availability. Access comprehensive flight data from multiple sources with live pricing updates. \n\nMultiple Search Types\nFind the most affordable flights between any airports. View flight prices across entire months for flexible travel planning. Search for direct flights only, eliminating layovers. Discover trending flight routes from specific airports. Filter flights within specific budget ranges. Get detailed pricing for specific weeks. Compare costs across different months. Find flights to nearby destinations for better deals.",
+  "createdAt": "2026-01-19T02:14:18.359Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@gvzq/flight-mcp"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {}
+  },
+  "capabilities": [
+    {
+      "name": "search_flights",
+      "description": "Search for flights between cities or airports. Provide city names or IATA codes (e.g., 'Austin', 'LAX') and departure date. City names often work better than airport codes. For round-trip flights, always provide a return_date. For one-way flights, omit the return_date parameter."
+    },
+    {
+      "name": "search_calendar",
+      "description": "Find the cheapest travel dates for a route. Provide origin/destination airports and target month/date. Returns price calendar showing best dates to travel. Supports V1 price trends (daily cheapest non-stop/one-stop/two-stop flights) and V2 matrix views. Optional: trip length, flight class, calendar type."
+    },
+    {
+      "name": "get_reference_data",
+      "description": "Get travel reference data - airports, cities, airlines, or countries. Use 'list' to get all data or 'search' with query to find specific items. Helpful for finding IATA codes and location information."
+    },
+    {
+      "name": "discover_flights",
+      "description": "Discover flight deals and travel inspiration. Get popular routes, find alternative nearby airports for better deals, or browse special offers from an origin city. Great for flexible travel planning."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "@GoPlausible/tinyman-mcp",
+  "displayName": "Tinyman MCP Server",
+  "description": "Provide seamless interaction with the Tinyman AMM protocol on Algorand blockchain through a set of MCP tools. Manage pools, perform asset swaps, and handle liquidity operations efficiently. Enable advanced analytics and asset management to optimize decentralized trading workflows.",
+  "createdAt": "2026-01-19T02:17:15.212Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@GoPlausible/tinyman-mcp"
+  },
+  "connection": {
+    "type": "stdio",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "ALGORAND_ALGOD": {
+          "type": "string",
+          "description": "Algod node base URL",
+          "default": "https://mainnet-api.algonode.cloud"
+        },
+        "ALGORAND_TOKEN": {
+          "type": "string",
+          "description": "Algorand API token (optional)",
+          "default": ""
+        },
+        "ITEMS_PER_PAGE": {
+          "type": "string",
+          "description": "Number of items per page for paginated responses",
+          "default": 10
+        },
+        "ALGORAND_NETWORK": {
+          "type": "string",
+          "description": "Algorand network to connect to, e.g., testnet or mainnet",
+          "default": "mainnet"
+        },
+        "ALGORAND_ALGOD_PORT": {
+          "type": "string",
+          "description": "Algod node port (optional)",
+          "default": ""
+        },
+        "ALGORAND_AGENT_WALLET": {
+          "type": "string",
+          "description": "Algorand agent active wallet",
+          "default": ""
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "name": "tinyman_get_pool",
+      "description": "Get Tinyman pool information by asset pair"
+    },
+    {
+      "name": "tinyman_get_liquidity_quote",
+      "description": "Get quote for adding liquidity to a pool"
+    },
+    {
+      "name": "tinyman_get_swap_quote",
+      "description": "Get quote for swapping assets"
+    },
+    {
+      "name": "tinyman_get_pool_analytics",
+      "description": "Get analytics for a Tinyman pool"
+    },
+    {
+      "name": "tinyman_get_pool_creation_quote",
+      "description": "Get quote for creating a new Tinyman pool"
+    },
+    {
+      "name": "tinyman_get_remove_liquidity_quote",
+      "description": "Get quote for removing liquidity from a pool"
+    },
+    {
+      "name": "tinyman_get_asset_optin_quote",
+      "description": "Get quote for opting into a Tinyman pool token"
+    },
+    {
+      "name": "tinyman_get_validator_optin_quote",
+      "description": "Get quote for opting into Tinyman validator app"
+    },
+    {
+      "name": "tinyman_get_validator_optout_quote",
+      "description": "Get quote for opting out of Tinyman validator app"
+    }
+  ]
+}

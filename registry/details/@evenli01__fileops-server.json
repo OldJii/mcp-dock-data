@@ -1,0 +1,54 @@
+{
+  "id": "@evenli01/fileops-server",
+  "displayName": "File Operations",
+  "description": "Manage files with fast reading, searching, listing, and line counting. Retrieve detailed file information and filter results with glob patterns. Stay safe with path traversal protection, file size limits, and binary detection.",
+  "createdAt": "2026-01-19T02:13:25.581Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/@evenli01/fileops-server"
+  },
+  "connection": {
+    "type": "http",
+    "runtime": "node",
+    "configSchema": {
+      "type": "object",
+      "title": "ConfigSchema",
+      "properties": {
+        "base_path": {
+          "type": "string",
+          "description": "Base directory path for file operations (defaults to current directory)",
+          "default": "."
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes to read (default: 1MB)",
+          "default": 1048576
+        }
+      },
+      "description": "Configuration schema for the file operations server.",
+      "x-query-style": "dot+bracket"
+    }
+  },
+  "capabilities": [
+    {
+      "name": "read_file",
+      "description": "Read and return the contents of a text file.\n        \n        Args:\n            file_path: Path to the file to read (relative to base_path)\n            ctx: Context containing session configuration\n            \n        Returns:\n            The contents of the file as a string\n        "
+    },
+    {
+      "name": "list_directory",
+      "description": "List files and directories in a specified path.\n        \n        Args:\n            directory_path: Path to the directory to list (relative to base_path)\n            pattern: Glob pattern to filter results (default: \"*\" for all files)\n            ctx: Context containing session configuration\n            \n        Returns:\n            A formatted string listing files and directories\n        "
+    },
+    {
+      "name": "search_in_files",
+      "description": "Search for a term in files matching a pattern.\n        \n        Args:\n            search_term: The text to search for\n            directory_path: Directory to search in (relative to base_path)\n            file_pattern: Glob pattern for files to search (default: \"*.txt\")\n            ctx: Context containing session configuration\n            \n        Returns:\n            A formatted string with search results\n        "
+    },
+    {
+      "name": "get_file_info",
+      "description": "Get detailed information about a file.\n        \n        Args:\n            file_path: Path to the file (relative to base_path)\n            ctx: Context containing session configuration\n            \n        Returns:\n            A formatted string with file information\n        "
+    },
+    {
+      "name": "count_lines",
+      "description": "Count the number of lines in a text file.\n        \n        Args:\n            file_path: Path to the file (relative to base_path)\n            ctx: Context containing session configuration\n            \n        Returns:\n            The number of lines in the file\n        "
+    }
+  ]
+}

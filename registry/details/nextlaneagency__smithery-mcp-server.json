@@ -1,0 +1,12 @@
+{
+  "id": "nextlaneagency/smithery-mcp-server",
+  "displayName": "smithery-mcp-server",
+  "description": "",
+  "createdAt": "2026-01-19T02:26:38.177Z",
+  "links": {
+    "homepage": "",
+    "registry": "https://smithery.ai/server/nextlaneagency/smithery-mcp-server"
+  },
+  "connection": null,
+  "capabilities": []
+}
